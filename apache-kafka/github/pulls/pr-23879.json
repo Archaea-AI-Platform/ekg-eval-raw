@@ -1,0 +1,2521 @@
+{
+ "pull": {
+  "url": "https://api.github.com/repos/apache/kafka/pulls/23879",
+  "id": 4932383317,
+  "node_id": "PR_kwDOACG9q88AAAABJf4yVQ",
+  "html_url": "https://github.com/apache/kafka/pull/23879",
+  "diff_url": "https://github.com/apache/kafka/pull/23879.diff",
+  "patch_url": "https://github.com/apache/kafka/pull/23879.patch",
+  "issue_url": "https://api.github.com/repos/apache/kafka/issues/23879",
+  "commits_url": "https://api.github.com/repos/apache/kafka/pulls/23879/commits",
+  "review_comments_url": "https://api.github.com/repos/apache/kafka/pulls/23879/comments",
+  "review_comment_url": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}",
+  "comments_url": "https://api.github.com/repos/apache/kafka/issues/23879/comments",
+  "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/21ee625af377c8c6510b3e514416b4a544fcf6f8",
+  "number": 23879,
+  "state": "closed",
+  "locked": false,
+  "title": "KAFKA-19042 Rewrite TransactionsBounceTest from Scala to Java",
+  "user": {
+   "login": "m1a2st",
+   "id": 100591800,
+   "node_id": "U_kgDOBf7ouA",
+   "avatar_url": "https://avatars.githubusercontent.com/u/100591800?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/m1a2st",
+   "html_url": "https://github.com/m1a2st",
+   "followers_url": "https://api.github.com/users/m1a2st/followers",
+   "following_url": "https://api.github.com/users/m1a2st/following{/other_user}",
+   "gists_url": "https://api.github.com/users/m1a2st/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/m1a2st/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/m1a2st/subscriptions",
+   "organizations_url": "https://api.github.com/users/m1a2st/orgs",
+   "repos_url": "https://api.github.com/users/m1a2st/repos",
+   "events_url": "https://api.github.com/users/m1a2st/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/m1a2st/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "body": "Rewrite TransactionsBounceTest from Scala to Java and move it to\nclients-integration-tests. The transaction status header helpers are\nmoved to ClientsTestUtils and shared with ProducerIdExpirationTest, and\nthe Scala helpers in TestUtils that were only used by this test are\nremoved.\n\nReviewers: Murali Basani <muralidhar.basani@aiven.io>, Chia-Ping Tsai\n <chia7712@gmail.com>\n",
+  "labels": [
+   {
+    "id": 838330122,
+    "node_id": "MDU6TGFiZWw4MzgzMzAxMjI=",
+    "url": "https://api.github.com/repos/apache/kafka/labels/core",
+    "name": "core",
+    "description": "Kafka Broker",
+    "color": "ed5a86",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 1257747426,
+    "node_id": "MDU6TGFiZWwxMjU3NzQ3NDI2",
+    "url": "https://api.github.com/repos/apache/kafka/labels/tests",
+    "name": "tests",
+    "description": "Test fixes (including flaky tests)",
+    "color": "cfff60",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 7491388177,
+    "node_id": "LA_kwDOACG9q88AAAABvoWDEQ",
+    "url": "https://api.github.com/repos/apache/kafka/labels/clients",
+    "name": "clients",
+    "description": null,
+    "color": "ededed",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   }
+  ],
+  "milestone": null,
+  "active_lock_reason": null,
+  "created_at": "2026-10-20T07:19:35Z",
+  "updated_at": "2026-10-27T21:05:06Z",
+  "closed_at": "2026-10-27T21:05:06Z",
+  "merged_at": "2026-10-27T21:05:06Z",
+  "merge_commit_sha": "7596c4bc4b252083fa2fec8da798d16dc988f077",
+  "assignee": null,
+  "assignees": [],
+  "requested_reviewers": [],
+  "requested_teams": [],
+  "head": {
+   "label": "m1a2st:KAFKA-19042-11",
+   "ref": "KAFKA-19042-11",
+   "repo": {
+    "id": 789639498,
+    "node_id": "R_kgDOLxDxSg",
+    "name": "kafka",
+    "full_name": "m1a2st/kafka",
+    "owner": {
+     "login": "m1a2st",
+     "id": 100591800,
+     "node_id": "U_kgDOBf7ouA",
+     "avatar_url": "https://avatars.githubusercontent.com/u/100591800?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/m1a2st",
+     "html_url": "https://github.com/m1a2st",
+     "followers_url": "https://api.github.com/users/m1a2st/followers",
+     "following_url": "https://api.github.com/users/m1a2st/following{/other_user}",
+     "gists_url": "https://api.github.com/users/m1a2st/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/m1a2st/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/m1a2st/subscriptions",
+     "organizations_url": "https://api.github.com/users/m1a2st/orgs",
+     "repos_url": "https://api.github.com/users/m1a2st/repos",
+     "events_url": "https://api.github.com/users/m1a2st/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/m1a2st/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": true,
+    "archived": false,
+    "disabled": false,
+    "description": "Mirror of Apache Kafka",
+    "homepage": null,
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [],
+    "forks_count": 0,
+    "forks": 0,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "watchers": 0,
+    "open_issues_count": 0,
+    "open_issues": 0,
+    "size": 297052,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-28T08:58:33Z",
+    "created_at": "2024-04-21T06:01:36Z",
+    "updated_at": "2026-10-27T12:49:57Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/m1a2st/kafka",
+    "html_url": "https://github.com/m1a2st/kafka",
+    "archive_url": "https://api.github.com/repos/m1a2st/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/m1a2st/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/m1a2st/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/m1a2st/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/m1a2st/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/m1a2st/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/m1a2st/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/m1a2st/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/m1a2st/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/m1a2st/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/m1a2st/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/m1a2st/kafka/downloads",
+    "events_url": "https://api.github.com/repos/m1a2st/kafka/events",
+    "forks_url": "https://api.github.com/repos/m1a2st/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/m1a2st/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/m1a2st/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/m1a2st/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/m1a2st/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/m1a2st/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/m1a2st/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/m1a2st/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/m1a2st/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/m1a2st/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/m1a2st/kafka/languages",
+    "merges_url": "https://api.github.com/repos/m1a2st/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/m1a2st/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/m1a2st/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/m1a2st/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/m1a2st/kafka/releases{/id}",
+    "ssh_url": "git@github.com:m1a2st/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/m1a2st/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/m1a2st/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/m1a2st/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/m1a2st/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/m1a2st/kafka/tags",
+    "teams_url": "https://api.github.com/repos/m1a2st/kafka/teams",
+    "trees_url": "https://api.github.com/repos/m1a2st/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/m1a2st/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/m1a2st/kafka/hooks",
+    "svn_url": "https://github.com/m1a2st/kafka"
+   },
+   "sha": "21ee625af377c8c6510b3e514416b4a544fcf6f8",
+   "user": {
+    "login": "m1a2st",
+    "id": 100591800,
+    "node_id": "U_kgDOBf7ouA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100591800?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/m1a2st",
+    "html_url": "https://github.com/m1a2st",
+    "followers_url": "https://api.github.com/users/m1a2st/followers",
+    "following_url": "https://api.github.com/users/m1a2st/following{/other_user}",
+    "gists_url": "https://api.github.com/users/m1a2st/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/m1a2st/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/m1a2st/subscriptions",
+    "organizations_url": "https://api.github.com/users/m1a2st/orgs",
+    "repos_url": "https://api.github.com/users/m1a2st/repos",
+    "events_url": "https://api.github.com/users/m1a2st/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/m1a2st/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "base": {
+   "label": "apache:trunk",
+   "ref": "trunk",
+   "repo": {
+    "id": 2211243,
+    "node_id": "MDEwOlJlcG9zaXRvcnkyMjExMjQz",
+    "name": "kafka",
+    "full_name": "apache/kafka",
+    "owner": {
+     "login": "apache",
+     "id": 47359,
+     "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+     "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/apache",
+     "html_url": "https://github.com/apache",
+     "followers_url": "https://api.github.com/users/apache/followers",
+     "following_url": "https://api.github.com/users/apache/following{/other_user}",
+     "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+     "organizations_url": "https://api.github.com/users/apache/orgs",
+     "repos_url": "https://api.github.com/users/apache/repos",
+     "events_url": "https://api.github.com/users/apache/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/apache/received_events",
+     "type": "Organization",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": false,
+    "archived": false,
+    "disabled": false,
+    "description": "Apache Kafka - A distributed event streaming platform",
+    "homepage": "https://kafka.apache.org/",
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [
+     "java",
+     "kafka",
+     "scala",
+     "streaming"
+    ],
+    "forks_count": 15637,
+    "forks": 15637,
+    "stargazers_count": 34153,
+    "watchers_count": 34153,
+    "watchers": 34153,
+    "open_issues_count": 674,
+    "open_issues": 674,
+    "size": 322164,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-29T11:37:21Z",
+    "created_at": "2011-08-15T18:06:16Z",
+    "updated_at": "2026-10-29T11:37:29Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/apache/kafka",
+    "html_url": "https://github.com/apache/kafka",
+    "archive_url": "https://api.github.com/repos/apache/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/apache/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/apache/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/apache/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/apache/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/apache/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/apache/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/apache/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/apache/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/apache/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/apache/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/apache/kafka/downloads",
+    "events_url": "https://api.github.com/repos/apache/kafka/events",
+    "forks_url": "https://api.github.com/repos/apache/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/apache/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/apache/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/apache/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/apache/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/apache/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/apache/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/apache/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/apache/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/apache/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/apache/kafka/languages",
+    "merges_url": "https://api.github.com/repos/apache/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/apache/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/apache/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/apache/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/apache/kafka/releases{/id}",
+    "ssh_url": "git@github.com:apache/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/apache/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/apache/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/apache/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/apache/kafka/tags",
+    "teams_url": "https://api.github.com/repos/apache/kafka/teams",
+    "trees_url": "https://api.github.com/repos/apache/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/apache/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/apache/kafka/hooks",
+    "svn_url": "https://github.com/apache/kafka"
+   },
+   "sha": "203b877ff2a2142b1619b64a317c210ca9f05601",
+   "user": {
+    "login": "apache",
+    "id": 47359,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/apache",
+    "html_url": "https://github.com/apache",
+    "followers_url": "https://api.github.com/users/apache/followers",
+    "following_url": "https://api.github.com/users/apache/following{/other_user}",
+    "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+    "organizations_url": "https://api.github.com/users/apache/orgs",
+    "repos_url": "https://api.github.com/users/apache/repos",
+    "events_url": "https://api.github.com/users/apache/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/apache/received_events",
+    "type": "Organization",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "_links": {
+   "comments": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23879/comments"
+   },
+   "commits": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23879/commits"
+   },
+   "statuses": {
+    "href": "https://api.github.com/repos/apache/kafka/statuses/21ee625af377c8c6510b3e514416b4a544fcf6f8"
+   },
+   "html": {
+    "href": "https://github.com/apache/kafka/pull/23879"
+   },
+   "issue": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23879"
+   },
+   "review_comments": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23879/comments"
+   },
+   "review_comment": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}"
+   },
+   "self": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23879"
+   }
+  },
+  "author_association": "CONTRIBUTOR",
+  "auto_merge": null,
+  "draft": false,
+  "merged": true,
+  "mergeable": null,
+  "rebaseable": null,
+  "mergeable_state": "unknown",
+  "merged_by": {
+   "login": "chia7712",
+   "id": 6234750,
+   "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+   "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/chia7712",
+   "html_url": "https://github.com/chia7712",
+   "followers_url": "https://api.github.com/users/chia7712/followers",
+   "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+   "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+   "organizations_url": "https://api.github.com/users/chia7712/orgs",
+   "repos_url": "https://api.github.com/users/chia7712/repos",
+   "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/chia7712/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "comments": 1,
+  "review_comments": 5,
+  "maintainer_can_modify": false,
+  "commits": 5,
+  "additions": 257,
+  "deletions": 297,
+  "changed_files": 5
+ },
+ "reviews": [
+  {
+   "id": 5605523104,
+   "node_id": "PRR_kwDOACG9q88AAAABTh1-oA",
+   "user": {
+    "login": "muralibasani",
+    "id": 10197247,
+    "node_id": "MDQ6VXNlcjEwMTk3MjQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10197247?u=fa0c2491339b1f4bbd7db8922c47d9de9ec4139d&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/muralibasani",
+    "html_url": "https://github.com/muralibasani",
+    "followers_url": "https://api.github.com/users/muralibasani/followers",
+    "following_url": "https://api.github.com/users/muralibasani/following{/other_user}",
+    "gists_url": "https://api.github.com/users/muralibasani/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/muralibasani/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/muralibasani/subscriptions",
+    "organizations_url": "https://api.github.com/users/muralibasani/orgs",
+    "repos_url": "https://api.github.com/users/muralibasani/repos",
+    "events_url": "https://api.github.com/users/muralibasani/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/muralibasani/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23879#pullrequestreview-5605523104",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23879",
+   "author_association": "COLLABORATOR",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23879#pullrequestreview-5605523104"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23879"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-21T20:03:39Z",
+   "commit_id": "303d6802fdc1a95e1f089f5c42b9b1963f534eee"
+  },
+  {
+   "id": 5605568828,
+   "node_id": "PRR_kwDOACG9q88AAAABTh4xPA",
+   "user": {
+    "login": "muralibasani",
+    "id": 10197247,
+    "node_id": "MDQ6VXNlcjEwMTk3MjQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10197247?u=fa0c2491339b1f4bbd7db8922c47d9de9ec4139d&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/muralibasani",
+    "html_url": "https://github.com/muralibasani",
+    "followers_url": "https://api.github.com/users/muralibasani/followers",
+    "following_url": "https://api.github.com/users/muralibasani/following{/other_user}",
+    "gists_url": "https://api.github.com/users/muralibasani/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/muralibasani/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/muralibasani/subscriptions",
+    "organizations_url": "https://api.github.com/users/muralibasani/orgs",
+    "repos_url": "https://api.github.com/users/muralibasani/repos",
+    "events_url": "https://api.github.com/users/muralibasani/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/muralibasani/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23879#pullrequestreview-5605568828",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23879",
+   "author_association": "COLLABORATOR",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23879#pullrequestreview-5605568828"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23879"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-21T20:07:45Z",
+   "commit_id": "303d6802fdc1a95e1f089f5c42b9b1963f534eee"
+  },
+  {
+   "id": 5605696121,
+   "node_id": "PRR_kwDOACG9q88AAAABTiAieQ",
+   "user": {
+    "login": "muralibasani",
+    "id": 10197247,
+    "node_id": "MDQ6VXNlcjEwMTk3MjQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10197247?u=fa0c2491339b1f4bbd7db8922c47d9de9ec4139d&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/muralibasani",
+    "html_url": "https://github.com/muralibasani",
+    "followers_url": "https://api.github.com/users/muralibasani/followers",
+    "following_url": "https://api.github.com/users/muralibasani/following{/other_user}",
+    "gists_url": "https://api.github.com/users/muralibasani/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/muralibasani/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/muralibasani/subscriptions",
+    "organizations_url": "https://api.github.com/users/muralibasani/orgs",
+    "repos_url": "https://api.github.com/users/muralibasani/repos",
+    "events_url": "https://api.github.com/users/muralibasani/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/muralibasani/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23879#pullrequestreview-5605696121",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23879",
+   "author_association": "COLLABORATOR",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23879#pullrequestreview-5605696121"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23879"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-21T20:19:08Z",
+   "commit_id": "303d6802fdc1a95e1f089f5c42b9b1963f534eee"
+  },
+  {
+   "id": 5605716514,
+   "node_id": "PRR_kwDOACG9q88AAAABTiByIg",
+   "user": {
+    "login": "muralibasani",
+    "id": 10197247,
+    "node_id": "MDQ6VXNlcjEwMTk3MjQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10197247?u=fa0c2491339b1f4bbd7db8922c47d9de9ec4139d&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/muralibasani",
+    "html_url": "https://github.com/muralibasani",
+    "followers_url": "https://api.github.com/users/muralibasani/followers",
+    "following_url": "https://api.github.com/users/muralibasani/following{/other_user}",
+    "gists_url": "https://api.github.com/users/muralibasani/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/muralibasani/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/muralibasani/subscriptions",
+    "organizations_url": "https://api.github.com/users/muralibasani/orgs",
+    "repos_url": "https://api.github.com/users/muralibasani/repos",
+    "events_url": "https://api.github.com/users/muralibasani/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/muralibasani/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "Thanks @m1a2st for the PR. Overall looks good.\nI have a few minor comments.",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23879#pullrequestreview-5605716514",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23879",
+   "author_association": "COLLABORATOR",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23879#pullrequestreview-5605716514"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23879"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-21T20:20:56Z",
+   "commit_id": "303d6802fdc1a95e1f089f5c42b9b1963f534eee"
+  },
+  {
+   "id": 5655926772,
+   "node_id": "PRR_kwDOACG9q88AAAABUR6X9A",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?u=d6a720105c14e445ea603b93ca071290c3955670&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23879#pullrequestreview-5655926772",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23879",
+   "author_association": "MEMBER",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23879#pullrequestreview-5655926772"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23879"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-26T17:01:14Z",
+   "commit_id": "3f9b36a00481a4f4ee9ab21878015700d1f4ae6b"
+  },
+  {
+   "id": 5674209624,
+   "node_id": "PRR_kwDOACG9q88AAAABUjWRWA",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?u=d6a720105c14e445ea603b93ca071290c3955670&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "LGTM",
+   "state": "APPROVED",
+   "html_url": "https://github.com/apache/kafka/pull/23879#pullrequestreview-5674209624",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23879",
+   "author_association": "MEMBER",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23879#pullrequestreview-5674209624"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23879"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-27T20:57:07Z",
+   "commit_id": "21ee625af377c8c6510b3e514416b4a544fcf6f8"
+  },
+  {
+   "id": 5674232778,
+   "node_id": "PRR_kwDOACG9q88AAAABUjXryg",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?u=d6a720105c14e445ea603b93ca071290c3955670&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23879#pullrequestreview-5674232778",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23879",
+   "author_association": "MEMBER",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23879#pullrequestreview-5674232778"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23879"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-27T20:59:13Z",
+   "commit_id": "21ee625af377c8c6510b3e514416b4a544fcf6f8"
+  }
+ ],
+ "review_comments": [
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4341385587",
+   "pull_request_review_id": 5605523104,
+   "id": 4341385587,
+   "node_id": "PRRC_kwDOACG9q88AAAABAsRJcw",
+   "diff_hunk": "@@ -0,0 +1,242 @@\n+/*\n+ * Licensed to the Apache Software Foundation (ASF) under one or more\n+ * contributor license agreements. See the NOTICE file distributed with\n+ * this work for additional information regarding copyright ownership.\n+ * The ASF licenses this file to You under the Apache License, Version 2.0\n+ * (the \"License\"); you may not use this file except in compliance with\n+ * the License. You may obtain a copy of the License at\n+ *\n+ *    http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n+\n+package org.apache.kafka.clients.producer;\n+\n+import org.apache.kafka.clients.ClientsTestUtils;\n+import org.apache.kafka.clients.consumer.Consumer;\n+import org.apache.kafka.clients.consumer.ConsumerConfig;\n+import org.apache.kafka.clients.consumer.ConsumerRecord;\n+import org.apache.kafka.clients.consumer.GroupProtocol;\n+import org.apache.kafka.clients.consumer.OffsetAndMetadata;\n+import org.apache.kafka.clients.producer.internals.ErrorLoggingCallback;\n+import org.apache.kafka.common.TopicPartition;\n+import org.apache.kafka.common.config.TopicConfig;\n+import org.apache.kafka.common.test.ClusterInstance;\n+import org.apache.kafka.common.test.api.ClusterConfigProperty;\n+import org.apache.kafka.common.test.api.ClusterTest;\n+import org.apache.kafka.common.test.api.ClusterTestDefaults;\n+import org.apache.kafka.common.test.api.Type;\n+import org.apache.kafka.coordinator.group.GroupCoordinatorConfig;\n+import org.apache.kafka.coordinator.transaction.TransactionLogConfig;\n+import org.apache.kafka.server.config.ReplicationConfigs;\n+import org.apache.kafka.server.config.ServerConfigs;\n+import org.apache.kafka.server.config.ServerLogConfigs;\n+import org.apache.kafka.server.util.ShutdownableThread;\n+import org.apache.kafka.test.TestUtils;\n+\n+import java.nio.charset.StandardCharsets;\n+import java.util.ArrayList;\n+import java.util.HashMap;\n+import java.util.HashSet;\n+import java.util.List;\n+import java.util.Map;\n+import java.util.Set;\n+import java.util.concurrent.TimeUnit;\n+import java.util.stream.Collectors;\n+import java.util.stream.IntStream;\n+\n+import static org.junit.jupiter.api.Assertions.assertEquals;\n+import static org.junit.jupiter.api.Assertions.assertNotNull;\n+import static org.junit.jupiter.api.Assertions.assertNull;\n+\n+@ClusterTestDefaults(\n+    types = {Type.KRAFT},\n+    brokers = 4,\n+    serverProperties = {\n+        @ClusterConfigProperty(key = ServerLogConfigs.AUTO_CREATE_TOPICS_ENABLE_CONFIG, value = \"false\"),\n+        @ClusterConfigProperty(key = ServerConfigs.MESSAGE_MAX_BYTES_CONFIG, value = \"32768\"),\n+        @ClusterConfigProperty(key = ServerConfigs.CONTROLLED_SHUTDOWN_ENABLE_CONFIG, value = \"true\"),\n+        @ClusterConfigProperty(key = ReplicationConfigs.AUTO_LEADER_REBALANCE_ENABLE_CONFIG, value = \"false\"),\n+        // Use fewer partitions for __consumer_offsets so topic creation and leader assignment do not take too long.\n+        @ClusterConfigProperty(key = GroupCoordinatorConfig.OFFSETS_TOPIC_PARTITIONS_CONFIG, value = \"1\"),\n+        @ClusterConfigProperty(key = TopicConfig.MIN_IN_SYNC_REPLICAS_CONFIG, value = \"2\"),\n+        // Allow a small session timeout.\n+        @ClusterConfigProperty(key = GroupCoordinatorConfig.GROUP_MIN_SESSION_TIMEOUT_MS_CONFIG, value = \"10\"),\n+        @ClusterConfigProperty(key = GroupCoordinatorConfig.GROUP_INITIAL_REBALANCE_DELAY_MS_CONFIG, value = \"0\"),\n+        @ClusterConfigProperty(key = TransactionLogConfig.TRANSACTIONS_TOPIC_PARTITIONS_CONFIG, value = \"1\"),\n+    }\n+)\n+public class TransactionsBounceTest {\n+    private static final int CONSUME_RECORD_TIMEOUT_MS = 30000;\n+    private static final int NUM_PARTITIONS = 3;\n+    private static final String OUTPUT_TOPIC = \"output-topic\";\n+    private static final String INPUT_TOPIC = \"input-topic\";\n+    private static final String TRANSACTION_STATUS_HEADER = \"transactionStatus\";\n+\n+    private final ClusterInstance cluster;\n+\n+    TransactionsBounceTest(ClusterInstance cluster) {\n+        this.cluster = cluster;\n+    }\n+\n+    @ClusterTest\n+    public void testWithGroupMetadataClassic() throws Exception {\n+        testBrokerFailure(GroupProtocol.CLASSIC);\n+    }\n+\n+    @ClusterTest\n+    public void testWithGroupMetadataConsumer() throws Exception {\n+        testBrokerFailure(GroupProtocol.CONSUMER);\n+    }\n+\n+    private void testBrokerFailure(GroupProtocol groupProtocol) throws Exception {\n+        // Seed a topic with 10000 records and copy it transactionally while constantly bouncing brokers.\n+        int numInputRecords = 10000;\n+        Map<String, String> topicConfigs = Map.of(TopicConfig.MIN_IN_SYNC_REPLICAS_CONFIG, \"2\");\n+        cluster.createTopic(INPUT_TOPIC, NUM_PARTITIONS, (short) 3, topicConfigs);\n+        cluster.createTopic(OUTPUT_TOPIC, NUM_PARTITIONS, (short) 3, topicConfigs);\n+\n+        try (Producer<byte[], byte[]> producer = cluster.producer()) {\n+            for (int i = 0; i < numInputRecords; i++) {\n+                byte[] value = Integer.toString(i).getBytes(StandardCharsets.UTF_8);\n+                producer.send(new ProducerRecord<>(INPUT_TOPIC, value, value));\n+            }\n+            producer.flush();\n+        }\n+\n+        try (Consumer<byte[], byte[]> consumer = createConsumerAndSubscribe(\"myGroup\", INPUT_TOPIC, groupProtocol, false);\n+             Producer<byte[], byte[]> producer = cluster.producer(Map.of(\n+                 ProducerConfig.BATCH_SIZE_CONFIG, 512,\n+                 ProducerConfig.TRANSACTIONAL_ID_CONFIG, \"test-txn\"\n+             ))) {\n+            producer.initTransactions();\n+            BounceScheduler scheduler = new BounceScheduler();\n+            scheduler.start();\n+            try {\n+                int numMessagesProcessed = 0;\n+                int iteration = 0;\n+                while (numMessagesProcessed < numInputRecords) {\n+                    int toRead = Math.min(200, numInputRecords - numMessagesProcessed);\n+                    List<ConsumerRecord<byte[], byte[]>> records = ClientsTestUtils.consumeRecords(\n+                        consumer, toRead, Integer.MAX_VALUE, CONSUME_RECORD_TIMEOUT_MS);\n+\n+                    producer.beginTransaction();\n+                    boolean shouldAbort = iteration % 3 == 0;\n+                    for (ConsumerRecord<byte[], byte[]> record : records) {\n+                        ProducerRecord<byte[], byte[]> outputRecord = new ProducerRecord<>(OUTPUT_TOPIC, record.key(), record.value());\n+                        // Mark the intended outcome so the verifying consumer can detect any aborted records it receives.\n+                        outputRecord.headers().add(TRANSACTION_STATUS_HEADER,\n+                            (shouldAbort ? \"aborted\" : \"committed\").getBytes(StandardCharsets.UTF_8));\n+                        producer.send(outputRecord, new ErrorLoggingCallback(OUTPUT_TOPIC, record.key(), record.value(), true));\n+                    }\n+\n+                    Map<TopicPartition, OffsetAndMetadata> offsets = new HashMap<>();\n+                    for (TopicPartition partition : consumer.assignment()) {\n+                        offsets.put(partition, new OffsetAndMetadata(consumer.position(partition)));\n+                    }\n+                    producer.sendOffsetsToTransaction(offsets, consumer.groupMetadata());\n+\n+                    if (shouldAbort) {\n+                        producer.abortTransaction();\n+                        resetToCommittedPositions(consumer);\n+                    } else {\n+                        producer.commitTransaction();\n+                        numMessagesProcessed += records.size();\n+                    }\n+                    iteration++;\n+                }\n+            } finally {\n+                scheduler.shutdown();\n+            }\n+            assertNull(scheduler.failure, \"Broker bouncer failed\");",
+   "path": "clients/clients-integration-tests/src/test/java/org/apache/kafka/clients/producer/TransactionsBounceTest.java",
+   "commit_id": "303d6802fdc1a95e1f089f5c42b9b1963f534eee",
+   "original_commit_id": "303d6802fdc1a95e1f089f5c42b9b1963f534eee",
+   "user": {
+    "login": "muralibasani",
+    "id": 10197247,
+    "node_id": "MDQ6VXNlcjEwMTk3MjQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10197247?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/muralibasani",
+    "html_url": "https://github.com/muralibasani",
+    "followers_url": "https://api.github.com/users/muralibasani/followers",
+    "following_url": "https://api.github.com/users/muralibasani/following{/other_user}",
+    "gists_url": "https://api.github.com/users/muralibasani/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/muralibasani/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/muralibasani/subscriptions",
+    "organizations_url": "https://api.github.com/users/muralibasani/orgs",
+    "repos_url": "https://api.github.com/users/muralibasani/repos",
+    "events_url": "https://api.github.com/users/muralibasani/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/muralibasani/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "Would it be better to move scheduler.failure to finally, because if startBroker fails in bouncer thread, the main loo might also fail with timeout ?",
+   "created_at": "2026-10-21T20:03:39Z",
+   "updated_at": "2026-10-21T20:03:39Z",
+   "html_url": "https://github.com/apache/kafka/pull/23879#discussion_r4341385587",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23879",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4341385587"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23879#discussion_r4341385587"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23879"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4341385587/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": null,
+   "original_line": 156,
+   "side": "RIGHT",
+   "author_association": "COLLABORATOR",
+   "original_position": 156,
+   "position": 1,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4341422966",
+   "pull_request_review_id": 5605568828,
+   "id": 4341422966,
+   "node_id": "PRRC_kwDOACG9q88AAAABAsTbdg",
+   "diff_hunk": "@@ -0,0 +1,242 @@\n+/*\n+ * Licensed to the Apache Software Foundation (ASF) under one or more\n+ * contributor license agreements. See the NOTICE file distributed with\n+ * this work for additional information regarding copyright ownership.\n+ * The ASF licenses this file to You under the Apache License, Version 2.0\n+ * (the \"License\"); you may not use this file except in compliance with\n+ * the License. You may obtain a copy of the License at\n+ *\n+ *    http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n+\n+package org.apache.kafka.clients.producer;\n+\n+import org.apache.kafka.clients.ClientsTestUtils;\n+import org.apache.kafka.clients.consumer.Consumer;\n+import org.apache.kafka.clients.consumer.ConsumerConfig;\n+import org.apache.kafka.clients.consumer.ConsumerRecord;\n+import org.apache.kafka.clients.consumer.GroupProtocol;\n+import org.apache.kafka.clients.consumer.OffsetAndMetadata;\n+import org.apache.kafka.clients.producer.internals.ErrorLoggingCallback;\n+import org.apache.kafka.common.TopicPartition;\n+import org.apache.kafka.common.config.TopicConfig;\n+import org.apache.kafka.common.test.ClusterInstance;\n+import org.apache.kafka.common.test.api.ClusterConfigProperty;\n+import org.apache.kafka.common.test.api.ClusterTest;\n+import org.apache.kafka.common.test.api.ClusterTestDefaults;\n+import org.apache.kafka.common.test.api.Type;\n+import org.apache.kafka.coordinator.group.GroupCoordinatorConfig;\n+import org.apache.kafka.coordinator.transaction.TransactionLogConfig;\n+import org.apache.kafka.server.config.ReplicationConfigs;\n+import org.apache.kafka.server.config.ServerConfigs;\n+import org.apache.kafka.server.config.ServerLogConfigs;\n+import org.apache.kafka.server.util.ShutdownableThread;\n+import org.apache.kafka.test.TestUtils;\n+\n+import java.nio.charset.StandardCharsets;\n+import java.util.ArrayList;\n+import java.util.HashMap;\n+import java.util.HashSet;\n+import java.util.List;\n+import java.util.Map;\n+import java.util.Set;\n+import java.util.concurrent.TimeUnit;\n+import java.util.stream.Collectors;\n+import java.util.stream.IntStream;\n+\n+import static org.junit.jupiter.api.Assertions.assertEquals;\n+import static org.junit.jupiter.api.Assertions.assertNotNull;\n+import static org.junit.jupiter.api.Assertions.assertNull;\n+\n+@ClusterTestDefaults(\n+    types = {Type.KRAFT},\n+    brokers = 4,\n+    serverProperties = {\n+        @ClusterConfigProperty(key = ServerLogConfigs.AUTO_CREATE_TOPICS_ENABLE_CONFIG, value = \"false\"),\n+        @ClusterConfigProperty(key = ServerConfigs.MESSAGE_MAX_BYTES_CONFIG, value = \"32768\"),\n+        @ClusterConfigProperty(key = ServerConfigs.CONTROLLED_SHUTDOWN_ENABLE_CONFIG, value = \"true\"),\n+        @ClusterConfigProperty(key = ReplicationConfigs.AUTO_LEADER_REBALANCE_ENABLE_CONFIG, value = \"false\"),\n+        // Use fewer partitions for __consumer_offsets so topic creation and leader assignment do not take too long.\n+        @ClusterConfigProperty(key = GroupCoordinatorConfig.OFFSETS_TOPIC_PARTITIONS_CONFIG, value = \"1\"),\n+        @ClusterConfigProperty(key = TopicConfig.MIN_IN_SYNC_REPLICAS_CONFIG, value = \"2\"),\n+        // Allow a small session timeout.\n+        @ClusterConfigProperty(key = GroupCoordinatorConfig.GROUP_MIN_SESSION_TIMEOUT_MS_CONFIG, value = \"10\"),\n+        @ClusterConfigProperty(key = GroupCoordinatorConfig.GROUP_INITIAL_REBALANCE_DELAY_MS_CONFIG, value = \"0\"),\n+        @ClusterConfigProperty(key = TransactionLogConfig.TRANSACTIONS_TOPIC_PARTITIONS_CONFIG, value = \"1\"),\n+    }\n+)\n+public class TransactionsBounceTest {\n+    private static final int CONSUME_RECORD_TIMEOUT_MS = 30000;\n+    private static final int NUM_PARTITIONS = 3;\n+    private static final String OUTPUT_TOPIC = \"output-topic\";\n+    private static final String INPUT_TOPIC = \"input-topic\";\n+    private static final String TRANSACTION_STATUS_HEADER = \"transactionStatus\";\n+\n+    private final ClusterInstance cluster;\n+\n+    TransactionsBounceTest(ClusterInstance cluster) {\n+        this.cluster = cluster;\n+    }\n+\n+    @ClusterTest\n+    public void testWithGroupMetadataClassic() throws Exception {\n+        testBrokerFailure(GroupProtocol.CLASSIC);\n+    }\n+\n+    @ClusterTest\n+    public void testWithGroupMetadataConsumer() throws Exception {\n+        testBrokerFailure(GroupProtocol.CONSUMER);\n+    }\n+\n+    private void testBrokerFailure(GroupProtocol groupProtocol) throws Exception {\n+        // Seed a topic with 10000 records and copy it transactionally while constantly bouncing brokers.\n+        int numInputRecords = 10000;\n+        Map<String, String> topicConfigs = Map.of(TopicConfig.MIN_IN_SYNC_REPLICAS_CONFIG, \"2\");\n+        cluster.createTopic(INPUT_TOPIC, NUM_PARTITIONS, (short) 3, topicConfigs);\n+        cluster.createTopic(OUTPUT_TOPIC, NUM_PARTITIONS, (short) 3, topicConfigs);\n+\n+        try (Producer<byte[], byte[]> producer = cluster.producer()) {\n+            for (int i = 0; i < numInputRecords; i++) {\n+                byte[] value = Integer.toString(i).getBytes(StandardCharsets.UTF_8);\n+                producer.send(new ProducerRecord<>(INPUT_TOPIC, value, value));\n+            }\n+            producer.flush();\n+        }\n+\n+        try (Consumer<byte[], byte[]> consumer = createConsumerAndSubscribe(\"myGroup\", INPUT_TOPIC, groupProtocol, false);\n+             Producer<byte[], byte[]> producer = cluster.producer(Map.of(\n+                 ProducerConfig.BATCH_SIZE_CONFIG, 512,\n+                 ProducerConfig.TRANSACTIONAL_ID_CONFIG, \"test-txn\"\n+             ))) {\n+            producer.initTransactions();\n+            BounceScheduler scheduler = new BounceScheduler();\n+            scheduler.start();\n+            try {\n+                int numMessagesProcessed = 0;\n+                int iteration = 0;\n+                while (numMessagesProcessed < numInputRecords) {\n+                    int toRead = Math.min(200, numInputRecords - numMessagesProcessed);\n+                    List<ConsumerRecord<byte[], byte[]>> records = ClientsTestUtils.consumeRecords(\n+                        consumer, toRead, Integer.MAX_VALUE, CONSUME_RECORD_TIMEOUT_MS);\n+\n+                    producer.beginTransaction();\n+                    boolean shouldAbort = iteration % 3 == 0;\n+                    for (ConsumerRecord<byte[], byte[]> record : records) {\n+                        ProducerRecord<byte[], byte[]> outputRecord = new ProducerRecord<>(OUTPUT_TOPIC, record.key(), record.value());\n+                        // Mark the intended outcome so the verifying consumer can detect any aborted records it receives.\n+                        outputRecord.headers().add(TRANSACTION_STATUS_HEADER,\n+                            (shouldAbort ? \"aborted\" : \"committed\").getBytes(StandardCharsets.UTF_8));\n+                        producer.send(outputRecord, new ErrorLoggingCallback(OUTPUT_TOPIC, record.key(), record.value(), true));\n+                    }\n+\n+                    Map<TopicPartition, OffsetAndMetadata> offsets = new HashMap<>();\n+                    for (TopicPartition partition : consumer.assignment()) {\n+                        offsets.put(partition, new OffsetAndMetadata(consumer.position(partition)));\n+                    }\n+                    producer.sendOffsetsToTransaction(offsets, consumer.groupMetadata());\n+\n+                    if (shouldAbort) {\n+                        producer.abortTransaction();\n+                        resetToCommittedPositions(consumer);\n+                    } else {\n+                        producer.commitTransaction();\n+                        numMessagesProcessed += records.size();\n+                    }\n+                    iteration++;\n+                }\n+            } finally {\n+                scheduler.shutdown();\n+            }\n+            assertNull(scheduler.failure, \"Broker bouncer failed\");\n+        }\n+\n+        try (Consumer<byte[], byte[]> consumer = createConsumerAndSubscribe(\"randomGroup\", OUTPUT_TOPIC, groupProtocol, true)) {\n+            Map<TopicPartition, List<Integer>> recordsByPartition = new HashMap<>();\n+            List<ConsumerRecord<byte[], byte[]>> records = ClientsTestUtils.consumeRecords(\n+                consumer, numInputRecords, Integer.MAX_VALUE, CONSUME_RECORD_TIMEOUT_MS);\n+            for (ConsumerRecord<byte[], byte[]> record : records) {\n+                var header = record.headers().lastHeader(TRANSACTION_STATUS_HEADER);\n+                assertNotNull(header, \"Expected a transaction status header\");\n+                assertEquals(\"committed\", new String(header.value(), StandardCharsets.UTF_8));\n+                TopicPartition partition = new TopicPartition(record.topic(), record.partition());\n+                recordsByPartition.computeIfAbsent(partition, __ -> new ArrayList<>())\n+                    .add(Integer.parseInt(new String(record.value(), StandardCharsets.UTF_8)));\n+            }\n+\n+            Set<Integer> recordSet = new HashSet<>();\n+            for (List<Integer> partitionValues : recordsByPartition.values()) {\n+                assertEquals(partitionValues.stream().sorted().collect(Collectors.toList()), partitionValues,\n+                    \"Out of order messages detected\");\n+                recordSet.addAll(partitionValues);\n+            }\n+            assertEquals(numInputRecords, records.size(), \"Unexpected number of committed records\");\n+            assertEquals(numInputRecords, recordSet.size());\n+            assertEquals(IntStream.range(0, numInputRecords).boxed().collect(Collectors.toSet()), recordSet);\n+        }\n+    }\n+\n+    private Consumer<byte[], byte[]> createConsumerAndSubscribe(\n+        String groupId,\n+        String topic,\n+        GroupProtocol groupProtocol,\n+        boolean readCommitted\n+    ) {\n+        Consumer<byte[], byte[]> consumer = cluster.consumer(Map.of(\n+            ConsumerConfig.GROUP_ID_CONFIG, groupId,\n+            ConsumerConfig.GROUP_PROTOCOL_CONFIG, groupProtocol.name(),\n+            ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, false,\n+            ConsumerConfig.ISOLATION_LEVEL_CONFIG, readCommitted ? \"read_committed\" : \"read_uncommitted\"\n+        ));\n+        consumer.subscribe(List.of(topic));\n+        return consumer;\n+    }\n+\n+    private void resetToCommittedPositions(Consumer<byte[], byte[]> consumer) {\n+        Map<TopicPartition, OffsetAndMetadata> committed = consumer.committed(consumer.assignment());\n+        for (TopicPartition partition : consumer.assignment()) {\n+            OffsetAndMetadata offset = committed.get(partition);\n+            if (offset == null) {\n+                consumer.seekToBeginning(List.of(partition));\n+            } else {\n+                consumer.seek(partition, offset.offset());\n+            }\n+        }\n+    }\n+\n+    private class BounceScheduler extends ShutdownableThread {\n+        private volatile Throwable failure;\n+\n+        BounceScheduler() {\n+            super(\"daemon-broker-bouncer\", false);\n+        }\n+\n+        @Override\n+        public void doWork() {\n+            try {\n+                for (int brokerId : cluster.brokerIds()) {\n+                    log.trace(\"Shutting down broker {}\", brokerId);\n+                    cluster.shutdownBroker(brokerId);\n+                    cluster.brokers().get(brokerId).awaitShutdown();\n+                    TimeUnit.MILLISECONDS.sleep(500);\n+                    cluster.startBroker(brokerId);\n+                    log.trace(\"Restarted broker {}\", brokerId);\n+                    TimeUnit.MILLISECONDS.sleep(500);\n+                }\n+                for (int partition = 0; partition < NUM_PARTITIONS; partition++) {\n+                    TopicPartition topicPartition = new TopicPartition(OUTPUT_TOPIC, partition);\n+                    TestUtils.waitForCondition(() -> cluster.getLeaderBrokerId(topicPartition) >= 0,",
+   "path": "clients/clients-integration-tests/src/test/java/org/apache/kafka/clients/producer/TransactionsBounceTest.java",
+   "commit_id": "303d6802fdc1a95e1f089f5c42b9b1963f534eee",
+   "original_commit_id": "303d6802fdc1a95e1f089f5c42b9b1963f534eee",
+   "user": {
+    "login": "muralibasani",
+    "id": 10197247,
+    "node_id": "MDQ6VXNlcjEwMTk3MjQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10197247?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/muralibasani",
+    "html_url": "https://github.com/muralibasani",
+    "followers_url": "https://api.github.com/users/muralibasani/followers",
+    "following_url": "https://api.github.com/users/muralibasani/following{/other_user}",
+    "gists_url": "https://api.github.com/users/muralibasani/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/muralibasani/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/muralibasani/subscriptions",
+    "organizations_url": "https://api.github.com/users/muralibasani/orgs",
+    "repos_url": "https://api.github.com/users/muralibasani/repos",
+    "events_url": "https://api.github.com/users/muralibasani/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/muralibasani/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "In this step, cluster.getLeaderBrokerId calls tp.leader().id() and it would throw null pointer, if partition has no leader. So waitForCondition can keep retrying and fails with generic assertion and \"No leader elected for \" never appears ?",
+   "created_at": "2026-10-21T20:07:45Z",
+   "updated_at": "2026-10-21T20:07:46Z",
+   "html_url": "https://github.com/apache/kafka/pull/23879#discussion_r4341422966",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23879",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4341422966"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23879#discussion_r4341422966"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23879"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4341422966/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": null,
+   "original_line": 233,
+   "side": "RIGHT",
+   "author_association": "COLLABORATOR",
+   "original_position": 233,
+   "position": 1,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4341528858",
+   "pull_request_review_id": 5605696121,
+   "id": 4341528858,
+   "node_id": "PRRC_kwDOACG9q88AAAABAsZ5Gg",
+   "diff_hunk": "@@ -0,0 +1,242 @@\n+/*\n+ * Licensed to the Apache Software Foundation (ASF) under one or more\n+ * contributor license agreements. See the NOTICE file distributed with\n+ * this work for additional information regarding copyright ownership.\n+ * The ASF licenses this file to You under the Apache License, Version 2.0\n+ * (the \"License\"); you may not use this file except in compliance with\n+ * the License. You may obtain a copy of the License at\n+ *\n+ *    http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n+\n+package org.apache.kafka.clients.producer;\n+\n+import org.apache.kafka.clients.ClientsTestUtils;\n+import org.apache.kafka.clients.consumer.Consumer;\n+import org.apache.kafka.clients.consumer.ConsumerConfig;\n+import org.apache.kafka.clients.consumer.ConsumerRecord;\n+import org.apache.kafka.clients.consumer.GroupProtocol;\n+import org.apache.kafka.clients.consumer.OffsetAndMetadata;\n+import org.apache.kafka.clients.producer.internals.ErrorLoggingCallback;\n+import org.apache.kafka.common.TopicPartition;\n+import org.apache.kafka.common.config.TopicConfig;\n+import org.apache.kafka.common.test.ClusterInstance;\n+import org.apache.kafka.common.test.api.ClusterConfigProperty;\n+import org.apache.kafka.common.test.api.ClusterTest;\n+import org.apache.kafka.common.test.api.ClusterTestDefaults;\n+import org.apache.kafka.common.test.api.Type;\n+import org.apache.kafka.coordinator.group.GroupCoordinatorConfig;\n+import org.apache.kafka.coordinator.transaction.TransactionLogConfig;\n+import org.apache.kafka.server.config.ReplicationConfigs;\n+import org.apache.kafka.server.config.ServerConfigs;\n+import org.apache.kafka.server.config.ServerLogConfigs;\n+import org.apache.kafka.server.util.ShutdownableThread;\n+import org.apache.kafka.test.TestUtils;\n+\n+import java.nio.charset.StandardCharsets;\n+import java.util.ArrayList;\n+import java.util.HashMap;\n+import java.util.HashSet;\n+import java.util.List;\n+import java.util.Map;\n+import java.util.Set;\n+import java.util.concurrent.TimeUnit;\n+import java.util.stream.Collectors;\n+import java.util.stream.IntStream;\n+\n+import static org.junit.jupiter.api.Assertions.assertEquals;\n+import static org.junit.jupiter.api.Assertions.assertNotNull;\n+import static org.junit.jupiter.api.Assertions.assertNull;\n+\n+@ClusterTestDefaults(\n+    types = {Type.KRAFT},\n+    brokers = 4,\n+    serverProperties = {\n+        @ClusterConfigProperty(key = ServerLogConfigs.AUTO_CREATE_TOPICS_ENABLE_CONFIG, value = \"false\"),\n+        @ClusterConfigProperty(key = ServerConfigs.MESSAGE_MAX_BYTES_CONFIG, value = \"32768\"),\n+        @ClusterConfigProperty(key = ServerConfigs.CONTROLLED_SHUTDOWN_ENABLE_CONFIG, value = \"true\"),\n+        @ClusterConfigProperty(key = ReplicationConfigs.AUTO_LEADER_REBALANCE_ENABLE_CONFIG, value = \"false\"),\n+        // Use fewer partitions for __consumer_offsets so topic creation and leader assignment do not take too long.\n+        @ClusterConfigProperty(key = GroupCoordinatorConfig.OFFSETS_TOPIC_PARTITIONS_CONFIG, value = \"1\"),\n+        @ClusterConfigProperty(key = TopicConfig.MIN_IN_SYNC_REPLICAS_CONFIG, value = \"2\"),\n+        // Allow a small session timeout.\n+        @ClusterConfigProperty(key = GroupCoordinatorConfig.GROUP_MIN_SESSION_TIMEOUT_MS_CONFIG, value = \"10\"),\n+        @ClusterConfigProperty(key = GroupCoordinatorConfig.GROUP_INITIAL_REBALANCE_DELAY_MS_CONFIG, value = \"0\"),\n+        @ClusterConfigProperty(key = TransactionLogConfig.TRANSACTIONS_TOPIC_PARTITIONS_CONFIG, value = \"1\"),\n+    }\n+)\n+public class TransactionsBounceTest {\n+    private static final int CONSUME_RECORD_TIMEOUT_MS = 30000;\n+    private static final int NUM_PARTITIONS = 3;\n+    private static final String OUTPUT_TOPIC = \"output-topic\";\n+    private static final String INPUT_TOPIC = \"input-topic\";\n+    private static final String TRANSACTION_STATUS_HEADER = \"transactionStatus\";\n+\n+    private final ClusterInstance cluster;\n+\n+    TransactionsBounceTest(ClusterInstance cluster) {\n+        this.cluster = cluster;\n+    }\n+\n+    @ClusterTest\n+    public void testWithGroupMetadataClassic() throws Exception {\n+        testBrokerFailure(GroupProtocol.CLASSIC);\n+    }\n+\n+    @ClusterTest\n+    public void testWithGroupMetadataConsumer() throws Exception {\n+        testBrokerFailure(GroupProtocol.CONSUMER);\n+    }\n+\n+    private void testBrokerFailure(GroupProtocol groupProtocol) throws Exception {\n+        // Seed a topic with 10000 records and copy it transactionally while constantly bouncing brokers.\n+        int numInputRecords = 10000;\n+        Map<String, String> topicConfigs = Map.of(TopicConfig.MIN_IN_SYNC_REPLICAS_CONFIG, \"2\");\n+        cluster.createTopic(INPUT_TOPIC, NUM_PARTITIONS, (short) 3, topicConfigs);\n+        cluster.createTopic(OUTPUT_TOPIC, NUM_PARTITIONS, (short) 3, topicConfigs);\n+\n+        try (Producer<byte[], byte[]> producer = cluster.producer()) {\n+            for (int i = 0; i < numInputRecords; i++) {\n+                byte[] value = Integer.toString(i).getBytes(StandardCharsets.UTF_8);\n+                producer.send(new ProducerRecord<>(INPUT_TOPIC, value, value));\n+            }\n+            producer.flush();\n+        }\n+\n+        try (Consumer<byte[], byte[]> consumer = createConsumerAndSubscribe(\"myGroup\", INPUT_TOPIC, groupProtocol, false);\n+             Producer<byte[], byte[]> producer = cluster.producer(Map.of(\n+                 ProducerConfig.BATCH_SIZE_CONFIG, 512,\n+                 ProducerConfig.TRANSACTIONAL_ID_CONFIG, \"test-txn\"\n+             ))) {\n+            producer.initTransactions();\n+            BounceScheduler scheduler = new BounceScheduler();\n+            scheduler.start();\n+            try {\n+                int numMessagesProcessed = 0;\n+                int iteration = 0;\n+                while (numMessagesProcessed < numInputRecords) {\n+                    int toRead = Math.min(200, numInputRecords - numMessagesProcessed);\n+                    List<ConsumerRecord<byte[], byte[]>> records = ClientsTestUtils.consumeRecords(\n+                        consumer, toRead, Integer.MAX_VALUE, CONSUME_RECORD_TIMEOUT_MS);\n+\n+                    producer.beginTransaction();\n+                    boolean shouldAbort = iteration % 3 == 0;\n+                    for (ConsumerRecord<byte[], byte[]> record : records) {\n+                        ProducerRecord<byte[], byte[]> outputRecord = new ProducerRecord<>(OUTPUT_TOPIC, record.key(), record.value());\n+                        // Mark the intended outcome so the verifying consumer can detect any aborted records it receives.\n+                        outputRecord.headers().add(TRANSACTION_STATUS_HEADER,",
+   "path": "clients/clients-integration-tests/src/test/java/org/apache/kafka/clients/producer/TransactionsBounceTest.java",
+   "commit_id": "303d6802fdc1a95e1f089f5c42b9b1963f534eee",
+   "original_commit_id": "303d6802fdc1a95e1f089f5c42b9b1963f534eee",
+   "user": {
+    "login": "muralibasani",
+    "id": 10197247,
+    "node_id": "MDQ6VXNlcjEwMTk3MjQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10197247?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/muralibasani",
+    "html_url": "https://github.com/muralibasani",
+    "followers_url": "https://api.github.com/users/muralibasani/followers",
+    "following_url": "https://api.github.com/users/muralibasani/following{/other_user}",
+    "gists_url": "https://api.github.com/users/muralibasani/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/muralibasani/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/muralibasani/subscriptions",
+    "organizations_url": "https://api.github.com/users/muralibasani/orgs",
+    "repos_url": "https://api.github.com/users/muralibasani/repos",
+    "events_url": "https://api.github.com/users/muralibasani/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/muralibasani/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "(nit) ProducerIdExpirationTest (part of same package) already has private copies of this header convention (HEADER_KEY/COMMITTED ...) \nWould it be worth moving them into ClientsTestUtils?",
+   "created_at": "2026-10-21T20:19:09Z",
+   "updated_at": "2026-10-21T20:19:09Z",
+   "html_url": "https://github.com/apache/kafka/pull/23879#discussion_r4341528858",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23879",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4341528858"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23879#discussion_r4341528858"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23879"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4341528858/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": null,
+   "original_line": 133,
+   "side": "RIGHT",
+   "author_association": "COLLABORATOR",
+   "original_position": 133,
+   "position": 1,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4380119872",
+   "pull_request_review_id": 5655926772,
+   "id": 4380119872,
+   "node_id": "PRRC_kwDOACG9q88AAAABBRNTQA",
+   "diff_hunk": "@@ -0,0 +1,248 @@\n+/*\n+ * Licensed to the Apache Software Foundation (ASF) under one or more\n+ * contributor license agreements. See the NOTICE file distributed with\n+ * this work for additional information regarding copyright ownership.\n+ * The ASF licenses this file to You under the Apache License, Version 2.0\n+ * (the \"License\"); you may not use this file except in compliance with\n+ * the License. You may obtain a copy of the License at\n+ *\n+ *    http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n+\n+package org.apache.kafka.clients.producer;\n+\n+import org.apache.kafka.clients.ClientsTestUtils;\n+import org.apache.kafka.clients.admin.Admin;\n+import org.apache.kafka.clients.consumer.Consumer;\n+import org.apache.kafka.clients.consumer.ConsumerConfig;\n+import org.apache.kafka.clients.consumer.ConsumerRecord;\n+import org.apache.kafka.clients.consumer.GroupProtocol;\n+import org.apache.kafka.clients.consumer.OffsetAndMetadata;\n+import org.apache.kafka.clients.producer.internals.ErrorLoggingCallback;\n+import org.apache.kafka.common.TopicPartition;\n+import org.apache.kafka.common.TopicPartitionInfo;\n+import org.apache.kafka.common.config.TopicConfig;\n+import org.apache.kafka.common.test.ClusterInstance;\n+import org.apache.kafka.common.test.api.ClusterConfigProperty;\n+import org.apache.kafka.common.test.api.ClusterTest;\n+import org.apache.kafka.common.test.api.ClusterTestDefaults;\n+import org.apache.kafka.common.test.api.Type;\n+import org.apache.kafka.coordinator.group.GroupCoordinatorConfig;\n+import org.apache.kafka.coordinator.transaction.TransactionLogConfig;\n+import org.apache.kafka.server.config.ReplicationConfigs;\n+import org.apache.kafka.server.config.ServerConfigs;\n+import org.apache.kafka.server.config.ServerLogConfigs;\n+import org.apache.kafka.server.util.ShutdownableThread;\n+import org.apache.kafka.test.TestUtils;\n+\n+import java.nio.charset.StandardCharsets;\n+import java.util.ArrayList;\n+import java.util.HashMap;\n+import java.util.HashSet;\n+import java.util.List;\n+import java.util.Map;\n+import java.util.Set;\n+import java.util.concurrent.TimeUnit;\n+import java.util.stream.Collectors;\n+import java.util.stream.IntStream;\n+\n+import static org.junit.jupiter.api.Assertions.assertEquals;\n+import static org.junit.jupiter.api.Assertions.assertNull;\n+\n+@ClusterTestDefaults(\n+    types = {Type.KRAFT},\n+    brokers = 4,\n+    serverProperties = {\n+        @ClusterConfigProperty(key = ServerLogConfigs.AUTO_CREATE_TOPICS_ENABLE_CONFIG, value = \"false\"),\n+        @ClusterConfigProperty(key = ServerConfigs.MESSAGE_MAX_BYTES_CONFIG, value = \"32768\"),\n+        @ClusterConfigProperty(key = ServerConfigs.CONTROLLED_SHUTDOWN_ENABLE_CONFIG, value = \"true\"),\n+        @ClusterConfigProperty(key = ReplicationConfigs.AUTO_LEADER_REBALANCE_ENABLE_CONFIG, value = \"false\"),\n+        // Use fewer partitions for __consumer_offsets so topic creation and leader assignment do not take too long.\n+        @ClusterConfigProperty(key = GroupCoordinatorConfig.OFFSETS_TOPIC_PARTITIONS_CONFIG, value = \"1\"),\n+        @ClusterConfigProperty(key = TopicConfig.MIN_IN_SYNC_REPLICAS_CONFIG, value = \"2\"),\n+        // Allow a small session timeout.\n+        @ClusterConfigProperty(key = GroupCoordinatorConfig.GROUP_MIN_SESSION_TIMEOUT_MS_CONFIG, value = \"10\"),\n+        @ClusterConfigProperty(key = GroupCoordinatorConfig.GROUP_INITIAL_REBALANCE_DELAY_MS_CONFIG, value = \"0\"),\n+        @ClusterConfigProperty(key = TransactionLogConfig.TRANSACTIONS_TOPIC_PARTITIONS_CONFIG, value = \"1\"),\n+    }\n+)\n+public class TransactionsBounceTest {\n+    private static final int CONSUME_RECORD_TIMEOUT_MS = 30000;\n+    private static final int NUM_PARTITIONS = 3;\n+    private static final String OUTPUT_TOPIC = \"output-topic\";\n+    private static final String INPUT_TOPIC = \"input-topic\";\n+\n+    private final ClusterInstance cluster;\n+\n+    TransactionsBounceTest(ClusterInstance cluster) {\n+        this.cluster = cluster;\n+    }\n+\n+    @ClusterTest\n+    public void testWithGroupMetadataClassic() throws Exception {\n+        testBrokerFailure(GroupProtocol.CLASSIC);\n+    }\n+\n+    @ClusterTest\n+    public void testWithGroupMetadataConsumer() throws Exception {\n+        testBrokerFailure(GroupProtocol.CONSUMER);\n+    }\n+\n+    private void testBrokerFailure(GroupProtocol groupProtocol) throws Exception {\n+        // Seed a topic with 10000 records and copy it transactionally while constantly bouncing brokers.\n+        int numInputRecords = 10000;\n+        Map<String, String> topicConfigs = Map.of(TopicConfig.MIN_IN_SYNC_REPLICAS_CONFIG, \"2\");\n+        cluster.createTopic(INPUT_TOPIC, NUM_PARTITIONS, (short) 3, topicConfigs);\n+        cluster.createTopic(OUTPUT_TOPIC, NUM_PARTITIONS, (short) 3, topicConfigs);\n+\n+        try (Producer<byte[], byte[]> producer = cluster.producer()) {\n+            for (int i = 0; i < numInputRecords; i++) {\n+                byte[] value = Integer.toString(i).getBytes(StandardCharsets.UTF_8);\n+                producer.send(new ProducerRecord<>(INPUT_TOPIC, value, value));\n+            }\n+            producer.flush();\n+        }\n+\n+        try (Consumer<byte[], byte[]> consumer = createConsumerAndSubscribe(\"myGroup\", INPUT_TOPIC, groupProtocol, false);\n+             Producer<byte[], byte[]> producer = cluster.producer(Map.of(\n+                 ProducerConfig.BATCH_SIZE_CONFIG, 512,\n+                 ProducerConfig.TRANSACTIONAL_ID_CONFIG, \"test-txn\"\n+             ))) {\n+            producer.initTransactions();\n+            BounceScheduler scheduler = new BounceScheduler();\n+            scheduler.start();\n+            try {\n+                int numMessagesProcessed = 0;\n+                int iteration = 0;\n+                while (numMessagesProcessed < numInputRecords) {\n+                    int toRead = Math.min(200, numInputRecords - numMessagesProcessed);\n+                    List<ConsumerRecord<byte[], byte[]>> records = ClientsTestUtils.consumeRecords(\n+                        consumer, toRead, Integer.MAX_VALUE, CONSUME_RECORD_TIMEOUT_MS);\n+\n+                    producer.beginTransaction();\n+                    boolean shouldAbort = iteration % 3 == 0;\n+                    for (ConsumerRecord<byte[], byte[]> record : records) {\n+                        ProducerRecord<byte[], byte[]> outputRecord = new ProducerRecord<>(OUTPUT_TOPIC, record.key(), record.value());\n+                        // Mark the intended outcome so the verifying consumer can detect any aborted records it receives.\n+                        outputRecord.headers().add(ClientsTestUtils.transactionStatusHeader(!shouldAbort));\n+                        producer.send(outputRecord, new ErrorLoggingCallback(OUTPUT_TOPIC, record.key(), record.value(), true));\n+                    }\n+\n+                    Map<TopicPartition, OffsetAndMetadata> offsets = new HashMap<>();\n+                    for (TopicPartition partition : consumer.assignment()) {\n+                        offsets.put(partition, new OffsetAndMetadata(consumer.position(partition)));\n+                    }\n+                    producer.sendOffsetsToTransaction(offsets, consumer.groupMetadata());\n+\n+                    if (shouldAbort) {\n+                        producer.abortTransaction();\n+                        resetToCommittedPositions(consumer);\n+                    } else {\n+                        producer.commitTransaction();\n+                        numMessagesProcessed += records.size();\n+                    }\n+                    iteration++;\n+                }\n+            } finally {\n+                scheduler.shutdown();\n+                assertNull(scheduler.failure, \"Broker bouncer failed\");\n+            }\n+        }\n+\n+        try (Consumer<byte[], byte[]> consumer = createConsumerAndSubscribe(\"randomGroup\", OUTPUT_TOPIC, groupProtocol, true)) {\n+            Map<TopicPartition, List<Integer>> recordsByPartition = new HashMap<>();\n+            List<ConsumerRecord<byte[], byte[]>> records = ClientsTestUtils.consumeRecords(\n+                consumer, numInputRecords, Integer.MAX_VALUE, CONSUME_RECORD_TIMEOUT_MS);\n+            for (ConsumerRecord<byte[], byte[]> record : records) {\n+                ClientsTestUtils.assertTransactionCommitted(record);\n+                TopicPartition partition = new TopicPartition(record.topic(), record.partition());\n+                recordsByPartition.computeIfAbsent(partition, __ -> new ArrayList<>())\n+                    .add(Integer.parseInt(new String(record.value(), StandardCharsets.UTF_8)));\n+            }\n+\n+            Set<Integer> recordSet = new HashSet<>();\n+            for (List<Integer> partitionValues : recordsByPartition.values()) {\n+                assertEquals(partitionValues.stream().sorted().collect(Collectors.toList()), partitionValues,\n+                    \"Out of order messages detected\");\n+                recordSet.addAll(partitionValues);\n+            }\n+            assertEquals(numInputRecords, records.size(), \"Unexpected number of committed records\");\n+            assertEquals(numInputRecords, recordSet.size());\n+            assertEquals(IntStream.range(0, numInputRecords).boxed().collect(Collectors.toSet()), recordSet);\n+        }\n+    }\n+\n+    private Consumer<byte[], byte[]> createConsumerAndSubscribe(\n+        String groupId,\n+        String topic,\n+        GroupProtocol groupProtocol,\n+        boolean readCommitted\n+    ) {\n+        Consumer<byte[], byte[]> consumer = cluster.consumer(Map.of(\n+            ConsumerConfig.GROUP_ID_CONFIG, groupId,\n+            ConsumerConfig.GROUP_PROTOCOL_CONFIG, groupProtocol.name(),\n+            ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, false,\n+            ConsumerConfig.ISOLATION_LEVEL_CONFIG, readCommitted ? \"read_committed\" : \"read_uncommitted\"\n+        ));\n+        consumer.subscribe(List.of(topic));\n+        return consumer;\n+    }\n+\n+    private void resetToCommittedPositions(Consumer<byte[], byte[]> consumer) {\n+        Map<TopicPartition, OffsetAndMetadata> committed = consumer.committed(consumer.assignment());\n+        for (TopicPartition partition : consumer.assignment()) {\n+            OffsetAndMetadata offset = committed.get(partition);\n+            if (offset == null) {\n+                consumer.seekToBeginning(List.of(partition));\n+            } else {\n+                consumer.seek(partition, offset.offset());\n+            }\n+        }\n+    }\n+\n+    private class BounceScheduler extends ShutdownableThread {",
+   "path": "clients/clients-integration-tests/src/test/java/org/apache/kafka/clients/producer/TransactionsBounceTest.java",
+   "commit_id": "3f9b36a00481a4f4ee9ab21878015700d1f4ae6b",
+   "original_commit_id": "3f9b36a00481a4f4ee9ab21878015700d1f4ae6b",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "Do we need `ShutdownableThread`? It seems we could simplify it with anonymous class.\n```java\nCompletableFuture<Void> bouncer = CompletableFuture.runAsync(() -> {\n    try (Admin admin = cluster.admin()) {\n        while (bouncing.get()) {\n            for (int brokerId : cluster.brokerIds()) {\n                cluster.shutdownBroker(brokerId);\n                cluster.brokers().get(brokerId).awaitShutdown();\n                TimeUnit.MILLISECONDS.sleep(500);\n                cluster.startBroker(brokerId);\n                TimeUnit.MILLISECONDS.sleep(500);\n            }\n            for (int partition = 0; partition < NUM_PARTITIONS; partition++) {\n                TopicPartition tp = new TopicPartition(OUTPUT_TOPIC, partition);\n                TestUtils.waitForCondition(() -> hasLeader(admin, tp), \"No leader elected for \" + tp);\n            }\n        }\n    } catch (Exception e) {\n        throw new RuntimeException(\"Broker bouncer failed\", e);\n    }\n});\n``` ",
+   "created_at": "2026-10-26T17:01:14Z",
+   "updated_at": "2026-10-26T17:01:14Z",
+   "html_url": "https://github.com/apache/kafka/pull/23879#discussion_r4380119872",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23879",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4380119872"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23879#discussion_r4380119872"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23879"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4380119872/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": null,
+   "original_line": 209,
+   "side": "RIGHT",
+   "author_association": "MEMBER",
+   "original_position": 209,
+   "position": 1,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4394077840",
+   "pull_request_review_id": 5674232778,
+   "id": 4394077840,
+   "node_id": "PRRC_kwDOACG9q88AAAABBehOkA",
+   "diff_hunk": "@@ -0,0 +1,235 @@\n+/*\n+ * Licensed to the Apache Software Foundation (ASF) under one or more\n+ * contributor license agreements. See the NOTICE file distributed with\n+ * this work for additional information regarding copyright ownership.\n+ * The ASF licenses this file to You under the Apache License, Version 2.0\n+ * (the \"License\"); you may not use this file except in compliance with\n+ * the License. You may obtain a copy of the License at\n+ *\n+ *    http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n+\n+package org.apache.kafka.clients.producer;\n+\n+import org.apache.kafka.clients.ClientsTestUtils;\n+import org.apache.kafka.clients.admin.Admin;\n+import org.apache.kafka.clients.consumer.Consumer;\n+import org.apache.kafka.clients.consumer.ConsumerConfig;\n+import org.apache.kafka.clients.consumer.ConsumerRecord;\n+import org.apache.kafka.clients.consumer.GroupProtocol;\n+import org.apache.kafka.clients.consumer.OffsetAndMetadata;\n+import org.apache.kafka.clients.producer.internals.ErrorLoggingCallback;\n+import org.apache.kafka.common.TopicPartition;\n+import org.apache.kafka.common.TopicPartitionInfo;\n+import org.apache.kafka.common.config.TopicConfig;\n+import org.apache.kafka.common.test.ClusterInstance;\n+import org.apache.kafka.common.test.api.ClusterConfigProperty;\n+import org.apache.kafka.common.test.api.ClusterTest;\n+import org.apache.kafka.common.test.api.ClusterTestDefaults;\n+import org.apache.kafka.common.test.api.Type;\n+import org.apache.kafka.coordinator.group.GroupCoordinatorConfig;\n+import org.apache.kafka.coordinator.transaction.TransactionLogConfig;\n+import org.apache.kafka.server.config.ReplicationConfigs;\n+import org.apache.kafka.server.config.ServerConfigs;\n+import org.apache.kafka.server.config.ServerLogConfigs;\n+import org.apache.kafka.test.TestUtils;\n+\n+import java.nio.charset.StandardCharsets;\n+import java.util.ArrayList;\n+import java.util.HashMap;\n+import java.util.HashSet;\n+import java.util.List;\n+import java.util.Map;\n+import java.util.Set;\n+import java.util.concurrent.CompletableFuture;\n+import java.util.concurrent.TimeUnit;\n+import java.util.concurrent.atomic.AtomicBoolean;\n+import java.util.stream.Collectors;\n+import java.util.stream.IntStream;\n+\n+import static org.junit.jupiter.api.Assertions.assertEquals;\n+\n+@ClusterTestDefaults(\n+    types = {Type.KRAFT},\n+    brokers = 4,\n+    serverProperties = {\n+        @ClusterConfigProperty(key = ServerLogConfigs.AUTO_CREATE_TOPICS_ENABLE_CONFIG, value = \"false\"),\n+        @ClusterConfigProperty(key = ServerConfigs.MESSAGE_MAX_BYTES_CONFIG, value = \"32768\"),\n+        @ClusterConfigProperty(key = ServerConfigs.CONTROLLED_SHUTDOWN_ENABLE_CONFIG, value = \"true\"),\n+        @ClusterConfigProperty(key = ReplicationConfigs.AUTO_LEADER_REBALANCE_ENABLE_CONFIG, value = \"false\"),\n+        // Use fewer partitions for __consumer_offsets so topic creation and leader assignment do not take too long.\n+        @ClusterConfigProperty(key = GroupCoordinatorConfig.OFFSETS_TOPIC_PARTITIONS_CONFIG, value = \"1\"),\n+        @ClusterConfigProperty(key = TopicConfig.MIN_IN_SYNC_REPLICAS_CONFIG, value = \"2\"),\n+        // Allow a small session timeout.\n+        @ClusterConfigProperty(key = GroupCoordinatorConfig.GROUP_MIN_SESSION_TIMEOUT_MS_CONFIG, value = \"10\"),\n+        @ClusterConfigProperty(key = GroupCoordinatorConfig.GROUP_INITIAL_REBALANCE_DELAY_MS_CONFIG, value = \"0\"),\n+        @ClusterConfigProperty(key = TransactionLogConfig.TRANSACTIONS_TOPIC_PARTITIONS_CONFIG, value = \"1\"),\n+    }\n+)\n+public class TransactionsBounceTest {\n+    private static final int CONSUME_RECORD_TIMEOUT_MS = 30000;\n+    private static final int NUM_PARTITIONS = 3;\n+    private static final String OUTPUT_TOPIC = \"output-topic\";\n+    private static final String INPUT_TOPIC = \"input-topic\";\n+\n+    private final ClusterInstance cluster;\n+\n+    TransactionsBounceTest(ClusterInstance cluster) {\n+        this.cluster = cluster;\n+    }\n+\n+    @ClusterTest\n+    public void testWithGroupMetadataClassic() throws Exception {\n+        testBrokerFailure(GroupProtocol.CLASSIC);\n+    }\n+\n+    @ClusterTest\n+    public void testWithGroupMetadataConsumer() throws Exception {\n+        testBrokerFailure(GroupProtocol.CONSUMER);\n+    }\n+\n+    private void testBrokerFailure(GroupProtocol groupProtocol) throws Exception {\n+        // Seed a topic with 10000 records and copy it transactionally while constantly bouncing brokers.\n+        int numInputRecords = 10000;\n+        Map<String, String> topicConfigs = Map.of(TopicConfig.MIN_IN_SYNC_REPLICAS_CONFIG, \"2\");\n+        cluster.createTopic(INPUT_TOPIC, NUM_PARTITIONS, (short) 3, topicConfigs);\n+        cluster.createTopic(OUTPUT_TOPIC, NUM_PARTITIONS, (short) 3, topicConfigs);\n+\n+        try (Producer<byte[], byte[]> producer = cluster.producer()) {\n+            for (int i = 0; i < numInputRecords; i++) {\n+                byte[] value = Integer.toString(i).getBytes(StandardCharsets.UTF_8);\n+                producer.send(new ProducerRecord<>(INPUT_TOPIC, value, value));\n+            }\n+            producer.flush();\n+        }\n+\n+        try (Consumer<byte[], byte[]> consumer = createConsumerAndSubscribe(\"myGroup\", INPUT_TOPIC, groupProtocol, false);\n+             Producer<byte[], byte[]> producer = cluster.producer(Map.of(\n+                 ProducerConfig.BATCH_SIZE_CONFIG, 512,\n+                 ProducerConfig.TRANSACTIONAL_ID_CONFIG, \"test-txn\"\n+             ))) {\n+            producer.initTransactions();\n+            AtomicBoolean bouncing = new AtomicBoolean(true);\n+            CompletableFuture<Void> bouncer = CompletableFuture.runAsync(() -> bounceBrokers(bouncing));\n+            try {\n+                int numMessagesProcessed = 0;\n+                int iteration = 0;\n+                while (numMessagesProcessed < numInputRecords) {\n+                    int toRead = Math.min(200, numInputRecords - numMessagesProcessed);\n+                    List<ConsumerRecord<byte[], byte[]>> records = ClientsTestUtils.consumeRecords(\n+                        consumer, toRead, Integer.MAX_VALUE, CONSUME_RECORD_TIMEOUT_MS);\n+\n+                    producer.beginTransaction();\n+                    boolean shouldAbort = iteration % 3 == 0;\n+                    for (ConsumerRecord<byte[], byte[]> record : records) {\n+                        ProducerRecord<byte[], byte[]> outputRecord = new ProducerRecord<>(OUTPUT_TOPIC, record.key(), record.value());\n+                        // Mark the intended outcome so the verifying consumer can detect any aborted records it receives.\n+                        outputRecord.headers().add(ClientsTestUtils.transactionStatusHeader(!shouldAbort));\n+                        producer.send(outputRecord, new ErrorLoggingCallback(OUTPUT_TOPIC, record.key(), record.value(), true));\n+                    }\n+\n+                    Map<TopicPartition, OffsetAndMetadata> offsets = new HashMap<>();\n+                    for (TopicPartition partition : consumer.assignment()) {\n+                        offsets.put(partition, new OffsetAndMetadata(consumer.position(partition)));\n+                    }\n+                    producer.sendOffsetsToTransaction(offsets, consumer.groupMetadata());\n+\n+                    if (shouldAbort) {\n+                        producer.abortTransaction();\n+                        resetToCommittedPositions(consumer);\n+                    } else {\n+                        producer.commitTransaction();\n+                        numMessagesProcessed += records.size();\n+                    }\n+                    iteration++;\n+                }\n+            } finally {\n+                bouncing.set(false);\n+                bouncer.get();\n+            }\n+        }\n+\n+        try (Consumer<byte[], byte[]> consumer = createConsumerAndSubscribe(\"randomGroup\", OUTPUT_TOPIC, groupProtocol, true)) {\n+            Map<TopicPartition, List<Integer>> recordsByPartition = new HashMap<>();\n+            List<ConsumerRecord<byte[], byte[]>> records = ClientsTestUtils.consumeRecords(\n+                consumer, numInputRecords, Integer.MAX_VALUE, CONSUME_RECORD_TIMEOUT_MS);\n+            for (ConsumerRecord<byte[], byte[]> record : records) {\n+                ClientsTestUtils.assertTransactionCommitted(record);\n+                TopicPartition partition = new TopicPartition(record.topic(), record.partition());\n+                recordsByPartition.computeIfAbsent(partition, __ -> new ArrayList<>())\n+                    .add(Integer.parseInt(new String(record.value(), StandardCharsets.UTF_8)));\n+            }\n+\n+            Set<Integer> recordSet = new HashSet<>();\n+            for (List<Integer> partitionValues : recordsByPartition.values()) {\n+                assertEquals(partitionValues.stream().sorted().collect(Collectors.toList()), partitionValues,\n+                    \"Out of order messages detected\");\n+                recordSet.addAll(partitionValues);\n+            }\n+            assertEquals(numInputRecords, records.size(), \"Unexpected number of committed records\");\n+            assertEquals(numInputRecords, recordSet.size());\n+            assertEquals(IntStream.range(0, numInputRecords).boxed().collect(Collectors.toSet()), recordSet);\n+        }\n+    }\n+\n+    private Consumer<byte[], byte[]> createConsumerAndSubscribe(\n+        String groupId,\n+        String topic,\n+        GroupProtocol groupProtocol,\n+        boolean readCommitted\n+    ) {\n+        Consumer<byte[], byte[]> consumer = cluster.consumer(Map.of(\n+            ConsumerConfig.GROUP_ID_CONFIG, groupId,\n+            ConsumerConfig.GROUP_PROTOCOL_CONFIG, groupProtocol.name(),\n+            ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, false,\n+            ConsumerConfig.ISOLATION_LEVEL_CONFIG, readCommitted ? \"read_committed\" : \"read_uncommitted\"\n+        ));\n+        consumer.subscribe(List.of(topic));\n+        return consumer;\n+    }\n+\n+    private void resetToCommittedPositions(Consumer<byte[], byte[]> consumer) {\n+        Map<TopicPartition, OffsetAndMetadata> committed = consumer.committed(consumer.assignment());\n+        for (TopicPartition partition : consumer.assignment()) {\n+            OffsetAndMetadata offset = committed.get(partition);\n+            if (offset == null) {\n+                consumer.seekToBeginning(List.of(partition));\n+            } else {\n+                consumer.seek(partition, offset.offset());\n+            }\n+        }\n+    }\n+\n+    private void bounceBrokers(AtomicBoolean bouncing) {\n+        try (Admin admin = cluster.admin()) {",
+   "path": "clients/clients-integration-tests/src/test/java/org/apache/kafka/clients/producer/TransactionsBounceTest.java",
+   "commit_id": "21ee625af377c8c6510b3e514416b4a544fcf6f8",
+   "original_commit_id": "21ee625af377c8c6510b3e514416b4a544fcf6f8",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "This looks like a small optimization, as the Scala version created a new admin for each loop. The fixed ports keep the admin working :)",
+   "created_at": "2026-10-27T20:59:13Z",
+   "updated_at": "2026-10-27T20:59:13Z",
+   "html_url": "https://github.com/apache/kafka/pull/23879#discussion_r4394077840",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23879",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4394077840"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23879#discussion_r4394077840"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23879"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4394077840/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": 210,
+   "original_line": 210,
+   "side": "RIGHT",
+   "author_association": "MEMBER",
+   "original_position": 210,
+   "position": 210,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  }
+ ],
+ "issue_comments": [
+  {
+   "url": "https://api.github.com/repos/apache/kafka/issues/comments/6445937237",
+   "html_url": "https://github.com/apache/kafka/pull/23879#issuecomment-6445937237",
+   "issue_url": "https://api.github.com/repos/apache/kafka/issues/23879",
+   "id": 6445937237,
+   "node_id": "IC_kwDOACG9q88AAAABgDUyVQ",
+   "user": {
+    "login": "m1a2st",
+    "id": 100591800,
+    "node_id": "U_kgDOBf7ouA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100591800?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/m1a2st",
+    "html_url": "https://github.com/m1a2st",
+    "followers_url": "https://api.github.com/users/m1a2st/followers",
+    "following_url": "https://api.github.com/users/m1a2st/following{/other_user}",
+    "gists_url": "https://api.github.com/users/m1a2st/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/m1a2st/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/m1a2st/subscriptions",
+    "organizations_url": "https://api.github.com/users/m1a2st/orgs",
+    "repos_url": "https://api.github.com/users/m1a2st/repos",
+    "events_url": "https://api.github.com/users/m1a2st/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/m1a2st/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "created_at": "2026-10-27T15:21:46Z",
+   "updated_at": "2026-10-27T15:21:46Z",
+   "body": "Thanks to @chia7712 and @muralibasani for the reviews. I've addressed all the comments.",
+   "author_association": "CONTRIBUTOR",
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/issues/comments/6445937237/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "performed_via_github_app": null,
+   "minimized": null
+  }
+ ],
+ "commits": [
+  {
+   "sha": "ffa6bedbf4dedd3ef8c4cf98ca34222ee0b06ed1",
+   "node_id": "C_kwDOLxDxStoAKGZmYTZiZWRiZjRkZWRkM2VmOGM0Y2Y5OGNhMzQyMjJlZTBiMDZlZDE",
+   "commit": {
+    "author": {
+     "name": "Ken Huang",
+     "email": "s7133700@gmail.com",
+     "date": "2026-10-20T07:18:09Z"
+    },
+    "committer": {
+     "name": "Ken Huang",
+     "email": "s7133700@gmail.com",
+     "date": "2026-10-20T07:18:09Z"
+    },
+    "message": "completed migration",
+    "tree": {
+     "sha": "ad62452238c501cb8d98de9293bc16fc144acc3a",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/ad62452238c501cb8d98de9293bc16fc144acc3a"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/ffa6bedbf4dedd3ef8c4cf98ca34222ee0b06ed1",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/ffa6bedbf4dedd3ef8c4cf98ca34222ee0b06ed1",
+   "html_url": "https://github.com/apache/kafka/commit/ffa6bedbf4dedd3ef8c4cf98ca34222ee0b06ed1",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/ffa6bedbf4dedd3ef8c4cf98ca34222ee0b06ed1/comments",
+   "author": {
+    "login": "m1a2st",
+    "id": 100591800,
+    "node_id": "U_kgDOBf7ouA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100591800?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/m1a2st",
+    "html_url": "https://github.com/m1a2st",
+    "followers_url": "https://api.github.com/users/m1a2st/followers",
+    "following_url": "https://api.github.com/users/m1a2st/following{/other_user}",
+    "gists_url": "https://api.github.com/users/m1a2st/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/m1a2st/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/m1a2st/subscriptions",
+    "organizations_url": "https://api.github.com/users/m1a2st/orgs",
+    "repos_url": "https://api.github.com/users/m1a2st/repos",
+    "events_url": "https://api.github.com/users/m1a2st/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/m1a2st/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "m1a2st",
+    "id": 100591800,
+    "node_id": "U_kgDOBf7ouA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100591800?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/m1a2st",
+    "html_url": "https://github.com/m1a2st",
+    "followers_url": "https://api.github.com/users/m1a2st/followers",
+    "following_url": "https://api.github.com/users/m1a2st/following{/other_user}",
+    "gists_url": "https://api.github.com/users/m1a2st/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/m1a2st/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/m1a2st/subscriptions",
+    "organizations_url": "https://api.github.com/users/m1a2st/orgs",
+    "repos_url": "https://api.github.com/users/m1a2st/repos",
+    "events_url": "https://api.github.com/users/m1a2st/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/m1a2st/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "f2f91b11706804181cbee2e0fd9807b18e92dad6",
+     "url": "https://api.github.com/repos/apache/kafka/commits/f2f91b11706804181cbee2e0fd9807b18e92dad6",
+     "html_url": "https://github.com/apache/kafka/commit/f2f91b11706804181cbee2e0fd9807b18e92dad6"
+    }
+   ]
+  },
+  {
+   "sha": "303d6802fdc1a95e1f089f5c42b9b1963f534eee",
+   "node_id": "C_kwDOLxDxStoAKDMwM2Q2ODAyZmRjMWE5NWUxZjA4OWY1YzQyYjliMTk2M2Y1MzRlZWU",
+   "commit": {
+    "author": {
+     "name": "Ken Huang",
+     "email": "s7133700@gmail.com",
+     "date": "2026-10-20T08:26:56Z"
+    },
+    "committer": {
+     "name": "Ken Huang",
+     "email": "s7133700@gmail.com",
+     "date": "2026-10-20T08:26:56Z"
+    },
+    "message": "remove unused import",
+    "tree": {
+     "sha": "e19670c67679d8d1e3b221ac6983c86860daff0b",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/e19670c67679d8d1e3b221ac6983c86860daff0b"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/303d6802fdc1a95e1f089f5c42b9b1963f534eee",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/303d6802fdc1a95e1f089f5c42b9b1963f534eee",
+   "html_url": "https://github.com/apache/kafka/commit/303d6802fdc1a95e1f089f5c42b9b1963f534eee",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/303d6802fdc1a95e1f089f5c42b9b1963f534eee/comments",
+   "author": {
+    "login": "m1a2st",
+    "id": 100591800,
+    "node_id": "U_kgDOBf7ouA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100591800?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/m1a2st",
+    "html_url": "https://github.com/m1a2st",
+    "followers_url": "https://api.github.com/users/m1a2st/followers",
+    "following_url": "https://api.github.com/users/m1a2st/following{/other_user}",
+    "gists_url": "https://api.github.com/users/m1a2st/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/m1a2st/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/m1a2st/subscriptions",
+    "organizations_url": "https://api.github.com/users/m1a2st/orgs",
+    "repos_url": "https://api.github.com/users/m1a2st/repos",
+    "events_url": "https://api.github.com/users/m1a2st/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/m1a2st/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "m1a2st",
+    "id": 100591800,
+    "node_id": "U_kgDOBf7ouA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100591800?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/m1a2st",
+    "html_url": "https://github.com/m1a2st",
+    "followers_url": "https://api.github.com/users/m1a2st/followers",
+    "following_url": "https://api.github.com/users/m1a2st/following{/other_user}",
+    "gists_url": "https://api.github.com/users/m1a2st/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/m1a2st/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/m1a2st/subscriptions",
+    "organizations_url": "https://api.github.com/users/m1a2st/orgs",
+    "repos_url": "https://api.github.com/users/m1a2st/repos",
+    "events_url": "https://api.github.com/users/m1a2st/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/m1a2st/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "ffa6bedbf4dedd3ef8c4cf98ca34222ee0b06ed1",
+     "url": "https://api.github.com/repos/apache/kafka/commits/ffa6bedbf4dedd3ef8c4cf98ca34222ee0b06ed1",
+     "html_url": "https://github.com/apache/kafka/commit/ffa6bedbf4dedd3ef8c4cf98ca34222ee0b06ed1"
+    }
+   ]
+  },
+  {
+   "sha": "3f9b36a00481a4f4ee9ab21878015700d1f4ae6b",
+   "node_id": "C_kwDOLxDxStoAKDNmOWIzNmEwMDQ4MWE0ZjRlZTlhYjIxODc4MDE1NzAwZDFmNGFlNmI",
+   "commit": {
+    "author": {
+     "name": "m1a2st",
+     "email": "s7133700@gmail.com",
+     "date": "2026-10-22T15:09:15Z"
+    },
+    "committer": {
+     "name": "m1a2st",
+     "email": "s7133700@gmail.com",
+     "date": "2026-10-22T15:09:15Z"
+    },
+    "message": "addressed by comment",
+    "tree": {
+     "sha": "960ef3a7f9c7d7b1224083e3a6a45877a5dfc87e",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/960ef3a7f9c7d7b1224083e3a6a45877a5dfc87e"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/3f9b36a00481a4f4ee9ab21878015700d1f4ae6b",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/3f9b36a00481a4f4ee9ab21878015700d1f4ae6b",
+   "html_url": "https://github.com/apache/kafka/commit/3f9b36a00481a4f4ee9ab21878015700d1f4ae6b",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/3f9b36a00481a4f4ee9ab21878015700d1f4ae6b/comments",
+   "author": {
+    "login": "m1a2st",
+    "id": 100591800,
+    "node_id": "U_kgDOBf7ouA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100591800?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/m1a2st",
+    "html_url": "https://github.com/m1a2st",
+    "followers_url": "https://api.github.com/users/m1a2st/followers",
+    "following_url": "https://api.github.com/users/m1a2st/following{/other_user}",
+    "gists_url": "https://api.github.com/users/m1a2st/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/m1a2st/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/m1a2st/subscriptions",
+    "organizations_url": "https://api.github.com/users/m1a2st/orgs",
+    "repos_url": "https://api.github.com/users/m1a2st/repos",
+    "events_url": "https://api.github.com/users/m1a2st/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/m1a2st/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "m1a2st",
+    "id": 100591800,
+    "node_id": "U_kgDOBf7ouA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100591800?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/m1a2st",
+    "html_url": "https://github.com/m1a2st",
+    "followers_url": "https://api.github.com/users/m1a2st/followers",
+    "following_url": "https://api.github.com/users/m1a2st/following{/other_user}",
+    "gists_url": "https://api.github.com/users/m1a2st/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/m1a2st/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/m1a2st/subscriptions",
+    "organizations_url": "https://api.github.com/users/m1a2st/orgs",
+    "repos_url": "https://api.github.com/users/m1a2st/repos",
+    "events_url": "https://api.github.com/users/m1a2st/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/m1a2st/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "303d6802fdc1a95e1f089f5c42b9b1963f534eee",
+     "url": "https://api.github.com/repos/apache/kafka/commits/303d6802fdc1a95e1f089f5c42b9b1963f534eee",
+     "html_url": "https://github.com/apache/kafka/commit/303d6802fdc1a95e1f089f5c42b9b1963f534eee"
+    }
+   ]
+  },
+  {
+   "sha": "699671474ee09eb471d82462bf8e155caa097211",
+   "node_id": "C_kwDOLxDxStoAKDY5OTY3MTQ3NGVlMDllYjQ3MWQ4MjQ2MmJmOGUxNTVjYWEwOTcyMTE",
+   "commit": {
+    "author": {
+     "name": "m1a2st",
+     "email": "s7133700@gmail.com",
+     "date": "2026-10-27T15:20:10Z"
+    },
+    "committer": {
+     "name": "m1a2st",
+     "email": "s7133700@gmail.com",
+     "date": "2026-10-27T15:20:10Z"
+    },
+    "message": "addressed by comment",
+    "tree": {
+     "sha": "3cb75a5660d12ccaaeca9408fda9447f526b5320",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/3cb75a5660d12ccaaeca9408fda9447f526b5320"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/699671474ee09eb471d82462bf8e155caa097211",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/699671474ee09eb471d82462bf8e155caa097211",
+   "html_url": "https://github.com/apache/kafka/commit/699671474ee09eb471d82462bf8e155caa097211",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/699671474ee09eb471d82462bf8e155caa097211/comments",
+   "author": {
+    "login": "m1a2st",
+    "id": 100591800,
+    "node_id": "U_kgDOBf7ouA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100591800?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/m1a2st",
+    "html_url": "https://github.com/m1a2st",
+    "followers_url": "https://api.github.com/users/m1a2st/followers",
+    "following_url": "https://api.github.com/users/m1a2st/following{/other_user}",
+    "gists_url": "https://api.github.com/users/m1a2st/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/m1a2st/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/m1a2st/subscriptions",
+    "organizations_url": "https://api.github.com/users/m1a2st/orgs",
+    "repos_url": "https://api.github.com/users/m1a2st/repos",
+    "events_url": "https://api.github.com/users/m1a2st/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/m1a2st/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "m1a2st",
+    "id": 100591800,
+    "node_id": "U_kgDOBf7ouA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100591800?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/m1a2st",
+    "html_url": "https://github.com/m1a2st",
+    "followers_url": "https://api.github.com/users/m1a2st/followers",
+    "following_url": "https://api.github.com/users/m1a2st/following{/other_user}",
+    "gists_url": "https://api.github.com/users/m1a2st/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/m1a2st/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/m1a2st/subscriptions",
+    "organizations_url": "https://api.github.com/users/m1a2st/orgs",
+    "repos_url": "https://api.github.com/users/m1a2st/repos",
+    "events_url": "https://api.github.com/users/m1a2st/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/m1a2st/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "3f9b36a00481a4f4ee9ab21878015700d1f4ae6b",
+     "url": "https://api.github.com/repos/apache/kafka/commits/3f9b36a00481a4f4ee9ab21878015700d1f4ae6b",
+     "html_url": "https://github.com/apache/kafka/commit/3f9b36a00481a4f4ee9ab21878015700d1f4ae6b"
+    }
+   ]
+  },
+  {
+   "sha": "21ee625af377c8c6510b3e514416b4a544fcf6f8",
+   "node_id": "C_kwDOLxDxStoAKDIxZWU2MjVhZjM3N2M4YzY1MTBiM2U1MTQ0MTZiNGE1NDRmY2Y2Zjg",
+   "commit": {
+    "author": {
+     "name": "m1a2st",
+     "email": "s7133700@gmail.com",
+     "date": "2026-10-27T15:20:32Z"
+    },
+    "committer": {
+     "name": "m1a2st",
+     "email": "s7133700@gmail.com",
+     "date": "2026-10-27T15:20:32Z"
+    },
+    "message": "Merge branch 'trunk' into KAFKA-19042-11",
+    "tree": {
+     "sha": "b150bea8eff26f5728d5133103d349514b9c1133",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/b150bea8eff26f5728d5133103d349514b9c1133"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/21ee625af377c8c6510b3e514416b4a544fcf6f8",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/21ee625af377c8c6510b3e514416b4a544fcf6f8",
+   "html_url": "https://github.com/apache/kafka/commit/21ee625af377c8c6510b3e514416b4a544fcf6f8",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/21ee625af377c8c6510b3e514416b4a544fcf6f8/comments",
+   "author": {
+    "login": "m1a2st",
+    "id": 100591800,
+    "node_id": "U_kgDOBf7ouA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100591800?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/m1a2st",
+    "html_url": "https://github.com/m1a2st",
+    "followers_url": "https://api.github.com/users/m1a2st/followers",
+    "following_url": "https://api.github.com/users/m1a2st/following{/other_user}",
+    "gists_url": "https://api.github.com/users/m1a2st/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/m1a2st/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/m1a2st/subscriptions",
+    "organizations_url": "https://api.github.com/users/m1a2st/orgs",
+    "repos_url": "https://api.github.com/users/m1a2st/repos",
+    "events_url": "https://api.github.com/users/m1a2st/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/m1a2st/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "m1a2st",
+    "id": 100591800,
+    "node_id": "U_kgDOBf7ouA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100591800?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/m1a2st",
+    "html_url": "https://github.com/m1a2st",
+    "followers_url": "https://api.github.com/users/m1a2st/followers",
+    "following_url": "https://api.github.com/users/m1a2st/following{/other_user}",
+    "gists_url": "https://api.github.com/users/m1a2st/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/m1a2st/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/m1a2st/subscriptions",
+    "organizations_url": "https://api.github.com/users/m1a2st/orgs",
+    "repos_url": "https://api.github.com/users/m1a2st/repos",
+    "events_url": "https://api.github.com/users/m1a2st/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/m1a2st/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "699671474ee09eb471d82462bf8e155caa097211",
+     "url": "https://api.github.com/repos/apache/kafka/commits/699671474ee09eb471d82462bf8e155caa097211",
+     "html_url": "https://github.com/apache/kafka/commit/699671474ee09eb471d82462bf8e155caa097211"
+    },
+    {
+     "sha": "203b877ff2a2142b1619b64a317c210ca9f05601",
+     "url": "https://api.github.com/repos/apache/kafka/commits/203b877ff2a2142b1619b64a317c210ca9f05601",
+     "html_url": "https://github.com/apache/kafka/commit/203b877ff2a2142b1619b64a317c210ca9f05601"
+    }
+   ]
+  }
+ ],
+ "files": [
+  {
+   "sha": "e338b43fe2105959eb668a1713f82550026c8b9d",
+   "filename": "clients/clients-integration-tests/src/test/java/org/apache/kafka/clients/ClientsTestUtils.java",
+   "status": "modified",
+   "additions": 17,
+   "deletions": 0,
+   "changes": 17,
+   "blob_url": "https://github.com/apache/kafka/blob/21ee625af377c8c6510b3e514416b4a544fcf6f8/clients%2Fclients-integration-tests%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2FClientsTestUtils.java",
+   "raw_url": "https://github.com/apache/kafka/raw/21ee625af377c8c6510b3e514416b4a544fcf6f8/clients%2Fclients-integration-tests%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2FClientsTestUtils.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fclients-integration-tests%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2FClientsTestUtils.java?ref=21ee625af377c8c6510b3e514416b4a544fcf6f8",
+   "patch": "@@ -29,13 +29,16 @@\n import org.apache.kafka.common.ClusterResourceListener;\n import org.apache.kafka.common.PartitionInfo;\n import org.apache.kafka.common.TopicPartition;\n+import org.apache.kafka.common.header.Header;\n+import org.apache.kafka.common.header.internals.RecordHeader;\n import org.apache.kafka.common.internals.Topic;\n import org.apache.kafka.common.record.TimestampType;\n import org.apache.kafka.common.serialization.Deserializer;\n import org.apache.kafka.common.serialization.Serializer;\n import org.apache.kafka.common.test.ClusterInstance;\n import org.apache.kafka.test.TestUtils;\n \n+import java.nio.charset.StandardCharsets;\n import java.time.Duration;\n import java.util.ArrayList;\n import java.util.Collection;\n@@ -53,6 +56,7 @@\n import static org.apache.kafka.clients.consumer.ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG;\n import static org.apache.kafka.clients.producer.ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG;\n import static org.apache.kafka.clients.producer.ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG;\n+import static org.junit.jupiter.api.Assertions.assertArrayEquals;\n import static org.junit.jupiter.api.Assertions.assertEquals;\n import static org.junit.jupiter.api.Assertions.assertNotEquals;\n import static org.junit.jupiter.api.Assertions.assertNotNull;\n@@ -62,6 +66,9 @@ public class ClientsTestUtils {\n \n     private static final String KEY_PREFIX = \"key \";\n     private static final String VALUE_PREFIX = \"value \";\n+    private static final String TRANSACTION_STATUS_HEADER_KEY = \"transactionStatus\";\n+    private static final byte[] COMMITTED_VALUE = \"committed\".getBytes(StandardCharsets.UTF_8);\n+    private static final byte[] ABORTED_VALUE = \"aborted\".getBytes(StandardCharsets.UTF_8);\n \n     private ClientsTestUtils() {}\n \n@@ -369,6 +376,16 @@ public static void waitForPollThrowException(\n         }, \"Continuous poll not fail\");\n     }\n \n+    public static Header transactionStatusHeader(boolean willBeCommitted) {\n+        return new RecordHeader(TRANSACTION_STATUS_HEADER_KEY, willBeCommitted ? COMMITTED_VALUE : ABORTED_VALUE);\n+    }\n+\n+    public static void assertTransactionCommitted(ConsumerRecord<?, ?> record) {\n+        Header header = record.headers().lastHeader(TRANSACTION_STATUS_HEADER_KEY);\n+        assertNotNull(header, \"Expected transaction status header\");\n+        assertArrayEquals(COMMITTED_VALUE, header.value(), \"Expected committed status\");\n+    }\n+\n     /**\n      * This class is intended to replace the test cases in BaseConsumerTest.scala.\n      * When converting tests that extend from BaseConsumerTest.scala to Java,"
+  },
+  {
+   "sha": "97a0ebfcb53245e83b8f3dc971f28876b7c02a65",
+   "filename": "clients/clients-integration-tests/src/test/java/org/apache/kafka/clients/producer/ProducerIdExpirationTest.java",
+   "status": "modified",
+   "additions": 4,
+   "deletions": 13,
+   "changes": 17,
+   "blob_url": "https://github.com/apache/kafka/blob/21ee625af377c8c6510b3e514416b4a544fcf6f8/clients%2Fclients-integration-tests%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fproducer%2FProducerIdExpirationTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/21ee625af377c8c6510b3e514416b4a544fcf6f8/clients%2Fclients-integration-tests%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fproducer%2FProducerIdExpirationTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fclients-integration-tests%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fproducer%2FProducerIdExpirationTest.java?ref=21ee625af377c8c6510b3e514416b4a544fcf6f8",
+   "patch": "@@ -30,7 +30,6 @@\n import org.apache.kafka.common.config.ConfigResource;\n import org.apache.kafka.common.errors.InvalidPidMappingException;\n import org.apache.kafka.common.errors.TransactionalIdNotFoundException;\n-import org.apache.kafka.common.header.internals.RecordHeader;\n import org.apache.kafka.common.test.ClusterInstance;\n import org.apache.kafka.common.test.api.ClusterConfigProperty;\n import org.apache.kafka.common.test.api.ClusterTest;\n@@ -49,7 +48,9 @@\n import java.util.concurrent.Future;\n import java.util.concurrent.TimeUnit;\n \n+import static org.apache.kafka.clients.ClientsTestUtils.assertTransactionCommitted;\n import static org.apache.kafka.clients.ClientsTestUtils.consumeRecords;\n+import static org.apache.kafka.clients.ClientsTestUtils.transactionStatusHeader;\n import static org.apache.kafka.clients.consumer.ConsumerConfig.ISOLATION_LEVEL_CONFIG;\n import static org.apache.kafka.clients.producer.ProducerConfig.ENABLE_IDEMPOTENCE_CONFIG;\n import static org.apache.kafka.coordinator.group.GroupCoordinatorConfig.GROUP_INITIAL_REBALANCE_DELAY_MS_CONFIG;\n@@ -68,11 +69,9 @@\n import static org.apache.kafka.test.TestUtils.DEFAULT_MAX_WAIT_MS;\n import static org.apache.kafka.test.TestUtils.assertFutureThrows;\n import static org.apache.kafka.test.TestUtils.waitForCondition;\n-import static org.junit.jupiter.api.Assertions.assertArrayEquals;\n import static org.junit.jupiter.api.Assertions.assertEquals;\n import static org.junit.jupiter.api.Assertions.assertFalse;\n import static org.junit.jupiter.api.Assertions.assertThrows;\n-import static org.junit.jupiter.api.Assertions.assertTrue;\n \n @ClusterTestDefaults(\n     brokers = 3,\n@@ -100,10 +99,6 @@\n     }\n )\n public class ProducerIdExpirationTest {\n-    private static final String HEADER_KEY = \"transactionStatus\";\n-    private static final byte[] COMMITTED_VALUE = \"committed\".getBytes(StandardCharsets.UTF_8);\n-    private static final byte[] ABORTED_VALUE = \"aborted\".getBytes(StandardCharsets.UTF_8);\n-\n     private final String topic1 = \"topic1\";\n     private final int numPartitions = 1;\n     private final short replicationFactor = 3;\n@@ -310,18 +305,14 @@ private static ProducerRecord<byte[], byte[]> producerRecordWithExpectedTransact\n         String value,\n         boolean willBeCommitted\n     ) {\n-        var header = new RecordHeader(HEADER_KEY, willBeCommitted ? COMMITTED_VALUE : ABORTED_VALUE);\n         return new ProducerRecord<>(topic, partition,\n             key.getBytes(StandardCharsets.UTF_8),\n             value.getBytes(StandardCharsets.UTF_8),\n-            Collections.singleton(header));\n+            Collections.singleton(transactionStatusHeader(willBeCommitted)));\n     }\n \n     private static String assertCommittedAndGetValue(ConsumerRecord<byte[], byte[]> record) {\n-        var headers = record.headers().headers(HEADER_KEY).iterator();\n-        assertTrue(headers.hasNext(), \"Expected transaction status header\");\n-        var header = headers.next();\n-        assertArrayEquals(COMMITTED_VALUE, header.value(), \"Expected committed status\");\n+        assertTransactionCommitted(record);\n         return new String(record.value(), StandardCharsets.UTF_8);\n     }\n "
+  },
+  {
+   "sha": "490668f8163a6b455fc52889c8f38da9ee8508e2",
+   "filename": "clients/clients-integration-tests/src/test/java/org/apache/kafka/clients/producer/TransactionsBounceTest.java",
+   "status": "added",
+   "additions": 235,
+   "deletions": 0,
+   "changes": 235,
+   "blob_url": "https://github.com/apache/kafka/blob/21ee625af377c8c6510b3e514416b4a544fcf6f8/clients%2Fclients-integration-tests%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fproducer%2FTransactionsBounceTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/21ee625af377c8c6510b3e514416b4a544fcf6f8/clients%2Fclients-integration-tests%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fproducer%2FTransactionsBounceTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fclients-integration-tests%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fproducer%2FTransactionsBounceTest.java?ref=21ee625af377c8c6510b3e514416b4a544fcf6f8",
+   "patch": "@@ -0,0 +1,235 @@\n+/*\n+ * Licensed to the Apache Software Foundation (ASF) under one or more\n+ * contributor license agreements. See the NOTICE file distributed with\n+ * this work for additional information regarding copyright ownership.\n+ * The ASF licenses this file to You under the Apache License, Version 2.0\n+ * (the \"License\"); you may not use this file except in compliance with\n+ * the License. You may obtain a copy of the License at\n+ *\n+ *    http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n+\n+package org.apache.kafka.clients.producer;\n+\n+import org.apache.kafka.clients.ClientsTestUtils;\n+import org.apache.kafka.clients.admin.Admin;\n+import org.apache.kafka.clients.consumer.Consumer;\n+import org.apache.kafka.clients.consumer.ConsumerConfig;\n+import org.apache.kafka.clients.consumer.ConsumerRecord;\n+import org.apache.kafka.clients.consumer.GroupProtocol;\n+import org.apache.kafka.clients.consumer.OffsetAndMetadata;\n+import org.apache.kafka.clients.producer.internals.ErrorLoggingCallback;\n+import org.apache.kafka.common.TopicPartition;\n+import org.apache.kafka.common.TopicPartitionInfo;\n+import org.apache.kafka.common.config.TopicConfig;\n+import org.apache.kafka.common.test.ClusterInstance;\n+import org.apache.kafka.common.test.api.ClusterConfigProperty;\n+import org.apache.kafka.common.test.api.ClusterTest;\n+import org.apache.kafka.common.test.api.ClusterTestDefaults;\n+import org.apache.kafka.common.test.api.Type;\n+import org.apache.kafka.coordinator.group.GroupCoordinatorConfig;\n+import org.apache.kafka.coordinator.transaction.TransactionLogConfig;\n+import org.apache.kafka.server.config.ReplicationConfigs;\n+import org.apache.kafka.server.config.ServerConfigs;\n+import org.apache.kafka.server.config.ServerLogConfigs;\n+import org.apache.kafka.test.TestUtils;\n+\n+import java.nio.charset.StandardCharsets;\n+import java.util.ArrayList;\n+import java.util.HashMap;\n+import java.util.HashSet;\n+import java.util.List;\n+import java.util.Map;\n+import java.util.Set;\n+import java.util.concurrent.CompletableFuture;\n+import java.util.concurrent.TimeUnit;\n+import java.util.concurrent.atomic.AtomicBoolean;\n+import java.util.stream.Collectors;\n+import java.util.stream.IntStream;\n+\n+import static org.junit.jupiter.api.Assertions.assertEquals;\n+\n+@ClusterTestDefaults(\n+    types = {Type.KRAFT},\n+    brokers = 4,\n+    serverProperties = {\n+        @ClusterConfigProperty(key = ServerLogConfigs.AUTO_CREATE_TOPICS_ENABLE_CONFIG, value = \"false\"),\n+        @ClusterConfigProperty(key = ServerConfigs.MESSAGE_MAX_BYTES_CONFIG, value = \"32768\"),\n+        @ClusterConfigProperty(key = ServerConfigs.CONTROLLED_SHUTDOWN_ENABLE_CONFIG, value = \"true\"),\n+        @ClusterConfigProperty(key = ReplicationConfigs.AUTO_LEADER_REBALANCE_ENABLE_CONFIG, value = \"false\"),\n+        // Use fewer partitions for __consumer_offsets so topic creation and leader assignment do not take too long.\n+        @ClusterConfigProperty(key = GroupCoordinatorConfig.OFFSETS_TOPIC_PARTITIONS_CONFIG, value = \"1\"),\n+        @ClusterConfigProperty(key = TopicConfig.MIN_IN_SYNC_REPLICAS_CONFIG, value = \"2\"),\n+        // Allow a small session timeout.\n+        @ClusterConfigProperty(key = GroupCoordinatorConfig.GROUP_MIN_SESSION_TIMEOUT_MS_CONFIG, value = \"10\"),\n+        @ClusterConfigProperty(key = GroupCoordinatorConfig.GROUP_INITIAL_REBALANCE_DELAY_MS_CONFIG, value = \"0\"),\n+        @ClusterConfigProperty(key = TransactionLogConfig.TRANSACTIONS_TOPIC_PARTITIONS_CONFIG, value = \"1\"),\n+    }\n+)\n+public class TransactionsBounceTest {\n+    private static final int CONSUME_RECORD_TIMEOUT_MS = 30000;\n+    private static final int NUM_PARTITIONS = 3;\n+    private static final String OUTPUT_TOPIC = \"output-topic\";\n+    private static final String INPUT_TOPIC = \"input-topic\";\n+\n+    private final ClusterInstance cluster;\n+\n+    TransactionsBounceTest(ClusterInstance cluster) {\n+        this.cluster = cluster;\n+    }\n+\n+    @ClusterTest\n+    public void testWithGroupMetadataClassic() throws Exception {\n+        testBrokerFailure(GroupProtocol.CLASSIC);\n+    }\n+\n+    @ClusterTest\n+    public void testWithGroupMetadataConsumer() throws Exception {\n+        testBrokerFailure(GroupProtocol.CONSUMER);\n+    }\n+\n+    private void testBrokerFailure(GroupProtocol groupProtocol) throws Exception {\n+        // Seed a topic with 10000 records and copy it transactionally while constantly bouncing brokers.\n+        int numInputRecords = 10000;\n+        Map<String, String> topicConfigs = Map.of(TopicConfig.MIN_IN_SYNC_REPLICAS_CONFIG, \"2\");\n+        cluster.createTopic(INPUT_TOPIC, NUM_PARTITIONS, (short) 3, topicConfigs);\n+        cluster.createTopic(OUTPUT_TOPIC, NUM_PARTITIONS, (short) 3, topicConfigs);\n+\n+        try (Producer<byte[], byte[]> producer = cluster.producer()) {\n+            for (int i = 0; i < numInputRecords; i++) {\n+                byte[] value = Integer.toString(i).getBytes(StandardCharsets.UTF_8);\n+                producer.send(new ProducerRecord<>(INPUT_TOPIC, value, value));\n+            }\n+            producer.flush();\n+        }\n+\n+        try (Consumer<byte[], byte[]> consumer = createConsumerAndSubscribe(\"myGroup\", INPUT_TOPIC, groupProtocol, false);\n+             Producer<byte[], byte[]> producer = cluster.producer(Map.of(\n+                 ProducerConfig.BATCH_SIZE_CONFIG, 512,\n+                 ProducerConfig.TRANSACTIONAL_ID_CONFIG, \"test-txn\"\n+             ))) {\n+            producer.initTransactions();\n+            AtomicBoolean bouncing = new AtomicBoolean(true);\n+            CompletableFuture<Void> bouncer = CompletableFuture.runAsync(() -> bounceBrokers(bouncing));\n+            try {\n+                int numMessagesProcessed = 0;\n+                int iteration = 0;\n+                while (numMessagesProcessed < numInputRecords) {\n+                    int toRead = Math.min(200, numInputRecords - numMessagesProcessed);\n+                    List<ConsumerRecord<byte[], byte[]>> records = ClientsTestUtils.consumeRecords(\n+                        consumer, toRead, Integer.MAX_VALUE, CONSUME_RECORD_TIMEOUT_MS);\n+\n+                    producer.beginTransaction();\n+                    boolean shouldAbort = iteration % 3 == 0;\n+                    for (ConsumerRecord<byte[], byte[]> record : records) {\n+                        ProducerRecord<byte[], byte[]> outputRecord = new ProducerRecord<>(OUTPUT_TOPIC, record.key(), record.value());\n+                        // Mark the intended outcome so the verifying consumer can detect any aborted records it receives.\n+                        outputRecord.headers().add(ClientsTestUtils.transactionStatusHeader(!shouldAbort));\n+                        producer.send(outputRecord, new ErrorLoggingCallback(OUTPUT_TOPIC, record.key(), record.value(), true));\n+                    }\n+\n+                    Map<TopicPartition, OffsetAndMetadata> offsets = new HashMap<>();\n+                    for (TopicPartition partition : consumer.assignment()) {\n+                        offsets.put(partition, new OffsetAndMetadata(consumer.position(partition)));\n+                    }\n+                    producer.sendOffsetsToTransaction(offsets, consumer.groupMetadata());\n+\n+                    if (shouldAbort) {\n+                        producer.abortTransaction();\n+                        resetToCommittedPositions(consumer);\n+                    } else {\n+                        producer.commitTransaction();\n+                        numMessagesProcessed += records.size();\n+                    }\n+                    iteration++;\n+                }\n+            } finally {\n+                bouncing.set(false);\n+                bouncer.get();\n+            }\n+        }\n+\n+        try (Consumer<byte[], byte[]> consumer = createConsumerAndSubscribe(\"randomGroup\", OUTPUT_TOPIC, groupProtocol, true)) {\n+            Map<TopicPartition, List<Integer>> recordsByPartition = new HashMap<>();\n+            List<ConsumerRecord<byte[], byte[]>> records = ClientsTestUtils.consumeRecords(\n+                consumer, numInputRecords, Integer.MAX_VALUE, CONSUME_RECORD_TIMEOUT_MS);\n+            for (ConsumerRecord<byte[], byte[]> record : records) {\n+                ClientsTestUtils.assertTransactionCommitted(record);\n+                TopicPartition partition = new TopicPartition(record.topic(), record.partition());\n+                recordsByPartition.computeIfAbsent(partition, __ -> new ArrayList<>())\n+                    .add(Integer.parseInt(new String(record.value(), StandardCharsets.UTF_8)));\n+            }\n+\n+            Set<Integer> recordSet = new HashSet<>();\n+            for (List<Integer> partitionValues : recordsByPartition.values()) {\n+                assertEquals(partitionValues.stream().sorted().collect(Collectors.toList()), partitionValues,\n+                    \"Out of order messages detected\");\n+                recordSet.addAll(partitionValues);\n+            }\n+            assertEquals(numInputRecords, records.size(), \"Unexpected number of committed records\");\n+            assertEquals(numInputRecords, recordSet.size());\n+            assertEquals(IntStream.range(0, numInputRecords).boxed().collect(Collectors.toSet()), recordSet);\n+        }\n+    }\n+\n+    private Consumer<byte[], byte[]> createConsumerAndSubscribe(\n+        String groupId,\n+        String topic,\n+        GroupProtocol groupProtocol,\n+        boolean readCommitted\n+    ) {\n+        Consumer<byte[], byte[]> consumer = cluster.consumer(Map.of(\n+            ConsumerConfig.GROUP_ID_CONFIG, groupId,\n+            ConsumerConfig.GROUP_PROTOCOL_CONFIG, groupProtocol.name(),\n+            ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, false,\n+            ConsumerConfig.ISOLATION_LEVEL_CONFIG, readCommitted ? \"read_committed\" : \"read_uncommitted\"\n+        ));\n+        consumer.subscribe(List.of(topic));\n+        return consumer;\n+    }\n+\n+    private void resetToCommittedPositions(Consumer<byte[], byte[]> consumer) {\n+        Map<TopicPartition, OffsetAndMetadata> committed = consumer.committed(consumer.assignment());\n+        for (TopicPartition partition : consumer.assignment()) {\n+            OffsetAndMetadata offset = committed.get(partition);\n+            if (offset == null) {\n+                consumer.seekToBeginning(List.of(partition));\n+            } else {\n+                consumer.seek(partition, offset.offset());\n+            }\n+        }\n+    }\n+\n+    private void bounceBrokers(AtomicBoolean bouncing) {\n+        try (Admin admin = cluster.admin()) {\n+            while (bouncing.get()) {\n+                for (int brokerId : cluster.brokerIds()) {\n+                    cluster.shutdownBroker(brokerId);\n+                    cluster.brokers().get(brokerId).awaitShutdown();\n+                    TimeUnit.MILLISECONDS.sleep(500);\n+                    cluster.startBroker(brokerId);\n+                    TimeUnit.MILLISECONDS.sleep(500);\n+                }\n+                for (int partition = 0; partition < NUM_PARTITIONS; partition++) {\n+                    TopicPartition topicPartition = new TopicPartition(OUTPUT_TOPIC, partition);\n+                    TestUtils.waitForCondition(() -> hasLeader(admin, topicPartition), \"No leader elected for \" + topicPartition);\n+                }\n+            }\n+        } catch (Exception e) {\n+            throw new RuntimeException(\"Broker bouncer failed\", e);\n+        }\n+    }\n+\n+    private boolean hasLeader(Admin admin, TopicPartition topicPartition) throws Exception {\n+        TopicPartitionInfo info = admin.describeTopics(List.of(topicPartition.topic()))\n+            .allTopicNames().get().get(topicPartition.topic())\n+            .partitions().get(topicPartition.partition());\n+        return info.leader() != null && info.leader().id() >= 0;\n+    }\n+}"
+  },
+  {
+   "sha": "d4d065d9a3762728838e2cff715eee154b5a7faa",
+   "filename": "core/src/test/scala/integration/kafka/api/TransactionsBounceTest.scala",
+   "status": "removed",
+   "additions": 0,
+   "deletions": 207,
+   "changes": 207,
+   "blob_url": "https://github.com/apache/kafka/blob/203b877ff2a2142b1619b64a317c210ca9f05601/core%2Fsrc%2Ftest%2Fscala%2Fintegration%2Fkafka%2Fapi%2FTransactionsBounceTest.scala",
+   "raw_url": "https://github.com/apache/kafka/raw/203b877ff2a2142b1619b64a317c210ca9f05601/core%2Fsrc%2Ftest%2Fscala%2Fintegration%2Fkafka%2Fapi%2FTransactionsBounceTest.scala",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/core%2Fsrc%2Ftest%2Fscala%2Fintegration%2Fkafka%2Fapi%2FTransactionsBounceTest.scala?ref=203b877ff2a2142b1619b64a317c210ca9f05601",
+   "patch": "@@ -1,207 +0,0 @@\n-/**\n-  * Licensed to the Apache Software Foundation (ASF) under one or more\n-  * contributor license agreements.  See the NOTICE file distributed with\n-  * this work for additional information regarding copyright ownership.\n-  * The ASF licenses this file to You under the Apache License, Version 2.0\n-  * (the \"License\"); you may not use this file except in compliance with\n-  * the License.  You may obtain a copy of the License at\n-  *\n-  *    http://www.apache.org/licenses/LICENSE-2.0\n-  *\n-  * Unless required by applicable law or agreed to in writing, software\n-  * distributed under the License is distributed on an \"AS IS\" BASIS,\n-  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n-  * See the License for the specific language governing permissions and\n-  * limitations under the License.\n-  */\n-\n-package kafka.api\n-\n-import java.util\n-import java.util.Properties\n-import kafka.server.KafkaConfig\n-import kafka.utils.{TestInfoUtils, TestUtils}\n-import org.apache.kafka.clients.consumer.{Consumer, ConsumerConfig}\n-import org.apache.kafka.clients.producer.{KafkaProducer, ProducerConfig}\n-import org.apache.kafka.clients.producer.internals.ErrorLoggingCallback\n-import org.apache.kafka.common.TopicPartition\n-import org.apache.kafka.coordinator.group.GroupCoordinatorConfig\n-import org.apache.kafka.coordinator.transaction.TransactionLogConfig\n-import org.apache.kafka.server.util.ShutdownableThread\n-import org.apache.kafka.server.config.{ReplicationConfigs, ServerConfigs, ServerLogConfigs}\n-import org.junit.jupiter.api.Assertions._\n-import org.junit.jupiter.params.ParameterizedTest\n-import org.junit.jupiter.params.provider.MethodSource\n-\n-import scala.jdk.CollectionConverters._\n-import scala.collection.mutable\n-\n-class TransactionsBounceTest extends IntegrationTestHarness {\n-  private val consumeRecordTimeout = 30000\n-  private val producerBufferSize =  65536\n-  private val serverMessageMaxBytes =  producerBufferSize/2\n-  private val numPartitions = 3\n-  private val outputTopic = \"output-topic\"\n-  private val inputTopic = \"input-topic\"\n-\n-  val overridingProps = new Properties()\n-  overridingProps.put(ServerLogConfigs.AUTO_CREATE_TOPICS_ENABLE_CONFIG, false.toString)\n-  overridingProps.put(ServerConfigs.MESSAGE_MAX_BYTES_CONFIG, serverMessageMaxBytes.toString)\n-  // Set a smaller value for the number of partitions for the offset commit topic (__consumer_offset topic)\n-  // so that the creation of that topic/partition(s) and subsequent leader assignment doesn't take relatively long\n-  overridingProps.put(ServerConfigs.CONTROLLED_SHUTDOWN_ENABLE_CONFIG, true.toString)\n-  overridingProps.put(ReplicationConfigs.UNCLEAN_LEADER_ELECTION_ENABLE_CONFIG, false.toString)\n-  overridingProps.put(ReplicationConfigs.AUTO_LEADER_REBALANCE_ENABLE_CONFIG, false.toString)\n-  overridingProps.put(GroupCoordinatorConfig.OFFSETS_TOPIC_PARTITIONS_CONFIG, 1.toString)\n-  overridingProps.put(GroupCoordinatorConfig.OFFSETS_TOPIC_REPLICATION_FACTOR_CONFIG, 3.toString)\n-  overridingProps.put(ServerLogConfigs.MIN_IN_SYNC_REPLICAS_CONFIG, 2.toString)\n-  overridingProps.put(GroupCoordinatorConfig.GROUP_MIN_SESSION_TIMEOUT_MS_CONFIG, \"10\") // set small enough session timeout\n-  overridingProps.put(GroupCoordinatorConfig.GROUP_INITIAL_REBALANCE_DELAY_MS_CONFIG, \"0\")\n-  overridingProps.put(TransactionLogConfig.TRANSACTIONS_TOPIC_PARTITIONS_CONFIG, 1.toString)\n-  overridingProps.put(TransactionLogConfig.TRANSACTIONS_TOPIC_REPLICATION_FACTOR_CONFIG, 3.toString)\n-\n-  // This is the one of the few tests we currently allow to preallocate ports, despite the fact that this can result in transient\n-  // failures due to ports getting reused. We can't use random ports because of bad behavior that can result from bouncing\n-  // brokers too quickly when they get new, random ports. If we're not careful, the client can end up in a situation\n-  // where metadata is not refreshed quickly enough, and by the time it's actually trying to, all the servers have\n-  // been bounced and have new addresses. None of the bootstrap nodes or current metadata can get them connected to a\n-  // running server.\n-  //\n-  // Since such quick rotation of servers is incredibly unrealistic, we allow this one test to preallocate ports, leaving\n-  // a small risk of hitting errors due to port conflicts. Hopefully this is infrequent enough to not cause problems.\n-  override def generateConfigs = {\n-    FixedPortTestUtils.createBrokerConfigs(brokerCount)\n-      .map(KafkaConfig.fromProps(_, overridingProps))\n-  }\n-\n-  override protected def brokerCount: Int = 4\n-\n-  @ParameterizedTest(name = TestInfoUtils.TestWithParameterizedGroupProtocolNames)\n-  @MethodSource(Array(\"getTestGroupProtocolParametersAll\"))\n-  def testWithGroupMetadata(groupProtocol: String): Unit = {\n-    testBrokerFailure((producer, _, consumer) =>\n-      producer.sendOffsetsToTransaction(TestUtils.consumerPositions(consumer).asJava, consumer.groupMetadata()))\n-  }\n-\n-  private def testBrokerFailure(commit: (KafkaProducer[Array[Byte], Array[Byte]],\n-    String, Consumer[Array[Byte], Array[Byte]]) => Unit): Unit = {\n-    // basic idea is to seed a topic with 10000 records, and copy it transactionally while bouncing brokers\n-    // constantly through the period.\n-    val consumerGroup = \"myGroup\"\n-    val numInputRecords = 10000\n-    createTopics()\n-\n-    TestUtils.seedTopicWithNumberedRecords(inputTopic, numInputRecords, brokers)\n-    val consumer = createConsumerAndSubscribe(consumerGroup, List(inputTopic))\n-    val producer = createTransactionalProducer(\"test-txn\")\n-\n-    producer.initTransactions()\n-\n-    val scheduler = new BounceScheduler\n-    scheduler.start()\n-\n-    try {\n-      var numMessagesProcessed = 0\n-      var iteration = 0\n-\n-      while (numMessagesProcessed < numInputRecords) {\n-        val toRead = Math.min(200, numInputRecords - numMessagesProcessed)\n-        trace(s\"$iteration: About to read $toRead messages, processed $numMessagesProcessed so far..\")\n-        val records = TestUtils.pollUntilAtLeastNumRecords(consumer, toRead, waitTimeMs = consumeRecordTimeout)\n-        trace(s\"Received ${records.size} messages, sending them transactionally to $outputTopic\")\n-\n-        producer.beginTransaction()\n-        val shouldAbort = iteration % 3 == 0\n-        records.foreach { record =>\n-          producer.send(TestUtils.producerRecordWithExpectedTransactionStatus(outputTopic, null, record.key, record.value, !shouldAbort), new ErrorLoggingCallback(outputTopic, record.key, record.value, true))\n-        }\n-        trace(s\"Sent ${records.size} messages. Committing offsets.\")\n-        commit(producer, consumerGroup, consumer)\n-\n-        if (shouldAbort) {\n-          trace(s\"Committed offsets. Aborting transaction of ${records.size} messages.\")\n-          producer.abortTransaction()\n-          TestUtils.resetToCommittedPositions(consumer)\n-        } else {\n-          trace(s\"Committed offsets. committing transaction of ${records.size} messages.\")\n-          producer.commitTransaction()\n-          numMessagesProcessed += records.size\n-        }\n-        iteration += 1\n-      }\n-    } finally {\n-      scheduler.shutdown()\n-    }\n-\n-    val verifyingConsumer = createConsumerAndSubscribe(\"randomGroup\", List(outputTopic), readCommitted = true)\n-    val recordsByPartition = new mutable.HashMap[TopicPartition, mutable.ListBuffer[Int]]()\n-    TestUtils.pollUntilAtLeastNumRecords(verifyingConsumer, numInputRecords, waitTimeMs = consumeRecordTimeout).foreach { record =>\n-      val value = TestUtils.assertCommittedAndGetValue(record).toInt\n-      val topicPartition = new TopicPartition(record.topic(), record.partition())\n-      recordsByPartition.getOrElseUpdate(topicPartition, new mutable.ListBuffer[Int])\n-        .append(value)\n-    }\n-\n-    val outputRecords = new mutable.ListBuffer[Int]()\n-    recordsByPartition.values.foreach { partitionValues =>\n-      assertEquals(partitionValues, partitionValues.sorted, \"Out of order messages detected\")\n-      outputRecords.appendAll(partitionValues)\n-    }\n-\n-    val recordSet = outputRecords.toSet\n-    assertEquals(numInputRecords, recordSet.size)\n-\n-    val expectedValues = (0 until numInputRecords).toSet\n-    assertEquals(expectedValues, recordSet, s\"Missing messages: ${expectedValues -- recordSet}\")\n-  }\n-\n-  private def createTransactionalProducer(transactionalId: String) = {\n-    val props = new Properties()\n-    props.put(ProducerConfig.ACKS_CONFIG, \"all\")\n-    props.put(ProducerConfig.BATCH_SIZE_CONFIG, \"512\")\n-    props.put(ProducerConfig.TRANSACTIONAL_ID_CONFIG, transactionalId)\n-    props.put(ProducerConfig.ENABLE_IDEMPOTENCE_CONFIG, \"true\")\n-    createProducer(configOverrides = props)\n-  }\n-\n-  private def createConsumerAndSubscribe(groupId: String,\n-                                         topics: List[String],\n-                                         readCommitted: Boolean = false) = {\n-    val consumerProps = new Properties\n-    consumerProps.put(ConsumerConfig.GROUP_ID_CONFIG, groupId)\n-    consumerProps.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, \"false\")\n-    consumerProps.put(ConsumerConfig.ISOLATION_LEVEL_CONFIG,\n-      if (readCommitted) \"read_committed\" else \"read_uncommitted\")\n-    val consumer = createConsumer(configOverrides = consumerProps)\n-    consumer.subscribe(topics.asJava)\n-    consumer\n-  }\n-\n-  private def createTopics() =  {\n-    val topicConfigs = util.Map.of(ServerLogConfigs.MIN_IN_SYNC_REPLICAS_CONFIG, 2.toString)\n-    createTopic(inputTopic, numPartitions, 3, topicConfigs)\n-    createTopic(outputTopic, numPartitions, 3, topicConfigs)\n-  }\n-\n-  private class BounceScheduler extends ShutdownableThread(\"daemon-broker-bouncer\", false) {\n-    override def doWork(): Unit = {\n-      for (server <- brokers) {\n-        trace(\"Shutting down server : %s\".format(server.config.brokerId))\n-        server.shutdown()\n-        server.awaitShutdown()\n-        Thread.sleep(500)\n-        trace(\"Server %s shut down. Starting it up again.\".format(server.config.brokerId))\n-        server.startup()\n-        trace(\"Restarted server: %s\".format(server.config.brokerId))\n-        Thread.sleep(500)\n-      }\n-\n-      (0 until numPartitions).foreach(partition => TestUtils.waitUntilLeaderIsElectedOrChangedWithAdmin(createAdminClient(), outputTopic, partition))\n-    }\n-\n-    override def shutdown(): Unit = {\n-      super.shutdown()\n-   }\n-  }\n-\n-}"
+  },
+  {
+   "sha": "d6fa5f3d6c0781605a60efd7e037b3f70825f6b6",
+   "filename": "core/src/test/scala/unit/kafka/utils/TestUtils.scala",
+   "status": "modified",
+   "additions": 1,
+   "deletions": 77,
+   "changes": 78,
+   "blob_url": "https://github.com/apache/kafka/blob/21ee625af377c8c6510b3e514416b4a544fcf6f8/core%2Fsrc%2Ftest%2Fscala%2Funit%2Fkafka%2Futils%2FTestUtils.scala",
+   "raw_url": "https://github.com/apache/kafka/raw/21ee625af377c8c6510b3e514416b4a544fcf6f8/core%2Fsrc%2Ftest%2Fscala%2Funit%2Fkafka%2Futils%2FTestUtils.scala",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/core%2Fsrc%2Ftest%2Fscala%2Funit%2Fkafka%2Futils%2FTestUtils.scala?ref=21ee625af377c8c6510b3e514416b4a544fcf6f8",
+   "patch": "@@ -28,7 +28,6 @@ import org.apache.kafka.common.acl.{AccessControlEntry, AccessControlEntryFilter\n import org.apache.kafka.common.compress.Compression\n import org.apache.kafka.common.config.{ConfigException, ConfigResource}\n import org.apache.kafka.common.errors.{TopicExistsException, UnknownTopicOrPartitionException}\n-import org.apache.kafka.common.header.Header\n import org.apache.kafka.common.internals.{Plugin, Topic}\n import org.apache.kafka.common.network.{ConnectionMode, ListenerName}\n import org.apache.kafka.common.record.TimestampType\n@@ -58,14 +57,13 @@ import org.mockito.Mockito\n \n import java.io._\n import java.nio._\n-import java.nio.charset.StandardCharsets\n import java.nio.file.{Files, StandardOpenOption}\n import java.time.Duration\n import java.util\n import java.util.concurrent._\n import java.util.{Optional, Properties}\n import scala.collection.mutable.ArrayBuffer\n-import scala.collection.{Map, Seq, mutable}\n+import scala.collection.{Map, Seq}\n import scala.concurrent.duration.FiniteDuration\n import scala.concurrent.{Await, ExecutionContext, Future}\n import scala.jdk.CollectionConverters._\n@@ -89,9 +87,6 @@ object TestUtils extends Logging {\n   // CN in SSL certificates - this is used for endpoint validation when enabled\n   val SslCertificateCn = \"localhost\"\n \n-  private val transactionStatusKey = \"transactionStatus\"\n-  private val committedValue : Array[Byte] = \"committed\".getBytes(StandardCharsets.UTF_8)\n-\n   sealed trait LogDirFailureType\n   case object Roll extends LogDirFailureType\n   case object Checkpoint extends LogDirFailureType\n@@ -1066,77 +1061,6 @@ object TestUtils extends Logging {\n     new KafkaProducer[Array[Byte], Array[Byte]](props, new ByteArraySerializer, new ByteArraySerializer)\n   }\n \n-  // Seeds the given topic with records with keys and values in the range [0..numRecords)\n-  def seedTopicWithNumberedRecords[B <: KafkaBroker](\n-      topic: String,\n-      numRecords: Int,\n-      brokers: Seq[B]): Unit = {\n-    val props = new Properties()\n-    props.put(ProducerConfig.ENABLE_IDEMPOTENCE_CONFIG, \"true\")\n-    props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, plaintextBootstrapServers(brokers))\n-    val producer = new KafkaProducer[Array[Byte], Array[Byte]](props, new ByteArraySerializer, new ByteArraySerializer)\n-    try {\n-      for (i <- 0 until numRecords) {\n-        producer.send(new ProducerRecord[Array[Byte], Array[Byte]](topic, asBytes(i.toString), asBytes(i.toString)))\n-      }\n-      producer.flush()\n-    } finally {\n-      producer.close()\n-    }\n-  }\n-\n-  private def asString(bytes: Array[Byte]) = new String(bytes, StandardCharsets.UTF_8)\n-\n-  private def asBytes(string: String) = string.getBytes(StandardCharsets.UTF_8)\n-\n-  // Verifies that the record was intended to be committed by checking the headers for an expected transaction status\n-  // If true, this will return the value as a string. It is expected that the record in question should have been created\n-  // by the `producerRecordWithExpectedTransactionStatus` method.\n-  def assertCommittedAndGetValue(record: ConsumerRecord[Array[Byte], Array[Byte]]) : String = {\n-    record.headers.headers(transactionStatusKey).asScala.headOption match {\n-      case Some(header) =>\n-        assertEquals(asString(committedValue), asString(header.value), s\"Got ${asString(header.value)} but expected the value to indicate \" +\n-          s\"committed status.\")\n-      case None =>\n-        fail(\"expected the record header to include an expected transaction status, but received nothing.\")\n-    }\n-    recordValueAsString(record)\n-  }\n-\n-  def recordValueAsString(record: ConsumerRecord[Array[Byte], Array[Byte]]) : String = {\n-    asString(record.value)\n-  }\n-\n-  def producerRecordWithExpectedTransactionStatus(topic: String, partition: Integer, key: Array[Byte], value: Array[Byte], willBeCommitted: Boolean): ProducerRecord[Array[Byte], Array[Byte]] = {\n-    val header = new Header {override def key() = transactionStatusKey\n-      override def value() = if (willBeCommitted)\n-        committedValue\n-      else\n-        \"aborted\".getBytes(StandardCharsets.UTF_8)\n-    }\n-    new ProducerRecord[Array[Byte], Array[Byte]](topic, partition, key, value, util.Set.of(header))\n-  }\n-\n-  // Collect the current positions for all partition in the consumers current assignment.\n-  def consumerPositions(consumer: Consumer[Array[Byte], Array[Byte]]) : Map[TopicPartition, OffsetAndMetadata]  = {\n-    val offsetsToCommit = new mutable.HashMap[TopicPartition, OffsetAndMetadata]()\n-    consumer.assignment.forEach { topicPartition =>\n-      offsetsToCommit.put(topicPartition, new OffsetAndMetadata(consumer.position(topicPartition)))\n-    }\n-    offsetsToCommit.toMap\n-  }\n-\n-  def resetToCommittedPositions(consumer: Consumer[Array[Byte], Array[Byte]]): Unit = {\n-    val committed = consumer.committed(consumer.assignment).asScala.filter(_._2 != null).map { case (k, v) => k -> v.offset }\n-\n-    consumer.assignment.forEach { topicPartition =>\n-      if (committed.contains(topicPartition))\n-        consumer.seek(topicPartition, committed(topicPartition))\n-      else\n-        consumer.seekToBeginning(util.List.of(topicPartition))\n-    }\n-  }\n-\n   def incrementalAlterConfigs[B <: KafkaBroker](\n       servers: Seq[B],\n       adminClient: Admin,"
+  }
+ ],
+ "timeline": [
+  {
+   "sha": "ffa6bedbf4dedd3ef8c4cf98ca34222ee0b06ed1",
+   "node_id": "C_kwDOACG9q9oAKGZmYTZiZWRiZjRkZWRkM2VmOGM0Y2Y5OGNhMzQyMjJlZTBiMDZlZDE",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/ffa6bedbf4dedd3ef8c4cf98ca34222ee0b06ed1",
+   "html_url": "https://github.com/apache/kafka/commit/ffa6bedbf4dedd3ef8c4cf98ca34222ee0b06ed1",
+   "author": {
+    "name": "Ken Huang",
+    "email": "s7133700@gmail.com",
+    "date": "2026-10-20T07:18:09Z"
+   },
+   "committer": {
+    "name": "Ken Huang",
+    "email": "s7133700@gmail.com",
+    "date": "2026-10-20T07:18:09Z"
+   },
+   "tree": {
+    "sha": "ad62452238c501cb8d98de9293bc16fc144acc3a",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/ad62452238c501cb8d98de9293bc16fc144acc3a"
+   },
+   "message": "completed migration",
+   "parents": [
+    {
+     "sha": "f2f91b11706804181cbee2e0fd9807b18e92dad6",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/f2f91b11706804181cbee2e0fd9807b18e92dad6",
+     "html_url": "https://github.com/apache/kafka/commit/f2f91b11706804181cbee2e0fd9807b18e92dad6"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "id": 33718575541,
+   "node_id": "LE_lADOACG9q88AAAABYejH2s8AAAAH2cihtQ",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33718575541",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-20T07:20:29Z",
+   "label": {
+    "name": "triage",
+    "color": "006b75"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 33718597110,
+   "node_id": "LE_lADOACG9q88AAAABYejH2s8AAAAH2cj19g",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33718597110",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-20T07:20:49Z",
+   "label": {
+    "name": "core",
+    "color": "ed5a86"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 33718597161,
+   "node_id": "LE_lADOACG9q88AAAABYejH2s8AAAAH2cj2KQ",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33718597161",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-20T07:20:49Z",
+   "label": {
+    "name": "tests",
+    "color": "cfff60"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 33718597207,
+   "node_id": "LE_lADOACG9q88AAAABYejH2s8AAAAH2cj2Vw",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33718597207",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-20T07:20:49Z",
+   "label": {
+    "name": "clients",
+    "color": "ededed"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "sha": "303d6802fdc1a95e1f089f5c42b9b1963f534eee",
+   "node_id": "C_kwDOACG9q9oAKDMwM2Q2ODAyZmRjMWE5NWUxZjA4OWY1YzQyYjliMTk2M2Y1MzRlZWU",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/303d6802fdc1a95e1f089f5c42b9b1963f534eee",
+   "html_url": "https://github.com/apache/kafka/commit/303d6802fdc1a95e1f089f5c42b9b1963f534eee",
+   "author": {
+    "name": "Ken Huang",
+    "email": "s7133700@gmail.com",
+    "date": "2026-10-20T08:26:56Z"
+   },
+   "committer": {
+    "name": "Ken Huang",
+    "email": "s7133700@gmail.com",
+    "date": "2026-10-20T08:26:56Z"
+   },
+   "tree": {
+    "sha": "e19670c67679d8d1e3b221ac6983c86860daff0b",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/e19670c67679d8d1e3b221ac6983c86860daff0b"
+   },
+   "message": "remove unused import",
+   "parents": [
+    {
+     "sha": "ffa6bedbf4dedd3ef8c4cf98ca34222ee0b06ed1",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/ffa6bedbf4dedd3ef8c4cf98ca34222ee0b06ed1",
+     "html_url": "https://github.com/apache/kafka/commit/ffa6bedbf4dedd3ef8c4cf98ca34222ee0b06ed1"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "id": 5605523104,
+   "node_id": "PRR_kwDOACG9q88AAAABTh1-oA",
+   "user": {
+    "login": "muralibasani",
+    "id": 10197247,
+    "node_id": "MDQ6VXNlcjEwMTk3MjQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10197247?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/muralibasani",
+    "html_url": "https://github.com/muralibasani",
+    "followers_url": "https://api.github.com/users/muralibasani/followers",
+    "following_url": "https://api.github.com/users/muralibasani/following{/other_user}",
+    "gists_url": "https://api.github.com/users/muralibasani/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/muralibasani/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/muralibasani/subscriptions",
+    "organizations_url": "https://api.github.com/users/muralibasani/orgs",
+    "repos_url": "https://api.github.com/users/muralibasani/repos",
+    "events_url": "https://api.github.com/users/muralibasani/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/muralibasani/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": null,
+   "commit_id": "303d6802fdc1a95e1f089f5c42b9b1963f534eee",
+   "state": "commented",
+   "html_url": "https://github.com/apache/kafka/pull/23879#pullrequestreview-5605523104",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23879",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23879#pullrequestreview-5605523104"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23879"
+    }
+   },
+   "submitted_at": "2026-10-21T20:03:39Z",
+   "updated_at": "2026-10-21T20:03:39Z",
+   "author_association": "COLLABORATOR",
+   "event": "reviewed"
+  },
+  {
+   "id": 5605568828,
+   "node_id": "PRR_kwDOACG9q88AAAABTh4xPA",
+   "user": {
+    "login": "muralibasani",
+    "id": 10197247,
+    "node_id": "MDQ6VXNlcjEwMTk3MjQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10197247?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/muralibasani",
+    "html_url": "https://github.com/muralibasani",
+    "followers_url": "https://api.github.com/users/muralibasani/followers",
+    "following_url": "https://api.github.com/users/muralibasani/following{/other_user}",
+    "gists_url": "https://api.github.com/users/muralibasani/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/muralibasani/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/muralibasani/subscriptions",
+    "organizations_url": "https://api.github.com/users/muralibasani/orgs",
+    "repos_url": "https://api.github.com/users/muralibasani/repos",
+    "events_url": "https://api.github.com/users/muralibasani/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/muralibasani/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": null,
+   "commit_id": "303d6802fdc1a95e1f089f5c42b9b1963f534eee",
+   "state": "commented",
+   "html_url": "https://github.com/apache/kafka/pull/23879#pullrequestreview-5605568828",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23879",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23879#pullrequestreview-5605568828"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23879"
+    }
+   },
+   "submitted_at": "2026-10-21T20:07:45Z",
+   "updated_at": "2026-10-21T20:07:46Z",
+   "author_association": "COLLABORATOR",
+   "event": "reviewed"
+  },
+  {
+   "id": 5605696121,
+   "node_id": "PRR_kwDOACG9q88AAAABTiAieQ",
+   "user": {
+    "login": "muralibasani",
+    "id": 10197247,
+    "node_id": "MDQ6VXNlcjEwMTk3MjQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10197247?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/muralibasani",
+    "html_url": "https://github.com/muralibasani",
+    "followers_url": "https://api.github.com/users/muralibasani/followers",
+    "following_url": "https://api.github.com/users/muralibasani/following{/other_user}",
+    "gists_url": "https://api.github.com/users/muralibasani/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/muralibasani/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/muralibasani/subscriptions",
+    "organizations_url": "https://api.github.com/users/muralibasani/orgs",
+    "repos_url": "https://api.github.com/users/muralibasani/repos",
+    "events_url": "https://api.github.com/users/muralibasani/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/muralibasani/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": null,
+   "commit_id": "303d6802fdc1a95e1f089f5c42b9b1963f534eee",
+   "state": "commented",
+   "html_url": "https://github.com/apache/kafka/pull/23879#pullrequestreview-5605696121",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23879",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23879#pullrequestreview-5605696121"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23879"
+    }
+   },
+   "submitted_at": "2026-10-21T20:19:08Z",
+   "updated_at": "2026-10-21T20:19:09Z",
+   "author_association": "COLLABORATOR",
+   "event": "reviewed"
+  },
+  {
+   "id": 5605716514,
+   "node_id": "PRR_kwDOACG9q88AAAABTiByIg",
+   "user": {
+    "login": "muralibasani",
+    "id": 10197247,
+    "node_id": "MDQ6VXNlcjEwMTk3MjQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10197247?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/muralibasani",
+    "html_url": "https://github.com/muralibasani",
+    "followers_url": "https://api.github.com/users/muralibasani/followers",
+    "following_url": "https://api.github.com/users/muralibasani/following{/other_user}",
+    "gists_url": "https://api.github.com/users/muralibasani/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/muralibasani/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/muralibasani/subscriptions",
+    "organizations_url": "https://api.github.com/users/muralibasani/orgs",
+    "repos_url": "https://api.github.com/users/muralibasani/repos",
+    "events_url": "https://api.github.com/users/muralibasani/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/muralibasani/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "Thanks @m1a2st for the PR. Overall looks good.\nI have a few minor comments.",
+   "commit_id": "303d6802fdc1a95e1f089f5c42b9b1963f534eee",
+   "state": "commented",
+   "html_url": "https://github.com/apache/kafka/pull/23879#pullrequestreview-5605716514",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23879",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23879#pullrequestreview-5605716514"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23879"
+    }
+   },
+   "submitted_at": "2026-10-21T20:20:56Z",
+   "updated_at": "2026-10-21T20:20:56Z",
+   "author_association": "COLLABORATOR",
+   "event": "reviewed"
+  },
+  {
+   "id": 33910689649,
+   "node_id": "UNLE_lADOACG9q88AAAABYejH2s8AAAAH5TwPcQ",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33910689649",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "unlabeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-22T03:20:28Z",
+   "label": {
+    "name": "triage",
+    "color": "006b75"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "sha": "3f9b36a00481a4f4ee9ab21878015700d1f4ae6b",
+   "node_id": "C_kwDOACG9q9oAKDNmOWIzNmEwMDQ4MWE0ZjRlZTlhYjIxODc4MDE1NzAwZDFmNGFlNmI",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/3f9b36a00481a4f4ee9ab21878015700d1f4ae6b",
+   "html_url": "https://github.com/apache/kafka/commit/3f9b36a00481a4f4ee9ab21878015700d1f4ae6b",
+   "author": {
+    "name": "m1a2st",
+    "email": "s7133700@gmail.com",
+    "date": "2026-10-22T15:09:15Z"
+   },
+   "committer": {
+    "name": "m1a2st",
+    "email": "s7133700@gmail.com",
+    "date": "2026-10-22T15:09:15Z"
+   },
+   "tree": {
+    "sha": "960ef3a7f9c7d7b1224083e3a6a45877a5dfc87e",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/960ef3a7f9c7d7b1224083e3a6a45877a5dfc87e"
+   },
+   "message": "addressed by comment",
+   "parents": [
+    {
+     "sha": "303d6802fdc1a95e1f089f5c42b9b1963f534eee",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/303d6802fdc1a95e1f089f5c42b9b1963f534eee",
+     "html_url": "https://github.com/apache/kafka/commit/303d6802fdc1a95e1f089f5c42b9b1963f534eee"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "id": 5655926772,
+   "node_id": "PRR_kwDOACG9q88AAAABUR6X9A",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": null,
+   "commit_id": "3f9b36a00481a4f4ee9ab21878015700d1f4ae6b",
+   "state": "commented",
+   "html_url": "https://github.com/apache/kafka/pull/23879#pullrequestreview-5655926772",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23879",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23879#pullrequestreview-5655926772"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23879"
+    }
+   },
+   "submitted_at": "2026-10-26T17:01:14Z",
+   "updated_at": "2026-10-26T17:01:14Z",
+   "author_association": "MEMBER",
+   "event": "reviewed"
+  },
+  {
+   "sha": "699671474ee09eb471d82462bf8e155caa097211",
+   "node_id": "C_kwDOACG9q9oAKDY5OTY3MTQ3NGVlMDllYjQ3MWQ4MjQ2MmJmOGUxNTVjYWEwOTcyMTE",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/699671474ee09eb471d82462bf8e155caa097211",
+   "html_url": "https://github.com/apache/kafka/commit/699671474ee09eb471d82462bf8e155caa097211",
+   "author": {
+    "name": "m1a2st",
+    "email": "s7133700@gmail.com",
+    "date": "2026-10-27T15:20:10Z"
+   },
+   "committer": {
+    "name": "m1a2st",
+    "email": "s7133700@gmail.com",
+    "date": "2026-10-27T15:20:10Z"
+   },
+   "tree": {
+    "sha": "3cb75a5660d12ccaaeca9408fda9447f526b5320",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/3cb75a5660d12ccaaeca9408fda9447f526b5320"
+   },
+   "message": "addressed by comment",
+   "parents": [
+    {
+     "sha": "3f9b36a00481a4f4ee9ab21878015700d1f4ae6b",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/3f9b36a00481a4f4ee9ab21878015700d1f4ae6b",
+     "html_url": "https://github.com/apache/kafka/commit/3f9b36a00481a4f4ee9ab21878015700d1f4ae6b"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "21ee625af377c8c6510b3e514416b4a544fcf6f8",
+   "node_id": "C_kwDOACG9q9oAKDIxZWU2MjVhZjM3N2M4YzY1MTBiM2U1MTQ0MTZiNGE1NDRmY2Y2Zjg",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/21ee625af377c8c6510b3e514416b4a544fcf6f8",
+   "html_url": "https://github.com/apache/kafka/commit/21ee625af377c8c6510b3e514416b4a544fcf6f8",
+   "author": {
+    "name": "m1a2st",
+    "email": "s7133700@gmail.com",
+    "date": "2026-10-27T15:20:32Z"
+   },
+   "committer": {
+    "name": "m1a2st",
+    "email": "s7133700@gmail.com",
+    "date": "2026-10-27T15:20:32Z"
+   },
+   "tree": {
+    "sha": "b150bea8eff26f5728d5133103d349514b9c1133",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/b150bea8eff26f5728d5133103d349514b9c1133"
+   },
+   "message": "Merge branch 'trunk' into KAFKA-19042-11",
+   "parents": [
+    {
+     "sha": "699671474ee09eb471d82462bf8e155caa097211",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/699671474ee09eb471d82462bf8e155caa097211",
+     "html_url": "https://github.com/apache/kafka/commit/699671474ee09eb471d82462bf8e155caa097211"
+    },
+    {
+     "sha": "203b877ff2a2142b1619b64a317c210ca9f05601",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/203b877ff2a2142b1619b64a317c210ca9f05601",
+     "html_url": "https://github.com/apache/kafka/commit/203b877ff2a2142b1619b64a317c210ca9f05601"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/issues/comments/6445937237",
+   "html_url": "https://github.com/apache/kafka/pull/23879#issuecomment-6445937237",
+   "issue_url": "https://api.github.com/repos/apache/kafka/issues/23879",
+   "id": 6445937237,
+   "node_id": "IC_kwDOACG9q88AAAABgDUyVQ",
+   "user": {
+    "login": "m1a2st",
+    "id": 100591800,
+    "node_id": "U_kgDOBf7ouA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100591800?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/m1a2st",
+    "html_url": "https://github.com/m1a2st",
+    "followers_url": "https://api.github.com/users/m1a2st/followers",
+    "following_url": "https://api.github.com/users/m1a2st/following{/other_user}",
+    "gists_url": "https://api.github.com/users/m1a2st/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/m1a2st/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/m1a2st/subscriptions",
+    "organizations_url": "https://api.github.com/users/m1a2st/orgs",
+    "repos_url": "https://api.github.com/users/m1a2st/repos",
+    "events_url": "https://api.github.com/users/m1a2st/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/m1a2st/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "created_at": "2026-10-27T15:21:46Z",
+   "updated_at": "2026-10-27T15:21:46Z",
+   "body": "Thanks to @chia7712 and @muralibasani for the reviews. I've addressed all the comments.",
+   "author_association": "CONTRIBUTOR",
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/issues/comments/6445937237/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "performed_via_github_app": null,
+   "minimized": null,
+   "event": "commented",
+   "actor": {
+    "login": "m1a2st",
+    "id": 100591800,
+    "node_id": "U_kgDOBf7ouA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100591800?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/m1a2st",
+    "html_url": "https://github.com/m1a2st",
+    "followers_url": "https://api.github.com/users/m1a2st/followers",
+    "following_url": "https://api.github.com/users/m1a2st/following{/other_user}",
+    "gists_url": "https://api.github.com/users/m1a2st/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/m1a2st/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/m1a2st/subscriptions",
+    "organizations_url": "https://api.github.com/users/m1a2st/orgs",
+    "repos_url": "https://api.github.com/users/m1a2st/repos",
+    "events_url": "https://api.github.com/users/m1a2st/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/m1a2st/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  {
+   "id": 34381818754,
+   "node_id": "MEE_lADOACG9q88AAAABYejH2s8AAAAIAVDrgg",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34381818754",
+   "actor": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "mentioned",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-27T15:21:48Z",
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34381819878,
+   "node_id": "SE_lADOACG9q88AAAABYejH2s8AAAAIAVDv5g",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34381819878",
+   "actor": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "subscribed",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-27T15:21:49Z",
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34381821544,
+   "node_id": "MEE_lADOACG9q88AAAABYejH2s8AAAAIAVD2aA",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34381821544",
+   "actor": {
+    "login": "muralibasani",
+    "id": 10197247,
+    "node_id": "MDQ6VXNlcjEwMTk3MjQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10197247?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/muralibasani",
+    "html_url": "https://github.com/muralibasani",
+    "followers_url": "https://api.github.com/users/muralibasani/followers",
+    "following_url": "https://api.github.com/users/muralibasani/following{/other_user}",
+    "gists_url": "https://api.github.com/users/muralibasani/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/muralibasani/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/muralibasani/subscriptions",
+    "organizations_url": "https://api.github.com/users/muralibasani/orgs",
+    "repos_url": "https://api.github.com/users/muralibasani/repos",
+    "events_url": "https://api.github.com/users/muralibasani/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/muralibasani/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "mentioned",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-27T15:21:50Z",
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34381822649,
+   "node_id": "SE_lADOACG9q88AAAABYejH2s8AAAAIAVD6uQ",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34381822649",
+   "actor": {
+    "login": "muralibasani",
+    "id": 10197247,
+    "node_id": "MDQ6VXNlcjEwMTk3MjQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10197247?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/muralibasani",
+    "html_url": "https://github.com/muralibasani",
+    "followers_url": "https://api.github.com/users/muralibasani/followers",
+    "following_url": "https://api.github.com/users/muralibasani/following{/other_user}",
+    "gists_url": "https://api.github.com/users/muralibasani/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/muralibasani/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/muralibasani/subscriptions",
+    "organizations_url": "https://api.github.com/users/muralibasani/orgs",
+    "repos_url": "https://api.github.com/users/muralibasani/repos",
+    "events_url": "https://api.github.com/users/muralibasani/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/muralibasani/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "subscribed",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-27T15:21:50Z",
+   "performed_via_github_app": null
+  },
+  {
+   "id": 5674209624,
+   "node_id": "PRR_kwDOACG9q88AAAABUjWRWA",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "LGTM",
+   "commit_id": "21ee625af377c8c6510b3e514416b4a544fcf6f8",
+   "state": "approved",
+   "html_url": "https://github.com/apache/kafka/pull/23879#pullrequestreview-5674209624",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23879",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23879#pullrequestreview-5674209624"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23879"
+    }
+   },
+   "submitted_at": "2026-10-27T20:57:07Z",
+   "updated_at": "2026-10-27T20:57:07Z",
+   "author_association": "MEMBER",
+   "event": "reviewed"
+  },
+  {
+   "id": 5674232778,
+   "node_id": "PRR_kwDOACG9q88AAAABUjXryg",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": null,
+   "commit_id": "21ee625af377c8c6510b3e514416b4a544fcf6f8",
+   "state": "commented",
+   "html_url": "https://github.com/apache/kafka/pull/23879#pullrequestreview-5674232778",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23879",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23879#pullrequestreview-5674232778"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23879"
+    }
+   },
+   "submitted_at": "2026-10-27T20:59:13Z",
+   "updated_at": "2026-10-27T20:59:13Z",
+   "author_association": "MEMBER",
+   "event": "reviewed"
+  },
+  {
+   "id": 34412298127,
+   "node_id": "ME_lADOACG9q88AAAABYejH2s8AAAAIAyH_jw",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34412298127",
+   "actor": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "merged",
+   "commit_id": "7596c4bc4b252083fa2fec8da798d16dc988f077",
+   "commit_url": "https://api.github.com/repos/apache/kafka/commits/7596c4bc4b252083fa2fec8da798d16dc988f077",
+   "created_at": "2026-10-27T21:05:06Z",
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34412298253,
+   "node_id": "CE_lADOACG9q88AAAABYejH2s8AAAAIAyIADQ",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34412298253",
+   "actor": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "closed",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-27T21:05:06Z",
+   "state_reason": null,
+   "intent": null,
+   "performed_via_github_app": null
+  }
+ ]
+}

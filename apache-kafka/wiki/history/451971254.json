@@ -1,0 +1,541 @@
+{
+ "id": "451971254",
+ "versions": {
+  "results": [
+   {
+    "by": {
+     "type": "known",
+     "username": "manangupta",
+     "userKey": "073590d29a7abced019ae90bbd2c001d",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Manan Gupta",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019ae90bbd2c001d"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-02T10:20:30.000Z",
+    "message": "",
+    "number": 9,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451971254/version/9"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451971254"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "manangupta",
+     "userKey": "073590d29a7abced019ae90bbd2c001d",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Manan Gupta",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019ae90bbd2c001d"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-02T09:29:25.000Z",
+    "message": "",
+    "number": 8,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451971254/version/8"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451971254?status=historical&version=8"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "manangupta",
+     "userKey": "073590d29a7abced019ae90bbd2c001d",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Manan Gupta",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019ae90bbd2c001d"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-02T07:32:12.000Z",
+    "message": "",
+    "number": 7,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451971254/version/7"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451971254?status=historical&version=7"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "manangupta",
+     "userKey": "073590d29a7abced019ae90bbd2c001d",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Manan Gupta",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019ae90bbd2c001d"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-02T07:26:04.000Z",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451971254/version/6"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451971254?status=historical&version=6"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "manangupta",
+     "userKey": "073590d29a7abced019ae90bbd2c001d",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Manan Gupta",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019ae90bbd2c001d"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-02T07:20:08.000Z",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451971254/version/5"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451971254?status=historical&version=5"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "manangupta",
+     "userKey": "073590d29a7abced019ae90bbd2c001d",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Manan Gupta",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019ae90bbd2c001d"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-02T07:17:19.000Z",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451971254/version/4"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451971254?status=historical&version=4"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "manangupta",
+     "userKey": "073590d29a7abced019ae90bbd2c001d",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Manan Gupta",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019ae90bbd2c001d"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-02T07:16:24.000Z",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451971254/version/3"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451971254?status=historical&version=3"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "manangupta",
+     "userKey": "073590d29a7abced019ae90bbd2c001d",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Manan Gupta",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019ae90bbd2c001d"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-02T06:48:03.000Z",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451971254/version/2"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451971254?status=historical&version=2"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "manangupta",
+     "userKey": "073590d29a7abced019ae90bbd2c001d",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Manan Gupta",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019ae90bbd2c001d"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-02T06:44:36.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451971254/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451971254?status=historical&version=1"
+    }
+   }
+  ],
+  "start": 0,
+  "limit": 200,
+  "size": 9,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451971254/version",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ },
+ "version_bodies": [
+  {
+   "id": "451971254",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1373: Client Quota Utilization Metrics",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "manangupta",
+     "userKey": "073590d29a7abced019ae90bbd2c001d",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Manan Gupta",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019ae90bbd2c001d"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-02T09:29:25.000Z",
+    "message": "",
+    "number": 8,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451971254/version/8"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451971254?status=historical&version=8"
+    }
+   },
+   "position": 1364,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><h1>Status</h1><p><strong>Current state</strong>: <em>Under Discussion</em></p><p><strong>Discussion thread</strong>: <em><a href=\"http://mail-archives.apache.org/mod_mbox/kafka-dev/201501.mbox/%3CCAOeJiJh6Vkkca85bWYgkeOZ8rC6%2BKDh7zzq8vMKECL_7PNExTA%40mail.gmail.com%3E\">here</a> [Change the link from the KIP proposal email archive to your own email thread]<br /></em></p><p><strong>JIRA</strong>: <em><a href=\"https://issues.apache.org/jira/browse/KAFKA-21016\">here</a><br /></em></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p>Brokers already expose per-client quota usage <code>byte-rate</code> , <code>request-time</code>  and throttle time <code>throttle-time</code> . They do not expose how that usage compares to the effective quota applied to the same quota sensor.</p><p>That join is left to operators: scrape the rate, then independently resolve user, client-id, and default overrides (or a custom <code>ClientQuotaCallback)</code>  from a different path. Limits can differ by orders of magnitude and can change dynamically, so absolute-rate alerts do not transfer across clients.</p><p><code>throttle-time</code>  only changes after throttling has occurred. Operators need a normalized rate signal that identifies clients whose recent usage is approaching or exceeding the quota actually applied on that broker, without requiring the monitoring stack to resolve the quota independently.</p><p><a href=\"https://cwiki.apache.org/confluence/x/MAEXG\">KIP-1257: Partition Size Percentage Metrics for Storage Monitoring</a> established the precedent of shipping a normalized percentage from Kafka rather than requiring operators to compute it externally. The analogy is only partial: <code>retention.bytes</code>  is a topic configuration, while client quotas are resolved per quota entity through the existing quota hierarchy and optional callbacks. This KIP preserves the existing quota-resolution and enforcement behavior.</p><h1>Proposed Changes</h1><p>Add <code>quota-utilization</code> as an additional attribute on the existing client-quota MBeans. No new MBean type, ObjectName, sensor, or quota entity is introduced.   </p><table class=\"wrapped\"><colgroup><col /><col /></colgroup><tbody><tr><th scope=\"col\">existing</th><th scope=\"col\">new</th></tr><tr><td>byte-rate | request-time ,  throttle-time</td><td>quota-utilization</td></tr></tbody></table><h3>Definition</h3><p>quota-utilization is the recent quota-measured rate expressed as a percentage of the effective quota applied to the same quota sensor.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"d49f7030-a6ed-4dfa-9139-22bb0e7c009a\"><ac:parameter ac:name=\"title\">calculation</ac:parameter><ac:plain-text-body><![CDATA[quota-utilization = measured-rate / effective-quota * 100]]></ac:plain-text-body></ac:structured-macro><ul><li data-uuid=\"2e522010-bbd5-467f-8743-579dc1e9ac1f\">Measured rate is the value of the existing quota rate metric on that sensor (byte-rate or request-time).</li><li data-uuid=\"f7705285-1c9a-4c6b-bb12-d1e7e1221991\">Effective quota is the quota currently associated with that rate metric's MetricConfig, after callback resolution and default/override resolution, and is the same bound used for enforcement on that sensor.</li><li data-uuid=\"8258f821-4caa-492c-b5e4-dfc7aac253f8\">The metric is a rate-utilization signal. It is not a representation of throttle state or of remaining headroom before the next request is delayed.</li></ul><h3>Value and meaning</h3><ul><li data-uuid=\"67ccf12a-3045-4db0-a768-afaf8c473cee\">Less than 100: recent rate is below the effective quota.</li><li data-uuid=\"6ae22d22-a8c3-4c4f-873e-2b342936a355\">Equal to 100: recent rate equals the effective quota.</li><li data-uuid=\"e716ef84-501e-4c75-9eed-462879814225\">Greater than 100: recent rate exceeds the effective quota; not capped.</li></ul><p>throttle-time: actual throttling that already occurred.</p><p>The result is always a percentage of the applicable quota, regardless of the physical unit of the numerator.</p><table class=\"wrapped\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th scope=\"col\">Quota</th><th scope=\"col\">numerator</th><th scope=\"col\">denominator</th></tr><tr><td>Produce</td><td>byte-rate (bytes/sec)</td><td>producer_byte_rate</td></tr><tr><td>Fetch</td><td>byte-rate (bytes/sec)</td><td>consumer_byte_rate</td></tr><tr><td>Request</td><td>request-time</td><td>request_percentage</td></tr></tbody></table><p>Request units are the easiest to misread. request-time is already a percentage of broker network and I/O thread time, and request_percentage caps that quantity. Utilization is a percentage of that cap, not request-time / 100. Exempt request time is not included in the numerator.</p><h3>Examples</h3><table class=\"wrapped\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th scope=\"col\">Quota</th><th scope=\"col\">Input</th><th scope=\"col\">Quota-utilization</th></tr><tr><td>Produce</td><td>byte-rate = 800 KiB/s, producer_byte_rate = 1 MiB/s</td><td>80</td></tr><tr><td>Request</td><td>request-time = 40, request_percentage = 50</td><td>80 (40 percent of the pool, 80 percent of the client quota)</td></tr><tr><td>Unlimited</td><td>byte-rate = 800 KiB/s, quota = Long.MaxValue</td><td>NaN</td></tr></tbody></table><h3>Effective quota</h3><p>The denominator is not re-resolved by calling ClientQuotaCallback.quotaLimit() during metric collection.</p><p>Kafka already writes the resolved bound onto the quota rate metric when the sensor is created and when quota configuration is updated (MetricConfig.quota). Utilization uses that cached bound.</p><p>Consequences:</p><ul><li data-uuid=\"1b11f56e-36bf-46f3-a290-0e34579b25a2\">JMX and reporter scrapes do not execute custom callback code.</li><li data-uuid=\"cbe3c7d1-45da-47cf-b234-f06b7983323d\">ClientQuotaCallback invocation frequency is unchanged.</li><li data-uuid=\"bf56d34c-1fa2-4dd0-a662-e6e08c16a08c\">If a custom callback changes limits only through the existing update paths (updateQuota, or quotaResetRequired triggering a metric config refresh), utilization stays aligned with enforcement.</li></ul><p>This KIP does not add a requirement that callbacks be safe to run on the scrape path.</p><p>Resolution of user, client-id, and default quotas is unchanged. It follows the existing documented client-quota precedence; this KIP does not restate or alter that hierarchy.</p><p>A missing, non-positive, or unlimited bound (greater than or equal to Long.MaxValue, Kafka's unlimited sentinel) is not a meaningful denominator, and yields NaN.</p><h1>Scope</h1><p>Produce, Fetch, and Request quotas are enforced independently on each broker. The metric on broker A is the client's usage on broker A divided by the quota applied on broker A. It is not cluster-wide quota headroom.</p><p>Operators should therefore scrape every broker and should not average the metric across brokers and interpret the result as cluster-wide utilization.</p><h3>Controller Mutation</h3><p>ControllerMutation quotas are not included in version 1.</p><p>Controller mutation quotas are enforced using a token bucket (tokens), while this KIP defines quota-utilization as a windowed rate divided by the configured rate. A windowed mutation-rate ratio would therefore not represent how much of the resource that actually controls throttling is currently available.</p><p>For example, a burst can exhaust tokens and cause throttle-time while the windowed mutation rate is still below 100%. Conversely, the windowed mutation rate can remain above 100% after the token bucket has begun to refill.</p><p>A future KIP can define an appropriate ControllerMutation metric, either as explicit rate utilization or as a token-bucket/remaining-token metric.</p><p>This KIP does not cover:</p><ul><li data-uuid=\"7b6589dd-05cf-4880-acd0-c968c520dd5d\">Replica and replication quotas <code>LeaderReplication</code>, <code>FollowerReplication</code>, <code>AlterLogDirsReplication</code></li><li data-uuid=\"d617b9fd-e0fb-40f4-8929-52a2dbe44c17\">Remote-log copy or fetch quotas</li><li data-uuid=\"83972875-41c4-406d-8b37-1699c7e8cf5d\">Connection-rate quotas</li><li data-uuid=\"ad01b23b-7c7f-40eb-8125-02b3c7b6d599\">Max-connections quotas</li></ul><p>These quotas use different managers, units, or MBeans and can be addressed separately.</p><h3>Presence, NaN, and sensor lifecycle</h3><p>The attribute is present exactly when the existing quota sensor exists. Presence is not a function of whether the current bound is finite.</p><p>That distinguishes the following cases:</p><ul style=\"list-style-type: square;\"><li data-uuid=\"5d93cb7c-da5b-40fb-850e-a568b96d218d\">Finite quota, from an override or a matching default: sensor and attribute are present; value is measured-rate / effective-quota * 100.</li><li data-uuid=\"02f13a7b-ca20-4d42-966a-270dfa5b230a\">Quotas of this type never configured (quotasEnabled == false): sensor and attribute are absent, same as byte-rate today.</li><li data-uuid=\"8905e785-b8c7-4e3d-9833-0a40f4b600e2\">Sensor exists, bound is unlimited, missing, or non-positive: sensor and attribute are present; value is NaN.</li><li data-uuid=\"55b8b01f-1512-468d-840a-37d00aa6864b\">Quotas configured, then all removed, <code class=\"ui-markdown__inline-code ui-rtu7ee ui-1i9v5mb ui-1hhlpkd ui-6lrnw6 ui-115g5cq ui-odjx36 ui-1wd3ewq ui-hayvgc ui-eb7xqv ui-15bjb6t ui-1lldw8n ui-1mzt3pk md-inline-variable-like\">quotasEnabled</code> becomes false immediately. Sensors created before removal remain until the existing inactive-sensor expiry; <code class=\"ui-markdown__inline-code ui-rtu7ee ui-1i9v5mb ui-1hhlpkd ui-6lrnw6 ui-115g5cq ui-odjx36 ui-1wd3ewq ui-hayvgc ui-eb7xqv ui-15bjb6t ui-1lldw8n ui-1mzt3pk\">quota-utilization</code> is NaN because the bound is the unlimited sentinel. New sensors are not created until a quota is configured again.</li><li data-uuid=\"8ac04e90-ceae-4552-ac5d-81d144485a70\">Inactive client, sensor expired after the existing one hour expiry: sensor and attribute are absent until traffic resumes.</li></ul><p>NaN means there is no finite quota to divide by. It does not mean 0 percent used. The attribute is kept on the MBean so that &quot;sensor exists, no finite denominator&quot; stays distinguishable from &quot;quotas were never enabled, no MBean&quot;. Returning 0 for an unlimited quota would look like an idle, well-behaved client.</p><p>The metric is a double, as the neighbouring attributes already are. Exporter handling of JMX NaN is implementation dependent, so operators should verify their collector. Aggregations that require finite input should exclude NaN samples.</p><p>Fetch may unrecord bytes that were not returned after throttling. Utilization can therefore fall back below 100 percent on the same request that recorded throttle-time. This is existing rate-metric behaviour rather than something introduced here. Produce does not unrecord.</p><h1>Public Interfaces</h1><p>JMX</p><table class=\"wrapped\"><tbody class=\"\"><tr class=\"\"><th>Quota</th><th>Produced on</th><th>MBean</th><th>Attributes after this KIP</th></tr><tr class=\"\"><td>​Produce</td><td>​Every broker</td><td>​kafka.server:type=Produce,user=...,client-id=...</td><td>​byte-rate, throttle-time, quota-utilization</td></tr><tr class=\"\"><td>Fetch</td><td>Every broker</td><td>kafka.server:type=Fetch,user=...,client-id=...</td><td>​byte-rate, throttle-time, quota-utilization</td></tr><tr class=\"\"><td>Request</td><td>Every broker</td><td>kafka.server:type=Request,user=...,client-id=...</td><td>​request-time, throttle-time, quota-utilization</td></tr></tbody></table><p>There are no new broker configurations, request APIs, or Admin APIs.</p><h1>Tags</h1><p><code>quota-utilization</code> uses exactly the same metric tags as the existing quota rate metric.</p><p>With the default quota callback, these are <code>user</code> and <code>client-id</code>. Either tag may be empty:</p><ul><li data-uuid=\"9b80cf02-6029-4bdd-92bd-2a431924fdb2\">Per-client-id quotas have an empty user tag.</li><li data-uuid=\"392538f3-f0af-483c-ac0d-77a2164ad676\">Per-user quotas have an empty client-id tag.</li><li data-uuid=\"326cf40c-f3a6-4988-9bc8-7c3a871d5628\">User plus client-id quotas have both tags populated.</li></ul><p>A custom <code>ClientQuotaCallback</code> may provide additional metric tags. <code>quota-utilization</code> uses those same tags and does not introduce a second tag namespace.</p><p>The metric is an additional attribute on the same sensor and ObjectName as <code>byte-rate</code> or <code>request-time</code>.</p><h1>Compatibility, Deprecation, and Migration Plan</h1><ul><li data-uuid=\"d735e6e9-44b4-4de5-874a-563f77d4ec97\">The change is additive: an attribute is added to existing MBeans.</li><li data-uuid=\"244a5e5f-0c49-4c0e-96a0-0e6f94c040b7\">Existing MBean ObjectNames are unchanged.</li><li data-uuid=\"6e781444-c1c7-412e-8812-2f920ecefcfa\">Scrapers that ignore unknown attributes continue to work.</li><li data-uuid=\"0098352e-ddbd-4a72-882f-d455f6f40c9f\">Scrapers that allowlist attributes by name must add <code>quota-utilization</code> to collect the new metric.</li><li data-uuid=\"37ef6de4-b178-45dd-9ca3-f2fb3844c6d7\"><code>ClientQuotaCallback</code> behavior and invocation frequency are unchanged.</li><li data-uuid=\"4efe0062-fd39-4b5a-bc10-41c508b35b16\">Metric collection does not invoke <code>ClientQuotaCallback.quotaLimit()</code>.</li><li data-uuid=\"9120e02c-3c14-48dc-a839-cbd54d430056\">There are no deprecations.</li><li data-uuid=\"a670fcc2-8404-4164-894f-281df48e5484\">There is no protocol migration.</li><li data-uuid=\"9b99639b-a8d0-4305-86d2-353f14942623\">After upgrade, the attribute appears when the existing quota sensor is created, which occurs on the first recorded traffic after quotas have been enabled for that quota type.</li></ul><h1>Proposed Implementation</h1><p>The implementation adds a <code>MeasurableStat</code> named <code>quota-utilization</code> when the existing quota sensor is registered.</p><p>At measurement time, the stat uses:</p><ul><li data-uuid=\"65a99b08-1c3d-435d-a3d2-06fb1bef290b\">The existing quota rate measurement as the numerator.</li><li data-uuid=\"b3c73c17-9a6f-49ed-ac03-c342f17aa5a6\">The quota associated with the same metric's <code>MetricConfig</code> as the denominator.</li><li data-uuid=\"c8953100-fd2a-4e13-9543-6c3092679e83\"><code>Double.NaN</code> when the denominator is missing, non-positive, or unlimited.</li></ul><p>Dynamic quota updates already refresh the quota metric configuration. No additional quota-resolution path is introduced.</p><p>The request path does not resolve quotas again, does not change enforcement, and does not add a second accumulating rate. Utilization is a no-op <code class=\"ui-markdown__inline-code ui-rtu7ee ui-1i9v5mb ui-1hhlpkd ui-6lrnw6 ui-115g5cq ui-odjx36 ui-1wd3ewq ui-hayvgc ui-eb7xqv ui-15bjb6t ui-1lldw8n ui-1mzt3pk\">MeasurableStat</code> on the existing quota sensor, so <code class=\"ui-markdown__inline-code ui-rtu7ee ui-1i9v5mb ui-1hhlpkd ui-6lrnw6 ui-115g5cq ui-odjx36 ui-1wd3ewq ui-hayvgc ui-eb7xqv ui-15bjb6t ui-1lldw8n ui-1mzt3pk md-inline-path-filename-like\"><span class=\"ui-markdown__inline-path-filename ui-1heor9g md-inline-path-filename\">Sensor.record</span></code> invokes one extra empty <code class=\"ui-markdown__inline-code ui-rtu7ee ui-1i9v5mb ui-1hhlpkd ui-6lrnw6 ui-115g5cq ui-odjx36 ui-1wd3ewq ui-hayvgc ui-eb7xqv ui-15bjb6t ui-1lldw8n ui-1mzt3pk\">record()</code>.</p><h1>Test Plan</h1><p>The Apache Kafka PR will include tests covering at least the following:</p><ul><li data-uuid=\"51d48c6e-cad1-47e7-ac05-2bf43d096a32\">Produce: utilization equals <code>byte-rate / quota * 100</code>.</li><li data-uuid=\"80ce8682-bea9-4684-a3f0-cc5e9836efde\">Fetch: utilization equals <code>byte-rate / quota * 100</code>.</li><li data-uuid=\"0c0636d7-a1bd-444b-bc27-956c160ac5b4\">Request: utilization equals <code>request-time / request_percentage * 100</code>.</li><li data-uuid=\"f1e010f5-c4c2-4258-9ccf-37ac111e97e2\">Default, user, and user-plus-client-id quota tags match the existing rate metric.</li><li data-uuid=\"aba6e095-2c38-45da-98fa-d4bc81e84ae4\">Unlimited, missing, and non-positive bounds produce <code>NaN</code>.</li><li data-uuid=\"bde892a7-db12-4723-8a8d-502059990f6f\">Finite-to-unlimited quota updates produce <code>NaN</code> after the metric configuration is refreshed.</li><li data-uuid=\"28ba64b0-3e7e-4922-8e17-d78358c90465\">Values greater than 100 are preserved and are not capped.</li><li data-uuid=\"94721a1e-93de-43cd-b08b-fc57cc350c08\">Fetch unrecord behavior is reflected in the resulting utilization.</li><li data-uuid=\"1468b2d0-9f7b-4ea0-a962-5093f7276776\">JMX exposes <code>quota-utilization</code> as a <code>double</code> attribute on the existing quota MBeans.</li><li data-uuid=\"2a9ad09b-495f-40d0-8144-0d29c351b0bf\">The measure path does not invoke ClientQuotaCallback.quotaLimit.</li></ul><h1>Rejected Alternatives</h1><table class=\"wrapped\"><colgroup><col /><col /></colgroup><tbody><tr><th scope=\"col\">Alternative</th><th scope=\"col\">Reason</th></tr><tr><td>Computing utilization in the monitoring stack</td><td>Operators could divide the existing usage metric by the configured quota externally. This requires independently resolving defaults, overrides, dynamic updates, and custom ClientQuotaCallback behavior. The broker already has the effective quota associated with the quota metric, so computing utilization in the broker avoids duplicating that logic.</td></tr><tr><td>Adding a new MBean or metric namespace</td><td>A new MBean or metric namespace would add unnecessary complexity and cardinality. quota-utilization is an additional attribute on the existing quota MBeans, keeping the metric alongside the usage and throttling metrics it complements.</td></tr><tr><td>Using a PascalCase metric name such as QuotaUtilizationPercent</td><td>The existing client quota metrics use kebab-case names such as byte-rate, request-time, and throttle-time. quota-utilization follows the existing naming convention and makes the denominator explicit.</td></tr><tr><td>Integer percentages</td><td>The existing quota MBean attributes are double values. Returning a floating-point percentage preserves useful resolution around common alerting thresholds such as 70%, 80%, and 90%.</td></tr><tr><td>Returning 0 for unlimited quotas</td><td>0 could be interpreted as zero usage or an idle client. NaN makes it explicit that no meaningful percentage can be calculated because there is no finite quota.</td></tr><tr><td>Omitting the attribute for unlimited quotas</td><td>The attribute follows the lifecycle of the existing quota sensor. Keeping it present and returning NaN distinguishes an existing quota sensor with no finite denominator from a sensor that does not exist because quotas were never enabled.</td></tr><tr><td>Capping utilization at 100%</td><td>The measured rate can temporarily exceed the configured quota. Values above 100% provide useful information about rate overshoot and should not be capped.</td></tr><tr><td>Broker-level aggregated utilization</td><td>Produce, Fetch, and Request quotas are enforced independently on each broker. Aggregating utilization across brokers can hide the broker where a client is approaching its quota. Aggregation is left to the monitoring system based on the operator's alerting intent.</td></tr><tr><td>Including ControllerMutation quotas</td><td>ControllerMutation quotas use token-bucket enforcement rather than the windowed rate model used by Produce, Fetch, and Request. A windowed rate percentage would therefore not represent token-bucket headroom or reliably predict throttling. ControllerMutation can be addressed separately with a metric whose semantics match its enforcement model.</td></tr><tr><td>Exposing a separate quota-limit metric</td><td>A quota-limit metric could be useful, particularly for idle or unlimited clients, but is not required for the primary use case of normalized utilization alerting. It can be considered as a follow-up.</td></tr><tr><td>Calling quotaLimit() during metric collection</td><td>Resolving the quota through ClientQuotaCallback.quotaLimit() on every metric scrape would change the callback contract and could execute custom callback code as a result of JMX or metrics collection. The effective quota is already associated with the quota metric through MetricConfig, so utilization uses that value instead.</td></tr><tr><td>Time-to-throttle or remaining-headroom metrics</td><td>These metrics require assumptions about future client behavior and can be misleading. quota-utilization reports the recent measured rate relative to the effective quota, while throttle-time remains the signal for actual throttling.</td></tr></tbody></table>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/451971254?status=historical&version=8"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1364
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=451971281",
+    "edit": "/pages/resumedraft.action?draftId=451971281&draftShareId=6f7afae4-d9f0-4919-a58a-0943b78e9134",
+    "tinyui": "/x/0YjwGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/451971254?status=historical&version=8"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/451971254/child?parentVersion=8",
+    "restrictions": "/rest/api/content/451971254/restriction/byOperation",
+    "history": "/rest/api/content/451971254/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/451971254/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/451971254/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "451971254",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1373: Client Quota Utilization Metrics",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "manangupta",
+     "userKey": "073590d29a7abced019ae90bbd2c001d",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Manan Gupta",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019ae90bbd2c001d"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-02T07:32:12.000Z",
+    "message": "",
+    "number": 7,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451971254/version/7"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451971254?status=historical&version=7"
+    }
+   },
+   "position": 1364,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><h1>Status</h1><p><strong>Current state</strong>: <em>Under Discussion</em></p><p><strong>Discussion thread</strong>: <em><a href=\"http://mail-archives.apache.org/mod_mbox/kafka-dev/201501.mbox/%3CCAOeJiJh6Vkkca85bWYgkeOZ8rC6%2BKDh7zzq8vMKECL_7PNExTA%40mail.gmail.com%3E\">here</a> [Change the link from the KIP proposal email archive to your own email thread]<br /></em></p><p><strong>JIRA</strong>: <em><a href=\"https://issues.apache.org/jira/browse/KAFKA-21016\">here</a><br /></em></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p>Brokers already expose per-client quota usage <code>byte-rate</code> , <code>request-time</code>  and throttle time <code>throttle-time</code> . They do not expose how that usage compares to the effective quota applied to the same quota sensor.</p><p>That join is left to operators: scrape the rate, then independently resolve user, client-id, and default overrides (or a custom <code>ClientQuotaCallback)</code>  from a different path. Limits can differ by orders of magnitude and can change dynamically, so absolute-rate alerts do not transfer across clients.</p><p><code>throttle-time</code>  only changes after throttling has occurred. Operators need a normalized rate signal that identifies clients whose recent usage is approaching or exceeding the quota actually applied on that broker, without requiring the monitoring stack to resolve the quota independently.</p><p><a href=\"https://cwiki.apache.org/confluence/x/MAEXG\">KIP-1257: Partition Size Percentage Metrics for Storage Monitoring</a> established the precedent of shipping a normalized percentage from Kafka rather than requiring operators to compute it externally. The analogy is only partial: <code>retention.bytes</code>  is a topic configuration, while client quotas are resolved per quota entity through the existing quota hierarchy and optional callbacks. This KIP preserves the existing quota-resolution and enforcement behavior.</p><h1>Proposed Changes</h1><p>Add <code>quota-utilization</code> as an additional attribute on the existing client-quota MBeans. No new MBean type, ObjectName, sensor, or quota entity is introduced.   </p><table class=\"wrapped\"><colgroup><col /><col /></colgroup><tbody><tr><th scope=\"col\">existing</th><th scope=\"col\">new</th></tr><tr><td>byte-rate | request-time ,  throttle-time</td><td>quota-utilization</td></tr></tbody></table><h3>Definition</h3><p>quota-utilization is the recent quota-measured rate expressed as a percentage of the effective quota applied to the same quota sensor.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"d49f7030-a6ed-4dfa-9139-22bb0e7c009a\"><ac:parameter ac:name=\"title\">calculation</ac:parameter><ac:plain-text-body><![CDATA[quota-utilization = measured-rate / effective-quota * 100]]></ac:plain-text-body></ac:structured-macro><ul><li data-uuid=\"2e522010-bbd5-467f-8743-579dc1e9ac1f\">Measured rate is the value of the existing quota rate metric on that sensor (byte-rate or request-time).</li><li data-uuid=\"f7705285-1c9a-4c6b-bb12-d1e7e1221991\">Effective quota is the quota currently associated with that rate metric's MetricConfig, after callback resolution and default/override resolution, and is the same bound used for enforcement on that sensor.</li><li data-uuid=\"8258f821-4caa-492c-b5e4-dfc7aac253f8\">The metric is a rate-utilization signal. It is not a representation of throttle state or of remaining headroom before the next request is delayed.</li></ul><h3>Value and meaning</h3><ul><li data-uuid=\"67ccf12a-3045-4db0-a768-afaf8c473cee\">Less than 100: recent rate is below the effective quota.</li><li data-uuid=\"6ae22d22-a8c3-4c4f-873e-2b342936a355\">Equal to 100: recent rate equals the effective quota.</li><li data-uuid=\"e716ef84-501e-4c75-9eed-462879814225\">Greater than 100: recent rate exceeds the effective quota; not capped.</li></ul><p>throttle-time: actual throttling that already occurred.</p><p>The result is always a percentage of the applicable quota, regardless of the physical unit of the numerator.</p><table class=\"wrapped\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th scope=\"col\">Quota</th><th scope=\"col\">numerator</th><th scope=\"col\">denominator</th></tr><tr><td>Produce</td><td>byte-rate (bytes/sec)</td><td>producer_byte_rate</td></tr><tr><td>Fetch</td><td>byte-rate (bytes/sec)</td><td>consumer_byte_rate</td></tr><tr><td>Request</td><td>request-time</td><td>request_percentage</td></tr></tbody></table><p>Request units are the easiest to misread. request-time is already a percentage of broker network and I/O thread time, and request_percentage caps that quantity. Utilization is a percentage of that cap, not request-time / 100. Exempt request time is not included in the numerator.</p><h3>Examples</h3><table class=\"wrapped\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th scope=\"col\">Quota</th><th scope=\"col\">Input</th><th scope=\"col\">Quota-utilization</th></tr><tr><td>Produce</td><td>byte-rate = 800 KiB/s, producer_byte_rate = 1 MiB/s</td><td>80</td></tr><tr><td>Request</td><td>request-time = 40, request_percentage = 50</td><td>80 (40 percent of the pool, 80 percent of the client quota)</td></tr><tr><td>Unlimited</td><td>byte-rate = 800 KiB/s, quota = Long.MaxValue</td><td>NaN</td></tr></tbody></table><h3>Effective quota</h3><p>The denominator is not re-resolved by calling ClientQuotaCallback.quotaLimit() during metric collection.</p><p>Kafka already writes the resolved bound onto the quota rate metric when the sensor is created and when quota configuration is updated (MetricConfig.quota). Utilization uses that cached bound.</p><p>Consequences:</p><ul><li data-uuid=\"1b11f56e-36bf-46f3-a290-0e34579b25a2\">JMX and reporter scrapes do not execute custom callback code.</li><li data-uuid=\"cbe3c7d1-45da-47cf-b234-f06b7983323d\">ClientQuotaCallback invocation frequency is unchanged.</li><li data-uuid=\"bf56d34c-1fa2-4dd0-a662-e6e08c16a08c\">If a custom callback changes limits only through the existing update paths (updateQuota, or quotaResetRequired triggering a metric config refresh), utilization stays aligned with enforcement.</li></ul><p>This KIP does not add a requirement that callbacks be safe to run on the scrape path.</p><p>Resolution of user, client-id, and default quotas is unchanged. It follows the existing documented client-quota precedence; this KIP does not restate or alter that hierarchy.</p><p>A missing, non-positive, or unlimited bound (greater than or equal to Long.MaxValue, Kafka's unlimited sentinel) is not a meaningful denominator, and yields NaN.</p><h1>Scope</h1><p>Produce, Fetch, and Request quotas are enforced independently on each broker. The metric on broker A is the client's usage on broker A divided by the quota applied on broker A. It is not cluster-wide quota headroom.</p><p>Operators should therefore scrape every broker and should not average the metric across brokers and interpret the result as cluster-wide utilization.</p><h3>Controller Mutation</h3><p>ControllerMutation quotas are not included in version 1.</p><p>Controller mutation quotas are enforced using a token bucket (tokens), while this KIP defines quota-utilization as a windowed rate divided by the configured rate. A windowed mutation-rate ratio would therefore not represent how much of the resource that actually controls throttling is currently available.</p><p>For example, a burst can exhaust tokens and cause throttle-time while the windowed mutation rate is still below 100%. Conversely, the windowed mutation rate can remain above 100% after the token bucket has begun to refill.</p><p>A future KIP can define an appropriate ControllerMutation metric, either as explicit rate utilization or as a token-bucket/remaining-token metric.</p><p>This KIP does not cover:</p><ul><li data-uuid=\"7b6589dd-05cf-4880-acd0-c968c520dd5d\">Replica and replication quotas <code>LeaderReplication</code>, <code>FollowerReplication</code>, <code>AlterLogDirsReplication</code></li><li data-uuid=\"d617b9fd-e0fb-40f4-8929-52a2dbe44c17\">Remote-log copy or fetch quotas</li><li data-uuid=\"83972875-41c4-406d-8b37-1699c7e8cf5d\">Connection-rate quotas</li><li data-uuid=\"ad01b23b-7c7f-40eb-8125-02b3c7b6d599\">Max-connections quotas</li></ul><p>These quotas use different managers, units, or MBeans and can be addressed separately.</p><h3>Presence, NaN, and sensor lifecycle</h3><p>The attribute is present exactly when the existing quota sensor exists. Presence is not a function of whether the current bound is finite.</p><p>That distinguishes the following cases:</p><ul style=\"list-style-type: square;\"><li data-uuid=\"5d93cb7c-da5b-40fb-850e-a568b96d218d\">Finite quota, from an override or a matching default: sensor and attribute are present; value is measured-rate / effective-quota * 100.</li><li data-uuid=\"02f13a7b-ca20-4d42-966a-270dfa5b230a\">Quotas of this type never configured (quotasEnabled == false): sensor and attribute are absent, same as byte-rate today.</li><li data-uuid=\"8905e785-b8c7-4e3d-9833-0a40f4b600e2\">Sensor exists, bound is unlimited, missing, or non-positive: sensor and attribute are present; value is NaN.</li><li data-uuid=\"55b8b01f-1512-468d-840a-37d00aa6864b\">Quotas configured, then all removed, broker not restarted: sensor and attribute are present. quotasEnabled stays true until restart; that is existing behaviour and this KIP does not change it. Value is NaN.</li><li data-uuid=\"8ac04e90-ceae-4552-ac5d-81d144485a70\">Inactive client, sensor expired after the existing one hour expiry: sensor and attribute are absent until traffic resumes.</li></ul><p>NaN means there is no finite quota to divide by. It does not mean 0 percent used. The attribute is kept on the MBean so that &quot;sensor exists, no finite denominator&quot; stays distinguishable from &quot;quotas were never enabled, no MBean&quot;. Returning 0 for an unlimited quota would look like an idle, well-behaved client.</p><p>The metric is a double, as the neighbouring attributes already are. Exporter handling of JMX NaN is implementation dependent, so operators should verify their collector. Aggregations that require finite input should exclude NaN samples.</p><p>Fetch may unrecord bytes that were not returned after throttling. Utilization can therefore fall back below 100 percent on the same request that recorded throttle-time. This is existing rate-metric behaviour rather than something introduced here. Produce does not unrecord.</p><h1>Public Interfaces</h1><p>JMX</p><table class=\"wrapped\"><tbody class=\"\"><tr class=\"\"><th>Quota</th><th>Produced on</th><th>MBean</th><th>Attributes after this KIP</th></tr><tr class=\"\"><td>​Produce</td><td>​Every broker</td><td>​kafka.server:type=Produce,user=...,client-id=...</td><td>​byte-rate, throttle-time, quota-utilization</td></tr><tr class=\"\"><td>Fetch</td><td>Every broker</td><td>kafka.server:type=Fetch,user=...,client-id=...</td><td>​byte-rate, throttle-time, quota-utilization</td></tr><tr class=\"\"><td>Request</td><td>Every broker</td><td>kafka.server:type=Request,user=...,client-id=...</td><td>​request-time, throttle-time, quota-utilization</td></tr></tbody></table><p>There are no new broker configurations, request APIs, or Admin APIs.</p><h1>Tags</h1><p><code>quota-utilization</code> uses exactly the same metric tags as the existing quota rate metric.</p><p>With the default quota callback, these are <code>user</code> and <code>client-id</code>. Either tag may be empty:</p><ul><li data-uuid=\"9b80cf02-6029-4bdd-92bd-2a431924fdb2\">Per-client-id quotas have an empty user tag.</li><li data-uuid=\"392538f3-f0af-483c-ac0d-77a2164ad676\">Per-user quotas have an empty client-id tag.</li><li data-uuid=\"326cf40c-f3a6-4988-9bc8-7c3a871d5628\">User plus client-id quotas have both tags populated.</li></ul><p>A custom <code>ClientQuotaCallback</code> may provide additional metric tags. <code>quota-utilization</code> uses those same tags and does not introduce a second tag namespace.</p><p>The metric is an additional attribute on the same sensor and ObjectName as <code>byte-rate</code> or <code>request-time</code>.</p><h1>Compatibility, Deprecation, and Migration Plan</h1><ul><li data-uuid=\"d735e6e9-44b4-4de5-874a-563f77d4ec97\">The change is additive: an attribute is added to existing MBeans.</li><li data-uuid=\"244a5e5f-0c49-4c0e-96a0-0e6f94c040b7\">Existing MBean ObjectNames are unchanged.</li><li data-uuid=\"6e781444-c1c7-412e-8812-2f920ecefcfa\">Scrapers that ignore unknown attributes continue to work.</li><li data-uuid=\"0098352e-ddbd-4a72-882f-d455f6f40c9f\">Scrapers that allowlist attributes by name must add <code>quota-utilization</code> to collect the new metric.</li><li data-uuid=\"37ef6de4-b178-45dd-9ca3-f2fb3844c6d7\"><code>ClientQuotaCallback</code> behavior and invocation frequency are unchanged.</li><li data-uuid=\"4efe0062-fd39-4b5a-bc10-41c508b35b16\">Metric collection does not invoke <code>ClientQuotaCallback.quotaLimit()</code>.</li><li data-uuid=\"9120e02c-3c14-48dc-a839-cbd54d430056\">There are no deprecations.</li><li data-uuid=\"a670fcc2-8404-4164-894f-281df48e5484\">There is no protocol migration.</li><li data-uuid=\"9b99639b-a8d0-4305-86d2-353f14942623\">After upgrade, the attribute appears when the existing quota sensor is created, which occurs on the first recorded traffic after quotas have been enabled for that quota type.</li></ul><h1>Proposed Implementation</h1><p>The implementation adds a <code>MeasurableStat</code> named <code>quota-utilization</code> when the existing quota sensor is registered.</p><p>At measurement time, the stat uses:</p><ul><li data-uuid=\"65a99b08-1c3d-435d-a3d2-06fb1bef290b\">The existing quota rate measurement as the numerator.</li><li data-uuid=\"b3c73c17-9a6f-49ed-ac03-c342f17aa5a6\">The quota associated with the same metric's <code>MetricConfig</code> as the denominator.</li><li data-uuid=\"c8953100-fd2a-4e13-9543-6c3092679e83\"><code>Double.NaN</code> when the denominator is missing, non-positive, or unlimited.</li></ul><p>Dynamic quota updates already refresh the quota metric configuration. No additional quota-resolution path is introduced.</p><p>The implementation does not add any additional quota recording on the request path.</p><h1>Test Plan</h1><p>The Apache Kafka PR will include tests covering at least the following:</p><ul><li data-uuid=\"51d48c6e-cad1-47e7-ac05-2bf43d096a32\">Produce: utilization equals <code>byte-rate / quota * 100</code>.</li><li data-uuid=\"80ce8682-bea9-4684-a3f0-cc5e9836efde\">Fetch: utilization equals <code>byte-rate / quota * 100</code>.</li><li data-uuid=\"0c0636d7-a1bd-444b-bc27-956c160ac5b4\">Request: utilization equals <code>request-time / request_percentage * 100</code>.</li><li data-uuid=\"f1e010f5-c4c2-4258-9ccf-37ac111e97e2\">Default, user, and user-plus-client-id quota tags match the existing rate metric.</li><li data-uuid=\"aba6e095-2c38-45da-98fa-d4bc81e84ae4\">Unlimited, missing, and non-positive bounds produce <code>NaN</code>.</li><li data-uuid=\"bde892a7-db12-4723-8a8d-502059990f6f\">Finite-to-unlimited quota updates produce <code>NaN</code> after the metric configuration is refreshed.</li><li data-uuid=\"28ba64b0-3e7e-4922-8e17-d78358c90465\">Values greater than 100 are preserved and are not capped.</li><li data-uuid=\"94721a1e-93de-43cd-b08b-fc57cc350c08\">Fetch unrecord behavior is reflected in the resulting utilization.</li><li data-uuid=\"1468b2d0-9f7b-4ea0-a962-5093f7276776\">JMX exposes <code>quota-utilization</code> as a <code>double</code> attribute on the existing quota MBeans.</li><li data-uuid=\"2a9ad09b-495f-40d0-8144-0d29c351b0bf\">The measure path does not invoke ClientQuotaCallback.quotaLimit.</li></ul><h1>Rejected Alternatives</h1><table class=\"wrapped\"><colgroup><col /><col /></colgroup><tbody><tr><th scope=\"col\">Alternative</th><th scope=\"col\">Reason</th></tr><tr><td>Computing utilization in the monitoring stack</td><td>Operators could divide the existing usage metric by the configured quota externally. This requires independently resolving defaults, overrides, dynamic updates, and custom ClientQuotaCallback behavior. The broker already has the effective quota associated with the quota metric, so computing utilization in the broker avoids duplicating that logic.</td></tr><tr><td>Adding a new MBean or metric namespace</td><td>A new MBean or metric namespace would add unnecessary complexity and cardinality. quota-utilization is an additional attribute on the existing quota MBeans, keeping the metric alongside the usage and throttling metrics it complements.</td></tr><tr><td>Using a PascalCase metric name such as QuotaUtilizationPercent</td><td>The existing client quota metrics use kebab-case names such as byte-rate, request-time, and throttle-time. quota-utilization follows the existing naming convention and makes the denominator explicit.</td></tr><tr><td>Integer percentages</td><td>The existing quota MBean attributes are double values. Returning a floating-point percentage preserves useful resolution around common alerting thresholds such as 70%, 80%, and 90%.</td></tr><tr><td>Returning 0 for unlimited quotas</td><td>0 could be interpreted as zero usage or an idle client. NaN makes it explicit that no meaningful percentage can be calculated because there is no finite quota.</td></tr><tr><td>Omitting the attribute for unlimited quotas</td><td>The attribute follows the lifecycle of the existing quota sensor. Keeping it present and returning NaN distinguishes an existing quota sensor with no finite denominator from a sensor that does not exist because quotas were never enabled.</td></tr><tr><td>Capping utilization at 100%</td><td>The measured rate can temporarily exceed the configured quota. Values above 100% provide useful information about rate overshoot and should not be capped.</td></tr><tr><td>Broker-level aggregated utilization</td><td>Produce, Fetch, and Request quotas are enforced independently on each broker. Aggregating utilization across brokers can hide the broker where a client is approaching its quota. Aggregation is left to the monitoring system based on the operator's alerting intent.</td></tr><tr><td>Including ControllerMutation quotas</td><td>ControllerMutation quotas use token-bucket enforcement rather than the windowed rate model used by Produce, Fetch, and Request. A windowed rate percentage would therefore not represent token-bucket headroom or reliably predict throttling. ControllerMutation can be addressed separately with a metric whose semantics match its enforcement model.</td></tr><tr><td>Exposing a separate quota-limit metric</td><td>A quota-limit metric could be useful, particularly for idle or unlimited clients, but is not required for the primary use case of normalized utilization alerting. It can be considered as a follow-up.</td></tr><tr><td>Calling quotaLimit() during metric collection</td><td>Resolving the quota through ClientQuotaCallback.quotaLimit() on every metric scrape would change the callback contract and could execute custom callback code as a result of JMX or metrics collection. The effective quota is already associated with the quota metric through MetricConfig, so utilization uses that value instead.</td></tr><tr><td>Time-to-throttle or remaining-headroom metrics</td><td>These metrics require assumptions about future client behavior and can be misleading. quota-utilization reports the recent measured rate relative to the effective quota, while throttle-time remains the signal for actual throttling.</td></tr></tbody></table>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/451971254?status=historical&version=7"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1364
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=451971271",
+    "edit": "/pages/resumedraft.action?draftId=451971271&draftShareId=6f7afae4-d9f0-4919-a58a-0943b78e9134",
+    "tinyui": "/x/x4jwGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/451971254?status=historical&version=7"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/451971254/child?parentVersion=7",
+    "restrictions": "/rest/api/content/451971254/restriction/byOperation",
+    "history": "/rest/api/content/451971254/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/451971254/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/451971254/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "451971254",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1373: Client Quota Utilization Metrics",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "manangupta",
+     "userKey": "073590d29a7abced019ae90bbd2c001d",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Manan Gupta",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019ae90bbd2c001d"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-02T07:26:04.000Z",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451971254/version/6"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451971254?status=historical&version=6"
+    }
+   },
+   "position": 1364,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><h1>Status</h1><p><strong>Current state</strong>: <em>Under Discussion</em></p><p><strong>Discussion thread</strong>: <em><a href=\"http://mail-archives.apache.org/mod_mbox/kafka-dev/201501.mbox/%3CCAOeJiJh6Vkkca85bWYgkeOZ8rC6%2BKDh7zzq8vMKECL_7PNExTA%40mail.gmail.com%3E\">here</a> [Change the link from the KIP proposal email archive to your own email thread]<br /></em></p><p><strong>JIRA</strong>: <em><a href=\"https://issues.apache.org/jira/browse/KAFKA-21016\">here</a><br /></em></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p>Brokers already expose per-client quota usage <code>byte-rate</code> , <code>request-time</code>  and throttle time <code>throttle-time</code> . They do not expose how that usage compares to the effective quota applied to the same quota sensor.</p><p>That join is left to operators: scrape the rate, then independently resolve user, client-id, and default overrides (or a custom <code>ClientQuotaCallback)</code>  from a different path. Limits can differ by orders of magnitude and can change dynamically, so absolute-rate alerts do not transfer across clients.</p><p><code>throttle-time</code>  only changes after throttling has occurred. Operators need a normalized rate signal that identifies clients whose recent usage is approaching or exceeding the quota actually applied on that broker, without requiring the monitoring stack to resolve the quota independently.</p><p><a href=\"https://cwiki.apache.org/confluence/x/MAEXG\">KIP-1257: Partition Size Percentage Metrics for Storage Monitoring</a> established the precedent of shipping a normalized percentage from Kafka rather than requiring operators to compute it externally. The analogy is only partial: <code>retention.bytes</code>  is a topic configuration, while client quotas are resolved per quota entity through the existing quota hierarchy and optional callbacks. This KIP preserves the existing quota-resolution and enforcement behavior.</p><h1>Proposed Changes</h1><p>Add <code>quota-utilization</code> as an additional attribute on the existing client-quota MBeans. No new MBean type, ObjectName, sensor, or quota entity is introduced.   </p><table class=\"wrapped\"><colgroup><col /><col /></colgroup><tbody><tr><th scope=\"col\">existing</th><th scope=\"col\">new</th></tr><tr><td>byte-rate | request-time ,  throttle-time</td><td>quota-utilization</td></tr></tbody></table><h3>Definition</h3><p>quota-utilization is the recent quota-measured rate expressed as a percentage of the effective quota applied to the same quota sensor.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"d49f7030-a6ed-4dfa-9139-22bb0e7c009a\"><ac:parameter ac:name=\"title\">calculation</ac:parameter><ac:plain-text-body><![CDATA[quota-utilization = measured-rate / effective-quota * 100]]></ac:plain-text-body></ac:structured-macro><ul><li data-uuid=\"2e522010-bbd5-467f-8743-579dc1e9ac1f\">Measured rate is the value of the existing quota rate metric on that sensor (byte-rate or request-time).</li><li data-uuid=\"f7705285-1c9a-4c6b-bb12-d1e7e1221991\">Effective quota is the quota currently associated with that rate metric's MetricConfig, after callback resolution and default/override resolution, and is the same bound used for enforcement on that sensor.</li><li data-uuid=\"8258f821-4caa-492c-b5e4-dfc7aac253f8\">The metric is a rate-utilization signal. It is not a representation of throttle state or of remaining headroom before the next request is delayed.</li></ul><h3>Value and meaning</h3><ul><li data-uuid=\"67ccf12a-3045-4db0-a768-afaf8c473cee\">Less than 100: recent rate is below the effective quota.</li><li data-uuid=\"6ae22d22-a8c3-4c4f-873e-2b342936a355\">Equal to 100: recent rate equals the effective quota.</li><li data-uuid=\"e716ef84-501e-4c75-9eed-462879814225\">Greater than 100: recent rate exceeds the effective quota; not capped.</li><li data-uuid=\"d9e3a4e5-9f72-4aa2-8759-cd0b2f60cc1b\">throttle-time: actual throttling that already occurred.</li></ul><p>The result is always a percentage of the applicable quota, regardless of the physical unit of the numerator.</p><table class=\"wrapped\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th scope=\"col\">Quota</th><th scope=\"col\">numerator</th><th scope=\"col\">denominator</th></tr><tr><td>Produce</td><td>byte-rate (bytes/sec)</td><td>producer_byte_rate</td></tr><tr><td>Fetch</td><td>byte-rate (bytes/sec)</td><td>consumer_byte_rate</td></tr><tr><td>Request</td><td>request-time</td><td>request_percentage</td></tr></tbody></table><p>Request units are the easiest to misread. request-time is already a percentage of broker network and I/O thread time, and request_percentage caps that quantity. Utilization is a percentage of that cap, not request-time / 100. Exempt request time is not included in the numerator.</p><h3>Examples</h3><table class=\"wrapped\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th scope=\"col\">Quota</th><th scope=\"col\">Input</th><th scope=\"col\">Quota-utilization</th></tr><tr><td>Produce</td><td>byte-rate = 800 KiB/s, producer_byte_rate = 1 MiB/s,</td><td>80</td></tr><tr><td>Request</td><td>request-time = 40, request_percentage = 50</td><td>80 (40 percent of the pool, 80 percent of the client quota)</td></tr><tr><td>Unlimited</td><td>byte-rate = 800 KiB/s, quota = Long.MaxValue</td><td>NaN</td></tr></tbody></table><h3>Effective quota</h3><p>The denominator is not re-resolved by calling ClientQuotaCallback.quotaLimit() during metric collection.</p><p>Kafka already writes the resolved bound onto the quota rate metric when the sensor is created and when quota configuration is updated (MetricConfig.quota). Utilization uses that cached bound.</p><p>Consequences:</p><ul><li data-uuid=\"1b11f56e-36bf-46f3-a290-0e34579b25a2\">JMX and reporter scrapes do not execute custom callback code.</li><li data-uuid=\"cbe3c7d1-45da-47cf-b234-f06b7983323d\">ClientQuotaCallback invocation frequency is unchanged.</li><li data-uuid=\"bf56d34c-1fa2-4dd0-a662-e6e08c16a08c\">If a custom callback changes limits only through the existing update paths (updateQuota, or quotaResetRequired triggering a metric config refresh), utilization stays aligned with enforcement.</li></ul><p>This KIP does not add a requirement that callbacks be safe to run on the scrape path.</p><p>Resolution of user, client-id, and default quotas is unchanged. It follows the existing documented client-quota precedence; this KIP does not restate or alter that hierarchy.</p><p>A missing, non-positive, or unlimited bound (greater than or equal to Long.MaxValue, Kafka's unlimited sentinel) is not a meaningful denominator, and yields NaN.</p><h1>Scope</h1><p>Produce, Fetch, and Request quotas are enforced independently on each broker. The metric on broker A is the client's usage on broker A divided by the quota applied on broker A. It is not cluster-wide quota headroom.</p><p>Operators should therefore scrape every broker and should not average the metric across brokers and interpret the result as cluster-wide utilization.</p><h3>Controller Mutation</h3><p>ControllerMutation quotas are not included in version 1.</p><p>Controller mutation quotas are enforced using a token bucket tokens, while this KIP defines quota-utilization as a windowed rate divided by the configured rate. A windowed mutation-rate ratio would therefore not represent how much of the resource that actually controls throttling is currently available.</p><p>For example, a burst can exhaust tokens and cause throttle-time while the windowed mutation rate is still below 100%. Conversely, the windowed mutation rate can remain above 100% after the token bucket has begun to refill.</p><p>A future KIP can define an appropriate ControllerMutation metric, either as explicit rate utilization or as a token-bucket/remaining-token metric.</p><p>This KIP does not cover:</p><ul><li data-uuid=\"7b6589dd-05cf-4880-acd0-c968c520dd5d\">Replica and replication quotas <code>LeaderReplication</code>, <code>FollowerReplication</code>, <code>AlterLogDirsReplication</code></li><li data-uuid=\"d617b9fd-e0fb-40f4-8929-52a2dbe44c17\">Remote-log copy or fetch quotas</li><li data-uuid=\"83972875-41c4-406d-8b37-1699c7e8cf5d\">Connection-rate quotas</li><li data-uuid=\"ad01b23b-7c7f-40eb-8125-02b3c7b6d599\">Max-connections quotas</li></ul><p>These quotas use different managers, units, or MBeans and can be addressed separately.</p><h3>Presence, NaN, and sensor lifecycle</h3><p>The attribute is present exactly when the existing quota sensor exists. Presence is not a function of whether the current bound is finite.</p><p>That distinguishes the following cases:</p><ul style=\"list-style-type: square;\"><li data-uuid=\"5d93cb7c-da5b-40fb-850e-a568b96d218d\">Finite quota, from an override or a matching default: sensor and attribute are present; value is measured-rate / effective-quota * 100.</li><li data-uuid=\"02f13a7b-ca20-4d42-966a-270dfa5b230a\">Quotas of this type never configured (quotasEnabled == false): sensor and attribute are absent, same as byte-rate today.</li><li data-uuid=\"8905e785-b8c7-4e3d-9833-0a40f4b600e2\">Sensor exists, bound is unlimited, missing, or non-positive: sensor and attribute are present; value is NaN.</li><li data-uuid=\"55b8b01f-1512-468d-840a-37d00aa6864b\">Quotas configured, then all removed, broker not restarted: sensor and attribute are present. quotasEnabled stays true until restart; that is existing behaviour and this KIP does not change it. Value is NaN.</li><li data-uuid=\"8ac04e90-ceae-4552-ac5d-81d144485a70\">Inactive client, sensor expired after the existing one hour expiry: sensor and attribute are absent until traffic resumes.</li></ul><p>NaN means there is no finite quota to divide by. It does not mean 0 percent used. The attribute is kept on the MBean so that &quot;sensor exists, no finite denominator&quot; stays distinguishable from &quot;quotas were never enabled, no MBean&quot;. Returning 0 for an unlimited quota would look like an idle, well-behaved client.</p><p>The metric is a double, as the neighbouring attributes already are. Exporter handling of JMX NaN is implementation dependent, so operators should verify their collector. Aggregations that require finite input should exclude NaN samples.</p><p>Fetch may unrecord bytes that were not returned after throttling. Utilization can therefore fall back below 100 percent on the same request that recorded throttle-time. This is existing rate-metric behaviour rather than something introduced here. Produce does not unrecord.</p><h1>Public Interfaces</h1><p>JMX</p><table class=\"wrapped\"><tbody class=\"\"><tr class=\"\"><th>Quota</th><th>Produced on</th><th>MBean</th><th>Attributes after this KIP</th></tr><tr class=\"\"><td>​Produce</td><td>​Every broker</td><td>​kafka.server:type=Produce,user=...,client-id=...</td><td><br /></td></tr><tr class=\"\"><td>Fetch</td><td>Every broker</td><td>kafka.server:type=Fetch,user=...,client-id=...</td><td>​byte-rate, throttle-time, quota-utilization</td></tr><tr class=\"\"><td>Request</td><td>Every broker</td><td>kafka.server:type=Request,user=...,client-id=...</td><td>​byte-rate, throttle-time, quota-utilization</td></tr></tbody></table><p>The metric type is <code>double</code>, consistent with the neighboring Kafka Metrics attributes. Exporter handling of JMX <code>NaN</code> is implementation-dependent, so operators should verify their collector behavior. Aggregations that require finite input should exclude <code>NaN</code> samples.</p><p>There are no new broker configurations, request APIs, or Admin APIs.</p><h1>Tags</h1><p><code>quota-utilization</code> uses exactly the same metric tags as the existing quota rate metric.</p><p>With the default quota callback, these are <code>user</code> and <code>client-id</code>. Either tag may be empty:</p><ul><li data-uuid=\"9b80cf02-6029-4bdd-92bd-2a431924fdb2\">Per-client-id quotas have an empty user tag.</li><li data-uuid=\"392538f3-f0af-483c-ac0d-77a2164ad676\">Per-user quotas have an empty client-id tag.</li><li data-uuid=\"326cf40c-f3a6-4988-9bc8-7c3a871d5628\">User plus client-id quotas have both tags populated.</li></ul><p>A custom <code>ClientQuotaCallback</code> may provide additional metric tags. <code>quota-utilization</code> uses those same tags and does not introduce a second tag namespace.</p><p>The metric is an additional attribute on the same sensor and ObjectName as <code>byte-rate</code> or <code>request-time</code>.</p><h1>Compatibility, Deprecation, and Migration Plan</h1><ul><li data-uuid=\"d735e6e9-44b4-4de5-874a-563f77d4ec97\">The change is additive: an attribute is added to existing MBeans.</li><li data-uuid=\"244a5e5f-0c49-4c0e-96a0-0e6f94c040b7\">Existing MBean ObjectNames are unchanged.</li><li data-uuid=\"6e781444-c1c7-412e-8812-2f920ecefcfa\">Scrapers that ignore unknown attributes continue to work.</li><li data-uuid=\"0098352e-ddbd-4a72-882f-d455f6f40c9f\">Scrapers that allowlist attributes by name must add <code>quota-utilization</code> to collect the new metric.</li><li data-uuid=\"37ef6de4-b178-45dd-9ca3-f2fb3844c6d7\"><code>ClientQuotaCallback</code> behavior and invocation frequency are unchanged.</li><li data-uuid=\"4efe0062-fd39-4b5a-bc10-41c508b35b16\">Metric collection does not invoke <code>ClientQuotaCallback.quotaLimit()</code>.</li><li data-uuid=\"9120e02c-3c14-48dc-a839-cbd54d430056\">There are no deprecations.</li><li data-uuid=\"a670fcc2-8404-4164-894f-281df48e5484\">There is no protocol migration.</li><li data-uuid=\"9b99639b-a8d0-4305-86d2-353f14942623\">After upgrade, the attribute appears when the existing quota sensor is created, which occurs on the first recorded traffic after quotas have been enabled for that quota type.</li></ul><h1>Proposed Implementation</h1><p>The implementation adds a <code>MeasurableStat</code> named <code>quota-utilization</code> when the existing quota sensor is registered.</p><p>At measurement time, the stat uses:</p><ul><li data-uuid=\"65a99b08-1c3d-435d-a3d2-06fb1bef290b\">The existing quota rate measurement as the numerator.</li><li data-uuid=\"b3c73c17-9a6f-49ed-ac03-c342f17aa5a6\">The quota associated with the same metric's <code>MetricConfig</code> as the denominator.</li><li data-uuid=\"c8953100-fd2a-4e13-9543-6c3092679e83\"><code>Double.NaN</code> when the denominator is missing, non-positive, or unlimited.</li></ul><p>Dynamic quota updates already refresh the quota metric configuration. No additional quota-resolution path is introduced.</p><p>The implementation does not add any additional quota recording on the request path.</p><h1>Test Plan</h1><p>The Apache Kafka PR will include tests covering at least the following:</p><ul><li data-uuid=\"51d48c6e-cad1-47e7-ac05-2bf43d096a32\">Produce: utilization equals <code>byte-rate / quota * 100</code>.</li><li data-uuid=\"80ce8682-bea9-4684-a3f0-cc5e9836efde\">Fetch: utilization equals <code>byte-rate / quota * 100</code>.</li><li data-uuid=\"0c0636d7-a1bd-444b-bc27-956c160ac5b4\">Request: utilization equals <code>request-time / request_percentage * 100</code>.</li><li data-uuid=\"f1e010f5-c4c2-4258-9ccf-37ac111e97e2\">Default, user, and user-plus-client-id quota tags match the existing rate metric.</li><li data-uuid=\"aba6e095-2c38-45da-98fa-d4bc81e84ae4\">Unlimited, missing, and non-positive bounds produce <code>NaN</code>.</li><li data-uuid=\"bde892a7-db12-4723-8a8d-502059990f6f\">Finite-to-unlimited quota updates produce <code>NaN</code> after the metric configuration is refreshed.</li><li data-uuid=\"28ba64b0-3e7e-4922-8e17-d78358c90465\">Values greater than 100 are preserved and are not capped.</li><li data-uuid=\"94721a1e-93de-43cd-b08b-fc57cc350c08\">Fetch unrecord behavior is reflected in the resulting utilization.</li><li data-uuid=\"1468b2d0-9f7b-4ea0-a962-5093f7276776\">JMX exposes <code>quota-utilization</code> as a <code>double</code> attribute on the existing quota MBeans.</li><li data-uuid=\"2a9ad09b-495f-40d0-8144-0d29c351b0bf\">The measure path does not invoke ClientQuotaCallback.quotaLimit.</li></ul><h1>Rejected Alternatives</h1><table class=\"wrapped\"><colgroup><col /><col /></colgroup><tbody><tr><th scope=\"col\">Alternative</th><th scope=\"col\">Reason</th></tr><tr><td>Computing utilization in the monitoring stack</td><td>Operators could divide the existing usage metric by the configured quota externally. This requires independently resolving defaults, overrides, dynamic updates, and custom ClientQuotaCallback behavior. The broker already has the effective quota associated with the quota metric, so computing utilization in the broker avoids duplicating that logic.</td></tr><tr><td>Adding a new MBean or metric namespace</td><td>A new MBean or metric namespace would add unnecessary complexity and cardinality. quota-utilization is an additional attribute on the existing quota MBeans, keeping the metric alongside the usage and throttling metrics it complements.</td></tr><tr><td>Using a PascalCase metric name such as QuotaUtilizationPercent</td><td>The existing client quota metrics use kebab-case names such as byte-rate, request-time, and throttle-time. quota-utilization follows the existing naming convention and makes the denominator explicit.</td></tr><tr><td>Integer percentages</td><td>The existing quota MBean attributes are double values. Returning a floating-point percentage preserves useful resolution around common alerting thresholds such as 70%, 80%, and 90%.</td></tr><tr><td>Returning 0 for unlimited quotas</td><td>0 could be interpreted as zero usage or an idle client. NaN makes it explicit that no meaningful percentage can be calculated because there is no finite quota.</td></tr><tr><td>Omitting the attribute for unlimited quotas</td><td>The attribute follows the lifecycle of the existing quota sensor. Keeping it present and returning NaN distinguishes an existing quota sensor with no finite denominator from a sensor that does not exist because quotas were never enabled.</td></tr><tr><td>Capping utilization at 100%</td><td>The measured rate can temporarily exceed the configured quota. Values above 100% provide useful information about rate overshoot and should not be capped.</td></tr><tr><td>Broker-level aggregated utilization</td><td>Produce, Fetch, and Request quotas are enforced independently on each broker. Aggregating utilization across brokers can hide the broker where a client is approaching its quota. Aggregation is left to the monitoring system based on the operator's alerting intent.</td></tr><tr><td>Including ControllerMutation quotas</td><td>ControllerMutation quotas use token-bucket enforcement rather than the windowed rate model used by Produce, Fetch, and Request. A windowed rate percentage would therefore not represent token-bucket headroom or reliably predict throttling. ControllerMutation can be addressed separately with a metric whose semantics match its enforcement model.</td></tr><tr><td>Exposing a separate quota-limit metric</td><td>A quota-limit metric could be useful, particularly for idle or unlimited clients, but is not required for the primary use case of normalized utilization alerting. It can be considered as a follow-up.</td></tr><tr><td>Calling quotaLimit() during metric collection</td><td>Resolving the quota through ClientQuotaCallback.quotaLimit() on every metric scrape would change the callback contract and could execute custom callback code as a result of JMX or metrics collection. The effective quota is already associated with the quota metric through MetricConfig, so utilization uses that value instead.</td></tr><tr><td>Time-to-throttle or remaining-headroom metrics</td><td>These metrics require assumptions about future client behavior and can be misleading. quota-utilization reports the recent measured rate relative to the effective quota, while throttle-time remains the signal for actual throttling.</td></tr></tbody></table>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/451971254?status=historical&version=6"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1364
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=451971269",
+    "edit": "/pages/resumedraft.action?draftId=451971269&draftShareId=6f7afae4-d9f0-4919-a58a-0943b78e9134",
+    "tinyui": "/x/xYjwGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/451971254?status=historical&version=6"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/451971254/child?parentVersion=6",
+    "restrictions": "/rest/api/content/451971254/restriction/byOperation",
+    "history": "/rest/api/content/451971254/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/451971254/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/451971254/restriction/relevantViewRestrictions"
+   }
+  }
+ ],
+ "comments": {
+  "results": [],
+  "start": 0,
+  "limit": 200,
+  "size": 0,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/api/content/451971254/child/comment?expand=body.storage%2Cversion%2Cancestors&depth=all",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ }
+}

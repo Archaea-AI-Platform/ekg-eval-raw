@@ -1,0 +1,2215 @@
+{
+ "id": "430408758",
+ "versions": {
+  "results": [
+   {
+    "by": {
+     "type": "known",
+     "username": "mjsax",
+     "userKey": "8aa980874ebf4c1f014fb71c804106cc",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/61318460/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Matthias J. Sax",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa980874ebf4c1f014fb71c804106cc"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-11T00:18:49.000Z",
+    "message": "",
+    "number": 63,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/63"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mjsax",
+     "userKey": "8aa980874ebf4c1f014fb71c804106cc",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/61318460/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Matthias J. Sax",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa980874ebf4c1f014fb71c804106cc"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-11T00:01:52.000Z",
+    "message": "",
+    "number": 62,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/62"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=62"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-10T20:28:00.000Z",
+    "message": "",
+    "number": 61,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/61"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=61"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-10T19:42:44.000Z",
+    "message": "",
+    "number": 60,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/60"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=60"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-10T19:22:29.000Z",
+    "message": "",
+    "number": 59,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/59"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=59"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-10T19:12:05.000Z",
+    "message": "",
+    "number": 58,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/58"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=58"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-10T18:55:41.000Z",
+    "message": "",
+    "number": 57,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/57"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=57"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-30T02:29:59.000Z",
+    "message": "",
+    "number": 56,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/56"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=56"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-29T17:48:26.000Z",
+    "message": "",
+    "number": 55,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/55"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=55"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-23T15:58:46.000Z",
+    "message": "",
+    "number": 54,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/54"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=54"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-23T15:55:02.000Z",
+    "message": "",
+    "number": 53,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/53"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=53"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-22T21:52:11.000Z",
+    "message": "",
+    "number": 52,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/52"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=52"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-20T19:29:26.000Z",
+    "message": "",
+    "number": 51,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/51"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=51"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-20T19:25:04.000Z",
+    "message": "",
+    "number": 50,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/50"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=50"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-17T20:06:55.000Z",
+    "message": "",
+    "number": 49,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/49"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=49"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-17T03:39:03.000Z",
+    "message": "",
+    "number": 48,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/48"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=48"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-16T20:54:53.000Z",
+    "message": "",
+    "number": 47,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/47"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=47"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-09T17:32:29.000Z",
+    "message": "",
+    "number": 46,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/46"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=46"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-09T17:31:14.000Z",
+    "message": "Reverted from v. 35",
+    "number": 45,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/45"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=45"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-08T22:37:25.000Z",
+    "message": "",
+    "number": 44,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/44"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=44"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-08T22:33:04.000Z",
+    "message": "Reverted from v. 35",
+    "number": 43,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/43"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=43"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-08T22:21:34.000Z",
+    "message": "",
+    "number": 42,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/42"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=42"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-08T21:15:23.000Z",
+    "message": "",
+    "number": 41,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/41"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=41"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-08T21:11:57.000Z",
+    "message": "",
+    "number": 40,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/40"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=40"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-08T20:35:00.000Z",
+    "message": "",
+    "number": 39,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/39"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=39"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-08T18:42:45.000Z",
+    "message": "",
+    "number": 38,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/38"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=38"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-08T18:41:42.000Z",
+    "message": "",
+    "number": 37,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/37"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=37"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-08T17:21:06.000Z",
+    "message": "",
+    "number": 36,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/36"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=36"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-07T19:02:41.000Z",
+    "message": "",
+    "number": 35,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/35"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=35"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-07T18:59:25.000Z",
+    "message": "",
+    "number": 34,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/34"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=34"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-07T18:48:16.000Z",
+    "message": "",
+    "number": 33,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/33"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=33"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-07T18:25:59.000Z",
+    "message": "",
+    "number": 32,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/32"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=32"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-25T16:19:43.000Z",
+    "message": "",
+    "number": 31,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/31"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=31"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-25T16:18:35.000Z",
+    "message": "",
+    "number": 30,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/30"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=30"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-25T16:06:08.000Z",
+    "message": "",
+    "number": 29,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/29"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=29"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-23T21:05:23.000Z",
+    "message": "",
+    "number": 28,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/28"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=28"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-23T21:04:30.000Z",
+    "message": "",
+    "number": 27,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/27"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=27"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-23T21:03:07.000Z",
+    "message": "",
+    "number": 26,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/26"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=26"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-23T20:56:14.000Z",
+    "message": "",
+    "number": 25,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/25"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=25"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-23T20:49:30.000Z",
+    "message": "",
+    "number": 24,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/24"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=24"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-23T20:29:06.000Z",
+    "message": "",
+    "number": 23,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/23"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=23"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-23T19:50:23.000Z",
+    "message": "",
+    "number": 22,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/22"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=22"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-23T19:33:25.000Z",
+    "message": "",
+    "number": 21,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/21"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=21"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-12T15:50:55.000Z",
+    "message": "",
+    "number": 20,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/20"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=20"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-11T18:43:01.000Z",
+    "message": "",
+    "number": 19,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/19"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=19"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-11T18:19:06.000Z",
+    "message": "",
+    "number": 18,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/18"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=18"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-11T17:31:52.000Z",
+    "message": "",
+    "number": 17,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/17"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=17"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-11T17:30:41.000Z",
+    "message": "",
+    "number": 16,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/16"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=16"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-11T17:30:25.000Z",
+    "message": "",
+    "number": 15,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/15"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=15"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-11T17:29:27.000Z",
+    "message": "",
+    "number": 14,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/14"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=14"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-11T17:19:04.000Z",
+    "message": "",
+    "number": 13,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/13"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=13"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-11T17:18:11.000Z",
+    "message": "",
+    "number": 12,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/12"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=12"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-11T17:17:46.000Z",
+    "message": "",
+    "number": 11,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/11"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=11"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-11T17:17:20.000Z",
+    "message": "",
+    "number": 10,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/10"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=10"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-11T17:14:37.000Z",
+    "message": "",
+    "number": 9,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/9"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=9"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-11T16:54:40.000Z",
+    "message": "",
+    "number": 8,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/8"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=8"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-11T16:53:20.000Z",
+    "message": "",
+    "number": 7,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/7"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=7"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-11T16:52:56.000Z",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/6"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=6"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-11T16:47:38.000Z",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/5"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=5"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-11T16:43:11.000Z",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/4"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=4"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-10T18:10:00.000Z",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/3"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=3"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-10T18:06:48.000Z",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/2"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=2"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-10T18:03:37.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=1"
+    }
+   }
+  ],
+  "start": 0,
+  "limit": 200,
+  "size": 63,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ },
+ "version_bodies": [
+  {
+   "id": "430408758",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1357: Add broker side custom assignors for \"streams\" groups",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "mjsax",
+     "userKey": "8aa980874ebf4c1f014fb71c804106cc",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/61318460/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Matthias J. Sax",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa980874ebf4c1f014fb71c804106cc"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-11T00:01:52.000Z",
+    "message": "",
+    "number": 62,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/62"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=62"
+    }
+   },
+   "position": 1347,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><p><br /></p><h1>Status</h1><p><strong>Current state</strong>: <em>accepted</em></p><p><strong>Discussion thread</strong>: <em><a href=\"https://lists.apache.org/thread/1tybf2sm2hyyw0yq7lwkfd3zoj3w0h1t\">here</a> <br /></em></p><p><em><strong>Voting thread:</strong> <em><a href=\"https://lists.apache.org/thread/v6h4hchsxwz23khlc7g3yh1w7t1jd1g4\">here</a> </em></em></p><p><strong>JIRA</strong>: <em><a href=\"https://issues.apache.org/jira/browse/KAFKA-20683\">here</a> </em> <em><br /></em></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p><span>Kafka Streams supports custom task assignors in the classic client-side assignment model via</span><span> </span><code>task.assignor.class</code><span>.</span><span> </span><span>However,</span><span> </span><span>this customization does not carry over to the Streams Rebalance Protocol</span><span> </span>(<span>KIP-1071</span>)<span>,</span><span> </span><span>where task assignment is computed on the broker rather than in the client.</span><span> </span><span>As a result,</span><span> </span><span>users of</span><span> </span><code>group.protocol=streams</code><span> </span><span>cannot provide a custom assignor implementation,</span><span> </span><span>even though a similar capability exists both in classic Streams and in KIP-848 consumer groups</span><span> </span>(<span>via</span><span> </span><code>group.consumer.assignors</code>)<span>.</span></p><p><span>This KIP closes the feature gap by adding first-class broker-side custom task assignor support for streams groups.</span><span> </span><span>Specifically,</span><span> </span><span>it</span>:<em style=\"letter-spacing: 0.0px;\">                                                                                                             </em></p><ul><li>Exposes the necessary public Java interfaces so that users can implement custom task assignors.</li><li>Supports configuring assignors through a static broker configuration<code> group.streams.assignors</code> that accepts both built-in assignor short names and fully qualified class names of custom implementations.</li><li>Provides a per-group configuration to select an assignor by short name, with the broker-level default determined by the first entry in the <code>group.streams.assignors</code> list. </li><li>Preserves existing KIP-1071 behavior when no custom assignor is configured.</li></ul><h1><span style=\"font-size: 24.0px;letter-spacing: -0.01em;\">Public Interfaces</span></h1><h3><em><span>New Public Java Interfaces </span></em></h3><p><span>The following types are moved from the internal</span><span> </span><code>group-coordinator</code><span> </span><span>module</span><span> </span><span>package</span><span> </span><code>org.apache.kafka.coordinator.group.streams.assignor</code><span> </span><span>to the public</span><span> </span><code>group-coordinator-api</code><span> </span><span>module,</span><span> </span><span>under the new package</span><span> </span><code>org.apache.kafka.coordinator.group.api.streams.assignor</code><span>.</span><span> </span><span>A dedicated sub-package is used to avoid name collisions with the existing consumer group assignor types in</span><span> </span><code>org.apache.kafka.coordinator.group.api.assignor</code><span>.</span></p><p>These types exist today as internal classes, and this KIP makes them public API with the signatures below. All newly public types are annotated <code>@InterfaceStability.Evolving</code>. Following the KIP-848 convention,  the input and output container types are defined as interfaces rather than records, so the API can evolve in future releases.  AssignmentConfigs is the one exception to the above: it is a new interface introduced by this KIP rather than a relocated internal type.                                                                              </p><h4>Entry point</h4><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"152d8f87-64e2-49ea-b4d3-263baad05ca2\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[package org.apache.kafka.coordinator.group.api.streams.assignor;\n\n/**\n * Server-side task assignor used by streams groups.\n * <p>Implementations must be thread-safe: a single instance is shared across all \n * streams groups on a broker.\n *\n * An implementation may also implement {@link org.apache.kafka.common.Configurable}.\n * If it does, the broker invokes {@code configure(Map)} once with the broker\n * configuration when the assignor is loaded,\n * following the standard pattern for broker-side plugins.\n */\n@InterfaceAudience.Public\n@InterfaceStability.Evolving\npublic interface TaskAssignor {\n\n    /**\n     * Unique short name for this assignor. Used in configurations to select this assignor.\n     */\n    String name();\n\n    /**\n     * Assigns tasks to group members based on the given assignment specification\n     * and topology metadata.\n     *\n     * @param groupSpec         The assignment spec which includes member metadata.\n     * @param topologyDescriber The topology and task metadata describer.\n     * @return The new assignment for the group.\n     *\n     * @throws TaskAssignorException on assignment failure.\n     */\n    GroupAssignment assign(\n        GroupSpec groupSpec,\n        TopologyDescriber topologyDescriber\n    ) throws TaskAssignorException;\n}]]></ac:plain-text-body></ac:structured-macro><h4>Input types (parameters to<span> </span><code>assign()</code>)</h4><p>AssignmentConfigs carries the assignment-relevant group configurations. The group coordinator resolves every value from the broker configuration and the per-group override before invoking the assignor, so an assignor always sees a fully resolved value and never has to handle a missing configuration. The two config currently we have now are numStandbyReplicas() comes from group.streams.num.standby.replicas, overridden per group by streams.num.standby.replicas (0 by default), and rackAwareAssignmentTags() comes from group.streams.rack.aware.assignment.tags, overridden per group by streams.rack.aware.assignment.tags (empty by default). </p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"90997323-f377-4957-93d7-15bb734dd7b3\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[/**\n * The group metadata specification required to compute the target assignment.\n */\n@InterfaceAudience.Public\n@InterfaceStability.Evolving\npublic interface GroupSpec {\n\n    /**\n     * @return The member IDs in the group.\n     */\n    Collection<String> memberIds();\n\n    /**\n     * @return The static metadata for the given member.\n     */\n    MemberAssignmentMetadata memberMetadata(String memberId);\n\n    /**\n     * @return The current task assignment state for the given member\n     */\n    MemberAssignmentState memberAssignmentState(String memberId);\n\n    /** \n\t * @return The assignment configurations passed to the assignor. \n\t */                                                                                            \n  \tAssignmentConfigs configs();   \n}]]></ac:plain-text-body></ac:structured-macro><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"cddba143-3f5e-4753-81a2-dc20e3446821\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[/**\n * Static, per-member metadata that does not change as a result of assignment.\n */\n@InterfaceAudience.Public\n@InterfaceStability.Evolving\npublic interface MemberAssignmentMetadata {\n    Optional<String> instanceId();\n    Optional<String> rackId();\n    String processId();\n    Map<String, String> clientTags();\n}]]></ac:plain-text-body></ac:structured-macro><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"6f83bc75-f05e-4100-b19b-c76359a1a631\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[/**\n * A member's current task assignment state, provided as input to the assignor.\n * Warm-up tasks are included here because a member may currently be warming up.\n */\n@InterfaceAudience.Public\n@InterfaceStability.Evolving\npublic interface MemberAssignmentState {\n    /** Current target active tasks, keyed by subtopology ID. */\n    Map<String, Set<Integer>> activeTasks();\n\n    /** Current target standby tasks, keyed by subtopology ID. */\n    Map<String, Set<Integer>> standbyTasks();\n\n    /** Current warmup tasks, keyed by subtopology ID. */\n    Map<String, Set<Integer>> warmupTasks();\n\n    /** The last received cumulative task offsets of assigned or dormant tasks. */\n    Map<String, Map<Integer, Long>> taskOffsets();\n\n    /** The last received task end offsets. */\n    Map<String, Map<Integer, Long>> taskEndOffsets();\n}]]></ac:plain-text-body></ac:structured-macro><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"645c92ac-8b64-4fb6-9d4a-81cc5cea3843\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[/**                                                                                                                                                             \n   * The assignment configurations that the group coordinator passes to the task assignor.                                                                        \n   *                                                                                                                                                              \n   * <p>This interface is not intended to be implemented by task assignors: new configurations may be added to it.                                                \n   */                                                                                                                                                             \n  @InterfaceAudience.Public                                                                                                                                       \n  @InterfaceStability.Evolving                                                                                                                                    \n  public interface AssignmentConfigs {                                                                                                                            \n                                                                                                                                                                  \n      /**                                                                                                                                                         \n       * @return The number of standby replicas for each task.                                                                                                    \n       */                                                                                                                                                         \n      int numStandbyReplicas();                                                                                                                                   \n                                                                                                                                                                  \n      /**                                                                                                                                                         \n       * @return The client tags used to distribute standby tasks across racks. The list is unmodifiable.                                                         \n       */                                                                                                                                                         \n      List<String> rackAwareAssignmentTags();                                                                                                                     \n  }                                                                                                                                                                 ]]></ac:plain-text-body></ac:structured-macro><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"e49dedb3-a29b-431f-aa91-fa302be78d30\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[/**\n * Used by the assignor to get topic and task metadata of the group's topology.\n */\n@InterfaceAudience.Public\n@InterfaceStability.Evolving\npublic interface TopologyDescriber {\n\n    /**\n     * @return The list of subtopology IDs.\n     */\n    List<String> subtopologies();\n\n    /**\n     * The maximal number of input partitions among all source topics for the given subtopology.\n     *\n     * @param subtopologyId String identifying the subtopology.\n     * @throws NoSuchElementException if the subtopology ID does not exist.\n     * @throws IllegalStateException  if the subtopology contains no source topics.\n     */\n    int maxNumInputPartitions(String subtopologyId);\n\n    /**\n     * Whether the given subtopology is associated with a changelog topic.\n     *\n     * @param subtopologyId String identifying the subtopology.\n     * @throws NoSuchElementException if the subtopology ID does not exist.\n     */\n    boolean isStateful(String subtopologyId);\n}]]></ac:plain-text-body></ac:structured-macro><h4>Output types (returned from<span> </span><code>assign()</code>)</h4><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"61fd8735-3ee7-4064-84f0-c7311e7f2106\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[/**                                                                                                                                                                                          \n   * The task assignment for a streams group. Constructed and returned by the assignor.                                                                                                        \n*/ \n@InterfaceAudience.Public                                                                                                                                                                     @InterfaceStability.Evolving                                                                                                                                                                 \npublic class GroupAssignment {                                                                                                                                                               \n      private final Map<String, MemberAssignment> members;                                                                                                                                     \n                                                                                                                                                                                               \n      public GroupAssignment(Map<String, MemberAssignment> members) {                                                                                                                          \n          this.members = Objects.requireNonNull(members);                                                                                                                                      \n      }                                                                                                                                                                                        \n                                                                                                                                                                                               \n      public Map<String, MemberAssignment> members() {                                                                                                                                         \n          return members;                                                                                                                                                                      \n      }                                                                                                                                                                                        \n      // equals / hashCode / toString                                                                                                                                                          \n  }         ]]></ac:plain-text-body></ac:structured-macro><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"acdf6d1c-8f25-4d02-99f5-c459a20838ce\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[/**\n * The task assignment computed by the assignor for a streams group member.\n *\n * Note: warm-up tasks are intentionally NOT part of the assignor output. The\n * assignor computes only active and standby tasks; warm-up tasks are derived by\n * the group coordinator's reconciler.\n */\n @InterfaceAudience.Public                                                                                                                                                                  \n @InterfaceStability.Evolving                                                                                                                                                                 \n public class MemberAssignment {                                                                                                                                                              \n      public MemberAssignment(Map<String, Set<Integer>> activeTasks, Map<String, Set<Integer>> standbyTasks);                                                                                  \n                                                                                                                                                                                               \n      /** @return The active tasks assigned to this member keyed by subtopology Id. */                                                                                                         \n      public Map<String, Set<Integer>> activeTasks();                                                                                                                                          \n                                                                                                                                                                                               \n      /** @return The standby tasks assigned to this member keyed by subtopology Id. */                                                                                                        \n      public Map<String, Set<Integer>> standbyTasks();                                                                                                                                         \n                                                                                                                                                                                               \n      // equals(), hashCode(), toString() are also provided                                                                                                                                    \n  }    ]]></ac:plain-text-body></ac:structured-macro><h4>Supporting types</h4><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b6bf2b79-0b17-4583-a560-c98ee1ced81f\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[/**\n * Exception thrown by {@link TaskAssignor#assign(GroupSpec, TopologyDescriber)} on\n * assignment failure.\n */\n@InterfaceAudience.Public\n@InterfaceStability.Evolving\npublic class TaskAssignorException extends ApiException {\n    public TaskAssignorException(String message);\n    public TaskAssignorException(String message, Throwable cause);\n}]]></ac:plain-text-body></ac:structured-macro><h3>Built-in assignors  </h3><p>The sticky task assignor is the only assignor shipped with the broker, and it minimizes task movement during rebalances. It is registered under the short name <code>sticky</code>, while its fully qualified class name is <code>org.apache.kafka.coordinator.group.streams.assignor.StickyTaskAssignor</code>. Both forms are public API and may be used in <code>group.streams.assignors</code>, and the class name will not change without a KIP. This follows the existing convention for consumer groups and share groups which established in KIP-848. The class itself stays in the module where it lives today rather than moving to the public API module, which is consistent with the assignors shipped for consumer and share groups. Only the class name is public API, and the class inot intended to be subclassed or referenced from user code.     </p><h3>New broker configurations</h3><h4><code>group.streams.assignors</code></h4><table class=\"wrapped\"><thead><tr><th><br /></th><th><br /></th></tr></thead><tbody><tr><td>Type</td><td>LIST of assignor short names</td></tr><tr><td>Default</td><td><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">[sticky]</span></td></tr><tr><td>Importance</td><td>Medium</td></tr><tr><td>Update mode</td><td>Static (read-only, requires broker restart)</td></tr></tbody></table><p>The server-side task assignors for streams groups, as a list of either short names for built-in assignors or fully qualified class names for custom assignors. Each entry is resolved to a <code>TaskAssignor</code> instance at broker startup; if the instance implements <code>org.apache.kafka.common.Configurable</code>, <code>configure()</code> is invoked with the broker configuration. Assignors are keyed by the value returned by <code>TaskAssignor#name()</code>. The first entry in the list determines the assignor used  by groups that do not set the <code>streams.assignor.name</code> group configuration. The default value is <code>sticky</code>. Duplicate names are not allowed, and any class that fails to load or whose <code>name()</code> collides with another assignor causes the broker to fail to start.</p><h3>New group configuration</h3><h4><code> streams.assignor.name</code></h4><table class=\"wrapped\"><thead><tr><th><br /></th><th><br /></th></tr></thead><tbody><tr><td>Type</td><td>STRING (assignor short name)</td></tr><tr><td>Default</td><td>null <span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">(use the first entry of <code>group.streams.assignor</code>)</span></td></tr><tr><td>Update mode</td><td>Dynamic per group, via the<span> </span><code>IncrementalAlterConfigs</code><span> </span>admin RPC</td></tr></tbody></table><p><span>Selects the task assignor for a specific streams group,</span><span> </span><span>by short name.</span><span> </span><span>The name must be present in the controller's</span><span> <span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"><code>group.streams.assignors</code></span></span><span> </span><span>list;</span><span> </span><span>otherwise the</span><span> </span><code>IncrementalAlterConfigs</code><span> </span><span>request is rejected with</span><span> </span><code>INVALID_CONFIG</code><span>.</span></p><h3><span>StreamsGroupDescribeResponse Change </span></h3><p><span>One new field is added to each <code>DescribedGroup</code> at version 1. </span><span><code>StreamsGroupDescribeResponse</code> is not bumped by this KIP. Version 1 is introduced by KIP-1331 and has not been released yet, so <code>AssignorName</code> is added to that existing version and <code>validVersions</code> remains 0-1.</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"2aa8fe9c-19e8-49cd-a4db-f5ef4d6e6a67\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[{ \"name\": \"AssignorName\", \"type\": \"string\", \"versions\": \"1+\", \"nullableVersions\": \"1+\",                                                                                                    \n     \"default\": \"null\", \"ignorable\": true,                                                                                                                                                    \n     \"about\": \"The task assignor that the group coordinator will use for the next assignment                                                                                                  \n               computation. This may differ from the assignor that computed the current                                                                                                       \n               assignment, because changing the assignor configuration does not trigger a                                                                                                     \n               rebalance. Null in case of a describe error.\" }            ]]></ac:plain-text-body></ac:structured-macro><p><span>The field reports the assignor for the next assignment computation rather than the one that produced the current assignment, because changing<code> <span style=\"color:var(--ds-text,#172b4d);\"><a href=\"http://streams.assignor.name\" style=\"color:var(--ds-text,#172b4d);\">streams.assignor.name</a> d</span></code>oes not trigger a rebalance. </span><span>There is no change to <code>StreamsGroupDescribeRequest</code>: the assignor name is always returned and does not need to be requested explicitly.</span></p><h3><span>Admin API   </span></h3><p><span><code>StreamsGroupDescription</code> exposes the assignor name <code>public Optional&lt;String&gt; assignorName() </code>The value is empty when the broker does not report one, for example an older broker answering at StreamsGroupDescribe version 0.  <code>assignorName</code> is also added to the constructor. The constructor released in 4.2/4.3 is deprecated, and a single new constructor carries both the KIP-1331 topology description parameters and <code>assignorName</code></span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"418292ba-d752-48e8-880c-3b8f57c6beba\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[ @Deprecated(since = \"4.4\")                                                                                                                                                                 \n    public StreamsGroupDescription(String groupId, int groupEpoch, int targetAssignmentEpoch,                                                                                                  \n            int topologyEpoch, Collection<StreamsGroupSubtopologyDescription> subtopologies,                                                                                                   \n            Collection<StreamsGroupMemberDescription> members, GroupState groupState,                                                                                                          \n            Node coordinator, Set<AclOperation> authorizedOperations)                                                                                                                          \n                                                                                                                                                                                               \n    public StreamsGroupDescription(String groupId, int groupEpoch, int targetAssignmentEpoch,                                                                                                  \n            int topologyEpoch, Collection<StreamsGroupSubtopologyDescription> subtopologies,                                                                                                   \n            Collection<StreamsGroupMemberDescription> members, GroupState groupState,                                                                                                          \n            Node coordinator, Set<AclOperation> authorizedOperations,                                                                                                                          \n            Optional<StreamsGroupTopologyDescription> topologyDescription,                                                                                                                     \n            StreamsGroupTopologyDescriptionStatus topologyDescriptionStatus,                                                                                                                   \n            Optional<String> assignorName)   ]]></ac:plain-text-body></ac:structured-macro><p><br /></p><h1>Proposed Changes</h1><h3>Assignor loading and startup validation</h3><p><span>When the broker starts, it builds the registry of available task assignors by iterating <code>group.streams.assignors</code> in order. For each entry: </span></p><ol><li><span>If it is a <strong>built-in</strong> short name, the corresponding built-in assignor is registered.</span></li><li><span>Otherwise it is treated as a <strong>fully qualified class name</strong> and instantiated via its public no-argument constructor. </span><br /><ul><li>If the class cannot be loaded, the broker <strong>fails to start</strong>.</li><li>If the instance implements <code>Configurable</code>, <code>configure(config.originals())</code> is invoked with the broker configuration</li></ul></li><li>Register the assignor by <code>name()</code>. If a <code>name() </code>collides with a built-in name or with another entry's name, the broker<strong> fails to start</strong>.</li></ol><p>The result is a single registry <code>Map&lt;String, TaskAssignor&gt;</code> of all available assignors. Everything downstream operates on <strong>short names only</strong>. Misconfiguration in any step is fail-fast: the broker never starts with a partially valid assignor set.             </p><h3>Group configuration validation</h3><p> When a new <code>streams.assignor.name</code> is set for a group via IncrementalAlterConfigs, the broker forwards the request to the controller unconditionally, which is the same as any other GROUP configuration change. The controller validates the name against its own <code>group.streams.assignors </code>registry. An unregistered name is rejected with INVALID_CONFIG. As a consequence, operators must configure the same <code>group.streams.assignors</code> on controllers as on brokers, including placing any custom assignor's jar on the controller's classpath.</p><h3>Assignor selection at assignment time</h3><p><span>When the group coordinat<span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">or computes a new target assignment for a streams group,</span></span><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"> it resolves the assignor as follows:</span></p><ol><li style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">If the group has <code>streams.assignor.name</code> set, use that assignor.</span></li><li style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">Otherwise, use the first entry of <code>group.streams.assignors</code></span></li></ol><h3>Runtime fallback</h3><p><span>If an assignor name was previously persisted in a group</span>'<span>s configuration but is no longer available on the coordinator</span>'<span>s broker</span><span> </span>(<span>for example,</span><span> </span><span>the operator removed a custom assignor from the broker configuration,</span><span> </span><span>or the group coordinator moved to a broker with a different configuration during a rolling restart</span>):</p><ul><li>The group coordinator<span> </span><strong>falls back to <span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">the first entry of <code>group.streams.assignors</code></span></strong>.</li><li>A<span> </span><strong>warning is logged</strong><span> </span>so the operator is aware of the mismatch.</li><li>The group continues to function normally.</li></ul><h3>Assignment failure handling</h3><p><span>If the selected assignor throws</span><span> </span><code>TaskAssignorException</code><span>,</span><span> </span><span>the existing KIP-1071 behavior is preserved</span>:<span> </span><span>the group</span>'<span>s pre<span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">vious target assignment is kept unchanged,</span></span><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"> and the triggering heartbeat fails with <code>UNKNOWN_SERVER_ERROR</code> (the exception is rethrown as <code>UnknownServerException</code>, including the failure message). Assignment is retried on a subsequent rebalance trigger. The same applies to custom assignors; no new error code is introduced.</span></p><ac:structured-macro ac:name=\"info\" ac:schema-version=\"1\" ac:macro-id=\"d56c0422-b434-4564-af59-3f56f85b4510\"><ac:parameter ac:name=\"title\">Note on KIP-1071</ac:parameter><ac:rich-text-body><p><ac:link><ri:page ri:space-key=\"KAFKA\" ri:content-title=\"KIP-1071: Streams Rebalance Protocol\" /><ac:plain-text-link-body><![CDATA[KIP-1071]]></ac:plain-text-link-body></ac:link> originally specified to add a new broker config <code>group.streams.assignor.name</code> <span style=\"color:var(--ds-text,#172B4D);\">which was not implemented yet. KIP-1357 implies, that the new broker config <code>group.streams.assignors</code> replaces this original config. – Furthermore, KIP-1071 specified that the default for the assignor would be <code>null</code> and that the broker would dynamically chose which assignor to pick for this case. KIP-1357 also changes this design, in favor of making &quot;sticky&quot; the default assignor.</span></p><p><span style=\"color:var(--ds-text,#172B4D);\">Because the original KIP-1071 config and &quot;dynamic assignor selections&quot; was never shipped, this has no backward compatibility impact, but it's rather an amendment of the original KIP-1071 design.</span></p></ac:rich-text-body></ac:structured-macro><h1><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">Compatibility, Deprecation, and Migration Plan</span></h1><ul><li style=\"color:var(--ds-text,#172b4d);\"><span style=\"color:var(--ds-text,#172b4d);\"><strong>Existing users are unaffected.</strong> With the default configuration <code>group.streams.assignors=[sticky]a</code>nd no per-group override, the behavior of KIP-1071 streams groups is unchanged.</span></li><li style=\"color:var(--ds-text,#172b4d);\"><span style=\"color:var(--ds-text,#172b4d);\">The relocated types are not a breaking change. They are internal today; moving them to the public group-coordinator-api module as @InterfaceStability.Evolving interfaces is safe, since the original package was never public API. The internal classes are removed.  GroupSpec#configs() returns AssignmentConfigs instead of Map&lt;String, String&gt;. This is not a compatibility concern either, since GroupSpec is internal today and has never been part of a public API. Because task assignors are not expected to implement AssignmentConfigs, further assignment configurations can be exposed by adding methods to that interface in a later release without breaking existing custom assignors.The fully qualified class name of the built-in sticky assignor does become public API, as described under Public Interfaces. </span></li><li style=\"color:var(--ds-text,#172b4d);\" data-uuid=\"7c84e7c0-80c2-40ca-9020-ece67e7e140e\"><span style=\"color:var(--ds-text,#172b4d);\">One deprecation in the Admin API. The 9-argument <strong><code>StreamsGroupDescription</code></strong> constructor released in 4.2/4.3 is deprecated for removal. The constructor added by KIP-1331 is extended in  place with the assignorName argument, and <code>StreamsGroupDescribeResponse</code> version 1 gains the AssignorName field in place; both in-place changes are safe because neither has been included in an Apache Kafka release.       </span></li><li style=\"color:var(--ds-text,#172b4d);\"><span style=\"color:var(--ds-text,#172b4d);\"><strong>The classic client-side <code>task.assignor.class</code> is untouched.</strong> It continues to apply to the classic protocol only. Users migrating from the classic protocol to <code>group.protocol=streams</code> who rely on a custom client-side assignor will need to re-implement it against the new broker-side interface and have the cluster operator register it.</span></li><li>There are no new record formats and no new error codes. The per-group setting reuses the existing group configuration mechanism <code><strong>IncrementalAlterConfigs</strong></code>. The only protocol change is a new optional AssignorName field in <code><strong>StreamsGroupDescribeResponse</strong></code>, which makes the effective assignor of a group observable.  </li></ul><h1>Test Plan</h1><ul><li><strong>Unit tests</strong> for assignor loading and validation: class loading failures, name collisions, unkno<span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">wn names in <code><a href=\"http://group.streams.assignors.name\" style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">group.streams.assignors</a></code>, duplicate handling, and group configuration validation in <code>IncrementalAlterConfigs</code>.</span></li><li style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"><strong>Integration tests</strong> that register a custom assignor on the broker, select it for a group via <code><a href=\"http://streams.assignor.name\" style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"> streams.assignor.name</a></code>, and verify the produced assignment is the custom assignor's output; plus the fallback path where a persisted assignor name is no longer available and the coordinator falls back to the default with a warning.</span></li><li><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"><strong>System tests</strong> running a Streams application under <code>group.protocol=streams</code> with a cust</span>om assignor configured, verifying correct task distribution, behavior across broker restarts (static config reload), and that existing system tests pass unchanged with the default configuration </li></ul><h1>Rejected Alternatives</h1><h3>Client-side assignor selection (KIP-848 style<span> </span><code>ServerAssignor</code><span> </span>voting)</h3><p><span style=\"color:var(--ds-text,#000000);\"><span>KIP-848 consumer groups let each member suggest a server-side assignor via the</span> <code>ServerAssignor</code> <span>heartbeat field,</span> <span>with the coordinator picking the most-voted one.</span> <span>We rejected this for streams groups</span>: <span>KIP-1071 deliberately treats assignment as an operator concern,</span> <span>and task assignment quality depends on cluster-wide operational knowledge</span> (<span>standby placement,</span> <span>rack awareness</span>) <span>rather than per-client preference.</span> <span>Adding a heartbeat field would also require a wire protocol change for little benefit.</span></span></p><h3>Splitting loading and selection into two broker configs</h3><p><span style=\"color:var(--ds-text,#000000);\"><span>An earlier version of this proposal split assignor loading</span> (<code>group.streams.custom.assignor.classes</code>) <span>from selection</span> (<code>group.streams.assignors.names</code>)<span>.</span> <span>This was rejected in favor of a single</span> <code>group.streams.assignors</code> <span>list that mixes built-in short names and fully qualified class names,</span> <span>consistent with</span> <code>group.consumer.assignors</code><span>.</span> <span>Once assignors are loaded,</span> <span>their short names come from</span> <code>TaskAssignor#name()</code><span>,</span> <span>which makes a separate names list redundant.</span> <span>A single list is simpler for operators and consistent with the existing consumer-group configuration.</span></span></p><h3>Client-side custom assignment under the streams protocol</h3><p><span>Keeping</span><span> </span><code>task.assignor.class</code><span> </span><span>semantics by shipping assignment metadata back and forth between broker and client would reintroduce the complexity and rebalance fragility that KIP-1071 was designed to eliminate</span><span> </span>(<span>large heartbeats,</span><span> </span><span>client-side state,</span><span> </span><span>split-brain between client and broker views of the assignment</span>)<span>.</span><span> </span><span>Broker-side pluggability is the natural extension point in the new protocol.</span></p><p><br /></p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/430408758?status=historical&version=62"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1347
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=451974226",
+    "edit": "/pages/resumedraft.action?draftId=451974226&draftShareId=427721b2-93af-4020-afb6-a9b7fd0924f3",
+    "tinyui": "/x/UpTwGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/430408758?status=historical&version=62"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/430408758/child?parentVersion=62",
+    "restrictions": "/rest/api/content/430408758/restriction/byOperation",
+    "history": "/rest/api/content/430408758/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/430408758/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/430408758/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "430408758",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1357: Add broker side custom assignors for \"streams\" groups",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-10T20:28:00.000Z",
+    "message": "",
+    "number": 61,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/61"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=61"
+    }
+   },
+   "position": 1347,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><p><br /></p><h1>Status</h1><p><strong>Current state</strong>: <em>accepted</em></p><p><strong>Discussion thread</strong>: <em><a href=\"https://lists.apache.org/thread/1tybf2sm2hyyw0yq7lwkfd3zoj3w0h1t\">here</a> <br /></em></p><p><em><strong>Voting thread:</strong> <em><a href=\"https://lists.apache.org/thread/v6h4hchsxwz23khlc7g3yh1w7t1jd1g4\">here</a> </em></em></p><p><strong>JIRA</strong>: <em><a href=\"https://issues.apache.org/jira/browse/KAFKA-20683\">here</a> </em> <em><br /></em></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p><span>Kafka Streams supports custom task assignors in the classic client-side assignment model via</span><span> </span><code>task.assignor.class</code><span>.</span><span> </span><span>However,</span><span> </span><span>this customization does not carry over to the Streams Rebalance Protocol</span><span> </span>(<span>KIP-1071</span>)<span>,</span><span> </span><span>where task assignment is computed on the broker rather than in the client.</span><span> </span><span>As a result,</span><span> </span><span>users of</span><span> </span><code>group.protocol=streams</code><span> </span><span>cannot provide a custom assignor implementation,</span><span> </span><span>even though a similar capability exists both in classic Streams and in KIP-848 consumer groups</span><span> </span>(<span>via</span><span> </span><code>group.consumer.assignors</code>)<span>.</span></p><p><span>This KIP closes the feature gap by adding first-class broker-side custom task assignor support for streams groups.</span><span> </span><span>Specifically,</span><span> </span><span>it</span>:<em style=\"letter-spacing: 0.0px;\">                                                                                                             </em></p><ul><li>Exposes the necessary public Java interfaces so that users can implement custom task assignors.</li><li>Supports configuring assignors through a static broker configuration<code> group.streams.assignors</code> that accepts both built-in assignor short names and fully qualified class names of custom implementations.</li><li>Provides a per-group configuration to select an assignor by short name, with the broker-level default determined by the first entry in the <code>group.streams.assignors</code> list. </li><li>Preserves existing KIP-1071 behavior when no custom assignor is configured.</li></ul><h1><span style=\"font-size: 24.0px;letter-spacing: -0.01em;\">Public Interfaces</span></h1><h3><em><span>New Public Java Interfaces </span></em></h3><p><span>The following types are moved from the internal</span><span> </span><code>group-coordinator</code><span> </span><span>module</span><span> </span><span>package</span><span> </span><code>org.apache.kafka.coordinator.group.streams.assignor</code><span> </span><span>to the public</span><span> </span><code>group-coordinator-api</code><span> </span><span>module,</span><span> </span><span>under the new package</span><span> </span><code>org.apache.kafka.coordinator.group.api.streams.assignor</code><span>.</span><span> </span><span>A dedicated sub-package is used to avoid name collisions with the existing consumer group assignor types in</span><span> </span><code>org.apache.kafka.coordinator.group.api.assignor</code><span>.</span></p><p>These types exist today as internal classes, and this KIP makes them public API with the signatures below. All newly public types are annotated <code>@InterfaceStability.Evolving</code>. Following the KIP-848 convention,  the input and output container types are defined as interfaces rather than records, so the API can evolve in future releases.  AssignmentConfigs is the one exception to the above: it is a new interface introduced by this KIP rather than a relocated internal type.                                                                              </p><h4>Entry point</h4><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"152d8f87-64e2-49ea-b4d3-263baad05ca2\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[package org.apache.kafka.coordinator.group.api.streams.assignor;\n\n/**\n * Server-side task assignor used by streams groups.\n * <p>Implementations must be thread-safe: a single instance is shared across all \n * streams groups on a broker.\n *\n * An implementation may also implement {@link org.apache.kafka.common.Configurable}.\n * If it does, the broker invokes {@code configure(Map)} once with the broker\n * configuration when the assignor is loaded,\n * following the standard pattern for broker-side plugins.\n */\n@InterfaceAudience.Public\n@InterfaceStability.Evolving\npublic interface TaskAssignor {\n\n    /**\n     * Unique short name for this assignor. Used in configurations to select this assignor.\n     */\n    String name();\n\n    /**\n     * Assigns tasks to group members based on the given assignment specification\n     * and topology metadata.\n     *\n     * @param groupSpec         The assignment spec which includes member metadata.\n     * @param topologyDescriber The topology and task metadata describer.\n     * @return The new assignment for the group.\n     *\n     * @throws TaskAssignorException on assignment failure.\n     */\n    GroupAssignment assign(\n        GroupSpec groupSpec,\n        TopologyDescriber topologyDescriber\n    ) throws TaskAssignorException;\n}]]></ac:plain-text-body></ac:structured-macro><h4>Input types (parameters to<span> </span><code>assign()</code>)</h4><p>AssignmentConfigs carries the assignment-relevant group configurations. The group coordinator resolves every value from the broker configuration and the per-group override before invoking the assignor, so an assignor always sees a fully resolved value and never has to handle a missing configuration. The two config currently we have now are numStandbyReplicas() comes from group.streams.num.standby.replicas, overridden per group by streams.num.standby.replicas (0 by default), and rackAwareAssignmentTags() comes from group.streams.rack.aware.assignment.tags, overridden per group by streams.rack.aware.assignment.tags (empty by default). </p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"90997323-f377-4957-93d7-15bb734dd7b3\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[/**\n * The group metadata specification required to compute the target assignment.\n */\n@InterfaceAudience.Public\n@InterfaceStability.Evolving\npublic interface GroupSpec {\n\n    /**\n     * @return The member IDs in the group.\n     */\n    Collection<String> memberIds();\n\n    /**\n     * @return The static metadata for the given member.\n     */\n    MemberAssignmentMetadata memberMetadata(String memberId);\n\n    /**\n     * @return The current task assignment state for the given member\n     */\n    MemberAssignmentState memberAssignmentState(String memberId);\n\n    /** \n\t * @return The assignment configurations passed to the assignor. \n\t */                                                                                            \n  \tAssignmentConfigs configs();   \n}]]></ac:plain-text-body></ac:structured-macro><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"cddba143-3f5e-4753-81a2-dc20e3446821\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[/**\n * Static, per-member metadata that does not change as a result of assignment.\n */\n@InterfaceAudience.Public\n@InterfaceStability.Evolving\npublic interface MemberAssignmentMetadata {\n    Optional<String> instanceId();\n    Optional<String> rackId();\n    String processId();\n    Map<String, String> clientTags();\n}]]></ac:plain-text-body></ac:structured-macro><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"6f83bc75-f05e-4100-b19b-c76359a1a631\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[/**\n * A member's current task assignment state, provided as input to the assignor.\n * Warm-up tasks are included here because a member may currently be warming up.\n */\n@InterfaceAudience.Public\n@InterfaceStability.Evolving\npublic interface MemberAssignmentState {\n    /** Current target active tasks, keyed by subtopology ID. */\n    Map<String, Set<Integer>> activeTasks();\n\n    /** Current target standby tasks, keyed by subtopology ID. */\n    Map<String, Set<Integer>> standbyTasks();\n\n    /** Current warmup tasks, keyed by subtopology ID. */\n    Map<String, Set<Integer>> warmupTasks();\n\n    /** The last received cumulative task offsets of assigned or dormant tasks. */\n    Map<String, Map<Integer, Long>> taskOffsets();\n\n    /** The last received task end offsets. */\n    Map<String, Map<Integer, Long>> taskEndOffsets();\n}]]></ac:plain-text-body></ac:structured-macro><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"645c92ac-8b64-4fb6-9d4a-81cc5cea3843\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[/**                                                                                                                                                             \n   * The assignment configurations that the group coordinator passes to the task assignor.                                                                        \n   *                                                                                                                                                              \n   * <p>This interface is not intended to be implemented by task assignors: new configurations may be added to it.                                                \n   */                                                                                                                                                             \n  @InterfaceAudience.Public                                                                                                                                       \n  @InterfaceStability.Evolving                                                                                                                                    \n  public interface AssignmentConfigs {                                                                                                                            \n                                                                                                                                                                  \n      /**                                                                                                                                                         \n       * @return The number of standby replicas for each task.                                                                                                    \n       */                                                                                                                                                         \n      int numStandbyReplicas();                                                                                                                                   \n                                                                                                                                                                  \n      /**                                                                                                                                                         \n       * @return The client tags used to distribute standby tasks across racks. The list is unmodifiable.                                                         \n       */                                                                                                                                                         \n      List<String> rackAwareAssignmentTags();                                                                                                                     \n  }                                                                                                                                                                 ]]></ac:plain-text-body></ac:structured-macro><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"e49dedb3-a29b-431f-aa91-fa302be78d30\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[/**\n * Used by the assignor to get topic and task metadata of the group's topology.\n */\n@InterfaceAudience.Public\n@InterfaceStability.Evolving\npublic interface TopologyDescriber {\n\n    /**\n     * @return The list of subtopology IDs.\n     */\n    List<String> subtopologies();\n\n    /**\n     * The maximal number of input partitions among all source topics for the given subtopology.\n     *\n     * @param subtopologyId String identifying the subtopology.\n     * @throws NoSuchElementException if the subtopology ID does not exist.\n     * @throws IllegalStateException  if the subtopology contains no source topics.\n     */\n    int maxNumInputPartitions(String subtopologyId);\n\n    /**\n     * Whether the given subtopology is associated with a changelog topic.\n     *\n     * @param subtopologyId String identifying the subtopology.\n     * @throws NoSuchElementException if the subtopology ID does not exist.\n     */\n    boolean isStateful(String subtopologyId);\n}]]></ac:plain-text-body></ac:structured-macro><h4>Output types (returned from<span> </span><code>assign()</code>)</h4><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"61fd8735-3ee7-4064-84f0-c7311e7f2106\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[/**                                                                                                                                                                                          \n   * The task assignment for a streams group. Constructed and returned by the assignor.                                                                                                        \n*/ \n@InterfaceAudience.Public                                                                                                                                                                     @InterfaceStability.Evolving                                                                                                                                                                 \npublic class GroupAssignment {                                                                                                                                                               \n      private final Map<String, MemberAssignment> members;                                                                                                                                     \n                                                                                                                                                                                               \n      public GroupAssignment(Map<String, MemberAssignment> members) {                                                                                                                          \n          this.members = Objects.requireNonNull(members);                                                                                                                                      \n      }                                                                                                                                                                                        \n                                                                                                                                                                                               \n      public Map<String, MemberAssignment> members() {                                                                                                                                         \n          return members;                                                                                                                                                                      \n      }                                                                                                                                                                                        \n      // equals / hashCode / toString                                                                                                                                                          \n  }         ]]></ac:plain-text-body></ac:structured-macro><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"acdf6d1c-8f25-4d02-99f5-c459a20838ce\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[/**\n * The task assignment computed by the assignor for a streams group member.\n *\n * Note: warm-up tasks are intentionally NOT part of the assignor output. The\n * assignor computes only active and standby tasks; warm-up tasks are derived by\n * the group coordinator's reconciler.\n */\n @InterfaceAudience.Public                                                                                                                                                                  \n @InterfaceStability.Evolving                                                                                                                                                                 \n public class MemberAssignment {                                                                                                                                                              \n      public MemberAssignment(Map<String, Set<Integer>> activeTasks, Map<String, Set<Integer>> standbyTasks);                                                                                  \n                                                                                                                                                                                               \n      /** @return The active tasks assigned to this member keyed by subtopology Id. */                                                                                                         \n      public Map<String, Set<Integer>> activeTasks();                                                                                                                                          \n                                                                                                                                                                                               \n      /** @return The standby tasks assigned to this member keyed by subtopology Id. */                                                                                                        \n      public Map<String, Set<Integer>> standbyTasks();                                                                                                                                         \n                                                                                                                                                                                               \n      // equals(), hashCode(), toString() are also provided                                                                                                                                    \n  }    ]]></ac:plain-text-body></ac:structured-macro><h4>Supporting types</h4><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b6bf2b79-0b17-4583-a560-c98ee1ced81f\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[/**\n * Exception thrown by {@link TaskAssignor#assign(GroupSpec, TopologyDescriber)} on\n * assignment failure.\n */\n@InterfaceAudience.Public\n@InterfaceStability.Evolving\npublic class TaskAssignorException extends ApiException {\n    public TaskAssignorException(String message);\n    public TaskAssignorException(String message, Throwable cause);\n}]]></ac:plain-text-body></ac:structured-macro><h3>Built-in assignors  </h3><p> The sticky task assignor is the only assignor shipped with the broker, and it minimizes task movement during rebalances. It is registered under the short name <code>sticky</code>, while its fully qualified class name is <code>org.apache.kafka.coordinator.group.streams.assignor.StickyTaskAssignor</code>. Both forms are public API and may be used in <code>group.streams.assignors</code>, and the class name will not change without a KIP. This follows the existing convention for consumer groups and share groups which established in KIP-848. The class itself stays in the module where it lives today rather than moving to the public API module, which is consistent with the assignors shipped for consumer and share groups. Only the class name is public API, and the class inot intended to be subclassed or referenced from user code.     </p><h3>New broker configurations</h3><h4><code>group.streams.assignors</code></h4><table class=\"wrapped\"><thead><tr><th><br /></th><th><br /></th></tr></thead><tbody><tr><td>Type</td><td>LIST of assignor short names</td></tr><tr><td>Default</td><td><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">[sticky]</span></td></tr><tr><td>Importance</td><td>Medium</td></tr><tr><td>Update mode</td><td>Static (read-only, requires broker restart)</td></tr></tbody></table><p>The server-side task assignors for streams groups, as a list of either short names for built-in assignors or fully qualified class names for custom assignors. Each entry is resolved to a <code>TaskAssignor</code> instance at broker startup; if the instance implements <code>org.apache.kafka.common.Configurable</code>, <code>configure()</code> is invoked with the broker configuration. Assignors are keyed by the value returned by <code>TaskAssignor#name()</code>. The first entry in the list determines the assignor used  by groups that do not set the <code>streams.assignor.name</code> group configuration. The default value is <code>sticky</code>. Duplicate names are not allowed, and any class that fails to load or whose <code>name()</code> collides with another assignor causes the broker to fail to start.</p><h3>New group configuration</h3><h4><code> streams.assignor.name</code></h4><table class=\"wrapped\"><thead><tr><th><br /></th><th><br /></th></tr></thead><tbody><tr><td>Type</td><td>STRING (assignor short name)</td></tr><tr><td>Default</td><td>null <span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">(use the first entry of <code>group.streams.assignor</code>)</span></td></tr><tr><td>Update mode</td><td>Dynamic per group, via the<span> </span><code>IncrementalAlterConfigs</code><span> </span>admin RPC</td></tr></tbody></table><p><span>Selects the task assignor for a specific streams group,</span><span> </span><span>by short name.</span><span> </span><span>The name must be present in the controller's</span><span> <span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"><code>group.streams.assignors</code></span></span><span> </span><span>list;</span><span> </span><span>otherwise the</span><span> </span><code>IncrementalAlterConfigs</code><span> </span><span>request is rejected with</span><span> </span><code>INVALID_CONFIG</code><span>.</span></p><h3><span>StreamsGroupDescribeResponse Change </span></h3><p><span>One new field is added to each <code>DescribedGroup</code> at version 1. </span><span><code>StreamsGroupDescribeResponse</code> is not bumped by this KIP. Version 1 is introduced by KIP-1331 and has not been released yet, so <code>AssignorName</code> is added to that existing version and <code>validVersions</code> remains 0-1.</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"2aa8fe9c-19e8-49cd-a4db-f5ef4d6e6a67\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[{ \"name\": \"AssignorName\", \"type\": \"string\", \"versions\": \"1+\", \"nullableVersions\": \"1+\",                                                                                                    \n     \"default\": \"null\", \"ignorable\": true,                                                                                                                                                    \n     \"about\": \"The task assignor that the group coordinator will use for the next assignment                                                                                                  \n               computation. This may differ from the assignor that computed the current                                                                                                       \n               assignment, because changing the assignor configuration does not trigger a                                                                                                     \n               rebalance. Null in case of a describe error.\" }            ]]></ac:plain-text-body></ac:structured-macro><p><span>The field reports the assignor for the next assignment computation rather than the one that produced the current assignment, because changing<code> <span style=\"color:var(--ds-text,#172b4d);\"><a href=\"http://streams.assignor.name\" style=\"color:var(--ds-text,#172b4d);\">streams.assignor.name</a> d</span></code>oes not trigger a rebalance. </span><span>There is no change to <code>StreamsGroupDescribeRequest</code>: the assignor name is always returned and does not need to be requested explicitly.</span></p><h3><span>Admin API   </span></h3><p><span><code>StreamsGroupDescription</code> exposes the assignor name <code>public Optional&lt;String&gt; assignorName() </code>The value is empty when the broker does not report one, for example an older broker answering at StreamsGroupDescribe version 0.  <code>assignorName</code> is also added to the constructor. The constructor released in 4.2/4.3 is deprecated, and a single new constructor carries both the KIP-1331 topology description parameters and <code>assignorName</code></span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"418292ba-d752-48e8-880c-3b8f57c6beba\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[ @Deprecated(since = \"4.4\")                                                                                                                                                                 \n    public StreamsGroupDescription(String groupId, int groupEpoch, int targetAssignmentEpoch,                                                                                                  \n            int topologyEpoch, Collection<StreamsGroupSubtopologyDescription> subtopologies,                                                                                                   \n            Collection<StreamsGroupMemberDescription> members, GroupState groupState,                                                                                                          \n            Node coordinator, Set<AclOperation> authorizedOperations)                                                                                                                          \n                                                                                                                                                                                               \n    public StreamsGroupDescription(String groupId, int groupEpoch, int targetAssignmentEpoch,                                                                                                  \n            int topologyEpoch, Collection<StreamsGroupSubtopologyDescription> subtopologies,                                                                                                   \n            Collection<StreamsGroupMemberDescription> members, GroupState groupState,                                                                                                          \n            Node coordinator, Set<AclOperation> authorizedOperations,                                                                                                                          \n            Optional<StreamsGroupTopologyDescription> topologyDescription,                                                                                                                     \n            StreamsGroupTopologyDescriptionStatus topologyDescriptionStatus,                                                                                                                   \n            Optional<String> assignorName)   ]]></ac:plain-text-body></ac:structured-macro><p><br /></p><h1>Proposed Changes</h1><h3>Assignor loading and startup validation</h3><p><span>When the broker starts, it builds the registry of available task assignors by iterating <code>group.streams.assignors</code> in order. For each entry: </span></p><ol><li><span>If it is a <strong>built-in</strong> short name, the corresponding built-in assignor is registered.</span></li><li><span>Otherwise it is treated as a <strong>fully qualified class name</strong> and instantiated via its public no-argument constructor. </span><br /><ul><li>If the class cannot be loaded, the broker <strong>fails to start</strong>.</li><li>If the instance implements <code>Configurable</code>, <code>configure(config.originals())</code> is invoked with the broker configuration</li></ul></li><li>Register the assignor by <code>name()</code>. If a <code>name() </code>collides with a built-in name or with another entry's name, the broker<strong> fails to start</strong>.</li></ol><p>The result is a single registry <code>Map&lt;String, TaskAssignor&gt;</code> of all available assignors. Everything downstream operates on <strong>short names only</strong>. Misconfiguration in any step is fail-fast: the broker never starts with a partially valid assignor set.             </p><h3>Group configuration validation</h3><p> When a new <code>streams.assignor.name</code> is set for a group via IncrementalAlterConfigs, the broker forwards the request to the controller unconditionally, which is the same as any other GROUP configuration change. The controller validates the name against its own <code>group.streams.assignors </code>registry. An unregistered name is rejected with INVALID_CONFIG. As a consequence, operators must configure the same <code>group.streams.assignors</code> on controllers as on brokers, including placing any custom assignor's jar on the controller's classpath.</p><h3>Assignor selection at assignment time</h3><p><span>When the group coordinat<span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">or computes a new target assignment for a streams group,</span></span><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"> it resolves the assignor as follows:</span></p><ol><li style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">If the group has <code>streams.assignor.name</code> set, use that assignor.</span></li><li style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">Otherwise, use the first entry of <code>group.streams.assignors</code></span></li></ol><h3>Runtime fallback</h3><p><span>If an assignor name was previously persisted in a group</span>'<span>s configuration but is no longer available on the coordinator</span>'<span>s broker</span><span> </span>(<span>for example,</span><span> </span><span>the operator removed a custom assignor from the broker configuration,</span><span> </span><span>or the group coordinator moved to a broker with a different configuration during a rolling restart</span>):</p><ul><li>The group coordinator<span> </span><strong>falls back to <span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">the first entry of <code>group.streams.assignors</code></span></strong>.</li><li>A<span> </span><strong>warning is logged</strong><span> </span>so the operator is aware of the mismatch.</li><li>The group continues to function normally.</li></ul><h3>Assignment failure handling</h3><p><span>If the selected assignor throws</span><span> </span><code>TaskAssignorException</code><span>,</span><span> </span><span>the existing KIP-1071 behavior is preserved</span>:<span> </span><span>the group</span>'<span>s pre<span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">vious target assignment is kept unchanged,</span></span><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"> and the triggering heartbeat fails with <code>UNKNOWN_SERVER_ERROR</code> (the exception is rethrown as <code>UnknownServerException</code>, including the failure message). Assignment is retried on a subsequent rebalance trigger. The same applies to custom assignors; no new error code is introduced.</span></p><h1><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">Compatibility, Deprecation, and Migration Plan</span></h1><ul><li style=\"color:var(--ds-text,#172b4d);\"><span style=\"color:var(--ds-text,#172b4d);\"><strong>Existing users are unaffected.</strong> With the default configuration <code>group.streams.assignors=[sticky]a</code>nd no per-group override, the behavior of KIP-1071 streams groups is unchanged.</span></li><li style=\"color:var(--ds-text,#172b4d);\"><span style=\"color:var(--ds-text,#172b4d);\">The relocated types are not a breaking change. They are internal today; moving them to the public group-coordinator-api module as @InterfaceStability.Evolving interfaces is safe, since the original package was never public API. The internal classes are removed.  GroupSpec#configs() returns AssignmentConfigs instead of Map&lt;String, String&gt;. This is not a compatibility concern either, since GroupSpec is internal today and has never been part of a public API. Because task assignors are not expected to implement AssignmentConfigs, further assignment configurations can be exposed by adding methods to that interface in a later release without breaking existing custom assignors.The fully qualified class name of the built-in sticky assignor does become public API, as described under Public Interfaces. </span></li><li style=\"color:var(--ds-text,#172b4d);\" data-uuid=\"7c84e7c0-80c2-40ca-9020-ece67e7e140e\"><span style=\"color:var(--ds-text,#172b4d);\">One deprecation in the Admin API. The 9-argument <strong><code>StreamsGroupDescription</code></strong> constructor released in 4.2/4.3 is deprecated for removal. The constructor added by KIP-1331 is extended in  place with the assignorName argument, and <code>StreamsGroupDescribeResponse</code> version 1 gains the AssignorName field in place; both in-place changes are safe because neither has been included in an Apache Kafka release.       </span></li><li style=\"color:var(--ds-text,#172b4d);\"><span style=\"color:var(--ds-text,#172b4d);\"><strong>The classic client-side <code>task.assignor.class</code> is untouched.</strong> It continues to apply to the classic protocol only. Users migrating from the classic protocol to <code>group.protocol=streams</code> who rely on a custom client-side assignor will need to re-implement it against the new broker-side interface and have the cluster operator register it.</span></li><li>There are no new record formats and no new error codes. The per-group setting reuses the existing group configuration mechanism <code><strong>IncrementalAlterConfigs</strong></code>. The only protocol change is a new optional AssignorName field in <code><strong>StreamsGroupDescribeResponse</strong></code>, which makes the effective assignor of a group observable.  </li></ul><h1>Test Plan</h1><ul><li><strong>Unit tests</strong> for assignor loading and validation: class loading failures, name collisions, unkno<span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">wn names in <code><a href=\"http://group.streams.assignors.name\" style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">group.streams.assignors</a></code>, duplicate handling, and group configuration validation in <code>IncrementalAlterConfigs</code>.</span></li><li style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"><strong>Integration tests</strong> that register a custom assignor on the broker, select it for a group via <code><a href=\"http://streams.assignor.name\" style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"> streams.assignor.name</a></code>, and verify the produced assignment is the custom assignor's output; plus the fallback path where a persisted assignor name is no longer available and the coordinator falls back to the default with a warning.</span></li><li><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"><strong>System tests</strong> running a Streams application under <code>group.protocol=streams</code> with a cust</span>om assignor configured, verifying correct task distribution, behavior across broker restarts (static config reload), and that existing system tests pass unchanged with the default configuration </li></ul><h1>Rejected Alternatives</h1><h3>Client-side assignor selection (KIP-848 style<span> </span><code>ServerAssignor</code><span> </span>voting)</h3><p><span style=\"color:var(--ds-text,#000000);\"><span>KIP-848 consumer groups let each member suggest a server-side assignor via the</span> <code>ServerAssignor</code> <span>heartbeat field,</span> <span>with the coordinator picking the most-voted one.</span> <span>We rejected this for streams groups</span>: <span>KIP-1071 deliberately treats assignment as an operator concern,</span> <span>and task assignment quality depends on cluster-wide operational knowledge</span> (<span>standby placement,</span> <span>rack awareness</span>) <span>rather than per-client preference.</span> <span>Adding a heartbeat field would also require a wire protocol change for little benefit.</span></span></p><h3>Splitting loading and selection into two broker configs</h3><p><span style=\"color:var(--ds-text,#000000);\"><span>An earlier version of this proposal split assignor loading</span> (<code>group.streams.custom.assignor.classes</code>) <span>from selection</span> (<code>group.streams.assignors.names</code>)<span>.</span> <span>This was rejected in favor of a single</span> <code>group.streams.assignors</code> <span>list that mixes built-in short names and fully qualified class names,</span> <span>consistent with</span> <code>group.consumer.assignors</code><span>.</span> <span>Once assignors are loaded,</span> <span>their short names come from</span> <code>TaskAssignor#name()</code><span>,</span> <span>which makes a separate names list redundant.</span> <span>A single list is simpler for operators and consistent with the existing consumer-group configuration.</span></span></p><h3>Client-side custom assignment under the streams protocol</h3><p><span>Keeping</span><span> </span><code>task.assignor.class</code><span> </span><span>semantics by shipping assignment metadata back and forth between broker and client would reintroduce the complexity and rebalance fragility that KIP-1071 was designed to eliminate</span><span> </span>(<span>large heartbeats,</span><span> </span><span>client-side state,</span><span> </span><span>split-brain between client and broker views of the assignment</span>)<span>.</span><span> </span><span>Broker-side pluggability is the natural extension point in the new protocol.</span></p><p><br /></p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/430408758?status=historical&version=61"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1347
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=451974225",
+    "edit": "/pages/resumedraft.action?draftId=451974225&draftShareId=427721b2-93af-4020-afb6-a9b7fd0924f3",
+    "tinyui": "/x/UZTwGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/430408758?status=historical&version=61"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/430408758/child?parentVersion=61",
+    "restrictions": "/rest/api/content/430408758/restriction/byOperation",
+    "history": "/rest/api/content/430408758/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/430408758/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/430408758/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "430408758",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1357: Add broker side custom assignors for \"streams\" groups",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "gabriellafu",
+     "userKey": "073590d29e5b625a019ea9ab0dab0020",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gabriella Fu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea9ab0dab0020"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-10T19:42:44.000Z",
+    "message": "",
+    "number": 60,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/430408758/version/60"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/430408758?status=historical&version=60"
+    }
+   },
+   "position": 1347,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><p><br /></p><h1>Status</h1><p><strong>Current state</strong>: <em>accepted</em></p><p><strong>Discussion thread</strong>: <em><a href=\"https://lists.apache.org/thread/1tybf2sm2hyyw0yq7lwkfd3zoj3w0h1t\">here</a> <br /></em></p><p><em><strong>Voting thread:</strong> <em><a href=\"https://lists.apache.org/thread/v6h4hchsxwz23khlc7g3yh1w7t1jd1g4\">here</a> </em></em></p><p><strong>JIRA</strong>: <em><a href=\"https://issues.apache.org/jira/browse/KAFKA-20683\">here</a> </em> <em><br /></em></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p><span>Kafka Streams supports custom task assignors in the classic client-side assignment model via</span><span> </span><code>task.assignor.class</code><span>.</span><span> </span><span>However,</span><span> </span><span>this customization does not carry over to the Streams Rebalance Protocol</span><span> </span>(<span>KIP-1071</span>)<span>,</span><span> </span><span>where task assignment is computed on the broker rather than in the client.</span><span> </span><span>As a result,</span><span> </span><span>users of</span><span> </span><code>group.protocol=streams</code><span> </span><span>cannot provide a custom assignor implementation,</span><span> </span><span>even though a similar capability exists both in classic Streams and in KIP-848 consumer groups</span><span> </span>(<span>via</span><span> </span><code>group.consumer.assignors</code>)<span>.</span></p><p><span>This KIP closes the feature gap by adding first-class broker-side custom task assignor support for streams groups.</span><span> </span><span>Specifically,</span><span> </span><span>it</span>:<em style=\"letter-spacing: 0.0px;\">                                                                                                             </em></p><ul><li>Exposes the necessary public Java interfaces so that users can implement custom task assignors.</li><li>Supports configuring assignors through a static broker configuration<code> group.streams.assignors</code> that accepts both built-in assignor short names and fully qualified class names of custom implementations.</li><li>Provides a per-group configuration to select an assignor by short name, with the broker-level default determined by the first entry in the <code>group.streams.assignors</code> list. </li><li>Preserves existing KIP-1071 behavior when no custom assignor is configured.</li></ul><h1><span style=\"font-size: 24.0px;letter-spacing: -0.01em;\">Public Interfaces</span></h1><h3><em><span>New Public Java Interfaces </span></em></h3><p><span>The following types are moved from the internal</span><span> </span><code>group-coordinator</code><span> </span><span>module</span><span> </span><span>package</span><span> </span><code>org.apache.kafka.coordinator.group.streams.assignor</code><span> </span><span>to the public</span><span> </span><code>group-coordinator-api</code><span> </span><span>module,</span><span> </span><span>under the new package</span><span> </span><code>org.apache.kafka.coordinator.group.api.streams.assignor</code><span>.</span><span> </span><span>A dedicated sub-package is used to avoid name collisions with the existing consumer group assignor types in</span><span> </span><code>org.apache.kafka.coordinator.group.api.assignor</code><span>.</span></p><p>These types exist today as internal classes, and this KIP makes them public API with the signatures below. All newly public types are annotated <code>@InterfaceStability.Evolving</code>. Following the KIP-848 convention,  the input and output container types are defined as interfaces rather than records, so the API can evolve in future releases.  AssignmentConfigs is the one exception to the above: it is a new interface introduced by this KIP rather than a relocated internal type.                                                                              </p><h4>Entry point</h4><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"152d8f87-64e2-49ea-b4d3-263baad05ca2\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[package org.apache.kafka.coordinator.group.api.streams.assignor;\n\n/**\n * Server-side task assignor used by streams groups.\n * <p>Implementations must be thread-safe: a single instance is shared across all \n * streams groups on a broker.\n *\n * An implementation may also implement {@link org.apache.kafka.common.Configurable}.\n * If it does, the broker invokes {@code configure(Map)} once with the broker\n * configuration when the assignor is loaded,\n * following the standard pattern for broker-side plugins.\n */\n@InterfaceAudience.Public\n@InterfaceStability.Evolving\npublic interface TaskAssignor {\n\n    /**\n     * Unique short name for this assignor. Used in configurations to select this assignor.\n     */\n    String name();\n\n    /**\n     * Assigns tasks to group members based on the given assignment specification\n     * and topology metadata.\n     *\n     * @param groupSpec         The assignment spec which includes member metadata.\n     * @param topologyDescriber The topology and task metadata describer.\n     * @return The new assignment for the group.\n     *\n     * @throws TaskAssignorException on assignment failure.\n     */\n    GroupAssignment assign(\n        GroupSpec groupSpec,\n        TopologyDescriber topologyDescriber\n    ) throws TaskAssignorException;\n}]]></ac:plain-text-body></ac:structured-macro><h4>Input types (parameters to<span> </span><code>assign()</code>)</h4><p>AssignmentConfigs carries the assignment-relevant group configurations. The group coordinator resolves every value from the broker configuration and the per-group override before invoking the assignor, so an assignor always sees a fully resolved value and never has to handle a missing configuration. The two config currently we have now are numStandbyReplicas() comes from group.streams.num.standby.replicas, overridden per group by streams.num.standby.replicas (0 by default), and rackAwareAssignmentTags() comes from group.streams.rack.aware.assignment.tags, overridden per group by streams.rack.aware.assignment.tags (empty by default). </p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"90997323-f377-4957-93d7-15bb734dd7b3\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[/**\n * The group metadata specification required to compute the target assignment.\n */\n@InterfaceAudience.Public\n@InterfaceStability.Evolving\npublic interface GroupSpec {\n\n    /**\n     * @return The member IDs in the group.\n     */\n    Collection<String> memberIds();\n\n    /**\n     * @return The static metadata for the given member.\n     */\n    MemberAssignmentMetadata memberMetadata(String memberId);\n\n    /**\n     * @return The current task assignment state for the given member\n     */\n    MemberAssignmentState memberAssignmentState(String memberId);\n\n    /** \n\t * @return The assignment configurations passed to the assignor. \n\t */                                                                                            \n  \tAssignmentConfigs configs();   \n}]]></ac:plain-text-body></ac:structured-macro><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"cddba143-3f5e-4753-81a2-dc20e3446821\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[/**\n * Static, per-member metadata that does not change as a result of assignment.\n */\n@InterfaceAudience.Public\n@InterfaceStability.Evolving\npublic interface MemberAssignmentMetadata {\n    Optional<String> instanceId();\n    Optional<String> rackId();\n    String processId();\n    Map<String, String> clientTags();\n}]]></ac:plain-text-body></ac:structured-macro><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"6f83bc75-f05e-4100-b19b-c76359a1a631\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[/**\n * A member's current task assignment state, provided as input to the assignor.\n * Warm-up tasks are included here because a member may currently be warming up.\n */\n@InterfaceAudience.Public\n@InterfaceStability.Evolving\npublic interface MemberAssignmentState {\n    /** Current target active tasks, keyed by subtopology ID. */\n    Map<String, Set<Integer>> activeTasks();\n\n    /** Current target standby tasks, keyed by subtopology ID. */\n    Map<String, Set<Integer>> standbyTasks();\n\n    /** Current warmup tasks, keyed by subtopology ID. */\n    Map<String, Set<Integer>> warmupTasks();\n\n    /** The last received cumulative task offsets of assigned or dormant tasks. */\n    Map<String, Map<Integer, Long>> taskOffsets();\n\n    /** The last received task end offsets. */\n    Map<String, Map<Integer, Long>> taskEndOffsets();\n}]]></ac:plain-text-body></ac:structured-macro><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"645c92ac-8b64-4fb6-9d4a-81cc5cea3843\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[/**                                                                                                                                                             \n   * The assignment configurations that the group coordinator passes to the task assignor.                                                                        \n   *                                                                                                                                                              \n   * <p>This interface is not intended to be implemented by task assignors: new configurations may be added to it.                                                \n   */                                                                                                                                                             \n  @InterfaceAudience.Public                                                                                                                                       \n  @InterfaceStability.Evolving                                                                                                                                    \n  public interface AssignmentConfigs {                                                                                                                            \n                                                                                                                                                                  \n      /**                                                                                                                                                         \n       * @return The number of standby replicas for each task.                                                                                                    \n       */                                                                                                                                                         \n      int numStandbyReplicas();                                                                                                                                   \n                                                                                                                                                                  \n      /**                                                                                                                                                         \n       * @return The client tags used to distribute standby tasks across racks. The list is unmodifiable.                                                         \n       */                                                                                                                                                         \n      List<String> rackAwareAssignmentTags();                                                                                                                     \n  }                                                                                                                                                                 ]]></ac:plain-text-body></ac:structured-macro><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"e49dedb3-a29b-431f-aa91-fa302be78d30\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[/**\n * Used by the assignor to get topic and task metadata of the group's topology.\n */\n@InterfaceAudience.Public\n@InterfaceStability.Evolving\npublic interface TopologyDescriber {\n\n    /**\n     * @return The list of subtopology IDs.\n     */\n    List<String> subtopologies();\n\n    /**\n     * The maximal number of input partitions among all source topics for the given subtopology.\n     *\n     * @param subtopologyId String identifying the subtopology.\n     * @throws NoSuchElementException if the subtopology ID does not exist.\n     * @throws IllegalStateException  if the subtopology contains no source topics.\n     */\n    int maxNumInputPartitions(String subtopologyId);\n\n    /**\n     * Whether the given subtopology is associated with a changelog topic.\n     *\n     * @param subtopologyId String identifying the subtopology.\n     * @throws NoSuchElementException if the subtopology ID does not exist.\n     */\n    boolean isStateful(String subtopologyId);\n}]]></ac:plain-text-body></ac:structured-macro><h4>Output types (returned from<span> </span><code>assign()</code>)</h4><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"61fd8735-3ee7-4064-84f0-c7311e7f2106\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[/**                                                                                                                                                                                          \n   * The task assignment for a streams group. Constructed and returned by the assignor.                                                                                                        \n*/ \n@InterfaceAudience.Public                                                                                                                                                                     @InterfaceStability.Evolving                                                                                                                                                                 \npublic class GroupAssignment {                                                                                                                                                               \n      private final Map<String, MemberAssignment> members;                                                                                                                                     \n                                                                                                                                                                                               \n      public GroupAssignment(Map<String, MemberAssignment> members) {                                                                                                                          \n          this.members = Objects.requireNonNull(members);                                                                                                                                      \n      }                                                                                                                                                                                        \n                                                                                                                                                                                               \n      public Map<String, MemberAssignment> members() {                                                                                                                                         \n          return members;                                                                                                                                                                      \n      }                                                                                                                                                                                        \n      // equals / hashCode / toString                                                                                                                                                          \n  }         ]]></ac:plain-text-body></ac:structured-macro><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"acdf6d1c-8f25-4d02-99f5-c459a20838ce\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[/**\n * The task assignment computed by the assignor for a streams group member.\n *\n * Note: warm-up tasks are intentionally NOT part of the assignor output. The\n * assignor computes only active and standby tasks; warm-up tasks are derived by\n * the group coordinator's reconciler.\n */\n @InterfaceAudience.Public                                                                                                                                                                  \n @InterfaceStability.Evolving                                                                                                                                                                 \n public class MemberAssignment {                                                                                                                                                              \n      public MemberAssignment(Map<String, Set<Integer>> activeTasks, Map<String, Set<Integer>> standbyTasks);                                                                                  \n                                                                                                                                                                                               \n      /** @return The active tasks assigned to this member keyed by subtopology Id. */                                                                                                         \n      public Map<String, Set<Integer>> activeTasks();                                                                                                                                          \n                                                                                                                                                                                               \n      /** @return The standby tasks assigned to this member keyed by subtopology Id. */                                                                                                        \n      public Map<String, Set<Integer>> standbyTasks();                                                                                                                                         \n                                                                                                                                                                                               \n      // equals(), hashCode(), toString() are also provided                                                                                                                                    \n  }    ]]></ac:plain-text-body></ac:structured-macro><h4>Supporting types</h4><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b6bf2b79-0b17-4583-a560-c98ee1ced81f\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[/**\n * Exception thrown by {@link TaskAssignor#assign(GroupSpec, TopologyDescriber)} on\n * assignment failure.\n */\n@InterfaceAudience.Public\n@InterfaceStability.Evolving\npublic class TaskAssignorException extends ApiException {\n    public TaskAssignorException(String message);\n    public TaskAssignorException(String message, Throwable cause);\n}]]></ac:plain-text-body></ac:structured-macro><h3>Built-in assignors  </h3><p> The sticky task assignor is the only assignor shipped with the broker, and it minimizes task movement during rebalances. It is registered under the short name <code>sticky</code>, while its fully qualified class name is <code>org.apache.kafka.coordinator.group.streams.assignor.StickyTaskAssignor</code>. Both forms are public API and may be used in <code>group.streams.assignors</code>, and the class name will not change without a KIP. This follows the existing convention for consumer groups and share groups which established in KIP-848. The class itself stays in the module where it lives today rather than moving to the public API module, which is consistent with the assignors shipped for consumer and share groups. Only the class name is public API, and the class inot intended to be subclassed or referenced from user code.     </p><h3>New broker configurations</h3><h4><code>group.streams.assignors</code></h4><table class=\"wrapped\"><thead><tr><th><br /></th><th><br /></th></tr></thead><tbody><tr><td>Type</td><td>LIST of assignor short names</td></tr><tr><td>Default</td><td><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">[sticky]</span></td></tr><tr><td>Importance</td><td>Medium</td></tr><tr><td>Update mode</td><td>Static (read-only, requires broker restart)</td></tr></tbody></table><p>The server-side task assignors for streams groups, as a list of either short names for built-in assignors or fully qualified class names for custom assignors. Each entry is resolved to a <code>TaskAssignor</code> instance at broker startup; if the instance implements <code>org.apache.kafka.common.Configurable</code>, <code>configure()</code> is invoked with the broker configuration. Assignors are keyed by the value returned by <code>TaskAssignor#name()</code>. The first entry in the list determines the assignor used  by groups that do not set the <code>streams.assignor.name</code> group configuration. The default value is <code>sticky</code>. Duplicate names are not allowed, and any class that fails to load or whose <code>name()</code> collides with another assignor causes the broker to fail to start.</p><h3>New group configuration</h3><h4><code> streams.assignor.name</code></h4><table class=\"wrapped\"><thead><tr><th><br /></th><th><br /></th></tr></thead><tbody><tr><td>Type</td><td>STRING (assignor short name)</td></tr><tr><td>Default</td><td>null <span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">(use the first entry of <code>group.streams.assignor</code>)</span></td></tr><tr><td>Update mode</td><td>Dynamic per group, via the<span> </span><code>IncrementalAlterConfigs</code><span> </span>admin RPC</td></tr></tbody></table><p><span>Selects the task assignor for a specific streams group,</span><span> </span><span>by short name.</span><span> </span><span>The name must be present in the controller's</span><span> <span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"><code>group.streams.assignors</code></span></span><span> </span><span>list;</span><span> </span><span>otherwise the</span><span> </span><code>IncrementalAlterConfigs</code><span> </span><span>request is rejected with</span><span> </span><code>INVALID_CONFIG</code><span>.</span></p><h3><span>StreamsGroupDescribeResponse Change </span></h3><p><span>One new field is added to each <code>DescribedGroup</code> at version 1. </span><span><code>StreamsGroupDescribeResponse</code> is not bumped by this KIP. Version 1 is introduced by KIP-1331 and has not been released yet, so <code>AssignorName</code> is added to that existing version and <code>validVersions</code> remains 0-1.</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"2aa8fe9c-19e8-49cd-a4db-f5ef4d6e6a67\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:parameter ac:name=\"linenumbers\">true</ac:parameter><ac:plain-text-body><![CDATA[{ \"name\": \"AssignorName\", \"type\": \"string\", \"versions\": \"1+\", \"nullableVersions\": \"1+\",                                                                                                    \n     \"default\": \"null\", \"ignorable\": true,                                                                                                                                                    \n     \"about\": \"The task assignor that the group coordinator will use for the next assignment                                                                                                  \n               computation. This may differ from the assignor that computed the current                                                                                                       \n               assignment, because changing the assignor configuration does not trigger a                                                                                                     \n               rebalance. Null in case of a describe error.\" }            ]]></ac:plain-text-body></ac:structured-macro><p><span>The field reports the assignor for the next assignment computation rather than the one that produced the current assignment, because changing<code> <span style=\"color:var(--ds-text,#172b4d);\"><a href=\"http://streams.assignor.name\" style=\"color:var(--ds-text,#172b4d);\">streams.assignor.name</a> d</span></code>oes not trigger a rebalance. </span><span>There is no change to <code>StreamsGroupDescribeRequest</code>: the assignor name is always returned and does not need to be requested explicitly.</span></p><h3><span>Admin API   </span></h3><p><span><code>StreamsGroupDescription</code> exposes the assignor name <code>public Optional&lt;String&gt; assignorName() </code>The value is empty when the broker does not report one, for example an older broker answering at StreamsGroupDescribe version 0.  <code>assignorName</code> is also added to the constructor. The constructor released in 4.2/4.3 is deprecated, and a single new constructor carries both the KIP-1331 topology description parameters and <code>assignorName</code></span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"418292ba-d752-48e8-880c-3b8f57c6beba\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[ @Deprecated(since = \"4.4\")                                                                                                                                                                 \n    public StreamsGroupDescription(String groupId, int groupEpoch, int targetAssignmentEpoch,                                                                                                  \n            int topologyEpoch, Collection<StreamsGroupSubtopologyDescription> subtopologies,                                                                                                   \n            Collection<StreamsGroupMemberDescription> members, GroupState groupState,                                                                                                          \n            Node coordinator, Set<AclOperation> authorizedOperations)                                                                                                                          \n                                                                                                                                                                                               \n    public StreamsGroupDescription(String groupId, int groupEpoch, int targetAssignmentEpoch,                                                                                                  \n            int topologyEpoch, Collection<StreamsGroupSubtopologyDescription> subtopologies,                                                                                                   \n            Collection<StreamsGroupMemberDescription> members, GroupState groupState,                                                                                                          \n            Node coordinator, Set<AclOperation> authorizedOperations,                                                                                                                          \n            Optional<StreamsGroupTopologyDescription> topologyDescription,                                                                                                                     \n            StreamsGroupTopologyDescriptionStatus topologyDescriptionStatus,                                                                                                                   \n            Optional<String> assignorName)   ]]></ac:plain-text-body></ac:structured-macro><p><br /></p><h1>Proposed Changes</h1><h3>Assignor loading and startup validation</h3><p><span>When the broker starts, it builds the registry of available task assignors by iterating <code>group.streams.assignors</code> in order. For each entry: </span></p><ol><li><span>If it is a <strong>built-in</strong> short name, the corresponding built-in assignor is registered.</span></li><li><span>Otherwise it is treated as a <strong>fully qualified class name</strong> and instantiated via its public no-argument constructor. </span><br /><ul><li>If the class cannot be loaded, the broker <strong>fails to start</strong>.</li><li>If the instance implements <code>Configurable</code>, <code>configure(config.originals())</code> is invoked with the broker configuration</li></ul></li><li>Register the assignor by <code>name()</code>. If a <code>name() </code>collides with a built-in name or with another entry's name, the broker<strong> fails to start</strong>.</li></ol><p>The result is a single registry <code>Map&lt;String, TaskAssignor&gt;</code> of all available assignors. Everything downstream operates on <strong>short names only</strong>. Misconfiguration in any step is fail-fast: the broker never starts with a partially valid assignor set.             </p><h3>Group configuration validation</h3><p><span>When an operator <span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">sets</span></span><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"> <code>streams.assignor.name</code> for a group via <code>IncrementalAlterConfigs</code>:</span></p><ol><li style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">The receiving broker checks whether the assignor name exists in its registry of available assignors (built-in + custom).</span></li><li style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">If the name is invalid, the broker rejects the request with <code>INVALID_CONFIG</code>; the configuration is never forwarded to the controller.</span></li><li style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">If the name is valid, the request is forwarded to the controller, which persists it in the metadata log.</span></li></ol><p> The broker does not validate<code> <span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"><span style=\"color:var(--ds-text,#172b4d);\"><a href=\"http://streams.assignor.name\" style=\"color:var(--ds-text,#172b4d);\">streams.assignor.name</a> </span></span></code>and the request is forwarded to the controller unconditionally. The controller validates the assignor name against its own  group.streams.assignors and an invalid name is rejected with INVALID_CONFIG there.  As a consequence, operators must configure the same <code>group.streams.assignors</code> on controllers as on brokers, including putting any custom assignor's jar on the controller's classpath.     <br />           </p><h3>Assignor selection at assignment time</h3><p><span>When the group coordinat<span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">or computes a new target assignment for a streams group,</span></span><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"> it resolves the assignor as follows:</span></p><ol><li style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">If the group has <code>streams.assignor.name</code> set, use that assignor.</span></li><li style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">Otherwise, use the first entry of <code>group.streams.assignors</code></span></li></ol><h3>Runtime fallback</h3><p><span>If an assignor name was previously persisted in a group</span>'<span>s configuration but is no longer available on the coordinator</span>'<span>s broker</span><span> </span>(<span>for example,</span><span> </span><span>the operator removed a custom assignor from the broker configuration,</span><span> </span><span>or the group coordinator moved to a broker with a different configuration during a rolling restart</span>):</p><ul><li>The group coordinator<span> </span><strong>falls back to <span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">the first entry of <code>group.streams.assignors</code></span></strong>.</li><li>A<span> </span><strong>warning is logged</strong><span> </span>so the operator is aware of the mismatch.</li><li>The group continues to function normally.</li></ul><h3>Assignment failure handling</h3><p><span>If the selected assignor throws</span><span> </span><code>TaskAssignorException</code><span>,</span><span> </span><span>the existing KIP-1071 behavior is preserved</span>:<span> </span><span>the group</span>'<span>s pre<span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">vious target assignment is kept unchanged,</span></span><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"> and the triggering heartbeat fails with <code>UNKNOWN_SERVER_ERROR</code> (the exception is rethrown as <code>UnknownServerException</code>, including the failure message). Assignment is retried on a subsequent rebalance trigger. The same applies to custom assignors; no new error code is introduced.</span></p><h1><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">Compatibility, Deprecation, and Migration Plan</span></h1><ul><li style=\"color:var(--ds-text,#172b4d);\"><span style=\"color:var(--ds-text,#172b4d);\"><strong>Existing users are unaffected.</strong> With the default configuration <code>group.streams.assignors=[sticky]a</code>nd no per-group override, the behavior of KIP-1071 streams groups is unchanged.</span></li><li style=\"color:var(--ds-text,#172b4d);\"><span style=\"color:var(--ds-text,#172b4d);\">The relocated types are not a breaking change. They are internal today; moving them to the public group-coordinator-api module as @InterfaceStability.Evolving interfaces is safe, since the original package was never public API. The internal classes are removed.  GroupSpec#configs() returns AssignmentConfigs instead of Map&lt;String, String&gt;. This is not a compatibility concern either, since GroupSpec is internal today and has never been part of a public API. Because task assignors are not expected to implement AssignmentConfigs, further assignment configurations can be exposed by adding methods to that interface in a later release without breaking existing custom assignors.The fully qualified class name of the built-in sticky assignor does become public API, as described under Public Interfaces. </span></li><li style=\"color:var(--ds-text,#172b4d);\" data-uuid=\"7c84e7c0-80c2-40ca-9020-ece67e7e140e\"><span style=\"color:var(--ds-text,#172b4d);\">One deprecation in the Admin API. The 9-argument <strong><code>StreamsGroupDescription</code></strong> constructor released in 4.2/4.3 is deprecated for removal. The constructor added by KIP-1331 is extended in  place with the assignorName argument, and <code>StreamsGroupDescribeResponse</code> version 1 gains the AssignorName field in place; both in-place changes are safe because neither has been included in an Apache Kafka release.       </span></li><li style=\"color:var(--ds-text,#172b4d);\"><span style=\"color:var(--ds-text,#172b4d);\"><strong>The classic client-side <code>task.assignor.class</code> is untouched.</strong> It continues to apply to the classic protocol only. Users migrating from the classic protocol to <code>group.protocol=streams</code> who rely on a custom client-side assignor will need to re-implement it against the new broker-side interface and have the cluster operator register it.</span></li><li>There are no new record formats and no new error codes. The per-group setting reuses the existing group configuration mechanism <code><strong>IncrementalAlterConfigs</strong></code>. The only protocol change is a new optional AssignorName field in <code><strong>StreamsGroupDescribeResponse</strong></code>, which makes the effective assignor of a group observable.  </li></ul><h1>Test Plan</h1><ul><li><strong>Unit tests</strong> for assignor loading and validation: class loading failures, name collisions, unkno<span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">wn names in <code><a href=\"http://group.streams.assignors.name\" style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\">group.streams.assignors</a></code>, duplicate handling, and group configuration validation in <code>IncrementalAlterConfigs</code>.</span></li><li style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"><strong>Integration tests</strong> that register a custom assignor on the broker, select it for a group via <code><a href=\"http://streams.assignor.name\" style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"> streams.assignor.name</a></code>, and verify the produced assignment is the custom assignor's output; plus the fallback path where a persisted assignor name is no longer available and the coordinator falls back to the default with a warning.</span></li><li><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"><strong>System tests</strong> running a Streams application under <code>group.protocol=streams</code> with a cust</span>om assignor configured, verifying correct task distribution, behavior across broker restarts (static config reload), and that existing system tests pass unchanged with the default configuration </li></ul><h1>Rejected Alternatives</h1><h3>Client-side assignor selection (KIP-848 style<span> </span><code>ServerAssignor</code><span> </span>voting)</h3><p><span style=\"color:var(--ds-text,#000000);\"><span>KIP-848 consumer groups let each member suggest a server-side assignor via the</span> <code>ServerAssignor</code> <span>heartbeat field,</span> <span>with the coordinator picking the most-voted one.</span> <span>We rejected this for streams groups</span>: <span>KIP-1071 deliberately treats assignment as an operator concern,</span> <span>and task assignment quality depends on cluster-wide operational knowledge</span> (<span>standby placement,</span> <span>rack awareness</span>) <span>rather than per-client preference.</span> <span>Adding a heartbeat field would also require a wire protocol change for little benefit.</span></span></p><h3>Splitting loading and selection into two broker configs</h3><p><span style=\"color:var(--ds-text,#000000);\"><span>An earlier version of this proposal split assignor loading</span> (<code>group.streams.custom.assignor.classes</code>) <span>from selection</span> (<code>group.streams.assignors.names</code>)<span>.</span> <span>This was rejected in favor of a single</span> <code>group.streams.assignors</code> <span>list that mixes built-in short names and fully qualified class names,</span> <span>consistent with</span> <code>group.consumer.assignors</code><span>.</span> <span>Once assignors are loaded,</span> <span>their short names come from</span> <code>TaskAssignor#name()</code><span>,</span> <span>which makes a separate names list redundant.</span> <span>A single list is simpler for operators and consistent with the existing consumer-group configuration.</span></span></p><h3>Client-side custom assignment under the streams protocol</h3><p><span>Keeping</span><span> </span><code>task.assignor.class</code><span> </span><span>semantics by shipping assignment metadata back and forth between broker and client would reintroduce the complexity and rebalance fragility that KIP-1071 was designed to eliminate</span><span> </span>(<span>large heartbeats,</span><span> </span><span>client-side state,</span><span> </span><span>split-brain between client and broker views of the assignment</span>)<span>.</span><span> </span><span>Broker-side pluggability is the natural extension point in the new protocol.</span></p><p><br /></p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/430408758?status=historical&version=60"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1347
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=451974213",
+    "edit": "/pages/resumedraft.action?draftId=451974213&draftShareId=427721b2-93af-4020-afb6-a9b7fd0924f3",
+    "tinyui": "/x/RZTwGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/430408758?status=historical&version=60"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/430408758/child?parentVersion=60",
+    "restrictions": "/rest/api/content/430408758/restriction/byOperation",
+    "history": "/rest/api/content/430408758/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/430408758/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/430408758/restriction/relevantViewRestrictions"
+   }
+  }
+ ],
+ "comments": {
+  "results": [],
+  "start": 0,
+  "limit": 200,
+  "size": 0,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/api/content/430408758/child/comment?expand=body.storage%2Cversion%2Cancestors&depth=all",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ }
+}

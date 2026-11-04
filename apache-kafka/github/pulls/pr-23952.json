@@ -1,0 +1,1013 @@
+{
+ "pull": {
+  "url": "https://api.github.com/repos/apache/kafka/pulls/23952",
+  "id": 5001910246,
+  "node_id": "PR_kwDOACG9q88AAAABKiMX5g",
+  "html_url": "https://github.com/apache/kafka/pull/23952",
+  "diff_url": "https://github.com/apache/kafka/pull/23952.diff",
+  "patch_url": "https://github.com/apache/kafka/pull/23952.patch",
+  "issue_url": "https://api.github.com/repos/apache/kafka/issues/23952",
+  "commits_url": "https://api.github.com/repos/apache/kafka/pulls/23952/commits",
+  "review_comments_url": "https://api.github.com/repos/apache/kafka/pulls/23952/comments",
+  "review_comment_url": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}",
+  "comments_url": "https://api.github.com/repos/apache/kafka/issues/23952/comments",
+  "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/1b5e17da71d487386aa3ee849bcf86cff9eba2a4",
+  "number": 23952,
+  "state": "open",
+  "locked": false,
+  "title": "KAFKA-19035: Honor configured GlobalKTable deserialization handlers in TopologyTestDriver",
+  "user": {
+   "login": "tgolob",
+   "id": 34978067,
+   "node_id": "MDQ6VXNlcjM0OTc4MDY3",
+   "avatar_url": "https://avatars.githubusercontent.com/u/34978067?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/tgolob",
+   "html_url": "https://github.com/tgolob",
+   "followers_url": "https://api.github.com/users/tgolob/followers",
+   "following_url": "https://api.github.com/users/tgolob/following{/other_user}",
+   "gists_url": "https://api.github.com/users/tgolob/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/tgolob/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/tgolob/subscriptions",
+   "organizations_url": "https://api.github.com/users/tgolob/orgs",
+   "repos_url": "https://api.github.com/users/tgolob/repos",
+   "events_url": "https://api.github.com/users/tgolob/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/tgolob/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "body": "`TopologyTestDriver` always used `LogAndContinueExceptionHandler` for global-store input, ignoring configured fail and custom handlers. Use `StreamsConfig.deserializationExceptionHandler()` to match `GlobalStreamThread`. Malformed global input now fails with the default handler.\n\nPreserve inherited `Properties` settings so inherited handlers work correctly. Other inherited settings also become effective, including `state.dir` and `application.id`, which determine application state cleaned on close. Includes regression tests and an upgrade note.\n\nRelated to [KAFKA-19035](https://issues.apache.org/jira/browse/KAFKA-19035). This PR covers GlobalKTable deserialization-handler selection in TopologyTestDriver and the associated configuration preservation; DLQ delivery remains outside its scope.\n",
+  "labels": [
+   {
+    "id": 820747028,
+    "node_id": "MDU6TGFiZWw4MjA3NDcwMjg=",
+    "url": "https://api.github.com/repos/apache/kafka/labels/streams",
+    "name": "streams",
+    "description": null,
+    "color": "63edea",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 7865607612,
+    "node_id": "LA_kwDOACG9q88AAAAB1NOlvA",
+    "url": "https://api.github.com/repos/apache/kafka/labels/triage",
+    "name": "triage",
+    "description": "PRs from the community",
+    "color": "006b75",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   }
+  ],
+  "milestone": null,
+  "active_lock_reason": null,
+  "created_at": "2026-10-25T04:50:34Z",
+  "updated_at": "2026-10-25T15:04:25Z",
+  "closed_at": null,
+  "merged_at": null,
+  "merge_commit_sha": "9d9a5ab9cf398c48dad6219637abf20878f299f7",
+  "assignee": null,
+  "assignees": [],
+  "requested_reviewers": [],
+  "requested_teams": [],
+  "head": {
+   "label": "tgolob:codex/global-deserialization-handler",
+   "ref": "codex/global-deserialization-handler",
+   "repo": {
+    "id": 1432839004,
+    "node_id": "R_kgDOVWdjXA",
+    "name": "kafka",
+    "full_name": "tgolob/kafka",
+    "owner": {
+     "login": "tgolob",
+     "id": 34978067,
+     "node_id": "MDQ6VXNlcjM0OTc4MDY3",
+     "avatar_url": "https://avatars.githubusercontent.com/u/34978067?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/tgolob",
+     "html_url": "https://github.com/tgolob",
+     "followers_url": "https://api.github.com/users/tgolob/followers",
+     "following_url": "https://api.github.com/users/tgolob/following{/other_user}",
+     "gists_url": "https://api.github.com/users/tgolob/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/tgolob/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/tgolob/subscriptions",
+     "organizations_url": "https://api.github.com/users/tgolob/orgs",
+     "repos_url": "https://api.github.com/users/tgolob/repos",
+     "events_url": "https://api.github.com/users/tgolob/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/tgolob/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": true,
+    "archived": false,
+    "disabled": false,
+    "description": "Apache Kafka - A distributed event streaming platform",
+    "homepage": "https://kafka.apache.org/",
+    "language": null,
+    "visibility": "public",
+    "is_template": false,
+    "topics": [],
+    "forks_count": 0,
+    "forks": 0,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "watchers": 0,
+    "open_issues_count": 0,
+    "open_issues": 0,
+    "size": 321473,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-26T00:13:08Z",
+    "created_at": "2026-10-25T04:49:46Z",
+    "updated_at": "2026-10-25T04:49:47Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/tgolob/kafka",
+    "html_url": "https://github.com/tgolob/kafka",
+    "archive_url": "https://api.github.com/repos/tgolob/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/tgolob/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/tgolob/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/tgolob/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/tgolob/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/tgolob/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/tgolob/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/tgolob/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/tgolob/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/tgolob/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/tgolob/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/tgolob/kafka/downloads",
+    "events_url": "https://api.github.com/repos/tgolob/kafka/events",
+    "forks_url": "https://api.github.com/repos/tgolob/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/tgolob/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/tgolob/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/tgolob/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/tgolob/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/tgolob/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/tgolob/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/tgolob/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/tgolob/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/tgolob/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/tgolob/kafka/languages",
+    "merges_url": "https://api.github.com/repos/tgolob/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/tgolob/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/tgolob/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/tgolob/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/tgolob/kafka/releases{/id}",
+    "ssh_url": "git@github.com:tgolob/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/tgolob/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/tgolob/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/tgolob/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/tgolob/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/tgolob/kafka/tags",
+    "teams_url": "https://api.github.com/repos/tgolob/kafka/teams",
+    "trees_url": "https://api.github.com/repos/tgolob/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/tgolob/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/tgolob/kafka/hooks",
+    "svn_url": "https://github.com/tgolob/kafka"
+   },
+   "sha": "1b5e17da71d487386aa3ee849bcf86cff9eba2a4",
+   "user": {
+    "login": "tgolob",
+    "id": 34978067,
+    "node_id": "MDQ6VXNlcjM0OTc4MDY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/34978067?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tgolob",
+    "html_url": "https://github.com/tgolob",
+    "followers_url": "https://api.github.com/users/tgolob/followers",
+    "following_url": "https://api.github.com/users/tgolob/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tgolob/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tgolob/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tgolob/subscriptions",
+    "organizations_url": "https://api.github.com/users/tgolob/orgs",
+    "repos_url": "https://api.github.com/users/tgolob/repos",
+    "events_url": "https://api.github.com/users/tgolob/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tgolob/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "base": {
+   "label": "apache:trunk",
+   "ref": "trunk",
+   "repo": {
+    "id": 2211243,
+    "node_id": "MDEwOlJlcG9zaXRvcnkyMjExMjQz",
+    "name": "kafka",
+    "full_name": "apache/kafka",
+    "owner": {
+     "login": "apache",
+     "id": 47359,
+     "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+     "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/apache",
+     "html_url": "https://github.com/apache",
+     "followers_url": "https://api.github.com/users/apache/followers",
+     "following_url": "https://api.github.com/users/apache/following{/other_user}",
+     "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+     "organizations_url": "https://api.github.com/users/apache/orgs",
+     "repos_url": "https://api.github.com/users/apache/repos",
+     "events_url": "https://api.github.com/users/apache/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/apache/received_events",
+     "type": "Organization",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": false,
+    "archived": false,
+    "disabled": false,
+    "description": "Apache Kafka - A distributed event streaming platform",
+    "homepage": "https://kafka.apache.org/",
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [
+     "java",
+     "kafka",
+     "scala",
+     "streaming"
+    ],
+    "forks_count": 15637,
+    "forks": 15637,
+    "stargazers_count": 34153,
+    "watchers_count": 34153,
+    "watchers": 34153,
+    "open_issues_count": 674,
+    "open_issues": 674,
+    "size": 322164,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-29T11:37:21Z",
+    "created_at": "2011-08-15T18:06:16Z",
+    "updated_at": "2026-10-29T11:37:29Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/apache/kafka",
+    "html_url": "https://github.com/apache/kafka",
+    "archive_url": "https://api.github.com/repos/apache/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/apache/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/apache/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/apache/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/apache/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/apache/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/apache/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/apache/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/apache/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/apache/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/apache/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/apache/kafka/downloads",
+    "events_url": "https://api.github.com/repos/apache/kafka/events",
+    "forks_url": "https://api.github.com/repos/apache/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/apache/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/apache/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/apache/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/apache/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/apache/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/apache/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/apache/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/apache/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/apache/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/apache/kafka/languages",
+    "merges_url": "https://api.github.com/repos/apache/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/apache/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/apache/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/apache/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/apache/kafka/releases{/id}",
+    "ssh_url": "git@github.com:apache/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/apache/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/apache/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/apache/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/apache/kafka/tags",
+    "teams_url": "https://api.github.com/repos/apache/kafka/teams",
+    "trees_url": "https://api.github.com/repos/apache/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/apache/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/apache/kafka/hooks",
+    "svn_url": "https://github.com/apache/kafka"
+   },
+   "sha": "c9da36e27076da3acb51bf75beed30d46b9f0583",
+   "user": {
+    "login": "apache",
+    "id": 47359,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/apache",
+    "html_url": "https://github.com/apache",
+    "followers_url": "https://api.github.com/users/apache/followers",
+    "following_url": "https://api.github.com/users/apache/following{/other_user}",
+    "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+    "organizations_url": "https://api.github.com/users/apache/orgs",
+    "repos_url": "https://api.github.com/users/apache/repos",
+    "events_url": "https://api.github.com/users/apache/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/apache/received_events",
+    "type": "Organization",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "_links": {
+   "comments": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23952/comments"
+   },
+   "commits": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23952/commits"
+   },
+   "statuses": {
+    "href": "https://api.github.com/repos/apache/kafka/statuses/1b5e17da71d487386aa3ee849bcf86cff9eba2a4"
+   },
+   "html": {
+    "href": "https://github.com/apache/kafka/pull/23952"
+   },
+   "issue": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23952"
+   },
+   "review_comments": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23952/comments"
+   },
+   "review_comment": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}"
+   },
+   "self": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23952"
+   }
+  },
+  "author_association": "NONE",
+  "auto_merge": null,
+  "draft": false,
+  "merged": false,
+  "mergeable": true,
+  "rebaseable": false,
+  "mergeable_state": "blocked",
+  "merged_by": null,
+  "comments": 0,
+  "review_comments": 0,
+  "maintainer_can_modify": true,
+  "commits": 4,
+  "additions": 161,
+  "deletions": 4,
+  "changed_files": 3
+ },
+ "reviews": [],
+ "review_comments": [],
+ "issue_comments": [],
+ "commits": [
+  {
+   "sha": "6112c7e2267a79980e1c0cddfe88329aaa13f63d",
+   "node_id": "C_kwDOVWdjXNoAKDYxMTJjN2UyMjY3YTc5OTgwZTFjMGNkZGZlODgzMjlhYWExM2Y2M2Q",
+   "commit": {
+    "author": {
+     "name": "Theodore Golob",
+     "email": "34978067+tgolob@users.noreply.github.com",
+     "date": "2026-10-25T04:33:21Z"
+    },
+    "committer": {
+     "name": "Theodore Golob",
+     "email": "34978067+tgolob@users.noreply.github.com",
+     "date": "2026-10-25T04:49:43Z"
+    },
+    "message": "KAFKA-19035: Honor configured GlobalKTable deserialization handlers in TopologyTestDriver\n\n`TopologyTestDriver` always used `LogAndContinueExceptionHandler` for global-store input, so malformed `GlobalKTable` records were skipped even when the configured handler should fail, and custom handlers were never invoked. Use `StreamsConfig.deserializationExceptionHandler()` to match `GlobalStreamThread`, with regression coverage and an upgrade note explaining how to retain continue-on-error behavior.\n\nRelated to KAFKA-19035. This is a partial fix limited to GlobalKTable/global-store deserialization-handler selection in the test driver. It does not implement DLQ delivery or complete KAFKA-19035; that ticket should remain open. Global-thread DLQ support remains tracked separately in KAFKA-20280.\n\nGenerated-by: OpenAI Codex (GPT-6)",
+    "tree": {
+     "sha": "de97095520500a4777368af3e17223b0620aa46b",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/de97095520500a4777368af3e17223b0620aa46b"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/6112c7e2267a79980e1c0cddfe88329aaa13f63d",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/6112c7e2267a79980e1c0cddfe88329aaa13f63d",
+   "html_url": "https://github.com/apache/kafka/commit/6112c7e2267a79980e1c0cddfe88329aaa13f63d",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/6112c7e2267a79980e1c0cddfe88329aaa13f63d/comments",
+   "author": {
+    "login": "tgolob",
+    "id": 34978067,
+    "node_id": "MDQ6VXNlcjM0OTc4MDY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/34978067?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tgolob",
+    "html_url": "https://github.com/tgolob",
+    "followers_url": "https://api.github.com/users/tgolob/followers",
+    "following_url": "https://api.github.com/users/tgolob/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tgolob/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tgolob/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tgolob/subscriptions",
+    "organizations_url": "https://api.github.com/users/tgolob/orgs",
+    "repos_url": "https://api.github.com/users/tgolob/repos",
+    "events_url": "https://api.github.com/users/tgolob/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tgolob/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "tgolob",
+    "id": 34978067,
+    "node_id": "MDQ6VXNlcjM0OTc4MDY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/34978067?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tgolob",
+    "html_url": "https://github.com/tgolob",
+    "followers_url": "https://api.github.com/users/tgolob/followers",
+    "following_url": "https://api.github.com/users/tgolob/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tgolob/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tgolob/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tgolob/subscriptions",
+    "organizations_url": "https://api.github.com/users/tgolob/orgs",
+    "repos_url": "https://api.github.com/users/tgolob/repos",
+    "events_url": "https://api.github.com/users/tgolob/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tgolob/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "647466c056c0107853cc21b51d7bd2d869ea64d9",
+     "url": "https://api.github.com/repos/apache/kafka/commits/647466c056c0107853cc21b51d7bd2d869ea64d9",
+     "html_url": "https://github.com/apache/kafka/commit/647466c056c0107853cc21b51d7bd2d869ea64d9"
+    }
+   ]
+  },
+  {
+   "sha": "37d8ed6a6e62ed0fc7ff18aa125d557fe73b1bab",
+   "node_id": "C_kwDOVWdjXNoAKDM3ZDhlZDZhNmU2MmVkMGZjN2ZmMThhYTEyNWQ1NTdmZTczYjFiYWI",
+   "commit": {
+    "author": {
+     "name": "Theodore Golob",
+     "email": "34978067+tgolob@users.noreply.github.com",
+     "date": "2026-10-25T04:56:39Z"
+    },
+    "committer": {
+     "name": "Theodore Golob",
+     "email": "34978067+tgolob@users.noreply.github.com",
+     "date": "2026-10-25T04:56:39Z"
+    },
+    "message": "KAFKA-19035: Shorten the GlobalKTable test-driver upgrade note\n\nKeep the upgrade guidance focused on the effect on existing tests and how\nto preserve continue-on-error behavior.\n\nGenerated-by: OpenAI Codex (GPT-6)",
+    "tree": {
+     "sha": "b5606c9d5ade55b4709d025da1dab4aa0ea2ce05",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/b5606c9d5ade55b4709d025da1dab4aa0ea2ce05"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/37d8ed6a6e62ed0fc7ff18aa125d557fe73b1bab",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/37d8ed6a6e62ed0fc7ff18aa125d557fe73b1bab",
+   "html_url": "https://github.com/apache/kafka/commit/37d8ed6a6e62ed0fc7ff18aa125d557fe73b1bab",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/37d8ed6a6e62ed0fc7ff18aa125d557fe73b1bab/comments",
+   "author": {
+    "login": "tgolob",
+    "id": 34978067,
+    "node_id": "MDQ6VXNlcjM0OTc4MDY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/34978067?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tgolob",
+    "html_url": "https://github.com/tgolob",
+    "followers_url": "https://api.github.com/users/tgolob/followers",
+    "following_url": "https://api.github.com/users/tgolob/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tgolob/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tgolob/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tgolob/subscriptions",
+    "organizations_url": "https://api.github.com/users/tgolob/orgs",
+    "repos_url": "https://api.github.com/users/tgolob/repos",
+    "events_url": "https://api.github.com/users/tgolob/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tgolob/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "tgolob",
+    "id": 34978067,
+    "node_id": "MDQ6VXNlcjM0OTc4MDY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/34978067?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tgolob",
+    "html_url": "https://github.com/tgolob",
+    "followers_url": "https://api.github.com/users/tgolob/followers",
+    "following_url": "https://api.github.com/users/tgolob/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tgolob/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tgolob/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tgolob/subscriptions",
+    "organizations_url": "https://api.github.com/users/tgolob/orgs",
+    "repos_url": "https://api.github.com/users/tgolob/repos",
+    "events_url": "https://api.github.com/users/tgolob/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tgolob/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "6112c7e2267a79980e1c0cddfe88329aaa13f63d",
+     "url": "https://api.github.com/repos/apache/kafka/commits/6112c7e2267a79980e1c0cddfe88329aaa13f63d",
+     "html_url": "https://github.com/apache/kafka/commit/6112c7e2267a79980e1c0cddfe88329aaa13f63d"
+    }
+   ]
+  },
+  {
+   "sha": "8effd4301cbdb9b25a0509e0c585303d4effa44a",
+   "node_id": "C_kwDOVWdjXNoAKDhlZmZkNDMwMWNiZGI5YjI1YTA1MDllMGM1ODUzMDNkNGVmZmE0NGE",
+   "commit": {
+    "author": {
+     "name": "Theodore Golob",
+     "email": "34978067+tgolob@users.noreply.github.com",
+     "date": "2026-10-25T05:27:16Z"
+    },
+    "committer": {
+     "name": "Theodore Golob",
+     "email": "34978067+tgolob@users.noreply.github.com",
+     "date": "2026-10-25T05:27:16Z"
+    },
+    "message": "KAFKA-19035: Preserve inherited handler settings in TopologyTestDriver\n\nFlatten Properties defaults when copying driver configuration so honoring\nthe configured global-store handler does not regress tests that inherit a\ncontinue handler. Cover direct and inherited handlers with both\nconfiguration keys.\n\nGenerated-by: OpenAI Codex (GPT-6)",
+    "tree": {
+     "sha": "e510a77de14be8622f7e36579d882070da0b1ca6",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/e510a77de14be8622f7e36579d882070da0b1ca6"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/8effd4301cbdb9b25a0509e0c585303d4effa44a",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/8effd4301cbdb9b25a0509e0c585303d4effa44a",
+   "html_url": "https://github.com/apache/kafka/commit/8effd4301cbdb9b25a0509e0c585303d4effa44a",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/8effd4301cbdb9b25a0509e0c585303d4effa44a/comments",
+   "author": {
+    "login": "tgolob",
+    "id": 34978067,
+    "node_id": "MDQ6VXNlcjM0OTc4MDY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/34978067?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tgolob",
+    "html_url": "https://github.com/tgolob",
+    "followers_url": "https://api.github.com/users/tgolob/followers",
+    "following_url": "https://api.github.com/users/tgolob/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tgolob/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tgolob/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tgolob/subscriptions",
+    "organizations_url": "https://api.github.com/users/tgolob/orgs",
+    "repos_url": "https://api.github.com/users/tgolob/repos",
+    "events_url": "https://api.github.com/users/tgolob/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tgolob/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "tgolob",
+    "id": 34978067,
+    "node_id": "MDQ6VXNlcjM0OTc4MDY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/34978067?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tgolob",
+    "html_url": "https://github.com/tgolob",
+    "followers_url": "https://api.github.com/users/tgolob/followers",
+    "following_url": "https://api.github.com/users/tgolob/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tgolob/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tgolob/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tgolob/subscriptions",
+    "organizations_url": "https://api.github.com/users/tgolob/orgs",
+    "repos_url": "https://api.github.com/users/tgolob/repos",
+    "events_url": "https://api.github.com/users/tgolob/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tgolob/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "37d8ed6a6e62ed0fc7ff18aa125d557fe73b1bab",
+     "url": "https://api.github.com/repos/apache/kafka/commits/37d8ed6a6e62ed0fc7ff18aa125d557fe73b1bab",
+     "html_url": "https://github.com/apache/kafka/commit/37d8ed6a6e62ed0fc7ff18aa125d557fe73b1bab"
+    }
+   ]
+  },
+  {
+   "sha": "1b5e17da71d487386aa3ee849bcf86cff9eba2a4",
+   "node_id": "C_kwDOVWdjXNoAKDFiNWUxN2RhNzFkNDg3Mzg2YWEzZWU4NDliY2Y4NmNmZjllYmEyYTQ",
+   "commit": {
+    "author": {
+     "name": "Theodore Golob",
+     "email": "34978067+tgolob@users.noreply.github.com",
+     "date": "2026-10-25T06:02:15Z"
+    },
+    "committer": {
+     "name": "Theodore Golob",
+     "email": "34978067+tgolob@users.noreply.github.com",
+     "date": "2026-10-25T06:02:15Z"
+    },
+    "message": "KAFKA-19035: Avoid null rejection when copying test driver config\n\nKeep the Map returned by Utils.propsToMap instead of copying it into\nProperties, which rejects null values produced by object-valued defaults.\nAdd ordinary-topology regressions for inherited settings and typed\noverrides, and clarify the upgrade note's configuration compatibility\nimpact.\n\nGenerated-by: OpenAI Codex (GPT-6)",
+    "tree": {
+     "sha": "bc4536a71b492e2925a3c4f3b8e69dc2ee7cefb2",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/bc4536a71b492e2925a3c4f3b8e69dc2ee7cefb2"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/1b5e17da71d487386aa3ee849bcf86cff9eba2a4",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/1b5e17da71d487386aa3ee849bcf86cff9eba2a4",
+   "html_url": "https://github.com/apache/kafka/commit/1b5e17da71d487386aa3ee849bcf86cff9eba2a4",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/1b5e17da71d487386aa3ee849bcf86cff9eba2a4/comments",
+   "author": {
+    "login": "tgolob",
+    "id": 34978067,
+    "node_id": "MDQ6VXNlcjM0OTc4MDY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/34978067?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tgolob",
+    "html_url": "https://github.com/tgolob",
+    "followers_url": "https://api.github.com/users/tgolob/followers",
+    "following_url": "https://api.github.com/users/tgolob/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tgolob/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tgolob/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tgolob/subscriptions",
+    "organizations_url": "https://api.github.com/users/tgolob/orgs",
+    "repos_url": "https://api.github.com/users/tgolob/repos",
+    "events_url": "https://api.github.com/users/tgolob/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tgolob/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "tgolob",
+    "id": 34978067,
+    "node_id": "MDQ6VXNlcjM0OTc4MDY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/34978067?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tgolob",
+    "html_url": "https://github.com/tgolob",
+    "followers_url": "https://api.github.com/users/tgolob/followers",
+    "following_url": "https://api.github.com/users/tgolob/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tgolob/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tgolob/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tgolob/subscriptions",
+    "organizations_url": "https://api.github.com/users/tgolob/orgs",
+    "repos_url": "https://api.github.com/users/tgolob/repos",
+    "events_url": "https://api.github.com/users/tgolob/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tgolob/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "8effd4301cbdb9b25a0509e0c585303d4effa44a",
+     "url": "https://api.github.com/repos/apache/kafka/commits/8effd4301cbdb9b25a0509e0c585303d4effa44a",
+     "html_url": "https://github.com/apache/kafka/commit/8effd4301cbdb9b25a0509e0c585303d4effa44a"
+    }
+   ]
+  }
+ ],
+ "files": [
+  {
+   "sha": "270f949ae03eff34ea352670fedb162cf99931a2",
+   "filename": "docs/streams/upgrade-guide.md",
+   "status": "modified",
+   "additions": 2,
+   "deletions": 0,
+   "changes": 2,
+   "blob_url": "https://github.com/apache/kafka/blob/1b5e17da71d487386aa3ee849bcf86cff9eba2a4/docs%2Fstreams%2Fupgrade-guide.md",
+   "raw_url": "https://github.com/apache/kafka/raw/1b5e17da71d487386aa3ee849bcf86cff9eba2a4/docs%2Fstreams%2Fupgrade-guide.md",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/docs%2Fstreams%2Fupgrade-guide.md?ref=1b5e17da71d487386aa3ee849bcf86cff9eba2a4",
+   "patch": "@@ -67,6 +67,8 @@ Since 2.6.0 release, Kafka Streams depends on a RocksDB version that requires Ma\n \n ## Streams API changes in 4.5.0\n \n+`TopologyTestDriver` now honors the configured deserialization exception handler for `GlobalKTable` records. With the default handler, malformed records throw `StreamsException`; configure `LogAndContinueExceptionHandler` to keep skipping them. Inherited `Properties` defaults now apply to all settings, including `state.dir` and `application.id`, which determine the application state cleaned on close.\n+\n Processors returning the same `StoreBuilder` instance from `ConnectedStoreProvider#stores()` are now grouped into one subtopology ([KAFKA-20464](https://issues.apache.org/jira/browse/KAFKA-20464)). For affected applications, task IDs change and state is restored from the changelog on first startup after upgrading. Linking processors to a store by name is unaffected.\n \n Upgraded RocksDB dependency to version 10.10.1(from 10.1.3). RocksDB deleted `max_write_buffer_number_to_maintain` from its `ColumnFamilyOptions` in version 10.5.0. To preserve compatibility, Kafka Streams' `Options#setMaxWriteBufferNumberToMaintain` and `Options#maxWriteBufferNumberToMaintain` are now deprecated no-ops: the setter has no effect, and the getter always returns `0` regardless of what was previously configured. This change is primarily relevant to users implementing custom RocksDB configurations via `rocksdb.config.setter`. Users relying on `max_write_buffer_number_to_maintain` should remove that configuration, since it no longer has any effect. Consult the [RocksDB changelog](https://github.com/facebook/rocksdb/blob/main/HISTORY.md) between 10.1.3 and 10.10.1 for other changes."
+  },
+  {
+   "sha": "33e124c12838f6afca88abd7587358b5b611e3d9",
+   "filename": "streams/test-utils/src/main/java/org/apache/kafka/streams/TopologyTestDriver.java",
+   "status": "modified",
+   "additions": 3,
+   "deletions": 4,
+   "changes": 7,
+   "blob_url": "https://github.com/apache/kafka/blob/1b5e17da71d487386aa3ee849bcf86cff9eba2a4/streams%2Ftest-utils%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2FTopologyTestDriver.java",
+   "raw_url": "https://github.com/apache/kafka/raw/1b5e17da71d487386aa3ee849bcf86cff9eba2a4/streams%2Ftest-utils%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2FTopologyTestDriver.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Ftest-utils%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2FTopologyTestDriver.java?ref=1b5e17da71d487386aa3ee849bcf86cff9eba2a4",
+   "patch": "@@ -41,9 +41,9 @@\n import org.apache.kafka.common.serialization.Deserializer;\n import org.apache.kafka.common.serialization.Serializer;\n import org.apache.kafka.common.utils.Time;\n+import org.apache.kafka.common.utils.Utils;\n import org.apache.kafka.common.utils.internals.LogContext;\n import org.apache.kafka.streams.TopologyConfig.TaskConfig;\n-import org.apache.kafka.streams.errors.LogAndContinueExceptionHandler;\n import org.apache.kafka.streams.errors.ProcessingExceptionHandler;\n import org.apache.kafka.streams.errors.TopologyException;\n import org.apache.kafka.streams.internals.StreamsConfigUtils;\n@@ -335,8 +335,7 @@ public TopologyTestDriver(final Topology topology,\n     TopologyTestDriver(final InternalTopologyBuilder builder,\n                        final Properties config,\n                        final long initialWallClockTimeMs) {\n-        final Properties configCopy = new Properties();\n-        configCopy.putAll(config);\n+        final Map<String, Object> configCopy = Utils.propsToMap(config);\n         configCopy.putIfAbsent(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, \"dummy-bootstrap-host:0\");\n         // provide randomized dummy app-id if it's not specified\n         configCopy.putIfAbsent(StreamsConfig.APPLICATION_ID_CONFIG, \"dummy-topology-test-driver-app-id-\" + ThreadLocalRandom.current().nextInt());\n@@ -470,7 +469,7 @@ private void setupGlobalTask(final Time mockWallClockTime,\n                 globalTopology,\n                 globalProcessorContext,\n                 globalStateManager,\n-                new LogAndContinueExceptionHandler(),\n+                streamsConfig.deserializationExceptionHandler(),\n                 processingExceptionHandler,\n                 mockWallClockTime,\n                 streamsConfig.getLong(StreamsConfig.COMMIT_INTERVAL_MS_CONFIG)"
+  },
+  {
+   "sha": "e2aaab9e9a756fba224f9e1b43e8b255e80b1f57",
+   "filename": "streams/test-utils/src/test/java/org/apache/kafka/streams/TopologyTestDriverTest.java",
+   "status": "modified",
+   "additions": 156,
+   "deletions": 0,
+   "changes": 156,
+   "blob_url": "https://github.com/apache/kafka/blob/1b5e17da71d487386aa3ee849bcf86cff9eba2a4/streams%2Ftest-utils%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2FTopologyTestDriverTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/1b5e17da71d487386aa3ee849bcf86cff9eba2a4/streams%2Ftest-utils%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2FTopologyTestDriverTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Ftest-utils%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2FTopologyTestDriverTest.java?ref=1b5e17da71d487386aa3ee849bcf86cff9eba2a4",
+   "patch": "@@ -16,7 +16,9 @@\n  */\n package org.apache.kafka.streams;\n \n+import org.apache.kafka.clients.consumer.ConsumerRecord;\n import org.apache.kafka.clients.producer.ProducerRecord;\n+import org.apache.kafka.common.errors.SerializationException;\n import org.apache.kafka.common.header.Header;\n import org.apache.kafka.common.header.Headers;\n import org.apache.kafka.common.header.internals.RecordHeader;\n@@ -35,6 +37,11 @@\n import org.apache.kafka.common.serialization.StringDeserializer;\n import org.apache.kafka.common.serialization.StringSerializer;\n import org.apache.kafka.common.utils.Time;\n+import org.apache.kafka.streams.errors.DeserializationExceptionHandler;\n+import org.apache.kafka.streams.errors.ErrorHandlerContext;\n+import org.apache.kafka.streams.errors.LogAndContinueExceptionHandler;\n+import org.apache.kafka.streams.errors.LogAndFailExceptionHandler;\n+import org.apache.kafka.streams.errors.StreamsException;\n import org.apache.kafka.streams.errors.TopologyException;\n import org.apache.kafka.streams.kstream.Consumed;\n import org.apache.kafka.streams.kstream.KTable;\n@@ -59,6 +66,8 @@\n \n import org.junit.jupiter.api.AfterEach;\n import org.junit.jupiter.api.Test;\n+import org.junit.jupiter.params.ParameterizedTest;\n+import org.junit.jupiter.params.provider.CsvSource;\n \n import java.io.File;\n import java.time.Duration;\n@@ -85,6 +94,7 @@\n import static org.junit.jupiter.api.Assertions.assertArrayEquals;\n import static org.junit.jupiter.api.Assertions.assertEquals;\n import static org.junit.jupiter.api.Assertions.assertFalse;\n+import static org.junit.jupiter.api.Assertions.assertInstanceOf;\n import static org.junit.jupiter.api.Assertions.assertNotNull;\n import static org.junit.jupiter.api.Assertions.assertNull;\n import static org.junit.jupiter.api.Assertions.assertThrows;\n@@ -433,6 +443,39 @@ public void shouldThrowWhenConfigIsNull() {\n         assertEquals(\"config cannot be null\", exception.getMessage());\n     }\n \n+    @Test\n+    public void shouldAllowUnusedNonStringDefaultConfig() {\n+        final Properties defaults = new Properties();\n+        defaults.put(\"unused.property\", new Object());\n+        final Properties driverConfig = new Properties(defaults);\n+        driverConfig.putAll(config);\n+\n+        try (final TopologyTestDriver driver = new TopologyTestDriverBuilder(setupSourceSinkTopology()).withConfig(driverConfig).build()) {\n+            driver.createInputTopic(SOURCE_TOPIC_1, new ByteArraySerializer(), new ByteArraySerializer())\n+                .pipeInput(new byte[]{1}, new byte[]{2});\n+            assertArrayEquals(new byte[]{2}, driver.createOutputTopic(SINK_TOPIC_1, new ByteArrayDeserializer(), new ByteArrayDeserializer()).readValue());\n+        }\n+    }\n+\n+    @Test\n+    public void shouldPreserveInheritedAndExplicitSerdeConfig() {\n+        final Properties defaults = new Properties();\n+        defaults.setProperty(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG, Serdes.StringSerde.class.getName());\n+        defaults.setProperty(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG, Serdes.StringSerde.class.getName());\n+        final Properties driverConfig = new Properties(defaults);\n+        driverConfig.putAll(config);\n+        driverConfig.remove(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG);\n+        driverConfig.put(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG, Serdes.LongSerde.class);\n+\n+        try (final TopologyTestDriver driver = new TopologyTestDriverBuilder(setupSourceSinkTopology()).withConfig(driverConfig).build()) {\n+            driver.createInputTopic(SOURCE_TOPIC_1, new StringSerializer(), new LongSerializer()).pipeInput(\"key\", -1L);\n+            assertEquals(KeyValue.pair(\"key\", -1L), driver.createOutputTopic(SINK_TOPIC_1, new StringDeserializer(), new LongDeserializer()).readKeyValue());\n+        }\n+\n+        assertFalse(driverConfig.containsKey(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG));\n+        assertEquals(Serdes.LongSerde.class, driverConfig.get(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG));\n+    }\n+\n     @Test\n     public void shouldInitProcessor() {\n         testDriver = new TopologyTestDriverBuilder(setupSingleProcessorTopology())\n@@ -1705,6 +1748,119 @@ public void shouldFeedStoreFromGlobalKTable() {\n         }\n     }\n \n+    @ParameterizedTest\n+    @CsvSource({\"false, false\", \"false, true\", \"true, false\", \"true, true\"})\n+    public void shouldFailOnGlobalTableDeserializationError(final boolean configureHandler,\n+                                                            final boolean invalidKey) {\n+        if (configureHandler) {\n+            config.put(StreamsConfig.DESERIALIZATION_EXCEPTION_HANDLER_CLASS_CONFIG, LogAndFailExceptionHandler.class);\n+        }\n+        try (final TopologyTestDriver driver = new TopologyTestDriverBuilder(globalTableTopology()).withConfig(config).build()) {\n+            final TestInputTopic<byte[], byte[]> input = driver.createInputTopic(\"global-topic\", new ByteArraySerializer(), new ByteArraySerializer());\n+            final byte[] valid = new LongSerializer().serialize(\"global-topic\", 1L);\n+            input.pipeInput(valid, valid);\n+\n+            final StreamsException exception = assertThrows(StreamsException.class,\n+                () -> input.pipeInput(invalidKey ? new byte[0] : valid, invalidKey ? valid : new byte[0]));\n+\n+            assertInstanceOf(SerializationException.class, exception.getCause());\n+            assertTrue(exception.getMessage().startsWith(\"Deserialization exception handler is set to fail\"));\n+            assertEquals(1L, driver.getKeyValueStore(\"global-store\").get(1L));\n+        }\n+    }\n+\n+    @ParameterizedTest\n+    @CsvSource({\"false, false\", \"false, true\", \"true, false\", \"true, true\"})\n+    public void shouldContinueAfterGlobalTableDeserializationError(final boolean invalidKey,\n+                                                                 final boolean inheritHandler) {\n+        final Properties handlerConfig = new Properties();\n+        handlerConfig.setProperty(StreamsConfig.DESERIALIZATION_EXCEPTION_HANDLER_CLASS_CONFIG, LogAndContinueExceptionHandler.class.getName());\n+        final Properties driverConfig = inheritHandler ? new Properties(handlerConfig) : handlerConfig;\n+        driverConfig.putAll(config);\n+        try (final TopologyTestDriver driver = new TopologyTestDriverBuilder(globalTableTopology()).withConfig(driverConfig).build()) {\n+            final TestInputTopic<byte[], byte[]> input = driver.createInputTopic(\"global-topic\", new ByteArraySerializer(), new ByteArraySerializer());\n+            final byte[] valid = new LongSerializer().serialize(\"global-topic\", 1L);\n+            input.pipeInput(valid, valid);\n+            input.pipeInput(invalidKey ? new byte[0] : valid, invalidKey ? valid : new byte[0]);\n+            assertEquals(1L, driver.getKeyValueStore(\"global-store\").get(1L));\n+\n+            input.pipeInput(valid, new LongSerializer().serialize(\"global-topic\", 2L));\n+            assertEquals(2L, driver.getKeyValueStore(\"global-store\").get(1L));\n+        }\n+    }\n+\n+    @ParameterizedTest\n+    @CsvSource({\n+        \"deserialization.exception.handler, false\",\n+        \"deserialization.exception.handler, true\",\n+        \"default.deserialization.exception.handler, false\",\n+        \"default.deserialization.exception.handler, true\"\n+    })\n+    public void shouldInvokeConfiguredGlobalTableDeserializationHandler(final String handlerConfig,\n+                                                                      final boolean inheritHandler) {\n+        final List<ConsumerRecord<byte[], byte[]>> failedRecords = new ArrayList<>();\n+        final Properties handlerDefaults = new Properties();\n+        handlerDefaults.setProperty(handlerConfig, TrackingDeserializationExceptionHandler.class.getName());\n+        final Properties driverConfig = inheritHandler ? new Properties(handlerDefaults) : handlerDefaults;\n+        driverConfig.putAll(config);\n+        driverConfig.put(\"test.failed.records\", failedRecords);\n+        try (final TopologyTestDriver driver = new TopologyTestDriverBuilder(globalTableTopology()).withConfig(driverConfig).build()) {\n+            final TestInputTopic<Long, byte[]> input = driver.createInputTopic(\"global-topic\", new LongSerializer(), new ByteArraySerializer());\n+            final byte[] valid = new LongSerializer().serialize(\"global-topic\", 1L);\n+            input.pipeInput(1L, valid);\n+            input.pipeInput(new TestRecord<>(1L, new byte[0], headers, timestamp1));\n+\n+            assertEquals(1, failedRecords.size());\n+            final ConsumerRecord<byte[], byte[]> failedRecord = failedRecords.get(0);\n+            assertEquals(\"global-topic\", failedRecord.topic());\n+            assertEquals(0, failedRecord.partition());\n+            assertEquals(1L, failedRecord.offset());\n+            assertEquals(timestamp1, failedRecord.timestamp());\n+            assertEquals(headers, failedRecord.headers());\n+            assertArrayEquals(valid, failedRecord.key());\n+            assertArrayEquals(new byte[0], failedRecord.value());\n+            assertEquals(1L, driver.getKeyValueStore(\"global-store\").get(1L));\n+\n+            input.pipeInput(2L, valid);\n+            assertEquals(1L, driver.getKeyValueStore(\"global-store\").get(2L));\n+            assertEquals(1, failedRecords.size());\n+        }\n+    }\n+\n+    private Topology globalTableTopology() {\n+        final StreamsBuilder builder = new StreamsBuilder();\n+        builder.globalTable(\"global-topic\",\n+            Consumed.with(Serdes.Long(), Serdes.Long()),\n+            Materialized.as(Stores.inMemoryKeyValueStore(\"global-store\")));\n+        return builder.build();\n+    }\n+\n+    public static class TrackingDeserializationExceptionHandler implements DeserializationExceptionHandler {\n+        private List<ConsumerRecord<byte[], byte[]>> failedRecords;\n+\n+        @SuppressWarnings(\"unchecked\")\n+        @Override\n+        public void configure(final Map<String, ?> configs) {\n+            failedRecords = (List<ConsumerRecord<byte[], byte[]>>) configs.get(\"test.failed.records\");\n+        }\n+\n+        @Override\n+        public Response handleError(final ErrorHandlerContext context,\n+                                    final ConsumerRecord<byte[], byte[]> record,\n+                                    final Exception exception) {\n+            assertInstanceOf(SerializationException.class, exception);\n+            assertEquals(record.topic(), context.topic());\n+            assertEquals(record.partition(), context.partition());\n+            assertEquals(record.offset(), context.offset());\n+            assertEquals(record.timestamp(), context.timestamp());\n+            assertEquals(record.headers(), context.headers());\n+            assertArrayEquals(record.key(), context.sourceRawKey());\n+            assertArrayEquals(record.value(), context.sourceRawValue());\n+            failedRecords.add(record);\n+            return Response.resume();\n+        }\n+    }\n+\n     private Topology setupMultipleSourcesPatternTopology(final Pattern... sourceTopicPatternNames) {\n         final Topology topology = new Topology();\n "
+  }
+ ],
+ "timeline": [
+  {
+   "sha": "6112c7e2267a79980e1c0cddfe88329aaa13f63d",
+   "node_id": "C_kwDOACG9q9oAKDYxMTJjN2UyMjY3YTc5OTgwZTFjMGNkZGZlODgzMjlhYWExM2Y2M2Q",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/6112c7e2267a79980e1c0cddfe88329aaa13f63d",
+   "html_url": "https://github.com/apache/kafka/commit/6112c7e2267a79980e1c0cddfe88329aaa13f63d",
+   "author": {
+    "name": "Theodore Golob",
+    "email": "34978067+tgolob@users.noreply.github.com",
+    "date": "2026-10-25T04:33:21Z"
+   },
+   "committer": {
+    "name": "Theodore Golob",
+    "email": "34978067+tgolob@users.noreply.github.com",
+    "date": "2026-10-25T04:49:43Z"
+   },
+   "tree": {
+    "sha": "de97095520500a4777368af3e17223b0620aa46b",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/de97095520500a4777368af3e17223b0620aa46b"
+   },
+   "message": "KAFKA-19035: Honor configured GlobalKTable deserialization handlers in TopologyTestDriver\n\n`TopologyTestDriver` always used `LogAndContinueExceptionHandler` for global-store input, so malformed `GlobalKTable` records were skipped even when the configured handler should fail, and custom handlers were never invoked. Use `StreamsConfig.deserializationExceptionHandler()` to match `GlobalStreamThread`, with regression coverage and an upgrade note explaining how to retain continue-on-error behavior.\n\nRelated to KAFKA-19035. This is a partial fix limited to GlobalKTable/global-store deserialization-handler selection in the test driver. It does not implement DLQ delivery or complete KAFKA-19035; that ticket should remain open. Global-thread DLQ support remains tracked separately in KAFKA-20280.\n\nGenerated-by: OpenAI Codex (GPT-6)",
+   "parents": [
+    {
+     "sha": "647466c056c0107853cc21b51d7bd2d869ea64d9",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/647466c056c0107853cc21b51d7bd2d869ea64d9",
+     "html_url": "https://github.com/apache/kafka/commit/647466c056c0107853cc21b51d7bd2d869ea64d9"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "id": 34165453686,
+   "node_id": "LE_lADOACG9q88AAAABZuDX4c8AAAAH9Gtzdg",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34165453686",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-25T04:50:45Z",
+   "label": {
+    "name": "triage",
+    "color": "006b75"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34165456237,
+   "node_id": "LE_lADOACG9q88AAAABZuDX4c8AAAAH9Gt9bQ",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34165456237",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-25T04:50:50Z",
+   "label": {
+    "name": "streams",
+    "color": "63edea"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "sha": "37d8ed6a6e62ed0fc7ff18aa125d557fe73b1bab",
+   "node_id": "C_kwDOACG9q9oAKDM3ZDhlZDZhNmU2MmVkMGZjN2ZmMThhYTEyNWQ1NTdmZTczYjFiYWI",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/37d8ed6a6e62ed0fc7ff18aa125d557fe73b1bab",
+   "html_url": "https://github.com/apache/kafka/commit/37d8ed6a6e62ed0fc7ff18aa125d557fe73b1bab",
+   "author": {
+    "name": "Theodore Golob",
+    "email": "34978067+tgolob@users.noreply.github.com",
+    "date": "2026-10-25T04:56:39Z"
+   },
+   "committer": {
+    "name": "Theodore Golob",
+    "email": "34978067+tgolob@users.noreply.github.com",
+    "date": "2026-10-25T04:56:39Z"
+   },
+   "tree": {
+    "sha": "b5606c9d5ade55b4709d025da1dab4aa0ea2ce05",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/b5606c9d5ade55b4709d025da1dab4aa0ea2ce05"
+   },
+   "message": "KAFKA-19035: Shorten the GlobalKTable test-driver upgrade note\n\nKeep the upgrade guidance focused on the effect on existing tests and how\nto preserve continue-on-error behavior.\n\nGenerated-by: OpenAI Codex (GPT-6)",
+   "parents": [
+    {
+     "sha": "6112c7e2267a79980e1c0cddfe88329aaa13f63d",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/6112c7e2267a79980e1c0cddfe88329aaa13f63d",
+     "html_url": "https://github.com/apache/kafka/commit/6112c7e2267a79980e1c0cddfe88329aaa13f63d"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "8effd4301cbdb9b25a0509e0c585303d4effa44a",
+   "node_id": "C_kwDOACG9q9oAKDhlZmZkNDMwMWNiZGI5YjI1YTA1MDllMGM1ODUzMDNkNGVmZmE0NGE",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/8effd4301cbdb9b25a0509e0c585303d4effa44a",
+   "html_url": "https://github.com/apache/kafka/commit/8effd4301cbdb9b25a0509e0c585303d4effa44a",
+   "author": {
+    "name": "Theodore Golob",
+    "email": "34978067+tgolob@users.noreply.github.com",
+    "date": "2026-10-25T05:27:16Z"
+   },
+   "committer": {
+    "name": "Theodore Golob",
+    "email": "34978067+tgolob@users.noreply.github.com",
+    "date": "2026-10-25T05:27:16Z"
+   },
+   "tree": {
+    "sha": "e510a77de14be8622f7e36579d882070da0b1ca6",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/e510a77de14be8622f7e36579d882070da0b1ca6"
+   },
+   "message": "KAFKA-19035: Preserve inherited handler settings in TopologyTestDriver\n\nFlatten Properties defaults when copying driver configuration so honoring\nthe configured global-store handler does not regress tests that inherit a\ncontinue handler. Cover direct and inherited handlers with both\nconfiguration keys.\n\nGenerated-by: OpenAI Codex (GPT-6)",
+   "parents": [
+    {
+     "sha": "37d8ed6a6e62ed0fc7ff18aa125d557fe73b1bab",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/37d8ed6a6e62ed0fc7ff18aa125d557fe73b1bab",
+     "html_url": "https://github.com/apache/kafka/commit/37d8ed6a6e62ed0fc7ff18aa125d557fe73b1bab"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "1b5e17da71d487386aa3ee849bcf86cff9eba2a4",
+   "node_id": "C_kwDOACG9q9oAKDFiNWUxN2RhNzFkNDg3Mzg2YWEzZWU4NDliY2Y4NmNmZjllYmEyYTQ",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/1b5e17da71d487386aa3ee849bcf86cff9eba2a4",
+   "html_url": "https://github.com/apache/kafka/commit/1b5e17da71d487386aa3ee849bcf86cff9eba2a4",
+   "author": {
+    "name": "Theodore Golob",
+    "email": "34978067+tgolob@users.noreply.github.com",
+    "date": "2026-10-25T06:02:15Z"
+   },
+   "committer": {
+    "name": "Theodore Golob",
+    "email": "34978067+tgolob@users.noreply.github.com",
+    "date": "2026-10-25T06:02:15Z"
+   },
+   "tree": {
+    "sha": "bc4536a71b492e2925a3c4f3b8e69dc2ee7cefb2",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/bc4536a71b492e2925a3c4f3b8e69dc2ee7cefb2"
+   },
+   "message": "KAFKA-19035: Avoid null rejection when copying test driver config\n\nKeep the Map returned by Utils.propsToMap instead of copying it into\nProperties, which rejects null values produced by object-valued defaults.\nAdd ordinary-topology regressions for inherited settings and typed\noverrides, and clarify the upgrade note's configuration compatibility\nimpact.\n\nGenerated-by: OpenAI Codex (GPT-6)",
+   "parents": [
+    {
+     "sha": "8effd4301cbdb9b25a0509e0c585303d4effa44a",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/8effd4301cbdb9b25a0509e0c585303d4effa44a",
+     "html_url": "https://github.com/apache/kafka/commit/8effd4301cbdb9b25a0509e0c585303d4effa44a"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "id": 34187958085,
+   "node_id": "RFRE_lADOACG9q88AAAABZuDX4c8AAAAH9cLXRQ",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34187958085",
+   "actor": {
+    "login": "tgolob",
+    "id": 34978067,
+    "node_id": "MDQ6VXNlcjM0OTc4MDY3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/34978067?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tgolob",
+    "html_url": "https://github.com/tgolob",
+    "followers_url": "https://api.github.com/users/tgolob/followers",
+    "following_url": "https://api.github.com/users/tgolob/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tgolob/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tgolob/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tgolob/subscriptions",
+    "organizations_url": "https://api.github.com/users/tgolob/orgs",
+    "repos_url": "https://api.github.com/users/tgolob/repos",
+    "events_url": "https://api.github.com/users/tgolob/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tgolob/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "ready_for_review",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-25T15:04:25Z",
+   "performed_via_github_app": null
+  }
+ ]
+}

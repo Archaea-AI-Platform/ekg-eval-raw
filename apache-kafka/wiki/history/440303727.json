@@ -1,0 +1,386 @@
+{
+ "id": "440303727",
+ "versions": {
+  "results": [
+   {
+    "by": {
+     "type": "known",
+     "username": "antonagestam",
+     "userKey": "073590d29d600b9b019dde8a48050045",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Anton Agestam",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29d600b9b019dde8a48050045"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-17T08:53:42.000Z",
+    "message": "added link to vote thread",
+    "number": 4,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/440303727/version/4"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/440303727"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "antonagestam",
+     "userKey": "073590d29d600b9b019dde8a48050045",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Anton Agestam",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29d600b9b019dde8a48050045"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-10T14:22:05.000Z",
+    "message": "clarified target version",
+    "number": 3,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/440303727/version/3"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/440303727?status=historical&version=3"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "antonagestam",
+     "userKey": "073590d29d600b9b019dde8a48050045",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Anton Agestam",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29d600b9b019dde8a48050045"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-09T12:27:50.000Z",
+    "message": "added the discussion thread link",
+    "number": 2,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/440303727/version/2"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/440303727?status=historical&version=2"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "antonagestam",
+     "userKey": "073590d29d600b9b019dde8a48050045",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Anton Agestam",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29d600b9b019dde8a48050045"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-09T10:09:49.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/440303727/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/440303727?status=historical&version=1"
+    }
+   }
+  ],
+  "start": 0,
+  "limit": 200,
+  "size": 4,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/experimental/content/440303727/version",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ },
+ "version_bodies": [
+  {
+   "id": "440303727",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1362: Add a rollback-compatible storage format option for KRaft migration",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "antonagestam",
+     "userKey": "073590d29d600b9b019dde8a48050045",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Anton Agestam",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29d600b9b019dde8a48050045"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-10T14:22:05.000Z",
+    "message": "clarified target version",
+    "number": 3,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/440303727/version/3"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/440303727?status=historical&version=3"
+    }
+   },
+   "position": 1354,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><h1>Status</h1><p><strong>Current state</strong>: <em>Under Discussion</em></p><p><strong>Discussion thread</strong>: <em><a href=\"https://lists.apache.org/thread/bq27on99lf5b24d16zt5g5hnysd30c3w\">here</a><br /></em></p><p><strong>JIRA</strong>: <a href=\"https://issues.apache.org/jira/browse/KAFKA-20762\"><span>KAFKA-20762</span></a><em><br /></em></p><p><span><strong>Pull request (reference implementation)</strong>: <a href=\"https://github.com/apache/kafka/pull/22751\">PR #22751</a></span></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h2><span>Motivation</span></h2><p><span>The ZooKeeper-to-KRaft migration is designed so that a cluster can linger in the </span><a href=\"https://kafka.apache.org/41/operations/kraft/#migration-phases\"><span>dual-write phase</span></a><span> and roll back to ZooKeeper mode if an operator discovers a problem before the migration is finalized.</span></p><p><span>In production environments, at any point in time, hardware failures may happen, some of which are cause for replacing nodes, such as failing disks. Kafka fully supports node replacements out of the box.</span></p><p><span>These two aspects (node replacements/provisioning and KRaft migration rollback) are documented as orthogonal concepts.</span></p><p><span>However, it has been observed in production systems that node replacements during a KRaft migration, when following the documented procedures, breaks the ability to roll back. This is not documented, and as both mechanisms are important tooling for operators to keep clusters available, it's preferable to make them work in conjunction. There is no way to eliminate the risk of hardware failures during an ongoing migration, and as such, the sanctioned tooling needs to be adapted to handle them.</span></p><p><span>Today, when a broker is lost during the migration and the documented process for provisioning a replacement is followed, the replacement's storage is formatted using the </span><a href=\"https://kafka.apache.org/41/operations/kraft/#provisioning-nodes\"><span>kafka-storage.sh format</span></a><span> procedure. That command unconditionally writes </span><span>meta.properties</span><span> with </span><span>version=1</span><span>. If a rollback is later required, the operator configures the brokers back into migration mode — at which point the newly provisioned broker rejects its own storage and crashes before becoming available:</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"4a4bd2ad-1140-416e-9d4a-d1454c6db515\"><ac:plain-text-body><![CDATA[java.lang.RuntimeException: Found unexpected version in /srv/kafka/meta.properties. ZK-based brokers that are not migrating only support version 0 (which is implicit when the `version` field is missing).\n    at org.apache.kafka.metadata.properties.MetaPropertiesEnsemble.verify(MetaPropertiesEnsemble.java:489)\n    at kafka.server.KafkaServer.startup(KafkaServer.scala:258)]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p><span>The incompatibility is not documented, and node replacement is a routine operation for managed-fleet operators. The result is a silent loss of the rollback capability that the migration is supposed to preserve, discovered only at the worst possible time: during an attempted rollback.</span></p><p><span>The broker itself already formats empty log directories with a rollback-compatible </span><code><span>version=0</span></code><span> </span><span>meta.properties</span><span> when it starts up in migration mode, so the capability exists in the code base. It is simply not reachable through the provisioning tool that operators are instructed to use. This KIP closes that gap.</span></p><h2><span>Public Interfaces</span></h2><p><span>A new optional flag is added to the </span><span>format</span><span> subcommand of the storage tool (</span><span>bin/kafka-storage.sh format</span><span>):</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"9b2cae88-0e0f-4e6b-a593-e4827f88d83f\"><ac:plain-text-body><![CDATA[--zk-rollback-compatible]]></ac:plain-text-body></ac:structured-macro><p><span>Help text: </span><em>Format the node so that it remains compatible with rolling back an in-progress KRaft migration to ZooKeeper mode.</em></p><p><span>The flag is a boolean switch and takes no argument. When it is passed, the </span><span>format</span><span> command performs storage formatting identically to how the broker itself does during a migration sequence, resulting in a </span><span>meta.properties</span><span> with </span><code><span>version=0</span></code><span>. When it is omitted, the command behaves exactly as before and writes </span><code><span>version=1</span></code><span>.</span></p><p><span>No existing flags, defaults, output, exit codes, or other behaviors change.</span></p><h2><span>Proposed Changes</span></h2><p><span>When </span><code><span>--zk-rollback-compatible</span></code><span> is set, the storage tool selects </span><code><span>MetaPropertiesVersion.V0</span></code><span> instead of the default </span><code><span>MetaPropertiesVersion.V1</span></code><span><code> </code>when building the </span><span>meta.properties</span><span> for each formatted log directory. This is the same version the broker writes for itself while it is in migration mode, so a node provisioned this way can participate in a rollback in exactly the way an original migration broker can.</span></p><p><span>This fix will be made on the 3.9 development branch only, as it is the only currently supported version that still supports ZooKeeper, and by extension the only supported version where KRaft migrations are still supported.</span></p><p><span>Documentation is updated in two places in the KRaft operations guide: a new <em>&quot;Formatting Nodes During a KRaft Migration&quot;</em> subsection under provisioning explains when and how to use the flag, and the migration-phases section links to it. The documentation makes clear that the flag is only relevant while a migration can still be rolled back, and should no longer be used once the migration has been finalized.</span></p><h2><span>Compatibility, Deprecation, and Migration Plan</span></h2><p><span>The change is fully backward compatible. The flag is opt-in, and omitting it preserves the current behavior byte-for-byte. No configuration, no other command line option, and no on-disk default is altered for existing users.</span></p><p><span>There is nothing to deprecate and no migration required. Operators who are not performing a ZooKeeper-to-KRaft migration have no reason to use the flag and are unaffected.</span></p><h2><span>Test Plan</span></h2><p><span>Unit tests assert both directions of the behavior at both layers that were changed:</span></p><ul><li data-uuid=\"73d29dd6-44ab-4f3b-bf5c-867208317d5f\"><span>The storage tool verifies that </span><span>format <code>--zk-rollback-compatible</code></span><span> produces a </span><code><span>version=0</span></code><span> </span><span>meta.properties</span><span> and that a plain </span><span>format</span><span> still produces </span><code><span>version=1</span></code><span>.</span></li><li data-uuid=\"e5792211-889d-4eeb-939e-fb944a90cf0d\"><span>The underlying formatter verifies the same mapping when </span><code><span>setZkRollbackCompatible(true)</span></code><span> is set versus the default.</span></li></ul><h2><span>Rejected Alternatives</span></h2><h3><span>Document the incompatibility as intended behavior</span></h3><p><span>We could declare that node replacement is unsupported while a migration is rollback-eligible and simply document that constraint. This was rejected because it removes a recovery path during an already high-risk operational mode and pushes significant operational burden onto operators, for no benefit — the capability already exists in the broker and is cheap to expose.</span></p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/440303727?status=historical&version=3"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1354
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=449282263",
+    "edit": "/pages/resumedraft.action?draftId=449282263&draftShareId=29d1846b-93c9-401b-a0c8-fd4920f9e729",
+    "tinyui": "/x/14DHGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/440303727?status=historical&version=3"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/440303727/child?parentVersion=3",
+    "restrictions": "/rest/api/content/440303727/restriction/byOperation",
+    "history": "/rest/api/content/440303727/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/440303727/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/440303727/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "440303727",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1362: Add a rollback-compatible storage format option for KRaft migration",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "antonagestam",
+     "userKey": "073590d29d600b9b019dde8a48050045",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Anton Agestam",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29d600b9b019dde8a48050045"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-09T12:27:50.000Z",
+    "message": "added the discussion thread link",
+    "number": 2,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/440303727/version/2"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/440303727?status=historical&version=2"
+    }
+   },
+   "position": 1354,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><h1>Status</h1><p><strong>Current state</strong>: <em>Under Discussion</em></p><p><strong>Discussion thread</strong>: <em><a href=\"https://lists.apache.org/thread/bq27on99lf5b24d16zt5g5hnysd30c3w\">here</a><br /></em></p><p><strong>JIRA</strong>: <a href=\"https://issues.apache.org/jira/browse/KAFKA-20762\"><span>KAFKA-20762</span></a><em><br /></em></p><p><span><strong>Pull request (reference implementation)</strong>: <a href=\"https://github.com/apache/kafka/pull/22751\">PR #22751</a></span></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h2><span>Motivation</span></h2><p><span>The ZooKeeper-to-KRaft migration is designed so that a cluster can linger in the </span><a href=\"https://kafka.apache.org/41/operations/kraft/#migration-phases\"><span>dual-write phase</span></a><span> and roll back to ZooKeeper mode if an operator discovers a problem before the migration is finalized.</span></p><p><span>In production environments, at any point in time, hardware failures may happen, some of which are cause for replacing nodes, such as failing disks. Kafka fully supports node replacements out of the box.</span></p><p><span>These two aspects (node replacements/provisioning and KRaft migration rollback) are documented as orthogonal concepts.</span></p><p><span>However, it has been observed in production systems that node replacements during a KRaft migration, when following the documented procedures, breaks the ability to roll back. This is not documented, and as both mechanisms are important tooling for operators to keep clusters available, it's preferable to make them work in conjunction. There is no way to eliminate the risk of hardware failures during an ongoing migration, and as such, the sanctioned tooling needs to be adapted to handle them.</span></p><p><span>Today, when a broker is lost during the migration and the documented process for provisioning a replacement is followed, the replacement's storage is formatted using the </span><a href=\"https://kafka.apache.org/41/operations/kraft/#provisioning-nodes\"><span>kafka-storage.sh format</span></a><span> procedure. That command unconditionally writes </span><span>meta.properties</span><span> with </span><span>version=1</span><span>. If a rollback is later required, the operator configures the brokers back into migration mode — at which point the newly provisioned broker rejects its own storage and crashes before becoming available:</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"4a4bd2ad-1140-416e-9d4a-d1454c6db515\"><ac:plain-text-body><![CDATA[java.lang.RuntimeException: Found unexpected version in /srv/kafka/meta.properties. ZK-based brokers that are not migrating only support version 0 (which is implicit when the `version` field is missing).\n    at org.apache.kafka.metadata.properties.MetaPropertiesEnsemble.verify(MetaPropertiesEnsemble.java:489)\n    at kafka.server.KafkaServer.startup(KafkaServer.scala:258)]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p><span>The incompatibility is not documented, and node replacement is a routine operation for managed-fleet operators. The result is a silent loss of the rollback capability that the migration is supposed to preserve, discovered only at the worst possible time: during an attempted rollback.</span></p><p><span>The broker itself already formats empty log directories with a rollback-compatible </span><code><span>version=0</span></code><span> </span><span>meta.properties</span><span> when it starts up in migration mode, so the capability exists in the code base. It is simply not reachable through the provisioning tool that operators are instructed to use. This KIP closes that gap.</span></p><h2><span>Public Interfaces</span></h2><p><span>A new optional flag is added to the </span><span>format</span><span> subcommand of the storage tool (</span><span>bin/kafka-storage.sh format</span><span>):</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"9b2cae88-0e0f-4e6b-a593-e4827f88d83f\"><ac:plain-text-body><![CDATA[--zk-rollback-compatible]]></ac:plain-text-body></ac:structured-macro><p><span>Help text: </span><em>Format the node so that it remains compatible with rolling back an in-progress KRaft migration to ZooKeeper mode.</em></p><p><span>The flag is a boolean switch and takes no argument. When it is passed, the </span><span>format</span><span> command performs storage formatting identically to how the broker itself does during a migration sequence, resulting in a </span><span>meta.properties</span><span> with </span><code><span>version=0</span></code><span>. When it is omitted, the command behaves exactly as before and writes </span><code><span>version=1</span></code><span>.</span></p><p><span>No existing flags, defaults, output, exit codes, or other behaviors change.</span></p><h2><span>Proposed Changes</span></h2><p><span>When </span><code><span>--zk-rollback-compatible</span></code><span> is set, the storage tool selects </span><code><span>MetaPropertiesVersion.V0</span></code><span> instead of the default </span><code><span>MetaPropertiesVersion.V1</span></code><span><code> </code>when building the </span><span>meta.properties</span><span> for each formatted log directory. This is the same version the broker writes for itself while it is in migration mode, so a node provisioned this way can participate in a rollback in exactly the way an original migration broker can.</span></p><p><span>Documentation is updated in two places in the KRaft operations guide: a new <em>&quot;Formatting Nodes During a KRaft Migration&quot;</em> subsection under provisioning explains when and how to use the flag, and the migration-phases section links to it. The documentation makes clear that the flag is only relevant while a migration can still be rolled back, and should no longer be used once the migration has been finalized.</span></p><h2><span>Compatibility, Deprecation, and Migration Plan</span></h2><p><span>The change is fully backward compatible. The flag is opt-in, and omitting it preserves the current behavior byte-for-byte. No configuration, no other command line option, and no on-disk default is altered for existing users.</span></p><p><span>There is nothing to deprecate and no migration required. Operators who are not performing a ZooKeeper-to-KRaft migration have no reason to use the flag and are unaffected.</span></p><h2><span>Test Plan</span></h2><p><span>Unit tests assert both directions of the behavior at both layers that were changed:</span></p><ul><li data-uuid=\"73d29dd6-44ab-4f3b-bf5c-867208317d5f\"><span>The storage tool verifies that </span><span>format <code>--zk-rollback-compatible</code></span><span> produces a </span><code><span>version=0</span></code><span> </span><span>meta.properties</span><span> and that a plain </span><span>format</span><span> still produces </span><code><span>version=1</span></code><span>.</span></li><li data-uuid=\"e5792211-889d-4eeb-939e-fb944a90cf0d\"><span>The underlying formatter verifies the same mapping when </span><code><span>setZkRollbackCompatible(true)</span></code><span> is set versus the default.</span></li></ul><h2><span>Rejected Alternatives</span></h2><h3><span>Document the incompatibility as intended behavior</span></h3><p><span>We could declare that node replacement is unsupported while a migration is rollback-eligible and simply document that constraint. This was rejected because it removes a recovery path during an already high-risk operational mode and pushes significant operational burden onto operators, for no benefit — the capability already exists in the broker and is cheap to expose.</span></p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/440303727?status=historical&version=2"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1354
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=446071404",
+    "edit": "/pages/resumedraft.action?draftId=446071404&draftShareId=29d1846b-93c9-401b-a0c8-fd4920f9e729",
+    "tinyui": "/x/bIKWGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/440303727?status=historical&version=2"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/440303727/child?parentVersion=2",
+    "restrictions": "/rest/api/content/440303727/restriction/byOperation",
+    "history": "/rest/api/content/440303727/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/440303727/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/440303727/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "440303727",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1362: Add a rollback-compatible storage format option for KRaft migration",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "antonagestam",
+     "userKey": "073590d29d600b9b019dde8a48050045",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Anton Agestam",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29d600b9b019dde8a48050045"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-09T10:09:49.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/440303727/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/440303727?status=historical&version=1"
+    }
+   },
+   "position": 1354,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><h1>Status</h1><p><strong>Current state</strong>: <em>Under Discussion</em></p><p><strong>Discussion thread</strong>: <em><a href=\"http://mail-archives.apache.org/mod_mbox/kafka-dev/201501.mbox/%3CCAOeJiJh6Vkkca85bWYgkeOZ8rC6%2BKDh7zzq8vMKECL_7PNExTA%40mail.gmail.com%3E\">here</a> [Change the link from the KIP proposal email archive to your own email thread]<br /></em></p><p><strong>JIRA</strong>: <a href=\"https://issues.apache.org/jira/browse/KAFKA-20762\"><span>KAFKA-20762</span></a><em><br /></em></p><p><span><strong>Pull request (reference implementation)</strong>: <a href=\"https://github.com/apache/kafka/pull/22751\">PR #22751</a></span></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h2><span>Motivation</span></h2><p><span>The ZooKeeper-to-KRaft migration is designed so that a cluster can linger in the </span><a href=\"https://kafka.apache.org/41/operations/kraft/#migration-phases\"><span>dual-write phase</span></a><span> and roll back to ZooKeeper mode if an operator discovers a problem before the migration is finalized.</span></p><p><span>In production environments, at any point in time, hardware failures may happen, some of which are cause for replacing nodes, such as failing disks. Kafka fully supports node replacements out of the box.</span></p><p><span>These two aspects (node replacements/provisioning and KRaft migration rollback) are documented as orthogonal concepts.</span></p><p><span>However, it has been observed in production systems that node replacements during a KRaft migration, when following the documented procedures, breaks the ability to roll back. This is not documented, and as both mechanisms are important tooling for operators to keep clusters available, it's preferable to make them work in conjunction. There is no way to eliminate the risk of hardware failures during an ongoing migration, and as such, the sanctioned tooling needs to be adapted to handle them.</span></p><p><span>Today, when a broker is lost during the migration and the documented process for provisioning a replacement is followed, the replacement's storage is formatted using the </span><a href=\"https://kafka.apache.org/41/operations/kraft/#provisioning-nodes\"><span>kafka-storage.sh format</span></a><span> procedure. That command unconditionally writes </span><span>meta.properties</span><span> with </span><span>version=1</span><span>. If a rollback is later required, the operator configures the brokers back into migration mode — at which point the newly provisioned broker rejects its own storage and crashes before becoming available:</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"4a4bd2ad-1140-416e-9d4a-d1454c6db515\"><ac:plain-text-body><![CDATA[java.lang.RuntimeException: Found unexpected version in /srv/kafka/meta.properties. ZK-based brokers that are not migrating only support version 0 (which is implicit when the `version` field is missing).\n    at org.apache.kafka.metadata.properties.MetaPropertiesEnsemble.verify(MetaPropertiesEnsemble.java:489)\n    at kafka.server.KafkaServer.startup(KafkaServer.scala:258)]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p><span>The incompatibility is not documented, and node replacement is a routine operation for managed-fleet operators. The result is a silent loss of the rollback capability that the migration is supposed to preserve, discovered only at the worst possible time: during an attempted rollback.</span></p><p><span>The broker itself already formats empty log directories with a rollback-compatible </span><code><span>version=0</span></code><span> </span><span>meta.properties</span><span> when it starts up in migration mode, so the capability exists in the code base. It is simply not reachable through the provisioning tool that operators are instructed to use. This KIP closes that gap.</span></p><h2><span>Public Interfaces</span></h2><p><span>A new optional flag is added to the </span><span>format</span><span> subcommand of the storage tool (</span><span>bin/kafka-storage.sh format</span><span>):</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"9b2cae88-0e0f-4e6b-a593-e4827f88d83f\"><ac:plain-text-body><![CDATA[--zk-rollback-compatible]]></ac:plain-text-body></ac:structured-macro><p><span>Help text: </span><em>Format the node so that it remains compatible with rolling back an in-progress KRaft migration to ZooKeeper mode.</em></p><p><span>The flag is a boolean switch and takes no argument. When it is passed, the </span><span>format</span><span> command performs storage formatting identically to how the broker itself does during a migration sequence, resulting in a </span><span>meta.properties</span><span> with </span><code><span>version=0</span></code><span>. When it is omitted, the command behaves exactly as before and writes </span><code><span>version=1</span></code><span>.</span></p><p><span>No existing flags, defaults, output, exit codes, or other behaviors change.</span></p><h2><span>Proposed Changes</span></h2><p><span>When </span><code><span>--zk-rollback-compatible</span></code><span> is set, the storage tool selects </span><code><span>MetaPropertiesVersion.V0</span></code><span> instead of the default </span><code><span>MetaPropertiesVersion.V1</span></code><span><code> </code>when building the </span><span>meta.properties</span><span> for each formatted log directory. This is the same version the broker writes for itself while it is in migration mode, so a node provisioned this way can participate in a rollback in exactly the way an original migration broker can.</span></p><p><span>Documentation is updated in two places in the KRaft operations guide: a new <em>&quot;Formatting Nodes During a KRaft Migration&quot;</em> subsection under provisioning explains when and how to use the flag, and the migration-phases section links to it. The documentation makes clear that the flag is only relevant while a migration can still be rolled back, and should no longer be used once the migration has been finalized.</span></p><h2><span>Compatibility, Deprecation, and Migration Plan</span></h2><p><span>The change is fully backward compatible. The flag is opt-in, and omitting it preserves the current behavior byte-for-byte. No configuration, no other command line option, and no on-disk default is altered for existing users.</span></p><p><span>There is nothing to deprecate and no migration required. Operators who are not performing a ZooKeeper-to-KRaft migration have no reason to use the flag and are unaffected.</span></p><h2><span>Test Plan</span></h2><p><span>Unit tests assert both directions of the behavior at both layers that were changed:</span></p><ul><li data-uuid=\"73d29dd6-44ab-4f3b-bf5c-867208317d5f\"><span>The storage tool verifies that </span><span>format <code>--zk-rollback-compatible</code></span><span> produces a </span><code><span>version=0</span></code><span> </span><span>meta.properties</span><span> and that a plain </span><span>format</span><span> still produces </span><code><span>version=1</span></code><span>.</span></li><li data-uuid=\"e5792211-889d-4eeb-939e-fb944a90cf0d\"><span>The underlying formatter verifies the same mapping when </span><code><span>setZkRollbackCompatible(true)</span></code><span> is set versus the default.</span></li></ul><h2><span>Rejected Alternatives</span></h2><h3><span>Document the incompatibility as intended behavior</span></h3><p><span>We could declare that node replacement is unsupported while a migration is rollback-eligible and simply document that constraint. This was rejected because it removes a recovery path during an already high-risk operational mode and pushes significant operational burden onto operators, for no benefit — the capability already exists in the broker and is cheap to expose.</span></p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/440303727?status=historical&version=1"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1354
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=440304073",
+    "edit": "/pages/resumedraft.action?draftId=440304073&draftShareId=29d1846b-93c9-401b-a0c8-fd4920f9e729",
+    "tinyui": "/x/yYE_Gg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/440303727?status=historical&version=1"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/440303727/child?parentVersion=1",
+    "restrictions": "/rest/api/content/440303727/restriction/byOperation",
+    "history": "/rest/api/content/440303727/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/440303727/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/440303727/restriction/relevantViewRestrictions"
+   }
+  }
+ ],
+ "comments": {
+  "results": [],
+  "start": 0,
+  "limit": 200,
+  "size": 0,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/api/content/440303727/child/comment?expand=body.storage%2Cversion%2Cancestors&depth=all",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ }
+}

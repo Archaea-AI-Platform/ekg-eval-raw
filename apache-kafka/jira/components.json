@@ -1,0 +1,689 @@
+[
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12324907",
+  "id": "12324907",
+  "name": "admin",
+  "lead": {
+   "self": "https://issues.apache.org/jira/rest/api/2/user?username=nehanarkhede",
+   "key": "nehanarkhede",
+   "name": "nehanarkhede",
+   "avatarUrls": {
+    "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+    "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+    "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+    "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+   },
+   "displayName": "Neha Narkhede",
+   "active": true
+  },
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12323011",
+  "id": "12323011",
+  "name": "build",
+  "description": "gradle",
+  "lead": {
+   "self": "https://issues.apache.org/jira/rest/api/2/user?username=junrao",
+   "key": "junrao",
+   "name": "junrao",
+   "avatarUrls": {
+    "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+    "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+    "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+    "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+   },
+   "displayName": "Jun Rao",
+   "active": true
+  },
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12315218",
+  "id": "12315218",
+  "name": "clients",
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12324396",
+  "id": "12324396",
+  "name": "compression",
+  "lead": {
+   "self": "https://issues.apache.org/jira/rest/api/2/user?username=nehanarkhede",
+   "key": "nehanarkhede",
+   "name": "nehanarkhede",
+   "avatarUrls": {
+    "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+    "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+    "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+    "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+   },
+   "displayName": "Neha Narkhede",
+   "active": true
+  },
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12315222",
+  "id": "12315222",
+  "name": "config",
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12327569",
+  "id": "12327569",
+  "name": "connect",
+  "description": "Connect packages and connectors",
+  "lead": {
+   "self": "https://issues.apache.org/jira/rest/api/2/user?username=ewencp",
+   "key": "ewencp",
+   "name": "ewencp",
+   "avatarUrls": {
+    "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=ewencp&avatarId=29919",
+    "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=ewencp&avatarId=29919",
+    "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=ewencp&avatarId=29919",
+    "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=ewencp&avatarId=29919"
+   },
+   "displayName": "Ewen Cheslack-Postava",
+   "active": true
+  },
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12320324",
+  "id": "12320324",
+  "name": "consumer",
+  "description": "consumer ",
+  "lead": {
+   "self": "https://issues.apache.org/jira/rest/api/2/user?username=nehanarkhede",
+   "key": "nehanarkhede",
+   "name": "nehanarkhede",
+   "avatarUrls": {
+    "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+    "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+    "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+    "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+   },
+   "displayName": "Neha Narkhede",
+   "active": true
+  },
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12315219",
+  "id": "12315219",
+  "name": "contrib",
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12320321",
+  "id": "12320321",
+  "name": "controller",
+  "description": "distributed co-ordination controller",
+  "lead": {
+   "self": "https://issues.apache.org/jira/rest/api/2/user?username=nehanarkhede",
+   "key": "nehanarkhede",
+   "name": "nehanarkhede",
+   "avatarUrls": {
+    "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+    "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+    "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+    "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+   },
+   "displayName": "Neha Narkhede",
+   "active": true
+  },
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12315217",
+  "id": "12315217",
+  "name": "core",
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12339522",
+  "id": "12339522",
+  "name": "docker",
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12336301",
+  "id": "12336301",
+  "name": "docs",
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12330912",
+  "id": "12330912",
+  "name": "documentation",
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12337663",
+  "id": "12337663",
+  "name": "generator",
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12338534",
+  "id": "12338534",
+  "name": "group-coordinator",
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12337262",
+  "id": "12337262",
+  "name": "jbod",
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12339511",
+  "id": "12339511",
+  "name": "kip",
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12337892",
+  "id": "12337892",
+  "name": "kraft",
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12320320",
+  "id": "12320320",
+  "name": "log",
+  "description": "persistence layer",
+  "lead": {
+   "self": "https://issues.apache.org/jira/rest/api/2/user?username=jkreps",
+   "key": "jkreps",
+   "name": "jkreps",
+   "avatarUrls": {
+    "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+    "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+    "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+    "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+   },
+   "displayName": "Jay Kreps",
+   "active": true
+  },
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12335329",
+  "id": "12335329",
+  "name": "log cleaner",
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12334500",
+  "id": "12334500",
+  "name": "logging",
+  "description": "log4j related issues, debugging improvement, etc",
+  "assigneeType": "COMPONENT_LEAD",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12330201",
+  "id": "12330201",
+  "name": "metrics",
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12339127",
+  "id": "12339127",
+  "name": "migration",
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12334501",
+  "id": "12334501",
+  "name": "mirrormaker",
+  "description": "mirrormaker related issues",
+  "assigneeType": "COMPONENT_LEAD",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12320322",
+  "id": "12320322",
+  "name": "network",
+  "description": "the network layer",
+  "lead": {
+   "self": "https://issues.apache.org/jira/rest/api/2/user?username=junrao",
+   "key": "junrao",
+   "name": "junrao",
+   "avatarUrls": {
+    "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+    "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+    "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+    "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+   },
+   "displayName": "Jun Rao",
+   "active": true
+  },
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12326920",
+  "id": "12326920",
+  "name": "offset manager",
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12315220",
+  "id": "12315220",
+  "name": "packaging",
+  "lead": {
+   "self": "https://issues.apache.org/jira/rest/api/2/user?username=charmalloc",
+   "key": "charmalloc",
+   "name": "charmalloc",
+   "avatarUrls": {
+    "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+    "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+    "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+    "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+   },
+   "displayName": "Joe Stein",
+   "active": true
+  },
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12320325",
+  "id": "12320325",
+  "name": "producer ",
+  "description": "producer",
+  "lead": {
+   "self": "https://issues.apache.org/jira/rest/api/2/user?username=junrao",
+   "key": "junrao",
+   "name": "junrao",
+   "avatarUrls": {
+    "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+    "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+    "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+    "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+   },
+   "displayName": "Jun Rao",
+   "active": true
+  },
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12336000",
+  "id": "12336000",
+  "name": "protocol",
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12320323",
+  "id": "12320323",
+  "name": "purgatory",
+  "description": "request purgatory",
+  "lead": {
+   "self": "https://issues.apache.org/jira/rest/api/2/user?username=jjkoshy",
+   "key": "jjkoshy",
+   "name": "jjkoshy",
+   "avatarUrls": {
+    "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+    "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+    "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+    "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+   },
+   "displayName": "Joel Jacob Koshy",
+   "active": true
+  },
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12337323",
+  "id": "12337323",
+  "name": "release",
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12320326",
+  "id": "12320326",
+  "name": "replication",
+  "description": "replication ",
+  "lead": {
+   "self": "https://issues.apache.org/jira/rest/api/2/user?username=nehanarkhede",
+   "key": "nehanarkhede",
+   "name": "nehanarkhede",
+   "avatarUrls": {
+    "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+    "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+    "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+    "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+   },
+   "displayName": "Neha Narkhede",
+   "active": true
+  },
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12324383",
+  "id": "12324383",
+  "name": "security",
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12327571",
+  "id": "12327571",
+  "name": "streams",
+  "description": "Streams library architecture and APIs",
+  "lead": {
+   "self": "https://issues.apache.org/jira/rest/api/2/user?username=guozhang",
+   "key": "guozhang",
+   "name": "guozhang",
+   "avatarUrls": {
+    "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=guozhang&avatarId=24294",
+    "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=guozhang&avatarId=24294",
+    "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=guozhang&avatarId=24294",
+    "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=guozhang&avatarId=24294"
+   },
+   "displayName": "Guozhang Wang",
+   "active": true
+  },
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12335436",
+  "id": "12335436",
+  "name": "streams-test-utils",
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12324423",
+  "id": "12324423",
+  "name": "system tests",
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12339012",
+  "id": "12339012",
+  "name": "Tiered-Storage",
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12320366",
+  "id": "12320366",
+  "name": "tools",
+  "description": "Kafka tools",
+  "lead": {
+   "self": "https://issues.apache.org/jira/rest/api/2/user?username=charmalloc",
+   "key": "charmalloc",
+   "name": "charmalloc",
+   "avatarUrls": {
+    "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+    "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+    "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+    "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+   },
+   "displayName": "Joe Stein",
+   "active": true
+  },
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12324911",
+  "id": "12324911",
+  "name": "unit tests",
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12315221",
+  "id": "12315221",
+  "name": "website",
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ },
+ {
+  "self": "https://issues.apache.org/jira/rest/api/2/component/12324913",
+  "id": "12324913",
+  "name": "zkclient",
+  "assigneeType": "PROJECT_DEFAULT",
+  "realAssigneeType": "PROJECT_DEFAULT",
+  "isAssigneeTypeValid": false,
+  "project": "KAFKA",
+  "projectId": 12311720,
+  "archived": false,
+  "deleted": false
+ }
+]

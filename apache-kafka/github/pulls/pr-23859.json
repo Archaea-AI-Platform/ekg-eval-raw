@@ -1,0 +1,1686 @@
+{
+ "pull": {
+  "url": "https://api.github.com/repos/apache/kafka/pulls/23859",
+  "id": 4914607115,
+  "node_id": "PR_kwDOACG9q88AAAABJO70Cw",
+  "html_url": "https://github.com/apache/kafka/pull/23859",
+  "diff_url": "https://github.com/apache/kafka/pull/23859.diff",
+  "patch_url": "https://github.com/apache/kafka/pull/23859.patch",
+  "issue_url": "https://api.github.com/repos/apache/kafka/issues/23859",
+  "commits_url": "https://api.github.com/repos/apache/kafka/pulls/23859/commits",
+  "review_comments_url": "https://api.github.com/repos/apache/kafka/pulls/23859/comments",
+  "review_comment_url": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}",
+  "comments_url": "https://api.github.com/repos/apache/kafka/issues/23859/comments",
+  "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/3e502570f73f5c1e9edb44a4ef03dccd6dcc70c6",
+  "number": 23859,
+  "state": "open",
+  "locked": false,
+  "title": "KAFKA-21269: Add tests for describing broker configs with raw string values",
+  "user": {
+   "login": "lucliu1108",
+   "id": 171842732,
+   "node_id": "U_kgDOCj4crA",
+   "avatar_url": "https://avatars.githubusercontent.com/u/171842732?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/lucliu1108",
+   "html_url": "https://github.com/lucliu1108",
+   "followers_url": "https://api.github.com/users/lucliu1108/followers",
+   "following_url": "https://api.github.com/users/lucliu1108/following{/other_user}",
+   "gists_url": "https://api.github.com/users/lucliu1108/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/lucliu1108/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/lucliu1108/subscriptions",
+   "organizations_url": "https://api.github.com/users/lucliu1108/orgs",
+   "repos_url": "https://api.github.com/users/lucliu1108/repos",
+   "events_url": "https://api.github.com/users/lucliu1108/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/lucliu1108/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "body": "## Summary\nCluster-wide broker configs and listener-prefixed broker configs reach\n`createBrokerConfigEntry` as raw strings instead of parsed values. For\nLIST configs, passing them to `ConfigDef.convertToString` would throw\nClassCastException, so a guard returns them unchanged. No test covered\nthis guard yet.\n\nThis PR adds two tests to `DescribeConfigsTest`:\n1.  testDescribeConfigsClusterWideListConfig: sets\n`log.cleanup.policy=compact,delete` as a cluster-wide dynamic config and\ndescribes it.\n2. testDescribeConfigsPrefixedListenerListConfig:  sets\n`listener.name.external.ssl.enabled.protocols` as a static broker config\nand describes it.\n\nReviewers: Murali Basani <muralidhar.basani@aiven.io>\n",
+  "labels": [
+   {
+    "id": 1257747426,
+    "node_id": "MDU6TGFiZWwxMjU3NzQ3NDI2",
+    "url": "https://api.github.com/repos/apache/kafka/labels/tests",
+    "name": "tests",
+    "description": "Test fixes (including flaky tests)",
+    "color": "cfff60",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 7491388177,
+    "node_id": "LA_kwDOACG9q88AAAABvoWDEQ",
+    "url": "https://api.github.com/repos/apache/kafka/labels/clients",
+    "name": "clients",
+    "description": null,
+    "color": "ededed",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 7522931565,
+    "node_id": "LA_kwDOACG9q88AAAABwGbTbQ",
+    "url": "https://api.github.com/repos/apache/kafka/labels/ci-approved",
+    "name": "ci-approved",
+    "description": "",
+    "color": "ffffff",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 7559660738,
+    "node_id": "LA_kwDOACG9q88AAAABwpdEwg",
+    "url": "https://api.github.com/repos/apache/kafka/labels/small",
+    "name": "small",
+    "description": "Small PRs",
+    "color": "FEF2C0",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   }
+  ],
+  "milestone": null,
+  "active_lock_reason": null,
+  "created_at": "2026-10-19T01:36:39Z",
+  "updated_at": "2026-10-28T04:59:00Z",
+  "closed_at": null,
+  "merged_at": null,
+  "merge_commit_sha": "c7eceece162b019e4b5b837ff9e0d688dcd1ae33",
+  "assignee": null,
+  "assignees": [],
+  "requested_reviewers": [],
+  "requested_teams": [],
+  "head": {
+   "label": "lucliu1108:lucliu/KAFKA-21269-describe-broker-config-raw-string-values-test",
+   "ref": "lucliu/KAFKA-21269-describe-broker-config-raw-string-values-test",
+   "repo": {
+    "id": 1017668880,
+    "node_id": "R_kgDOPKhlEA",
+    "name": "kafka",
+    "full_name": "lucliu1108/kafka",
+    "owner": {
+     "login": "lucliu1108",
+     "id": 171842732,
+     "node_id": "U_kgDOCj4crA",
+     "avatar_url": "https://avatars.githubusercontent.com/u/171842732?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/lucliu1108",
+     "html_url": "https://github.com/lucliu1108",
+     "followers_url": "https://api.github.com/users/lucliu1108/followers",
+     "following_url": "https://api.github.com/users/lucliu1108/following{/other_user}",
+     "gists_url": "https://api.github.com/users/lucliu1108/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/lucliu1108/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/lucliu1108/subscriptions",
+     "organizations_url": "https://api.github.com/users/lucliu1108/orgs",
+     "repos_url": "https://api.github.com/users/lucliu1108/repos",
+     "events_url": "https://api.github.com/users/lucliu1108/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/lucliu1108/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": true,
+    "archived": false,
+    "disabled": false,
+    "description": "Mirror of Apache Kafka",
+    "homepage": null,
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [],
+    "forks_count": 0,
+    "forks": 0,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "watchers": 0,
+    "open_issues_count": 0,
+    "open_issues": 0,
+    "size": 289853,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-28T04:58:46Z",
+    "created_at": "2025-07-10T22:59:46Z",
+    "updated_at": "2026-10-14T05:00:10Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/lucliu1108/kafka",
+    "html_url": "https://github.com/lucliu1108/kafka",
+    "archive_url": "https://api.github.com/repos/lucliu1108/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/lucliu1108/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/lucliu1108/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/lucliu1108/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/lucliu1108/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/lucliu1108/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/lucliu1108/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/lucliu1108/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/lucliu1108/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/lucliu1108/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/lucliu1108/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/lucliu1108/kafka/downloads",
+    "events_url": "https://api.github.com/repos/lucliu1108/kafka/events",
+    "forks_url": "https://api.github.com/repos/lucliu1108/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/lucliu1108/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/lucliu1108/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/lucliu1108/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/lucliu1108/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/lucliu1108/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/lucliu1108/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/lucliu1108/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/lucliu1108/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/lucliu1108/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/lucliu1108/kafka/languages",
+    "merges_url": "https://api.github.com/repos/lucliu1108/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/lucliu1108/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/lucliu1108/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/lucliu1108/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/lucliu1108/kafka/releases{/id}",
+    "ssh_url": "git@github.com:lucliu1108/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/lucliu1108/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/lucliu1108/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/lucliu1108/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/lucliu1108/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/lucliu1108/kafka/tags",
+    "teams_url": "https://api.github.com/repos/lucliu1108/kafka/teams",
+    "trees_url": "https://api.github.com/repos/lucliu1108/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/lucliu1108/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/lucliu1108/kafka/hooks",
+    "svn_url": "https://github.com/lucliu1108/kafka"
+   },
+   "sha": "3e502570f73f5c1e9edb44a4ef03dccd6dcc70c6",
+   "user": {
+    "login": "lucliu1108",
+    "id": 171842732,
+    "node_id": "U_kgDOCj4crA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/171842732?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lucliu1108",
+    "html_url": "https://github.com/lucliu1108",
+    "followers_url": "https://api.github.com/users/lucliu1108/followers",
+    "following_url": "https://api.github.com/users/lucliu1108/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lucliu1108/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lucliu1108/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lucliu1108/subscriptions",
+    "organizations_url": "https://api.github.com/users/lucliu1108/orgs",
+    "repos_url": "https://api.github.com/users/lucliu1108/repos",
+    "events_url": "https://api.github.com/users/lucliu1108/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lucliu1108/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "base": {
+   "label": "apache:trunk",
+   "ref": "trunk",
+   "repo": {
+    "id": 2211243,
+    "node_id": "MDEwOlJlcG9zaXRvcnkyMjExMjQz",
+    "name": "kafka",
+    "full_name": "apache/kafka",
+    "owner": {
+     "login": "apache",
+     "id": 47359,
+     "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+     "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/apache",
+     "html_url": "https://github.com/apache",
+     "followers_url": "https://api.github.com/users/apache/followers",
+     "following_url": "https://api.github.com/users/apache/following{/other_user}",
+     "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+     "organizations_url": "https://api.github.com/users/apache/orgs",
+     "repos_url": "https://api.github.com/users/apache/repos",
+     "events_url": "https://api.github.com/users/apache/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/apache/received_events",
+     "type": "Organization",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": false,
+    "archived": false,
+    "disabled": false,
+    "description": "Apache Kafka - A distributed event streaming platform",
+    "homepage": "https://kafka.apache.org/",
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [
+     "java",
+     "kafka",
+     "scala",
+     "streaming"
+    ],
+    "forks_count": 15637,
+    "forks": 15637,
+    "stargazers_count": 34153,
+    "watchers_count": 34153,
+    "watchers": 34153,
+    "open_issues_count": 674,
+    "open_issues": 674,
+    "size": 322164,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-29T11:37:21Z",
+    "created_at": "2011-08-15T18:06:16Z",
+    "updated_at": "2026-10-29T11:37:29Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/apache/kafka",
+    "html_url": "https://github.com/apache/kafka",
+    "archive_url": "https://api.github.com/repos/apache/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/apache/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/apache/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/apache/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/apache/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/apache/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/apache/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/apache/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/apache/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/apache/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/apache/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/apache/kafka/downloads",
+    "events_url": "https://api.github.com/repos/apache/kafka/events",
+    "forks_url": "https://api.github.com/repos/apache/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/apache/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/apache/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/apache/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/apache/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/apache/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/apache/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/apache/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/apache/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/apache/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/apache/kafka/languages",
+    "merges_url": "https://api.github.com/repos/apache/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/apache/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/apache/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/apache/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/apache/kafka/releases{/id}",
+    "ssh_url": "git@github.com:apache/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/apache/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/apache/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/apache/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/apache/kafka/tags",
+    "teams_url": "https://api.github.com/repos/apache/kafka/teams",
+    "trees_url": "https://api.github.com/repos/apache/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/apache/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/apache/kafka/hooks",
+    "svn_url": "https://github.com/apache/kafka"
+   },
+   "sha": "f90822763913e10a02478c235b34a5ea9f36856e",
+   "user": {
+    "login": "apache",
+    "id": 47359,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/apache",
+    "html_url": "https://github.com/apache",
+    "followers_url": "https://api.github.com/users/apache/followers",
+    "following_url": "https://api.github.com/users/apache/following{/other_user}",
+    "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+    "organizations_url": "https://api.github.com/users/apache/orgs",
+    "repos_url": "https://api.github.com/users/apache/repos",
+    "events_url": "https://api.github.com/users/apache/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/apache/received_events",
+    "type": "Organization",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "_links": {
+   "comments": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23859/comments"
+   },
+   "commits": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23859/commits"
+   },
+   "statuses": {
+    "href": "https://api.github.com/repos/apache/kafka/statuses/3e502570f73f5c1e9edb44a4ef03dccd6dcc70c6"
+   },
+   "html": {
+    "href": "https://github.com/apache/kafka/pull/23859"
+   },
+   "issue": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23859"
+   },
+   "review_comments": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23859/comments"
+   },
+   "review_comment": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}"
+   },
+   "self": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23859"
+   }
+  },
+  "author_association": "COLLABORATOR",
+  "auto_merge": null,
+  "draft": false,
+  "merged": false,
+  "mergeable": true,
+  "rebaseable": false,
+  "mergeable_state": "blocked",
+  "merged_by": null,
+  "comments": 2,
+  "review_comments": 2,
+  "maintainer_can_modify": true,
+  "commits": 4,
+  "additions": 47,
+  "deletions": 0,
+  "changed_files": 1
+ },
+ "reviews": [
+  {
+   "id": 5674251256,
+   "node_id": "PRR_kwDOACG9q88AAAABUjYz-A",
+   "user": {
+    "login": "muralibasani",
+    "id": 10197247,
+    "node_id": "MDQ6VXNlcjEwMTk3MjQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10197247?u=fa0c2491339b1f4bbd7db8922c47d9de9ec4139d&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/muralibasani",
+    "html_url": "https://github.com/muralibasani",
+    "followers_url": "https://api.github.com/users/muralibasani/followers",
+    "following_url": "https://api.github.com/users/muralibasani/following{/other_user}",
+    "gists_url": "https://api.github.com/users/muralibasani/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/muralibasani/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/muralibasani/subscriptions",
+    "organizations_url": "https://api.github.com/users/muralibasani/orgs",
+    "repos_url": "https://api.github.com/users/muralibasani/repos",
+    "events_url": "https://api.github.com/users/muralibasani/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/muralibasani/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23859#pullrequestreview-5674251256",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23859",
+   "author_association": "COLLABORATOR",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23859#pullrequestreview-5674251256"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23859"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-27T21:00:41Z",
+   "commit_id": "6c465359fe6cc2881cada87ec80334f20839dcec"
+  },
+  {
+   "id": 5677967069,
+   "node_id": "PRR_kwDOACG9q88AAAABUm7m3Q",
+   "user": {
+    "login": "lucliu1108",
+    "id": 171842732,
+    "node_id": "U_kgDOCj4crA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/171842732?u=12ccf562159acd2a03a2502ace6be5c3e34ff1c7&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lucliu1108",
+    "html_url": "https://github.com/lucliu1108",
+    "followers_url": "https://api.github.com/users/lucliu1108/followers",
+    "following_url": "https://api.github.com/users/lucliu1108/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lucliu1108/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lucliu1108/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lucliu1108/subscriptions",
+    "organizations_url": "https://api.github.com/users/lucliu1108/orgs",
+    "repos_url": "https://api.github.com/users/lucliu1108/repos",
+    "events_url": "https://api.github.com/users/lucliu1108/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lucliu1108/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23859#pullrequestreview-5677967069",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23859",
+   "author_association": "COLLABORATOR",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23859#pullrequestreview-5677967069"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23859"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-28T04:57:18Z",
+   "commit_id": "6c465359fe6cc2881cada87ec80334f20839dcec"
+  }
+ ],
+ "review_comments": [
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4394092411",
+   "pull_request_review_id": 5674251256,
+   "id": 4394092411,
+   "node_id": "PRRC_kwDOACG9q88AAAABBeiHew",
+   "diff_hunk": "@@ -76,4 +84,41 @@ public void testDescribeConfigsTopicWithInternalListConfig(ClusterInstance clust\n             assertEquals(\"0:101\", entry.value());\n         }\n     }\n+\n+    // Cluster-wide configs are described from DynamicBrokerConfig#currentDynamicDefaultConfigs, which holds raw\n+    // strings. A LIST config must be returned as the raw string instead of being cast to a List.\n+    @ClusterTest\n+    public void testDescribeConfigsClusterWideListConfig(ClusterInstance cluster) throws Exception {\n+        ConfigResource clusterResource = new ConfigResource(ConfigResource.Type.BROKER, \"\");\n+        try (Admin admin = cluster.admin()) {\n+            admin.incrementalAlterConfigs(Map.of(clusterResource, List.of(new AlterConfigOp(\n+                new ConfigEntry(ServerLogConfigs.LOG_CLEANUP_POLICY_CONFIG, \"compact,delete\"),\n+                AlterConfigOp.OpType.SET)))).all().get();\n+            TestUtils.waitForCondition(() -> {",
+   "path": "clients/clients-integration-tests/src/test/java/org/apache/kafka/clients/admin/DescribeConfigsTest.java",
+   "commit_id": "3e502570f73f5c1e9edb44a4ef03dccd6dcc70c6",
+   "original_commit_id": "6c465359fe6cc2881cada87ec80334f20839dcec",
+   "user": {
+    "login": "muralibasani",
+    "id": 10197247,
+    "node_id": "MDQ6VXNlcjEwMTk3MjQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10197247?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/muralibasani",
+    "html_url": "https://github.com/muralibasani",
+    "followers_url": "https://api.github.com/users/muralibasani/followers",
+    "following_url": "https://api.github.com/users/muralibasani/following{/other_user}",
+    "gists_url": "https://api.github.com/users/muralibasani/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/muralibasani/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/muralibasani/subscriptions",
+    "organizations_url": "https://api.github.com/users/muralibasani/orgs",
+    "repos_url": "https://api.github.com/users/muralibasani/repos",
+    "events_url": "https://api.github.com/users/muralibasani/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/muralibasani/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "nit: thinking instead of waitForCondition retrying on any exception, how about waiting only for the source to propagate? A regression would then fail immediately with a clear diff.",
+   "created_at": "2026-10-27T21:00:41Z",
+   "updated_at": "2026-10-27T21:01:13Z",
+   "html_url": "https://github.com/apache/kafka/pull/23859#discussion_r4394092411",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23859",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4394092411"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23859#discussion_r4394092411"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23859"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4394092411/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": 99,
+   "original_line": 97,
+   "side": "RIGHT",
+   "author_association": "COLLABORATOR",
+   "original_position": 46,
+   "position": 49,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4397022932",
+   "pull_request_review_id": 5677967069,
+   "id": 4397022932,
+   "node_id": "PRRC_kwDOACG9q88AAAABBhU-1A",
+   "diff_hunk": "@@ -76,4 +84,41 @@ public void testDescribeConfigsTopicWithInternalListConfig(ClusterInstance clust\n             assertEquals(\"0:101\", entry.value());\n         }\n     }\n+\n+    // Cluster-wide configs are described from DynamicBrokerConfig#currentDynamicDefaultConfigs, which holds raw\n+    // strings. A LIST config must be returned as the raw string instead of being cast to a List.\n+    @ClusterTest\n+    public void testDescribeConfigsClusterWideListConfig(ClusterInstance cluster) throws Exception {\n+        ConfigResource clusterResource = new ConfigResource(ConfigResource.Type.BROKER, \"\");\n+        try (Admin admin = cluster.admin()) {\n+            admin.incrementalAlterConfigs(Map.of(clusterResource, List.of(new AlterConfigOp(\n+                new ConfigEntry(ServerLogConfigs.LOG_CLEANUP_POLICY_CONFIG, \"compact,delete\"),\n+                AlterConfigOp.OpType.SET)))).all().get();\n+            TestUtils.waitForCondition(() -> {",
+   "path": "clients/clients-integration-tests/src/test/java/org/apache/kafka/clients/admin/DescribeConfigsTest.java",
+   "commit_id": "3e502570f73f5c1e9edb44a4ef03dccd6dcc70c6",
+   "original_commit_id": "6c465359fe6cc2881cada87ec80334f20839dcec",
+   "user": {
+    "login": "lucliu1108",
+    "id": 171842732,
+    "node_id": "U_kgDOCj4crA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/171842732?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lucliu1108",
+    "html_url": "https://github.com/lucliu1108",
+    "followers_url": "https://api.github.com/users/lucliu1108/followers",
+    "following_url": "https://api.github.com/users/lucliu1108/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lucliu1108/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lucliu1108/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lucliu1108/subscriptions",
+    "organizations_url": "https://api.github.com/users/lucliu1108/orgs",
+    "repos_url": "https://api.github.com/users/lucliu1108/repos",
+    "events_url": "https://api.github.com/users/lucliu1108/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lucliu1108/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "Thanks for the suggestion! I agree this would make it fail faster. I adjusted the code.",
+   "created_at": "2026-10-28T04:57:18Z",
+   "updated_at": "2026-10-28T04:57:18Z",
+   "html_url": "https://github.com/apache/kafka/pull/23859#discussion_r4397022932",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23859",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4397022932"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23859#discussion_r4397022932"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23859"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4397022932/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": 99,
+   "original_line": 97,
+   "side": "RIGHT",
+   "in_reply_to_id": 4394092411,
+   "author_association": "COLLABORATOR",
+   "original_position": 46,
+   "position": 49,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  }
+ ],
+ "issue_comments": [
+  {
+   "url": "https://api.github.com/repos/apache/kafka/issues/comments/6453538407",
+   "html_url": "https://github.com/apache/kafka/pull/23859#issuecomment-6453538407",
+   "issue_url": "https://api.github.com/repos/apache/kafka/issues/23859",
+   "id": 6453538407,
+   "node_id": "IC_kwDOACG9q88AAAABgKkuZw",
+   "user": {
+    "login": "muralibasani",
+    "id": 10197247,
+    "node_id": "MDQ6VXNlcjEwMTk3MjQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10197247?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/muralibasani",
+    "html_url": "https://github.com/muralibasani",
+    "followers_url": "https://api.github.com/users/muralibasani/followers",
+    "following_url": "https://api.github.com/users/muralibasani/following{/other_user}",
+    "gists_url": "https://api.github.com/users/muralibasani/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/muralibasani/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/muralibasani/subscriptions",
+    "organizations_url": "https://api.github.com/users/muralibasani/orgs",
+    "repos_url": "https://api.github.com/users/muralibasani/repos",
+    "events_url": "https://api.github.com/users/muralibasani/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/muralibasani/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "created_at": "2026-10-27T21:05:19Z",
+   "updated_at": "2026-10-27T21:05:19Z",
+   "body": "@lucliu1108 thanks for the PR and tests.\r\nDid you check that the tests fail when the `case v: String => v` guard is removed from createBrokerConfigEntry?",
+   "author_association": "COLLABORATOR",
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/issues/comments/6453538407/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "performed_via_github_app": null,
+   "minimized": null
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/issues/comments/6461051075",
+   "html_url": "https://github.com/apache/kafka/pull/23859#issuecomment-6461051075",
+   "issue_url": "https://api.github.com/repos/apache/kafka/issues/23859",
+   "id": 6461051075,
+   "node_id": "IC_kwDOACG9q88AAAABgRvQww",
+   "user": {
+    "login": "lucliu1108",
+    "id": 171842732,
+    "node_id": "U_kgDOCj4crA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/171842732?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lucliu1108",
+    "html_url": "https://github.com/lucliu1108",
+    "followers_url": "https://api.github.com/users/lucliu1108/followers",
+    "following_url": "https://api.github.com/users/lucliu1108/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lucliu1108/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lucliu1108/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lucliu1108/subscriptions",
+    "organizations_url": "https://api.github.com/users/lucliu1108/orgs",
+    "repos_url": "https://api.github.com/users/lucliu1108/repos",
+    "events_url": "https://api.github.com/users/lucliu1108/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lucliu1108/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "created_at": "2026-10-28T04:58:28Z",
+   "updated_at": "2026-10-28T04:58:37Z",
+   "body": ">Did you check that the tests fail when the case v: String => v guard is removed from createBrokerConfigEntry?\r\n\r\nYes, I removed that fallback and tested locally. The 2 new tests would fail.",
+   "author_association": "COLLABORATOR",
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/issues/comments/6461051075/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "performed_via_github_app": null,
+   "minimized": null
+  }
+ ],
+ "commits": [
+  {
+   "sha": "7821d96a48c5909e70f45814c56b0ad09429022f",
+   "node_id": "C_kwDOPKhlENoAKDc4MjFkOTZhNDhjNTkwOWU3MGY0NTgxNGM1NmIwYWQwOTQyOTAyMmY",
+   "commit": {
+    "author": {
+     "name": "Lucy Liu",
+     "email": "lucliu@confluent.io",
+     "date": "2026-10-17T15:04:21Z"
+    },
+    "committer": {
+     "name": "Lucy Liu",
+     "email": "lucliu@confluent.io",
+     "date": "2026-10-17T15:04:21Z"
+    },
+    "message": "add cluster-wide LIST test and prefixed LIST config test",
+    "tree": {
+     "sha": "8a0878d36af4f692923148eccbdecad736d73ed2",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/8a0878d36af4f692923148eccbdecad736d73ed2"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/7821d96a48c5909e70f45814c56b0ad09429022f",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unknown_key",
+     "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgWx7JwX1R3kAyzg8cUxbTEzAVf+\n+yVx8zmuIHqH4xNNQAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQPenOuI5NGNagdGbC34dRybLEOTWeeYKVpjKdc7BjGyRmlqH53n0Lrdt0SmpUTcVSr\nhjh6iJCInd9D+jH2Qjlww=\n-----END SSH SIGNATURE-----",
+     "payload": "tree 8a0878d36af4f692923148eccbdecad736d73ed2\nparent 59046aecc31bd1bed83a434c0db61aea95fd644a\nauthor Lucy Liu <lucliu@confluent.io> 1792249461 -0500\ncommitter Lucy Liu <lucliu@confluent.io> 1792249461 -0500\n\nadd cluster-wide LIST test and prefixed LIST config test\n",
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/7821d96a48c5909e70f45814c56b0ad09429022f",
+   "html_url": "https://github.com/apache/kafka/commit/7821d96a48c5909e70f45814c56b0ad09429022f",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/7821d96a48c5909e70f45814c56b0ad09429022f/comments",
+   "author": {
+    "login": "lucliu1108",
+    "id": 171842732,
+    "node_id": "U_kgDOCj4crA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/171842732?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lucliu1108",
+    "html_url": "https://github.com/lucliu1108",
+    "followers_url": "https://api.github.com/users/lucliu1108/followers",
+    "following_url": "https://api.github.com/users/lucliu1108/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lucliu1108/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lucliu1108/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lucliu1108/subscriptions",
+    "organizations_url": "https://api.github.com/users/lucliu1108/orgs",
+    "repos_url": "https://api.github.com/users/lucliu1108/repos",
+    "events_url": "https://api.github.com/users/lucliu1108/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lucliu1108/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "lucliu1108",
+    "id": 171842732,
+    "node_id": "U_kgDOCj4crA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/171842732?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lucliu1108",
+    "html_url": "https://github.com/lucliu1108",
+    "followers_url": "https://api.github.com/users/lucliu1108/followers",
+    "following_url": "https://api.github.com/users/lucliu1108/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lucliu1108/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lucliu1108/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lucliu1108/subscriptions",
+    "organizations_url": "https://api.github.com/users/lucliu1108/orgs",
+    "repos_url": "https://api.github.com/users/lucliu1108/repos",
+    "events_url": "https://api.github.com/users/lucliu1108/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lucliu1108/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "59046aecc31bd1bed83a434c0db61aea95fd644a",
+     "url": "https://api.github.com/repos/apache/kafka/commits/59046aecc31bd1bed83a434c0db61aea95fd644a",
+     "html_url": "https://github.com/apache/kafka/commit/59046aecc31bd1bed83a434c0db61aea95fd644a"
+    }
+   ]
+  },
+  {
+   "sha": "e6dbabf1bce33ab017fae5e5780b497fbc69a236",
+   "node_id": "C_kwDOPKhlENoAKGU2ZGJhYmYxYmNlMzNhYjAxN2ZhZTVlNTc4MGI0OTdmYmM2OWEyMzY",
+   "commit": {
+    "author": {
+     "name": "Lucy Liu",
+     "email": "lucliu@confluent.io",
+     "date": "2026-10-17T15:15:52Z"
+    },
+    "committer": {
+     "name": "Lucy Liu",
+     "email": "lucliu@confluent.io",
+     "date": "2026-10-17T15:15:52Z"
+    },
+    "message": "add comments on what is being tested",
+    "tree": {
+     "sha": "f1ea202f5523305b16ae8afafd97ddb0916390b0",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/f1ea202f5523305b16ae8afafd97ddb0916390b0"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/e6dbabf1bce33ab017fae5e5780b497fbc69a236",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unknown_key",
+     "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgWx7JwX1R3kAyzg8cUxbTEzAVf+\n+yVx8zmuIHqH4xNNQAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQP7UDRPHCChUZTe5N3F2kf0REXsAOVegX4rnW+Og45q2Npim6lIVnFN0XrzKpZyT+F\nhfgi+ukQXHyf7cGn99tQ4=\n-----END SSH SIGNATURE-----",
+     "payload": "tree f1ea202f5523305b16ae8afafd97ddb0916390b0\nparent 7821d96a48c5909e70f45814c56b0ad09429022f\nauthor Lucy Liu <lucliu@confluent.io> 1792250152 -0500\ncommitter Lucy Liu <lucliu@confluent.io> 1792250152 -0500\n\nadd comments on what is being tested\n",
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/e6dbabf1bce33ab017fae5e5780b497fbc69a236",
+   "html_url": "https://github.com/apache/kafka/commit/e6dbabf1bce33ab017fae5e5780b497fbc69a236",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/e6dbabf1bce33ab017fae5e5780b497fbc69a236/comments",
+   "author": {
+    "login": "lucliu1108",
+    "id": 171842732,
+    "node_id": "U_kgDOCj4crA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/171842732?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lucliu1108",
+    "html_url": "https://github.com/lucliu1108",
+    "followers_url": "https://api.github.com/users/lucliu1108/followers",
+    "following_url": "https://api.github.com/users/lucliu1108/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lucliu1108/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lucliu1108/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lucliu1108/subscriptions",
+    "organizations_url": "https://api.github.com/users/lucliu1108/orgs",
+    "repos_url": "https://api.github.com/users/lucliu1108/repos",
+    "events_url": "https://api.github.com/users/lucliu1108/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lucliu1108/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "lucliu1108",
+    "id": 171842732,
+    "node_id": "U_kgDOCj4crA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/171842732?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lucliu1108",
+    "html_url": "https://github.com/lucliu1108",
+    "followers_url": "https://api.github.com/users/lucliu1108/followers",
+    "following_url": "https://api.github.com/users/lucliu1108/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lucliu1108/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lucliu1108/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lucliu1108/subscriptions",
+    "organizations_url": "https://api.github.com/users/lucliu1108/orgs",
+    "repos_url": "https://api.github.com/users/lucliu1108/repos",
+    "events_url": "https://api.github.com/users/lucliu1108/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lucliu1108/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "7821d96a48c5909e70f45814c56b0ad09429022f",
+     "url": "https://api.github.com/repos/apache/kafka/commits/7821d96a48c5909e70f45814c56b0ad09429022f",
+     "html_url": "https://github.com/apache/kafka/commit/7821d96a48c5909e70f45814c56b0ad09429022f"
+    }
+   ]
+  },
+  {
+   "sha": "6c465359fe6cc2881cada87ec80334f20839dcec",
+   "node_id": "C_kwDOPKhlENoAKDZjNDY1MzU5ZmU2Y2MyODgxY2FkYTg3ZWM4MDMzNGYyMDgzOWRjZWM",
+   "commit": {
+    "author": {
+     "name": "Lucy Liu",
+     "email": "lucliu@confluent.io",
+     "date": "2026-10-21T04:15:17Z"
+    },
+    "committer": {
+     "name": "Lucy Liu",
+     "email": "lucliu@confluent.io",
+     "date": "2026-10-21T04:15:17Z"
+    },
+    "message": "remove redundant describe call; change ssl protocol config to non-default value",
+    "tree": {
+     "sha": "fb1889854c3d8ef4db28b0651c5009eb354f2893",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/fb1889854c3d8ef4db28b0651c5009eb354f2893"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/6c465359fe6cc2881cada87ec80334f20839dcec",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unknown_key",
+     "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgWx7JwX1R3kAyzg8cUxbTEzAVf+\n+yVx8zmuIHqH4xNNQAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQJfGuIJhi2vCNJdIwzvlkCxK5Cn7O2i9jjKUBCCsGlk46wdEqv4pgOEpoe29QweS/p\nxDW5z0jt2j5d899wu/3gE=\n-----END SSH SIGNATURE-----",
+     "payload": "tree fb1889854c3d8ef4db28b0651c5009eb354f2893\nparent e6dbabf1bce33ab017fae5e5780b497fbc69a236\nauthor Lucy Liu <lucliu@confluent.io> 1792556117 -0500\ncommitter Lucy Liu <lucliu@confluent.io> 1792556117 -0500\n\nremove redundant describe call; change ssl protocol config to non-default value\n",
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/6c465359fe6cc2881cada87ec80334f20839dcec",
+   "html_url": "https://github.com/apache/kafka/commit/6c465359fe6cc2881cada87ec80334f20839dcec",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/6c465359fe6cc2881cada87ec80334f20839dcec/comments",
+   "author": {
+    "login": "lucliu1108",
+    "id": 171842732,
+    "node_id": "U_kgDOCj4crA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/171842732?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lucliu1108",
+    "html_url": "https://github.com/lucliu1108",
+    "followers_url": "https://api.github.com/users/lucliu1108/followers",
+    "following_url": "https://api.github.com/users/lucliu1108/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lucliu1108/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lucliu1108/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lucliu1108/subscriptions",
+    "organizations_url": "https://api.github.com/users/lucliu1108/orgs",
+    "repos_url": "https://api.github.com/users/lucliu1108/repos",
+    "events_url": "https://api.github.com/users/lucliu1108/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lucliu1108/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "lucliu1108",
+    "id": 171842732,
+    "node_id": "U_kgDOCj4crA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/171842732?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lucliu1108",
+    "html_url": "https://github.com/lucliu1108",
+    "followers_url": "https://api.github.com/users/lucliu1108/followers",
+    "following_url": "https://api.github.com/users/lucliu1108/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lucliu1108/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lucliu1108/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lucliu1108/subscriptions",
+    "organizations_url": "https://api.github.com/users/lucliu1108/orgs",
+    "repos_url": "https://api.github.com/users/lucliu1108/repos",
+    "events_url": "https://api.github.com/users/lucliu1108/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lucliu1108/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "e6dbabf1bce33ab017fae5e5780b497fbc69a236",
+     "url": "https://api.github.com/repos/apache/kafka/commits/e6dbabf1bce33ab017fae5e5780b497fbc69a236",
+     "html_url": "https://github.com/apache/kafka/commit/e6dbabf1bce33ab017fae5e5780b497fbc69a236"
+    }
+   ]
+  },
+  {
+   "sha": "3e502570f73f5c1e9edb44a4ef03dccd6dcc70c6",
+   "node_id": "C_kwDOPKhlENoAKDNlNTAyNTcwZjczZjVjMWU5ZWRiNDRhNGVmMDNkY2NkNmRjYzcwYzY",
+   "commit": {
+    "author": {
+     "name": "Lucy Liu",
+     "email": "lucliu@confluent.io",
+     "date": "2026-10-28T04:56:19Z"
+    },
+    "committer": {
+     "name": "Lucy Liu",
+     "email": "lucliu@confluent.io",
+     "date": "2026-10-28T04:56:36Z"
+    },
+    "message": "only wait for source to propagate",
+    "tree": {
+     "sha": "ec03a08a10a9649e3728c4bfb950b6517e728c55",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/ec03a08a10a9649e3728c4bfb950b6517e728c55"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/3e502570f73f5c1e9edb44a4ef03dccd6dcc70c6",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unknown_key",
+     "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgWx7JwX1R3kAyzg8cUxbTEzAVf+\n+yVx8zmuIHqH4xNNQAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQOZBLq194YmTJslNPtFfw9LqTTE3ce0JFuIO0NJQReCj5wfsl0cF0q6irzwj8MNnnB\nML9wtelHl0NjGccjR3Vg8=\n-----END SSH SIGNATURE-----",
+     "payload": "tree ec03a08a10a9649e3728c4bfb950b6517e728c55\nparent 6c465359fe6cc2881cada87ec80334f20839dcec\nauthor Lucy Liu <lucliu@confluent.io> 1793163379 -0500\ncommitter Lucy Liu <lucliu@confluent.io> 1793163396 -0500\n\nonly wait for source to propagate\n",
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/3e502570f73f5c1e9edb44a4ef03dccd6dcc70c6",
+   "html_url": "https://github.com/apache/kafka/commit/3e502570f73f5c1e9edb44a4ef03dccd6dcc70c6",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/3e502570f73f5c1e9edb44a4ef03dccd6dcc70c6/comments",
+   "author": {
+    "login": "lucliu1108",
+    "id": 171842732,
+    "node_id": "U_kgDOCj4crA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/171842732?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lucliu1108",
+    "html_url": "https://github.com/lucliu1108",
+    "followers_url": "https://api.github.com/users/lucliu1108/followers",
+    "following_url": "https://api.github.com/users/lucliu1108/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lucliu1108/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lucliu1108/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lucliu1108/subscriptions",
+    "organizations_url": "https://api.github.com/users/lucliu1108/orgs",
+    "repos_url": "https://api.github.com/users/lucliu1108/repos",
+    "events_url": "https://api.github.com/users/lucliu1108/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lucliu1108/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "lucliu1108",
+    "id": 171842732,
+    "node_id": "U_kgDOCj4crA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/171842732?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lucliu1108",
+    "html_url": "https://github.com/lucliu1108",
+    "followers_url": "https://api.github.com/users/lucliu1108/followers",
+    "following_url": "https://api.github.com/users/lucliu1108/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lucliu1108/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lucliu1108/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lucliu1108/subscriptions",
+    "organizations_url": "https://api.github.com/users/lucliu1108/orgs",
+    "repos_url": "https://api.github.com/users/lucliu1108/repos",
+    "events_url": "https://api.github.com/users/lucliu1108/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lucliu1108/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "6c465359fe6cc2881cada87ec80334f20839dcec",
+     "url": "https://api.github.com/repos/apache/kafka/commits/6c465359fe6cc2881cada87ec80334f20839dcec",
+     "html_url": "https://github.com/apache/kafka/commit/6c465359fe6cc2881cada87ec80334f20839dcec"
+    }
+   ]
+  }
+ ],
+ "files": [
+  {
+   "sha": "22bce9523660fb304b710a0d1b79ad893629e466",
+   "filename": "clients/clients-integration-tests/src/test/java/org/apache/kafka/clients/admin/DescribeConfigsTest.java",
+   "status": "modified",
+   "additions": 47,
+   "deletions": 0,
+   "changes": 47,
+   "blob_url": "https://github.com/apache/kafka/blob/3e502570f73f5c1e9edb44a4ef03dccd6dcc70c6/clients%2Fclients-integration-tests%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fadmin%2FDescribeConfigsTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/3e502570f73f5c1e9edb44a4ef03dccd6dcc70c6/clients%2Fclients-integration-tests%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fadmin%2FDescribeConfigsTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fclients-integration-tests%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fadmin%2FDescribeConfigsTest.java?ref=3e502570f73f5c1e9edb44a4ef03dccd6dcc70c6",
+   "patch": "@@ -17,24 +17,33 @@\n package org.apache.kafka.clients.admin;\n \n import org.apache.kafka.common.config.ConfigResource;\n+import org.apache.kafka.common.config.SslConfigs;\n import org.apache.kafka.common.errors.TimeoutException;\n import org.apache.kafka.common.errors.UnknownTopicOrPartitionException;\n import org.apache.kafka.common.test.ClusterInstance;\n+import org.apache.kafka.common.test.api.ClusterConfigProperty;\n import org.apache.kafka.common.test.api.ClusterTest;\n import org.apache.kafka.common.test.api.Type;\n import org.apache.kafka.server.config.QuotaConfig;\n+import org.apache.kafka.server.config.ServerLogConfigs;\n+import org.apache.kafka.test.TestUtils;\n \n import java.util.List;\n import java.util.Map;\n import java.util.concurrent.ExecutionException;\n+import java.util.concurrent.atomic.AtomicReference;\n \n import static org.junit.jupiter.api.Assertions.assertEquals;\n import static org.junit.jupiter.api.Assertions.assertInstanceOf;\n import static org.junit.jupiter.api.Assertions.assertNotEquals;\n+import static org.junit.jupiter.api.Assertions.assertNotNull;\n import static org.junit.jupiter.api.Assertions.assertThrows;\n \n public class DescribeConfigsTest {\n \n+    private static final String PREFIXED_SSL_ENABLED_PROTOCOLS_CONFIG =\n+        \"listener.name.external.\" + SslConfigs.SSL_ENABLED_PROTOCOLS_CONFIG;\n+\n     @ClusterTest\n     public void testDescribeConfigsNonexistent(ClusterInstance cluster) throws Exception {\n         try (Admin admin = cluster.admin()) {\n@@ -76,4 +85,42 @@ public void testDescribeConfigsTopicWithInternalListConfig(ClusterInstance clust\n             assertEquals(\"0:101\", entry.value());\n         }\n     }\n+\n+    // Cluster-wide configs are described from DynamicBrokerConfig#currentDynamicDefaultConfigs, which holds raw\n+    // strings. A LIST config must be returned as the raw string instead of being cast to a List.\n+    @ClusterTest\n+    public void testDescribeConfigsClusterWideListConfig(ClusterInstance cluster) throws Exception {\n+        ConfigResource clusterResource = new ConfigResource(ConfigResource.Type.BROKER, \"\");\n+        try (Admin admin = cluster.admin()) {\n+            admin.incrementalAlterConfigs(Map.of(clusterResource, List.of(new AlterConfigOp(\n+                new ConfigEntry(ServerLogConfigs.LOG_CLEANUP_POLICY_CONFIG, \"compact,delete\"),\n+                AlterConfigOp.OpType.SET)))).all().get();\n+            AtomicReference<ConfigEntry> entry = new AtomicReference<>();\n+            TestUtils.waitForCondition(() -> {\n+                entry.set(describeConfig(admin, clusterResource, ServerLogConfigs.LOG_CLEANUP_POLICY_CONFIG));\n+                return entry.get().source() == ConfigEntry.ConfigSource.DYNAMIC_DEFAULT_BROKER_CONFIG;\n+            }, ServerLogConfigs.LOG_CLEANUP_POLICY_CONFIG + \" was not applied as a cluster-wide config\");\n+            assertEquals(\"compact,delete\", entry.get().value());\n+        }\n+    }\n+\n+    // Listener-prefixed configs are not defined in the ConfigDef, so they are described from the raw strings in\n+    // originals(). The type still resolves to LIST through the base config, so the raw string must not be cast to a List.\n+    @ClusterTest(serverProperties = {\n+        @ClusterConfigProperty(key = PREFIXED_SSL_ENABLED_PROTOCOLS_CONFIG, value = \"TLSv1.3,TLSv1.2\")\n+    })\n+    public void testDescribeConfigsPrefixedListenerListConfig(ClusterInstance cluster) throws Exception {\n+        ConfigResource brokerResource = new ConfigResource(ConfigResource.Type.BROKER,\n+            String.valueOf(cluster.brokerIds().iterator().next()));\n+        try (Admin admin = cluster.admin()) {\n+            ConfigEntry entry = describeConfig(admin, brokerResource, PREFIXED_SSL_ENABLED_PROTOCOLS_CONFIG);\n+            assertNotNull(entry);\n+            assertEquals(ConfigEntry.ConfigSource.STATIC_BROKER_CONFIG, entry.source());\n+            assertEquals(\"TLSv1.3,TLSv1.2\", entry.value());\n+        }\n+    }\n+\n+    private static ConfigEntry describeConfig(Admin admin, ConfigResource resource, String name) throws Exception {\n+        return admin.describeConfigs(List.of(resource)).all().get().get(resource).get(name);\n+    }\n }"
+  }
+ ],
+ "timeline": [
+  {
+   "sha": "7821d96a48c5909e70f45814c56b0ad09429022f",
+   "node_id": "C_kwDOACG9q9oAKDc4MjFkOTZhNDhjNTkwOWU3MGY0NTgxNGM1NmIwYWQwOTQyOTAyMmY",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/7821d96a48c5909e70f45814c56b0ad09429022f",
+   "html_url": "https://github.com/apache/kafka/commit/7821d96a48c5909e70f45814c56b0ad09429022f",
+   "author": {
+    "name": "Lucy Liu",
+    "email": "lucliu@confluent.io",
+    "date": "2026-10-17T15:04:21Z"
+   },
+   "committer": {
+    "name": "Lucy Liu",
+    "email": "lucliu@confluent.io",
+    "date": "2026-10-17T15:04:21Z"
+   },
+   "tree": {
+    "sha": "8a0878d36af4f692923148eccbdecad736d73ed2",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/8a0878d36af4f692923148eccbdecad736d73ed2"
+   },
+   "message": "add cluster-wide LIST test and prefixed LIST config test",
+   "parents": [
+    {
+     "sha": "59046aecc31bd1bed83a434c0db61aea95fd644a",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/59046aecc31bd1bed83a434c0db61aea95fd644a",
+     "html_url": "https://github.com/apache/kafka/commit/59046aecc31bd1bed83a434c0db61aea95fd644a"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unknown_key",
+    "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgWx7JwX1R3kAyzg8cUxbTEzAVf+\n+yVx8zmuIHqH4xNNQAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQPenOuI5NGNagdGbC34dRybLEOTWeeYKVpjKdc7BjGyRmlqH53n0Lrdt0SmpUTcVSr\nhjh6iJCInd9D+jH2Qjlww=\n-----END SSH SIGNATURE-----",
+    "payload": "tree 8a0878d36af4f692923148eccbdecad736d73ed2\nparent 59046aecc31bd1bed83a434c0db61aea95fd644a\nauthor Lucy Liu <lucliu@confluent.io> 1792249461 -0500\ncommitter Lucy Liu <lucliu@confluent.io> 1792249461 -0500\n\nadd cluster-wide LIST test and prefixed LIST config test\n",
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "e6dbabf1bce33ab017fae5e5780b497fbc69a236",
+   "node_id": "C_kwDOACG9q9oAKGU2ZGJhYmYxYmNlMzNhYjAxN2ZhZTVlNTc4MGI0OTdmYmM2OWEyMzY",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/e6dbabf1bce33ab017fae5e5780b497fbc69a236",
+   "html_url": "https://github.com/apache/kafka/commit/e6dbabf1bce33ab017fae5e5780b497fbc69a236",
+   "author": {
+    "name": "Lucy Liu",
+    "email": "lucliu@confluent.io",
+    "date": "2026-10-17T15:15:52Z"
+   },
+   "committer": {
+    "name": "Lucy Liu",
+    "email": "lucliu@confluent.io",
+    "date": "2026-10-17T15:15:52Z"
+   },
+   "tree": {
+    "sha": "f1ea202f5523305b16ae8afafd97ddb0916390b0",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/f1ea202f5523305b16ae8afafd97ddb0916390b0"
+   },
+   "message": "add comments on what is being tested",
+   "parents": [
+    {
+     "sha": "7821d96a48c5909e70f45814c56b0ad09429022f",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/7821d96a48c5909e70f45814c56b0ad09429022f",
+     "html_url": "https://github.com/apache/kafka/commit/7821d96a48c5909e70f45814c56b0ad09429022f"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unknown_key",
+    "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgWx7JwX1R3kAyzg8cUxbTEzAVf+\n+yVx8zmuIHqH4xNNQAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQP7UDRPHCChUZTe5N3F2kf0REXsAOVegX4rnW+Og45q2Npim6lIVnFN0XrzKpZyT+F\nhfgi+ukQXHyf7cGn99tQ4=\n-----END SSH SIGNATURE-----",
+    "payload": "tree f1ea202f5523305b16ae8afafd97ddb0916390b0\nparent 7821d96a48c5909e70f45814c56b0ad09429022f\nauthor Lucy Liu <lucliu@confluent.io> 1792250152 -0500\ncommitter Lucy Liu <lucliu@confluent.io> 1792250152 -0500\n\nadd comments on what is being tested\n",
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "id": 33602914377,
+   "node_id": "LE_lADOACG9q88AAAABYKPc6c8AAAAH0uPISQ",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33602914377",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-19T01:36:48Z",
+   "label": {
+    "name": "triage",
+    "color": "006b75"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 33602919203,
+   "node_id": "LE_lADOACG9q88AAAABYKPc6c8AAAAH0uPbIw",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33602919203",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-19T01:36:55Z",
+   "label": {
+    "name": "tests",
+    "color": "cfff60"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 33602919234,
+   "node_id": "LE_lADOACG9q88AAAABYKPc6c8AAAAH0uPbQg",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33602919234",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-19T01:36:55Z",
+   "label": {
+    "name": "clients",
+    "color": "ededed"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 33602920994,
+   "node_id": "LE_lADOACG9q88AAAABYKPc6c8AAAAH0uPiIg",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33602920994",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-19T01:36:57Z",
+   "label": {
+    "name": "small",
+    "color": "FEF2C0"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "sha": "6c465359fe6cc2881cada87ec80334f20839dcec",
+   "node_id": "C_kwDOACG9q9oAKDZjNDY1MzU5ZmU2Y2MyODgxY2FkYTg3ZWM4MDMzNGYyMDgzOWRjZWM",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/6c465359fe6cc2881cada87ec80334f20839dcec",
+   "html_url": "https://github.com/apache/kafka/commit/6c465359fe6cc2881cada87ec80334f20839dcec",
+   "author": {
+    "name": "Lucy Liu",
+    "email": "lucliu@confluent.io",
+    "date": "2026-10-21T04:15:17Z"
+   },
+   "committer": {
+    "name": "Lucy Liu",
+    "email": "lucliu@confluent.io",
+    "date": "2026-10-21T04:15:17Z"
+   },
+   "tree": {
+    "sha": "fb1889854c3d8ef4db28b0651c5009eb354f2893",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/fb1889854c3d8ef4db28b0651c5009eb354f2893"
+   },
+   "message": "remove redundant describe call; change ssl protocol config to non-default value",
+   "parents": [
+    {
+     "sha": "e6dbabf1bce33ab017fae5e5780b497fbc69a236",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/e6dbabf1bce33ab017fae5e5780b497fbc69a236",
+     "html_url": "https://github.com/apache/kafka/commit/e6dbabf1bce33ab017fae5e5780b497fbc69a236"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unknown_key",
+    "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgWx7JwX1R3kAyzg8cUxbTEzAVf+\n+yVx8zmuIHqH4xNNQAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQJfGuIJhi2vCNJdIwzvlkCxK5Cn7O2i9jjKUBCCsGlk46wdEqv4pgOEpoe29QweS/p\nxDW5z0jt2j5d899wu/3gE=\n-----END SSH SIGNATURE-----",
+    "payload": "tree fb1889854c3d8ef4db28b0651c5009eb354f2893\nparent e6dbabf1bce33ab017fae5e5780b497fbc69a236\nauthor Lucy Liu <lucliu@confluent.io> 1792556117 -0500\ncommitter Lucy Liu <lucliu@confluent.io> 1792556117 -0500\n\nremove redundant describe call; change ssl protocol config to non-default value\n",
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "id": 33834931761,
+   "node_id": "LE_lADOACG9q88AAAABYKPc6c8AAAAH4LgWMQ",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33834931761",
+   "actor": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-21T10:24:38Z",
+   "label": {
+    "name": "ci-approved",
+    "color": "ffffff"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 5674251256,
+   "node_id": "PRR_kwDOACG9q88AAAABUjYz-A",
+   "user": {
+    "login": "muralibasani",
+    "id": 10197247,
+    "node_id": "MDQ6VXNlcjEwMTk3MjQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10197247?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/muralibasani",
+    "html_url": "https://github.com/muralibasani",
+    "followers_url": "https://api.github.com/users/muralibasani/followers",
+    "following_url": "https://api.github.com/users/muralibasani/following{/other_user}",
+    "gists_url": "https://api.github.com/users/muralibasani/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/muralibasani/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/muralibasani/subscriptions",
+    "organizations_url": "https://api.github.com/users/muralibasani/orgs",
+    "repos_url": "https://api.github.com/users/muralibasani/repos",
+    "events_url": "https://api.github.com/users/muralibasani/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/muralibasani/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": null,
+   "commit_id": "6c465359fe6cc2881cada87ec80334f20839dcec",
+   "state": "commented",
+   "html_url": "https://github.com/apache/kafka/pull/23859#pullrequestreview-5674251256",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23859",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23859#pullrequestreview-5674251256"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23859"
+    }
+   },
+   "submitted_at": "2026-10-27T21:00:41Z",
+   "updated_at": "2026-10-27T21:00:41Z",
+   "author_association": "COLLABORATOR",
+   "event": "reviewed"
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/issues/comments/6453538407",
+   "html_url": "https://github.com/apache/kafka/pull/23859#issuecomment-6453538407",
+   "issue_url": "https://api.github.com/repos/apache/kafka/issues/23859",
+   "id": 6453538407,
+   "node_id": "IC_kwDOACG9q88AAAABgKkuZw",
+   "user": {
+    "login": "muralibasani",
+    "id": 10197247,
+    "node_id": "MDQ6VXNlcjEwMTk3MjQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10197247?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/muralibasani",
+    "html_url": "https://github.com/muralibasani",
+    "followers_url": "https://api.github.com/users/muralibasani/followers",
+    "following_url": "https://api.github.com/users/muralibasani/following{/other_user}",
+    "gists_url": "https://api.github.com/users/muralibasani/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/muralibasani/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/muralibasani/subscriptions",
+    "organizations_url": "https://api.github.com/users/muralibasani/orgs",
+    "repos_url": "https://api.github.com/users/muralibasani/repos",
+    "events_url": "https://api.github.com/users/muralibasani/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/muralibasani/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "created_at": "2026-10-27T21:05:19Z",
+   "updated_at": "2026-10-27T21:05:19Z",
+   "body": "@lucliu1108 thanks for the PR and tests.\r\nDid you check that the tests fail when the `case v: String => v` guard is removed from createBrokerConfigEntry?",
+   "author_association": "COLLABORATOR",
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/issues/comments/6453538407/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "performed_via_github_app": null,
+   "minimized": null,
+   "event": "commented",
+   "actor": {
+    "login": "muralibasani",
+    "id": 10197247,
+    "node_id": "MDQ6VXNlcjEwMTk3MjQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10197247?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/muralibasani",
+    "html_url": "https://github.com/muralibasani",
+    "followers_url": "https://api.github.com/users/muralibasani/followers",
+    "following_url": "https://api.github.com/users/muralibasani/following{/other_user}",
+    "gists_url": "https://api.github.com/users/muralibasani/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/muralibasani/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/muralibasani/subscriptions",
+    "organizations_url": "https://api.github.com/users/muralibasani/orgs",
+    "repos_url": "https://api.github.com/users/muralibasani/repos",
+    "events_url": "https://api.github.com/users/muralibasani/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/muralibasani/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  {
+   "id": 34412318904,
+   "node_id": "MEE_lADOACG9q88AAAABYKPc6c8AAAAIAyJQuA",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34412318904",
+   "actor": {
+    "login": "lucliu1108",
+    "id": 171842732,
+    "node_id": "U_kgDOCj4crA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/171842732?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lucliu1108",
+    "html_url": "https://github.com/lucliu1108",
+    "followers_url": "https://api.github.com/users/lucliu1108/followers",
+    "following_url": "https://api.github.com/users/lucliu1108/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lucliu1108/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lucliu1108/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lucliu1108/subscriptions",
+    "organizations_url": "https://api.github.com/users/lucliu1108/orgs",
+    "repos_url": "https://api.github.com/users/lucliu1108/repos",
+    "events_url": "https://api.github.com/users/lucliu1108/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lucliu1108/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "mentioned",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-27T21:05:21Z",
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34412319102,
+   "node_id": "SE_lADOACG9q88AAAABYKPc6c8AAAAIAyJRfg",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34412319102",
+   "actor": {
+    "login": "lucliu1108",
+    "id": 171842732,
+    "node_id": "U_kgDOCj4crA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/171842732?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lucliu1108",
+    "html_url": "https://github.com/lucliu1108",
+    "followers_url": "https://api.github.com/users/lucliu1108/followers",
+    "following_url": "https://api.github.com/users/lucliu1108/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lucliu1108/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lucliu1108/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lucliu1108/subscriptions",
+    "organizations_url": "https://api.github.com/users/lucliu1108/orgs",
+    "repos_url": "https://api.github.com/users/lucliu1108/repos",
+    "events_url": "https://api.github.com/users/lucliu1108/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lucliu1108/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "subscribed",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-27T21:05:21Z",
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34435112916,
+   "node_id": "UNLE_lADOACG9q88AAAABYKPc6c8AAAAIBH4f1A",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34435112916",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "unlabeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-28T03:15:56Z",
+   "label": {
+    "name": "triage",
+    "color": "006b75"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "sha": "3e502570f73f5c1e9edb44a4ef03dccd6dcc70c6",
+   "node_id": "C_kwDOACG9q9oAKDNlNTAyNTcwZjczZjVjMWU5ZWRiNDRhNGVmMDNkY2NkNmRjYzcwYzY",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/3e502570f73f5c1e9edb44a4ef03dccd6dcc70c6",
+   "html_url": "https://github.com/apache/kafka/commit/3e502570f73f5c1e9edb44a4ef03dccd6dcc70c6",
+   "author": {
+    "name": "Lucy Liu",
+    "email": "lucliu@confluent.io",
+    "date": "2026-10-28T04:56:19Z"
+   },
+   "committer": {
+    "name": "Lucy Liu",
+    "email": "lucliu@confluent.io",
+    "date": "2026-10-28T04:56:36Z"
+   },
+   "tree": {
+    "sha": "ec03a08a10a9649e3728c4bfb950b6517e728c55",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/ec03a08a10a9649e3728c4bfb950b6517e728c55"
+   },
+   "message": "only wait for source to propagate",
+   "parents": [
+    {
+     "sha": "6c465359fe6cc2881cada87ec80334f20839dcec",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/6c465359fe6cc2881cada87ec80334f20839dcec",
+     "html_url": "https://github.com/apache/kafka/commit/6c465359fe6cc2881cada87ec80334f20839dcec"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unknown_key",
+    "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgWx7JwX1R3kAyzg8cUxbTEzAVf+\n+yVx8zmuIHqH4xNNQAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQOZBLq194YmTJslNPtFfw9LqTTE3ce0JFuIO0NJQReCj5wfsl0cF0q6irzwj8MNnnB\nML9wtelHl0NjGccjR3Vg8=\n-----END SSH SIGNATURE-----",
+    "payload": "tree ec03a08a10a9649e3728c4bfb950b6517e728c55\nparent 6c465359fe6cc2881cada87ec80334f20839dcec\nauthor Lucy Liu <lucliu@confluent.io> 1793163379 -0500\ncommitter Lucy Liu <lucliu@confluent.io> 1793163396 -0500\n\nonly wait for source to propagate\n",
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/issues/comments/6461051075",
+   "html_url": "https://github.com/apache/kafka/pull/23859#issuecomment-6461051075",
+   "issue_url": "https://api.github.com/repos/apache/kafka/issues/23859",
+   "id": 6461051075,
+   "node_id": "IC_kwDOACG9q88AAAABgRvQww",
+   "user": {
+    "login": "lucliu1108",
+    "id": 171842732,
+    "node_id": "U_kgDOCj4crA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/171842732?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lucliu1108",
+    "html_url": "https://github.com/lucliu1108",
+    "followers_url": "https://api.github.com/users/lucliu1108/followers",
+    "following_url": "https://api.github.com/users/lucliu1108/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lucliu1108/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lucliu1108/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lucliu1108/subscriptions",
+    "organizations_url": "https://api.github.com/users/lucliu1108/orgs",
+    "repos_url": "https://api.github.com/users/lucliu1108/repos",
+    "events_url": "https://api.github.com/users/lucliu1108/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lucliu1108/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "created_at": "2026-10-28T04:58:28Z",
+   "updated_at": "2026-10-28T04:58:37Z",
+   "body": ">Did you check that the tests fail when the case v: String => v guard is removed from createBrokerConfigEntry?\r\n\r\nYes, I removed that fallback and tested locally. The 2 new tests would fail.",
+   "author_association": "COLLABORATOR",
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/issues/comments/6461051075/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "performed_via_github_app": null,
+   "minimized": null,
+   "event": "commented",
+   "actor": {
+    "login": "lucliu1108",
+    "id": 171842732,
+    "node_id": "U_kgDOCj4crA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/171842732?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lucliu1108",
+    "html_url": "https://github.com/lucliu1108",
+    "followers_url": "https://api.github.com/users/lucliu1108/followers",
+    "following_url": "https://api.github.com/users/lucliu1108/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lucliu1108/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lucliu1108/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lucliu1108/subscriptions",
+    "organizations_url": "https://api.github.com/users/lucliu1108/orgs",
+    "repos_url": "https://api.github.com/users/lucliu1108/repos",
+    "events_url": "https://api.github.com/users/lucliu1108/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lucliu1108/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  }
+ ]
+}

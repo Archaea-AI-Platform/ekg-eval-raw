@@ -1,0 +1,1378 @@
+{
+ "id": "406623954",
+ "versions": {
+  "results": [
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-24T23:47:45.000Z",
+    "message": "",
+    "number": 36,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/36"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-21T23:06:20.000Z",
+    "message": "",
+    "number": 35,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/35"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=35"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-21T23:05:16.000Z",
+    "message": "",
+    "number": 34,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/34"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=34"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-23T14:55:42.000Z",
+    "message": "",
+    "number": 33,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/33"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=33"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-18T14:56:37.000Z",
+    "message": "",
+    "number": 32,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/32"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=32"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-14T18:18:29.000Z",
+    "message": "",
+    "number": 31,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/31"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=31"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-14T18:18:16.000Z",
+    "message": "",
+    "number": 30,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/30"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=30"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-12T19:41:28.000Z",
+    "message": "",
+    "number": 29,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/29"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=29"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-12T19:38:43.000Z",
+    "message": "",
+    "number": 28,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/28"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=28"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-12T17:02:42.000Z",
+    "message": "",
+    "number": 27,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/27"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=27"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-08T16:27:45.000Z",
+    "message": "",
+    "number": 26,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/26"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=26"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-05T16:26:52.000Z",
+    "message": "",
+    "number": 25,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/25"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=25"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-04T22:23:28.000Z",
+    "message": "",
+    "number": 24,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/24"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=24"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-01T17:44:29.000Z",
+    "message": "",
+    "number": 23,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/23"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=23"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-01T17:38:31.000Z",
+    "message": "",
+    "number": 22,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/22"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=22"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-30T23:55:55.000Z",
+    "message": "",
+    "number": 21,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/21"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=21"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-27T20:03:03.000Z",
+    "message": "",
+    "number": 20,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/20"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=20"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-27T19:56:04.000Z",
+    "message": "",
+    "number": 19,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/19"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=19"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-24T18:48:48.000Z",
+    "message": "",
+    "number": 18,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/18"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=18"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-21T16:45:39.000Z",
+    "message": "",
+    "number": 17,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/17"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=17"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-21T16:37:04.000Z",
+    "message": "",
+    "number": 16,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/16"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=16"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-20T19:53:36.000Z",
+    "message": "",
+    "number": 15,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/15"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=15"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-20T19:53:20.000Z",
+    "message": "",
+    "number": 14,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/14"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=14"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-14T18:31:39.000Z",
+    "message": "",
+    "number": 13,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/13"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=13"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-08T18:17:11.000Z",
+    "message": "",
+    "number": 12,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/12"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=12"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-08T18:13:28.000Z",
+    "message": "",
+    "number": 11,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/11"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=11"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-08T18:13:01.000Z",
+    "message": "",
+    "number": 10,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/10"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=10"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-08T18:05:12.000Z",
+    "message": "",
+    "number": 9,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/9"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=9"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-08T17:26:57.000Z",
+    "message": "",
+    "number": 8,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/8"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=8"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-08T17:20:47.000Z",
+    "message": "",
+    "number": 7,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/7"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=7"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-06T20:36:35.000Z",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/6"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=6"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-06T16:33:31.000Z",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/5"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=5"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-03T20:37:59.000Z",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/4"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=4"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-03T18:36:17.000Z",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/3"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=3"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-03T18:31:06.000Z",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/2"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=2"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-03T18:24:17.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=1"
+    }
+   }
+  ],
+  "start": 0,
+  "limit": 200,
+  "size": 36,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ },
+ "version_bodies": [
+  {
+   "id": "406623954",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1312: Support unregistering controllers",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-21T23:06:20.000Z",
+    "message": "",
+    "number": 35,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/35"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=35"
+    }
+   },
+   "position": 1306,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><h1>Status</h1><p><strong>Current state</strong>: Accepted</p><p><strong>Discussion thread</strong>: <a href=\"https://lists.apache.org/thread/kc87jkgyvf9x7nwmgwrhx6fs6w0tqymj\">https://lists.apache.org/thread/kc87jkgyvf9x7nwmgwrhx6fs6w0tqymj</a><em><br /></em></p><p><strong>Vote thread: </strong><a href=\"https://lists.apache.org/thread/rdpjmmqdxzog2m555r2wrncfn40zjf54\">https://lists.apache.org/thread/rdpjmmqdxzog2m555r2wrncfn40zjf54</a></p><p><strong>JIRA</strong>: <ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"70a020ca-74a3-40aa-b054-8feedde33346\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20395</ac:parameter></ac:structured-macro><em><br /></em></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p>Kafka cluster membership is managed by the metadata layer, and consist mainly of two things: broker and controller registrations. Registrations are sent by brokers and controllers to the active controller via the <code>BrokerRegistrationRequest</code>  and <code>ControllerRegistrationRequest</code> RPCs, and are persisted to the metadata log via the <code>BrokerRegistrationRecord</code> and <code>ControllerRegistrationRecord</code>. </p><p>The active controller uses registrations to determine the current members of the Kafka cluster, and is aware of each members' advertised listeners and supported feature ranges. Registration information is used for determining if all cluster members support a feature level during upgrades.</p><p>However, there is currently no way to unregister a controller, like there is for brokers via <code>UnregisterBrokerRequest</code> and <code>UnregisterBrokerRecord</code>. This means stale controller registrations can block feature upgrades. This KIP proposes adding support for operators to manually unregister controllers like they can with brokers.</p><p>One important use case for this KIP is to remove controller registrations from KRaft observers (i.e. nodes that replicate the log but do not participate in leader election or committing data) from the metadata log. This means operators can remove these stale registrations to unblock feature upgrades on their cluster.</p><h1>Public Interfaces</h1><h2>New RPC </h2><h3>UnregisterControllerRequest</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"42ce965e-d80d-44ac-8813-c46c6abf0dc8\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 93,\n  \"type\": \"request\",\n  \"listeners\": [\"broker\", \"controller\"],\n  \"name\": \"UnregisterControllerRequest\",\n  \"validVersions\": \"0\",\n  \"flexibleVersions\": \"0+\",\n  \"fields\": [\n    { \"name\": \"ControllerId\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"The controller ID to unregister.\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><p>This request can return the following errors:</p><ul><li>an <code>UNSUPPORTED_VERSION</code>  error if the cluster's MetadataVersion does not support <code>UnregisterControllerRecord</code> </li><li>a <code>CONTROLLER_ID_NOT_REGISTERED</code>  error if no registration exists for the requested controller ID. This is similar to the <code>BROKER_ID_NOT_REGISTERED</code> error in the case of brokers.</li><li>a <code>NOT_CONTROLLER</code>  error if the request does not arrive at the active controller</li><li>an <code>INVALID_REQUEST</code> error if the requested id is part of the voter set. </li></ul><h3>UnregisterControllerResponse</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"c8c54fa6-a071-4c2a-8a56-f2bdc405693c\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 93,\n  \"type\": \"response\",\n  \"name\": \"UnregisterControllerResponse\",\n  \"validVersions\": \"0\",\n  \"flexibleVersions\": \"0+\",\n  \"fields\": [\n    { \"name\": \"ThrottleTimeMs\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"Duration in milliseconds for which the request was throttled due to a quota violation, or zero if the request did not violate any quota.\" },\n    { \"name\": \"ErrorCode\", \"type\": \"int16\", \"versions\": \"0+\",\n      \"about\": \"The error code, or 0 if there was no error.\" },\n    { \"name\": \"ErrorMessage\", \"type\": \"string\", \"versions\": \"0+\", \"nullableVersions\": \"0+\",\n      \"about\": \"The top-level error message, or `null` if there was no top-level error.\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><h2>Public APIs</h2><h3>Admin.java</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b6f6a61f-2814-4ca0-8184-b4144627d505\"><ac:plain-text-body><![CDATA[\t/**\n     * Unregister a controller.\n     *\n     * This is a convenience method for {@link #unregisterController(int, UnregisterControllerOptions)}\n     *\n     * @param controllerId  the controller id to unregister.\n     *\n     * @return the {@link UnregisterControllerResult} containing the result\n     */\n    default UnregisterControllerResult unregisterController(int controllerId) {\n        return unregisterController(controllerId, new UnregisterControllerOptions());\n    }\n\n    /**\n     * Unregister a controller.\n     *\n     * The following exceptions can be anticipated when calling {@code get()} on the future from the\n     * returned {@link UnregisterControllerResult}:\n     * <ul>\n     *   <li>{@link org.apache.kafka.common.errors.TimeoutException}\n     *   If the request timed out before the describe operation could finish.</li>\n     *   <li>{@link org.apache.kafka.common.errors.UnsupportedVersionException}\n     *   If the software is too old to support the unregistration API.\n     * </ul>\n     * <p>\n     *\n     * @param controllerId  the controller id to unregister.\n     * @param options       the options to use.\n     *\n     * @return the {@link UnregisterControllerResult} containing the result\n     */\n    UnregisterControllerResult unregisterController(int controllerId, UnregisterControllerOptions options);]]></ac:plain-text-body></ac:structured-macro><h3>UnregisterControllerOptions</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"5b9945c5-d880-43db-adb8-228d382e5eff\"><ac:plain-text-body><![CDATA[/**\n * Options for {@link Admin#unregisterController(int, UnregisterControllerOptions)}.\n */\n@InterfaceAudience.Public\npublic class UnregisterControllerOptions extends AbstractOptions<UnregisterControllerOptions> {\n}]]></ac:plain-text-body></ac:structured-macro><h2>New Metadata Record</h2><h3>UnregisterControllerRecord</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"2af4d4a9-634e-4e09-88ff-ed57f8d9db2e\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 29,\n  \"type\": \"metadata\",\n  \"name\": \"UnregisterControllerRecord\",\n  \"validVersions\": \"0\",\n  \"flexibleVersions\": \"0+\",\n  \"fields\": [\n    { \"name\": \"ControllerId\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"The controller id.\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><p>This KIP will also introduce a new MetadataVersion to support this new metadata record.</p><h2>CLI changes</h2><h3>kafka-cluster </h3><p>Add a <code>unregister-controller</code>  for manually unregistering controllers. This command would be similar to how the <code>unregister</code> command works for brokers. Below is an example invocation.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"4d9837bd-bf09-4d89-bd26-f8341ca3bf70\"><ac:plain-text-body><![CDATA[kafka-cluster unregister-controller --id 1]]></ac:plain-text-body></ac:structured-macro><p>When the user executes this command to unregister controller 1:</p><ol><li><code>UnregisterControllerRequest</code> is sent to the active controller</li><li>The active controller writes an <code>UnregisterControllerRecord</code> to the metadata log</li><li>When this record is committed, return a response to the user for unregistering the controller</li><li>The active controller's state machine removes the registration for controller 1, meaning feature upgrades no longer consider node 1's supported features</li><li>The registration from controller 1 is removed from the metadata image</li></ol><p><span style=\"color:var(--ds-text,#333333);\"><code>kafka-cluster unregister-controller</code>  is a command for users when they want to unregister a controller from the cluster. This command should only be run after a controller is stopped, and the operator does not intend to bring it back. <code>kafka-cluster unregister-controller</code>  works irrespective of the quorum mode. </span></p><h3>kafka-metadata-quorum </h3><p>Add the <code>--unregister</code> flag to the <code>kafka-metadata-quorum remove-controller</code> command. When this flag is set, invoking this command with <code>--unregister</code> set will remove the controller as a KRaft voter and unregister it. Below is an example invocation.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"8d7c892a-ff15-46ed-b677-66919b514a82\"><ac:plain-text-body><![CDATA[kafka-metadata-quorum remove-controller --controller-id 1 --controller-directory-id EXAMPLE_UUID --unregister]]></ac:plain-text-body></ac:structured-macro><p>When the user executes this command, kafka tries to remove 1 as a voter AND unregister it:</p><ol><li><code>RemoveRaftVoterRequest</code>  is sent to the active controller</li><li>The KRaft leader writes a <code>VotersRecord</code> without voter 1 to the metadata log</li><li>When this record is committed, return a response to the user for removing the voter</li><li><code>UnregisterControllerRequest</code> is sent to the active controller if steps 1-3 were successful<ol><li>If steps 1-3 were not successful, return the error and direct the user to use <code>kafka-cluster unregister-controller</code> instead.</li></ol></li><li>The active controller writes an <code>UnregisterControllerRecord</code> to the metadata log</li><li>When this record is committed, return a response to the user for unregistering the controller</li><li>The active controller's state machine removes the registration for controller 1, meaning feature upgrades no longer consider node 1's supported features</li><li>The registration from controller 1 is removed from the metadata image</li></ol><p>The main use case for this command is to remove a node from the voter set in a dynamic KRaft quorum, AND unregister it from the cluster all within the same CLI command. Since this is a common usage pattern, running this command with <code>--unregister</code> can be thought of as a &quot;built-in&quot; script that provides a smooth UX for decommissioning voters in a dynamic quorum. Running the command with <code>--unregister</code> will fail when the cluster does not support dynamic quorum to be consistent with the behavior of the command when <code>--unregister</code> is not set.</p><h1>User Experience</h1><p>The main use cases of these CLI tools are listed below. When trying to unregister a controller, it is assumed that the operator has stopped a node before unregistering it and does not intend to bring that node back in the near future. This is because after unregistering a node, the active controller no longer checks its supported feature levels when validating a feature upgrade. </p><h3>Remove and unregister a KRaft voter in a dynamic quorum</h3><ol><li>Stop the voter</li><li><span style=\"color:var(--ds-text,#333333);\">Run kafka-metadata-quorum remove-controller with the --unregister flag</span></li></ol><h3><span style=\"color:var(--ds-text,#333333);\">Remove a KRaft voter in a dynamic quorum and keep it registered as an observer controller</span></h3><ol><li>Run kafka-metadata-quorum remove-controller without the --unregister flag</li></ol><h3><span style=\"color:var(--ds-text,#333333);\">Unregister an observer controller in a static or dynamic quorum</span></h3><ol><li>Stop the observer</li><li>Run kafka-cluster unregister-controller</li></ol><h3><span style=\"color:var(--ds-text,#333333);\">Unregister a voter in a static KRaft quorum when the static voter set is mistakenly configured</span></h3><ol><li>Stop the voter who was mistakenly put in <code>controller.quorum.voters</code> </li><li>Run kafka-cluster unregister-controller</li><li>Ensure the stopped voter is not part of <code>controller.quorum.voters</code> on every Kafka node</li></ol><h1>Proposed Changes</h1><h2>Controller Changes</h2><p>The active controller will handle unregistering a controller in the same way it handles unregistering brokers. After a broker/controller is unregistered, it will no longer be part of the metadata image, so its registration will no longer be a part of subsequent snapshots. </p><p>The registration manager of an unregistered controller already attempts to re-register with the active controller. This is to prevent accidental unregistrations. <span style=\"color:var(--ds-text,#333333);\">The intention for unregistration is for it to occur after the operator decommissions a controller node. This means the node is no longer part of the kafka cluster, and the controller process associated with this node is not expected to come back</span>. </p><h2>Metadata Quorum Tool Changes</h2><p>This new flag means that the <code>remove-controller</code> command could send two RPCs to the active controller, one to remove the node from the KRaft voter set, and another to remove the node's registration. To maintain consistency with this command only being supported with dynamic quorum, running <code>remove-controller --unregister</code> will fail if the cluster does not support dynamic quorum reconfiguration. Instead, the user should be directed to use the <code>kafka-cluster unregister-controller</code>  command.</p><h2>Additional Changes</h2><p>As part of <ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"31e2086f-e89f-41be-82f5-2b46384b0664\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20865</ac:parameter></ac:structured-macro>, the behavior of this KIP has been amended slightly so that none of the KRaft voter set can be unregistered, rather than just the leader, until they have been removed as a voter. The main motivation behind this change is that allowing for running voters to be unregistered opens up the possibility of an errant unsupported feature upgrade that would affect KRaft quorum health. This additional check will be added in the 4.5.0 release.</p><h1>Compatibility, Deprecation, and Migration Plan</h1><p>Because this KIP is introducing a new metadata record alongside a new MetadataVersion, it means that existing clusters who have a stale controller registration will not be able to unregister it, and unblock feature upgrades thereafter. The main reason for not supporting this in existing clusters is that in many environments, operators can simply bring up another controller node with the same node ID to &quot;refresh&quot; its registration. Additionally, the interest of keeping this design simple, some of the potential workarounds for existing clusters have been moved to the Rejected Alternatives section.</p><h1>Test Plan</h1><p>Add an integration test for unregistering a controller in both static quorum and dynamic quorum clusters. </p><h1>Rejected Alternatives</h1><h3>Use KRaft to manage controller registration</h3><p>Although KRaft has access to the necessary information to manage controller registrations (i.e. advertised endpoints, and feature versions which are negotiated as part of establishing a connection with another node), this kind of design poses a couple of issues, mainly stemming from the fact that logical cluster membership of brokers and controllers is really a metadata layer responsibility of the active controller. Managing members of the larger kafka cluster is not the responsibility of the KRaft leader. The KRaft leader is responsible for replicating a log, and thus should not be aware of metadata level feature records or registration records. This approach would require leaking metadata layer state + records such as feature versions (outside of the <code>kraft.version)</code>.</p><p>Brokers and controllers are concepts of the metadata layer, whereas KRaft has the concepts of leader, voters, and observers. This distinction is noteworthy because both brokers and controllers can be observers in KRaft, but broker registrations are not something that should be managed by the KRaft layer.</p><h3>Do not durably persist observer controller registrations</h3><p>Although this feature would be nice, since we would couple controller registration with being a KRaft voter, the main issue with this is that it will prevent the proposed improvements from <ac:link><ri:page ri:space-key=\"KAFKA\" ri:content-title=\"KIP-1141: Simplifying Add/Remove Voter in MetadataQuorumCommand\" /></ac:link> from being implemented. The proposed changes from KIP-1141 improve the UX around adding a controller to the KRaft voter set, but they rely on observer controllers having persisted a registration to retrieve their endpoints.</p><h3>Use UnregisterBrokerRecord to unregister controllers</h3><p>This approach would be one way existing clusters could support unregistering stale controller registrations without updating the MV. However, the main issue with this approach is that it is unsafe. A user who unregisters a controller before updating the software versions on all controllers to support this feature would crash the controllers with an older software version.</p><p>Additionally, combined mode deployments where the broker and controller use the same ID make reusing the same metadata record for unregistering both brokers and controller too complex compared to introducing a new record for unregistering controllers.</p><h3>Non-durably unregister controllers</h3><p>This would be a workaround for existing clusters with a stale registration, where the active controller's state machine could unregister a controller, but the on-disk data does not change. The main reason against implementing this would be a confusing UX during scenarios with node restarts. Additionally, it is confusing for operators to run the <code>unregister</code> CLI command again after updating the MV to support the <code>UnregisterControllerRecord</code>.</p><h3>Allow the active controller to unregister observer controllers as part of a MV upgrade</h3><p>Another approach to clear stale registrations from existing clusters is to allow the active controller to unregister observer controllers that the user specifies as part of a MV upgrade to support <code>UnregisterControllerRecord</code>. The main issue with this approach is that it makes the UX for <code>kafka-features upgrade</code> very complex. Additionally, this approach may be overkill in non-managed deployments, where operators can simply provision a controller to update its stale registration.</p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/406623954?status=historical&version=35"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1306
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=449285666",
+    "edit": "/pages/resumedraft.action?draftId=449285666&draftShareId=806272ca-60ea-4c73-bdb8-6165e8ec842d",
+    "tinyui": "/x/Io7HGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/406623954?status=historical&version=35"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/406623954/child?parentVersion=35",
+    "restrictions": "/rest/api/content/406623954/restriction/byOperation",
+    "history": "/rest/api/content/406623954/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/406623954/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/406623954/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "406623954",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1312: Support unregistering controllers",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-21T23:05:16.000Z",
+    "message": "",
+    "number": 34,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/34"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=34"
+    }
+   },
+   "position": 1306,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><h1>Status</h1><p><strong>Current state</strong>: Accepted</p><p><strong>Discussion thread</strong>: <a href=\"https://lists.apache.org/thread/kc87jkgyvf9x7nwmgwrhx6fs6w0tqymj\">https://lists.apache.org/thread/kc87jkgyvf9x7nwmgwrhx6fs6w0tqymj</a><em><br /></em></p><p><strong>Vote thread: </strong><a href=\"https://lists.apache.org/thread/rdpjmmqdxzog2m555r2wrncfn40zjf54\">https://lists.apache.org/thread/rdpjmmqdxzog2m555r2wrncfn40zjf54</a></p><p><strong>JIRA</strong>: <ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"70a020ca-74a3-40aa-b054-8feedde33346\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20395</ac:parameter></ac:structured-macro><em><br /></em></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p>Kafka cluster membership is managed by the metadata layer, and consist mainly of two things: broker and controller registrations. Registrations are sent by brokers and controllers to the active controller via the <code>BrokerRegistrationRequest</code>  and <code>ControllerRegistrationRequest</code> RPCs, and are persisted to the metadata log via the <code>BrokerRegistrationRecord</code> and <code>ControllerRegistrationRecord</code>. </p><p>The active controller uses registrations to determine the current members of the Kafka cluster, and is aware of each members' advertised listeners and supported feature ranges. Registration information is used for determining if all cluster members support a feature level during upgrades.</p><p>However, there is currently no way to unregister a controller, like there is for brokers via <code>UnregisterBrokerRequest</code> and <code>UnregisterBrokerRecord</code>. This means stale controller registrations can block feature upgrades. This KIP proposes adding support for operators to manually unregister controllers like they can with brokers.</p><p>One important use case for this KIP is to remove controller registrations from KRaft observers (i.e. nodes that replicate the log but do not participate in leader election or committing data) from the metadata log. This means operators can remove these stale registrations to unblock feature upgrades on their cluster.</p><h1>Public Interfaces</h1><h2>New RPC </h2><h3>UnregisterControllerRequest</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"42ce965e-d80d-44ac-8813-c46c6abf0dc8\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 93,\n  \"type\": \"request\",\n  \"listeners\": [\"broker\", \"controller\"],\n  \"name\": \"UnregisterControllerRequest\",\n  \"validVersions\": \"0\",\n  \"flexibleVersions\": \"0+\",\n  \"fields\": [\n    { \"name\": \"ControllerId\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"The controller ID to unregister.\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><p>This request can return the following errors:</p><ul><li>an <code>UNSUPPORTED_VERSION</code>  error if the cluster's MetadataVersion does not support <code>UnregisterControllerRecord</code> </li><li>a <code>CONTROLLER_ID_NOT_REGISTERED</code>  error if no registration exists for the requested controller ID. This is similar to the <code>BROKER_ID_NOT_REGISTERED</code> error in the case of brokers.</li><li>a <code>NOT_CONTROLLER</code>  error if the request does not arrive at the active controller</li><li>an <code>INVALID_REQUEST</code> error if the requested id is part of the voter set. </li></ul><h3>UnregisterControllerResponse</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"c8c54fa6-a071-4c2a-8a56-f2bdc405693c\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 93,\n  \"type\": \"response\",\n  \"name\": \"UnregisterControllerResponse\",\n  \"validVersions\": \"0\",\n  \"flexibleVersions\": \"0+\",\n  \"fields\": [\n    { \"name\": \"ThrottleTimeMs\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"Duration in milliseconds for which the request was throttled due to a quota violation, or zero if the request did not violate any quota.\" },\n    { \"name\": \"ErrorCode\", \"type\": \"int16\", \"versions\": \"0+\",\n      \"about\": \"The error code, or 0 if there was no error.\" },\n    { \"name\": \"ErrorMessage\", \"type\": \"string\", \"versions\": \"0+\", \"nullableVersions\": \"0+\",\n      \"about\": \"The top-level error message, or `null` if there was no top-level error.\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><h2>Public APIs</h2><h3>Admin.java</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b6f6a61f-2814-4ca0-8184-b4144627d505\"><ac:plain-text-body><![CDATA[\t/**\n     * Unregister a controller.\n     *\n     * This is a convenience method for {@link #unregisterController(int, UnregisterControllerOptions)}\n     *\n     * @param controllerId  the controller id to unregister.\n     *\n     * @return the {@link UnregisterControllerResult} containing the result\n     */\n    default UnregisterControllerResult unregisterController(int controllerId) {\n        return unregisterController(controllerId, new UnregisterControllerOptions());\n    }\n\n    /**\n     * Unregister a controller.\n     *\n     * The following exceptions can be anticipated when calling {@code get()} on the future from the\n     * returned {@link UnregisterControllerResult}:\n     * <ul>\n     *   <li>{@link org.apache.kafka.common.errors.TimeoutException}\n     *   If the request timed out before the describe operation could finish.</li>\n     *   <li>{@link org.apache.kafka.common.errors.UnsupportedVersionException}\n     *   If the software is too old to support the unregistration API.\n     * </ul>\n     * <p>\n     *\n     * @param controllerId  the controller id to unregister.\n     * @param options       the options to use.\n     *\n     * @return the {@link UnregisterControllerResult} containing the result\n     */\n    UnregisterControllerResult unregisterController(int controllerId, UnregisterControllerOptions options);]]></ac:plain-text-body></ac:structured-macro><h3>UnregisterControllerOptions</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"5b9945c5-d880-43db-adb8-228d382e5eff\"><ac:plain-text-body><![CDATA[/**\n * Options for {@link Admin#unregisterController(int, UnregisterControllerOptions)}.\n */\n@InterfaceAudience.Public\npublic class UnregisterControllerOptions extends AbstractOptions<UnregisterControllerOptions> {\n}]]></ac:plain-text-body></ac:structured-macro><h2>New Metadata Record</h2><h3>UnregisterControllerRecord</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"2af4d4a9-634e-4e09-88ff-ed57f8d9db2e\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 29,\n  \"type\": \"metadata\",\n  \"name\": \"UnregisterControllerRecord\",\n  \"validVersions\": \"0\",\n  \"flexibleVersions\": \"0+\",\n  \"fields\": [\n    { \"name\": \"ControllerId\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"The controller id.\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><p>This KIP will also introduce a new MetadataVersion to support this new metadata record.</p><h2>CLI changes</h2><h3>kafka-cluster </h3><p>Add a <code>unregister-controller</code>  for manually unregistering controllers. This command would be similar to how the <code>unregister</code> command works for brokers. Below is an example invocation.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"4d9837bd-bf09-4d89-bd26-f8341ca3bf70\"><ac:plain-text-body><![CDATA[kafka-cluster unregister-controller --id 1]]></ac:plain-text-body></ac:structured-macro><p>When the user executes this command to unregister controller 1:</p><ol><li><code>UnregisterControllerRequest</code> is sent to the active controller</li><li>The active controller writes an <code>UnregisterControllerRecord</code> to the metadata log</li><li>When this record is committed, return a response to the user for unregistering the controller</li><li>The active controller's state machine removes the registration for controller 1, meaning feature upgrades no longer consider node 1's supported features</li><li>The registration from controller 1 is removed from the metadata image</li></ol><p><span style=\"color:var(--ds-text,#333333);\"><code>kafka-cluster unregister-controller</code>  is a command for users when they want to unregister a controller from the cluster. This command should only be run after a controller is stopped, and the operator does not intend to bring it back. <code>kafka-cluster unregister-controller</code>  works irrespective of the quorum mode. </span></p><h3>kafka-metadata-quorum </h3><p>Add the <code>--unregister</code> flag to the <code>kafka-metadata-quorum remove-controller</code> command. When this flag is set, invoking this command with <code>--unregister</code> set will remove the controller as a KRaft voter and unregister it. Below is an example invocation.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"8d7c892a-ff15-46ed-b677-66919b514a82\"><ac:plain-text-body><![CDATA[kafka-metadata-quorum remove-controller --controller-id 1 --controller-directory-id EXAMPLE_UUID --unregister]]></ac:plain-text-body></ac:structured-macro><p>When the user executes this command, kafka tries to remove 1 as a voter AND unregister it:</p><ol><li><code>RemoveRaftVoterRequest</code>  is sent to the active controller</li><li>The KRaft leader writes a <code>VotersRecord</code> without voter 1 to the metadata log</li><li>When this record is committed, return a response to the user for removing the voter</li><li><code>UnregisterControllerRequest</code> is sent to the active controller if steps 1-3 were successful<ol><li>If steps 1-3 were not successful, return the error and direct the user to use <code>kafka-cluster unregister-controller</code> instead.</li></ol></li><li>The active controller writes an <code>UnregisterControllerRecord</code> to the metadata log</li><li>When this record is committed, return a response to the user for unregistering the controller</li><li>The active controller's state machine removes the registration for controller 1, meaning feature upgrades no longer consider node 1's supported features</li><li>The registration from controller 1 is removed from the metadata image</li></ol><p>The main use case for this command is to remove a node from the voter set in a dynamic KRaft quorum, AND unregister it from the cluster all within the same CLI command. Since this is a common usage pattern, running this command with <code>--unregister</code> can be thought of as a &quot;built-in&quot; script that provides a smooth UX for decommissioning voters in a dynamic quorum. Running the command with <code>--unregister</code> will fail when the cluster does not support dynamic quorum to be consistent with the behavior of the command when <code>--unregister</code> is not set.</p><h1>User Experience</h1><p>The main use cases of these CLI tools are listed below. When trying to unregister a controller, it is assumed that the operator has stopped a node before unregistering it and does not intend to bring that node back in the near future. This is because after unregistering a node, the active controller no longer checks its supported feature levels when validating a feature upgrade. </p><h3>Remove and unregister a KRaft voter in a dynamic quorum</h3><ol><li>Stop the voter</li><li><span style=\"color:var(--ds-text,#333333);\">Run kafka-metadata-quorum remove-controller with the --unregister flag</span></li></ol><h3><span style=\"color:var(--ds-text,#333333);\">Remove a KRaft voter in a dynamic quorum and keep it registered as an observer controller</span></h3><ol><li>Run kafka-metadata-quorum remove-controller without the --unregister flag</li></ol><h3><span style=\"color:var(--ds-text,#333333);\">Unregister an observer controller in a static or dynamic quorum</span></h3><ol><li>Stop the observer</li><li>Run kafka-cluster unregister-controller</li></ol><h3><span style=\"color:var(--ds-text,#333333);\">Unregister a voter in a static KRaft quorum when the static voter set is mistakenly configured</span></h3><ol><li>Stop the voter who was mistakenly put in <code>controller.quorum.voters</code> </li><li>Run kafka-cluster unregister-controller</li><li>Ensure the stopped voter is not part of <code>controller.quorum.voters</code> on every Kafka node</li></ol><h1>Proposed Changes</h1><h2>Controller Changes</h2><p>The active controller will handle unregistering a controller in the same way it handles unregistering brokers. After a broker/controller is unregistered, it will no longer be part of the metadata image, so its registration will no longer be a part of subsequent snapshots. </p><p>The registration manager of an unregistered controller already attempts to re-register with the active controller. This is to prevent accidental unregistrations. <span style=\"color:var(--ds-text,#333333);\">The intention for unregistration is for it to occur after the operator decommissions a controller node. This means the node is no longer part of the kafka cluster, and the controller process associated with this node is not expected to come back</span>. </p><h2>Metadata Quorum Tool Changes</h2><p>This new flag means that the <code>remove-controller</code> command could send two RPCs to the active controller, one to remove the node from the KRaft voter set, and another to remove the node's registration. To maintain consistency with this command only being supported with dynamic quorum, running <code>remove-controller --unregister</code> will fail if the cluster does not support dynamic quorum reconfiguration. Instead, the user should be directed to use the <code>kafka-cluster unregister-controller</code>  command.</p><h2>Additional Changes</h2><p>As part of <ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"31e2086f-e89f-41be-82f5-2b46384b0664\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20865</ac:parameter></ac:structured-macro>, the behavior of this KIP has been amended slightly so that none of the KRaft voter set can be unregistered, rather than just the leader, until they have been removed as a voter. This additional check will be added in the 4.5.0 release.</p><h1>Compatibility, Deprecation, and Migration Plan</h1><p>Because this KIP is introducing a new metadata record alongside a new MetadataVersion, it means that existing clusters who have a stale controller registration will not be able to unregister it, and unblock feature upgrades thereafter. The main reason for not supporting this in existing clusters is that in many environments, operators can simply bring up another controller node with the same node ID to &quot;refresh&quot; its registration. Additionally, the interest of keeping this design simple, some of the potential workarounds for existing clusters have been moved to the Rejected Alternatives section.</p><h1>Test Plan</h1><p>Add an integration test for unregistering a controller in both static quorum and dynamic quorum clusters. </p><h1>Rejected Alternatives</h1><h3>Use KRaft to manage controller registration</h3><p>Although KRaft has access to the necessary information to manage controller registrations (i.e. advertised endpoints, and feature versions which are negotiated as part of establishing a connection with another node), this kind of design poses a couple of issues, mainly stemming from the fact that logical cluster membership of brokers and controllers is really a metadata layer responsibility of the active controller. Managing members of the larger kafka cluster is not the responsibility of the KRaft leader. The KRaft leader is responsible for replicating a log, and thus should not be aware of metadata level feature records or registration records. This approach would require leaking metadata layer state + records such as feature versions (outside of the <code>kraft.version)</code>.</p><p>Brokers and controllers are concepts of the metadata layer, whereas KRaft has the concepts of leader, voters, and observers. This distinction is noteworthy because both brokers and controllers can be observers in KRaft, but broker registrations are not something that should be managed by the KRaft layer.</p><h3>Do not durably persist observer controller registrations</h3><p>Although this feature would be nice, since we would couple controller registration with being a KRaft voter, the main issue with this is that it will prevent the proposed improvements from <ac:link><ri:page ri:space-key=\"KAFKA\" ri:content-title=\"KIP-1141: Simplifying Add/Remove Voter in MetadataQuorumCommand\" /></ac:link> from being implemented. The proposed changes from KIP-1141 improve the UX around adding a controller to the KRaft voter set, but they rely on observer controllers having persisted a registration to retrieve their endpoints.</p><h3>Use UnregisterBrokerRecord to unregister controllers</h3><p>This approach would be one way existing clusters could support unregistering stale controller registrations without updating the MV. However, the main issue with this approach is that it is unsafe. A user who unregisters a controller before updating the software versions on all controllers to support this feature would crash the controllers with an older software version.</p><p>Additionally, combined mode deployments where the broker and controller use the same ID make reusing the same metadata record for unregistering both brokers and controller too complex compared to introducing a new record for unregistering controllers.</p><h3>Non-durably unregister controllers</h3><p>This would be a workaround for existing clusters with a stale registration, where the active controller's state machine could unregister a controller, but the on-disk data does not change. The main reason against implementing this would be a confusing UX during scenarios with node restarts. Additionally, it is confusing for operators to run the <code>unregister</code> CLI command again after updating the MV to support the <code>UnregisterControllerRecord</code>.</p><h3>Allow the active controller to unregister observer controllers as part of a MV upgrade</h3><p>Another approach to clear stale registrations from existing clusters is to allow the active controller to unregister observer controllers that the user specifies as part of a MV upgrade to support <code>UnregisterControllerRecord</code>. The main issue with this approach is that it makes the UX for <code>kafka-features upgrade</code> very complex. Additionally, this approach may be overkill in non-managed deployments, where operators can simply provision a controller to update its stale registration.</p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/406623954?status=historical&version=34"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1306
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=449282861",
+    "edit": "/pages/resumedraft.action?draftId=449282861&draftShareId=806272ca-60ea-4c73-bdb8-6165e8ec842d",
+    "tinyui": "/x/LYPHGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/406623954?status=historical&version=34"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/406623954/child?parentVersion=34",
+    "restrictions": "/rest/api/content/406623954/restriction/byOperation",
+    "history": "/rest/api/content/406623954/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/406623954/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/406623954/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "406623954",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1312: Support unregistering controllers",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-23T14:55:42.000Z",
+    "message": "",
+    "number": 33,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406623954/version/33"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406623954?status=historical&version=33"
+    }
+   },
+   "position": 1306,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><h1>Status</h1><p><strong>Current state</strong>: Accepted</p><p><strong>Discussion thread</strong>: <a href=\"https://lists.apache.org/thread/kc87jkgyvf9x7nwmgwrhx6fs6w0tqymj\">https://lists.apache.org/thread/kc87jkgyvf9x7nwmgwrhx6fs6w0tqymj</a><em><br /></em></p><p><strong>Vote thread: </strong><a href=\"https://lists.apache.org/thread/rdpjmmqdxzog2m555r2wrncfn40zjf54\">https://lists.apache.org/thread/rdpjmmqdxzog2m555r2wrncfn40zjf54</a></p><p><strong>JIRA</strong>: <ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"70a020ca-74a3-40aa-b054-8feedde33346\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20395</ac:parameter></ac:structured-macro><em><br /></em></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p>Kafka cluster membership is managed by the metadata layer, and consist mainly of two things: broker and controller registrations. Registrations are sent by brokers and controllers to the active controller via the <code>BrokerRegistrationRequest</code>  and <code>ControllerRegistrationRequest</code> RPCs, and are persisted to the metadata log via the <code>BrokerRegistrationRecord</code> and <code>ControllerRegistrationRecord</code>. </p><p>The active controller uses registrations to determine the current members of the Kafka cluster, and is aware of each members' advertised listeners and supported feature ranges. Registration information is used for determining if all cluster members support a feature level during upgrades.</p><p>However, there is currently no way to unregister a controller, like there is for brokers via <code>UnregisterBrokerRequest</code> and <code>UnregisterBrokerRecord</code>. This means stale controller registrations can block feature upgrades. This KIP proposes adding support for operators to manually unregister controllers like they can with brokers.</p><p>One important use case for this KIP is to remove controller registrations from KRaft observers (i.e. nodes that replicate the log but do not participate in leader election or committing data) from the metadata log. This means operators can remove these stale registrations to unblock feature upgrades on their cluster.</p><h1>Public Interfaces</h1><h2>New RPC </h2><h3>UnregisterControllerRequest</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"42ce965e-d80d-44ac-8813-c46c6abf0dc8\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 93,\n  \"type\": \"request\",\n  \"listeners\": [\"broker\", \"controller\"],\n  \"name\": \"UnregisterControllerRequest\",\n  \"validVersions\": \"0\",\n  \"flexibleVersions\": \"0+\",\n  \"fields\": [\n    { \"name\": \"ControllerId\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"The controller ID to unregister.\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><p>This request can return the following errors:</p><ul><li>an <code>UNSUPPORTED_VERSION</code>  error if the cluster's MetadataVersion does not support <code>UnregisterControllerRecord</code> </li><li>a <code>CONTROLLER_ID_NOT_REGISTERED</code>  error if no registration exists for the requested controller ID. This is similar to the <code>BROKER_ID_NOT_REGISTERED</code> error in the case of brokers.</li><li>a <code>NOT_CONTROLLER</code>  error if the request does not arrive at the active controller</li><li>an <code>INVALID_REQUEST</code> error if the requested id is for the active controller. This is known to be a &quot;mistaken&quot; request, as it is expected controllers are not running when they are unregistered. See the User Experience for more details.</li></ul><h3>UnregisterControllerResponse</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"c8c54fa6-a071-4c2a-8a56-f2bdc405693c\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 93,\n  \"type\": \"response\",\n  \"name\": \"UnregisterControllerResponse\",\n  \"validVersions\": \"0\",\n  \"flexibleVersions\": \"0+\",\n  \"fields\": [\n    { \"name\": \"ThrottleTimeMs\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"Duration in milliseconds for which the request was throttled due to a quota violation, or zero if the request did not violate any quota.\" },\n    { \"name\": \"ErrorCode\", \"type\": \"int16\", \"versions\": \"0+\",\n      \"about\": \"The error code, or 0 if there was no error.\" },\n    { \"name\": \"ErrorMessage\", \"type\": \"string\", \"versions\": \"0+\", \"nullableVersions\": \"0+\",\n      \"about\": \"The top-level error message, or `null` if there was no top-level error.\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><h2>Public APIs</h2><h3>Admin.java</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b6f6a61f-2814-4ca0-8184-b4144627d505\"><ac:plain-text-body><![CDATA[\t/**\n     * Unregister a controller.\n     *\n     * This is a convenience method for {@link #unregisterController(int, UnregisterControllerOptions)}\n     *\n     * @param controllerId  the controller id to unregister.\n     *\n     * @return the {@link UnregisterControllerResult} containing the result\n     */\n    default UnregisterControllerResult unregisterController(int controllerId) {\n        return unregisterController(controllerId, new UnregisterControllerOptions());\n    }\n\n    /**\n     * Unregister a controller.\n     *\n     * The following exceptions can be anticipated when calling {@code get()} on the future from the\n     * returned {@link UnregisterControllerResult}:\n     * <ul>\n     *   <li>{@link org.apache.kafka.common.errors.TimeoutException}\n     *   If the request timed out before the describe operation could finish.</li>\n     *   <li>{@link org.apache.kafka.common.errors.UnsupportedVersionException}\n     *   If the software is too old to support the unregistration API.\n     * </ul>\n     * <p>\n     *\n     * @param controllerId  the controller id to unregister.\n     * @param options       the options to use.\n     *\n     * @return the {@link UnregisterControllerResult} containing the result\n     */\n    UnregisterControllerResult unregisterController(int controllerId, UnregisterControllerOptions options);]]></ac:plain-text-body></ac:structured-macro><h3>UnregisterControllerOptions</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"5b9945c5-d880-43db-adb8-228d382e5eff\"><ac:plain-text-body><![CDATA[/**\n * Options for {@link Admin#unregisterController(int, UnregisterControllerOptions)}.\n */\n@InterfaceAudience.Public\npublic class UnregisterControllerOptions extends AbstractOptions<UnregisterControllerOptions> {\n}]]></ac:plain-text-body></ac:structured-macro><h2>New Metadata Record</h2><h3>UnregisterControllerRecord</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"2af4d4a9-634e-4e09-88ff-ed57f8d9db2e\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 29,\n  \"type\": \"metadata\",\n  \"name\": \"UnregisterControllerRecord\",\n  \"validVersions\": \"0\",\n  \"flexibleVersions\": \"0+\",\n  \"fields\": [\n    { \"name\": \"ControllerId\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"The controller id.\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><p>This KIP will also introduce a new MetadataVersion to support this new metadata record.</p><h2>CLI changes</h2><h3>kafka-cluster </h3><p>Add a <code>unregister-controller</code>  for manually unregistering controllers. This command would be similar to how the <code>unregister</code> command works for brokers. Below is an example invocation.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"4d9837bd-bf09-4d89-bd26-f8341ca3bf70\"><ac:plain-text-body><![CDATA[kafka-cluster unregister-controller --id 1]]></ac:plain-text-body></ac:structured-macro><p>When the user executes this command to unregister controller 1:</p><ol><li><code>UnregisterControllerRequest</code> is sent to the active controller</li><li>The active controller writes an <code>UnregisterControllerRecord</code> to the metadata log</li><li>When this record is committed, return a response to the user for unregistering the controller</li><li>The active controller's state machine removes the registration for controller 1, meaning feature upgrades no longer consider node 1's supported features</li><li>The registration from controller 1 is removed from the metadata image</li></ol><p><span style=\"color:var(--ds-text,#333333);\"><code>kafka-cluster unregister-controller</code>  is a command for users when they want to unregister a controller from the cluster. This command should only be run after a controller is stopped, and the operator does not intend to bring it back. <code>kafka-cluster unregister-controller</code>  works irrespective of the quorum mode. </span></p><h3>kafka-metadata-quorum </h3><p>Add the <code>--unregister</code> flag to the <code>kafka-metadata-quorum remove-controller</code> command. When this flag is set, invoking this command with <code>--unregister</code> set will remove the controller as a KRaft voter and unregister it. Below is an example invocation.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"8d7c892a-ff15-46ed-b677-66919b514a82\"><ac:plain-text-body><![CDATA[kafka-metadata-quorum remove-controller --controller-id 1 --controller-directory-id EXAMPLE_UUID --unregister]]></ac:plain-text-body></ac:structured-macro><p>When the user executes this command, kafka tries to remove 1 as a voter AND unregister it:</p><ol><li><code>RemoveRaftVoterRequest</code>  is sent to the active controller</li><li>The KRaft leader writes a <code>VotersRecord</code> without voter 1 to the metadata log</li><li>When this record is committed, return a response to the user for removing the voter</li><li><code>UnregisterControllerRequest</code> is sent to the active controller if steps 1-3 were successful<ol><li>If steps 1-3 were not successful, return the error and direct the user to use <code>kafka-cluster unregister-controller</code> instead.</li></ol></li><li>The active controller writes an <code>UnregisterControllerRecord</code> to the metadata log</li><li>When this record is committed, return a response to the user for unregistering the controller</li><li>The active controller's state machine removes the registration for controller 1, meaning feature upgrades no longer consider node 1's supported features</li><li>The registration from controller 1 is removed from the metadata image</li></ol><p>The main use case for this command is to remove a node from the voter set in a dynamic KRaft quorum, AND unregister it from the cluster all within the same CLI command. Since this is a common usage pattern, running this command with <code>--unregister</code> can be thought of as a &quot;built-in&quot; script that provides a smooth UX for decommissioning voters in a dynamic quorum. Running the command with <code>--unregister</code> will fail when the cluster does not support dynamic quorum to be consistent with the behavior of the command when <code>--unregister</code> is not set.</p><h1>User Experience</h1><p>The main use cases of these CLI tools are listed below. When trying to unregister a controller, it is assumed that the operator has stopped a node before unregistering it and does not intend to bring that node back in the near future. This is because after unregistering a node, the active controller no longer checks its supported feature levels when validating a feature upgrade. </p><h3>Remove and unregister a KRaft voter in a dynamic quorum</h3><ol><li>Stop the voter</li><li><span style=\"color:var(--ds-text,#333333);\">Run kafka-metadata-quorum remove-controller with the --unregister flag</span></li></ol><h3><span style=\"color:var(--ds-text,#333333);\">Remove a KRaft voter in a dynamic quorum and keep it registered as an observer controller</span></h3><ol><li>Run kafka-metadata-quorum remove-controller without the --unregister flag</li></ol><h3><span style=\"color:var(--ds-text,#333333);\">Unregister an observer controller in a static or dynamic quorum</span></h3><ol><li>Stop the observer</li><li>Run kafka-cluster unregister-controller</li></ol><h3><span style=\"color:var(--ds-text,#333333);\">Unregister a voter in a static KRaft quorum when the static voter set is mistakenly configured</span></h3><ol><li>Stop the voter who was mistakenly put in <code>controller.quorum.voters</code> </li><li>Run kafka-cluster unregister-controller</li><li>Ensure the stopped voter is not part of <code>controller.quorum.voters</code> on every Kafka node</li></ol><h1>Proposed Changes</h1><h2>Controller Changes</h2><p>The active controller will handle unregistering a controller in the same way it handles unregistering brokers. After a broker/controller is unregistered, it will no longer be part of the metadata image, so its registration will no longer be a part of subsequent snapshots. </p><p>The registration manager of an unregistered controller already attempts to re-register with the active controller. This is to prevent accidental unregistrations. <span style=\"color:var(--ds-text,#333333);\">The intention for unregistration is for it to occur after the operator decommissions a controller node. This means the node is no longer part of the kafka cluster, and the controller process associated with this node is not expected to come back</span>. </p><h2>Metadata Quorum Tool Changes</h2><p>This new flag means that the <code>remove-controller</code> command could send two RPCs to the active controller, one to remove the node from the KRaft voter set, and another to remove the node's registration. To maintain consistency with this command only being supported with dynamic quorum, running <code>remove-controller --unregister</code> will fail if the cluster does not support dynamic quorum reconfiguration. Instead, the user should be directed to use the <code>kafka-cluster unregister-controller</code>  command.</p><h1>Compatibility, Deprecation, and Migration Plan</h1><p>Because this KIP is introducing a new metadata record alongside a new MetadataVersion, it means that existing clusters who have a stale controller registration will not be able to unregister it, and unblock feature upgrades thereafter. The main reason for not supporting this in existing clusters is that in many environments, operators can simply bring up another controller node with the same node ID to &quot;refresh&quot; its registration. Additionally, the interest of keeping this design simple, some of the potential workarounds for existing clusters have been moved to the Rejected Alternatives section.</p><h1>Test Plan</h1><p>Add an integration test for unregistering a controller in both static quorum and dynamic quorum clusters. </p><h1>Rejected Alternatives</h1><h3>Use KRaft to manage controller registration</h3><p>Although KRaft has access to the necessary information to manage controller registrations (i.e. advertised endpoints, and feature versions which are negotiated as part of establishing a connection with another node), this kind of design poses a couple of issues, mainly stemming from the fact that logical cluster membership of brokers and controllers is really a metadata layer responsibility of the active controller. Managing members of the larger kafka cluster is not the responsibility of the KRaft leader. The KRaft leader is responsible for replicating a log, and thus should not be aware of metadata level feature records or registration records. This approach would require leaking metadata layer state + records such as feature versions (outside of the <code>kraft.version)</code>.</p><p>Brokers and controllers are concepts of the metadata layer, whereas KRaft has the concepts of leader, voters, and observers. This distinction is noteworthy because both brokers and controllers can be observers in KRaft, but broker registrations are not something that should be managed by the KRaft layer.</p><h3>Do not durably persist observer controller registrations</h3><p>Although this feature would be nice, since we would couple controller registration with being a KRaft voter, the main issue with this is that it will prevent the proposed improvements from <ac:link><ri:page ri:space-key=\"KAFKA\" ri:content-title=\"KIP-1141: Simplifying Add/Remove Voter in MetadataQuorumCommand\" /></ac:link> from being implemented. The proposed changes from KIP-1141 improve the UX around adding a controller to the KRaft voter set, but they rely on observer controllers having persisted a registration to retrieve their endpoints.</p><h3>Use UnregisterBrokerRecord to unregister controllers</h3><p>This approach would be one way existing clusters could support unregistering stale controller registrations without updating the MV. However, the main issue with this approach is that it is unsafe. A user who unregisters a controller before updating the software versions on all controllers to support this feature would crash the controllers with an older software version.</p><p>Additionally, combined mode deployments where the broker and controller use the same ID make reusing the same metadata record for unregistering both brokers and controller too complex compared to introducing a new record for unregistering controllers.</p><h3>Non-durably unregister controllers</h3><p>This would be a workaround for existing clusters with a stale registration, where the active controller's state machine could unregister a controller, but the on-disk data does not change. The main reason against implementing this would be a confusing UX during scenarios with node restarts. Additionally, it is confusing for operators to run the <code>unregister</code> CLI command again after updating the MV to support the <code>UnregisterControllerRecord</code>.</p><h3>Allow the active controller to unregister observer controllers as part of a MV upgrade</h3><p>Another approach to clear stale registrations from existing clusters is to allow the active controller to unregister observer controllers that the user specifies as part of a MV upgrade to support <code>UnregisterControllerRecord</code>. The main issue with this approach is that it makes the UX for <code>kafka-features upgrade</code> very complex. Additionally, this approach may be overkill in non-managed deployments, where operators can simply provision a controller to update its stale registration.</p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/406623954?status=historical&version=33"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1306
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=449282860",
+    "edit": "/pages/resumedraft.action?draftId=449282860&draftShareId=806272ca-60ea-4c73-bdb8-6165e8ec842d",
+    "tinyui": "/x/LIPHGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/406623954?status=historical&version=33"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/406623954/child?parentVersion=33",
+    "restrictions": "/rest/api/content/406623954/restriction/byOperation",
+    "history": "/rest/api/content/406623954/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/406623954/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/406623954/restriction/relevantViewRestrictions"
+   }
+  }
+ ],
+ "comments": {
+  "results": [],
+  "start": 0,
+  "limit": 200,
+  "size": 0,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/api/content/406623954/child/comment?expand=body.storage%2Cversion%2Cancestors&depth=all",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ }
+}

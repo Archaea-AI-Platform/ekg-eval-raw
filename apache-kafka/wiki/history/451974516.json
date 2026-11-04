@@ -1,0 +1,603 @@
+{
+ "id": "451974516",
+ "versions": {
+  "results": [
+   {
+    "by": {
+     "type": "known",
+     "username": "mickael.maison",
+     "userKey": "8aa9808756417d2001570e322ca30383",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/65869643/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Mickael Maison",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa9808756417d2001570e322ca30383"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-19T11:09:45.000Z",
+    "message": "",
+    "number": 11,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451974516/version/11"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451974516"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mickael.maison",
+     "userKey": "8aa9808756417d2001570e322ca30383",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/65869643/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Mickael Maison",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa9808756417d2001570e322ca30383"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-19T11:09:24.000Z",
+    "message": "",
+    "number": 10,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451974516/version/10"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451974516?status=historical&version=10"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mickael.maison",
+     "userKey": "8aa9808756417d2001570e322ca30383",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/65869643/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Mickael Maison",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa9808756417d2001570e322ca30383"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-19T11:02:52.000Z",
+    "message": "",
+    "number": 9,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451974516/version/9"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451974516?status=historical&version=9"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mickael.maison",
+     "userKey": "8aa9808756417d2001570e322ca30383",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/65869643/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Mickael Maison",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa9808756417d2001570e322ca30383"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-15T15:48:59.000Z",
+    "message": "",
+    "number": 8,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451974516/version/8"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451974516?status=historical&version=8"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mickael.maison",
+     "userKey": "8aa9808756417d2001570e322ca30383",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/65869643/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Mickael Maison",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa9808756417d2001570e322ca30383"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-15T15:30:05.000Z",
+    "message": "",
+    "number": 7,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451974516/version/7"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451974516?status=historical&version=7"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mickael.maison",
+     "userKey": "8aa9808756417d2001570e322ca30383",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/65869643/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Mickael Maison",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa9808756417d2001570e322ca30383"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-15T15:25:56.000Z",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451974516/version/6"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451974516?status=historical&version=6"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mickael.maison",
+     "userKey": "8aa9808756417d2001570e322ca30383",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/65869643/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Mickael Maison",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa9808756417d2001570e322ca30383"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-08T16:51:21.000Z",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451974516/version/5"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451974516?status=historical&version=5"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mickael.maison",
+     "userKey": "8aa9808756417d2001570e322ca30383",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/65869643/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Mickael Maison",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa9808756417d2001570e322ca30383"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-07T12:02:47.000Z",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451974516/version/4"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451974516?status=historical&version=4"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mickael.maison",
+     "userKey": "8aa9808756417d2001570e322ca30383",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/65869643/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Mickael Maison",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa9808756417d2001570e322ca30383"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-06T10:12:33.000Z",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451974516/version/3"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451974516?status=historical&version=3"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mickael.maison",
+     "userKey": "8aa9808756417d2001570e322ca30383",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/65869643/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Mickael Maison",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa9808756417d2001570e322ca30383"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-17T07:36:26.000Z",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451974516/version/2"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451974516?status=historical&version=2"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mickael.maison",
+     "userKey": "8aa9808756417d2001570e322ca30383",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/65869643/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Mickael Maison",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa9808756417d2001570e322ca30383"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-15T13:57:05.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451974516/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451974516?status=historical&version=1"
+    }
+   }
+  ],
+  "start": 0,
+  "limit": 200,
+  "size": 11,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451974516/version",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ },
+ "version_bodies": [
+  {
+   "id": "451974516",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1376: Support setting TLS named groups",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "mickael.maison",
+     "userKey": "8aa9808756417d2001570e322ca30383",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/65869643/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Mickael Maison",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa9808756417d2001570e322ca30383"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-19T11:09:24.000Z",
+    "message": "",
+    "number": 10,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451974516/version/10"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451974516?status=historical&version=10"
+    }
+   },
+   "position": 1367,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><h1>Status</h1><p><strong>Current state</strong>: In Discussion</p><p><strong>Discussion thread</strong>: <a href=\"https://lists.apache.org/thread.html/wwlb3yl9hnrcflm8h33g7jmqv7zkw6md\">here</a></p><p><strong>JIRA</strong>: <a href=\"https://issues.apache.org/jira/browse/KAFKA-20728\">KAFKA-20728</a> </p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p>Named groups are how the JVM describes TLS key exchange schemes. APIs to use named groups have been added in Java 20.</p><p>Via <a href=\"https://openjdk.org/jeps/527\">JEP 527: Post-Quantum Hybrid Key Exchange for TLS 1.3</a>, new key exchange schemes resistant to quantum attacks, usually referred to as Post Quantum Cryptography (PQC), are being introduced. This JEP was initially delivered in Java 27. It's being backported by several implementations to earlier Java versions. Note that the <code>SSLParameters.setNamedGroups()</code> API is available from Java 20, but the PQC named groups themselves (e.g. <code>x25519_mlkem768</code>) require Java 27 or a vendor backport that includes JEP 527.</p><p>Due to threats like &quot;<a href=\"https://en.wikipedia.org/wiki/Harvest_now,_decrypt_later\">harvest now, decrypt later</a>&quot;, many organizations are now actively considering PQC TLS. It is also mandated by several governments and industries such as finance, healthcare and defense.</p><h1>Public Interfaces</h1><p>All communication channels that are encrypted via TLS need to support PQC. This includes:</p><ul><li data-uuid=\"d66a067b-db69-4f4e-8889-a6e8fa130a0c\">Client to broker/controller</li><li data-uuid=\"a4e32052-0883-44e7-b68d-3878e0e55e80\">Broker/controller to client</li><li data-uuid=\"5f3a69eb-e79d-4120-b218-df0420c7af3b\">Broker/controller to broker/controller</li><li data-uuid=\"c6a2b974-a5ae-44ae-ac80-46cd570f8a3b\">Connect workers accepting REST traffic</li><li data-uuid=\"c33a2306-3275-4a28-b01d-38a4d2c27fef\">Connect worker to Connect worker</li><li data-uuid=\"62e6bd79-5dde-4d66-bc6a-d24b758c4922\">OAuth token retrieval (client)</li><li data-uuid=\"2ac89215-1cb0-412c-88e6-c0f215160581\">OAuth JWKS retrieval (server)</li></ul><p>To cover all these scenarios, a single configuration can be used:<br />Name: ssl.named.groups<br />Type: List<br />Default: Empty, the default JVM named groups are used<br />Description: An ordered list of key exchange named groups to use for SSL connections, with the most preferred group first. The supported values depend on the SSL provider and Java runtime.</p><p>It can be set in clients, servers, Streams instances and Connect worker configurations. For example:<br /><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"ecea0234-7e61-42e9-a987-a211cba12b57\"><ac:plain-text-body><![CDATA[ssl.named.groups=x25519,x448]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p>On servers, it can also be set per listener, for example:<br /><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"481eec2f-3098-4c20-bc99-f8a1123b1a99\"><ac:plain-text-body><![CDATA[listener.name.internal.ssl.named.groups=x25519,x448]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p>For OAuth it must be set via <code>sasl.jaas.config</code> or a JAAS file, for example:<br /><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"8cbef59b-783e-484b-9214-0b7f9154a162\"><ac:plain-text-body><![CDATA[listener.name.sasl_ssl.oauthbearer.sasl.jaas.config=org.apache.kafka.common.security.oauthbearer.OAuthBearerLoginModule required \\\n      ssl.truststore.location=\"/path/to/truststore.jks\" \\\n      ssl.truststore.password=\"changeit\" \\\n      ssl.named.groups=\"x25519,x448\" ;]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p>If the configuration is set and the JVM does not support the named groups APIs, a <code>ConfigException</code> will be thrown at startup.<br />If the configuration is set to unknown named groups, the failure happens when the TLS connection is established. This is the same behavior as with <code>ssl.cipher.suites</code>.<br />If the configuration is set, like with <code>ssl.cipher.suites</code>, a TLS connection can only be established when the client and server share at least one named group.<br />The TLS version (set via ssl.protocol) gates what named groups are valid and automatically drops entries not compatible (like for ciphers). </p><h1>Proposed Changes</h1><p>The named groups APIs are only available in Java 20+. Because the Kafka modules still support Java 11 (clients) and Java 17 (servers), logic trying to set named groups will use reflection so it compiles with the currently supported Java versions.</p><h2>Clients/Servers</h2><p>The <code>DefaultSslEngineFactory</code> class handles the TLS logic for clients and brokers. If <code>ssl.named.groups</code> is set, the <code>SSLParameters.setNamedGroups()</code> method will be called via reflection.</p><h2>OAuth</h2><p>The OAuth/OIDC implementation makes two types of outbound HTTPS connections to the identity provider:</p><ul><li data-uuid=\"d52eb8a2-958e-4279-9d45-7fee09189f57\">Token retrieval (client-side): <code>OAuthBearerLoginCallbackHandler</code> uses <code>HttpJwtRetriever</code> to fetch JWT access tokens from the token endpoint. Every Kafka client (producer, consumer, admin) and broker (for inter-broker OAuth) makes this call on each token refresh.</li><li data-uuid=\"a947a764-9092-4075-9a1f-653f7a910583\">JWKS key retrieval (broker-side): <code>OAuthBearerValidatorCallbackHandler</code> uses <code>VerificationKeyResolverFactory</code> to periodically fetch the identity provider's public keys from the JWKS endpoint, which are used to verify JWT signatures.</li></ul><p>The <code>JaasOptionsUtils.createSSLSocketFactory()</code> method will be updated to wrap the returned <code>SSLSocketFactory</code> so that <code>SSLParameters</code> (including named groups, cipher suites, and enabled protocols) are applied to each socket after creation, mirroring what <code>DefaultSslEngineFactory</code> does for clients and servers.</p><h2>Connect REST API</h2><p>Connect uses Jetty to expose its REST API for users and for worker-to-worker communications.</p><ul><li data-uuid=\"55b794eb-700d-46d0-af26-7e22b716b047\">Server-side: This handles REST API traffic from users and other Connect workers.</li><li data-uuid=\"9a7b25fd-157d-418b-931a-aa1b74cbe213\">Client-side: This is used to forward requests to other Connect workers.</li></ul><p>Both paths go through <code>SSLUtils.configureSslContextFactoryAlgorithms()</code>, which currently configures protocols, cipher suites, SSL provider, and algorithm settings. It will be updated to also set named groups if the configuration is set.</p><h1>Compatibility, Deprecation, and Migration Plan</h1><ul><li data-uuid=\"95dc41e1-42a2-4464-a1e6-c086cf4e798e\">The <code>ssl.named.groups</code> configuration is new and optional. When not set, the JVM's default named groups are used so existing behavior is unchanged.</li><li data-uuid=\"04159614-8ad0-4907-a73f-97accfd735d0\">The <code>SSLParameters.setNamedGroups()</code> API is required for this feature. The implementation uses reflection so it compiles with older Java versions. If <code>ssl.named.groups</code> is set when the Java runtime lacks the SSLParameters.setNamedGroups() then a <code>ConfigException</code> is thrown with a clear error message at startup.</li><li data-uuid=\"06b1cba3-9122-4754-9295-e31d7e36fbb9\">The <code>ssl.named.groups</code> configuration is not dynamically reconfigurable. Changing it requires a restart. A phased PQC rollout can be achieved via rolling restarts across the cluster.</li><li data-uuid=\"85280eb1-89f3-4cae-8413-f63d04599094\">Since Java 8, users can set the <code>jdk.tls.namedGroups</code> system property to set named groups at the JVM level. The table below details the interaction between the system property and the new configuration:<table class=\"wrapped\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th scope=\"col\">ssl.named.groups</th><th scope=\"col\">jdk.tls.namedGroups</th><th scope=\"col\">Behavior</th></tr><tr><td><p>not set</p></td><td>not set</td><td>JVM built-in defaults</td></tr><tr><td>not set</td><td>set</td><td>System property applies</td></tr><tr><td>set</td><td>not set</td><td>Kafka config applies</td></tr><tr><td>set</td><td>set</td><td>Kafka config takes precedence:<br />If <code>ssl.named.groups</code> is set all connections use the specified named groups.<br />If only <code>listener.name.internal.ssl.named.groups</code> is set, the <code>internal</code> listener uses the specified named groups. If there are other listeners, they use the system property if it's set, otherwise the JVM built-in defaults.</td></tr></tbody></table>Effectively the precedence chain is:<br />  1. listener.name.&lt;name&gt;.ssl.named.groups (per-listener override when available)<br />  2. ssl.named.groups (global Kafka config)<br />  3. jdk.tls.namedGroups (JVM system property)<br />  4. JVM built-in defaults<br /><br />The behavior is consistent with how the cipher suites work (via <code>ssl.cipher.suites</code> and <code>jdk.tls.client.cipherSuites</code>).</li></ul><h1>Test Plan</h1><ul><li data-uuid=\"a33ca41f-83ea-4800-9a5a-7223c91351c7\">Unit tests covering the changes for all components.</li><li data-uuid=\"191a173f-a376-4b59-a71a-3e822e079086\">Integration tests verify end-to-end TLS connections with named groups configured for client-broker, inter-broker, and Connect REST scenarios. </li><li data-uuid=\"b1b41f6d-0587-4ca8-b138-a023fb7d6a2b\">These tests will be skipped when run on a JVM that does not support named groups. The CI already runs with Java 25, so this will be effectively tested.</li><li data-uuid=\"05a55d96-7e34-4e11-935c-002b50d92258\">Tests that exercise the error handling in case of lack of support for named groups will run in the CI with Java 17.</li></ul><h1>Rejected Alternatives</h1><ul><li data-uuid=\"c0615fb7-ba2b-4a82-8698-25aaed9e9adb\"><strong>Rely on the JVM jdk.tls.namedGroups system property</strong>: This property applies to the whole JVM, so it prevents using different named groups for different components/listeners.</li><li data-uuid=\"3ccb3930-a4bd-4cae-b5fb-4b807086285a\"><strong>Distinguish between null and empty for ssl.named.groups</strong>: This only enables very niche scenarios (for example resetting named groups for a specific listener). I favored aligning the behavior with the ssl.cipher.suites configuration.</li><li data-uuid=\"666b51aa-3aed-43ef-b2cc-d65e5d05d6da\">Do a multi-release JAR: A multi-release JAR could be used instead of relying on reflection. Overall using reflection is simpler and does not require making build changes.</li></ul><p><br /></p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/451974516?status=historical&version=10"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1367
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=451980207",
+    "edit": "/pages/resumedraft.action?draftId=451980207&draftShareId=938586e9-17d9-43a4-bddb-dfd0e132935a",
+    "tinyui": "/x/r6vwGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/451974516?status=historical&version=10"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/451974516/child?parentVersion=10",
+    "restrictions": "/rest/api/content/451974516/restriction/byOperation",
+    "history": "/rest/api/content/451974516/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/451974516/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/451974516/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "451974516",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1376: Support setting TLS named groups",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "mickael.maison",
+     "userKey": "8aa9808756417d2001570e322ca30383",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/65869643/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Mickael Maison",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa9808756417d2001570e322ca30383"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-19T11:02:52.000Z",
+    "message": "",
+    "number": 9,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451974516/version/9"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451974516?status=historical&version=9"
+    }
+   },
+   "position": 1367,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><h1>Status</h1><p><strong>Current state</strong>: In Discussion</p><p><strong>Discussion thread</strong>: <a href=\"https://lists.apache.org/thread.html/wwlb3yl9hnrcflm8h33g7jmqv7zkw6md\">here</a></p><p><strong>JIRA</strong>: <a href=\"https://issues.apache.org/jira/browse/KAFKA-20728\">KAFKA-20728</a> </p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p>Named groups are how the JVM describes TLS key exchange schemes. APIs to use named groups have been added in Java 20.</p><p>Via <a href=\"https://openjdk.org/jeps/527\">JEP 527: Post-Quantum Hybrid Key Exchange for TLS 1.3</a>, new key exchange schemes resistant to quantum attacks, usually referred to as Post Quantum Cryptography (PQC), are being introduced. This JEP was initially delivered in Java 27. It's being backported by several implementations to earlier Java versions. Note that the <code>SSLParameters.setNamedGroups()</code> API is available from Java 20, but the PQC named groups themselves (e.g. <code>x25519_mlkem768</code>) require Java 27 or a vendor backport that includes JEP 527.</p><p>Due to threats like &quot;<a href=\"https://en.wikipedia.org/wiki/Harvest_now,_decrypt_later\">harvest now, decrypt later</a>&quot;, many organizations are now actively considering PQC TLS. It is also mandated by several governments and industries such as finance, healthcare and defense.</p><h1>Public Interfaces</h1><p>All communication channels that are encrypted via TLS need to support PQC. This includes:</p><ul><li data-uuid=\"d66a067b-db69-4f4e-8889-a6e8fa130a0c\">Client to broker/controller</li><li data-uuid=\"a4e32052-0883-44e7-b68d-3878e0e55e80\">Broker/controller to client</li><li data-uuid=\"5f3a69eb-e79d-4120-b218-df0420c7af3b\">Broker/controller to broker/controller</li><li data-uuid=\"c6a2b974-a5ae-44ae-ac80-46cd570f8a3b\">Connect workers accepting REST traffic</li><li data-uuid=\"c33a2306-3275-4a28-b01d-38a4d2c27fef\">Connect worker to Connect worker</li><li data-uuid=\"62e6bd79-5dde-4d66-bc6a-d24b758c4922\">OAuth token retrieval (client)</li><li data-uuid=\"2ac89215-1cb0-412c-88e6-c0f215160581\">OAuth JWKS retrieval (server)</li></ul><p>To cover all these scenarios, a single configuration can be used:<br />Name: ssl.named.groups<br />Type: List<br />Default: Empty, the default JVM named groups are used<br />Description: An ordered list of key exchange named groups to use for SSL connections, with the most preferred group first. The supported values depend on the SSL provider and Java runtime.</p><p>It can be set in clients, servers, Streams instances and Connect worker configurations. For example:<br /><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"ecea0234-7e61-42e9-a987-a211cba12b57\"><ac:plain-text-body><![CDATA[ssl.named.groups=x25519,x448]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p>On servers, it can also be set per listener, for example:<br /><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"481eec2f-3098-4c20-bc99-f8a1123b1a99\"><ac:plain-text-body><![CDATA[listener.name.internal.ssl.named.groups=x25519,x448]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p>For OAuth it must be set via <code>sasl.jaas.config</code> or a JAAS file, for example:<br /><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"8cbef59b-783e-484b-9214-0b7f9154a162\"><ac:plain-text-body><![CDATA[listener.name.sasl_ssl.oauthbearer.sasl.jaas.config=org.apache.kafka.common.security.oauthbearer.OAuthBearerLoginModule required \\\n      ssl.truststore.location=\"/path/to/truststore.jks\" \\\n      ssl.truststore.password=\"changeit\" \\\n      ssl.named.groups=\"x25519,x448\" ;]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p>If the configuration is set and the JVM does not support the named groups APIs, a <code>ConfigException</code> will be thrown at startup.<br />If the configuration is set to unknown named groups, the failure happens when the TLS connection is established. This is the same behavior as with <code>ssl.cipher.suites</code>.<br />If the configuration is set, like with <code>ssl.cipher.suites</code>, a TLS connection can only be established when the client and server share at least one named group.<br />The TLS version (set via ssl.protocol) gates what named groups are valid and automatically drops entries not compatible (like for ciphers). </p><h1>Proposed Changes</h1><p>The named groups APIs are only available in Java 20+. Because the Kafka modules still support Java 11 (clients) and Java 17 (servers), logic trying to set named groups will use reflection so it compiles with the currently supported Java versions.</p><h2>Clients/Servers</h2><p>The <code>DefaultSslEngineFactory</code> class handles the TLS logic for clients and brokers. If <code>ssl.named.groups</code> is set, the <code>SSLParameters.setNamedGroups()</code> method will be called via reflection.</p><h2>OAuth</h2><p>The OAuth/OIDC implementation makes two types of outbound HTTPS connections to the identity provider:</p><ul><li data-uuid=\"d52eb8a2-958e-4279-9d45-7fee09189f57\">Token retrieval (client-side): <code>OAuthBearerLoginCallbackHandler</code> uses <code>HttpJwtRetriever</code> to fetch JWT access tokens from the token endpoint. Every Kafka client (producer, consumer, admin) and broker (for inter-broker OAuth) makes this call on each token refresh.</li><li data-uuid=\"a947a764-9092-4075-9a1f-653f7a910583\">JWKS key retrieval (broker-side): <code>OAuthBearerValidatorCallbackHandler</code> uses <code>VerificationKeyResolverFactory</code> to periodically fetch the identity provider's public keys from the JWKS endpoint, which are used to verify JWT signatures.</li></ul><p>The <code>JaasOptionsUtils.createSSLSocketFactory()</code> method will be updated to wrap the returned <code>SSLSocketFactory</code> so that <code>SSLParameters</code> (including named groups, cipher suites, and enabled protocols) are applied to each socket after creation, mirroring what <code>DefaultSslEngineFactory</code> does for clients and servers.</p><h2>Connect REST API</h2><p>Connect uses Jetty to expose its REST API for users and for worker-to-worker communications.</p><ul><li data-uuid=\"55b794eb-700d-46d0-af26-7e22b716b047\">Server-side: This handles REST API traffic from users and other Connect workers.</li><li data-uuid=\"9a7b25fd-157d-418b-931a-aa1b74cbe213\">Client-side: This is used to forward requests to other Connect workers.</li></ul><p>Both paths go through <code>SSLUtils.configureSslContextFactoryAlgorithms()</code>, which currently configures protocols, cipher suites, SSL provider, and algorithm settings. It will be updated to also set named groups if the configuration is set.</p><h1>Compatibility, Deprecation, and Migration Plan</h1><ul><li data-uuid=\"95dc41e1-42a2-4464-a1e6-c086cf4e798e\">The <code>ssl.named.groups</code> configuration is new and optional. When not set, the JVM's default named groups are used so existing behavior is unchanged.</li><li data-uuid=\"04159614-8ad0-4907-a73f-97accfd735d0\">The <code>SSLParameters.setNamedGroups()</code> API is required for this feature. The implementation uses reflection so it compiles with older Java versions. If <code>ssl.named.groups</code> is set when the Java runtime lacks the SSLParameters.setNamedGroups() then a <code>ConfigException</code> is thrown with a clear error message at startup.</li><li data-uuid=\"06b1cba3-9122-4754-9295-e31d7e36fbb9\">The <code>ssl.named.groups</code> configuration is not dynamically reconfigurable. Changing it requires a restart. A phased PQC rollout can be achieved via rolling restarts across the cluster.</li><li data-uuid=\"85280eb1-89f3-4cae-8413-f63d04599094\">Since Java 8, users can set the <code>jdk.tls.namedGroups</code> system property to set named groups at the JVM level. The table below details the interaction between the system property and the new configuration:<table class=\"wrapped\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th scope=\"col\">ssl.named.groups</th><th scope=\"col\">jdk.tls.namedGroups</th><th scope=\"col\">Behavior</th></tr><tr><td><p>not set</p></td><td>not set</td><td>JVM built-in defaults</td></tr><tr><td>not set</td><td>set</td><td>System property applies</td></tr><tr><td>set</td><td>not set</td><td>Kafka config applies</td></tr><tr><td>set</td><td>set</td><td>Kafka config takes precedence:<br />If <code>ssl.named.groups</code> is set all connections use the specified named groups.<br />If only <code>listener.name.internal.ssl.named.groups</code> is set, the <code>internal</code> listener uses the specified named groups. If there are other listeners, they use the system property if it's set, otherwise the JVM built-in defaults.</td></tr></tbody></table>Effectively the precedence chain is:<br />  1. listener.name.&lt;name&gt;.ssl.named.groups (per-listener override when available)<br />  2. ssl.named.groups (global Kafka config)<br />  3. jdk.tls.namedGroups (JVM system property)<br />  4. JVM built-in defaults<br /><br />The behavior is consistent with how the cipher suites work (via <code>ssl.cipher.suites</code> and <code>jdk.tls.client.cipherSuites</code>).</li></ul><h1>Test Plan</h1><ul><li data-uuid=\"a33ca41f-83ea-4800-9a5a-7223c91351c7\">Unit tests covering the changes for all components.</li><li data-uuid=\"191a173f-a376-4b59-a71a-3e822e079086\">Integration tests verify end-to-end TLS connections with named groups configured for client-broker, inter-broker, and Connect REST scenarios. </li><li data-uuid=\"b1b41f6d-0587-4ca8-b138-a023fb7d6a2b\">These tests will be skipped when run on a JVM that does not support named groups. The CI already runs with Java 25, so this will be effectively tested.</li><li data-uuid=\"05a55d96-7e34-4e11-935c-002b50d92258\">Tests that exercise the error handling in case of lack of support for named groups will run in the CI with Java 17.</li></ul><h1>Rejected Alternatives</h1><ul><li data-uuid=\"c0615fb7-ba2b-4a82-8698-25aaed9e9adb\"><strong>Rely on the JVM jdk.tls.namedGroups system property</strong>: This property applies to the whole JVM, so it prevents using different named groups for different components/listeners.</li><li data-uuid=\"3ccb3930-a4bd-4cae-b5fb-4b807086285a\"><strong>Distinguish between null and empty for ssl.named.groups</strong>: This only enables very niche scenarios (for example resetting named groups for a specific listener). I favored aligning the behavior with the ssl.cipher.suites configuration.</li></ul><p><br /></p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/451974516?status=historical&version=9"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1367
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=451980206",
+    "edit": "/pages/resumedraft.action?draftId=451980206&draftShareId=938586e9-17d9-43a4-bddb-dfd0e132935a",
+    "tinyui": "/x/rqvwGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/451974516?status=historical&version=9"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/451974516/child?parentVersion=9",
+    "restrictions": "/rest/api/content/451974516/restriction/byOperation",
+    "history": "/rest/api/content/451974516/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/451974516/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/451974516/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "451974516",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1376: Support setting TLS named groups",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "mickael.maison",
+     "userKey": "8aa9808756417d2001570e322ca30383",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/65869643/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Mickael Maison",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa9808756417d2001570e322ca30383"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-15T15:48:59.000Z",
+    "message": "",
+    "number": 8,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451974516/version/8"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451974516?status=historical&version=8"
+    }
+   },
+   "position": 1367,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><h1>Status</h1><p><strong>Current state</strong>: Draft</p><p><strong>Discussion thread</strong>: TBD</p><p><strong>JIRA</strong>: <a href=\"https://issues.apache.org/jira/browse/KAFKA-20728\">KAFKA-20728</a> </p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p>Named groups are how the JVM describes TLS key exchange schemes. APIs to use named groups have been added in Java 20.</p><p>Via <a href=\"https://openjdk.org/jeps/527\">JEP 527: Post-Quantum Hybrid Key Exchange for TLS 1.3</a>, new key exchange schemes resistant to quantum attacks, usually referred to as Post Quantum Cryptography (PQC), are being introduced. This JEP was initially delivered in Java 27. It's being backported by several implementations to earlier Java versions. Note that the <code>SSLParameters.setNamedGroups()</code> API is available from Java 20, but the PQC named groups themselves (e.g. <code>x25519_mlkem768</code>) require Java 27 or a vendor backport that includes JEP 527.</p><p>Due to threats like &quot;<a href=\"https://en.wikipedia.org/wiki/Harvest_now,_decrypt_later\">harvest now, decrypt later</a>&quot;, many organizations are now actively considering PQC TLS. It is also mandated by several governments and industries such as finance, healthcare and defense.</p><h1>Public Interfaces</h1><p>All communication channels that are encrypted via TLS need to support PQC. This includes:</p><ul><li data-uuid=\"d66a067b-db69-4f4e-8889-a6e8fa130a0c\">Client to broker/controller</li><li data-uuid=\"a4e32052-0883-44e7-b68d-3878e0e55e80\">Broker/controller to client</li><li data-uuid=\"5f3a69eb-e79d-4120-b218-df0420c7af3b\">Broker/controller to broker/controller</li><li data-uuid=\"c6a2b974-a5ae-44ae-ac80-46cd570f8a3b\">Connect workers accepting REST traffic</li><li data-uuid=\"c33a2306-3275-4a28-b01d-38a4d2c27fef\">Connect worker to Connect worker</li><li data-uuid=\"62e6bd79-5dde-4d66-bc6a-d24b758c4922\">OAuth token retrieval (client)</li><li data-uuid=\"2ac89215-1cb0-412c-88e6-c0f215160581\">OAuth JWKS retrieval (server)</li></ul><p>To cover all these scenarios, a single configuration can be used:<br />Name: ssl.named.groups<br />Type: List<br />Default: Empty, the default JVM named groups are used<br />Description: An ordered list of key exchange named groups to use for SSL connections, with the most preferred group first. The supported values depend on the SSL provider and Java runtime.</p><p>It can be set in clients, servers, Streams instances and Connect worker configurations. For example:<br /><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"ecea0234-7e61-42e9-a987-a211cba12b57\"><ac:plain-text-body><![CDATA[ssl.named.groups=x25519,x448]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p>On servers, it can also be set per listener, for example:<br /><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"481eec2f-3098-4c20-bc99-f8a1123b1a99\"><ac:plain-text-body><![CDATA[listener.name.internal.ssl.named.groups=x25519,x448]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p>For OAuth it must be set via <code>sasl.jaas.config</code> or a JAAS file, for example:<br /><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"8cbef59b-783e-484b-9214-0b7f9154a162\"><ac:plain-text-body><![CDATA[listener.name.sasl_ssl.oauthbearer.sasl.jaas.config=org.apache.kafka.common.security.oauthbearer.OAuthBearerLoginModule required \\\n      ssl.truststore.location=\"/path/to/truststore.jks\" \\\n      ssl.truststore.password=\"changeit\" \\\n      ssl.named.groups=\"x25519,x448\" ;]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p>If the configuration is set and the JVM does not support the named groups APIs, a <code>ConfigException</code> will be thrown at startup.<br />If the configuration is set to unknown named groups, the failure happens when the TLS connection is established. This is the same behavior as with <code>ssl.cipher.suites</code>.<br />If the configuration is set, like with <code>ssl.cipher.suites</code>, a TLS connection can only be established when the client and server share at least one named group.<br />The TLS version (set via ssl.protocol) gates what named groups are valid and automatically drops entries not compatible (like for ciphers). </p><h1>Proposed Changes</h1><p>The named groups APIs are only available in Java 20+. Because the Kafka modules still support Java 11 (clients) and Java 17 (servers), logic trying to set named groups will use reflection so it compiles with the currently supported Java versions.</p><h2>Clients/Servers</h2><p>The <code>DefaultSslEngineFactory</code> class handles the TLS logic for clients and brokers. If <code>ssl.named.groups</code> is set, the <code>SSLParameters.setNamedGroups()</code> method will be called via reflection.</p><h2>OAuth</h2><p>The OAuth/OIDC implementation makes two types of outbound HTTPS connections to the identity provider:</p><ul><li data-uuid=\"d52eb8a2-958e-4279-9d45-7fee09189f57\">Token retrieval (client-side): <code>OAuthBearerLoginCallbackHandler</code> uses <code>HttpJwtRetriever</code> to fetch JWT access tokens from the token endpoint. Every Kafka client (producer, consumer, admin) and broker (for inter-broker OAuth) makes this call on each token refresh.</li><li data-uuid=\"a947a764-9092-4075-9a1f-653f7a910583\">JWKS key retrieval (broker-side): <code>OAuthBearerValidatorCallbackHandler</code> uses <code>VerificationKeyResolverFactory</code> to periodically fetch the identity provider's public keys from the JWKS endpoint, which are used to verify JWT signatures.</li></ul><p>The <code>JaasOptionsUtils.createSSLSocketFactory()</code> method will be updated to wrap the returned <code>SSLSocketFactory</code> so that <code>SSLParameters</code> (including named groups, cipher suites, and enabled protocols) are applied to each socket after creation, mirroring what <code>DefaultSslEngineFactory</code> does for clients and servers.</p><h2>Connect REST API</h2><p>Connect uses Jetty to expose its REST API for users and for worker-to-worker communications.</p><ul><li data-uuid=\"55b794eb-700d-46d0-af26-7e22b716b047\">Server-side: This handles REST API traffic from users and other Connect workers.</li><li data-uuid=\"9a7b25fd-157d-418b-931a-aa1b74cbe213\">Client-side: This is used to forward requests to other Connect workers.</li></ul><p>Both paths go through <code>SSLUtils.configureSslContextFactoryAlgorithms()</code>, which currently configures protocols, cipher suites, SSL provider, and algorithm settings. It will be updated to also set named groups if the configuration is set.</p><h1>Compatibility, Deprecation, and Migration Plan</h1><ul><li data-uuid=\"95dc41e1-42a2-4464-a1e6-c086cf4e798e\">The <code>ssl.named.groups</code> configuration is new and optional. When not set, the JVM's default named groups are used so existing behavior is unchanged.</li><li data-uuid=\"04159614-8ad0-4907-a73f-97accfd735d0\">The <code>SSLParameters.setNamedGroups()</code> API is required for this feature. The implementation uses reflection so it compiles with older Java versions. If <code>ssl.named.groups</code> is set when the Java runtime lacks the SSLParameters.setNamedGroups() then a <code>ConfigException</code> is thrown with a clear error message at startup.</li><li data-uuid=\"06b1cba3-9122-4754-9295-e31d7e36fbb9\">The <code>ssl.named.groups</code> configuration is not dynamically reconfigurable. Changing it requires a restart. A phased PQC rollout can be achieved via rolling restarts across the cluster.</li><li data-uuid=\"85280eb1-89f3-4cae-8413-f63d04599094\">Since Java 8, users can set the <code>jdk.tls.namedGroups</code> system property to set named groups at the JVM level. The table below details the interaction between the system property and the new configuration:<table class=\"wrapped\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th scope=\"col\">ssl.named.groups</th><th scope=\"col\">jdk.tls.namedGroups</th><th scope=\"col\">Behavior</th></tr><tr><td><p>not set</p></td><td>not set</td><td>JVM built-in defaults</td></tr><tr><td>not set</td><td>set</td><td>System property applies</td></tr><tr><td>set</td><td>not set</td><td>Kafka config applies</td></tr><tr><td>set</td><td>set</td><td>Kafka config takes precedence:<br />If <code>ssl.named.groups</code> is set all connections use the specified named groups.<br />If only <code>listener.name.internal.ssl.named.groups</code> is set, the <code>internal</code> listener uses the specified named groups. If there are other listeners, they use the system property if it's set, otherwise the JVM built-in defaults.</td></tr></tbody></table>Effectively the precedence chain is:<br />  1. listener.name.&lt;name&gt;.ssl.named.groups (per-listener override when available)<br />  2. ssl.named.groups (global Kafka config)<br />  3. jdk.tls.namedGroups (JVM system property)<br />  4. JVM built-in defaults<br /><br />The behavior is consistent with how the cipher suites work (via <code>ssl.cipher.suites</code> and <code>jdk.tls.client.cipherSuites</code>).</li></ul><h1>Test Plan</h1><ul><li data-uuid=\"a33ca41f-83ea-4800-9a5a-7223c91351c7\">Unit tests covering the changes for all components.</li><li data-uuid=\"191a173f-a376-4b59-a71a-3e822e079086\">Integration tests verify end-to-end TLS connections with named groups configured for client-broker, inter-broker, and Connect REST scenarios. </li><li data-uuid=\"b1b41f6d-0587-4ca8-b138-a023fb7d6a2b\">These tests will be skipped when run on a JVM that does not support named groups. The CI already runs with Java 25, so this will be effectively tested.</li><li data-uuid=\"05a55d96-7e34-4e11-935c-002b50d92258\">Tests that exercise the error handling in case of lack of support for named groups will run in the CI with Java 17.</li></ul><h1>Rejected Alternatives</h1><ul><li data-uuid=\"c0615fb7-ba2b-4a82-8698-25aaed9e9adb\"><strong>Rely on the JVM jdk.tls.namedGroups system property</strong>: This property applies to the whole JVM, so it prevents using different named groups for different components/listeners.</li><li data-uuid=\"3ccb3930-a4bd-4cae-b5fb-4b807086285a\"><strong>Distinguish between null and empty for ssl.named.groups</strong>: This only enables very niche scenarios (for example resetting named groups for a specific listener). I favored aligning the behavior with the ssl.cipher.suites configuration.</li></ul><p><br /></p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/451974516?status=historical&version=8"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1367
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=451980205",
+    "edit": "/pages/resumedraft.action?draftId=451980205&draftShareId=938586e9-17d9-43a4-bddb-dfd0e132935a",
+    "tinyui": "/x/ravwGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/451974516?status=historical&version=8"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/451974516/child?parentVersion=8",
+    "restrictions": "/rest/api/content/451974516/restriction/byOperation",
+    "history": "/rest/api/content/451974516/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/451974516/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/451974516/restriction/relevantViewRestrictions"
+   }
+  }
+ ],
+ "comments": {
+  "results": [],
+  "start": 0,
+  "limit": 200,
+  "size": 0,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/api/content/451974516/child/comment?expand=body.storage%2Cversion%2Cancestors&depth=all",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ }
+}

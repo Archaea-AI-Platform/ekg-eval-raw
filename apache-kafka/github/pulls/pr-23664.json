@@ -1,0 +1,1586 @@
+{
+ "pull": {
+  "url": "https://api.github.com/repos/apache/kafka/pulls/23664",
+  "id": 4704938276,
+  "node_id": "PR_kwDOACG9q88AAAABGG-pJA",
+  "html_url": "https://github.com/apache/kafka/pull/23664",
+  "diff_url": "https://github.com/apache/kafka/pull/23664.diff",
+  "patch_url": "https://github.com/apache/kafka/pull/23664.patch",
+  "issue_url": "https://api.github.com/repos/apache/kafka/issues/23664",
+  "commits_url": "https://api.github.com/repos/apache/kafka/pulls/23664/commits",
+  "review_comments_url": "https://api.github.com/repos/apache/kafka/pulls/23664/comments",
+  "review_comment_url": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}",
+  "comments_url": "https://api.github.com/repos/apache/kafka/issues/23664/comments",
+  "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/fa49658cbbd31a90684cfcb5d4a41c20a556734c",
+  "number": 23664,
+  "state": "open",
+  "locked": false,
+  "title": "MINOR: Resilience improvements on leadership change",
+  "user": {
+   "login": "AndrewJSchofield",
+   "id": 13795597,
+   "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+   "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/AndrewJSchofield",
+   "html_url": "https://github.com/AndrewJSchofield",
+   "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+   "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+   "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+   "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+   "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+   "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "body": "`ShareConsumeRequestManager` has complicated behaviour when leadership\nor cluster  topology change. Additional testing and analysis has\nsuggested improvements  where the share consumer could get stuck in some\nsituations.\n\nThe specific fixes are:\n- Replace the cached leader from metadata when metadata holds a strictly\nnewer epoch, so a\n  refresh is useful even when the cached node is still in the cluster.\n- Forget cached leaders for a node when a request to it cannot be\ndelivered, so the next\n  poll re-seeds them from metadata and follows a leader change the dead\nnode cannot report.\n- Request a metadata refresh when a partition error names no new leader,\nwhen the topic is\n  unknown, or when metadata refuses a redirect the cache accepted,\ninstead of waiting for\n  the periodic refresh. Remove the dead top-level UNKNOWN_TOPIC_ID\nrefresh.\n- Fail acknowledgements queued for a node which no longer has a share\nsession, rather than\n  leaving them pending forever after the node disappears from the\ncluster.\n\nCo-Authored-By: Claude Fable 5.1 <claude@anthropic.com>\n",
+  "labels": [
+   {
+    "id": 851033232,
+    "node_id": "MDU6TGFiZWw4NTEwMzMyMzI=",
+    "url": "https://api.github.com/repos/apache/kafka/labels/consumer",
+    "name": "consumer",
+    "description": "",
+    "color": "bf6a03",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 7491388177,
+    "node_id": "LA_kwDOACG9q88AAAABvoWDEQ",
+    "url": "https://api.github.com/repos/apache/kafka/labels/clients",
+    "name": "clients",
+    "description": null,
+    "color": "ededed",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   }
+  ],
+  "milestone": null,
+  "active_lock_reason": null,
+  "created_at": "2026-10-01T14:19:31Z",
+  "updated_at": "2026-10-23T12:53:51Z",
+  "closed_at": null,
+  "merged_at": null,
+  "merge_commit_sha": "b8c7538618771c3daef0594e613eb024e0d4d8c8",
+  "assignee": null,
+  "assignees": [],
+  "requested_reviewers": [],
+  "requested_teams": [],
+  "head": {
+   "label": "AndrewJSchofield:leadership-change-resilience",
+   "ref": "leadership-change-resilience",
+   "repo": {
+    "id": 180165101,
+    "node_id": "MDEwOlJlcG9zaXRvcnkxODAxNjUxMDE=",
+    "name": "kafka",
+    "full_name": "AndrewJSchofield/kafka",
+    "owner": {
+     "login": "AndrewJSchofield",
+     "id": 13795597,
+     "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+     "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/AndrewJSchofield",
+     "html_url": "https://github.com/AndrewJSchofield",
+     "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+     "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+     "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+     "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+     "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+     "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": true,
+    "archived": false,
+    "disabled": false,
+    "description": "Mirror of Apache Kafka",
+    "homepage": null,
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [],
+    "forks_count": 0,
+    "forks": 0,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "watchers": 0,
+    "open_issues_count": 0,
+    "open_issues": 0,
+    "size": 285180,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-28T21:10:36Z",
+    "created_at": "2019-04-08T14:19:40Z",
+    "updated_at": "2026-10-28T21:09:53Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/AndrewJSchofield/kafka",
+    "html_url": "https://github.com/AndrewJSchofield/kafka",
+    "archive_url": "https://api.github.com/repos/AndrewJSchofield/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/AndrewJSchofield/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/AndrewJSchofield/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/AndrewJSchofield/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/AndrewJSchofield/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/AndrewJSchofield/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/AndrewJSchofield/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/AndrewJSchofield/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/AndrewJSchofield/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/AndrewJSchofield/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/AndrewJSchofield/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/AndrewJSchofield/kafka/downloads",
+    "events_url": "https://api.github.com/repos/AndrewJSchofield/kafka/events",
+    "forks_url": "https://api.github.com/repos/AndrewJSchofield/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/AndrewJSchofield/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/AndrewJSchofield/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/AndrewJSchofield/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/AndrewJSchofield/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/AndrewJSchofield/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/AndrewJSchofield/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/AndrewJSchofield/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/AndrewJSchofield/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/AndrewJSchofield/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/AndrewJSchofield/kafka/languages",
+    "merges_url": "https://api.github.com/repos/AndrewJSchofield/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/AndrewJSchofield/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/AndrewJSchofield/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/AndrewJSchofield/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/AndrewJSchofield/kafka/releases{/id}",
+    "ssh_url": "git@github.com:AndrewJSchofield/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/AndrewJSchofield/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/AndrewJSchofield/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/AndrewJSchofield/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/AndrewJSchofield/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/AndrewJSchofield/kafka/tags",
+    "teams_url": "https://api.github.com/repos/AndrewJSchofield/kafka/teams",
+    "trees_url": "https://api.github.com/repos/AndrewJSchofield/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/AndrewJSchofield/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/AndrewJSchofield/kafka/hooks",
+    "svn_url": "https://github.com/AndrewJSchofield/kafka"
+   },
+   "sha": "fa49658cbbd31a90684cfcb5d4a41c20a556734c",
+   "user": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "base": {
+   "label": "apache:trunk",
+   "ref": "trunk",
+   "repo": {
+    "id": 2211243,
+    "node_id": "MDEwOlJlcG9zaXRvcnkyMjExMjQz",
+    "name": "kafka",
+    "full_name": "apache/kafka",
+    "owner": {
+     "login": "apache",
+     "id": 47359,
+     "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+     "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/apache",
+     "html_url": "https://github.com/apache",
+     "followers_url": "https://api.github.com/users/apache/followers",
+     "following_url": "https://api.github.com/users/apache/following{/other_user}",
+     "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+     "organizations_url": "https://api.github.com/users/apache/orgs",
+     "repos_url": "https://api.github.com/users/apache/repos",
+     "events_url": "https://api.github.com/users/apache/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/apache/received_events",
+     "type": "Organization",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": false,
+    "archived": false,
+    "disabled": false,
+    "description": "Apache Kafka - A distributed event streaming platform",
+    "homepage": "https://kafka.apache.org/",
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [
+     "java",
+     "kafka",
+     "scala",
+     "streaming"
+    ],
+    "forks_count": 15637,
+    "forks": 15637,
+    "stargazers_count": 34153,
+    "watchers_count": 34153,
+    "watchers": 34153,
+    "open_issues_count": 674,
+    "open_issues": 674,
+    "size": 322164,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-29T11:37:21Z",
+    "created_at": "2011-08-15T18:06:16Z",
+    "updated_at": "2026-10-29T11:37:29Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/apache/kafka",
+    "html_url": "https://github.com/apache/kafka",
+    "archive_url": "https://api.github.com/repos/apache/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/apache/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/apache/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/apache/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/apache/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/apache/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/apache/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/apache/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/apache/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/apache/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/apache/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/apache/kafka/downloads",
+    "events_url": "https://api.github.com/repos/apache/kafka/events",
+    "forks_url": "https://api.github.com/repos/apache/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/apache/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/apache/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/apache/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/apache/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/apache/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/apache/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/apache/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/apache/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/apache/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/apache/kafka/languages",
+    "merges_url": "https://api.github.com/repos/apache/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/apache/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/apache/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/apache/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/apache/kafka/releases{/id}",
+    "ssh_url": "git@github.com:apache/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/apache/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/apache/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/apache/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/apache/kafka/tags",
+    "teams_url": "https://api.github.com/repos/apache/kafka/teams",
+    "trees_url": "https://api.github.com/repos/apache/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/apache/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/apache/kafka/hooks",
+    "svn_url": "https://github.com/apache/kafka"
+   },
+   "sha": "b860fd33a700d18f4203d1553f878bd66059e539",
+   "user": {
+    "login": "apache",
+    "id": 47359,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/apache",
+    "html_url": "https://github.com/apache",
+    "followers_url": "https://api.github.com/users/apache/followers",
+    "following_url": "https://api.github.com/users/apache/following{/other_user}",
+    "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+    "organizations_url": "https://api.github.com/users/apache/orgs",
+    "repos_url": "https://api.github.com/users/apache/repos",
+    "events_url": "https://api.github.com/users/apache/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/apache/received_events",
+    "type": "Organization",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "_links": {
+   "comments": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23664/comments"
+   },
+   "commits": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23664/commits"
+   },
+   "statuses": {
+    "href": "https://api.github.com/repos/apache/kafka/statuses/fa49658cbbd31a90684cfcb5d4a41c20a556734c"
+   },
+   "html": {
+    "href": "https://github.com/apache/kafka/pull/23664"
+   },
+   "issue": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23664"
+   },
+   "review_comments": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23664/comments"
+   },
+   "review_comment": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}"
+   },
+   "self": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23664"
+   }
+  },
+  "author_association": "MEMBER",
+  "auto_merge": null,
+  "draft": false,
+  "merged": false,
+  "mergeable": true,
+  "rebaseable": false,
+  "mergeable_state": "blocked",
+  "merged_by": null,
+  "comments": 0,
+  "review_comments": 0,
+  "maintainer_can_modify": true,
+  "commits": 8,
+  "additions": 833,
+  "deletions": 234,
+  "changed_files": 2
+ },
+ "reviews": [],
+ "review_comments": [],
+ "issue_comments": [],
+ "commits": [
+  {
+   "sha": "1b5e7143d8d83a874a9da651750305f353b92be6",
+   "node_id": "C_kwDOCr0Z7doAKDFiNWU3MTQzZDhkODNhODc0YTlkYTY1MTc1MDMwNWYzNTNiOTJiZTY",
+   "commit": {
+    "author": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-01T14:15:40Z"
+    },
+    "committer": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-01T14:15:40Z"
+    },
+    "message": "MINOR: Resilience improvements on leadership change",
+    "tree": {
+     "sha": "f2cf632ba89cec37c11a106a401e6cd4a93d4911",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/f2cf632ba89cec37c11a106a401e6cd4a93d4911"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/1b5e7143d8d83a874a9da651750305f353b92be6",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/1b5e7143d8d83a874a9da651750305f353b92be6",
+   "html_url": "https://github.com/apache/kafka/commit/1b5e7143d8d83a874a9da651750305f353b92be6",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/1b5e7143d8d83a874a9da651750305f353b92be6/comments",
+   "author": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "99b940733a9f6bc409457dba7108f08421d81e42",
+     "url": "https://api.github.com/repos/apache/kafka/commits/99b940733a9f6bc409457dba7108f08421d81e42",
+     "html_url": "https://github.com/apache/kafka/commit/99b940733a9f6bc409457dba7108f08421d81e42"
+    }
+   ]
+  },
+  {
+   "sha": "49609af2ba05cea81261cf1da21bbacf580808a6",
+   "node_id": "C_kwDOCr0Z7doAKDQ5NjA5YWYyYmEwNWNlYTgxMjYxY2YxZGEyMWJiYWNmNTgwODA4YTY",
+   "commit": {
+    "author": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-01T14:21:48Z"
+    },
+    "committer": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-01T14:21:48Z"
+    },
+    "message": "Remove unnecessary import",
+    "tree": {
+     "sha": "4a9cb130f9753e3584c12d9e79ad16a954a77933",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/4a9cb130f9753e3584c12d9e79ad16a954a77933"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/49609af2ba05cea81261cf1da21bbacf580808a6",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/49609af2ba05cea81261cf1da21bbacf580808a6",
+   "html_url": "https://github.com/apache/kafka/commit/49609af2ba05cea81261cf1da21bbacf580808a6",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/49609af2ba05cea81261cf1da21bbacf580808a6/comments",
+   "author": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "1b5e7143d8d83a874a9da651750305f353b92be6",
+     "url": "https://api.github.com/repos/apache/kafka/commits/1b5e7143d8d83a874a9da651750305f353b92be6",
+     "html_url": "https://github.com/apache/kafka/commit/1b5e7143d8d83a874a9da651750305f353b92be6"
+    }
+   ]
+  },
+  {
+   "sha": "b425d90bb446a65d6febe5c19f510008262d3928",
+   "node_id": "C_kwDOCr0Z7doAKGI0MjVkOTBiYjQ0NmE2NWQ2ZmViZTVjMTlmNTEwMDA4MjYyZDM5Mjg",
+   "commit": {
+    "author": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-06T15:13:44Z"
+    },
+    "committer": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-06T15:13:44Z"
+    },
+    "message": "Handle unresponsive leader better",
+    "tree": {
+     "sha": "6c50b25af976740f5d204c96eb7312efd6e3e20d",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/6c50b25af976740f5d204c96eb7312efd6e3e20d"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/b425d90bb446a65d6febe5c19f510008262d3928",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/b425d90bb446a65d6febe5c19f510008262d3928",
+   "html_url": "https://github.com/apache/kafka/commit/b425d90bb446a65d6febe5c19f510008262d3928",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/b425d90bb446a65d6febe5c19f510008262d3928/comments",
+   "author": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "49609af2ba05cea81261cf1da21bbacf580808a6",
+     "url": "https://api.github.com/repos/apache/kafka/commits/49609af2ba05cea81261cf1da21bbacf580808a6",
+     "html_url": "https://github.com/apache/kafka/commit/49609af2ba05cea81261cf1da21bbacf580808a6"
+    }
+   ]
+  },
+  {
+   "sha": "6d1ff22bff12f58b48dd0131f7033b90c9262e2e",
+   "node_id": "C_kwDOCr0Z7doAKDZkMWZmMjJiZmYxMmY1OGI0OGRkMDEzMWY3MDMzYjkwYzkyNjJlMmU",
+   "commit": {
+    "author": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-06T15:24:00Z"
+    },
+    "committer": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-06T15:24:00Z"
+    },
+    "message": "javadoc tidying",
+    "tree": {
+     "sha": "96f6137a7c2251efde93c8de1d55655ceab357cc",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/96f6137a7c2251efde93c8de1d55655ceab357cc"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/6d1ff22bff12f58b48dd0131f7033b90c9262e2e",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/6d1ff22bff12f58b48dd0131f7033b90c9262e2e",
+   "html_url": "https://github.com/apache/kafka/commit/6d1ff22bff12f58b48dd0131f7033b90c9262e2e",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/6d1ff22bff12f58b48dd0131f7033b90c9262e2e/comments",
+   "author": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "b425d90bb446a65d6febe5c19f510008262d3928",
+     "url": "https://api.github.com/repos/apache/kafka/commits/b425d90bb446a65d6febe5c19f510008262d3928",
+     "html_url": "https://github.com/apache/kafka/commit/b425d90bb446a65d6febe5c19f510008262d3928"
+    }
+   ]
+  },
+  {
+   "sha": "a96daa013f87052a5f03a0b020034014b59dc6e3",
+   "node_id": "C_kwDOCr0Z7doAKGE5NmRhYTAxM2Y4NzA1MmE1ZjAzYTBiMDIwMDM0MDE0YjU5ZGM2ZTM",
+   "commit": {
+    "author": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-06T18:00:58Z"
+    },
+    "committer": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-06T18:00:58Z"
+    },
+    "message": "Improve node disconnection handling",
+    "tree": {
+     "sha": "568dc20a9a8dc76a2ffadc6c482f173aff846d38",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/568dc20a9a8dc76a2ffadc6c482f173aff846d38"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/a96daa013f87052a5f03a0b020034014b59dc6e3",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/a96daa013f87052a5f03a0b020034014b59dc6e3",
+   "html_url": "https://github.com/apache/kafka/commit/a96daa013f87052a5f03a0b020034014b59dc6e3",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/a96daa013f87052a5f03a0b020034014b59dc6e3/comments",
+   "author": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "6d1ff22bff12f58b48dd0131f7033b90c9262e2e",
+     "url": "https://api.github.com/repos/apache/kafka/commits/6d1ff22bff12f58b48dd0131f7033b90c9262e2e",
+     "html_url": "https://github.com/apache/kafka/commit/6d1ff22bff12f58b48dd0131f7033b90c9262e2e"
+    }
+   ]
+  },
+  {
+   "sha": "82784ae58b5f8b18368651aca3f3dea8fb64e205",
+   "node_id": "C_kwDOCr0Z7doAKDgyNzg0YWU1OGI1ZjhiMTgzNjg2NTFhY2EzZjNkZWE4ZmI2NGUyMDU",
+   "commit": {
+    "author": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-06T19:12:28Z"
+    },
+    "committer": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-06T19:12:28Z"
+    },
+    "message": "Refresh metadata when redirect rejected",
+    "tree": {
+     "sha": "7ca392ec4e2c52b0e7b5fb2701541cf0122631b2",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/7ca392ec4e2c52b0e7b5fb2701541cf0122631b2"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/82784ae58b5f8b18368651aca3f3dea8fb64e205",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/82784ae58b5f8b18368651aca3f3dea8fb64e205",
+   "html_url": "https://github.com/apache/kafka/commit/82784ae58b5f8b18368651aca3f3dea8fb64e205",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/82784ae58b5f8b18368651aca3f3dea8fb64e205/comments",
+   "author": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "a96daa013f87052a5f03a0b020034014b59dc6e3",
+     "url": "https://api.github.com/repos/apache/kafka/commits/a96daa013f87052a5f03a0b020034014b59dc6e3",
+     "html_url": "https://github.com/apache/kafka/commit/a96daa013f87052a5f03a0b020034014b59dc6e3"
+    }
+   ]
+  },
+  {
+   "sha": "835ae9d1a362cfdd04a901ecab982b00f9d1a107",
+   "node_id": "C_kwDOCr0Z7doAKDgzNWFlOWQxYTM2MmNmZGQwNGE5MDFlY2FiOTgyYjAwZjlkMWExMDc",
+   "commit": {
+    "author": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-06T19:19:53Z"
+    },
+    "committer": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-06T19:19:53Z"
+    },
+    "message": "Fix typos",
+    "tree": {
+     "sha": "377ce9ec591162d3bd6c07d58b96b1fc7f0815b5",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/377ce9ec591162d3bd6c07d58b96b1fc7f0815b5"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/835ae9d1a362cfdd04a901ecab982b00f9d1a107",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/835ae9d1a362cfdd04a901ecab982b00f9d1a107",
+   "html_url": "https://github.com/apache/kafka/commit/835ae9d1a362cfdd04a901ecab982b00f9d1a107",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/835ae9d1a362cfdd04a901ecab982b00f9d1a107/comments",
+   "author": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "82784ae58b5f8b18368651aca3f3dea8fb64e205",
+     "url": "https://api.github.com/repos/apache/kafka/commits/82784ae58b5f8b18368651aca3f3dea8fb64e205",
+     "html_url": "https://github.com/apache/kafka/commit/82784ae58b5f8b18368651aca3f3dea8fb64e205"
+    }
+   ]
+  },
+  {
+   "sha": "fa49658cbbd31a90684cfcb5d4a41c20a556734c",
+   "node_id": "C_kwDOCr0Z7doAKGZhNDk2NThjYmJkMzFhOTA2ODRjZmNiNWQ0YTQxYzIwYTU1NjczNGM",
+   "commit": {
+    "author": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-23T12:53:12Z"
+    },
+    "committer": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-23T12:53:12Z"
+    },
+    "message": "Merge branch 'trunk' into leadership-change-resilience",
+    "tree": {
+     "sha": "1b68abd4e1061f3e972727d8f1b8c8c874616e42",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/1b68abd4e1061f3e972727d8f1b8c8c874616e42"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/fa49658cbbd31a90684cfcb5d4a41c20a556734c",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/fa49658cbbd31a90684cfcb5d4a41c20a556734c",
+   "html_url": "https://github.com/apache/kafka/commit/fa49658cbbd31a90684cfcb5d4a41c20a556734c",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/fa49658cbbd31a90684cfcb5d4a41c20a556734c/comments",
+   "author": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "835ae9d1a362cfdd04a901ecab982b00f9d1a107",
+     "url": "https://api.github.com/repos/apache/kafka/commits/835ae9d1a362cfdd04a901ecab982b00f9d1a107",
+     "html_url": "https://github.com/apache/kafka/commit/835ae9d1a362cfdd04a901ecab982b00f9d1a107"
+    },
+    {
+     "sha": "b860fd33a700d18f4203d1553f878bd66059e539",
+     "url": "https://api.github.com/repos/apache/kafka/commits/b860fd33a700d18f4203d1553f878bd66059e539",
+     "html_url": "https://github.com/apache/kafka/commit/b860fd33a700d18f4203d1553f878bd66059e539"
+    }
+   ]
+  }
+ ],
+ "files": [
+  {
+   "sha": "3a327646e6e06544629846c1b6d61f885cf7dded",
+   "filename": "clients/src/main/java/org/apache/kafka/clients/consumer/internals/ShareConsumeRequestManager.java",
+   "status": "modified",
+   "additions": 132,
+   "deletions": 52,
+   "changes": 184,
+   "blob_url": "https://github.com/apache/kafka/blob/fa49658cbbd31a90684cfcb5d4a41c20a556734c/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fconsumer%2Finternals%2FShareConsumeRequestManager.java",
+   "raw_url": "https://github.com/apache/kafka/raw/fa49658cbbd31a90684cfcb5d4a41c20a556734c/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fconsumer%2Finternals%2FShareConsumeRequestManager.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fconsumer%2Finternals%2FShareConsumeRequestManager.java?ref=fa49658cbbd31a90684cfcb5d4a41c20a556734c",
+   "patch": "@@ -168,34 +168,7 @@ public PollResult poll(long currentTimeMs) {\n         // Iterate over the partitions to fetch, building a map from partition to leader node ID\n         Map<Node, ShareSessionHandler> handlerMap = new HashMap<>();\n         Cluster cluster = metadata.fetch();\n-        Map<String, Uuid> topicIds = metadata.topicIds();\n-        for (TopicPartition partition : subscriptions.fetchablePartitions()) {\n-            TopicIdPartition tip = shareSessionTopicIdMap.get(partition);\n-            if (tip == null) {\n-                Uuid topicId = topicIds.get(partition.topic());\n-                if (topicId == null) {\n-                    log.debug(\"Requesting metadata update for partition {} since topic ID is missing\", partition);\n-                    metadata.requestUpdate(false);\n-                    continue;\n-                }\n-\n-                tip = new TopicIdPartition(topicId, partition);\n-                shareSessionTopicIdMap.put(partition, tip);\n-            }\n-\n-            LeaderIdAndEpoch leader = shareSessionLeaderMap.get(tip);\n-            if (leader == null || cluster.nodeById(leader.leaderId) == null) {\n-                Metadata.LeaderAndEpoch leaderOpt = metadata.currentLeader(partition);\n-                if (leaderOpt.leader.isEmpty() || cluster.nodeById(leaderOpt.leader.get().id()) == null) {\n-                    log.debug(\"Requesting metadata update for partition {} since current leader node is missing\", partition);\n-                    metadata.requestUpdate(false);\n-                    shareSessionLeaderMap.remove(tip);\n-                    continue;\n-                }\n-\n-                shareSessionLeaderMap.put(tip, new LeaderIdAndEpoch(leaderOpt.leader.get().id(), leaderOpt.epoch.orElse(-1)));\n-            }\n-        }\n+        resolveShareSessionLeaders(cluster);\n \n         Set<Integer> missingNodes = new HashSet<>();\n         for (TopicPartition partition : subscriptions.fetchablePartitions()) {\n@@ -310,13 +283,59 @@ public PollResult poll(long currentTimeMs) {\n             removeSessionHandlersForMissingNodes(missingNodes);\n         }\n \n+        // Fail any acknowledgements which are queued for nodes without a share session, since they can never be sent.\n+        failAcknowledgementsForNodesWithoutSession();\n+\n         return new PollResult(requests);\n     }\n \n     private boolean isShareAcquireModeRecordLimit() {\n         return shareFetchConfig.shareAcquireMode == ShareAcquireMode.RECORD_LIMIT;\n     }\n \n+    /**\n+     * Resolve the topic ID and leader for each partition to fetch, caching the information in {@link #shareSessionTopicIdMap}\n+     * and {@link #shareSessionLeaderMap}. The cached leader is normally kept up to date by redirects from the brokers\n+     * but it is replaced from the metadata if the cached node is no longer in the cluster, or if the metadata holds a\n+     * strictly newer leader epoch. A metadata update is requested if the topic ID or leader cannot be resolved.\n+     */\n+    private void resolveShareSessionLeaders(Cluster cluster) {\n+        Map<String, Uuid> topicIds = metadata.topicIds();\n+        for (TopicPartition partition : subscriptions.fetchablePartitions()) {\n+            TopicIdPartition tip = shareSessionTopicIdMap.get(partition);\n+            if (tip == null) {\n+                Uuid topicId = topicIds.get(partition.topic());\n+                if (topicId == null) {\n+                    log.debug(\"Requesting metadata update for partition {} since topic ID is missing\", partition);\n+                    metadata.requestUpdate(false);\n+                    continue;\n+                }\n+\n+                tip = new TopicIdPartition(topicId, partition);\n+                shareSessionTopicIdMap.put(partition, tip);\n+            }\n+\n+            LeaderIdAndEpoch leader = shareSessionLeaderMap.get(tip);\n+            Metadata.LeaderAndEpoch metadataLeader = metadata.currentLeader(partition);\n+            if (leader == null || cluster.nodeById(leader.leaderId) == null) {\n+                if (metadataLeader.leader.isEmpty()) {\n+                    log.debug(\"Requesting metadata update for partition {} since current leader node is missing\", partition);\n+                    metadata.requestUpdate(false);\n+                    shareSessionLeaderMap.remove(tip);\n+                    continue;\n+                }\n+\n+                shareSessionLeaderMap.put(tip, new LeaderIdAndEpoch(metadataLeader.leader.get().id(), metadataLeader.epoch.orElse(-1)));\n+            } else if (metadataLeader.leader.isPresent() && metadataLeader.epoch.isPresent() && metadataLeader.epoch.get() > leader.epoch) {\n+                // The metadata has a newer leader epoch than the cached leader, so the cached leader is stale.\n+                // This happens when the leader changes while the cached leader is unreachable and so cannot redirect.\n+                log.debug(\"Updating leader for partition {} from {} to node {} with epoch {} from newer metadata\",\n+                    partition, leader.leaderId, metadataLeader.leader.get().id(), metadataLeader.epoch.get());\n+                shareSessionLeaderMap.put(tip, new LeaderIdAndEpoch(metadataLeader.leader.get().id(), metadataLeader.epoch.get()));\n+            }\n+        }\n+    }\n+\n     /**\n      * Add acknowledgements for a topic-partition to the node's in-flight acknowledgements.\n      * If we cannot add acknowledgements, they are completed with {@link Errors#NETWORK_EXCEPTION} exception.\n@@ -445,6 +464,30 @@ private void removeSessionHandlersForMissingNodes(Set<Integer> missingNodes) {\n         });\n     }\n \n+    /**\n+     * Fail acknowledgements which are waiting to be piggybacked to a node which has no share session handler.\n+     * This happens when records fetched from a node are still buffered when the node disappears from the cluster\n+     * metadata and its session handler is removed, and the application acknowledges those records. Without a\n+     * share session, the acknowledgements cannot be sent and should be failed rather than left pending.\n+     */\n+    private void failAcknowledgementsForNodesWithoutSession() {\n+        Iterator<Map.Entry<Integer, Map<TopicIdPartition, Acknowledgements>>> iterator = fetchAcknowledgementsToSend.entrySet().iterator();\n+        while (iterator.hasNext()) {\n+            Map.Entry<Integer, Map<TopicIdPartition, Acknowledgements>> entry = iterator.next();\n+            int nodeId = entry.getKey();\n+            if (sessionHandlers.containsKey(nodeId)) {\n+                continue;\n+            }\n+\n+            entry.getValue().forEach((tip, acks) -> {\n+                log.debug(\"No share session handler for node {}, failing acknowledgements for partition {}\", nodeId, tip);\n+                acks.complete(acknowledgementsCannotBeSentError(nodeId, tip).exception());\n+                maybeSendShareAcknowledgementEvent(Map.of(tip, acks), true, Optional.empty());\n+            });\n+            iterator.remove();\n+        }\n+    }\n+\n     public void fetch(Map<TopicIdPartition, NodeAcknowledgements> acknowledgementsMap) {\n         if (!fetchMoreRecords) {\n             log.debug(\"Fetch more data\");\n@@ -921,9 +964,6 @@ private void handleShareFetchSuccess(Node fetchTarget,\n             final short requestVersion = resp.requestHeader().apiVersion();\n \n             if (!handler.handleResponse(response, requestVersion)) {\n-                if (response.error() == Errors.UNKNOWN_TOPIC_ID) {\n-                    metadata.requestUpdate(false);\n-                }\n                 // Complete any in-flight acknowledgements with the error code from the response, unless the share session was lost,\n                 // in which case they are failed with NETWORK_EXCEPTION reflecting a loss of connectivity.\n                 final Errors ackError;\n@@ -986,16 +1026,18 @@ private void handleShareFetchSuccess(Node fetchTarget,\n                 if (partitionError == Errors.NOT_LEADER_OR_FOLLOWER || partitionError == Errors.FENCED_LEADER_EPOCH) {\n                     log.debug(\"For {}, received error {}, with leaderIdAndEpoch {} in ShareFetch\", tip, partitionError, partitionData.currentLeader());\n                     if (partitionData.currentLeader().leaderId() != -1 && partitionData.currentLeader().leaderEpoch() != -1) {\n-                        partitionsWithUpdatedLeaderInfo.put(tip.topicPartition(), new Metadata.LeaderIdAndEpoch(\n-                            Optional.of(partitionData.currentLeader().leaderId()), Optional.of(partitionData.currentLeader().leaderEpoch())));\n-\n-                        maybeUpdateLeaderCache(tip, partitionData.currentLeader().leaderId(), partitionData.currentLeader().leaderEpoch());\n+                        if (maybeUpdateLeaderCache(tip, partitionData.currentLeader().leaderId(), partitionData.currentLeader().leaderEpoch())) {\n+                            partitionsWithUpdatedLeaderInfo.put(tip.topicPartition(), new Metadata.LeaderIdAndEpoch(\n+                                Optional.of(partitionData.currentLeader().leaderId()), Optional.of(partitionData.currentLeader().leaderEpoch())));\n+                        }\n                     } else {\n                         shareSessionLeaderMap.remove(tip);\n+                        metadata.requestUpdate(false);\n                     }\n                 } else if (partitionError == Errors.UNKNOWN_TOPIC_OR_PARTITION || partitionError == Errors.UNKNOWN_TOPIC_ID) {\n                     shareSessionLeaderMap.remove(tip);\n                     shareSessionTopicIdMap.remove(tip.topicPartition());\n+                    metadata.requestUpdate(false);\n                 }\n \n                 completedFetches.add(\n@@ -1032,7 +1074,7 @@ private void handleShareFetchSuccess(Node fetchTarget,\n                     .map(e -> new Node(e.nodeId(), e.host(), e.port(), e.rack()))\n                     .filter(e -> !e.equals(Node.noNode()))\n                     .collect(Collectors.toList());\n-                metadata.updatePartitionLeadership(partitionsWithUpdatedLeaderInfo, leaderNodes);\n+                updatePartitionLeadership(partitionsWithUpdatedLeaderInfo, leaderNodes);\n             }\n         } finally {\n             log.debug(\"Removing pending request for node {} - success\", fetchTarget.id());\n@@ -1054,6 +1096,7 @@ private void handleShareFetchFailure(Node fetchTarget,\n             if (handler != null) {\n                 handler.handleError(error);\n             }\n+            forgetLeadersOnNode(fetchTarget.id());\n \n             requestData.topics().forEach(topic -> topic.partitions().forEach(partition -> {\n                 TopicIdPartition tip = lookupTopicId(topic.topicId(), partition.partitionIndex());\n@@ -1163,7 +1206,7 @@ private void handleShareAcknowledgeSuccess(Node fetchTarget,\n                     .map(e -> new Node(e.nodeId(), e.host(), e.port(), e.rack()))\n                     .filter(e -> !e.equals(Node.noNode()))\n                     .collect(Collectors.toList());\n-                metadata.updatePartitionLeadership(partitionsWithUpdatedLeaderInfo, leaderNodes);\n+                updatePartitionLeadership(partitionsWithUpdatedLeaderInfo, leaderNodes);\n             }\n \n         } finally {\n@@ -1185,6 +1228,7 @@ private void handleShareAcknowledgeFailure(Node fetchTarget,\n         try {\n             log.debug(\"Completed ShareAcknowledge request from node {} unsuccessfully {}\", fetchTarget.id(), Errors.forException(error));\n             acknowledgeRequestState.sessionHandler().handleError(error);\n+            forgetLeadersOnNode(fetchTarget.id());\n             acknowledgeRequestState.onFailedAttempt(responseCompletionTimeMs);\n \n             requestData.topics().forEach(topic -> topic.partitions().forEach(partition -> {\n@@ -1224,9 +1268,11 @@ private void handlePartitionError(ShareAcknowledgeResponseData.PartitionData par\n                 // will have been released. Instead, these records will be re-delivered once they get timed out on the broker.\n                 // If the topic or partition has been deleted, we do not retry the failed acknowledgements.\n                 updateLeaderInfoMap(partitionData, partitionsWithUpdatedLeaderInfo, partitionError, tip);\n+                metadata.requestUpdate(false);\n             } else if (partitionError == Errors.UNKNOWN_TOPIC_OR_PARTITION || partitionError == Errors.UNKNOWN_TOPIC_ID) {\n                 shareSessionLeaderMap.remove(tip);\n                 shareSessionTopicIdMap.remove(tip.topicPartition());\n+                metadata.requestUpdate(false);\n             } else if (partitionError.exception() instanceof RetriableException) {\n                 retry = true;\n             }\n@@ -1259,35 +1305,69 @@ private void processRetryLogic(AcknowledgeRequestState acknowledgeRequestState,\n         }\n     }\n \n+    /**\n+     * Forget the cached leader of every share partition routed to a node which a request could not be delivered to.\n+     * The share session on that node has been lost. The next poll seeds those partitions from the cluster metadata again,\n+     * so a leadership change which coincides with the failure is picked up as soon as the metadata reflects it.\n+     */\n+    private void forgetLeadersOnNode(int nodeId) {\n+        shareSessionLeaderMap.values().removeIf(leader -> leader.leaderId == nodeId);\n+    }\n+\n     private void updateLeaderInfoMap(ShareAcknowledgeResponseData.PartitionData partitionData,\n-                                  Map<TopicPartition, Metadata.LeaderIdAndEpoch> partitionsWithUpdatedLeaderInfo,\n-                                  Errors partitionError,\n-                                  TopicIdPartition tip) {\n+                                     Map<TopicPartition, Metadata.LeaderIdAndEpoch> partitionsWithUpdatedLeaderInfo,\n+                                     Errors partitionError,\n+                                     TopicIdPartition tip) {\n \n         log.debug(\"For {}, received error {}, with leaderIdAndEpoch {} in ShareAcknowledge\", tip, partitionError, partitionData.currentLeader());\n         if (partitionData.currentLeader().leaderId() != -1 && partitionData.currentLeader().leaderEpoch() != -1) {\n-            partitionsWithUpdatedLeaderInfo.put(tip.topicPartition(),\n-                new Metadata.LeaderIdAndEpoch(\n-                    Optional.of(partitionData.currentLeader().leaderId()),\n-                    Optional.of(partitionData.currentLeader().leaderEpoch())\n-                ));\n-\n-            maybeUpdateLeaderCache(tip, partitionData.currentLeader().leaderId(), partitionData.currentLeader().leaderEpoch());\n+            if (maybeUpdateLeaderCache(tip, partitionData.currentLeader().leaderId(), partitionData.currentLeader().leaderEpoch())) {\n+                partitionsWithUpdatedLeaderInfo.put(tip.topicPartition(),\n+                    new Metadata.LeaderIdAndEpoch(\n+                        Optional.of(partitionData.currentLeader().leaderId()),\n+                        Optional.of(partitionData.currentLeader().leaderEpoch())\n+                    ));\n+            }\n         } else {\n             shareSessionLeaderMap.remove(tip);\n         }\n     }\n \n     /**\n-     * Update the cache leader for a partition in a share session, only if the new leader epoch is newer than the\n-     * currently cached epoch. This mirrors the rules applied by {@link Metadata#updateLastSeenEpochIfNewer(TopicPartition, int)}.\n-     * A stale entry is never overwritten by an older epoch.\n+     * Pass leadership information from broker redirects to the cluster metadata. The metadata only applies a redirect\n+     * whose leader epoch is strictly newer than the one it holds and whose leader it knows, so it can refuse a\n+     * redirect which the share session leader cache has already accepted. When that happens, the cache and the\n+     * metadata disagree about the leader, and the metadata may not even know the new leader's endpoint. A metadata\n+     * refresh is requested so that the two converge, rather than waiting for the periodic refresh.\n      */\n-    private void maybeUpdateLeaderCache(TopicIdPartition tip, int leaderId, int leaderEpoch) {\n+    private void updatePartitionLeadership(Map<TopicPartition, Metadata.LeaderIdAndEpoch> partitionLeaders, List<Node> leaderNodes) {\n+        Set<TopicPartition> updatedPartitions = metadata.updatePartitionLeadership(partitionLeaders, leaderNodes);\n+        if (updatedPartitions.size() < partitionLeaders.size()) {\n+            partitionLeaders.keySet().stream()\n+                .filter(tp -> !updatedPartitions.contains(tp))\n+                .forEach(tp -> log.debug(\"Requesting metadata update for partition {} since the metadata did not apply the leader {} from the broker\",\n+                    tp, partitionLeaders.get(tp)));\n+            metadata.requestUpdate(false);\n+        }\n+    }\n+\n+    /**\n+     * Update the cache leader for a partition in a share session, only if the new leader epoch is at least as large as the\n+     * currently cached epoch. A stale entry is never overwritten by an older epoch. This mirrors the rules applied by\n+     * {@code Metadata#updateLatestMetadata(MetadataResponse.PartitionMetadata, boolean, Uuid, Uuid)}.\n+     * <p>\n+     * The broker has explicitly told us it is no longer the leader, so we trust the redirect even if the epoch did\n+     * not advance. Without this, the share consumer would keep sending ShareFetch requests to the old leader indefinitely.\n+     *\n+     * @return True if the cached leader was updated.\n+     */\n+    private boolean maybeUpdateLeaderCache(TopicIdPartition tip, int leaderId, int leaderEpoch) {\n         LeaderIdAndEpoch oldLeader = shareSessionLeaderMap.get(tip);\n-        if ((oldLeader == null) || (leaderEpoch > oldLeader.epoch)) {\n+        if ((oldLeader == null) || (leaderEpoch >= oldLeader.epoch)) {\n             shareSessionLeaderMap.put(tip, new LeaderIdAndEpoch(leaderId, leaderEpoch));\n+            return true;\n         }\n+        return false;\n     }\n \n     /**"
+  },
+  {
+   "sha": "4d14a00c562c7a9d6c0e9bb4bbd69b757c585429",
+   "filename": "clients/src/test/java/org/apache/kafka/clients/consumer/internals/ShareConsumeRequestManagerTest.java",
+   "status": "modified",
+   "additions": 701,
+   "deletions": 182,
+   "changes": 883,
+   "blob_url": "https://github.com/apache/kafka/blob/fa49658cbbd31a90684cfcb5d4a41c20a556734c/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fconsumer%2Finternals%2FShareConsumeRequestManagerTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/fa49658cbbd31a90684cfcb5d4a41c20a556734c/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fconsumer%2Finternals%2FShareConsumeRequestManagerTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fconsumer%2Finternals%2FShareConsumeRequestManagerTest.java?ref=fa49658cbbd31a90684cfcb5d4a41c20a556734c",
+   "patch": "@@ -140,18 +140,14 @@ public class ShareConsumeRequestManagerTest {\n     private final String groupId = \"test-group\";\n     private final Uuid topicId = Uuid.randomUuid();\n     private final Uuid topicId2 = Uuid.randomUuid();\n-    private final Map<String, Uuid> topicIds = new HashMap<>() {\n-        {\n-            put(topicName, topicId);\n-            put(topicName2, topicId2);\n-        }\n-    };\n-    private final Map<String, Integer> topicPartitionCounts = new HashMap<>() {\n-        {\n-            put(topicName, 2);\n-            put(topicName2, 1);\n-        }\n-    };\n+    private final Map<String, Uuid> topicIds = Map.of(\n+        topicName, topicId,\n+        topicName2, topicId2\n+    );\n+    private final Map<String, Integer> topicPartitionCounts = Map.of(\n+        topicName, 2,\n+        topicName2, 1\n+    );\n     private final TopicPartition tp0 = new TopicPartition(topicName, 0);\n     private final TopicIdPartition tip0 = new TopicIdPartition(topicId, tp0);\n     private final TopicPartition tp1 = new TopicPartition(topicName, 1);\n@@ -214,7 +210,7 @@ private int sendFetches() {\n     }\n \n     @Test\n-    public void testFetchNormal() {\n+    public void testShareFetchNormal() {\n         buildRequestManager();\n \n         assignFromSubscribed(Set.of(tp0));\n@@ -228,7 +224,7 @@ public void testFetchNormal() {\n     }\n \n     @Test\n-    public void testFetchWithAcquiredRecords() {\n+    public void testShareFetchWithAcquiredRecords() {\n         buildRequestManager();\n \n         assignFromSubscribed(Set.of(tp0));\n@@ -304,7 +300,7 @@ public void testCommitSync() {\n \n         assertEquals(1, shareConsumeRequestManager.sendAcknowledgements());\n \n-        client.prepareResponse(fullAcknowledgeResponse(tip0, Errors.NONE));\n+        client.prepareResponse(fullShareAcknowledgeResponse(tip0, Errors.NONE));\n         networkClientDelegate.poll(time.timer(0));\n         assertTrue(shareConsumeRequestManager.hasCompletedFetches());\n \n@@ -327,7 +323,7 @@ public void testCommitAsync() {\n \n         assertEquals(1, shareConsumeRequestManager.sendAcknowledgements());\n \n-        client.prepareResponse(fullAcknowledgeResponse(tip0, Errors.NONE));\n+        client.prepareResponse(fullShareAcknowledgeResponse(tip0, Errors.NONE));\n         networkClientDelegate.poll(time.timer(0));\n         assertTrue(shareConsumeRequestManager.hasCompletedFetches());\n \n@@ -382,7 +378,7 @@ public void testServerDisconnectedOnShareAcknowledge() {\n         assertEquals(1, sendFetches());\n         assertFalse(shareConsumeRequestManager.hasCompletedFetches());\n \n-        client.prepareResponse(fullFetchResponse(tip0, records, acquiredRecords, Errors.NONE));\n+        client.prepareResponse(fullShareFetchResponse(tip0, records, acquiredRecords, Errors.NONE));\n         networkClientDelegate.poll(time.timer(0));\n         assertTrue(shareConsumeRequestManager.hasCompletedFetches());\n     }\n@@ -410,7 +406,7 @@ public void testAcknowledgeOnClose() {\n \n         assertEquals(1, shareConsumeRequestManager.sendAcknowledgements());\n \n-        client.prepareResponse(fullAcknowledgeResponse(tip0, Errors.NONE));\n+        client.prepareResponse(fullShareAcknowledgeResponse(tip0, Errors.NONE));\n         networkClientDelegate.poll(time.timer(0));\n         assertEquals(1, completedAcknowledgements.size());\n \n@@ -458,10 +454,10 @@ public void testAcknowledgeOnCloseWithPendingCommitAsync() {\n \n         assertEquals(1, shareConsumeRequestManager.sendAcknowledgements());\n \n-        client.prepareResponse(fullAcknowledgeResponse(tip0, Errors.NONE));\n+        client.prepareResponse(fullShareAcknowledgeResponse(tip0, Errors.NONE));\n         networkClientDelegate.poll(time.timer(0));\n \n-        client.prepareResponse(emptyAcknowledgeResponse());\n+        client.prepareResponse(emptyShareAcknowledgeResponse());\n         networkClientDelegate.poll(time.timer(0));\n         assertTrue(shareConsumeRequestManager.hasCompletedFetches());\n \n@@ -486,10 +482,10 @@ public void testAcknowledgeOnCloseWithPendingCommitSync() {\n \n         assertEquals(1, shareConsumeRequestManager.sendAcknowledgements());\n \n-        client.prepareResponse(fullAcknowledgeResponse(tip0, Errors.NONE));\n+        client.prepareResponse(fullShareAcknowledgeResponse(tip0, Errors.NONE));\n         networkClientDelegate.poll(time.timer(0));\n \n-        client.prepareResponse(emptyAcknowledgeResponse());\n+        client.prepareResponse(emptyShareAcknowledgeResponse());\n         networkClientDelegate.poll(time.timer(0));\n         assertTrue(shareConsumeRequestManager.hasCompletedFetches());\n \n@@ -598,7 +594,7 @@ public void testBatchingAcknowledgeRequestStates() {\n         assertEquals(0, shareConsumeRequestManager.requestStates(0).getAsyncRequest().getAcknowledgementsToSendCount(tip0));\n         assertEquals(6, shareConsumeRequestManager.requestStates(0).getAsyncRequest().getInFlightAcknowledgementsCount(tip0));\n \n-        client.prepareResponse(fullAcknowledgeResponse(tip0, Errors.NONE));\n+        client.prepareResponse(fullShareAcknowledgeResponse(tip0, Errors.NONE));\n         networkClientDelegate.poll(time.timer(0));\n \n         assertEquals(0, shareConsumeRequestManager.requestStates(0).getAsyncRequest().getAcknowledgementsToSendCount(tip0));\n@@ -631,7 +627,7 @@ public void testPendingCommitAsyncBeforeCommitSync() {\n \n         assertEquals(3, shareConsumeRequestManager.requestStates(0).getAsyncRequest().getInFlightAcknowledgementsCount(tip0));\n \n-        client.prepareResponse(fullAcknowledgeResponse(tip0, Errors.NONE));\n+        client.prepareResponse(fullShareAcknowledgeResponse(tip0, Errors.NONE));\n         networkClientDelegate.poll(time.timer(0));\n \n         assertEquals(0, shareConsumeRequestManager.requestStates(0).getAsyncRequest().getInFlightAcknowledgementsCount(tip0));\n@@ -643,7 +639,7 @@ public void testPendingCommitAsyncBeforeCommitSync() {\n         assertEquals(1, shareConsumeRequestManager.requestStates(0).getSyncRequestQueue().size());\n         assertEquals(3, shareConsumeRequestManager.requestStates(0).getSyncRequestQueue().peek().getInFlightAcknowledgementsCount(tip0));\n \n-        client.prepareResponse(fullAcknowledgeResponse(tip0, Errors.NONE));\n+        client.prepareResponse(fullShareAcknowledgeResponse(tip0, Errors.NONE));\n         networkClientDelegate.poll(time.timer(0));\n \n         assertEquals(0, shareConsumeRequestManager.requestStates(0).getSyncRequestQueue().peek().getInFlightAcknowledgementsCount(tip0));\n@@ -669,7 +665,7 @@ public void testRetryAcknowledgements() {\n         assertEquals(1, shareConsumeRequestManager.sendAcknowledgements());\n         assertEquals(6, shareConsumeRequestManager.requestStates(0).getSyncRequestQueue().peek().getInFlightAcknowledgementsCount(tip0));\n \n-        client.prepareResponse(fullAcknowledgeResponse(tip0, Errors.REQUEST_TIMED_OUT));\n+        client.prepareResponse(fullShareAcknowledgeResponse(tip0, Errors.REQUEST_TIMED_OUT));\n         networkClientDelegate.poll(time.timer(0));\n \n         assertEquals(6, shareConsumeRequestManager.requestStates(0).getSyncRequestQueue().peek().getIncompleteAcknowledgementsCount(tip0));\n@@ -682,7 +678,7 @@ public void testRetryAcknowledgements() {\n \n         assertEquals(6, shareConsumeRequestManager.requestStates(0).getSyncRequestQueue().peek().getInFlightAcknowledgementsCount(tip0));\n \n-        client.prepareResponse(fullAcknowledgeResponse(tip0, Errors.NONE));\n+        client.prepareResponse(fullShareAcknowledgeResponse(tip0, Errors.NONE));\n         networkClientDelegate.poll(time.timer(0));\n \n         assertEquals(0, shareConsumeRequestManager.requestStates(0).getSyncRequestQueue().peek().getInFlightAcknowledgementsCount(tip0));\n@@ -704,7 +700,7 @@ public void testFatalErrorsAcknowledgementResponse(Errors error) {\n                 calculateDeadlineMs(time.timer(defaultApiTimeoutMs)));\n \n         assertEquals(1, shareConsumeRequestManager.sendAcknowledgements());\n-        client.prepareResponse(fullAcknowledgeResponse(tip0, error));\n+        client.prepareResponse(fullShareAcknowledgeResponse(tip0, error));\n         networkClientDelegate.poll(time.timer(0));\n \n         // Assert these errors are not retried even if they are retriable. They are treated as fatal and a metadata update is triggered.\n@@ -734,7 +730,7 @@ public void testRetryAcknowledgementsMultipleCommitAsync() {\n         assertEquals(2, shareConsumeRequestManager.requestStates(0).getAsyncRequest().getInFlightAcknowledgementsCount(tip0));\n \n         // Response contains a retriable exception, so we retry.\n-        client.prepareResponse(fullAcknowledgeResponse(tip0, Errors.REQUEST_TIMED_OUT));\n+        client.prepareResponse(fullShareAcknowledgeResponse(tip0, Errors.REQUEST_TIMED_OUT));\n         networkClientDelegate.poll(time.timer(0));\n \n         Acknowledgements acknowledgements1 = getAcknowledgements(3, AcknowledgeType.ACCEPT, AcknowledgeType.REJECT);\n@@ -761,7 +757,7 @@ public void testRetryAcknowledgementsMultipleCommitAsync() {\n         assertEquals(1, shareConsumeRequestManager.sendAcknowledgements());\n         assertEquals(4, shareConsumeRequestManager.requestStates(0).getAsyncRequest().getInFlightAcknowledgementsCount(tip0));\n \n-        client.prepareResponse(fullAcknowledgeResponse(tip0, Errors.NONE));\n+        client.prepareResponse(fullShareAcknowledgeResponse(tip0, Errors.NONE));\n         networkClientDelegate.poll(time.timer(0));\n \n         assertEquals(0, shareConsumeRequestManager.requestStates(0).getAsyncRequest().getInFlightAcknowledgementsCount(tip0));\n@@ -787,7 +783,7 @@ public void testRetryAcknowledgementsMultipleCommitSync() {\n         assertEquals(1, shareConsumeRequestManager.sendAcknowledgements());\n \n         // Response contains a retriable exception.\n-        client.prepareResponse(fullAcknowledgeResponse(tip0, Errors.REQUEST_TIMED_OUT));\n+        client.prepareResponse(fullShareAcknowledgeResponse(tip0, Errors.REQUEST_TIMED_OUT));\n         networkClientDelegate.poll(time.timer(0));\n         assertEquals(2, shareConsumeRequestManager.requestStates(0).getSyncRequestQueue().peek().getIncompleteAcknowledgementsCount(tip0));\n \n@@ -806,7 +802,7 @@ public void testRetryAcknowledgementsMultipleCommitSync() {\n         completedAcknowledgements.clear();\n \n         // We get a successful response for the 2nd commitSync request.\n-        client.prepareResponse(fullAcknowledgeResponse(tip0, Errors.NONE));\n+        client.prepareResponse(fullShareAcknowledgeResponse(tip0, Errors.NONE));\n         networkClientDelegate.poll(time.timer(0));\n \n         assertEquals(1, completedAcknowledgements.size());\n@@ -840,7 +836,7 @@ public void testPiggybackAcknowledgementsInFlight() {\n         acknowledgements2.add(3L, AcknowledgeType.ACCEPT);\n         shareConsumeRequestManager.fetch(Map.of(tip0, new NodeAcknowledgements(0, acknowledgements2)));\n \n-        client.prepareResponse(fullFetchResponse(tip0, records, acquiredRecords, Errors.NONE));\n+        client.prepareResponse(fullShareFetchResponse(tip0, records, acquiredRecords, Errors.NONE));\n         networkClientDelegate.poll(time.timer(0));\n         assertTrue(shareConsumeRequestManager.hasCompletedFetches());\n \n@@ -853,7 +849,7 @@ public void testPiggybackAcknowledgementsInFlight() {\n     }\n \n     @Test\n-    public void testAcknowledgeErrorMessagePropagatedFromFetchResponse() {\n+    public void testAcknowledgeErrorMessagePropagatedFromShareFetchResponse() {\n         buildRequestManager();\n         shareConsumeRequestManager.setAcknowledgementCommitCallbackRegistered(true);\n \n@@ -869,7 +865,7 @@ public void testAcknowledgeErrorMessagePropagatedFromFetchResponse() {\n         assertFalse(shareConsumeRequestManager.hasCompletedFetches());\n \n         String acknowledgeErrorMessage = \"ack failure with broker context\";\n-        ShareFetchResponse response = fullFetchResponse(\n+        ShareFetchResponse response = fullShareFetchResponse(\n             tip0,\n             records,\n             acquiredRecords,\n@@ -919,7 +915,7 @@ public void testCommitAsyncWithSubscriptionChange() {\n \n         assertEquals(1, shareConsumeRequestManager.sendAcknowledgements());\n \n-        client.prepareResponse(fullAcknowledgeResponse(tip0, Errors.NONE));\n+        client.prepareResponse(fullShareAcknowledgeResponse(tip0, Errors.NONE));\n         networkClientDelegate.poll(time.timer(0));\n \n         assertEquals(3, completedAcknowledgements.get(0).get(tip0).size());\n@@ -928,7 +924,7 @@ public void testCommitAsyncWithSubscriptionChange() {\n         // We should send a fetch to the newly subscribed partition.\n         assertEquals(1, sendFetches());\n \n-        client.prepareResponse(fullFetchResponse(t2ip0, records, acquiredRecords, Errors.NONE));\n+        client.prepareResponse(fullShareFetchResponse(t2ip0, records, acquiredRecords, Errors.NONE));\n         networkClientDelegate.poll(time.timer(0));\n         assertTrue(shareConsumeRequestManager.hasCompletedFetches());\n     }\n@@ -955,7 +951,7 @@ public void testCommitSyncWithSubscriptionChange() {\n \n         assertEquals(1, shareConsumeRequestManager.sendAcknowledgements());\n \n-        client.prepareResponse(fullAcknowledgeResponse(tip0, Errors.NONE));\n+        client.prepareResponse(fullShareAcknowledgeResponse(tip0, Errors.NONE));\n         networkClientDelegate.poll(time.timer(0));\n \n         assertEquals(3, completedAcknowledgements.get(0).get(tip0).size());\n@@ -964,7 +960,7 @@ public void testCommitSyncWithSubscriptionChange() {\n         // We should send a fetch to the newly subscribed partition.\n         assertEquals(1, sendFetches());\n \n-        client.prepareResponse(fullFetchResponse(t2ip0, records, acquiredRecords, Errors.NONE));\n+        client.prepareResponse(fullShareFetchResponse(t2ip0, records, acquiredRecords, Errors.NONE));\n         networkClientDelegate.poll(time.timer(0));\n         assertTrue(shareConsumeRequestManager.hasCompletedFetches());\n     }\n@@ -1011,7 +1007,7 @@ public void testCommitWithRenewAcknowledgements(boolean commitSync) {\n         assertNotNull(shareConsumeRequestManager.sessionHandler(nodeId0));\n \n         // The broker responds to the renew acknowledgements and the records are reported to the application.\n-        client.prepareResponse(fullAcknowledgeResponse(tip0, Errors.NONE));\n+        client.prepareResponse(fullShareAcknowledgeResponse(tip0, Errors.NONE));\n         networkClientDelegate.poll(time.timer(0));\n         assertEquals(Map.of(tip0, acknowledgements), completedAcknowledgements.get(0));\n         assertEquals(Set.of(1L, 2L, 3L), renewedRecords);\n@@ -1046,7 +1042,7 @@ public void testCommitWithRenewAcknowledgements(boolean commitSync) {\n \n         ShareFetchRequest.Builder ackBuilder = (ShareFetchRequest.Builder) ackResult.unsentRequests.get(0).requestBuilder();\n         assertNotEquals(ShareRequestMetadata.FINAL_EPOCH, ackBuilder.data().shareSessionEpoch());\n-        client.prepareResponse(fullFetchResponse(tip0, MemoryRecords.EMPTY, emptyAcquiredRecords, Errors.NONE));\n+        client.prepareResponse(fullShareFetchResponse(tip0, MemoryRecords.EMPTY, emptyAcquiredRecords, Errors.NONE));\n         networkClientDelegate.poll(time.timer(0));\n \n         // The application consumes the fetch response corresponding to the piggybacked acknowledgements.\n@@ -1085,7 +1081,7 @@ public void testCloseWithSubscriptionChange() {\n \n         assertEquals(1, shareConsumeRequestManager.sendAcknowledgements());\n \n-        client.prepareResponse(fullAcknowledgeResponse(tip0, Errors.NONE));\n+        client.prepareResponse(fullShareAcknowledgeResponse(tip0, Errors.NONE));\n         networkClientDelegate.poll(time.timer(0));\n \n         assertEquals(3, completedAcknowledgements.get(0).get(tip0).size());\n@@ -1330,7 +1326,7 @@ public void testSecondFetchBeforeCollectClearsInflightRecords() {\n         MemoryRecords secondRecords = buildRecords(4L, 2, 4);\n         List<ShareFetchResponseData.AcquiredRecords> secondAcquiredRecords = ShareCompletedFetchTest.acquiredRecords(4L, 2);\n         assertEquals(1, sendFetches());\n-        client.prepareResponse(fullFetchResponse(tip0, secondRecords, secondAcquiredRecords, Errors.NONE));\n+        client.prepareResponse(fullShareFetchResponse(tip0, secondRecords, secondAcquiredRecords, Errors.NONE));\n         networkClientDelegate.poll(time.timer(0));\n \n         // Drain both completed fetches for tip0 in one collect() call.\n@@ -1355,15 +1351,15 @@ public void testEmptyResponseThenDataResponseBeforeCollectClearsInflightRecords(\n \n         // The first request returns no acquired records. The empty result is still placed in the fetch buffer.\n         assertEquals(1, sendFetches());\n-        client.prepareResponse(fullFetchResponse(tip0, MemoryRecords.EMPTY, emptyAcquiredRecords, Errors.NONE));\n+        client.prepareResponse(fullShareFetchResponse(tip0, MemoryRecords.EMPTY, emptyAcquiredRecords, Errors.NONE));\n         networkClientDelegate.poll(time.timer(0));\n         assertTrue(shareConsumeRequestManager.hasCompletedFetches());\n \n         // Because no records were acquired, the request manager polls the same node straight away, without the\n         // application having collected anything. The second response carries records and lands behind the empty\n         // completed fetch for the same partition.\n         assertEquals(1, shareConsumeRequestManager.sendAcknowledgements());\n-        client.prepareResponse(fullFetchResponse(tip0, records, acquiredRecords, Errors.NONE));\n+        client.prepareResponse(fullShareFetchResponse(tip0, records, acquiredRecords, Errors.NONE));\n         networkClientDelegate.poll(time.timer(0));\n \n         // Drive the application side the way poll() does in implicit mode: collect, acknowledge everything,\n@@ -1483,8 +1479,8 @@ public void testShareFetchAndCloseMultipleNodes() {\n         assertEquals(2, sendFetches());\n         assertFalse(shareConsumeRequestManager.hasCompletedFetches());\n \n-        client.prepareResponse(fullFetchResponse(tip0, records, acquiredRecords, Errors.NONE));\n-        client.prepareResponse(fullFetchResponse(tip1, records, acquiredRecords, Errors.NONE));\n+        client.prepareResponse(fullShareFetchResponse(tip0, records, acquiredRecords, Errors.NONE));\n+        client.prepareResponse(fullShareFetchResponse(tip1, records, acquiredRecords, Errors.NONE));\n         networkClientDelegate.poll(time.timer(0));\n         assertTrue(shareConsumeRequestManager.hasCompletedFetches());\n \n@@ -1498,8 +1494,8 @@ public void testShareFetchAndCloseMultipleNodes() {\n \n         assertEquals(2, shareConsumeRequestManager.sendAcknowledgements());\n \n-        client.prepareResponse(fullAcknowledgeResponse(tip0, Errors.NONE));\n-        client.prepareResponse(fullAcknowledgeResponse(tip1, Errors.NONE));\n+        client.prepareResponse(fullShareAcknowledgeResponse(tip0, Errors.NONE));\n+        client.prepareResponse(fullShareAcknowledgeResponse(tip1, Errors.NONE));\n         networkClientDelegate.poll(time.timer(0));\n \n         assertEquals(3, completedAcknowledgements.get(0).get(tip0).size());\n@@ -1543,7 +1539,7 @@ public void testRetryAcknowledgementsWithLeaderChange() {\n         assertEquals(6, shareConsumeRequestManager.requestStates(0).getSyncRequestQueue().peek().getInFlightAcknowledgementsCount(tip0));\n \n         // Fail the acknowledgement and provide the new current leader information - this should stop the retry\n-        client.prepareResponse(fullAcknowledgeResponse(tip0,\n+        client.prepareResponse(fullShareAcknowledgeResponse(tip0,\n             Errors.NOT_LEADER_OR_FOLLOWER,\n             new ShareAcknowledgeResponseData.LeaderIdAndEpoch().setLeaderId(nodeId1.id()).setLeaderEpoch(validLeaderEpoch + 1),\n             nodeList));\n@@ -1570,7 +1566,7 @@ public void testCallbackHandlerConfig() {\n \n         assertEquals(1, shareConsumeRequestManager.sendAcknowledgements());\n \n-        client.prepareResponse(fullAcknowledgeResponse(tip0, Errors.NONE));\n+        client.prepareResponse(fullShareAcknowledgeResponse(tip0, Errors.NONE));\n         networkClientDelegate.poll(time.timer(0));\n         assertTrue(shareConsumeRequestManager.hasCompletedFetches());\n \n@@ -1591,7 +1587,7 @@ public void testCallbackHandlerConfig() {\n         time.sleep(retryBackoffMs);\n         assertEquals(1, shareConsumeRequestManager.sendAcknowledgements());\n \n-        client.prepareResponse(fullAcknowledgeResponse(tip0, Errors.NONE));\n+        client.prepareResponse(fullShareAcknowledgeResponse(tip0, Errors.NONE));\n         networkClientDelegate.poll(time.timer(0));\n         assertTrue(shareConsumeRequestManager.hasCompletedFetches());\n \n@@ -1615,7 +1611,7 @@ public void testAcknowledgementCommitCallbackMultiplePartitionCommitAsync() {\n \n         LinkedHashMap<TopicIdPartition, ShareFetchResponseData.PartitionData> partitionDataMap =\n                 buildPartitionDataMap(tip0, records, acquiredRecords, Errors.NONE, Errors.NONE);\n-        partitionDataMap.put(t2ip0, partitionDataForFetch(t2ip0, records, acquiredRecords, Errors.NONE, Errors.NONE));\n+        partitionDataMap.put(t2ip0, partitionDataForShareFetch(t2ip0, records, acquiredRecords, Errors.NONE, Errors.NONE));\n         client.prepareResponse(ShareFetchResponse.of(Errors.NONE, 0, partitionDataMap, List.of(), 0));\n \n         networkClientDelegate.poll(time.timer(0));\n@@ -1636,7 +1632,7 @@ public void testAcknowledgementCommitCallbackMultiplePartitionCommitAsync() {\n         Map<TopicIdPartition, Errors> errorsMap = new HashMap<>();\n         errorsMap.put(tip0, Errors.NONE);\n         errorsMap.put(t2ip0, Errors.NONE);\n-        client.prepareResponse(fullAcknowledgeResponse(errorsMap));\n+        client.prepareResponse(fullShareAcknowledgeResponse(errorsMap));\n \n         networkClientDelegate.poll(time.timer(0));\n         assertTrue(shareConsumeRequestManager.hasCompletedFetches());\n@@ -1661,7 +1657,7 @@ public void testMultipleTopicsFetch() {\n \n         LinkedHashMap<TopicIdPartition, ShareFetchResponseData.PartitionData> partitionDataMap =\n                 buildPartitionDataMap(tip0, records, acquiredRecords, Errors.NONE, Errors.NONE);\n-        partitionDataMap.put(t2ip0, partitionDataForFetch(t2ip0, records, emptyAcquiredRecords, Errors.TOPIC_AUTHORIZATION_FAILED, Errors.NONE));\n+        partitionDataMap.put(t2ip0, partitionDataForShareFetch(t2ip0, records, emptyAcquiredRecords, Errors.TOPIC_AUTHORIZATION_FAILED, Errors.NONE));\n         client.prepareResponse(ShareFetchResponse.of(Errors.NONE, 0, partitionDataMap, List.of(), 0));\n \n         networkClientDelegate.poll(time.timer(0));\n@@ -1690,7 +1686,7 @@ public void testMultipleTopicsFetchError() {\n \n         LinkedHashMap<TopicIdPartition, ShareFetchResponseData.PartitionData> partitionDataMap =\n                 buildPartitionDataMap(t2ip0, records, emptyAcquiredRecords, Errors.TOPIC_AUTHORIZATION_FAILED, Errors.NONE);\n-        partitionDataMap.put(tip0, partitionDataForFetch(tip0, records, acquiredRecords, Errors.NONE, Errors.NONE));\n+        partitionDataMap.put(tip0, partitionDataForShareFetch(tip0, records, acquiredRecords, Errors.NONE, Errors.NONE));\n         client.prepareResponse(ShareFetchResponse.of(Errors.NONE, 0, partitionDataMap, List.of(), 0));\n \n         networkClientDelegate.poll(time.timer(0));\n@@ -1723,7 +1719,7 @@ public void testShareFetchInvalidResponse() {\n         assertEquals(1, sendFetches());\n         assertFalse(shareConsumeRequestManager.hasCompletedFetches());\n \n-        client.prepareResponse(fullFetchResponse(t2ip0, records, acquiredRecords, Errors.NONE));\n+        client.prepareResponse(fullShareFetchResponse(t2ip0, records, acquiredRecords, Errors.NONE));\n         networkClientDelegate.poll(time.timer(0));\n         assertFalse(shareConsumeRequestManager.hasCompletedFetches());\n     }\n@@ -1753,7 +1749,7 @@ public void testShareAcknowledgeInvalidResponse() {\n         assertEquals(1, shareConsumeRequestManager.sendAcknowledgements());\n \n         // If a top-level error is received, we still retry the acknowledgements independent of the topic-partitions received in the response.\n-        client.prepareResponse(acknowledgeResponseWithTopLevelError(t2ip0, Errors.LEADER_NOT_AVAILABLE));\n+        client.prepareResponse(shareAcknowledgeResponseWithTopLevelError(t2ip0, Errors.LEADER_NOT_AVAILABLE));\n         networkClientDelegate.poll(time.timer(0));\n \n         assertEquals(1, shareConsumeRequestManager.requestStates(0).getAsyncRequest().getIncompleteAcknowledgementsCount(tip0));\n@@ -1762,7 +1758,7 @@ public void testShareAcknowledgeInvalidResponse() {\n         time.sleep((long) (1.5 * retryBackoffMs));\n         assertEquals(1, shareConsumeRequestManager.sendAcknowledgements());\n \n-        client.prepareResponse(fullAcknowledgeResponse(t2ip0, Errors.NONE));\n+        client.prepareResponse(fullShareAcknowledgeResponse(t2ip0, Errors.NONE));\n         networkClientDelegate.poll(time.timer(0));\n \n         // If we do not get the expected partitions in the response, we fail these acknowledgements with InvalidRecordStateException.\n@@ -1778,7 +1774,7 @@ public void testShareAcknowledgeInvalidResponse() {\n         assertEquals(1, sendFetches());\n         assertFalse(shareConsumeRequestManager.hasCompletedFetches());\n \n-        client.prepareResponse(fullFetchResponse(t2ip0, records, acquiredRecords, Errors.NONE));\n+        client.prepareResponse(fullShareFetchResponse(t2ip0, records, acquiredRecords, Errors.NONE));\n         networkClientDelegate.poll(time.timer(0));\n         assertFalse(shareConsumeRequestManager.hasCompletedFetches());\n \n@@ -1798,7 +1794,7 @@ public void testCloseShouldBeIdempotent() {\n     }\n \n     @Test\n-    public void testFetchError() {\n+    public void testShareFetchError() {\n         buildRequestManager();\n \n         assignFromSubscribed(Set.of(tp0));\n@@ -1843,7 +1839,7 @@ public void testPiggybackAcknowledgementsOnInitialShareSessionErrorTopicRemovedF\n         // Simulate a broker restart, but no leader change, this resets share session epoch to 0.\n         assertEquals(1, sendFetches());\n         assertFalse(shareConsumeRequestManager.hasCompletedFetches());\n-        client.prepareResponse(fetchResponseWithTopLevelError(tip0, Errors.SHARE_SESSION_NOT_FOUND));\n+        client.prepareResponse(shareFetchResponseWithTopLevelError(tip0, Errors.SHARE_SESSION_NOT_FOUND));\n         networkClientDelegate.poll(time.timer(0));\n \n         // Simulate a metadata update with no topics in the response.\n@@ -1887,7 +1883,7 @@ public void testPiggybackAcknowledgementsOnInitialShareSession_ShareSessionNotFo\n         assertFalse(shareConsumeRequestManager.hasCompletedFetches());\n \n         // Simulate a broker restart, but no leader change, this resets share session epoch to 0.\n-        client.prepareResponse(fetchResponseWithTopLevelError(tip0, Errors.SHARE_SESSION_NOT_FOUND));\n+        client.prepareResponse(shareFetchResponseWithTopLevelError(tip0, Errors.SHARE_SESSION_NOT_FOUND));\n         networkClientDelegate.poll(time.timer(0));\n \n         // We would complete these acknowledgements with the error code from the response.\n@@ -1911,7 +1907,7 @@ public void testRecordLatencyOnFetchResponseLevelError() {\n         verify(metricsManager, times(1)).recordLatency(anyString(), anyLong());\n \n         assertEquals(1, sendFetches());\n-        client.prepareResponse(fetchResponseWithTopLevelError(tip0, Errors.SHARE_SESSION_NOT_FOUND));\n+        client.prepareResponse(shareFetchResponseWithTopLevelError(tip0, Errors.SHARE_SESSION_NOT_FOUND));\n         networkClientDelegate.poll(time.timer(0));\n \n         verify(metricsManager, times(2)).recordLatency(anyString(), anyLong());\n@@ -1942,7 +1938,7 @@ public void testInvalidDefaultRecordBatch() {\n \n         // normal fetch\n         assertEquals(1, sendFetches());\n-        client.prepareResponse(fullFetchResponse(tip0,\n+        client.prepareResponse(fullShareFetchResponse(tip0,\n                 MemoryRecords.readableRecords(buffer),\n                 ShareCompletedFetchTest.acquiredRecords(0L, 1),\n                 Errors.NONE));\n@@ -1973,7 +1969,7 @@ public void testParseInvalidRecordBatch() {\n \n         // normal fetch\n         assertEquals(1, sendFetches());\n-        client.prepareResponse(fullFetchResponse(tip0,\n+        client.prepareResponse(fullShareFetchResponse(tip0,\n                 MemoryRecords.readableRecords(buffer),\n                 ShareCompletedFetchTest.acquiredRecords(0L, 3),\n                 Errors.NONE));\n@@ -2003,7 +1999,7 @@ public void testHeaders() {\n         List<ConsumerRecord<byte[], byte[]>> records;\n         assignFromSubscribed(Set.of(tp0));\n \n-        client.prepareResponse(fullFetchResponse(tip0,\n+        client.prepareResponse(fullShareFetchResponse(tip0,\n                 memoryRecords,\n                 ShareCompletedFetchTest.acquiredRecords(1L, 3),\n                 Errors.NONE));\n@@ -2036,40 +2032,24 @@ public void testUnauthorizedTopic() {\n         assignFromSubscribed(Set.of(tp0));\n \n         assertEquals(1, sendFetches());\n-        client.prepareResponse(fullFetchResponse(tip0, records, emptyAcquiredRecords, Errors.TOPIC_AUTHORIZATION_FAILED));\n+        client.prepareResponse(fullShareFetchResponse(tip0, records, emptyAcquiredRecords, Errors.TOPIC_AUTHORIZATION_FAILED));\n         networkClientDelegate.poll(time.timer(0));\n         TopicAuthorizationException e = assertThrows(TopicAuthorizationException.class, () -> collectFetch(), \"collectFetch should have thrown a TopicAuthorizationException\");\n         assertEquals(Set.of(topicName), e.unauthorizedTopics());\n     }\n \n-    @Test\n-    public void testUnknownTopicIdError() {\n-        buildRequestManager();\n-        assignFromSubscribed(Set.of(tp0));\n-\n-        assertEquals(1, sendFetches());\n-        client.prepareResponse(fetchResponseWithTopLevelError(tip0, Errors.UNKNOWN_TOPIC_ID));\n-        networkClientDelegate.poll(time.timer(0));\n-        assertEmptyFetch(\"Should not return records on fetch error\");\n-        assertEquals(0L, metadata.timeToNextUpdate(time.milliseconds()));\n-    }\n-\n     @ParameterizedTest\n-    @MethodSource(\"handleFetchResponseErrorSupplier\")\n-    public void testHandleFetchResponseError(Errors error,\n-                                             boolean hasTopLevelError,\n-                                             boolean shouldRequestMetadataUpdate) {\n+    @MethodSource(\"handleShareFetchResponseErrorSupplier\")\n+    public void testHandleShareFetchResponseError(Errors error,\n+                                                  boolean shouldRequestMetadataUpdate) {\n         buildRequestManager();\n         assignFromSubscribed(Set.of(tp0));\n \n         assertEquals(1, sendFetches());\n \n         final ShareFetchResponse fetchResponse;\n \n-        if (hasTopLevelError)\n-            fetchResponse = fetchResponseWithTopLevelError(tip0, error);\n-        else\n-            fetchResponse = fullFetchResponse(tip0, records, emptyAcquiredRecords, error);\n+        fetchResponse = fullShareFetchResponse(tip0, records, emptyAcquiredRecords, error);\n \n         client.prepareResponse(fetchResponse);\n         networkClientDelegate.poll(time.timer(0));\n@@ -2085,33 +2065,33 @@ public void testHandleFetchResponseError(Errors error,\n     }\n \n     /**\n-     * Supplies parameters to {@link #testHandleFetchResponseError(Errors, boolean, boolean)}.\n+     * Supplies parameters to {@link #testHandleShareFetchResponseError(Errors, boolean)}.\n      */\n-    private static Stream<Arguments> handleFetchResponseErrorSupplier() {\n+    private static Stream<Arguments> handleShareFetchResponseErrorSupplier() {\n         return Stream.of(\n-                Arguments.of(Errors.NOT_LEADER_OR_FOLLOWER, false, true),\n-                Arguments.of(Errors.UNKNOWN_TOPIC_OR_PARTITION, false, true),\n-                Arguments.of(Errors.UNKNOWN_TOPIC_ID, true, true),\n-                Arguments.of(Errors.INCONSISTENT_TOPIC_ID, false, true),\n-                Arguments.of(Errors.FENCED_LEADER_EPOCH, false, true),\n-                Arguments.of(Errors.UNKNOWN_LEADER_EPOCH, false, false)\n+                Arguments.of(Errors.NOT_LEADER_OR_FOLLOWER, true),\n+                Arguments.of(Errors.UNKNOWN_TOPIC_OR_PARTITION, true),\n+                Arguments.of(Errors.UNKNOWN_TOPIC_ID, true),\n+                Arguments.of(Errors.INCONSISTENT_TOPIC_ID, true),\n+                Arguments.of(Errors.FENCED_LEADER_EPOCH, true),\n+                Arguments.of(Errors.UNKNOWN_LEADER_EPOCH, false)\n         );\n     }\n \n     @Test\n-    public void testFetchDisconnected() {\n+    public void testShareFetchDisconnected() {\n         buildRequestManager();\n \n         assignFromSubscribed(Set.of(tp0));\n \n         assertEquals(1, sendFetches());\n-        client.prepareResponse(fullFetchResponse(tip0, records, acquiredRecords, Errors.NONE), true);\n+        client.prepareResponse(fullShareFetchResponse(tip0, records, acquiredRecords, Errors.NONE), true);\n         networkClientDelegate.poll(time.timer(0));\n         assertEmptyFetch(\"Should not return records on disconnect\");\n     }\n \n     @Test\n-    public void testFetchWithLastRecordMissingFromBatch() {\n+    public void testShareFetchWithLastRecordMissingFromBatch() {\n         buildRequestManager();\n \n         MemoryRecords records = MemoryRecords.withRecords(Compression.NONE,\n@@ -2137,7 +2117,7 @@ protected boolean shouldRetainRecord(RecordBatch recordBatch, Record record) {\n \n         assignFromSubscribed(Set.of(tp0));\n         assertEquals(1, sendFetches());\n-        client.prepareResponse(fullFetchResponse(tip0,\n+        client.prepareResponse(fullShareFetchResponse(tip0,\n                 compactedRecords,\n                 ShareCompletedFetchTest.acquiredRecords(0L, 3),\n                 Errors.NONE));\n@@ -2170,7 +2150,7 @@ public void testCorruptMessageError() {\n         assertFalse(shareConsumeRequestManager.hasCompletedFetches());\n \n         // Prepare a response with the CORRUPT_MESSAGE error.\n-        client.prepareResponse(fullFetchResponse(\n+        client.prepareResponse(fullShareFetchResponse(\n                 tip0,\n                 buildRecords(1L, 1, 1),\n                 ShareCompletedFetchTest.acquiredRecords(1L, 1),\n@@ -2367,11 +2347,11 @@ public void testWhenShareFetchResponseReturnsWithALeadershipChangeErrorAndNewLea\n \n     /**\n      * Test the scenario that the metadata indicated a change in leadership between ShareFetch requests such\n-     * as could occur when metadata is periodically updated.\n+     * as could occur when metadata is periodically updated. The metadata holds a newer leader epoch, so the\n+     * share consumer follows it without waiting for the former leader to redirect it.\n      */\n-    @ParameterizedTest\n-    @EnumSource(value = Errors.class, names = {\"FENCED_LEADER_EPOCH\", \"NOT_LEADER_OR_FOLLOWER\"})\n-    public void testWhenLeadershipChangeBetweenShareFetchRequests(Errors error) {\n+    @Test\n+    public void testWhenLeadershipChangeBetweenShareFetchRequests() {\n         buildRequestManager();\n         shareConsumeRequestManager.setAcknowledgementCommitCallbackRegistered(true);\n \n@@ -2418,25 +2398,39 @@ public void testWhenLeadershipChangeBetweenShareFetchRequests(Errors error) {\n \n         assertEquals(startingClusterMetadata, metadata.fetch());\n \n-        // Move the leadership of tp0 onto node 1\n+        // Move the leadership of tp0 onto node 1 with a newer leader epoch\n         metadata.updatePartitionLeadership(Map.of(tp0, new Metadata.LeaderIdAndEpoch(Optional.of(nodeId1.id()), Optional.of(validLeaderEpoch + 1))), List.of());\n \n         assertNotEquals(startingClusterMetadata, metadata.fetch());\n \n-        // Even though the partitions are on the same leader, records were fetched on the previous leader.\n-        // Since we need to remove the partition from the previous leader, we still send those acknowledgement to the previous leader\n-        // with the partition in the list of partitions to forget.\n-        assertEquals(2, sendFetches());\n+        // Both partitions are now fetched from node 1. A request is still sent to node 0 to remove tp0 from the share\n+        // session on the previous leader. The acknowledgements for records fetched from the previous leader cannot be\n+        // sent there any more, so they are failed with NOT_LEADER_OR_FOLLOWER without a round trip to the broker.\n+        NetworkClientDelegate.PollResult pollResult = shareConsumeRequestManager.sendFetchesReturnPollResult();\n+        assertEquals(2, pollResult.unsentRequests.size());\n         assertFalse(shareConsumeRequestManager.hasCompletedFetches());\n-        assertTrue(completedAcknowledgements.isEmpty());\n+        Map<Integer, ShareFetchRequestData> requestsByNode = new HashMap<>();\n+        pollResult.unsentRequests.forEach(unsentRequest ->\n+            requestsByNode.put(unsentRequest.node().get().id(), ((ShareFetchRequest.Builder) unsentRequest.requestBuilder()).data()));\n+        assertEquals(Set.of(nodeId0.id(), nodeId1.id()), requestsByNode.keySet());\n+\n+        ShareFetchRequestData node0Request = requestsByNode.get(nodeId0.id());\n+        assertTrue(node0Request.topics().isEmpty());\n+        assertEquals(1, node0Request.forgottenTopicsData().size());\n+        assertEquals(List.of(tip0.partition()), node0Request.forgottenTopicsData().get(0).partitions());\n+\n+        // tp1 is already in the share session on node 1, so the incremental request only adds tp0.\n+        ShareFetchRequestData node1Request = requestsByNode.get(nodeId1.id());\n+        assertEquals(1, node1Request.topics().size());\n+        assertEquals(1, node1Request.topics().find(tip0.topicId()).partitions().size());\n+        assertNotNull(node1Request.topics().find(tip0.topicId()).partitions().find(tip0.partition()));\n \n-        partitionData.clear();\n-        partitionData.put(tip0,\n-            new ShareFetchResponseData.PartitionData()\n-                .setPartitionIndex(tip0.topicPartition().partition())\n-                .setErrorCode(Errors.NONE.code())\n-                .setAcknowledgeErrorCode(error.code()));\n-        client.prepareResponseFrom(ShareFetchResponse.of(Errors.NONE, 0, partitionData, List.of(), 0), nodeId0);\n+        assertEquals(1, completedAcknowledgements.size());\n+        assertEquals(acknowledgements, completedAcknowledgements.get(0).get(tip0));\n+        assertInstanceOf(NotLeaderOrFollowerException.class, completedAcknowledgements.get(0).get(tip0).getAcknowledgeException());\n+\n+        networkClientDelegate.addAll(pollResult.unsentRequests);\n+        client.prepareResponseFrom(ShareFetchResponse.of(Errors.NONE, 0, new LinkedHashMap<>(), List.of(), 0), nodeId0);\n         partitionData = buildPartitionDataMap(tip0, records, ShareCompletedFetchTest.acquiredRecords(1L, 1), Errors.NONE, Errors.NONE);\n         partitionData.put(tip1,\n             new ShareFetchResponseData.PartitionData()\n@@ -2447,8 +2441,6 @@ public void testWhenLeadershipChangeBetweenShareFetchRequests(Errors error) {\n         client.prepareResponseFrom(ShareFetchResponse.of(Errors.NONE, 0, partitionData, List.of(), 0), nodeId1);\n         networkClientDelegate.poll(time.timer(0));\n         assertTrue(shareConsumeRequestManager.hasCompletedFetches());\n-        assertEquals(acknowledgements, completedAcknowledgements.get(0).get(tip0));\n-        assertEquals(error.exception(), completedAcknowledgements.get(0).get(tip0).getAcknowledgeException());\n \n         partitionRecords = fetchRecords();\n         assertTrue(partitionRecords.containsKey(tp0));\n@@ -2522,11 +2514,11 @@ void testLeadershipChangeAfterFetchBeforeCommitAsync() {\n         assertEquals(2, shareConsumeRequestManager.sendAcknowledgements());\n \n         // The former leader for tp0 rejects the acknowledgements with NOT_LEADER_OR_FOLLOWER and points to the new leader.\n-        client.prepareResponseFrom(fullAcknowledgeResponse(tip0,\n+        client.prepareResponseFrom(fullShareAcknowledgeResponse(tip0,\n             Errors.NOT_LEADER_OR_FOLLOWER,\n             new ShareAcknowledgeResponseData.LeaderIdAndEpoch().setLeaderId(nodeId1.id()).setLeaderEpoch(validLeaderEpoch + 1),\n             List.of(nodeId0, nodeId1)), nodeId0);\n-        client.prepareResponseFrom(fullAcknowledgeResponse(tip1, Errors.NONE), nodeId1);\n+        client.prepareResponseFrom(fullShareAcknowledgeResponse(tip1, Errors.NONE), nodeId1);\n         networkClientDelegate.poll(time.timer(0));\n \n         Map<TopicIdPartition, Acknowledgements> completed = new HashMap<>();\n@@ -2598,11 +2590,11 @@ void testLeadershipChangeAfterFetchBeforeCommitSync() {\n         assertEquals(2, shareConsumeRequestManager.sendAcknowledgements());\n \n         // The former leader for tp0 rejects the acknowledgements with NOT_LEADER_OR_FOLLOWER and points to the new leader.\n-        client.prepareResponseFrom(fullAcknowledgeResponse(tip0,\n+        client.prepareResponseFrom(fullShareAcknowledgeResponse(tip0,\n             Errors.NOT_LEADER_OR_FOLLOWER,\n             new ShareAcknowledgeResponseData.LeaderIdAndEpoch().setLeaderId(nodeId1.id()).setLeaderEpoch(validLeaderEpoch + 1),\n             List.of(nodeId0, nodeId1)), nodeId0);\n-        client.prepareResponseFrom(fullAcknowledgeResponse(tip1, Errors.NONE), nodeId1);\n+        client.prepareResponseFrom(fullShareAcknowledgeResponse(tip1, Errors.NONE), nodeId1);\n         networkClientDelegate.poll(time.timer(0));\n \n         Map<TopicIdPartition, Acknowledgements> completed = new HashMap<>();\n@@ -2677,11 +2669,11 @@ void testLeadershipChangeAfterFetchBeforeCloseMove() {\n         assertEquals(2, shareConsumeRequestManager.sendAcknowledgements());\n \n         // The former leader for tp0 rejects the acknowledgements with NOT_LEADER_OR_FOLLOWER and points to the new leader.\n-        client.prepareResponseFrom(fullAcknowledgeResponse(tip0,\n+        client.prepareResponseFrom(fullShareAcknowledgeResponse(tip0,\n             Errors.NOT_LEADER_OR_FOLLOWER,\n             new ShareAcknowledgeResponseData.LeaderIdAndEpoch().setLeaderId(nodeId1.id()).setLeaderEpoch(validLeaderEpoch + 1),\n             List.of(nodeId0, nodeId1)), nodeId0);\n-        client.prepareResponseFrom(fullAcknowledgeResponse(tip1, Errors.NONE), nodeId1);\n+        client.prepareResponseFrom(fullShareAcknowledgeResponse(tip1, Errors.NONE), nodeId1);\n         networkClientDelegate.poll(time.timer(0));\n \n         Map<TopicIdPartition, Acknowledgements> completed = new HashMap<>();\n@@ -2754,8 +2746,8 @@ void testLeadershipChangeAfterFetchMoveBeforeClose() {\n         assertEquals(2, shareConsumeRequestManager.sendAcknowledgements());\n \n         // The former leader for tp0 rejects the acknowledgements with NOT_LEADER_OR_FOLLOWER and points to the new leader.\n-        client.prepareResponseFrom(fullAcknowledgeResponse(tip0, Errors.NONE), nodeId0);\n-        client.prepareResponseFrom(fullAcknowledgeResponse(tip1,\n+        client.prepareResponseFrom(fullShareAcknowledgeResponse(tip0, Errors.NONE), nodeId0);\n+        client.prepareResponseFrom(fullShareAcknowledgeResponse(tip1,\n             Errors.NOT_LEADER_OR_FOLLOWER,\n             new ShareAcknowledgeResponseData.LeaderIdAndEpoch().setLeaderId(nodeId0.id()).setLeaderEpoch(validLeaderEpoch + 1),\n             List.of(nodeId0, nodeId1)), nodeId1);\n@@ -2831,11 +2823,11 @@ void testLeadershipChangeAfterFetchMoveBeforeCloseMove() {\n         assertEquals(2, shareConsumeRequestManager.sendAcknowledgements());\n \n         // The former leaders reject the acknowledgements with NOT_LEADER_OR_FOLLOWER and point to the new leaders.\n-        client.prepareResponseFrom(fullAcknowledgeResponse(tip0,\n+        client.prepareResponseFrom(fullShareAcknowledgeResponse(tip0,\n             Errors.NOT_LEADER_OR_FOLLOWER,\n             new ShareAcknowledgeResponseData.LeaderIdAndEpoch().setLeaderId(nodeId1.id()).setLeaderEpoch(validLeaderEpoch + 1),\n             List.of(nodeId0, nodeId1)), nodeId0);\n-        client.prepareResponseFrom(fullAcknowledgeResponse(tip1,\n+        client.prepareResponseFrom(fullShareAcknowledgeResponse(tip1,\n             Errors.NOT_LEADER_OR_FOLLOWER,\n             new ShareAcknowledgeResponseData.LeaderIdAndEpoch().setLeaderId(nodeId0.id()).setLeaderEpoch(validLeaderEpoch + 1),\n             List.of(nodeId0, nodeId1)), nodeId1);\n@@ -2908,8 +2900,8 @@ void testStaleMetadataLeadershipChangeDoesNotFailAcknowledgements() {\n         assertEquals(2, shareConsumeRequestManager.sendAcknowledgements());\n \n         // Both cached leaders accept the acknowledgements despite the stale metadata for tp0.\n-        client.prepareResponseFrom(fullAcknowledgeResponse(tip0, Errors.NONE), nodeId0);\n-        client.prepareResponseFrom(fullAcknowledgeResponse(tip1, Errors.NONE), nodeId1);\n+        client.prepareResponseFrom(fullShareAcknowledgeResponse(tip0, Errors.NONE), nodeId0);\n+        client.prepareResponseFrom(fullShareAcknowledgeResponse(tip1, Errors.NONE), nodeId1);\n         networkClientDelegate.poll(time.timer(0));\n \n         Map<TopicIdPartition, Acknowledgements> completed = new HashMap<>();\n@@ -3003,6 +2995,9 @@ void testWhenLeadershipChangedAfterDisconnected() {\n         assertInstanceOf(DisconnectException.class, completedAcknowledgements.get(0).get(tip0).getAcknowledgeException());\n         completedAcknowledgements.clear();\n \n+        // The disconnect lost the share session on node 0, so the cached leader for tp0 is forgotten.\n+        assertEquals(-1, shareConsumeRequestManager.shareSessionNodeId(tip0));\n+\n         partitionRecords = fetchRecords();\n         assertFalse(partitionRecords.containsKey(tp0));\n         assertTrue(partitionRecords.containsKey(tp1));\n@@ -3019,8 +3014,20 @@ void testWhenLeadershipChangedAfterDisconnected() {\n         acknowledgements2.add(1, AcknowledgeType.ACCEPT);\n         shareConsumeRequestManager.fetch(Map.of(tip1, new NodeAcknowledgements(1, acknowledgements2)));\n \n-        assertEquals(2, sendFetches());\n+        // tp0 is re-seeded from the metadata and fetched from node 1. The share session on node 0 was lost, but its\n+        // handler still holds tp0, and a new share session is opened on node 0 containing tp0.\n+        NetworkClientDelegate.PollResult pollResult = shareConsumeRequestManager.sendFetchesReturnPollResult();\n+        assertEquals(2, pollResult.unsentRequests.size());\n         assertFalse(shareConsumeRequestManager.hasCompletedFetches());\n+        assertEquals(nodeId1.id(), shareConsumeRequestManager.shareSessionNodeId(tip0));\n+        Map<Integer, ShareFetchRequestData> requestsByNode = new HashMap<>();\n+        pollResult.unsentRequests.forEach(unsentRequest ->\n+            requestsByNode.put(unsentRequest.node().get().id(), ((ShareFetchRequest.Builder) unsentRequest.requestBuilder()).data()));\n+        assertEquals(Set.of(nodeId0.id(), nodeId1.id()), requestsByNode.keySet());\n+        ShareFetchRequestData node0Request = requestsByNode.get(nodeId0.id());\n+        assertEquals(ShareRequestMetadata.INITIAL_EPOCH, node0Request.shareSessionEpoch());\n+        assertNotNull(node0Request.topics().find(tip0.topicId()).partitions().find(tip0.partition()));\n+        networkClientDelegate.addAll(pollResult.unsentRequests);\n \n         partitionData.clear();\n         partitionData.put(tip0,\n@@ -3034,8 +3041,17 @@ void testWhenLeadershipChangedAfterDisconnected() {\n             new ShareFetchResponseData.PartitionData()\n                 .setPartitionIndex(tip1.topicPartition().partition()));\n         client.prepareResponseFrom(ShareFetchResponse.of(Errors.NONE, 0, partitionData, List.of(), 0), nodeId1);\n+\n+        // Node 0 accepts the new share session, but it is no longer the leader for tp0, so it redirects to node 1.\n         partitionData.clear();\n-        client.prepareResponseFrom(ShareFetchResponse.of(Errors.SHARE_SESSION_NOT_FOUND, 0, partitionData, List.of(), 0), nodeId0);\n+        partitionData.put(tip0,\n+            new ShareFetchResponseData.PartitionData()\n+                .setPartitionIndex(tip0.topicPartition().partition())\n+                .setErrorCode(Errors.NOT_LEADER_OR_FOLLOWER.code())\n+                .setCurrentLeader(new ShareFetchResponseData.LeaderIdAndEpoch()\n+                    .setLeaderId(nodeId1.id())\n+                    .setLeaderEpoch(validLeaderEpoch + 1)));\n+        client.prepareResponseFrom(ShareFetchResponse.of(Errors.NONE, 0, partitionData, List.of(nodeId1), 0), nodeId0);\n         networkClientDelegate.poll(time.timer(0));\n         assertTrue(shareConsumeRequestManager.hasCompletedFetches());\n \n@@ -3047,6 +3063,116 @@ void testWhenLeadershipChangedAfterDisconnected() {\n \n         fetchedRecords = partitionRecords.get(tp0);\n         assertEquals(1, fetchedRecords.size());\n+\n+        // The redirect leaves tp0 on node 1. The next poll removes tp0 from the share session on node 0.\n+        assertEquals(nodeId1.id(), shareConsumeRequestManager.shareSessionNodeId(tip0));\n+        pollResult = shareConsumeRequestManager.sendFetchesReturnPollResult();\n+        requestsByNode.clear();\n+        pollResult.unsentRequests.forEach(unsentRequest ->\n+            requestsByNode.put(unsentRequest.node().get().id(), ((ShareFetchRequest.Builder) unsentRequest.requestBuilder()).data()));\n+        node0Request = requestsByNode.get(nodeId0.id());\n+        assertNotNull(node0Request);\n+        assertTrue(node0Request.topics().isEmpty());\n+        assertEquals(1, node0Request.forgottenTopicsData().size());\n+        assertEquals(List.of(tip0.partition()), node0Request.forgottenTopicsData().get(0).partitions());\n+    }\n+\n+    /**\n+     * A disconnect forgets the cached leader, but if the metadata still names the same node, the next fetch simply\n+     * retries that node with a new share session containing the partition.\n+     */\n+    @Test\n+    void testDisconnectWithoutLeadershipChangeRetriesSameNode() {\n+        buildRequestManager();\n+\n+        subscriptions.subscribeToShareGroup(Set.of(topicName));\n+        subscriptions.assignFromSubscribed(Set.of(tp0));\n+\n+        client.updateMetadata(\n+            RequestTestUtils.metadataUpdateWithIds(2, Map.of(topicName, 1),\n+                tp -> validLeaderEpoch, topicIds, false));\n+        Node nodeId0 = metadata.fetch().nodeById(0);\n+        assertEquals(nodeId0, metadata.fetch().leaderFor(tp0));\n+\n+        // Establish the share session on node 0.\n+        assertEquals(1, sendFetches());\n+        client.prepareResponseFrom(\n+            ShareFetchResponse.of(Errors.NONE, 0,\n+                buildPartitionDataMap(tip0, records, acquiredRecords, Errors.NONE, Errors.NONE), List.of(), 0),\n+            nodeId0);\n+        networkClientDelegate.poll(time.timer(0));\n+        fetchRecords();\n+        assertEquals(nodeId0.id(), shareConsumeRequestManager.shareSessionNodeId(tip0));\n+\n+        // The next fetch is disconnected, which forgets the cached leader.\n+        assertEquals(1, sendFetches());\n+        client.prepareResponseFrom(ShareFetchResponse.of(Errors.NONE, 0, new LinkedHashMap<>(), List.of(), 0), nodeId0, true);\n+        networkClientDelegate.poll(time.timer(0));\n+        assertEquals(-1, shareConsumeRequestManager.shareSessionNodeId(tip0));\n+\n+        // The metadata is unchanged, so tp0 is re-seeded onto node 0 and a new share session is opened there.\n+        NetworkClientDelegate.PollResult pollResult = shareConsumeRequestManager.sendFetchesReturnPollResult();\n+        assertEquals(1, pollResult.unsentRequests.size());\n+        assertEquals(nodeId0, pollResult.unsentRequests.get(0).node().get());\n+        ShareFetchRequestData requestData = ((ShareFetchRequest.Builder) pollResult.unsentRequests.get(0).requestBuilder()).data();\n+        assertEquals(ShareRequestMetadata.INITIAL_EPOCH, requestData.shareSessionEpoch());\n+        assertNotNull(requestData.topics().find(tip0.topicId()));\n+        assertNotNull(requestData.topics().find(tip0.topicId()).partitions().find(tip0.partition()));\n+        assertEquals(nodeId0.id(), shareConsumeRequestManager.shareSessionNodeId(tip0));\n+    }\n+\n+    /**\n+     * If leadership moves while the cached leader is unreachable, the former leader cannot redirect the consumer.\n+     * When the leader epoch does not advance, the metadata cannot replace the cached leader either, since that only\n+     * happens for a strictly newer epoch. Forgetting the cached leader on a disconnect means the next fetch is seeded\n+     * from the metadata and so follows the new leader as soon as the metadata names it.\n+     */\n+    @Test\n+    void testDisconnectFollowsMetadataLeaderChangeWithUnchangedEpoch() {\n+        buildRequestManager();\n+\n+        subscriptions.subscribeToShareGroup(Set.of(topicName));\n+        subscriptions.assignFromSubscribed(Set.of(tp0));\n+\n+        client.updateMetadata(\n+            RequestTestUtils.metadataUpdateWithIds(2, Map.of(topicName, 1),\n+                tp -> validLeaderEpoch, topicIds, false));\n+        Node nodeId0 = metadata.fetch().nodeById(0);\n+        Node nodeId1 = metadata.fetch().nodeById(1);\n+        assertEquals(nodeId0, metadata.fetch().leaderFor(tp0));\n+\n+        // Establish the share session on node 0.\n+        assertEquals(1, sendFetches());\n+        client.prepareResponseFrom(\n+            ShareFetchResponse.of(Errors.NONE, 0,\n+                buildPartitionDataMap(tip0, records, acquiredRecords, Errors.NONE, Errors.NONE), List.of(), 0),\n+            nodeId0);\n+        networkClientDelegate.poll(time.timer(0));\n+        fetchRecords();\n+        assertEquals(nodeId0.id(), shareConsumeRequestManager.shareSessionNodeId(tip0));\n+\n+        // The next fetch is disconnected, which forgets the cached leader.\n+        assertEquals(1, sendFetches());\n+        client.prepareResponseFrom(ShareFetchResponse.of(Errors.NONE, 0, new LinkedHashMap<>(), List.of(), 0), nodeId0, true);\n+        networkClientDelegate.poll(time.timer(0));\n+        assertEquals(-1, shareConsumeRequestManager.shareSessionNodeId(tip0));\n+\n+        // A metadata refresh names node 1 as the leader at the same leader epoch. Node 0 is still in the cluster.\n+        metadata.updateWithCurrentRequestVersion(\n+            metadataResponseWithLeader(List.of(nodeId0, nodeId1), nodeId1, validLeaderEpoch), false, time.milliseconds());\n+        assertEquals(nodeId1, metadata.fetch().leaderFor(tp0));\n+\n+        // tp0 is re-seeded from the metadata, so the next fetch for it goes to node 1 with a new share session.\n+        NetworkClientDelegate.PollResult pollResult = shareConsumeRequestManager.sendFetchesReturnPollResult();\n+        assertEquals(nodeId1.id(), shareConsumeRequestManager.shareSessionNodeId(tip0));\n+        Map<Integer, ShareFetchRequestData> requestsByNode = new HashMap<>();\n+        pollResult.unsentRequests.forEach(unsentRequest ->\n+            requestsByNode.put(unsentRequest.node().get().id(), ((ShareFetchRequest.Builder) unsentRequest.requestBuilder()).data()));\n+        ShareFetchRequestData node1Request = requestsByNode.get(nodeId1.id());\n+        assertNotNull(node1Request);\n+        assertEquals(ShareRequestMetadata.INITIAL_EPOCH, node1Request.shareSessionEpoch());\n+        assertNotNull(node1Request.topics().find(tip0.topicId()));\n+        assertNotNull(node1Request.topics().find(tip0.topicId()).partitions().find(tip0.partition()));\n     }\n \n     /**\n@@ -3056,7 +3182,7 @@ void testWhenLeadershipChangedAfterDisconnected() {\n      * and leadership moves to a still-present node, the next fetch is routed to the new leader.\n      */\n     @Test\n-    public void testFetchRecoversWhenCachedLeaderNodeDisappearsFromMetadata() {\n+    public void testShareFetchRecoversWhenCachedLeaderNodeDisappearsFromMetadata() {\n         buildRequestManager();\n \n         subscriptions.subscribeToShareGroup(Set.of(topicName));\n@@ -3169,6 +3295,319 @@ public void testSessionHandlerRemovedAndPiggybackAcksFailedWhenNodeDisappears()\n         assertInstanceOf(NetworkException.class, completedAcknowledgements.get(0).get(tip0).getAcknowledgeException());\n     }\n \n+    private MetadataResponse metadataResponseWithLeader(List<Node> nodes, Node leader, int leaderEpoch) {\n+        MetadataResponse.PartitionMetadata tp0Metadata = new MetadataResponse.PartitionMetadata(\n+                Errors.NONE, tp0, Optional.of(leader.id()), Optional.of(leaderEpoch),\n+                nodes.stream().map(Node::id).collect(Collectors.toList()),\n+                nodes.stream().map(Node::id).collect(Collectors.toList()), List.of());\n+        MetadataResponse.TopicMetadata topicMetadata = new MetadataResponse.TopicMetadata(\n+                Errors.NONE, topicName, topicId, false, List.of(tp0Metadata),\n+                MetadataResponse.AUTHORIZED_OPERATIONS_OMITTED);\n+        return RequestTestUtils.metadataResponse(nodes, \"kafka-cluster\", 1, List.of(topicMetadata));\n+    }\n+\n+    /**\n+     * The cached leader is only redirected by the broker if the broker is reachable. If the leader changes while the\n+     * cached leader is unreachable, a metadata refresh is the only way to learn about the new leader. When the metadata\n+     * holds a newer leader epoch than the cached leader, the cached leader must be replaced.\n+     */\n+    @Test\n+    public void testShareFetchFollowsNewerLeaderEpochInMetadata() {\n+        buildRequestManager();\n+\n+        subscriptions.subscribeToShareGroup(Set.of(topicName));\n+        subscriptions.assignFromSubscribed(List.of(tp0));\n+\n+        // tp0's leader is node0.\n+        client.updateMetadata(\n+                RequestTestUtils.metadataUpdateWithIds(2, Map.of(topicName, 1),\n+                        tp -> validLeaderEpoch, topicIds, false));\n+        Node nodeId0 = metadata.fetch().nodeById(0);\n+        Node nodeId1 = metadata.fetch().nodeById(1);\n+        assertEquals(nodeId0, metadata.fetch().leaderFor(tp0));\n+\n+        // Establish the share session on node0 and cache the leader (node0, validLeaderEpoch).\n+        assertEquals(1, sendFetches());\n+        client.prepareResponseFrom(\n+                ShareFetchResponse.of(Errors.NONE, 0,\n+                        buildPartitionDataMap(tip0, records, acquiredRecords, Errors.NONE, Errors.NONE),\n+                        List.of(), 0),\n+                nodeId0);\n+        networkClientDelegate.poll(time.timer(0));\n+        fetchRecords();\n+        assertEquals(nodeId0.id(), shareConsumeRequestManager.shareSessionNodeId(tip0));\n+\n+        // A metadata refresh shows that leadership moved to node1 with a newer epoch. Node0 is still in the cluster,\n+        // so this is not the node-disappeared case.\n+        metadata.updateWithCurrentRequestVersion(\n+                metadataResponseWithLeader(List.of(nodeId0, nodeId1), nodeId1, validLeaderEpoch + 1), false, time.milliseconds());\n+        assertEquals(nodeId1, metadata.fetch().leaderFor(tp0));\n+\n+        // The next poll fetches tp0 from node1, and also sends a request to node0 which removes tp0 from the\n+        // share session on the former leader.\n+        NetworkClientDelegate.PollResult pollResult = shareConsumeRequestManager.sendFetchesReturnPollResult();\n+        assertEquals(nodeId1.id(), shareConsumeRequestManager.shareSessionNodeId(tip0));\n+        assertEquals(2, pollResult.unsentRequests.size());\n+        Map<Integer, ShareFetchRequestData> requestsByNode = new HashMap<>();\n+        pollResult.unsentRequests.forEach(unsentRequest ->\n+            requestsByNode.put(unsentRequest.node().get().id(), ((ShareFetchRequest.Builder) unsentRequest.requestBuilder()).data()));\n+        assertEquals(Set.of(nodeId0.id(), nodeId1.id()), requestsByNode.keySet());\n+\n+        ShareFetchRequestData node1Request = requestsByNode.get(nodeId1.id());\n+        assertEquals(1, node1Request.topics().size());\n+        assertNotNull(node1Request.topics().find(tip0.topicId()));\n+        assertNotNull(node1Request.topics().find(tip0.topicId()).partitions().find(tip0.partition()));\n+\n+        ShareFetchRequestData node0Request = requestsByNode.get(nodeId0.id());\n+        assertTrue(node0Request.topics().isEmpty());\n+        assertEquals(1, node0Request.forgottenTopicsData().size());\n+        assertEquals(tip0.topicId(), node0Request.forgottenTopicsData().get(0).topicId());\n+        assertEquals(List.of(tip0.partition()), node0Request.forgottenTopicsData().get(0).partitions());\n+    }\n+\n+    /**\n+     * Metadata accepts a refresh at an unchanged leader epoch, but the cached leader is only replaced from metadata\n+     * when the epoch is strictly newer.\n+     */\n+    @Test\n+    public void testShareFetchIgnoresMetadataLeaderChangeWithUnchangedEpoch() {\n+        buildRequestManager();\n+\n+        subscriptions.subscribeToShareGroup(Set.of(topicName));\n+        subscriptions.assignFromSubscribed(List.of(tp0));\n+\n+        client.updateMetadata(\n+                RequestTestUtils.metadataUpdateWithIds(2, Map.of(topicName, 1),\n+                        tp -> validLeaderEpoch, topicIds, false));\n+        Node nodeId0 = metadata.fetch().nodeById(0);\n+        Node nodeId1 = metadata.fetch().nodeById(1);\n+        assertEquals(nodeId0, metadata.fetch().leaderFor(tp0));\n+\n+        assertEquals(1, sendFetches());\n+        client.prepareResponseFrom(\n+                ShareFetchResponse.of(Errors.NONE, 0,\n+                        buildPartitionDataMap(tip0, records, acquiredRecords, Errors.NONE, Errors.NONE),\n+                        List.of(), 0),\n+                nodeId0);\n+        networkClientDelegate.poll(time.timer(0));\n+        fetchRecords();\n+        assertEquals(nodeId0.id(), shareConsumeRequestManager.shareSessionNodeId(tip0));\n+\n+        // A metadata refresh names node1 as leader, but at the same leader epoch.\n+        metadata.updateWithCurrentRequestVersion(\n+                metadataResponseWithLeader(List.of(nodeId0, nodeId1), nodeId1, validLeaderEpoch), false, time.milliseconds());\n+        assertEquals(nodeId1, metadata.fetch().leaderFor(tp0));\n+\n+        // The cached leader is unchanged, so the next fetch still goes only to node0.\n+        NetworkClientDelegate.PollResult pollResult = shareConsumeRequestManager.sendFetchesReturnPollResult();\n+        assertEquals(nodeId0.id(), shareConsumeRequestManager.shareSessionNodeId(tip0));\n+        assertEquals(1, pollResult.unsentRequests.size());\n+        assertEquals(nodeId0, pollResult.unsentRequests.get(0).node().get());\n+    }\n+\n+    /**\n+     * A ShareFetch partition error which says the cached leader is wrong, but which carries no new leader\n+     * information, must request a metadata refresh in the request manager itself. The fetch collector also requests\n+     * one, but that only happens when the application thread next polls, which could be much later.\n+     */\n+    @ParameterizedTest\n+    @EnumSource(value = Errors.class, names = {\"NOT_LEADER_OR_FOLLOWER\", \"FENCED_LEADER_EPOCH\", \"UNKNOWN_TOPIC_OR_PARTITION\", \"UNKNOWN_TOPIC_ID\"})\n+    public void testShareFetchPartitionErrorWithoutLeaderInfoRequestsMetadataUpdate(Errors error) {\n+        buildRequestManager();\n+\n+        subscriptions.subscribeToShareGroup(Set.of(topicName));\n+        subscriptions.assignFromSubscribed(List.of(tp0));\n+\n+        client.updateMetadata(\n+                RequestTestUtils.metadataUpdateWithIds(1, Map.of(topicName, 1),\n+                        tp -> validLeaderEpoch, topicIds, false));\n+        assertFalse(metadata.updateRequested());\n+\n+        assertEquals(1, sendFetches());\n+        // The broker sets the current leader to -1/-1 when it does not know the new leader.\n+        LinkedHashMap<TopicIdPartition, ShareFetchResponseData.PartitionData> partitionData = new LinkedHashMap<>();\n+        partitionData.put(tip0,\n+            new ShareFetchResponseData.PartitionData()\n+                .setPartitionIndex(tip0.topicPartition().partition())\n+                .setErrorCode(error.code())\n+                .setCurrentLeader(new ShareFetchResponseData.LeaderIdAndEpoch().setLeaderId(-1).setLeaderEpoch(-1)));\n+        client.prepareResponse(ShareFetchResponse.of(Errors.NONE, 0, partitionData, List.of(), 0));\n+        networkClientDelegate.poll(time.timer(0));\n+\n+        // The refresh is requested before the fetch collector has seen the error.\n+        assertTrue(shareConsumeRequestManager.hasCompletedFetches());\n+        assertTrue(metadata.updateRequested());\n+    }\n+\n+    /**\n+     * A ShareAcknowledge partition error which says the cached leader is wrong, but which carries no new leader\n+     * information, must request a metadata refresh. Unlike ShareFetch, no fetch collector sees these errors, so\n+     * without this the stale leader would persist until the periodic metadata refresh.\n+     */\n+    @ParameterizedTest\n+    @EnumSource(value = Errors.class, names = {\"NOT_LEADER_OR_FOLLOWER\", \"FENCED_LEADER_EPOCH\", \"UNKNOWN_TOPIC_OR_PARTITION\", \"UNKNOWN_TOPIC_ID\"})\n+    public void testShareAcknowledgePartitionErrorWithoutLeaderInfoRequestsMetadataUpdate(Errors error) {\n+        buildRequestManager();\n+        shareConsumeRequestManager.setAcknowledgementCommitCallbackRegistered(true);\n+\n+        subscriptions.subscribeToShareGroup(Set.of(topicName));\n+        subscriptions.assignFromSubscribed(List.of(tp0));\n+\n+        client.updateMetadata(\n+                RequestTestUtils.metadataUpdateWithIds(1, Map.of(topicName, 1),\n+                        tp -> validLeaderEpoch, topicIds, false));\n+        assertFalse(metadata.updateRequested());\n+\n+        sendFetchAndVerifyResponse(records, acquiredRecords, Errors.NONE);\n+        fetchRecords();\n+\n+        Acknowledgements acknowledgements = getAcknowledgements(1,\n+                AcknowledgeType.ACCEPT, AcknowledgeType.ACCEPT, AcknowledgeType.REJECT);\n+        CompletableFuture<Map<TopicIdPartition, Acknowledgements>> future =\n+                shareConsumeRequestManager.commitSync(Map.of(tip0, new NodeAcknowledgements(0, acknowledgements)),\n+                        calculateDeadlineMs(time.timer(defaultApiTimeoutMs)));\n+        assertEquals(1, shareConsumeRequestManager.sendAcknowledgements());\n+        assertFalse(metadata.updateRequested());\n+\n+        // The acknowledgements fail with no new leader information. The broker sets the current leader to -1/-1\n+        // when it does not know the new leader.\n+        client.prepareResponse(fullShareAcknowledgeResponse(tip0, error,\n+                new ShareAcknowledgeResponseData.LeaderIdAndEpoch().setLeaderId(-1).setLeaderEpoch(-1), List.of()));\n+        networkClientDelegate.poll(time.timer(0));\n+\n+        assertTrue(metadata.updateRequested());\n+        assertTrue(future.isDone());\n+        assertEquals(1, completedAcknowledgements.size());\n+        assertEquals(error.exception().getClass(), completedAcknowledgements.get(0).get(tip0).getAcknowledgeException().getClass());\n+    }\n+\n+    /**\n+     * A redirect which the share session leader cache accepts can still be refused by the metadata, which only\n+     * applies a strictly newer leader epoch in accordance with KIP-951. When the new leader is a broker the metadata\n+     * has never seen, the cache names a node which is not in the cluster, so the next poll would fall back to the stale\n+     * leader in the metadata and be redirected again, indefinitely, until the periodic refresh. The request manager must\n+     * request a refresh as soon as the metadata refuses a redirect the cache accepted.\n+     */\n+    @Test\n+    public void testShareFetchRedirectRefusedByMetadataRequestsMetadataUpdate() {\n+        buildRequestManager();\n+\n+        subscriptions.subscribeToShareGroup(Set.of(topicName));\n+        subscriptions.assignFromSubscribed(Set.of(tp0));\n+\n+        // A single-node cluster. Node 1 exists but the metadata has not yet seen it.\n+        client.updateMetadata(\n+            RequestTestUtils.metadataUpdateWithIds(1, Map.of(topicName, 1),\n+                tp -> validLeaderEpoch, topicIds, false));\n+        Node nodeId0 = metadata.fetch().nodeById(0);\n+        Node nodeId1 = new Node(1, \"localhost\", 9093);\n+        assertNull(metadata.fetch().nodeById(nodeId1.id()));\n+        assertFalse(metadata.updateRequested());\n+\n+        // Establish the share session on node 0.\n+        assertEquals(1, sendFetches());\n+        assertEquals(nodeId0.id(), shareConsumeRequestManager.shareSessionNodeId(tip0));\n+\n+        // Node 0 redirects to node 1 without advancing the leader epoch. The cache accepts the redirect, but the\n+        // metadata refuses it, so it does not learn node 1's endpoint from the response.\n+        LinkedHashMap<TopicIdPartition, ShareFetchResponseData.PartitionData> partitionData = new LinkedHashMap<>();\n+        partitionData.put(tip0,\n+            new ShareFetchResponseData.PartitionData()\n+                .setPartitionIndex(tip0.topicPartition().partition())\n+                .setErrorCode(Errors.NOT_LEADER_OR_FOLLOWER.code())\n+                .setCurrentLeader(new ShareFetchResponseData.LeaderIdAndEpoch()\n+                    .setLeaderId(nodeId1.id())\n+                    .setLeaderEpoch(validLeaderEpoch)));\n+        client.prepareResponseFrom(ShareFetchResponse.of(Errors.NONE, 0, partitionData, List.of(nodeId1), 0), nodeId0);\n+        networkClientDelegate.poll(time.timer(0));\n+        assertTrue(shareConsumeRequestManager.hasCompletedFetches());\n+\n+        assertEquals(nodeId1.id(), shareConsumeRequestManager.shareSessionNodeId(tip0));\n+        assertEquals(nodeId0, metadata.fetch().leaderFor(tp0));\n+        assertNull(metadata.fetch().nodeById(nodeId1.id()));\n+\n+        // The cache and the metadata disagree, so a refresh is requested before the fetch collector runs.\n+        assertTrue(metadata.updateRequested());\n+        fetchRecords();\n+\n+        // The refresh arrives, naming node 1 as the leader at the same epoch and including node 1 in the cluster.\n+        metadata.updateWithCurrentRequestVersion(\n+            metadataResponseWithLeader(List.of(nodeId0, nodeId1), nodeId1, validLeaderEpoch), false, time.milliseconds());\n+        assertEquals(nodeId1, metadata.fetch().leaderFor(tp0));\n+\n+        // The next poll fetches tp0 from node 1 and removes it from the share session on node 0.\n+        NetworkClientDelegate.PollResult pollResult = shareConsumeRequestManager.sendFetchesReturnPollResult();\n+        assertEquals(nodeId1.id(), shareConsumeRequestManager.shareSessionNodeId(tip0));\n+        assertEquals(2, pollResult.unsentRequests.size());\n+        Map<Integer, ShareFetchRequestData> requestsByNode = new HashMap<>();\n+        pollResult.unsentRequests.forEach(unsentRequest ->\n+            requestsByNode.put(unsentRequest.node().get().id(), ((ShareFetchRequest.Builder) unsentRequest.requestBuilder()).data()));\n+        assertEquals(Set.of(nodeId0.id(), nodeId1.id()), requestsByNode.keySet());\n+        assertNotNull(requestsByNode.get(nodeId1.id()).topics().find(tip0.topicId()).partitions().find(tip0.partition()));\n+        assertTrue(requestsByNode.get(nodeId0.id()).topics().isEmpty());\n+        assertEquals(List.of(tip0.partition()), requestsByNode.get(nodeId0.id()).forgottenTopicsData().get(0).partitions());\n+    }\n+\n+    /**\n+     * Records fetched from a node may still be buffered when that node disappears from the cluster metadata and\n+     * its session handler is removed. When the application later acknowledges those records, the acknowledgements\n+     * are queued for the vanished node. They can never be sent, so they must be failed rather than left pending forever.\n+     */\n+    @Test\n+    public void testPiggybackAcksQueuedAfterNodeDisappearsAreFailed() {\n+        buildRequestManager();\n+        shareConsumeRequestManager.setAcknowledgementCommitCallbackRegistered(true);\n+\n+        subscriptions.subscribeToShareGroup(Set.of(topicName));\n+        subscriptions.assignFromSubscribed(List.of(tp0));\n+\n+        client.updateMetadata(\n+                RequestTestUtils.metadataUpdateWithIds(2, Map.of(topicName, 2),\n+                        tp -> validLeaderEpoch, topicIds, false));\n+        Node nodeId0 = metadata.fetch().nodeById(0);\n+        Node nodeId1 = metadata.fetch().nodeById(1);\n+\n+        // Establish the share session on node 0 and fetch records.\n+        assertEquals(1, sendFetches());\n+        client.prepareResponseFrom(\n+                ShareFetchResponse.of(Errors.NONE, 0,\n+                        buildPartitionDataMap(tip0, records, acquiredRecords, Errors.NONE, Errors.NONE),\n+                        List.of(), 0),\n+                nodeId0);\n+        networkClientDelegate.poll(time.timer(0));\n+        fetchRecords();\n+        assertNotNull(shareConsumeRequestManager.sessionHandler(nodeId0.id()));\n+\n+        // Node 0 is fenced: it disappears from the metadata and leadership for tp0 fails over to node 1.\n+        MetadataResponse.PartitionMetadata tp0Metadata = new MetadataResponse.PartitionMetadata(\n+                Errors.NONE, tp0, Optional.of(nodeId1.id()), Optional.of(validLeaderEpoch + 1),\n+                List.of(nodeId1.id()), List.of(nodeId1.id()), List.of());\n+        MetadataResponse.TopicMetadata topicMetadata = new MetadataResponse.TopicMetadata(\n+                Errors.NONE, topicName, topicId, false, List.of(tp0Metadata),\n+                MetadataResponse.AUTHORIZED_OPERATIONS_OMITTED);\n+        MetadataResponse metadataWithoutNode0 = RequestTestUtils.metadataResponse(\n+                List.of(nodeId1), \"kafka-cluster\", 1, List.of(topicMetadata));\n+        metadata.updateWithCurrentRequestVersion(metadataWithoutNode0, false, time.milliseconds());\n+        assertNull(metadata.fetch().nodeById(0));\n+\n+        // The next poll re-routes the fetch to node 1 and removes the stale session handler for node 0.\n+        assertEquals(1, sendFetches());\n+        assertNull(shareConsumeRequestManager.sessionHandler(nodeId0.id()));\n+        assertEquals(0, completedAcknowledgements.size());\n+\n+        // The application now acknowledges the records it fetched from node 0. There is no session handler to\n+        // send them on, and leadership has moved to node 1, so they must be failed with NOT_LEADER_OR_FOLLOWER.\n+        Acknowledgements acknowledgements = getAcknowledgements(1,\n+                AcknowledgeType.ACCEPT, AcknowledgeType.ACCEPT, AcknowledgeType.REJECT);\n+        shareConsumeRequestManager.fetch(Map.of(tip0, new NodeAcknowledgements(0, acknowledgements)));\n+\n+        // Node 1 has a request in flight, so no new fetch is sent, but the orphaned acknowledgements must still fail.\n+        assertEquals(0, sendFetches());\n+        assertEquals(1, completedAcknowledgements.size());\n+        assertEquals(acknowledgements, completedAcknowledgements.get(0).get(tip0));\n+        assertInstanceOf(NotLeaderOrFollowerException.class, completedAcknowledgements.get(0).get(tip0).getAcknowledgeException());\n+    }\n+\n     /**\n      * An acknowledge request state is created for the node that led the partition at the time of the commit.\n      * If that node then disappears from the cluster metadata before the request is sent, the acknowledgements must be failed with\n@@ -3234,7 +3673,7 @@ public void testAcknowledgeRequestFailedWhenNodeDisappearsBeforeSend() {\n      * topic ID is forgotten from the share session and the new one is fetched.\n      */\n     @Test\n-    public void testFetchResponseWithUnknownTopicIdRefreshesTopicIdOnRecreation() {\n+    public void testShareFetchResponseWithUnknownTopicIdRefreshesTopicIdOnRecreation() {\n         buildRequestManager();\n \n         assignFromSubscribed(Set.of(tp0));\n@@ -3246,7 +3685,7 @@ public void testFetchResponseWithUnknownTopicIdRefreshesTopicIdOnRecreation() {\n         // A subsequent fetch returns a partition-level UNKNOWN_TOPIC_ID error, which causes the request\n         // manager to forget the cached topic ID and leader for the partition.\n         assertEquals(1, sendFetches());\n-        client.prepareResponse(fullFetchResponse(tip0, records, emptyAcquiredRecords, Errors.UNKNOWN_TOPIC_ID));\n+        client.prepareResponse(fullShareFetchResponse(tip0, records, emptyAcquiredRecords, Errors.UNKNOWN_TOPIC_ID));\n         networkClientDelegate.poll(time.timer(0));\n         assertTrue(shareConsumeRequestManager.hasCompletedFetches());\n         fetchRecords();\n@@ -3274,11 +3713,11 @@ public void testFetchResponseWithUnknownTopicIdRefreshesTopicIdOnRecreation() {\n     }\n \n     /**\n-     * As {@link #testFetchResponseWithUnknownTopicIdRefreshesTopicIdOnRecreation()} but the UNKNOWN_TOPIC_ID\n+     * As {@link #testShareFetchResponseWithUnknownTopicIdRefreshesTopicIdOnRecreation()} but the UNKNOWN_TOPIC_ID\n      * error arrives in a ShareAcknowledge response rather than a ShareFetch response.\n      */\n     @Test\n-    public void testAcknowledgeResponseWithUnknownTopicIdRefreshesTopicIdOnRecreation() {\n+    public void testShareAcknowledgeResponseWithUnknownTopicIdRefreshesTopicIdOnRecreation() {\n         buildRequestManager();\n         shareConsumeRequestManager.setAcknowledgementCommitCallbackRegistered(true);\n \n@@ -3295,7 +3734,7 @@ public void testAcknowledgeResponseWithUnknownTopicIdRefreshesTopicIdOnRecreatio\n                 calculateDeadlineMs(time.timer(defaultApiTimeoutMs)));\n \n         assertEquals(1, shareConsumeRequestManager.sendAcknowledgements());\n-        client.prepareResponse(fullAcknowledgeResponse(tip0, Errors.UNKNOWN_TOPIC_ID));\n+        client.prepareResponse(fullShareAcknowledgeResponse(tip0, Errors.UNKNOWN_TOPIC_ID));\n         networkClientDelegate.poll(time.timer(0));\n \n         // The acknowledgements are completed with the error rather than retried.\n@@ -3358,6 +3797,11 @@ public void testStaleLeaderEpochDoesNotDowngradeShareSessionLeader() {\n         client.prepareResponseFrom(ShareFetchResponse.of(Errors.NONE, 0, partitionData, List.of(nodeId1), 0), nodeId0);\n         networkClientDelegate.poll(time.timer(0));\n         assertTrue(shareConsumeRequestManager.hasCompletedFetches());\n+\n+        // The cache rejected the stale redirect, so the request manager has no disagreement with the metadata to\n+        // resolve and does not request a refresh. The share fetch collector requests a metadata refresh when it\n+        // sees the error.\n+        assertFalse(metadata.updateRequested());\n         fetchRecords();\n \n         // The stale leader must not have replaced the cached leader, so the next fetch still goes only to node0.\n@@ -3366,6 +3810,81 @@ public void testStaleLeaderEpochDoesNotDowngradeShareSessionLeader() {\n         assertEquals(nodeId0, pollResult.unsentRequests.get(0).node().get());\n     }\n \n+    @ParameterizedTest\n+    @EnumSource(value = Errors.class, names = {\"NOT_LEADER_OR_FOLLOWER\", \"FENCED_LEADER_EPOCH\"})\n+    public void testLeaderChangeWithUnchangedEpochUpdatesShareSessionLeader(Errors error) {\n+        buildRequestManager();\n+\n+        subscriptions.subscribeToShareGroup(Set.of(topicName));\n+        subscriptions.assignFromSubscribed(Set.of(tp0));\n+\n+        // tp0's leader is node0.\n+        client.updateMetadata(\n+            RequestTestUtils.metadataUpdateWithIds(2, Map.of(topicName, 1),\n+                tp -> validLeaderEpoch, topicIds, false));\n+        Node nodeId0 = metadata.fetch().nodeById(0);\n+        Node nodeId1 = metadata.fetch().nodeById(1);\n+        assertEquals(nodeId0, metadata.fetch().leaderFor(tp0));\n+\n+        // The first fetch goes to node0 and caches the leader (node0, validLeaderEpoch).\n+        assertEquals(1, sendFetches());\n+        assertEquals(nodeId0.id(), shareConsumeRequestManager.shareSessionNodeId(tip0));\n+\n+        // node0 responds with a leadership error naming node1 as the new leader, but the leader epoch has not\n+        // advanced. Some broker implementations change the leader without incrementing the leader epoch.\n+        LinkedHashMap<TopicIdPartition, ShareFetchResponseData.PartitionData> partitionData = new LinkedHashMap<>();\n+        partitionData.put(tip0,\n+            new ShareFetchResponseData.PartitionData()\n+                .setPartitionIndex(tip0.topicPartition().partition())\n+                .setErrorCode(error.code())\n+                .setCurrentLeader(new ShareFetchResponseData.LeaderIdAndEpoch()\n+                    .setLeaderId(nodeId1.id())\n+                    .setLeaderEpoch(validLeaderEpoch)));\n+        client.prepareResponseFrom(ShareFetchResponse.of(Errors.NONE, 0, partitionData, List.of(nodeId1), 0), nodeId0);\n+        networkClientDelegate.poll(time.timer(0));\n+        assertTrue(shareConsumeRequestManager.hasCompletedFetches());\n+        fetchRecords();\n+\n+        // The redirect must be trusted even though the epoch is unchanged, so the cached leader is now node1.\n+        assertEquals(nodeId1.id(), shareConsumeRequestManager.shareSessionNodeId(tip0));\n+\n+        // The next poll fetches tp0 from node1, and also sends a request to node0 which removes tp0 from the\n+        // share session on the former leader.\n+        NetworkClientDelegate.PollResult pollResult = shareConsumeRequestManager.sendFetchesReturnPollResult();\n+        assertEquals(2, pollResult.unsentRequests.size());\n+        Map<Integer, ShareFetchRequestData> requestsByNode = new HashMap<>();\n+        pollResult.unsentRequests.forEach(unsentRequest ->\n+            requestsByNode.put(unsentRequest.node().get().id(), ((ShareFetchRequest.Builder) unsentRequest.requestBuilder()).data()));\n+        assertEquals(Set.of(nodeId0.id(), nodeId1.id()), requestsByNode.keySet());\n+\n+        ShareFetchRequestData node1Request = requestsByNode.get(nodeId1.id());\n+        assertEquals(1, node1Request.topics().size());\n+        ShareFetchRequestData.FetchTopic node1Topic = node1Request.topics().find(tip0.topicId());\n+        assertNotNull(node1Topic);\n+        assertEquals(1, node1Topic.partitions().size());\n+        assertNotNull(node1Topic.partitions().find(tip0.partition()));\n+\n+        ShareFetchRequestData node0Request = requestsByNode.get(nodeId0.id());\n+        assertTrue(node0Request.topics().isEmpty());\n+        assertEquals(1, node0Request.forgottenTopicsData().size());\n+        assertEquals(tip0.topicId(), node0Request.forgottenTopicsData().get(0).topicId());\n+        assertEquals(List.of(tip0.partition()), node0Request.forgottenTopicsData().get(0).partitions());\n+\n+        // node1 serves the fetch successfully and node0 acknowledges the removal.\n+        networkClientDelegate.addAll(pollResult.unsentRequests);\n+        partitionData = buildPartitionDataMap(tip0, records, ShareCompletedFetchTest.acquiredRecords(1L, 1), Errors.NONE, Errors.NONE);\n+        client.prepareResponseFrom(ShareFetchResponse.of(Errors.NONE, 0, partitionData, List.of(), 0), nodeId1);\n+        client.prepareResponseFrom(ShareFetchResponse.of(Errors.NONE, 0, new LinkedHashMap<>(), List.of(), 0), nodeId0);\n+        networkClientDelegate.poll(time.timer(0));\n+        assertTrue(shareConsumeRequestManager.hasCompletedFetches());\n+        Map<TopicPartition, List<ConsumerRecord<byte[], byte[]>>> partitionRecords = fetchRecords();\n+        assertTrue(partitionRecords.containsKey(tp0));\n+        assertEquals(1, partitionRecords.get(tp0).size());\n+\n+        // The successful fetch leaves the cached leader on node1.\n+        assertEquals(nodeId1.id(), shareConsumeRequestManager.shareSessionNodeId(tip0));\n+    }\n+\n     @Test\n     public void testFetchOneNodeAtATimeForRecordLimitMode() {\n         // We will simulate two nodes, each with one partition. The first node will have more records\n@@ -3508,7 +4027,7 @@ public void testShareFetchWithRenewAcknowledgement() {\n \n         assertEquals(0, renewedRecords.size());\n \n-        client.prepareResponse(fullFetchResponse(tip0, MemoryRecords.EMPTY, List.of(), Errors.NONE));\n+        client.prepareResponse(fullShareFetchResponse(tip0, MemoryRecords.EMPTY, List.of(), Errors.NONE));\n         networkClientDelegate.poll(time.timer(0));\n         assertTrue(shareConsumeRequestManager.hasCompletedFetches());\n \n@@ -3524,7 +4043,7 @@ public void testShareFetchWithRenewAcknowledgement() {\n         assertEquals(1, sendFetches());\n         assertFalse(shareConsumeRequestManager.hasCompletedFetches());\n \n-        client.prepareResponse(fullFetchResponse(tip0, records, acquiredRecords, Errors.NONE));\n+        client.prepareResponse(fullShareFetchResponse(tip0, records, acquiredRecords, Errors.NONE));\n         networkClientDelegate.poll(time.timer(0));\n         assertTrue(shareConsumeRequestManager.hasCompletedFetches());\n \n@@ -3560,8 +4079,8 @@ public void testCommitSyncRenewOnOneNodeAcceptOnAnother(boolean renewNodeRespond\n \n         // Fetch records from both partitions so that both nodes have established share sessions.\n         assertEquals(2, sendFetches());\n-        client.prepareResponseFrom(fullFetchResponse(tip0, records, acquiredRecords, Errors.NONE), nodeId0);\n-        client.prepareResponseFrom(fullFetchResponse(tip1, records, acquiredRecords, Errors.NONE), nodeId1);\n+        client.prepareResponseFrom(fullShareFetchResponse(tip0, records, acquiredRecords, Errors.NONE), nodeId0);\n+        client.prepareResponseFrom(fullShareFetchResponse(tip1, records, acquiredRecords, Errors.NONE), nodeId1);\n         networkClientDelegate.poll(time.timer(0));\n         assertEquals(2, fetchRecords().size());\n \n@@ -3582,11 +4101,11 @@ public void testCommitSyncRenewOnOneNodeAcceptOnAnother(boolean renewNodeRespond\n         Node last = renewNodeRespondsLast ? nodeId0 : nodeId1;\n         TopicIdPartition lastTip = renewNodeRespondsLast ? tip0 : tip1;\n \n-        client.respondFrom(fullAcknowledgeResponse(firstTip, Errors.NONE), first);\n+        client.respondFrom(fullShareAcknowledgeResponse(firstTip, Errors.NONE), first);\n         networkClientDelegate.poll(time.timer(0));\n         assertFalse(future.isDone());\n \n-        client.respondFrom(fullAcknowledgeResponse(lastTip, Errors.NONE), last);\n+        client.respondFrom(fullShareAcknowledgeResponse(lastTip, Errors.NONE), last);\n         networkClientDelegate.poll(time.timer(0));\n         assertTrue(future.isDone());\n         assertTrue(future.join().get(tip0).isCompleted());\n@@ -3598,68 +4117,68 @@ public void testCommitSyncRenewOnOneNodeAcceptOnAnother(boolean renewNodeRespond\n             \"renewed records were not reported to the application thread\");\n     }\n \n-    private ShareFetchResponse fetchResponseWithTopLevelError(TopicIdPartition tp, Errors error) {\n+    private ShareFetchResponse shareFetchResponseWithTopLevelError(TopicIdPartition tp, Errors error) {\n         Map<TopicIdPartition, ShareFetchResponseData.PartitionData> partitions = Map.of(tp,\n                 new ShareFetchResponseData.PartitionData()\n                         .setPartitionIndex(tp.topicPartition().partition())\n                         .setErrorCode(error.code()));\n         return ShareFetchResponse.of(error, 0, new LinkedHashMap<>(partitions), List.of(), 0);\n     }\n \n-    private ShareFetchResponse fullFetchResponse(TopicIdPartition tp,\n-                                                 MemoryRecords records,\n-                                                 List<ShareFetchResponseData.AcquiredRecords> acquiredRecords,\n-                                                 Errors error) {\n-        return fullFetchResponse(tp, records, acquiredRecords, error, Errors.NONE);\n+    private ShareFetchResponse fullShareFetchResponse(TopicIdPartition tp,\n+                                                      MemoryRecords records,\n+                                                      List<ShareFetchResponseData.AcquiredRecords> acquiredRecords,\n+                                                      Errors error) {\n+        return fullShareFetchResponse(tp, records, acquiredRecords, error, Errors.NONE);\n     }\n \n-    private ShareFetchResponse fullFetchResponse(TopicIdPartition tp,\n-                                                 MemoryRecords records,\n-                                                 List<ShareFetchResponseData.AcquiredRecords> acquiredRecords,\n-                                                 Errors error,\n-                                                 Errors acknowledgeError) {\n+    private ShareFetchResponse fullShareFetchResponse(TopicIdPartition tp,\n+                                                      MemoryRecords records,\n+                                                      List<ShareFetchResponseData.AcquiredRecords> acquiredRecords,\n+                                                      Errors error,\n+                                                      Errors acknowledgeError) {\n         Map<TopicIdPartition, ShareFetchResponseData.PartitionData> partitions = Map.of(tp,\n-                partitionDataForFetch(tp, records, acquiredRecords, error, acknowledgeError));\n+                partitionDataForShareFetch(tp, records, acquiredRecords, error, acknowledgeError));\n         return ShareFetchResponse.of(Errors.NONE, 0, new LinkedHashMap<>(partitions), List.of(), 0);\n     }\n \n-    private ShareAcknowledgeResponse emptyAcknowledgeResponse() {\n+    private ShareAcknowledgeResponse emptyShareAcknowledgeResponse() {\n         Map<TopicIdPartition, ShareAcknowledgeResponseData.PartitionData> partitions = Map.of();\n         return ShareAcknowledgeResponse.of(Errors.NONE, 0, new LinkedHashMap<>(partitions), List.of(), 0);\n     }\n \n-    private ShareAcknowledgeResponse acknowledgeResponseWithTopLevelError(TopicIdPartition tp, Errors error) {\n+    private ShareAcknowledgeResponse shareAcknowledgeResponseWithTopLevelError(TopicIdPartition tp, Errors error) {\n         Map<TopicIdPartition, ShareAcknowledgeResponseData.PartitionData> partitions = Map.of(tp,\n-                partitionDataForAcknowledge(tp, Errors.NONE));\n+                partitionDataForShareAcknowledge(tp, Errors.NONE));\n         return ShareAcknowledgeResponse.of(error, 0, new LinkedHashMap<>(partitions), List.of(), 0);\n     }\n \n-    private ShareAcknowledgeResponse fullAcknowledgeResponse(TopicIdPartition tp, Errors error) {\n+    private ShareAcknowledgeResponse fullShareAcknowledgeResponse(TopicIdPartition tp, Errors error) {\n         Map<TopicIdPartition, ShareAcknowledgeResponseData.PartitionData> partitions = Map.of(tp,\n-                partitionDataForAcknowledge(tp, error));\n+                partitionDataForShareAcknowledge(tp, error));\n         return ShareAcknowledgeResponse.of(Errors.NONE, 0, new LinkedHashMap<>(partitions), List.of(), 0);\n     }\n \n-    private ShareAcknowledgeResponse fullAcknowledgeResponse(Map<TopicIdPartition, Errors> partitionErrorsMap) {\n+    private ShareAcknowledgeResponse fullShareAcknowledgeResponse(Map<TopicIdPartition, Errors> partitionErrorsMap) {\n         Map<TopicIdPartition, ShareAcknowledgeResponseData.PartitionData> partitions = new HashMap<>();\n-        partitionErrorsMap.forEach((tip, error) -> partitions.put(tip, partitionDataForAcknowledge(tip, error)));\n+        partitionErrorsMap.forEach((tip, error) -> partitions.put(tip, partitionDataForShareAcknowledge(tip, error)));\n         return ShareAcknowledgeResponse.of(Errors.NONE, 0, new LinkedHashMap<>(partitions), List.of(), 0);\n     }\n \n-    private ShareAcknowledgeResponse fullAcknowledgeResponse(TopicIdPartition tp,\n-                                                             Errors error,\n-                                                             ShareAcknowledgeResponseData.LeaderIdAndEpoch currentLeader,\n-                                                             List<Node> nodeEndpoints) {\n+    private ShareAcknowledgeResponse fullShareAcknowledgeResponse(TopicIdPartition tp,\n+                                                                  Errors error,\n+                                                                  ShareAcknowledgeResponseData.LeaderIdAndEpoch currentLeader,\n+                                                                  List<Node> nodeEndpoints) {\n         Map<TopicIdPartition, ShareAcknowledgeResponseData.PartitionData> partitions = Map.of(tp,\n-            partitionDataForAcknowledge(tp, error, currentLeader));\n+            partitionDataForShareAcknowledge(tp, error, currentLeader));\n         return ShareAcknowledgeResponse.of(Errors.NONE, 0, new LinkedHashMap<>(partitions), nodeEndpoints, 0);\n     }\n \n-    private ShareFetchResponseData.PartitionData partitionDataForFetch(TopicIdPartition tp,\n-                                                                       MemoryRecords records,\n-                                                                       List<ShareFetchResponseData.AcquiredRecords> acquiredRecords,\n-                                                                       Errors error,\n-                                                                       Errors acknowledgeError) {\n+    private ShareFetchResponseData.PartitionData partitionDataForShareFetch(TopicIdPartition tp,\n+                                                                            MemoryRecords records,\n+                                                                            List<ShareFetchResponseData.AcquiredRecords> acquiredRecords,\n+                                                                            Errors error,\n+                                                                            Errors acknowledgeError) {\n         return new ShareFetchResponseData.PartitionData()\n                 .setPartitionIndex(tp.topicPartition().partition())\n                 .setErrorCode(error.code())\n@@ -3668,15 +4187,15 @@ private ShareFetchResponseData.PartitionData partitionDataForFetch(TopicIdPartit\n                 .setAcquiredRecords(acquiredRecords);\n     }\n \n-    private ShareAcknowledgeResponseData.PartitionData partitionDataForAcknowledge(TopicIdPartition tp, Errors error) {\n+    private ShareAcknowledgeResponseData.PartitionData partitionDataForShareAcknowledge(TopicIdPartition tp, Errors error) {\n         return new ShareAcknowledgeResponseData.PartitionData()\n                 .setPartitionIndex(tp.topicPartition().partition())\n                 .setErrorCode(error.code());\n     }\n \n-    private ShareAcknowledgeResponseData.PartitionData partitionDataForAcknowledge(TopicIdPartition tp,\n-                                                                                   Errors error,\n-                                                                                   ShareAcknowledgeResponseData.LeaderIdAndEpoch currentLeader) {\n+    private ShareAcknowledgeResponseData.PartitionData partitionDataForShareAcknowledge(TopicIdPartition tp,\n+                                                                                        Errors error,\n+                                                                                        ShareAcknowledgeResponseData.LeaderIdAndEpoch currentLeader) {\n         return new ShareAcknowledgeResponseData.PartitionData()\n             .setPartitionIndex(tp.topicPartition().partition())\n             .setErrorCode(error.code())\n@@ -3992,9 +4511,9 @@ private void sendFetchAndVerifyResponse(MemoryRecords records,\n         assertFalse(shareConsumeRequestManager.hasCompletedFetches());\n \n         if (error.length > 1) {\n-            client.prepareResponse(fullFetchResponse(tip0, records, acquiredRecords, error[0], error[1]));\n+            client.prepareResponse(fullShareFetchResponse(tip0, records, acquiredRecords, error[0], error[1]));\n         } else {\n-            client.prepareResponse(fullFetchResponse(tip0, records, acquiredRecords, error[0]));\n+            client.prepareResponse(fullShareFetchResponse(tip0, records, acquiredRecords, error[0]));\n         }\n         networkClientDelegate.poll(time.timer(0));\n         assertTrue(shareConsumeRequestManager.hasCompletedFetches());\n@@ -4005,7 +4524,7 @@ private LinkedHashMap<TopicIdPartition, ShareFetchResponseData.PartitionData> bu\n             TopicIdPartition tip, MemoryRecords records,\n             List<ShareFetchResponseData.AcquiredRecords> acquiredRecords, Errors error, Errors ackError) {\n         LinkedHashMap<TopicIdPartition, ShareFetchResponseData.PartitionData> map = new LinkedHashMap<>();\n-        map.put(tip, partitionDataForFetch(tip, records, acquiredRecords, error, ackError));\n+        map.put(tip, partitionDataForShareFetch(tip, records, acquiredRecords, error, ackError));\n         return map;\n     }\n }"
+  }
+ ],
+ "timeline": [
+  {
+   "sha": "1b5e7143d8d83a874a9da651750305f353b92be6",
+   "node_id": "C_kwDOACG9q9oAKDFiNWU3MTQzZDhkODNhODc0YTlkYTY1MTc1MDMwNWYzNTNiOTJiZTY",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/1b5e7143d8d83a874a9da651750305f353b92be6",
+   "html_url": "https://github.com/apache/kafka/commit/1b5e7143d8d83a874a9da651750305f353b92be6",
+   "author": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-01T14:15:40Z"
+   },
+   "committer": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-01T14:15:40Z"
+   },
+   "tree": {
+    "sha": "f2cf632ba89cec37c11a106a401e6cd4a93d4911",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/f2cf632ba89cec37c11a106a401e6cd4a93d4911"
+   },
+   "message": "MINOR: Resilience improvements on leadership change",
+   "parents": [
+    {
+     "sha": "99b940733a9f6bc409457dba7108f08421d81e42",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/99b940733a9f6bc409457dba7108f08421d81e42",
+     "html_url": "https://github.com/apache/kafka/commit/99b940733a9f6bc409457dba7108f08421d81e42"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "id": 32259321584,
+   "node_id": "CTDE_lADOACG9q88AAAABUZUG3M8AAAAHgs4u8A",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/32259321584",
+   "actor": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "convert_to_draft",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-01T14:19:43Z",
+   "performed_via_github_app": null
+  },
+  {
+   "id": 32259335782,
+   "node_id": "LE_lADOACG9q88AAAABUZUG3M8AAAAHgs5mZg",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/32259335782",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-01T14:19:53Z",
+   "label": {
+    "name": "consumer",
+    "color": "bf6a03"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 32259335865,
+   "node_id": "LE_lADOACG9q88AAAABUZUG3M8AAAAHgs5muQ",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/32259335865",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-01T14:19:53Z",
+   "label": {
+    "name": "clients",
+    "color": "ededed"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 32259340096,
+   "node_id": "LE_lADOACG9q88AAAABUZUG3M8AAAAHgs53QA",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/32259340096",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-01T14:19:56Z",
+   "label": {
+    "name": "small",
+    "color": "FEF2C0"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "sha": "49609af2ba05cea81261cf1da21bbacf580808a6",
+   "node_id": "C_kwDOACG9q9oAKDQ5NjA5YWYyYmEwNWNlYTgxMjYxY2YxZGEyMWJiYWNmNTgwODA4YTY",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/49609af2ba05cea81261cf1da21bbacf580808a6",
+   "html_url": "https://github.com/apache/kafka/commit/49609af2ba05cea81261cf1da21bbacf580808a6",
+   "author": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-01T14:21:48Z"
+   },
+   "committer": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-01T14:21:48Z"
+   },
+   "tree": {
+    "sha": "4a9cb130f9753e3584c12d9e79ad16a954a77933",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/4a9cb130f9753e3584c12d9e79ad16a954a77933"
+   },
+   "message": "Remove unnecessary import",
+   "parents": [
+    {
+     "sha": "1b5e7143d8d83a874a9da651750305f353b92be6",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/1b5e7143d8d83a874a9da651750305f353b92be6",
+     "html_url": "https://github.com/apache/kafka/commit/1b5e7143d8d83a874a9da651750305f353b92be6"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "b425d90bb446a65d6febe5c19f510008262d3928",
+   "node_id": "C_kwDOACG9q9oAKGI0MjVkOTBiYjQ0NmE2NWQ2ZmViZTVjMTlmNTEwMDA4MjYyZDM5Mjg",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/b425d90bb446a65d6febe5c19f510008262d3928",
+   "html_url": "https://github.com/apache/kafka/commit/b425d90bb446a65d6febe5c19f510008262d3928",
+   "author": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-06T15:13:44Z"
+   },
+   "committer": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-06T15:13:44Z"
+   },
+   "tree": {
+    "sha": "6c50b25af976740f5d204c96eb7312efd6e3e20d",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/6c50b25af976740f5d204c96eb7312efd6e3e20d"
+   },
+   "message": "Handle unresponsive leader better",
+   "parents": [
+    {
+     "sha": "49609af2ba05cea81261cf1da21bbacf580808a6",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/49609af2ba05cea81261cf1da21bbacf580808a6",
+     "html_url": "https://github.com/apache/kafka/commit/49609af2ba05cea81261cf1da21bbacf580808a6"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "id": 32611902855,
+   "node_id": "UNLE_lADOACG9q88AAAABUZUG3M8AAAAHl9Ilhw",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/32611902855",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "unlabeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-06T15:14:40Z",
+   "label": {
+    "name": "small",
+    "color": "FEF2C0"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "sha": "6d1ff22bff12f58b48dd0131f7033b90c9262e2e",
+   "node_id": "C_kwDOACG9q9oAKDZkMWZmMjJiZmYxMmY1OGI0OGRkMDEzMWY3MDMzYjkwYzkyNjJlMmU",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/6d1ff22bff12f58b48dd0131f7033b90c9262e2e",
+   "html_url": "https://github.com/apache/kafka/commit/6d1ff22bff12f58b48dd0131f7033b90c9262e2e",
+   "author": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-06T15:24:00Z"
+   },
+   "committer": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-06T15:24:00Z"
+   },
+   "tree": {
+    "sha": "96f6137a7c2251efde93c8de1d55655ceab357cc",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/96f6137a7c2251efde93c8de1d55655ceab357cc"
+   },
+   "message": "javadoc tidying",
+   "parents": [
+    {
+     "sha": "b425d90bb446a65d6febe5c19f510008262d3928",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/b425d90bb446a65d6febe5c19f510008262d3928",
+     "html_url": "https://github.com/apache/kafka/commit/b425d90bb446a65d6febe5c19f510008262d3928"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "a96daa013f87052a5f03a0b020034014b59dc6e3",
+   "node_id": "C_kwDOACG9q9oAKGE5NmRhYTAxM2Y4NzA1MmE1ZjAzYTBiMDIwMDM0MDE0YjU5ZGM2ZTM",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/a96daa013f87052a5f03a0b020034014b59dc6e3",
+   "html_url": "https://github.com/apache/kafka/commit/a96daa013f87052a5f03a0b020034014b59dc6e3",
+   "author": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-06T18:00:58Z"
+   },
+   "committer": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-06T18:00:58Z"
+   },
+   "tree": {
+    "sha": "568dc20a9a8dc76a2ffadc6c482f173aff846d38",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/568dc20a9a8dc76a2ffadc6c482f173aff846d38"
+   },
+   "message": "Improve node disconnection handling",
+   "parents": [
+    {
+     "sha": "6d1ff22bff12f58b48dd0131f7033b90c9262e2e",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/6d1ff22bff12f58b48dd0131f7033b90c9262e2e",
+     "html_url": "https://github.com/apache/kafka/commit/6d1ff22bff12f58b48dd0131f7033b90c9262e2e"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "id": 32625037372,
+   "node_id": "RFRE_lADOACG9q88AAAABUZUG3M8AAAAHmJqQPA",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/32625037372",
+   "actor": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "ready_for_review",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-06T18:04:17Z",
+   "performed_via_github_app": null
+  },
+  {
+   "sha": "82784ae58b5f8b18368651aca3f3dea8fb64e205",
+   "node_id": "C_kwDOACG9q9oAKDgyNzg0YWU1OGI1ZjhiMTgzNjg2NTFhY2EzZjNkZWE4ZmI2NGUyMDU",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/82784ae58b5f8b18368651aca3f3dea8fb64e205",
+   "html_url": "https://github.com/apache/kafka/commit/82784ae58b5f8b18368651aca3f3dea8fb64e205",
+   "author": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-06T19:12:28Z"
+   },
+   "committer": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-06T19:12:28Z"
+   },
+   "tree": {
+    "sha": "7ca392ec4e2c52b0e7b5fb2701541cf0122631b2",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/7ca392ec4e2c52b0e7b5fb2701541cf0122631b2"
+   },
+   "message": "Refresh metadata when redirect rejected",
+   "parents": [
+    {
+     "sha": "a96daa013f87052a5f03a0b020034014b59dc6e3",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/a96daa013f87052a5f03a0b020034014b59dc6e3",
+     "html_url": "https://github.com/apache/kafka/commit/a96daa013f87052a5f03a0b020034014b59dc6e3"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "835ae9d1a362cfdd04a901ecab982b00f9d1a107",
+   "node_id": "C_kwDOACG9q9oAKDgzNWFlOWQxYTM2MmNmZGQwNGE5MDFlY2FiOTgyYjAwZjlkMWExMDc",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/835ae9d1a362cfdd04a901ecab982b00f9d1a107",
+   "html_url": "https://github.com/apache/kafka/commit/835ae9d1a362cfdd04a901ecab982b00f9d1a107",
+   "author": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-06T19:19:53Z"
+   },
+   "committer": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-06T19:19:53Z"
+   },
+   "tree": {
+    "sha": "377ce9ec591162d3bd6c07d58b96b1fc7f0815b5",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/377ce9ec591162d3bd6c07d58b96b1fc7f0815b5"
+   },
+   "message": "Fix typos",
+   "parents": [
+    {
+     "sha": "82784ae58b5f8b18368651aca3f3dea8fb64e205",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/82784ae58b5f8b18368651aca3f3dea8fb64e205",
+     "html_url": "https://github.com/apache/kafka/commit/82784ae58b5f8b18368651aca3f3dea8fb64e205"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "fa49658cbbd31a90684cfcb5d4a41c20a556734c",
+   "node_id": "C_kwDOACG9q9oAKGZhNDk2NThjYmJkMzFhOTA2ODRjZmNiNWQ0YTQxYzIwYTU1NjczNGM",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/fa49658cbbd31a90684cfcb5d4a41c20a556734c",
+   "html_url": "https://github.com/apache/kafka/commit/fa49658cbbd31a90684cfcb5d4a41c20a556734c",
+   "author": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-23T12:53:12Z"
+   },
+   "committer": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-23T12:53:12Z"
+   },
+   "tree": {
+    "sha": "1b68abd4e1061f3e972727d8f1b8c8c874616e42",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/1b68abd4e1061f3e972727d8f1b8c8c874616e42"
+   },
+   "message": "Merge branch 'trunk' into leadership-change-resilience",
+   "parents": [
+    {
+     "sha": "835ae9d1a362cfdd04a901ecab982b00f9d1a107",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/835ae9d1a362cfdd04a901ecab982b00f9d1a107",
+     "html_url": "https://github.com/apache/kafka/commit/835ae9d1a362cfdd04a901ecab982b00f9d1a107"
+    },
+    {
+     "sha": "b860fd33a700d18f4203d1553f878bd66059e539",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/b860fd33a700d18f4203d1553f878bd66059e539",
+     "html_url": "https://github.com/apache/kafka/commit/b860fd33a700d18f4203d1553f878bd66059e539"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  }
+ ]
+}

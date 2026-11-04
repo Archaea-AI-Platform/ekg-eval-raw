@@ -1,0 +1,1610 @@
+{
+ "expand": "description,lead,createdAt,createdBy,lastUpdatedAt,lastUpdatedBy,url,projectKeys",
+ "self": "https://issues.apache.org/jira/rest/api/2/project/12311720",
+ "id": "12311720",
+ "key": "KAFKA",
+ "description": "Apache Kafka is a distributed streaming platform.",
+ "lead": {
+  "self": "https://issues.apache.org/jira/rest/api/2/user?username=mimaison",
+  "key": "mimaison",
+  "name": "mimaison",
+  "avatarUrls": {
+   "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+   "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+   "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+   "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+  },
+  "displayName": "Mickael Maison",
+  "active": true
+ },
+ "components": [
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12324907",
+   "id": "12324907",
+   "name": "admin",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12323011",
+   "id": "12323011",
+   "name": "build",
+   "description": "gradle",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12315218",
+   "id": "12315218",
+   "name": "clients",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12324396",
+   "id": "12324396",
+   "name": "compression",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12315222",
+   "id": "12315222",
+   "name": "config",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12327569",
+   "id": "12327569",
+   "name": "connect",
+   "description": "Connect packages and connectors",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12320324",
+   "id": "12320324",
+   "name": "consumer",
+   "description": "consumer ",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12315219",
+   "id": "12315219",
+   "name": "contrib",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12320321",
+   "id": "12320321",
+   "name": "controller",
+   "description": "distributed co-ordination controller",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12315217",
+   "id": "12315217",
+   "name": "core",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12339522",
+   "id": "12339522",
+   "name": "docker",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12336301",
+   "id": "12336301",
+   "name": "docs",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12330912",
+   "id": "12330912",
+   "name": "documentation",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12337663",
+   "id": "12337663",
+   "name": "generator",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12338534",
+   "id": "12338534",
+   "name": "group-coordinator",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12337262",
+   "id": "12337262",
+   "name": "jbod",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12339511",
+   "id": "12339511",
+   "name": "kip",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12337892",
+   "id": "12337892",
+   "name": "kraft",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12320320",
+   "id": "12320320",
+   "name": "log",
+   "description": "persistence layer",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12335329",
+   "id": "12335329",
+   "name": "log cleaner",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12334500",
+   "id": "12334500",
+   "name": "logging",
+   "description": "log4j related issues, debugging improvement, etc",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12330201",
+   "id": "12330201",
+   "name": "metrics",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12339127",
+   "id": "12339127",
+   "name": "migration",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12334501",
+   "id": "12334501",
+   "name": "mirrormaker",
+   "description": "mirrormaker related issues",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12320322",
+   "id": "12320322",
+   "name": "network",
+   "description": "the network layer",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12326920",
+   "id": "12326920",
+   "name": "offset manager",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12315220",
+   "id": "12315220",
+   "name": "packaging",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12320325",
+   "id": "12320325",
+   "name": "producer ",
+   "description": "producer",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12336000",
+   "id": "12336000",
+   "name": "protocol",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12320323",
+   "id": "12320323",
+   "name": "purgatory",
+   "description": "request purgatory",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12337323",
+   "id": "12337323",
+   "name": "release",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12320326",
+   "id": "12320326",
+   "name": "replication",
+   "description": "replication ",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12324383",
+   "id": "12324383",
+   "name": "security",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12327571",
+   "id": "12327571",
+   "name": "streams",
+   "description": "Streams library architecture and APIs",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12335436",
+   "id": "12335436",
+   "name": "streams-test-utils",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12324423",
+   "id": "12324423",
+   "name": "system tests",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12339012",
+   "id": "12339012",
+   "name": "Tiered-Storage",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12320366",
+   "id": "12320366",
+   "name": "tools",
+   "description": "Kafka tools",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12324911",
+   "id": "12324911",
+   "name": "unit tests",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12315221",
+   "id": "12315221",
+   "name": "website",
+   "isAssigneeTypeValid": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/component/12324913",
+   "id": "12324913",
+   "name": "zkclient",
+   "isAssigneeTypeValid": false
+  }
+ ],
+ "issueTypes": [
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/issuetype/1",
+   "id": "1",
+   "description": "A problem which impairs or prevents the functions of the product.",
+   "iconUrl": "https://issues.apache.org/jira/secure/viewavatar?size=xsmall&avatarId=21133&avatarType=issuetype",
+   "name": "Bug",
+   "subtask": false,
+   "avatarId": 21133
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/issuetype/2",
+   "id": "2",
+   "description": "A new feature of the product, which has yet to be developed.",
+   "iconUrl": "https://issues.apache.org/jira/secure/viewavatar?size=xsmall&avatarId=21141&avatarType=issuetype",
+   "name": "New Feature",
+   "subtask": false,
+   "avatarId": 21141
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/issuetype/4",
+   "id": "4",
+   "description": "An improvement or enhancement to an existing feature or task.",
+   "iconUrl": "https://issues.apache.org/jira/secure/viewavatar?size=xsmall&avatarId=21140&avatarType=issuetype",
+   "name": "Improvement",
+   "subtask": false,
+   "avatarId": 21140
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/issuetype/6",
+   "id": "6",
+   "description": "A new unit, integration or system test.",
+   "iconUrl": "https://issues.apache.org/jira/images/icons/issuetypes/requirement.png",
+   "name": "Test",
+   "subtask": false
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/issuetype/5",
+   "id": "5",
+   "description": "General wishlist item.",
+   "iconUrl": "https://issues.apache.org/jira/secure/viewavatar?size=xsmall&avatarId=21140&avatarType=issuetype",
+   "name": "Wish",
+   "subtask": false,
+   "avatarId": 21140
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/issuetype/3",
+   "id": "3",
+   "description": "A task that needs to be done.",
+   "iconUrl": "https://issues.apache.org/jira/secure/viewavatar?size=xsmall&avatarId=21148&avatarType=issuetype",
+   "name": "Task",
+   "subtask": false,
+   "avatarId": 21148
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/issuetype/7",
+   "id": "7",
+   "description": "The sub-task of the issue",
+   "iconUrl": "https://issues.apache.org/jira/secure/viewavatar?size=xsmall&avatarId=21146&avatarType=issuetype",
+   "name": "Sub-task",
+   "subtask": true,
+   "avatarId": 21146
+  }
+ ],
+ "url": "https://kafka.apache.org/",
+ "assigneeType": "UNASSIGNED",
+ "versions": [
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12317242",
+   "id": "12317242",
+   "description": "0.6",
+   "name": "0.6",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "24/May/11",
+   "projectId": 12311720,
+   "releaseDate": "2011-05-24"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12317243",
+   "id": "12317243",
+   "description": "compression support",
+   "name": "0.7",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "04/Jan/12",
+   "projectId": 12311720,
+   "releaseDate": "2012-01-04"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12319140",
+   "id": "12319140",
+   "description": "bug fix release",
+   "name": "0.7.1",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "27/Jun/12",
+   "projectId": 12311720,
+   "releaseDate": "2012-06-27"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12322475",
+   "id": "12322475",
+   "description": "bug fix release",
+   "name": "0.7.2",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "10/Oct/12",
+   "projectId": 12311720,
+   "releaseDate": "2012-10-10"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12317244",
+   "id": "12317244",
+   "description": "intra-cluster replication support",
+   "name": "0.8.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "03/Dec/13",
+   "projectId": 12311720,
+   "releaseDate": "2013-12-03"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12322960",
+   "id": "12322960",
+   "name": "0.8.1",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "12/Mar/14",
+   "projectId": 12311720,
+   "releaseDate": "2014-03-12"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12326539",
+   "id": "12326539",
+   "description": "Blocker bugs found on 0.8.1",
+   "name": "0.8.1.1",
+   "archived": false,
+   "released": true,
+   "userStartDate": "20/Mar/14",
+   "userReleaseDate": "29/Apr/14",
+   "projectId": 12311720,
+   "startDate": "2014-03-20",
+   "releaseDate": "2014-04-29"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12328645",
+   "id": "12328645",
+   "description": "Fixes from the 0.8.1 release",
+   "name": "0.8.1.2",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12326167",
+   "id": "12326167",
+   "description": "Will include Kafka based offset management",
+   "name": "0.8.2.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "02/Feb/15",
+   "projectId": 12311720,
+   "releaseDate": "2015-02-02"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12329463",
+   "id": "12329463",
+   "description": "bug fixes for 0.8.2.0",
+   "name": "0.8.2.1",
+   "archived": false,
+   "released": true,
+   "userStartDate": "17/Feb/15",
+   "userReleaseDate": "11/Mar/15",
+   "projectId": 12311720,
+   "startDate": "2015-02-17",
+   "releaseDate": "2015-03-11"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12333296",
+   "id": "12333296",
+   "description": "bug fixes for 0.8.2.0",
+   "name": "0.8.2.2",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "02/Oct/15",
+   "projectId": 12311720,
+   "releaseDate": "2015-10-02"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12328745",
+   "id": "12328745",
+   "description": "new consumer; security",
+   "name": "0.9.0.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "23/Nov/15",
+   "projectId": 12311720,
+   "releaseDate": "2015-11-23"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12333395",
+   "id": "12333395",
+   "description": "bug fixes for 0.9.0.0",
+   "name": "0.9.0.1",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "19/Feb/16",
+   "projectId": 12311720,
+   "releaseDate": "2016-02-19"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12335668",
+   "id": "12335668",
+   "description": "Bug fixes for 0.9.0.1",
+   "name": "0.9.0.2",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12333882",
+   "id": "12333882",
+   "name": "0.10.0.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "22/May/16",
+   "projectId": 12311720,
+   "releaseDate": "2016-05-22"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12334962",
+   "id": "12334962",
+   "description": "Bug fixes for 0.10.0.0",
+   "name": "0.10.0.1",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "10/Aug/16",
+   "projectId": 12311720,
+   "releaseDate": "2016-08-10"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12338031",
+   "id": "12338031",
+   "name": "0.10.0.2",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12323928",
+   "id": "12323928",
+   "description": "Time index, throttled replication, more",
+   "name": "0.10.1.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "20/Oct/16",
+   "projectId": 12311720,
+   "releaseDate": "2016-10-20"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12338247",
+   "id": "12338247",
+   "description": "Bug fixes for 0.10.1.0",
+   "name": "0.10.1.1",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "20/Dec/16",
+   "projectId": 12311720,
+   "releaseDate": "2016-12-20"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12338926",
+   "id": "12338926",
+   "name": "0.10.1.2",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12338248",
+   "id": "12338248",
+   "description": "SASL-SCRAM, improved client compatibility, session windows, global tables, single message transforms, and more",
+   "name": "0.10.2.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "21/Feb/17",
+   "projectId": 12311720,
+   "releaseDate": "2017-02-21"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12339452",
+   "id": "12339452",
+   "description": "bug fixes for 0.10.2.0",
+   "name": "0.10.2.1",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "26/Apr/17",
+   "projectId": 12311720,
+   "releaseDate": "2017-04-26"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12340570",
+   "id": "12340570",
+   "name": "0.10.2.2",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "02/Jul/18",
+   "projectId": 12311720,
+   "releaseDate": "2018-07-02"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12343640",
+   "id": "12343640",
+   "name": "0.10.2.3",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12338986",
+   "id": "12338986",
+   "description": "Exactly-once, AdminClient, Record Headers, Request Rate Quotas, Improved resiliency",
+   "name": "0.11.0.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "28/Jun/17",
+   "projectId": 12311720,
+   "releaseDate": "2017-06-28"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12340632",
+   "id": "12340632",
+   "description": "bug fixes for 0.11.0",
+   "name": "0.11.0.1",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "12/Sep/17",
+   "projectId": 12311720,
+   "releaseDate": "2017-09-12"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12341355",
+   "id": "12341355",
+   "description": "Bug fixes for 0.11.0",
+   "name": "0.11.0.2",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "16/Nov/17",
+   "projectId": 12311720,
+   "releaseDate": "2017-11-16"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12342167",
+   "id": "12342167",
+   "name": "0.11.0.3",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "02/Jul/18",
+   "projectId": 12311720,
+   "releaseDate": "2018-07-02"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12343413",
+   "id": "12343413",
+   "name": "0.11.0.4",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12340539",
+   "id": "12340539",
+   "description": "1.x Milestone: Streams Improvements, Metrics Improvements, Java 9, JBOD",
+   "name": "1.0.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "01/Nov/17",
+   "projectId": 12311720,
+   "releaseDate": "2017-11-01"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12341619",
+   "id": "12341619",
+   "name": "1.0.1",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "02/Mar/18",
+   "projectId": 12311720,
+   "releaseDate": "2018-03-02"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12342647",
+   "id": "12342647",
+   "name": "1.0.2",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "08/Jul/18",
+   "projectId": 12311720,
+   "releaseDate": "2018-07-08"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12343414",
+   "id": "12343414",
+   "name": "1.0.3",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12339769",
+   "id": "12339769",
+   "name": "1.1.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "28/Mar/18",
+   "projectId": 12311720,
+   "releaseDate": "2018-03-28"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12342953",
+   "id": "12342953",
+   "description": "Bug fixes for 1.1.0",
+   "name": "1.1.1",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "19/Jul/18",
+   "projectId": 12311720,
+   "releaseDate": "2018-07-19"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12343473",
+   "id": "12343473",
+   "name": "1.1.2",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12341243",
+   "id": "12341243",
+   "description": "Prefixed ACLs, SASL/OAUTHBEARER, Streams and Connect improvements, Drop Java 7 and old producer/consumer",
+   "name": "2.0.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "30/Jul/18",
+   "projectId": 12311720,
+   "releaseDate": "2018-07-30"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12343442",
+   "id": "12343442",
+   "name": "2.0.1",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "09/Nov/18",
+   "projectId": 12311720,
+   "releaseDate": "2018-11-09"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12344309",
+   "id": "12344309",
+   "name": "2.0.2",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12343311",
+   "id": "12343311",
+   "name": "2.1.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "20/Nov/18",
+   "projectId": 12311720,
+   "releaseDate": "2018-11-20"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12344250",
+   "id": "12344250",
+   "name": "2.1.1",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "15/Feb/19",
+   "projectId": 12311720,
+   "releaseDate": "2019-02-15"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12344977",
+   "id": "12344977",
+   "name": "2.1.2",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12344063",
+   "id": "12344063",
+   "name": "2.2.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "22/Mar/19",
+   "projectId": 12311720,
+   "releaseDate": "2019-03-22"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12345010",
+   "id": "12345010",
+   "name": "2.2.1",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "01/Jun/19",
+   "projectId": 12311720,
+   "releaseDate": "2019-06-01"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12345460",
+   "id": "12345460",
+   "name": "2.2.2",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "01/Dec/19",
+   "projectId": 12311720,
+   "releaseDate": "2019-12-01"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12346169",
+   "id": "12346169",
+   "name": "2.2.3",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12344926",
+   "id": "12344926",
+   "name": "2.3.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "25/Jun/19",
+   "projectId": 12311720,
+   "releaseDate": "2019-06-25"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12345689",
+   "id": "12345689",
+   "name": "2.3.1",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "24/Oct/19",
+   "projectId": 12311720,
+   "releaseDate": "2019-10-24"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12346376",
+   "id": "12346376",
+   "name": "2.3.2",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12345555",
+   "id": "12345555",
+   "name": "2.4.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "16/Dec/19",
+   "projectId": 12311720,
+   "releaseDate": "2019-12-16"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12346538",
+   "id": "12346538",
+   "name": "2.4.1",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "10/Mar/20",
+   "projectId": 12311720,
+   "releaseDate": "2020-03-10"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12347540",
+   "id": "12347540",
+   "name": "2.4.2",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12346342",
+   "id": "12346342",
+   "name": "2.5.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "14/Apr/20",
+   "projectId": 12311720,
+   "releaseDate": "2020-04-14"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12347782",
+   "id": "12347782",
+   "name": "2.5.1",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "10/Aug/20",
+   "projectId": 12311720,
+   "releaseDate": "2020-08-10"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12348381",
+   "id": "12348381",
+   "name": "2.5.2",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12346918",
+   "id": "12346918",
+   "name": "2.6.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "03/Aug/20",
+   "projectId": 12311720,
+   "releaseDate": "2020-08-03"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12348434",
+   "id": "12348434",
+   "name": "2.6.1",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "07/Jan/21",
+   "projectId": 12311720,
+   "releaseDate": "2021-01-07"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12349390",
+   "id": "12349390",
+   "name": "2.6.2",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "19/Apr/21",
+   "projectId": 12311720,
+   "releaseDate": "2021-04-19"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12349692",
+   "id": "12349692",
+   "name": "2.6.3",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "12/Nov/21",
+   "projectId": 12311720,
+   "releaseDate": "2021-11-12"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12351443",
+   "id": "12351443",
+   "name": "2.6.4",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12348356",
+   "id": "12348356",
+   "name": "2.7.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "18/Dec/20",
+   "projectId": 12311720,
+   "releaseDate": "2020-12-18"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12349260",
+   "id": "12349260",
+   "name": "2.7.1",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "10/May/21",
+   "projectId": 12311720,
+   "releaseDate": "2021-05-10"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12350014",
+   "id": "12350014",
+   "name": "2.7.2",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "12/Nov/21",
+   "projectId": 12311720,
+   "releaseDate": "2021-11-12"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12351442",
+   "id": "12351442",
+   "name": "2.7.3",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12348710",
+   "id": "12348710",
+   "name": "2.8.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "18/Apr/21",
+   "projectId": 12311720,
+   "releaseDate": "2021-04-18"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12350016",
+   "id": "12350016",
+   "name": "2.8.1",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "17/Sep/21",
+   "projectId": 12311720,
+   "releaseDate": "2021-09-17"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12350615",
+   "id": "12350615",
+   "name": "2.8.2",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "19/Sep/22",
+   "projectId": 12311720,
+   "releaseDate": "2022-09-19"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12352929",
+   "id": "12352929",
+   "name": "2.8.3",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12343427",
+   "id": "12343427",
+   "name": "3.0.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "20/Sep/21",
+   "projectId": 12311720,
+   "releaseDate": "2021-09-20"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12350423",
+   "id": "12350423",
+   "name": "3.0.1",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "11/Mar/22",
+   "projectId": 12311720,
+   "releaseDate": "2022-03-11"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12351441",
+   "id": "12351441",
+   "name": "3.0.2",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "19/Sep/22",
+   "projectId": 12311720,
+   "releaseDate": "2022-09-19"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12352561",
+   "id": "12352561",
+   "name": "3.0.3",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12349690",
+   "id": "12349690",
+   "name": "3.1.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "24/Jan/22",
+   "projectId": 12311720,
+   "releaseDate": "2022-01-24"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12351255",
+   "id": "12351255",
+   "name": "3.1.1",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "12/May/22",
+   "projectId": 12311720,
+   "releaseDate": "2022-05-12"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12351558",
+   "id": "12351558",
+   "name": "3.1.2",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "19/Sep/22",
+   "projectId": 12311720,
+   "releaseDate": "2022-09-19"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12352560",
+   "id": "12352560",
+   "name": "3.1.3",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12350645",
+   "id": "12350645",
+   "name": "3.2.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "17/May/22",
+   "projectId": 12311720,
+   "releaseDate": "2022-05-17"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12351729",
+   "id": "12351729",
+   "name": "3.2.1",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "01/Aug/22",
+   "projectId": 12311720,
+   "releaseDate": "2022-08-01"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12352170",
+   "id": "12352170",
+   "name": "3.2.2",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "19/Sep/22",
+   "projectId": 12311720,
+   "releaseDate": "2022-09-19"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12352294",
+   "id": "12352294",
+   "name": "3.2.3",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "19/Sep/22",
+   "projectId": 12311720,
+   "releaseDate": "2022-09-19"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12352466",
+   "id": "12352466",
+   "name": "3.2.4",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12351265",
+   "id": "12351265",
+   "name": "3.3.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "28/Sep/22",
+   "projectId": 12311720,
+   "releaseDate": "2022-09-28"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12352298",
+   "id": "12352298",
+   "name": "3.3.1",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "03/Oct/22",
+   "projectId": 12311720,
+   "releaseDate": "2022-10-03"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12352392",
+   "id": "12352392",
+   "name": "3.3.2",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "23/Jan/23",
+   "projectId": 12311720,
+   "releaseDate": "2023-01-23"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12352719",
+   "id": "12352719",
+   "name": "3.3.3",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12352112",
+   "id": "12352112",
+   "name": "3.4.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "07/Feb/23",
+   "projectId": 12311720,
+   "releaseDate": "2023-02-07"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12352670",
+   "id": "12352670",
+   "name": "3.4.1",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "06/Jun/23",
+   "projectId": 12311720,
+   "releaseDate": "2023-06-06"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12353354",
+   "id": "12353354",
+   "name": "3.4.2",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12352634",
+   "id": "12352634",
+   "name": "3.5.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "15/Jun/23",
+   "projectId": 12311720,
+   "releaseDate": "2023-06-15"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12353339",
+   "id": "12353339",
+   "name": "3.5.1",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "21/Jul/23",
+   "projectId": 12311720,
+   "releaseDate": "2023-07-21"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12353416",
+   "id": "12353416",
+   "name": "3.5.2",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "11/Dec/23",
+   "projectId": 12311720,
+   "releaseDate": "2023-12-11"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12354191",
+   "id": "12354191",
+   "name": "3.5.3",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12353133",
+   "id": "12353133",
+   "name": "3.6.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "10/Oct/23",
+   "projectId": 12311720,
+   "releaseDate": "2023-10-10"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12353677",
+   "id": "12353677",
+   "name": "3.6.1",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "07/Dec/23",
+   "projectId": 12311720,
+   "releaseDate": "2023-12-07"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12353995",
+   "id": "12353995",
+   "name": "3.6.2",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "04/Apr/24",
+   "projectId": 12311720,
+   "releaseDate": "2024-04-04"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12354414",
+   "id": "12354414",
+   "name": "3.6.3",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12353579",
+   "id": "12353579",
+   "name": "3.7.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "27/Feb/24",
+   "projectId": 12311720,
+   "releaseDate": "2024-02-27"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12354122",
+   "id": "12354122",
+   "name": "3.7.1",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "28/Jun/24",
+   "projectId": 12311720,
+   "releaseDate": "2024-06-28"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12354953",
+   "id": "12354953",
+   "name": "3.7.2",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "13/Dec/24",
+   "projectId": 12311720,
+   "releaseDate": "2024-12-13"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12355514",
+   "id": "12355514",
+   "name": "3.7.3",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12354033",
+   "id": "12354033",
+   "name": "3.8.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "29/Jul/24",
+   "projectId": 12311720,
+   "releaseDate": "2024-07-29"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12354982",
+   "id": "12354982",
+   "name": "3.8.1",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "29/Oct/24",
+   "projectId": 12311720,
+   "releaseDate": "2024-10-29"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12355280",
+   "id": "12355280",
+   "name": "3.8.2",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12354779",
+   "id": "12354779",
+   "name": "3.9.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "07/Nov/24",
+   "projectId": 12311720,
+   "releaseDate": "2024-11-07"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12355122",
+   "id": "12355122",
+   "name": "3.9.1",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "21/May/25",
+   "projectId": 12311720,
+   "releaseDate": "2025-05-21"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12355853",
+   "id": "12355853",
+   "name": "3.9.2",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "21/Feb/26",
+   "projectId": 12311720,
+   "releaseDate": "2026-02-21"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12350048",
+   "id": "12350048",
+   "name": "4.0.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "18/Mar/25",
+   "projectId": 12311720,
+   "releaseDate": "2025-03-18"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12355599",
+   "id": "12355599",
+   "name": "4.0.1",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "13/Oct/25",
+   "projectId": 12311720,
+   "releaseDate": "2025-10-13"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12355011",
+   "id": "12355011",
+   "name": "4.1.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "02/Sep/25",
+   "projectId": 12311720,
+   "releaseDate": "2025-09-02"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12355509",
+   "id": "12355509",
+   "name": "4.2.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "17/Feb/26",
+   "projectId": 12311720,
+   "releaseDate": "2026-02-17"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12354386",
+   "id": "12354386",
+   "name": "5.0.0",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12356014",
+   "id": "12356014",
+   "name": "4.3.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "22/May/26",
+   "projectId": 12311720,
+   "releaseDate": "2026-05-22"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12356148",
+   "id": "12356148",
+   "name": "4.0.2",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "16/Mar/26",
+   "projectId": 12311720,
+   "releaseDate": "2026-03-16"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12356245",
+   "id": "12356245",
+   "name": "4.1.1",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "14/Nov/25",
+   "projectId": 12311720,
+   "releaseDate": "2025-11-14"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12356403",
+   "id": "12356403",
+   "name": "4.1.2",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "17/Mar/26",
+   "projectId": 12311720,
+   "releaseDate": "2026-03-17"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12356566",
+   "id": "12356566",
+   "name": "4.2.1",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "30/May/26",
+   "projectId": 12311720,
+   "releaseDate": "2026-05-30"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12356677",
+   "id": "12356677",
+   "name": "3.9.3",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12356773",
+   "id": "12356773",
+   "name": "4.1.3",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12356774",
+   "id": "12356774",
+   "name": "4.0.3",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12356783",
+   "id": "12356783",
+   "name": "4.3.1",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "25/Jun/26",
+   "projectId": 12311720,
+   "releaseDate": "2026-06-25"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12356784",
+   "id": "12356784",
+   "name": "4.4.0",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "26/Oct/26",
+   "projectId": 12311720,
+   "releaseDate": "2026-10-26"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12356955",
+   "id": "12356955",
+   "name": "4.2.2",
+   "archived": false,
+   "released": true,
+   "userReleaseDate": "29/Sep/26",
+   "projectId": 12311720,
+   "releaseDate": "2026-09-29"
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12357193",
+   "id": "12357193",
+   "name": "4.3.2",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12357379",
+   "id": "12357379",
+   "name": "4.5.0",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12357446",
+   "id": "12357446",
+   "name": "4.4.1",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12357626",
+   "id": "12357626",
+   "name": "4.3.3",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12357634",
+   "id": "12357634",
+   "name": "4.2.3",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  },
+  {
+   "self": "https://issues.apache.org/jira/rest/api/2/version/12357640",
+   "id": "12357640",
+   "name": "4.5",
+   "archived": false,
+   "released": false,
+   "projectId": 12311720
+  }
+ ],
+ "name": "Kafka",
+ "roles": {
+  "Developers": "https://issues.apache.org/jira/rest/api/2/project/12311720/role/10050",
+  "Contributors": "https://issues.apache.org/jira/rest/api/2/project/12311720/role/10010",
+  "PMC": "https://issues.apache.org/jira/rest/api/2/project/12311720/role/10011",
+  "Committers": "https://issues.apache.org/jira/rest/api/2/project/12311720/role/10001",
+  "Administrators": "https://issues.apache.org/jira/rest/api/2/project/12311720/role/10002",
+  "ASF Members": "https://issues.apache.org/jira/rest/api/2/project/12311720/role/10150",
+  "Users": "https://issues.apache.org/jira/rest/api/2/project/12311720/role/10040",
+  "Contributors 1": "https://issues.apache.org/jira/rest/api/2/project/12311720/role/10350"
+ },
+ "avatarUrls": {
+  "48x48": "https://issues.apache.org/jira/secure/projectavatar?pid=12311720&avatarId=35864",
+  "24x24": "https://issues.apache.org/jira/secure/projectavatar?size=small&pid=12311720&avatarId=35864",
+  "16x16": "https://issues.apache.org/jira/secure/projectavatar?size=xsmall&pid=12311720&avatarId=35864",
+  "32x32": "https://issues.apache.org/jira/secure/projectavatar?size=medium&pid=12311720&avatarId=35864"
+ },
+ "projectCategory": {
+  "self": "https://issues.apache.org/jira/rest/api/2/projectCategory/10560",
+  "id": "10560",
+  "name": "Kafka",
+  "description": "Apache Kafka projects"
+ },
+ "projectTypeKey": "software",
+ "archived": false
+}

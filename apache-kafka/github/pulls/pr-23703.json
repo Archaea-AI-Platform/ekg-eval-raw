@@ -1,0 +1,1356 @@
+{
+ "pull": {
+  "url": "https://api.github.com/repos/apache/kafka/pulls/23703",
+  "id": 4738137736,
+  "node_id": "PR_kwDOACG9q88AAAABGmo-iA",
+  "html_url": "https://github.com/apache/kafka/pull/23703",
+  "diff_url": "https://github.com/apache/kafka/pull/23703.diff",
+  "patch_url": "https://github.com/apache/kafka/pull/23703.patch",
+  "issue_url": "https://api.github.com/repos/apache/kafka/issues/23703",
+  "commits_url": "https://api.github.com/repos/apache/kafka/pulls/23703/commits",
+  "review_comments_url": "https://api.github.com/repos/apache/kafka/pulls/23703/comments",
+  "review_comment_url": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}",
+  "comments_url": "https://api.github.com/repos/apache/kafka/issues/23703/comments",
+  "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/6dc34bb2553c682422d1504288a9173bed626291",
+  "number": 23703,
+  "state": "open",
+  "locked": false,
+  "title": "KAFKA-21209: Add client telemetry integration tests",
+  "user": {
+   "login": "AndrewJSchofield",
+   "id": 13795597,
+   "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+   "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/AndrewJSchofield",
+   "html_url": "https://github.com/AndrewJSchofield",
+   "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+   "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+   "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+   "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+   "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+   "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "body": "The integration testing of KIP-714 lacks proper validation of the\nmetrics pushed and state transitions. While there are plenty of unit\ntests, there's a bit of a gap for integration tests. This PR takes a\nstep towards improving this.\n\nWhile working on these tests, it became clear that only the consumer was\nsending the terminating push correctly, so this PR also includes\nimprovements to the producer and admin client.\n\nCo-Authored-By: Claude Fable 5.1 <claude@anthropic.com>\n",
+  "labels": [
+   {
+    "id": 851033135,
+    "node_id": "MDU6TGFiZWw4NTEwMzMxMzU=",
+    "url": "https://api.github.com/repos/apache/kafka/labels/producer",
+    "name": "producer",
+    "description": "",
+    "color": "682dad",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 7388474305,
+    "node_id": "LA_kwDOACG9q88AAAABuGMrwQ",
+    "url": "https://api.github.com/repos/apache/kafka/labels/build",
+    "name": "build",
+    "description": "Gradle build or GitHub Actions",
+    "color": "d4c5f9",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 7491388177,
+    "node_id": "LA_kwDOACG9q88AAAABvoWDEQ",
+    "url": "https://api.github.com/repos/apache/kafka/labels/clients",
+    "name": "clients",
+    "description": null,
+    "color": "ededed",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   }
+  ],
+  "milestone": null,
+  "active_lock_reason": null,
+  "created_at": "2026-10-04T22:35:05Z",
+  "updated_at": "2026-10-23T19:42:56Z",
+  "closed_at": null,
+  "merged_at": null,
+  "merge_commit_sha": "d14508abfe3c9139abdb509f91ff0dedaea0d57f",
+  "assignee": null,
+  "assignees": [],
+  "requested_reviewers": [
+   {
+    "login": "apoorvmittal10",
+    "id": 2861565,
+    "node_id": "MDQ6VXNlcjI4NjE1NjU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2861565?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/apoorvmittal10",
+    "html_url": "https://github.com/apoorvmittal10",
+    "followers_url": "https://api.github.com/users/apoorvmittal10/followers",
+    "following_url": "https://api.github.com/users/apoorvmittal10/following{/other_user}",
+    "gists_url": "https://api.github.com/users/apoorvmittal10/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/apoorvmittal10/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/apoorvmittal10/subscriptions",
+    "organizations_url": "https://api.github.com/users/apoorvmittal10/orgs",
+    "repos_url": "https://api.github.com/users/apoorvmittal10/repos",
+    "events_url": "https://api.github.com/users/apoorvmittal10/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/apoorvmittal10/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  ],
+  "requested_teams": [],
+  "head": {
+   "label": "AndrewJSchofield:KAFKA-21209",
+   "ref": "KAFKA-21209",
+   "repo": {
+    "id": 180165101,
+    "node_id": "MDEwOlJlcG9zaXRvcnkxODAxNjUxMDE=",
+    "name": "kafka",
+    "full_name": "AndrewJSchofield/kafka",
+    "owner": {
+     "login": "AndrewJSchofield",
+     "id": 13795597,
+     "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+     "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/AndrewJSchofield",
+     "html_url": "https://github.com/AndrewJSchofield",
+     "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+     "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+     "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+     "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+     "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+     "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": true,
+    "archived": false,
+    "disabled": false,
+    "description": "Mirror of Apache Kafka",
+    "homepage": null,
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [],
+    "forks_count": 0,
+    "forks": 0,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "watchers": 0,
+    "open_issues_count": 0,
+    "open_issues": 0,
+    "size": 285180,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-28T21:10:36Z",
+    "created_at": "2019-04-08T14:19:40Z",
+    "updated_at": "2026-10-28T21:09:53Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/AndrewJSchofield/kafka",
+    "html_url": "https://github.com/AndrewJSchofield/kafka",
+    "archive_url": "https://api.github.com/repos/AndrewJSchofield/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/AndrewJSchofield/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/AndrewJSchofield/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/AndrewJSchofield/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/AndrewJSchofield/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/AndrewJSchofield/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/AndrewJSchofield/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/AndrewJSchofield/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/AndrewJSchofield/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/AndrewJSchofield/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/AndrewJSchofield/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/AndrewJSchofield/kafka/downloads",
+    "events_url": "https://api.github.com/repos/AndrewJSchofield/kafka/events",
+    "forks_url": "https://api.github.com/repos/AndrewJSchofield/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/AndrewJSchofield/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/AndrewJSchofield/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/AndrewJSchofield/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/AndrewJSchofield/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/AndrewJSchofield/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/AndrewJSchofield/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/AndrewJSchofield/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/AndrewJSchofield/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/AndrewJSchofield/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/AndrewJSchofield/kafka/languages",
+    "merges_url": "https://api.github.com/repos/AndrewJSchofield/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/AndrewJSchofield/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/AndrewJSchofield/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/AndrewJSchofield/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/AndrewJSchofield/kafka/releases{/id}",
+    "ssh_url": "git@github.com:AndrewJSchofield/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/AndrewJSchofield/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/AndrewJSchofield/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/AndrewJSchofield/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/AndrewJSchofield/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/AndrewJSchofield/kafka/tags",
+    "teams_url": "https://api.github.com/repos/AndrewJSchofield/kafka/teams",
+    "trees_url": "https://api.github.com/repos/AndrewJSchofield/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/AndrewJSchofield/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/AndrewJSchofield/kafka/hooks",
+    "svn_url": "https://github.com/AndrewJSchofield/kafka"
+   },
+   "sha": "6dc34bb2553c682422d1504288a9173bed626291",
+   "user": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "base": {
+   "label": "apache:trunk",
+   "ref": "trunk",
+   "repo": {
+    "id": 2211243,
+    "node_id": "MDEwOlJlcG9zaXRvcnkyMjExMjQz",
+    "name": "kafka",
+    "full_name": "apache/kafka",
+    "owner": {
+     "login": "apache",
+     "id": 47359,
+     "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+     "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/apache",
+     "html_url": "https://github.com/apache",
+     "followers_url": "https://api.github.com/users/apache/followers",
+     "following_url": "https://api.github.com/users/apache/following{/other_user}",
+     "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+     "organizations_url": "https://api.github.com/users/apache/orgs",
+     "repos_url": "https://api.github.com/users/apache/repos",
+     "events_url": "https://api.github.com/users/apache/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/apache/received_events",
+     "type": "Organization",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": false,
+    "archived": false,
+    "disabled": false,
+    "description": "Apache Kafka - A distributed event streaming platform",
+    "homepage": "https://kafka.apache.org/",
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [
+     "java",
+     "kafka",
+     "scala",
+     "streaming"
+    ],
+    "forks_count": 15637,
+    "forks": 15637,
+    "stargazers_count": 34153,
+    "watchers_count": 34153,
+    "watchers": 34153,
+    "open_issues_count": 674,
+    "open_issues": 674,
+    "size": 322164,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-29T11:37:21Z",
+    "created_at": "2011-08-15T18:06:16Z",
+    "updated_at": "2026-10-29T11:37:29Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/apache/kafka",
+    "html_url": "https://github.com/apache/kafka",
+    "archive_url": "https://api.github.com/repos/apache/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/apache/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/apache/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/apache/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/apache/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/apache/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/apache/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/apache/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/apache/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/apache/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/apache/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/apache/kafka/downloads",
+    "events_url": "https://api.github.com/repos/apache/kafka/events",
+    "forks_url": "https://api.github.com/repos/apache/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/apache/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/apache/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/apache/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/apache/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/apache/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/apache/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/apache/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/apache/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/apache/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/apache/kafka/languages",
+    "merges_url": "https://api.github.com/repos/apache/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/apache/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/apache/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/apache/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/apache/kafka/releases{/id}",
+    "ssh_url": "git@github.com:apache/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/apache/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/apache/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/apache/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/apache/kafka/tags",
+    "teams_url": "https://api.github.com/repos/apache/kafka/teams",
+    "trees_url": "https://api.github.com/repos/apache/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/apache/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/apache/kafka/hooks",
+    "svn_url": "https://github.com/apache/kafka"
+   },
+   "sha": "e149305a6589e2c22e9f24cdcc157a9daffd53e9",
+   "user": {
+    "login": "apache",
+    "id": 47359,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/apache",
+    "html_url": "https://github.com/apache",
+    "followers_url": "https://api.github.com/users/apache/followers",
+    "following_url": "https://api.github.com/users/apache/following{/other_user}",
+    "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+    "organizations_url": "https://api.github.com/users/apache/orgs",
+    "repos_url": "https://api.github.com/users/apache/repos",
+    "events_url": "https://api.github.com/users/apache/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/apache/received_events",
+    "type": "Organization",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "_links": {
+   "comments": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23703/comments"
+   },
+   "commits": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23703/commits"
+   },
+   "statuses": {
+    "href": "https://api.github.com/repos/apache/kafka/statuses/6dc34bb2553c682422d1504288a9173bed626291"
+   },
+   "html": {
+    "href": "https://github.com/apache/kafka/pull/23703"
+   },
+   "issue": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23703"
+   },
+   "review_comments": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23703/comments"
+   },
+   "review_comment": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}"
+   },
+   "self": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23703"
+   }
+  },
+  "author_association": "MEMBER",
+  "auto_merge": null,
+  "draft": false,
+  "merged": false,
+  "mergeable": true,
+  "rebaseable": false,
+  "mergeable_state": "blocked",
+  "merged_by": null,
+  "comments": 0,
+  "review_comments": 0,
+  "maintainer_can_modify": true,
+  "commits": 5,
+  "additions": 517,
+  "deletions": 40,
+  "changed_files": 10
+ },
+ "reviews": [],
+ "review_comments": [],
+ "issue_comments": [],
+ "commits": [
+  {
+   "sha": "b423c49ba6950c1eb3ab1468a25442ff72006336",
+   "node_id": "C_kwDOCr0Z7doAKGI0MjNjNDliYTY5NTBjMWViM2FiMTQ2OGEyNTQ0MmZmNzIwMDYzMzY",
+   "commit": {
+    "author": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-04T22:29:50Z"
+    },
+    "committer": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-04T22:29:50Z"
+    },
+    "message": "KAFKA-21209: Add client telemetry integration tests",
+    "tree": {
+     "sha": "7f65e1433f467a5e89814ecd384ff12a6edaacc6",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/7f65e1433f467a5e89814ecd384ff12a6edaacc6"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/b423c49ba6950c1eb3ab1468a25442ff72006336",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/b423c49ba6950c1eb3ab1468a25442ff72006336",
+   "html_url": "https://github.com/apache/kafka/commit/b423c49ba6950c1eb3ab1468a25442ff72006336",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/b423c49ba6950c1eb3ab1468a25442ff72006336/comments",
+   "author": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "28093d8215b69aa629031673325752484a84b0f3",
+     "url": "https://api.github.com/repos/apache/kafka/commits/28093d8215b69aa629031673325752484a84b0f3",
+     "html_url": "https://github.com/apache/kafka/commit/28093d8215b69aa629031673325752484a84b0f3"
+    }
+   ]
+  },
+  {
+   "sha": "0b86940e7cfd80f718f0b5700c6ef1745351e6d2",
+   "node_id": "C_kwDOCr0Z7doAKDBiODY5NDBlN2NmZDgwZjcxOGYwYjU3MDBjNmVmMTc0NTM1MWU2ZDI",
+   "commit": {
+    "author": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-06T07:07:42Z"
+    },
+    "committer": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-06T07:07:42Z"
+    },
+    "message": "Merge branch 'trunk' into KAFKA-21209",
+    "tree": {
+     "sha": "36cd676573e20a16d3d33b687c01b2e380a02896",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/36cd676573e20a16d3d33b687c01b2e380a02896"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/0b86940e7cfd80f718f0b5700c6ef1745351e6d2",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/0b86940e7cfd80f718f0b5700c6ef1745351e6d2",
+   "html_url": "https://github.com/apache/kafka/commit/0b86940e7cfd80f718f0b5700c6ef1745351e6d2",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/0b86940e7cfd80f718f0b5700c6ef1745351e6d2/comments",
+   "author": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "b423c49ba6950c1eb3ab1468a25442ff72006336",
+     "url": "https://api.github.com/repos/apache/kafka/commits/b423c49ba6950c1eb3ab1468a25442ff72006336",
+     "html_url": "https://github.com/apache/kafka/commit/b423c49ba6950c1eb3ab1468a25442ff72006336"
+    },
+    {
+     "sha": "c2fbf6f52f78ecc1c11c6511242aade6a2c50b71",
+     "url": "https://api.github.com/repos/apache/kafka/commits/c2fbf6f52f78ecc1c11c6511242aade6a2c50b71",
+     "html_url": "https://github.com/apache/kafka/commit/c2fbf6f52f78ecc1c11c6511242aade6a2c50b71"
+    }
+   ]
+  },
+  {
+   "sha": "6d7e4e51d97cff199269ff733341033f7ee1c44f",
+   "node_id": "C_kwDOCr0Z7doAKDZkN2U0ZTUxZDk3Y2ZmMTk5MjY5ZmY3MzMzNDEwMzNmN2VlMWM0NGY",
+   "commit": {
+    "author": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-12T19:44:29Z"
+    },
+    "committer": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-12T19:44:29Z"
+    },
+    "message": "Merge branch 'trunk' into KAFKA-21209",
+    "tree": {
+     "sha": "c0bcdd2f9868d02b20ee95651c3c779becfb50da",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/c0bcdd2f9868d02b20ee95651c3c779becfb50da"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/6d7e4e51d97cff199269ff733341033f7ee1c44f",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/6d7e4e51d97cff199269ff733341033f7ee1c44f",
+   "html_url": "https://github.com/apache/kafka/commit/6d7e4e51d97cff199269ff733341033f7ee1c44f",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/6d7e4e51d97cff199269ff733341033f7ee1c44f/comments",
+   "author": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "0b86940e7cfd80f718f0b5700c6ef1745351e6d2",
+     "url": "https://api.github.com/repos/apache/kafka/commits/0b86940e7cfd80f718f0b5700c6ef1745351e6d2",
+     "html_url": "https://github.com/apache/kafka/commit/0b86940e7cfd80f718f0b5700c6ef1745351e6d2"
+    },
+    {
+     "sha": "a2141d8c00a3f3370593b8f49df824c368938bdd",
+     "url": "https://api.github.com/repos/apache/kafka/commits/a2141d8c00a3f3370593b8f49df824c368938bdd",
+     "html_url": "https://github.com/apache/kafka/commit/a2141d8c00a3f3370593b8f49df824c368938bdd"
+    }
+   ]
+  },
+  {
+   "sha": "40e44764945e902b069da8e77eb3f9e83db5552f",
+   "node_id": "C_kwDOCr0Z7doAKDQwZTQ0NzY0OTQ1ZTkwMmIwNjlkYThlNzdlYjNmOWU4M2RiNTU1MmY",
+   "commit": {
+    "author": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-20T11:38:19Z"
+    },
+    "committer": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-20T11:38:19Z"
+    },
+    "message": "Merge branch 'trunk' into KAFKA-21209",
+    "tree": {
+     "sha": "8de52c35fa401dbc51b447a7473b9ce5009c82f7",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/8de52c35fa401dbc51b447a7473b9ce5009c82f7"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/40e44764945e902b069da8e77eb3f9e83db5552f",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/40e44764945e902b069da8e77eb3f9e83db5552f",
+   "html_url": "https://github.com/apache/kafka/commit/40e44764945e902b069da8e77eb3f9e83db5552f",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/40e44764945e902b069da8e77eb3f9e83db5552f/comments",
+   "author": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "6d7e4e51d97cff199269ff733341033f7ee1c44f",
+     "url": "https://api.github.com/repos/apache/kafka/commits/6d7e4e51d97cff199269ff733341033f7ee1c44f",
+     "html_url": "https://github.com/apache/kafka/commit/6d7e4e51d97cff199269ff733341033f7ee1c44f"
+    },
+    {
+     "sha": "e149305a6589e2c22e9f24cdcc157a9daffd53e9",
+     "url": "https://api.github.com/repos/apache/kafka/commits/e149305a6589e2c22e9f24cdcc157a9daffd53e9",
+     "html_url": "https://github.com/apache/kafka/commit/e149305a6589e2c22e9f24cdcc157a9daffd53e9"
+    }
+   ]
+  },
+  {
+   "sha": "6dc34bb2553c682422d1504288a9173bed626291",
+   "node_id": "C_kwDOCr0Z7doAKDZkYzM0YmIyNTUzYzY4MjQyMmQxNTA0Mjg4YTkxNzNiZWQ2MjYyOTE",
+   "commit": {
+    "author": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-23T19:42:34Z"
+    },
+    "committer": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-23T19:42:34Z"
+    },
+    "message": "Add dependencies for compression libraries in clients integration tests",
+    "tree": {
+     "sha": "7ca679401204ef433272c7b2e8cd4b325baccafe",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/7ca679401204ef433272c7b2e8cd4b325baccafe"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/6dc34bb2553c682422d1504288a9173bed626291",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/6dc34bb2553c682422d1504288a9173bed626291",
+   "html_url": "https://github.com/apache/kafka/commit/6dc34bb2553c682422d1504288a9173bed626291",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/6dc34bb2553c682422d1504288a9173bed626291/comments",
+   "author": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "40e44764945e902b069da8e77eb3f9e83db5552f",
+     "url": "https://api.github.com/repos/apache/kafka/commits/40e44764945e902b069da8e77eb3f9e83db5552f",
+     "html_url": "https://github.com/apache/kafka/commit/40e44764945e902b069da8e77eb3f9e83db5552f"
+    }
+   ]
+  }
+ ],
+ "files": [
+  {
+   "sha": "bef180f1ef08db5b3197b512771b8674e4d24776",
+   "filename": "build.gradle",
+   "status": "modified",
+   "additions": 6,
+   "deletions": 0,
+   "changes": 6,
+   "blob_url": "https://github.com/apache/kafka/blob/6dc34bb2553c682422d1504288a9173bed626291/build.gradle",
+   "raw_url": "https://github.com/apache/kafka/raw/6dc34bb2553c682422d1504288a9173bed626291/build.gradle",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/build.gradle?ref=6dc34bb2553c682422d1504288a9173bed626291",
+   "patch": "@@ -2253,6 +2253,12 @@ project(':clients:clients-integration-tests') {\n     testImplementation project(':storage')\n     testImplementation testFixtures(project(':storage'))\n     testImplementation testFixtures(project(':clients'))\n+    testImplementation project(path: ':clients', configuration: 'shadow')\n+    // The clients shadow jar excludes the compression libraries which are runtime dependencies in\n+    // its pom, so they must be added explicitly for the tests which use compression.\n+    testRuntimeOnly libs.snappy\n+    testRuntimeOnly libs.zstd\n+    testRuntimeOnly libs.lz4\n     implementation project(':server-common')\n     testImplementation testFixtures(project(':server-common'))\n     implementation project(':group-coordinator')"
+  },
+  {
+   "sha": "9807538f1f609f253b487e499cbbe2a983646bbd",
+   "filename": "clients/clients-integration-tests/src/test/java/org/apache/kafka/clients/admin/ClientTelemetryTest.java",
+   "status": "modified",
+   "additions": 241,
+   "deletions": 4,
+   "changes": 245,
+   "blob_url": "https://github.com/apache/kafka/blob/6dc34bb2553c682422d1504288a9173bed626291/clients%2Fclients-integration-tests%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fadmin%2FClientTelemetryTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/6dc34bb2553c682422d1504288a9173bed626291/clients%2Fclients-integration-tests%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fadmin%2FClientTelemetryTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fclients-integration-tests%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fadmin%2FClientTelemetryTest.java?ref=6dc34bb2553c682422d1504288a9173bed626291",
+   "patch": "@@ -17,10 +17,13 @@\n \n package org.apache.kafka.clients.admin;\n \n+import kafka.server.BrokerServer;\n+\n import org.apache.kafka.clients.consumer.Consumer;\n import org.apache.kafka.clients.consumer.ConsumerConfig;\n import org.apache.kafka.clients.consumer.ConsumerRecord;\n import org.apache.kafka.clients.consumer.ConsumerRecords;\n+import org.apache.kafka.clients.consumer.GroupProtocol;\n import org.apache.kafka.clients.consumer.KafkaConsumer;\n import org.apache.kafka.clients.producer.KafkaProducer;\n import org.apache.kafka.clients.producer.Producer;\n@@ -29,6 +32,7 @@\n import org.apache.kafka.common.MetricName;\n import org.apache.kafka.common.TopicPartition;\n import org.apache.kafka.common.Uuid;\n+import org.apache.kafka.common.config.ConfigResource;\n import org.apache.kafka.common.metrics.KafkaMetric;\n import org.apache.kafka.common.metrics.MetricsReporter;\n import org.apache.kafka.common.serialization.StringDeserializer;\n@@ -37,8 +41,13 @@\n import org.apache.kafka.common.test.api.ClusterConfigProperty;\n import org.apache.kafka.common.test.api.ClusterTest;\n import org.apache.kafka.common.test.api.Type;\n+import org.apache.kafka.coordinator.group.GroupCoordinatorConfig;\n+import org.apache.kafka.server.metrics.ClientMetricsConfigs;\n import org.apache.kafka.server.telemetry.ClientTelemetryExporter;\n import org.apache.kafka.server.telemetry.ClientTelemetryExporterProvider;\n+import org.apache.kafka.shaded.io.opentelemetry.proto.metrics.v1.Metric;\n+import org.apache.kafka.shaded.io.opentelemetry.proto.metrics.v1.MetricsData;\n+import org.apache.kafka.test.TestUtils;\n \n import java.time.Duration;\n import java.util.ArrayList;\n@@ -47,32 +56,45 @@\n import java.util.HashMap;\n import java.util.List;\n import java.util.Map;\n+import java.util.Optional;\n import java.util.Set;\n import java.util.UUID;\n+import java.util.concurrent.ConcurrentHashMap;\n+import java.util.concurrent.CopyOnWriteArrayList;\n import java.util.concurrent.ExecutionException;\n import java.util.stream.Collectors;\n \n import static org.apache.kafka.clients.admin.AdminClientConfig.METRIC_REPORTER_CLASSES_CONFIG;\n import static org.junit.jupiter.api.Assertions.assertEquals;\n+import static org.junit.jupiter.api.Assertions.assertFalse;\n import static org.junit.jupiter.api.Assertions.assertNotNull;\n import static org.junit.jupiter.api.Assertions.assertNull;\n import static org.junit.jupiter.api.Assertions.assertTrue;\n \n public class ClientTelemetryTest {\n \n+    private static final String TELEMETRY_EXPORTER = \"org.apache.kafka.clients.admin.ClientTelemetryTest$TelemetryExporter\";\n+    private static final String TOPIC = \"client-metrics-topic\";\n+    private static final int PUSH_INTERVAL_MS = 1000;\n+    private static final String PRODUCER_METRICS_PREFIX = \"org.apache.kafka.producer.\";\n+    private static final String CONSUMER_METRICS_PREFIX = \"org.apache.kafka.consumer.\";\n+    private static final String ADMIN_METRICS_PREFIX = \"org.apache.kafka.admin.client.\";\n+\n     @ClusterTest(\n             types = Type.KRAFT,\n             brokers = 3,\n             serverProperties = {\n-                @ClusterConfigProperty(key = METRIC_REPORTER_CLASSES_CONFIG, value = \"org.apache.kafka.clients.admin.ClientTelemetryTest$TelemetryExporter\"),\n+                @ClusterConfigProperty(key = METRIC_REPORTER_CLASSES_CONFIG, value = TELEMETRY_EXPORTER),\n             })\n     public void testClientInstanceId(ClusterInstance clusterInstance) throws InterruptedException, ExecutionException {\n         Map<String, Object> configs = new HashMap<>();\n         configs.put(AdminClientConfig.BOOTSTRAP_SERVERS_CONFIG, clusterInstance.bootstrapServers());\n         configs.put(AdminClientConfig.ENABLE_METRICS_PUSH_CONFIG, true);\n-        String testTopicName = \"test_topic\";\n-        clusterInstance.createTopic(testTopicName, 1, (short) 1);\n         try (Admin admin = Admin.create(configs)) {\n+            String testTopicName = \"test_topic\";\n+            admin.createTopics(Collections.singletonList(new NewTopic(testTopicName, 1, (short) 1)));\n+            clusterInstance.waitTopicCreation(testTopicName, 1);\n+\n             Map<String, Object> producerConfigs = new HashMap<>();\n             producerConfigs.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, clusterInstance.bootstrapServers());\n             producerConfigs.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());\n@@ -132,9 +154,210 @@ public void testMetrics(ClusterInstance clusterInstance) {\n         }\n     }\n \n+    @ClusterTest(\n+            types = Type.KRAFT,\n+            serverProperties = {\n+                @ClusterConfigProperty(key = METRIC_REPORTER_CLASSES_CONFIG, value = TELEMETRY_EXPORTER),\n+            })\n+    public void testProducerMetricsPush(ClusterInstance clusterInstance) throws Exception {\n+        clusterInstance.createTopic(TOPIC, 1, (short) 1);\n+        createSubscription(clusterInstance, \"producer-metrics\", PRODUCER_METRICS_PREFIX, Optional.empty());\n+\n+        Uuid clientInstanceId;\n+        try (Producer<byte[], byte[]> producer = clusterInstance.producer()) {\n+            producer.send(new ProducerRecord<>(TOPIC, \"value\".getBytes())).get();\n+            clientInstanceId = producer.clientInstanceId(Duration.ofSeconds(10));\n+            assertNotNull(clientInstanceId);\n+\n+            // Wait for two pushes so that the regular push interval, not just the initial push, is exercised.\n+            List<PushedMetrics> pushes = waitForPushes(clientInstanceId, 2);\n+            PushedMetrics push = pushes.get(0);\n+            assertEquals(PUSH_INTERVAL_MS, push.pushIntervalMs());\n+            assertEquals(\"OTLP\", push.contentType());\n+            assertFalse(push.terminating());\n+            assertOnlyMetricsWithPrefix(push, PRODUCER_METRICS_PREFIX);\n+            assertTrue(push.metricNames().contains(\"org.apache.kafka.producer.record.send.total\"),\n+                \"Expected producer metrics in \" + push.metricNames());\n+            assertTrue(push.metricNames().contains(\"org.apache.kafka.producer.topic.record.send.total\"),\n+                \"Expected per-topic producer metrics in \" + push.metricNames());\n+        }\n+\n+        // Closing the producer makes a final, terminating push.\n+        waitForTerminatingPush(clientInstanceId);\n+    }\n+\n+    @ClusterTest(\n+            types = Type.KRAFT,\n+            serverProperties = {\n+                @ClusterConfigProperty(key = METRIC_REPORTER_CLASSES_CONFIG, value = TELEMETRY_EXPORTER),\n+                @ClusterConfigProperty(key = GroupCoordinatorConfig.OFFSETS_TOPIC_REPLICATION_FACTOR_CONFIG, value = \"1\"),\n+            })\n+    public void testClassicConsumerMetricsPush(ClusterInstance clusterInstance) throws Exception {\n+        consumerMetricsPush(clusterInstance, GroupProtocol.CLASSIC);\n+    }\n+\n+    @ClusterTest(\n+            types = Type.KRAFT,\n+            serverProperties = {\n+                @ClusterConfigProperty(key = METRIC_REPORTER_CLASSES_CONFIG, value = TELEMETRY_EXPORTER),\n+                @ClusterConfigProperty(key = GroupCoordinatorConfig.OFFSETS_TOPIC_REPLICATION_FACTOR_CONFIG, value = \"1\"),\n+            })\n+    public void testConsumerMetricsPush(ClusterInstance clusterInstance) throws Exception {\n+        consumerMetricsPush(clusterInstance, GroupProtocol.CONSUMER);\n+    }\n+\n+    private void consumerMetricsPush(ClusterInstance clusterInstance, GroupProtocol groupProtocol) throws Exception {\n+        clusterInstance.createTopic(TOPIC, 1, (short) 1);\n+        try (Producer<byte[], byte[]> producer = clusterInstance.producer()) {\n+            producer.send(new ProducerRecord<>(TOPIC, \"value\".getBytes())).get();\n+        }\n+        createSubscription(clusterInstance, \"consumer-metrics\", CONSUMER_METRICS_PREFIX, Optional.empty());\n+\n+        Uuid clientInstanceId;\n+        try (Consumer<byte[], byte[]> consumer = clusterInstance.consumer(Map.of(\n+            ConsumerConfig.GROUP_PROTOCOL_CONFIG, groupProtocol.name))) {\n+            TopicPartition tp = new TopicPartition(TOPIC, 0);\n+            consumer.assign(List.of(tp));\n+            consumer.seekToBeginning(List.of(tp));\n+            TestUtils.waitForCondition(() -> consumer.poll(Duration.ofMillis(100)).count() == 1, 10_000, \"Failed to poll data.\");\n+            clientInstanceId = consumer.clientInstanceId(Duration.ofSeconds(10));\n+            assertNotNull(clientInstanceId);\n+\n+            // The classic consumer only performs network I/O, including telemetry pushes, while the application\n+            // is polling, so keep polling while waiting for the pushes to arrive.\n+            List<PushedMetrics> pushes = waitForPushes(clientInstanceId, 2, () -> consumer.poll(Duration.ofMillis(100)));\n+            PushedMetrics push = pushes.get(0);\n+            assertEquals(PUSH_INTERVAL_MS, push.pushIntervalMs());\n+            assertFalse(push.terminating());\n+            assertOnlyMetricsWithPrefix(push, CONSUMER_METRICS_PREFIX);\n+            assertTrue(push.metricNames().contains(\"org.apache.kafka.consumer.fetch.manager.records.consumed.total\"),\n+                \"Expected consumer fetch metrics in \" + push.metricNames());\n+        }\n+\n+        // Closing the consumer makes a final, terminating push.\n+        waitForTerminatingPush(clientInstanceId);\n+    }\n+\n+    @ClusterTest(\n+            types = Type.KRAFT,\n+            serverProperties = {\n+                @ClusterConfigProperty(key = METRIC_REPORTER_CLASSES_CONFIG, value = TELEMETRY_EXPORTER),\n+            })\n+    public void testAdminMetricsPush(ClusterInstance clusterInstance) throws Exception {\n+        createSubscription(clusterInstance, \"admin-metrics\", ADMIN_METRICS_PREFIX, Optional.empty());\n+\n+        Uuid clientInstanceId;\n+        try (Admin admin = clusterInstance.admin(Map.of(AdminClientConfig.ENABLE_METRICS_PUSH_CONFIG, true))) {\n+            admin.describeCluster().clusterId().get();\n+            clientInstanceId = admin.clientInstanceId(Duration.ofSeconds(10));\n+            assertNotNull(clientInstanceId);\n+\n+            List<PushedMetrics> pushes = waitForPushes(clientInstanceId, 2);\n+            PushedMetrics push = pushes.get(0);\n+            assertEquals(PUSH_INTERVAL_MS, push.pushIntervalMs());\n+            assertFalse(push.terminating());\n+            assertOnlyMetricsWithPrefix(push, ADMIN_METRICS_PREFIX);\n+            assertTrue(push.metricNames().contains(\"org.apache.kafka.admin.client.connection.count\"),\n+                \"Expected admin client metrics in \" + push.metricNames());\n+        }\n+\n+        // Closing the admin client makes a final, terminating push.\n+        waitForTerminatingPush(clientInstanceId);\n+    }\n+\n+    @ClusterTest(\n+            types = Type.KRAFT,\n+            serverProperties = {\n+                @ClusterConfigProperty(key = METRIC_REPORTER_CLASSES_CONFIG, value = TELEMETRY_EXPORTER),\n+            })\n+    public void testSubscriptionMatchSelectsClients(ClusterInstance clusterInstance) throws Exception {\n+        clusterInstance.createTopic(TOPIC, 1, (short) 1);\n+        createSubscription(clusterInstance, \"matched-producer-metrics\", PRODUCER_METRICS_PREFIX,\n+            Optional.of(ClientMetricsConfigs.CLIENT_ID + \"=matched.*\"));\n+\n+        try (Producer<byte[], byte[]> matchedProducer = clusterInstance.producer(Map.of(ProducerConfig.CLIENT_ID_CONFIG, \"matched-producer\"));\n+             Producer<byte[], byte[]> otherProducer = clusterInstance.producer(Map.of(ProducerConfig.CLIENT_ID_CONFIG, \"other-producer\"))) {\n+            matchedProducer.send(new ProducerRecord<>(TOPIC, \"value\".getBytes())).get();\n+            otherProducer.send(new ProducerRecord<>(TOPIC, \"value\".getBytes())).get();\n+\n+            // Both clients register with the broker and are assigned a client instance ID, but only the one\n+            // matching the subscription is asked for any metrics and so only that one pushes.\n+            Uuid matchedInstanceId = matchedProducer.clientInstanceId(Duration.ofSeconds(10));\n+            Uuid otherInstanceId = otherProducer.clientInstanceId(Duration.ofSeconds(10));\n+            assertNotNull(matchedInstanceId);\n+            assertNotNull(otherInstanceId);\n+\n+            List<PushedMetrics> pushes = waitForPushes(matchedInstanceId, 2);\n+            assertOnlyMetricsWithPrefix(pushes.get(0), PRODUCER_METRICS_PREFIX);\n+            assertTrue(TelemetryExporter.pushes(otherInstanceId).isEmpty(),\n+                \"Unexpected metrics pushed by a client which does not match the subscription\");\n+        }\n+    }\n+\n+    /**\n+     * Creates a client metrics subscription and waits until every broker has applied it, so that the clients\n+     * created afterwards receive it when they first ask the broker for their subscription.\n+     */\n+    private static void createSubscription(ClusterInstance clusterInstance, String name, String metricsPrefix, Optional<String> match)\n+        throws ExecutionException, InterruptedException {\n+        ConfigResource resource = new ConfigResource(ConfigResource.Type.CLIENT_METRICS, name);\n+        List<AlterConfigOp> ops = new ArrayList<>();\n+        ops.add(new AlterConfigOp(new ConfigEntry(ClientMetricsConfigs.METRICS_CONFIG, metricsPrefix), AlterConfigOp.OpType.SET));\n+        ops.add(new AlterConfigOp(new ConfigEntry(ClientMetricsConfigs.INTERVAL_MS_CONFIG, String.valueOf(PUSH_INTERVAL_MS)), AlterConfigOp.OpType.SET));\n+        match.ifPresent(m -> ops.add(new AlterConfigOp(new ConfigEntry(ClientMetricsConfigs.MATCH_CONFIG, m), AlterConfigOp.OpType.SET)));\n+\n+        try (Admin admin = clusterInstance.admin()) {\n+            admin.incrementalAlterConfigs(Map.of(resource, ops)).all().get();\n+        }\n+\n+        TestUtils.waitForCondition(() -> clusterInstance.brokers().values().stream()\n+                .allMatch(broker -> ((BrokerServer) broker).clientMetricsManager().listClientMetricsResources().contains(name)),\n+            \"Client metrics subscription \" + name + \" was not propagated to all brokers\");\n+    }\n+\n+    private static List<PushedMetrics> waitForPushes(Uuid clientInstanceId, int count) throws InterruptedException {\n+        return waitForPushes(clientInstanceId, count, () -> { });\n+    }\n+\n+    /**\n+     * Waits until the broker-side exporter has received at least {@code count} pushes from the client, running\n+     * {@code keepAlive} between checks for clients which need the application to drive their network I/O.\n+     */\n+    private static List<PushedMetrics> waitForPushes(Uuid clientInstanceId, int count, Runnable keepAlive) throws InterruptedException {\n+        TestUtils.waitForCondition(() -> {\n+            keepAlive.run();\n+            return TelemetryExporter.pushes(clientInstanceId).size() >= count;\n+        }, 30_000, () -> \"Expected at least \" + count + \" metrics pushes from client \" + clientInstanceId\n+            + \" but received \" + TelemetryExporter.pushes(clientInstanceId).size());\n+        return TelemetryExporter.pushes(clientInstanceId);\n+    }\n+\n+    private static void waitForTerminatingPush(Uuid clientInstanceId) throws InterruptedException {\n+        TestUtils.waitForCondition(() -> TelemetryExporter.pushes(clientInstanceId).stream().anyMatch(PushedMetrics::terminating),\n+            30_000, \"Expected a terminating metrics push from client \" + clientInstanceId);\n+    }\n+\n+    private static void assertOnlyMetricsWithPrefix(PushedMetrics push, String prefix) {\n+        assertFalse(push.metricNames().isEmpty(), \"Expected some metrics to be pushed\");\n+        assertTrue(push.metricNames().stream().allMatch(name -> name.startsWith(prefix)),\n+            \"Expected only metrics with prefix \" + prefix + \" but received \" + push.metricNames());\n+    }\n+\n+    /**\n+     * A decoded metrics push as received by the broker-side exporter.\n+     */\n+    public record PushedMetrics(Uuid clientInstanceId, boolean terminating, int pushIntervalMs, String contentType, List<String> metricNames) {\n+    }\n+\n     @SuppressWarnings(\"unused\")\n     public static class TelemetryExporter implements ClientTelemetryExporterProvider, MetricsReporter {\n \n+        private static final Map<Uuid, List<PushedMetrics>> PUSHES = new ConcurrentHashMap<>();\n+\n+        static List<PushedMetrics> pushes(Uuid clientInstanceId) {\n+            return List.copyOf(PUSHES.getOrDefault(clientInstanceId, List.of()));\n+        }\n+\n         @Override\n         public void init(List<KafkaMetric> metrics) {\n         }\n@@ -158,8 +381,22 @@ public void configure(Map<String, ?> configs) {\n         @Override\n         public ClientTelemetryExporter clientTelemetryExporter() {\n             return (context, payload) -> {\n+                List<String> metricNames;\n+                try {\n+                    MetricsData data = MetricsData.parseFrom(payload.data());\n+                    metricNames = data.getResourceMetricsList().stream()\n+                        .flatMap(resourceMetrics -> resourceMetrics.getScopeMetricsList().stream())\n+                        .flatMap(scopeMetrics -> scopeMetrics.getMetricsList().stream())\n+                        .map(Metric::getName)\n+                        .sorted()\n+                        .toList();\n+                } catch (Exception e) {\n+                    throw new RuntimeException(\"Failed to decode client telemetry payload\", e);\n+                }\n+                PUSHES.computeIfAbsent(payload.clientInstanceId(), id -> new CopyOnWriteArrayList<>())\n+                    .add(new PushedMetrics(payload.clientInstanceId(), payload.isTerminating(), context.pushIntervalMs(),\n+                        payload.contentType(), metricNames));\n             };\n         }\n     }\n-\n }"
+  },
+  {
+   "sha": "a52dd753aca74e468ad3c467ce0a38f3fb5c0454",
+   "filename": "clients/src/main/java/org/apache/kafka/clients/admin/KafkaAdminClient.java",
+   "status": "modified",
+   "additions": 41,
+   "deletions": 2,
+   "changes": 43,
+   "blob_url": "https://github.com/apache/kafka/blob/6dc34bb2553c682422d1504288a9173bed626291/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fadmin%2FKafkaAdminClient.java",
+   "raw_url": "https://github.com/apache/kafka/raw/6dc34bb2553c682422d1504288a9173bed626291/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fadmin%2FKafkaAdminClient.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fadmin%2FKafkaAdminClient.java?ref=6dc34bb2553c682422d1504288a9173bed626291",
+   "patch": "@@ -262,6 +262,7 @@\n import org.apache.kafka.common.security.token.delegation.DelegationToken;\n import org.apache.kafka.common.security.token.delegation.TokenInformation;\n import org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter;\n+import org.apache.kafka.common.telemetry.internals.ClientTelemetrySender;\n import org.apache.kafka.common.telemetry.internals.ClientTelemetryUtils;\n import org.apache.kafka.common.utils.Time;\n import org.apache.kafka.common.utils.Utils;\n@@ -406,6 +407,14 @@ public class KafkaAdminClient extends AdminClient {\n      */\n     private final AtomicLong hardShutdownTimeMs = new AtomicLong(INVALID_SHUTDOWN_TIME);\n \n+    /**\n+     * During a close operation, this is the time until which the RPC thread keeps running, once\n+     * all other work is complete, to send the telemetry reporter's terminating metrics push and\n+     * receive its response. If the admin client is not closing or has no telemetry reporter,\n+     * this will be INVALID_SHUTDOWN_TIME.\n+     */\n+    private final AtomicLong terminatingTelemetryPushDeadlineMs = new AtomicLong(INVALID_SHUTDOWN_TIME);\n+\n     /**\n      * A factory which creates TimeoutProcessors for the RPC thread.\n      */\n@@ -742,8 +751,14 @@ public void close(Duration timeout) {\n         long now = time.milliseconds();\n         long newHardShutdownTimeMs = now + waitTimeMs;\n         long prev = INVALID_SHUTDOWN_TIME;\n-        clientTelemetryReporter.ifPresent(ClientTelemetryReporter::initiateClose);\n-        metrics.close();\n+        // Ask the telemetry reporter to make its final, terminating metrics push. The push is sent by the\n+        // I/O thread, which waits for it to compelte, bounded by the request timeout, before exiting. The\n+        // metrics and their reporters and closed by the I/O thread as it exits, so that the reporter is\n+        // not closed before the push has been made.\n+        clientTelemetryReporter.ifPresent(reporter -> {\n+            reporter.initiateClose();\n+            terminatingTelemetryPushDeadlineMs.compareAndSet(INVALID_SHUTDOWN_TIME, now + requestTimeoutMs);\n+        });\n         while (true) {\n             if (hardShutdownTimeMs.compareAndSet(prev, newHardShutdownTimeMs)) {\n                 if (prev == INVALID_SHUTDOWN_TIME) {\n@@ -1517,6 +1532,22 @@ private boolean hasActiveExternalCalls(Collection<Call> calls) {\n             return false;\n         }\n \n+        /**\n+         * Whether the I/O thread should keep running during close so that the telemetry reporter's\n+         * terminating metrics push can be sent and its response received. The wait is bounded by the\n+         * request timeout from the time the close was initiated.\n+         */\n+        private boolean isTerminatingTelemetryPushPending(long now) {\n+            long deadlineMs = terminatingTelemetryPushDeadlineMs.get();\n+            if (deadlineMs == INVALID_SHUTDOWN_TIME || now >= deadlineMs) {\n+                return false;\n+            }\n+            return clientTelemetryReporter\n+                .map(ClientTelemetryReporter::telemetrySender)\n+                .map(ClientTelemetrySender::isTerminatingPushPending)\n+                .orElse(false);\n+        }\n+\n         /**\n          * Return true if there are currently active external calls.\n          */\n@@ -1534,6 +1565,10 @@ private boolean hasActiveExternalCalls() {\n \n         private boolean threadShouldExit(long now, long curHardShutdownTimeMs) {\n             if (!hasActiveExternalCalls()) {\n+                if (isTerminatingTelemetryPushPending(now)) {\n+                    log.trace(\"All work has been completed, but the I/O thread is waiting for the terminating telemetry push.\");\n+                    return false;\n+                }\n                 log.trace(\"All work has been completed, and the I/O thread is now exiting.\");\n                 return true;\n             }\n@@ -1593,6 +1628,10 @@ private void processRequests() {\n                 if (curHardShutdownTimeMs != INVALID_SHUTDOWN_TIME) {\n                     pollTimeout = Math.min(pollTimeout, curHardShutdownTimeMs - now);\n                 }\n+                long terminatingPushDeadlineMs = terminatingTelemetryPushDeadlineMs.get();\n+                if (terminatingPushDeadlineMs != INVALID_SHUTDOWN_TIME) {\n+                    pollTimeout = Math.min(pollTimeout, Math.max(0, terminatingPushDeadlineMs - now));\n+                }\n \n                 // Choose nodes for our pending calls.\n                 pollTimeout = Math.min(pollTimeout, maybeDrainPendingCalls(now));"
+  },
+  {
+   "sha": "1178bea1c14a0ca3252de2a1d36814f42b18e6a5",
+   "filename": "clients/src/main/java/org/apache/kafka/clients/producer/KafkaProducer.java",
+   "status": "modified",
+   "additions": 2,
+   "deletions": 1,
+   "changes": 3,
+   "blob_url": "https://github.com/apache/kafka/blob/6dc34bb2553c682422d1504288a9173bed626291/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fproducer%2FKafkaProducer.java",
+   "raw_url": "https://github.com/apache/kafka/raw/6dc34bb2553c682422d1504288a9173bed626291/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fproducer%2FKafkaProducer.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fproducer%2FKafkaProducer.java?ref=6dc34bb2553c682422d1504288a9173bed626291",
+   "patch": "@@ -604,7 +604,8 @@ Sender newSender(LogContext logContext, KafkaClient kafkaClient, ProducerMetadat\n                 time,\n                 requestTimeoutMs,\n                 producerConfig.getLong(ProducerConfig.RETRY_BACKOFF_MS_CONFIG),\n-                this.transactionManager);\n+                this.transactionManager,\n+                clientTelemetryReporter.map(ClientTelemetryReporter::telemetrySender).orElse(null));\n     }\n \n     private static Compression configureCompression(ProducerConfig config) {"
+  },
+  {
+   "sha": "7138882f81ce44a43e454238ef7d90c312506c38",
+   "filename": "clients/src/main/java/org/apache/kafka/clients/producer/internals/Sender.java",
+   "status": "modified",
+   "additions": 29,
+   "deletions": 1,
+   "changes": 30,
+   "blob_url": "https://github.com/apache/kafka/blob/6dc34bb2553c682422d1504288a9173bed626291/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fproducer%2Finternals%2FSender.java",
+   "raw_url": "https://github.com/apache/kafka/raw/6dc34bb2553c682422d1504288a9173bed626291/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fproducer%2Finternals%2FSender.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fproducer%2Finternals%2FSender.java?ref=6dc34bb2553c682422d1504288a9173bed626291",
+   "patch": "@@ -53,6 +53,7 @@\n import org.apache.kafka.common.requests.ProduceRequest;\n import org.apache.kafka.common.requests.ProduceResponse;\n import org.apache.kafka.common.requests.RequestHeader;\n+import org.apache.kafka.common.telemetry.internals.ClientTelemetrySender;\n import org.apache.kafka.common.utils.Time;\n import org.apache.kafka.common.utils.internals.KafkaThread;\n import org.apache.kafka.common.utils.internals.LogContext;\n@@ -122,6 +123,9 @@ public class Sender implements Runnable {\n     /* all the state related to transactions, in particular the producer id, producer epoch, and sequence numbers */\n     private final TransactionManager transactionManager;\n \n+    /* the client telemetry sender, if telemetry is enabled, whose terminating push is awaited at close */\n+    private final ClientTelemetrySender clientTelemetrySender;\n+\n     // A per-partition queue of batches ordered by creation time for tracking the in-flight batches\n     private final Map<TopicPartition, List<ProducerBatch>> inFlightBatches;\n \n@@ -137,7 +141,8 @@ public Sender(LogContext logContext,\n                   Time time,\n                   int requestTimeoutMs,\n                   long retryBackoffMs,\n-                  TransactionManager transactionManager) {\n+                  TransactionManager transactionManager,\n+                  ClientTelemetrySender clientTelemetrySender) {\n         this.log = logContext.logger(Sender.class);\n         this.client = client;\n         this.accumulator = accumulator;\n@@ -152,6 +157,7 @@ public Sender(LogContext logContext,\n         this.requestTimeoutMs = requestTimeoutMs;\n         this.retryBackoffMs = retryBackoffMs;\n         this.transactionManager = transactionManager;\n+        this.clientTelemetrySender = clientTelemetrySender;\n         this.inFlightBatches = new HashMap<>();\n     }\n \n@@ -284,6 +290,18 @@ public void run() {\n             }\n         }\n \n+        // Give the client telemetry sender the chance to make its final, terminating metrics push now that\n+        // all other work is done. The wait is bounded by the request timeout so that an unreachable cluster\n+        // cannot delay closing indefinitely.\n+        long terminatingPushDeadlineMs = time.milliseconds() + requestTimeoutMs;\n+        while (!forceClose && isTerminatingTelemetryPushPending(terminatingPushDeadlineMs)) {\n+            try {\n+                runOnce();\n+            } catch (Exception e) {\n+                log.error(\"Uncaught error in kafka producer I/O thread: \", e);\n+            }\n+        }\n+\n         if (forceClose) {\n             // We need to fail all the incomplete transactional requests and batches and wake up the threads waiting on\n             // the futures.\n@@ -303,6 +321,16 @@ public void run() {\n         log.debug(\"Shutdown of Kafka producer I/O thread has completed.\");\n     }\n \n+    /**\n+     * Whether the I/O thread should keep running at close so that the telemetry reporter's terminating\n+     * metrics push can be sent and its reponse received, until the given deadline.\n+     */\n+    private boolean isTerminatingTelemetryPushPending(long deadlineMs) {\n+        return clientTelemetrySender != null\n+            && time.milliseconds() < deadlineMs\n+            && clientTelemetrySender.isTerminatingPushPending();\n+    }\n+\n     /**\n      * Run a single iteration of sending\n      *"
+  },
+  {
+   "sha": "b6892cacc91b0280ae1afb160fe6fa178892c013",
+   "filename": "clients/src/main/java/org/apache/kafka/common/telemetry/internals/ClientTelemetryReporter.java",
+   "status": "modified",
+   "additions": 50,
+   "deletions": 5,
+   "changes": 55,
+   "blob_url": "https://github.com/apache/kafka/blob/6dc34bb2553c682422d1504288a9173bed626291/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Ftelemetry%2Finternals%2FClientTelemetryReporter.java",
+   "raw_url": "https://github.com/apache/kafka/raw/6dc34bb2553c682422d1504288a9173bed626291/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Ftelemetry%2Finternals%2FClientTelemetryReporter.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Ftelemetry%2Finternals%2FClientTelemetryReporter.java?ref=6dc34bb2553c682422d1504288a9173bed626291",
+   "patch": "@@ -303,6 +303,12 @@ class DefaultClientTelemetrySender implements ClientTelemetrySender {\n          when the client receives unrecoverable error from broker.\n         */\n         private boolean enabled;\n+        /*\n+         Whether the terminating push requested by initiateClose() has completed, meaning the response\n+         to it has been handled, it has failed, or it could not be built. The state stays in\n+         TERMINATING_PUSH_IN_PROGRESS until close() so this is tracked separately.\n+        */\n+        private boolean terminatingPushCompleted;\n \n         private DefaultClientTelemetrySender() {\n             enabled = true;\n@@ -495,10 +501,14 @@ public void handleResponse(PushTelemetryResponse response) {\n             lock.writeLock().lock();\n             try {\n                 /*\n-                 This is the case when client began termination sometime after the last push request\n-                 was issued. Just getting the callback, hence need to ignore it.\n+                 This is the case when client began termination some time after the last push request\n+                 was issued. Just getting the callback, hence need to ignore it. If the terminating\n+                 push itself has been issued, this response completes it.\n                 */\n                 if (isTerminatingState()) {\n+                    if (state == ClientTelemetryState.TERMINATING_PUSH_IN_PROGRESS) {\n+                        terminatingPushCompleted = true;\n+                    }\n                     return;\n                 }\n \n@@ -536,6 +546,8 @@ public void handleFailedGetTelemetrySubscriptionsRequest(KafkaException maybeFat\n         @Override\n         public void handleFailedPushTelemetryRequest(KafkaException maybeFatalException) {\n             log.debug(\"The broker generated an error for the push telemetry network API request\", maybeFatalException);\n+            // A failed terminating push is not retried, so there is nothing left to wait for.\n+            markTerminatingPushCompletedIfInState(ClientTelemetryState.TERMINATING_PUSH_IN_PROGRESS);\n             handleFailedRequest(maybeFatalException);\n         }\n \n@@ -624,7 +636,33 @@ public void initiateClose() {\n             }\n         }\n \n-        private boolean isRetryable(final KafkaException maybeFatalException) {\n+        @Override\n+        public boolean isTerminatingPushPending() {\n+            lock.readLock().lock();\n+            try {\n+                return (state == ClientTelemetryState.TERMINATING_PUSH_NEEDED || state == ClientTelemetryState.TERMINATING_PUSH_IN_PROGRESS) &&\n+                    !terminatingPushCompleted;\n+            } finally {\n+                lock.readLock().unlock();\n+            }\n+        }\n+\n+        /**\n+         * Records that the terminating push has completed, meaning there is nothing left for the enclosing\n+         * client to wait for at close, provided the sender is in the given terminating state.\n+         */\n+        private void markTerminatingPushCompletedIfInState(ClientTelemetryState expectedState) {\n+            lock.writeLock().lock();\n+            try {\n+                if (state == expectedState) {\n+                    terminatingPushCompleted = true;\n+                }\n+            } finally {\n+                lock.writeLock().unlock();\n+            }\n+        }\n+\n+        private boolean isRetriable(final KafkaException maybeFatalException) {\n             return maybeFatalException == null ||\n                 (maybeFatalException instanceof RetriableException) ||\n                 (maybeFatalException.getCause() != null && maybeFatalException.getCause() instanceof RetriableException);\n@@ -674,6 +712,8 @@ private Optional<Builder<?>> createPushRequest(ClientTelemetrySubscription local\n                 log.warn(\"Cannot make telemetry request as collector is not initialized\");\n                 // Update last accessed time for push request to be retried on next interval.\n                 updateErrorResult(localSubscription.pushIntervalMs, time.milliseconds());\n+                // Without a collector, the terminating push can never be made, so there is nothing to wait for.\n+                markTerminatingPushCompletedIfInState(ClientTelemetryState.TERMINATING_PUSH_NEEDED);\n                 return Optional.empty();\n             }\n \n@@ -700,7 +740,12 @@ private Optional<Builder<?>> createPushRequest(ClientTelemetrySubscription local\n                 lock.writeLock().unlock();\n             }\n \n-            return createPushRequest(localSubscription, terminating);\n+            Optional<Builder<?>> request = createPushRequest(localSubscription, terminating);\n+            if (request.isEmpty()) {\n+                // A terminating push which could not be built is not retried, so there is nothing left to wait for.\n+                markTerminatingPushCompletedIfInState(ClientTelemetryState.TERMINATING_PUSH_IN_PROGRESS);\n+            }\n+            return request;\n         }\n \n         private Optional<Builder<?>> createPushRequest(ClientTelemetrySubscription localSubscription, boolean terminating) {\n@@ -872,7 +917,7 @@ private void handleFailedRequest(KafkaException maybeFatalException) {\n                  again. We may disconnect from the broker and connect to a broker that supports client\n                  telemetry.\n                 */\n-                if (isRetryable(maybeFatalException)) {\n+                if (isRetriable(maybeFatalException)) {\n                     updateErrorResult(DEFAULT_PUSH_INTERVAL_MS, nowMs);\n                 } else {\n                     if (!(maybeFatalException instanceof UnsupportedVersionException)) {"
+  },
+  {
+   "sha": "338defb275e932240fee3964bf21bb6527eeddc7",
+   "filename": "clients/src/main/java/org/apache/kafka/common/telemetry/internals/ClientTelemetrySender.java",
+   "status": "modified",
+   "additions": 9,
+   "deletions": 0,
+   "changes": 9,
+   "blob_url": "https://github.com/apache/kafka/blob/6dc34bb2553c682422d1504288a9173bed626291/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Ftelemetry%2Finternals%2FClientTelemetrySender.java",
+   "raw_url": "https://github.com/apache/kafka/raw/6dc34bb2553c682422d1504288a9173bed626291/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Ftelemetry%2Finternals%2FClientTelemetrySender.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Ftelemetry%2Finternals%2FClientTelemetrySender.java?ref=6dc34bb2553c682422d1504288a9173bed626291",
+   "patch": "@@ -109,4 +109,13 @@ public interface ClientTelemetrySender extends AutoCloseable {\n      * is being closed. This method should not throw an exception if the client is already closed.\n      */\n     void initiateClose();\n+\n+    /**\n+     * Returns whether the terminating push requested by {@link #initiateClose()} has still to be\n+     * sent or is in flight. The enclosing client can use this to keep driving network I/O while\n+     * closing so that the final metrics push reaches the broker before the network client is closed.\n+     *\n+     * @return {@code true} if the terminating push has not yet completed, else {@code false}\n+     */\n+    boolean isTerminatingPushPending();\n }"
+  },
+  {
+   "sha": "e1e5459a19eb3f3c294428c0011b5560b11a4ffc",
+   "filename": "clients/src/test/java/org/apache/kafka/clients/producer/internals/SenderTest.java",
+   "status": "modified",
+   "additions": 71,
+   "deletions": 22,
+   "changes": 93,
+   "blob_url": "https://github.com/apache/kafka/blob/6dc34bb2553c682422d1504288a9173bed626291/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fproducer%2Finternals%2FSenderTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/6dc34bb2553c682422d1504288a9173bed626291/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fproducer%2Finternals%2FSenderTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fproducer%2Finternals%2FSenderTest.java?ref=6dc34bb2553c682422d1504288a9173bed626291",
+   "patch": "@@ -85,6 +85,7 @@\n import org.apache.kafka.common.requests.ProduceResponse;\n import org.apache.kafka.common.requests.RequestTestUtils;\n import org.apache.kafka.common.requests.TransactionResult;\n+import org.apache.kafka.common.telemetry.internals.ClientTelemetrySender;\n import org.apache.kafka.common.utils.MockTime;\n import org.apache.kafka.common.utils.Time;\n import org.apache.kafka.common.utils.internals.LogContext;\n@@ -147,6 +148,7 @@\n import static org.mockito.Mockito.atLeastOnce;\n import static org.mockito.Mockito.inOrder;\n import static org.mockito.Mockito.mock;\n+import static org.mockito.Mockito.never;\n import static org.mockito.Mockito.spy;\n import static org.mockito.Mockito.times;\n import static org.mockito.Mockito.verify;\n@@ -293,7 +295,7 @@ public void testSenderMetricsTemplates() throws Exception {\n         metrics = new Metrics(new MetricConfig().tags(clientTags));\n         SenderMetricsRegistry metricsRegistry = new SenderMetricsRegistry(metrics);\n         Sender sender = new Sender(logContext, client, metadata, this.accumulator, false, MAX_REQUEST_SIZE, ACKS_ALL,\n-                1, metricsRegistry, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, null);\n+                1, metricsRegistry, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, null, null);\n \n         // Append a message so that topic metrics are created\n         appendToAccumulator(tp0, 0L, \"key\", \"value\");\n@@ -321,7 +323,7 @@ public void testRetries() throws Exception {\n         SenderMetricsRegistry senderMetrics = new SenderMetricsRegistry(m);\n         try {\n             Sender sender = new Sender(logContext, client, metadata, this.accumulator, false, MAX_REQUEST_SIZE, ACKS_ALL,\n-                    maxRetries, senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, null);\n+                    maxRetries, senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, null, null);\n             // do a successful retry\n             Future<RecordMetadata> future = appendToAccumulator(tp0, 0L, \"key\", \"value\");\n             sender.runOnce(); // connect\n@@ -379,7 +381,7 @@ public void testSendInOrder() throws Exception {\n \n         try {\n             Sender sender = new Sender(logContext, client, metadata, this.accumulator, true, MAX_REQUEST_SIZE, ACKS_ALL, maxRetries,\n-                    senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, null);\n+                    senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, null, null);\n             // Create a two broker cluster, with partition 0 on broker 0 and partition 1 on broker 1\n             MetadataResponse metadataUpdate1 = RequestTestUtils.metadataUpdateWithIds(2, Collections.singletonMap(TOPIC_NAME, 2), TOPIC_IDS);\n             client.prepareMetadataUpdate(metadataUpdate1);\n@@ -566,7 +568,7 @@ public void testNodeLatencyStats(String allocationStrategy) throws Exception {\n             apiVersions.update(\"0\", NodeApiVersions.create(ApiKeys.PRODUCE.id, ApiKeys.PRODUCE.oldestVersion(), ApiKeys.PRODUCE.latestVersion()));\n \n             Sender sender = new Sender(logContext, client, metadata, this.accumulator, false, MAX_REQUEST_SIZE, ACKS_ALL, 1,\n-                senderMetrics, time, REQUEST_TIMEOUT, 1000L, null);\n+                senderMetrics, time, REQUEST_TIMEOUT, 1000L, null, null);\n \n             // Produce and send batch.\n             long time1 = time.milliseconds();\n@@ -1718,7 +1720,7 @@ public void testResetOfProducerStateShouldAllowQueuedBatchesToDrain() throws Exc\n         SenderMetricsRegistry senderMetrics = new SenderMetricsRegistry(m);\n \n         Sender sender = new Sender(logContext, client, metadata, this.accumulator, true, MAX_REQUEST_SIZE, ACKS_ALL, maxRetries,\n-                senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, transactionManager);\n+                senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, transactionManager, null);\n \n         appendToAccumulator(tp0); // failed response\n         Future<RecordMetadata> successfulResponse = appendToAccumulator(tp1);\n@@ -1759,7 +1761,7 @@ public void testCloseWithProducerIdReset() throws Exception {\n         SenderMetricsRegistry senderMetrics = new SenderMetricsRegistry(m);\n \n         Sender sender = new Sender(logContext, client, metadata, this.accumulator, true, MAX_REQUEST_SIZE, ACKS_ALL, 10,\n-            senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, transactionManager);\n+            senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, transactionManager, null);\n \n         appendToAccumulator(tp0); // failed response\n         appendToAccumulator(tp1); // success response\n@@ -1792,7 +1794,7 @@ public void testForceCloseWithProducerIdReset() throws Exception {\n         SenderMetricsRegistry senderMetrics = new SenderMetricsRegistry(m);\n \n         Sender sender = new Sender(logContext, client, metadata, this.accumulator, true, MAX_REQUEST_SIZE, ACKS_ALL, 10,\n-            senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, transactionManager);\n+            senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, transactionManager, null);\n \n         appendToAccumulator(tp0);\n         Future<RecordMetadata> successfulResponse = appendToAccumulator(tp1);\n@@ -1812,6 +1814,53 @@ public void testForceCloseWithProducerIdReset() throws Exception {\n         assertTrue(successfulResponse.isDone());\n     }\n \n+    @Test\n+    public void testCloseWaitsForTerminatingTelemetryPush() {\n+        ClientTelemetrySender clientTelemetrySender = mock(ClientTelemetrySender.class);\n+        // The terminating push is pending for two iterations of the I/O loop, then completes.\n+        when(clientTelemetrySender.isTerminatingPushPending()).thenReturn(true, true, false);\n+        Sender sender = new Sender(logContext, client, metadata, this.accumulator, false, MAX_REQUEST_SIZE, ACKS_ALL, 1,\n+            new SenderMetricsRegistry(new Metrics()), time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, null, clientTelemetrySender);\n+\n+        sender.initiateClose();\n+        sender.run();\n+\n+        verify(clientTelemetrySender, times(3)).isTerminatingPushPending();\n+        assertFalse(client.active());\n+    }\n+\n+    @Test\n+    public void testCloseWaitsForTerminatingTelemetryPushOnlyUntilRequestTimeout() {\n+        ClientTelemetrySender clientTelemetrySender = mock(ClientTelemetrySender.class);\n+        // The terminating push never completes, and each check moves time on by the request timeout.\n+        when(clientTelemetrySender.isTerminatingPushPending()).thenAnswer(invocation -> {\n+            time.sleep(REQUEST_TIMEOUT);\n+            return true;\n+        });\n+        Sender sender = new Sender(logContext, client, metadata, this.accumulator, false, MAX_REQUEST_SIZE, ACKS_ALL, 1,\n+            new SenderMetricsRegistry(new Metrics()), time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, null, clientTelemetrySender);\n+\n+        sender.initiateClose();\n+        sender.run();\n+\n+        verify(clientTelemetrySender, times(1)).isTerminatingPushPending();\n+        assertFalse(client.active());\n+    }\n+\n+    @Test\n+    public void testForceCloseDoesNotWaitForTerminatingTelemetryPush() {\n+        ClientTelemetrySender clientTelemetrySender = mock(ClientTelemetrySender.class);\n+        when(clientTelemetrySender.isTerminatingPushPending()).thenReturn(true);\n+        Sender sender = new Sender(logContext, client, metadata, this.accumulator, false, MAX_REQUEST_SIZE, ACKS_ALL, 1,\n+            new SenderMetricsRegistry(new Metrics()), time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, null, clientTelemetrySender);\n+\n+        sender.forceClose();\n+        sender.run();\n+\n+        verify(clientTelemetrySender, never()).isTerminatingPushPending();\n+        assertFalse(client.active());\n+    }\n+\n     @Test\n     public void testBatchesDrainedWithOldProducerIdShouldSucceedOnSubsequentRetry() throws Exception {\n         final long producerId = 343434L;\n@@ -1825,7 +1874,7 @@ public void testBatchesDrainedWithOldProducerIdShouldSucceedOnSubsequentRetry()\n         SenderMetricsRegistry senderMetrics = new SenderMetricsRegistry(m);\n \n         Sender sender = new Sender(logContext, client, metadata, this.accumulator, true, MAX_REQUEST_SIZE, ACKS_ALL, maxRetries,\n-                senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, transactionManager);\n+                senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, transactionManager, null);\n \n         Future<RecordMetadata> outOfOrderResponse = appendToAccumulator(tp0);\n         Future<RecordMetadata> successfulResponse = appendToAccumulator(tp1);\n@@ -2370,7 +2419,7 @@ public void testSequenceNumberIncrement() throws InterruptedException {\n         SenderMetricsRegistry senderMetrics = new SenderMetricsRegistry(m);\n \n         Sender sender = new Sender(logContext, client, metadata, this.accumulator, true, MAX_REQUEST_SIZE, ACKS_ALL, maxRetries,\n-                senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, transactionManager);\n+                senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, transactionManager, null);\n \n         Future<RecordMetadata> responseFuture = appendToAccumulator(tp0);\n         client.prepareResponse(body -> {\n@@ -2410,7 +2459,7 @@ public void testRetryWhenProducerIdChanges() throws InterruptedException {\n         Metrics m = new Metrics();\n         SenderMetricsRegistry senderMetrics = new SenderMetricsRegistry(m);\n         Sender sender = new Sender(logContext, client, metadata, this.accumulator, true, MAX_REQUEST_SIZE, ACKS_ALL, maxRetries,\n-                senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, transactionManager);\n+                senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, transactionManager, null);\n \n         Future<RecordMetadata> responseFuture = appendToAccumulator(tp0);\n         sender.runOnce();  // connect.\n@@ -2446,7 +2495,7 @@ public void testBumpEpochWhenOutOfOrderSequenceReceived() throws InterruptedExce\n         SenderMetricsRegistry senderMetrics = new SenderMetricsRegistry(m);\n \n         Sender sender = new Sender(logContext, client, metadata, this.accumulator, true, MAX_REQUEST_SIZE, ACKS_ALL, maxRetries,\n-                senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, transactionManager);\n+                senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, transactionManager, null);\n \n         Future<RecordMetadata> responseFuture = appendToAccumulator(tp0);\n         sender.runOnce();  // connect.\n@@ -2515,7 +2564,7 @@ private void testSplitBatchAndSend(TransactionManager txnManager,\n                 new BufferPool(totalSize, batchSize, metrics, time, \"producer-internal-metrics\"));\n             SenderMetricsRegistry senderMetrics = new SenderMetricsRegistry(m);\n             Sender sender = new Sender(logContext, client, metadata, this.accumulator, true, MAX_REQUEST_SIZE, ACKS_ALL, maxRetries,\n-                    senderMetrics, time, REQUEST_TIMEOUT, 1000L, txnManager);\n+                    senderMetrics, time, REQUEST_TIMEOUT, 1000L, txnManager, null);\n             // Create a two broker cluster, with partition 0 on broker 0 and partition 1 on broker 1\n             MetadataResponse metadataUpdate1 = RequestTestUtils.metadataUpdateWithIds(2, Collections.singletonMap(topic, 2), TOPIC_IDS);\n             client.prepareMetadataUpdate(metadataUpdate1);\n@@ -2838,7 +2887,7 @@ public void testTransactionalRequestsSentOnShutdown() {\n         try {\n             TransactionManager txnManager = new TransactionManager(logContext, \"testTransactionalRequestsSentOnShutdown\", 6000, 100, apiVersions, metadata, false);\n             Sender sender = new Sender(logContext, client, metadata, this.accumulator, false, MAX_REQUEST_SIZE, ACKS_ALL,\n-                    maxRetries, senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, txnManager);\n+                    maxRetries, senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, txnManager, null);\n \n             ProducerIdAndEpoch producerIdAndEpoch = new ProducerIdAndEpoch(123456L, (short) 0);\n             TopicPartition tp = new TopicPartition(\"testTransactionalRequestsSentOnShutdown\", 1);\n@@ -2873,7 +2922,7 @@ public void testRecordsFlushedImmediatelyOnTransactionCompletion() throws Except\n             setupWithTransactionState(txnManager, lingerMs);\n \n             Sender sender = new Sender(logContext, client, metadata, this.accumulator, false, MAX_REQUEST_SIZE, ACKS_ALL,\n-                1, senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, txnManager);\n+                1, senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, txnManager, null);\n \n             // Begin a transaction and successfully add one partition to it.\n             ProducerIdAndEpoch producerIdAndEpoch = new ProducerIdAndEpoch(123456L, (short) 0);\n@@ -2930,7 +2979,7 @@ public void testAwaitPendingRecordsBeforeCommittingTransaction() throws Exceptio\n             setupWithTransactionState(txnManager);\n \n             Sender sender = new Sender(logContext, client, metadata, this.accumulator, false, MAX_REQUEST_SIZE, ACKS_ALL,\n-                1, senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, txnManager);\n+                1, senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, txnManager, null);\n \n             // Begin a transaction and successfully add one partition to it.\n             ProducerIdAndEpoch producerIdAndEpoch = new ProducerIdAndEpoch(123456L, (short) 0);\n@@ -2999,7 +3048,7 @@ public void testIncompleteTransactionAbortOnShutdown() {\n         try {\n             TransactionManager txnManager = new TransactionManager(logContext, \"testIncompleteTransactionAbortOnShutdown\", 6000, 100, apiVersions, metadata, false);\n             Sender sender = new Sender(logContext, client, metadata, this.accumulator, false, MAX_REQUEST_SIZE, ACKS_ALL,\n-                    maxRetries, senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, txnManager);\n+                    maxRetries, senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, txnManager, null);\n \n             ProducerIdAndEpoch producerIdAndEpoch = new ProducerIdAndEpoch(123456L, (short) 0);\n             TopicPartition tp = new TopicPartition(\"testIncompleteTransactionAbortOnShutdown\", 1);\n@@ -3033,7 +3082,7 @@ public void testForceShutdownWithIncompleteTransaction() {\n         try {\n             TransactionManager txnManager = new TransactionManager(logContext, \"testForceShutdownWithIncompleteTransaction\", 6000, 100, apiVersions, metadata, false);\n             Sender sender = new Sender(logContext, client, metadata, this.accumulator, false, MAX_REQUEST_SIZE, ACKS_ALL,\n-                    maxRetries, senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, txnManager);\n+                    maxRetries, senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, txnManager, null);\n \n             ProducerIdAndEpoch producerIdAndEpoch = new ProducerIdAndEpoch(123456L, (short) 0);\n             TopicPartition tp = new TopicPartition(\"testForceShutdownWithIncompleteTransaction\", 1);\n@@ -3405,7 +3454,7 @@ public void testProducerBatchRetriesWhenPartitionLeaderChanges(String allocation\n                 10L, retryBackoffMaxMs, metrics, metricGrpName, pool);\n             Sender sender = new Sender(logContext, client, metadata, this.accumulator, false,\n                 MAX_REQUEST_SIZE, ACKS_ALL,\n-                10, senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, null);\n+                10, senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, null, null);\n             // Update metadata with leader-epochs.\n             int tp0LeaderEpoch = 100;\n             int epoch = tp0LeaderEpoch;\n@@ -3487,7 +3536,7 @@ public void testSenderShouldCloseWhenTransactionManagerInErrorState() {\n         TransactionManager transactionManager = mock(TransactionManager.class);\n         SenderMetricsRegistry metricsRegistry = new SenderMetricsRegistry(metrics);\n         Sender sender = new Sender(logContext, client, metadata, this.accumulator, false, MAX_REQUEST_SIZE, ACKS_ALL,\n-                1, metricsRegistry, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, transactionManager);\n+                1, metricsRegistry, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, transactionManager, null);\n         when(transactionManager.hasOngoingTransaction()).thenReturn(true);\n         when(transactionManager.beginAbort()).thenThrow(new IllegalStateException());\n         sender.initiateClose();\n@@ -3518,7 +3567,7 @@ public void testWhenProduceResponseReturnsWithALeaderShipChangeErrorButNoNewLead\n                 10L, retryBackoffMaxMs, metrics, metricGrpName, pool);\n             Sender sender = new Sender(logContext, client, metadata, this.accumulator, false,\n                 MAX_REQUEST_SIZE, ACKS_ALL,\n-                10, senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, null);\n+                10, senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, null, null);\n             // Update metadata with leader-epochs.\n             int tp0LeaderEpoch = 100;\n             int tp1LeaderEpoch = 200;\n@@ -3596,7 +3645,7 @@ public void testWhenProduceResponseReturnsWithALeaderShipChangeErrorAndNewLeader\n                 10L, retryBackoffMaxMs, metrics, metricGrpName, pool);\n             Sender sender = new Sender(logContext, client, metadata, this.accumulator, false,\n                 MAX_REQUEST_SIZE, ACKS_ALL,\n-                10, senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, null);\n+                10, senderMetrics, time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, null, null);\n             // Update metadata with leader-epochs.\n             int tp0LeaderEpoch = 100;\n             int tp1LeaderEpoch = 200;\n@@ -3961,7 +4010,7 @@ private void setupWithTransactionState(\n             DELIVERY_TIMEOUT_MS, metrics, metricGrpName, time, transactionManager, pool);\n         this.senderMetricsRegistry = new SenderMetricsRegistry(this.metrics);\n         this.sender = new Sender(logContext, this.client, this.metadata, this.accumulator, guaranteeOrder, MAX_REQUEST_SIZE, ACKS_ALL,\n-            retries, this.senderMetricsRegistry, this.time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, transactionManager);\n+            retries, this.senderMetricsRegistry, this.time, REQUEST_TIMEOUT, RETRY_BACKOFF_MS, transactionManager, null);\n \n         metadata.add(TOPIC_NAME, time.milliseconds());\n         if (updateMetadata)"
+  },
+  {
+   "sha": "7cc09a32173ea30572c5393a7bbf89e21c419073",
+   "filename": "clients/src/test/java/org/apache/kafka/clients/producer/internals/TransactionManagerTest.java",
+   "status": "modified",
+   "additions": 5,
+   "deletions": 5,
+   "changes": 10,
+   "blob_url": "https://github.com/apache/kafka/blob/6dc34bb2553c682422d1504288a9173bed626291/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fproducer%2Finternals%2FTransactionManagerTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/6dc34bb2553c682422d1504288a9173bed626291/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fproducer%2Finternals%2FTransactionManagerTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fproducer%2Finternals%2FTransactionManagerTest.java?ref=6dc34bb2553c682422d1504288a9173bed626291",
+   "patch": "@@ -226,7 +226,7 @@ private void initializeTransactionManager(\n \n         this.sender = new Sender(logContext, this.client, this.metadata, this.accumulator, true,\n                 MAX_REQUEST_SIZE, ACKS_ALL, MAX_RETRIES, new SenderMetricsRegistry(metrics), this.time, REQUEST_TIMEOUT,\n-                50, transactionManager);\n+                50, transactionManager, null);\n     }\n \n     @Test\n@@ -765,7 +765,7 @@ public void testDuplicateSequenceAfterProducerReset(boolean transactionV2Enabled\n \n         Sender sender = new Sender(logContext, this.client, this.metadata, accumulator, false,\n                 MAX_REQUEST_SIZE, ACKS_ALL, MAX_RETRIES, new SenderMetricsRegistry(metrics), this.time, requestTimeout,\n-                0, transactionManager);\n+                0, transactionManager, null);\n \n         assertEquals(0, transactionManager.sequenceNumber(tp0));\n \n@@ -1076,7 +1076,7 @@ public void testTransactionManagerDisablesV2() {\n \n         this.sender = new Sender(logContext, this.client, this.metadata, this.accumulator, true,\n             MAX_REQUEST_SIZE, ACKS_ALL, MAX_RETRIES, new SenderMetricsRegistry(metrics), this.time, REQUEST_TIMEOUT,\n-            50, transactionManager);\n+            50, transactionManager, null);\n \n         doInitTransactions();\n         assertFalse(transactionManager.isTransactionV2Enabled());\n@@ -3770,7 +3770,7 @@ public void testHealthyPartitionRetriesDuringEpochBump(boolean transactionV2Enab\n         initializeTransactionManager(Optional.empty(), transactionV2Enabled);\n         Sender sender = new Sender(logContext, this.client, this.metadata, this.accumulator, false,\n                 MAX_REQUEST_SIZE, ACKS_ALL, MAX_RETRIES, new SenderMetricsRegistry(new Metrics(time)), this.time,\n-                REQUEST_TIMEOUT, 50, transactionManager);\n+                REQUEST_TIMEOUT, 50, transactionManager, null);\n         initializeIdempotentProducerId(producerId, epoch);\n \n         ProducerBatch tp0b1 = writeIdempotentBatchWithValue(transactionManager, tp0, \"1\");\n@@ -3895,7 +3895,7 @@ public void testFailedInflightBatchAfterEpochBump(boolean transactionV2Enabled)\n         initializeTransactionManager(Optional.empty(), transactionV2Enabled);\n         Sender sender = new Sender(logContext, this.client, this.metadata, this.accumulator, false,\n                 MAX_REQUEST_SIZE, ACKS_ALL, MAX_RETRIES, new SenderMetricsRegistry(new Metrics(time)), this.time,\n-                REQUEST_TIMEOUT, 50, transactionManager);\n+                REQUEST_TIMEOUT, 50, transactionManager, null);\n         initializeIdempotentProducerId(producerId, epoch);\n \n         ProducerBatch tp0b1 = writeIdempotentBatchWithValue(transactionManager, tp0, \"1\");"
+  },
+  {
+   "sha": "9bc50a5894011987aa85013c9d35112bd27cf2db",
+   "filename": "clients/src/test/java/org/apache/kafka/common/telemetry/internals/ClientTelemetryReporterTest.java",
+   "status": "modified",
+   "additions": 63,
+   "deletions": 0,
+   "changes": 63,
+   "blob_url": "https://github.com/apache/kafka/blob/6dc34bb2553c682422d1504288a9173bed626291/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Ftelemetry%2Finternals%2FClientTelemetryReporterTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/6dc34bb2553c682422d1504288a9173bed626291/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Ftelemetry%2Finternals%2FClientTelemetryReporterTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Ftelemetry%2Finternals%2FClientTelemetryReporterTest.java?ref=6dc34bb2553c682422d1504288a9173bed626291",
+   "patch": "@@ -767,6 +767,69 @@ public void testHandleResponsePushTelemetryTerminating() {\n         assertTrue(telemetrySender.maybeSetState(ClientTelemetryState.TERMINATED));\n     }\n \n+    @Test\n+    public void testTerminatingPushPending() {\n+        ClientTelemetryReporter.DefaultClientTelemetrySender telemetrySender = (ClientTelemetryReporter.DefaultClientTelemetrySender) clientTelemetryReporter.telemetrySender();\n+        assertFalse(telemetrySender.isTerminatingPushPending());\n+\n+        telemetrySender.updateSubscriptionResult(subscription, time.milliseconds());\n+        assertTrue(telemetrySender.maybeSetState(ClientTelemetryState.SUBSCRIPTION_IN_PROGRESS));\n+        assertTrue(telemetrySender.maybeSetState(ClientTelemetryState.PUSH_NEEDED));\n+        assertTrue(telemetrySender.maybeSetState(ClientTelemetryState.PUSH_IN_PROGRESS));\n+        // A regular push is not a terminating push\n+        assertFalse(telemetrySender.isTerminatingPushPending());\n+\n+        telemetrySender.initiateClose();\n+        assertEquals(ClientTelemetryState.TERMINATING_PUSH_NEEDED, telemetrySender.state());\n+        assertTrue(telemetrySender.isTerminatingPushPending());\n+\n+        // A response to the earlier regular push does not complete the terminating push\n+        telemetrySender.handleResponse(new PushTelemetryResponse(new PushTelemetryResponseData()));\n+        assertEquals(ClientTelemetryState.TERMINATING_PUSH_NEEDED, telemetrySender.state());\n+        assertTrue(telemetrySender.isTerminatingPushPending());\n+\n+        assertTrue(telemetrySender.maybeSetState(ClientTelemetryState.TERMINATING_PUSH_IN_PROGRESS));\n+        assertTrue(telemetrySender.isTerminatingPushPending());\n+\n+        telemetrySender.handleResponse(new PushTelemetryResponse(new PushTelemetryResponseData()));\n+        assertEquals(ClientTelemetryState.TERMINATING_PUSH_IN_PROGRESS, telemetrySender.state());\n+        assertFalse(telemetrySender.isTerminatingPushPending());\n+\n+        telemetrySender.close();\n+        assertEquals(ClientTelemetryState.TERMINATED, telemetrySender.state());\n+        assertFalse(telemetrySender.isTerminatingPushPending());\n+    }\n+\n+    @Test\n+    public void testTerminatingPushPendingAfterFailedPush() {\n+        ClientTelemetryReporter.DefaultClientTelemetrySender telemetrySender = (ClientTelemetryReporter.DefaultClientTelemetrySender) clientTelemetryReporter.telemetrySender();\n+        telemetrySender.updateSubscriptionResult(subscription, time.milliseconds());\n+        assertTrue(telemetrySender.maybeSetState(ClientTelemetryState.SUBSCRIPTION_IN_PROGRESS));\n+        assertTrue(telemetrySender.maybeSetState(ClientTelemetryState.PUSH_NEEDED));\n+        assertTrue(telemetrySender.maybeSetState(ClientTelemetryState.TERMINATING_PUSH_NEEDED));\n+        assertTrue(telemetrySender.maybeSetState(ClientTelemetryState.TERMINATING_PUSH_IN_PROGRESS));\n+        assertTrue(telemetrySender.isTerminatingPushPending());\n+\n+        // A failed terminating push is not retried, so there is nothing left to wait for\n+        telemetrySender.handleFailedPushTelemetryRequest(new TimeoutException(\"Timeout\"));\n+        assertEquals(ClientTelemetryState.TERMINATING_PUSH_IN_PROGRESS, telemetrySender.state());\n+        assertFalse(telemetrySender.isTerminatingPushPending());\n+    }\n+\n+    @Test\n+    public void testTerminatingPushPendingWhenPushCannotBeCreated() {\n+        ClientTelemetryReporter.DefaultClientTelemetrySender telemetrySender = (ClientTelemetryReporter.DefaultClientTelemetrySender) clientTelemetryReporter.telemetrySender();\n+        telemetrySender.updateSubscriptionResult(subscription, time.milliseconds());\n+        assertTrue(telemetrySender.maybeSetState(ClientTelemetryState.SUBSCRIPTION_IN_PROGRESS));\n+        assertTrue(telemetrySender.maybeSetState(ClientTelemetryState.PUSH_NEEDED));\n+        assertTrue(telemetrySender.maybeSetState(ClientTelemetryState.TERMINATING_PUSH_NEEDED));\n+        assertTrue(telemetrySender.isTerminatingPushPending());\n+\n+        // The reporter has not bee initialized, so there is no metrics collector and the push cannot be built\n+        assertTrue(telemetrySender.createRequest().isEmpty());\n+        assertFalse(telemetrySender.isTerminatingPushPending());\n+    }\n+\n     @Test\n     public void testHandleResponsePushTelemetryErrorResponse() {\n         ClientTelemetryReporter.DefaultClientTelemetrySender telemetrySender = (ClientTelemetryReporter.DefaultClientTelemetrySender) clientTelemetryReporter.telemetrySender();"
+  }
+ ],
+ "timeline": [
+  {
+   "sha": "b423c49ba6950c1eb3ab1468a25442ff72006336",
+   "node_id": "C_kwDOACG9q9oAKGI0MjNjNDliYTY5NTBjMWViM2FiMTQ2OGEyNTQ0MmZmNzIwMDYzMzY",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/b423c49ba6950c1eb3ab1468a25442ff72006336",
+   "html_url": "https://github.com/apache/kafka/commit/b423c49ba6950c1eb3ab1468a25442ff72006336",
+   "author": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-04T22:29:50Z"
+   },
+   "committer": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-04T22:29:50Z"
+   },
+   "tree": {
+    "sha": "7f65e1433f467a5e89814ecd384ff12a6edaacc6",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/7f65e1433f467a5e89814ecd384ff12a6edaacc6"
+   },
+   "message": "KAFKA-21209: Add client telemetry integration tests",
+   "parents": [
+    {
+     "sha": "28093d8215b69aa629031673325752484a84b0f3",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/28093d8215b69aa629031673325752484a84b0f3",
+     "html_url": "https://github.com/apache/kafka/commit/28093d8215b69aa629031673325752484a84b0f3"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "id": 32464552204,
+   "node_id": "RRE_lADOACG9q88AAAABU_tFWc8AAAAHjwnBDA",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/32464552204",
+   "actor": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "review_requested",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-04T22:35:05Z",
+   "review_requester": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "requested_reviewer": {
+    "login": "apoorvmittal10",
+    "id": 2861565,
+    "node_id": "MDQ6VXNlcjI4NjE1NjU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2861565?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/apoorvmittal10",
+    "html_url": "https://github.com/apoorvmittal10",
+    "followers_url": "https://api.github.com/users/apoorvmittal10/followers",
+    "following_url": "https://api.github.com/users/apoorvmittal10/following{/other_user}",
+    "gists_url": "https://api.github.com/users/apoorvmittal10/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/apoorvmittal10/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/apoorvmittal10/subscriptions",
+    "organizations_url": "https://api.github.com/users/apoorvmittal10/orgs",
+    "repos_url": "https://api.github.com/users/apoorvmittal10/repos",
+    "events_url": "https://api.github.com/users/apoorvmittal10/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/apoorvmittal10/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "performed_via_github_app": null
+  },
+  {
+   "id": 32464560107,
+   "node_id": "LE_lADOACG9q88AAAABU_tFWc8AAAAHjwnf6w",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/32464560107",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-04T22:35:21Z",
+   "label": {
+    "name": "producer",
+    "color": "682dad"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 32464560133,
+   "node_id": "LE_lADOACG9q88AAAABU_tFWc8AAAAHjwngBQ",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/32464560133",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-04T22:35:21Z",
+   "label": {
+    "name": "build",
+    "color": "d4c5f9"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 32464560160,
+   "node_id": "LE_lADOACG9q88AAAABU_tFWc8AAAAHjwngIA",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/32464560160",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-04T22:35:21Z",
+   "label": {
+    "name": "clients",
+    "color": "ededed"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "sha": "0b86940e7cfd80f718f0b5700c6ef1745351e6d2",
+   "node_id": "C_kwDOACG9q9oAKDBiODY5NDBlN2NmZDgwZjcxOGYwYjU3MDBjNmVmMTc0NTM1MWU2ZDI",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/0b86940e7cfd80f718f0b5700c6ef1745351e6d2",
+   "html_url": "https://github.com/apache/kafka/commit/0b86940e7cfd80f718f0b5700c6ef1745351e6d2",
+   "author": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-06T07:07:42Z"
+   },
+   "committer": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-06T07:07:42Z"
+   },
+   "tree": {
+    "sha": "36cd676573e20a16d3d33b687c01b2e380a02896",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/36cd676573e20a16d3d33b687c01b2e380a02896"
+   },
+   "message": "Merge branch 'trunk' into KAFKA-21209",
+   "parents": [
+    {
+     "sha": "b423c49ba6950c1eb3ab1468a25442ff72006336",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/b423c49ba6950c1eb3ab1468a25442ff72006336",
+     "html_url": "https://github.com/apache/kafka/commit/b423c49ba6950c1eb3ab1468a25442ff72006336"
+    },
+    {
+     "sha": "c2fbf6f52f78ecc1c11c6511242aade6a2c50b71",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/c2fbf6f52f78ecc1c11c6511242aade6a2c50b71",
+     "html_url": "https://github.com/apache/kafka/commit/c2fbf6f52f78ecc1c11c6511242aade6a2c50b71"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "6d7e4e51d97cff199269ff733341033f7ee1c44f",
+   "node_id": "C_kwDOACG9q9oAKDZkN2U0ZTUxZDk3Y2ZmMTk5MjY5ZmY3MzMzNDEwMzNmN2VlMWM0NGY",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/6d7e4e51d97cff199269ff733341033f7ee1c44f",
+   "html_url": "https://github.com/apache/kafka/commit/6d7e4e51d97cff199269ff733341033f7ee1c44f",
+   "author": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-12T19:44:29Z"
+   },
+   "committer": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-12T19:44:29Z"
+   },
+   "tree": {
+    "sha": "c0bcdd2f9868d02b20ee95651c3c779becfb50da",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/c0bcdd2f9868d02b20ee95651c3c779becfb50da"
+   },
+   "message": "Merge branch 'trunk' into KAFKA-21209",
+   "parents": [
+    {
+     "sha": "0b86940e7cfd80f718f0b5700c6ef1745351e6d2",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/0b86940e7cfd80f718f0b5700c6ef1745351e6d2",
+     "html_url": "https://github.com/apache/kafka/commit/0b86940e7cfd80f718f0b5700c6ef1745351e6d2"
+    },
+    {
+     "sha": "a2141d8c00a3f3370593b8f49df824c368938bdd",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/a2141d8c00a3f3370593b8f49df824c368938bdd",
+     "html_url": "https://github.com/apache/kafka/commit/a2141d8c00a3f3370593b8f49df824c368938bdd"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "40e44764945e902b069da8e77eb3f9e83db5552f",
+   "node_id": "C_kwDOACG9q9oAKDQwZTQ0NzY0OTQ1ZTkwMmIwNjlkYThlNzdlYjNmOWU4M2RiNTU1MmY",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/40e44764945e902b069da8e77eb3f9e83db5552f",
+   "html_url": "https://github.com/apache/kafka/commit/40e44764945e902b069da8e77eb3f9e83db5552f",
+   "author": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-20T11:38:19Z"
+   },
+   "committer": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-20T11:38:19Z"
+   },
+   "tree": {
+    "sha": "8de52c35fa401dbc51b447a7473b9ce5009c82f7",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/8de52c35fa401dbc51b447a7473b9ce5009c82f7"
+   },
+   "message": "Merge branch 'trunk' into KAFKA-21209",
+   "parents": [
+    {
+     "sha": "6d7e4e51d97cff199269ff733341033f7ee1c44f",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/6d7e4e51d97cff199269ff733341033f7ee1c44f",
+     "html_url": "https://github.com/apache/kafka/commit/6d7e4e51d97cff199269ff733341033f7ee1c44f"
+    },
+    {
+     "sha": "e149305a6589e2c22e9f24cdcc157a9daffd53e9",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/e149305a6589e2c22e9f24cdcc157a9daffd53e9",
+     "html_url": "https://github.com/apache/kafka/commit/e149305a6589e2c22e9f24cdcc157a9daffd53e9"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "6dc34bb2553c682422d1504288a9173bed626291",
+   "node_id": "C_kwDOACG9q9oAKDZkYzM0YmIyNTUzYzY4MjQyMmQxNTA0Mjg4YTkxNzNiZWQ2MjYyOTE",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/6dc34bb2553c682422d1504288a9173bed626291",
+   "html_url": "https://github.com/apache/kafka/commit/6dc34bb2553c682422d1504288a9173bed626291",
+   "author": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-23T19:42:34Z"
+   },
+   "committer": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-23T19:42:34Z"
+   },
+   "tree": {
+    "sha": "7ca679401204ef433272c7b2e8cd4b325baccafe",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/7ca679401204ef433272c7b2e8cd4b325baccafe"
+   },
+   "message": "Add dependencies for compression libraries in clients integration tests",
+   "parents": [
+    {
+     "sha": "40e44764945e902b069da8e77eb3f9e83db5552f",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/40e44764945e902b069da8e77eb3f9e83db5552f",
+     "html_url": "https://github.com/apache/kafka/commit/40e44764945e902b069da8e77eb3f9e83db5552f"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  }
+ ]
+}

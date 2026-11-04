@@ -1,0 +1,168 @@
+{
+ "id": "451971202",
+ "versions": {
+  "results": [
+   {
+    "by": {
+     "type": "known",
+     "username": "apoorvmittal10",
+     "userKey": "8aa980956c3bbe04016c605e573400b4",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/123900108/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Apoorv Mittal",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa980956c3bbe04016c605e573400b4"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-02T17:18:16.000Z",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451971202/version/2"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451971202"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "apoorvmittal10",
+     "userKey": "8aa980956c3bbe04016c605e573400b4",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/123900108/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Apoorv Mittal",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa980956c3bbe04016c605e573400b4"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-01T14:42:03.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451971202/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451971202?status=historical&version=1"
+    }
+   }
+  ],
+  "start": 0,
+  "limit": 200,
+  "size": 2,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451971202/version",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ },
+ "version_bodies": [
+  {
+   "id": "451971202",
+   "type": "page",
+   "status": "historical",
+   "title": "Release Plan 4.2.2",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "apoorvmittal10",
+     "userKey": "8aa980956c3bbe04016c605e573400b4",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/123900108/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Apoorv Mittal",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa980956c3bbe04016c605e573400b4"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-01T14:42:03.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451971202/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451971202?status=historical&version=1"
+    }
+   },
+   "position": -1,
+   "body": {
+    "storage": {
+     "value": "<p>This is the release plan for bug fix version 4.2.2.</p><p>Release Manager: <ac:link><ri:user ri:userkey=\"8aa980956c3bbe04016c605e573400b4\" /></ac:link> </p><p>Major and minor version releases are driven by the <a href=\"https://cwiki.apache.org/confluence/display/KAFKA/Time+Based+Release+Plan\" rel=\"nofollow\">Time Based Release Plan</a>.  As a bug fix version, this release will be performed on-demand as sufficient bug fixes aggregate. This page mostly serves to help understand approximate expected release dates, coordinate testing, and track completed and outstanding JIRAs targeted for the release.</p><h2>Release Date</h2><p><span>Code Freeze: 15 Septmber 2026 (Tuesday)<strong><span style=\"color:var(--ds-text-inverse,#ffffff);\">June 2026 </span></strong><span style=\"color:var(--ds-text-inverse,#ffffff);\">(Wednesday)</span></span></p><p>This date is approximate at best and subject to change. Bug fix releases are driven both by the impact of bug fixes that have already been committed and known outstanding issues. Please email the dev list if you think the timeline needs to be adjusted.</p><h2>How to Contribute</h2><ul><li data-uuid=\"cf0d8dec-7420-46d1-b261-7e7835829442\">Open blocker JIRAs on critical issues found. Open non-blocker JIRAs on any other issues found.</li><li data-uuid=\"77a2cd12-e774-4f08-b881-7a13b0f2bf86\">Participate in fixing, reviewing, and testing important bug fixes. For bug fix releases, testing is among the most valuable contributions, especially for bugs not easily reproduced in unit, integration, or system tests.</li><li data-uuid=\"e5390edc-b9ed-4617-b8ed-c1d075c2ab62\">Vote in RC VOTE threads for the release.</li></ul><h2>Open Blocker Issues</h2><p>These are open issues that either:</p><ul><li data-uuid=\"7b2409fb-6ea4-4902-9118-8b0784063792\">Were marked as blocker because the impact is uncertain and warrants further investigation while blocking release of existing fixes</li><li data-uuid=\"ff4d8675-0c57-439c-b504-c6737273420b\">Have been evaluated as important enough that despite existing fixes, the bug fix release should be held until this fix is made due to its criticality.</li></ul><p>You can help move us to release faster by contributing fixes or testing of fixes for these issues.</p><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"9e0e9368-695a-4ac2-be2c-3bdf2af1e5ac\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"maximumIssues\">20</ac:parameter><ac:parameter ac:name=\"jqlQuery\">project = KAFKA AND priority =  Blocker AND resolution = Unresolved AND fixVersion = 4.2.2 ORDER BY priority DESC, status DESC, updated DESC             </ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter></ac:structured-macro></p><p><br /></p><h2>Open Critical Issues</h2><p>These do not need to block the release (or they would be blockers), but they have been evaluated at a high level of significance.</p><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"f6d2aea2-d54e-4ebc-af19-8641447165ff\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"maximumIssues\">20</ac:parameter><ac:parameter ac:name=\"jqlQuery\">project = KAFKA AND priority =  Critical AND resolution = Unresolved AND fixVersion = 4.2.2 ORDER BY priority DESC, status DESC, updated DESC    </ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter></ac:structured-macro></p><p><span>Open Non-Blocker Issues</span></p><p>These are open issues that developers or users have expressed interest in having in the bugfix release, but should not block a release.</p><p>You can help the release process by evaluating any issues here that have not been reviewed and helping determine if it should be in a bug fix release, if this is the appropriate release, and if its priority should be adjusted.</p><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"b68ffae6-0c02-41b3-8586-965f75039fd7\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"maximumIssues\">20</ac:parameter><ac:parameter ac:name=\"jqlQuery\">project = KAFKA AND priority != Blocker AND priority !=  Critical AND resolution = Unresolved AND fixVersion = 4.2.2 ORDER BY priority DESC, status DESC, updated DESC    </ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter></ac:structured-macro></p><p><span>Merged Issues</span></p><p>These issues have already been resolved and will be included in the release. Each item would appear as is in the release notes.</p><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"93d8ceea-c0ff-4afb-9605-84c937493737\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"maximumIssues\">20</ac:parameter><ac:parameter ac:name=\"jqlQuery\">project = KAFKA AND fixVersion = 4.2.2 AND resolution != Unresolved ORDER BY priority DESC, status DESC, updated DESC          </ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter></ac:structured-macro></p><p><br /></p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/451971202?status=historical&version=1"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": "none"
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=451971406",
+    "edit": "/pages/resumedraft.action?draftId=451971406&draftShareId=82833023-7ba0-4a70-b748-e7e377fe146b",
+    "tinyui": "/x/TonwGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/451971202?status=historical&version=1"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/451971202/child?parentVersion=1",
+    "restrictions": "/rest/api/content/451971202/restriction/byOperation",
+    "history": "/rest/api/content/451971202/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/451971202/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/451971202/restriction/relevantViewRestrictions"
+   }
+  }
+ ],
+ "comments": {
+  "results": [],
+  "start": 0,
+  "limit": 200,
+  "size": 0,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/api/content/451971202/child/comment?expand=body.storage%2Cversion%2Cancestors&depth=all",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ }
+}

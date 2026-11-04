@@ -1,0 +1,1595 @@
+{
+ "id": "406618510",
+ "versions": {
+  "results": [
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-19T18:53:24.000Z",
+    "message": "",
+    "number": 43,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/43"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-16T15:49:17.000Z",
+    "message": "",
+    "number": 42,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/42"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=42"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-16T15:37:51.000Z",
+    "message": "",
+    "number": 41,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/41"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=41"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-16T15:36:54.000Z",
+    "message": "",
+    "number": 40,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/40"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=40"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-23T15:15:18.000Z",
+    "message": "",
+    "number": 39,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/39"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=39"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-22T18:29:02.000Z",
+    "message": "",
+    "number": 38,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/38"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=38"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-03T16:04:30.000Z",
+    "message": "",
+    "number": 37,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/37"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=37"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-02T17:29:16.000Z",
+    "message": "",
+    "number": 36,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/36"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=36"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-22T21:23:09.000Z",
+    "message": "",
+    "number": 35,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/35"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=35"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-01T19:06:41.000Z",
+    "message": "",
+    "number": 34,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/34"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=34"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-03-30T17:54:31.000Z",
+    "message": "",
+    "number": 33,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/33"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=33"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-03-30T17:53:41.000Z",
+    "message": "",
+    "number": 32,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/32"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=32"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-03-30T14:42:45.000Z",
+    "message": "",
+    "number": 31,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/31"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=31"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-03-25T15:52:37.000Z",
+    "message": "",
+    "number": 30,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/30"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=30"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-03-23T06:13:43.000Z",
+    "message": "",
+    "number": 29,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/29"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=29"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-03-19T19:54:34.000Z",
+    "message": "",
+    "number": 28,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/28"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=28"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-03-17T07:57:49.000Z",
+    "message": "",
+    "number": 27,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/27"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=27"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-03-17T07:47:22.000Z",
+    "message": "",
+    "number": 26,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/26"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=26"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-03-13T05:49:15.000Z",
+    "message": "",
+    "number": 25,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/25"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=25"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-03-13T05:35:49.000Z",
+    "message": "",
+    "number": 24,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/24"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=24"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-03-09T19:32:26.000Z",
+    "message": "",
+    "number": 23,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/23"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=23"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-03-04T16:30:32.000Z",
+    "message": "",
+    "number": 22,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/22"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=22"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-03-04T10:49:27.000Z",
+    "message": "",
+    "number": 21,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/21"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=21"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-03-03T12:52:57.000Z",
+    "message": "",
+    "number": 20,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/20"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=20"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-02-27T09:21:07.000Z",
+    "message": "",
+    "number": 19,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/19"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=19"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-02-26T08:05:28.000Z",
+    "message": "",
+    "number": 18,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/18"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=18"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-02-24T11:33:21.000Z",
+    "message": "",
+    "number": 17,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/17"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=17"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-02-23T12:37:43.000Z",
+    "message": "",
+    "number": 16,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/16"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=16"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-02-19T23:01:36.000Z",
+    "message": "",
+    "number": 15,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/15"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=15"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-02-19T17:05:53.000Z",
+    "message": "",
+    "number": 14,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/14"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=14"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-02-19T17:00:00.000Z",
+    "message": "",
+    "number": 13,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/13"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=13"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-02-18T14:45:25.000Z",
+    "message": "",
+    "number": 12,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/12"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=12"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-02-11T18:17:34.000Z",
+    "message": "",
+    "number": 11,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/11"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=11"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-02-11T18:13:11.000Z",
+    "message": "",
+    "number": 10,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/10"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=10"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-02-11T17:57:51.000Z",
+    "message": "",
+    "number": 9,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/9"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=9"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-26T20:36:58.000Z",
+    "message": "",
+    "number": 8,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/8"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=8"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-26T18:08:07.000Z",
+    "message": "",
+    "number": 7,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/7"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=7"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-23T18:41:58.000Z",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/6"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=6"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-23T18:35:38.000Z",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/5"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=5"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-23T18:00:16.000Z",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/4"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=4"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-14T07:53:24.000Z",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/3"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=3"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-01T04:43:36.000Z",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/2"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=2"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-01T02:36:34.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=1"
+    }
+   }
+  ],
+  "start": 0,
+  "limit": 200,
+  "size": 43,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ },
+ "version_bodies": [
+  {
+   "id": "406618510",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1262: Enable auto-formatting directories",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-16T15:49:17.000Z",
+    "message": "",
+    "number": 42,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/42"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=42"
+    }
+   },
+   "position": 1255,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><h1>Status</h1><p><strong>Current state</strong>: Accepted</p><p><strong>Vote thread: </strong><a href=\"https://lists.apache.org/thread/95941nto2kxfqclb1pn00pmdtlgq2zjz\">https://lists.apache.org/thread/95941nto2kxfqclb1pn00pmdtlgq2zjz</a></p><p><strong>Discussion thread</strong>: <a href=\"https://lists.apache.org/thread/vnzmqvcbfxo7hhyj9gzpgmdq59w3n7dy\">https://lists.apache.org/thread/vnzmqvcbfxo7hhyj9gzpgmdq59w3n7dy</a></p><p><strong>JIRA</strong>: <ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"3dca6bf8-a1c5-4af7-9c30-69a6dd4e4e52\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20174</ac:parameter></ac:structured-macro><em><br /></em></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p class=\"p1\">The reason for this KIP is to remove the requirement of nodes needing to run <code>kafka-storage format</code>  before starting Kafka. When running <code>kafka-storage format</code> , nodes are required to supply a <code>--cluster-id</code>  argument, which represents the cluster ID to which the node belongs, and this is persisted to the node's <code>meta.properties</code>  file. Below are the other data that each node persists to disk upon invoking <code>kafka-storage format</code> :</p><p class=\"p1\">For brokers, <code>meta.properties</code> ’ other data: <code>node.id</code>  and <code>directory id</code> , are obtained from the node’s static config and randomly generated, respectively. <span style=\"color:var(--ds-text,#333333);\">Persisting this data does not have to be done during storage formatting and can be done later during startup</span>.</p><p class=\"p1\">For controllers, <code>meta.properties</code> ’ directory id may come from <code>—-initial-controllers</code> or <code>--standalone</code> , but otherwise controllers are the same as brokers with respect to the above data.</p><p class=\"p1\">The main purpose of cluster id is to prevent nodes from contacting other Kafka clusters (ref <a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-78%3A+Cluster+Id\">KIP-78</a>). This KIP seeks to preserve this behavior around cluster id, while removing the necessity of formatting brokers and observer controllers.</p><p class=\"p1\">Currently, Kafka relies on the operator/caller of kafka-storage format on all intended nodes in a cluster to generate consensus on the actual value of clusterID during format time. KRaft guarantees that upon forming a given quorum X, X's members will all have the same cluster id (which could clusterId = null) contained in meta.properties. Additionally, when a KRaft node sends a request with a non-null cluster id, this request is only handled if the request's cluster ID matches the handler's cluster ID.</p><h2 class=\"p1\">Background on cluster.id from ZooKeeper Kafka</h2><p class=\"p1\">Cluster id was a znode, <code>/cluster/id</code> , that was initially empty. During the startup of a cluster, brokers would race to write a random UUID in ZK to this znode, which would never change after being set, via <code>getOrGenerateClusterId()</code> .</p><h1>Public Interfaces</h1><p class=\"p1\"><strong>meta.properties</strong></p><p>Introduce meta.properties v2 with optional cluster id. However, <code>node.id</code>  is guaranteed to exist. <code>directory.id</code> is written to <code>meta.properties</code> during startup if it does not exist. Formatting will write meta.properties v2 after this KIP, and if formatting is skipped, startup of the node will write meta.properties v2 without the cluster id. The cluster id will be discovered and persisted later on via a <code>MetadataPublisher</code> .</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"65d42aab-347c-4f76-80e5-4bf769d0ffa2\"><ac:plain-text-body><![CDATA[meta.properties V2 example:  \n  version=2         (required)\n  node.id=9990      (required)\n  directory.id=UUID (optional, but always gets written)\n  cluster.id=UUID   (now optional)]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p class=\"p1\"><strong>ClusterIdRecord + MetadataVersion</strong></p><p class=\"p1\">Introduce a new metadata record to store cluster id and a new MetadataVersion (MV) that supports encoding/decoding this record. This means that during formatting, the bootstrap ClusterIdRecord is only written if the node is formatted with a MV that supports this feature. When a node runs <code>kafka-storage format</code>, some value for MV is always resolved and written to disk alongside <code>meta.properties</code> . The value either comes from <code>--release-version</code>  or <code>--feature</code> , or it defaults to the latest production MV.</p><p class=\"p1\">If this feature is supported by the cluster's MV, the first elected KRaft leader will write the <code>ClusterIdRecord</code> upon becoming the active controller alongside the other bootstrap metadata records.</p><p class=\"p1\">One invariant of this feature is there is at most one committed <code>ClusterIdRecord</code> in the metadata log. When the MV does not support <code>ClusterIdRecord</code>, there is no <code>ClusterId</code>  in the metadata log, and instead the cluster id is local to each node's <code>meta.properties</code> . When the finalized MV of the cluster does support <code>ClusterIdRecord</code>, there is exactly one <code>ClusterIdRecord</code> in the metadata log, which is written as part of the bootstrap metadata write by the first controller who becomes leader, or as a part of the MV upgrade records when upgrading to a MV that supports this feature. When the active controller writes the bootstrap metadata records when the MV supports this feature, or when it updates its MV to support this feature, it must write the <code>ClusterIdRecord</code>. This invariant is enforceable when replaying the log and checking the image and deltas.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"f0458312-1c7e-4a30-b309-84fb5d48bef2\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 29,\n  \"type\": \"metadata\",\n  \"name\": \"ClusterIdRecord\",\n  \"validVersions\": \"0\",\n  \"flexibleVersions\": \"0+\",\n  \"fields\": [\n    { \"name\": \"ClusterId\", \"type\": \"string\", \"versions\": \"0+\",\n      \"about\": \"The unique ID of this cluster\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\">The type of <code>ClusterId</code>  in this record is of type String, rather than UUID like with TopicRecord, because of the following: </p><p class=\"p1\"><span style=\"color:var(--ds-text,#333333);\">Currently, you can format a cluster with a non-UUID cluster ID string, and kafka considers this &quot;well-formatted&quot; (i.e. formatting code accepts String, server startup works, and clusterId is a String in-memory etc.). Kafka documentation references formatting with a UUID cluster id generated via <code>kafka-storage random-uuid</code> , but this is not a requirement in the code.<br />If this record were to have UUID like TopicRecord, it is not clear what the MV upgrade path is for existing clusters who formatted <code>meta.properties</code>  with a non-UUID String. The active controller would need to write a new UUID cluster id, which violates the invariant that the cluster id cannot change over the lifetime of a cluster.</span></p><p class=\"p1\"><strong>Storage Tool + Formatting requirements</strong></p><p class=\"p1\"><span class=\"s1\"><span class=\"Apple-tab-span\">Prior to this KIP, it is expected that all nodes running kafka have invoked the <code>kafka-storage format</code> command and have persisted a V1 <code>meta.properties</code> with a <code>cluster.id</code> file prior to starting kafka. We do this by trying to read in the <code>meta.properties</code> during startup, and crashing if that file does not contain all the data we expect.</span></span></p><p class=\"p1\"><span class=\"s1\"><span class=\"Apple-tab-span\">After this KIP, it is no longer required for nodes to run <code>kafka-storage format</code> in order to start kafka. Additionally, the <code>--cluster-id</code> argument for <code>kafka-storage format</code> will now be optional, rather than required. However, operators still have the option to format nodes to set the MV, feature versions, scram credentials, or to properly provision a kraft.version=1 cluster. If an operator decides to format a node, they will still need to specify <code>--cluster-id</code> if the MV which is resolved by the formatter does not support the <code>ClusterIdRecord</code>  feature.</span></span></p><p class=\"p1\"><span class=\"s1\"><span class=\"Apple-tab-span\">A consequence of the above relaxation is the the initial KRaft leader can be elected without a cluster.id in its local meta.properties. In this case, the initial KRaft leader (active controller) will randomly generate a cluster id as part of the bootstrap metadata write (this either writes the bootstrap records as a transaction if the MV supports it, or as an atomic batch). This is similar to how cluster.id is generated in ZK-based kafka.</span></span></p><h1>Proposed Changes</h1><h2>User Experience</h2><h3 class=\"p1\">Remove the requirement of nodes to format before starting kafka</h3><p>After KIP-1262, kafka operators no longer need to invoke <code>kafka-storage format</code> to start kafka. If the operator skips formatting on all nodes in the cluster, the bootstrapping metadata state for the cluster will be the latest MetadataVersion and a ClusterIdRecord, which are generated by the initial active controller. In this case, to elect a KRaft leader, the controllers must be configured with <code>controller.quorum.voters</code>. Operators can still end up with a dynamic quorum without formatting because static to dynamic quorum upgrades are supported once the cluster is successfully brought up.</p><p>Operators can still format clusters the same way as prior to this KIP, which requires a <code>--cluster-id</code> parameter. If the formatter's resolved MV supports <code>ClusterIdRecord</code> , write it to the bootstrap records and to <code>meta.properties</code> . If the formatter's resolved MV does not support <code>ClusterIdRecord</code>, this code will write to only <code>meta.properties</code> like before. </p><h3>When is formatting still required before starting kafka</h3><p>There are a few situations where operators still need to format nodes before starting kafka, but this only applies to bootstrap controllers. Bootstrap controllers are those who participate in the initial KRaft leader election. These are the nodes specified by <code>controller.quorum.voters</code> in a static quorum, and the nodes who format with <code>--standalone/--initial-controllers</code>  in a dynamic quorum.</p><p>Formatting of bootstrap controllers is still required when operators want to:</p><ul><li>Specify bootstrap SCRAM credentials</li><li>Specify bootstrap non-default feature levels or metadata version</li><li>Bootstrap a dynamic quorum (kraft.version=1) cluster</li></ul><p>For example, to startup a new dynamic quorum cluster with auto-formatting, the operator can format one controller with <code>--standalone</code> , and then skip formatting on all other nodes. </p><h2 class=\"p1\">Implementation Changes</h2><h3 class=\"p1\">The in-memory cluster.id must be made thread-safe</h3><p>Because the cluster.id can be empty now, and will rely on metadata replication to be set, there needs to be global, thread-safe reference to the value in kafka.</p><h3>KRaft request handling must handle cases where the cluster.id is not known</h3><p>Previously, KRaft nodes without a cluster id would reject requests with a cluster id. This behavior must change to deal with the following case to preserve availability in the case of a leader failover. Consider a 3 node cluster with leader A, followers B and C, and a committed cluster id of X via A and B. Suppose A fails over and remains unavailable. B is the only node who can be elected as leader, since the presence of the cluster id in its log means its log is more up to date than C. However, under the current code, C would reject B's vote request due to an &quot;invalid cluster id,&quot; which would prevent leader election.</p><p>Therefore, only when both the sending and receiving nodes in KRaft have cluster ids, can the code check if they match and reject a request if they do not.</p><h3><span style=\"color:var(--ds-text,#333333);\">Completion of BrokerServer and ControllerServer startup must block on the discovery and persistence of the cluster.id to meta.properties</span></h3><p>If a node already has cluster.id defined in meta.properties, it is assumed to be correct, which is the same behavior as today.</p><p>If a node does not have cluster.id defined in meta.properties, it needs to discover it via <code>Fetch/FetchSnapshot</code> from KRaft. The handler of a KRaft request<span style=\"color:var(--ds-text,#333333);\"> considers requests without a cluster.id to be &quot;valid&quot;, so <code>ClusterIdRecord</code> will be discoverable.</span> </p><p><span style=\"color:var(--ds-text,#333333);\">For brokers, the readers of cluster.id during startup are the <code>BrokerLifecycleManager</code> , <code>KafkaApis</code> , <code>DynamicTopicClusterQuotaPublisher</code> , and <code>endpointReadyFutures</code>. When cluster.id is not present, it is okay to block startup on fetching the cluster id from KRaft, since we also block startup on the broker catching up to the HWM before it can register with the active controller. Brokers already block their startup for up to <code>server.max.startup.time.ms</code> waiting to catch up with the metadata log HWM, so adding another wait for the clusterId metadata should not impact startup times meaningfully.</span></p><p><span style=\"color:var(--ds-text,#333333);\">For controllers, the readers are <code>endpointReadyFutures</code> , <code>QuorumController</code> , <code>ControllerApis</code> , and <code>DynamicTopicClusterQuotaPublisher</code>. When cluster.id is not present, only <span style=\"color:var(--ds-text,#333333);\">the <code>QuorumController</code> and <code>ControllerApis</code> will now be able to start up without a cluster id, since they are responsible responsible for writing it the first time. The other readers can wait until the clusterId is known. Controllers also block their startup for up to <code>server.max.startup.time.ms</code> waiting for authorization publishers, so similar to the brokers, adding another wait for the clusterId should not be impactful.</span></span></p><h3><span style=\"color:var(--ds-text,#333333);\">When no cluster.id is specified on a new cluster, the initial leader generates one as part of the bootstrap metadata write</span></h3><p><span style=\"color:var(--ds-text,#333333);\">This KIP allows for the cluster.id to be empty on all cluster members before the first KRaft leader is elected. Therefore, the initial leader election will still occur, and it is the initial leader's responsibility to write the <code>ClusterIdRecord</code>  to the metadata log. </span></p><h3 class=\"p1\">meta.properties will be written during kafka broker/controller startup if it doesn't exist already (from formatting)</h3><p>During startup of the <code>KafkaRaftServer</code>, we attempt to read the <code>meta.properties</code> file:</p><ul><li class=\"p1\">If <code>meta.properties</code> does not exist, write <code>meta.properties</code> V2 with <code>node.id</code>  and <code>directory.id</code><ul><li class=\"p1\">This means either this node skipped formatting, or the file/disk was lost</li></ul></li><li class=\"p1\">If <code>meta.properties</code> exists and is v1 or if it is v2 and clusterId is present, do the same validations as we do today in kafka</li><li class=\"p1\">If meta.properties exists without a cluster.id and is V2, the clusterId will be discovered later (described below)<ul><li class=\"p1\">One correctness invariant of this feature is that updating the cluster.id in-memory must occur after persisting it to <code>meta.properties</code>.</li></ul></li><li class=\"p1\">If meta.properties exists with a <code>cluster.id</code>, kafka behaves as it does today:<ul><li class=\"p1\">The node assumes it to be correct and passes it to KRaft</li><li>If this ID doesn't match the KRaft leader's ID, the leader will reject requests from the node</li></ul></li></ul><p>If a broker/observer controller has already written a cluster id to its <code>meta.properties</code>, either from formatting or discovering it from the cluster metadata, it is impossible for it to learn of another cluster id via <code>Fetch/FetchSnapshot</code>. <span style=\"color:var(--ds-text,#333333);\">For the broker (with clusterid = X) to receive a non-error FetchResponse with metadata records (which would be the only way to learn of a different ClusterIdRecord), the KRaft leader (clusterid = Y) must either receive a request without clusterid</span><span style=\"color:var(--ds-text,#333333);\">, or a request whose clusterid is Y. The broker fulfills neither of these conditions. </span><span style=\"color:var(--ds-text,#333333);\">This case could happen when bootstrap endpoints point to the wrong cluster during restart of a node. KRaft's own clusterid checks would mean startup of this node would time out and shut down the node because it is not able to contact the quorum of another cluster.</span></p><h3 class=\"p1\">Introduce a new MetadataVersion and the ClusterIdRecord</h3><p>One invariant of this feature is that if the persisted MV supports this feature, a ClusterIdRecord must also be persisted. This is enforceable along the write-path for MV, which occurs at the following points: formatting a node (specifically controllers who can become leader), the bootstrap metadata write of the initial active controller, and upgrading the MV using <code>kafka-features upgrade</code> .</p><ul><li>During formatting, nodes m<span style=\"color:var(--ds-text,#333333);\">ust resolve a MV with which to format. This comes from the <code>--release-version/--feature</code> flag and defaults to the latest production MV. If the MV at format time supports this feature, a ClusterIdRecord must be written as part of the bootstrap metadata checkpoint (0-0.checkpoint post KIP-1170)</span></li><li>The first active controller will write the ClusterIdRecord + MV as part of the bootstrap metadata records write if the MV supports this feature</li><li><span style=\"color:var(--ds-text,#333333);\">During MV upgrades, successfully upgrading the MV to one that supports this feature requires successfully committing a ClusterIdRecord alongside the new MetadataVersion feature record.</span></li></ul><p><span style=\"color:var(--ds-text,#333333);\">There is a precedent already for this kind of invariant which is enforced along the write path with kraft.version and the <code>VotersRecord</code> </span></p><h3 class=\"p1\">When nodes discover cluster.id from the metadata publishing pipeline, they persist it to meta.properties + update KRaft</h3><p>Nodes whose <code>meta.properties</code> do not contain <code>cluster.id</code>  will discover this value via the metadata publishing pipeline. This can be implemented as a MetadataPublisher that registers to the MetadataLoader.</p><ul class=\"ul1\"><li class=\"li1\">It is the responsibility of this MetadataPublisher to persist a discovered value of <a href=\"http://cluster.id\">cluster.id</a> to all meta.properties files before making the <a href=\"http://cluster.id\">cluster.id</a> available to in-memory data structures.<ul class=\"ul1\"><li class=\"li1\">Because of JBOD, nodes can have many log.dirs that each have a meta.properties file (or we need to write each instance of meta.properties V2 during startup without cluster.id if we skipped formatting). </li></ul></li><li class=\"li1\" data-uuid=\"49465501-49e9-4986-8861-e68bf4629d2f\">When the clusterId is discovered via metadata replication, local nodes can bump their meta.properties versions from V1/V0 to V2, and persist this to disk.<ul class=\"ul1\"><li class=\"li1\" data-uuid=\"3f9732c3-35cf-4b9c-8468-9b6ac9eb7f89\">The contents of V1 and V2 are identical, and the only change between V0 and V2 is that <code>broker.id</code> is renamed to <code>node.id</code> .</li></ul></li><li class=\"li1\">The MetadataPublisher is the single writer of cluster.id (unless it is already set by formatting, in which case there are no writers to cluster.id), both in persisting the value to meta.properties and writing the in-memory representation of cluster.id<ul class=\"ul1\"><li class=\"li1\">There are many readers of this value, but most of them can block their initialization until this value is discovered for the sake of simplicity.</li><li class=\"li1\">The KafkaRaftClient and QuorumController are the readers who need to handle the concept of an empty/not-set cluster id. </li></ul></li></ul><h1>Compatibility, Deprecation, and Migration Plan</h1><p>Since this feature is associated with a new metadata record and MetadataVersion, broker bootstrapping with cluster ID is required on all MVs &lt; X where X is the first MV that supports this feature. Because some MetadataVersion is resolved during each node's formatting, we can determine at format time if a ClusterIdRecord is needed as part of a controller's <code>0-0/bootstrap.checkpoint</code>.</p><h1>Test Plan</h1><ul><li>Unit tests</li><li>Integration tests</li><li>System tests to verify cross-software-version compatibility</li></ul><h1>Rejected Alternatives</h1><p class=\"p1\"><strong>Continue to persist cluster id in meta.properties but have KRaft discover it + persist it via FetchResponse</strong></p><ul class=\"ul1\"><li class=\"li1\">Rough design:<ul class=\"ul1\"><li class=\"li1\">Node can complete a future to allow this value to be discovered by readers outside of kraft layer who need it during startup</li><li class=\"li1\">Raft layer is brought up early during startup, so it is fine to wait until this future completes to proceed with initializing the server</li><li class=\"li1\">Brokers/observers can start Kafka with no cluster id, and rely on the fetch/another RPC response to discover it in-memory<ul class=\"ul1\"><li class=\"li1\">If discovered, node persists cluster id to meta.properties during the startup process before in-memory readers of cluster id</li></ul></li></ul></li><li class=\"li1\">Pros:<ul class=\"ul1\"><li class=\"li1\">Backwards compatibility is straightforward, since new nodes on old clusters keep using meta.properties for persisting cluster id</li><li class=\"li1\">This functionality is not tied to a MetadataVersion, meaning that any Kafka broker/observer with a software version that supports this KIP can use it, rather than the whole cluster needing to be on some MV &gt;= X.</li><li class=\"li1\">Kraft can easily do its own cluster ID validation for its RPCs, since nodes receive cluster ID via the fetch response if they do not know it and can update that state in-memory + persist it</li></ul></li><li class=\"li1\">Cons:<ul class=\"ul1\"><li>Since each local node's<span> </span><code>meta.properties</code>  is its source of truth, if this file is deleted or is changed, it means the broker/observer controller can join another cluster.<ul class=\"ul1\"><li>This is no worse than what exists currently.</li></ul></li></ul></li></ul><p><strong>Remove the requirement for formatting for brokers and observer controllers, but still require it for bootstrap controllers</strong> </p><p>The main reason we can relax this to say no nodes require formatting is that KRaft can elect a leader when all nodes do not have cluster.id defined.</p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/406618510?status=historical&version=42"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1255
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=451980231",
+    "edit": "/pages/resumedraft.action?draftId=451980231&draftShareId=573205eb-6165-4c01-82fb-8bd9a0ede579",
+    "tinyui": "/x/x6vwGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/406618510?status=historical&version=42"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/406618510/child?parentVersion=42",
+    "restrictions": "/rest/api/content/406618510/restriction/byOperation",
+    "history": "/rest/api/content/406618510/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/406618510/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/406618510/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "406618510",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1262: Enable auto-formatting directories",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-16T15:37:51.000Z",
+    "message": "",
+    "number": 41,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/41"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=41"
+    }
+   },
+   "position": 1255,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><h1>Status</h1><p><strong>Current state</strong>: Accepted</p><p><strong>Vote thread: </strong><a href=\"https://lists.apache.org/thread/95941nto2kxfqclb1pn00pmdtlgq2zjz\">https://lists.apache.org/thread/95941nto2kxfqclb1pn00pmdtlgq2zjz</a></p><p><strong>Discussion thread</strong>: <a href=\"https://lists.apache.org/thread/vnzmqvcbfxo7hhyj9gzpgmdq59w3n7dy\">https://lists.apache.org/thread/vnzmqvcbfxo7hhyj9gzpgmdq59w3n7dy</a></p><p><strong>JIRA</strong>: <ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"3dca6bf8-a1c5-4af7-9c30-69a6dd4e4e52\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20174</ac:parameter></ac:structured-macro><em><br /></em></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p class=\"p1\">The reason for this KIP is to remove the requirement of nodes needing to run <code>kafka-storage format</code>  before starting Kafka. When running <code>kafka-storage format</code> , nodes are required to supply a <code>--cluster-id</code>  argument, which represents the cluster ID to which the node belongs, and this is persisted to the node's <code>meta.properties</code>  file. Below are the other data that each node persists to disk upon invoking <code>kafka-storage format</code> :</p><p class=\"p1\">For brokers, <code>meta.properties</code> ’ other data: <code>node.id</code>  and <code>directory id</code> , are obtained from the node’s static config and randomly generated, respectively. <span style=\"color:var(--ds-text,#333333);\">Persisting this data does not have to be done during storage formatting and can be done later during startup</span>.</p><p class=\"p1\">For controllers, <code>meta.properties</code> ’ directory id may come from <code>—-initial-controllers</code> or <code>--standalone</code> , but otherwise controllers are the same as brokers with respect to the above data.</p><p class=\"p1\">The main purpose of cluster id is to prevent nodes from contacting other Kafka clusters (ref <a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-78%3A+Cluster+Id\">KIP-78</a>). This KIP seeks to preserve this behavior around cluster id, while removing the necessity of formatting brokers and observer controllers.</p><p class=\"p1\">Currently, Kafka relies on the operator/caller of kafka-storage format on all intended nodes in a cluster to generate consensus on the actual value of clusterID during format time. KRaft guarantees that upon forming a given quorum X, X's members will all have the same cluster id (which could clusterId = null) contained in meta.properties. Additionally, when a KRaft node sends a request with a non-null cluster id, this request is only handled if the request's cluster ID matches the handler's cluster ID.</p><h2 class=\"p1\">Background on cluster.id from ZooKeeper Kafka</h2><p class=\"p1\">Cluster id was a znode, <code>/cluster/id</code> , that was initially empty. During the startup of a cluster, brokers would race to write a random UUID in ZK to this znode, which would never change after being set, via <code>getOrGenerateClusterId()</code> .</p><h1>Public Interfaces</h1><p class=\"p1\"><strong>meta.properties</strong></p><p>Introduce meta.properties v2 with optional cluster id. However, <code>node.id</code>  is guaranteed to exist. <code>directory.id</code> is written to <code>meta.properties</code> during startup if it does not exist. Formatting will write meta.properties v2 after this KIP, and if formatting is skipped, startup of the node will write meta.properties v2 without the cluster id. The cluster id will be discovered and persisted later on via a <code>MetadataPublisher</code> .</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"65d42aab-347c-4f76-80e5-4bf769d0ffa2\"><ac:plain-text-body><![CDATA[meta.properties V2 example:  \n  version=2         (required)\n  node.id=9990      (required)\n  directory.id=UUID (optional, but always gets written)\n  cluster.id=UUID   (now optional)]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p class=\"p1\"><strong>ClusterIdRecord + MetadataVersion</strong></p><p class=\"p1\">Introduce a new metadata record to store cluster id and a new MetadataVersion (MV) that supports encoding/decoding this record. This means that during formatting, the bootstrap ClusterIdRecord is only written if the node is formatted with a MV that supports this feature. When a node runs <code>kafka-storage format</code>, some value for MV is always resolved and written to disk alongside <code>meta.properties</code> . The value either comes from <code>--release-version</code>  or <code>--feature</code> , or it defaults to the latest production MV.</p><p class=\"p1\">If this feature is supported by the cluster's MV, the first elected KRaft leader will write the <code>ClusterIdRecord</code> upon becoming the active controller alongside the other bootstrap metadata records.</p><p class=\"p1\">One invariant of this feature is there is at most one committed <code>ClusterIdRecord</code> in the metadata log. When the MV does not support <code>ClusterIdRecord</code>, there is no <code>ClusterId</code>  in the metadata log, and instead the cluster id is local to each node's <code>meta.properties</code> . When the finalized MV of the cluster does support <code>ClusterIdRecord</code>, there is exactly one <code>ClusterIdRecord</code> in the metadata log, which is written as part of the bootstrap metadata write by the first controller who becomes leader, or as a part of the MV upgrade records when upgrading to a MV that supports this feature. When the active controller writes the bootstrap metadata records when the MV supports this feature, or when it updates its MV to support this feature, it must write the <code>ClusterIdRecord</code>. This invariant is enforceable when replaying the log and checking the image and deltas.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"f0458312-1c7e-4a30-b309-84fb5d48bef2\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 29,\n  \"type\": \"metadata\",\n  \"name\": \"ClusterIdRecord\",\n  \"validVersions\": \"0\",\n  \"flexibleVersions\": \"0+\",\n  \"fields\": [\n    { \"name\": \"ClusterId\", \"type\": \"string\", \"versions\": \"0+\",\n      \"about\": \"The unique ID of this cluster\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\">The type of <code>ClusterId</code>  in this record is of type String, rather than UUID like with TopicRecord, because of the following: </p><p class=\"p1\"><span style=\"color:var(--ds-text,#333333);\">Currently, you can format a cluster with a non-UUID cluster ID string, and kafka considers this &quot;well-formatted&quot; (i.e. formatting code accepts String, server startup works, and clusterId is a String in-memory etc.). Kafka documentation references formatting with a UUID cluster id generated via <code>kafka-storage random-uuid</code> , but this is not a requirement in the code.<br />If this record were to have UUID like TopicRecord, it is not clear what the MV upgrade path is for existing clusters who formatted <code>meta.properties</code>  with a non-UUID String. The active controller would need to write a new UUID cluster id, which violates the invariant that the cluster id cannot change over the lifetime of a cluster.</span></p><p class=\"p1\"><strong>Storage Tool + Formatting requirements</strong></p><p class=\"p1\"><span class=\"s1\"><span class=\"Apple-tab-span\">Prior to this KIP, it is expected that all nodes running kafka have invoked the <code>kafka-storage format</code> command and have persisted a V1 <code>meta.properties</code> with a <code>cluster.id</code> file prior to starting kafka. We do this by trying to read in the <code>meta.properties</code> during startup, and crashing if that file does not contain all the data we expect.</span></span></p><p class=\"p1\"><span class=\"s1\"><span class=\"Apple-tab-span\">After this KIP, it is no longer required for nodes to run <code>kafka-storage format</code> in order to start kafka. Additionally, the <code>--cluster-id</code> argument for <code>kafka-storage format</code> will now be optional, rather than required. However, operators still have the option to format nodes to set the MV, feature versions, scram credentials, or to properly provision a kraft.version=1 cluster. If an operator decides to format a node, they will still need to specify <code>--cluster-id</code> if the MV which is resolved by the formatter does not support the <code>ClusterIdRecord</code>  feature.</span></span></p><p class=\"p1\"><span class=\"s1\"><span class=\"Apple-tab-span\">A consequence of the above relaxation is the the initial KRaft leader can be elected without a cluster.id in its local meta.properties. In this case, the initial KRaft leader (active controller) will randomly generate a cluster id as part of the bootstrap metadata write (this either writes the bootstrap records as a transaction if the MV supports it, or as an atomic batch). This is similar to how cluster.id is generated in ZK-based kafka.</span></span></p><h1>Proposed Changes</h1><h2>User Experience</h2><h3 class=\"p1\">Remove the requirement of nodes to format before starting kafka</h3><p>After KIP-1262, kafka operators no longer need to invoke <code>kafka-storage format</code> to start kafka. If the operator skips formatting on all nodes in the cluster, the bootstrapping metadata state for the cluster will be the latest MetadataVersion and a ClusterIdRecord, which are generated by the initial active controller. In this case, to elect a KRaft leader, the controllers must be configured with <code>controller.quorum.voters</code>. Operators can still end up with a dynamic quorum without formatting because static to dynamic quorum upgrades are supported once the cluster is successfully brought up.</p><p>Operators can still format clusters the same way as prior to this KIP, which requires a <code>--cluster-id</code> parameter. If the formatter's resolved MV supports <code>ClusterIdRecord</code> , write it to the bootstrap records and to <code>meta.properties</code> . If the formatter's resolved MV does not support <code>ClusterIdRecord</code>, this code will write to only <code>meta.properties</code> like before. </p><h3>When is formatting still required before starting kafka</h3><p>There are a few situations where operators still need to format nodes before starting kafka, but this only applies to bootstrap controllers. Bootstrap controllers are those who participate in the initial KRaft leader election. These are the nodes specified by <code>controller.quorum.voters</code> in a static quorum, and the nodes who format with <code>--standalone/--initial-controllers</code>  in a dynamic quorum.</p><p>Formatting of bootstrap controllers is still required when operators want to:</p><ul><li>Specify bootstrap SCRAM credentials</li><li>Specify bootstrap non-default feature levels or metadata version</li><li>Bootstrap a dynamic quorum (kraft.version=1) cluster</li></ul><p>For example, to startup a new dynamic quorum cluster with auto-formatting, the operator can format one controller with <code>--standalone</code> , and then skip formatting on all other nodes. </p><h2 class=\"p1\">Implementation Changes</h2><h3 class=\"p1\">The in-memory cluster.id must be made thread-safe</h3><p>Because the cluster.id can be empty now, and will rely on metadata replication to be set, there needs to be global, thread-safe reference to the value in kafka.</p><h3><span style=\"color:var(--ds-text,#333333);\">Completion of BrokerServer and ControllerServer startup must block on the discovery and persistence of the cluster.id to meta.properties</span></h3><p>If a node already has cluster.id defined in meta.properties, it is assumed to be correct, which is the same behavior as today.</p><p>If a node does not have cluster.id defined in meta.properties, it needs to discover it via <code>Fetch/FetchSnapshot</code> from KRaft. The handler of a KRaft request<span style=\"color:var(--ds-text,#333333);\"> considers requests without a cluster.id to be &quot;valid&quot;, so <code>ClusterIdRecord</code> will be discoverable.</span> </p><p><span style=\"color:var(--ds-text,#333333);\">For brokers, the readers of cluster.id during startup are the <code>BrokerLifecycleManager</code> , <code>KafkaApis</code> , <code>DynamicTopicClusterQuotaPublisher</code> , and <code>endpointReadyFutures</code>. When cluster.id is not present, it is okay to block startup on fetching the cluster id from KRaft, since we also block startup on the broker catching up to the HWM before it can register with the active controller. Brokers already block their startup for up to <code>server.max.startup.time.ms</code> waiting to catch up with the metadata log HWM, so adding another wait for the clusterId metadata should not impact startup times meaningfully.</span></p><p><span style=\"color:var(--ds-text,#333333);\">For controllers, the readers are <code>endpointReadyFutures</code> , <code>QuorumController</code> , <code>ControllerApis</code> , and <code>DynamicTopicClusterQuotaPublisher</code>. When cluster.id is not present, only <span style=\"color:var(--ds-text,#333333);\">the <code>QuorumController</code> and <code>ControllerApis</code> will now be able to start up without a cluster id, since they are responsible responsible for writing it the first time. The other readers can wait until the clusterId is known. Controllers also block their startup for up to <code>server.max.startup.time.ms</code> waiting for authorization publishers, so similar to the brokers, adding another wait for the clusterId should not be impactful.</span></span></p><h3><span style=\"color:var(--ds-text,#333333);\">When no cluster.id is specified on a new cluster, the initial leader generates one as part of the bootstrap metadata write</span></h3><p><span style=\"color:var(--ds-text,#333333);\">This KIP allows for the cluster.id to be empty on all cluster members before the first KRaft leader is elected. Therefore, the initial leader election will still occur, and it is the initial leader's responsibility to write the <code>ClusterIdRecord</code>  to the metadata log. </span></p><h3 class=\"p1\">meta.properties will be written during kafka broker/controller startup if it doesn't exist already (from formatting)</h3><p>During startup of the <code>KafkaRaftServer</code>, we attempt to read the <code>meta.properties</code> file:</p><ul><li class=\"p1\">If <code>meta.properties</code> does not exist, write <code>meta.properties</code> V2 with <code>node.id</code>  and <code>directory.id</code><ul><li class=\"p1\">This means either this node skipped formatting, or the file/disk was lost</li></ul></li><li class=\"p1\">If <code>meta.properties</code> exists and is v1 or if it is v2 and clusterId is present, do the same validations as we do today in kafka</li><li class=\"p1\">If meta.properties exists without a cluster.id and is V2, the clusterId will be discovered later (described below)<ul><li class=\"p1\">One correctness invariant of this feature is that updating the cluster.id in-memory must occur after persisting it to <code>meta.properties</code>.</li></ul></li><li class=\"p1\">If meta.properties exists with a <code>cluster.id</code>, kafka behaves as it does today:<ul><li class=\"p1\">The node assumes it to be correct and passes it to KRaft</li><li>If this ID doesn't match the KRaft leader's ID, the leader will reject requests from the node</li></ul></li></ul><p>If a broker/observer controller has already written a cluster id to its <code>meta.properties</code>, either from formatting or discovering it from the cluster metadata, it is impossible for it to learn of another cluster id via <code>Fetch/FetchSnapshot</code>. <span style=\"color:var(--ds-text,#333333);\">For the broker (with clusterid = X) to receive a non-error FetchResponse with metadata records (which would be the only way to learn of a different ClusterIdRecord), the KRaft leader (clusterid = Y) must either receive a request without clusterid</span><span style=\"color:var(--ds-text,#333333);\">, or a request whose clusterid is Y. The broker fulfills neither of these conditions. </span><span style=\"color:var(--ds-text,#333333);\">This case could happen when bootstrap endpoints point to the wrong cluster during restart of a node. KRaft's own clusterid checks would mean startup of this node would time out and shut down the node because it is not able to contact the quorum of another cluster.</span></p><h3 class=\"p1\">Introduce a new MetadataVersion and the ClusterIdRecord</h3><p>One invariant of this feature is that if the persisted MV supports this feature, a ClusterIdRecord must also be persisted. This is enforceable along the write-path for MV, which occurs at the following points: formatting a node (specifically controllers who can become leader), the bootstrap metadata write of the initial active controller, and upgrading the MV using <code>kafka-features upgrade</code> .</p><ul><li>During formatting, nodes m<span style=\"color:var(--ds-text,#333333);\">ust resolve a MV with which to format. This comes from the <code>--release-version/--feature</code> flag and defaults to the latest production MV. If the MV at format time supports this feature, a ClusterIdRecord must be written as part of the bootstrap metadata checkpoint (0-0.checkpoint post KIP-1170)</span></li><li>The first active controller will write the ClusterIdRecord + MV as part of the bootstrap metadata records write if the MV supports this feature</li><li><span style=\"color:var(--ds-text,#333333);\">During MV upgrades, successfully upgrading the MV to one that supports this feature requires successfully committing a ClusterIdRecord alongside the new MetadataVersion feature record.</span></li></ul><p><span style=\"color:var(--ds-text,#333333);\">There is a precedent already for this kind of invariant which is enforced along the write path with kraft.version and the <code>VotersRecord</code> </span></p><h3 class=\"p1\">When nodes discover cluster.id from the metadata publishing pipeline, they persist it to meta.properties + update KRaft</h3><p>Nodes whose <code>meta.properties</code> do not contain <code>cluster.id</code>  will discover this value via the metadata publishing pipeline. This can be implemented as a MetadataPublisher that registers to the MetadataLoader.</p><ul class=\"ul1\"><li class=\"li1\">It is the responsibility of this MetadataPublisher to persist a discovered value of <a href=\"http://cluster.id\">cluster.id</a> to all meta.properties files before making the <a href=\"http://cluster.id\">cluster.id</a> available to in-memory data structures.<ul class=\"ul1\"><li class=\"li1\">Because of JBOD, nodes can have many log.dirs that each have a meta.properties file (or we need to write each instance of meta.properties V2 during startup without cluster.id if we skipped formatting). </li></ul></li><li class=\"li1\" data-uuid=\"49465501-49e9-4986-8861-e68bf4629d2f\">When the clusterId is discovered via metadata replication, local nodes can bump their meta.properties versions from V1/V0 to V2, and persist this to disk.<ul class=\"ul1\"><li class=\"li1\" data-uuid=\"3f9732c3-35cf-4b9c-8468-9b6ac9eb7f89\">The contents of V1 and V2 are identical, and the only change between V0 and V2 is that <code>broker.id</code> is renamed to <code>node.id</code> .</li></ul></li><li class=\"li1\">The MetadataPublisher is the single writer of cluster.id (unless it is already set by formatting, in which case there are no writers to cluster.id), both in persisting the value to meta.properties and writing the in-memory representation of cluster.id<ul class=\"ul1\"><li class=\"li1\">There are many readers of this value, but most of them can block their initialization until this value is discovered for the sake of simplicity.</li><li class=\"li1\">The KafkaRaftClient and QuorumController are the readers who need to handle the concept of an empty/not-set cluster id. </li></ul></li></ul><h1>Compatibility, Deprecation, and Migration Plan</h1><p>Since this feature is associated with a new metadata record and MetadataVersion, broker bootstrapping with cluster ID is required on all MVs &lt; X where X is the first MV that supports this feature. Because some MetadataVersion is resolved during each node's formatting, we can determine at format time if a ClusterIdRecord is needed as part of a controller's <code>0-0/bootstrap.checkpoint</code>.</p><h1>Test Plan</h1><ul><li>Unit tests</li><li>Integration tests</li><li>System tests to verify cross-software-version compatibility</li></ul><h1>Rejected Alternatives</h1><p class=\"p1\"><strong>Continue to persist cluster id in meta.properties but have KRaft discover it + persist it via FetchResponse</strong></p><ul class=\"ul1\"><li class=\"li1\">Rough design:<ul class=\"ul1\"><li class=\"li1\">Node can complete a future to allow this value to be discovered by readers outside of kraft layer who need it during startup</li><li class=\"li1\">Raft layer is brought up early during startup, so it is fine to wait until this future completes to proceed with initializing the server</li><li class=\"li1\">Brokers/observers can start Kafka with no cluster id, and rely on the fetch/another RPC response to discover it in-memory<ul class=\"ul1\"><li class=\"li1\">If discovered, node persists cluster id to meta.properties during the startup process before in-memory readers of cluster id</li></ul></li></ul></li><li class=\"li1\">Pros:<ul class=\"ul1\"><li class=\"li1\">Backwards compatibility is straightforward, since new nodes on old clusters keep using meta.properties for persisting cluster id</li><li class=\"li1\">This functionality is not tied to a MetadataVersion, meaning that any Kafka broker/observer with a software version that supports this KIP can use it, rather than the whole cluster needing to be on some MV &gt;= X.</li><li class=\"li1\">Kraft can easily do its own cluster ID validation for its RPCs, since nodes receive cluster ID via the fetch response if they do not know it and can update that state in-memory + persist it</li></ul></li><li class=\"li1\">Cons:<ul class=\"ul1\"><li>Since each local node's<span> </span><code>meta.properties</code>  is its source of truth, if this file is deleted or is changed, it means the broker/observer controller can join another cluster.<ul class=\"ul1\"><li>This is no worse than what exists currently.</li></ul></li></ul></li></ul><p><strong>Remove the requirement for formatting for brokers and observer controllers, but still require it for bootstrap controllers</strong> </p><p>The main reason we can relax this to say no nodes require formatting is that KRaft can elect a leader when all nodes do not have cluster.id defined.</p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/406618510?status=historical&version=41"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1255
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=451980114",
+    "edit": "/pages/resumedraft.action?draftId=451980114&draftShareId=573205eb-6165-4c01-82fb-8bd9a0ede579",
+    "tinyui": "/x/UqvwGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/406618510?status=historical&version=41"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/406618510/child?parentVersion=41",
+    "restrictions": "/rest/api/content/406618510/restriction/byOperation",
+    "history": "/rest/api/content/406618510/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/406618510/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/406618510/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "406618510",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1262: Enable auto-formatting directories",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "kw2412",
+     "userKey": "073590d28cf4a12b018d0b3a3db60070",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Kevin Wu",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28cf4a12b018d0b3a3db60070"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-16T15:36:54.000Z",
+    "message": "",
+    "number": 40,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618510/version/40"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618510?status=historical&version=40"
+    }
+   },
+   "position": 1255,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><h1>Status</h1><p><strong>Current state</strong>: Accepted</p><p><strong>Vote thread: </strong><a href=\"https://lists.apache.org/thread/95941nto2kxfqclb1pn00pmdtlgq2zjz\">https://lists.apache.org/thread/95941nto2kxfqclb1pn00pmdtlgq2zjz</a></p><p><strong>Discussion thread</strong>: <a href=\"https://lists.apache.org/thread/vnzmqvcbfxo7hhyj9gzpgmdq59w3n7dy\">https://lists.apache.org/thread/vnzmqvcbfxo7hhyj9gzpgmdq59w3n7dy</a></p><p><strong>JIRA</strong>: <ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"3dca6bf8-a1c5-4af7-9c30-69a6dd4e4e52\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20174</ac:parameter></ac:structured-macro><em><br /></em></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p class=\"p1\">The reason for this KIP is to remove the requirement of nodes needing to run <code>kafka-storage format</code>  before starting Kafka. When running <code>kafka-storage format</code> , nodes are required to supply a <code>--cluster-id</code>  argument, which represents the cluster ID to which the node belongs, and this is persisted to the node's <code>meta.properties</code>  file. Below are the other data that each node persists to disk upon invoking <code>kafka-storage format</code> :</p><p class=\"p1\">For brokers, <code>meta.properties</code> ’ other data: <code>node.id</code>  and <code>directory id</code> , are obtained from the node’s static config and randomly generated, respectively. <span style=\"color:var(--ds-text,#333333);\">Persisting this data does not have to be done during storage formatting and can be done later during startup</span>.</p><p class=\"p1\">For controllers, <code>meta.properties</code> ’ directory id may come from <code>—-initial-controllers</code> or <code>--standalone</code> , but otherwise controllers are the same as brokers with respect to the above data.</p><p class=\"p1\">The main purpose of cluster id is to prevent nodes from contacting other Kafka clusters (ref <a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-78%3A+Cluster+Id\">KIP-78</a>). This KIP seeks to preserve this behavior around cluster id, while removing the necessity of formatting brokers and observer controllers.</p><p class=\"p1\">Currently, Kafka relies on the operator/caller of kafka-storage format on all intended nodes in a cluster to generate consensus on the actual value of clusterID during format time. KRaft guarantees that upon forming a given quorum X, X's members will all have the same cluster id (which could clusterId = null) contained in meta.properties. Additionally, when a KRaft node sends a request with a non-null cluster id, this request is only handled if the request's cluster ID matches the handler's cluster ID.</p><h2 class=\"p1\">Background on cluster.id from ZooKeeper Kafka</h2><p class=\"p1\">Cluster id was a znode, <code>/cluster/id</code> , that was initially empty. During the startup of a cluster, brokers would race to write a random UUID in ZK to this znode, which would never change after being set, via <code>getOrGenerateClusterId()</code> .</p><h1>Public Interfaces</h1><p class=\"p1\"><strong>meta.properties</strong></p><p>Introduce meta.properties v2 with optional cluster id. However, <code>node.id</code>  is guaranteed to exist. <code>directory.id</code> is written to <code>meta.properties</code> during startup if it does not exist. Formatting will write meta.properties v2 after this KIP, and if formatting is skipped, discovery of the cluster id via metadata replication or controller activation will write meta.properties v2.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"65d42aab-347c-4f76-80e5-4bf769d0ffa2\"><ac:plain-text-body><![CDATA[meta.properties V2 example:  \n  version=2         (required)\n  node.id=9990      (required)\n  directory.id=UUID (optional, but always gets written)\n  cluster.id=UUID   (now optional)]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p class=\"p1\"><strong>ClusterIdRecord + MetadataVersion</strong></p><p class=\"p1\">Introduce a new metadata record to store cluster id and a new MetadataVersion (MV) that supports encoding/decoding this record. This means that during formatting, the bootstrap ClusterIdRecord is only written if the node is formatted with a MV that supports this feature. When a node runs <code>kafka-storage format</code>, some value for MV is always resolved and written to disk alongside <code>meta.properties</code> . The value either comes from <code>--release-version</code>  or <code>--feature</code> , or it defaults to the latest production MV.</p><p class=\"p1\">If this feature is supported by the cluster's MV, the first elected KRaft leader will write the <code>ClusterIdRecord</code> upon becoming the active controller alongside the other bootstrap metadata records.</p><p class=\"p1\">One invariant of this feature is there is at most one committed <code>ClusterIdRecord</code> in the metadata log. When the MV does not support <code>ClusterIdRecord</code>, there is no <code>ClusterId</code>  in the metadata log, and instead the cluster id is local to each node's <code>meta.properties</code> . When the finalized MV of the cluster does support <code>ClusterIdRecord</code>, there is exactly one <code>ClusterIdRecord</code> in the metadata log, which is written as part of the bootstrap metadata write by the first controller who becomes leader, or as a part of the MV upgrade records when upgrading to a MV that supports this feature. When the active controller writes the bootstrap metadata records when the MV supports this feature, or when it updates its MV to support this feature, it must write the <code>ClusterIdRecord</code>. This invariant is enforceable when replaying the log and checking the image and deltas.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"f0458312-1c7e-4a30-b309-84fb5d48bef2\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 29,\n  \"type\": \"metadata\",\n  \"name\": \"ClusterIdRecord\",\n  \"validVersions\": \"0\",\n  \"flexibleVersions\": \"0+\",\n  \"fields\": [\n    { \"name\": \"ClusterId\", \"type\": \"string\", \"versions\": \"0+\",\n      \"about\": \"The unique ID of this cluster\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\">The type of <code>ClusterId</code>  in this record is of type String, rather than UUID like with TopicRecord, because of the following: </p><p class=\"p1\"><span style=\"color:var(--ds-text,#333333);\">Currently, you can format a cluster with a non-UUID cluster ID string, and kafka considers this &quot;well-formatted&quot; (i.e. formatting code accepts String, server startup works, and clusterId is a String in-memory etc.). Kafka documentation references formatting with a UUID cluster id generated via <code>kafka-storage random-uuid</code> , but this is not a requirement in the code.<br />If this record were to have UUID like TopicRecord, it is not clear what the MV upgrade path is for existing clusters who formatted <code>meta.properties</code>  with a non-UUID String. The active controller would need to write a new UUID cluster id, which violates the invariant that the cluster id cannot change over the lifetime of a cluster.</span></p><p class=\"p1\"><strong>Storage Tool + Formatting requirements</strong></p><p class=\"p1\"><span class=\"s1\"><span class=\"Apple-tab-span\">Prior to this KIP, it is expected that all nodes running kafka have invoked the <code>kafka-storage format</code> command and have persisted a V1 <code>meta.properties</code> with a <code>cluster.id</code> file prior to starting kafka. We do this by trying to read in the <code>meta.properties</code> during startup, and crashing if that file does not contain all the data we expect.</span></span></p><p class=\"p1\"><span class=\"s1\"><span class=\"Apple-tab-span\">After this KIP, it is no longer required for nodes to run <code>kafka-storage format</code> in order to start kafka. Additionally, the <code>--cluster-id</code> argument for <code>kafka-storage format</code> will now be optional, rather than required. However, operators still have the option to format nodes to set the MV, feature versions, scram credentials, or to properly provision a kraft.version=1 cluster. If an operator decides to format a node, they will still need to specify <code>--cluster-id</code> if the MV which is resolved by the formatter does not support the <code>ClusterIdRecord</code>  feature.</span></span></p><p class=\"p1\"><span class=\"s1\"><span class=\"Apple-tab-span\">A consequence of the above relaxation is the the initial KRaft leader can be elected without a cluster.id in its local meta.properties. In this case, the initial KRaft leader (active controller) will randomly generate a cluster id as part of the bootstrap metadata write (this either writes the bootstrap records as a transaction if the MV supports it, or as an atomic batch). This is similar to how cluster.id is generated in ZK-based kafka.</span></span></p><h1>Proposed Changes</h1><h2>User Experience</h2><h3 class=\"p1\">Remove the requirement of nodes to format before starting kafka</h3><p>After KIP-1262, kafka operators no longer need to invoke <code>kafka-storage format</code> to start kafka. If the operator skips formatting on all nodes in the cluster, the bootstrapping metadata state for the cluster will be the latest MetadataVersion and a ClusterIdRecord, which are generated by the initial active controller. In this case, to elect a KRaft leader, the controllers must be configured with <code>controller.quorum.voters</code>. Operators can still end up with a dynamic quorum without formatting because static to dynamic quorum upgrades are supported once the cluster is successfully brought up.</p><p>Operators can still format clusters the same way as prior to this KIP, which requires a <code>--cluster-id</code> parameter. If the formatter's resolved MV supports <code>ClusterIdRecord</code> , write it to the bootstrap records and to <code>meta.properties</code> . If the formatter's resolved MV does not support <code>ClusterIdRecord</code>, this code will write to only <code>meta.properties</code> like before. </p><h3>When is formatting still required before starting kafka</h3><p>There are a few situations where operators still need to format nodes before starting kafka, but this only applies to bootstrap controllers. Bootstrap controllers are those who participate in the initial KRaft leader election. These are the nodes specified by <code>controller.quorum.voters</code> in a static quorum, and the nodes who format with <code>--standalone/--initial-controllers</code>  in a dynamic quorum.</p><p>Formatting of bootstrap controllers is still required when operators want to:</p><ul><li>Specify bootstrap SCRAM credentials</li><li>Specify bootstrap non-default feature levels or metadata version</li><li>Bootstrap a dynamic quorum (kraft.version=1) cluster</li></ul><p>For example, to startup a new dynamic quorum cluster with auto-formatting, the operator can format one controller with <code>--standalone</code> , and then skip formatting on all other nodes. </p><h2 class=\"p1\">Implementation Changes</h2><h3 class=\"p1\">The in-memory cluster.id must be made thread-safe</h3><p>Because the cluster.id can be empty now, and will rely on metadata replication to be set, there needs to be global, thread-safe reference to the value in kafka.</p><h3><span style=\"color:var(--ds-text,#333333);\">Completion of BrokerServer and ControllerServer startup must block on the discovery and persistence of the cluster.id to meta.properties</span></h3><p>If a node already has cluster.id defined in meta.properties, it is assumed to be correct, which is the same behavior as today.</p><p>If a node does not have cluster.id defined in meta.properties, it needs to discover it via <code>Fetch/FetchSnapshot</code> from KRaft. The handler of a KRaft request<span style=\"color:var(--ds-text,#333333);\"> considers requests without a cluster.id to be &quot;valid&quot;, so <code>ClusterIdRecord</code> will be discoverable.</span> </p><p><span style=\"color:var(--ds-text,#333333);\">For brokers, the readers of cluster.id during startup are the <code>BrokerLifecycleManager</code> , <code>KafkaApis</code> , <code>DynamicTopicClusterQuotaPublisher</code> , and <code>endpointReadyFutures</code>. When cluster.id is not present, it is okay to block startup on fetching the cluster id from KRaft, since we also block startup on the broker catching up to the HWM before it can register with the active controller. Brokers already block their startup for up to <code>server.max.startup.time.ms</code> waiting to catch up with the metadata log HWM, so adding another wait for the clusterId metadata should not impact startup times meaningfully.</span></p><p><span style=\"color:var(--ds-text,#333333);\">For controllers, the readers are <code>endpointReadyFutures</code> , <code>QuorumController</code> , <code>ControllerApis</code> , and <code>DynamicTopicClusterQuotaPublisher</code>. When cluster.id is not present, only <span style=\"color:var(--ds-text,#333333);\">the <code>QuorumController</code> and <code>ControllerApis</code> will now be able to start up without a cluster id, since they are responsible responsible for writing it the first time. The other readers can wait until the clusterId is known. Controllers also block their startup for up to <code>server.max.startup.time.ms</code> waiting for authorization publishers, so similar to the brokers, adding another wait for the clusterId should not be impactful.</span></span></p><h3><span style=\"color:var(--ds-text,#333333);\">When no cluster.id is specified on a new cluster, the initial leader generates one as part of the bootstrap metadata write</span></h3><p><span style=\"color:var(--ds-text,#333333);\">This KIP allows for the cluster.id to be empty on all cluster members before the first KRaft leader is elected. Therefore, the initial leader election will still occur, and it is the initial leader's responsibility to write the <code>ClusterIdRecord</code>  to the metadata log. </span></p><h3 class=\"p1\">meta.properties will be written during kafka broker/controller startup if it doesn't exist already (from formatting)</h3><p>During startup of the <code>KafkaRaftServer</code>, we attempt to read the <code>meta.properties</code> file:</p><ul><li class=\"p1\">If <code>meta.properties</code> does not exist, write <code>meta.properties</code> V2 with <code>node.id</code>  and <code>directory.id</code><ul><li class=\"p1\">This means either this node skipped formatting, or the file/disk was lost</li></ul></li><li class=\"p1\">If <code>meta.properties</code> exists and is v1 or if it is v2 and clusterId is present, do the same validations as we do today in kafka</li><li class=\"p1\">If meta.properties exists without a cluster.id and is V2, the clusterId will be discovered later (described below)<ul><li class=\"p1\">One correctness invariant of this feature is that updating the cluster.id in-memory must occur after persisting it to <code>meta.properties</code>.</li></ul></li><li class=\"p1\">If meta.properties exists with a <code>cluster.id</code>, kafka behaves as it does today:<ul><li class=\"p1\">The node assumes it to be correct and passes it to KRaft</li><li>If this ID doesn't match the KRaft leader's ID, the leader will reject requests from the node</li></ul></li></ul><p>If a broker/observer controller has already written a cluster id to its <code>meta.properties</code>, either from formatting or discovering it from the cluster metadata, it is impossible for it to learn of another cluster id via <code>Fetch/FetchSnapshot</code>. <span style=\"color:var(--ds-text,#333333);\">For the broker (with clusterid = X) to receive a non-error FetchResponse with metadata records (which would be the only way to learn of a different ClusterIdRecord), the KRaft leader (clusterid = Y) must either receive a request without clusterid</span><span style=\"color:var(--ds-text,#333333);\">, or a request whose clusterid is Y. The broker fulfills neither of these conditions. </span><span style=\"color:var(--ds-text,#333333);\">This case could happen when bootstrap endpoints point to the wrong cluster during restart of a node. KRaft's own clusterid checks would mean startup of this node would time out and shut down the node because it is not able to contact the quorum of another cluster.</span></p><h3 class=\"p1\">Introduce a new MetadataVersion and the ClusterIdRecord</h3><p>One invariant of this feature is that if the persisted MV supports this feature, a ClusterIdRecord must also be persisted. This is enforceable along the write-path for MV, which occurs at the following points: formatting a node (specifically controllers who can become leader), the bootstrap metadata write of the initial active controller, and upgrading the MV using <code>kafka-features upgrade</code> .</p><ul><li>During formatting, nodes m<span style=\"color:var(--ds-text,#333333);\">ust resolve a MV with which to format. This comes from the <code>--release-version/--feature</code> flag and defaults to the latest production MV. If the MV at format time supports this feature, a ClusterIdRecord must be written as part of the bootstrap metadata checkpoint (0-0.checkpoint post KIP-1170)</span></li><li>The first active controller will write the ClusterIdRecord + MV as part of the bootstrap metadata records write if the MV supports this feature</li><li><span style=\"color:var(--ds-text,#333333);\">During MV upgrades, successfully upgrading the MV to one that supports this feature requires successfully committing a ClusterIdRecord alongside the new MetadataVersion feature record.</span></li></ul><p><span style=\"color:var(--ds-text,#333333);\">There is a precedent already for this kind of invariant which is enforced along the write path with kraft.version and the <code>VotersRecord</code> </span></p><h3 class=\"p1\">When nodes discover cluster.id from the metadata publishing pipeline, they persist it to meta.properties + update KRaft</h3><p>Nodes whose <code>meta.properties</code> do not contain <code>cluster.id</code>  will discover this value via the metadata publishing pipeline. This can be implemented as a MetadataPublisher that registers to the MetadataLoader.</p><ul class=\"ul1\"><li class=\"li1\">It is the responsibility of this MetadataPublisher to persist a discovered value of <a href=\"http://cluster.id\">cluster.id</a> to all meta.properties files before making the <a href=\"http://cluster.id\">cluster.id</a> available to in-memory data structures.<ul class=\"ul1\"><li class=\"li1\">Because of JBOD, nodes can have many log.dirs that each have a meta.properties file (or we need to write each instance of meta.properties V2 during startup without cluster.id if we skipped formatting). </li></ul></li><li class=\"li1\" data-uuid=\"49465501-49e9-4986-8861-e68bf4629d2f\">When the clusterId is discovered via metadata replication, local nodes can bump their meta.properties versions from V1/V0 to V2, and persist this to disk.<ul class=\"ul1\"><li class=\"li1\" data-uuid=\"3f9732c3-35cf-4b9c-8468-9b6ac9eb7f89\">The contents of V1 and V2 are identical, and the only change between V0 and V2 is that <code>broker.id</code> is renamed to <code>node.id</code> .</li></ul></li><li class=\"li1\">The MetadataPublisher is the single writer of cluster.id (unless it is already set by formatting, in which case there are no writers to cluster.id), both in persisting the value to meta.properties and writing the in-memory representation of cluster.id<ul class=\"ul1\"><li class=\"li1\">There are many readers of this value, but most of them can block their initialization until this value is discovered for the sake of simplicity.</li><li class=\"li1\">The KafkaRaftClient and QuorumController are the readers who need to handle the concept of an empty/not-set cluster id. </li></ul></li></ul><h1>Compatibility, Deprecation, and Migration Plan</h1><p>Since this feature is associated with a new metadata record and MetadataVersion, broker bootstrapping with cluster ID is required on all MVs &lt; X where X is the first MV that supports this feature. Because some MetadataVersion is resolved during each node's formatting, we can determine at format time if a ClusterIdRecord is needed as part of a controller's <code>0-0/bootstrap.checkpoint</code>.</p><h1>Test Plan</h1><ul><li>Unit tests</li><li>Integration tests</li><li>System tests to verify cross-software-version compatibility</li></ul><h1>Rejected Alternatives</h1><p class=\"p1\"><strong>Continue to persist cluster id in meta.properties but have KRaft discover it + persist it via FetchResponse</strong></p><ul class=\"ul1\"><li class=\"li1\">Rough design:<ul class=\"ul1\"><li class=\"li1\">Node can complete a future to allow this value to be discovered by readers outside of kraft layer who need it during startup</li><li class=\"li1\">Raft layer is brought up early during startup, so it is fine to wait until this future completes to proceed with initializing the server</li><li class=\"li1\">Brokers/observers can start Kafka with no cluster id, and rely on the fetch/another RPC response to discover it in-memory<ul class=\"ul1\"><li class=\"li1\">If discovered, node persists cluster id to meta.properties during the startup process before in-memory readers of cluster id</li></ul></li></ul></li><li class=\"li1\">Pros:<ul class=\"ul1\"><li class=\"li1\">Backwards compatibility is straightforward, since new nodes on old clusters keep using meta.properties for persisting cluster id</li><li class=\"li1\">This functionality is not tied to a MetadataVersion, meaning that any Kafka broker/observer with a software version that supports this KIP can use it, rather than the whole cluster needing to be on some MV &gt;= X.</li><li class=\"li1\">Kraft can easily do its own cluster ID validation for its RPCs, since nodes receive cluster ID via the fetch response if they do not know it and can update that state in-memory + persist it</li></ul></li><li class=\"li1\">Cons:<ul class=\"ul1\"><li>Since each local node's<span> </span><code>meta.properties</code>  is its source of truth, if this file is deleted or is changed, it means the broker/observer controller can join another cluster.<ul class=\"ul1\"><li>This is no worse than what exists currently.</li></ul></li></ul></li></ul><p><strong>Remove the requirement for formatting for brokers and observer controllers, but still require it for bootstrap controllers</strong> </p><p>The main reason we can relax this to say no nodes require formatting is that KRaft can elect a leader when all nodes do not have cluster.id defined.</p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/406618510?status=historical&version=40"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1255
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=451980113",
+    "edit": "/pages/resumedraft.action?draftId=451980113&draftShareId=573205eb-6165-4c01-82fb-8bd9a0ede579",
+    "tinyui": "/x/UavwGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/406618510?status=historical&version=40"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/406618510/child?parentVersion=40",
+    "restrictions": "/rest/api/content/406618510/restriction/byOperation",
+    "history": "/rest/api/content/406618510/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/406618510/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/406618510/restriction/relevantViewRestrictions"
+   }
+  }
+ ],
+ "comments": {
+  "results": [],
+  "start": 0,
+  "limit": 200,
+  "size": 0,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/api/content/406618510/child/comment?expand=body.storage%2Cversion%2Cancestors&depth=all",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ }
+}

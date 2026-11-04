@@ -1,0 +1,386 @@
+{
+ "id": "446071036",
+ "versions": {
+  "results": [
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-04T21:01:16.000Z",
+    "message": "Added RPC schemas",
+    "number": 4,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/446071036/version/4"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/446071036"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-04T18:42:20.000Z",
+    "message": "Feature enablement",
+    "number": 3,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/446071036/version/3"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/446071036?status=historical&version=3"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-04T18:24:03.000Z",
+    "message": "Tidying up",
+    "number": 2,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/446071036/version/2"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/446071036?status=historical&version=2"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-04T16:17:08.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/446071036/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/446071036?status=historical&version=1"
+    }
+   }
+  ],
+  "start": 0,
+  "limit": 200,
+  "size": 4,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/experimental/content/446071036/version",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ },
+ "version_bodies": [
+  {
+   "id": "446071036",
+   "type": "page",
+   "status": "historical",
+   "title": "Design notes",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-04T18:42:20.000Z",
+    "message": "Feature enablement",
+    "number": 3,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/446071036/version/3"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/446071036?status=historical&version=3"
+    }
+   },
+   "position": -1,
+   "body": {
+    "storage": {
+     "value": "<p>This document contains some rough design notes about how to support transactional acknowledgements for share groups.</p><h1>Application programming interface</h1><p>Prior to KIP-1289, applications chose how to acknowledge record delivery using the <code>share.acknowledgement.mode</code> consumer configuration. It seems to me that neither <code>implicit</code>  nor <code>explicit</code>  is really ideal. I propose that we introduce a third acknowledgement mode <code>transactional</code> . This gives a nice clean way to enforce correct API usage in the application.</p><p>Transactional acknowledgement mode has the following features:</p><ul><li data-uuid=\"2578174f-66df-4235-b2a6-4efcbd2200e2\">Acknowledgements are explicit, meaning that every record received from <code>poll(Duration)</code>  must be acknowledged using <code>ShareConsumer.acknowledge(...)</code>  before the next call to <code>poll(Duration)</code> .</li><li data-uuid=\"33d4f0b4-6461-46cf-8371-afe16cadde0d\"><code>ShareConsumer.commitSync(...)</code>  and <code>ShareConsumer.commitAsync(...)</code>  are not permitted. The acknowledgements are committed as part of a transaction so these specific methods are not appropriate.</li><li data-uuid=\"8d2c1df0-09dd-450c-9280-7dc6ed129cf7\"><code>ShareConsumer.setAcknowledgementCommitCallback(...)</code>  is likewise not permitted. The acknowledgements will be completed once the transaction commits so the callback is not as useful as it is with asynchronous, non-transactional acknowledgements.</li><li data-uuid=\"f83e0529-0256-41a9-922c-0f0924a32263\"><code>AcknowledgeMode.RENEW</code>  is not permitted. It is incompatible with transactions.</li></ul><p>The following code snippet shows how the application code might look.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"46f279e4-3c25-4ab8-9b32-a951876fc746\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[producerProps.put(ProducerConfig.TRANSACTIONAL_ID_CONFIG, \"T1\");\nconsumerProps.put(ConsumerConfig.GROUP_ID_CONFIG, \"SG1\");\nconsumerProps.put(ConsumerConfig.SHARE_ACKNOWLEDGEMENT_MODE_CONFIG, \"transactional\");\n\ntry {Producer<String, String> producer = new KafkaProducer(prodProps);\n     ShareConsumer<String, String> shareConsumer = new KafkaShareConsumer(consumerProps) {\n  producer.initTransactions();\n  producer.setShareGroupTransactionAdapter(shareConsumer);\n\n  shareConsumer.subscribe(Set.of(\"INPUT\"));\n\n  ConsumerRecords<String, String> recs = shareConsumer.poll(Duration.ofMillis(10000));\n  for (ConsumerRecord<String, String> rec : recs) {\n    producer.beginTransaction();\n    producer.send(new ProducerRecord(\"OUTPUT\", 0, rec.key(), rec.value());\n    shareConsumer.acknowledge(rec);\n    producer.commitTransaction();\n  }\n}]]></ac:plain-text-body></ac:structured-macro><p>We need to define some kind of bridge between the producer and the share consumer so that <code>shareConsumer.acknowledge(rec)</code>  results in a transactional request to be sent to the share-partition leader. This is the purpose of <code>producer.setShareGroupTransactionAdapter()</code> . The internal details need to be ironed out, but this gives quite clean application code (there's no <code>Producer.sendShareGroupAcknowledgementsToTransaction()</code>  or equivalent for example).</p><h1>Kafka protocol</h1><p>To fit in with the current protocol design, I think we need 2 (or perhaps 3, depending on taste) new RPCs. They are:</p><ul><li data-uuid=\"ae905a60-47ea-489d-8a50-28b14ad965fe\">TxnShareAcknowledge - sent by the client to the share-partition leader - the transactional equivalent of ShareAcknowledge</li><li data-uuid=\"e53d6a15-ea4d-4352-92b5-fa2173792fb4\">TxnComplete - sent by the share coordinator to the share-partition leader at transaction completion so the record states in the share partition can be updated</li><li data-uuid=\"b4d7343d-52eb-4ff0-b380-c75e748d5c29\">TxnWriteShareGroupState - sent by the share-partition leader to the share coordinator - we could perhaps make these extra fields on the regular WriteShareGroupState RPC</li></ul><h1>Feature enablement</h1><p>It will be necessary to introduce a new <code>share.version</code>  to enable this support (3). It seems that there is no need to have a new <code>transaction.version</code>  because there is no change to the protocol or records for the transaction coordinator. The transactions will include the <code>__share_group_state</code>  topic in much the way that transactions include the <code>__consumer_offsets</code>  topic when offsets are committed transactionally. But in both cases, the transaction coordinator is not really aware of the nuances of the behaviour of these topics, just that partitions have been registered in the transaction and transaction markers must be written at transaction completion.</p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/446071036?status=historical&version=3"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": "none"
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=446071055",
+    "edit": "/pages/resumedraft.action?draftId=446071055&draftShareId=1ca4edbf-9b92-4c97-a2df-209e2701659e",
+    "tinyui": "/x/D4GWGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/446071036?status=historical&version=3"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/446071036/child?parentVersion=3",
+    "restrictions": "/rest/api/content/446071036/restriction/byOperation",
+    "history": "/rest/api/content/446071036/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/446071036/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/446071036/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "446071036",
+   "type": "page",
+   "status": "historical",
+   "title": "Design notes",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-04T18:24:03.000Z",
+    "message": "Tidying up",
+    "number": 2,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/446071036/version/2"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/446071036?status=historical&version=2"
+    }
+   },
+   "position": -1,
+   "body": {
+    "storage": {
+     "value": "<p>This document contains some rough design notes about how to support transactional acknowledgements for share groups.</p><h1>Application programming interface</h1><p>Prior to KIP-1289, applications chose how to acknowledge record delivery using the <code>share.acknowledgement.mode</code> consumer configuration. It seems to me that neither <code>implicit</code>  nor <code>explicit</code>  is really ideal. I propose that we introduce a third acknowledgement mode <code>transactional</code> . This gives a nice clean way to enforce correct API usage in the application.</p><p>Transactional acknowledgement mode has the following features:</p><ul><li data-uuid=\"2578174f-66df-4235-b2a6-4efcbd2200e2\">Acknowledgements are explicit, meaning that every record received from <code>poll(Duration)</code>  must be acknowledged using <code>ShareConsumer.acknowledge(...)</code>  before the next call to <code>poll(Duration)</code> .</li><li data-uuid=\"33d4f0b4-6461-46cf-8371-afe16cadde0d\"><code>ShareConsumer.commitSync(...)</code>  and <code>ShareConsumer.commitAsync(...)</code>  are not permitted. The acknowledgements are committed as part of a transaction so these specific methods are not appropriate.</li><li data-uuid=\"8d2c1df0-09dd-450c-9280-7dc6ed129cf7\"><code>ShareConsumer.setAcknowledgementCommitCallback(...)</code>  is likewise not permitted. The acknowledgements will be completed once the transaction commits so the callback is not as useful as it is with asynchronous, non-transactional acknowledgements.</li><li data-uuid=\"f83e0529-0256-41a9-922c-0f0924a32263\"><code>AcknowledgeMode.RENEW</code>  is not permitted. It is incompatible with transactions.</li></ul><p>The following code snippet shows how the application code might look.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"46f279e4-3c25-4ab8-9b32-a951876fc746\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[producerProps.put(ProducerConfig.TRANSACTIONAL_ID_CONFIG, \"T1\");\nconsumerProps.put(ConsumerConfig.GROUP_ID_CONFIG, \"SG1\");\nconsumerProps.put(ConsumerConfig.SHARE_ACKNOWLEDGEMENT_MODE_CONFIG, \"transactional\");\n\ntry {Producer<String, String> producer = new KafkaProducer(prodProps);\n     ShareConsumer<String, String> shareConsumer = new KafkaShareConsumer(consumerProps) {\n  producer.initTransactions();\n  producer.setShareGroupTransactionAdapter(shareConsumer);\n\n  shareConsumer.subscribe(Set.of(\"INPUT\"));\n\n  ConsumerRecords<String, String> recs = shareConsumer.poll(Duration.ofMillis(10000));\n  for (ConsumerRecord<String, String> rec : recs) {\n    producer.beginTransaction();\n    producer.send(new ProducerRecord(\"OUTPUT\", 0, rec.key(), rec.value());\n    shareConsumer.acknowledge(rec);\n    producer.commitTransaction();\n  }\n}]]></ac:plain-text-body></ac:structured-macro><p>We need to define some kind of bridge between the producer and the share consumer so that <code>shareConsumer.acknowledge(rec)</code>  results in a transactional request to be sent to the share-partition leader. This is the purpose of <code>producer.setShareGroupTransactionAdapter()</code> . The internal details need to be ironed out, but this gives quite clean application code (there's no <code>Producer.sendShareGroupAcknowledgementsToTransaction()</code>  or equivalent for example).</p><h1>Kafka protocol</h1><p>To fit in with the current protocol design, I think we need 2 (or perhaps 3, depending on taste) new RPCs. They are:</p><ul><li data-uuid=\"ae905a60-47ea-489d-8a50-28b14ad965fe\">TxnShareAcknowledge - sent by the client to the share-partition leader - the transactional equivalent of ShareAcknowledge</li><li data-uuid=\"e53d6a15-ea4d-4352-92b5-fa2173792fb4\">TxnComplete - sent by the transaction coordinator to the share-partition leader at transaction completion so the record states in the share partition can be updated</li><li data-uuid=\"b4d7343d-52eb-4ff0-b380-c75e748d5c29\">TxnWriteShareGroupState - sent by the share-partition leader to the share coordinator - we could perhaps make these extra fields on the regular WriteShareGroupState RPC</li></ul><p><br /></p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/446071036?status=historical&version=2"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": "none"
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=446071045",
+    "edit": "/pages/resumedraft.action?draftId=446071045&draftShareId=1ca4edbf-9b92-4c97-a2df-209e2701659e",
+    "tinyui": "/x/BYGWGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/446071036?status=historical&version=2"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/446071036/child?parentVersion=2",
+    "restrictions": "/rest/api/content/446071036/restriction/byOperation",
+    "history": "/rest/api/content/446071036/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/446071036/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/446071036/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "446071036",
+   "type": "page",
+   "status": "historical",
+   "title": "Design notes",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-04T16:17:08.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/446071036/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/446071036?status=historical&version=1"
+    }
+   },
+   "position": -1,
+   "body": {
+    "storage": {
+     "value": "<p>This document contains some rough design notes about how to support transactional acknowledgements for share groups.</p><h1>Application programming interface</h1><p>Prior to KIP-1289, applications choose how to acknowledge record delivery using the <code>share.acknowledgement.mode</code> consumer configuration. It seems to me that neither <code>implicit</code>  nor <code>explicit</code>  is really ideal. I propose that we introduce a third acknowledgement mode <code>transactional</code> . This gives a nice clean way to enforce correct API usage in the application.</p><p>Transactional acknowledgement mode has the following features:</p><ul><li data-uuid=\"2578174f-66df-4235-b2a6-4efcbd2200e2\">Acknowledgements are explicit, meaning that every record received from <code>poll(Duration)</code>  must be acknowledge using <code>ShareConsumer.acknowledge(...)</code>  before the next call to <code>poll(Duration)</code> .</li><li data-uuid=\"33d4f0b4-6461-46cf-8371-afe16cadde0d\"><code>ShareConsumer.commitSync()</code>  and <code>ShareConsumer.commitAsync()</code>  are not permitted. The acknowledgements are committed by a transaction so these specific methods are not appropriate.</li><li data-uuid=\"8d2c1df0-09dd-450c-9280-7dc6ed129cf7\">ShareConsumer.setAcknowledgementCommitCallback() is likewise not permitted. The acknowledgements will be completed once the transaction commits.</li><li data-uuid=\"f83e0529-0256-41a9-922c-0f0924a32263\">AcknowledgeMode.RENEW is not permitted. It is incompatible with transactions.</li></ul><p>The following code snippet shows how the application code might look.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"46f279e4-3c25-4ab8-9b32-a951876fc746\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[producerProps.put(ProducerConfig.TRANSACTIONAL_ID_CONFIG, \"T1\");\nconsumerProps.put(ConsumerConfig.GROUP_ID_CONFIG, \"SG1\");\nconsumerProps.put(ConsumerConfig.SHARE_ACKNOWLEDGEMENT_MODE_CONFIG, \"transactional\");\n\ntry {Producer<String, String> producer = new KafkaProducer(prodProps);\n     ShareConsumer<String, String> shareConsumer = new KafkaShareConsumer(consumerProps) {\n  producer.initTransactions();\n  producer.setShareGroupTransactionAdapter(shareConsumer);\n\n  shareConsumer.subscribe(Set.of(\"INPUT\"));\n\n  ConsumerRecords<String, String> recs = shareConsumer.poll(Duration.ofMillis(10000));\n  for (ConsumerRecord<String, String> rec : recs) {\n    producer.beginTransaction();\n    producer.send(new ProducerRecord(\"OUTPUT\", 0, rec.key(), rec.value());\n    shareConsumer.acknowledge(rec);\n    producer.commitTransaction();\n  }\n}]]></ac:plain-text-body></ac:structured-macro><p>We need to define some kind of bridge between the producer and the share consumer so that <code>shareConsumer.acknowledge(rec)</code>  results in a transactional request to be sent to the share-partition leader. This is the purpose of <code>producer.setShareGroupTransactionAdapter()</code> . The internal details need to be ironed out, but this gives quite clean application code (there's no <code>Producer.sendShareGroupAcknowledgementsToTransaction()</code>  or equivalent for example).</p><h1>Kafka protocol</h1><p>To fit in with the current protocol design, I think we need 2 or 3 new RPCs. They are:</p><ul><li data-uuid=\"ae905a60-47ea-489d-8a50-28b14ad965fe\">TxnShareAcknowledge - sent by the client to the share-partition leader - the transactional equivalent of ShareAcknowledge</li><li data-uuid=\"e53d6a15-ea4d-4352-92b5-fa2173792fb4\">TxnComplete - sent by the transaction coordinator to the share-partition leader at transaction completion so the record states in the share partition can be updated</li><li data-uuid=\"b4d7343d-52eb-4ff0-b380-c75e748d5c29\">TxnWriteShareGroupState - sent by the share-partition leader to the share coordinator - we could perhaps make these extra fields on the regular WriteShareGroupState RPC</li></ul><p><br /></p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/446071036?status=historical&version=1"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": "none"
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=446071043",
+    "edit": "/pages/resumedraft.action?draftId=446071043&draftShareId=1ca4edbf-9b92-4c97-a2df-209e2701659e",
+    "tinyui": "/x/A4GWGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/446071036?status=historical&version=1"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/446071036/child?parentVersion=1",
+    "restrictions": "/rest/api/content/446071036/restriction/byOperation",
+    "history": "/rest/api/content/446071036/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/446071036/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/446071036/restriction/relevantViewRestrictions"
+   }
+  }
+ ],
+ "comments": {
+  "results": [],
+  "start": 0,
+  "limit": 200,
+  "size": 0,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/api/content/446071036/child/comment?expand=body.storage%2Cversion%2Cancestors&depth=all",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ }
+}

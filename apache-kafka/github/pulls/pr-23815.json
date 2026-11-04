@@ -1,0 +1,1444 @@
+{
+ "pull": {
+  "url": "https://api.github.com/repos/apache/kafka/pulls/23815",
+  "id": 4855148855,
+  "node_id": "PR_kwDOACG9q88AAAABIWOxNw",
+  "html_url": "https://github.com/apache/kafka/pull/23815",
+  "diff_url": "https://github.com/apache/kafka/pull/23815.diff",
+  "patch_url": "https://github.com/apache/kafka/pull/23815.patch",
+  "issue_url": "https://api.github.com/repos/apache/kafka/issues/23815",
+  "commits_url": "https://api.github.com/repos/apache/kafka/pulls/23815/commits",
+  "review_comments_url": "https://api.github.com/repos/apache/kafka/pulls/23815/comments",
+  "review_comment_url": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}",
+  "comments_url": "https://api.github.com/repos/apache/kafka/issues/23815/comments",
+  "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/4c035f824c561a23f283a51ca5690e4d482403fb",
+  "number": 23815,
+  "state": "open",
+  "locked": false,
+  "title": "KAFKA-21276: Stop fetching standby changelogs while records beyond the limit offset are buffered",
+  "user": {
+   "login": "unknowntpo",
+   "id": 10594519,
+   "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+   "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/unknowntpo",
+   "html_url": "https://github.com/unknowntpo",
+   "followers_url": "https://api.github.com/users/unknowntpo/followers",
+   "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+   "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+   "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+   "repos_url": "https://api.github.com/users/unknowntpo/repos",
+   "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "body": "A standby task whose store uses the input topic as its changelog may\nonly apply records up to the offset committed by the active task, but\n`StoreChangelogReader` kept fetching beyond that offset. Those records\nstayed in the restore buffer, which could grow until `OutOfMemoryError`\nwhen the active task was far behind the end of the topic.\n\nThis PR pauses such a changelog partition while its buffer holds records\nbeyond the limit offset, and resumes it once the limit has moved past\nthem. This is how standby tasks worked before 2.5.0: `StreamThread`\npaused the partition when `StandbyTask#update` returned records beyond\nthe limit, and this was lost in the refactoring of KAFKA-9113 (#7997).\nThe change adds no new config or public API.\n\nThe new test in `OptimizedKTableIntegrationTest` pauses the active task\nand produces 1,000 more records: without the fix the standby polls all\nof them beyond the committed offset; with the fix it polls once (at most\n`max.poll.records`) and pauses the partition.\n\nRelated to KAFKA-19992 / KIP-1325.\n\nReviewers: Chia-Ping Tsai <chia7712@gmail.com>\n",
+  "labels": [
+   {
+    "id": 820747028,
+    "node_id": "MDU6TGFiZWw4MjA3NDcwMjg=",
+    "url": "https://api.github.com/repos/apache/kafka/labels/streams",
+    "name": "streams",
+    "description": null,
+    "color": "63edea",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   }
+  ],
+  "milestone": null,
+  "active_lock_reason": null,
+  "created_at": "2026-10-14T08:32:29Z",
+  "updated_at": "2026-10-28T02:15:46Z",
+  "closed_at": null,
+  "merged_at": null,
+  "merge_commit_sha": "dd009ebbab0bf38d5c0094d4d2546af8063c4531",
+  "assignee": null,
+  "assignees": [],
+  "requested_reviewers": [],
+  "requested_teams": [],
+  "head": {
+   "label": "unknowntpo:kafka-19992-standby-pause-at-limit",
+   "ref": "kafka-19992-standby-pause-at-limit",
+   "repo": {
+    "id": 809274704,
+    "node_id": "R_kgDOMDyNUA",
+    "name": "kafka",
+    "full_name": "unknowntpo/kafka",
+    "owner": {
+     "login": "unknowntpo",
+     "id": 10594519,
+     "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+     "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/unknowntpo",
+     "html_url": "https://github.com/unknowntpo",
+     "followers_url": "https://api.github.com/users/unknowntpo/followers",
+     "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+     "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+     "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+     "repos_url": "https://api.github.com/users/unknowntpo/repos",
+     "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": true,
+    "archived": false,
+    "disabled": false,
+    "description": "Mirror of Apache Kafka",
+    "homepage": null,
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [],
+    "forks_count": 0,
+    "forks": 0,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "watchers": 0,
+    "open_issues_count": 11,
+    "open_issues": 11,
+    "size": 293291,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-28T23:57:36Z",
+    "created_at": "2024-06-02T08:15:46Z",
+    "updated_at": "2026-10-27T00:03:14Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/unknowntpo/kafka",
+    "html_url": "https://github.com/unknowntpo/kafka",
+    "archive_url": "https://api.github.com/repos/unknowntpo/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/unknowntpo/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/unknowntpo/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/unknowntpo/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/unknowntpo/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/unknowntpo/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/unknowntpo/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/unknowntpo/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/unknowntpo/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/unknowntpo/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/unknowntpo/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/unknowntpo/kafka/downloads",
+    "events_url": "https://api.github.com/repos/unknowntpo/kafka/events",
+    "forks_url": "https://api.github.com/repos/unknowntpo/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/unknowntpo/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/unknowntpo/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/unknowntpo/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/unknowntpo/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/unknowntpo/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/unknowntpo/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/unknowntpo/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/unknowntpo/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/unknowntpo/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/unknowntpo/kafka/languages",
+    "merges_url": "https://api.github.com/repos/unknowntpo/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/unknowntpo/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/unknowntpo/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/unknowntpo/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/unknowntpo/kafka/releases{/id}",
+    "ssh_url": "git@github.com:unknowntpo/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/unknowntpo/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/unknowntpo/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/unknowntpo/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/unknowntpo/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/unknowntpo/kafka/tags",
+    "teams_url": "https://api.github.com/repos/unknowntpo/kafka/teams",
+    "trees_url": "https://api.github.com/repos/unknowntpo/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/unknowntpo/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/unknowntpo/kafka/hooks",
+    "svn_url": "https://github.com/unknowntpo/kafka"
+   },
+   "sha": "4c035f824c561a23f283a51ca5690e4d482403fb",
+   "user": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "base": {
+   "label": "apache:trunk",
+   "ref": "trunk",
+   "repo": {
+    "id": 2211243,
+    "node_id": "MDEwOlJlcG9zaXRvcnkyMjExMjQz",
+    "name": "kafka",
+    "full_name": "apache/kafka",
+    "owner": {
+     "login": "apache",
+     "id": 47359,
+     "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+     "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/apache",
+     "html_url": "https://github.com/apache",
+     "followers_url": "https://api.github.com/users/apache/followers",
+     "following_url": "https://api.github.com/users/apache/following{/other_user}",
+     "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+     "organizations_url": "https://api.github.com/users/apache/orgs",
+     "repos_url": "https://api.github.com/users/apache/repos",
+     "events_url": "https://api.github.com/users/apache/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/apache/received_events",
+     "type": "Organization",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": false,
+    "archived": false,
+    "disabled": false,
+    "description": "Apache Kafka - A distributed event streaming platform",
+    "homepage": "https://kafka.apache.org/",
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [
+     "java",
+     "kafka",
+     "scala",
+     "streaming"
+    ],
+    "forks_count": 15637,
+    "forks": 15637,
+    "stargazers_count": 34153,
+    "watchers_count": 34153,
+    "watchers": 34153,
+    "open_issues_count": 674,
+    "open_issues": 674,
+    "size": 322164,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-29T11:37:21Z",
+    "created_at": "2011-08-15T18:06:16Z",
+    "updated_at": "2026-10-29T11:37:29Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/apache/kafka",
+    "html_url": "https://github.com/apache/kafka",
+    "archive_url": "https://api.github.com/repos/apache/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/apache/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/apache/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/apache/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/apache/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/apache/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/apache/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/apache/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/apache/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/apache/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/apache/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/apache/kafka/downloads",
+    "events_url": "https://api.github.com/repos/apache/kafka/events",
+    "forks_url": "https://api.github.com/repos/apache/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/apache/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/apache/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/apache/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/apache/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/apache/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/apache/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/apache/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/apache/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/apache/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/apache/kafka/languages",
+    "merges_url": "https://api.github.com/repos/apache/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/apache/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/apache/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/apache/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/apache/kafka/releases{/id}",
+    "ssh_url": "git@github.com:apache/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/apache/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/apache/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/apache/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/apache/kafka/tags",
+    "teams_url": "https://api.github.com/repos/apache/kafka/teams",
+    "trees_url": "https://api.github.com/repos/apache/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/apache/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/apache/kafka/hooks",
+    "svn_url": "https://github.com/apache/kafka"
+   },
+   "sha": "f90822763913e10a02478c235b34a5ea9f36856e",
+   "user": {
+    "login": "apache",
+    "id": 47359,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/apache",
+    "html_url": "https://github.com/apache",
+    "followers_url": "https://api.github.com/users/apache/followers",
+    "following_url": "https://api.github.com/users/apache/following{/other_user}",
+    "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+    "organizations_url": "https://api.github.com/users/apache/orgs",
+    "repos_url": "https://api.github.com/users/apache/repos",
+    "events_url": "https://api.github.com/users/apache/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/apache/received_events",
+    "type": "Organization",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "_links": {
+   "comments": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23815/comments"
+   },
+   "commits": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23815/commits"
+   },
+   "statuses": {
+    "href": "https://api.github.com/repos/apache/kafka/statuses/4c035f824c561a23f283a51ca5690e4d482403fb"
+   },
+   "html": {
+    "href": "https://github.com/apache/kafka/pull/23815"
+   },
+   "issue": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23815"
+   },
+   "review_comments": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23815/comments"
+   },
+   "review_comment": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}"
+   },
+   "self": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23815"
+   }
+  },
+  "author_association": "CONTRIBUTOR",
+  "auto_merge": null,
+  "draft": false,
+  "merged": false,
+  "mergeable": true,
+  "rebaseable": false,
+  "mergeable_state": "blocked",
+  "merged_by": null,
+  "comments": 0,
+  "review_comments": 2,
+  "maintainer_can_modify": true,
+  "commits": 4,
+  "additions": 268,
+  "deletions": 9,
+  "changed_files": 3
+ },
+ "reviews": [
+  {
+   "id": 5552156946,
+   "node_id": "PRR_kwDOACG9q88AAAABSu8xEg",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?u=d6a720105c14e445ea603b93ca071290c3955670&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23815#pullrequestreview-5552156946",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23815",
+   "author_association": "MEMBER",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23815#pullrequestreview-5552156946"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23815"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-16T18:35:23Z",
+   "commit_id": "22d2a25bcd353afc8e2ba3a02c635be96a1f1e57"
+  },
+  {
+   "id": 5559623456,
+   "node_id": "PRR_kwDOACG9q88AAAABS2EfIA",
+   "user": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?u=f012a1ce49ba96fd86b23f5dc073d83ed1e44674&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23815#pullrequestreview-5559623456",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23815",
+   "author_association": "CONTRIBUTOR",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23815#pullrequestreview-5559623456"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23815"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-17T19:18:51Z",
+   "commit_id": "91c6095c1f88aa675a76203b12890bd241a06584"
+  },
+  {
+   "id": 5676952458,
+   "node_id": "PRR_kwDOACG9q88AAAABUl9rig",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?u=d6a720105c14e445ea603b93ca071290c3955670&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "Overall LGTM\n\n@mjsax do you free time to take a look at this PR?",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23815#pullrequestreview-5676952458",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23815",
+   "author_association": "MEMBER",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23815#pullrequestreview-5676952458"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23815"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-28T02:15:46Z",
+   "commit_id": "4c035f824c561a23f283a51ca5690e4d482403fb"
+  }
+ ],
+ "review_comments": [
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4298052661",
+   "pull_request_review_id": 5552156946,
+   "id": 4298052661,
+   "node_id": "PRRC_kwDOACG9q88AAAABAC8UNQ",
+   "diff_hunk": "@@ -162,6 +162,11 @@ private void clear() {\n             this.bufferedRecords.clear();\n         }\n \n+        // buffered records at or after bufferedLimitIndex are beyond the limit and cannot be applied yet\n+        private boolean hasBufferedRecordsBeyondLimit() {\n+            return bufferedRecords.size() > bufferedLimitIndex;",
+   "path": "streams/src/main/java/org/apache/kafka/streams/processor/internals/StoreChangelogReader.java",
+   "commit_id": "4c035f824c561a23f283a51ca5690e4d482403fb",
+   "original_commit_id": "22d2a25bcd353afc8e2ba3a02c635be96a1f1e57",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "The bufferedLimitIndex needs to be kept updated, otherwise the paused standby will be stuck forever, right? If so, we should add a comment to maybeUpdateLimitOffsetsForStandbyChangelogs and a test to guard against a silent hang.",
+   "created_at": "2026-10-16T18:35:23Z",
+   "updated_at": "2026-10-16T18:35:23Z",
+   "html_url": "https://github.com/apache/kafka/pull/23815#discussion_r4298052661",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23815",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4298052661"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23815#discussion_r4298052661"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23815"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4298052661/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": 167,
+   "original_line": 167,
+   "side": "RIGHT",
+   "author_association": "MEMBER",
+   "original_position": 6,
+   "position": 6,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4304124048",
+   "pull_request_review_id": 5559623456,
+   "id": 4304124048,
+   "node_id": "PRRC_kwDOACG9q88AAAABAIu4kA",
+   "diff_hunk": "@@ -162,6 +162,11 @@ private void clear() {\n             this.bufferedRecords.clear();\n         }\n \n+        // buffered records at or after bufferedLimitIndex are beyond the limit and cannot be applied yet\n+        private boolean hasBufferedRecordsBeyondLimit() {\n+            return bufferedRecords.size() > bufferedLimitIndex;",
+   "path": "streams/src/main/java/org/apache/kafka/streams/processor/internals/StoreChangelogReader.java",
+   "commit_id": "4c035f824c561a23f283a51ca5690e4d482403fb",
+   "original_commit_id": "22d2a25bcd353afc8e2ba3a02c635be96a1f1e57",
+   "user": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "I added a comment there in 91c6095c1f.\r\n\r\nFor the test, `shouldResumeSourceChangelogStandbyOnceLimitPassesBufferedRecords` already guards against this hang: it fails if the limit update skips paused partitions. I added a comment to the test to make that clear.",
+   "created_at": "2026-10-17T19:18:51Z",
+   "updated_at": "2026-10-27T05:01:22Z",
+   "html_url": "https://github.com/apache/kafka/pull/23815#discussion_r4304124048",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23815",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4304124048"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23815#discussion_r4304124048"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23815"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4304124048/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": 167,
+   "original_line": 167,
+   "side": "RIGHT",
+   "in_reply_to_id": 4298052661,
+   "author_association": "CONTRIBUTOR",
+   "original_position": 6,
+   "position": 6,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  }
+ ],
+ "issue_comments": [],
+ "commits": [
+  {
+   "sha": "22d2a25bcd353afc8e2ba3a02c635be96a1f1e57",
+   "node_id": "C_kwDOMDyNUNoAKDIyZDJhMjViY2QzNTNhZmM4ZTJiYTNhMDJjNjM1YmU5NmExZjFlNTc",
+   "commit": {
+    "author": {
+     "name": "Eric Chang",
+     "email": "e850506@gmail.com",
+     "date": "2026-10-14T07:40:13Z"
+    },
+    "committer": {
+     "name": "Eric Chang",
+     "email": "e850506@gmail.com",
+     "date": "2026-10-14T08:59:13Z"
+    },
+    "message": "KAFKA-21276: Stop fetching standby changelogs while records beyond the limit offset are buffered\n\nA standby task whose store uses the input topic as its changelog may only\napply records up to the offset committed by the active task. The restore\nconsumer kept fetching beyond that offset, and the records stayed in the\nrestore buffer, so the buffer could grow until OutOfMemoryError when the\nactive task was far behind the end of the topic.\n\nPause a changelog partition while its buffer holds records that cannot be\napplied yet, and resume it once the limit has moved past them.",
+    "tree": {
+     "sha": "cd5b647c9aada479c7be2d284f200e2aee53a682",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/cd5b647c9aada479c7be2d284f200e2aee53a682"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/22d2a25bcd353afc8e2ba3a02c635be96a1f1e57",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/22d2a25bcd353afc8e2ba3a02c635be96a1f1e57",
+   "html_url": "https://github.com/apache/kafka/commit/22d2a25bcd353afc8e2ba3a02c635be96a1f1e57",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/22d2a25bcd353afc8e2ba3a02c635be96a1f1e57/comments",
+   "author": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "03e66064307d921ae62a80332ae7bfca2d361c54",
+     "url": "https://api.github.com/repos/apache/kafka/commits/03e66064307d921ae62a80332ae7bfca2d361c54",
+     "html_url": "https://github.com/apache/kafka/commit/03e66064307d921ae62a80332ae7bfca2d361c54"
+    }
+   ]
+  },
+  {
+   "sha": "91c6095c1f88aa675a76203b12890bd241a06584",
+   "node_id": "C_kwDOMDyNUNoAKDkxYzYwOTVjMWY4OGFhNjc1YTc2MjAzYjEyODkwYmQyNDFhMDY1ODQ",
+   "commit": {
+    "author": {
+     "name": "Eric Chang",
+     "email": "e850506@gmail.com",
+     "date": "2026-10-17T19:10:11Z"
+    },
+    "committer": {
+     "name": "Eric Chang",
+     "email": "e850506@gmail.com",
+     "date": "2026-10-17T19:10:11Z"
+    },
+    "message": "KAFKA-21276: Explain how a paused standby changelog partition is resumed",
+    "tree": {
+     "sha": "e4ee0eeec0cec0067c84c030b8cd80c4e318f427",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/e4ee0eeec0cec0067c84c030b8cd80c4e318f427"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/91c6095c1f88aa675a76203b12890bd241a06584",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/91c6095c1f88aa675a76203b12890bd241a06584",
+   "html_url": "https://github.com/apache/kafka/commit/91c6095c1f88aa675a76203b12890bd241a06584",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/91c6095c1f88aa675a76203b12890bd241a06584/comments",
+   "author": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "22d2a25bcd353afc8e2ba3a02c635be96a1f1e57",
+     "url": "https://api.github.com/repos/apache/kafka/commits/22d2a25bcd353afc8e2ba3a02c635be96a1f1e57",
+     "html_url": "https://github.com/apache/kafka/commit/22d2a25bcd353afc8e2ba3a02c635be96a1f1e57"
+    }
+   ]
+  },
+  {
+   "sha": "dc2aadaf884e4d303dd0ccb6928e85a653faf28b",
+   "node_id": "C_kwDOMDyNUNoAKGRjMmFhZGFmODg0ZTRkMzAzZGQwY2NiNjkyOGU4NWE2NTNmYWYyOGI",
+   "commit": {
+    "author": {
+     "name": "Eric Chang",
+     "email": "e850506@gmail.com",
+     "date": "2026-10-18T00:02:58Z"
+    },
+    "committer": {
+     "name": "Eric Chang",
+     "email": "e850506@gmail.com",
+     "date": "2026-10-18T00:02:58Z"
+    },
+    "message": "Merge trunk into kafka-19992-standby-pause-at-limit",
+    "tree": {
+     "sha": "b9971ce6f9098f86348911f85cd87ffaad885abf",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/b9971ce6f9098f86348911f85cd87ffaad885abf"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/dc2aadaf884e4d303dd0ccb6928e85a653faf28b",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/dc2aadaf884e4d303dd0ccb6928e85a653faf28b",
+   "html_url": "https://github.com/apache/kafka/commit/dc2aadaf884e4d303dd0ccb6928e85a653faf28b",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/dc2aadaf884e4d303dd0ccb6928e85a653faf28b/comments",
+   "author": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "91c6095c1f88aa675a76203b12890bd241a06584",
+     "url": "https://api.github.com/repos/apache/kafka/commits/91c6095c1f88aa675a76203b12890bd241a06584",
+     "html_url": "https://github.com/apache/kafka/commit/91c6095c1f88aa675a76203b12890bd241a06584"
+    },
+    {
+     "sha": "65566690ca1ddb584388c1026e2ff6673e9c6f19",
+     "url": "https://api.github.com/repos/apache/kafka/commits/65566690ca1ddb584388c1026e2ff6673e9c6f19",
+     "html_url": "https://github.com/apache/kafka/commit/65566690ca1ddb584388c1026e2ff6673e9c6f19"
+    }
+   ]
+  },
+  {
+   "sha": "4c035f824c561a23f283a51ca5690e4d482403fb",
+   "node_id": "C_kwDOMDyNUNoAKDRjMDM1ZjgyNGM1NjFhMjNmMjgzYTUxY2E1NjkwZTRkNDgyNDAzZmI",
+   "commit": {
+    "author": {
+     "name": "Eric Chang",
+     "email": "e850506@gmail.com",
+     "date": "2026-10-19T00:02:39Z"
+    },
+    "committer": {
+     "name": "Eric Chang",
+     "email": "e850506@gmail.com",
+     "date": "2026-10-19T00:02:39Z"
+    },
+    "message": "Merge trunk into kafka-19992-standby-pause-at-limit",
+    "tree": {
+     "sha": "bad091e2a744c85ba6050b70712565a5f4976b7b",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/bad091e2a744c85ba6050b70712565a5f4976b7b"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/4c035f824c561a23f283a51ca5690e4d482403fb",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/4c035f824c561a23f283a51ca5690e4d482403fb",
+   "html_url": "https://github.com/apache/kafka/commit/4c035f824c561a23f283a51ca5690e4d482403fb",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/4c035f824c561a23f283a51ca5690e4d482403fb/comments",
+   "author": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "dc2aadaf884e4d303dd0ccb6928e85a653faf28b",
+     "url": "https://api.github.com/repos/apache/kafka/commits/dc2aadaf884e4d303dd0ccb6928e85a653faf28b",
+     "html_url": "https://github.com/apache/kafka/commit/dc2aadaf884e4d303dd0ccb6928e85a653faf28b"
+    },
+    {
+     "sha": "f90822763913e10a02478c235b34a5ea9f36856e",
+     "url": "https://api.github.com/repos/apache/kafka/commits/f90822763913e10a02478c235b34a5ea9f36856e",
+     "html_url": "https://github.com/apache/kafka/commit/f90822763913e10a02478c235b34a5ea9f36856e"
+    }
+   ]
+  }
+ ],
+ "files": [
+  {
+   "sha": "de306a31ffcbf8d46ac20efadc1a8b68d4021ab5",
+   "filename": "streams/integration-tests/src/test/java/org/apache/kafka/streams/integration/OptimizedKTableIntegrationTest.java",
+   "status": "modified",
+   "additions": 111,
+   "deletions": 4,
+   "changes": 115,
+   "blob_url": "https://github.com/apache/kafka/blob/4c035f824c561a23f283a51ca5690e4d482403fb/streams%2Fintegration-tests%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fintegration%2FOptimizedKTableIntegrationTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/4c035f824c561a23f283a51ca5690e4d482403fb/streams%2Fintegration-tests%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fintegration%2FOptimizedKTableIntegrationTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Fintegration-tests%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fintegration%2FOptimizedKTableIntegrationTest.java?ref=4c035f824c561a23f283a51ca5690e4d482403fb",
+   "patch": "@@ -16,8 +16,13 @@\n  */\n package org.apache.kafka.streams.integration;\n \n+import org.apache.kafka.clients.consumer.Consumer;\n import org.apache.kafka.clients.consumer.ConsumerConfig;\n+import org.apache.kafka.clients.consumer.ConsumerRecords;\n+import org.apache.kafka.clients.consumer.KafkaConsumer;\n import org.apache.kafka.clients.producer.ProducerConfig;\n+import org.apache.kafka.common.TopicPartition;\n+import org.apache.kafka.common.serialization.ByteArrayDeserializer;\n import org.apache.kafka.common.serialization.IntegerSerializer;\n import org.apache.kafka.common.serialization.Serdes;\n import org.apache.kafka.common.utils.Bytes;\n@@ -33,6 +38,9 @@\n import org.apache.kafka.streams.integration.utils.IntegrationTestUtils;\n import org.apache.kafka.streams.kstream.Consumed;\n import org.apache.kafka.streams.kstream.Materialized;\n+import org.apache.kafka.streams.processor.StandbyUpdateListener;\n+import org.apache.kafka.streams.processor.TaskId;\n+import org.apache.kafka.streams.processor.internals.DefaultKafkaClientSupplier;\n import org.apache.kafka.streams.state.KeyValueStore;\n import org.apache.kafka.streams.state.QueryableStoreTypes;\n import org.apache.kafka.streams.state.ReadOnlyKeyValueStore;\n@@ -54,10 +62,15 @@\n import java.time.Duration;\n import java.util.ArrayList;\n import java.util.Arrays;\n+import java.util.Collection;\n import java.util.List;\n+import java.util.Map;\n import java.util.Properties;\n+import java.util.Set;\n+import java.util.concurrent.ConcurrentHashMap;\n import java.util.concurrent.Semaphore;\n import java.util.concurrent.TimeUnit;\n+import java.util.concurrent.atomic.AtomicLong;\n import java.util.concurrent.atomic.AtomicReference;\n import java.util.stream.Collectors;\n import java.util.stream.IntStream;\n@@ -126,7 +139,7 @@ public void shouldApplyUpdatesToStandbyStore(final TestInfo testInfo) throws Exc\n         try {\n             startApplicationAndWaitUntilRunning(kafkaStreamsList, Duration.ofSeconds(60));\n \n-            produceValueRange(key, 0, batch1NumMessages);\n+            produceValueRange(INPUT_TOPIC_NAME, key, 0, batch1NumMessages);\n \n             // Assert that all messages in the first batch were processed in a timely manner\n             assertTrue(semaphore.tryAcquire(batch1NumMessages, 60, TimeUnit.SECONDS));\n@@ -166,7 +179,7 @@ public void shouldApplyUpdatesToStandbyStore(final TestInfo testInfo) throws Exc\n \n             final int totalNumMessages = batch1NumMessages + batch2NumMessages;\n \n-            produceValueRange(key, batch1NumMessages, totalNumMessages);\n+            produceValueRange(INPUT_TOPIC_NAME, key, batch1NumMessages, totalNumMessages);\n \n             // Assert that all messages in the second batch were processed in a timely manner\n             assertTrue(semaphore.tryAcquire(batch2NumMessages, 60, TimeUnit.SECONDS));\n@@ -181,21 +194,115 @@ public void shouldApplyUpdatesToStandbyStore(final TestInfo testInfo) throws Exc\n         }\n     }\n \n-    private void produceValueRange(final int key, final int start, final int endExclusive) {\n+    @Test\n+    public void shouldNotFetchBeyondCommittedOffsetForStandby(final TestInfo testInfo) throws Exception {\n+        final String topic = \"standby-limit-input-topic\";\n+        final TopicPartition partition = new TopicPartition(topic, 0);\n+        CLUSTER.createTopic(topic, 1, 1);\n+        produceValueRange(topic, 1, 0, 1_000);\n+\n+        final StreamsBuilder builder = new StreamsBuilder();\n+        builder.table(topic, Consumed.with(Serdes.Integer(), Serdes.Integer()),\n+            Materialized.<Integer, Integer, KeyValueStore<Bytes, byte[]>>as(TABLE_NAME).withCachingDisabled());\n+\n+        final String safeTestName = safeUniqueTestName(testInfo);\n+        final AtomicLong standbyNextOffset = new AtomicLong();\n+        final RestorePolls restorePolls1 = new RestorePolls();\n+        final RestorePolls restorePolls2 = new RestorePolls();\n+        final KafkaStreams kafkaStreams1 = createKafkaStreams(builder, streamsConfiguration(safeTestName), restorePolls1, standbyNextOffset);\n+        final KafkaStreams kafkaStreams2 = createKafkaStreams(builder, streamsConfiguration(safeTestName), restorePolls2, standbyNextOffset);\n+        startApplicationAndWaitUntilRunning(Arrays.asList(kafkaStreams1, kafkaStreams2), Duration.ofSeconds(60));\n+\n+        TestUtils.waitForCondition(\n+            () -> standbyNextOffset.get() >= 1_000L,\n+            () -> \"Standby did not catch up with the active task, next offset: \" + standbyNextOffset.get());\n+\n+        final boolean firstIsActive = kafkaStreams1.metadataForLocalThreads().stream().anyMatch(t -> !t.activeTasks().isEmpty());\n+        final KafkaStreams active = firstIsActive ? kafkaStreams1 : kafkaStreams2;\n+        final RestorePolls standbyPolls = firstIsActive ? restorePolls2 : restorePolls1;\n+\n+        // the active task stops making progress, so its committed offset (the limit of the standby) stays at 1,000\n+        active.pause();\n+        final long polledBefore = standbyPolls.records.get();\n+        produceValueRange(topic, 1, 1_000, 2_000);\n+\n+        // the new records are beyond the limit and cannot be applied, so the standby must pause the partition\n+        // after the first poll instead of fetching all of them\n+        TestUtils.waitForCondition(\n+            () -> standbyPolls.records.get() > polledBefore && standbyPolls.paused.contains(partition),\n+            () -> \"Standby did not pause the partition, records polled beyond the limit: \" + (standbyPolls.records.get() - polledBefore));\n+        final long polled = standbyPolls.records.get() - polledBefore;\n+        assertTrue(polled <= 100, \"Standby polled \" + polled + \" records beyond the committed offset of the active task\");\n+    }\n+\n+    // records returned by the restore consumer, and the partitions it currently has paused\n+    private static final class RestorePolls {\n+        private final AtomicLong records = new AtomicLong();\n+        private final Set<TopicPartition> paused = ConcurrentHashMap.newKeySet();\n+    }\n+\n+    private void produceValueRange(final String topic, final int key, final int start, final int endExclusive) {\n         final Properties producerProps = new Properties();\n         producerProps.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, CLUSTER.bootstrapServers());\n         producerProps.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, IntegerSerializer.class);\n         producerProps.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, IntegerSerializer.class);\n \n         IntegrationTestUtils.produceKeyValuesSynchronously(\n-            INPUT_TOPIC_NAME,\n+            topic,\n             IntStream.range(start, endExclusive)\n                 .mapToObj(i -> KeyValue.pair(key, i))\n                 .collect(Collectors.toList()),\n             producerProps,\n             mockTime);\n     }\n \n+    private KafkaStreams createKafkaStreams(final StreamsBuilder builder,\n+                                            final Properties config,\n+                                            final RestorePolls restorePolls,\n+                                            final AtomicLong standbyNextOffset) {\n+        final KafkaStreams streams = new KafkaStreams(builder.build(config), config, new DefaultKafkaClientSupplier() {\n+            @Override\n+            public Consumer<byte[], byte[]> getRestoreConsumer(final Map<String, Object> consumerConfig) {\n+                return new KafkaConsumer<>(consumerConfig, new ByteArrayDeserializer(), new ByteArrayDeserializer()) {\n+                    @Override\n+                    public ConsumerRecords<byte[], byte[]> poll(final Duration timeout) {\n+                        final ConsumerRecords<byte[], byte[]> records = super.poll(timeout);\n+                        restorePolls.records.addAndGet(records.count());\n+                        return records;\n+                    }\n+\n+                    @Override\n+                    public void pause(final Collection<TopicPartition> partitions) {\n+                        super.pause(partitions);\n+                        restorePolls.paused.addAll(partitions);\n+                    }\n+\n+                    @Override\n+                    public void resume(final Collection<TopicPartition> partitions) {\n+                        super.resume(partitions);\n+                        restorePolls.paused.removeAll(partitions);\n+                    }\n+                };\n+            }\n+        });\n+        streams.setStandbyUpdateListener(new StandbyUpdateListener() {\n+            @Override\n+            public void onUpdateStart(final TopicPartition topicPartition, final String storeName, final long startingOffset) { }\n+\n+            @Override\n+            public void onBatchLoaded(final TopicPartition topicPartition, final String storeName, final TaskId taskId,\n+                                      final long batchEndOffset, final long batchSize, final long currentEndOffset) {\n+                standbyNextOffset.accumulateAndGet(batchEndOffset + 1, Math::max);\n+            }\n+\n+            @Override\n+            public void onUpdateSuspended(final TopicPartition topicPartition, final String storeName, final long storeOffset,\n+                                          final long currentEndOffset, final SuspendReason reason) { }\n+        });\n+        streamsToCleanup.add(streams);\n+        return streams;\n+    }\n+\n     private KafkaStreams createKafkaStreams(final StreamsBuilder builder, final Properties config) {\n         final KafkaStreams streams = new KafkaStreams(builder.build(config), config);\n         streamsToCleanup.add(streams);"
+  },
+  {
+   "sha": "f5013aac255dfc4363d09d459d9f7c1f27c4cb34",
+   "filename": "streams/src/main/java/org/apache/kafka/streams/processor/internals/StoreChangelogReader.java",
+   "status": "modified",
+   "additions": 18,
+   "deletions": 5,
+   "changes": 23,
+   "blob_url": "https://github.com/apache/kafka/blob/4c035f824c561a23f283a51ca5690e4d482403fb/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FStoreChangelogReader.java",
+   "raw_url": "https://github.com/apache/kafka/raw/4c035f824c561a23f283a51ca5690e4d482403fb/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FStoreChangelogReader.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FStoreChangelogReader.java?ref=4c035f824c561a23f283a51ca5690e4d482403fb",
+   "patch": "@@ -162,6 +162,11 @@ private void clear() {\n             this.bufferedRecords.clear();\n         }\n \n+        // buffered records at or after bufferedLimitIndex are beyond the limit and cannot be applied yet\n+        private boolean hasBufferedRecordsBeyondLimit() {\n+            return bufferedRecords.size() > bufferedLimitIndex;\n+        }\n+\n         private void transitTo(final ChangelogState newState) {\n             if (newState.prevStates.contains(changelogState.ordinal())) {\n                 changelogState = newState;\n@@ -592,21 +597,25 @@ private void updatePartitionsByType(final Map<TaskId, Task> tasks,\n     }\n \n     private boolean shouldResume(final Map<TaskId, Task> tasks, final TopicPartition partition, final TaskType taskType) {\n-        final ProcessorStateManager manager = changelogs.get(partition).stateManager;\n+        final ChangelogMetadata metadata = changelogs.get(partition);\n+        final ProcessorStateManager manager = metadata.stateManager;\n         final TaskId taskId = manager.taskId();\n         final Task task = tasks.get(taskId);\n         if (manager.taskType() == taskType) {\n-            return task != null;\n+            return task != null && !metadata.hasBufferedRecordsBeyondLimit();\n         }\n         return false;\n     }\n \n     private boolean shouldPause(final Map<TaskId, Task> tasks, final TopicPartition partition, final TaskType taskType) {\n-        final ProcessorStateManager manager = changelogs.get(partition).stateManager;\n+        final ChangelogMetadata metadata = changelogs.get(partition);\n+        final ProcessorStateManager manager = metadata.stateManager;\n         final TaskId taskId = manager.taskId();\n         final Task task = tasks.get(taskId);\n         if (manager.taskType() == taskType) {\n-            return task == null;\n+            // fetching more for a partition whose buffer holds records beyond the limit would only grow the buffer;\n+            // this is evaluated before every poll, so it also re-pauses partitions resumed by transitToUpdateStandby()\n+            return task == null || metadata.hasBufferedRecordsBeyondLimit();\n         }\n         return false;\n     }\n@@ -658,7 +667,11 @@ private void maybeUpdateLimitOffsetsForStandbyChangelogs(final Map<TaskId, Task>\n             // we only need the limit when processing new records\n             // for other changelog partitions we do not need to update limit offset at all since we never need to\n             // check when it completes based on limit offset anyways: the end offset would keep increasing and the\n-            // standby never need to stop\n+            // standby never need to stop.\n+            //\n+            // This update is also what resumes a partition paused by shouldPause().\n+            // Such a partition always has buffered records, so it passes the check below.\n+            // It stays paused until bufferedLimitIndex moves past all of them.\n             final Set<TopicPartition> changelogsWithLimitOffsets = changelogs.entrySet().stream()\n                 .filter(entry -> entry.getValue().stateManager.taskType() == Task.TaskType.STANDBY &&\n                     entry.getValue().stateManager.changelogAsSource(entry.getKey()))"
+  },
+  {
+   "sha": "4a71a422d67bb140ea3c29ca9be7b9f62e4d4d17",
+   "filename": "streams/src/test/java/org/apache/kafka/streams/processor/internals/StoreChangelogReaderTest.java",
+   "status": "modified",
+   "additions": 139,
+   "deletions": 0,
+   "changes": 139,
+   "blob_url": "https://github.com/apache/kafka/blob/4c035f824c561a23f283a51ca5690e4d482403fb/streams%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FStoreChangelogReaderTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/4c035f824c561a23f283a51ca5690e4d482403fb/streams%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FStoreChangelogReaderTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FStoreChangelogReaderTest.java?ref=4c035f824c561a23f283a51ca5690e4d482403fb",
+   "patch": "@@ -1230,6 +1230,145 @@ public void logicalChangelogEndOffsetsShouldReturnNullWhenBothSourcesUnknown() {\n         assertNull(changelogReader.logicalChangelogEndOffsets().get(tp));\n     }\n \n+    private Map<TaskId, Task> setupSourceChangelogStandby() {\n+        setupStandbyStateManager();\n+        setupStoreMetadata();\n+        @SuppressWarnings(\"unchecked\")\n+        final Map<TaskId, Task> mockTasks = mock(Map.class);\n+        when(mockTasks.get(null)).thenReturn(mock(Task.class));\n+        when(mockTasks.containsKey(null)).thenReturn(true);\n+        when(standbyStateManager.changelogAsSource(tp)).thenReturn(true);\n+        when(storeMetadata.offset()).thenReturn(3L);\n+        return mockTasks;\n+    }\n+\n+    @Test\n+    public void shouldStopFetchingSourceChangelogStandbyBeyondLimit() {\n+        final Map<TaskId, Task> mockTasks = setupSourceChangelogStandby();\n+        changelogReader.transitToUpdateStandby();\n+\n+        consumer.updateBeginningOffsets(Collections.singletonMap(tp, 0L));\n+        // the active task has committed up to offset 7 and makes no further progress\n+        adminClient.updateConsumerGroupOffsets(Collections.singletonMap(tp, 7L));\n+        changelogReader.register(tp, standbyStateManager);\n+        changelogReader.restore(mockTasks);\n+        assertEquals(7L, (long) changelogReader.changelogMetadata(tp).endOffset());\n+\n+        long nextOffset = 10L;\n+        for (int round = 1; round <= 2; round++) {\n+            for (int i = 0; i < 100; i++) {\n+                consumer.addRecord(changelogRecord(tp, nextOffset++, 0L));\n+            }\n+            changelogReader.restore(mockTasks);\n+\n+            // only the first poll is buffered, then the partition is paused\n+            assertEquals(0L, changelogReader.changelogMetadata(tp).totalRestored());\n+            assertEquals(100, changelogReader.changelogMetadata(tp).bufferedRecords().size());\n+        }\n+        assertEquals(Collections.singleton(tp), consumer.paused());\n+    }\n+\n+    @Test\n+    public void shouldResumeSourceChangelogStandbyOnceLimitPassesBufferedRecords() {\n+        final Map<TaskId, Task> mockTasks = setupSourceChangelogStandby();\n+        setupStore();\n+        when(storeMetadata.endOffset()).thenReturn(1000L);\n+        final Properties properties = new Properties();\n+        properties.put(StreamsConfig.COMMIT_INTERVAL_MS_CONFIG, 100L);\n+        final StreamsConfig config = new StreamsConfig(StreamsTestUtils.getStreamsConfig(\"test-reader\", properties));\n+        final StoreChangelogReader changelogReader =\n+            new StoreChangelogReader(time, config, logContext, adminClient, consumer, callback, standbyListener);\n+        changelogReader.transitToUpdateStandby();\n+\n+        final long now = time.milliseconds();\n+        consumer.updateBeginningOffsets(Collections.singletonMap(tp, 0L));\n+        adminClient.updateConsumerGroupOffsets(Collections.singletonMap(tp, 7L));\n+        changelogReader.register(tp, standbyStateManager);\n+        changelogReader.restore(mockTasks);\n+\n+        for (long offset = 10L; offset < 50L; offset++) {\n+            consumer.addRecord(changelogRecord(tp, offset, 0L));\n+        }\n+        // MockConsumer returns everything that is available in one poll\n+        changelogReader.restore(mockTasks);\n+        assertEquals(40, changelogReader.changelogMetadata(tp).bufferedRecords().size());\n+        for (long offset = 50L; offset < 60L; offset++) {\n+            consumer.addRecord(changelogRecord(tp, offset, 0L));\n+        }\n+        changelogReader.restore(mockTasks);\n+        assertEquals(Collections.singleton(tp), consumer.paused());\n+        assertEquals(40, changelogReader.changelogMetadata(tp).bufferedRecords().size());\n+\n+        // the limit moves to 25 although the partition is paused; 25 buffered records are still beyond it.\n+        // if the limit were not updated for a paused partition, it would stay paused forever and this would fail\n+        adminClient.updateConsumerGroupOffsets(Collections.singletonMap(tp, 25L));\n+        time.setCurrentTimeMs(now + 101L);\n+        changelogReader.restore(mockTasks);\n+        changelogReader.restore(mockTasks);\n+        assertEquals(15L, changelogReader.changelogMetadata(tp).totalRestored());\n+        assertEquals(25, changelogReader.changelogMetadata(tp).bufferedRecords().size());\n+        changelogReader.restore(mockTasks);\n+        assertEquals(Collections.singleton(tp), consumer.paused());\n+\n+        // the limit passes all buffered records: they are applied and the partition is fetched again\n+        adminClient.updateConsumerGroupOffsets(Collections.singletonMap(tp, 55L));\n+        time.setCurrentTimeMs(now + 202L);\n+        changelogReader.restore(mockTasks);\n+        // every buffered record is now below the limit, so the partition is resumed before this poll:\n+        // offsets 50..54 are fetched and applied together with the buffered ones, 55..59 stay buffered\n+        changelogReader.restore(mockTasks);\n+        assertEquals(45L, changelogReader.changelogMetadata(tp).totalRestored());\n+        assertEquals(5, changelogReader.changelogMetadata(tp).bufferedRecords().size());\n+        changelogReader.restore(mockTasks);\n+        assertEquals(Collections.singleton(tp), consumer.paused());\n+    }\n+\n+    @Test\n+    public void shouldPauseSourceChangelogStandbyAgainAfterActiveRestoration() {\n+        final Map<TaskId, Task> mockTasks = setupSourceChangelogStandby();\n+        setupStore();\n+        when(activeStateManager.storeMetadata(tp1)).thenReturn(storeMetadataOne);\n+        when(activeStateManager.taskType()).thenReturn(ACTIVE);\n+        when(storeMetadataOne.changelogPartition()).thenReturn(tp1);\n+        when(storeMetadataOne.store()).thenReturn(store);\n+        when(storeMetadataOne.offset()).thenReturn(0L);\n+        changelogReader.transitToUpdateStandby();\n+\n+        consumer.updateBeginningOffsets(mkMap(mkEntry(tp, 0L), mkEntry(tp1, 0L)));\n+        adminClient.updateConsumerGroupOffsets(Collections.singletonMap(tp, 7L));\n+        adminClient.updateEndOffsets(Collections.singletonMap(tp1, 6L));\n+        changelogReader.register(tp, standbyStateManager);\n+        changelogReader.restore(mockTasks);\n+\n+        for (long offset = 10L; offset < 30L; offset++) {\n+            consumer.addRecord(changelogRecord(tp, offset, 0L));\n+        }\n+        changelogReader.restore(mockTasks);\n+        assertEquals(20, changelogReader.changelogMetadata(tp).bufferedRecords().size());\n+\n+        changelogReader.enforceRestoreActive();\n+        changelogReader.register(tp1, activeStateManager);\n+        changelogReader.restore(mockTasks);\n+        for (long offset = 1L; offset < 6L; offset++) {\n+            consumer.addRecord(changelogRecord(tp1, offset, 0L));\n+        }\n+        changelogReader.restore(mockTasks);\n+\n+        assertEquals(5L, changelogReader.changelogMetadata(tp1).totalRestored());\n+        assertEquals(StoreChangelogReader.ChangelogState.COMPLETED, changelogReader.changelogMetadata(tp1).state());\n+        assertEquals(20, changelogReader.changelogMetadata(tp).bufferedRecords().size());\n+\n+        // going back to standby updating resumes every standby partition, but the one at its limit must be paused\n+        // again before the next poll\n+        changelogReader.transitToUpdateStandby();\n+        for (long offset = 30L; offset < 40L; offset++) {\n+            consumer.addRecord(changelogRecord(tp, offset, 0L));\n+        }\n+        changelogReader.restore(mockTasks);\n+        assertTrue(consumer.paused().contains(tp));\n+        assertEquals(20, changelogReader.changelogMetadata(tp).bufferedRecords().size());\n+    }\n+\n     @Test\n     public void shouldRestoreToLimitInStandbyState() {\n         setupStandbyStateManager();"
+  }
+ ],
+ "timeline": [
+  {
+   "id": 33208227484,
+   "node_id": "LE_lADOACG9q88AAAABXF0Xp88AAAAHu11WnA",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33208227484",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-14T08:32:44Z",
+   "label": {
+    "name": "triage",
+    "color": "006b75"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 33208234959,
+   "node_id": "LE_lADOACG9q88AAAABXF0Xp88AAAAHu11zzw",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33208234959",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-14T08:32:50Z",
+   "label": {
+    "name": "streams",
+    "color": "63edea"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "sha": "22d2a25bcd353afc8e2ba3a02c635be96a1f1e57",
+   "node_id": "C_kwDOACG9q9oAKDIyZDJhMjViY2QzNTNhZmM4ZTJiYTNhMDJjNjM1YmU5NmExZjFlNTc",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/22d2a25bcd353afc8e2ba3a02c635be96a1f1e57",
+   "html_url": "https://github.com/apache/kafka/commit/22d2a25bcd353afc8e2ba3a02c635be96a1f1e57",
+   "author": {
+    "name": "Eric Chang",
+    "email": "e850506@gmail.com",
+    "date": "2026-10-14T07:40:13Z"
+   },
+   "committer": {
+    "name": "Eric Chang",
+    "email": "e850506@gmail.com",
+    "date": "2026-10-14T08:59:13Z"
+   },
+   "tree": {
+    "sha": "cd5b647c9aada479c7be2d284f200e2aee53a682",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/cd5b647c9aada479c7be2d284f200e2aee53a682"
+   },
+   "message": "KAFKA-21276: Stop fetching standby changelogs while records beyond the limit offset are buffered\n\nA standby task whose store uses the input topic as its changelog may only\napply records up to the offset committed by the active task. The restore\nconsumer kept fetching beyond that offset, and the records stayed in the\nrestore buffer, so the buffer could grow until OutOfMemoryError when the\nactive task was far behind the end of the topic.\n\nPause a changelog partition while its buffer holds records that cannot be\napplied yet, and resume it once the limit has moved past them.",
+   "parents": [
+    {
+     "sha": "03e66064307d921ae62a80332ae7bfca2d361c54",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/03e66064307d921ae62a80332ae7bfca2d361c54",
+     "html_url": "https://github.com/apache/kafka/commit/03e66064307d921ae62a80332ae7bfca2d361c54"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "id": 33212682728,
+   "node_id": "HRFPE_lADOACG9q88AAAABXF0Xp88AAAAHu6FR6A",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33212682728",
+   "actor": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "head_ref_force_pushed",
+   "commit_id": "22d2a25bcd353afc8e2ba3a02c635be96a1f1e57",
+   "commit_url": "https://api.github.com/repos/unknowntpo/kafka/commits/22d2a25bcd353afc8e2ba3a02c635be96a1f1e57",
+   "created_at": "2026-10-14T09:33:40Z",
+   "performed_via_github_app": null
+  },
+  {
+   "id": 33398495975,
+   "node_id": "RFRE_lADOACG9q88AAAABXF0Xp88AAAAHxrSa5w",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33398495975",
+   "actor": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "ready_for_review",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-16T02:06:47Z",
+   "performed_via_github_app": null
+  },
+  {
+   "id": 5552156946,
+   "node_id": "PRR_kwDOACG9q88AAAABSu8xEg",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": null,
+   "commit_id": "22d2a25bcd353afc8e2ba3a02c635be96a1f1e57",
+   "state": "commented",
+   "html_url": "https://github.com/apache/kafka/pull/23815#pullrequestreview-5552156946",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23815",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23815#pullrequestreview-5552156946"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23815"
+    }
+   },
+   "submitted_at": "2026-10-16T18:35:23Z",
+   "updated_at": "2026-10-16T18:35:23Z",
+   "author_association": "MEMBER",
+   "event": "reviewed"
+  },
+  {
+   "id": 33500144850,
+   "node_id": "UNLE_lADOACG9q88AAAABXF0Xp88AAAAHzMOk0g",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33500144850",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "unlabeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-17T03:18:20Z",
+   "label": {
+    "name": "triage",
+    "color": "006b75"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "sha": "91c6095c1f88aa675a76203b12890bd241a06584",
+   "node_id": "C_kwDOACG9q9oAKDkxYzYwOTVjMWY4OGFhNjc1YTc2MjAzYjEyODkwYmQyNDFhMDY1ODQ",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/91c6095c1f88aa675a76203b12890bd241a06584",
+   "html_url": "https://github.com/apache/kafka/commit/91c6095c1f88aa675a76203b12890bd241a06584",
+   "author": {
+    "name": "Eric Chang",
+    "email": "e850506@gmail.com",
+    "date": "2026-10-17T19:10:11Z"
+   },
+   "committer": {
+    "name": "Eric Chang",
+    "email": "e850506@gmail.com",
+    "date": "2026-10-17T19:10:11Z"
+   },
+   "tree": {
+    "sha": "e4ee0eeec0cec0067c84c030b8cd80c4e318f427",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/e4ee0eeec0cec0067c84c030b8cd80c4e318f427"
+   },
+   "message": "KAFKA-21276: Explain how a paused standby changelog partition is resumed",
+   "parents": [
+    {
+     "sha": "22d2a25bcd353afc8e2ba3a02c635be96a1f1e57",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/22d2a25bcd353afc8e2ba3a02c635be96a1f1e57",
+     "html_url": "https://github.com/apache/kafka/commit/22d2a25bcd353afc8e2ba3a02c635be96a1f1e57"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "dc2aadaf884e4d303dd0ccb6928e85a653faf28b",
+   "node_id": "C_kwDOACG9q9oAKGRjMmFhZGFmODg0ZTRkMzAzZGQwY2NiNjkyOGU4NWE2NTNmYWYyOGI",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/dc2aadaf884e4d303dd0ccb6928e85a653faf28b",
+   "html_url": "https://github.com/apache/kafka/commit/dc2aadaf884e4d303dd0ccb6928e85a653faf28b",
+   "author": {
+    "name": "Eric Chang",
+    "email": "e850506@gmail.com",
+    "date": "2026-10-18T00:02:58Z"
+   },
+   "committer": {
+    "name": "Eric Chang",
+    "email": "e850506@gmail.com",
+    "date": "2026-10-18T00:02:58Z"
+   },
+   "tree": {
+    "sha": "b9971ce6f9098f86348911f85cd87ffaad885abf",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/b9971ce6f9098f86348911f85cd87ffaad885abf"
+   },
+   "message": "Merge trunk into kafka-19992-standby-pause-at-limit",
+   "parents": [
+    {
+     "sha": "91c6095c1f88aa675a76203b12890bd241a06584",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/91c6095c1f88aa675a76203b12890bd241a06584",
+     "html_url": "https://github.com/apache/kafka/commit/91c6095c1f88aa675a76203b12890bd241a06584"
+    },
+    {
+     "sha": "65566690ca1ddb584388c1026e2ff6673e9c6f19",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/65566690ca1ddb584388c1026e2ff6673e9c6f19",
+     "html_url": "https://github.com/apache/kafka/commit/65566690ca1ddb584388c1026e2ff6673e9c6f19"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "4c035f824c561a23f283a51ca5690e4d482403fb",
+   "node_id": "C_kwDOACG9q9oAKDRjMDM1ZjgyNGM1NjFhMjNmMjgzYTUxY2E1NjkwZTRkNDgyNDAzZmI",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/4c035f824c561a23f283a51ca5690e4d482403fb",
+   "html_url": "https://github.com/apache/kafka/commit/4c035f824c561a23f283a51ca5690e4d482403fb",
+   "author": {
+    "name": "Eric Chang",
+    "email": "e850506@gmail.com",
+    "date": "2026-10-19T00:02:39Z"
+   },
+   "committer": {
+    "name": "Eric Chang",
+    "email": "e850506@gmail.com",
+    "date": "2026-10-19T00:02:39Z"
+   },
+   "tree": {
+    "sha": "bad091e2a744c85ba6050b70712565a5f4976b7b",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/bad091e2a744c85ba6050b70712565a5f4976b7b"
+   },
+   "message": "Merge trunk into kafka-19992-standby-pause-at-limit",
+   "parents": [
+    {
+     "sha": "dc2aadaf884e4d303dd0ccb6928e85a653faf28b",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/dc2aadaf884e4d303dd0ccb6928e85a653faf28b",
+     "html_url": "https://github.com/apache/kafka/commit/dc2aadaf884e4d303dd0ccb6928e85a653faf28b"
+    },
+    {
+     "sha": "f90822763913e10a02478c235b34a5ea9f36856e",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/f90822763913e10a02478c235b34a5ea9f36856e",
+     "html_url": "https://github.com/apache/kafka/commit/f90822763913e10a02478c235b34a5ea9f36856e"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "id": 5676952458,
+   "node_id": "PRR_kwDOACG9q88AAAABUl9rig",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "Overall LGTM\n\n@mjsax do you free time to take a look at this PR?",
+   "commit_id": "4c035f824c561a23f283a51ca5690e4d482403fb",
+   "state": "commented",
+   "html_url": "https://github.com/apache/kafka/pull/23815#pullrequestreview-5676952458",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23815",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23815#pullrequestreview-5676952458"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23815"
+    }
+   },
+   "submitted_at": "2026-10-28T02:15:46Z",
+   "updated_at": "2026-10-28T02:15:46Z",
+   "author_association": "MEMBER",
+   "event": "reviewed"
+  }
+ ]
+}

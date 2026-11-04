@@ -1,0 +1,168 @@
+{
+ "id": "451972701",
+ "versions": {
+  "results": [
+   {
+    "by": {
+     "type": "known",
+     "username": "hrbaskaran",
+     "userKey": "073590d2a049e1bb01a06bc5857c000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Hrishi Baskaran",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2a049e1bb01a06bc5857c000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-08T03:20:11.000Z",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451972701/version/2"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451972701"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "hrbaskaran",
+     "userKey": "073590d2a049e1bb01a06bc5857c000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Hrishi Baskaran",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2a049e1bb01a06bc5857c000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-05T05:28:58.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451972701/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451972701?status=historical&version=1"
+    }
+   }
+  ],
+  "start": 0,
+  "limit": 200,
+  "size": 2,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451972701/version",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ },
+ "version_bodies": [
+  {
+   "id": "451972701",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1375: Add SuspendReason to StateRestoreListener.onRestoreSuspended",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "hrbaskaran",
+     "userKey": "073590d2a049e1bb01a06bc5857c000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Hrishi Baskaran",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2a049e1bb01a06bc5857c000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-05T05:28:58.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451972701/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451972701?status=historical&version=1"
+    }
+   },
+   "position": 1366,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><p><em>This page is meant as a template for writing a <ac:link><ri:page ri:content-title=\"Kafka Improvement Proposals\" /><ac:plain-text-link-body><![CDATA[KIP]]></ac:plain-text-link-body></ac:link>. To create a KIP choose Tools-&gt;Copy on this page and modify with your content and replace the heading with the next KIP number and a description of your issue. Replace anything in italics with your own description.</em></p><h1>Status</h1><p><strong>Current state</strong>: <em>&quot;Draft&quot;</em></p><p><strong>Discussion thread</strong>: <em><a href=\"http://mail-archives.apache.org/mod_mbox/kafka-dev/201501.mbox/%3CCAOeJiJh6Vkkca85bWYgkeOZ8rC6%2BKDh7zzq8vMKECL_7PNExTA%40mail.gmail.com%3E\">here</a> (not made yet)<br /></em></p><p><strong>JIRA</strong>: <em><a href=\"https://issues.apache.org/jira/browse/KAFKA-20879?filter=-1\">here</a></em></p><h1>Motivation</h1><p><br /></p><p>The interface <code>StateRestoreListener</code> has a method <code>onRestoreSuspended</code>  which lets a client observe the restoration of a <code>StateStore</code>  when that <code>StateStore</code>'s restoration is suspended before it is finished.</p><p><code>StateRestoreListener.onRestoreSuspended</code>  currently does not provide the reason for the restoration being suspended. The suspension can happen for one of three reasons:</p><p><br /></p><ul><li data-uuid=\"0c74ab4b-c79b-44a1-9e29-3ba9093e79fd\">the task was assigned to another instance</li><li data-uuid=\"c5931b79-c8e2-49ac-9b84-a373d521c52c\">the task was demoted to a standby task on this instance</li><li data-uuid=\"c36f5476-caac-4f75-b5a8-a1b540a696a7\">the instance is shutting down</li></ul><p><br /></p><p>A <code>StateRestoreListener</code>  is currently unable to differentiate between these reasons even though these reasons may be useful for a Kafka user who, for example, wants to emit observability to diagnose their application.</p><p><br /></p><p>The analagous listener for standby tasks <code>StateUpdateListener</code> does provide the suspension reason for its analagous method, <code>StateUpdateListener.onUpdateSuspended</code> . Adding the suspension reason to the <code>StateRestoreListener</code> </p><p>would fix this mismatch in the listener API.</p><h1>Public Interfaces</h1><p><em><span>Briefly list any new interfaces that will be introduced as part of this proposal or any existing interfaces that will be removed or changed. The purpose of this section is to concisely call out the public contract that will come along with this feature.</span></em></p><p><em><span>A public interface is any change to the following:</span></em></p><ul><li><p><em>Binary log format</em></p></li><li><p><em>The network protocol and api behavior</em></p></li><li><p>Any class in the public packages under clientsConfiguration, especially client configuration</p><ul><li><p class=\"p1\"><span class=\"s1\">org/apache/kafka/common/serialization</span></p></li><li><p class=\"p1\"><span class=\"s1\">org/apache/kafka/common</span></p></li><li><p class=\"p1\"><span class=\"s1\">org/apache/kafka/common/errors</span></p></li><li><p class=\"p1\"><span>org/apache/kafka/clients/producer</span></p></li><li><p class=\"p1\"><span>org/apache/kafka/clients/consumer (eventually, once stable)</span></p></li></ul></li><li><p><em>Monitoring</em></p></li><li><p><em>Command line tools and arguments</em></p></li><li><em>Anything else that will likely break existing users in some way when they upgrade</em></li></ul><p><br /></p><h3><em>Changes to StateUpdateListener</em></h3><p><br /></p><p><code>StateUpdateListener</code>  will add a new overload of <code>.onUpdateSuspend</code>  that has the suspension reason as an argument. the old<code>.</code><em> </em>The new overload will have a default implementation to call the old <code>.onUpdateSuspend</code>  while dropping the suspension reason.</p><p><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"c7f1592b-667b-4b7d-ac1f-8d782b7b2205\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[@InterfaceAudience.Public\npublic interface StateRestoreListener {\n\n    /**\n     * Method called at the very beginning of {@link StateStore} restoration.\n     *\n     * <p>Called for every active task that begins restoring, including one that has nothing to restore because its\n     * local state is already up to date -- a task whose state was just built up as a standby or warm-up task, for\n     * instance.\n     * In that case {@code startingOffset} equals {@code endingOffset} and\n     * {@link #onRestoreEnd(TopicPartition, String, long)} follows with a total of zero records restored, so an empty\n     * restoration is told apart by the offsets and the count rather than by the callbacks being skipped.\n     *\n     * @param topicPartition\n     *        the {@link TopicPartition} containing the values to restore\n     * @param storeName\n     *        the name of the store undergoing restoration\n     * @param startingOffset\n     *        the starting offset of the entire restoration process for this {@link TopicPartition}\n     * @param endingOffset\n     *        the exclusive ending offset of the entire restoration process for this {@link TopicPartition}\n     */\n    void onRestoreStart(\n        final TopicPartition topicPartition,\n        final String storeName,\n        final long startingOffset,\n        final long endingOffset\n    );\n\n    /**\n     * Method called after restoring a batch of records.\n     * In this case the maximum size of the batch is whatever the value of {@code max.poll.records} is set to.\n     *\n     * <p>This method is called after restoring each batch and it is advised to keep processing to a minimum.\n     * Any heavy processing will block the state updater thread and hold up recovering the next batch, hence slowing\n     * down the restore process as a whole.\n     * If you need to do any extended processing or connecting to an external service consider doing so asynchronously.\n     *\n     * @param topicPartition\n     *        the {@link TopicPartition} containing the values to restore\n     * @param storeName\n     *        the name of the store undergoing restoration\n     * @param batchEndOffset\n     *        the inclusive ending offset for the current restored batch for this {@link TopicPartition}\n     * @param numRestored\n     *        the total number of records restored in this batch for this {@link TopicPartition}\n     */\n    void onBatchRestored(\n        final TopicPartition topicPartition,\n        final String storeName,\n        final long batchEndOffset,\n        final long numRestored\n    );\n\n    /**\n     * Method called when restoring the {@link StateStore} is complete.\n     *\n     * @param topicPartition\n     *        the {@link TopicPartition} containing the values to restore\n     * @param storeName\n     *        the name of the store just restored\n     * @param totalRestored\n     *        the total number of records restored for this {@link TopicPartition}\n     */\n    void onRestoreEnd(\n        final TopicPartition topicPartition,\n        final String storeName,\n        final long totalRestored\n    );\n\n    /**\n     * Method called when restoring the {@link StateStore} is suspended before it finished, because the task stopped\n     * being an active task on this host: it was assigned elsewhere, demoted to a standby task, or this host is shutting\n     * down (the concrete reason is not reported).\n     * If the task becomes an active task on this host again -- assigned back to it, or promoted from the standby task\n     * it was demoted to -- another {@link #onRestoreStart(TopicPartition, String, long, long)} would be called.\n     *\n     * <p>A task whose restoration had already finished, and was reported through\n     * {@link #onRestoreEnd(TopicPartition, String, long)}, is not reported here when it is closed later on.\n     * In particular, an active task that had finished restoring and transitioned into the {@code RUNNING} state and\n     * is then demoted to a standby task is not reported here at all; it surfaces only as a\n     * {@link StandbyUpdateListener#onUpdateStart(TopicPartition, String, long)} for the standby task that replaces it.\n     *\n     * @param topicPartition\n     *        the {@link TopicPartition} containing the values to restore\n     * @param storeName\n     *        the name of the store just restored\n     * @param totalRestored\n     *        the total number of records restored for this {@link TopicPartition} before being suspended\n\t * @param reason\n\t * \t\t  the reason why the restoration was suspended\n     */\n\tdefault void onRestoreSuspended(\n\t\tfinal TopicPartition topicPartition,\n\t\tfinal String storeName,\n\t\tfinal long totalRestored,\n\t\tfinal SuspendReason reason) {\n\t\tonRestoreSuspended(topicPartition, storeName, totalRestored);\t\n\t}\n\n\t\n\t@Deprecated\n    default void onRestoreSuspended(\n        final TopicPartition topicPartition,\n        final String storeName,\n        final long totalRestored) {\n    }\n}\n\n]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p><br /></p><h1>Proposed Changes</h1><p><br /></p><ul><li data-uuid=\"9df23e0f-b1ea-424b-a1be-fd589e7b706c\">Swap <code>KafkaStreams.DelegatingStateRestoreListener.OnRestoreSuspended</code>  to use the new four argument overload<ul><li data-uuid=\"20f207af-891c-489d-989d-6c2adead3796\">note that <code>DelegatingStateRestoreListener</code> is package private, so this is a backwards compatible change</li></ul></li><li data-uuid=\"3305c5e9-b7f2-415f-bc21-4f3128de7f18\">Modify <code>StateChangelogReader.unregister</code> to pass the reason it calculates into its call to <code>StateRestoreListener.OnRestoreSuspended</code>  (effectively replacing the call to existing <code>.OnRestoreSuspended</code>  with a call to its overload</li></ul><h1>Compatibility, Deprecation, and Migration Plan</h1><h3>Kafka 4.X</h3><p>The existing method will be deprecated but its observable behavior will remain the same to a caller. Existing implementations of <code>StateRestoreListener</code>  will remain implementations due to the use of a default method.</p><p>This ensures that backwards compatibility will remain during 4.X releases.</p><p><br /></p><h3>Kafka 5.0</h3><p>When Kafka 5.0 releases, we can remove the deprecated original overload of <code>StateRestoreListener.OnRestoreSuspended</code> . This is a backwards breaking change.</p><h1>Test Plan</h1><p><br /></p><ul><li>Unit tests for new method overload</li><li data-uuid=\"9951f220-cda4-4cec-9492-adeeca054d68\">Enforce that an implementation that does not explicitly define the new overload of <code>OnRestoresSuspended</code>  is still able to implement <code>StateRestoreListener (</code>likely through an anonymous implementation in a unit test)</li></ul><h1>Rejected Alternatives</h1><h3>Defining a new interface that extends from StateRestoreListener that adds this overload</h3><p>this was rejected because using a default method for the new overload provided a cleaner way of adding the change without breaking backwards compatability</p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/451972701?status=historical&version=1"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1366
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=451973886",
+    "edit": "/pages/resumedraft.action?draftId=451973886&draftShareId=c465e1cb-27e8-4416-8687-8271c6c05838",
+    "tinyui": "/x/-pLwGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/451972701?status=historical&version=1"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/451972701/child?parentVersion=1",
+    "restrictions": "/rest/api/content/451972701/restriction/byOperation",
+    "history": "/rest/api/content/451972701/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/451972701/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/451972701/restriction/relevantViewRestrictions"
+   }
+  }
+ ],
+ "comments": {
+  "results": [],
+  "start": 0,
+  "limit": 200,
+  "size": 0,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/api/content/451972701/child/comment?expand=body.storage%2Cversion%2Cancestors&depth=all",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ }
+}

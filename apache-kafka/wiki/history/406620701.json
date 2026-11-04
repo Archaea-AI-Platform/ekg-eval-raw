@@ -1,0 +1,168 @@
+{
+ "id": "406620701",
+ "versions": {
+  "results": [
+   {
+    "by": {
+     "type": "known",
+     "username": "mickael.maison",
+     "userKey": "8aa9808756417d2001570e322ca30383",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/65869643/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Mickael Maison",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa9808756417d2001570e322ca30383"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-06T16:10:48.000Z",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406620701/version/2"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406620701"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mickael.maison",
+     "userKey": "8aa9808756417d2001570e322ca30383",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/65869643/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Mickael Maison",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa9808756417d2001570e322ca30383"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-02-09T10:58:59.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406620701/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406620701?status=historical&version=1"
+    }
+   }
+  ],
+  "start": 0,
+  "limit": 200,
+  "size": 2,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406620701/version",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ },
+ "version_bodies": [
+  {
+   "id": "406620701",
+   "type": "page",
+   "status": "historical",
+   "title": "Handling Jira and Confluence account requests",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "mickael.maison",
+     "userKey": "8aa9808756417d2001570e322ca30383",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/65869643/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Mickael Maison",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa9808756417d2001570e322ca30383"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-02-09T10:58:59.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406620701/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406620701?status=historical&version=1"
+    }
+   },
+   "position": -1,
+   "body": {
+    "storage": {
+     "value": "<p>To prevent spam, contributors must request Jira and Confluence accounts via the <a href=\"https://selfserve.apache.org/\">self-serve portal</a>. </p><p>PMC members must review account requests and approve or reject them based on the provided reason.<br /><br /></p><p>If a request is approved, the corresponding permissions must be granted to the new account.<br /><br />For Jira:</p><ol><li>Go to the <a href=\"https://issues.apache.org/jira/plugins/servlet/project-config/KAFKA/roles\">Users and Roles page</a></li><li>Click on the Add users to a Role button</li><li>Enter the newly approved username in the &quot;Users or groups&quot; field</li><li>Select Contributors for the role</li><li>Click on Add</li></ol><p><br /></p><p>For Confluence:</p><ol><li>Go to the <a href=\"https://cwiki.apache.org/confluence/spaces/spacepermissions.action?key=KAFKA\">Permissions</a> page</li><li>Click on the Edit Permissions button in the Individual Users section</li><li>Confirm your credentials</li><li>At the bottom of the Individual Users, enter the newly created username and click on Add</li><li>Once the page reloads, find the newly created username in the Individual Users list</li><li>Check the View/All, Pages/Add, Blog/Add, Attachments/Add, Comments/Add (the 1st, 4rd, 5th, 7th and 9th columns)</li><li>Scroll to the bottom of the page and click the Save All button</li><li>Once complete, click on the Drop Access button in the header</li></ol>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/406620701?status=historical&version=1"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": "none"
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=451979301",
+    "edit": "/pages/resumedraft.action?draftId=451979301&draftShareId=45afeca5-7683-481f-87cd-82d76f2f6d8d",
+    "tinyui": "/x/JajwGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/406620701?status=historical&version=1"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/406620701/child?parentVersion=1",
+    "restrictions": "/rest/api/content/406620701/restriction/byOperation",
+    "history": "/rest/api/content/406620701/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/406620701/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/406620701/restriction/relevantViewRestrictions"
+   }
+  }
+ ],
+ "comments": {
+  "results": [],
+  "start": 0,
+  "limit": 200,
+  "size": 0,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/api/content/406620701/child/comment?expand=body.storage%2Cversion%2Cancestors&depth=all",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ }
+}

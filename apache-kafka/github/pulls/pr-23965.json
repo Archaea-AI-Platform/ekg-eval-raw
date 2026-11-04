@@ -1,0 +1,2214 @@
+{
+ "pull": {
+  "url": "https://api.github.com/repos/apache/kafka/pulls/23965",
+  "id": 5021686407,
+  "node_id": "PR_kwDOACG9q88AAAABK1Dahw",
+  "html_url": "https://github.com/apache/kafka/pull/23965",
+  "diff_url": "https://github.com/apache/kafka/pull/23965.diff",
+  "patch_url": "https://github.com/apache/kafka/pull/23965.patch",
+  "issue_url": "https://api.github.com/repos/apache/kafka/issues/23965",
+  "commits_url": "https://api.github.com/repos/apache/kafka/pulls/23965/commits",
+  "review_comments_url": "https://api.github.com/repos/apache/kafka/pulls/23965/comments",
+  "review_comment_url": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}",
+  "comments_url": "https://api.github.com/repos/apache/kafka/issues/23965/comments",
+  "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/f946b43aae6813640a5cadae0a1533d2b914bb89",
+  "number": 23965,
+  "state": "open",
+  "locked": false,
+  "title": "KAFKA-20925: Use Request Header v3 for AlterPartition, AssignReplicasToDirs, AllocateProducerIds and ControllerRegistration ",
+  "user": {
+   "login": "alanlau28",
+   "id": 72107214,
+   "node_id": "MDQ6VXNlcjcyMTA3MjE0",
+   "avatar_url": "https://avatars.githubusercontent.com/u/72107214?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/alanlau28",
+   "html_url": "https://github.com/alanlau28",
+   "followers_url": "https://api.github.com/users/alanlau28/followers",
+   "following_url": "https://api.github.com/users/alanlau28/following{/other_user}",
+   "gists_url": "https://api.github.com/users/alanlau28/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/alanlau28/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/alanlau28/subscriptions",
+   "organizations_url": "https://api.github.com/users/alanlau28/orgs",
+   "repos_url": "https://api.github.com/users/alanlau28/repos",
+   "events_url": "https://api.github.com/users/alanlau28/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/alanlau28/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "body": "Jira: https://issues.apache.org/jira/browse/KAFKA-20925\n\nKIP-1313:\nhttps://cwiki.apache.org/confluence/spaces/KAFKA/pages/406624038/KIP-1313+Client+instance+ID+in+all+request+headers\n\nThis PR adds new versions of AlterPartition, AssignReplicasToDirs,\nAllocateProducerIds and ControllerRegistration that use the v3 request\nheader. Brokers and controllers send the new\nversions only when the metadata version is 4.5-IV0 or later.",
+  "labels": [
+   {
+    "id": 838330122,
+    "node_id": "MDU6TGFiZWw4MzgzMzAxMjI=",
+    "url": "https://api.github.com/repos/apache/kafka/labels/core",
+    "name": "core",
+    "description": "Kafka Broker",
+    "color": "ed5a86",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 2650268685,
+    "node_id": "MDU6TGFiZWwyNjUwMjY4Njg1",
+    "url": "https://api.github.com/repos/apache/kafka/labels/kraft",
+    "name": "kraft",
+    "description": "",
+    "color": "FBCA04",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 7489285940,
+    "node_id": "LA_kwDOACG9q88AAAABvmVvNA",
+    "url": "https://api.github.com/repos/apache/kafka/labels/transactions",
+    "name": "transactions",
+    "description": "Transactions and EOS",
+    "color": "C71889",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 7491388177,
+    "node_id": "LA_kwDOACG9q88AAAABvoWDEQ",
+    "url": "https://api.github.com/repos/apache/kafka/labels/clients",
+    "name": "clients",
+    "description": null,
+    "color": "ededed",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 7522931565,
+    "node_id": "LA_kwDOACG9q88AAAABwGbTbQ",
+    "url": "https://api.github.com/repos/apache/kafka/labels/ci-approved",
+    "name": "ci-approved",
+    "description": "",
+    "color": "ffffff",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 7865607612,
+    "node_id": "LA_kwDOACG9q88AAAAB1NOlvA",
+    "url": "https://api.github.com/repos/apache/kafka/labels/triage",
+    "name": "triage",
+    "description": "PRs from the community",
+    "color": "006b75",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   }
+  ],
+  "milestone": null,
+  "active_lock_reason": null,
+  "created_at": "2026-10-26T17:19:31Z",
+  "updated_at": "2026-10-27T10:59:05Z",
+  "closed_at": null,
+  "merged_at": null,
+  "merge_commit_sha": "86f5ccf12559d6cd0ed3de76fc2619d9c3c0a370",
+  "assignee": null,
+  "assignees": [],
+  "requested_reviewers": [
+   {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  ],
+  "requested_teams": [],
+  "head": {
+   "label": "alanlau28:KAFKA-20925-node-to-controller-header-v3",
+   "ref": "KAFKA-20925-node-to-controller-header-v3",
+   "repo": {
+    "id": 1250492157,
+    "node_id": "R_kgDOSoj-_Q",
+    "name": "kafka",
+    "full_name": "alanlau28/kafka",
+    "owner": {
+     "login": "alanlau28",
+     "id": 72107214,
+     "node_id": "MDQ6VXNlcjcyMTA3MjE0",
+     "avatar_url": "https://avatars.githubusercontent.com/u/72107214?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/alanlau28",
+     "html_url": "https://github.com/alanlau28",
+     "followers_url": "https://api.github.com/users/alanlau28/followers",
+     "following_url": "https://api.github.com/users/alanlau28/following{/other_user}",
+     "gists_url": "https://api.github.com/users/alanlau28/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/alanlau28/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/alanlau28/subscriptions",
+     "organizations_url": "https://api.github.com/users/alanlau28/orgs",
+     "repos_url": "https://api.github.com/users/alanlau28/repos",
+     "events_url": "https://api.github.com/users/alanlau28/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/alanlau28/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": true,
+    "archived": false,
+    "disabled": false,
+    "description": "Apache Kafka - A distributed event streaming platform",
+    "homepage": "https://kafka.apache.org/",
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [],
+    "forks_count": 0,
+    "forks": 0,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "watchers": 0,
+    "open_issues_count": 0,
+    "open_issues": 0,
+    "size": 316951,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-28T17:17:33Z",
+    "created_at": "2026-05-26T17:27:15Z",
+    "updated_at": "2026-05-29T17:43:28Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/alanlau28/kafka",
+    "html_url": "https://github.com/alanlau28/kafka",
+    "archive_url": "https://api.github.com/repos/alanlau28/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/alanlau28/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/alanlau28/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/alanlau28/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/alanlau28/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/alanlau28/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/alanlau28/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/alanlau28/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/alanlau28/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/alanlau28/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/alanlau28/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/alanlau28/kafka/downloads",
+    "events_url": "https://api.github.com/repos/alanlau28/kafka/events",
+    "forks_url": "https://api.github.com/repos/alanlau28/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/alanlau28/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/alanlau28/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/alanlau28/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/alanlau28/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/alanlau28/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/alanlau28/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/alanlau28/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/alanlau28/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/alanlau28/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/alanlau28/kafka/languages",
+    "merges_url": "https://api.github.com/repos/alanlau28/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/alanlau28/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/alanlau28/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/alanlau28/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/alanlau28/kafka/releases{/id}",
+    "ssh_url": "git@github.com:alanlau28/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/alanlau28/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/alanlau28/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/alanlau28/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/alanlau28/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/alanlau28/kafka/tags",
+    "teams_url": "https://api.github.com/repos/alanlau28/kafka/teams",
+    "trees_url": "https://api.github.com/repos/alanlau28/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/alanlau28/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/alanlau28/kafka/hooks",
+    "svn_url": "https://github.com/alanlau28/kafka"
+   },
+   "sha": "f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "user": {
+    "login": "alanlau28",
+    "id": 72107214,
+    "node_id": "MDQ6VXNlcjcyMTA3MjE0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/72107214?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alanlau28",
+    "html_url": "https://github.com/alanlau28",
+    "followers_url": "https://api.github.com/users/alanlau28/followers",
+    "following_url": "https://api.github.com/users/alanlau28/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alanlau28/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alanlau28/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alanlau28/subscriptions",
+    "organizations_url": "https://api.github.com/users/alanlau28/orgs",
+    "repos_url": "https://api.github.com/users/alanlau28/repos",
+    "events_url": "https://api.github.com/users/alanlau28/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alanlau28/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "base": {
+   "label": "apache:trunk",
+   "ref": "trunk",
+   "repo": {
+    "id": 2211243,
+    "node_id": "MDEwOlJlcG9zaXRvcnkyMjExMjQz",
+    "name": "kafka",
+    "full_name": "apache/kafka",
+    "owner": {
+     "login": "apache",
+     "id": 47359,
+     "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+     "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/apache",
+     "html_url": "https://github.com/apache",
+     "followers_url": "https://api.github.com/users/apache/followers",
+     "following_url": "https://api.github.com/users/apache/following{/other_user}",
+     "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+     "organizations_url": "https://api.github.com/users/apache/orgs",
+     "repos_url": "https://api.github.com/users/apache/repos",
+     "events_url": "https://api.github.com/users/apache/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/apache/received_events",
+     "type": "Organization",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": false,
+    "archived": false,
+    "disabled": false,
+    "description": "Apache Kafka - A distributed event streaming platform",
+    "homepage": "https://kafka.apache.org/",
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [
+     "java",
+     "kafka",
+     "scala",
+     "streaming"
+    ],
+    "forks_count": 15637,
+    "forks": 15637,
+    "stargazers_count": 34153,
+    "watchers_count": 34153,
+    "watchers": 34153,
+    "open_issues_count": 674,
+    "open_issues": 674,
+    "size": 322164,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-29T11:37:21Z",
+    "created_at": "2011-08-15T18:06:16Z",
+    "updated_at": "2026-10-29T11:37:29Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/apache/kafka",
+    "html_url": "https://github.com/apache/kafka",
+    "archive_url": "https://api.github.com/repos/apache/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/apache/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/apache/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/apache/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/apache/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/apache/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/apache/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/apache/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/apache/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/apache/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/apache/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/apache/kafka/downloads",
+    "events_url": "https://api.github.com/repos/apache/kafka/events",
+    "forks_url": "https://api.github.com/repos/apache/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/apache/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/apache/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/apache/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/apache/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/apache/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/apache/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/apache/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/apache/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/apache/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/apache/kafka/languages",
+    "merges_url": "https://api.github.com/repos/apache/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/apache/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/apache/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/apache/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/apache/kafka/releases{/id}",
+    "ssh_url": "git@github.com:apache/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/apache/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/apache/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/apache/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/apache/kafka/tags",
+    "teams_url": "https://api.github.com/repos/apache/kafka/teams",
+    "trees_url": "https://api.github.com/repos/apache/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/apache/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/apache/kafka/hooks",
+    "svn_url": "https://github.com/apache/kafka"
+   },
+   "sha": "286b144260187dc51fe128d22ded78f68280a48f",
+   "user": {
+    "login": "apache",
+    "id": 47359,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/apache",
+    "html_url": "https://github.com/apache",
+    "followers_url": "https://api.github.com/users/apache/followers",
+    "following_url": "https://api.github.com/users/apache/following{/other_user}",
+    "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+    "organizations_url": "https://api.github.com/users/apache/orgs",
+    "repos_url": "https://api.github.com/users/apache/repos",
+    "events_url": "https://api.github.com/users/apache/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/apache/received_events",
+    "type": "Organization",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "_links": {
+   "comments": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23965/comments"
+   },
+   "commits": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23965/commits"
+   },
+   "statuses": {
+    "href": "https://api.github.com/repos/apache/kafka/statuses/f946b43aae6813640a5cadae0a1533d2b914bb89"
+   },
+   "html": {
+    "href": "https://github.com/apache/kafka/pull/23965"
+   },
+   "issue": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23965"
+   },
+   "review_comments": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23965/comments"
+   },
+   "review_comment": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}"
+   },
+   "self": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23965"
+   }
+  },
+  "author_association": "CONTRIBUTOR",
+  "auto_merge": null,
+  "draft": false,
+  "merged": false,
+  "mergeable": true,
+  "rebaseable": false,
+  "mergeable_state": "blocked",
+  "merged_by": null,
+  "comments": 0,
+  "review_comments": 0,
+  "maintainer_can_modify": true,
+  "commits": 9,
+  "additions": 251,
+  "deletions": 74,
+  "changed_files": 30
+ },
+ "reviews": [],
+ "review_comments": [],
+ "issue_comments": [],
+ "commits": [
+  {
+   "sha": "eade98e12deed1dabb4f770114e0bda0b52239cf",
+   "node_id": "C_kwDOSoj-_doAKGVhZGU5OGUxMmRlZWQxZGFiYjRmNzcwMTE0ZTBiZGEwYjUyMjM5Y2Y",
+   "commit": {
+    "author": {
+     "name": "Alan Lau",
+     "email": "alau@confluent.io",
+     "date": "2026-10-15T19:44:57Z"
+    },
+    "committer": {
+     "name": "Alan Lau",
+     "email": "alau@confluent.io",
+     "date": "2026-10-26T14:42:38Z"
+    },
+    "message": "KAFKA-20925: Use request header v3 in AlterPartition",
+    "tree": {
+     "sha": "6c53f2e36cf443ff5feb8f42fccfb297a5978632",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/6c53f2e36cf443ff5feb8f42fccfb297a5978632"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/eade98e12deed1dabb4f770114e0bda0b52239cf",
+    "comment_count": 0,
+    "verification": {
+     "verified": true,
+     "reason": "valid",
+     "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAg1humXtAUQ9htLOCIJ18i54BCup\n0Az9T287L2OM7i99UAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQMqz1gyxtwnXkWS+xvZ4ZNgeM4M1ccbgdsgX0YoXQkHQAK3jsSouTiCw65GH9VdUJL\nfaiBYEBwGvM36qnAAARgo=\n-----END SSH SIGNATURE-----",
+     "payload": "tree 6c53f2e36cf443ff5feb8f42fccfb297a5978632\nparent 8de94149073a19f1c8606636823c0c8833cf8db7\nauthor Alan Lau <alau@confluent.io> 1792093497 -0400\ncommitter Alan Lau <alau@confluent.io> 1793025758 -0400\n\nKAFKA-20925: Use request header v3 in AlterPartition\n",
+     "verified_at": "2026-10-26T14:58:10Z"
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/eade98e12deed1dabb4f770114e0bda0b52239cf",
+   "html_url": "https://github.com/apache/kafka/commit/eade98e12deed1dabb4f770114e0bda0b52239cf",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/eade98e12deed1dabb4f770114e0bda0b52239cf/comments",
+   "author": {
+    "login": "alanlau28",
+    "id": 72107214,
+    "node_id": "MDQ6VXNlcjcyMTA3MjE0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/72107214?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alanlau28",
+    "html_url": "https://github.com/alanlau28",
+    "followers_url": "https://api.github.com/users/alanlau28/followers",
+    "following_url": "https://api.github.com/users/alanlau28/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alanlau28/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alanlau28/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alanlau28/subscriptions",
+    "organizations_url": "https://api.github.com/users/alanlau28/orgs",
+    "repos_url": "https://api.github.com/users/alanlau28/repos",
+    "events_url": "https://api.github.com/users/alanlau28/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alanlau28/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "alanlau28",
+    "id": 72107214,
+    "node_id": "MDQ6VXNlcjcyMTA3MjE0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/72107214?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alanlau28",
+    "html_url": "https://github.com/alanlau28",
+    "followers_url": "https://api.github.com/users/alanlau28/followers",
+    "following_url": "https://api.github.com/users/alanlau28/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alanlau28/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alanlau28/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alanlau28/subscriptions",
+    "organizations_url": "https://api.github.com/users/alanlau28/orgs",
+    "repos_url": "https://api.github.com/users/alanlau28/repos",
+    "events_url": "https://api.github.com/users/alanlau28/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alanlau28/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "8de94149073a19f1c8606636823c0c8833cf8db7",
+     "url": "https://api.github.com/repos/apache/kafka/commits/8de94149073a19f1c8606636823c0c8833cf8db7",
+     "html_url": "https://github.com/apache/kafka/commit/8de94149073a19f1c8606636823c0c8833cf8db7"
+    }
+   ]
+  },
+  {
+   "sha": "5c262e6911125a1566f9112e24253bacd99caa91",
+   "node_id": "C_kwDOSoj-_doAKDVjMjYyZTY5MTExMjVhMTU2NmY5MTEyZTI0MjUzYmFjZDk5Y2FhOTE",
+   "commit": {
+    "author": {
+     "name": "Alan Lau",
+     "email": "alau@confluent.io",
+     "date": "2026-10-15T19:49:14Z"
+    },
+    "committer": {
+     "name": "Alan Lau",
+     "email": "alau@confluent.io",
+     "date": "2026-10-26T14:42:38Z"
+    },
+    "message": "KAFKA-20925: Use request header v3 in AssignReplicasToDirs",
+    "tree": {
+     "sha": "36f7dc6747c628382c4256dab39c74d9485e5a00",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/36f7dc6747c628382c4256dab39c74d9485e5a00"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/5c262e6911125a1566f9112e24253bacd99caa91",
+    "comment_count": 0,
+    "verification": {
+     "verified": true,
+     "reason": "valid",
+     "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAg1humXtAUQ9htLOCIJ18i54BCup\n0Az9T287L2OM7i99UAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQMuEzwiRkRzbNLUWDhGNFFTzFxmkNNybOuetodnQuhGuAuXhzd25M3rcCm6cpIcSvN\nrd/2bB2sfwCZVndzk9jAE=\n-----END SSH SIGNATURE-----",
+     "payload": "tree 36f7dc6747c628382c4256dab39c74d9485e5a00\nparent eade98e12deed1dabb4f770114e0bda0b52239cf\nauthor Alan Lau <alau@confluent.io> 1792093754 -0400\ncommitter Alan Lau <alau@confluent.io> 1793025758 -0400\n\nKAFKA-20925: Use request header v3 in AssignReplicasToDirs\n",
+     "verified_at": "2026-10-26T14:58:10Z"
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/5c262e6911125a1566f9112e24253bacd99caa91",
+   "html_url": "https://github.com/apache/kafka/commit/5c262e6911125a1566f9112e24253bacd99caa91",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/5c262e6911125a1566f9112e24253bacd99caa91/comments",
+   "author": {
+    "login": "alanlau28",
+    "id": 72107214,
+    "node_id": "MDQ6VXNlcjcyMTA3MjE0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/72107214?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alanlau28",
+    "html_url": "https://github.com/alanlau28",
+    "followers_url": "https://api.github.com/users/alanlau28/followers",
+    "following_url": "https://api.github.com/users/alanlau28/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alanlau28/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alanlau28/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alanlau28/subscriptions",
+    "organizations_url": "https://api.github.com/users/alanlau28/orgs",
+    "repos_url": "https://api.github.com/users/alanlau28/repos",
+    "events_url": "https://api.github.com/users/alanlau28/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alanlau28/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "alanlau28",
+    "id": 72107214,
+    "node_id": "MDQ6VXNlcjcyMTA3MjE0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/72107214?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alanlau28",
+    "html_url": "https://github.com/alanlau28",
+    "followers_url": "https://api.github.com/users/alanlau28/followers",
+    "following_url": "https://api.github.com/users/alanlau28/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alanlau28/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alanlau28/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alanlau28/subscriptions",
+    "organizations_url": "https://api.github.com/users/alanlau28/orgs",
+    "repos_url": "https://api.github.com/users/alanlau28/repos",
+    "events_url": "https://api.github.com/users/alanlau28/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alanlau28/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "eade98e12deed1dabb4f770114e0bda0b52239cf",
+     "url": "https://api.github.com/repos/apache/kafka/commits/eade98e12deed1dabb4f770114e0bda0b52239cf",
+     "html_url": "https://github.com/apache/kafka/commit/eade98e12deed1dabb4f770114e0bda0b52239cf"
+    }
+   ]
+  },
+  {
+   "sha": "7bb58696cc83e65168417f9a9ef40cae00eb755a",
+   "node_id": "C_kwDOSoj-_doAKDdiYjU4Njk2Y2M4M2U2NTE2ODQxN2Y5YTllZjQwY2FlMDBlYjc1NWE",
+   "commit": {
+    "author": {
+     "name": "Alan Lau",
+     "email": "alau@confluent.io",
+     "date": "2026-10-16T19:46:45Z"
+    },
+    "committer": {
+     "name": "Alan Lau",
+     "email": "alau@confluent.io",
+     "date": "2026-10-26T14:42:38Z"
+    },
+    "message": "KAFKA-20925: Use request header v3 in AllocateProducerIds",
+    "tree": {
+     "sha": "d3425f0b595934e76deabbe1f236a94d7ca38816",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/d3425f0b595934e76deabbe1f236a94d7ca38816"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/7bb58696cc83e65168417f9a9ef40cae00eb755a",
+    "comment_count": 0,
+    "verification": {
+     "verified": true,
+     "reason": "valid",
+     "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAg1humXtAUQ9htLOCIJ18i54BCup\n0Az9T287L2OM7i99UAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQJ/Arbnmx+LKRFFUsOlK9WS3OQKt+jBwsEG0fe4basq2Us+lZJf928DJaKqRqJQOpR\nlMVVatc1rS2HX3zQmpAQ0=\n-----END SSH SIGNATURE-----",
+     "payload": "tree d3425f0b595934e76deabbe1f236a94d7ca38816\nparent 5c262e6911125a1566f9112e24253bacd99caa91\nauthor Alan Lau <alau@confluent.io> 1792180005 -0400\ncommitter Alan Lau <alau@confluent.io> 1793025758 -0400\n\nKAFKA-20925: Use request header v3 in AllocateProducerIds\n",
+     "verified_at": "2026-10-26T14:58:10Z"
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/7bb58696cc83e65168417f9a9ef40cae00eb755a",
+   "html_url": "https://github.com/apache/kafka/commit/7bb58696cc83e65168417f9a9ef40cae00eb755a",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/7bb58696cc83e65168417f9a9ef40cae00eb755a/comments",
+   "author": {
+    "login": "alanlau28",
+    "id": 72107214,
+    "node_id": "MDQ6VXNlcjcyMTA3MjE0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/72107214?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alanlau28",
+    "html_url": "https://github.com/alanlau28",
+    "followers_url": "https://api.github.com/users/alanlau28/followers",
+    "following_url": "https://api.github.com/users/alanlau28/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alanlau28/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alanlau28/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alanlau28/subscriptions",
+    "organizations_url": "https://api.github.com/users/alanlau28/orgs",
+    "repos_url": "https://api.github.com/users/alanlau28/repos",
+    "events_url": "https://api.github.com/users/alanlau28/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alanlau28/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "alanlau28",
+    "id": 72107214,
+    "node_id": "MDQ6VXNlcjcyMTA3MjE0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/72107214?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alanlau28",
+    "html_url": "https://github.com/alanlau28",
+    "followers_url": "https://api.github.com/users/alanlau28/followers",
+    "following_url": "https://api.github.com/users/alanlau28/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alanlau28/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alanlau28/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alanlau28/subscriptions",
+    "organizations_url": "https://api.github.com/users/alanlau28/orgs",
+    "repos_url": "https://api.github.com/users/alanlau28/repos",
+    "events_url": "https://api.github.com/users/alanlau28/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alanlau28/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "5c262e6911125a1566f9112e24253bacd99caa91",
+     "url": "https://api.github.com/repos/apache/kafka/commits/5c262e6911125a1566f9112e24253bacd99caa91",
+     "html_url": "https://github.com/apache/kafka/commit/5c262e6911125a1566f9112e24253bacd99caa91"
+    }
+   ]
+  },
+  {
+   "sha": "34205c93b37d7da0d485c91bb1829958765588e2",
+   "node_id": "C_kwDOSoj-_doAKDM0MjA1YzkzYjM3ZDdkYTBkNDg1YzkxYmIxODI5OTU4NzY1NTg4ZTI",
+   "commit": {
+    "author": {
+     "name": "Alan Lau",
+     "email": "alau@confluent.io",
+     "date": "2026-10-16T19:46:45Z"
+    },
+    "committer": {
+     "name": "Alan Lau",
+     "email": "alau@confluent.io",
+     "date": "2026-10-26T14:42:38Z"
+    },
+    "message": "KAFKA-20925: Use request header v3 in ControllerRegistration",
+    "tree": {
+     "sha": "39da41ad24d87c72837ea500f676339f5af38278",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/39da41ad24d87c72837ea500f676339f5af38278"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/34205c93b37d7da0d485c91bb1829958765588e2",
+    "comment_count": 0,
+    "verification": {
+     "verified": true,
+     "reason": "valid",
+     "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAg1humXtAUQ9htLOCIJ18i54BCup\n0Az9T287L2OM7i99UAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQLHL40jcnn9DjcR4shjZf28PHutJ0btvsqrgRy8nBzYqBFrQPBgBUOqC/nqIwVpsNj\n82M0G5DqaiOyPNCruBNgI=\n-----END SSH SIGNATURE-----",
+     "payload": "tree 39da41ad24d87c72837ea500f676339f5af38278\nparent 7bb58696cc83e65168417f9a9ef40cae00eb755a\nauthor Alan Lau <alau@confluent.io> 1792180005 -0400\ncommitter Alan Lau <alau@confluent.io> 1793025758 -0400\n\nKAFKA-20925: Use request header v3 in ControllerRegistration\n",
+     "verified_at": "2026-10-26T14:58:10Z"
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/34205c93b37d7da0d485c91bb1829958765588e2",
+   "html_url": "https://github.com/apache/kafka/commit/34205c93b37d7da0d485c91bb1829958765588e2",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/34205c93b37d7da0d485c91bb1829958765588e2/comments",
+   "author": {
+    "login": "alanlau28",
+    "id": 72107214,
+    "node_id": "MDQ6VXNlcjcyMTA3MjE0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/72107214?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alanlau28",
+    "html_url": "https://github.com/alanlau28",
+    "followers_url": "https://api.github.com/users/alanlau28/followers",
+    "following_url": "https://api.github.com/users/alanlau28/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alanlau28/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alanlau28/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alanlau28/subscriptions",
+    "organizations_url": "https://api.github.com/users/alanlau28/orgs",
+    "repos_url": "https://api.github.com/users/alanlau28/repos",
+    "events_url": "https://api.github.com/users/alanlau28/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alanlau28/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "alanlau28",
+    "id": 72107214,
+    "node_id": "MDQ6VXNlcjcyMTA3MjE0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/72107214?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alanlau28",
+    "html_url": "https://github.com/alanlau28",
+    "followers_url": "https://api.github.com/users/alanlau28/followers",
+    "following_url": "https://api.github.com/users/alanlau28/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alanlau28/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alanlau28/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alanlau28/subscriptions",
+    "organizations_url": "https://api.github.com/users/alanlau28/orgs",
+    "repos_url": "https://api.github.com/users/alanlau28/repos",
+    "events_url": "https://api.github.com/users/alanlau28/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alanlau28/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "7bb58696cc83e65168417f9a9ef40cae00eb755a",
+     "url": "https://api.github.com/repos/apache/kafka/commits/7bb58696cc83e65168417f9a9ef40cae00eb755a",
+     "html_url": "https://github.com/apache/kafka/commit/7bb58696cc83e65168417f9a9ef40cae00eb755a"
+    }
+   ]
+  },
+  {
+   "sha": "3dfe745b4fa42a41f03ffa7cb49d99d9039ffd05",
+   "node_id": "C_kwDOSoj-_doAKDNkZmU3NDViNGZhNDJhNDFmMDNmZmE3Y2I0OWQ5OWQ5MDM5ZmZkMDU",
+   "commit": {
+    "author": {
+     "name": "Alan Lau",
+     "email": "alau@confluent.io",
+     "date": "2026-10-23T14:28:17Z"
+    },
+    "committer": {
+     "name": "Alan Lau",
+     "email": "alau@confluent.io",
+     "date": "2026-10-26T14:42:39Z"
+    },
+    "message": "KAFKA-20925: Rename LAST_VERSION_BEFORE_REQUEST_HEADER_V3 to LATEST_VERSION_BEFORE_REQUEST_HEADER_V3",
+    "tree": {
+     "sha": "6aae291bbd7025bb87b3001bd5814e5094bdd924",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/6aae291bbd7025bb87b3001bd5814e5094bdd924"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/3dfe745b4fa42a41f03ffa7cb49d99d9039ffd05",
+    "comment_count": 0,
+    "verification": {
+     "verified": true,
+     "reason": "valid",
+     "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAg1humXtAUQ9htLOCIJ18i54BCup\n0Az9T287L2OM7i99UAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQJnaJ5/y0+rdcsAx7lwfvNtfuSGiU+Y0dVx2qI7D6Exoxwa6sCEiDY/Cp6EbnrZ8Gk\nF0658fkLcV+V2D1TbUnAM=\n-----END SSH SIGNATURE-----",
+     "payload": "tree 6aae291bbd7025bb87b3001bd5814e5094bdd924\nparent 34205c93b37d7da0d485c91bb1829958765588e2\nauthor Alan Lau <alau@confluent.io> 1792765697 -0400\ncommitter Alan Lau <alau@confluent.io> 1793025759 -0400\n\nKAFKA-20925: Rename LAST_VERSION_BEFORE_REQUEST_HEADER_V3 to LATEST_VERSION_BEFORE_REQUEST_HEADER_V3\n",
+     "verified_at": "2026-10-26T14:58:10Z"
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/3dfe745b4fa42a41f03ffa7cb49d99d9039ffd05",
+   "html_url": "https://github.com/apache/kafka/commit/3dfe745b4fa42a41f03ffa7cb49d99d9039ffd05",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/3dfe745b4fa42a41f03ffa7cb49d99d9039ffd05/comments",
+   "author": {
+    "login": "alanlau28",
+    "id": 72107214,
+    "node_id": "MDQ6VXNlcjcyMTA3MjE0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/72107214?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alanlau28",
+    "html_url": "https://github.com/alanlau28",
+    "followers_url": "https://api.github.com/users/alanlau28/followers",
+    "following_url": "https://api.github.com/users/alanlau28/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alanlau28/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alanlau28/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alanlau28/subscriptions",
+    "organizations_url": "https://api.github.com/users/alanlau28/orgs",
+    "repos_url": "https://api.github.com/users/alanlau28/repos",
+    "events_url": "https://api.github.com/users/alanlau28/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alanlau28/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "alanlau28",
+    "id": 72107214,
+    "node_id": "MDQ6VXNlcjcyMTA3MjE0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/72107214?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alanlau28",
+    "html_url": "https://github.com/alanlau28",
+    "followers_url": "https://api.github.com/users/alanlau28/followers",
+    "following_url": "https://api.github.com/users/alanlau28/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alanlau28/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alanlau28/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alanlau28/subscriptions",
+    "organizations_url": "https://api.github.com/users/alanlau28/orgs",
+    "repos_url": "https://api.github.com/users/alanlau28/repos",
+    "events_url": "https://api.github.com/users/alanlau28/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alanlau28/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "34205c93b37d7da0d485c91bb1829958765588e2",
+     "url": "https://api.github.com/repos/apache/kafka/commits/34205c93b37d7da0d485c91bb1829958765588e2",
+     "html_url": "https://github.com/apache/kafka/commit/34205c93b37d7da0d485c91bb1829958765588e2"
+    }
+   ]
+  },
+  {
+   "sha": "53d11c1d65889227dbc989dd92b27c6a03f8d0c5",
+   "node_id": "C_kwDOSoj-_doAKDUzZDExYzFkNjU4ODkyMjdkYmM5ODlkZDkyYjI3YzZhMDNmOGQwYzU",
+   "commit": {
+    "author": {
+     "name": "Alan Lau",
+     "email": "alau@confluent.io",
+     "date": "2026-10-26T14:42:56Z"
+    },
+    "committer": {
+     "name": "Alan Lau",
+     "email": "alau@confluent.io",
+     "date": "2026-10-26T14:42:56Z"
+    },
+    "message": "KAFKA-20925: Remove latestVersionUnstable from the node-to-controller RPCs",
+    "tree": {
+     "sha": "f1bd88a7d1c91d1becced3da5a969762fe1591f5",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/f1bd88a7d1c91d1becced3da5a969762fe1591f5"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/53d11c1d65889227dbc989dd92b27c6a03f8d0c5",
+    "comment_count": 0,
+    "verification": {
+     "verified": true,
+     "reason": "valid",
+     "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAg1humXtAUQ9htLOCIJ18i54BCup\n0Az9T287L2OM7i99UAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQD5rRGVFV4ODz/04PeDYWQStN5oSwfEpphShF9AVjipqf9Gxf50DxD6tBCtjRjJ1el\na4rnuB8QP9aByPISnSzwM=\n-----END SSH SIGNATURE-----",
+     "payload": "tree f1bd88a7d1c91d1becced3da5a969762fe1591f5\nparent 3dfe745b4fa42a41f03ffa7cb49d99d9039ffd05\nauthor Alan Lau <alau@confluent.io> 1793025776 -0400\ncommitter Alan Lau <alau@confluent.io> 1793025776 -0400\n\nKAFKA-20925: Remove latestVersionUnstable from the node-to-controller RPCs\n",
+     "verified_at": "2026-10-26T14:58:10Z"
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/53d11c1d65889227dbc989dd92b27c6a03f8d0c5",
+   "html_url": "https://github.com/apache/kafka/commit/53d11c1d65889227dbc989dd92b27c6a03f8d0c5",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/53d11c1d65889227dbc989dd92b27c6a03f8d0c5/comments",
+   "author": {
+    "login": "alanlau28",
+    "id": 72107214,
+    "node_id": "MDQ6VXNlcjcyMTA3MjE0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/72107214?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alanlau28",
+    "html_url": "https://github.com/alanlau28",
+    "followers_url": "https://api.github.com/users/alanlau28/followers",
+    "following_url": "https://api.github.com/users/alanlau28/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alanlau28/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alanlau28/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alanlau28/subscriptions",
+    "organizations_url": "https://api.github.com/users/alanlau28/orgs",
+    "repos_url": "https://api.github.com/users/alanlau28/repos",
+    "events_url": "https://api.github.com/users/alanlau28/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alanlau28/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "alanlau28",
+    "id": 72107214,
+    "node_id": "MDQ6VXNlcjcyMTA3MjE0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/72107214?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alanlau28",
+    "html_url": "https://github.com/alanlau28",
+    "followers_url": "https://api.github.com/users/alanlau28/followers",
+    "following_url": "https://api.github.com/users/alanlau28/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alanlau28/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alanlau28/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alanlau28/subscriptions",
+    "organizations_url": "https://api.github.com/users/alanlau28/orgs",
+    "repos_url": "https://api.github.com/users/alanlau28/repos",
+    "events_url": "https://api.github.com/users/alanlau28/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alanlau28/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "3dfe745b4fa42a41f03ffa7cb49d99d9039ffd05",
+     "url": "https://api.github.com/repos/apache/kafka/commits/3dfe745b4fa42a41f03ffa7cb49d99d9039ffd05",
+     "html_url": "https://github.com/apache/kafka/commit/3dfe745b4fa42a41f03ffa7cb49d99d9039ffd05"
+    }
+   ]
+  },
+  {
+   "sha": "6344d6689413f5a7efda6fa2a7f3c4052f18bc9e",
+   "node_id": "C_kwDOSoj-_doAKDYzNDRkNjY4OTQxM2Y1YTdlZmRhNmZhMmE3ZjNjNDA1MmYxOGJjOWU",
+   "commit": {
+    "author": {
+     "name": "Alan Lau",
+     "email": "alau@confluent.io",
+     "date": "2026-10-26T14:43:20Z"
+    },
+    "committer": {
+     "name": "Alan Lau",
+     "email": "alau@confluent.io",
+     "date": "2026-10-26T14:43:20Z"
+    },
+    "message": "Update tests",
+    "tree": {
+     "sha": "56da5e26592bb195134b47eb255371e8ec8209d4",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/56da5e26592bb195134b47eb255371e8ec8209d4"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/6344d6689413f5a7efda6fa2a7f3c4052f18bc9e",
+    "comment_count": 0,
+    "verification": {
+     "verified": true,
+     "reason": "valid",
+     "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAg1humXtAUQ9htLOCIJ18i54BCup\n0Az9T287L2OM7i99UAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQDvzNWVbqoXlFUfIWZbpKSXPbcrk+QcqWYucvCi0zcoAs/neK3oRU03SGsy/yonYBO\n6arnqbhdQXwNduwm2dAAo=\n-----END SSH SIGNATURE-----",
+     "payload": "tree 56da5e26592bb195134b47eb255371e8ec8209d4\nparent 53d11c1d65889227dbc989dd92b27c6a03f8d0c5\nauthor Alan Lau <alau@confluent.io> 1793025800 -0400\ncommitter Alan Lau <alau@confluent.io> 1793025800 -0400\n\nUpdate tests\n",
+     "verified_at": "2026-10-26T14:58:10Z"
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/6344d6689413f5a7efda6fa2a7f3c4052f18bc9e",
+   "html_url": "https://github.com/apache/kafka/commit/6344d6689413f5a7efda6fa2a7f3c4052f18bc9e",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/6344d6689413f5a7efda6fa2a7f3c4052f18bc9e/comments",
+   "author": {
+    "login": "alanlau28",
+    "id": 72107214,
+    "node_id": "MDQ6VXNlcjcyMTA3MjE0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/72107214?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alanlau28",
+    "html_url": "https://github.com/alanlau28",
+    "followers_url": "https://api.github.com/users/alanlau28/followers",
+    "following_url": "https://api.github.com/users/alanlau28/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alanlau28/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alanlau28/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alanlau28/subscriptions",
+    "organizations_url": "https://api.github.com/users/alanlau28/orgs",
+    "repos_url": "https://api.github.com/users/alanlau28/repos",
+    "events_url": "https://api.github.com/users/alanlau28/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alanlau28/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "alanlau28",
+    "id": 72107214,
+    "node_id": "MDQ6VXNlcjcyMTA3MjE0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/72107214?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alanlau28",
+    "html_url": "https://github.com/alanlau28",
+    "followers_url": "https://api.github.com/users/alanlau28/followers",
+    "following_url": "https://api.github.com/users/alanlau28/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alanlau28/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alanlau28/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alanlau28/subscriptions",
+    "organizations_url": "https://api.github.com/users/alanlau28/orgs",
+    "repos_url": "https://api.github.com/users/alanlau28/repos",
+    "events_url": "https://api.github.com/users/alanlau28/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alanlau28/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "53d11c1d65889227dbc989dd92b27c6a03f8d0c5",
+     "url": "https://api.github.com/repos/apache/kafka/commits/53d11c1d65889227dbc989dd92b27c6a03f8d0c5",
+     "html_url": "https://github.com/apache/kafka/commit/53d11c1d65889227dbc989dd92b27c6a03f8d0c5"
+    }
+   ]
+  },
+  {
+   "sha": "75bc8290a43222e4e9a567dca585eae14879fedd",
+   "node_id": "C_kwDOSoj-_doAKDc1YmM4MjkwYTQzMjIyZTRlOWE1NjdkY2E1ODVlYWUxNDg3OWZlZGQ",
+   "commit": {
+    "author": {
+     "name": "Alan Lau",
+     "email": "alau@confluent.io",
+     "date": "2026-10-26T15:14:31Z"
+    },
+    "committer": {
+     "name": "Alan Lau",
+     "email": "alau@confluent.io",
+     "date": "2026-10-26T15:14:31Z"
+    },
+    "message": "Update tests",
+    "tree": {
+     "sha": "5d5b51e0ec5a1f2442a7cdd4c82937835d1ebbfb",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/5d5b51e0ec5a1f2442a7cdd4c82937835d1ebbfb"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/75bc8290a43222e4e9a567dca585eae14879fedd",
+    "comment_count": 0,
+    "verification": {
+     "verified": true,
+     "reason": "valid",
+     "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAg1humXtAUQ9htLOCIJ18i54BCup\n0Az9T287L2OM7i99UAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQINqHExwtXK9t3qVzhsFXhSrGDiffzIJOp0ZlEl2noq7nsPdm+B6uIttNgTPRJdCV1\nRmFx88w7/kb+7QTJXaQQ8=\n-----END SSH SIGNATURE-----",
+     "payload": "tree 5d5b51e0ec5a1f2442a7cdd4c82937835d1ebbfb\nparent 6344d6689413f5a7efda6fa2a7f3c4052f18bc9e\nauthor Alan Lau <alau@confluent.io> 1793027671 -0400\ncommitter Alan Lau <alau@confluent.io> 1793027671 -0400\n\nUpdate tests\n",
+     "verified_at": "2026-10-26T16:27:27Z"
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/75bc8290a43222e4e9a567dca585eae14879fedd",
+   "html_url": "https://github.com/apache/kafka/commit/75bc8290a43222e4e9a567dca585eae14879fedd",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/75bc8290a43222e4e9a567dca585eae14879fedd/comments",
+   "author": {
+    "login": "alanlau28",
+    "id": 72107214,
+    "node_id": "MDQ6VXNlcjcyMTA3MjE0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/72107214?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alanlau28",
+    "html_url": "https://github.com/alanlau28",
+    "followers_url": "https://api.github.com/users/alanlau28/followers",
+    "following_url": "https://api.github.com/users/alanlau28/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alanlau28/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alanlau28/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alanlau28/subscriptions",
+    "organizations_url": "https://api.github.com/users/alanlau28/orgs",
+    "repos_url": "https://api.github.com/users/alanlau28/repos",
+    "events_url": "https://api.github.com/users/alanlau28/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alanlau28/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "alanlau28",
+    "id": 72107214,
+    "node_id": "MDQ6VXNlcjcyMTA3MjE0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/72107214?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alanlau28",
+    "html_url": "https://github.com/alanlau28",
+    "followers_url": "https://api.github.com/users/alanlau28/followers",
+    "following_url": "https://api.github.com/users/alanlau28/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alanlau28/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alanlau28/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alanlau28/subscriptions",
+    "organizations_url": "https://api.github.com/users/alanlau28/orgs",
+    "repos_url": "https://api.github.com/users/alanlau28/repos",
+    "events_url": "https://api.github.com/users/alanlau28/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alanlau28/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "6344d6689413f5a7efda6fa2a7f3c4052f18bc9e",
+     "url": "https://api.github.com/repos/apache/kafka/commits/6344d6689413f5a7efda6fa2a7f3c4052f18bc9e",
+     "html_url": "https://github.com/apache/kafka/commit/6344d6689413f5a7efda6fa2a7f3c4052f18bc9e"
+    }
+   ]
+  },
+  {
+   "sha": "f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "node_id": "C_kwDOSoj-_doAKGY5NDZiNDNhYWU2ODEzNjQwYTVjYWRhZTBhMTUzM2QyYjkxNGJiODk",
+   "commit": {
+    "author": {
+     "name": "Alan Lau",
+     "email": "alau@confluent.io",
+     "date": "2026-10-26T16:35:43Z"
+    },
+    "committer": {
+     "name": "Alan Lau",
+     "email": "alau@confluent.io",
+     "date": "2026-10-26T16:35:43Z"
+    },
+    "message": "Update tests",
+    "tree": {
+     "sha": "ee3c74ac3b0773d0abdf2aa9477b566fa3c01046",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/ee3c74ac3b0773d0abdf2aa9477b566fa3c01046"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/f946b43aae6813640a5cadae0a1533d2b914bb89",
+    "comment_count": 0,
+    "verification": {
+     "verified": true,
+     "reason": "valid",
+     "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAg1humXtAUQ9htLOCIJ18i54BCup\n0Az9T287L2OM7i99UAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQLm78rtF1AufuR7kHQBFl/XPnmrSjW2bC3Ndk6z7L6P1tw1xp/vVbWDnw65SIHmCb9\n/nghissftv17yl7AcRHQQ=\n-----END SSH SIGNATURE-----",
+     "payload": "tree ee3c74ac3b0773d0abdf2aa9477b566fa3c01046\nparent 75bc8290a43222e4e9a567dca585eae14879fedd\nauthor Alan Lau <alau@confluent.io> 1793032543 -0400\ncommitter Alan Lau <alau@confluent.io> 1793032543 -0400\n\nUpdate tests\n",
+     "verified_at": "2026-10-26T16:52:28Z"
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "html_url": "https://github.com/apache/kafka/commit/f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/f946b43aae6813640a5cadae0a1533d2b914bb89/comments",
+   "author": {
+    "login": "alanlau28",
+    "id": 72107214,
+    "node_id": "MDQ6VXNlcjcyMTA3MjE0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/72107214?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alanlau28",
+    "html_url": "https://github.com/alanlau28",
+    "followers_url": "https://api.github.com/users/alanlau28/followers",
+    "following_url": "https://api.github.com/users/alanlau28/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alanlau28/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alanlau28/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alanlau28/subscriptions",
+    "organizations_url": "https://api.github.com/users/alanlau28/orgs",
+    "repos_url": "https://api.github.com/users/alanlau28/repos",
+    "events_url": "https://api.github.com/users/alanlau28/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alanlau28/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "alanlau28",
+    "id": 72107214,
+    "node_id": "MDQ6VXNlcjcyMTA3MjE0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/72107214?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alanlau28",
+    "html_url": "https://github.com/alanlau28",
+    "followers_url": "https://api.github.com/users/alanlau28/followers",
+    "following_url": "https://api.github.com/users/alanlau28/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alanlau28/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alanlau28/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alanlau28/subscriptions",
+    "organizations_url": "https://api.github.com/users/alanlau28/orgs",
+    "repos_url": "https://api.github.com/users/alanlau28/repos",
+    "events_url": "https://api.github.com/users/alanlau28/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alanlau28/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "75bc8290a43222e4e9a567dca585eae14879fedd",
+     "url": "https://api.github.com/repos/apache/kafka/commits/75bc8290a43222e4e9a567dca585eae14879fedd",
+     "html_url": "https://github.com/apache/kafka/commit/75bc8290a43222e4e9a567dca585eae14879fedd"
+    }
+   ]
+  }
+ ],
+ "files": [
+  {
+   "sha": "f2ba858319ef8694fa5049153913a4a91a10e56e",
+   "filename": "clients/src/main/java/org/apache/kafka/common/requests/AllocateProducerIdsRequest.java",
+   "status": "modified",
+   "additions": 10,
+   "deletions": 2,
+   "changes": 12,
+   "blob_url": "https://github.com/apache/kafka/blob/f946b43aae6813640a5cadae0a1533d2b914bb89/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Frequests%2FAllocateProducerIdsRequest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/f946b43aae6813640a5cadae0a1533d2b914bb89/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Frequests%2FAllocateProducerIdsRequest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Frequests%2FAllocateProducerIdsRequest.java?ref=f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "patch": "@@ -24,6 +24,8 @@\n import org.apache.kafka.common.protocol.Readable;\n \n public class AllocateProducerIdsRequest extends AbstractRequest {\n+    private static final short LATEST_VERSION_BEFORE_REQUEST_HEADER_V3 = 0;\n+\n     private final AllocateProducerIdsRequestData data;\n \n     public AllocateProducerIdsRequest(AllocateProducerIdsRequestData data, short version) {\n@@ -47,8 +49,14 @@ public static class Builder extends AbstractRequest.Builder<AllocateProducerIdsR\n \n         private final AllocateProducerIdsRequestData data;\n \n-        public Builder(AllocateProducerIdsRequestData data) {\n-            super(ApiKeys.ALLOCATE_PRODUCER_IDS);\n+        /**\n+         * @param data               the request data\n+         * @param useRequestHeaderV3 whether the versions which use request header v3 may be used\n+         */\n+        public Builder(AllocateProducerIdsRequestData data, boolean useRequestHeaderV3) {\n+            super(ApiKeys.ALLOCATE_PRODUCER_IDS,\n+                ApiKeys.ALLOCATE_PRODUCER_IDS.oldestVersion(),\n+                useRequestHeaderV3 ? ApiKeys.ALLOCATE_PRODUCER_IDS.latestVersion() : LATEST_VERSION_BEFORE_REQUEST_HEADER_V3);\n             this.data = data;\n         }\n "
+  },
+  {
+   "sha": "8e254d826272b890064f343491c052f83c3d5df1",
+   "filename": "clients/src/main/java/org/apache/kafka/common/requests/AlterPartitionRequest.java",
+   "status": "modified",
+   "additions": 5,
+   "deletions": 2,
+   "changes": 7,
+   "blob_url": "https://github.com/apache/kafka/blob/f946b43aae6813640a5cadae0a1533d2b914bb89/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Frequests%2FAlterPartitionRequest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/f946b43aae6813640a5cadae0a1533d2b914bb89/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Frequests%2FAlterPartitionRequest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Frequests%2FAlterPartitionRequest.java?ref=f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "patch": "@@ -30,6 +30,8 @@\n \n public class AlterPartitionRequest extends AbstractRequest {\n \n+    private static final short LATEST_VERSION_BEFORE_REQUEST_HEADER_V3 = 3;\n+\n     private final AlterPartitionRequestData data;\n \n     public AlterPartitionRequest(AlterPartitionRequestData data, short apiVersion) {\n@@ -66,12 +68,13 @@ public static class Builder extends AbstractRequest.Builder<AlterPartitionReques\n          * @param data The data to be sent. Note that because the version of the\n          *             request is not known at this time, it is expected that all\n          *             topics have a topic id and a topic name set.\n+         * @param useRequestHeaderV3 whether the versions which use request header v3 may be used\n          */\n-        public Builder(AlterPartitionRequestData data) {\n+        public Builder(AlterPartitionRequestData data, boolean useRequestHeaderV3) {\n             super(\n                 ApiKeys.ALTER_PARTITION,\n                 ApiKeys.ALTER_PARTITION.oldestVersion(),\n-                ApiKeys.ALTER_PARTITION.latestVersion()\n+                useRequestHeaderV3 ? ApiKeys.ALTER_PARTITION.latestVersion() : LATEST_VERSION_BEFORE_REQUEST_HEADER_V3\n             );\n             this.data = data;\n         }"
+  },
+  {
+   "sha": "1d44aec9d3f1217d7176a2ec9d6b4bbf05452a9a",
+   "filename": "clients/src/main/java/org/apache/kafka/common/requests/AssignReplicasToDirsRequest.java",
+   "status": "modified",
+   "additions": 10,
+   "deletions": 2,
+   "changes": 12,
+   "blob_url": "https://github.com/apache/kafka/blob/f946b43aae6813640a5cadae0a1533d2b914bb89/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Frequests%2FAssignReplicasToDirsRequest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/f946b43aae6813640a5cadae0a1533d2b914bb89/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Frequests%2FAssignReplicasToDirsRequest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Frequests%2FAssignReplicasToDirsRequest.java?ref=f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "patch": "@@ -32,12 +32,20 @@ public class AssignReplicasToDirsRequest extends AbstractRequest {\n      */\n     public static final int MAX_ASSIGNMENTS_PER_REQUEST = 2250;\n \n+    private static final short LATEST_VERSION_BEFORE_REQUEST_HEADER_V3 = 0;\n+\n     public static class Builder extends AbstractRequest.Builder<AssignReplicasToDirsRequest> {\n \n         private final AssignReplicasToDirsRequestData data;\n \n-        public Builder(AssignReplicasToDirsRequestData data) {\n-            super(ApiKeys.ASSIGN_REPLICAS_TO_DIRS);\n+        /**\n+         * @param data               the request data\n+         * @param useRequestHeaderV3 whether the versions which use request header v3 may be used\n+         */\n+        public Builder(AssignReplicasToDirsRequestData data, boolean useRequestHeaderV3) {\n+            super(ApiKeys.ASSIGN_REPLICAS_TO_DIRS,\n+                ApiKeys.ASSIGN_REPLICAS_TO_DIRS.oldestVersion(),\n+                useRequestHeaderV3 ? ApiKeys.ASSIGN_REPLICAS_TO_DIRS.latestVersion() : LATEST_VERSION_BEFORE_REQUEST_HEADER_V3);\n             this.data = data;\n         }\n "
+  },
+  {
+   "sha": "896240290fbbffccc2e6fe5f621b418bace51ff3",
+   "filename": "clients/src/main/java/org/apache/kafka/common/requests/ControllerRegistrationRequest.java",
+   "status": "modified",
+   "additions": 10,
+   "deletions": 2,
+   "changes": 12,
+   "blob_url": "https://github.com/apache/kafka/blob/f946b43aae6813640a5cadae0a1533d2b914bb89/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Frequests%2FControllerRegistrationRequest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/f946b43aae6813640a5cadae0a1533d2b914bb89/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Frequests%2FControllerRegistrationRequest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Frequests%2FControllerRegistrationRequest.java?ref=f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "patch": "@@ -23,11 +23,19 @@\n import org.apache.kafka.common.protocol.Readable;\n \n public class ControllerRegistrationRequest extends AbstractRequest {\n+    private static final short LATEST_VERSION_BEFORE_REQUEST_HEADER_V3 = 0;\n+\n     public static class Builder extends AbstractRequest.Builder<ControllerRegistrationRequest> {\n         private final ControllerRegistrationRequestData data;\n \n-        public Builder(ControllerRegistrationRequestData data) {\n-            super(ApiKeys.CONTROLLER_REGISTRATION);\n+        /**\n+         * @param data               the request data\n+         * @param useRequestHeaderV3 whether the versions which use request header v3 may be used\n+         */\n+        public Builder(ControllerRegistrationRequestData data, boolean useRequestHeaderV3) {\n+            super(ApiKeys.CONTROLLER_REGISTRATION,\n+                ApiKeys.CONTROLLER_REGISTRATION.oldestVersion(),\n+                useRequestHeaderV3 ? ApiKeys.CONTROLLER_REGISTRATION.latestVersion() : LATEST_VERSION_BEFORE_REQUEST_HEADER_V3);\n             this.data = data;\n         }\n "
+  },
+  {
+   "sha": "4ce72aab36724217b3edf1473b634c1bfbfdc232",
+   "filename": "clients/src/main/resources/common/message/AllocateProducerIdsRequest.json",
+   "status": "modified",
+   "additions": 4,
+   "deletions": 2,
+   "changes": 6,
+   "blob_url": "https://github.com/apache/kafka/blob/f946b43aae6813640a5cadae0a1533d2b914bb89/clients%2Fsrc%2Fmain%2Fresources%2Fcommon%2Fmessage%2FAllocateProducerIdsRequest.json",
+   "raw_url": "https://github.com/apache/kafka/raw/f946b43aae6813640a5cadae0a1533d2b914bb89/clients%2Fsrc%2Fmain%2Fresources%2Fcommon%2Fmessage%2FAllocateProducerIdsRequest.json",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Fmain%2Fresources%2Fcommon%2Fmessage%2FAllocateProducerIdsRequest.json?ref=f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "patch": "@@ -18,10 +18,12 @@\n   \"type\": \"request\",\n   \"listeners\": [\"controller\"],\n   \"name\": \"AllocateProducerIdsRequest\",\n-  \"validVersions\": \"0\",\n+  // Version 1 uses the v3 request header (KIP-1313).\n+  \"validVersions\": \"0-1\",\n   \"flexibleVersions\": \"0+\",\n   \"headerVersions\": {\n-    \"0+\": \"2\"\n+    \"0\": \"2\",\n+    \"1+\": \"3\"\n   },\n   \"fields\": [\n     { \"name\": \"BrokerId\", \"type\": \"int32\", \"versions\": \"0+\", \"entityType\": \"brokerId\","
+  },
+  {
+   "sha": "5068de2a9c4a2809f1b7fa7e25261f4bb8ae7263",
+   "filename": "clients/src/main/resources/common/message/AllocateProducerIdsResponse.json",
+   "status": "modified",
+   "additions": 2,
+   "deletions": 1,
+   "changes": 3,
+   "blob_url": "https://github.com/apache/kafka/blob/f946b43aae6813640a5cadae0a1533d2b914bb89/clients%2Fsrc%2Fmain%2Fresources%2Fcommon%2Fmessage%2FAllocateProducerIdsResponse.json",
+   "raw_url": "https://github.com/apache/kafka/raw/f946b43aae6813640a5cadae0a1533d2b914bb89/clients%2Fsrc%2Fmain%2Fresources%2Fcommon%2Fmessage%2FAllocateProducerIdsResponse.json",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Fmain%2Fresources%2Fcommon%2Fmessage%2FAllocateProducerIdsResponse.json?ref=f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "patch": "@@ -17,7 +17,8 @@\n   \"apiKey\": 67,\n   \"type\": \"response\",\n   \"name\": \"AllocateProducerIdsResponse\",\n-  \"validVersions\": \"0\",\n+  // Version 1 is the same as version 0 (KIP-1313).\n+  \"validVersions\": \"0-1\",\n   \"flexibleVersions\": \"0+\",\n   \"headerVersions\": {\n     \"0+\": \"1\""
+  },
+  {
+   "sha": "39dd16c287f3384d3cff074dd26ea594756f19fa",
+   "filename": "clients/src/main/resources/common/message/AlterPartitionRequest.json",
+   "status": "modified",
+   "additions": 5,
+   "deletions": 2,
+   "changes": 7,
+   "blob_url": "https://github.com/apache/kafka/blob/f946b43aae6813640a5cadae0a1533d2b914bb89/clients%2Fsrc%2Fmain%2Fresources%2Fcommon%2Fmessage%2FAlterPartitionRequest.json",
+   "raw_url": "https://github.com/apache/kafka/raw/f946b43aae6813640a5cadae0a1533d2b914bb89/clients%2Fsrc%2Fmain%2Fresources%2Fcommon%2Fmessage%2FAlterPartitionRequest.json",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Fmain%2Fresources%2Fcommon%2Fmessage%2FAlterPartitionRequest.json?ref=f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "patch": "@@ -24,10 +24,13 @@\n   // Version 2 adds TopicId field to replace TopicName field (KIP-841).\n   //\n   // Version 3 adds the NewIsrEpochs field and deprecates the NewIsr field (KIP-903).\n-  \"validVersions\": \"2-3\",\n+  //\n+  // Version 4 uses the v3 request header (KIP-1313).\n+  \"validVersions\": \"2-4\",\n   \"flexibleVersions\": \"0+\",\n   \"headerVersions\": {\n-    \"0+\": \"2\"\n+    \"0-3\": \"2\",\n+    \"4+\": \"3\"\n   },\n   \"fields\": [\n     { \"name\": \"BrokerId\", \"type\": \"int32\", \"versions\": \"0+\", \"entityType\": \"brokerId\","
+  },
+  {
+   "sha": "fff0911561cc89475180ca1bb11a2ccaa1a3c7c3",
+   "filename": "clients/src/main/resources/common/message/AlterPartitionResponse.json",
+   "status": "modified",
+   "additions": 3,
+   "deletions": 1,
+   "changes": 4,
+   "blob_url": "https://github.com/apache/kafka/blob/f946b43aae6813640a5cadae0a1533d2b914bb89/clients%2Fsrc%2Fmain%2Fresources%2Fcommon%2Fmessage%2FAlterPartitionResponse.json",
+   "raw_url": "https://github.com/apache/kafka/raw/f946b43aae6813640a5cadae0a1533d2b914bb89/clients%2Fsrc%2Fmain%2Fresources%2Fcommon%2Fmessage%2FAlterPartitionResponse.json",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Fmain%2Fresources%2Fcommon%2Fmessage%2FAlterPartitionResponse.json?ref=f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "patch": "@@ -24,7 +24,9 @@\n   // INELIGIBLE_REPLICA, NEW_LEADER_ELECTED and UNKNOWN_TOPIC_ID (KIP-841).\n   //\n   // Version 3 is the same as version 2 (KIP-903).\n-  \"validVersions\": \"2-3\",\n+  //\n+  // Version 4 is the same as version 3 (KIP-1313).\n+  \"validVersions\": \"2-4\",\n   \"flexibleVersions\": \"0+\",\n   \"headerVersions\": {\n     \"0+\": \"1\""
+  },
+  {
+   "sha": "4888224f8351565a959f70cf1187c26ccfa5bffb",
+   "filename": "clients/src/main/resources/common/message/AssignReplicasToDirsRequest.json",
+   "status": "modified",
+   "additions": 4,
+   "deletions": 2,
+   "changes": 6,
+   "blob_url": "https://github.com/apache/kafka/blob/f946b43aae6813640a5cadae0a1533d2b914bb89/clients%2Fsrc%2Fmain%2Fresources%2Fcommon%2Fmessage%2FAssignReplicasToDirsRequest.json",
+   "raw_url": "https://github.com/apache/kafka/raw/f946b43aae6813640a5cadae0a1533d2b914bb89/clients%2Fsrc%2Fmain%2Fresources%2Fcommon%2Fmessage%2FAssignReplicasToDirsRequest.json",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Fmain%2Fresources%2Fcommon%2Fmessage%2FAssignReplicasToDirsRequest.json?ref=f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "patch": "@@ -18,10 +18,12 @@\n   \"type\": \"request\",\n   \"listeners\": [\"controller\"],\n   \"name\": \"AssignReplicasToDirsRequest\",\n-  \"validVersions\": \"0\",\n+  // Version 1 uses the v3 request header (KIP-1313).\n+  \"validVersions\": \"0-1\",\n   \"flexibleVersions\": \"0+\",\n   \"headerVersions\": {\n-    \"0+\": \"2\"\n+    \"0\": \"2\",\n+    \"1+\": \"3\"\n   },\n   \"fields\": [\n     { \"name\": \"BrokerId\", \"type\": \"int32\", \"versions\": \"0+\", \"entityType\": \"brokerId\","
+  },
+  {
+   "sha": "2ee050f1c8e3ae4ce9d177a43fecf1dee8c3241a",
+   "filename": "clients/src/main/resources/common/message/AssignReplicasToDirsResponse.json",
+   "status": "modified",
+   "additions": 2,
+   "deletions": 1,
+   "changes": 3,
+   "blob_url": "https://github.com/apache/kafka/blob/f946b43aae6813640a5cadae0a1533d2b914bb89/clients%2Fsrc%2Fmain%2Fresources%2Fcommon%2Fmessage%2FAssignReplicasToDirsResponse.json",
+   "raw_url": "https://github.com/apache/kafka/raw/f946b43aae6813640a5cadae0a1533d2b914bb89/clients%2Fsrc%2Fmain%2Fresources%2Fcommon%2Fmessage%2FAssignReplicasToDirsResponse.json",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Fmain%2Fresources%2Fcommon%2Fmessage%2FAssignReplicasToDirsResponse.json?ref=f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "patch": "@@ -17,7 +17,8 @@\n   \"apiKey\": 73,\n   \"type\": \"response\",\n   \"name\": \"AssignReplicasToDirsResponse\",\n-  \"validVersions\": \"0\",\n+  // Version 1 is the same as version 0 (KIP-1313).\n+  \"validVersions\": \"0-1\",\n   \"flexibleVersions\": \"0+\",\n   \"headerVersions\": {\n     \"0+\": \"1\""
+  },
+  {
+   "sha": "9ad58dd0ba5b4d3884e0c84bc6549bfd3ce48473",
+   "filename": "clients/src/main/resources/common/message/ControllerRegistrationRequest.json",
+   "status": "modified",
+   "additions": 4,
+   "deletions": 2,
+   "changes": 6,
+   "blob_url": "https://github.com/apache/kafka/blob/f946b43aae6813640a5cadae0a1533d2b914bb89/clients%2Fsrc%2Fmain%2Fresources%2Fcommon%2Fmessage%2FControllerRegistrationRequest.json",
+   "raw_url": "https://github.com/apache/kafka/raw/f946b43aae6813640a5cadae0a1533d2b914bb89/clients%2Fsrc%2Fmain%2Fresources%2Fcommon%2Fmessage%2FControllerRegistrationRequest.json",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Fmain%2Fresources%2Fcommon%2Fmessage%2FControllerRegistrationRequest.json?ref=f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "patch": "@@ -18,10 +18,12 @@\n   \"type\": \"request\",\n   \"listeners\": [\"controller\"],\n   \"name\": \"ControllerRegistrationRequest\",\n-  \"validVersions\": \"0\",\n+  // Version 1 uses the v3 request header (KIP-1313).\n+  \"validVersions\": \"0-1\",\n   \"flexibleVersions\": \"0+\",\n   \"headerVersions\": {\n-    \"0+\": \"2\"\n+    \"0\": \"2\",\n+    \"1+\": \"3\"\n   },\n   \"fields\": [\n     { \"name\": \"ControllerId\", \"type\": \"int32\", \"versions\": \"0+\","
+  },
+  {
+   "sha": "ccf584211ff3a06ae230fcb743abd5ca0edb5924",
+   "filename": "clients/src/main/resources/common/message/ControllerRegistrationResponse.json",
+   "status": "modified",
+   "additions": 2,
+   "deletions": 1,
+   "changes": 3,
+   "blob_url": "https://github.com/apache/kafka/blob/f946b43aae6813640a5cadae0a1533d2b914bb89/clients%2Fsrc%2Fmain%2Fresources%2Fcommon%2Fmessage%2FControllerRegistrationResponse.json",
+   "raw_url": "https://github.com/apache/kafka/raw/f946b43aae6813640a5cadae0a1533d2b914bb89/clients%2Fsrc%2Fmain%2Fresources%2Fcommon%2Fmessage%2FControllerRegistrationResponse.json",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Fmain%2Fresources%2Fcommon%2Fmessage%2FControllerRegistrationResponse.json?ref=f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "patch": "@@ -17,7 +17,8 @@\n   \"apiKey\": 70,\n   \"type\": \"response\",\n   \"name\": \"ControllerRegistrationResponse\",\n-  \"validVersions\": \"0\",\n+  // Version 1 is the same as version 0 (KIP-1313).\n+  \"validVersions\": \"0-1\",\n   \"flexibleVersions\": \"0+\",\n   \"headerVersions\": {\n     \"0+\": \"1\""
+  },
+  {
+   "sha": "207391845edb4dca254e45cf0b56ef2d5810e8ad",
+   "filename": "clients/src/test/java/org/apache/kafka/common/requests/AlterPartitionRequestTest.java",
+   "status": "modified",
+   "additions": 1,
+   "deletions": 1,
+   "changes": 2,
+   "blob_url": "https://github.com/apache/kafka/blob/f946b43aae6813640a5cadae0a1533d2b914bb89/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Frequests%2FAlterPartitionRequestTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/f946b43aae6813640a5cadae0a1533d2b914bb89/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Frequests%2FAlterPartitionRequestTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Frequests%2FAlterPartitionRequestTest.java?ref=f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "patch": "@@ -58,7 +58,7 @@ public void testBuildAlterPartitionRequest(short version) {\n \n         request.topics().add(topicData);\n \n-        AlterPartitionRequest.Builder builder = new AlterPartitionRequest.Builder(request);\n+        AlterPartitionRequest.Builder builder = new AlterPartitionRequest.Builder(request, true);\n         AlterPartitionRequest alterPartitionRequest = builder.build(version);\n         assertEquals(1, alterPartitionRequest.data().topics().size());\n         assertEquals(1, alterPartitionRequest.data().topics().get(0).partitions().size());"
+  },
+  {
+   "sha": "d924ba81578daaf24fe165a2e3c906d67d88a5ac",
+   "filename": "clients/src/test/java/org/apache/kafka/common/requests/RequestResponseTest.java",
+   "status": "modified",
+   "additions": 3,
+   "deletions": 3,
+   "changes": 6,
+   "blob_url": "https://github.com/apache/kafka/blob/f946b43aae6813640a5cadae0a1533d2b914bb89/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Frequests%2FRequestResponseTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/f946b43aae6813640a5cadae0a1533d2b914bb89/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Frequests%2FRequestResponseTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Frequests%2FRequestResponseTest.java?ref=f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "patch": "@@ -1298,7 +1298,7 @@ private AssignReplicasToDirsRequest createAssignReplicasToDirsRequest(short vers\n                                                 ))\n                                 ))\n                 ));\n-        return new AssignReplicasToDirsRequest.Builder(data).build(version);\n+        return new AssignReplicasToDirsRequest.Builder(data, true).build(version);\n     }\n \n     private AssignReplicasToDirsResponse createAssignReplicasToDirsResponse() {\n@@ -1809,7 +1809,7 @@ private AlterPartitionRequest createAlterPartitionRequest(short version) {\n             .setTopics(singletonList(new AlterPartitionRequestData.TopicData()\n                 .setTopicId(Uuid.randomUuid())\n                 .setPartitions(singletonList(partitionData))));\n-        return new AlterPartitionRequest.Builder(data).build(version);\n+        return new AlterPartitionRequest.Builder(data, true).build(version);\n     }\n \n     private AlterPartitionResponse createAlterPartitionResponse() {\n@@ -1860,7 +1860,7 @@ private AllocateProducerIdsRequest createAllocateProducerIdsRequest(short versio\n         AllocateProducerIdsRequestData data = new AllocateProducerIdsRequestData()\n                 .setBrokerEpoch(123L)\n                 .setBrokerId(2);\n-        return new AllocateProducerIdsRequest.Builder(data).build(version);\n+        return new AllocateProducerIdsRequest.Builder(data, true).build(version);\n     }\n \n     private AllocateProducerIdsResponse createAllocateProducerIdsResponse() {"
+  },
+  {
+   "sha": "cb0a93ec3ce63586292d8dd8687f224cc9d8d6cb",
+   "filename": "core/src/main/scala/kafka/server/BrokerServer.scala",
+   "status": "modified",
+   "additions": 4,
+   "deletions": 2,
+   "changes": 6,
+   "blob_url": "https://github.com/apache/kafka/blob/f946b43aae6813640a5cadae0a1533d2b914bb89/core%2Fsrc%2Fmain%2Fscala%2Fkafka%2Fserver%2FBrokerServer.scala",
+   "raw_url": "https://github.com/apache/kafka/raw/f946b43aae6813640a5cadae0a1533d2b914bb89/core%2Fsrc%2Fmain%2Fscala%2Fkafka%2Fserver%2FBrokerServer.scala",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/core%2Fsrc%2Fmain%2Fscala%2Fkafka%2Fserver%2FBrokerServer.scala?ref=f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "patch": "@@ -310,7 +310,8 @@ class BrokerServer(\n         time,\n         metrics,\n         s\"broker-${config.nodeId}-\",\n-        () => lifecycleManager.brokerEpoch\n+        () => lifecycleManager.brokerEpoch,\n+        () => metadataCache.metadataVersion().isRequestHeaderV3Supported\n       )\n       alterPartitionManager.start()\n \n@@ -413,7 +414,8 @@ class BrokerServer(\n         config.brokerId,\n         time,\n         () => lifecycleManager.brokerEpoch,\n-        clientToControllerChannelManager\n+        clientToControllerChannelManager,\n+        () => metadataCache.metadataVersion().isRequestHeaderV3Supported\n       )\n \n       // Create transaction coordinator, but don't start it until we've started replica manager."
+  },
+  {
+   "sha": "ba22a4cbd4cc164a9f88a6e23a98c0424a22eb0d",
+   "filename": "core/src/test/scala/unit/kafka/cluster/PartitionTest.scala",
+   "status": "modified",
+   "additions": 2,
+   "deletions": 1,
+   "changes": 3,
+   "blob_url": "https://github.com/apache/kafka/blob/f946b43aae6813640a5cadae0a1533d2b914bb89/core%2Fsrc%2Ftest%2Fscala%2Funit%2Fkafka%2Fcluster%2FPartitionTest.scala",
+   "raw_url": "https://github.com/apache/kafka/raw/f946b43aae6813640a5cadae0a1533d2b914bb89/core%2Fsrc%2Ftest%2Fscala%2Funit%2Fkafka%2Fcluster%2FPartitionTest.scala",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/core%2Fsrc%2Ftest%2Fscala%2Funit%2Fkafka%2Fcluster%2FPartitionTest.scala?ref=f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "patch": "@@ -2603,7 +2603,8 @@ class PartitionTest extends AbstractPartitionTest {\n       mockChannelManager,\n       mock(classOf[KafkaScheduler]),\n       brokerId,\n-      () => 0\n+      () => 0,\n+      () => true\n     )\n \n     partition = new Partition(topicPartition,"
+  },
+  {
+   "sha": "82236cda49a6900b36bb2c9a96cd31793e59ddff",
+   "filename": "core/src/test/scala/unit/kafka/server/AllocateProducerIdsRequestTest.scala",
+   "status": "modified",
+   "additions": 2,
+   "deletions": 1,
+   "changes": 3,
+   "blob_url": "https://github.com/apache/kafka/blob/f946b43aae6813640a5cadae0a1533d2b914bb89/core%2Fsrc%2Ftest%2Fscala%2Funit%2Fkafka%2Fserver%2FAllocateProducerIdsRequestTest.scala",
+   "raw_url": "https://github.com/apache/kafka/raw/f946b43aae6813640a5cadae0a1533d2b914bb89/core%2Fsrc%2Ftest%2Fscala%2Funit%2Fkafka%2Fserver%2FAllocateProducerIdsRequestTest.scala",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/core%2Fsrc%2Ftest%2Fscala%2Funit%2Fkafka%2Fserver%2FAllocateProducerIdsRequestTest.scala?ref=f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "patch": "@@ -67,7 +67,8 @@ class AllocateProducerIdsRequestTest(cluster: ClusterInstance) {\n     val allocateRequest = new AllocateProducerIdsRequest.Builder(\n       new AllocateProducerIdsRequestData()\n         .setBrokerId(sourceBroker.config.brokerId)\n-        .setBrokerEpoch(sourceBroker.lifecycleManager.brokerEpoch)\n+        .setBrokerEpoch(sourceBroker.lifecycleManager.brokerEpoch),\n+      true\n     ).build()\n \n     connectAndReceive("
+  },
+  {
+   "sha": "86dbe4c948f0a5ec94860515decc1f8e4222ca05",
+   "filename": "core/src/test/scala/unit/kafka/server/ControllerApisTest.scala",
+   "status": "modified",
+   "additions": 5,
+   "deletions": 4,
+   "changes": 9,
+   "blob_url": "https://github.com/apache/kafka/blob/f946b43aae6813640a5cadae0a1533d2b914bb89/core%2Fsrc%2Ftest%2Fscala%2Funit%2Fkafka%2Fserver%2FControllerApisTest.scala",
+   "raw_url": "https://github.com/apache/kafka/raw/f946b43aae6813640a5cadae0a1533d2b914bb89/core%2Fsrc%2Ftest%2Fscala%2Funit%2Fkafka%2Fserver%2FControllerApisTest.scala",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/core%2Fsrc%2Ftest%2Fscala%2Funit%2Fkafka%2Fserver%2FControllerApisTest.scala?ref=f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "patch": "@@ -415,7 +415,7 @@ class ControllerApisTest {\n     assertThrows(classOf[ClusterAuthorizationException], () => {\n       controllerApis = createControllerApis(Some(createDenyAllAuthorizer()), new MockController.Builder().build())\n       controllerApis.handleAlterPartitionRequest(buildRequest(new AlterPartitionRequest.Builder(\n-        new AlterPartitionRequestData()).build(ApiKeys.ALTER_PARTITION.latestVersion)))\n+        new AlterPartitionRequestData(), true).build(ApiKeys.ALTER_PARTITION.latestVersion)))\n     })\n   }\n \n@@ -764,7 +764,7 @@ class ControllerApisTest {\n     assertThrows(classOf[ClusterAuthorizationException], () => {\n       controllerApis = createControllerApis(Some(createDenyAllAuthorizer()), new MockController.Builder().build())\n       controllerApis.handleAllocateProducerIdsRequest(buildRequest(new AllocateProducerIdsRequest.Builder(\n-        new AllocateProducerIdsRequestData()).build()))\n+        new AllocateProducerIdsRequestData(), true).build()))\n     })\n   }\n \n@@ -1276,7 +1276,8 @@ class ControllerApisTest {\n     val request = new AllocateProducerIdsRequest.Builder(\n       new AllocateProducerIdsRequestData()\n         .setBrokerId(4)\n-        .setBrokerEpoch(93234)\n+        .setBrokerEpoch(93234),\n+      true\n     ).build()\n \n     when(controller.allocateProducerIds(\n@@ -1294,7 +1295,7 @@ class ControllerApisTest {\n     val authorizer = mock(classOf[Authorizer])\n     val authorizerPlugin = Plugin.wrapInstance(authorizer, null, \"authorizer.class.name\")\n     controllerApis = createControllerApis(Some(authorizerPlugin), controller)\n-    val request = new AssignReplicasToDirsRequest.Builder(new AssignReplicasToDirsRequestData()).build()\n+    val request = new AssignReplicasToDirsRequest.Builder(new AssignReplicasToDirsRequestData(), true).build()\n \n     when(authorizer.authorize(any[RequestContext], ArgumentMatchers.eq(Collections.singletonList(new Action(\n       AclOperation.CLUSTER_ACTION,"
+  },
+  {
+   "sha": "61527dffaa4e2c97b408d079281393db239d3054",
+   "filename": "core/src/test/scala/unit/kafka/server/ControllerRegistrationManagerTest.scala",
+   "status": "modified",
+   "additions": 41,
+   "deletions": 2,
+   "changes": 43,
+   "blob_url": "https://github.com/apache/kafka/blob/f946b43aae6813640a5cadae0a1533d2b914bb89/core%2Fsrc%2Ftest%2Fscala%2Funit%2Fkafka%2Fserver%2FControllerRegistrationManagerTest.scala",
+   "raw_url": "https://github.com/apache/kafka/raw/f946b43aae6813640a5cadae0a1533d2b914bb89/core%2Fsrc%2Ftest%2Fscala%2Funit%2Fkafka%2Fserver%2FControllerRegistrationManagerTest.scala",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/core%2Fsrc%2Ftest%2Fscala%2Funit%2Fkafka%2Fserver%2FControllerRegistrationManagerTest.scala?ref=f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "patch": "@@ -20,8 +20,8 @@ package kafka.server\n import org.apache.kafka.common.{Node, Uuid}\n import org.apache.kafka.common.message.ControllerRegistrationResponseData\n import org.apache.kafka.common.metadata.{FeatureLevelRecord, RegisterControllerRecord, UnregisterControllerRecord}\n-import org.apache.kafka.common.protocol.Errors\n-import org.apache.kafka.common.requests.ControllerRegistrationResponse\n+import org.apache.kafka.common.protocol.{ApiKeys, Errors}\n+import org.apache.kafka.common.requests.{AbstractRequest, ControllerRegistrationRequest, ControllerRegistrationResponse}\n import org.apache.kafka.common.utils.internals.ExponentialBackoff\n import org.apache.kafka.image.loader.{LogDeltaManifest, SnapshotManifest}\n import org.apache.kafka.image.{MetadataDelta, MetadataImage, MetadataProvenance}\n@@ -223,6 +223,45 @@ class ControllerRegistrationManagerTest {\n     }\n   }\n \n+  @ParameterizedTest\n+  @ValueSource(booleans = Array(false, true))\n+  def testRequestVersionGatedByRequestHeaderV3Supported(requestHeaderV3Supported: Boolean): Unit = {\n+    val context = new RegistrationTestContext(configProperties)\n+    val metadataVersion = if (requestHeaderV3Supported) {\n+      MetadataVersion.IBP_4_5_IV0\n+    } else {\n+      MetadataVersion.IBP_4_4_IV2\n+    }\n+    val manager = newControllerRegistrationManager(context)\n+    try {\n+      context.controllerNodeProvider.node.set(controller1)\n+      val request = new CompletableFuture[ControllerRegistrationRequest]\n+      context.mockClient.prepareResponseFrom(\n+        (body: AbstractRequest) => request.complete(body.asInstanceOf[ControllerRegistrationRequest]),\n+        new ControllerRegistrationResponse(new ControllerRegistrationResponseData()),\n+        controller1)\n+      manager.start(context.mockChannelManager)\n+      doMetadataUpdate(MetadataImage.EMPTY,\n+        manager,\n+        metadataVersion,\n+        r => if (r.controllerId() == 1) None else Some(r),\n+        _ => None\n+      )\n+      TestUtils.retryOnExceptionWithTimeout(30000, () => {\n+        context.mockChannelManager.poll()\n+        assertTrue(request.isDone)\n+      })\n+\n+      val requestVersion = request.get.version\n+      val expectedVersion = if (requestHeaderV3Supported) ApiKeys.CONTROLLER_REGISTRATION.latestVersion else 0.toShort\n+      assertEquals(expectedVersion, requestVersion)\n+      val expectedHeaderVersion = if (requestHeaderV3Supported) 3.toShort else 2.toShort\n+      assertEquals(expectedHeaderVersion, ApiKeys.CONTROLLER_REGISTRATION.requestHeaderVersion(requestVersion))\n+    } finally {\n+      manager.close()\n+    }\n+  }\n+\n   @Test\n   def testWrongIncarnationId(): Unit = {\n     val context = new RegistrationTestContext(configProperties)"
+  },
+  {
+   "sha": "b5729cd8e5739746581ad0aeb1f0a2a301c2339c",
+   "filename": "core/src/test/scala/unit/kafka/server/RequestQuotaTest.scala",
+   "status": "modified",
+   "additions": 3,
+   "deletions": 3,
+   "changes": 6,
+   "blob_url": "https://github.com/apache/kafka/blob/f946b43aae6813640a5cadae0a1533d2b914bb89/core%2Fsrc%2Ftest%2Fscala%2Funit%2Fkafka%2Fserver%2FRequestQuotaTest.scala",
+   "raw_url": "https://github.com/apache/kafka/raw/f946b43aae6813640a5cadae0a1533d2b914bb89/core%2Fsrc%2Ftest%2Fscala%2Funit%2Fkafka%2Fserver%2FRequestQuotaTest.scala",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/core%2Fsrc%2Ftest%2Fscala%2Funit%2Fkafka%2Fserver%2FRequestQuotaTest.scala?ref=f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "patch": "@@ -631,7 +631,7 @@ class RequestQuotaTest extends BaseRequestTest {\n             Topic.CLUSTER_METADATA_TOPIC_PARTITION))\n \n         case ApiKeys.ALTER_PARTITION =>\n-          new AlterPartitionRequest.Builder(new AlterPartitionRequestData())\n+          new AlterPartitionRequest.Builder(new AlterPartitionRequestData(), true)\n \n         case ApiKeys.UPDATE_FEATURES =>\n           new UpdateFeaturesRequest.Builder(new UpdateFeaturesRequestData())\n@@ -677,7 +677,7 @@ class RequestQuotaTest extends BaseRequestTest {\n           new ListTransactionsRequest.Builder(new ListTransactionsRequestData())\n \n         case ApiKeys.ALLOCATE_PRODUCER_IDS =>\n-          new AllocateProducerIdsRequest.Builder(new AllocateProducerIdsRequestData())\n+          new AllocateProducerIdsRequest.Builder(new AllocateProducerIdsRequestData(), true)\n \n         case ApiKeys.CONSUMER_GROUP_HEARTBEAT =>\n           new ConsumerGroupHeartbeatRequest.Builder(new ConsumerGroupHeartbeatRequestData())\n@@ -692,7 +692,7 @@ class RequestQuotaTest extends BaseRequestTest {\n           new PushTelemetryRequest.Builder(new PushTelemetryRequestData())\n \n         case ApiKeys.ASSIGN_REPLICAS_TO_DIRS =>\n-          new AssignReplicasToDirsRequest.Builder(new AssignReplicasToDirsRequestData())\n+          new AssignReplicasToDirsRequest.Builder(new AssignReplicasToDirsRequestData(), true)\n \n         case ApiKeys.LIST_CONFIG_RESOURCES =>\n           new ListConfigResourcesRequest.Builder(new ListConfigResourcesRequestData())"
+  },
+  {
+   "sha": "6fa63759cec9b33e52cc5f973cac794089cfc953",
+   "filename": "metadata/src/test/java/org/apache/kafka/controller/QuorumControllerTest.java",
+   "status": "modified",
+   "additions": 1,
+   "deletions": 1,
+   "changes": 2,
+   "blob_url": "https://github.com/apache/kafka/blob/f946b43aae6813640a5cadae0a1533d2b914bb89/metadata%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcontroller%2FQuorumControllerTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/f946b43aae6813640a5cadae0a1533d2b914bb89/metadata%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcontroller%2FQuorumControllerTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/metadata%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcontroller%2FQuorumControllerTest.java?ref=f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "patch": "@@ -855,7 +855,7 @@ public void testBalancePartitionLeaders() throws Throwable {\n             alterPartitionRequest.topics().add(topicData);\n \n             active.alterPartition(ANONYMOUS_CONTEXT, new AlterPartitionRequest\n-                .Builder(alterPartitionRequest).build(ApiKeys.ALTER_PARTITION.oldestVersion()).data()).get();\n+                .Builder(alterPartitionRequest, true).build(ApiKeys.ALTER_PARTITION.oldestVersion()).data()).get();\n \n             AtomicLong lastHeartbeatMs = new AtomicLong(getMonotonicMs(active.time()));\n             sendBrokerHeartbeatToUnfenceBrokers(active, allBrokers, brokerEpochs);"
+  },
+  {
+   "sha": "df6e237cfbbd93a581a031232ef2cb628c7bc6cf",
+   "filename": "metadata/src/test/java/org/apache/kafka/controller/ReplicationControlManagerTest.java",
+   "status": "modified",
+   "additions": 6,
+   "deletions": 6,
+   "changes": 12,
+   "blob_url": "https://github.com/apache/kafka/blob/f946b43aae6813640a5cadae0a1533d2b914bb89/metadata%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcontroller%2FReplicationControlManagerTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/f946b43aae6813640a5cadae0a1533d2b914bb89/metadata%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcontroller%2FReplicationControlManagerTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/metadata%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcontroller%2FReplicationControlManagerTest.java?ref=f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "patch": "@@ -2143,7 +2143,7 @@ public void testReassignPartitions(short version) {\n                         setNewIsrWithEpochs(isrWithDefaultEpoch(3, 0, 2, 1))))));\n         ControllerResult<AlterPartitionResponseData> alterPartitionResult = replication.alterPartition(\n             requestContext,\n-            new AlterPartitionRequest.Builder(alterPartitionRequestData).build(version).data());\n+            new AlterPartitionRequest.Builder(alterPartitionRequestData, true).build(version).data());\n         Errors expectedError = NEW_LEADER_ELECTED;\n         assertEquals(new AlterPartitionResponseData().setTopics(List.of(\n             new AlterPartitionResponseData.TopicData().\n@@ -2334,7 +2334,7 @@ public void testAlterPartitionShouldRejectFencedBrokers(short version) {\n             anonymousContextFor(ApiKeys.ALTER_PARTITION, version);\n \n         ControllerResult<AlterPartitionResponseData> alterPartitionResult =\n-            replication.alterPartition(requestContext, new AlterPartitionRequest.Builder(alterIsrRequest).build(version).data());\n+            replication.alterPartition(requestContext, new AlterPartitionRequest.Builder(alterIsrRequest, true).build(version).data());\n \n         Errors expectedError = INELIGIBLE_REPLICA;\n         assertEquals(\n@@ -2416,7 +2416,7 @@ public void testAlterPartitionShouldRejectBrokersWithStaleEpoch(short version) {\n             anonymousContextFor(ApiKeys.ALTER_PARTITION, version);\n \n         ControllerResult<AlterPartitionResponseData> alterPartitionResult =\n-            replication.alterPartition(requestContext, new AlterPartitionRequest.Builder(alterIsrRequest).build(version).data());\n+            replication.alterPartition(requestContext, new AlterPartitionRequest.Builder(alterIsrRequest, true).build(version).data());\n \n         // The late arrived AlterPartition request should be rejected when version >= 3.\n         if (version >= 3) {\n@@ -2479,7 +2479,7 @@ public void testAlterPartitionShouldRejectShuttingDownBrokers(short version) {\n             anonymousContextFor(ApiKeys.ALTER_PARTITION, version);\n \n         ControllerResult<AlterPartitionResponseData> alterPartitionResult =\n-            replication.alterPartition(requestContext, new AlterPartitionRequest.Builder(alterIsrRequest).build(version).data());\n+            replication.alterPartition(requestContext, new AlterPartitionRequest.Builder(alterIsrRequest, true).build(version).data());\n \n         Errors expectedError = INELIGIBLE_REPLICA;\n         assertEquals(\n@@ -3330,7 +3330,7 @@ public void testReassignPartitionsHandlesNewReassignmentThatRemovesPreviouslyAdd\n                     setNewIsrWithEpochs(isrWithDefaultEpoch(0, 1, 2))))));\n         ControllerResult<AlterPartitionResponseData> alterPartitionResult = replication.alterPartition(\n             anonymousContextFor(ApiKeys.ALTER_PARTITION),\n-            new AlterPartitionRequest.Builder(alterPartitionRequestData).build().data());\n+            new AlterPartitionRequest.Builder(alterPartitionRequestData, true).build().data());\n         assertEquals(new AlterPartitionResponseData().setTopics(List.of(\n             new AlterPartitionResponseData.TopicData().\n                 setTopicId(topicId).\n@@ -3405,7 +3405,7 @@ public void testReassignPartitionsHandlesNewReassignmentThatRemovesPreviouslyAdd\n                     setNewIsrWithEpochs(isrWithDefaultEpoch(0, 1, 2, 3, 4, 5))))));\n         ControllerResult<AlterPartitionResponseData> alterPartitionResultTwo = replication.alterPartition(\n             anonymousContextFor(ApiKeys.ALTER_PARTITION),\n-            new AlterPartitionRequest.Builder(alterPartitionRequestDataTwo).build().data());\n+            new AlterPartitionRequest.Builder(alterPartitionRequestDataTwo, true).build().data());\n         assertEquals(new AlterPartitionResponseData().setTopics(List.of(\n                 new AlterPartitionResponseData.TopicData().\n                     setTopicId(topicId)."
+  },
+  {
+   "sha": "5687b9c875a2fb7affd671ff7ca80213662a3472",
+   "filename": "server/src/main/java/org/apache/kafka/server/AssignmentsManager.java",
+   "status": "modified",
+   "additions": 4,
+   "deletions": 3,
+   "changes": 7,
+   "blob_url": "https://github.com/apache/kafka/blob/f946b43aae6813640a5cadae0a1533d2b914bb89/server%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fserver%2FAssignmentsManager.java",
+   "raw_url": "https://github.com/apache/kafka/raw/f946b43aae6813640a5cadae0a1533d2b914bb89/server%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fserver%2FAssignmentsManager.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/server%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fserver%2FAssignmentsManager.java?ref=f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "patch": "@@ -353,14 +353,15 @@ void maybeSendAssignments() {\n         log.info(\"maybeSendAssignments: sending {} assignments; invalidated {} assignments \" +\n             \"prior to sending.\", newInFlight.size(), numInvalid);\n         if (!newInFlight.isEmpty()) {\n-            sendAssignments(image.cluster().brokerEpoch(nodeId), newInFlight);\n+            sendAssignments(image.cluster().brokerEpoch(nodeId), newInFlight,\n+                image.features().metadataVersionOrThrow().isRequestHeaderV3Supported());\n         }\n     }\n \n-    void sendAssignments(long brokerEpoch, Map<TopicIdPartition, Assignment> newInflight) {\n+    void sendAssignments(long brokerEpoch, Map<TopicIdPartition, Assignment> newInflight, boolean useRequestHeaderV3) {\n         CompletionHandler completionHandler = new CompletionHandler(newInflight);\n         channelManager.sendRequest(new AssignReplicasToDirsRequest.Builder(\n-            buildRequestData(nodeId, brokerEpoch, newInflight)),\n+            buildRequestData(nodeId, brokerEpoch, newInflight), useRequestHeaderV3),\n             completionHandler);\n         inflight = newInflight;\n     }"
+  },
+  {
+   "sha": "f41366f9d93af12b38b7c009b448004b7c2ad317",
+   "filename": "server/src/main/java/org/apache/kafka/server/controller/ControllerRegistrationManager.java",
+   "status": "modified",
+   "additions": 3,
+   "deletions": 3,
+   "changes": 6,
+   "blob_url": "https://github.com/apache/kafka/blob/f946b43aae6813640a5cadae0a1533d2b914bb89/server%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fserver%2Fcontroller%2FControllerRegistrationManager.java",
+   "raw_url": "https://github.com/apache/kafka/raw/f946b43aae6813640a5cadae0a1533d2b914bb89/server%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fserver%2Fcontroller%2FControllerRegistrationManager.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/server%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fserver%2Fcontroller%2FControllerRegistrationManager.java?ref=f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "patch": "@@ -250,11 +250,11 @@ private void maybeSendControllerRegistration() {\n         } else if (pendingRpc) {\n             logger.info(\"maybeSendControllerRegistration: waiting for the previous RPC to complete.\");\n         } else {\n-            sendControllerRegistration();\n+            sendControllerRegistration(metadataVersion.get().isRequestHeaderV3Supported());\n         }\n     }\n \n-    private void sendControllerRegistration() {\n+    private void sendControllerRegistration(boolean useRequestHeaderV3) {\n         ControllerRegistrationRequestData.FeatureCollection features = new ControllerRegistrationRequestData.FeatureCollection();\n         supportedFeatures.forEach((name, range) -> features.add(new ControllerRegistrationRequestData.Feature().\n                 setName(name).\n@@ -268,7 +268,7 @@ private void sendControllerRegistration() {\n             setZkMigrationReady(false);\n \n         logger.info(\"sendControllerRegistration: attempting to send {}\", data);\n-        channelManager.sendRequest(new ControllerRegistrationRequest.Builder(data),\n+        channelManager.sendRequest(new ControllerRegistrationRequest.Builder(data, useRequestHeaderV3),\n                 new RegistrationResponseHandler());\n         pendingRpc = true;\n     }"
+  },
+  {
+   "sha": "17fa83c027634e4695b7b97423060fd7d6da39be",
+   "filename": "server/src/main/java/org/apache/kafka/server/partition/DefaultAlterPartitionManager.java",
+   "status": "modified",
+   "additions": 7,
+   "deletions": 4,
+   "changes": 11,
+   "blob_url": "https://github.com/apache/kafka/blob/f946b43aae6813640a5cadae0a1533d2b914bb89/server%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fserver%2Fpartition%2FDefaultAlterPartitionManager.java",
+   "raw_url": "https://github.com/apache/kafka/raw/f946b43aae6813640a5cadae0a1533d2b914bb89/server%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fserver%2Fpartition%2FDefaultAlterPartitionManager.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/server%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fserver%2Fpartition%2FDefaultAlterPartitionManager.java?ref=f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "patch": "@@ -56,18 +56,20 @@ public class DefaultAlterPartitionManager implements AlterPartitionManager {\n     private final Scheduler scheduler;\n     private final int brokerId;\n     private final Supplier<Long> brokerEpochSupplier;\n+    private final Supplier<Boolean> requestHeaderV3Supported;\n \n     // Used to allow only one pending ISR update per partition (visible for testing)\n     final ConcurrentHashMap<TopicIdPartition, AlterPartitionItem> unsentIsrUpdates = new ConcurrentHashMap<>();\n \n     // Used to allow only one in-flight request at a time\n     private final AtomicBoolean inflightRequest = new AtomicBoolean(false);\n \n-    public DefaultAlterPartitionManager(NodeToControllerChannelManager controllerChannelManager, Scheduler scheduler, int brokerId, Supplier<Long> brokerEpochSupplier) {\n+    public DefaultAlterPartitionManager(NodeToControllerChannelManager controllerChannelManager, Scheduler scheduler, int brokerId, Supplier<Long> brokerEpochSupplier, Supplier<Boolean> requestHeaderV3Supported) {\n         this.controllerChannelManager = controllerChannelManager;\n         this.scheduler = scheduler;\n         this.brokerId = brokerId;\n         this.brokerEpochSupplier = brokerEpochSupplier;\n+        this.requestHeaderV3Supported = requestHeaderV3Supported;\n     }\n \n     public static DefaultAlterPartitionManager create(AbstractKafkaConfig config,\n@@ -76,7 +78,8 @@ public static DefaultAlterPartitionManager create(AbstractKafkaConfig config,\n                                                       Time time,\n                                                       Metrics metrics,\n                                                       String threadNamePrefix,\n-                                                      Supplier<Long> brokerEpochSupplier) {\n+                                                      Supplier<Long> brokerEpochSupplier,\n+                                                      Supplier<Boolean> requestHeaderV3Supported) {\n         NodeToControllerChannelManager channelManager = new NodeToControllerChannelManagerImpl(\n                 controllerNodeProvider,\n                 time,\n@@ -87,7 +90,7 @@ public static DefaultAlterPartitionManager create(AbstractKafkaConfig config,\n                 Long.MAX_VALUE\n         );\n \n-        return new DefaultAlterPartitionManager(channelManager, scheduler, config.brokerId(), brokerEpochSupplier);\n+        return new DefaultAlterPartitionManager(channelManager, scheduler, config.brokerId(), brokerEpochSupplier, requestHeaderV3Supported);\n     }\n \n     @Override\n@@ -217,7 +220,7 @@ private AlterPartitionRequest.Builder buildRequest(\n                     .setLeaderRecoveryState(item.leaderAndIsr().leaderRecoveryState().value()));\n         }\n \n-        return new AlterPartitionRequest.Builder(message);\n+        return new AlterPartitionRequest.Builder(message, requestHeaderV3Supported.get());\n     }\n \n     private Errors handleAlterPartitionResponse(AlterPartitionResponse alterPartitionResponse,"
+  },
+  {
+   "sha": "3df987396daf751fffbc27ce2ecd9f459802997e",
+   "filename": "server/src/test/java/org/apache/kafka/server/AssignmentsManagerTest.java",
+   "status": "modified",
+   "additions": 37,
+   "deletions": 5,
+   "changes": 42,
+   "blob_url": "https://github.com/apache/kafka/blob/f946b43aae6813640a5cadae0a1533d2b914bb89/server%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fserver%2FAssignmentsManagerTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/f946b43aae6813640a5cadae0a1533d2b914bb89/server%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fserver%2FAssignmentsManagerTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/server%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fserver%2FAssignmentsManagerTest.java?ref=f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "patch": "@@ -28,6 +28,7 @@\n import org.apache.kafka.common.metadata.PartitionRecord;\n import org.apache.kafka.common.metadata.RegisterBrokerRecord;\n import org.apache.kafka.common.metadata.TopicRecord;\n+import org.apache.kafka.common.protocol.ApiKeys;\n import org.apache.kafka.common.protocol.Errors;\n import org.apache.kafka.common.requests.AbstractRequest;\n import org.apache.kafka.common.requests.ApiVersionsResponse;\n@@ -142,8 +143,16 @@ public class AssignmentsManagerTest {\n         TEST_IMAGE = delta.apply(MetadataProvenance.EMPTY);\n     }\n \n+    private static MetadataImage imageWithMetadataVersion(MetadataVersion metadataVersion) {\n+        MetadataDelta delta = new MetadataDelta.Builder().setImage(TEST_IMAGE).build();\n+        delta.replay(new FeatureLevelRecord().\n+            setName(MetadataVersion.FEATURE_NAME).\n+            setFeatureLevel(metadataVersion.featureLevel()));\n+        return delta.apply(MetadataProvenance.EMPTY);\n+    }\n+\n     static class MockNodeToControllerChannelManager implements NodeToControllerChannelManager {\n-        LinkedBlockingDeque<Map.Entry<AssignReplicasToDirsRequestData, ControllerRequestCompletionHandler>> callbacks =\n+        LinkedBlockingDeque<Map.Entry<AssignReplicasToDirsRequest, ControllerRequestCompletionHandler>> callbacks =\n             new LinkedBlockingDeque<>();\n \n         @Override\n@@ -166,7 +175,7 @@ public void sendRequest(\n         ) {\n             AssignReplicasToDirsRequest inputRequest = (AssignReplicasToDirsRequest) request.build();\n             synchronized (this) {\n-                callbacks.add(new AbstractMap.SimpleEntry<>(inputRequest.data(), callback));\n+                callbacks.add(new AbstractMap.SimpleEntry<>(inputRequest, callback));\n             }\n         }\n \n@@ -176,8 +185,8 @@ public long getTimeoutMs() {\n         }\n \n         void completeCallback(Function<AssignReplicasToDirsRequestData, Optional<ClientResponse>> completionist) throws InterruptedException {\n-            Map.Entry<AssignReplicasToDirsRequestData, ControllerRequestCompletionHandler> entry = callbacks.take();\n-            Optional<ClientResponse> clientResponse = completionist.apply(entry.getKey());\n+            Map.Entry<AssignReplicasToDirsRequest, ControllerRequestCompletionHandler> entry = callbacks.take();\n+            Optional<ClientResponse> clientResponse = completionist.apply(entry.getKey().data());\n             if (clientResponse.isPresent()) {\n                 entry.getValue().onComplete(clientResponse.get());\n             } else {\n@@ -194,10 +203,14 @@ static class TestEnv implements AutoCloseable {\n         final Map<TopicIdPartition, Integer> successes;\n \n         TestEnv() {\n+            this(TEST_IMAGE);\n+        }\n+\n+        TestEnv(MetadataImage image) {\n             this.backoff = new ExponentialBackoff(1, 2, 4, 0);\n             this.channelManager = new MockNodeToControllerChannelManager();\n             this.assignmentsManager = new AssignmentsManager(\n-                    backoff, Time.SYSTEM, channelManager, 1, () -> TEST_IMAGE,\n+                    backoff, Time.SYSTEM, channelManager, 1, () -> image,\n                     Uuid::toString, metricsRegistry);\n             this.successes = new HashMap<>();\n         }\n@@ -306,6 +319,25 @@ public void testSuccessfulAssignment() throws Exception {\n         }\n     }\n \n+    @ParameterizedTest\n+    @ValueSource(booleans = {true, false})\n+    public void testRequestVersionGatedByRequestHeaderV3Supported(boolean requestHeaderV3Supported) throws Exception {\n+        MetadataVersion metadataVersion = requestHeaderV3Supported ? MetadataVersion.IBP_4_5_IV0 : MetadataVersion.IBP_4_4_IV2;\n+        try (TestEnv testEnv = new TestEnv(imageWithMetadataVersion(metadataVersion))) {\n+            testEnv.onAssignment(new TopicIdPartition(TOPIC_1, 0), DIR_1);\n+            TestUtils.retryOnExceptionWithTimeout(60_000, () -> assertEquals(1, testEnv.assignmentsManager.numInFlight()));\n+\n+            short requestVersion = testEnv.channelManager.callbacks.peek().getKey().version();\n+            short expectedVersion = requestHeaderV3Supported\n+                ? ApiKeys.ASSIGN_REPLICAS_TO_DIRS.latestVersion()\n+                : (short) 0;\n+            assertEquals(expectedVersion, requestVersion);\n+\n+            short expectedHeaderVersion = requestHeaderV3Supported ? (short) 3 : (short) 2;\n+            assertEquals(expectedHeaderVersion, ApiKeys.ASSIGN_REPLICAS_TO_DIRS.requestHeaderVersion(requestVersion));\n+        }\n+    }\n+\n     @ParameterizedTest\n     @ValueSource(strings = {\"invalidRequest\", \"timeout\"})\n     public void testUnSuccessfulRequestCausesRetransmission(String failureType) throws Exception {"
+  },
+  {
+   "sha": "74705ac573e55b1448f418b15d06b536c886568b",
+   "filename": "server/src/test/java/org/apache/kafka/server/partition/AlterPartitionManagerTest.java",
+   "status": "modified",
+   "additions": 38,
+   "deletions": 10,
+   "changes": 48,
+   "blob_url": "https://github.com/apache/kafka/blob/f946b43aae6813640a5cadae0a1533d2b914bb89/server%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fserver%2Fpartition%2FAlterPartitionManagerTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/f946b43aae6813640a5cadae0a1533d2b914bb89/server%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fserver%2Fpartition%2FAlterPartitionManagerTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/server%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fserver%2Fpartition%2FAlterPartitionManagerTest.java?ref=f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "patch": "@@ -55,6 +55,7 @@\n import java.util.concurrent.ExecutionException;\n import java.util.concurrent.TimeUnit;\n import java.util.concurrent.TimeoutException;\n+import java.util.concurrent.atomic.AtomicBoolean;\n import java.util.stream.Collectors;\n \n import static org.apache.kafka.test.TestUtils.assertFutureThrows;\n@@ -87,7 +88,7 @@ public void setup() {\n     @Test\n     public void testBasic() {\n         var scheduler = new MockScheduler(time);\n-        var alterPartitionManager = new DefaultAlterPartitionManager(brokerToController, scheduler, brokerId, () -> 2L);\n+        var alterPartitionManager = new DefaultAlterPartitionManager(brokerToController, scheduler, brokerId, () -> 2L, () -> true);\n         alterPartitionManager.start();\n         alterPartitionManager.submit(tp0, new LeaderAndIsr(1, 1, List.of(1, 2, 3), LeaderRecoveryState.RECOVERED, 10));\n         verify(brokerToController).start();\n@@ -97,7 +98,7 @@ public void testBasic() {\n     @Test\n     public void testBasicWithBrokerEpoch() {\n         var scheduler = new MockScheduler(time);\n-        var alterPartitionManager = new DefaultAlterPartitionManager(brokerToController, scheduler, brokerId, () -> 101L);\n+        var alterPartitionManager = new DefaultAlterPartitionManager(brokerToController, scheduler, brokerId, () -> 101L, () -> true);\n         alterPartitionManager.start();\n         ArrayList<BrokerState> isrWithBrokerEpoch = new ArrayList<>();\n         for (int i = 1; i <= 3; i++) {\n@@ -136,7 +137,7 @@ public void testBasicSentLeaderRecoveryState(LeaderRecoveryState leaderRecoveryS\n         ArgumentCaptor<AbstractRequest.Builder<AlterPartitionRequest>> requestCapture = ArgumentCaptor.captor();\n \n         var scheduler = new MockScheduler(time);\n-        var alterPartitionManager = new DefaultAlterPartitionManager(brokerToController, scheduler, brokerId, () -> 2L);\n+        var alterPartitionManager = new DefaultAlterPartitionManager(brokerToController, scheduler, brokerId, () -> 2L, () -> true);\n         alterPartitionManager.start();\n         alterPartitionManager.submit(tp0, new LeaderAndIsr(1, 1, List.of(1), leaderRecoveryState, 10));\n         verify(brokerToController).start();\n@@ -146,13 +147,40 @@ public void testBasicSentLeaderRecoveryState(LeaderRecoveryState leaderRecoveryS\n         assertEquals(leaderRecoveryState.value(), request.data().topics().get(0).partitions().get(0).leaderRecoveryState());\n     }\n \n+    @Test\n+    public void testRequestVersionFollowsRequestHeaderV3SupportedChange() {\n+        ArgumentCaptor<AbstractRequest.Builder<AlterPartitionRequest>> requestCapture = ArgumentCaptor.captor();\n+        ArgumentCaptor<ControllerRequestCompletionHandler> callbackCapture = ArgumentCaptor.captor();\n+        var requestHeaderV3Supported = new AtomicBoolean(false);\n+\n+        var scheduler = new MockScheduler(time);\n+        var alterPartitionManager = new DefaultAlterPartitionManager(brokerToController, scheduler, brokerId, () -> 2L, requestHeaderV3Supported::get);\n+        alterPartitionManager.start();\n+        alterPartitionManager.submit(tp0, new LeaderAndIsr(1, 1, List.of(1, 2, 3), LeaderRecoveryState.RECOVERED, 10));\n+\n+        verify(brokerToController).sendRequest(requestCapture.capture(), callbackCapture.capture());\n+        short requestVersion = requestCapture.getValue().latestAllowedVersion();\n+        assertEquals((short) 3, requestVersion);\n+        assertEquals((short) 2, ApiKeys.ALTER_PARTITION.requestHeaderVersion(requestVersion));\n+\n+        // The response omits tp0, so it is retried\n+        requestHeaderV3Supported.set(true);\n+        callbackCapture.getValue().onComplete(new ClientResponse(null, null, \"\", 0L, 0L,\n+                false, null, null, new AlterPartitionResponse(new AlterPartitionResponseData())));\n+\n+        verify(brokerToController, times(2)).sendRequest(requestCapture.capture(), callbackCapture.capture());\n+        requestVersion = requestCapture.getValue().latestAllowedVersion();\n+        assertEquals(ApiKeys.ALTER_PARTITION.latestVersion(), requestVersion);\n+        assertEquals((short) 3, ApiKeys.ALTER_PARTITION.requestHeaderVersion(requestVersion));\n+    }\n+\n     @Test\n     public void testOverwriteWithinBatch() {\n         ArgumentCaptor<AbstractRequest.Builder<AlterPartitionRequest>> capture = ArgumentCaptor.captor();\n         ArgumentCaptor<ControllerRequestCompletionHandler> callbackCapture = ArgumentCaptor.captor();\n \n         var scheduler = new MockScheduler(time);\n-        var alterPartitionManager = new DefaultAlterPartitionManager(brokerToController, scheduler, brokerId, () -> 2L);\n+        var alterPartitionManager = new DefaultAlterPartitionManager(brokerToController, scheduler, brokerId, () -> 2L, () -> true);\n         alterPartitionManager.start();\n \n         // Only send one ISR update for a given topic+partition\n@@ -193,7 +221,7 @@ public void testSingleBatch() {\n         ArgumentCaptor<ControllerRequestCompletionHandler> callbackCapture = ArgumentCaptor.captor();\n \n         var scheduler = new MockScheduler(time);\n-        var alterPartitionManager = new DefaultAlterPartitionManager(brokerToController, scheduler, brokerId, () -> 2L);\n+        var alterPartitionManager = new DefaultAlterPartitionManager(brokerToController, scheduler, brokerId, () -> 2L, () -> true);\n         alterPartitionManager.start();\n \n         // First request will send batch of one\n@@ -238,7 +266,7 @@ public void testSubmitFromCallback() throws ExecutionException, InterruptedExcep\n         ArgumentCaptor<ControllerRequestCompletionHandler> callbackCapture = ArgumentCaptor.captor();\n \n         var scheduler = new MockScheduler(time);\n-        var alterPartitionManager = new DefaultAlterPartitionManager(brokerToController, scheduler, brokerId, () -> 2L);\n+        var alterPartitionManager = new DefaultAlterPartitionManager(brokerToController, scheduler, brokerId, () -> 2L, () -> true);\n         alterPartitionManager.start();\n         var future = alterPartitionManager.submit(tp0, leaderAndIsr);\n         var finalFuture = new CompletableFuture<LeaderAndIsr>();\n@@ -313,7 +341,7 @@ private void testRetryOnErrorResponse(ClientResponse response) {\n         ArgumentCaptor<ControllerRequestCompletionHandler> callbackCapture = ArgumentCaptor.captor();\n \n         var scheduler = new MockScheduler(time);\n-        var alterPartitionManager = new DefaultAlterPartitionManager(brokerToController, scheduler, brokerId, () -> 2L);\n+        var alterPartitionManager = new DefaultAlterPartitionManager(brokerToController, scheduler, brokerId, () -> 2L, () -> true);\n         alterPartitionManager.start();\n         alterPartitionManager.submit(tp0, leaderAndIsr);\n \n@@ -371,7 +399,7 @@ private AlterPartitionManager testPartitionError(TopicIdPartition tp, Errors err\n         reset(brokerToController);\n \n         var scheduler = new MockScheduler(time);\n-        var alterPartitionManager = new DefaultAlterPartitionManager(brokerToController, scheduler, brokerId, () -> 2L);\n+        var alterPartitionManager = new DefaultAlterPartitionManager(brokerToController, scheduler, brokerId, () -> 2L, () -> true);\n         alterPartitionManager.start();\n \n         var future = alterPartitionManager.submit(tp, new LeaderAndIsr(1, 1, List.of(1, 2, 3), LeaderRecoveryState.RECOVERED, 10));\n@@ -393,7 +421,7 @@ public void testOneInFlight() {\n         ArgumentCaptor<ControllerRequestCompletionHandler> callbackCapture = ArgumentCaptor.captor();\n \n         var scheduler = new MockScheduler(time);\n-        var alterPartitionManager = new DefaultAlterPartitionManager(brokerToController, scheduler, brokerId, () -> 2L);\n+        var alterPartitionManager = new DefaultAlterPartitionManager(brokerToController, scheduler, brokerId, () -> 2L, () -> true);\n         alterPartitionManager.start();\n \n         // First submit will send the request\n@@ -422,7 +450,7 @@ public void testPartitionMissingInResponse() {\n         var expectedVersion = ApiKeys.ALTER_PARTITION.latestVersion();\n         var leaderAndIsr = new LeaderAndIsr(1, 1, List.of(1, 2, 3), LeaderRecoveryState.RECOVERED, 10);\n         var scheduler = new MockScheduler(time);\n-        var alterPartitionManager = new DefaultAlterPartitionManager(brokerToController, scheduler, brokerId, () -> 2L);\n+        var alterPartitionManager = new DefaultAlterPartitionManager(brokerToController, scheduler, brokerId, () -> 2L, () -> true);\n         alterPartitionManager.start();\n \n         // The first `submit` will send the `AlterIsr` request"
+  },
+  {
+   "sha": "09fe699e3b9b29a5bfeca61029478aea525c7d4b",
+   "filename": "transaction-coordinator/src/main/java/org/apache/kafka/coordinator/transaction/ProducerIdManager.java",
+   "status": "modified",
+   "additions": 3,
+   "deletions": 2,
+   "changes": 5,
+   "blob_url": "https://github.com/apache/kafka/blob/f946b43aae6813640a5cadae0a1533d2b914bb89/transaction-coordinator%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcoordinator%2Ftransaction%2FProducerIdManager.java",
+   "raw_url": "https://github.com/apache/kafka/raw/f946b43aae6813640a5cadae0a1533d2b914bb89/transaction-coordinator%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcoordinator%2Ftransaction%2FProducerIdManager.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/transaction-coordinator%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcoordinator%2Ftransaction%2FProducerIdManager.java?ref=f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "patch": "@@ -36,7 +36,8 @@ public interface ProducerIdManager {\n     static ProducerIdManager rpc(int brokerId,\n                                  Time time,\n                                  Supplier<Long> brokerEpochSupplier,\n-                                 NodeToControllerChannelManager controllerChannel) {\n-        return new RPCProducerIdManager(brokerId, time, brokerEpochSupplier, controllerChannel);\n+                                 NodeToControllerChannelManager controllerChannel,\n+                                 Supplier<Boolean> requestHeaderV3Supported) {\n+        return new RPCProducerIdManager(brokerId, time, brokerEpochSupplier, controllerChannel, requestHeaderV3Supported);\n     }\n }"
+  },
+  {
+   "sha": "240ccd7c0201cb1d522b7f1cadb4a0c428994af1",
+   "filename": "transaction-coordinator/src/main/java/org/apache/kafka/coordinator/transaction/RPCProducerIdManager.java",
+   "status": "modified",
+   "additions": 5,
+   "deletions": 2,
+   "changes": 7,
+   "blob_url": "https://github.com/apache/kafka/blob/f946b43aae6813640a5cadae0a1533d2b914bb89/transaction-coordinator%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcoordinator%2Ftransaction%2FRPCProducerIdManager.java",
+   "raw_url": "https://github.com/apache/kafka/raw/f946b43aae6813640a5cadae0a1533d2b914bb89/transaction-coordinator%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcoordinator%2Ftransaction%2FRPCProducerIdManager.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/transaction-coordinator%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcoordinator%2Ftransaction%2FRPCProducerIdManager.java?ref=f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "patch": "@@ -55,6 +55,7 @@ public class RPCProducerIdManager implements ProducerIdManager {\n     final Time time;\n     private final Supplier<Long> brokerEpochSupplier;\n     private final NodeToControllerChannelManager controllerChannel;\n+    private final Supplier<Boolean> requestHeaderV3Supported;\n \n     // Visible for testing\n     final AtomicReference<ProducerIdsBlock> nextProducerIdBlock = new AtomicReference<>(null);\n@@ -66,12 +67,14 @@ public class RPCProducerIdManager implements ProducerIdManager {\n     public RPCProducerIdManager(int brokerId,\n                                 Time time,\n                                 Supplier<Long> brokerEpochSupplier,\n-                                NodeToControllerChannelManager controllerChannel\n+                                NodeToControllerChannelManager controllerChannel,\n+                                Supplier<Boolean> requestHeaderV3Supported\n     ) {\n         this.brokerId = brokerId;\n         this.time = time;\n         this.brokerEpochSupplier = brokerEpochSupplier;\n         this.controllerChannel = controllerChannel;\n+        this.requestHeaderV3Supported = requestHeaderV3Supported;\n         this.logPrefix = \"[RPC ProducerId Manager \" + brokerId + \"]: \";\n     }\n \n@@ -136,7 +139,7 @@ protected void sendRequest() {\n         var message = new AllocateProducerIdsRequestData()\n                 .setBrokerEpoch(brokerEpochSupplier.get())\n                 .setBrokerId(brokerId);\n-        var request = new AllocateProducerIdsRequest.Builder(message);\n+        var request = new AllocateProducerIdsRequest.Builder(message, requestHeaderV3Supported.get());\n         log.debug(\"{} Requesting next Producer ID block\", logPrefix);\n         controllerChannel.sendRequest(request, new ControllerRequestCompletionHandler() {\n "
+  },
+  {
+   "sha": "4fc066198870d2758adc594b9615d04295c53465",
+   "filename": "transaction-coordinator/src/test/java/org/apache/kafka/coordinator/transaction/ProducerIdManagerTest.java",
+   "status": "modified",
+   "additions": 25,
+   "deletions": 1,
+   "changes": 26,
+   "blob_url": "https://github.com/apache/kafka/blob/f946b43aae6813640a5cadae0a1533d2b914bb89/transaction-coordinator%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcoordinator%2Ftransaction%2FProducerIdManagerTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/f946b43aae6813640a5cadae0a1533d2b914bb89/transaction-coordinator%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcoordinator%2Ftransaction%2FProducerIdManagerTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/transaction-coordinator%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcoordinator%2Ftransaction%2FProducerIdManagerTest.java?ref=f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "patch": "@@ -21,7 +21,10 @@\n import org.apache.kafka.common.errors.CoordinatorLoadInProgressException;\n import org.apache.kafka.common.errors.UnsupportedVersionException;\n import org.apache.kafka.common.message.AllocateProducerIdsResponseData;\n+import org.apache.kafka.common.protocol.ApiKeys;\n import org.apache.kafka.common.protocol.Errors;\n+import org.apache.kafka.common.requests.AbstractRequest;\n+import org.apache.kafka.common.requests.AllocateProducerIdsRequest;\n import org.apache.kafka.common.requests.AllocateProducerIdsResponse;\n import org.apache.kafka.common.utils.MockTime;\n import org.apache.kafka.common.utils.Time;\n@@ -33,6 +36,7 @@\n import org.junit.jupiter.params.ParameterizedTest;\n import org.junit.jupiter.params.provider.EnumSource;\n import org.junit.jupiter.params.provider.ValueSource;\n+import org.mockito.ArgumentCaptor;\n import org.mockito.Mockito;\n \n import java.util.Collections;\n@@ -78,7 +82,7 @@ class MockProducerIdManager extends RPCProducerIdManager {\n                               boolean hasAuthenticationException,\n                               boolean hasVersionMismatch,\n                               boolean hasNoResponse) {\n-            super(brokerId, time, () -> 1L, brokerToController);\n+            super(brokerId, time, () -> 1L, brokerToController, () -> true);\n             this.idStart = idStart;\n             this.idLen = idLen;\n             this.errorQueue = errorQueue;\n@@ -281,6 +285,26 @@ public void testSanityCheckProhibitsOverlappingBlocks() throws Exception {\n         assertNull(manager.nextProducerIdBlock.get(), \"The manager should have rejected the overlapping block.\");\n     }\n \n+    @Test\n+    public void testRequestVersionFollowsRequestHeaderV3SupportedChange() {\n+        ArgumentCaptor<AbstractRequest.Builder<AllocateProducerIdsRequest>> requestCapture = ArgumentCaptor.captor();\n+        var requestHeaderV3Supported = new AtomicBoolean(false);\n+        var manager = new RPCProducerIdManager(0, new MockTime(), () -> 1L, brokerToController, requestHeaderV3Supported::get);\n+\n+        manager.sendRequest();\n+        Mockito.verify(brokerToController).sendRequest(requestCapture.capture(), Mockito.any());\n+        short requestVersion = requestCapture.getValue().latestAllowedVersion();\n+        assertEquals((short) 0, requestVersion);\n+        assertEquals((short) 2, ApiKeys.ALLOCATE_PRODUCER_IDS.requestHeaderVersion(requestVersion));\n+\n+        requestHeaderV3Supported.set(true);\n+        manager.sendRequest();\n+        Mockito.verify(brokerToController, Mockito.times(2)).sendRequest(requestCapture.capture(), Mockito.any());\n+        requestVersion = requestCapture.getValue().latestAllowedVersion();\n+        assertEquals(ApiKeys.ALLOCATE_PRODUCER_IDS.latestVersion(), requestVersion);\n+        assertEquals((short) 3, ApiKeys.ALLOCATE_PRODUCER_IDS.requestHeaderVersion(requestVersion));\n+    }\n+\n     private Queue<Errors> queue(Errors... errors) {\n         Queue<Errors> queue = new ConcurrentLinkedQueue<>();\n         Collections.addAll(queue, errors);"
+  }
+ ],
+ "timeline": [
+  {
+   "sha": "eade98e12deed1dabb4f770114e0bda0b52239cf",
+   "node_id": "C_kwDOACG9q9oAKGVhZGU5OGUxMmRlZWQxZGFiYjRmNzcwMTE0ZTBiZGEwYjUyMjM5Y2Y",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/eade98e12deed1dabb4f770114e0bda0b52239cf",
+   "html_url": "https://github.com/apache/kafka/commit/eade98e12deed1dabb4f770114e0bda0b52239cf",
+   "author": {
+    "name": "Alan Lau",
+    "email": "alau@confluent.io",
+    "date": "2026-10-15T19:44:57Z"
+   },
+   "committer": {
+    "name": "Alan Lau",
+    "email": "alau@confluent.io",
+    "date": "2026-10-26T14:42:38Z"
+   },
+   "tree": {
+    "sha": "6c53f2e36cf443ff5feb8f42fccfb297a5978632",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/6c53f2e36cf443ff5feb8f42fccfb297a5978632"
+   },
+   "message": "KAFKA-20925: Use request header v3 in AlterPartition",
+   "parents": [
+    {
+     "sha": "8de94149073a19f1c8606636823c0c8833cf8db7",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/8de94149073a19f1c8606636823c0c8833cf8db7",
+     "html_url": "https://github.com/apache/kafka/commit/8de94149073a19f1c8606636823c0c8833cf8db7"
+    }
+   ],
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAg1humXtAUQ9htLOCIJ18i54BCup\n0Az9T287L2OM7i99UAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQMqz1gyxtwnXkWS+xvZ4ZNgeM4M1ccbgdsgX0YoXQkHQAK3jsSouTiCw65GH9VdUJL\nfaiBYEBwGvM36qnAAARgo=\n-----END SSH SIGNATURE-----",
+    "payload": "tree 6c53f2e36cf443ff5feb8f42fccfb297a5978632\nparent 8de94149073a19f1c8606636823c0c8833cf8db7\nauthor Alan Lau <alau@confluent.io> 1792093497 -0400\ncommitter Alan Lau <alau@confluent.io> 1793025758 -0400\n\nKAFKA-20925: Use request header v3 in AlterPartition\n",
+    "verified_at": "2026-10-26T14:58:10Z"
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "5c262e6911125a1566f9112e24253bacd99caa91",
+   "node_id": "C_kwDOACG9q9oAKDVjMjYyZTY5MTExMjVhMTU2NmY5MTEyZTI0MjUzYmFjZDk5Y2FhOTE",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/5c262e6911125a1566f9112e24253bacd99caa91",
+   "html_url": "https://github.com/apache/kafka/commit/5c262e6911125a1566f9112e24253bacd99caa91",
+   "author": {
+    "name": "Alan Lau",
+    "email": "alau@confluent.io",
+    "date": "2026-10-15T19:49:14Z"
+   },
+   "committer": {
+    "name": "Alan Lau",
+    "email": "alau@confluent.io",
+    "date": "2026-10-26T14:42:38Z"
+   },
+   "tree": {
+    "sha": "36f7dc6747c628382c4256dab39c74d9485e5a00",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/36f7dc6747c628382c4256dab39c74d9485e5a00"
+   },
+   "message": "KAFKA-20925: Use request header v3 in AssignReplicasToDirs",
+   "parents": [
+    {
+     "sha": "eade98e12deed1dabb4f770114e0bda0b52239cf",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/eade98e12deed1dabb4f770114e0bda0b52239cf",
+     "html_url": "https://github.com/apache/kafka/commit/eade98e12deed1dabb4f770114e0bda0b52239cf"
+    }
+   ],
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAg1humXtAUQ9htLOCIJ18i54BCup\n0Az9T287L2OM7i99UAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQMuEzwiRkRzbNLUWDhGNFFTzFxmkNNybOuetodnQuhGuAuXhzd25M3rcCm6cpIcSvN\nrd/2bB2sfwCZVndzk9jAE=\n-----END SSH SIGNATURE-----",
+    "payload": "tree 36f7dc6747c628382c4256dab39c74d9485e5a00\nparent eade98e12deed1dabb4f770114e0bda0b52239cf\nauthor Alan Lau <alau@confluent.io> 1792093754 -0400\ncommitter Alan Lau <alau@confluent.io> 1793025758 -0400\n\nKAFKA-20925: Use request header v3 in AssignReplicasToDirs\n",
+    "verified_at": "2026-10-26T14:58:10Z"
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "7bb58696cc83e65168417f9a9ef40cae00eb755a",
+   "node_id": "C_kwDOACG9q9oAKDdiYjU4Njk2Y2M4M2U2NTE2ODQxN2Y5YTllZjQwY2FlMDBlYjc1NWE",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/7bb58696cc83e65168417f9a9ef40cae00eb755a",
+   "html_url": "https://github.com/apache/kafka/commit/7bb58696cc83e65168417f9a9ef40cae00eb755a",
+   "author": {
+    "name": "Alan Lau",
+    "email": "alau@confluent.io",
+    "date": "2026-10-16T19:46:45Z"
+   },
+   "committer": {
+    "name": "Alan Lau",
+    "email": "alau@confluent.io",
+    "date": "2026-10-26T14:42:38Z"
+   },
+   "tree": {
+    "sha": "d3425f0b595934e76deabbe1f236a94d7ca38816",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/d3425f0b595934e76deabbe1f236a94d7ca38816"
+   },
+   "message": "KAFKA-20925: Use request header v3 in AllocateProducerIds",
+   "parents": [
+    {
+     "sha": "5c262e6911125a1566f9112e24253bacd99caa91",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/5c262e6911125a1566f9112e24253bacd99caa91",
+     "html_url": "https://github.com/apache/kafka/commit/5c262e6911125a1566f9112e24253bacd99caa91"
+    }
+   ],
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAg1humXtAUQ9htLOCIJ18i54BCup\n0Az9T287L2OM7i99UAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQJ/Arbnmx+LKRFFUsOlK9WS3OQKt+jBwsEG0fe4basq2Us+lZJf928DJaKqRqJQOpR\nlMVVatc1rS2HX3zQmpAQ0=\n-----END SSH SIGNATURE-----",
+    "payload": "tree d3425f0b595934e76deabbe1f236a94d7ca38816\nparent 5c262e6911125a1566f9112e24253bacd99caa91\nauthor Alan Lau <alau@confluent.io> 1792180005 -0400\ncommitter Alan Lau <alau@confluent.io> 1793025758 -0400\n\nKAFKA-20925: Use request header v3 in AllocateProducerIds\n",
+    "verified_at": "2026-10-26T14:58:10Z"
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "34205c93b37d7da0d485c91bb1829958765588e2",
+   "node_id": "C_kwDOACG9q9oAKDM0MjA1YzkzYjM3ZDdkYTBkNDg1YzkxYmIxODI5OTU4NzY1NTg4ZTI",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/34205c93b37d7da0d485c91bb1829958765588e2",
+   "html_url": "https://github.com/apache/kafka/commit/34205c93b37d7da0d485c91bb1829958765588e2",
+   "author": {
+    "name": "Alan Lau",
+    "email": "alau@confluent.io",
+    "date": "2026-10-16T19:46:45Z"
+   },
+   "committer": {
+    "name": "Alan Lau",
+    "email": "alau@confluent.io",
+    "date": "2026-10-26T14:42:38Z"
+   },
+   "tree": {
+    "sha": "39da41ad24d87c72837ea500f676339f5af38278",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/39da41ad24d87c72837ea500f676339f5af38278"
+   },
+   "message": "KAFKA-20925: Use request header v3 in ControllerRegistration",
+   "parents": [
+    {
+     "sha": "7bb58696cc83e65168417f9a9ef40cae00eb755a",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/7bb58696cc83e65168417f9a9ef40cae00eb755a",
+     "html_url": "https://github.com/apache/kafka/commit/7bb58696cc83e65168417f9a9ef40cae00eb755a"
+    }
+   ],
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAg1humXtAUQ9htLOCIJ18i54BCup\n0Az9T287L2OM7i99UAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQLHL40jcnn9DjcR4shjZf28PHutJ0btvsqrgRy8nBzYqBFrQPBgBUOqC/nqIwVpsNj\n82M0G5DqaiOyPNCruBNgI=\n-----END SSH SIGNATURE-----",
+    "payload": "tree 39da41ad24d87c72837ea500f676339f5af38278\nparent 7bb58696cc83e65168417f9a9ef40cae00eb755a\nauthor Alan Lau <alau@confluent.io> 1792180005 -0400\ncommitter Alan Lau <alau@confluent.io> 1793025758 -0400\n\nKAFKA-20925: Use request header v3 in ControllerRegistration\n",
+    "verified_at": "2026-10-26T14:58:10Z"
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "3dfe745b4fa42a41f03ffa7cb49d99d9039ffd05",
+   "node_id": "C_kwDOACG9q9oAKDNkZmU3NDViNGZhNDJhNDFmMDNmZmE3Y2I0OWQ5OWQ5MDM5ZmZkMDU",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/3dfe745b4fa42a41f03ffa7cb49d99d9039ffd05",
+   "html_url": "https://github.com/apache/kafka/commit/3dfe745b4fa42a41f03ffa7cb49d99d9039ffd05",
+   "author": {
+    "name": "Alan Lau",
+    "email": "alau@confluent.io",
+    "date": "2026-10-23T14:28:17Z"
+   },
+   "committer": {
+    "name": "Alan Lau",
+    "email": "alau@confluent.io",
+    "date": "2026-10-26T14:42:39Z"
+   },
+   "tree": {
+    "sha": "6aae291bbd7025bb87b3001bd5814e5094bdd924",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/6aae291bbd7025bb87b3001bd5814e5094bdd924"
+   },
+   "message": "KAFKA-20925: Rename LAST_VERSION_BEFORE_REQUEST_HEADER_V3 to LATEST_VERSION_BEFORE_REQUEST_HEADER_V3",
+   "parents": [
+    {
+     "sha": "34205c93b37d7da0d485c91bb1829958765588e2",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/34205c93b37d7da0d485c91bb1829958765588e2",
+     "html_url": "https://github.com/apache/kafka/commit/34205c93b37d7da0d485c91bb1829958765588e2"
+    }
+   ],
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAg1humXtAUQ9htLOCIJ18i54BCup\n0Az9T287L2OM7i99UAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQJnaJ5/y0+rdcsAx7lwfvNtfuSGiU+Y0dVx2qI7D6Exoxwa6sCEiDY/Cp6EbnrZ8Gk\nF0658fkLcV+V2D1TbUnAM=\n-----END SSH SIGNATURE-----",
+    "payload": "tree 6aae291bbd7025bb87b3001bd5814e5094bdd924\nparent 34205c93b37d7da0d485c91bb1829958765588e2\nauthor Alan Lau <alau@confluent.io> 1792765697 -0400\ncommitter Alan Lau <alau@confluent.io> 1793025759 -0400\n\nKAFKA-20925: Rename LAST_VERSION_BEFORE_REQUEST_HEADER_V3 to LATEST_VERSION_BEFORE_REQUEST_HEADER_V3\n",
+    "verified_at": "2026-10-26T14:58:10Z"
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "53d11c1d65889227dbc989dd92b27c6a03f8d0c5",
+   "node_id": "C_kwDOACG9q9oAKDUzZDExYzFkNjU4ODkyMjdkYmM5ODlkZDkyYjI3YzZhMDNmOGQwYzU",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/53d11c1d65889227dbc989dd92b27c6a03f8d0c5",
+   "html_url": "https://github.com/apache/kafka/commit/53d11c1d65889227dbc989dd92b27c6a03f8d0c5",
+   "author": {
+    "name": "Alan Lau",
+    "email": "alau@confluent.io",
+    "date": "2026-10-26T14:42:56Z"
+   },
+   "committer": {
+    "name": "Alan Lau",
+    "email": "alau@confluent.io",
+    "date": "2026-10-26T14:42:56Z"
+   },
+   "tree": {
+    "sha": "f1bd88a7d1c91d1becced3da5a969762fe1591f5",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/f1bd88a7d1c91d1becced3da5a969762fe1591f5"
+   },
+   "message": "KAFKA-20925: Remove latestVersionUnstable from the node-to-controller RPCs",
+   "parents": [
+    {
+     "sha": "3dfe745b4fa42a41f03ffa7cb49d99d9039ffd05",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/3dfe745b4fa42a41f03ffa7cb49d99d9039ffd05",
+     "html_url": "https://github.com/apache/kafka/commit/3dfe745b4fa42a41f03ffa7cb49d99d9039ffd05"
+    }
+   ],
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAg1humXtAUQ9htLOCIJ18i54BCup\n0Az9T287L2OM7i99UAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQD5rRGVFV4ODz/04PeDYWQStN5oSwfEpphShF9AVjipqf9Gxf50DxD6tBCtjRjJ1el\na4rnuB8QP9aByPISnSzwM=\n-----END SSH SIGNATURE-----",
+    "payload": "tree f1bd88a7d1c91d1becced3da5a969762fe1591f5\nparent 3dfe745b4fa42a41f03ffa7cb49d99d9039ffd05\nauthor Alan Lau <alau@confluent.io> 1793025776 -0400\ncommitter Alan Lau <alau@confluent.io> 1793025776 -0400\n\nKAFKA-20925: Remove latestVersionUnstable from the node-to-controller RPCs\n",
+    "verified_at": "2026-10-26T14:58:10Z"
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "6344d6689413f5a7efda6fa2a7f3c4052f18bc9e",
+   "node_id": "C_kwDOACG9q9oAKDYzNDRkNjY4OTQxM2Y1YTdlZmRhNmZhMmE3ZjNjNDA1MmYxOGJjOWU",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/6344d6689413f5a7efda6fa2a7f3c4052f18bc9e",
+   "html_url": "https://github.com/apache/kafka/commit/6344d6689413f5a7efda6fa2a7f3c4052f18bc9e",
+   "author": {
+    "name": "Alan Lau",
+    "email": "alau@confluent.io",
+    "date": "2026-10-26T14:43:20Z"
+   },
+   "committer": {
+    "name": "Alan Lau",
+    "email": "alau@confluent.io",
+    "date": "2026-10-26T14:43:20Z"
+   },
+   "tree": {
+    "sha": "56da5e26592bb195134b47eb255371e8ec8209d4",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/56da5e26592bb195134b47eb255371e8ec8209d4"
+   },
+   "message": "Update tests",
+   "parents": [
+    {
+     "sha": "53d11c1d65889227dbc989dd92b27c6a03f8d0c5",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/53d11c1d65889227dbc989dd92b27c6a03f8d0c5",
+     "html_url": "https://github.com/apache/kafka/commit/53d11c1d65889227dbc989dd92b27c6a03f8d0c5"
+    }
+   ],
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAg1humXtAUQ9htLOCIJ18i54BCup\n0Az9T287L2OM7i99UAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQDvzNWVbqoXlFUfIWZbpKSXPbcrk+QcqWYucvCi0zcoAs/neK3oRU03SGsy/yonYBO\n6arnqbhdQXwNduwm2dAAo=\n-----END SSH SIGNATURE-----",
+    "payload": "tree 56da5e26592bb195134b47eb255371e8ec8209d4\nparent 53d11c1d65889227dbc989dd92b27c6a03f8d0c5\nauthor Alan Lau <alau@confluent.io> 1793025800 -0400\ncommitter Alan Lau <alau@confluent.io> 1793025800 -0400\n\nUpdate tests\n",
+    "verified_at": "2026-10-26T14:58:10Z"
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "75bc8290a43222e4e9a567dca585eae14879fedd",
+   "node_id": "C_kwDOACG9q9oAKDc1YmM4MjkwYTQzMjIyZTRlOWE1NjdkY2E1ODVlYWUxNDg3OWZlZGQ",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/75bc8290a43222e4e9a567dca585eae14879fedd",
+   "html_url": "https://github.com/apache/kafka/commit/75bc8290a43222e4e9a567dca585eae14879fedd",
+   "author": {
+    "name": "Alan Lau",
+    "email": "alau@confluent.io",
+    "date": "2026-10-26T15:14:31Z"
+   },
+   "committer": {
+    "name": "Alan Lau",
+    "email": "alau@confluent.io",
+    "date": "2026-10-26T15:14:31Z"
+   },
+   "tree": {
+    "sha": "5d5b51e0ec5a1f2442a7cdd4c82937835d1ebbfb",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/5d5b51e0ec5a1f2442a7cdd4c82937835d1ebbfb"
+   },
+   "message": "Update tests",
+   "parents": [
+    {
+     "sha": "6344d6689413f5a7efda6fa2a7f3c4052f18bc9e",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/6344d6689413f5a7efda6fa2a7f3c4052f18bc9e",
+     "html_url": "https://github.com/apache/kafka/commit/6344d6689413f5a7efda6fa2a7f3c4052f18bc9e"
+    }
+   ],
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAg1humXtAUQ9htLOCIJ18i54BCup\n0Az9T287L2OM7i99UAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQINqHExwtXK9t3qVzhsFXhSrGDiffzIJOp0ZlEl2noq7nsPdm+B6uIttNgTPRJdCV1\nRmFx88w7/kb+7QTJXaQQ8=\n-----END SSH SIGNATURE-----",
+    "payload": "tree 5d5b51e0ec5a1f2442a7cdd4c82937835d1ebbfb\nparent 6344d6689413f5a7efda6fa2a7f3c4052f18bc9e\nauthor Alan Lau <alau@confluent.io> 1793027671 -0400\ncommitter Alan Lau <alau@confluent.io> 1793027671 -0400\n\nUpdate tests\n",
+    "verified_at": "2026-10-26T16:27:27Z"
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "node_id": "C_kwDOACG9q9oAKGY5NDZiNDNhYWU2ODEzNjQwYTVjYWRhZTBhMTUzM2QyYjkxNGJiODk",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "html_url": "https://github.com/apache/kafka/commit/f946b43aae6813640a5cadae0a1533d2b914bb89",
+   "author": {
+    "name": "Alan Lau",
+    "email": "alau@confluent.io",
+    "date": "2026-10-26T16:35:43Z"
+   },
+   "committer": {
+    "name": "Alan Lau",
+    "email": "alau@confluent.io",
+    "date": "2026-10-26T16:35:43Z"
+   },
+   "tree": {
+    "sha": "ee3c74ac3b0773d0abdf2aa9477b566fa3c01046",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/ee3c74ac3b0773d0abdf2aa9477b566fa3c01046"
+   },
+   "message": "Update tests",
+   "parents": [
+    {
+     "sha": "75bc8290a43222e4e9a567dca585eae14879fedd",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/75bc8290a43222e4e9a567dca585eae14879fedd",
+     "html_url": "https://github.com/apache/kafka/commit/75bc8290a43222e4e9a567dca585eae14879fedd"
+    }
+   ],
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAg1humXtAUQ9htLOCIJ18i54BCup\n0Az9T287L2OM7i99UAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQLm78rtF1AufuR7kHQBFl/XPnmrSjW2bC3Ndk6z7L6P1tw1xp/vVbWDnw65SIHmCb9\n/nghissftv17yl7AcRHQQ=\n-----END SSH SIGNATURE-----",
+    "payload": "tree ee3c74ac3b0773d0abdf2aa9477b566fa3c01046\nparent 75bc8290a43222e4e9a567dca585eae14879fedd\nauthor Alan Lau <alau@confluent.io> 1793032543 -0400\ncommitter Alan Lau <alau@confluent.io> 1793032543 -0400\n\nUpdate tests\n",
+    "verified_at": "2026-10-26T16:52:28Z"
+   },
+   "event": "committed"
+  },
+  {
+   "id": 34285953866,
+   "node_id": "RTE_lADOACG9q88AAAABaEqTQM8AAAAH-5ojSg",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34285953866",
+   "actor": {
+    "login": "alanlau28",
+    "id": 72107214,
+    "node_id": "MDQ6VXNlcjcyMTA3MjE0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/72107214?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alanlau28",
+    "html_url": "https://github.com/alanlau28",
+    "followers_url": "https://api.github.com/users/alanlau28/followers",
+    "following_url": "https://api.github.com/users/alanlau28/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alanlau28/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alanlau28/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alanlau28/subscriptions",
+    "organizations_url": "https://api.github.com/users/alanlau28/orgs",
+    "repos_url": "https://api.github.com/users/alanlau28/repos",
+    "events_url": "https://api.github.com/users/alanlau28/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alanlau28/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "renamed",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-26T17:19:55Z",
+   "rename": {
+    "from": "KAFKA-20925: Use Request Header v3 for more Inter-Broker RPCs",
+    "to": "KAFKA-20925: Use Request Header v3 for AlterPartition, AssignReplicasToDirs, AllocateProducerIds and ControllerRegistration "
+   },
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34286024523,
+   "node_id": "LE_lADOACG9q88AAAABaEqTQM8AAAAH-5s3Sw",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34286024523",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-26T17:20:44Z",
+   "label": {
+    "name": "triage",
+    "color": "006b75"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34286061327,
+   "node_id": "LE_lADOACG9q88AAAABaEqTQM8AAAAH-5vHDw",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34286061327",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-26T17:21:09Z",
+   "label": {
+    "name": "core",
+    "color": "ed5a86"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34286061415,
+   "node_id": "LE_lADOACG9q88AAAABaEqTQM8AAAAH-5vHZw",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34286061415",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-26T17:21:09Z",
+   "label": {
+    "name": "kraft",
+    "color": "FBCA04"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34286061488,
+   "node_id": "LE_lADOACG9q88AAAABaEqTQM8AAAAH-5vHsA",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34286061488",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-26T17:21:09Z",
+   "label": {
+    "name": "transactions",
+    "color": "C71889"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34286061558,
+   "node_id": "LE_lADOACG9q88AAAABaEqTQM8AAAAH-5vH9g",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34286061558",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-26T17:21:09Z",
+   "label": {
+    "name": "clients",
+    "color": "ededed"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34357420283,
+   "node_id": "RRE_lADOACG9q88AAAABaEqTQM8AAAAH_9yg-w",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34357420283",
+   "actor": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "review_requested",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-27T10:58:59Z",
+   "review_requester": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "requested_reviewer": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34357429683,
+   "node_id": "LE_lADOACG9q88AAAABaEqTQM8AAAAH_9zFsw",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34357429683",
+   "actor": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-27T10:59:05Z",
+   "label": {
+    "name": "ci-approved",
+    "color": "ffffff"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  }
+ ]
+}

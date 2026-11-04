@@ -1,0 +1,944 @@
+{
+ "id": "449282795",
+ "versions": {
+  "results": [
+   {
+    "by": {
+     "type": "known",
+     "username": "unknowntpo",
+     "userKey": "073590d29715c82201971c7108c90002",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Eric Chang",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29715c82201971c7108c90002"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-22T04:49:41.000Z",
+    "message": "Update KIP status and KAFKA-21031 repair",
+    "number": 22,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/449282795/version/22"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/449282795"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "unknowntpo",
+     "userKey": "073590d29715c82201971c7108c90002",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Eric Chang",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29715c82201971c7108c90002"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-22T04:41:18.000Z",
+    "message": "Add KIP-1371 discussion thread link",
+    "number": 21,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/449282795/version/21"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/449282795?status=historical&version=21"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "unknowntpo",
+     "userKey": "073590d29715c82201971c7108c90002",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Eric Chang",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29715c82201971c7108c90002"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-22T03:55:07.000Z",
+    "message": "Present ManagerPollCondition before usage examples",
+    "number": 20,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/449282795/version/20"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/449282795?status=historical&version=20"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "unknowntpo",
+     "userKey": "073590d29715c82201971c7108c90002",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Eric Chang",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29715c82201971c7108c90002"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-22T03:42:35.000Z",
+    "message": "Render code examples with Confluence code blocks",
+    "number": 19,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/449282795/version/19"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/449282795?status=historical&version=19"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "unknowntpo",
+     "userKey": "073590d29715c82201971c7108c90002",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Eric Chang",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29715c82201971c7108c90002"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-21T13:58:57.000Z",
+    "message": "",
+    "number": 18,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/449282795/version/18"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/449282795?status=historical&version=18"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "unknowntpo",
+     "userKey": "073590d29715c82201971c7108c90002",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Eric Chang",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29715c82201971c7108c90002"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-21T11:03:49.000Z",
+    "message": "Narrow KIP-1371 to explicit wait conditions for consumer request managers",
+    "number": 17,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/449282795/version/17"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/449282795?status=historical&version=17"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "unknowntpo",
+     "userKey": "073590d29715c82201971c7108c90002",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Eric Chang",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29715c82201971c7108c90002"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-31T11:27:32.000Z",
+    "message": "Correct duplicated v15 content; fix PollResult formatting, mojibake, and stacked PR references",
+    "number": 16,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/449282795/version/16"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/449282795?status=historical&version=16"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "unknowntpo",
+     "userKey": "073590d29715c82201971c7108c90002",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Eric Chang",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29715c82201971c7108c90002"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-31T11:18:08.000Z",
+    "message": "Fix PollResult code formatting, mojibake, and stacked PR references",
+    "number": 15,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/449282795/version/15"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/449282795?status=historical&version=15"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "unknowntpo",
+     "userKey": "073590d29715c82201971c7108c90002",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Eric Chang",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29715c82201971c7108c90002"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-30T23:45:51.000Z",
+    "message": "",
+    "number": 14,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/449282795/version/14"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/449282795?status=historical&version=14"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "unknowntpo",
+     "userKey": "073590d29715c82201971c7108c90002",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Eric Chang",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29715c82201971c7108c90002"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-30T15:27:08.000Z",
+    "message": "Synchronize the reviewed KIP text and architecture diagrams.",
+    "number": 13,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/449282795/version/13"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/449282795?status=historical&version=13"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "unknowntpo",
+     "userKey": "073590d29715c82201971c7108c90002",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Eric Chang",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29715c82201971c7108c90002"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-30T07:39:03.000Z",
+    "message": "Clarify multi-input manager poll semantics",
+    "number": 12,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/449282795/version/12"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/449282795?status=historical&version=12"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "unknowntpo",
+     "userKey": "073590d29715c82201971c7108c90002",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Eric Chang",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29715c82201971c7108c90002"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-28T13:47:44.000Z",
+    "message": "Record verified reactor scheduling and readiness evidence",
+    "number": 11,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/449282795/version/11"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/449282795?status=historical&version=11"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "unknowntpo",
+     "userKey": "073590d29715c82201971c7108c90002",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Eric Chang",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29715c82201971c7108c90002"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-28T12:56:14.000Z",
+    "message": "Publish reviewed KIP-1371 draft and phase-aligned evidence",
+    "number": 10,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/449282795/version/10"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/449282795?status=historical&version=10"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "unknowntpo",
+     "userKey": "073590d29715c82201971c7108c90002",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Eric Chang",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29715c82201971c7108c90002"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-28T02:39:50.000Z",
+    "message": "Publish the reviewed KIP draft, link KAFKA-20995, and add static architecture diagrams.",
+    "number": 9,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/449282795/version/9"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/449282795?status=historical&version=9"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "unknowntpo",
+     "userKey": "073590d29715c82201971c7108c90002",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Eric Chang",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29715c82201971c7108c90002"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-26T07:03:38.000Z",
+    "message": "Clarify Consumer Reactor communication paths and manager scheduling migration",
+    "number": 8,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/449282795/version/8"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/449282795?status=historical&version=8"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "unknowntpo",
+     "userKey": "073590d29715c82201971c7108c90002",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Eric Chang",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29715c82201971c7108c90002"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-26T04:36:24.000Z",
+    "message": "KIP-1371 v7: clarify motivation and operation identity",
+    "number": 7,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/449282795/version/7"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/449282795?status=historical&version=7"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "unknowntpo",
+     "userKey": "073590d29715c82201971c7108c90002",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Eric Chang",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29715c82201971c7108c90002"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-25T13:41:21.000Z",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/449282795/version/6"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/449282795?status=historical&version=6"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "unknowntpo",
+     "userKey": "073590d29715c82201971c7108c90002",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Eric Chang",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29715c82201971c7108c90002"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-25T13:25:42.000Z",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/449282795/version/5"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/449282795?status=historical&version=5"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "unknowntpo",
+     "userKey": "073590d29715c82201971c7108c90002",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Eric Chang",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29715c82201971c7108c90002"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-21T07:39:35.000Z",
+    "message": "Align KIP with RequestManager.poll-based reactor scheduling and staged migration",
+    "number": 4,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/449282795/version/4"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/449282795?status=historical&version=4"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "unknowntpo",
+     "userKey": "073590d29715c82201971c7108c90002",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Eric Chang",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29715c82201971c7108c90002"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-20T13:35:29.000Z",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/449282795/version/3"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/449282795?status=historical&version=3"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "unknowntpo",
+     "userKey": "073590d29715c82201971c7108c90002",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Eric Chang",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29715c82201971c7108c90002"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-20T07:03:06.000Z",
+    "message": "Introduce ConsumerReactor scheduling model, multi-manager coordination rules, migration plan, and validation strategy.",
+    "number": 2,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/449282795/version/2"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/449282795?status=historical&version=2"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "unknowntpo",
+     "userKey": "073590d29715c82201971c7108c90002",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Eric Chang",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29715c82201971c7108c90002"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-20T04:14:49.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/449282795/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/449282795?status=historical&version=1"
+    }
+   }
+  ],
+  "start": 0,
+  "limit": 200,
+  "size": 22,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/experimental/content/449282795/version",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ },
+ "version_bodies": [
+  {
+   "id": "449282795",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1371: Explicit Wait Conditions for Consumer Request Managers",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "unknowntpo",
+     "userKey": "073590d29715c82201971c7108c90002",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Eric Chang",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29715c82201971c7108c90002"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-22T04:41:18.000Z",
+    "message": "Add KIP-1371 discussion thread link",
+    "number": 21,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/449282795/version/21"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/449282795?status=historical&version=21"
+    }
+   },
+   "position": 1362,
+   "body": {
+    "storage": {
+     "value": "<h2>Status</h2><p>Current state: Draft</p><p>Discussion thread: <a href=\"https://lists.apache.org/thread/g239gn2xpz13m2hzl90sgw885js7hxop\">[DISCUSS] KIP-1371: Explicit Wait Conditions for Consumer Request Managers</a></p><p>JIRA: <a href=\"https://issues.apache.org/jira/browse/KAFKA-20995\">KAFKA-20995</a></p><p>Release: TBD</p><h2>Summary</h2><p>The async consumer has repeatedly entered busy loops when a timer reaches zero while another state blocks the related work. The current numeric wait says when to poll again, but it cannot say whether time can make the work eligible or another event must occur first. Existing fixes replace the zero with another duration, which can make correctness depend on that duration's configuration.</p><p>This KIP introduces the internal <code>ManagerPollCondition</code> type with <code>ready()</code>, <code>after(...)</code>, and <code>idle()</code>. Each request-manager <code>poll()</code> returns its outgoing requests and the condition for the next manager pass. The same manager decision can govern request admission and network scheduling. The network thread combines all manager conditions and applies the existing network-poll bounds. Public APIs, protocols, and thread topology remain unchanged. The internal per-manager <code>RequestManager.maximumTimeToWait(long)</code> method becomes <code>applicationPollCondition(long)</code>; the application-facing <code>ApplicationEventHandler.maximumTimeToWait()</code> path remains unchanged.</p><h2>Motivation</h2><p>The async consumer has repeatedly entered a busy loop when a timer reaches zero while another state prevents the related work from continuing. The loop polls the same request managers, gets the same zero wait, and immediately starts again.</p><p>Today, each request manager returns outgoing requests and one numeric wait. The network thread uses the minimum:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"3d2120f9-5249-4ca4-adf2-480fa99798f4\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[for (RequestManager rm : requestManagers.entries()) {\n    NetworkClientDelegate.PollResult pollResult = rm.poll(currentTimeMs);\n    long timeoutMs = networkClientDelegate.addAll(pollResult);\n    pollWaitTimeMs = Math.min(pollWaitTimeMs, timeoutMs);\n}]]></ac:plain-text-body></ac:structured-macro><p><code>0</code> starts another iteration immediately, a finite value schedules a timed iteration, and <code>Long.MAX_VALUE</code> adds no earlier deadline.</p><p>The application wait follows the same numeric model. Each manager returns a duration from <code>RequestManager.maximumTimeToWait(long)</code>. The network thread publishes the minimum as <code>cachedMaximumTimeToWait</code>, and the application thread uses it to limit its wait.</p><h3>Evidence from existing busy-loop fixes</h3><p>The following issues share the same pattern: work is blocked, but its timer still contributes zero.</p><table class=\"wrapped\"><thead><tr class=\"header\"><th>Evidence</th><th>Status as of 2026-09-21</th><th>Affected wait</th><th>Work blocked by</th><th>Source of zero</th><th>Local repair</th></tr></thead><tbody><tr class=\"odd\"><td><a href=\"https://github.com/apache/kafka/pull/22836\">PR #22836 — KAFKA-20253: Heartbeat CPU spin fix for Consumer protocol</a></td><td>Merged</td><td>Network scheduling for in-flight coordinator discovery; application wait for heartbeat and auto-commit.</td><td>Coordinator discovery or heartbeat progress is waiting on coordinator/request state.</td><td>An elapsed retry or heartbeat timer remains urgent while the related operation cannot advance.</td><td>Withdraw the in-flight coordinator deadline; use heartbeat or auto-commit intervals on affected application-wait paths.</td></tr><tr class=\"even\"><td><a href=\"https://github.com/apache/kafka/pull/23227\">PR #23227 — KAFKA-20970: Another busy loop happens if <code>auto.commit.interval.ms</code> is less than <code>bootstrap.resolve.timeout.ms</code> </a></td><td>Merged</td><td>Application wait</td><td>Auto-commit is waiting for coordinator discovery during bootstrap DNS resolution.</td><td>The auto-commit timer has expired, so the application wait remains zero.</td><td>Use the auto-commit interval while the coordinator is unavailable; apply a similar heartbeat-interval guard to Streams.</td></tr><tr class=\"odd\"><td><a href=\"https://github.com/apache/kafka/pull/23348\">PR #23348 — KAFKA-21010: Another busy loop happens if the member is in <code>JOINING</code> state and bootstrap DNS resolution is not finished</a></td><td>Merged</td><td>Application wait</td><td>Heartbeat is waiting for coordinator discovery.</td><td>The initial heartbeat interval is zero while the coordinator remains unknown.</td><td>Replace zero-capable heartbeat and auto-commit interval substitutes with the retry backoff and refine terminal-state guards.</td></tr><tr class=\"even\"><td><a href=\"https://github.com/apache/kafka/pull/23357\">PR #23357 — KAFKA-21031: Another busy loop happens while a heartbeat is in flight and the heartbeat timer is expired</a></td><td>Open</td><td>Network scheduling and application wait</td><td>A heartbeat response is still in flight.</td><td>The expired heartbeat timer contributes zero even though another heartbeat cannot be sent.</td><td>Use the initial retry backoff with a one-millisecond floor because retry backoff also accepts zero.</td></tr></tbody></table><h3>Why the current timeout substitutions are incomplete</h3><p>The fixes repair their reported paths by replacing one zero wait with another duration. PR #22836 and PR #23227 used heartbeat or auto-commit intervals. PR #23348 later used retry backoff because the heartbeat interval starts at zero and auto-commit may be configured as zero. PR #23357 found that retry backoff can also be zero and added a one-millisecond floor.</p><p>This approach has three drawbacks:</p><ul><li>Correctness becomes configuration-dependent. A setting intended to control retry timing also decides whether blocked work enters a busy loop; configuring the replacement timer as zero restores the zero-wait loop.</li><li>A positive delay only postpones the next poll. Some prerequisites change when an event arrives: a response, disconnect, cancellation, or timeout resolves an in-flight request, while discovery supplies an unavailable coordinator. If none of these events has occurred, the next poll finds the manager still blocked.</li><li>A duration does not explain why the manager should run again. When backoff expires, the manager may send a request. When a request is in flight, the same elapsed time changes nothing; the manager still needs a response, disconnect, cancellation, or timeout.</li></ul><p>The fixes remain correct for their reported cases, but they do not define one rule for future request-manager states.</p><h2>Public Interfaces</h2><p>Public consumer classes, metrics, configuration, wire protocols, persisted data, and broker behavior remain unchanged. <code>ManagerPollCondition</code> and the changes to <code>PollResult</code> remain internal to <code>org.apache.kafka.clients.consumer.internals</code>.</p><h2>Proposed Changes</h2><h3>1. Introduce <code>ManagerPollCondition</code></h3><p>This KIP introduces the following internal type for request-manager scheduling:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"42dc87fb-e54a-45f0-af86-d00c7367df12\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[interface ManagerPollCondition {\n    boolean isReady(long currentTimeMs);\n    long remainingMs(long currentTimeMs);\n\n    static ManagerPollCondition ready() { ... }\n    static ManagerPollCondition after(long currentTimeMs, long delayMs) { ... }\n    static ManagerPollCondition idle() { ... }\n\n    static ManagerPollCondition either(\n        ManagerPollCondition first,\n        ManagerPollCondition second\n    ) { ... }\n}]]></ac:plain-text-body></ac:structured-macro><p>The three factories describe when another manager pass can be useful:</p><table class=\"wrapped\"><thead><tr class=\"header\"><th>Form</th><th>Meaning</th><th>Wait returned by <code>remainingMs(...)</code></th></tr></thead><tbody><tr class=\"odd\"><td><code>ready()</code></td><td>Another pass can perform work immediately.</td><td>Zero</td></tr><tr class=\"even\"><td><code>after(now, delayMs)</code></td><td>Time can make another pass useful.</td><td>Time remaining to the retained deadline</td></tr><tr class=\"odd\"><td><code>idle()</code></td><td>This work has no local deadline.</td><td><code>Long.MAX_VALUE</code></td></tr></tbody></table><p>The implementation represents <code>ready()</code> and <code>idle()</code> as enum singletons:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"0e1c0638-1335-4b18-90f2-99359f9f552a\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[enum Constant implements ManagerPollCondition {\n    READY,\n    IDLE\n}]]></ac:plain-text-body></ac:structured-macro><p><code>either(first, second)</code> is ready when either input is ready and retains the earlier wait. Therefore, <code>either(ready(), x)</code> is <code>ready()</code>, <code>either(idle(), x)</code> is <code>x</code>, and two timed conditions retain the earlier deadline instance. The implementation may return that instance directly to avoid allocating a composite.</p><p><code>after(...)</code> rejects negative delays and retains one saturating absolute deadline. Zero delay is valid.</p><p><code>isReady(...)</code> authorizes only the action whose condition was checked. A combined condition may be ready because another action expired while request sending remains blocked.</p><p><code>idle()</code> removes only the deadline for this work. Other manager work, independent deadlines, network completions, application events, cancellation, and shutdown can still start another pass. For example, an in-flight heartbeat includes an <code>idle()</code> send condition and its independent <code>max.poll.interval.ms</code> expiry through <code>either(...)</code>.</p><h3>2. A request manager selects and returns its next poll condition</h3><p>For the condition returned in <code>PollResult</code>, a request manager first checks whether its work can proceed:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"1865c5fd-ef17-4f60-8de6-8d4f7e549787\"><ac:parameter ac:name=\"language\">text</ac:parameter><ac:plain-text-body><![CDATA[work blocked by a prerequisite\n    -> idle()\n\nwork can proceed now\n    -> ready()\n\ntime can make the work eligible\n    -> after(now, delayMs)]]></ac:plain-text-body></ac:structured-macro><p>For request sources using <code>RequestState</code>, one method supplies both request admission and network scheduling:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"88ee0e99-e4a2-4d4d-a8ba-12d00edd116f\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[ManagerPollCondition sendCondition(long now) {\n    if (requestInFlight())\n        return ManagerPollCondition.idle();\n\n    long remainingBackoffMs = remainingBackoffMs(now);\n    return remainingBackoffMs <= 0\n        ? ManagerPollCondition.ready()\n        : ManagerPollCondition.after(now, remainingBackoffMs);\n}\n\nboolean canSendRequest(long now) {\n    return sendCondition(now).isReady(now);\n}]]></ac:plain-text-body></ac:structured-macro><p>A manager checks <code>sendCondition(now).isReady(now)</code> before creating a request. When no request is created, it returns that condition. After a send, <code>onSendAttempt(...)</code> changes the condition to <code>idle()</code> until a response or failure clears the in-flight state.</p><p>Each call to <code>RequestManager.poll(now)</code> answers two questions:</p><ol><li>What requests did this manager create in this pass?</li><li>When can polling this manager again be useful?</li></ol><p><code>PollResult</code> carries both answers:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"233bb5e2-9cf8-4322-a0e7-dca32f3cc71a\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[final class PollResult {\n    List<UnsentRequest> unsentRequests;\n    ManagerPollCondition nextPollCondition;\n}]]></ac:plain-text-body></ac:structured-macro><p>The condition describes the manager state after producing the requests. For example, after a request is created and marked in flight, its next condition is normally <code>idle()</code> until the network response changes that state.</p><h3>3. Apply the rule to current request managers</h3><table class=\"wrapped\"><thead><tr class=\"header\"><th>Manager state</th><th>Returned condition</th></tr></thead><tbody><tr class=\"odd\"><td>A request is in flight.</td><td><code>idle()</code> for sending; keep independent operation expiry with <code>either(...)</code>.</td></tr><tr class=\"even\"><td>Retry backoff remains.</td><td><code>after(now, remainingBackoffMs)</code></td></tr><tr class=\"odd\"><td>Local work can proceed now.</td><td><code>ready()</code></td></tr><tr class=\"even\"><td>Several requests have different deadlines.</td><td>Combine their conditions with <code>either(...)</code>.</td></tr></tbody></table><p>Coordinator discovery, offset commit, topic metadata, and share acknowledgements use <code>RequestState.sendCondition(...)</code>. Heartbeat managers use the same rule with their membership state, heartbeat interval, and independent <code>max.poll.interval.ms</code> expiry. Fetch, queued offset work, and membership transitions derive their condition from their existing pending future, queue, or local state.</p><p>Correctness still depends on each manager choosing the condition that matches its state. A wrong <code>ready()</code>, a missing prerequisite, or an expired operation left in the manager can still cause repeated immediate passes. Focused tests cover these state transitions.</p><h4>Evidence from the existing busy-loop fixes</h4><p>The condition changes below apply to network scheduling. The application-wait repairs in PR #23227, PR #23348, and the application-wait part of PR #23357 keep their existing behavior and remain outside this KIP's scheduling change.</p><table class=\"wrapped\"><thead><tr class=\"header\"><th>Existing case</th><th>Current repair</th><th>Condition returned for network scheduling</th><th>Effect of the proposed model</th></tr></thead><tbody><tr class=\"odd\"><td><a href=\"https://github.com/apache/kafka/pull/22836\">PR #22836 — coordinator discovery is in flight</a></td><td>Remove the coordinator manager's zero deadline while discovery is pending.</td><td><code>idle()</code> until the discovery response, disconnect, cancellation, or timeout changes the state.</td><td>The manager states directly that time alone cannot enable another discovery request.</td></tr><tr class=\"even\"><td><a href=\"https://github.com/apache/kafka/pull/23357\">PR #23357 — heartbeat is in flight after its timer expires</a></td><td>Substitute a positive retry delay with a one-millisecond floor.</td><td><code>either(idle(), pollExpiryCondition)</code>; the send path waits for completion while <code>max.poll.interval.ms</code> remains active.</td><td>Heartbeat sending no longer depends on a configured substitute timer, and the independent poll expiry is preserved.</td></tr><tr class=\"odd\"><td><a href=\"https://github.com/apache/kafka/pull/23227\">PR #23227</a>, <a href=\"https://github.com/apache/kafka/pull/23348\">PR #23348</a>, and the application-wait part of <a href=\"https://github.com/apache/kafka/pull/23357\">PR #23357</a></td><td>Substitute auto-commit, heartbeat, or retry durations.</td><td>No change in this KIP.</td><td>These fixes demonstrate the same duration-substitution pattern; changing application waiting requires separate work.</td></tr></tbody></table><h3>4. The network thread combines manager results</h3><p>The following abridged <code>runOnce()</code> shows the scheduling change. The loop keeps the existing manager order and polls each manager once:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"bf0787b3-f197-451e-b730-d94a07fccb5f\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[void runOnce() {\n    processApplicationEvents();\n    final long currentTimeMs = time.milliseconds();\n    // ... existing network-thread poll metrics ...\n\n    ManagerPollCondition nextPoll =\n        ManagerPollCondition.after(currentTimeMs, MAX_POLL_TIMEOUT_MS);\n    for (RequestManager rm : requestManagers.entries()) {\n        long managerTimeMs = time.milliseconds();\n        NetworkClientDelegate.PollResult pollResult = rm.poll(managerTimeMs);\n        networkClientDelegate.addAll(pollResult);\n        nextPoll = ManagerPollCondition.either(\n            nextPoll, pollResult.nextPollCondition());\n    }\n\n    long networkPollTimeMs = time.milliseconds();\n    long networkPollWaitMs = nextPoll.remainingMs(networkPollTimeMs);\n    networkClientDelegate.poll(networkPollWaitMs, networkPollTimeMs);\n\n    // ... existing application-wait calculation and event cleanup ...\n}]]></ac:plain-text-body></ac:structured-macro><p>When one manager makes another manager urgent, it returns <code>ready()</code> to request the next ordered pass. The loop does not poll managers repeatedly within the same pass.</p><p>The existing network client poll bounds remain unchanged. This KIP adds no request-timeout query.</p><p>Application-thread waiting remains a separate query. The per-manager <code>RequestManager.maximumTimeToWait(long)</code> method becomes <code>applicationPollCondition(long)</code> and returns <code>ManagerPollCondition</code>. The network thread converts those conditions to durations, stores their minimum in <code>cachedMaximumTimeToWait</code>, and keeps the existing <code>ApplicationEventHandler.maximumTimeToWait()</code> path.</p><p>Close and drain paths use the remaining request-only <code>PollResult</code> constructors. Their enclosing manager supplies the final condition before returning from <code>poll(...)</code>. <code>pollOnClose(long)</code> remains unconditional.</p><p>For network scheduling, the proposal changes the three failure points described in Motivation:</p><table class=\"wrapped\"><thead><tr class=\"header\"><th>Current problem</th><th>Proposed behavior</th></tr></thead><tbody><tr class=\"odd\"><td>A replacement timer may be configured as zero and restore the busy loop.</td><td>Blocked work returns <code>idle()</code> for every timer configuration.</td></tr><tr class=\"even\"><td>A positive delay schedules another poll even though the manager needs an event.</td><td>Blocked work returns <code>idle()</code> instead of a deadline. Existing response, disconnect, cancellation, timeout, or discovery processing updates the state and wakes the loop.</td></tr><tr class=\"odd\"><td>A duration alone cannot say whether time can enable the work.</td><td><code>ready()</code>, <code>after(...)</code>, and <code>idle()</code> state whether work is ready, time can enable it, or time provides no deadline. The manager retains the exact prerequisite in its state.</td></tr></tbody></table><h2>Compatibility, Deprecation, and Migration Plan</h2><p>The scope is the shared consumer network loop and request managers used by regular, share, and Streams consumers. <code>ClassicKafkaConsumer</code> keeps its existing execution model. Runtime thread names, metrics, application-wait behavior, configuration, protocols, and public consumer APIs remain unchanged.</p><p>Every request manager returns <code>ManagerPollCondition</code> in <code>PollResult</code>. Manager order, retry rules, operation deadlines, close behavior, and existing wakeups remain unchanged. A manager may return <code>ready()</code> after a state transition to request the next ordered pass.</p><h2>Test Plan</h2><ul><li><strong>Condition tests</strong> verify <code>ready()</code>, <code>after(...)</code>, <code>idle()</code>, <code>either(...)</code>, deadline expiry, zero delay, and overflow.</li><li><strong>Request-manager tests</strong> verify that request admission and the returned condition agree for in-flight, backoff, missing-coordinator, independent-expiry, completion, and close states. A blocked manager must resume when its required input arrives.</li><li><strong>Network-loop tests</strong> verify one poll per manager, earliest-deadline selection, the existing network-client request-timeout bounds, and the existing application-wait and close behavior. Integration tests exercise the same paths with real network inputs.</li><li><strong>Performance tests</strong> will compare active throughput and idle CPU against a fixed baseline and require no material regression.</li></ul><h2>Documentation Plan</h2><p>Internal Javadocs will define each condition, composition rules, deadline handling, and the difference between network and application waiting. Examples will show one manager decision shared by request admission and scheduling, plus an independent expiry.</p><h2>Rejected Alternatives</h2><h3>Retain the duration-only request-manager model</h3><p>Request managers can continue returning a scalar duration and repair each busy loop with local guards or a substitute positive timeout. The related application-wait fixes and PR #23357 show that substitute heartbeat, auto-commit, and retry durations may themselves be zero or require an arbitrary floor. Their configured values then control blocked-state polling even though passage of those durations cannot satisfy the blocking prerequisite.</p><p>The proposal retains deadline-driven network polling while replacing the duration-only manager result with explicit conditions. For network scheduling, blocked work uses <code>idle()</code> for every timer configuration; eligible work uses <code>ready()</code> or <code>after(...)</code>; independent deadlines combine through <code>either(...)</code>. The existing application-wait policy remains unchanged.</p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/449282795?status=historical&version=21"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1362
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=451974891",
+    "edit": "/pages/resumedraft.action?draftId=451974891&draftShareId=4c35de40-48f9-47d9-8979-4dc49770c897",
+    "tinyui": "/x/65bwGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/449282795?status=historical&version=21"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/449282795/child?parentVersion=21",
+    "restrictions": "/rest/api/content/449282795/restriction/byOperation",
+    "history": "/rest/api/content/449282795/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/449282795/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/449282795/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "449282795",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1371: Explicit Wait Conditions for Consumer Request Managers",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "unknowntpo",
+     "userKey": "073590d29715c82201971c7108c90002",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Eric Chang",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29715c82201971c7108c90002"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-22T03:55:07.000Z",
+    "message": "Present ManagerPollCondition before usage examples",
+    "number": 20,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/449282795/version/20"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/449282795?status=historical&version=20"
+    }
+   },
+   "position": 1362,
+   "body": {
+    "storage": {
+     "value": "<h2>Status</h2><p>Current state: Draft</p><p>Discussion thread: TBD</p><p>JIRA: <a href=\"https://issues.apache.org/jira/browse/KAFKA-20995\">KAFKA-20995</a></p><p>Release: TBD</p><h2>Summary</h2><p>The async consumer has repeatedly entered busy loops when a timer reaches zero while another state blocks the related work. The current numeric wait says when to poll again, but it cannot say whether time can make the work eligible or another event must occur first. Existing fixes replace the zero with another duration, which can make correctness depend on that duration's configuration.</p><p>This KIP introduces the internal <code>ManagerPollCondition</code> type with <code>ready()</code>, <code>after(...)</code>, and <code>idle()</code>. Each request-manager <code>poll()</code> returns its outgoing requests and the condition for the next manager pass. The same manager decision can govern request admission and network scheduling. The network thread combines all manager conditions and applies the existing network-poll bounds. Public APIs, protocols, and thread topology remain unchanged. The internal per-manager <code>RequestManager.maximumTimeToWait(long)</code> method becomes <code>applicationPollCondition(long)</code>; the application-facing <code>ApplicationEventHandler.maximumTimeToWait()</code> path remains unchanged.</p><h2>Motivation</h2><p>The async consumer has repeatedly entered a busy loop when a timer reaches zero while another state prevents the related work from continuing. The loop polls the same request managers, gets the same zero wait, and immediately starts again.</p><p>Today, each request manager returns outgoing requests and one numeric wait. The network thread uses the minimum:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"3d2120f9-5249-4ca4-adf2-480fa99798f4\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[for (RequestManager rm : requestManagers.entries()) {\n    NetworkClientDelegate.PollResult pollResult = rm.poll(currentTimeMs);\n    long timeoutMs = networkClientDelegate.addAll(pollResult);\n    pollWaitTimeMs = Math.min(pollWaitTimeMs, timeoutMs);\n}]]></ac:plain-text-body></ac:structured-macro><p><code>0</code> starts another iteration immediately, a finite value schedules a timed iteration, and <code>Long.MAX_VALUE</code> adds no earlier deadline.</p><p>The application wait follows the same numeric model. Each manager returns a duration from <code>RequestManager.maximumTimeToWait(long)</code>. The network thread publishes the minimum as <code>cachedMaximumTimeToWait</code>, and the application thread uses it to limit its wait.</p><h3>Evidence from existing busy-loop fixes</h3><p>The following issues share the same pattern: work is blocked, but its timer still contributes zero.</p><table class=\"wrapped\"><thead><tr class=\"header\"><th>Evidence</th><th>Status as of 2026-09-21</th><th>Affected wait</th><th>Work blocked by</th><th>Source of zero</th><th>Local repair</th></tr></thead><tbody><tr class=\"odd\"><td><a href=\"https://github.com/apache/kafka/pull/22836\">PR #22836 — KAFKA-20253: Heartbeat CPU spin fix for Consumer protocol</a></td><td>Merged</td><td>Network scheduling for in-flight coordinator discovery; application wait for heartbeat and auto-commit.</td><td>Coordinator discovery or heartbeat progress is waiting on coordinator/request state.</td><td>An elapsed retry or heartbeat timer remains urgent while the related operation cannot advance.</td><td>Withdraw the in-flight coordinator deadline; use heartbeat or auto-commit intervals on affected application-wait paths.</td></tr><tr class=\"even\"><td><a href=\"https://github.com/apache/kafka/pull/23227\">PR #23227 — KAFKA-20970: Another busy loop happens if <code>auto.commit.interval.ms</code> is less than <code>bootstrap.resolve.timeout.ms</code> </a></td><td>Merged</td><td>Application wait</td><td>Auto-commit is waiting for coordinator discovery during bootstrap DNS resolution.</td><td>The auto-commit timer has expired, so the application wait remains zero.</td><td>Use the auto-commit interval while the coordinator is unavailable; apply a similar heartbeat-interval guard to Streams.</td></tr><tr class=\"odd\"><td><a href=\"https://github.com/apache/kafka/pull/23348\">PR #23348 — KAFKA-21010: Another busy loop happens if the member is in <code>JOINING</code> state and bootstrap DNS resolution is not finished</a></td><td>Merged</td><td>Application wait</td><td>Heartbeat is waiting for coordinator discovery.</td><td>The initial heartbeat interval is zero while the coordinator remains unknown.</td><td>Replace zero-capable heartbeat and auto-commit interval substitutes with the retry backoff and refine terminal-state guards.</td></tr><tr class=\"even\"><td><a href=\"https://github.com/apache/kafka/pull/23357\">PR #23357 — KAFKA-21031: Another busy loop happens while a heartbeat is in flight and the heartbeat timer is expired</a></td><td>Open</td><td>Network scheduling and application wait</td><td>A heartbeat response is still in flight.</td><td>The expired heartbeat timer contributes zero even though another heartbeat cannot be sent.</td><td>Use the initial retry backoff with a one-millisecond floor because retry backoff also accepts zero.</td></tr></tbody></table><h3>Why the current timeout substitutions are incomplete</h3><p>The fixes repair their reported paths by replacing one zero wait with another duration. PR #22836 and PR #23227 used heartbeat or auto-commit intervals. PR #23348 later used retry backoff because the heartbeat interval starts at zero and auto-commit may be configured as zero. PR #23357 found that retry backoff can also be zero and added a one-millisecond floor.</p><p>This approach has three drawbacks:</p><ul><li>Correctness becomes configuration-dependent. A setting intended to control retry timing also decides whether blocked work enters a busy loop; configuring the replacement timer as zero restores the zero-wait loop.</li><li>A positive delay only postpones the next poll. Some prerequisites change when an event arrives: a response, disconnect, cancellation, or timeout resolves an in-flight request, while discovery supplies an unavailable coordinator. If none of these events has occurred, the next poll finds the manager still blocked.</li><li>A duration does not explain why the manager should run again. When backoff expires, the manager may send a request. When a request is in flight, the same elapsed time changes nothing; the manager still needs a response, disconnect, cancellation, or timeout.</li></ul><p>The fixes remain correct for their reported cases, but they do not define one rule for future request-manager states.</p><h2>Public Interfaces</h2><p>Public consumer classes, metrics, configuration, wire protocols, persisted data, and broker behavior remain unchanged. <code>ManagerPollCondition</code> and the changes to <code>PollResult</code> remain internal to <code>org.apache.kafka.clients.consumer.internals</code>.</p><h2>Proposed Changes</h2><h3>1. Introduce <code>ManagerPollCondition</code></h3><p>This KIP introduces the following internal type for request-manager scheduling:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"42dc87fb-e54a-45f0-af86-d00c7367df12\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[interface ManagerPollCondition {\n    boolean isReady(long currentTimeMs);\n    long remainingMs(long currentTimeMs);\n\n    static ManagerPollCondition ready() { ... }\n    static ManagerPollCondition after(long currentTimeMs, long delayMs) { ... }\n    static ManagerPollCondition idle() { ... }\n\n    static ManagerPollCondition either(\n        ManagerPollCondition first,\n        ManagerPollCondition second\n    ) { ... }\n}]]></ac:plain-text-body></ac:structured-macro><p>The three factories describe when another manager pass can be useful:</p><table class=\"wrapped\"><thead><tr class=\"header\"><th>Form</th><th>Meaning</th><th>Wait returned by <code>remainingMs(...)</code></th></tr></thead><tbody><tr class=\"odd\"><td><code>ready()</code></td><td>Another pass can perform work immediately.</td><td>Zero</td></tr><tr class=\"even\"><td><code>after(now, delayMs)</code></td><td>Time can make another pass useful.</td><td>Time remaining to the retained deadline</td></tr><tr class=\"odd\"><td><code>idle()</code></td><td>This work has no local deadline.</td><td><code>Long.MAX_VALUE</code></td></tr></tbody></table><p>The implementation represents <code>ready()</code> and <code>idle()</code> as enum singletons:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"0e1c0638-1335-4b18-90f2-99359f9f552a\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[enum Constant implements ManagerPollCondition {\n    READY,\n    IDLE\n}]]></ac:plain-text-body></ac:structured-macro><p><code>either(first, second)</code> is ready when either input is ready and retains the earlier wait. Therefore, <code>either(ready(), x)</code> is <code>ready()</code>, <code>either(idle(), x)</code> is <code>x</code>, and two timed conditions retain the earlier deadline instance. The implementation may return that instance directly to avoid allocating a composite.</p><p><code>after(...)</code> rejects negative delays and retains one saturating absolute deadline. Zero delay is valid.</p><p><code>isReady(...)</code> authorizes only the action whose condition was checked. A combined condition may be ready because another action expired while request sending remains blocked.</p><p><code>idle()</code> removes only the deadline for this work. Other manager work, independent deadlines, network completions, application events, cancellation, and shutdown can still start another pass. For example, an in-flight heartbeat includes an <code>idle()</code> send condition and its independent <code>max.poll.interval.ms</code> expiry through <code>either(...)</code>.</p><h3>2. A request manager selects and returns its next poll condition</h3><p>For the condition returned in <code>PollResult</code>, a request manager first checks whether its work can proceed:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"1865c5fd-ef17-4f60-8de6-8d4f7e549787\"><ac:parameter ac:name=\"language\">text</ac:parameter><ac:plain-text-body><![CDATA[work blocked by a prerequisite\n    -> idle()\n\nwork can proceed now\n    -> ready()\n\ntime can make the work eligible\n    -> after(now, delayMs)]]></ac:plain-text-body></ac:structured-macro><p>For request sources using <code>RequestState</code>, one method supplies both request admission and network scheduling:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"88ee0e99-e4a2-4d4d-a8ba-12d00edd116f\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[ManagerPollCondition sendCondition(long now) {\n    if (requestInFlight())\n        return ManagerPollCondition.idle();\n\n    long remainingBackoffMs = remainingBackoffMs(now);\n    return remainingBackoffMs <= 0\n        ? ManagerPollCondition.ready()\n        : ManagerPollCondition.after(now, remainingBackoffMs);\n}\n\nboolean canSendRequest(long now) {\n    return sendCondition(now).isReady(now);\n}]]></ac:plain-text-body></ac:structured-macro><p>A manager checks <code>sendCondition(now).isReady(now)</code> before creating a request. When no request is created, it returns that condition. After a send, <code>onSendAttempt(...)</code> changes the condition to <code>idle()</code> until a response or failure clears the in-flight state.</p><p>Each call to <code>RequestManager.poll(now)</code> answers two questions:</p><ol><li>What requests did this manager create in this pass?</li><li>When can polling this manager again be useful?</li></ol><p><code>PollResult</code> carries both answers:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"233bb5e2-9cf8-4322-a0e7-dca32f3cc71a\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[final class PollResult {\n    List<UnsentRequest> unsentRequests;\n    ManagerPollCondition nextPollCondition;\n}]]></ac:plain-text-body></ac:structured-macro><p>The condition describes the manager state after producing the requests. For example, after a request is created and marked in flight, its next condition is normally <code>idle()</code> until the network response changes that state.</p><h3>3. Apply the rule to current request managers</h3><table class=\"wrapped\"><thead><tr class=\"header\"><th>Manager state</th><th>Returned condition</th></tr></thead><tbody><tr class=\"odd\"><td>A request is in flight.</td><td><code>idle()</code> for sending; keep independent operation expiry with <code>either(...)</code>.</td></tr><tr class=\"even\"><td>Retry backoff remains.</td><td><code>after(now, remainingBackoffMs)</code></td></tr><tr class=\"odd\"><td>Local work can proceed now.</td><td><code>ready()</code></td></tr><tr class=\"even\"><td>Several requests have different deadlines.</td><td>Combine their conditions with <code>either(...)</code>.</td></tr></tbody></table><p>Coordinator discovery, offset commit, topic metadata, and share acknowledgements use <code>RequestState.sendCondition(...)</code>. Heartbeat managers use the same rule with their membership state, heartbeat interval, and independent <code>max.poll.interval.ms</code> expiry. Fetch, queued offset work, and membership transitions derive their condition from their existing pending future, queue, or local state.</p><p>Correctness still depends on each manager choosing the condition that matches its state. A wrong <code>ready()</code>, a missing prerequisite, or an expired operation left in the manager can still cause repeated immediate passes. Focused tests cover these state transitions.</p><h4>Evidence from the existing busy-loop fixes</h4><p>The condition changes below apply to network scheduling. The application-wait repairs in PR #23227, PR #23348, and the application-wait part of PR #23357 keep their existing behavior and remain outside this KIP's scheduling change.</p><table class=\"wrapped\"><thead><tr class=\"header\"><th>Existing case</th><th>Current repair</th><th>Condition returned for network scheduling</th><th>Effect of the proposed model</th></tr></thead><tbody><tr class=\"odd\"><td><a href=\"https://github.com/apache/kafka/pull/22836\">PR #22836 — coordinator discovery is in flight</a></td><td>Remove the coordinator manager's zero deadline while discovery is pending.</td><td><code>idle()</code> until the discovery response, disconnect, cancellation, or timeout changes the state.</td><td>The manager states directly that time alone cannot enable another discovery request.</td></tr><tr class=\"even\"><td><a href=\"https://github.com/apache/kafka/pull/23357\">PR #23357 — heartbeat is in flight after its timer expires</a></td><td>Substitute a positive retry delay with a one-millisecond floor.</td><td><code>either(idle(), pollExpiryCondition)</code>; the send path waits for completion while <code>max.poll.interval.ms</code> remains active.</td><td>Heartbeat sending no longer depends on a configured substitute timer, and the independent poll expiry is preserved.</td></tr><tr class=\"odd\"><td><a href=\"https://github.com/apache/kafka/pull/23227\">PR #23227</a>, <a href=\"https://github.com/apache/kafka/pull/23348\">PR #23348</a>, and the application-wait part of <a href=\"https://github.com/apache/kafka/pull/23357\">PR #23357</a></td><td>Substitute auto-commit, heartbeat, or retry durations.</td><td>No change in this KIP.</td><td>These fixes demonstrate the same duration-substitution pattern; changing application waiting requires separate work.</td></tr></tbody></table><h3>4. The network thread combines manager results</h3><p>The following abridged <code>runOnce()</code> shows the scheduling change. The loop keeps the existing manager order and polls each manager once:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"bf0787b3-f197-451e-b730-d94a07fccb5f\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[void runOnce() {\n    processApplicationEvents();\n    final long currentTimeMs = time.milliseconds();\n    // ... existing network-thread poll metrics ...\n\n    ManagerPollCondition nextPoll =\n        ManagerPollCondition.after(currentTimeMs, MAX_POLL_TIMEOUT_MS);\n    for (RequestManager rm : requestManagers.entries()) {\n        long managerTimeMs = time.milliseconds();\n        NetworkClientDelegate.PollResult pollResult = rm.poll(managerTimeMs);\n        networkClientDelegate.addAll(pollResult);\n        nextPoll = ManagerPollCondition.either(\n            nextPoll, pollResult.nextPollCondition());\n    }\n\n    long networkPollTimeMs = time.milliseconds();\n    long networkPollWaitMs = nextPoll.remainingMs(networkPollTimeMs);\n    networkClientDelegate.poll(networkPollWaitMs, networkPollTimeMs);\n\n    // ... existing application-wait calculation and event cleanup ...\n}]]></ac:plain-text-body></ac:structured-macro><p>When one manager makes another manager urgent, it returns <code>ready()</code> to request the next ordered pass. The loop does not poll managers repeatedly within the same pass.</p><p>The existing network client poll bounds remain unchanged. This KIP adds no request-timeout query.</p><p>Application-thread waiting remains a separate query. The per-manager <code>RequestManager.maximumTimeToWait(long)</code> method becomes <code>applicationPollCondition(long)</code> and returns <code>ManagerPollCondition</code>. The network thread converts those conditions to durations, stores their minimum in <code>cachedMaximumTimeToWait</code>, and keeps the existing <code>ApplicationEventHandler.maximumTimeToWait()</code> path.</p><p>Close and drain paths use the remaining request-only <code>PollResult</code> constructors. Their enclosing manager supplies the final condition before returning from <code>poll(...)</code>. <code>pollOnClose(long)</code> remains unconditional.</p><p>For network scheduling, the proposal changes the three failure points described in Motivation:</p><table class=\"wrapped\"><thead><tr class=\"header\"><th>Current problem</th><th>Proposed behavior</th></tr></thead><tbody><tr class=\"odd\"><td>A replacement timer may be configured as zero and restore the busy loop.</td><td>Blocked work returns <code>idle()</code> for every timer configuration.</td></tr><tr class=\"even\"><td>A positive delay schedules another poll even though the manager needs an event.</td><td>Blocked work returns <code>idle()</code> instead of a deadline. Existing response, disconnect, cancellation, timeout, or discovery processing updates the state and wakes the loop.</td></tr><tr class=\"odd\"><td>A duration alone cannot say whether time can enable the work.</td><td><code>ready()</code>, <code>after(...)</code>, and <code>idle()</code> state whether work is ready, time can enable it, or time provides no deadline. The manager retains the exact prerequisite in its state.</td></tr></tbody></table><h2>Compatibility, Deprecation, and Migration Plan</h2><p>The scope is the shared consumer network loop and request managers used by regular, share, and Streams consumers. <code>ClassicKafkaConsumer</code> keeps its existing execution model. Runtime thread names, metrics, application-wait behavior, configuration, protocols, and public consumer APIs remain unchanged.</p><p>Every request manager returns <code>ManagerPollCondition</code> in <code>PollResult</code>. Manager order, retry rules, operation deadlines, close behavior, and existing wakeups remain unchanged. A manager may return <code>ready()</code> after a state transition to request the next ordered pass.</p><h2>Test Plan</h2><ul><li><strong>Condition tests</strong> verify <code>ready()</code>, <code>after(...)</code>, <code>idle()</code>, <code>either(...)</code>, deadline expiry, zero delay, and overflow.</li><li><strong>Request-manager tests</strong> verify that request admission and the returned condition agree for in-flight, backoff, missing-coordinator, independent-expiry, completion, and close states. A blocked manager must resume when its required input arrives.</li><li><strong>Network-loop tests</strong> verify one poll per manager, earliest-deadline selection, the existing network-client request-timeout bounds, and the existing application-wait and close behavior. Integration tests exercise the same paths with real network inputs.</li><li><strong>Performance tests</strong> will compare active throughput and idle CPU against a fixed baseline and require no material regression.</li></ul><h2>Documentation Plan</h2><p>Internal Javadocs will define each condition, composition rules, deadline handling, and the difference between network and application waiting. Examples will show one manager decision shared by request admission and scheduling, plus an independent expiry.</p><h2>Rejected Alternatives</h2><h3>Retain the duration-only request-manager model</h3><p>Request managers can continue returning a scalar duration and repair each busy loop with local guards or a substitute positive timeout. The related application-wait fixes and PR #23357 show that substitute heartbeat, auto-commit, and retry durations may themselves be zero or require an arbitrary floor. Their configured values then control blocked-state polling even though passage of those durations cannot satisfy the blocking prerequisite.</p><p>The proposal retains deadline-driven network polling while replacing the duration-only manager result with explicit conditions. For network scheduling, blocked work uses <code>idle()</code> for every timer configuration; eligible work uses <code>ready()</code> or <code>after(...)</code>; independent deadlines combine through <code>either(...)</code>. The existing application-wait policy remains unchanged.</p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/449282795?status=historical&version=20"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1362
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=451974889",
+    "edit": "/pages/resumedraft.action?draftId=451974889&draftShareId=4c35de40-48f9-47d9-8979-4dc49770c897",
+    "tinyui": "/x/6ZbwGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/449282795?status=historical&version=20"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/449282795/child?parentVersion=20",
+    "restrictions": "/rest/api/content/449282795/restriction/byOperation",
+    "history": "/rest/api/content/449282795/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/449282795/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/449282795/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "449282795",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1371: Explicit Wait Conditions for Consumer Request Managers",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "unknowntpo",
+     "userKey": "073590d29715c82201971c7108c90002",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Eric Chang",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29715c82201971c7108c90002"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-22T03:42:35.000Z",
+    "message": "Render code examples with Confluence code blocks",
+    "number": 19,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/449282795/version/19"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/449282795?status=historical&version=19"
+    }
+   },
+   "position": 1362,
+   "body": {
+    "storage": {
+     "value": "<h2>Status</h2><p>Current state: Draft</p><p>Discussion thread: TBD</p><p>JIRA: <a href=\"https://issues.apache.org/jira/browse/KAFKA-20995\">KAFKA-20995</a></p><p>Release: TBD</p><h2>Summary</h2><p>The async consumer has repeatedly entered busy loops when a timer reaches zero while another state blocks the related work. The current numeric wait says when to poll again, but it cannot say whether time can make the work eligible or another event must occur first. Existing fixes replace the zero with another duration, which can make correctness depend on that duration's configuration.</p><p>This KIP introduces the internal <code>ManagerPollCondition</code> type with <code>ready()</code>, <code>after(...)</code>, and <code>idle()</code>. Each request-manager <code>poll()</code> returns its outgoing requests and the condition for the next manager pass. The same manager decision can govern request admission and network scheduling. The network thread combines all manager conditions and applies the existing network-poll bounds. Public APIs, protocols, and thread topology remain unchanged. The internal per-manager <code>RequestManager.maximumTimeToWait(long)</code> method becomes <code>applicationPollCondition(long)</code>; the application-facing <code>ApplicationEventHandler.maximumTimeToWait()</code> path remains unchanged.</p><h2>Motivation</h2><p>The async consumer has repeatedly entered a busy loop when a timer reaches zero while another state prevents the related work from continuing. The loop polls the same request managers, gets the same zero wait, and immediately starts again.</p><p>Today, each request manager returns outgoing requests and one numeric wait. The network thread uses the minimum:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"3d2120f9-5249-4ca4-adf2-480fa99798f4\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[for (RequestManager rm : requestManagers.entries()) {\n    NetworkClientDelegate.PollResult pollResult = rm.poll(currentTimeMs);\n    long timeoutMs = networkClientDelegate.addAll(pollResult);\n    pollWaitTimeMs = Math.min(pollWaitTimeMs, timeoutMs);\n}]]></ac:plain-text-body></ac:structured-macro><p><code>0</code> starts another iteration immediately, a finite value schedules a timed iteration, and <code>Long.MAX_VALUE</code> adds no earlier deadline.</p><p>The application wait follows the same numeric model. Each manager returns a duration from <code>RequestManager.maximumTimeToWait(long)</code>. The network thread publishes the minimum as <code>cachedMaximumTimeToWait</code>, and the application thread uses it to limit its wait.</p><h3>Evidence from existing busy-loop fixes</h3><p>The following issues share the same pattern: work is blocked, but its timer still contributes zero.</p><table class=\"wrapped\"><thead><tr class=\"header\"><th>Evidence</th><th>Status as of 2026-09-21</th><th>Affected wait</th><th>Work blocked by</th><th>Source of zero</th><th>Local repair</th></tr></thead><tbody><tr class=\"odd\"><td><a href=\"https://github.com/apache/kafka/pull/22836\">PR #22836 — KAFKA-20253: Heartbeat CPU spin fix for Consumer protocol</a></td><td>Merged</td><td>Network scheduling for in-flight coordinator discovery; application wait for heartbeat and auto-commit.</td><td>Coordinator discovery or heartbeat progress is waiting on coordinator/request state.</td><td>An elapsed retry or heartbeat timer remains urgent while the related operation cannot advance.</td><td>Withdraw the in-flight coordinator deadline; use heartbeat or auto-commit intervals on affected application-wait paths.</td></tr><tr class=\"even\"><td><a href=\"https://github.com/apache/kafka/pull/23227\">PR #23227 — KAFKA-20970: Another busy loop happens if <code>auto.commit.interval.ms</code> is less than <code>bootstrap.resolve.timeout.ms</code> </a></td><td>Merged</td><td>Application wait</td><td>Auto-commit is waiting for coordinator discovery during bootstrap DNS resolution.</td><td>The auto-commit timer has expired, so the application wait remains zero.</td><td>Use the auto-commit interval while the coordinator is unavailable; apply a similar heartbeat-interval guard to Streams.</td></tr><tr class=\"odd\"><td><a href=\"https://github.com/apache/kafka/pull/23348\">PR #23348 — KAFKA-21010: Another busy loop happens if the member is in <code>JOINING</code> state and bootstrap DNS resolution is not finished</a></td><td>Merged</td><td>Application wait</td><td>Heartbeat is waiting for coordinator discovery.</td><td>The initial heartbeat interval is zero while the coordinator remains unknown.</td><td>Replace zero-capable heartbeat and auto-commit interval substitutes with the retry backoff and refine terminal-state guards.</td></tr><tr class=\"even\"><td><a href=\"https://github.com/apache/kafka/pull/23357\">PR #23357 — KAFKA-21031: Another busy loop happens while a heartbeat is in flight and the heartbeat timer is expired</a></td><td>Open</td><td>Network scheduling and application wait</td><td>A heartbeat response is still in flight.</td><td>The expired heartbeat timer contributes zero even though another heartbeat cannot be sent.</td><td>Use the initial retry backoff with a one-millisecond floor because retry backoff also accepts zero.</td></tr></tbody></table><h3>Why the current timeout substitutions are incomplete</h3><p>The fixes repair their reported paths by replacing one zero wait with another duration. PR #22836 and PR #23227 used heartbeat or auto-commit intervals. PR #23348 later used retry backoff because the heartbeat interval starts at zero and auto-commit may be configured as zero. PR #23357 found that retry backoff can also be zero and added a one-millisecond floor.</p><p>This approach has three drawbacks:</p><ul><li>Correctness becomes configuration-dependent. A setting intended to control retry timing also decides whether blocked work enters a busy loop; configuring the replacement timer as zero restores the zero-wait loop.</li><li>A positive delay only postpones the next poll. Some prerequisites change when an event arrives: a response, disconnect, cancellation, or timeout resolves an in-flight request, while discovery supplies an unavailable coordinator. If none of these events has occurred, the next poll finds the manager still blocked.</li><li>A duration does not explain why the manager should run again. When backoff expires, the manager may send a request. When a request is in flight, the same elapsed time changes nothing; the manager still needs a response, disconnect, cancellation, or timeout.</li></ul><p>The fixes remain correct for their reported cases, but they do not define one rule for future request-manager states.</p><h2>Public Interfaces</h2><p>Public consumer classes, metrics, configuration, wire protocols, persisted data, and broker behavior remain unchanged. <code>ManagerPollCondition</code> and the changes to <code>PollResult</code> remain internal to <code>org.apache.kafka.clients.consumer.internals</code>.</p><h2>Proposed Changes</h2><h3>1. A request manager selects and returns its next poll condition</h3><p>For the condition returned in <code>PollResult</code>, a request manager first checks whether its work can proceed:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"1865c5fd-ef17-4f60-8de6-8d4f7e549787\"><ac:parameter ac:name=\"language\">text</ac:parameter><ac:plain-text-body><![CDATA[work blocked by a prerequisite\n    -> idle()\n\nwork can proceed now\n    -> ready()\n\ntime can make the work eligible\n    -> after(now, delayMs)]]></ac:plain-text-body></ac:structured-macro><p>For request sources using <code>RequestState</code>, one method supplies both request admission and network scheduling:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"88ee0e99-e4a2-4d4d-a8ba-12d00edd116f\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[ManagerPollCondition sendCondition(long now) {\n    if (requestInFlight())\n        return ManagerPollCondition.idle();\n\n    long remainingBackoffMs = remainingBackoffMs(now);\n    return remainingBackoffMs <= 0\n        ? ManagerPollCondition.ready()\n        : ManagerPollCondition.after(now, remainingBackoffMs);\n}\n\nboolean canSendRequest(long now) {\n    return sendCondition(now).isReady(now);\n}]]></ac:plain-text-body></ac:structured-macro><p>A manager checks <code>sendCondition(now).isReady(now)</code> before creating a request. When no request is created, it returns that condition. After a send, <code>onSendAttempt(...)</code> changes the condition to <code>idle()</code> until a response or failure clears the in-flight state.</p><p>Each call to <code>RequestManager.poll(now)</code> answers two questions:</p><ol><li>What requests did this manager create in this pass?</li><li>When can polling this manager again be useful?</li></ol><p><code>PollResult</code> carries both answers:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"233bb5e2-9cf8-4322-a0e7-dca32f3cc71a\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[final class PollResult {\n    List<UnsentRequest> unsentRequests;\n    ManagerPollCondition nextPollCondition;\n}]]></ac:plain-text-body></ac:structured-macro><p>The condition describes the manager state after producing the requests. For example, after a request is created and marked in flight, its next condition is normally <code>idle()</code> until the network response changes that state.</p><p><code>ManagerPollCondition</code> has three forms:</p><table class=\"wrapped\"><thead><tr class=\"header\"><th>Form</th><th>Meaning</th><th>Wait returned by <code>remainingMs(...)</code></th></tr></thead><tbody><tr class=\"odd\"><td><code>ready()</code></td><td>Another pass can perform work immediately.</td><td>Zero</td></tr><tr class=\"even\"><td><code>after(now, delayMs)</code></td><td>Time can make another pass useful.</td><td>Time remaining to the retained deadline</td></tr><tr class=\"odd\"><td><code>idle()</code></td><td>This work has no local deadline.</td><td><code>Long.MAX_VALUE</code></td></tr></tbody></table><p>The internal API has this shape:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"42dc87fb-e54a-45f0-af86-d00c7367df12\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[interface ManagerPollCondition {\n    boolean isReady(long currentTimeMs);\n    long remainingMs(long currentTimeMs);\n\n    static ManagerPollCondition ready() { ... }\n    static ManagerPollCondition after(long currentTimeMs, long delayMs) { ... }\n    static ManagerPollCondition idle() { ... }\n\n    static ManagerPollCondition either(\n        ManagerPollCondition first,\n        ManagerPollCondition second\n    ) { ... }\n}]]></ac:plain-text-body></ac:structured-macro><p>The implementation represents <code>ready()</code> and <code>idle()</code> as enum singletons:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"0e1c0638-1335-4b18-90f2-99359f9f552a\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[enum Constant implements ManagerPollCondition {\n    READY,\n    IDLE\n}]]></ac:plain-text-body></ac:structured-macro><p><code>either(first, second)</code> is ready when either input is ready and retains the earlier wait. Therefore, <code>either(ready(), x)</code> is <code>ready()</code>, <code>either(idle(), x)</code> is <code>x</code>, and two timed conditions retain the earlier deadline instance. The implementation may return that instance directly to avoid allocating a composite.</p><p><code>after(...)</code> rejects negative delays and retains one saturating absolute deadline. Zero delay is valid.</p><p><code>isReady(...)</code> authorizes only the action whose condition was checked. A combined condition may be ready because another action expired while request sending remains blocked.</p><p><code>idle()</code> removes only the deadline for this work. Other manager work, independent deadlines, network completions, application events, cancellation, and shutdown can still start another pass. For example, an in-flight heartbeat includes an <code>idle()</code> send condition and its independent <code>max.poll.interval.ms</code> expiry through <code>either(...)</code>.</p><h3>2. Apply the rule to current request managers</h3><table class=\"wrapped\"><thead><tr class=\"header\"><th>Manager state</th><th>Returned condition</th></tr></thead><tbody><tr class=\"odd\"><td>A request is in flight.</td><td><code>idle()</code> for sending; keep independent operation expiry with <code>either(...)</code>.</td></tr><tr class=\"even\"><td>Retry backoff remains.</td><td><code>after(now, remainingBackoffMs)</code></td></tr><tr class=\"odd\"><td>Local work can proceed now.</td><td><code>ready()</code></td></tr><tr class=\"even\"><td>Several requests have different deadlines.</td><td>Combine their conditions with <code>either(...)</code>.</td></tr></tbody></table><p>Coordinator discovery, offset commit, topic metadata, and share acknowledgements use <code>RequestState.sendCondition(...)</code>. Heartbeat managers use the same rule with their membership state, heartbeat interval, and independent <code>max.poll.interval.ms</code> expiry. Fetch, queued offset work, and membership transitions derive their condition from their existing pending future, queue, or local state.</p><p>Correctness still depends on each manager choosing the condition that matches its state. A wrong <code>ready()</code>, a missing prerequisite, or an expired operation left in the manager can still cause repeated immediate passes. Focused tests cover these state transitions.</p><h4>Evidence from the existing busy-loop fixes</h4><p>The condition changes below apply to network scheduling. The application-wait repairs in PR #23227, PR #23348, and the application-wait part of PR #23357 keep their existing behavior and remain outside this KIP's scheduling change.</p><table class=\"wrapped\"><thead><tr class=\"header\"><th>Existing case</th><th>Current repair</th><th>Condition returned for network scheduling</th><th>Effect of the proposed model</th></tr></thead><tbody><tr class=\"odd\"><td><a href=\"https://github.com/apache/kafka/pull/22836\">PR #22836 — coordinator discovery is in flight</a></td><td>Remove the coordinator manager's zero deadline while discovery is pending.</td><td><code>idle()</code> until the discovery response, disconnect, cancellation, or timeout changes the state.</td><td>The manager states directly that time alone cannot enable another discovery request.</td></tr><tr class=\"even\"><td><a href=\"https://github.com/apache/kafka/pull/23357\">PR #23357 — heartbeat is in flight after its timer expires</a></td><td>Substitute a positive retry delay with a one-millisecond floor.</td><td><code>either(idle(), pollExpiryCondition)</code>; the send path waits for completion while <code>max.poll.interval.ms</code> remains active.</td><td>Heartbeat sending no longer depends on a configured substitute timer, and the independent poll expiry is preserved.</td></tr><tr class=\"odd\"><td><a href=\"https://github.com/apache/kafka/pull/23227\">PR #23227</a>, <a href=\"https://github.com/apache/kafka/pull/23348\">PR #23348</a>, and the application-wait part of <a href=\"https://github.com/apache/kafka/pull/23357\">PR #23357</a></td><td>Substitute auto-commit, heartbeat, or retry durations.</td><td>No change in this KIP.</td><td>These fixes demonstrate the same duration-substitution pattern; changing application waiting requires separate work.</td></tr></tbody></table><h3>3. The network thread combines manager results</h3><p>The following abridged <code>runOnce()</code> shows the scheduling change. The loop keeps the existing manager order and polls each manager once:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"bf0787b3-f197-451e-b730-d94a07fccb5f\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[void runOnce() {\n    processApplicationEvents();\n    final long currentTimeMs = time.milliseconds();\n\n    ManagerPollCondition nextPoll =\n        ManagerPollCondition.after(currentTimeMs, MAX_POLL_TIMEOUT_MS);\n    for (RequestManager rm : requestManagers.entries()) {\n        long managerTimeMs = time.milliseconds();\n        NetworkClientDelegate.PollResult pollResult = rm.poll(managerTimeMs);\n        networkClientDelegate.addAll(pollResult);\n        nextPoll = ManagerPollCondition.either(\n            nextPoll, pollResult.nextPollCondition());\n    }\n\n    long networkPollTimeMs = time.milliseconds();\n    long networkPollWaitMs = nextPoll.remainingMs(networkPollTimeMs);\n    networkClientDelegate.poll(networkPollWaitMs, networkPollTimeMs);\n}]]></ac:plain-text-body></ac:structured-macro><p>When one manager makes another manager urgent, it returns <code>ready()</code> to request the next ordered pass. The loop does not poll managers repeatedly within the same pass.</p><p>The existing network client poll bounds remain unchanged. This KIP adds no request-timeout query.</p><p>Application-thread waiting remains a separate query. The per-manager <code>RequestManager.maximumTimeToWait(long)</code> method becomes <code>applicationPollCondition(long)</code> and returns <code>ManagerPollCondition</code>. The network thread converts those conditions to durations, stores their minimum in <code>cachedMaximumTimeToWait</code>, and keeps the existing <code>ApplicationEventHandler.maximumTimeToWait()</code> path.</p><p>Close and drain paths use the remaining request-only <code>PollResult</code> constructors. Their enclosing manager supplies the final condition before returning from <code>poll(...)</code>. <code>pollOnClose(long)</code> remains unconditional.</p><p>For network scheduling, the proposal changes the three failure points described in Motivation:</p><table class=\"wrapped\"><thead><tr class=\"header\"><th>Current problem</th><th>Proposed behavior</th></tr></thead><tbody><tr class=\"odd\"><td>A replacement timer may be configured as zero and restore the busy loop.</td><td>Blocked work returns <code>idle()</code> for every timer configuration.</td></tr><tr class=\"even\"><td>A positive delay schedules another poll even though the manager needs an event.</td><td>Blocked work returns <code>idle()</code> instead of a deadline. Existing response, disconnect, cancellation, timeout, or discovery processing updates the state and wakes the loop.</td></tr><tr class=\"odd\"><td>A duration alone cannot say whether time can enable the work.</td><td><code>ready()</code>, <code>after(...)</code>, and <code>idle()</code> state whether work is ready, time can enable it, or time provides no deadline. The manager retains the exact prerequisite in its state.</td></tr></tbody></table><h2>Compatibility, Deprecation, and Migration Plan</h2><p>The scope is the shared consumer network loop and request managers used by regular, share, and Streams consumers. <code>ClassicKafkaConsumer</code> keeps its existing execution model. Runtime thread names, metrics, application-wait behavior, configuration, protocols, and public consumer APIs remain unchanged.</p><p>Every request manager returns <code>ManagerPollCondition</code> in <code>PollResult</code>. Manager order, retry rules, operation deadlines, close behavior, and existing wakeups remain unchanged. A manager may return <code>ready()</code> after a state transition to request the next ordered pass.</p><h2>Test Plan</h2><ul><li><strong>Condition tests</strong> verify <code>ready()</code>, <code>after(...)</code>, <code>idle()</code>, <code>either(...)</code>, deadline expiry, zero delay, and overflow.</li><li><strong>Request-manager tests</strong> verify that request admission and the returned condition agree for in-flight, backoff, missing-coordinator, independent-expiry, completion, and close states. A blocked manager must resume when its required input arrives.</li><li><strong>Network-loop tests</strong> verify one poll per manager, earliest-deadline selection, the existing network-client request-timeout bounds, and the existing application-wait and close behavior. Integration tests exercise the same paths with real network inputs.</li><li><strong>Performance tests</strong> will compare active throughput and idle CPU against a fixed baseline and require no material regression.</li></ul><h2>Documentation Plan</h2><p>Internal Javadocs will define each condition, composition rules, deadline handling, and the difference between network and application waiting. Examples will show one manager decision shared by request admission and scheduling, plus an independent expiry.</p><h2>Rejected Alternatives</h2><h3>Retain the duration-only request-manager model</h3><p>Request managers can continue returning a scalar duration and repair each busy loop with local guards or a substitute positive timeout. The related application-wait fixes and PR #23357 show that substitute heartbeat, auto-commit, and retry durations may themselves be zero or require an arbitrary floor. Their configured values then control blocked-state polling even though passage of those durations cannot satisfy the blocking prerequisite.</p><p>The proposal retains deadline-driven network polling while replacing the duration-only manager result with explicit conditions. For network scheduling, blocked work uses <code>idle()</code> for every timer configuration; eligible work uses <code>ready()</code> or <code>after(...)</code>; independent deadlines combine through <code>either(...)</code>. The existing application-wait policy remains unchanged.</p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/449282795?status=historical&version=19"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1362
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=451974888",
+    "edit": "/pages/resumedraft.action?draftId=451974888&draftShareId=4c35de40-48f9-47d9-8979-4dc49770c897",
+    "tinyui": "/x/6JbwGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/449282795?status=historical&version=19"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/449282795/child?parentVersion=19",
+    "restrictions": "/rest/api/content/449282795/restriction/byOperation",
+    "history": "/rest/api/content/449282795/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/449282795/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/449282795/restriction/relevantViewRestrictions"
+   }
+  }
+ ],
+ "comments": {
+  "results": [],
+  "start": 0,
+  "limit": 200,
+  "size": 0,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/api/content/449282795/child/comment?expand=body.storage%2Cversion%2Cancestors&depth=all",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ }
+}

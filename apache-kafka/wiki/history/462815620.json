@@ -1,0 +1,541 @@
+{
+ "id": "462815620",
+ "versions": {
+  "results": [
+   {
+    "by": {
+     "type": "known",
+     "username": "nicoledu",
+     "userKey": "073590d2a049e1bb01a15883c1230044",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Nicole Du",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2a049e1bb01a15883c1230044"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-28T16:24:19.000Z",
+    "message": "",
+    "number": 9,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/462815620/version/9"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/462815620"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "nicoledu",
+     "userKey": "073590d2a049e1bb01a15883c1230044",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Nicole Du",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2a049e1bb01a15883c1230044"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-28T16:18:26.000Z",
+    "message": "simplify State of the group at the read snapshot\" table",
+    "number": 8,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/462815620/version/8"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/462815620?status=historical&version=8"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "nicoledu",
+     "userKey": "073590d2a049e1bb01a15883c1230044",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Nicole Du",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2a049e1bb01a15883c1230044"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-26T22:51:52.000Z",
+    "message": "",
+    "number": 7,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/462815620/version/7"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/462815620?status=historical&version=7"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "nicoledu",
+     "userKey": "073590d2a049e1bb01a15883c1230044",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Nicole Du",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2a049e1bb01a15883c1230044"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-26T22:48:16.000Z",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/462815620/version/6"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/462815620?status=historical&version=6"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "nicoledu",
+     "userKey": "073590d2a049e1bb01a15883c1230044",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Nicole Du",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2a049e1bb01a15883c1230044"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-26T22:28:16.000Z",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/462815620/version/5"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/462815620?status=historical&version=5"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "nicoledu",
+     "userKey": "073590d2a049e1bb01a15883c1230044",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Nicole Du",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2a049e1bb01a15883c1230044"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-26T22:25:37.000Z",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/462815620/version/4"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/462815620?status=historical&version=4"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "nicoledu",
+     "userKey": "073590d2a049e1bb01a15883c1230044",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Nicole Du",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2a049e1bb01a15883c1230044"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-26T22:15:57.000Z",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/462815620/version/3"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/462815620?status=historical&version=3"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "nicoledu",
+     "userKey": "073590d2a049e1bb01a15883c1230044",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Nicole Du",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2a049e1bb01a15883c1230044"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-26T22:05:38.000Z",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/462815620/version/2"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/462815620?status=historical&version=2"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "nicoledu",
+     "userKey": "073590d2a049e1bb01a15883c1230044",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Nicole Du",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2a049e1bb01a15883c1230044"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-26T22:04:30.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/462815620/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/462815620?status=historical&version=1"
+    }
+   }
+  ],
+  "start": 0,
+  "limit": 200,
+  "size": 9,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/experimental/content/462815620/version",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ },
+ "version_bodies": [
+  {
+   "id": "462815620",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1388: Add a committed-offsets filter to ListGroups",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "nicoledu",
+     "userKey": "073590d2a049e1bb01a15883c1230044",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Nicole Du",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2a049e1bb01a15883c1230044"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-28T16:18:26.000Z",
+    "message": "simplify State of the group at the read snapshot\" table",
+    "number": 8,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/462815620/version/8"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/462815620?status=historical&version=8"
+    }
+   },
+   "position": 1378,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"adeff114-f8c0-4ebc-b737-8b5cecc7cd89\" /></p><h1>Status</h1><p><strong>Current state:</strong> Under Discussion</p><p><strong>Discussion thread:</strong> <a href=\"https://lists.apache.org/thread.html/orb3n712568615gr5nr7d746fkc1mdso\">here</a></p><p><strong>JIRA:</strong> <a href=\"https://issues.apache.org/jira/browse/KAFKA-21366\">KAFKA-21366</a></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p>Tools that replicate consumer group offsets between clusters typically use two RPCs, with client-side filtering in between:</p><ol><li><code>Admin.listGroups(ListGroupsOptions.forConsumerGroups())</code> (the <code>ListGroups</code> RPC, sent to every broker) to enumerate the consumer groups on the source cluster.</li><li>Apply a user-supplied group filter (an allow list, deny list or pattern) to the listed group ids.</li><li><code>Admin.listConsumerGroupOffsets(...)</code> (the <code>OffsetFetch</code> RPC, batched per group coordinator) for the groups that passed the filter.</li></ol><p>MirrorMaker 2 does exactly this in <code>MirrorCheckpointConnector</code>, and the group offset synchronization in KIP-1279 (Cluster Mirroring) follows the same pattern. Other cross-cluster replication tools built on the Admin API do the same.</p><p>A group exists in the group coordinator while it has at least one member or at least one committed offset; a group with neither is removed by the periodic group cleanup. In some scenarios, a large number of the groups returned by <code>ListGroups</code> have members but no committed offsets at all. Typical examples are:</p><ul><li>consumers that disable auto-commit and never commit, for example because they store offsets outside Kafka, or because they are short-lived command-line consumers such as <code>kafka-console-consumer.sh</code>;</li><li>consumers that have joined a group but have not committed yet, which is a permanent condition for applications that only read and never commit.</li></ul><p>In some large deployments, we have seen thousands of such groups. For each of them, the replication tool still fetches offsets, receives nothing and discards the group. <code>OffsetFetch</code> can carry several groups per request to a coordinator, but every offset-less group still costs coordinator work, response bytes and client-side handling.</p><p><code>ListGroups</code> already supports server-side filtering by group state (KIP-518) and by group type (KIP-848). The group coordinator holds both the group metadata and the committed offsets of a group in the same coordinator shard, so it can answer &quot;does this group have any committed offsets?&quot; with a local lookup while it builds the <code>ListGroups</code> response. This KIP adds that filter.</p><p>The change is deliberately made to the newer <code>Admin.listGroups</code> API introduced by KIP-1043 and not to <code>Admin.listConsumerGroups</code>, which has been deprecated since 4.1.</p><h1>Public Interfaces</h1><h3>Client API changes</h3><h4>ListGroupsOptions</h4><p>A new filter is added to <code>org.apache.kafka.clients.admin.ListGroupsOptions</code>.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b24521fe-b325-43c0-b5c7-41f3bad5e8a8\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[ @InterfaceAudience.Public\npublic class ListGroupsOptions extends AbstractOptions<ListGroupsOptions> {\n\n    /**\n     * If set to true, only groups that have at least one committed offset will be returned by listGroups().\n     * Otherwise, groups are returned whether or not they have committed offsets.\n     * This operation is supported by brokers with version 4.5.0 or later.\n     */\n    public ListGroupsOptions requireCommittedOffsets(boolean requireCommittedOffsets);\n\n    /**\n     * Returns true if only groups with committed offsets are requested.\n     */\n    public boolean requireCommittedOffsets();\n}\n ]]></ac:plain-text-body></ac:structured-macro><p>The default value is <code>false</code> , which preserves the existing behavior.</p><p>Example: list all consumer groups that have committed offsets.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"16f4fe84-59ee-499d-bb9c-a15737ec0b2e\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[Collection<GroupListing> groups = admin.listGroups(\n    ListGroupsOptions.forConsumerGroups().requireCommittedOffsets(true)\n).all().get();]]></ac:plain-text-body></ac:structured-macro><p><code>all()</code> is used so that a broker that does not support the filter fails the call instead of silently returning a partial listing (see the compatibility section).</p><p>No changes are made to <code>Admin</code>, <code>ListGroupsResult</code> or <code>GroupListing</code>.</p><h3>Kafka protocol changes</h3><h4>ListGroups API</h4><p>The <code>ListGroups</code> API is bumped to version 6. The request gains one field. The response is unchanged, and its version is bumped only to keep request and response versions aligned.</p><h5>Request schema</h5><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"d47a0637-c978-4c95-b112-9becf13d6add\"><ac:parameter ac:name=\"language\">json</ac:parameter><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 16,\n  \"type\": \"request\",\n  \"listeners\": [\"broker\"],\n  \"name\": \"ListGroupsRequest\",\n  // Version 1 and 2 are the same as version 0.\n  //\n  // Version 3 is the first flexible version.\n  //\n  // Version 4 adds the StatesFilter field (KIP-518).\n  //\n  // Version 5 adds the TypesFilter field (KIP-848).\n  //\n  // Version 6 adds the RequireCommittedOffsets field (KIP-1388).\n  \"validVersions\": \"0-6\",\n  \"flexibleVersions\": \"3+\",\n  \"headerVersions\": {\n    \"0-2\": \"1\",\n    \"3+\": \"2\"\n  },\n  \"fields\": [\n    { \"name\": \"StatesFilter\", \"type\": \"[]string\", \"versions\": \"4+\",\n      \"about\": \"The states of the groups we want to list. If empty, all groups are returned with their state.\" },\n    { \"name\": \"TypesFilter\", \"type\": \"[]string\", \"versions\": \"5+\",\n      \"about\": \"The types of the groups we want to list. If empty, all groups are returned with their type.\" },\n    { \"name\": \"RequireCommittedOffsets\", \"type\": \"bool\", \"versions\": \"6+\", \"default\": \"false\",\n      \"about\": \"If true, only groups that have at least one committed offset are returned. If false, groups are returned whether or not they have committed offsets.\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><pre>Response schema</pre><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"79bee6a3-5645-4904-b00a-0a9de75f2103\"><ac:parameter ac:name=\"language\">json</ac:parameter><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 16,\n  \"type\": \"response\",\n  \"name\": \"ListGroupsResponse\",\n  // Version 1 adds the throttle time.\n  //\n  // Starting in version 2, on quota violation, brokers send out\n  // responses before throttling.\n  //\n  // Version 3 is the first flexible version.\n  //\n  // Version 4 adds the GroupState field (KIP-518).\n  //\n  // Version 5 adds the GroupType field (KIP-848).\n  //\n  // Version 6 is the same as version 5 (KIP-1388).\n  \"validVersions\": \"0-6\",\n  \"flexibleVersions\": \"3+\",\n  \"headerVersions\": {\n    \"0-2\": \"0\",\n    \"3+\": \"1\"\n  },\n  \"fields\": [\n    { \"name\": \"ThrottleTimeMs\", \"type\": \"int32\", \"versions\": \"1+\", \"ignorable\": true,\n      \"about\": \"The duration in milliseconds for which the request was throttled due to a quota violation, or zero if the request did not violate any quota.\" },\n    { \"name\": \"ErrorCode\", \"type\": \"int16\", \"versions\": \"0+\",\n      \"about\": \"The error code, or 0 if there was no error.\" },\n    { \"name\": \"Groups\", \"type\": \"[]ListedGroup\", \"versions\": \"0+\",\n      \"about\": \"Each group in the response.\", \"fields\": [\n      { \"name\": \"GroupId\", \"type\": \"string\", \"versions\": \"0+\", \"entityType\": \"groupId\",\n        \"about\": \"The group ID.\" },\n      { \"name\": \"ProtocolType\", \"type\": \"string\", \"versions\": \"0+\",\n        \"about\": \"The group protocol type.\" },\n      { \"name\": \"GroupState\", \"type\": \"string\", \"versions\": \"4+\", \"ignorable\": true,\n        \"about\": \"The group state name.\" },\n      { \"name\": \"GroupType\", \"type\": \"string\", \"versions\": \"5+\", \"ignorable\": true,\n        \"about\": \"The group type name.\" }\n    ]}\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><p>No new error codes are introduced.</p><h1>Proposed Changes</h1><h3><span>Group coordinator</span></h3><p><span>When a </span><code><span>ListGroups</span></code><span> request has </span><code><span>RequireCommittedOffsets</span></code><span> set to </span><code><span>true</span></code><span>, the group coordinator returns only groups with at least one committed offset. This condition is combined with the existing state and type filters using AND semantics.</span></p><p><span>A group matches if the committed state of its group coordinator contains a committed offset for at least one topic partition of that group. The offset predicate and the existing state filter are evaluated consistently against the coordinator’s committed state.</span></p><p><span>Pending transactional offsets do not count because the transaction may still abort. A group with only pending offsets becomes eligible once the transaction commits and the resulting offsets take effect in the coordinator’s committed state. A group with an existing committed offset continues to match even if it also has pending transactional offsets.</span></p><table><tbody class=\"\"><tr class=\"\"><th><span>Group’s offset state</span></th><th><span>Matches</span></th></tr><tr class=\"\"><td><span>At least one committed offset, whether or not pending transactional offsets also exist</span></td><td><span>Yes</span></td></tr><tr class=\"\"><td><span>Only pending transactional offsets</span></td><td><span>No</span></td></tr><tr class=\"\"><td><span>Neither committed nor pending offsets</span></td><td><span>No</span></td></tr></tbody></table><p><span>Offsets eligible for expiration continue to count until their deletion takes effect in the coordinator’s committed state. Once deletion of the last committed offset takes effect, the group no longer matches.</span></p><p><span>The predicate concerns stored committed offsets, not the offsets visible to a particular caller through </span><code><span>OffsetFetch</span></code><span>, which also applies authorization and stability checks.</span></p><p><span>The coordinator creates group metadata when processing an offset commit for an unknown group ID, so offset-only groups are included in the group metadata that </span><code><span>ListGroups</span></code><span> enumerates. The new filter adds a per-group in-memory existence check; it does not enumerate the group’s topic partitions or require additional external I/O.</span></p><p><span>The filter considers only offsets stored by the group coordinator. It is applicable to Classic, Consumer, and Streams groups. Share-group consumption state is maintained separately by the share coordinator and does not count toward this predicate. Share groups therefore do not match, and </span><code><span>ListGroupsOptions.forShareGroups().requireCommittedOffsets(true)</span></code><span> returns an empty result. Querying share-group consumption state is outside the scope of this KIP.</span></p><h3>Admin client</h3><p><code>ListGroupsOptions</code> gets a new option. When it is set, the admin client sets the new field in the <code>ListGroups</code> request. The request is sent with version 6 or later. If a broker does not support version 6, the request to that broker fails with <code>UnsupportedVersionException</code>, because the client cannot emulate the filter without fetching the offsets of every group, which is exactly the cost this KIP removes. The field is deliberately not ignorable; see Rejected Alternatives. <code>listGroups</code> is asynchronous and fans out to every broker, so this failure surfaces through <code>ListGroupsResult</code>: <code>all()</code> completes exceptionally with the first failure, <code>errors()</code> contains one <code>Throwable</code> per failed broker, and <code>valid()</code> contains the groups from the brokers that succeeded. When the option is not set, the request is unchanged and continues to work with brokers of any version supported by the client.</p><p>The authorization model of <code>ListGroups</code> is unchanged: a principal with <code>DESCRIBE</code> on the cluster receives all groups, otherwise only groups the principal has <code>DESCRIBE</code> on. The new filter only removes groups from that set. Note that this exposes one additional bit of information per listed group, namely whether the group has committed offsets, to any principal that can list the group. A principal with cluster <code>DESCRIBE</code> but without <code>DESCRIBE</code> on a given group can learn this bit although <code>OffsetFetch</code> for that group would be denied. The filter does not reveal which topics have offsets or the offset values themselves, which continue to require <code>DESCRIBE</code> on the group and on the topics. We consider this acceptable because the existence of committed offsets is comparable to the group state and group type that <code>ListGroups</code> already returns, but we call it out explicitly for review.</p><h3>Command-line tools</h3><p>No command-line tool changes are proposed. <code>kafka-groups.sh --list</code> and <code>kafka-consumer-groups.sh --list</code> continue to list all groups.</p><h1>Compatibility, Deprecation, and Migration Plan</h1><ul><li><strong>Existing clients against new brokers:</strong> unaffected. Clients that send <code>ListGroups</code> version 5 or earlier do not set the new field, and the broker treats the filter as disabled.</li><li><strong>New clients against existing brokers:</strong> unaffected unless the new option is used. <code>ListGroupsOptions.requireCommittedOffsets(true)</code> requires <code>ListGroups</code> version 6. Against a broker that does not support version 6 the request to that broker fails with <code>UnsupportedVersionException</code>, consistent with how the states filter from KIP-518 behaves against brokers that predate it. Because <code>listGroups</code> is asynchronous, the exception is not thrown by the method call; it is the cause of the <code>ExecutionException</code> from <code>all().get()</code>, and it appears in <code>errors()</code>. Callers that must support older brokers should check that the cause is <code>UnsupportedVersionException</code> (the same exception can also come from another unsupported filter, so the retry can fail again and that failure must propagate) and then retry the listing without <code>requireCommittedOffsets</code>, keeping their state, type and protocol-type filters. Callers that use <code>valid()</code> must also inspect <code>errors()</code>, otherwise an unsupported broker looks like a broker with no groups.</li><li><strong>Behavior of existing calls:</strong> the default value of the option is <code>false</code>, so the set of groups returned by <code>Admin.listGroups</code> and the command-line tools does not change.</li><li><strong>Deprecation:</strong> nothing is deprecated. The option is intentionally not added to the deprecated <code>Admin.listConsumerGroups</code> API or <code>ListConsumerGroupsOptions</code>.</li><li><strong>Mixed-version clusters:</strong> <code>Admin.listGroups</code> sends one <code>ListGroups</code> request to every broker and negotiates the version per broker. During a rolling upgrade some brokers support version 6 and some do not. The requests to the older brokers fail with <code>UnsupportedVersionException</code>; <code>all()</code> fails, <code>errors()</code> reports one failure per such broker, and <code>valid()</code> contains only the groups from the upgraded brokers. A tool that needs a complete listing must therefore either fail closed on <code>all()</code> or, for that round, retry with only the committed-offset filter disabled and every other option unchanged, as described above. It must not treat <code>valid()</code> alone as complete.</li></ul><h2><span>Test Plan</span></h2><ul><li data-uuid=\"e1c2f3df-99d6-4e4a-8cd9-77eb91c9f5f2\"><p><span>Coordinator unit tests verify that the filter is disabled by default and combines with the existing state and type filters using AND semantics. Cover groups with committed offsets, active groups without committed offsets, and groups without members that retain committed offsets. A stored offset value of zero must count as an existing committed offset.</span></p></li><li data-uuid=\"8ef33aa7-92c6-43ff-b5cc-1ecc8652489c\"><p><span>Transactional-offset tests verify that pending-only groups do not match, while groups with existing committed offsets continue to match when additional transactional offsets are pending. Verify that a pending-only group becomes eligible after its transaction commits and the offsets take effect in the coordinator’s committed state. If the transaction aborts, the group remains ineligible unless it has other committed offsets.</span></p></li><li data-uuid=\"02197327-6821-4d9e-b22d-ddad5f3c2b98\"><p><span>Coordinator consistency tests verify that an offset insertion or deletion that has not yet become part of the coordinator’s committed state does not change the listing result. Verify that the offset predicate and state filter are evaluated against a consistent committed view.</span></p></li><li data-uuid=\"e6f2ac34-44de-485a-a43a-d22ffd4b0694\"><p><span>Offset-removal tests verify that offsets eligible for expiration still count until their deletion takes effect. Removing the last committed offset makes the group ineligible, while removing only some committed offsets does not. Cover expiration, explicit offset deletion, and group deletion.</span></p></li><li data-uuid=\"0d4e0c8e-7916-4b6c-b10a-f434644213f8\"><p><span>Group-type tests cover Classic, Consumer, and Streams groups with committed offsets. Verify that Share-group consumption state does not cause a group to match.</span></p></li><li data-uuid=\"6a419fbb-ba60-4915-b53f-f8743d433711\"><p><code><span>ListGroupsRequest</span></code><span> tests verify that enabling the filter is rejected below version 6, including the Classic-only and Classic-plus-Consumer type-filter downgrade paths. Disabling the new filter must preserve existing version behavior.</span></p></li><li data-uuid=\"367947ac-af0f-42fe-81c0-754203e84e3f\"><p><code><span>KafkaAdminClient</span></code><span> tests verify that the option is propagated to the request and that unsupported-version failures are exposed through </span><code><span>ListGroupsResult</span></code><span>.</span></p></li><li data-uuid=\"a13864b5-3699-4cf9-87c7-a7c9fc4128d8\"><p><span>Mixed-version tests verify that unsupported brokers cause </span><code><span>all()</span></code><span> to fail, </span><code><span>errors()</span></code><span> contains the collected failures, and </span><code><span>valid()</span></code><span> contains only successful listings.</span></p></li><li data-uuid=\"46f1f10d-2186-474f-b512-a8db7f97c862\"><p><span>Integration tests verify the behavior with consumers that commit offsets and consumers that join but never commit. Verify that a group initially excluded from a listing can appear in a subsequent listing after its first successful commit.</span></p></li><li data-uuid=\"dc65a1e1-72ab-4b56-bc53-610f907a1220\"><p><span>Authorization integration tests verify that the new filter preserves existing </span><code><span>ListGroups</span></code><span> visibility rules, including cluster-level </span><code><span>DESCRIBE</span></code><span>, group-level </span><code><span>DESCRIBE</span></code><span>, and callers lacking </span><code><span>DESCRIBE</span></code><span> on the topics whose offsets are stored.</span></p></li><li data-uuid=\"af761126-6289-475c-be01-9749b0e4a720\"><p><span>Protocol compatibility tests verify version 6 serialization and deserialization, the default value of the new field, and unchanged behavior for older request versions.</span></p></li></ul><h1>Rejected Alternatives</h1><h3>Extend <code>Admin.listConsumerGroupOffsets</code> / <code>OffsetFetch</code> to return the offsets of all groups</h3><p>This would replace the two-step pattern with a single call. It is a much larger change: <code>OffsetFetch</code> is addressed to a specific group coordinator and routed by group id, so an &quot;all groups&quot; variant would need a new routing model, pagination for potentially very large responses, and a way to express the group filter that replication tools apply between the two steps. The two-step approach also lets the tool filter groups before any offsets are fetched. Filtering out offset-less groups in <code>ListGroups</code> solves the practical problem with a one-field change.</p><h3>Add the filter to the deprecated <code>Admin.listConsumerGroups</code> API</h3><p><code>listConsumerGroups</code> and <code>ListConsumerGroupsOptions</code> have been deprecated since 4.1 in favor of <code>listGroups</code> (KIP-1043). New functionality should only be added to the replacement API.</p><h3>Return a <code>hasCommittedOffsets</code> flag per group in the <code>ListGroups</code> response instead of a request filter</h3><p>A response flag would let clients filter locally and would also be useful for tooling that displays groups. However, it does not reduce the size of the response for the replication use case, and the filtering use case is the one with the demonstrated cost. A response field can be added by a later KIP if a use case for it appears; the request filter proposed here does not prevent that.</p><h3>Use the existing states filter</h3><p>Group state does not indicate whether a group has committed offsets. Groups with active members may or may not have committed offsets, and those groups are exactly the ones replication tools must inspect. Groups in the <code>Empty</code> state usually have committed offsets, because the periodic group cleanup removes groups that have neither members nor offsets, but there is a window of up to <code>offsets.retention.check.interval.ms</code> where an <code>Empty</code> group has no offsets.</p><h3>Make the filter a tri-state (all groups / only with offsets / only without offsets)</h3><p>There is no known use case for listing only groups without committed offsets. A boolean keeps the API small. If such a use case appears, a new field can be added in a later version.</p><h3>Add <code>--with-committed-offsets</code> to <code>kafka-groups.sh --list</code></h3><p>The motivating use case is programmatic. Keeping the tools unchanged keeps this KIP small. A tool flag can be added later without a protocol change.</p><h3>Make the new request field ignorable</h3><p>If <code>RequireCommittedOffsets</code> were marked <code>&quot;ignorable&quot;: true</code>, the admin client would send version 5 to an older broker and that broker would return every group, so no caller-side handling would be needed. This was considered and rejected for two reasons. First, the admin client fails strictly whenever an option cannot be expressed in the negotiated protocol version, for example the states filter on <code>ListGroups</code>, <code>requireStable</code> on <code>OffsetFetch</code> and <code>includeAuthorizedOperations</code> on <code>Metadata</code>, and this filter should behave the same way. Second, the response has no way to indicate that the filter was not applied, so a caller could neither detect nor log that it was not getting the benefit; the exception is the only signal it has. The only silent downgrade in <code>ListGroupsRequest</code> today, for a types filter that names only classic and consumer groups, is lossless because older brokers have no other group types. Dropping this filter would not be lossless.</p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/462815620?status=historical&version=8"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1378
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=462815788",
+    "edit": "/pages/resumedraft.action?draftId=462815788&draftShareId=8314a2a6-a6de-484a-84c1-700582dbb7f0",
+    "tinyui": "/x/LAKWGw",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/462815620?status=historical&version=8"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/462815620/child?parentVersion=8",
+    "restrictions": "/rest/api/content/462815620/restriction/byOperation",
+    "history": "/rest/api/content/462815620/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/462815620/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/462815620/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "462815620",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1388: Add a committed-offsets filter to ListGroups",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "nicoledu",
+     "userKey": "073590d2a049e1bb01a15883c1230044",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Nicole Du",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2a049e1bb01a15883c1230044"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-26T22:51:52.000Z",
+    "message": "",
+    "number": 7,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/462815620/version/7"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/462815620?status=historical&version=7"
+    }
+   },
+   "position": 1378,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"adeff114-f8c0-4ebc-b737-8b5cecc7cd89\" /></p><h1>Status</h1><p><strong>Current state:</strong> Under Discussion</p><p><strong>Discussion thread:</strong> <a href=\"https://lists.apache.org/thread.html/orb3n712568615gr5nr7d746fkc1mdso\">here</a></p><p><strong>JIRA:</strong> <a href=\"https://issues.apache.org/jira/browse/KAFKA-21366\">KAFKA-21366</a></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p>Tools that replicate consumer group offsets between clusters typically use two RPCs, with client-side filtering in between:</p><ol><li><code>Admin.listGroups(ListGroupsOptions.forConsumerGroups())</code> (the <code>ListGroups</code> RPC, sent to every broker) to enumerate the consumer groups on the source cluster.</li><li>Apply a user-supplied group filter (an allow list, deny list or pattern) to the listed group ids.</li><li><code>Admin.listConsumerGroupOffsets(...)</code> (the <code>OffsetFetch</code> RPC, batched per group coordinator) for the groups that passed the filter.</li></ol><p>MirrorMaker 2 does exactly this in <code>MirrorCheckpointConnector</code>, and the group offset synchronization in KIP-1279 (Cluster Mirroring) follows the same pattern. Other cross-cluster replication tools built on the Admin API do the same.</p><p>A group exists in the group coordinator while it has at least one member or at least one committed offset; a group with neither is removed by the periodic group cleanup. In some scenarios, a large number of the groups returned by <code>ListGroups</code> have members but no committed offsets at all. Typical examples are:</p><ul><li>consumers that disable auto-commit and never commit, for example because they store offsets outside Kafka, or because they are short-lived command-line consumers such as <code>kafka-console-consumer.sh</code>;</li><li>consumers that have joined a group but have not committed yet, which is a permanent condition for applications that only read and never commit.</li></ul><p>In some large deployments, we have seen thousands of such groups. For each of them, the replication tool still fetches offsets, receives nothing and discards the group. <code>OffsetFetch</code> can carry several groups per request to a coordinator, but every offset-less group still costs coordinator work, response bytes and client-side handling.</p><p><code>ListGroups</code> already supports server-side filtering by group state (KIP-518) and by group type (KIP-848). The group coordinator holds both the group metadata and the committed offsets of a group in the same coordinator shard, so it can answer &quot;does this group have any committed offsets?&quot; with a local lookup while it builds the <code>ListGroups</code> response. This KIP adds that filter.</p><p>The change is deliberately made to the newer <code>Admin.listGroups</code> API introduced by KIP-1043 and not to <code>Admin.listConsumerGroups</code>, which has been deprecated since 4.1.</p><h1>Public Interfaces</h1><h3>Client API changes</h3><h4>ListGroupsOptions</h4><p>A new filter is added to <code>org.apache.kafka.clients.admin.ListGroupsOptions</code>.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b24521fe-b325-43c0-b5c7-41f3bad5e8a8\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[ @InterfaceAudience.Public\npublic class ListGroupsOptions extends AbstractOptions<ListGroupsOptions> {\n\n    /**\n     * If set to true, only groups that have at least one committed offset will be returned by listGroups().\n     * Otherwise, groups are returned whether or not they have committed offsets.\n     * This operation is supported by brokers with version 4.5.0 or later.\n     */\n    public ListGroupsOptions requireCommittedOffsets(boolean requireCommittedOffsets);\n\n    /**\n     * Returns true if only groups with committed offsets are requested.\n     */\n    public boolean requireCommittedOffsets();\n}\n ]]></ac:plain-text-body></ac:structured-macro><p>The default value is <code>false</code> , which preserves the existing behavior.</p><p>Example: list all consumer groups that have committed offsets.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"16f4fe84-59ee-499d-bb9c-a15737ec0b2e\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[Collection<GroupListing> groups = admin.listGroups(\n    ListGroupsOptions.forConsumerGroups().requireCommittedOffsets(true)\n).all().get();]]></ac:plain-text-body></ac:structured-macro><p><code>all()</code> is used so that a broker that does not support the filter fails the call instead of silently returning a partial listing (see the compatibility section).</p><p>No changes are made to <code>Admin</code>, <code>ListGroupsResult</code> or <code>GroupListing</code>.</p><h3>Kafka protocol changes</h3><h4>ListGroups API</h4><p>The <code>ListGroups</code> API is bumped to version 6. The request gains one field. The response is unchanged, and its version is bumped only to keep request and response versions aligned.</p><h5>Request schema</h5><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"d47a0637-c978-4c95-b112-9becf13d6add\"><ac:parameter ac:name=\"language\">json</ac:parameter><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 16,\n  \"type\": \"request\",\n  \"listeners\": [\"broker\"],\n  \"name\": \"ListGroupsRequest\",\n  // Version 1 and 2 are the same as version 0.\n  //\n  // Version 3 is the first flexible version.\n  //\n  // Version 4 adds the StatesFilter field (KIP-518).\n  //\n  // Version 5 adds the TypesFilter field (KIP-848).\n  //\n  // Version 6 adds the RequireCommittedOffsets field (KIP-1388).\n  \"validVersions\": \"0-6\",\n  \"flexibleVersions\": \"3+\",\n  \"headerVersions\": {\n    \"0-2\": \"1\",\n    \"3+\": \"2\"\n  },\n  \"fields\": [\n    { \"name\": \"StatesFilter\", \"type\": \"[]string\", \"versions\": \"4+\",\n      \"about\": \"The states of the groups we want to list. If empty, all groups are returned with their state.\" },\n    { \"name\": \"TypesFilter\", \"type\": \"[]string\", \"versions\": \"5+\",\n      \"about\": \"The types of the groups we want to list. If empty, all groups are returned with their type.\" },\n    { \"name\": \"RequireCommittedOffsets\", \"type\": \"bool\", \"versions\": \"6+\", \"default\": \"false\",\n      \"about\": \"If true, only groups that have at least one committed offset are returned. If false, groups are returned whether or not they have committed offsets.\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><pre>Response schema</pre><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"79bee6a3-5645-4904-b00a-0a9de75f2103\"><ac:parameter ac:name=\"language\">json</ac:parameter><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 16,\n  \"type\": \"response\",\n  \"name\": \"ListGroupsResponse\",\n  // Version 1 adds the throttle time.\n  //\n  // Starting in version 2, on quota violation, brokers send out\n  // responses before throttling.\n  //\n  // Version 3 is the first flexible version.\n  //\n  // Version 4 adds the GroupState field (KIP-518).\n  //\n  // Version 5 adds the GroupType field (KIP-848).\n  //\n  // Version 6 is the same as version 5 (KIP-1388).\n  \"validVersions\": \"0-6\",\n  \"flexibleVersions\": \"3+\",\n  \"headerVersions\": {\n    \"0-2\": \"0\",\n    \"3+\": \"1\"\n  },\n  \"fields\": [\n    { \"name\": \"ThrottleTimeMs\", \"type\": \"int32\", \"versions\": \"1+\", \"ignorable\": true,\n      \"about\": \"The duration in milliseconds for which the request was throttled due to a quota violation, or zero if the request did not violate any quota.\" },\n    { \"name\": \"ErrorCode\", \"type\": \"int16\", \"versions\": \"0+\",\n      \"about\": \"The error code, or 0 if there was no error.\" },\n    { \"name\": \"Groups\", \"type\": \"[]ListedGroup\", \"versions\": \"0+\",\n      \"about\": \"Each group in the response.\", \"fields\": [\n      { \"name\": \"GroupId\", \"type\": \"string\", \"versions\": \"0+\", \"entityType\": \"groupId\",\n        \"about\": \"The group ID.\" },\n      { \"name\": \"ProtocolType\", \"type\": \"string\", \"versions\": \"0+\",\n        \"about\": \"The group protocol type.\" },\n      { \"name\": \"GroupState\", \"type\": \"string\", \"versions\": \"4+\", \"ignorable\": true,\n        \"about\": \"The group state name.\" },\n      { \"name\": \"GroupType\", \"type\": \"string\", \"versions\": \"5+\", \"ignorable\": true,\n        \"about\": \"The group type name.\" }\n    ]}\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><p>No new error codes are introduced.</p><h1>Proposed Changes</h1><h3>Group coordinator</h3><p>When a <code>ListGroups</code> request has the new filter set, the group coordinator returns only groups that have at least one committed offset at the time the request is served. The filter is combined with the existing states filter and types filter with AND semantics.</p><p>A group &quot;has committed offsets&quot; when the group coordinator's committed-offset store contains an offset for at least one topic partition of that group, as seen at the committed read snapshot of the coordinator shard that serves the request. This is the same snapshot the states filter is evaluated against, so the response is consistent for a given group. The predicate is defined against coordinator storage, not against what a particular <code>OffsetFetch</code> request would return, because <code>OffsetFetch</code> additionally applies topic-level authorization and, with <code>requireStable</code>, can report <code>UNSTABLE_OFFSET_COMMIT</code> instead of an offset. The following table defines the outcome:</p><table class=\"relative-table wrapped\" style=\"width: 45.6229%;\"><colgroup><col style=\"width: 90.2344%;\" /><col style=\"width: 9.51839%;\" /></colgroup><thead><tr><th>State of the group at the read snapshot</th><th>Matches</th></tr></thead><tbody><tr><td>At least one committed offset, no pending transactional offsets</td><td>Yes</td></tr><tr><td>At least one committed offset, plus pending transactional offsets for the same or other partitions</td><td>Yes</td></tr><tr><td>Committed offsets whose retention deadline has passed, but whose removal is not yet visible in the snapshot</td><td>Yes</td></tr><tr><td>Only pending transactional offsets, no committed offset</td><td>No</td></tr><tr><td>The removal of the last committed offset (expiration, <code>OffsetDelete</code>, <code>DeleteGroups</code>) is visible in the snapshot</td><td>No</td></tr><tr><td>No offsets at all</td><td>No</td></tr></tbody></table><p>A group whose only offsets are pending matches after the transaction commits and the resulting committed offsets become visible in the shard's committed read snapshot.</p><p>The group coordinator already creates a group when an offset is committed for an unknown group id, so every group with committed offsets is present in the group metadata that <code>ListGroups</code> iterates over. The filter is a per-group predicate over that iteration and does not add any I/O or additional scans.</p><p>The filter applies to all group types, but it only inspects the group coordinator's committed-offset store. Classic, consumer and streams groups commit offsets through that store, so the filter is meaningful for them. Share groups do not: their consumption state lives in the share coordinator (<code>__share_group_state</code>), and the group coordinator rejects <code>OffsetCommit</code> and <code>OffsetFetch</code> for share groups. A share group therefore never matches the filter, and <code>ListGroupsOptions.forShareGroups().requireCommittedOffsets(true)</code> returns an empty result. Querying the share coordinator from <code>ListGroups</code> is out of scope; it would turn a local lookup into a cross-coordinator request and defeat the purpose of the filter.</p><h3>Admin client</h3><p><code>ListGroupsOptions</code> gets a new option. When it is set, the admin client sets the new field in the <code>ListGroups</code> request. The request is sent with version 6 or later. If a broker does not support version 6, the request to that broker fails with <code>UnsupportedVersionException</code>, because the client cannot emulate the filter without fetching the offsets of every group, which is exactly the cost this KIP removes. The field is deliberately not ignorable; see Rejected Alternatives. <code>listGroups</code> is asynchronous and fans out to every broker, so this failure surfaces through <code>ListGroupsResult</code>: <code>all()</code> completes exceptionally with the first failure, <code>errors()</code> contains one <code>Throwable</code> per failed broker, and <code>valid()</code> contains the groups from the brokers that succeeded. When the option is not set, the request is unchanged and continues to work with brokers of any version supported by the client.</p><p>The authorization model of <code>ListGroups</code> is unchanged: a principal with <code>DESCRIBE</code> on the cluster receives all groups, otherwise only groups the principal has <code>DESCRIBE</code> on. The new filter only removes groups from that set. Note that this exposes one additional bit of information per listed group, namely whether the group has committed offsets, to any principal that can list the group. A principal with cluster <code>DESCRIBE</code> but without <code>DESCRIBE</code> on a given group can learn this bit although <code>OffsetFetch</code> for that group would be denied. The filter does not reveal which topics have offsets or the offset values themselves, which continue to require <code>DESCRIBE</code> on the group and on the topics. We consider this acceptable because the existence of committed offsets is comparable to the group state and group type that <code>ListGroups</code> already returns, but we call it out explicitly for review.</p><h3>Command-line tools</h3><p>No command-line tool changes are proposed. <code>kafka-groups.sh --list</code> and <code>kafka-consumer-groups.sh --list</code> continue to list all groups.</p><h1>Compatibility, Deprecation, and Migration Plan</h1><ul><li><strong>Existing clients against new brokers:</strong> unaffected. Clients that send <code>ListGroups</code> version 5 or earlier do not set the new field, and the broker treats the filter as disabled.</li><li><strong>New clients against existing brokers:</strong> unaffected unless the new option is used. <code>ListGroupsOptions.requireCommittedOffsets(true)</code> requires <code>ListGroups</code> version 6. Against a broker that does not support version 6 the request to that broker fails with <code>UnsupportedVersionException</code>, consistent with how the states filter from KIP-518 behaves against brokers that predate it. Because <code>listGroups</code> is asynchronous, the exception is not thrown by the method call; it is the cause of the <code>ExecutionException</code> from <code>all().get()</code>, and it appears in <code>errors()</code>. Callers that must support older brokers should check that the cause is <code>UnsupportedVersionException</code> (the same exception can also come from another unsupported filter, so the retry can fail again and that failure must propagate) and then retry the listing without <code>requireCommittedOffsets</code>, keeping their state, type and protocol-type filters. Callers that use <code>valid()</code> must also inspect <code>errors()</code>, otherwise an unsupported broker looks like a broker with no groups.</li><li><strong>Behavior of existing calls:</strong> the default value of the option is <code>false</code>, so the set of groups returned by <code>Admin.listGroups</code> and the command-line tools does not change.</li><li><strong>Deprecation:</strong> nothing is deprecated. The option is intentionally not added to the deprecated <code>Admin.listConsumerGroups</code> API or <code>ListConsumerGroupsOptions</code>.</li><li><strong>Mixed-version clusters:</strong> <code>Admin.listGroups</code> sends one <code>ListGroups</code> request to every broker and negotiates the version per broker. During a rolling upgrade some brokers support version 6 and some do not. The requests to the older brokers fail with <code>UnsupportedVersionException</code>; <code>all()</code> fails, <code>errors()</code> reports one failure per such broker, and <code>valid()</code> contains only the groups from the upgraded brokers. A tool that needs a complete listing must therefore either fail closed on <code>all()</code> or, for that round, retry with only the committed-offset filter disabled and every other option unchanged, as described above. It must not treat <code>valid()</code> alone as complete.</li></ul><h1>Test Plan</h1><ul><li>Unit tests for the group coordinator (<code>GroupMetadataManager</code> / <code>GroupCoordinatorShard</code>) that verify the filter in combination with the states and types filters, for groups with committed offsets, groups with no offsets, groups with only pending transactional offsets, and groups whose offsets have expired but have not been cleaned up yet.</li><li>Unit tests for <code>ListGroupsRequest</code> that verify the new field is rejected when the negotiated version is below 6 and the option is set, including when the types filter names only classic and consumer groups and would otherwise be downgraded, so that the new check is not bypassed by that early return; and that the request is unchanged when the option is not set.</li><li><code>KafkaAdminClient</code> unit tests for <code>listGroups</code> with the new option, including the <code>UnsupportedVersionException</code> path.</li><li>Integration tests in the admin client integration test suite that create a consumer group with committed offsets and a consumer group with active members that never commit, and verify that only the former is returned when the option is set and both are returned otherwise.</li><li>Coordinator tests for snapshot visibility: a group whose first committed offset, or whose last offset removal, is written but not yet committed at the read snapshot is reported according to the committed state only.</li><li>Coordinator tests that a share group is never returned when the filter is set, and that a streams group with committed offsets is returned.</li><li>Authorization integration tests: a principal with cluster <code>DESCRIBE</code> only, and a principal with <code>DESCRIBE</code> on some groups only, receive the filtered subset of the groups they are allowed to list.</li><li>Mixed-version tests: with the filter set, <code>all()</code> fails and <code>errors()</code> reports the brokers that do not support version 6, while <code>valid()</code> contains the groups from the brokers that do.</li><li>Protocol compatibility tests for the new <code>ListGroups</code> version.</li></ul><h1>Rejected Alternatives</h1><h3>Extend <code>Admin.listConsumerGroupOffsets</code> / <code>OffsetFetch</code> to return the offsets of all groups</h3><p>This would replace the two-step pattern with a single call. It is a much larger change: <code>OffsetFetch</code> is addressed to a specific group coordinator and routed by group id, so an &quot;all groups&quot; variant would need a new routing model, pagination for potentially very large responses, and a way to express the group filter that replication tools apply between the two steps. The two-step approach also lets the tool filter groups before any offsets are fetched. Filtering out offset-less groups in <code>ListGroups</code> solves the practical problem with a one-field change.</p><h3>Add the filter to the deprecated <code>Admin.listConsumerGroups</code> API</h3><p><code>listConsumerGroups</code> and <code>ListConsumerGroupsOptions</code> have been deprecated since 4.1 in favor of <code>listGroups</code> (KIP-1043). New functionality should only be added to the replacement API.</p><h3>Return a <code>hasCommittedOffsets</code> flag per group in the <code>ListGroups</code> response instead of a request filter</h3><p>A response flag would let clients filter locally and would also be useful for tooling that displays groups. However, it does not reduce the size of the response for the replication use case, and the filtering use case is the one with the demonstrated cost. A response field can be added by a later KIP if a use case for it appears; the request filter proposed here does not prevent that.</p><h3>Use the existing states filter</h3><p>Group state does not indicate whether a group has committed offsets. Groups with active members may or may not have committed offsets, and those groups are exactly the ones replication tools must inspect. Groups in the <code>Empty</code> state usually have committed offsets, because the periodic group cleanup removes groups that have neither members nor offsets, but there is a window of up to <code>offsets.retention.check.interval.ms</code> where an <code>Empty</code> group has no offsets.</p><h3>Make the filter a tri-state (all groups / only with offsets / only without offsets)</h3><p>There is no known use case for listing only groups without committed offsets. A boolean keeps the API small. If such a use case appears, a new field can be added in a later version.</p><h3>Add <code>--with-committed-offsets</code> to <code>kafka-groups.sh --list</code></h3><p>The motivating use case is programmatic. Keeping the tools unchanged keeps this KIP small. A tool flag can be added later without a protocol change.</p><h3>Make the new request field ignorable</h3><p>If <code>RequireCommittedOffsets</code> were marked <code>&quot;ignorable&quot;: true</code>, the admin client would send version 5 to an older broker and that broker would return every group, so no caller-side handling would be needed. This was considered and rejected for two reasons. First, the admin client fails strictly whenever an option cannot be expressed in the negotiated protocol version, for example the states filter on <code>ListGroups</code>, <code>requireStable</code> on <code>OffsetFetch</code> and <code>includeAuthorizedOperations</code> on <code>Metadata</code>, and this filter should behave the same way. Second, the response has no way to indicate that the filter was not applied, so a caller could neither detect nor log that it was not getting the benefit; the exception is the only signal it has. The only silent downgrade in <code>ListGroupsRequest</code> today, for a types filter that names only classic and consumer groups, is lossless because older brokers have no other group types. Dropping this filter would not be lossless.</p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/462815620?status=historical&version=7"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1378
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=462815786",
+    "edit": "/pages/resumedraft.action?draftId=462815786&draftShareId=8314a2a6-a6de-484a-84c1-700582dbb7f0",
+    "tinyui": "/x/KgKWGw",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/462815620?status=historical&version=7"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/462815620/child?parentVersion=7",
+    "restrictions": "/rest/api/content/462815620/restriction/byOperation",
+    "history": "/rest/api/content/462815620/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/462815620/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/462815620/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "462815620",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1388: Add a committed-offsets filter to ListGroups",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "nicoledu",
+     "userKey": "073590d2a049e1bb01a15883c1230044",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Nicole Du",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2a049e1bb01a15883c1230044"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-26T22:48:16.000Z",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/462815620/version/6"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/462815620?status=historical&version=6"
+    }
+   },
+   "position": 1378,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"adeff114-f8c0-4ebc-b737-8b5cecc7cd89\" /></p><h1>Status</h1><p><strong>Current state:</strong> Under Discussion</p><p><strong>Discussion thread:</strong> <a href=\"https://cwiki.apache.org/confluence/TBD-paste-the-thread-link-after-sending-the-DISCUSS-mail\">here</a></p><p><strong>JIRA:</strong> <a href=\"https://issues.apache.org/jira/browse/KAFKA-21366\">KAFKA-21366</a></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p>Tools that replicate consumer group offsets between clusters typically use two RPCs, with client-side filtering in between:</p><ol><li><code>Admin.listGroups(ListGroupsOptions.forConsumerGroups())</code> (the <code>ListGroups</code> RPC, sent to every broker) to enumerate the consumer groups on the source cluster.</li><li>Apply a user-supplied group filter (an allow list, deny list or pattern) to the listed group ids.</li><li><code>Admin.listConsumerGroupOffsets(...)</code> (the <code>OffsetFetch</code> RPC, batched per group coordinator) for the groups that passed the filter.</li></ol><p>MirrorMaker 2 does exactly this in <code>MirrorCheckpointConnector</code>, and the group offset synchronization in KIP-1279 (Cluster Mirroring) follows the same pattern. Other cross-cluster replication tools built on the Admin API do the same.</p><p>A group exists in the group coordinator while it has at least one member or at least one committed offset; a group with neither is removed by the periodic group cleanup. In some scenarios, a large number of the groups returned by <code>ListGroups</code> have members but no committed offsets at all. Typical examples are:</p><ul><li>consumers that disable auto-commit and never commit, for example because they store offsets outside Kafka, or because they are short-lived command-line consumers such as <code>kafka-console-consumer.sh</code>;</li><li>consumers that have joined a group but have not committed yet, which is a permanent condition for applications that only read and never commit.</li></ul><p>In some large deployments, we have seen thousands of such groups. For each of them, the replication tool still fetches offsets, receives nothing and discards the group. <code>OffsetFetch</code> can carry several groups per request to a coordinator, but every offset-less group still costs coordinator work, response bytes and client-side handling.</p><p><code>ListGroups</code> already supports server-side filtering by group state (KIP-518) and by group type (KIP-848). The group coordinator holds both the group metadata and the committed offsets of a group in the same coordinator shard, so it can answer &quot;does this group have any committed offsets?&quot; with a local lookup while it builds the <code>ListGroups</code> response. This KIP adds that filter.</p><p>The change is deliberately made to the newer <code>Admin.listGroups</code> API introduced by KIP-1043 and not to <code>Admin.listConsumerGroups</code>, which has been deprecated since 4.1.</p><h1>Public Interfaces</h1><h3>Client API changes</h3><h4>ListGroupsOptions</h4><p>A new filter is added to <code>org.apache.kafka.clients.admin.ListGroupsOptions</code>.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b24521fe-b325-43c0-b5c7-41f3bad5e8a8\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[ @InterfaceAudience.Public\npublic class ListGroupsOptions extends AbstractOptions<ListGroupsOptions> {\n\n    /**\n     * If set to true, only groups that have at least one committed offset will be returned by listGroups().\n     * Otherwise, groups are returned whether or not they have committed offsets.\n     * This operation is supported by brokers with version 4.5.0 or later.\n     */\n    public ListGroupsOptions requireCommittedOffsets(boolean requireCommittedOffsets);\n\n    /**\n     * Returns true if only groups with committed offsets are requested.\n     */\n    public boolean requireCommittedOffsets();\n}\n ]]></ac:plain-text-body></ac:structured-macro><p>The default value is <code>false</code> , which preserves the existing behavior.</p><p>Example: list all consumer groups that have committed offsets.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"16f4fe84-59ee-499d-bb9c-a15737ec0b2e\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[Collection<GroupListing> groups = admin.listGroups(\n    ListGroupsOptions.forConsumerGroups().requireCommittedOffsets(true)\n).all().get();]]></ac:plain-text-body></ac:structured-macro><p><code>all()</code> is used so that a broker that does not support the filter fails the call instead of silently returning a partial listing (see the compatibility section).</p><p>No changes are made to <code>Admin</code>, <code>ListGroupsResult</code> or <code>GroupListing</code>.</p><h3>Kafka protocol changes</h3><h4>ListGroups API</h4><p>The <code>ListGroups</code> API is bumped to version 6. The request gains one field. The response is unchanged, and its version is bumped only to keep request and response versions aligned.</p><h5>Request schema</h5><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"d47a0637-c978-4c95-b112-9becf13d6add\"><ac:parameter ac:name=\"language\">json</ac:parameter><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 16,\n  \"type\": \"request\",\n  \"listeners\": [\"broker\"],\n  \"name\": \"ListGroupsRequest\",\n  // Version 1 and 2 are the same as version 0.\n  //\n  // Version 3 is the first flexible version.\n  //\n  // Version 4 adds the StatesFilter field (KIP-518).\n  //\n  // Version 5 adds the TypesFilter field (KIP-848).\n  //\n  // Version 6 adds the RequireCommittedOffsets field (KIP-1388).\n  \"validVersions\": \"0-6\",\n  \"flexibleVersions\": \"3+\",\n  \"headerVersions\": {\n    \"0-2\": \"1\",\n    \"3+\": \"2\"\n  },\n  \"fields\": [\n    { \"name\": \"StatesFilter\", \"type\": \"[]string\", \"versions\": \"4+\",\n      \"about\": \"The states of the groups we want to list. If empty, all groups are returned with their state.\" },\n    { \"name\": \"TypesFilter\", \"type\": \"[]string\", \"versions\": \"5+\",\n      \"about\": \"The types of the groups we want to list. If empty, all groups are returned with their type.\" },\n    { \"name\": \"RequireCommittedOffsets\", \"type\": \"bool\", \"versions\": \"6+\", \"default\": \"false\",\n      \"about\": \"If true, only groups that have at least one committed offset are returned. If false, groups are returned whether or not they have committed offsets.\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><pre>Response schema</pre><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"79bee6a3-5645-4904-b00a-0a9de75f2103\"><ac:parameter ac:name=\"language\">json</ac:parameter><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 16,\n  \"type\": \"response\",\n  \"name\": \"ListGroupsResponse\",\n  // Version 1 adds the throttle time.\n  //\n  // Starting in version 2, on quota violation, brokers send out\n  // responses before throttling.\n  //\n  // Version 3 is the first flexible version.\n  //\n  // Version 4 adds the GroupState field (KIP-518).\n  //\n  // Version 5 adds the GroupType field (KIP-848).\n  //\n  // Version 6 is the same as version 5 (KIP-1388).\n  \"validVersions\": \"0-6\",\n  \"flexibleVersions\": \"3+\",\n  \"headerVersions\": {\n    \"0-2\": \"0\",\n    \"3+\": \"1\"\n  },\n  \"fields\": [\n    { \"name\": \"ThrottleTimeMs\", \"type\": \"int32\", \"versions\": \"1+\", \"ignorable\": true,\n      \"about\": \"The duration in milliseconds for which the request was throttled due to a quota violation, or zero if the request did not violate any quota.\" },\n    { \"name\": \"ErrorCode\", \"type\": \"int16\", \"versions\": \"0+\",\n      \"about\": \"The error code, or 0 if there was no error.\" },\n    { \"name\": \"Groups\", \"type\": \"[]ListedGroup\", \"versions\": \"0+\",\n      \"about\": \"Each group in the response.\", \"fields\": [\n      { \"name\": \"GroupId\", \"type\": \"string\", \"versions\": \"0+\", \"entityType\": \"groupId\",\n        \"about\": \"The group ID.\" },\n      { \"name\": \"ProtocolType\", \"type\": \"string\", \"versions\": \"0+\",\n        \"about\": \"The group protocol type.\" },\n      { \"name\": \"GroupState\", \"type\": \"string\", \"versions\": \"4+\", \"ignorable\": true,\n        \"about\": \"The group state name.\" },\n      { \"name\": \"GroupType\", \"type\": \"string\", \"versions\": \"5+\", \"ignorable\": true,\n        \"about\": \"The group type name.\" }\n    ]}\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><p>No new error codes are introduced.</p><h1>Proposed Changes</h1><h3>Group coordinator</h3><p>When a <code>ListGroups</code> request has the new filter set, the group coordinator returns only groups that have at least one committed offset at the time the request is served. The filter is combined with the existing states filter and types filter with AND semantics.</p><p>A group &quot;has committed offsets&quot; when the group coordinator's committed-offset store contains an offset for at least one topic partition of that group, as seen at the committed read snapshot of the coordinator shard that serves the request. This is the same snapshot the states filter is evaluated against, so the response is consistent for a given group. The predicate is defined against coordinator storage, not against what a particular <code>OffsetFetch</code> request would return, because <code>OffsetFetch</code> additionally applies topic-level authorization and, with <code>requireStable</code>, can report <code>UNSTABLE_OFFSET_COMMIT</code> instead of an offset. The following table defines the outcome:</p><table class=\"relative-table wrapped\" style=\"width: 45.6229%;\"><colgroup><col style=\"width: 90.2344%;\" /><col style=\"width: 9.51839%;\" /></colgroup><thead><tr><th>State of the group at the read snapshot</th><th>Matches</th></tr></thead><tbody><tr><td>At least one committed offset, no pending transactional offsets</td><td>Yes</td></tr><tr><td>At least one committed offset, plus pending transactional offsets for the same or other partitions</td><td>Yes</td></tr><tr><td>Committed offsets whose retention deadline has passed, but whose removal is not yet visible in the snapshot</td><td>Yes</td></tr><tr><td>Only pending transactional offsets, no committed offset</td><td>No</td></tr><tr><td>The removal of the last committed offset (expiration, <code>OffsetDelete</code>, <code>DeleteGroups</code>) is visible in the snapshot</td><td>No</td></tr><tr><td>No offsets at all</td><td>No</td></tr></tbody></table><p>A group whose only offsets are pending matches after the transaction commits and the resulting committed offsets become visible in the shard's committed read snapshot.</p><p>The group coordinator already creates a group when an offset is committed for an unknown group id, so every group with committed offsets is present in the group metadata that <code>ListGroups</code> iterates over. The filter is a per-group predicate over that iteration and does not add any I/O or additional scans.</p><p>The filter applies to all group types, but it only inspects the group coordinator's committed-offset store. Classic, consumer and streams groups commit offsets through that store, so the filter is meaningful for them. Share groups do not: their consumption state lives in the share coordinator (<code>__share_group_state</code>), and the group coordinator rejects <code>OffsetCommit</code> and <code>OffsetFetch</code> for share groups. A share group therefore never matches the filter, and <code>ListGroupsOptions.forShareGroups().requireCommittedOffsets(true)</code> returns an empty result. Querying the share coordinator from <code>ListGroups</code> is out of scope; it would turn a local lookup into a cross-coordinator request and defeat the purpose of the filter.</p><h3>Admin client</h3><p><code>ListGroupsOptions</code> gets a new option. When it is set, the admin client sets the new field in the <code>ListGroups</code> request. The request is sent with version 6 or later. If a broker does not support version 6, the request to that broker fails with <code>UnsupportedVersionException</code>, because the client cannot emulate the filter without fetching the offsets of every group, which is exactly the cost this KIP removes. The field is deliberately not ignorable; see Rejected Alternatives. <code>listGroups</code> is asynchronous and fans out to every broker, so this failure surfaces through <code>ListGroupsResult</code>: <code>all()</code> completes exceptionally with the first failure, <code>errors()</code> contains one <code>Throwable</code> per failed broker, and <code>valid()</code> contains the groups from the brokers that succeeded. When the option is not set, the request is unchanged and continues to work with brokers of any version supported by the client.</p><p>The authorization model of <code>ListGroups</code> is unchanged: a principal with <code>DESCRIBE</code> on the cluster receives all groups, otherwise only groups the principal has <code>DESCRIBE</code> on. The new filter only removes groups from that set. Note that this exposes one additional bit of information per listed group, namely whether the group has committed offsets, to any principal that can list the group. A principal with cluster <code>DESCRIBE</code> but without <code>DESCRIBE</code> on a given group can learn this bit although <code>OffsetFetch</code> for that group would be denied. The filter does not reveal which topics have offsets or the offset values themselves, which continue to require <code>DESCRIBE</code> on the group and on the topics. We consider this acceptable because the existence of committed offsets is comparable to the group state and group type that <code>ListGroups</code> already returns, but we call it out explicitly for review.</p><h3>Command-line tools</h3><p>No command-line tool changes are proposed. <code>kafka-groups.sh --list</code> and <code>kafka-consumer-groups.sh --list</code> continue to list all groups.</p><h1>Compatibility, Deprecation, and Migration Plan</h1><ul><li><strong>Existing clients against new brokers:</strong> unaffected. Clients that send <code>ListGroups</code> version 5 or earlier do not set the new field, and the broker treats the filter as disabled.</li><li><strong>New clients against existing brokers:</strong> unaffected unless the new option is used. <code>ListGroupsOptions.requireCommittedOffsets(true)</code> requires <code>ListGroups</code> version 6. Against a broker that does not support version 6 the request to that broker fails with <code>UnsupportedVersionException</code>, consistent with how the states filter from KIP-518 behaves against brokers that predate it. Because <code>listGroups</code> is asynchronous, the exception is not thrown by the method call; it is the cause of the <code>ExecutionException</code> from <code>all().get()</code>, and it appears in <code>errors()</code>. Callers that must support older brokers should check that the cause is <code>UnsupportedVersionException</code> (the same exception can also come from another unsupported filter, so the retry can fail again and that failure must propagate) and then retry the listing without <code>requireCommittedOffsets</code>, keeping their state, type and protocol-type filters. Callers that use <code>valid()</code> must also inspect <code>errors()</code>, otherwise an unsupported broker looks like a broker with no groups.</li><li><strong>Behavior of existing calls:</strong> the default value of the option is <code>false</code>, so the set of groups returned by <code>Admin.listGroups</code> and the command-line tools does not change.</li><li><strong>Deprecation:</strong> nothing is deprecated. The option is intentionally not added to the deprecated <code>Admin.listConsumerGroups</code> API or <code>ListConsumerGroupsOptions</code>.</li><li><strong>Mixed-version clusters:</strong> <code>Admin.listGroups</code> sends one <code>ListGroups</code> request to every broker and negotiates the version per broker. During a rolling upgrade some brokers support version 6 and some do not. The requests to the older brokers fail with <code>UnsupportedVersionException</code>; <code>all()</code> fails, <code>errors()</code> reports one failure per such broker, and <code>valid()</code> contains only the groups from the upgraded brokers. A tool that needs a complete listing must therefore either fail closed on <code>all()</code> or, for that round, retry with only the committed-offset filter disabled and every other option unchanged, as described above. It must not treat <code>valid()</code> alone as complete.</li></ul><h1>Test Plan</h1><ul><li>Unit tests for the group coordinator (<code>GroupMetadataManager</code> / <code>GroupCoordinatorShard</code>) that verify the filter in combination with the states and types filters, for groups with committed offsets, groups with no offsets, groups with only pending transactional offsets, and groups whose offsets have expired but have not been cleaned up yet.</li><li>Unit tests for <code>ListGroupsRequest</code> that verify the new field is rejected when the negotiated version is below 6 and the option is set, including when the types filter names only classic and consumer groups and would otherwise be downgraded, so that the new check is not bypassed by that early return; and that the request is unchanged when the option is not set.</li><li><code>KafkaAdminClient</code> unit tests for <code>listGroups</code> with the new option, including the <code>UnsupportedVersionException</code> path.</li><li>Integration tests in the admin client integration test suite that create a consumer group with committed offsets and a consumer group with active members that never commit, and verify that only the former is returned when the option is set and both are returned otherwise.</li><li>Coordinator tests for snapshot visibility: a group whose first committed offset, or whose last offset removal, is written but not yet committed at the read snapshot is reported according to the committed state only.</li><li>Coordinator tests that a share group is never returned when the filter is set, and that a streams group with committed offsets is returned.</li><li>Authorization integration tests: a principal with cluster <code>DESCRIBE</code> only, and a principal with <code>DESCRIBE</code> on some groups only, receive the filtered subset of the groups they are allowed to list.</li><li>Mixed-version tests: with the filter set, <code>all()</code> fails and <code>errors()</code> reports the brokers that do not support version 6, while <code>valid()</code> contains the groups from the brokers that do.</li><li>Protocol compatibility tests for the new <code>ListGroups</code> version.</li></ul><h1>Rejected Alternatives</h1><h3>Extend <code>Admin.listConsumerGroupOffsets</code> / <code>OffsetFetch</code> to return the offsets of all groups</h3><p>This would replace the two-step pattern with a single call. It is a much larger change: <code>OffsetFetch</code> is addressed to a specific group coordinator and routed by group id, so an &quot;all groups&quot; variant would need a new routing model, pagination for potentially very large responses, and a way to express the group filter that replication tools apply between the two steps. The two-step approach also lets the tool filter groups before any offsets are fetched. Filtering out offset-less groups in <code>ListGroups</code> solves the practical problem with a one-field change.</p><h3>Add the filter to the deprecated <code>Admin.listConsumerGroups</code> API</h3><p><code>listConsumerGroups</code> and <code>ListConsumerGroupsOptions</code> have been deprecated since 4.1 in favor of <code>listGroups</code> (KIP-1043). New functionality should only be added to the replacement API.</p><h3>Return a <code>hasCommittedOffsets</code> flag per group in the <code>ListGroups</code> response instead of a request filter</h3><p>A response flag would let clients filter locally and would also be useful for tooling that displays groups. However, it does not reduce the size of the response for the replication use case, and the filtering use case is the one with the demonstrated cost. A response field can be added by a later KIP if a use case for it appears; the request filter proposed here does not prevent that.</p><h3>Use the existing states filter</h3><p>Group state does not indicate whether a group has committed offsets. Groups with active members may or may not have committed offsets, and those groups are exactly the ones replication tools must inspect. Groups in the <code>Empty</code> state usually have committed offsets, because the periodic group cleanup removes groups that have neither members nor offsets, but there is a window of up to <code>offsets.retention.check.interval.ms</code> where an <code>Empty</code> group has no offsets.</p><h3>Make the filter a tri-state (all groups / only with offsets / only without offsets)</h3><p>There is no known use case for listing only groups without committed offsets. A boolean keeps the API small. If such a use case appears, a new field can be added in a later version.</p><h3>Add <code>--with-committed-offsets</code> to <code>kafka-groups.sh --list</code></h3><p>The motivating use case is programmatic. Keeping the tools unchanged keeps this KIP small. A tool flag can be added later without a protocol change.</p><h3>Make the new request field ignorable</h3><p>If <code>RequireCommittedOffsets</code> were marked <code>&quot;ignorable&quot;: true</code>, the admin client would send version 5 to an older broker and that broker would return every group, so no caller-side handling would be needed. This was considered and rejected for two reasons. First, the admin client fails strictly whenever an option cannot be expressed in the negotiated protocol version, for example the states filter on <code>ListGroups</code>, <code>requireStable</code> on <code>OffsetFetch</code> and <code>includeAuthorizedOperations</code> on <code>Metadata</code>, and this filter should behave the same way. Second, the response has no way to indicate that the filter was not applied, so a caller could neither detect nor log that it was not getting the benefit; the exception is the only signal it has. The only silent downgrade in <code>ListGroupsRequest</code> today, for a types filter that names only classic and consumer groups, is lossless because older brokers have no other group types. Dropping this filter would not be lossless.</p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/462815620?status=historical&version=6"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1378
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=462815634",
+    "edit": "/pages/resumedraft.action?draftId=462815634&draftShareId=8314a2a6-a6de-484a-84c1-700582dbb7f0",
+    "tinyui": "/x/kgGWGw",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/462815620?status=historical&version=6"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/462815620/child?parentVersion=6",
+    "restrictions": "/rest/api/content/462815620/restriction/byOperation",
+    "history": "/rest/api/content/462815620/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/462815620/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/462815620/restriction/relevantViewRestrictions"
+   }
+  }
+ ],
+ "comments": {
+  "results": [],
+  "start": 0,
+  "limit": 200,
+  "size": 0,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/api/content/462815620/child/comment?expand=body.storage%2Cversion%2Cancestors&depth=all",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ }
+}

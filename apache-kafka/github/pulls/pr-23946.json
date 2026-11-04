@@ -1,0 +1,945 @@
+{
+ "pull": {
+  "url": "https://api.github.com/repos/apache/kafka/pulls/23946",
+  "id": 4995664598,
+  "node_id": "PR_kwDOACG9q88AAAABKcPK1g",
+  "html_url": "https://github.com/apache/kafka/pull/23946",
+  "diff_url": "https://github.com/apache/kafka/pull/23946.diff",
+  "patch_url": "https://github.com/apache/kafka/pull/23946.patch",
+  "issue_url": "https://api.github.com/repos/apache/kafka/issues/23946",
+  "commits_url": "https://api.github.com/repos/apache/kafka/pulls/23946/commits",
+  "review_comments_url": "https://api.github.com/repos/apache/kafka/pulls/23946/comments",
+  "review_comment_url": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}",
+  "comments_url": "https://api.github.com/repos/apache/kafka/issues/23946/comments",
+  "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/11396504059238e199538d31b2aa84d579f0d184",
+  "number": 23946,
+  "state": "open",
+  "locked": false,
+  "title": "KAFKA-20488 Use ZK controller epoch when writing partition state znodes",
+  "user": {
+   "login": "chungyichi",
+   "id": 12217934,
+   "node_id": "MDQ6VXNlcjEyMjE3OTM0",
+   "avatar_url": "https://avatars.githubusercontent.com/u/12217934?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/chungyichi",
+   "html_url": "https://github.com/chungyichi",
+   "followers_url": "https://api.github.com/users/chungyichi/followers",
+   "following_url": "https://api.github.com/users/chungyichi/following{/other_user}",
+   "gists_url": "https://api.github.com/users/chungyichi/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/chungyichi/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/chungyichi/subscriptions",
+   "organizations_url": "https://api.github.com/users/chungyichi/orgs",
+   "repos_url": "https://api.github.com/users/chungyichi/repos",
+   "events_url": "https://api.github.com/users/chungyichi/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/chungyichi/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "body": "During migration, the partition state znodes written to ZooKeeper carry the KRaft controller epoch instead of the ZK one. ZK-mode code compares that field with its own controller epoch, so it should hold the ZK value.\n\nUse zkControllerEpoch() for those writes and add a test where the two epochs differ.",
+  "labels": [],
+  "milestone": null,
+  "active_lock_reason": null,
+  "created_at": "2026-10-24T13:09:39Z",
+  "updated_at": "2026-10-28T00:50:18Z",
+  "closed_at": null,
+  "merged_at": null,
+  "merge_commit_sha": "f03109607df9e2758621c0a051adb2bae1cfec1b",
+  "assignee": null,
+  "assignees": [],
+  "requested_reviewers": [],
+  "requested_teams": [],
+  "head": {
+   "label": "chungyichi:KAFKA-20488-zk-controller-epoch",
+   "ref": "KAFKA-20488-zk-controller-epoch",
+   "repo": {
+    "id": 827361172,
+    "node_id": "R_kgDOMVCHlA",
+    "name": "kafka",
+    "full_name": "chungyichi/kafka",
+    "owner": {
+     "login": "chungyichi",
+     "id": 12217934,
+     "node_id": "MDQ6VXNlcjEyMjE3OTM0",
+     "avatar_url": "https://avatars.githubusercontent.com/u/12217934?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/chungyichi",
+     "html_url": "https://github.com/chungyichi",
+     "followers_url": "https://api.github.com/users/chungyichi/followers",
+     "following_url": "https://api.github.com/users/chungyichi/following{/other_user}",
+     "gists_url": "https://api.github.com/users/chungyichi/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/chungyichi/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/chungyichi/subscriptions",
+     "organizations_url": "https://api.github.com/users/chungyichi/orgs",
+     "repos_url": "https://api.github.com/users/chungyichi/repos",
+     "events_url": "https://api.github.com/users/chungyichi/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/chungyichi/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": true,
+    "archived": false,
+    "disabled": false,
+    "description": "Mirror of Apache Kafka",
+    "homepage": null,
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [],
+    "forks_count": 0,
+    "forks": 0,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "watchers": 0,
+    "open_issues_count": 0,
+    "open_issues": 0,
+    "size": 273178,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-28T00:45:06Z",
+    "created_at": "2024-07-11T13:58:56Z",
+    "updated_at": "2026-10-24T06:49:02Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/chungyichi/kafka",
+    "html_url": "https://github.com/chungyichi/kafka",
+    "archive_url": "https://api.github.com/repos/chungyichi/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/chungyichi/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/chungyichi/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/chungyichi/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/chungyichi/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/chungyichi/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/chungyichi/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/chungyichi/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/chungyichi/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/chungyichi/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/chungyichi/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/chungyichi/kafka/downloads",
+    "events_url": "https://api.github.com/repos/chungyichi/kafka/events",
+    "forks_url": "https://api.github.com/repos/chungyichi/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/chungyichi/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/chungyichi/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/chungyichi/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/chungyichi/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/chungyichi/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/chungyichi/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/chungyichi/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/chungyichi/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/chungyichi/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/chungyichi/kafka/languages",
+    "merges_url": "https://api.github.com/repos/chungyichi/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/chungyichi/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/chungyichi/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/chungyichi/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/chungyichi/kafka/releases{/id}",
+    "ssh_url": "git@github.com:chungyichi/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/chungyichi/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/chungyichi/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/chungyichi/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/chungyichi/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/chungyichi/kafka/tags",
+    "teams_url": "https://api.github.com/repos/chungyichi/kafka/teams",
+    "trees_url": "https://api.github.com/repos/chungyichi/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/chungyichi/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/chungyichi/kafka/hooks",
+    "svn_url": "https://github.com/chungyichi/kafka"
+   },
+   "sha": "11396504059238e199538d31b2aa84d579f0d184",
+   "user": {
+    "login": "chungyichi",
+    "id": 12217934,
+    "node_id": "MDQ6VXNlcjEyMjE3OTM0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/12217934?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chungyichi",
+    "html_url": "https://github.com/chungyichi",
+    "followers_url": "https://api.github.com/users/chungyichi/followers",
+    "following_url": "https://api.github.com/users/chungyichi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chungyichi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chungyichi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chungyichi/subscriptions",
+    "organizations_url": "https://api.github.com/users/chungyichi/orgs",
+    "repos_url": "https://api.github.com/users/chungyichi/repos",
+    "events_url": "https://api.github.com/users/chungyichi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chungyichi/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "base": {
+   "label": "apache:3.9",
+   "ref": "3.9",
+   "repo": {
+    "id": 2211243,
+    "node_id": "MDEwOlJlcG9zaXRvcnkyMjExMjQz",
+    "name": "kafka",
+    "full_name": "apache/kafka",
+    "owner": {
+     "login": "apache",
+     "id": 47359,
+     "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+     "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/apache",
+     "html_url": "https://github.com/apache",
+     "followers_url": "https://api.github.com/users/apache/followers",
+     "following_url": "https://api.github.com/users/apache/following{/other_user}",
+     "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+     "organizations_url": "https://api.github.com/users/apache/orgs",
+     "repos_url": "https://api.github.com/users/apache/repos",
+     "events_url": "https://api.github.com/users/apache/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/apache/received_events",
+     "type": "Organization",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": false,
+    "archived": false,
+    "disabled": false,
+    "description": "Apache Kafka - A distributed event streaming platform",
+    "homepage": "https://kafka.apache.org/",
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [
+     "java",
+     "kafka",
+     "scala",
+     "streaming"
+    ],
+    "forks_count": 15637,
+    "forks": 15637,
+    "stargazers_count": 34153,
+    "watchers_count": 34153,
+    "watchers": 34153,
+    "open_issues_count": 674,
+    "open_issues": 674,
+    "size": 322164,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-29T11:37:21Z",
+    "created_at": "2011-08-15T18:06:16Z",
+    "updated_at": "2026-10-29T11:37:29Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/apache/kafka",
+    "html_url": "https://github.com/apache/kafka",
+    "archive_url": "https://api.github.com/repos/apache/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/apache/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/apache/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/apache/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/apache/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/apache/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/apache/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/apache/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/apache/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/apache/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/apache/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/apache/kafka/downloads",
+    "events_url": "https://api.github.com/repos/apache/kafka/events",
+    "forks_url": "https://api.github.com/repos/apache/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/apache/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/apache/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/apache/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/apache/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/apache/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/apache/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/apache/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/apache/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/apache/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/apache/kafka/languages",
+    "merges_url": "https://api.github.com/repos/apache/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/apache/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/apache/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/apache/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/apache/kafka/releases{/id}",
+    "ssh_url": "git@github.com:apache/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/apache/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/apache/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/apache/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/apache/kafka/tags",
+    "teams_url": "https://api.github.com/repos/apache/kafka/teams",
+    "trees_url": "https://api.github.com/repos/apache/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/apache/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/apache/kafka/hooks",
+    "svn_url": "https://github.com/apache/kafka"
+   },
+   "sha": "ea11d59ecda2ec57be0f1ef83a554ef5d3b82770",
+   "user": {
+    "login": "apache",
+    "id": 47359,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/apache",
+    "html_url": "https://github.com/apache",
+    "followers_url": "https://api.github.com/users/apache/followers",
+    "following_url": "https://api.github.com/users/apache/following{/other_user}",
+    "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+    "organizations_url": "https://api.github.com/users/apache/orgs",
+    "repos_url": "https://api.github.com/users/apache/repos",
+    "events_url": "https://api.github.com/users/apache/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/apache/received_events",
+    "type": "Organization",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "_links": {
+   "comments": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23946/comments"
+   },
+   "commits": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23946/commits"
+   },
+   "statuses": {
+    "href": "https://api.github.com/repos/apache/kafka/statuses/11396504059238e199538d31b2aa84d579f0d184"
+   },
+   "html": {
+    "href": "https://github.com/apache/kafka/pull/23946"
+   },
+   "issue": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23946"
+   },
+   "review_comments": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23946/comments"
+   },
+   "review_comment": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}"
+   },
+   "self": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23946"
+   }
+  },
+  "author_association": "CONTRIBUTOR",
+  "auto_merge": null,
+  "draft": false,
+  "merged": false,
+  "mergeable": true,
+  "rebaseable": false,
+  "mergeable_state": "unstable",
+  "merged_by": null,
+  "comments": 0,
+  "review_comments": 2,
+  "maintainer_can_modify": true,
+  "commits": 2,
+  "additions": 48,
+  "deletions": 2,
+  "changed_files": 2
+ },
+ "reviews": [
+  {
+   "id": 5656096509,
+   "node_id": "PRR_kwDOACG9q88AAAABUSEu_Q",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?u=d6a720105c14e445ea603b93ca071290c3955670&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23946#pullrequestreview-5656096509",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23946",
+   "author_association": "MEMBER",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23946#pullrequestreview-5656096509"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23946"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-26T17:14:17Z",
+   "commit_id": "2883098fb6ac206e4e5a475909b380dd5dbc6ebb"
+  },
+  {
+   "id": 5676442976,
+   "node_id": "PRR_kwDOACG9q88AAAABUlelYA",
+   "user": {
+    "login": "chungyichi",
+    "id": 12217934,
+    "node_id": "MDQ6VXNlcjEyMjE3OTM0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/12217934?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chungyichi",
+    "html_url": "https://github.com/chungyichi",
+    "followers_url": "https://api.github.com/users/chungyichi/followers",
+    "following_url": "https://api.github.com/users/chungyichi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chungyichi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chungyichi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chungyichi/subscriptions",
+    "organizations_url": "https://api.github.com/users/chungyichi/orgs",
+    "repos_url": "https://api.github.com/users/chungyichi/repos",
+    "events_url": "https://api.github.com/users/chungyichi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chungyichi/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23946#pullrequestreview-5676442976",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23946",
+   "author_association": "CONTRIBUTOR",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23946#pullrequestreview-5676442976"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23946"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-28T00:50:17Z",
+   "commit_id": "11396504059238e199538d31b2aa84d579f0d184"
+  }
+ ],
+ "review_comments": [
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4380246937",
+   "pull_request_review_id": 5656096509,
+   "id": 4380246937,
+   "node_id": "PRRC_kwDOACG9q88AAAABBRVDmQ",
+   "diff_hunk": "@@ -158,6 +158,52 @@ class ZkMigrationClientTest extends ZkMigrationTestHarness {\n     assertEquals(List(1, 2, 3), partition1.isr)\n   }\n \n+  /**\n+   * The controller_epoch stored in a partition state znode is compared against the epoch of the ZK\n+   * controller (see KAFKA-20488), so the migration client must write the ZK controller epoch and\n+   * not the KRaft controller epoch.\n+   */\n+  @Test\n+  def testPartitionStateUsesZkControllerEpoch(): Unit = {\n+    // Claiming the controller bumps the ZK controller epoch from the pre-created 1 to 2, which keeps",
+   "path": "core/src/test/scala/unit/kafka/zk/migration/ZkMigrationClientTest.scala",
+   "commit_id": "2883098fb6ac206e4e5a475909b380dd5dbc6ebb",
+   "original_commit_id": "2883098fb6ac206e4e5a475909b380dd5dbc6ebb",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "What does `pre-created 1 to 2` mean?",
+   "created_at": "2026-10-26T17:14:17Z",
+   "updated_at": "2026-10-26T17:14:17Z",
+   "html_url": "https://github.com/apache/kafka/pull/23946#discussion_r4380246937",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23946",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4380246937"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23946#discussion_r4380246937"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23946"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4380246937/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": null,
+   "original_line": 168,
+   "side": "RIGHT",
+   "author_association": "MEMBER",
+   "original_position": 11,
+   "position": 1,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4395818433",
+   "pull_request_review_id": 5676442976,
+   "id": 4395818433,
+   "node_id": "PRRC_kwDOACG9q88AAAABBgLdwQ",
+   "diff_hunk": "@@ -158,6 +158,52 @@ class ZkMigrationClientTest extends ZkMigrationTestHarness {\n     assertEquals(List(1, 2, 3), partition1.isr)\n   }\n \n+  /**\n+   * The controller_epoch stored in a partition state znode is compared against the epoch of the ZK\n+   * controller (see KAFKA-20488), so the migration client must write the ZK controller epoch and\n+   * not the KRaft controller epoch.\n+   */\n+  @Test\n+  def testPartitionStateUsesZkControllerEpoch(): Unit = {\n+    // Claiming the controller bumps the ZK controller epoch from the pre-created 1 to 2, which keeps",
+   "path": "core/src/test/scala/unit/kafka/zk/migration/ZkMigrationClientTest.scala",
+   "commit_id": "2883098fb6ac206e4e5a475909b380dd5dbc6ebb",
+   "original_commit_id": "2883098fb6ac206e4e5a475909b380dd5dbc6ebb",
+   "user": {
+    "login": "chungyichi",
+    "id": 12217934,
+    "node_id": "MDQ6VXNlcjEyMjE3OTM0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/12217934?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chungyichi",
+    "html_url": "https://github.com/chungyichi",
+    "followers_url": "https://api.github.com/users/chungyichi/followers",
+    "following_url": "https://api.github.com/users/chungyichi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chungyichi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chungyichi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chungyichi/subscriptions",
+    "organizations_url": "https://api.github.com/users/chungyichi/orgs",
+    "repos_url": "https://api.github.com/users/chungyichi/repos",
+    "events_url": "https://api.github.com/users/chungyichi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chungyichi/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "Thanks, I reworded the comment. ` ZkMigrationTestHarness` sets the ZK controller epoch to 1, and `claimControllerLeadership`  makes it 2.",
+   "created_at": "2026-10-28T00:50:16Z",
+   "updated_at": "2026-10-28T00:50:17Z",
+   "html_url": "https://github.com/apache/kafka/pull/23946#discussion_r4395818433",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23946",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4395818433"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23946#discussion_r4395818433"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23946"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4395818433/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": null,
+   "original_line": 168,
+   "side": "RIGHT",
+   "in_reply_to_id": 4380246937,
+   "author_association": "CONTRIBUTOR",
+   "original_position": 11,
+   "position": 1,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  }
+ ],
+ "issue_comments": [],
+ "commits": [
+  {
+   "sha": "2883098fb6ac206e4e5a475909b380dd5dbc6ebb",
+   "node_id": "C_kwDOMVCHlNoAKDI4ODMwOThmYjZhYzIwNmU0ZTVhNDc1OTA5YjM4MGRkNWRiYzZlYmI",
+   "commit": {
+    "author": {
+     "name": "Chung-Yi Chi",
+     "email": "demonic@csie.io",
+     "date": "2026-10-24T09:00:57Z"
+    },
+    "committer": {
+     "name": "Chung-Yi Chi",
+     "email": "demonic@csie.io",
+     "date": "2026-10-24T12:46:55Z"
+    },
+    "message": "KAFKA-20488 Write the ZK controller epoch to partition state znodes during migration\n\nZkTopicMigrationClient wrote state.kraftControllerEpoch() as the\ncontroller epoch of the partition state znodes in createTopic,\ncreateTopicPartitions and updateTopicPartitions. The ZK controller\ncompares that field with its own controller epoch, so it should be the\nZK controller epoch, which is what the request-level epoch in the RPCs\nsent by KRaftMigrationDriver already uses.\n\nThis patch passes state.zkControllerEpoch() instead and adds a\nregression test that makes the two epochs differ and reads the epoch\nback from the znode after each of the three methods.\n\nCo-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>",
+    "tree": {
+     "sha": "fc5fab8ee926ca7c4e0e03b4fe74ae9ca9a9a69e",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/fc5fab8ee926ca7c4e0e03b4fe74ae9ca9a9a69e"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/2883098fb6ac206e4e5a475909b380dd5dbc6ebb",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/2883098fb6ac206e4e5a475909b380dd5dbc6ebb",
+   "html_url": "https://github.com/apache/kafka/commit/2883098fb6ac206e4e5a475909b380dd5dbc6ebb",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/2883098fb6ac206e4e5a475909b380dd5dbc6ebb/comments",
+   "author": {
+    "login": "chungyichi",
+    "id": 12217934,
+    "node_id": "MDQ6VXNlcjEyMjE3OTM0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/12217934?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chungyichi",
+    "html_url": "https://github.com/chungyichi",
+    "followers_url": "https://api.github.com/users/chungyichi/followers",
+    "following_url": "https://api.github.com/users/chungyichi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chungyichi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chungyichi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chungyichi/subscriptions",
+    "organizations_url": "https://api.github.com/users/chungyichi/orgs",
+    "repos_url": "https://api.github.com/users/chungyichi/repos",
+    "events_url": "https://api.github.com/users/chungyichi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chungyichi/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "chungyichi",
+    "id": 12217934,
+    "node_id": "MDQ6VXNlcjEyMjE3OTM0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/12217934?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chungyichi",
+    "html_url": "https://github.com/chungyichi",
+    "followers_url": "https://api.github.com/users/chungyichi/followers",
+    "following_url": "https://api.github.com/users/chungyichi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chungyichi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chungyichi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chungyichi/subscriptions",
+    "organizations_url": "https://api.github.com/users/chungyichi/orgs",
+    "repos_url": "https://api.github.com/users/chungyichi/repos",
+    "events_url": "https://api.github.com/users/chungyichi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chungyichi/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "ea11d59ecda2ec57be0f1ef83a554ef5d3b82770",
+     "url": "https://api.github.com/repos/apache/kafka/commits/ea11d59ecda2ec57be0f1ef83a554ef5d3b82770",
+     "html_url": "https://github.com/apache/kafka/commit/ea11d59ecda2ec57be0f1ef83a554ef5d3b82770"
+    }
+   ]
+  },
+  {
+   "sha": "11396504059238e199538d31b2aa84d579f0d184",
+   "node_id": "C_kwDOMVCHlNoAKDExMzk2NTA0MDU5MjM4ZTE5OTUzOGQzMWIyYWE4NGQ1NzlmMGQxODQ",
+   "commit": {
+    "author": {
+     "name": "Chung-Yi Chi",
+     "email": "demonic@csie.io",
+     "date": "2026-10-28T00:42:53Z"
+    },
+    "committer": {
+     "name": "Chung-Yi Chi",
+     "email": "demonic@csie.io",
+     "date": "2026-10-28T00:42:53Z"
+    },
+    "message": "MINOR Clarify epoch comment in ZkMigrationClientTest\n\nCo-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>",
+    "tree": {
+     "sha": "1cfb979ceb7f7ed101ae1b7a5973423fc5c993d8",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/1cfb979ceb7f7ed101ae1b7a5973423fc5c993d8"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/11396504059238e199538d31b2aa84d579f0d184",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/11396504059238e199538d31b2aa84d579f0d184",
+   "html_url": "https://github.com/apache/kafka/commit/11396504059238e199538d31b2aa84d579f0d184",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/11396504059238e199538d31b2aa84d579f0d184/comments",
+   "author": {
+    "login": "chungyichi",
+    "id": 12217934,
+    "node_id": "MDQ6VXNlcjEyMjE3OTM0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/12217934?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chungyichi",
+    "html_url": "https://github.com/chungyichi",
+    "followers_url": "https://api.github.com/users/chungyichi/followers",
+    "following_url": "https://api.github.com/users/chungyichi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chungyichi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chungyichi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chungyichi/subscriptions",
+    "organizations_url": "https://api.github.com/users/chungyichi/orgs",
+    "repos_url": "https://api.github.com/users/chungyichi/repos",
+    "events_url": "https://api.github.com/users/chungyichi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chungyichi/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "chungyichi",
+    "id": 12217934,
+    "node_id": "MDQ6VXNlcjEyMjE3OTM0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/12217934?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chungyichi",
+    "html_url": "https://github.com/chungyichi",
+    "followers_url": "https://api.github.com/users/chungyichi/followers",
+    "following_url": "https://api.github.com/users/chungyichi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chungyichi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chungyichi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chungyichi/subscriptions",
+    "organizations_url": "https://api.github.com/users/chungyichi/orgs",
+    "repos_url": "https://api.github.com/users/chungyichi/repos",
+    "events_url": "https://api.github.com/users/chungyichi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chungyichi/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "2883098fb6ac206e4e5a475909b380dd5dbc6ebb",
+     "url": "https://api.github.com/repos/apache/kafka/commits/2883098fb6ac206e4e5a475909b380dd5dbc6ebb",
+     "html_url": "https://github.com/apache/kafka/commit/2883098fb6ac206e4e5a475909b380dd5dbc6ebb"
+    }
+   ]
+  }
+ ],
+ "files": [
+  {
+   "sha": "98bbeeec107253afb5ca1895301b08ee3ad5a454",
+   "filename": "core/src/main/scala/kafka/zk/migration/ZkTopicMigrationClient.scala",
+   "status": "modified",
+   "additions": 2,
+   "deletions": 2,
+   "changes": 4,
+   "blob_url": "https://github.com/apache/kafka/blob/11396504059238e199538d31b2aa84d579f0d184/core%2Fsrc%2Fmain%2Fscala%2Fkafka%2Fzk%2Fmigration%2FZkTopicMigrationClient.scala",
+   "raw_url": "https://github.com/apache/kafka/raw/11396504059238e199538d31b2aa84d579f0d184/core%2Fsrc%2Fmain%2Fscala%2Fkafka%2Fzk%2Fmigration%2FZkTopicMigrationClient.scala",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/core%2Fsrc%2Fmain%2Fscala%2Fkafka%2Fzk%2Fmigration%2FZkTopicMigrationClient.scala?ref=11396504059238e199538d31b2aa84d579f0d184",
+   "patch": "@@ -160,7 +160,7 @@ class ZkTopicMigrationClient(zkClient: KafkaZkClient) extends TopicMigrationClie\n       val topicPartition = new TopicPartition(topicName, partitionId)\n       Seq(\n         createTopicPartition(topicPartition),\n-        createTopicPartitionState(topicPartition, partition, state.kraftControllerEpoch())\n+        createTopicPartitionState(topicPartition, partition, state.zkControllerEpoch())\n       )\n     }\n \n@@ -250,7 +250,7 @@ class ZkTopicMigrationClient(zkClient: KafkaZkClient) extends TopicMigrationClie\n     val requests = topicPartitions.asScala.flatMap { case (topicName, partitionRegistrations) =>\n       partitionRegistrations.asScala.flatMap { case (partitionId, partitionRegistration) =>\n         val topicPartition = new TopicPartition(topicName, partitionId)\n-        Seq(updateTopicPartitionState(topicPartition, partitionRegistration, state.kraftControllerEpoch()))\n+        Seq(updateTopicPartitionState(topicPartition, partitionRegistration, state.zkControllerEpoch()))\n       }\n     }\n     if (requests.isEmpty) {"
+  },
+  {
+   "sha": "917e7badf3c412c4bdc4f02e4fc13965dffaa782",
+   "filename": "core/src/test/scala/unit/kafka/zk/migration/ZkMigrationClientTest.scala",
+   "status": "modified",
+   "additions": 46,
+   "deletions": 0,
+   "changes": 46,
+   "blob_url": "https://github.com/apache/kafka/blob/11396504059238e199538d31b2aa84d579f0d184/core%2Fsrc%2Ftest%2Fscala%2Funit%2Fkafka%2Fzk%2Fmigration%2FZkMigrationClientTest.scala",
+   "raw_url": "https://github.com/apache/kafka/raw/11396504059238e199538d31b2aa84d579f0d184/core%2Fsrc%2Ftest%2Fscala%2Funit%2Fkafka%2Fzk%2Fmigration%2FZkMigrationClientTest.scala",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/core%2Fsrc%2Ftest%2Fscala%2Funit%2Fkafka%2Fzk%2Fmigration%2FZkMigrationClientTest.scala?ref=11396504059238e199538d31b2aa84d579f0d184",
+   "patch": "@@ -158,6 +158,52 @@ class ZkMigrationClientTest extends ZkMigrationTestHarness {\n     assertEquals(List(1, 2, 3), partition1.isr)\n   }\n \n+  /**\n+   * The controller_epoch stored in a partition state znode is compared against the epoch of the ZK\n+   * controller (see KAFKA-20488), so the migration client must write the ZK controller epoch and\n+   * not the KRaft controller epoch.\n+   */\n+  @Test\n+  def testPartitionStateUsesZkControllerEpoch(): Unit = {\n+    // The harness starts with ZK controller epoch 1. Claiming leadership makes it 2,\n+    // so it differs from the KRaft epoch (42) and from the starting value.\n+    migrationState = migrationClient.claimControllerLeadership(migrationState)\n+    assertEquals(2, migrationState.zkControllerEpoch())\n+    assertEquals(InitialControllerEpoch, migrationState.kraftControllerEpoch())\n+\n+    def partitionRegistration(leader: Int): PartitionRegistration = new PartitionRegistration.Builder()\n+      .setReplicas(Array(0, 1, 2))\n+      .setDirectories(DirectoryId.unassignedArray(3))\n+      .setIsr(Array(0, 1, 2))\n+      .setLeader(leader)\n+      .setLeaderRecoveryState(LeaderRecoveryState.RECOVERED)\n+      .setLeaderEpoch(0)\n+      .setPartitionEpoch(-1)\n+      .build()\n+\n+    def assertControllerEpoch(partition: Int): Unit = {\n+      val state = zkClient.getTopicPartitionState(new TopicPartition(\"test\", partition))\n+      assertTrue(state.isDefined)\n+      assertEquals(migrationState.zkControllerEpoch(), state.get.controllerEpoch)\n+    }\n+\n+    // createTopic\n+    val partitions = Map(Integer.valueOf(0) -> partitionRegistration(0)).asJava\n+    migrationState = migrationClient.topicClient().createTopic(\"test\", Uuid.randomUuid(), partitions, migrationState)\n+    assertControllerEpoch(0)\n+\n+    // updateTopicPartitions\n+    val changedPartitions = Map(Integer.valueOf(0) -> partitionRegistration(1)).asJava\n+    migrationState = migrationClient.topicClient().updateTopicPartitions(Map(\"test\" -> changedPartitions).asJava, migrationState)\n+    assertEquals(1, zkClient.getTopicPartitionState(new TopicPartition(\"test\", 0)).get.leaderAndIsr.leader)\n+    assertControllerEpoch(0)\n+\n+    // createTopicPartitions\n+    val newPartitions = Map(Integer.valueOf(1) -> partitionRegistration(0)).asJava\n+    migrationState = migrationClient.topicClient().createTopicPartitions(Map(\"test\" -> newPartitions).asJava, migrationState)\n+    assertControllerEpoch(1)\n+  }\n+\n   @Test\n   def testIdempotentCreateTopics(): Unit = {\n     assertEquals(0, migrationState.migrationZkVersion())"
+  }
+ ],
+ "timeline": [
+  {
+   "sha": "2883098fb6ac206e4e5a475909b380dd5dbc6ebb",
+   "node_id": "C_kwDOACG9q9oAKDI4ODMwOThmYjZhYzIwNmU0ZTVhNDc1OTA5YjM4MGRkNWRiYzZlYmI",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/2883098fb6ac206e4e5a475909b380dd5dbc6ebb",
+   "html_url": "https://github.com/apache/kafka/commit/2883098fb6ac206e4e5a475909b380dd5dbc6ebb",
+   "author": {
+    "name": "Chung-Yi Chi",
+    "email": "demonic@csie.io",
+    "date": "2026-10-24T09:00:57Z"
+   },
+   "committer": {
+    "name": "Chung-Yi Chi",
+    "email": "demonic@csie.io",
+    "date": "2026-10-24T12:46:55Z"
+   },
+   "tree": {
+    "sha": "fc5fab8ee926ca7c4e0e03b4fe74ae9ca9a9a69e",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/fc5fab8ee926ca7c4e0e03b4fe74ae9ca9a9a69e"
+   },
+   "message": "KAFKA-20488 Write the ZK controller epoch to partition state znodes during migration\n\nZkTopicMigrationClient wrote state.kraftControllerEpoch() as the\ncontroller epoch of the partition state znodes in createTopic,\ncreateTopicPartitions and updateTopicPartitions. The ZK controller\ncompares that field with its own controller epoch, so it should be the\nZK controller epoch, which is what the request-level epoch in the RPCs\nsent by KRaftMigrationDriver already uses.\n\nThis patch passes state.zkControllerEpoch() instead and adds a\nregression test that makes the two epochs differ and reads the epoch\nback from the znode after each of the three methods.\n\nCo-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>",
+   "parents": [
+    {
+     "sha": "ea11d59ecda2ec57be0f1ef83a554ef5d3b82770",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/ea11d59ecda2ec57be0f1ef83a554ef5d3b82770",
+     "html_url": "https://github.com/apache/kafka/commit/ea11d59ecda2ec57be0f1ef83a554ef5d3b82770"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "id": 34131716744,
+   "node_id": "RTE_lADOACG9q88AAAABZmtUQM8AAAAH8miqiA",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34131716744",
+   "actor": {
+    "login": "chungyichi",
+    "id": 12217934,
+    "node_id": "MDQ6VXNlcjEyMjE3OTM0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/12217934?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chungyichi",
+    "html_url": "https://github.com/chungyichi",
+    "followers_url": "https://api.github.com/users/chungyichi/followers",
+    "following_url": "https://api.github.com/users/chungyichi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chungyichi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chungyichi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chungyichi/subscriptions",
+    "organizations_url": "https://api.github.com/users/chungyichi/orgs",
+    "repos_url": "https://api.github.com/users/chungyichi/repos",
+    "events_url": "https://api.github.com/users/chungyichi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chungyichi/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "renamed",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-24T14:04:36Z",
+   "rename": {
+    "from": "KAFKA-20488 Write the ZK controller epoch to partition state znodes during migration",
+    "to": "KAFKA-20488 Use ZK controller epoch when writing partition state znodes"
+   },
+   "performed_via_github_app": null
+  },
+  {
+   "id": 5656096509,
+   "node_id": "PRR_kwDOACG9q88AAAABUSEu_Q",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": null,
+   "commit_id": "2883098fb6ac206e4e5a475909b380dd5dbc6ebb",
+   "state": "commented",
+   "html_url": "https://github.com/apache/kafka/pull/23946#pullrequestreview-5656096509",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23946",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23946#pullrequestreview-5656096509"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23946"
+    }
+   },
+   "submitted_at": "2026-10-26T17:14:17Z",
+   "updated_at": "2026-10-26T17:14:17Z",
+   "author_association": "MEMBER",
+   "event": "reviewed"
+  },
+  {
+   "sha": "11396504059238e199538d31b2aa84d579f0d184",
+   "node_id": "C_kwDOACG9q9oAKDExMzk2NTA0MDU5MjM4ZTE5OTUzOGQzMWIyYWE4NGQ1NzlmMGQxODQ",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/11396504059238e199538d31b2aa84d579f0d184",
+   "html_url": "https://github.com/apache/kafka/commit/11396504059238e199538d31b2aa84d579f0d184",
+   "author": {
+    "name": "Chung-Yi Chi",
+    "email": "demonic@csie.io",
+    "date": "2026-10-28T00:42:53Z"
+   },
+   "committer": {
+    "name": "Chung-Yi Chi",
+    "email": "demonic@csie.io",
+    "date": "2026-10-28T00:42:53Z"
+   },
+   "tree": {
+    "sha": "1cfb979ceb7f7ed101ae1b7a5973423fc5c993d8",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/1cfb979ceb7f7ed101ae1b7a5973423fc5c993d8"
+   },
+   "message": "MINOR Clarify epoch comment in ZkMigrationClientTest\n\nCo-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>",
+   "parents": [
+    {
+     "sha": "2883098fb6ac206e4e5a475909b380dd5dbc6ebb",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/2883098fb6ac206e4e5a475909b380dd5dbc6ebb",
+     "html_url": "https://github.com/apache/kafka/commit/2883098fb6ac206e4e5a475909b380dd5dbc6ebb"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  }
+ ]
+}

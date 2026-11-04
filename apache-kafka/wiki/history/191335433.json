@@ -1,0 +1,417 @@
+{
+ "id": "191335433",
+ "versions": {
+  "results": [
+   {
+    "by": {
+     "type": "known",
+     "username": "dengziming",
+     "userKey": "8aa980816f49aa34016f4ad5c6150003",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Deng Ziming",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa980816f49aa34016f4ad5c6150003"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-07T13:22:09.000Z",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/191335433/version/5"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/191335433"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "dengziming",
+     "userKey": "8aa980816f49aa34016f4ad5c6150003",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Deng Ziming",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa980816f49aa34016f4ad5c6150003"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2021-11-01T11:17:02.000Z",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/191335433/version/4"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/191335433?status=historical&version=4"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "dengziming",
+     "userKey": "8aa980816f49aa34016f4ad5c6150003",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Deng Ziming",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa980816f49aa34016f4ad5c6150003"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2021-10-23T09:07:39.000Z",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/191335433/version/3"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/191335433?status=historical&version=3"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "dengziming",
+     "userKey": "8aa980816f49aa34016f4ad5c6150003",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Deng Ziming",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa980816f49aa34016f4ad5c6150003"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2021-10-23T09:04:09.000Z",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/191335433/version/2"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/191335433?status=historical&version=2"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "dengziming",
+     "userKey": "8aa980816f49aa34016f4ad5c6150003",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Deng Ziming",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa980816f49aa34016f4ad5c6150003"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2021-10-23T08:58:49.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/191335433/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/191335433?status=historical&version=1"
+    }
+   }
+  ],
+  "start": 0,
+  "limit": 200,
+  "size": 5,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/experimental/content/191335433/version",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ },
+ "version_bodies": [
+  {
+   "id": "191335433",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-789: Use localhost:9092 as default bootstrap-server/broker-list in client tools",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "dengziming",
+     "userKey": "8aa980816f49aa34016f4ad5c6150003",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Deng Ziming",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa980816f49aa34016f4ad5c6150003"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2021-11-01T11:17:02.000Z",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/191335433/version/4"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/191335433?status=historical&version=4"
+    }
+   },
+   "position": 781,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><p><em>This page is meant as a template for writing a <ac:link><ri:page ri:content-title=\"Kafka Improvement Proposals\" /><ac:plain-text-link-body><![CDATA[KIP]]></ac:plain-text-link-body></ac:link>. To create a KIP choose Tools-&gt;Copy on this page and modify with your content and replace the heading with the next KIP number and a description of your issue. Replace anything in italics with your own description.</em></p><h1>Status</h1><p><strong>Current state</strong>: <em>[One of &quot;Under Discussion&quot;, &quot;Accepted&quot;, &quot;Rejected&quot;]</em></p><p><strong>Discussion thread</strong>: <em><a href=\"http://mail-archives.apache.org/mod_mbox/kafka-dev/201501.mbox/%3CCAOeJiJh6Vkkca85bWYgkeOZ8rC6%2BKDh7zzq8vMKECL_7PNExTA%40mail.gmail.com%3E\">here</a> [Change the link from the KIP proposal email archive to your own email thread]<br /></em></p><p><strong>JIRA</strong>: <em><a href=\"https://issues.apache.org/jira/browse/KAFKA-1\">here</a> [Change the link from KAFKA-1 to your own ticket]<br /></em></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p>Most data systems provide client tools to connect the data server to inspect data and they will use localhost as the default server(if not specified), for example, `mysql` command will use localhost:3306 if -p and -h are not specified and `zkCli.sh` will use localhost:2181 if -server is not specified, this is convenient when debugging data.</p><p>We need to specify --bootstrap-server parameter in almost all command-line tools, which means we would connect to the target server using the ssh command, so it's nicer if we use localhost:9092 as the default bootstrap-server in these commands.</p><h1>Public Interfaces</h1><p>This KIP change an argument of several command-line tools, we already supported--bootstrap-server/broker-list/zookeeper in command-line tools, we will use localhost:9092 as default value if none of these params provided.</p><table class=\"relative-table\" style=\"width: 84.9265%;\"><colgroup><col style=\"width: 23.3969%;\" /><col style=\"width: 32.5823%;\" /><col style=\"width: 44.0208%;\" /></colgroup><tbody><tr><th><p>Command Name</p></th><th>Status</th><th>Changes Needed</th></tr><tr><td>kafka-acls.sh      </td><td>Supports only --bootstrap-server </td><td>add default value </td></tr><tr><td><p>kafka-broker-api-versions.sh </p></td><td>Supports only --bootstrap-server   </td><td>add default value </td></tr><tr><td>kafka-cluster.sh    </td><td>Supports only --bootstrap-server   </td><td>add default value </td></tr><tr><td colspan=\"1\">kafka-configs.sh    </td><td colspan=\"1\">Supports both --zookeeper and --bootstrap-server  </td><td colspan=\"1\">add default value  if none of -zookeeper and --bootstrap-server provided</td></tr><tr><td colspan=\"1\">kafka-console-consumer.sh    </td><td colspan=\"1\">Supports only --bootstrap-server    </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-console-producer.sh   </td><td colspan=\"1\">Supports --bootstrap-server and --broker-list</td><td colspan=\"1\"> add default value  if none of -broker-list and --bootstrap-server provided</td></tr><tr><td colspan=\"1\">kafka-consumer-groups.sh  </td><td colspan=\"1\">Supports only --bootstrap-server    </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-consumer-perf-test.sh   </td><td colspan=\"1\">Supports --bootstrap-server and --broker-list    </td><td colspan=\"1\">add default value  if none of -broker-list and --bootstrap-server provided</td></tr><tr><td colspan=\"1\">kafka-delegation-tokens.sh   </td><td colspan=\"1\">Supports only --bootstrap-server    </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-delete-records.sh  </td><td colspan=\"1\">Supports only --bootstrap-server    </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-dump-log.sh    </td><td colspan=\"1\">Supports no server    </td><td colspan=\"1\">none</td></tr><tr><td colspan=\"1\">kafka-features.sh   </td><td colspan=\"1\">Supports only --bootstrap-server    </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-get-offsets.sh    </td><td colspan=\"1\">Supports --bootstrap-server and --broker-list    </td><td colspan=\"1\">add default value  if none of -broker-list and --bootstrap-server provided</td></tr><tr><td colspan=\"1\">kafka-leader-election.sh  </td><td colspan=\"1\">Supports only ---bootstrap-server    </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-log-dirs.sh    </td><td colspan=\"1\">Supports only ---bootstrap-server    </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-metadata-shell.sh   </td><td colspan=\"1\">Supports no server args    </td><td colspan=\"1\">none</td></tr><tr><td colspan=\"1\">kafka-producer-perf-test.sh  </td><td colspan=\"1\">Supports no server args    </td><td colspan=\"1\">none</td></tr><tr><td colspan=\"1\">kafka-reassign-partitions.sh   </td><td colspan=\"1\">Supports only --bootstrap-server     </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-replica-verification.sh  </td><td colspan=\"1\">Supports only --broker-list   </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\"><p>kafka-run-class.sh<br />kafka-server-start.sh<br />kafka-server-stop.sh<br />kafka-storage.sh</p></td><td colspan=\"1\">Supports no server args   </td><td colspan=\"1\">none</td></tr><tr><td colspan=\"1\">kafka-streams-application-reset.sh  </td><td colspan=\"1\">Supports only --bootstrap-server     </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-topics.sh  </td><td colspan=\"1\">Supports only --bootstrap-server     </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-transactions.sh    </td><td colspan=\"1\">Supports only --bootstrap-server     </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-verifiable-consumer.sh<br />kafka-verifiable-producer.sh   </td><td colspan=\"1\">Supports --bootstrap-server and --broker-list    </td><td colspan=\"1\">add default value  if none of -broker-list and --bootstrap-server provided</td></tr><tr><td colspan=\"1\">trogdor.sh    </td><td colspan=\"1\">Supports no server args    </td><td colspan=\"1\">none</td></tr><tr><td colspan=\"1\">zookeeper-security-migration.sh<br />zookeeper-server-start.sh<br />zookeeper-server-stop.sh<br />zookeeper-shell.sh    </td><td colspan=\"1\">Supports only --zookeeper    </td><td colspan=\"1\">none</td></tr></tbody></table><p><br /></p><h1>Proposed Changes</h1><p>New implementation all these commands does not change the interactions between the tool and the brokers, the only change is they can be used without --bootstrap-server(or broker-list) </p><ol><li>For commands supports only --bootstrap-server, they will be used without --bootstrap-server and localhost:9092 is the default value.</li><li>For commands supports only --broker-list, they will be used without --broker-list and localhost:9092 is the default value.</li><li>For commands supports both --bootstrap-server and --broker-list,  localhost:9092 is the default value if both --bootstrap-server and --broker-list are not provided.</li><li>For commands supports both --zookeeper and --broker-list,  localhost:9092 is the default value if both --bootstrap-server and --zookeeper are not provided.</li></ol><h1>Compatibility, Deprecation, and Migration Plan</h1><p>This is a compatible change and any old client tools will still be working normally.</p><h1>Rejected Alternatives</h1><p>For client tools supports only --zookeeperl, use localhost:2181 as default zookeeper address, I don't think this is worth doing since KIP-500 is removing all zookeeper code.</p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/191335433?status=historical&version=4"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 781
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=446071313",
+    "edit": "/pages/resumedraft.action?draftId=446071313&draftShareId=eb395b83-e99b-4951-a3f9-817492d8e040",
+    "tinyui": "/x/EYKWGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/191335433?status=historical&version=4"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/191335433/child?parentVersion=4",
+    "restrictions": "/rest/api/content/191335433/restriction/byOperation",
+    "history": "/rest/api/content/191335433/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/191335433/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/191335433/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "191335433",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-786: Use localhost:9092 as default bootstrap-server/broker-list in client tools",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "dengziming",
+     "userKey": "8aa980816f49aa34016f4ad5c6150003",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Deng Ziming",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa980816f49aa34016f4ad5c6150003"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2021-10-23T09:07:39.000Z",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/191335433/version/3"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/191335433?status=historical&version=3"
+    }
+   },
+   "position": 783,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><p><em>This page is meant as a template for writing a <ac:link><ri:page ri:content-title=\"Kafka Improvement Proposals\" /><ac:plain-text-link-body><![CDATA[KIP]]></ac:plain-text-link-body></ac:link>. To create a KIP choose Tools-&gt;Copy on this page and modify with your content and replace the heading with the next KIP number and a description of your issue. Replace anything in italics with your own description.</em></p><h1>Status</h1><p><strong>Current state</strong>: <em>[One of &quot;Under Discussion&quot;, &quot;Accepted&quot;, &quot;Rejected&quot;]</em></p><p><strong>Discussion thread</strong>: <em><a href=\"http://mail-archives.apache.org/mod_mbox/kafka-dev/201501.mbox/%3CCAOeJiJh6Vkkca85bWYgkeOZ8rC6%2BKDh7zzq8vMKECL_7PNExTA%40mail.gmail.com%3E\">here</a> [Change the link from the KIP proposal email archive to your own email thread]<br /></em></p><p><strong>JIRA</strong>: <em><a href=\"https://issues.apache.org/jira/browse/KAFKA-1\">here</a> [Change the link from KAFKA-1 to your own ticket]<br /></em></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p>Most data systems provide client tools to connect the data server to inspect data and they will use localhost as the default server(if not specified), for example, `mysql` command will use localhost:3306 if -p and -h are not specified and `zkCli.sh` will use localhost:2181 if -server is not specified, this is convenient when debugging data.</p><p>We need to specify --bootstrap-server parameter in almost all command-line tools, which means we would connect to the target server using the ssh command, so it's nicer if we use localhost:9092 as the default bootstrap-server in these commands.</p><h1>Public Interfaces</h1><p>This KIP change an argument of several command-line tools, we already supported--bootstrap-server/broker-list/zookeeper in command-line tools, we will use localhost:9092 as default value if none of these params provided.</p><table class=\"relative-table\" style=\"width: 84.9265%;\"><colgroup><col style=\"width: 23.3969%;\" /><col style=\"width: 32.5823%;\" /><col style=\"width: 44.0208%;\" /></colgroup><tbody><tr><th><p>Command Name</p></th><th>Status</th><th>Changes Needed</th></tr><tr><td>kafka-acls.sh      </td><td>Supports only --bootstrap-server </td><td>add default value </td></tr><tr><td><p>kafka-broker-api-versions.sh </p></td><td>Supports only --bootstrap-server   </td><td>add default value </td></tr><tr><td>kafka-cluster.sh    </td><td>Supports only --bootstrap-server   </td><td>add default value </td></tr><tr><td colspan=\"1\">kafka-configs.sh    </td><td colspan=\"1\">Supports both --zookeeper and --bootstrap-server  </td><td colspan=\"1\">add default value  if none of -zookeeper and --bootstrap-server provided</td></tr><tr><td colspan=\"1\">kafka-console-consumer.sh    </td><td colspan=\"1\">Supports only --bootstrap-server    </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-console-producer.sh   </td><td colspan=\"1\">Supports --bootstrap-server and --broker-list</td><td colspan=\"1\"> add default value  if none of -broker-list and --bootstrap-server provided</td></tr><tr><td colspan=\"1\">kafka-consumer-groups.sh  </td><td colspan=\"1\">Supports only --bootstrap-server    </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-consumer-perf-test.sh   </td><td colspan=\"1\">Supports --bootstrap-server and --broker-list    </td><td colspan=\"1\">add default value  if none of -broker-list and --bootstrap-server provided</td></tr><tr><td colspan=\"1\">kafka-delegation-tokens.sh   </td><td colspan=\"1\">Supports only --bootstrap-server    </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-delete-records.sh  </td><td colspan=\"1\">Supports only --bootstrap-server    </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-dump-log.sh    </td><td colspan=\"1\">Supports no server    </td><td colspan=\"1\">none</td></tr><tr><td colspan=\"1\">kafka-features.sh   </td><td colspan=\"1\">Supports only --bootstrap-server    </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-get-offsets.sh    </td><td colspan=\"1\">Supports --bootstrap-server and --broker-list    </td><td colspan=\"1\">add default value  if none of -broker-list and --bootstrap-server provided</td></tr><tr><td colspan=\"1\">kafka-leader-election.sh  </td><td colspan=\"1\">Supports only ---bootstrap-server    </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-log-dirs.sh    </td><td colspan=\"1\">Supports only ---bootstrap-server    </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-metadata-shell.sh   </td><td colspan=\"1\">Supports no server args    </td><td colspan=\"1\">none</td></tr><tr><td colspan=\"1\">kafka-producer-perf-test.sh  </td><td colspan=\"1\">Supports no server args    </td><td colspan=\"1\">none</td></tr><tr><td colspan=\"1\">kafka-reassign-partitions.sh   </td><td colspan=\"1\">Supports only --bootstrap-server     </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-replica-verification.sh  </td><td colspan=\"1\">Supports only --broker-list   </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\"><p>kafka-run-class.sh<br />kafka-server-start.sh<br />kafka-server-stop.sh<br />kafka-storage.sh</p></td><td colspan=\"1\">Supports no server args   </td><td colspan=\"1\">none</td></tr><tr><td colspan=\"1\">kafka-streams-application-reset.sh  </td><td colspan=\"1\">Supports only --bootstrap-server     </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-topics.sh  </td><td colspan=\"1\">Supports only --bootstrap-server     </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-transactions.sh    </td><td colspan=\"1\">Supports only --bootstrap-server     </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-verifiable-consumer.sh<br />kafka-verifiable-producer.sh   </td><td colspan=\"1\">Supports --bootstrap-server and --broker-list    </td><td colspan=\"1\">add default value  if none of -broker-list and --bootstrap-server provided</td></tr><tr><td colspan=\"1\">trogdor.sh    </td><td colspan=\"1\">Supports no server args    </td><td colspan=\"1\">none</td></tr><tr><td colspan=\"1\">zookeeper-security-migration.sh<br />zookeeper-server-start.sh<br />zookeeper-server-stop.sh<br />zookeeper-shell.sh    </td><td colspan=\"1\">Supports only --zookeeper    </td><td colspan=\"1\">none</td></tr></tbody></table><p><br /></p><h1>Proposed Changes</h1><p>New implementation all these commands does not change the interactions between the tool and the brokers, the only change is they can be used without --bootstrap-server(or broker-list) </p><ol><li>For commands supports only --bootstrap-server, they will be used without --bootstrap-server and localhost:9092 is the default value.</li><li>For commands supports only --broker-list, they will be used without --broker-list and localhost:9092 is the default value.</li><li>For commands supports both --bootstrap-server and --broker-list,  localhost:9092 is the default value if both --bootstrap-server and --broker-list are not provided.</li><li>For commands supports both --zookeeper and --broker-list,  localhost:9092 is the default value if both --bootstrap-server and --zookeeper are not provided.</li></ol><h1>Compatibility, Deprecation, and Migration Plan</h1><p>This is a compatible change and any old client tools will still be working normally.</p><h1>Rejected Alternatives</h1><p>For client tools supports only --zookeeperl, use localhost:2181 as default zookeeper address, I don't think this is worth doing since KIP-500 is removing all zookeeper code.</p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/191335433?status=historical&version=3"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 783
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=191336456",
+    "edit": "/pages/resumedraft.action?draftId=191336456&draftShareId=eb395b83-e99b-4951-a3f9-817492d8e040",
+    "tinyui": "/x/CJBnCw",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/191335433?status=historical&version=3"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/191335433/child?parentVersion=3",
+    "restrictions": "/rest/api/content/191335433/restriction/byOperation",
+    "history": "/rest/api/content/191335433/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/191335433/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/191335433/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "191335433",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-: Use localhost:9092 as default bootstrap-server/broker-list in client tools",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "dengziming",
+     "userKey": "8aa980816f49aa34016f4ad5c6150003",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Deng Ziming",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa980816f49aa34016f4ad5c6150003"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2021-10-23T09:04:09.000Z",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/191335433/version/2"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/191335433?status=historical&version=2"
+    }
+   },
+   "position": 783,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><p><em>This page is meant as a template for writing a <ac:link><ri:page ri:content-title=\"Kafka Improvement Proposals\" /><ac:plain-text-link-body><![CDATA[KIP]]></ac:plain-text-link-body></ac:link>. To create a KIP choose Tools-&gt;Copy on this page and modify with your content and replace the heading with the next KIP number and a description of your issue. Replace anything in italics with your own description.</em></p><h1>Status</h1><p><strong>Current state</strong>: <em>[One of &quot;Under Discussion&quot;, &quot;Accepted&quot;, &quot;Rejected&quot;]</em></p><p><strong>Discussion thread</strong>: <em><a href=\"http://mail-archives.apache.org/mod_mbox/kafka-dev/201501.mbox/%3CCAOeJiJh6Vkkca85bWYgkeOZ8rC6%2BKDh7zzq8vMKECL_7PNExTA%40mail.gmail.com%3E\">here</a> [Change the link from the KIP proposal email archive to your own email thread]<br /></em></p><p><strong>JIRA</strong>: <em><a href=\"https://issues.apache.org/jira/browse/KAFKA-1\">here</a> [Change the link from KAFKA-1 to your own ticket]<br /></em></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p>Most data systems provide client tools to connect the data server to inspect data and they will use localhost as the default server(if not specified), for example, `mysql` command will use localhost:3306 if -p and -h are not specified and `zkCli.sh` will use localhost:2181 if -server is not specified, this is convenient when debugging data.</p><p>We need to specify --bootstrap-server parameter in almost all command-line tools, which means we would connect to the target server using the ssh command, so it's nicer if we use localhost:9092 as the default bootstrap-server in these commands.</p><h1>Public Interfaces</h1><p>This KIP change an argument of several command-line tools, we already supported--bootstrap-server/broker-list/zookeeper in command-line tools, we will use localhost:9092 as default value if none of these params provided.</p><table class=\"relative-table\" style=\"width: 84.9265%;\"><colgroup><col style=\"width: 23.3969%;\" /><col style=\"width: 32.5823%;\" /><col style=\"width: 44.0208%;\" /></colgroup><tbody><tr><th><p>Command Name</p></th><th>Status</th><th>Changes Needed</th></tr><tr><td>kafka-acls.sh      </td><td>Supports only --bootstrap-server </td><td>add default value </td></tr><tr><td><p>kafka-broker-api-versions.sh </p></td><td>Supports only --bootstrap-server   </td><td>add default value </td></tr><tr><td>kafka-cluster.sh    </td><td>Supports only --bootstrap-server   </td><td>add default value </td></tr><tr><td colspan=\"1\">kafka-configs.sh    </td><td colspan=\"1\">Supports both --zookeeper and --bootstrap-server  </td><td colspan=\"1\">add default value  if none of -zookeeper and --bootstrap-server provided</td></tr><tr><td colspan=\"1\">kafka-console-consumer.sh    </td><td colspan=\"1\">Supports only --bootstrap-server    </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-console-producer.sh   </td><td colspan=\"1\">Supports --bootstrap-server and --broker-list</td><td colspan=\"1\"> add default value  if none of -broker-list and --bootstrap-server provided</td></tr><tr><td colspan=\"1\">kafka-consumer-groups.sh  </td><td colspan=\"1\">Supports only --bootstrap-server    </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-consumer-perf-test.sh   </td><td colspan=\"1\">Supports --bootstrap-server and --broker-list    </td><td colspan=\"1\">add default value  if none of -broker-list and --bootstrap-server provided</td></tr><tr><td colspan=\"1\">kafka-delegation-tokens.sh   </td><td colspan=\"1\">Supports only --bootstrap-server    </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-delete-records.sh  </td><td colspan=\"1\">Supports only --bootstrap-server    </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-dump-log.sh    </td><td colspan=\"1\">Supports no server    </td><td colspan=\"1\">none</td></tr><tr><td colspan=\"1\">kafka-features.sh   </td><td colspan=\"1\">Supports only --bootstrap-server    </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-get-offsets.sh    </td><td colspan=\"1\">Supports --bootstrap-server and --broker-list    </td><td colspan=\"1\">add default value  if none of -broker-list and --bootstrap-server provided</td></tr><tr><td colspan=\"1\">kafka-leader-election.sh  </td><td colspan=\"1\">Supports only ---bootstrap-server    </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-log-dirs.sh    </td><td colspan=\"1\">Supports only ---bootstrap-server    </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-metadata-shell.sh   </td><td colspan=\"1\">Supports no server args    </td><td colspan=\"1\">none</td></tr><tr><td colspan=\"1\">kafka-producer-perf-test.sh  </td><td colspan=\"1\">Supports no server args    </td><td colspan=\"1\">none</td></tr><tr><td colspan=\"1\">kafka-reassign-partitions.sh   </td><td colspan=\"1\">Supports only --bootstrap-server     </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-replica-verification.sh  </td><td colspan=\"1\">Supports only --broker-list   </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\"><p>kafka-run-class.sh<br />kafka-server-start.sh<br />kafka-server-stop.sh<br />kafka-storage.sh</p></td><td colspan=\"1\">Supports no server args   </td><td colspan=\"1\">none</td></tr><tr><td colspan=\"1\">kafka-streams-application-reset.sh  </td><td colspan=\"1\">Supports only --bootstrap-server     </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-topics.sh  </td><td colspan=\"1\">Supports only --bootstrap-server     </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-transactions.sh    </td><td colspan=\"1\">Supports only --bootstrap-server     </td><td colspan=\"1\">add default value </td></tr><tr><td colspan=\"1\">kafka-verifiable-consumer.sh<br />kafka-verifiable-producer.sh   </td><td colspan=\"1\">Supports --bootstrap-server and --broker-list    </td><td colspan=\"1\">add default value  if none of -broker-list and --bootstrap-server provided</td></tr><tr><td colspan=\"1\">trogdor.sh    </td><td colspan=\"1\">Supports no server args    </td><td colspan=\"1\">none</td></tr><tr><td colspan=\"1\">zookeeper-security-migration.sh<br />zookeeper-server-start.sh<br />zookeeper-server-stop.sh<br />zookeeper-shell.sh    </td><td colspan=\"1\">Supports only --zookeeper    </td><td colspan=\"1\">none</td></tr></tbody></table><p><br /></p><h1>Proposed Changes</h1><p>New implementation all these commands does not change the interactions between the tool and the brokers, the only change is they can be used without --bootstrap-server(or broker-list) </p><ol><li>For commands supports only --bootstrap-server, they will be used without --bootstrap-server and localhost:9092 is the default value.</li><li>For commands supports only --broker-list, they will be used without --broker-list and localhost:9092 is the default value.</li><li>For commands supports both --bootstrap-server and --broker-list,  localhost:9092 is the default value if both --bootstrap-server and --broker-list are not provided.</li><li>For commands supports both --zookeeper and --broker-list,  localhost:9092 is the default value if both --bootstrap-server and --zookeeper are not provided.</li></ol><h1>Compatibility, Deprecation, and Migration Plan</h1><p>This is a compatible change and any old client tools will still be working normally.</p><h1>Rejected Alternatives</h1><p>For client tools supports only --zookeeperl, use localhost:2181 as default zookeeper address, I don't think this is worth doing since KIP-500 is removing all zookeeper code.</p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/191335433?status=historical&version=2"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 783
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=191335436",
+    "edit": "/pages/resumedraft.action?draftId=191335436&draftShareId=eb395b83-e99b-4951-a3f9-817492d8e040",
+    "tinyui": "/x/DIxnCw",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/191335433?status=historical&version=2"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/191335433/child?parentVersion=2",
+    "restrictions": "/rest/api/content/191335433/restriction/byOperation",
+    "history": "/rest/api/content/191335433/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/191335433/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/191335433/restriction/relevantViewRestrictions"
+   }
+  }
+ ],
+ "comments": {
+  "results": [],
+  "start": 0,
+  "limit": 200,
+  "size": 0,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/api/content/191335433/child/comment?expand=body.storage%2Cversion%2Cancestors&depth=all",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ }
+}

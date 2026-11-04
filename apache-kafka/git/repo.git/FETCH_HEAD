@@ -1,0 +1,419 @@
+d8fe204376e6911210525cd74a861e31b5f8617b		branch '0.10.0' of https://github.com/apache/kafka
+9bdd8d6b60f816c9d520ef2ed23803215927c95d		branch '0.10.1' of https://github.com/apache/kafka
+8007211cc982d8458223e866c1ee7d94b69e0249		branch '0.10.2' of https://github.com/apache/kafka
+9758e2d7fdbdcd493d0892deeecabe302deade8a		branch '0.11.0' of https://github.com/apache/kafka
+a984f2fe5e3370163fb53586a04611ebd878c5ae		branch '0.7' of https://github.com/apache/kafka
+99a98bf487846c0ecc9cc22132de91e113027971		branch '0.7.0' of https://github.com/apache/kafka
+f9e2a01f487b0c51c91944a86a6208170931cdb6		branch '0.7.1' of https://github.com/apache/kafka
+491b37d79352422a6fe522838458084df51e4376		branch '0.7.2' of https://github.com/apache/kafka
+15bb3961d9171c1c54c4c840a554ce2c76168163		branch '0.8' of https://github.com/apache/kafka
+23acbd309f5e17de71db46cb6f1a60c8d38ea4e4		branch '0.8.0-beta1-candidate1' of https://github.com/apache/kafka
+7847e9c703f3a0b70519666cdb8a6e4c8e37c3a7		branch '0.8.1' of https://github.com/apache/kafka
+c9f930e3fe25e5675e64550c8b396356c5349ca7		branch '0.8.2' of https://github.com/apache/kafka
+342c8172d7f4065e78fc29ca4c56fae0289d861d		branch '0.9.0' of https://github.com/apache/kafka
+cfeca4e21fceb958c533de8d476d71c4a5cfd532		branch '1.0' of https://github.com/apache/kafka
+cd15202179f339c4d831d0ce30ce6248a2668128		branch '1.1' of https://github.com/apache/kafka
+032042afd2567dc48a26cb89804c2325e1bb94ce		branch '2.0' of https://github.com/apache/kafka
+9216968ef6ab7e5bba7182d61dfaef90513bb352		branch '2.1' of https://github.com/apache/kafka
+ffa2812bf0c83c924fb8960131f40c39e441f3b2		branch '2.2' of https://github.com/apache/kafka
+da7a8db29e2073e3bc50f5a8192119af97ef7115		branch '2.3' of https://github.com/apache/kafka
+d0488d9a80ec55c4d5b5360e1381940f07d1d41e		branch '2.4' of https://github.com/apache/kafka
+d5b53ad132d1c1bfcd563ce5015884b6da831777		branch '2.5' of https://github.com/apache/kafka
+688e83f752dba1cc4c97bcaae681a3ece1f78023		branch '2.6' of https://github.com/apache/kafka
+e053ccc7a7efa5e5b7b4de9335d74c5a97532d28		branch '2.7' of https://github.com/apache/kafka
+3893458500b3fbb67d6524d7c2709e4568dce681		branch '2.8' of https://github.com/apache/kafka
+a0119aa859ba37f7ed1a2a7c3c00b00672986914		branch '2.x' of https://github.com/apache/kafka
+dee764c82174bc03e9968650ff834c4eefb11535		branch '3.0' of https://github.com/apache/kafka
+2b57b38f9306ac73f18d94d55c0158530fd444df		branch '3.1' of https://github.com/apache/kafka
+e4ca066680296ea29d443efb626baecc837083f6		branch '3.2' of https://github.com/apache/kafka
+05694da5d4e64b1af49f8eccd25ce72d9b436dc4		branch '3.3' of https://github.com/apache/kafka
+88bb23617eb2acd91b1f53e4c7b764e62d9c751a		branch '3.4' of https://github.com/apache/kafka
+37773dac3199dde25c35468053cb7f0432bcbca2		branch '3.5' of https://github.com/apache/kafka
+a3424fa2bce6e1d34e9c6ce2c1bf0b691af12e25		branch '3.6' of https://github.com/apache/kafka
+04828fd46b65a9f2de3919db67027a567e573123		branch '3.7' of https://github.com/apache/kafka
+100f80b4d00ee409c77930a6240b453b17da30d3		branch '3.8' of https://github.com/apache/kafka
+7dbea6cf86a9a5b31f3449c0850d001149887aa5		branch '3.9' of https://github.com/apache/kafka
+f92dc67ade1cfeec79204b558a534b9e77c5b1d5		branch '3.9b' of https://github.com/apache/kafka
+be5784f20ad7c80464a25b9149773e38e0328916		branch '352_system_test' of https://github.com/apache/kafka
+654bd6d483d9e08fe45caa909c2c7f58f73748c5		branch '37-snapshot' of https://github.com/apache/kafka
+25f2704dc4c99d3d8402ddd7a17c4114e1974761		branch '37-upgrade-system-ttests' of https://github.com/apache/kafka
+0aafccff470fa1f134310b378620c9f9bc9ac38a		branch '37_upgrade_comp_streams_tests' of https://github.com/apache/kafka
+b1ddd4eb555b84347d03ef9ddf75f63c3ba9a347		branch '4.0' of https://github.com/apache/kafka
+6cbcf527493c7f688487bbf3fe2b3271081dda3d		branch '4.1' of https://github.com/apache/kafka
+b3f51940bbd3b2176f0c4d56eb9a4dd0d033cf95		branch '4.2' of https://github.com/apache/kafka
+682fe10b28a35be295c20304073f107884a72c07		branch '4.3' of https://github.com/apache/kafka
+b6de0ca05f765eb9c866b9cf4c2e472cb76875ca		branch '4.4' of https://github.com/apache/kafka
+87d7cc723924038f3eaa49d8b32e88d315273376		branch '410native' of https://github.com/apache/kafka
+dbe20a5994f40affe258d35d9720b2d31d77d6b8		branch 'KAFKA-14367-join-group' of https://github.com/apache/kafka
+eb53c4c8c7e5eb1e8a39139a1f7d3e0d1860fe67		branch 'KAFKA-14496-fix-oauth-encoder' of https://github.com/apache/kafka
+58809827ab12bc0bf1a3d9adc5bcc3c63a72fa5e		branch 'KAFKA-15311' of https://github.com/apache/kafka
+d7f158e9d4ad3965d8e721c80c59f5e99ab9a2e7		branch 'KAFKA-16126' of https://github.com/apache/kafka
+bf1900e9971cddd6c08e38baf40c9ae04dfc84cc		branch 'KAFKA-16411' of https://github.com/apache/kafka
+234ea4bceb7e320ca306d34505b73be7064a2fe9		branch 'KAFKA-17011' of https://github.com/apache/kafka
+d22d58da46b7cd673f62931a297329b03f2f78a3		branch 'KAFKA-17584' of https://github.com/apache/kafka
+db619d046d5dc85a04a6858404a0ed58a4cc57b7		branch 'KAFKA-18223-gha-1' of https://github.com/apache/kafka
+5054138f31ce554cfc8a70fcf3c76e905a947eb7		branch 'KAFKA-20063' of https://github.com/apache/kafka
+8eaca9087addcbccc27595cb5302015ebfdcae0c		branch 'add-assignor-log-generation' of https://github.com/apache/kafka
+7702f44c6e71231b04e6aa2faec452a11aa00423		branch 'change-ProducerConfig-logging-constructor-to-protected' of https://github.com/apache/kafka
+98e630e3e4760c935900da1a9335e977d27db863		branch 'cmccabe-KAFKA-16518' of https://github.com/apache/kafka
+0aca8efbc31b8da4f4a0107ef50443b0b12eff73		branch 'cmccabe_2023-04-11_improve_controller_logging' of https://github.com/apache/kafka
+5a1aa1a6701c634bc5e3387db2cfb99200c63fd6		branch 'cmccabe_2023-05-10_cleanup' of https://github.com/apache/kafka
+72737ab52235466324e2f553e4442fba4dc9cc2c		branch 'cmccabe_2023-06-21_some_minor_fixes' of https://github.com/apache/kafka
+ad3876dfdfe78420baf314b8c9f8d5e3a747bbcd		branch 'cmccabe_2024_03_22_fix_closeables' of https://github.com/apache/kafka
+0069fcea13c63de272597017c82e0d1c81b1a27f		branch 'cmccabe_kip_919' of https://github.com/apache/kafka
+eb85eb3cbd63f06b5c8c6f46a0d16a75372dd0c7		branch 'consumer-javadoc-minimum-broker-version' of https://github.com/apache/kafka
+6b83597082448aabcfc96839496dcb0204ab63d6		branch 'fix-flaky-test-report' of https://github.com/apache/kafka
+82993909027c76bade2f449e27c8618333175975		branch 'infrastructure-ruleset-bot/default-branch-protection' of https://github.com/apache/kafka
+b31840f8d7bd6a88da4a7a1f190b0ab438b817ef		branch 'init_metadata_publishers' of https://github.com/apache/kafka
+811e4060749955d5213e4cd34733ba2598089237		branch 'java24' of https://github.com/apache/kafka
+6c67adb8beedafca0316d1c9ec4a3c219aaec219		branch 'john-disable-12049' of https://github.com/apache/kafka
+6e9d8f8e7769517300d7bc06d6824b8c3519892b		branch 'jun-29-enable-remote-gradle-caching' of https://github.com/apache/kafka
+411ac7d4c0df9359eec9068018da60ffb02cbb50		branch 'kafka-10867-improved-task-idling-nolog' of https://github.com/apache/kafka
+947482b9df09fcbd6a645cadf21e265895f6145a		branch 'kafka-18610-1' of https://github.com/apache/kafka
+ff4ac87df45b70c0d31979c73073ed00f108f40a		branch 'kip-866-zk-migration-to-kraft' of https://github.com/apache/kafka
+fbf5a8c9955c90493e559a5af0895f74794fceb9		branch 'kip-topo' of https://github.com/apache/kafka
+1b0287351191eb50f9b4a1fb7193bea6e9965b96		branch 'kip1071' of https://github.com/apache/kafka
+5bc568d210ed164dd46a209cf1473fe5bc03596d		branch 'kip853_testkit' of https://github.com/apache/kafka
+0b7e5e05abd00806fdfe8d35e49edc13447b80ba		branch 'lm-pick-fix-flaky-test' of https://github.com/apache/kafka
+ec2f7e27df62395c98a6a213d9ea469a60957155		branch 'metashell' of https://github.com/apache/kafka
+11c4eea501445bb1c57123519625343fd03950fb		branch 'minor-alter-isr-scheduling' of https://github.com/apache/kafka
+f5e5ec2deec5771c71325a745cdd03625990e02e		branch 'minor-pull-request-labeler' of https://github.com/apache/kafka
+9911454a45957119c57e47bc8001e59e4186c833		branch 'minor-try-dv-api-access' of https://github.com/apache/kafka
+85ead677df39fb905b1cf7d4d5e2e9d33e79ca29		branch 'minor-update-doc-version' of https://github.com/apache/kafka
+a530b811122c6b37afd6682b2026ab4e679a1847		branch 'mumrah-patch-1' of https://github.com/apache/kafka
+d4a22ef5c6418a870360b58abbd4b0b2e2b5c628		branch 'mumrah-patch-2' of https://github.com/apache/kafka
+9223ab741a78cd3b0a79b5d6ff64171eb027fd5f		branch 'printer' of https://github.com/apache/kafka
+12481498172cc415d02fd31a59abc73184980add		branch 'repro-task-idling-problem' of https://github.com/apache/kafka
+3514f06d7665434625e14fc6f0ed39b7ffdacf66		branch 'revert-21372-Gradle-9.3.1' of https://github.com/apache/kafka
+025a6e039a136e8655ac64dabb374a1bdfe514d1		branch 'revert-e567025ab4f' of https://github.com/apache/kafka
+872694be4eae988fc8dbbbf6e9a5062fdf23311a		branch 'temp-8436' of https://github.com/apache/kafka
+27c2da06955dceb116f6a4f8e0f360e26b1fd31c		branch 'test-catalog' of https://github.com/apache/kafka
+d23931d5b6d166b9a7298698e0887644264f16c6		branch 'testRemoteLogManagerRemoteMetrics' of https://github.com/apache/kafka
+a2b91b7694762e886be25d9a31591321c0d8313c		branch 'trunk' of https://github.com/apache/kafka
+c8374348e5c23c72ac276163be6ac123b1b3bae2		branch 'txn1' of https://github.com/apache/kafka
+065899a3bc330618e420673acf9504d123b800f3	not-for-merge	tag '0.10.0.0' of https://github.com/apache/kafka
+759940658d805b1262101dce0ea9a9d562c5f30d	not-for-merge	tag '0.10.0.0-rc1' of https://github.com/apache/kafka
+da2745e1088884ba31fc980265ad835d9233652c	not-for-merge	tag '0.10.0.0-rc2' of https://github.com/apache/kafka
+924e5718ca361941a3bb5a0d1a5aaec93d0a97fe	not-for-merge	tag '0.10.0.0-rc3' of https://github.com/apache/kafka
+31cf73c737d79b09b62acce461c7c22461ff5ad8	not-for-merge	tag '0.10.0.0-rc4' of https://github.com/apache/kafka
+f68d6218478960b6cc6a01a18542825cc2fe8b80	not-for-merge	tag '0.10.0.0-rc5' of https://github.com/apache/kafka
+065899a3bc330618e420673acf9504d123b800f3	not-for-merge	tag '0.10.0.0-rc6' of https://github.com/apache/kafka
+0ebdbd203d28ecddcba61877afbbd11ce17da2a6	not-for-merge	tag '0.10.0.1' of https://github.com/apache/kafka
+0c2322c2cf7ab7909cfd8b834d1d2fffc34db109	not-for-merge	tag '0.10.0.1-rc0' of https://github.com/apache/kafka
+108580e4594d694827c9bbbb53264969fe1ce2a7	not-for-merge	tag '0.10.0.1-rc1' of https://github.com/apache/kafka
+f8f56751744ba8e55f90f5c4f3aed8c3459447b2	not-for-merge	tag '0.10.0.1-rc2' of https://github.com/apache/kafka
+88d86579970a0ac7056bfc52c02758a4f7e73b51	not-for-merge	tag '0.10.1.0' of https://github.com/apache/kafka
+b86130bad1a1a4a3d1dbe5c486977e6968b3ebc6	not-for-merge	tag '0.10.1.0-rc0' of https://github.com/apache/kafka
+6eda15a97ffe17d636c390c0e0b28c8349993941	not-for-merge	tag '0.10.1.0-rc1' of https://github.com/apache/kafka
+8702d66434b86092a3738472f9186d6845ab0720	not-for-merge	tag '0.10.1.0-rc2' of https://github.com/apache/kafka
+50f30a44f31fca1bd9189d2814388d51bd56b06b	not-for-merge	tag '0.10.1.0-rc3' of https://github.com/apache/kafka
+d058bc2fd51dd765984695e02adbad68ee489bbb	not-for-merge	tag '0.10.1.1' of https://github.com/apache/kafka
+8b77507083fdd427ce81021228e7e346da0d814c	not-for-merge	tag '0.10.1.1-rc0' of https://github.com/apache/kafka
+c3638376708ee6c02dfe4e57747acae0126fa6e7	not-for-merge	tag '0.10.1.1-rc1' of https://github.com/apache/kafka
+8ab67399db8ef5347b32a50d4c20e169ec7e7413	not-for-merge	tag '0.10.2.0' of https://github.com/apache/kafka
+09d9ac59d8dbc238e47de79f7ba3373897a78df3	not-for-merge	tag '0.10.2.0-KAFKA-5526' of https://github.com/apache/kafka
+33ebac1f138f17b86002df05e55a9f5cff47f48a	not-for-merge	tag '0.10.2.0-rc0' of https://github.com/apache/kafka
+e825b7994bf8c8c4871d1e0973e287e6d31c7ae4	not-for-merge	tag '0.10.2.0-rc1' of https://github.com/apache/kafka
+5712b489038b71ed8d5a679856d1dfaa925eadc1	not-for-merge	tag '0.10.2.0-rc2' of https://github.com/apache/kafka
+ab4c6759ae8386c0702416bd50f9f40f4f3eec8c	not-for-merge	tag '0.10.2.1' of https://github.com/apache/kafka
+d08115f05da0e39c7f75b45e05d6d14ad5baf71d	not-for-merge	tag '0.10.2.1-rc0' of https://github.com/apache/kafka
+e133f2ca57670e77f8114cc72dbc2f91a48e3a3b	not-for-merge	tag '0.10.2.1-rc1' of https://github.com/apache/kafka
+dea3da5b31cc310974685a8bbccc34a2ec2ac5c8	not-for-merge	tag '0.10.2.1-rc2' of https://github.com/apache/kafka
+8e4f09caeaa877f06dc75c7da1af7a727e5e599f	not-for-merge	tag '0.10.2.1-rc3' of https://github.com/apache/kafka
+3c9e3cac10c18da2ed2cb9602dea3ffdf1f9eed9	not-for-merge	tag '0.10.2.2' of https://github.com/apache/kafka
+32ee966b51f506b6af3f7f1f60df3a8ebbf95ab6	not-for-merge	tag '0.10.2.2-rc0' of https://github.com/apache/kafka
+f6eb6e5717301a18e3af6aab5a538f49a9d9cdc7	not-for-merge	tag '0.10.2.2-rc1' of https://github.com/apache/kafka
+4c7df668b8e2a3c72d1929818d6730f9b1edb078	not-for-merge	tag '0.11.0.0' of https://github.com/apache/kafka
+d5ee02b187fafe08b63deb52e6b07c8d1d12f18d	not-for-merge	tag '0.11.0.0-rc0' of https://github.com/apache/kafka
+4818d4e1cbef1a8e9c027100fef317077fb3fb99	not-for-merge	tag '0.11.0.0-rc1' of https://github.com/apache/kafka
+8698fa1f41102f1664b05baa4d6953fc9564d91e	not-for-merge	tag '0.11.0.0-rc2' of https://github.com/apache/kafka
+684d62fcf730f0c0a0aa7ae18c6e6a68a7a5406b	not-for-merge	tag '0.11.0.1' of https://github.com/apache/kafka
+a8aa61266aedcf62e45b3595a2cf68c819ca1a6c	not-for-merge	tag '0.11.0.1-rc0' of https://github.com/apache/kafka
+fac05f594ad98cff6508400a9b572c0966997469	not-for-merge	tag '0.11.0.2' of https://github.com/apache/kafka
+25639822d6e23803c599cba35ad3dc1a2817b404	not-for-merge	tag '0.11.0.2-rc0' of https://github.com/apache/kafka
+6ae16cf387ddc4640ff81022ba294ef4be51d446	not-for-merge	tag '0.11.0.3-rc0' of https://github.com/apache/kafka
+2c20a71a010659e25af075a024cbd692c87d4c89	not-for-merge	tag '0.8.0' of https://github.com/apache/kafka
+34a278b4cc1bbce0a876e9255b2bfa7c2133f313	not-for-merge	tag '0.8.0-beta1' of https://github.com/apache/kafka
+9c00b7785de048cab154b8754bfc1768466082a4	not-for-merge	tag '0.8.0-beta1-candidate1' of https://github.com/apache/kafka
+0c9f03fd7a6cae909c429a25ffb4624a7fe507ff	not-for-merge	tag '0.8.1' of https://github.com/apache/kafka
+304dfd64c0f80a3e791cef103ccb1e55348e7144	not-for-merge	tag '0.8.1.0' of https://github.com/apache/kafka
+34237371b662f617dd80c75cd6282f97e047ef56	not-for-merge	tag '0.8.1.1' of https://github.com/apache/kafka
+2b2c3da2c52bc62a89d60f85125d3723c8410fa0	not-for-merge	tag '0.8.2-beta' of https://github.com/apache/kafka
+223ac42a7a2a0dab378cc411f4938a9cea1eb7ea	not-for-merge	tag '0.8.2.0' of https://github.com/apache/kafka
+2f35714e15cb3165f59946bbbdb364e8d6616919	not-for-merge	tag '0.8.2.0-cp' of https://github.com/apache/kafka
+bd1bfb63ec73c10d08432ac893a23f28281ea021	not-for-merge	tag '0.8.2.1' of https://github.com/apache/kafka
+d01226cfdcb3d9daad8465234750fa515a1e7e4a	not-for-merge	tag '0.8.2.2' of https://github.com/apache/kafka
+132943b0f83831132cd46ac961cf6f1c00132565	not-for-merge	tag '0.9.0.0' of https://github.com/apache/kafka
+2c17685a45efe665bf5f24c0296cb8f9e1157e89	not-for-merge	tag '0.9.0.1' of https://github.com/apache/kafka
+3ed24acba855ec00d4c0323a7aaf1fac1d8f99d4	not-for-merge	tag '1.0.0' of https://github.com/apache/kafka
+2f97bc6a9ee269bf90b019e50b4eeb43df2f1143	not-for-merge	tag '1.0.0-rc0' of https://github.com/apache/kafka
+9424d29dbf0a3c538215b0b98b1e6b956481e4d5	not-for-merge	tag '1.0.0-rc1' of https://github.com/apache/kafka
+51d5f12e190a38547839c7d2710c97faaeaca586	not-for-merge	tag '1.0.0-rc2' of https://github.com/apache/kafka
+7774b0da8ead0d9edd1d4b2f7e1cd743af694112	not-for-merge	tag '1.0.0-rc3' of https://github.com/apache/kafka
+d4a3919e408e444dde5db5a261c6f912cb8475a2	not-for-merge	tag '1.0.0-rc4' of https://github.com/apache/kafka
+85f66d957a4b4cca02ee25a3d2622d139f9a69bd	not-for-merge	tag '1.0.1' of https://github.com/apache/kafka
+842bf1e56c03951db402073bd63b3972f5017058	not-for-merge	tag '1.0.1-rc0' of https://github.com/apache/kafka
+56e000700a8e017450c31bd3d4da6814bb518867	not-for-merge	tag '1.0.1-rc1' of https://github.com/apache/kafka
+bab8280ebd9d8bb10272f747e828bffb394ed3c6	not-for-merge	tag '1.0.1-rc2' of https://github.com/apache/kafka
+cef95b61b48d84d70db9575cb95fb74d4678ba6f	not-for-merge	tag '1.0.2' of https://github.com/apache/kafka
+2a22ccc77bbe510a94dc63bea35de559db5fec0c	not-for-merge	tag '1.0.2-rc0' of https://github.com/apache/kafka
+b7df944e94f3050ff2c6826de54200a80ec6aefc	not-for-merge	tag '1.0.2-rc1' of https://github.com/apache/kafka
+65d801995f39f9591f3195d3cecabbdd87e4c44d	not-for-merge	tag '1.1.0' of https://github.com/apache/kafka
+7d74914703767c640571c896e62240ab91a88c6b	not-for-merge	tag '1.1.0-rc0' of https://github.com/apache/kafka
+7fc1b4a423b54a30eaee600f4a91bad84c024a12	not-for-merge	tag '1.1.0-rc1' of https://github.com/apache/kafka
+9c394beae2d19c6814d1d063d8fa32ac11ef8d87	not-for-merge	tag '1.1.0-rc2' of https://github.com/apache/kafka
+ecb57c191b145161234de4da0a17daf47fef5d4f	not-for-merge	tag '1.1.0-rc3' of https://github.com/apache/kafka
+0614678e7a18ff403378280149f21ba26ef4ad5b	not-for-merge	tag '1.1.0-rc4' of https://github.com/apache/kafka
+d1fb174c3e2289939f2d86756c585d3a843ae10d	not-for-merge	tag '1.1.1' of https://github.com/apache/kafka
+a6cf5cf4fda2e33392a44388d5585722e486cc1a	not-for-merge	tag '1.1.1-rc0' of https://github.com/apache/kafka
+15c09bfee94a0659aaa7670e489c674703d18405	not-for-merge	tag '1.1.1-rc1' of https://github.com/apache/kafka
+9b4f351640b2247edf5e4274be2306c41ca9696b	not-for-merge	tag '1.1.1-rc2' of https://github.com/apache/kafka
+90dd163b249d5206dc2fa23450ebacd530160c3c	not-for-merge	tag '1.1.1-rc3' of https://github.com/apache/kafka
+0273d95845c466df53169d5e2345c1e943b3a440	not-for-merge	tag '2.0.0' of https://github.com/apache/kafka
+ee88b0132e0c413555916c353e1778f4167ef3ca	not-for-merge	tag '2.0.0-rc0' of https://github.com/apache/kafka
+ffe072f6f8aee96900146b3a876a7d7b08713296	not-for-merge	tag '2.0.0-rc1' of https://github.com/apache/kafka
+bfa3726948a33bd5a24547b96425ac85bb5a7b5c	not-for-merge	tag '2.0.0-rc2' of https://github.com/apache/kafka
+d7af5e5c139ae0a733a0377bb1d7ddd56e0b7a8d	not-for-merge	tag '2.0.0-rc3' of https://github.com/apache/kafka
+b3a45614f143d46c2370f21c79c9df4edd30148b	not-for-merge	tag '2.0.1' of https://github.com/apache/kafka
+94a7d11daec82b5b8f92f1a6989c6f1d144b9e39	not-for-merge	tag '2.0.1-rc0' of https://github.com/apache/kafka
+e3756fd5a66e125fc85d7ec5a4e86ae5b99d1e58	not-for-merge	tag '2.1.0' of https://github.com/apache/kafka
+00366d14df517f9605375141cf276298832169bf	not-for-merge	tag '2.1.0-rc0' of https://github.com/apache/kafka
+c12cddba5697d8ac5beed8594d1f6919592da9c7	not-for-merge	tag '2.1.0-rc1' of https://github.com/apache/kafka
+a29fd8416045221a157aad80da795aa0908c46a9	not-for-merge	tag '2.1.1' of https://github.com/apache/kafka
+d046b5148e43f7b8c52a79baee707c9f91d289d7	not-for-merge	tag '2.1.1-rc0' of https://github.com/apache/kafka
+a61df10adf70bef8c4df124487c4179fc522fe4f	not-for-merge	tag '2.1.1-rc1' of https://github.com/apache/kafka
+935a75eff8e395bbb0b428a0e482a80558ce3934	not-for-merge	tag '2.1.1-rc2' of https://github.com/apache/kafka
+70e16f21e9eedf4429cb35352ccd245753d6d632	not-for-merge	tag '2.2.0' of https://github.com/apache/kafka
+d359131999e38ccaab5ae5292a2a678ac2e524f4	not-for-merge	tag '2.2.0-rc0' of https://github.com/apache/kafka
+faa82dfb7473ebef8bdd75d1d0e9181a5ed43fd6	not-for-merge	tag '2.2.0-rc1' of https://github.com/apache/kafka
+f29ee71ebac7fedd26a383fe9c8b484d5c83b9c4	not-for-merge	tag '2.2.0-rc2' of https://github.com/apache/kafka
+bc0b7a969e8938b5dea6539d0663f027f4ad2f46	not-for-merge	tag '2.2.1' of https://github.com/apache/kafka
+b922e6ca98d3bd8cfbc7734a1bf8bcb20315c9a0	not-for-merge	tag '2.2.1-rc0' of https://github.com/apache/kafka
+ee6799b9f465c67736bd4d4318752957ab66fb8c	not-for-merge	tag '2.2.1-rc1' of https://github.com/apache/kafka
+823209e04d5b703cb2aece6fe3dfe1b3e709a730	not-for-merge	tag '2.2.2' of https://github.com/apache/kafka
+7c0eeb072331011f3ffae5d51456a02c5b0761cd	not-for-merge	tag '2.2.2-rc1' of https://github.com/apache/kafka
+ce057a28f5b579a01804a0ee796b50f00097ebe6	not-for-merge	tag '2.2.2-rc2' of https://github.com/apache/kafka
+d582a052ffa7a2b4ac3af39ca5841875c50e1503	not-for-merge	tag '2.3.0' of https://github.com/apache/kafka
+ffeaa02f804cfed3d000b4f52d07fab3141997a7	not-for-merge	tag '2.3.0-rc1' of https://github.com/apache/kafka
+f2ef076b06be9d9d428dc93e91f34de66021e640	not-for-merge	tag '2.3.0-rc2' of https://github.com/apache/kafka
+aab8d2f505d6fbdcc0439681549f340ec5e2f378	not-for-merge	tag '2.3.0-rc3' of https://github.com/apache/kafka
+2e79efc273b5a8f4b2ff51a54d17e6ca666b33b3	not-for-merge	tag '2.3.1' of https://github.com/apache/kafka
+e3b568b0e0bdf19e75c0720c7c094583025bcb32	not-for-merge	tag '2.3.1-rc0' of https://github.com/apache/kafka
+e8bc9b2bffd3d508336f3da6b8fd2a3edfbdddef	not-for-merge	tag '2.3.1-rc1' of https://github.com/apache/kafka
+fbdb901b45398a96003d94a7c75c5f63cd3a5b89	not-for-merge	tag '2.3.1-rc2' of https://github.com/apache/kafka
+936016a236845ae953426bcb48c3bf73e70608ec	not-for-merge	tag '2.4.0' of https://github.com/apache/kafka
+8cae9db537696958d6902fc68596a556346f2638	not-for-merge	tag '2.4.0-rc0' of https://github.com/apache/kafka
+75b31087701953060b58860596a2f455bf284e37	not-for-merge	tag '2.4.0-rc1' of https://github.com/apache/kafka
+e589ead927117827bc312a74519cab72eb79ac04	not-for-merge	tag '2.4.0-rc2' of https://github.com/apache/kafka
+eb9c70c010e85f41c04c55aeff2e0bd7b1bd3545	not-for-merge	tag '2.4.0-rc3' of https://github.com/apache/kafka
+baa4b688a7e02634a6e9f5145620ace3510ecaac	not-for-merge	tag '2.4.0-rc4' of https://github.com/apache/kafka
+351916499daf5c448fc858fac97ae19a22a50f5e	not-for-merge	tag '2.4.1' of https://github.com/apache/kafka
+bcc88e8f089deccd9304a145e1b00c8e55fa0b47	not-for-merge	tag '2.4.1-rc0' of https://github.com/apache/kafka
+e8ef445fa353292482677a3cd9a6ca21b2350303	not-for-merge	tag '2.5.0' of https://github.com/apache/kafka
+7e388e53f3eba2d2dad662294063aadb9e39208f	not-for-merge	tag '2.5.0-rc0' of https://github.com/apache/kafka
+63d34ebc077bfa4e197424e03f35ec1a395ac0b4	not-for-merge	tag '2.5.0-rc1' of https://github.com/apache/kafka
+144e2d461e8a61282263c00c24d2070a51986a2a	not-for-merge	tag '2.5.0-rc2' of https://github.com/apache/kafka
+015ed566dd45e400c5839ccfde245a1c40882ea2	not-for-merge	tag '2.5.0-rc3' of https://github.com/apache/kafka
+b6d91bc4a796c8aeb3d7897acfa07ee6b642e876	not-for-merge	tag '2.5.1' of https://github.com/apache/kafka
+420f6d439896a6d3cdd41afb4a0f63c55ad4a15b	not-for-merge	tag '2.5.1-rc0' of https://github.com/apache/kafka
+ca68ef3972c97a71d0c956e54d39b2eb30354404	not-for-merge	tag '2.6.0' of https://github.com/apache/kafka
+15d6d04d617653633e431879dd2c9c67b5294831	not-for-merge	tag '2.6.0-rc0' of https://github.com/apache/kafka
+93bb5af1155be9e9a8dea9ab097e6ad562fdbff9	not-for-merge	tag '2.6.0-rc1' of https://github.com/apache/kafka
+10f1dd78e99a367dfeb7990f441c340c8d94c841	not-for-merge	tag '2.6.0-rc2' of https://github.com/apache/kafka
+d174119b35d662f8380e998cadb8f1481f7adbd1	not-for-merge	tag '2.6.1' of https://github.com/apache/kafka
+ee86f70adc20b4333c95d7a1c22e540df2b607b6	not-for-merge	tag '2.6.1-rc0' of https://github.com/apache/kafka
+1810078c61d9222b73ddda6f62a7ec7094ebbc56	not-for-merge	tag '2.6.1-rc1' of https://github.com/apache/kafka
+dc41199f19c33a2449fc412571b85c62de7225b4	not-for-merge	tag '2.6.1-rc2' of https://github.com/apache/kafka
+669c4095e75cee6d3b323ad4f5af62b5b1d913e8	not-for-merge	tag '2.6.1-rc3' of https://github.com/apache/kafka
+f71884f2e8e4a590a726dfbd1189834bb8d4e5c0	not-for-merge	tag '2.6.2' of https://github.com/apache/kafka
+a63b8f9674000f2d0cb12f66b8e8b1e8e01ee819	not-for-merge	tag '2.6.2-rc0' of https://github.com/apache/kafka
+b59c107fc8dfaaa0f305f24058fe29aef6f4fd56	not-for-merge	tag '2.6.2-rc1' of https://github.com/apache/kafka
+be384f4407d90b0b36de1b7d230e54e1a90ef351	not-for-merge	tag '2.6.3' of https://github.com/apache/kafka
+6a44b3b3b5967d0d4d031d75b616e052fa26f4df	not-for-merge	tag '2.6.3-rc0' of https://github.com/apache/kafka
+60b7b1809bed98ad0f65d966f8e7b29bbe3ca0af	not-for-merge	tag '2.7.0' of https://github.com/apache/kafka
+24c4be17bb799344c01522047dbda2677be21b8e	not-for-merge	tag '2.7.0-rc0' of https://github.com/apache/kafka
+d32806a3b3d6bf4e80f431d2578b180a9d10fac7	not-for-merge	tag '2.7.0-rc1' of https://github.com/apache/kafka
+8fd1709b50805a6dad4fba65816f7298e2cd8a8c	not-for-merge	tag '2.7.0-rc2' of https://github.com/apache/kafka
+84da4f92a249b8c308274a278150617a8bd2e6ad	not-for-merge	tag '2.7.0-rc3' of https://github.com/apache/kafka
+134573e0687d511c49dd12cd622a20e3a888c0d7	not-for-merge	tag '2.7.0-rc4' of https://github.com/apache/kafka
+9e061fede341d938a0639088e3178eb616996851	not-for-merge	tag '2.7.0-rc5' of https://github.com/apache/kafka
+6e6b3b6f77853a9c916c9278bd13209412b77fb6	not-for-merge	tag '2.7.0-rc6' of https://github.com/apache/kafka
+60585c4270539c022c9f7a608ee7b5dd2ec62074	not-for-merge	tag '2.7.1' of https://github.com/apache/kafka
+5ba1d24ec43866afca43a882fc7e6359ddeb639d	not-for-merge	tag '2.7.1-rc0' of https://github.com/apache/kafka
+6350081fdd129b4d399c35049a75655f536a4473	not-for-merge	tag '2.7.1-rc1' of https://github.com/apache/kafka
+0c012037d7d485cc49b63f6b131af82502305ff5	not-for-merge	tag '2.7.1-rc2' of https://github.com/apache/kafka
+37a1cc36bf4d76f3fbfed5dabaa6115302bda597	not-for-merge	tag '2.7.2' of https://github.com/apache/kafka
+e0931ba684a6f1fb9233ee5a352fe52e6d213128	not-for-merge	tag '2.7.2-rc0' of https://github.com/apache/kafka
+b32e4247837a1f70fdcbd341f472fdc93e4aad7d	not-for-merge	tag '2.8.0' of https://github.com/apache/kafka
+f41a3553341c7a26cf98d9c82d1b8a22070f9fd0	not-for-merge	tag '2.8.0-rc0' of https://github.com/apache/kafka
+3d02b9cbeb2b393853a324183b1072669422a003	not-for-merge	tag '2.8.0-rc1' of https://github.com/apache/kafka
+f9f488ebec285ab6f13fb23276e2b7f48b5ee033	not-for-merge	tag '2.8.0-rc2' of https://github.com/apache/kafka
+d8faa8e353b21ea576d00ed3de1028bcd6601294	not-for-merge	tag '2.8.1' of https://github.com/apache/kafka
+d6def7d83ad70dcffe028287961fe1dc5867911c	not-for-merge	tag '2.8.1-rc0' of https://github.com/apache/kafka
+5f3f52c071bfd965b23c1e2d217d8d092e65cde5	not-for-merge	tag '2.8.1-rc1' of https://github.com/apache/kafka
+26515594666bf54826fda53f30573f97a9c70eeb	not-for-merge	tag '2.8.2' of https://github.com/apache/kafka
+950a7a93483054cbb48cd7928c1fc16ad6518c0e	not-for-merge	tag '2.8.2-rc0' of https://github.com/apache/kafka
+4167fa93417b614afd90bec69985369b4fe3a448	not-for-merge	tag '3.0.0' of https://github.com/apache/kafka
+06c92623562517b972e3e5bca4c62d16721984d1	not-for-merge	tag '3.0.0-rc0' of https://github.com/apache/kafka
+fd159f9031b6795e344a30a75d30af970f7d5d0a	not-for-merge	tag '3.0.0-rc1' of https://github.com/apache/kafka
+11fabc2bd779eef611b107a4d8bbd35adb9b3e46	not-for-merge	tag '3.0.0-rc2' of https://github.com/apache/kafka
+9ea5284ce3dad4a089dece11cfc47eca6bcdc66f	not-for-merge	tag '3.0.1' of https://github.com/apache/kafka
+3726d1bbac3caa0036ddcb106e023008f83e96eb	not-for-merge	tag '3.0.1-rc0' of https://github.com/apache/kafka
+58f984f79518e6f14a8050a3ceb916654fe55b25	not-for-merge	tag '3.0.2' of https://github.com/apache/kafka
+c8d0ffaac173b33cfd5745804b56c43666d63266	not-for-merge	tag '3.0.2-rc0' of https://github.com/apache/kafka
+17e5b03cc809bb41be06b6024c95fbdc9f450fa6	not-for-merge	tag '3.1.0' of https://github.com/apache/kafka
+37fb9d822488685d88a52822f76d6e50c3ce9fb1	not-for-merge	tag '3.1.0-rc0' of https://github.com/apache/kafka
+b1e8528452e9e1c67e9c29d2deee77bcb9aa799a	not-for-merge	tag '3.1.0-rc1' of https://github.com/apache/kafka
+3ddd3b585cd66bdb3ce755f29be59f80c9e3f254	not-for-merge	tag '3.1.1' of https://github.com/apache/kafka
+86b6fef0aa0996086323bad0f240feca3833213a	not-for-merge	tag '3.1.1-rc0' of https://github.com/apache/kafka
+4dfa1926f6b6b3d25ad81efd1de6c8ce63c43aea	not-for-merge	tag '3.1.1-rc1' of https://github.com/apache/kafka
+00b38233c1548cc3ce3134461752c2aacc893110	not-for-merge	tag '3.1.2' of https://github.com/apache/kafka
+20312e60b8fdd3d9b225d85a5836209960255787	not-for-merge	tag '3.1.2-rc0' of https://github.com/apache/kafka
+ca3b7eef29a248602521101e244199ffca619774	not-for-merge	tag '3.2.0' of https://github.com/apache/kafka
+e4893321d64cab07da750d8355935319837d45e3	not-for-merge	tag '3.2.0-rc0' of https://github.com/apache/kafka
+977cf35de2279d6046fdf4dffebeede03b4820f7	not-for-merge	tag '3.2.0-rc1' of https://github.com/apache/kafka
+53a6406bc1539a3607177bad1e0c22294729598e	not-for-merge	tag '3.2.1' of https://github.com/apache/kafka
+d21c74c1b85a1502ed8bc272f0fc86fe1507b54a	not-for-merge	tag '3.2.1-rc2' of https://github.com/apache/kafka
+da7453d0ab67db73fd8f371669b259caca806257	not-for-merge	tag '3.2.1-rc3' of https://github.com/apache/kafka
+477826b9e65a1afb45b7cf390978c0cda7d1fc3a	not-for-merge	tag '3.2.2' of https://github.com/apache/kafka
+a6619703227397524af783deb97e4706101d4a88	not-for-merge	tag '3.2.2-rc0' of https://github.com/apache/kafka
+a8a6fc870919359f9e21302750c0884d703f3da3	not-for-merge	tag '3.2.3' of https://github.com/apache/kafka
+659efed806d2b7412c0aace76969563a54c7a501	not-for-merge	tag '3.2.3-rc0' of https://github.com/apache/kafka
+a97acd658b5e7b725c1bae2751843491e21ef2b6	not-for-merge	tag '3.3.0' of https://github.com/apache/kafka
+cbf6c7dd623eb056805a5b2ca786ac1eb38fab4f	not-for-merge	tag '3.3.0-rc1' of https://github.com/apache/kafka
+68f7227899fe723e2aa83cfc264143d95f4e321c	not-for-merge	tag '3.3.0-rc2' of https://github.com/apache/kafka
+e23c59d00e687ff555d30bb4dc6c0cdec2c818ae	not-for-merge	tag '3.3.1' of https://github.com/apache/kafka
+de86e74210d59de8490d85d7a9687a2dd43e3f0c	not-for-merge	tag '3.3.1-rc0' of https://github.com/apache/kafka
+973c16cabf657a057ff2b7dbe261a936ea735fef	not-for-merge	tag '3.3.2' of https://github.com/apache/kafka
+e52ffd7bfd624f9cfb9acbb90b037c8ad9304181	not-for-merge	tag '3.3.2-rc0' of https://github.com/apache/kafka
+2aa8a815332282a6a63f202d7169d78ac9efac4d	not-for-merge	tag '3.3.2-rc1' of https://github.com/apache/kafka
+314190303f9c157378b1aaf382dfa31c573e9fab	not-for-merge	tag '3.4.0' of https://github.com/apache/kafka
+f8484d9698e2fef8aa11f196078a95587f83c358	not-for-merge	tag '3.4.0-rc0' of https://github.com/apache/kafka
+67d9044a4b063afabcb6778a37435ca17e9b1a7e	not-for-merge	tag '3.4.0-rc1' of https://github.com/apache/kafka
+9e4837ad64c6875151ecd20058d0a508404bcf6e	not-for-merge	tag '3.4.0-rc2' of https://github.com/apache/kafka
+8a516edc2755df89982a9afe9e771ea7cf4a17ac	not-for-merge	tag '3.4.1' of https://github.com/apache/kafka
+8832db89a3910206986ad50b10dc9f0e794e771d	not-for-merge	tag '3.4.1-rc0' of https://github.com/apache/kafka
+456799bd6729af0c0f6cf9027907258ec279c8d9	not-for-merge	tag '3.4.1-rc1' of https://github.com/apache/kafka
+c21fbcf31f3b203971da80571d2ffdec54de142f	not-for-merge	tag '3.4.1-rc2' of https://github.com/apache/kafka
+62ad80faf1bbb74abfe00ee9de28bf086b6fde7c	not-for-merge	tag '3.4.1-rc3' of https://github.com/apache/kafka
+5d16102fce81dfc2063447322bf8caf5444d442a	not-for-merge	tag '3.5.0' of https://github.com/apache/kafka
+ebcb6893ebb3938752d74ba5d6c0af5fa41c2186	not-for-merge	tag '3.5.0-rc0' of https://github.com/apache/kafka
+744f2c39ea0117e23b00c62744efcfe900ccd9c9	not-for-merge	tag '3.5.0-rc1' of https://github.com/apache/kafka
+2915ab3311fd5d238398610868053065f1edd49b	not-for-merge	tag '3.5.1' of https://github.com/apache/kafka
+92d5fa1b357a4652bca73261228f280d002fcfd9	not-for-merge	tag '3.5.1-rc0' of https://github.com/apache/kafka
+97f298a3454f81c5335edb32120030b2cf51b11e	not-for-merge	tag '3.5.1-rc1' of https://github.com/apache/kafka
+01b3a0a1329f34769aa3d3eb03e88acd6e100b4f	not-for-merge	tag '3.5.2' of https://github.com/apache/kafka
+3e93aa2e5c0af478c086e14604b75216f4a14029	not-for-merge	tag '3.5.2-rc1' of https://github.com/apache/kafka
+d23da02b8676502a8347808580aa44506c3b1b0e	not-for-merge	tag '3.6.0' of https://github.com/apache/kafka
+a17fae0082fe4b30a012d76e69f6315f6971bed0	not-for-merge	tag '3.6.0-rc0' of https://github.com/apache/kafka
+82f3c46b8c8151fc5c641fb2864b796ce0a4cfa9	not-for-merge	tag '3.6.0-rc1' of https://github.com/apache/kafka
+a569de8339377c2da0baab48b131db6171af9725	not-for-merge	tag '3.6.0-rc2' of https://github.com/apache/kafka
+a8387b157e328ce235c50447e329208877ed65d8	not-for-merge	tag '3.6.1' of https://github.com/apache/kafka
+66519d494bc143aeb94c4c05a5045c0eaa03295c	not-for-merge	tag '3.6.1-rc0' of https://github.com/apache/kafka
+b25e89b6f842f11e4eb747e131a71153d9270536	not-for-merge	tag '3.6.2' of https://github.com/apache/kafka
+e8a62617d4f3ceac1e4400b4f613abc2ee9a2847	not-for-merge	tag '3.6.2-rc1' of https://github.com/apache/kafka
+a048552db4743424f548f4a89e3ed67b6383b956	not-for-merge	tag '3.6.2-rc2' of https://github.com/apache/kafka
+89355b00b563e2adf2a5f74ff430ba2b96f8f359	not-for-merge	tag '3.7.0' of https://github.com/apache/kafka
+e686a1a9b8faeb32b3f62d9adc3493549ecd155d	not-for-merge	tag '3.7.0-rc0' of https://github.com/apache/kafka
+27ad104563e7e03c1f3c78c3ac35e756e39a38da	not-for-merge	tag '3.7.0-rc1' of https://github.com/apache/kafka
+7318efa8525efdc35481887ffd6a28052ac72b41	not-for-merge	tag '3.7.0-rc2' of https://github.com/apache/kafka
+25b6a299fc9722ec10d658f9838afd58ac984cd8	not-for-merge	tag '3.7.0-rc3' of https://github.com/apache/kafka
+b16901ac8140a5d5ede98ffd3b63478ee5b05763	not-for-merge	tag '3.7.0-rc4' of https://github.com/apache/kafka
+1a6724b2cc63064dc28b55aa6187e3fbd5dfc102	not-for-merge	tag '3.7.1' of https://github.com/apache/kafka
+b6ef9490e17633ded81cbed52ff3fda1eac534c9	not-for-merge	tag '3.7.1-rc1' of https://github.com/apache/kafka
+f1d727049ceaa9faf4f8c9540688c134a85c3fc8	not-for-merge	tag '3.7.1-rc2' of https://github.com/apache/kafka
+79a8f2b5f44f9d5a6867190d1dfc463d08d60b82	not-for-merge	tag '3.7.2' of https://github.com/apache/kafka
+39cd3354fd32fb01a954ac046ac86cd9e1cd7f6e	not-for-merge	tag '3.7.2-rc0' of https://github.com/apache/kafka
+79a8f2b5f44f9d5a6867190d1dfc463d08d60b82	not-for-merge	tag '3.7.2-rc1' of https://github.com/apache/kafka
+234db565ea236b176ee49b8484344ff617893b97	not-for-merge	tag '3.8.0' of https://github.com/apache/kafka
+056688282fb95580e73ed0dbdc5d168097871149	not-for-merge	tag '3.8.0-rc0' of https://github.com/apache/kafka
+afb0b8e0dcbfee2c7a2ec48cf915cd99de4e6862	not-for-merge	tag '3.8.0-rc1' of https://github.com/apache/kafka
+811bb6f57a033a3c64e026aba8b6d55560fa5245	not-for-merge	tag '3.8.0-rc2' of https://github.com/apache/kafka
+a225e0ff346f29f3ed434924bceb9f85499ff50a	not-for-merge	tag '3.8.0-rc3' of https://github.com/apache/kafka
+292363b07319025f5b4e9bfdd46d44fef50ad9d6	not-for-merge	tag '3.8.1' of https://github.com/apache/kafka
+0656d4f5f270e3909a542bcc7237b3c3fb0f19e4	not-for-merge	tag '3.8.1-rc0' of https://github.com/apache/kafka
+f2c58020aeda68d7f1393b0d29cae8dc0b23bbaa	not-for-merge	tag '3.8.1-rc1' of https://github.com/apache/kafka
+848d2a34c8ed69c869a68d6ec241a1db81746b9b	not-for-merge	tag '3.9.0' of https://github.com/apache/kafka
+f2e0955f2980083f72dffc6cf927b14f2731c888	not-for-merge	tag '3.9.0-rc0' of https://github.com/apache/kafka
+8121f249bb788332506f0ba312241f0d35567105	not-for-merge	tag '3.9.0-rc1' of https://github.com/apache/kafka
+a6e8ca1294384d09544fcb3631d1848e66bd67b1	not-for-merge	tag '3.9.0-rc2' of https://github.com/apache/kafka
+41dc4259fdb3b05fbcc20a8e22a5bb9592fa995e	not-for-merge	tag '3.9.0-rc3' of https://github.com/apache/kafka
+8211aa9bf4904ee47d24577dd9f94ec411ff0542	not-for-merge	tag '3.9.0-rc4' of https://github.com/apache/kafka
+84a73ca1a65bc7678c16599f6b793ab64d33a32a	not-for-merge	tag '3.9.0-rc5' of https://github.com/apache/kafka
+ce24d9b6aedca74f53c26f1ad2b2cc8ad950a03c	not-for-merge	tag '3.9.1' of https://github.com/apache/kafka
+4a2979137935a4a753d86eec90473ee244ab8395	not-for-merge	tag '3.9.1-rc0' of https://github.com/apache/kafka
+15c6c7391698a3121cd12a86cc2bb2a422dcfabe	not-for-merge	tag '3.9.1-rc1' of https://github.com/apache/kafka
+95ce72fb365960736fd0bff0dc62ed63c1635845	not-for-merge	tag '3.9.1-rc2' of https://github.com/apache/kafka
+8e42e89c67b63f09dbc9c9e3fbe20d817f73baa4	not-for-merge	tag '3.9.2' of https://github.com/apache/kafka
+0c5ceed3e97612b61905acf45fb544c2b8891b66	not-for-merge	tag '3.9.2-rc0' of https://github.com/apache/kafka
+edd1fd9ca084b58c914b006d301b5f8e605b2369	not-for-merge	tag '3.9.2-rc1' of https://github.com/apache/kafka
+8926e9a2e7443b739472c9eb1d81ad68cedfe73c	not-for-merge	tag '4.0.0' of https://github.com/apache/kafka
+56142fd58034a81052a99b017ecdd9b395303f91	not-for-merge	tag '4.0.0-rc0' of https://github.com/apache/kafka
+c527c4478ba274eee531da9da49da124b1d8380c	not-for-merge	tag '4.0.0-rc1' of https://github.com/apache/kafka
+9d2d4f10c264a2eb988ae4769d06a243304db491	not-for-merge	tag '4.0.0-rc3' of https://github.com/apache/kafka
+f4b50777d176ee517f5a2d46dcee7f9e422ddff7	not-for-merge	tag '4.0.0-rc4' of https://github.com/apache/kafka
+324904e8d8fc9cc832deb498e64e0f91ee4aee29	not-for-merge	tag '4.0.1' of https://github.com/apache/kafka
+717f21abce53335dd724568503dd3adcbf4b93e2	not-for-merge	tag '4.0.1-rc0' of https://github.com/apache/kafka
+977e5de635790101f568b1ac4e0a3a9379267a97	not-for-merge	tag '4.0.1-rc1' of https://github.com/apache/kafka
+a5260ebd02ff60aa1c4a63b9ae7a2a2353ab1e1e	not-for-merge	tag '4.0.1-rc2' of https://github.com/apache/kafka
+f27ce2bfb196f33f7ef77793f10d4a2d129f4d9f	not-for-merge	tag '4.0.2' of https://github.com/apache/kafka
+5c696761c25c775715df7047c8e1e6a80ce900a7	not-for-merge	tag '4.0.2-rc0' of https://github.com/apache/kafka
+dda920c4354e50bb9fe48ae8b8e2f34726117f08	not-for-merge	tag '4.0.2-rc1' of https://github.com/apache/kafka
+bfa8e1400b56cfeb97606aaf9365121b0ef31db1	not-for-merge	tag '4.0.2-rc2' of https://github.com/apache/kafka
+d086d191eefb4f3e1155415fa4b186c45a186e19	not-for-merge	tag '4.0.2-rc3' of https://github.com/apache/kafka
+080a42c343d919971985102a38c82dc6da0623d5	not-for-merge	tag '4.1.0' of https://github.com/apache/kafka
+82df266ca71572bf09caac79749abcb5514c1345	not-for-merge	tag '4.1.0-rc0' of https://github.com/apache/kafka
+fe71d249789a9b89602765eed1f2a32f2b89891b	not-for-merge	tag '4.1.0-rc1' of https://github.com/apache/kafka
+145db6c8b53682877ec2c94957a1dd82e2c2d6df	not-for-merge	tag '4.1.0-rc2' of https://github.com/apache/kafka
+7f98ecb1b2ac64d0e7c09862c11d0ffdfd692ef1	not-for-merge	tag '4.1.0-rc3' of https://github.com/apache/kafka
+0753c489afad403fb6e78fda4c4a380e46f500c0	not-for-merge	tag '4.1.1' of https://github.com/apache/kafka
+e139dc996410bcbd4213b9de482339f82ceec434	not-for-merge	tag '4.1.1-rc0' of https://github.com/apache/kafka
+cfea5a1b4f00bb5863ce27283255ca2387d7b336	not-for-merge	tag '4.1.1-rc1' of https://github.com/apache/kafka
+7c3a36eaaefb7453742691b99d70322ab151f9c7	not-for-merge	tag '4.1.1-rc2' of https://github.com/apache/kafka
+dfad9ea494a92bcfe3cb7420aaf45aa459ae90eb	not-for-merge	tag '4.1.2' of https://github.com/apache/kafka
+dbe929f0253cd9100568cf371a7bc31f27656947	not-for-merge	tag '4.1.2-rc0' of https://github.com/apache/kafka
+3e37cef500d4e77db4dda85fc92300e260a89fc6	not-for-merge	tag '4.1.2-rc1' of https://github.com/apache/kafka
+9f8b3ad416bd416f3706f3d7a1f425b9dd8bc5f2	not-for-merge	tag '4.2.0' of https://github.com/apache/kafka
+4670a7d7d652c338f0c1bf85aa74e344c7d102ba	not-for-merge	tag '4.2.0-rc0' of https://github.com/apache/kafka
+6874ea7a3b40a42768380c479f3fb08f8c4a7e55	not-for-merge	tag '4.2.0-rc1' of https://github.com/apache/kafka
+0caf3017930263f6a889ea84db9f7e4024d2d0e9	not-for-merge	tag '4.2.0-rc2' of https://github.com/apache/kafka
+0ab1a16c83be2973e3c28fcc9d8251018185ed5e	not-for-merge	tag '4.2.0-rc3' of https://github.com/apache/kafka
+7c686e809cfa8738bd2c6a3c793a07426963c4c3	not-for-merge	tag '4.2.0-rc4' of https://github.com/apache/kafka
+0ca275dccd788d114b9b30cae8a3a966a7229c1b	not-for-merge	tag '4.2.1' of https://github.com/apache/kafka
+1e75ec1b11ceb854077f45602cb728a5be130b8b	not-for-merge	tag '4.2.1-rc0' of https://github.com/apache/kafka
+42112c127cd2c709f1df4115d2ef53482a5a3d46	not-for-merge	tag '4.2.1-rc1' of https://github.com/apache/kafka
+fccd66c9b5d8946a891b0c7c3f9912c5043b327a	not-for-merge	tag '4.2.1-rc2' of https://github.com/apache/kafka
+c3ec1deb511a7fcefe1e56ece4b73cede18f668c	not-for-merge	tag '4.2.1-rc3' of https://github.com/apache/kafka
+03db00f24d1867993cb7e1e06a931a98d9ab6b55	not-for-merge	tag '4.2.1-rc4' of https://github.com/apache/kafka
+2419a7638205548d253c6edd987746363291166b	not-for-merge	tag '4.2.1-rc5' of https://github.com/apache/kafka
+0ebce2e40db7dd1c8e625c8c0ff396021de1a7b6	not-for-merge	tag '4.2.2' of https://github.com/apache/kafka
+88359dcec9c07a142c16b327fd57b703d746a981	not-for-merge	tag '4.2.2-rc0' of https://github.com/apache/kafka
+fcc78b2edb62763e9d637a5cefb0c7b674a351c5	not-for-merge	tag '4.2.2-rc1' of https://github.com/apache/kafka
+10b563feb33efaa46bc8417428f25171a6f185ef	not-for-merge	tag '4.3.0' of https://github.com/apache/kafka
+2b66299c7c70ddf51b834cfcaed07bf293ef830c	not-for-merge	tag '4.3.0-rc0' of https://github.com/apache/kafka
+ae5ae55e98550c971d96dfcc4c0755042aa4d5dd	not-for-merge	tag '4.3.0-rc1' of https://github.com/apache/kafka
+556546f09821e868cfb9d2448110690f300eca0d	not-for-merge	tag '4.3.0-rc2' of https://github.com/apache/kafka
+a07059eb9b5bac1bfdbb1e74313f2fae4ca20fd9	not-for-merge	tag '4.3.1' of https://github.com/apache/kafka
+5f90b9b62cb12fc6af0ac42fb3735a56d7be018f	not-for-merge	tag '4.3.1-rc0' of https://github.com/apache/kafka
+2dfcd73a536261025d9ac8ec76c58434f5c9c3a0	not-for-merge	tag '4.3.1-rc1' of https://github.com/apache/kafka
+2b5f418315487ab2540a683b2474aa9cb40c7643	not-for-merge	tag '4.3.1-rc2' of https://github.com/apache/kafka
+9c0eb1a7d8ab3bdfa44cffc169341351ec5ed9c2	not-for-merge	tag '4.3.2' of https://github.com/apache/kafka
+84c8fae3df6d0f2ce45d8e1c6c1ac5f92617b414	not-for-merge	tag '4.3.2-rc0' of https://github.com/apache/kafka
+7909baa03004523d85c590c0ab9703c6f5bad04b	not-for-merge	tag '4.3.2-rc1' of https://github.com/apache/kafka
+fff5e36d6db2f80b280a1780b2fb8b27eacffba8	not-for-merge	tag '4.3.2-rc3' of https://github.com/apache/kafka
+9661b1ef7a0120e476399250b31d530792506787	not-for-merge	tag '4.4.0' of https://github.com/apache/kafka
+f2ebfc548a4435fef6f426059c5810693e477eb3	not-for-merge	tag '4.4.0-rc0' of https://github.com/apache/kafka
+10916ac0258021ac2b3fb4d5dba92eade4a2374a	not-for-merge	tag '4.4.0-rc1' of https://github.com/apache/kafka
+dc7b614a5e6d4fb7128a47afbb56db03c055634c	not-for-merge	tag '4.4.0-rc3' of https://github.com/apache/kafka
+9a55f8345f7fa79e1c2481a2841dc58a884d10db	not-for-merge	tag '4.4.0-rc4' of https://github.com/apache/kafka
+9d7f81c1bf1500c428e80c774f790f86c8d5c43a	not-for-merge	tag 'fetch' of https://github.com/apache/kafka
+2f0e21d8095cc80dae24133bf149e288e0f79bf9	not-for-merge	tag 'kafka-0.7.0-incubating-candidate-9' of https://github.com/apache/kafka
+815affcd7166e43a0335b0ea9228b6631e107bf1	not-for-merge	tag 'kafka-0.7.1-incubating-candidate-1' of https://github.com/apache/kafka
+6ffc35859a130f13bddb1909fc1f7f5b7601526f	not-for-merge	tag 'kafka-0.7.1-incubating-candidate-2' of https://github.com/apache/kafka
+e9203b68dfb7a7e58f43951883dfbccb2f9217b9	not-for-merge	tag 'kafka-0.7.1-incubating-candidate-3' of https://github.com/apache/kafka
+7e48211cbc4ec8236609ac33db5c3afa2e82447a	not-for-merge	tag 'kafka-0.7.2-incubating-candidate-1' of https://github.com/apache/kafka
+850bb92737c6b0a3376121bead8a7039da05e258	not-for-merge	tag 'kafka-0.7.2-incubating-candidate-2' of https://github.com/apache/kafka
+fa4eabf18bcbac7fe5535ad51d077934b4ac5ff2	not-for-merge	tag 'kafka-0.7.2-incubating-candidate-3' of https://github.com/apache/kafka
+911afed03bef70ded26bf599787dd678917b370c	not-for-merge	tag 'kafka-0.7.2-incubating-candidate-4' of https://github.com/apache/kafka
+bf2cf29e1d28f08601c298ac9cd226ef6b662d8b	not-for-merge	tag 'kafka-0.7.2-incubating-candidate-5' of https://github.com/apache/kafka
+b0c7d579f8aeb5750573008040a42b7377a651d5	not-for-merge	tag 'show' of https://github.com/apache/kafka

@@ -1,0 +1,1130 @@
+{
+ "id": "406618613",
+ "versions": {
+  "results": [
+   {
+    "by": {
+     "type": "known",
+     "username": "lijuntong",
+     "userKey": "073590d29b4ab60c019b8918430b000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lijun Tong",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8918430b000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-10T03:05:13.000Z",
+    "message": "",
+    "number": 28,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618613/version/28"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618613"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "lijuntong",
+     "userKey": "073590d29b4ab60c019b8918430b000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lijun Tong",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8918430b000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-09T22:46:26.000Z",
+    "message": "",
+    "number": 27,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618613/version/27"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618613?status=historical&version=27"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "lijuntong",
+     "userKey": "073590d29b4ab60c019b8918430b000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lijun Tong",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8918430b000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-09T21:45:55.000Z",
+    "message": "",
+    "number": 26,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618613/version/26"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618613?status=historical&version=26"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "lijuntong",
+     "userKey": "073590d29b4ab60c019b8918430b000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lijun Tong",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8918430b000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-09T17:32:34.000Z",
+    "message": "",
+    "number": 25,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618613/version/25"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618613?status=historical&version=25"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "lijuntong",
+     "userKey": "073590d29b4ab60c019b8918430b000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lijun Tong",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8918430b000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-28T08:48:59.000Z",
+    "message": "",
+    "number": 24,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618613/version/24"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618613?status=historical&version=24"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "lijuntong",
+     "userKey": "073590d29b4ab60c019b8918430b000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lijun Tong",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8918430b000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-28T08:23:02.000Z",
+    "message": "",
+    "number": 23,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618613/version/23"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618613?status=historical&version=23"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "lijuntong",
+     "userKey": "073590d29b4ab60c019b8918430b000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lijun Tong",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8918430b000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-26T05:48:17.000Z",
+    "message": "",
+    "number": 22,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618613/version/22"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618613?status=historical&version=22"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "lijuntong",
+     "userKey": "073590d29b4ab60c019b8918430b000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lijun Tong",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8918430b000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-26T05:41:52.000Z",
+    "message": "",
+    "number": 21,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618613/version/21"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618613?status=historical&version=21"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "lijuntong",
+     "userKey": "073590d29b4ab60c019b8918430b000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lijun Tong",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8918430b000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-26T05:34:53.000Z",
+    "message": "",
+    "number": 20,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618613/version/20"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618613?status=historical&version=20"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "lijuntong",
+     "userKey": "073590d29b4ab60c019b8918430b000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lijun Tong",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8918430b000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-26T05:23:07.000Z",
+    "message": "",
+    "number": 19,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618613/version/19"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618613?status=historical&version=19"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "lijuntong",
+     "userKey": "073590d29b4ab60c019b8918430b000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lijun Tong",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8918430b000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-03-30T17:14:10.000Z",
+    "message": "",
+    "number": 18,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618613/version/18"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618613?status=historical&version=18"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "lijuntong",
+     "userKey": "073590d29b4ab60c019b8918430b000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lijun Tong",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8918430b000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-03-06T00:48:07.000Z",
+    "message": "",
+    "number": 17,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618613/version/17"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618613?status=historical&version=17"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "lijuntong",
+     "userKey": "073590d29b4ab60c019b8918430b000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lijun Tong",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8918430b000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-03-05T21:36:48.000Z",
+    "message": "",
+    "number": 16,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618613/version/16"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618613?status=historical&version=16"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "lijuntong",
+     "userKey": "073590d29b4ab60c019b8918430b000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lijun Tong",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8918430b000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-18T18:29:46.000Z",
+    "message": "",
+    "number": 15,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618613/version/15"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618613?status=historical&version=15"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "lijuntong",
+     "userKey": "073590d29b4ab60c019b8918430b000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lijun Tong",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8918430b000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-15T23:00:12.000Z",
+    "message": "",
+    "number": 14,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618613/version/14"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618613?status=historical&version=14"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "lijuntong",
+     "userKey": "073590d29b4ab60c019b8918430b000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lijun Tong",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8918430b000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-15T22:57:27.000Z",
+    "message": "",
+    "number": 13,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618613/version/13"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618613?status=historical&version=13"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "lijuntong",
+     "userKey": "073590d29b4ab60c019b8918430b000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lijun Tong",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8918430b000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-15T22:21:12.000Z",
+    "message": "",
+    "number": 12,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618613/version/12"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618613?status=historical&version=12"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "lijuntong",
+     "userKey": "073590d29b4ab60c019b8918430b000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lijun Tong",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8918430b000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-05T22:59:51.000Z",
+    "message": "",
+    "number": 11,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618613/version/11"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618613?status=historical&version=11"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "lijuntong",
+     "userKey": "073590d29b4ab60c019b8918430b000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lijun Tong",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8918430b000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-05T21:43:34.000Z",
+    "message": "",
+    "number": 10,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618613/version/10"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618613?status=historical&version=10"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "lijuntong",
+     "userKey": "073590d29b4ab60c019b8918430b000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lijun Tong",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8918430b000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-05T21:33:07.000Z",
+    "message": "",
+    "number": 9,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618613/version/9"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618613?status=historical&version=9"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "lijuntong",
+     "userKey": "073590d29b4ab60c019b8918430b000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lijun Tong",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8918430b000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-05T20:56:49.000Z",
+    "message": "",
+    "number": 8,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618613/version/8"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618613?status=historical&version=8"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "lijuntong",
+     "userKey": "073590d29b4ab60c019b8918430b000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lijun Tong",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8918430b000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-05T20:41:07.000Z",
+    "message": "",
+    "number": 7,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618613/version/7"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618613?status=historical&version=7"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "lijuntong",
+     "userKey": "073590d29b4ab60c019b8918430b000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lijun Tong",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8918430b000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-05T20:40:49.000Z",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618613/version/6"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618613?status=historical&version=6"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "lijuntong",
+     "userKey": "073590d29b4ab60c019b8918430b000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lijun Tong",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8918430b000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-05T19:28:56.000Z",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618613/version/5"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618613?status=historical&version=5"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "lijuntong",
+     "userKey": "073590d29b4ab60c019b8918430b000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lijun Tong",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8918430b000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-05T19:14:49.000Z",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618613/version/4"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618613?status=historical&version=4"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "lijuntong",
+     "userKey": "073590d29b4ab60c019b8918430b000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lijun Tong",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8918430b000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-05T19:12:58.000Z",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618613/version/3"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618613?status=historical&version=3"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "lijuntong",
+     "userKey": "073590d29b4ab60c019b8918430b000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lijun Tong",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8918430b000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-05T06:51:33.000Z",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618613/version/2"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618613?status=historical&version=2"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "lijuntong",
+     "userKey": "073590d29b4ab60c019b8918430b000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lijun Tong",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8918430b000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-05T06:43:41.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618613/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618613?status=historical&version=1"
+    }
+   }
+  ],
+  "start": 0,
+  "limit": 200,
+  "size": 28,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618613/version",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ },
+ "version_bodies": [
+  {
+   "id": "406618613",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1266: Bounding The Number Of RemoteLogMetadata Messages via Compacted Topic",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "lijuntong",
+     "userKey": "073590d29b4ab60c019b8918430b000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lijun Tong",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8918430b000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-09T22:46:26.000Z",
+    "message": "",
+    "number": 27,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618613/version/27"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618613?status=historical&version=27"
+    }
+   },
+   "position": 1259,
+   "body": {
+    "storage": {
+     "value": "<h1><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"ca1c9c69-0f7e-4562-a665-9ff3c26af00b\" /></h1><h1>Status</h1><p><strong>Current state</strong>: <em>[&quot;Under Discussion&quot;]</em></p><p><strong>Discussion thread</strong>: <a href=\"https://lists.apache.org/thread/6mgjxlfqv6lq6bz9qt8mcll28xybr98d\">here</a><br /><strong>JIRA</strong>: <em><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"5227fa59-8135-4dbd-81c9-77f006247fbd\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20033</ac:parameter></ac:structured-macro></em><em><br /></em></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p><strong>Background</strong>: What is __remote_log_metadata and how is it used?</p><ul class=\"ak-ul\"><li><p>Tiered storage: When local segments close, brokers upload them to remote storage (S3/Azure/GCS).</p></li><li><p><em>remote_log_metadata: An internal topic used by TopicBasedRemoteLogMetadataManager to record remote-segment lifecycle events per topic-partition (COPY* and DELETE</em>*), including start/end offsets, leader epoch and timestamps.</p></li><li><p>Why it matters: Brokers maintain an in-memory RemoteLogMetadataCache to answer “which segment contains offset X?” and “what is the highest remote offset?” This cache drives remote fetches and cleanup.</p></li><li><p>How state is built today: On startup/leadership changes, brokers consume the relevant metadata partitions from earliest available offset, replay all events, and rebuild the cache (apply STARTED → FINISHED → optional DELETE states; index by endOffset and leaderEpoch). Because the topic is append-only, full replay is required to compute current state.</p></li></ul><p><strong>Operational challenges</strong></p><p>Problem 1: Unbounded Growth</p><ul class=\"ak-ul\"><li><p>cleanup.policy=delete with infinite retention (-1)</p></li><li><p>All lifecycle events retained forever</p></li><li><p>~1.2M metadata records/year at 1 TB/day upload, topic can grow out of bounds, stressing I/O and page cache</p></li></ul><p>Problem 2: No Cleanup Mechanism</p><ul class=\"ak-ul\"><li><p>Metadata persists after remote segments expire</p></li><li><p>No removal for segments already deleted in remote storage</p></li><li><p>Orphaned records from failed/retried uploads accumulate indefinitely</p></li></ul><p>Problem 3: Slow Bootstrap</p><ul class=\"ak-ul\"><li><p>Full replay from offset 0 to rebuild cache</p></li><li><p>Bootstrap time grows with topic size; restarts and leadership changes take increasingly long time</p></li></ul><p>This KIP aims to solve this issue through making the current topic <code>__remote_log_metadata</code> compacted.</p><h1>Goals</h1><ol class=\"ak-ol\"><li><p>Enable bounded metadata storage to support faster bootstrap for the broker restart/leadership changes: the number of messages in the remote metadata topic is proportional to active remote segments, not the total history.</p></li><li><p>Support metadata cleanup: remove metadata when segments expire from remote storage.</p></li></ol><h1>Non-Goals</h1><ol class=\"ak-ol\"><li><p>Wire-level backward compatibility for keys in the compacted projection (breaking change there is acceptable).</p></li><li><p>Online migration with zero operational steps: clusters that have the tiered storage enabled before must go through an automated migration to adopt the compacted projection change, clusters that don’t have the tiered storage enabled can adopt the change directly without any migration.</p></li><li><p>Support for other RLMM implementations is not considered: focus is on TopicBasedRemoteLogMetadataManager.</p></li></ol><h1>Proposed Changes</h1><ol class=\"ak-ol\"><li><p>Topics and Configurations<br />This KIP updates the behavior and usage of the existing internal topic <code>__remote_log_metadata</code> , the current default configuration for this topic is:</p><ul class=\"ak-ul\"><li><p>cleanup.policy=delete</p></li><li><p><a href=\"http://retention.ms\"><u>retention.ms</u></a>=-1 <br /><br />With this change, the topic's configuration can be updated to be compacted:</p></li><li><p>cleanup.policy=compact</p></li><li><p>min.cleanable.dirty.ratio=0.1</p></li><li><p><a href=\"http://delete.retention.ms\">delete.retention.ms</a>=86400000 // 1 day</p></li><li><p><a href=\"http://segment.ms\">segment.ms</a>=3600000 // 1 hour</p><p>Once the topic becomes compacted, it will only has bounded number of messages for cache bootstrap and steady-state reads; supports tombstones</p></li></ul></li><li><p><span class=\"css-textHasAncestor-1jxf684 unistyles_2a7hse6hphi r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Keyed Metadata Records in __remote_log_metadata</span><br />All metadata records in __remote_log_metadata become <strong>keyed</strong>. The <strong>value</strong> carries the detailed metadata; the <strong>key</strong> defines the uniqueness and compaction behavior.<br /><strong><span class=\"css-textHasAncestor-1jxf684 unistyles_20e3u2kmncu r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Key Format: </span><span class=\"css-textHasAncestor-1jxf684 unistyles_1psnyyc6epf r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text-accent-purple-bolder,#352c63);\">TopicIdPartition:TopicName:Partition:EndOffset:BrokerLeaderEpoch</span></strong></p><p><span class=\"css-textHasAncestor-1jxf684 unistyles_2df0b5zp8il r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Example:</span><br /><span class=\"css-textHasAncestor-1jxf684 unistyles_1psnyyc6epf r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text-accent-purple-bolder,#352c63);\">T8fJ9Kz3RyWxP2mQ4nL7vB:topicA:0:1999:5</span></p><p><span class=\"css-textHasAncestor-1jxf684 unistyles_20e3u2kmncu r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Key Components</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_1b4tkabg5z4 r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">TopicIdPartition</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">: Unique UUID identifying the topic and partition</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_1b4tkabg5z4 r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">TopicName</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">: Human-readable topic name</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_1b4tkabg5z4 r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Partition</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">: Partition number</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_1b4tkabg5z4 r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">EndOffset</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">: Last offset in the segment (deterministic since tiered storage only uploads closed segments)</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_1b4tkabg5z4 r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">BrokerLeaderEpoch</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">: Leader epoch of the broker that owned the topic-partition during upload, disambiguating concurrent/retry scenarios</span></p><p><br /><strong><span class=\"css-textHasAncestor-1jxf684 unistyles_20e3u2kmncu r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Properties and Behavior</span></strong><br /><span class=\"css-textHasAncestor-1jxf684 unistyles_2df0b5zp8il r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">For Segment Metadata:</span></p><ul class=\"ak-ul\"><li><p>For <strong>the same segment</strong> under <strong>the same leader epoch</strong>, retries or updates share the same key (compaction keeps the latest state).</p></li><li><p>For <strong>the same segment</strong> under <strong>different leader epochs</strong>, records use <strong>different keys</strong>, allowing the system to distinguish concurrent or overlapping uploads across different brokers.</p></li></ul><p><br /><span class=\"css-textHasAncestor-1jxf684 unistyles_2df0b5zp8il r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">State Transition Keys:</span><br /><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">All segment lifecycle state transitions use the same key with an </span><span class=\"css-textHasAncestor-1jxf684 unistyles_nr0q36tpsr r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">:UPDATE</span><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\"> suffix:</span><br /><strong><span class=\"css-textHasAncestor-1jxf684 unistyles_1psnyyc6epf r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text-accent-purple-bolder,#352c63);\">TopicIdPartition:TopicName:Partition:EndOffset:BrokerLeaderEpoch:UPDATE</span></strong></p><p><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">This applies to all state transitions in the segment lifecycle:</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_17s4ri2cyiz r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">COPY_SEGMENT_STARTED</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\"> → </span><span class=\"css-textHasAncestor-1jxf684 unistyles_17s4ri2cyiz r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">COPY_SEGMENT_FINISHED</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_17s4ri2cyiz r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">COPY_SEGMENT_FINISHED</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\"> → </span><span class=\"css-textHasAncestor-1jxf684 unistyles_17s4ri2cyiz r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">DELETE_SEGMENT_STARTED</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_17s4ri2cyiz r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">DELETE_SEGMENT_STARTED</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\"> → </span><span class=\"css-textHasAncestor-1jxf684 unistyles_17s4ri2cyiz r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">DELETE_SEGMENT_FINISHED</span><br /><span class=\"css-textHasAncestor-1jxf684 unistyles_2df0b5zp8il r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Rationale for :UPDATE Suffix:</span><br /><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">The </span><span class=\"css-textHasAncestor-1jxf684 unistyles_nr0q36tpsr r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">:UPDATE</span><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\"> suffix is necessary to differentiate state transition records from the initial segment metadata record. This design avoids duplicating fields (such as </span><span class=\"css-textHasAncestor-1jxf684 unistyles_nr0q36tpsr r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">SegmentLeaderEpochs</span><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">, </span><span class=\"css-textHasAncestor-1jxf684 unistyles_nr0q36tpsr r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">MaxTimestampMs</span><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">, </span><span class=\"css-textHasAncestor-1jxf684 unistyles_nr0q36tpsr r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">SegmentSizeInBytes</span><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">, etc.) in </span><span class=\"css-textHasAncestor-1jxf684 unistyles_nr0q36tpsr r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">RemoteLogSegmentMetadataUpdateRecord</span><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\"> that already exist in </span><span class=\"css-textHasAncestor-1jxf684 unistyles_nr0q36tpsr r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">RemoteLogSegmentMetadataRecord</span><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">. By using distinct keys:</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">The full segment metadata record compacts independently (contains all segment details)</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">State transition records compact independently (contains only state and timestamp)</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Both can coexist without redundant field duplication</span></p><p><br /></p></li><li><p>Broker Write Path<br />The broker continues to write lifecycle events for remote log segments and partitions, but now with:</p><ul class=\"ak-ul\"><li><p>Deterministic keys.</p></li><li><p>Tombstone semantics once the log segment is expired.</p></li></ul></li></ol><h4>           Lifecycle events</h4><ul><li style=\"list-style-type: none;\"><ul class=\"ak-ul\"><li><p>Segment upload:</p><ul class=\"ak-ul\"><li><p>COPY_SEGMENT_STARTED</p></li><li><p>COPY_SEGMENT_FINISHED</p></li></ul></li><li><p>Segment deletion:</p><ul class=\"ak-ul\"><li><p>DELETE_SEGMENT_STARTED</p></li><li><p>DELETE_SEGMENT_FINISHED</p></li></ul></li><li><p>Partition deletion:</p><ul class=\"ak-ul\"><li><p>DELETE_PARTITION_STARTED</p></li><li><p>DELETE_PARTITION_FINISHED</p></li></ul></li></ul></li></ul><p>It will also receive the tombstone messages for those expired metadata messages, expired metadata messages are defined as the messages that belong to the log segments that are already in the <em><strong>DELETE_SEGMENT_FINISHED</strong></em> states. </p><p>A series of tombstone messages will be published for all the keys that share the same prefix <code>topicIdPartition:endOffset</code>  and keys that have no bigger brokerLeaderEpoch than the current one. While the original storeRemoteLogMetadata() method will wait for the consumer of <code>__remote_log_metadata</code>  to finish the consumption of the latest <em><strong>DELETE_SEGMENT_FINISHED</strong></em> message, in order to minimize the impact for the performance, for the tombstone messages, the consumers will finish the consumption asynchronously.</p><p>4. Broker Read Path</p><p>There is no change in how the <code>ConsumerTask</code> read the messages and build the state in <code>TopicBasedRemoteLogMetadataManager</code>  since there is not much meaningful value format change.</p><p>There is no change to <code>RemoteLogMetadataTopicPartitioner</code>  neither.</p><h1>User Scenario</h1><h2>RemoteLogSegmentState Enum Values</h2><table class=\"wrapped relative-table\" style=\"width: 47.8343%;\"><colgroup><col style=\"width: 11.6402%;\" /><col style=\"width: 42.6148%;\" /><col style=\"width: 45.745%;\" /></colgroup><tbody><tr><th><p>Value</p></th><th><p>State</p></th><th><p>Description</p></th></tr><tr><td><p>0</p></td><td><p>COPY_SEGMENT_STARTED</p></td><td><p>Upload in progress</p></td></tr><tr><td><p>1</p></td><td><p>COPY_SEGMENT_FINISHED</p></td><td><p>Upload completed successfully</p></td></tr><tr><td><p>2</p></td><td><p>DELETE_SEGMENT_STARTED</p></td><td><p>Deletion in progress</p></td></tr><tr><td><p>3</p></td><td><p>DELETE_SEGMENT_FINISHED</p></td><td><p>Deletion completed</p></td></tr></tbody></table><h2>Scenario 1: Normal Segment Upload</h2><p><strong>Context</strong>: Topic <code>orders</code>   (ID:  <code>abc123</code> )</p><p>Partition 0, Broker 101 at epoch 3</p><h3>Timeline &amp; Messages</h3><table class=\"wrapped relative-table\" style=\"width: 78.3427%;\"><colgroup><col style=\"width: 6.61836%;\" /><col style=\"width: 17.8094%;\" /><col style=\"width: 35.9824%;\" /><col style=\"width: 39.5898%;\" /></colgroup><tbody><tr><th><p>Time</p></th><th><p>Event</p></th><th><p>Message Key in the Compacted Topic</p></th><th><p>Value</p></th></tr><tr><td><p>T1</p></td><td><p>Start upload</p></td><td><code>abc123:topicA:0:1000:3</code> </td><td><p>apiKey=0, uuid=UUID-A, state=0 (STARTED)</p></td></tr><tr><td><p>T2</p></td><td><p>Upload completes</p></td><td><code>abc123:topicA:0:1000:3:UPDATE</code></td><td><p>apiKey=1, uuid=UUID-A, state=1 (FINISHED)</p></td></tr></tbody></table><h3>After Compaction</h3><p><strong>Compacted topic</strong>: Retains only latest → <code>abc123:topicA:0:1000:3</code>  = FINISHED (T1 compacted away)</p><p><strong>Cache result</strong>: 1 segment with uuid=UUID-A, endOffset=1000, state=FINISHED</p><h2>Scenario 2: Leadership Change During Upload</h2><p><strong>Context</strong>: Broker 101 (epoch 3) starts upload, leadership changes to Broker 102 (epoch 4), both complete</p><h3>Timeline &amp; Messages</h3><table class=\"wrapped relative-table\" style=\"width: 85.5447%;\"><colgroup><col style=\"width: 6.04856%;\" /><col style=\"width: 20.6795%;\" /><col style=\"width: 27.5322%;\" /><col style=\"width: 45.6912%;\" /></colgroup><tbody><tr><th><p>Time</p></th><th><p>Event</p></th><th><p>Key</p></th><th><p>Value</p></th></tr><tr><td><p>T1</p></td><td><p>Broker 101 starts</p></td><td><p><code>abc123:topicA:0:2000:3</code> </p></td><td><p>apiKey=0, uuid=UUID-A, state=0, epoch=3</p></td></tr><tr><td><p>T2</p></td><td><p>Leadership → 102</p></td><td><p>-</p></td><td><p>-</p></td></tr><tr><td><p>T3</p></td><td><p>Broker 102 starts</p></td><td><code>abc123:topicA:0:2000:4</code> </td><td><p>apiKey=0, uuid=UUID-B, state=0, epoch=4 ← Different key!</p></td></tr><tr><td><p>T4</p></td><td><p>Broker 101 finishes</p></td><td><code>abc123:topicA:0:2000:3:</code>UPDATE</td><td><p>apiKey=1, uuid=UUID-A, state=1, epoch=3</p></td></tr><tr><td><p>T5</p></td><td><p>Broker 102 finishes</p></td><td><code>abc123:topicA:0:2000:4:UPDATE</code></td><td><p>apiKey=1, uuid=UUID-B, state=1, epoch=4</p></td></tr></tbody></table><h3>After Compaction</h3><p><strong>Compacted topic</strong>: 2 keys, each with latest state</p><ul class=\"ak-ul\"><li><p><code>abc123:topicA:0:2000:3</code> → FINISHED (UUID-A, orphaned)</p></li><li><p> <code>abc123:topicA:0:2000:4</code> → FINISHED (UUID-B, active)</p></li></ul><p><strong>Cache result</strong>: Returns both segments, selects UUID-B (epoch 4 &gt; 3) for reads</p><hr /><h2>Scenario 3: Failed Upload Under the Same Leader Epoch</h2><p><strong>Context</strong>: Broker 101 (epoch 5) tries upload, fails, retries with new UUID</p><h3>Timeline &amp; Messages</h3><table class=\"wrapped relative-table\" style=\"width: 92.3184%;\"><colgroup><col style=\"width: 5.52468%;\" /><col style=\"width: 18.012%;\" /><col style=\"width: 33.8203%;\" /><col style=\"width: 42.6082%;\" /></colgroup><tbody><tr><th><p>Time</p></th><th><p>Event</p></th><th><p>Key</p></th><th><p>Value</p></th></tr><tr><td><p>T1</p></td><td><p>First attempt</p></td><td><code>abc123:topicA:0:3000:5</code> </td><td><p>apiKey=0, uuid=UUID-A, state=0</p></td></tr><tr><td><p>T2</p></td><td><p>Network timeout</p></td><td><p>-</p></td><td><p>(no message)</p></td></tr><tr><td><p>T3</p></td><td><p>Retry</p></td><td><code>abc123:topicA:0:3000:5</code> </td><td><p>apiKey=0, uuid=UUID-B, state=0 ← Same key, different UUID!</p></td></tr><tr><td><p>T4</p></td><td><p>Success</p></td><td><code>abc123:topicA:0:3000:5:UPDATE</code></td><td><p>apiKey=1, uuid=UUID-B, state=1</p></td></tr></tbody></table><h3>After Compaction</h3><p><strong>Compacted topic</strong>: Retains only latest → <code>abc123:topicA:0:3000:5</code>  = FINISHED (UUID-B)</p><p><strong>Cache result</strong>: Only UUID-B appears (UUID-A compacted away)</p><p><strong>Key insight</strong>: Same epoch = same key, but new UUID for each attempt</p><hr /><h2>Scenario 4: Segment Deletion</h2><p><strong>Context</strong>: Segment at endOffset=1000 has 3 upload keys (epochs 3,4,5), now being deleted by current leader (epoch 6)</p><h3>Initial State</h3><p><code>abc123:topicA:0:1000:3 → FINISHED (UUID-A, orphaned)\n</code></p><p><code>abc123:topicA:0:1000:4 → FINISHED (UUID-B, orphaned)\n</code></p><p><code>abc123:topicA:0:1000:5 → FINISHED (UUID-C, active)\n</code></p><h3>Timeline &amp; Messages</h3><table class=\"wrapped relative-table\" style=\"width: 60.992%;\"><colgroup><col style=\"width: 11.2545%;\" /><col style=\"width: 28.1362%;\" /><col style=\"width: 28.1362%;\" /><col style=\"width: 53.3583%;\" /></colgroup><tbody><tr><th><p>Time</p></th><th><p>Event</p></th><th><p>Key</p></th><th><p>Value</p></th></tr><tr><td><p>T1</p></td><td><p>Retention triggers</p></td><td><p>-</p></td><td><p>(identify segment)</p></td></tr><tr><td><p>T2</p></td><td><p>Delete from S3</p></td><td><p>-</p></td><td><p>(physical deletion)</p></td></tr><tr><td><p>T3</p></td><td><p>Mark deletion</p></td><td><p><code>abc123:topicA:0:1000:6:UPDATE</code></p></td><td><p>apiKey=1, state=2 (DELETE_STARTED)</p></td></tr><tr><td><p>T4</p></td><td><p>Deletion finished</p></td><td><code>abc123:topicA:0:1000:6:UPDATE</code></td><td><p>apiKey=1, state=3 (DELETE_FINISHED)</p></td></tr><tr><td><p>T5</p></td><td><p>Tombstone epoch 3</p></td><td><code>abc123:topicA:0:1000:3:UPDATE</code></td><td><p>null</p></td></tr><tr><td><p>T5.5</p></td><td><p><br /></p></td><td><code>abc123:topicA:0:1000:3</code></td><td><p>null</p></td></tr><tr><td><p>T6</p></td><td><p>Tombstone epoch 4</p></td><td><code>abc123:topicA:0:1000:4:UPDATE</code></td><td><p>null</p></td></tr><tr><td><p>T6.5</p></td><td><p><br /></p></td><td><code>abc123:topicA:0:1000:4</code></td><td><p>null</p></td></tr><tr><td><p>T7</p></td><td><p>Tombstone epoch 5</p></td><td><code>abc123:topicA:0:1000:5:UPDATE</code></td><td><p>null</p></td></tr><tr><td><p>T7.5</p></td><td><p><br /></p></td><td><code>abc123:topicA:0:1000:5</code></td><td><p>null</p></td></tr><tr><td><p>T8</p></td><td><p>Tombstone epoch 6</p></td><td><code>abc123:topicA:0:1000:6:UPDATE</code></td><td><p>null</p></td></tr><tr><td><p>T8.5</p></td><td><p><br /></p></td><td><code>abc123:topicA:0:1000:6</code></td><td><p>null</p></td></tr><tr><td><p>T5+24Hour</p></td><td><p>Message that has key as <code>abc123:0:1000:3</code> deleted</p></td><td>-</td><td><p>-</p></td></tr><tr><td><p>T6+24Hour</p></td><td><p>Message that has key as<br /><code>abc123:0:1000:4 deleted</code></p></td><td>-</td><td><p>-</p></td></tr><tr><td><p>T7+24Hour</p></td><td><p><code>Message that has key as<br />abc123:0:1000:5 deleted</code></p></td><td>-</td><td><p>-</p></td></tr><tr><td><p>T8+24Hour</p></td><td><p>Message that has key as<br /><code>abc123:0:1000:6 deleted</code></p></td><td>-</td><td><p>-</p></td></tr></tbody></table><h3>Tombstone Details (Compacted Topic ONLY)</h3><p>After DELETE_FINISHED (T4), tombstones written for ALL 8 keys:</p><p><code>abc123:topicA:0:1000:3 → null  (epoch 3, UUID-A)</code></p><p><code>abc123:topicA:0:1000:3:UPDATE → null  (epoch 3, UUID-A)</code></p><p><code>abc123:topicA:0:1000:4 → null  (epoch 4, UUID-B)</code></p><p><code>abc123:topicA:0:1000:4:UPDATE → null  (epoch 4, UUID-B)</code></p><p><code>abc123:topicA:0:1000:5 → null  (epoch 5, UUID-C)</code></p><p><code>abc123:topicA:0:1000:5:UPDATE → null  (epoch 5, UUID-C)</code></p><p><code>abc123:topicA:0:1000:6 → null  (epoch 6, deletion marker)</code></p><p><code>abc123:topicA:0:1000:6:UPDATE → null  (epoch 5, deletion marker)</code></p><p><br /></p><h3>After Compaction</h3><p><strong>Compacted topic</strong>: All 4 keys removed (segment completely forgotten)</p><p><strong>Cache result</strong>: Empty (segment no longer exists)</p><p><strong>Why tombstone all 8 keys?</strong></p><ul class=\"ak-ul\"><li><p>Remove all historical metadata (successful + orphaned uploads + deletion marker)</p></li><li><p>Ensures compacted topic completely &quot;forgets&quot; this segment</p></li></ul><hr /><h2>Scenario 5: Partition Deletion</h2><p><strong>Context</strong>: Entire partition deleted, cleanup all segments</p><h3>Timeline &amp; Messages</h3><table class=\"wrapped relative-table\" style=\"width: 64.9718%;\"><colgroup><col style=\"width: 7.98182%;\" /><col style=\"width: 28.154%;\" /><col style=\"width: 13.3514%;\" /><col style=\"width: 50.5127%;\" /></colgroup><tbody><tr><th><p>Time</p></th><th><p>Event</p></th><th><p>Key</p></th><th><p>Value</p></th></tr><tr><td><p>T1</p></td><td><p>Start partition delete</p></td><td><code>abc123:topicA:0</code> </td><td><p>apiKey=2, state=DELETE_PARTITION_STARTED</p></td></tr><tr><td><p>T2</p></td><td><p>Partition delete done</p></td><td><code>abc123:topicA:0</code> </td><td><p>apiKey=2, state=DELETE_PARTITION_FINISHED</p></td></tr></tbody></table><h3>Cleanup Process</h3><p><strong>Compacted topic</strong>: All segment keys for <code>abc123:topicA:0:*:*</code>  get tombstones, partition delete marker remains</p><hr /><h1>Public Interfaces</h1><p>This KIP will add 2 new fields to the following records to help construct the message’s key published to the compacted topic, one is the logSegment’s endOffset and another one is brokerLeaderEpoch.</p><p>A backfill strategy to convert the current message to the new message will be shared in the migration plan part to make sure there is no public visible changes to the Kafka users.</p><p>RemoteLogSegmentMetadataRecord.json</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"0db19768-5084-4c96-ad11-bb25a83638ca\"><ac:plain-text-body><![CDATA[[\n//...\n  {\n    \"name\": \"BrokerId\",\n    \"type\": \"int32\",\n    \"versions\": \"0+\"\n  },\n  {\n    \"name\": \"RemoteLogSegmentId\",\n    \"type\": \"RemoteLogSegmentIdEntry\",\n    \"versions\": \"0+\"\n  },\n  {\n    \"name\": \"StartOffset\",\n    \"type\": \"int64\",\n    \"versions\": \"0+\"\n  },\n  {\n    \"name\": \"EndOffset\",\n    \"type\": \"int64\",\n    \"versions\": \"0+\"\n  },\n  {\n    \"name\": \"BrokerId\",\n    \"type\": \"int32\",\n    \"versions\": \"0+\"\n  },\n    {\n      \"name\": \"BrokerLeaderEpoch\",\n      \"type\": \"int32\",\n      \"versions\": \"1+\",\n      \"about\": \"The leader epoch of the broker (partition leader epoch) at the time this update is being published.\",\n      \"taggedVersions\": \"1+\",\n      \"tag\": 0\n    }\n]]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p>RemoteLogSegmentMetadataUpdateRecord.json</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"af33eff1-02cc-4fd1-a130-887b05b0f788\"><ac:plain-text-body><![CDATA[[\n  {\n    \"name\": \"RemoteLogSegmentId\",\n    \"type\": \"RemoteLogSegmentIdEntry\",\n    \"versions\": \"0+\"\n  },\n  {\n    \"name\": \"BrokerId\",\n    \"type\": \"int32\",\n    \"versions\": \"0+\"\n  },\n  //...\n  {\n    \"name\": \"RemoteLogSegmentState\",\n    \"type\": \"int8\",\n    \"versions\": \"0+\"\n  },\n    {\n      \"name\": \"BrokerLeaderEpoch\",\n      \"type\": \"int32\",\n      \"versions\": \"1+\",\n      \"about\": \"The leader epoch of the broker (partition leader epoch) at the time this update is being published.\",\n      \"taggedVersions\": \"1+\",\n      \"tag\": 0\n    },\n    {\n      \"name\": \"EndOffset\",\n      \"type\": \"int64\",\n      \"versions\": \"1+\",\n      \"about\": \"End offset of the segment being updated.\",\n      \"taggedVersions\": \"1+\",\n      \"tag\": 1\n    }\n]]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p>RemotePartitionDeleteMetadataRecord.json</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"74b9583c-4abe-4e86-b3e5-c38aa039a3dd\"><ac:plain-text-body><![CDATA[[\n  {\n    \"name\": \"TopicIdPartition\",\n    \"type\": \"TopicIdPartitionEntry\",\n    \"versions\": \"0+\"\n  },\n  {\n    \"name\": \"BrokerId\",\n    \"type\": \"int32\",\n    \"versions\": \"0+\"\n  },\n  {\n    \"name\": \"EventTimestampMs\",\n    \"type\": \"int64\",\n    \"versions\": \"0+\"\n  },\n  {\n    \"name\": \"RemotePartitionDeleteState\",\n    \"type\": \"int8\",\n    \"versions\": \"0+\"\n  },\n    {\n      \"name\": \"BrokerLeaderEpoch\",\n      \"type\": \"int32\",\n      \"versions\": \"1+\",\n      \"about\": \"The leader epoch of the broker (partition leader epoch) at the time this update is being published.\",\n      \"taggedVersions\": \"1+\",\n      \"tag\": 0\n    },\n    {\n      \"name\": \"EndOffset\",\n      \"type\": \"int64\",\n      \"versions\": \"1+\",\n      \"about\": \"End offset of the segment being updated.\",\n      \"taggedVersions\": \"1+\",\n      \"tag\": 1\n    }\n]]]></ac:plain-text-body></ac:structured-macro><h1>Compatibility, Deprecation, and Migration Plan</h1><p>For the message compatibility in the remote metadata topic, since the new fields are tagged fields, there will be no forward compatibility issue.</p><h2>Migration Plan</h2><p><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">The </span><span class=\"css-textHasAncestor-1jxf684 unistyles_nr0q36tpsr r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">remote.log.metadata.version</span><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\"> feature is introduced to enables a safe migration from time-based deletion to space-efficient log compaction through a three-version upgrade path.</span><span class=\"css-textHasAncestor-1jxf684 unistyles_2df0b5zp8il r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Versions:</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_1b4tkabg5z4 r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Version 0</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">: Messages use null keys with </span><span class=\"css-textHasAncestor-1jxf684 unistyles_17s4ri2cyiz r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">cleanup.policy=delete</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">. Cannot use compaction. This is the default and starting value for the field.</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_1b4tkabg5z4 r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Version 1</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">: Topic uses </span><span class=\"css-textHasAncestor-1jxf684 unistyles_17s4ri2cyiz r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">cleanup.policy=compact,delete</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\"> with customized retention to safely expire old null-key messages while enabling compaction for new keyed messages.</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_1b4tkabg5z4 r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Version 2</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">: Pure </span><span class=\"css-textHasAncestor-1jxf684 unistyles_17s4ri2cyiz r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">cleanup.policy=compact</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\"> mode. Removes retention limits for more aggressive compaction. Requires validation that no null-key messages remain in the topic.</span></p><p>Once the feature level is upgraded, <strong>downgrading or disabling the feature is not supported</strong>.</p><h3>Scenario 1: New Cluster (Fresh Install)</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"6e08a460-52fa-461f-9a5d-00952ff01d5f\"><ac:plain-text-body><![CDATA[kafka-storage.sh format -t <cluster-id> -c server.properties\nkafka-server-start.sh server.properties]]></ac:plain-text-body></ac:structured-macro><p><br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- `<span style=\"color:var(--ds-text-accent-gray,#44546f);\">remote.log.metadata.version</span></span><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">` </span>automatically set to 2 (LATEST_PRODUCTION)<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Topic created with <span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>cleanup.policy=compact<span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`<br /></span><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>All messages have keys from the start<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>No migration required<span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\"><br /></span></p><h3>Scenario 2: Existing Cluster with Tiered Storage Already Enabled</h3><p>For clusters that already have tiered storage enabled and an existing  <span>__remote_log_metadata</span> topic populated with historical metadata, the migration is incremental and non-disruptive.</p><p>Once the broker image with this KIP change runs on the machine, the broker will start to emit messages with keys, but the topic config change only happens with human operation.</p><p>A script kafka-remote-log-metadata-migration.sh will be provided to assist the migration. A metadata record with key remote.log.metadata.version will be used to track the progress of migration.</p><p><br />Upgrade Path<span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\"> </span>(0 → 1 → 2):</p><h4><br />Step 1: Upgrade to Version 1</h4><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"173770e4-011f-43e0-81de-476d1d75d50a\"><ac:plain-text-body><![CDATA[kafka-remote-log-metadata-migration.sh \\\n--bootstrap-server localhost:9092 \\\n--upgrade-to-v1 \\\n--retention-ms 1209600000 # 14 days]]></ac:plain-text-body></ac:structured-macro><p><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\"><br /></span>Result:<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Topic config: <span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>cleanup.policy=compact,delete<span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>, <span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>retention.ms=1209600000<span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>, <span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>min.compaction.lag.ms=1209600000<span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>, <span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>segment.ms=604800000<span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`<br /></span><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Feature: <span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>remote.log.metadata.version=1<span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`<br /></span><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>New messages have keys, old null-key messages will expire via retention</p><h4>Step 2: Wait for Retention Period</h4><p><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Wait at least 14 days (or your specified retention period)<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Allows all null-key messages to expire naturally<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Log cleaner won't compact yet (blocked by min.compaction.lag.ms)</p><h4>Step 3: Validate and Upgrade to Version 2</h4><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"8d2cc2d7-b603-4b76-9882-587604a3aab3\"><ac:plain-text-body><![CDATA[kafka-remote-log-metadata-migration.sh \\\n--bootstrap-server localhost:9092 \\\n--check \\\n--upgrade-to-v2]]></ac:plain-text-body></ac:structured-macro><p>Result:<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Tool displays retention reminder and checks if enough time has passed<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Scans topic for null-key messages<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Records last null-key message timestamp and suggests retry time if validation fails<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>If validation passes:<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Feature: <span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>remote.log.metadata.version=2<span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`<br /></span><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\"> - </span>Topic config: <span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>cleanup.policy=compact<span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">` </span>(min.compaction.lag.ms and retention.ms overrides removed)<br /><br /></p><h3>Scenario 3: Existing Cluster Enabling Tiered Storage for First Time</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"278bb748-c6fe-4142-902c-b2f24a9f8abc\"><ac:plain-text-body><![CDATA[# Edit server.properties\nremote.log.storage.system.enable=true\n\n# Restart broker\nkafka-server-start.sh server.properties\n\n# Manually upgrade feature\nkafka-features.sh upgrade --feature remote.log.metadata.version=2]]></ac:plain-text-body></ac:structured-macro><p><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\"><br /></span><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Feature version starts at 0 (not automatically upgraded)<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Topic will be created with the correct config on first use<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>The feature value needs to be upgraded to 2 manually while no change will be applied to the topic.</p><p><br /></p><h1>Migration Script Sample Running Result</h1><p><strong>Help</strong></p><p>usage: kafka-remote-log-metadata-migration</p><p class=\"p1\">       [-h] --bootstrap-server BOOTSTRAP_SERVER [--command-config COMMAND_CONFIG] [--upgrade-to-v1] [--check] [--upgrade-to-v2] [--auto-upgrade] [--force]</p><p class=\"p1\">       [--retention-ms RETENTION_MS] [--segment-ms SEGMENT_MS] [--timeout-ms TIMEOUT_MS]</p><p class=\"p2\"><br /></p><p class=\"p1\">Tool to manage remote.log.metadata.version upgrades and migrate the __remote_log_metadata topic.</p><p class=\"p2\"><br /></p><p class=\"p1\">optional arguments:</p><p class=\"p1\">  -h, --help             show this help message and exit</p><p class=\"p1\">  --bootstrap-server BOOTSTRAP_SERVER</p><p class=\"p1\">                         REQUIRED: A comma-separated list of host:port pairs to use for establishing the connection to the Kafka cluster.</p><p class=\"p1\">  --command-config COMMAND_CONFIG</p><p class=\"p1\">                         Property file containing configs to be passed to Admin/Consumer Client.</p><p class=\"p1\">  --upgrade-to-v1        Upgrade from remote.log.metadata.version=0 to version 1, and configure topic with <a href=\"http://min.compaction.lag.ms\">min.compaction.lag.ms</a>. (default: false)</p><p class=\"p1\">  --check                Check if the topic contains any messages with null keys. This is required before upgrading to version 2. (default: false)</p><p class=\"p1\">  --upgrade-to-v2        Upgrade to remote.log.metadata.version=2 after validation. Requires --check and --auto-upgrade. (default: false)</p><p class=\"p1\">  --auto-upgrade         Automatically upgrade to version 2 if validation passes. Must be  used  with  --check --upgrade-to-v2. This is a safety flag to prevent accidental upgrades. (default: false)</p><p class=\"p1\">  --force                Force upgrade to version 2 even if null-key messages  are  found.  Use  with  caution: null-key messages will be lost during compaction. (default:</p><p class=\"p1\">                         false)</p><p class=\"p1\">  --retention-ms RETENTION_MS</p><p class=\"p1\">                         Retention period in milliseconds for the __remote_log_metadata topic when  upgrading  to  version  1 (default: 1209600000, which is 14 days). This</p><p class=\"p1\">                         parameter is CRITICAL: it serves two purposes: 1) <a href=\"http://retention.ms\">retention.ms</a>: Ensures  old-format  (null-key) messages expire and are deleted after this period.</p><p class=\"p1\">                         2) <a href=\"http://min.compaction.lag.ms\">min.compaction.lag.ms</a>: Set to the same value to prevent log cleaner  from  compacting before old messages expire. Once the topic cleanup policy</p><p class=\"p1\">                         is changed to 'compact,delete', the log cleaner could  immediately  delete  null-key  messages during compaction. By setting both <a href=\"http://retention.ms\">retention.ms</a> and</p><p class=\"p1\">                         <a href=\"http://min.compaction.lag.ms\">min.compaction.lag.ms</a> to the same value, we ensure null-key  messages  expire  naturally  via  retention before the log cleaner begins compacting.</p><p class=\"p1\">                         This prevents data loss during the migration period. Used with --upgrade-to-v1. (default: 1209600000)</p><p class=\"p1\">  --segment-ms SEGMENT_MS</p><p class=\"p1\">                         Segment rolling time in milliseconds for the __remote_log_metadata topic  when  upgrading  to  version 1 (default: 86400000, which is 1 day). This</p><p class=\"p1\">                         controls how frequently new log segments are created. Smaller  values  create  more segments, which can improve compaction efficiency but increase</p><p class=\"p1\">                         overhead. Used with --upgrade-to-v1. (default: 86400000)</p><p class=\"p1\">  --timeout-ms TIMEOUT_MS</p><p class=\"p1\">                         Maximum time in milliseconds to wait while checking for messages (default: 60000). Used with --check. (default: 60000)</p><p class=\"p1\"><br /></p><p class=\"p1\"><strong>Upgrade-to-v1</strong></p><p>./bin/kafka-remote-log-metadata-migration.sh \\<br />  --bootstrap-server localhost:9092 \\<br />  --upgrade-to-v1 \\<br />  --retention-ms 600000 <br />Initiating upgrade to remote.log.metadata.version=1...</p><p>SLF4J: Class path contains multiple SLF4J bindings.<br />SLF4J: Found binding in [jar:<a href=\"http://file/Users/lijuntong/Documents/kafka/kafka/tools/build/dependant-libs-2.13.18/log4j-slf4j-impl-2.25.4.jar!/org/slf4j/impl/StaticLoggerBinder.class\">file:/Users/lijuntong/Documents/kafka/kafka/tools/build/dependant-libs-2.13.18/log4j-slf4j-impl-2.25.4.jar!/org/slf4j/impl/StaticLoggerBinder.class</a>]<br />SLF4J: Found binding in [jar:<a href=\"http://file/Users/lijuntong/Documents/kafka/kafka/connect/runtime/build/dependant-libs/log4j-slf4j-impl-2.25.4.jar!/org/slf4j/impl/StaticLoggerBinder.class\">file:/Users/lijuntong/Documents/kafka/kafka/connect/runtime/build/dependant-libs/log4j-slf4j-impl-2.25.4.jar!/org/slf4j/impl/StaticLoggerBinder.class</a>]<br />SLF4J: See <a href=\"http://www.slf4j.org/codes.html#multiple_bindings\">http://www.slf4j.org/codes.html#multiple_bindings</a> for an explanation.<br />SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]<br />Current remote.log.metadata.version: 0<br />Pre-configuring __remote_log_metadata topic...<br />  - cleanup.policy=compact,delete<br />  - <a href=\"http://retention.ms\">retention.ms</a>=600000 <br />  - <a href=\"http://min.compaction.lag.ms\">min.compaction.lag.ms</a>=600000<br />  - <a href=\"http://segment.ms\">segment.ms</a>=86400000</p><p>IMPORTANT: <a href=\"http://retention.ms\">retention.ms</a> and <a href=\"http://min.compaction.lag.ms\">min.compaction.lag.ms</a> are critical for safe migration.<br />Once cleanup.policy becomes 'compact,delete', the log cleaner can immediately delete null-key messages during compaction.<br />Setting <a href=\"http://retention.ms\">retention.ms</a>=600000ms ensures old-format (null-key) messages expire after 0 days.<br />Setting <a href=\"http://min.compaction.lag.ms\">min.compaction.lag.ms</a> to the same value ensures the log cleaner waits 0 days before compacting,<br />allowing null-key messages to expire naturally via retention before compaction begins.<br />This prevents data loss during the migration period.</p><p>✅ Topic configurations updated successfully.</p><p>Upgrading feature to version 1...<br />✅ Feature upgraded to version 1 successfully.</p><p>✅ Upgrade to version 1 completed successfully!</p><p>==================== NEXT STEPS ====================</p><p>CRITICAL: You must wait for old messages to be fully deleted before proceeding to version 2.</p><p>Expected deletion time: <a href=\"http://segment.ms\">segment.ms</a> + <a href=\"http://retention.ms\">retention.ms</a> = 1 + 0 = 1 days</p><p>Why this waiting period is necessary:<br />1. Messages deletion happens in two phases:<br />   Phase 1 (<a href=\"http://segment.ms\">segment.ms</a> = 1 days):<br />   - Old-format (null-key) messages stay in active segment<br />   - Cannot be deleted while in active segment, even if expired</p><p>   Phase 2 (<a href=\"http://retention.ms\">retention.ms</a> = 0 days):<br />   - After segment rolls, messages move to closed segment<br />   - Messages expire based on <a href=\"http://retention.ms\">retention.ms</a>=600000ms<br />   - Log cleaner deletes expired messages</p><p>2. During this period:<br />   - The log cleaner will NOT compact the topic yet (prevented by <a href=\"http://min.compaction.lag.ms\">min.compaction.lag.ms</a>=600000ms)<br />   - This ensures null-key messages are deleted via retention, NOT via compaction</p><p>3. After waiting 1 days, run validation and upgrade to version 2:<br />   kafka-remote-log-metadata-migration.sh --bootstrap-server localhost:9092 --check --auto-upgrade</p><p>4. The validation check will:<br />   - Scan the entire __remote_log_metadata topic for any remaining null-key messages<br />   - Only proceed with upgrade if NO null-key messages are found<br />   - Change cleanup.policy to 'compact' (removing 'delete')<br />   - Set <a href=\"http://retention.ms\">retention.ms</a> to -1 (infinite retention)<br />   - Remove <a href=\"http://min.compaction.lag.ms\">min.compaction.lag.ms</a> override (use broker default)</p><p>===================================================</p><p class=\"p1\"><br /></p><p class=\"p1\"><strong>Upgrade-to-v2</strong></p><p class=\"p1\"><strong>When there are still keyless messages</strong></p><p> ./bin/kafka-remote-log-metadata-migration.sh \\<br />  --bootstrap-server localhost:9092 \\<br />  --upgrade-to-v2 \\<br />  --check               <br />SLF4J: Class path contains multiple SLF4J bindings.<br />SLF4J: Found binding in [jar:<a href=\"http://file/Users/lijuntong/Documents/kafka/kafka/core/build/dependant-libs-2.13.18/log4j-slf4j-impl-2.25.4.jar!/org/slf4j/impl/StaticLoggerBinder.class\">file:/Users/lijuntong/Documents/kafka/kafka/core/build/dependant-libs-2.13.18/log4j-slf4j-impl-2.25.4.jar!/org/slf4j/impl/StaticLoggerBinder.class</a>]<br />SLF4J: Found binding in [jar:<a href=\"http://file/Users/lijuntong/Documents/kafka/kafka/tools/build/dependant-libs-2.13.18/log4j-slf4j-impl-2.25.4.jar!/org/slf4j/impl/StaticLoggerBinder.class\">file:/Users/lijuntong/Documents/kafka/kafka/tools/build/dependant-libs-2.13.18/log4j-slf4j-impl-2.25.4.jar!/org/slf4j/impl/StaticLoggerBinder.class</a>]<br />SLF4J: Found binding in [jar:<a href=\"http://file/Users/lijuntong/Documents/kafka/kafka/connect/runtime/build/dependant-libs/log4j-slf4j-impl-2.25.4.jar!/org/slf4j/impl/StaticLoggerBinder.class\">file:/Users/lijuntong/Documents/kafka/kafka/connect/runtime/build/dependant-libs/log4j-slf4j-impl-2.25.4.jar!/org/slf4j/impl/StaticLoggerBinder.class</a>]<br />SLF4J: See <a href=\"http://www.slf4j.org/codes.html#multiple_bindings\">http://www.slf4j.org/codes.html#multiple_bindings</a> for an explanation.<br />SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]<br />========== IMPORTANT REMINDER ==========</p><p>Current __remote_log_metadata topic configuration:<br />  - <a href=\"http://retention.ms\">retention.ms</a>=600000ms (0 days)<br />  - <a href=\"http://min.compaction.lag.ms\">min.compaction.lag.ms</a>=600000ms (0 days)</p><p>Before proceeding with this validation, ensure that:<br />1. At least 0 days have passed since upgrading to version 1<br />2. This allows all old-format (null-key) messages to expire via retention<br />3. The log cleaner has NOT compacted the topic yet (prevented by <a href=\"http://min.compaction.lag.ms\">min.compaction.lag.ms</a>)</p><p>If you upgraded to version 1 recently (less than 0 days ago),<br />you should WAIT before running this validation to avoid false negatives.</p><p>========================================</p><p>Checking __remote_log_metadata topic for messages with null keys...<br />Bootstrap servers: localhost:9092<br />Timeout: 60000ms<br />Upgrade to V2: ENABLED (will upgrade to version 2 if validation passes)</p><p>Found 5 partition(s) in __remote_log_metadata<br />Scanning messages...<br />⚠️  Found message with null key at partition=4, offset=6, timestamp=1780448344546<br />⚠️  Found message with null key at partition=4, offset=7, timestamp=1780448350864<br />⚠️  Found message with null key at partition=4, offset=8, timestamp=1780448357366<br />⚠️  Found message with null key at partition=4, offset=9, timestamp=1780448357367</p><p>//Skip the remaining similar logs for message with null key</p><p>Scan completed.<br />Total messages scanned: 1878<br />Messages with null keys: 24</p><p>❌ VALIDATION FAILED: Found 24 message(s) with null keys.</p><p>Last null-key message timestamp: 1780448367505<br />Last null-key message age: 0 days (0 hours)</p><p>Topic configuration:<br />  - <a href=\"http://segment.ms\">segment.ms</a>: 86400000ms (1 days)<br />  - <a href=\"http://retention.ms\">retention.ms</a>: 600000ms (0 days)<br />  - Total wait time for deletion: 87000000ms (1 days)</p><p>💡 SUGGESTION:</p><p class=\"p1\">Estimated cleanup time: Thu Jun 04 09:09:27 CST 2026</p><p class=\"p1\">Remaining wait time: approximately 24 hours.</p><p class=\"p1\">Please retry this validation after the estimated cleanup time.</p><pre><br /></pre><pre><br /></pre><p>Action required:<br />1. Wait for null-key messages to expire based on <a href=\"http://retention.ms\">retention.ms</a> setting<br />2. Then run this tool again to verify all null-key messages are gone<br />3. Only then proceed with the upgrade to remote.log.metadata.version=2</p><p>To force upgrade despite null-key messages (NOT RECOMMENDED), use --force flag.<br />Cannot upgrade to version 2: null-key messages found in __remote_log_metadata</p><p class=\"p1\"><strong>When there are no keyless messages</strong></p><p>./bin/kafka-remote-log-metadata-migration.sh \\<br />  --bootstrap-server localhost:9092 \\<br />  --upgrade-to-v2 \\<br />  --check --auto-upgrade<br />SLF4J: Class path contains multiple SLF4J bindings.<br />SLF4J: Found binding in [jar:<a href=\"http://file/Users/lijuntong/Documents/kafka/kafka/tools/build/dependant-libs-2.13.18/log4j-slf4j-impl-2.25.4.jar!/org/slf4j/impl/StaticLoggerBinder.class\">file:/Users/lijuntong/Documents/kafka/kafka/tools/build/dependant-libs-2.13.18/log4j-slf4j-impl-2.25.4.jar!/org/slf4j/impl/StaticLoggerBinder.class</a>]<br />SLF4J: Found binding in [jar:<a href=\"http://file/Users/lijuntong/Documents/kafka/kafka/connect/runtime/build/dependant-libs/log4j-slf4j-impl-2.25.4.jar!/org/slf4j/impl/StaticLoggerBinder.class\">file:/Users/lijuntong/Documents/kafka/kafka/connect/runtime/build/dependant-libs/log4j-slf4j-impl-2.25.4.jar!/org/slf4j/impl/StaticLoggerBinder.class</a>]<br />SLF4J: See <a href=\"http://www.slf4j.org/codes.html#multiple_bindings\">http://www.slf4j.org/codes.html#multiple_bindings</a> for an explanation.<br />SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]<br />========== IMPORTANT REMINDER ==========</p><p>Current __remote_log_metadata topic configuration:<br />  - <a href=\"http://retention.ms\">retention.ms</a>=600000ms <br />  - <a href=\"http://min.compaction.lag.ms\">min.compaction.lag.ms</a>=600000ms</p><p>Before proceeding with this validation, ensure that:<br />1. At least 0 days have passed since upgrading to version 1<br />2. This allows all old-format (null-key) messages to expire via retention<br />3. The log cleaner has NOT compacted the topic yet (prevented by <a href=\"http://min.compaction.lag.ms\">min.compaction.lag.ms</a>)</p><p>If you upgraded to version 1 recently (less than 0 days ago),<br />you should WAIT before running this validation to avoid false negatives.</p><p>========================================</p><p>Checking __remote_log_metadata topic for messages with null keys...<br />Bootstrap servers: localhost:9092<br />Timeout: 60000ms<br />Upgrade to V2: ENABLED (will upgrade to version 2 if validation passes)</p><p>Found 5 partition(s) in __remote_log_metadata<br />Scanning messages...</p><p>Scan completed.<br />Total messages scanned: 78<br />Messages with null keys: 0</p><p>✅ VALIDATION PASSED: No null-key messages found.<br />✅ Safe to upgrade to remote.log.metadata.version=2.</p><p>Initiating upgrade to remote.log.metadata.version=2...</p><p>Current remote.log.metadata.version: 1<br />Upgrading from version 1 to version 2...</p><p>✅ Successfully upgraded to remote.log.metadata.version=2!</p><p>The controller has automatically updated __remote_log_metadata topic configuration:<br />  - cleanup.policy changed to 'compact' (compact-only)<br />  - <a href=\"http://min.compaction.lag.ms\">min.compaction.lag.ms</a> override removed<br />  - <a href=\"http://retention.ms\">retention.ms</a> override removed</p><p>All metadata messages now have proper keys and will be retained indefinitely via compaction.</p><pre><br /></pre><h1>Test Plan</h1><p><strong>Topic Functionality Tests</strong></p><ul class=\"ak-ul\"><li><p>Confirm all metadata events are properly written to both topics with correct key formats</p></li><li><p>Validate that the compacted topic maintains only the latest state per segment while the original topic preserves full history</p></li></ul><p><strong>Migration Verification</strong></p><ul class=\"ak-ul\"><li><h5>Migration (Existing Clusters)</h5><ul><li>With finite <span><a href=\"http://retention.ms\">retention.ms</a></span>, upgrade brokers.</li><li>Confirm new records are keyed and readable.</li><li>Rebuild <span>RemoteLogMetadataCache</span> from <span>__remote_log_metadata</span> and verify:<ul><li>All expected remote segments are present.</li><li>Offsets and states are correct.</li></ul></li><li>After ≥ one retention window and with compaction enabled (if not already), confirm:<ul><li>Logical state (live segments, states) is unchanged.</li><li>Topic only contains keyed records and tombstones.</li></ul></li></ul></li></ul><p><strong>Durability and Recovery Tests</strong></p><ul class=\"ak-ul\"><li><p>Simulate broker failures during various stages of segment lifecycle (upload, deletion)</p></li><li><p>Test leader changes during metadata operations to verify correct handling of concurrent operations</p></li><li><p>Verify metadata consistency after unclean shutdowns and broker restarts</p></li></ul><p><strong>Performance Benchmarks</strong></p><ul class=\"ak-ul\"><li><p>Measure broker startup time before and after implementation</p></li><li><p>Compare metadata topic size growth over time between current and new implementation</p></li></ul><h1>Rejected Alternatives</h1><h2>Alternative A: Snapshot Approach (<a href=\"https://issues.apache.org/jira/browse/KAFKA-19265?focusedCommentId=18046308\">KAFKA-19265</a>)</h2><p>Rejected Reasons:</p><ol class=\"ak-ol\"><li><p><strong>Distributed Coordination Complexity</strong>: Creating consistent snapshots across distributed brokers with different partition leaders is extremely challenging and error-prone.</p></li><li><p><strong>Leader Transition Reliability</strong>: Ensuring new leaders receive the latest snapshot during transitions is difficult to guarantee, especially during network partitions or failures.</p></li><li><p><strong>Recovery Vulnerabilities</strong>: Corrupted or incomplete snapshots would require complex recovery procedures, potentially defeating the purpose of having snapshots.</p></li><li><p><strong>Operational Overhead</strong>: Additional storage requirements, snapshot management create significant operational burden.</p></li></ol><h2>Alternative B: Adjust Retention Time Based on Maximum Tiered Storage Topic Retention</h2><p>Rejected Reasons:</p><ol class=\"ak-ol\"><li><p><strong>Fails to Address Core Problem</strong>: This approach doesn't solve the unbounded metadata growth issue - it merely postpones it by extending retention periods.</p></li><li><p><strong>Resource Inefficiency and Lack of Granularity</strong>: Most metadata records would be retained far longer than necessary, wasting the storage and impacting query and bootstrap performance.</p></li><li><p><strong>Implementation Complexity</strong>: Creating a mechanism to track and dynamically update retention across all tiered storage topics introduces unnecessary complexity.</p></li><li><p><strong>Risk of Irrecoverable Metadata Loss:</strong><span> </span>If the remote storage module experiences downtime, truncating the<span> <code>__remote_log_metadata</code> </span><span> </span>topic based on retention policies could lead to permanent loss of remote log metadata, even when the remote storage still has those remote log segments, it will cause certain discrepancy between the remote storage and remote logsegment metadata state broker is preserving.</p><p><br /></p><p><br /></p></li></ol>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/406618613?status=historical&version=27"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1259
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=446071380",
+    "edit": "/pages/resumedraft.action?draftId=446071380&draftShareId=1ef8d4d0-0001-409b-b095-bc290798eaf7",
+    "tinyui": "/x/VIKWGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/406618613?status=historical&version=27"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/406618613/child?parentVersion=27",
+    "restrictions": "/rest/api/content/406618613/restriction/byOperation",
+    "history": "/rest/api/content/406618613/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/406618613/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/406618613/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "406618613",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1266: Bounding The Number Of RemoteLogMetadata Messages via Compacted Topic",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "lijuntong",
+     "userKey": "073590d29b4ab60c019b8918430b000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lijun Tong",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8918430b000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-09T21:45:55.000Z",
+    "message": "",
+    "number": 26,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618613/version/26"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618613?status=historical&version=26"
+    }
+   },
+   "position": 1259,
+   "body": {
+    "storage": {
+     "value": "<h1><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"ca1c9c69-0f7e-4562-a665-9ff3c26af00b\" /></h1><h1>Status</h1><p><strong>Current state</strong>: <em>[&quot;Under Discussion&quot;]</em></p><p><strong>Discussion thread</strong>: <a href=\"https://lists.apache.org/thread/6mgjxlfqv6lq6bz9qt8mcll28xybr98d\">here</a><br /><strong>JIRA</strong>: <em><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"5227fa59-8135-4dbd-81c9-77f006247fbd\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20033</ac:parameter></ac:structured-macro></em><em><br /></em></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p><strong>Background</strong>: What is __remote_log_metadata and how is it used?</p><ul class=\"ak-ul\"><li><p>Tiered storage: When local segments close, brokers upload them to remote storage (S3/Azure/GCS).</p></li><li><p><em>remote_log_metadata: An internal topic used by TopicBasedRemoteLogMetadataManager to record remote-segment lifecycle events per topic-partition (COPY* and DELETE</em>*), including start/end offsets, leader epoch and timestamps.</p></li><li><p>Why it matters: Brokers maintain an in-memory RemoteLogMetadataCache to answer “which segment contains offset X?” and “what is the highest remote offset?” This cache drives remote fetches and cleanup.</p></li><li><p>How state is built today: On startup/leadership changes, brokers consume the relevant metadata partitions from earliest available offset, replay all events, and rebuild the cache (apply STARTED → FINISHED → optional DELETE states; index by endOffset and leaderEpoch). Because the topic is append-only, full replay is required to compute current state.</p></li></ul><p><strong>Operational challenges</strong></p><p>Problem 1: Unbounded Growth</p><ul class=\"ak-ul\"><li><p>cleanup.policy=delete with infinite retention (-1)</p></li><li><p>All lifecycle events retained forever</p></li><li><p>~1.2M metadata records/year at 1 TB/day upload, topic can grow out of bounds, stressing I/O and page cache</p></li></ul><p>Problem 2: No Cleanup Mechanism</p><ul class=\"ak-ul\"><li><p>Metadata persists after remote segments expire</p></li><li><p>No removal for segments already deleted in remote storage</p></li><li><p>Orphaned records from failed/retried uploads accumulate indefinitely</p></li></ul><p>Problem 3: Slow Bootstrap</p><ul class=\"ak-ul\"><li><p>Full replay from offset 0 to rebuild cache</p></li><li><p>Bootstrap time grows with topic size; restarts and leadership changes take increasingly long time</p></li></ul><p>This KIP aims to solve this issue through making the current topic <code>__remote_log_metadata</code> compacted.</p><h1>Goals</h1><ol class=\"ak-ol\"><li><p>Enable bounded metadata storage to support faster bootstrap for the broker restart/leadership changes: the number of messages in the remote metadata topic is proportional to active remote segments, not the total history.</p></li><li><p>Support metadata cleanup: remove metadata when segments expire from remote storage.</p></li></ol><h1>Non-Goals</h1><ol class=\"ak-ol\"><li><p>Wire-level backward compatibility for keys in the compacted projection (breaking change there is acceptable).</p></li><li><p>Online migration with zero operational steps: clusters that have the tiered storage enabled before must go through an automated migration to adopt the compacted projection change, clusters that don’t have the tiered storage enabled can adopt the change directly without any migration.</p></li><li><p>Support for other RLMM implementations is not considered: focus is on TopicBasedRemoteLogMetadataManager.</p></li></ol><h1>Proposed Changes</h1><ol class=\"ak-ol\"><li><p>Topics and Configurations<br />This KIP updates the behavior and usage of the existing internal topic <code>__remote_log_metadata</code> , the current default configuration for this topic is:</p><ul class=\"ak-ul\"><li><p>cleanup.policy=delete</p></li><li><p><a href=\"http://retention.ms\"><u>retention.ms</u></a>=-1 <br /><br />With this change, the topic's configuration can be updated to be compacted:</p></li><li><p>cleanup.policy=compact</p></li><li><p>min.cleanable.dirty.ratio=0.1</p></li><li><p><a href=\"http://delete.retention.ms\">delete.retention.ms</a>=86400000 // 1 day</p></li><li><p><a href=\"http://segment.ms\">segment.ms</a>=3600000 // 1 hour</p><p>Once the topic becomes compacted, it will only has bounded number of messages for cache bootstrap and steady-state reads; supports tombstones</p></li></ul></li><li><p><span class=\"css-textHasAncestor-1jxf684 unistyles_2a7hse6hphi r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Keyed Metadata Records in __remote_log_metadata</span><br />All metadata records in __remote_log_metadata become <strong>keyed</strong>. The <strong>value</strong> carries the detailed metadata; the <strong>key</strong> defines the uniqueness and compaction behavior.<br /><strong><span class=\"css-textHasAncestor-1jxf684 unistyles_20e3u2kmncu r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Key Format: </span><span class=\"css-textHasAncestor-1jxf684 unistyles_1psnyyc6epf r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text-accent-purple-bolder,#352c63);\">TopicIdPartition:TopicName:Partition:EndOffset:BrokerLeaderEpoch</span></strong></p><p><span class=\"css-textHasAncestor-1jxf684 unistyles_2df0b5zp8il r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Example:</span><br /><span class=\"css-textHasAncestor-1jxf684 unistyles_1psnyyc6epf r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text-accent-purple-bolder,#352c63);\">T8fJ9Kz3RyWxP2mQ4nL7vB:topicA:0:1999:5</span></p><p><span class=\"css-textHasAncestor-1jxf684 unistyles_20e3u2kmncu r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Key Components</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_1b4tkabg5z4 r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">TopicIdPartition</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">: Unique UUID identifying the topic and partition</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_1b4tkabg5z4 r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">TopicName</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">: Human-readable topic name</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_1b4tkabg5z4 r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Partition</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">: Partition number</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_1b4tkabg5z4 r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">EndOffset</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">: Last offset in the segment (deterministic since tiered storage only uploads closed segments)</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_1b4tkabg5z4 r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">BrokerLeaderEpoch</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">: Leader epoch of the broker that owned the topic-partition during upload, disambiguating concurrent/retry scenarios</span></p><p><br /><strong><span class=\"css-textHasAncestor-1jxf684 unistyles_20e3u2kmncu r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Properties and Behavior</span></strong><br /><span class=\"css-textHasAncestor-1jxf684 unistyles_2df0b5zp8il r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">For Segment Metadata:</span></p><ul class=\"ak-ul\"><li><p>For <strong>the same segment</strong> under <strong>the same leader epoch</strong>, retries or updates share the same key (compaction keeps the latest state).</p></li><li><p>For <strong>the same segment</strong> under <strong>different leader epochs</strong>, records use <strong>different keys</strong>, allowing the system to distinguish concurrent or overlapping uploads across different brokers.</p></li></ul><p><br /><span class=\"css-textHasAncestor-1jxf684 unistyles_2df0b5zp8il r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">State Transition Keys:</span><br /><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">All segment lifecycle state transitions use the same key with an </span><span class=\"css-textHasAncestor-1jxf684 unistyles_nr0q36tpsr r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">:UPDATE</span><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\"> suffix:</span><br /><strong><span class=\"css-textHasAncestor-1jxf684 unistyles_1psnyyc6epf r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text-accent-purple-bolder,#352c63);\">TopicIdPartition:TopicName:Partition:EndOffset:BrokerLeaderEpoch:UPDATE</span></strong></p><p><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">This applies to all state transitions in the segment lifecycle:</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_17s4ri2cyiz r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">COPY_SEGMENT_STARTED</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\"> → </span><span class=\"css-textHasAncestor-1jxf684 unistyles_17s4ri2cyiz r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">COPY_SEGMENT_FINISHED</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_17s4ri2cyiz r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">COPY_SEGMENT_FINISHED</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\"> → </span><span class=\"css-textHasAncestor-1jxf684 unistyles_17s4ri2cyiz r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">DELETE_SEGMENT_STARTED</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_17s4ri2cyiz r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">DELETE_SEGMENT_STARTED</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\"> → </span><span class=\"css-textHasAncestor-1jxf684 unistyles_17s4ri2cyiz r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">DELETE_SEGMENT_FINISHED</span><br /><span class=\"css-textHasAncestor-1jxf684 unistyles_2df0b5zp8il r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Rationale for :UPDATE Suffix:</span><br /><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">The </span><span class=\"css-textHasAncestor-1jxf684 unistyles_nr0q36tpsr r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">:UPDATE</span><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\"> suffix is necessary to differentiate state transition records from the initial segment metadata record. This design avoids duplicating fields (such as </span><span class=\"css-textHasAncestor-1jxf684 unistyles_nr0q36tpsr r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">SegmentLeaderEpochs</span><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">, </span><span class=\"css-textHasAncestor-1jxf684 unistyles_nr0q36tpsr r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">MaxTimestampMs</span><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">, </span><span class=\"css-textHasAncestor-1jxf684 unistyles_nr0q36tpsr r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">SegmentSizeInBytes</span><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">, etc.) in </span><span class=\"css-textHasAncestor-1jxf684 unistyles_nr0q36tpsr r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">RemoteLogSegmentMetadataUpdateRecord</span><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\"> that already exist in </span><span class=\"css-textHasAncestor-1jxf684 unistyles_nr0q36tpsr r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">RemoteLogSegmentMetadataRecord</span><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">. By using distinct keys:</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">The full segment metadata record compacts independently (contains all segment details)</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">State transition records compact independently (contains only state and timestamp)</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Both can coexist without redundant field duplication</span></p><p><br /></p></li><li><p>Broker Write Path<br />The broker continues to write lifecycle events for remote log segments and partitions, but now with:</p><ul class=\"ak-ul\"><li><p>Deterministic keys.</p></li><li><p>Tombstone semantics once the log segment is expired.</p></li></ul></li></ol><h4>           Lifecycle events</h4><ul><li style=\"list-style-type: none;\"><ul class=\"ak-ul\"><li><p>Segment upload:</p><ul class=\"ak-ul\"><li><p>COPY_SEGMENT_STARTED</p></li><li><p>COPY_SEGMENT_FINISHED</p></li></ul></li><li><p>Segment deletion:</p><ul class=\"ak-ul\"><li><p>DELETE_SEGMENT_STARTED</p></li><li><p>DELETE_SEGMENT_FINISHED</p></li></ul></li><li><p>Partition deletion:</p><ul class=\"ak-ul\"><li><p>DELETE_PARTITION_STARTED</p></li><li><p>DELETE_PARTITION_FINISHED</p></li></ul></li></ul></li></ul><p>It will also receive the tombstone messages for those expired metadata messages, expired metadata messages are defined as the messages that belong to the log segments that are already in the <em><strong>DELETE_SEGMENT_FINISHED</strong></em> states. </p><p>A series of tombstone messages will be published for all the keys that share the same prefix <code>topicIdPartition:endOffset</code>  and keys that have no bigger brokerLeaderEpoch than the current one. While the original storeRemoteLogMetadata() method will wait for the consumer of <code>__remote_log_metadata</code>  to finish the consumption of the latest <em><strong>DELETE_SEGMENT_FINISHED</strong></em> message, in order to minimize the impact for the performance, for the tombstone messages, the consumers will finish the consumption asynchronously. And also, to guarantee the expired messages are tomb-stoned, a background cleanup thread executed by <code>RemoteMetadataCleanupManager</code>    will scan the <code>__remote_log_metadata</code>  periodically to check whether there are orphaned messages that can be deleted.</p><p>4. Broker Read Path</p><p>There is no change in how the <code>ConsumerTask</code> read the messages and build the state in <code>TopicBasedRemoteLogMetadataManager</code>  since there is not much meaningful value format change.</p><p>There is no change to <code>RemoteLogMetadataTopicPartitioner</code>  neither.</p><h1>User Scenario</h1><h2>RemoteLogSegmentState Enum Values</h2><table class=\"wrapped relative-table\" style=\"width: 47.8343%;\"><colgroup><col style=\"width: 11.6402%;\" /><col style=\"width: 42.6148%;\" /><col style=\"width: 45.745%;\" /></colgroup><tbody><tr><th><p>Value</p></th><th><p>State</p></th><th><p>Description</p></th></tr><tr><td><p>0</p></td><td><p>COPY_SEGMENT_STARTED</p></td><td><p>Upload in progress</p></td></tr><tr><td><p>1</p></td><td><p>COPY_SEGMENT_FINISHED</p></td><td><p>Upload completed successfully</p></td></tr><tr><td><p>2</p></td><td><p>DELETE_SEGMENT_STARTED</p></td><td><p>Deletion in progress</p></td></tr><tr><td><p>3</p></td><td><p>DELETE_SEGMENT_FINISHED</p></td><td><p>Deletion completed</p></td></tr></tbody></table><h2>Scenario 1: Normal Segment Upload</h2><p><strong>Context</strong>: Topic <code>orders</code>   (ID:  <code>abc123</code> )</p><p>Partition 0, Broker 101 at epoch 3</p><h3>Timeline &amp; Messages</h3><table class=\"wrapped relative-table\" style=\"width: 78.3427%;\"><colgroup><col style=\"width: 6.61836%;\" /><col style=\"width: 17.8094%;\" /><col style=\"width: 35.9824%;\" /><col style=\"width: 39.5898%;\" /></colgroup><tbody><tr><th><p>Time</p></th><th><p>Event</p></th><th><p>Message Key in the Compacted Topic</p></th><th><p>Value</p></th></tr><tr><td><p>T1</p></td><td><p>Start upload</p></td><td><code>abc123:topicA:0:1000:3</code> </td><td><p>apiKey=0, uuid=UUID-A, state=0 (STARTED)</p></td></tr><tr><td><p>T2</p></td><td><p>Upload completes</p></td><td><code>abc123:topicA:0:1000:3:UPDATE</code></td><td><p>apiKey=1, uuid=UUID-A, state=1 (FINISHED)</p></td></tr></tbody></table><h3>After Compaction</h3><p><strong>Compacted topic</strong>: Retains only latest → <code>abc123:topicA:0:1000:3</code>  = FINISHED (T1 compacted away)</p><p><strong>Cache result</strong>: 1 segment with uuid=UUID-A, endOffset=1000, state=FINISHED</p><h2>Scenario 2: Leadership Change During Upload</h2><p><strong>Context</strong>: Broker 101 (epoch 3) starts upload, leadership changes to Broker 102 (epoch 4), both complete</p><h3>Timeline &amp; Messages</h3><table class=\"wrapped relative-table\" style=\"width: 85.5447%;\"><colgroup><col style=\"width: 6.04856%;\" /><col style=\"width: 20.6795%;\" /><col style=\"width: 27.5322%;\" /><col style=\"width: 45.6912%;\" /></colgroup><tbody><tr><th><p>Time</p></th><th><p>Event</p></th><th><p>Key</p></th><th><p>Value</p></th></tr><tr><td><p>T1</p></td><td><p>Broker 101 starts</p></td><td><p><code>abc123:topicA:0:2000:3</code> </p></td><td><p>apiKey=0, uuid=UUID-A, state=0, epoch=3</p></td></tr><tr><td><p>T2</p></td><td><p>Leadership → 102</p></td><td><p>-</p></td><td><p>-</p></td></tr><tr><td><p>T3</p></td><td><p>Broker 102 starts</p></td><td><code>abc123:topicA:0:2000:4</code> </td><td><p>apiKey=0, uuid=UUID-B, state=0, epoch=4 ← Different key!</p></td></tr><tr><td><p>T4</p></td><td><p>Broker 101 finishes</p></td><td><code>abc123:topicA:0:2000:3:</code>UPDATE</td><td><p>apiKey=1, uuid=UUID-A, state=1, epoch=3</p></td></tr><tr><td><p>T5</p></td><td><p>Broker 102 finishes</p></td><td><code>abc123:topicA:0:2000:4:UPDATE</code></td><td><p>apiKey=1, uuid=UUID-B, state=1, epoch=4</p></td></tr></tbody></table><h3>After Compaction</h3><p><strong>Compacted topic</strong>: 2 keys, each with latest state</p><ul class=\"ak-ul\"><li><p><code>abc123:topicA:0:2000:3</code> → FINISHED (UUID-A, orphaned)</p></li><li><p> <code>abc123:topicA:0:2000:4</code> → FINISHED (UUID-B, active)</p></li></ul><p><strong>Cache result</strong>: Returns both segments, selects UUID-B (epoch 4 &gt; 3) for reads</p><hr /><h2>Scenario 3: Failed Upload Under the Same Leader Epoch</h2><p><strong>Context</strong>: Broker 101 (epoch 5) tries upload, fails, retries with new UUID</p><h3>Timeline &amp; Messages</h3><table class=\"wrapped relative-table\" style=\"width: 92.3184%;\"><colgroup><col style=\"width: 5.52468%;\" /><col style=\"width: 18.012%;\" /><col style=\"width: 33.8203%;\" /><col style=\"width: 42.6082%;\" /></colgroup><tbody><tr><th><p>Time</p></th><th><p>Event</p></th><th><p>Key</p></th><th><p>Value</p></th></tr><tr><td><p>T1</p></td><td><p>First attempt</p></td><td><code>abc123:topicA:0:3000:5</code> </td><td><p>apiKey=0, uuid=UUID-A, state=0</p></td></tr><tr><td><p>T2</p></td><td><p>Network timeout</p></td><td><p>-</p></td><td><p>(no message)</p></td></tr><tr><td><p>T3</p></td><td><p>Retry</p></td><td><code>abc123:topicA:0:3000:5</code> </td><td><p>apiKey=0, uuid=UUID-B, state=0 ← Same key, different UUID!</p></td></tr><tr><td><p>T4</p></td><td><p>Success</p></td><td><code>abc123:topicA:0:3000:5:UPDATE</code></td><td><p>apiKey=1, uuid=UUID-B, state=1</p></td></tr></tbody></table><h3>After Compaction</h3><p><strong>Compacted topic</strong>: Retains only latest → <code>abc123:topicA:0:3000:5</code>  = FINISHED (UUID-B)</p><p><strong>Cache result</strong>: Only UUID-B appears (UUID-A compacted away)</p><p><strong>Key insight</strong>: Same epoch = same key, but new UUID for each attempt</p><hr /><h2>Scenario 4: Segment Deletion</h2><p><strong>Context</strong>: Segment at endOffset=1000 has 3 upload keys (epochs 3,4,5), now being deleted by current leader (epoch 6)</p><h3>Initial State</h3><p><code>abc123:topicA:0:1000:3 → FINISHED (UUID-A, orphaned)\n</code></p><p><code>abc123:topicA:0:1000:4 → FINISHED (UUID-B, orphaned)\n</code></p><p><code>abc123:topicA:0:1000:5 → FINISHED (UUID-C, active)\n</code></p><h3>Timeline &amp; Messages</h3><table class=\"wrapped relative-table\" style=\"width: 60.992%;\"><colgroup><col style=\"width: 11.2545%;\" /><col style=\"width: 28.1362%;\" /><col style=\"width: 28.1362%;\" /><col style=\"width: 53.3583%;\" /></colgroup><tbody><tr><th><p>Time</p></th><th><p>Event</p></th><th><p>Key</p></th><th><p>Value</p></th></tr><tr><td><p>T1</p></td><td><p>Retention triggers</p></td><td><p>-</p></td><td><p>(identify segment)</p></td></tr><tr><td><p>T2</p></td><td><p>Delete from S3</p></td><td><p>-</p></td><td><p>(physical deletion)</p></td></tr><tr><td><p>T3</p></td><td><p>Mark deletion</p></td><td><p><code>abc123:topicA:0:1000:6:UPDATE</code></p></td><td><p>apiKey=1, state=2 (DELETE_STARTED)</p></td></tr><tr><td><p>T4</p></td><td><p>Deletion finished</p></td><td><code>abc123:topicA:0:1000:6:UPDATE</code></td><td><p>apiKey=1, state=3 (DELETE_FINISHED)</p></td></tr><tr><td><p>T5</p></td><td><p>Tombstone epoch 3</p></td><td><code>abc123:topicA:0:1000:3:UPDATE</code></td><td><p>null</p></td></tr><tr><td><p>T5.5</p></td><td><p><br /></p></td><td><code>abc123:topicA:0:1000:3</code></td><td><p>null</p></td></tr><tr><td><p>T6</p></td><td><p>Tombstone epoch 4</p></td><td><code>abc123:topicA:0:1000:4:UPDATE</code></td><td><p>null</p></td></tr><tr><td><p>T6.5</p></td><td><p><br /></p></td><td><code>abc123:topicA:0:1000:4</code></td><td><p>null</p></td></tr><tr><td><p>T7</p></td><td><p>Tombstone epoch 5</p></td><td><code>abc123:topicA:0:1000:5:UPDATE</code></td><td><p>null</p></td></tr><tr><td><p>T7.5</p></td><td><p><br /></p></td><td><code>abc123:topicA:0:1000:5</code></td><td><p>null</p></td></tr><tr><td><p>T8</p></td><td><p>Tombstone epoch 6</p></td><td><code>abc123:topicA:0:1000:6:UPDATE</code></td><td><p>null</p></td></tr><tr><td><p>T8.5</p></td><td><p><br /></p></td><td><code>abc123:topicA:0:1000:6</code></td><td><p>null</p></td></tr><tr><td><p>T5+24Hour</p></td><td><p>Message that has key as <code>abc123:0:1000:3</code> deleted</p></td><td>-</td><td><p>-</p></td></tr><tr><td><p>T6+24Hour</p></td><td><p>Message that has key as<br /><code>abc123:0:1000:4 deleted</code></p></td><td>-</td><td><p>-</p></td></tr><tr><td><p>T7+24Hour</p></td><td><p><code>Message that has key as<br />abc123:0:1000:5 deleted</code></p></td><td>-</td><td><p>-</p></td></tr><tr><td><p>T8+24Hour</p></td><td><p>Message that has key as<br /><code>abc123:0:1000:6 deleted</code></p></td><td>-</td><td><p>-</p></td></tr></tbody></table><h3>Tombstone Details (Compacted Topic ONLY)</h3><p>After DELETE_FINISHED (T4), tombstones written for ALL 8 keys:</p><p><code>abc123:topicA:0:1000:3 → null  (epoch 3, UUID-A)</code></p><p><code>abc123:topicA:0:1000:3:UPDATE → null  (epoch 3, UUID-A)</code></p><p><code>abc123:topicA:0:1000:4 → null  (epoch 4, UUID-B)</code></p><p><code>abc123:topicA:0:1000:4:UPDATE → null  (epoch 4, UUID-B)</code></p><p><code>abc123:topicA:0:1000:5 → null  (epoch 5, UUID-C)</code></p><p><code>abc123:topicA:0:1000:5:UPDATE → null  (epoch 5, UUID-C)</code></p><p><code>abc123:topicA:0:1000:6 → null  (epoch 6, deletion marker)</code></p><p><code>abc123:topicA:0:1000:6:UPDATE → null  (epoch 5, deletion marker)</code></p><p><br /></p><h3>After Compaction</h3><p><strong>Compacted topic</strong>: All 4 keys removed (segment completely forgotten)</p><p><strong>Cache result</strong>: Empty (segment no longer exists)</p><p><strong>Why tombstone all 8 keys?</strong></p><ul class=\"ak-ul\"><li><p>Remove all historical metadata (successful + orphaned uploads + deletion marker)</p></li><li><p>Ensures compacted topic completely &quot;forgets&quot; this segment</p></li></ul><hr /><h2>Scenario 5: Partition Deletion</h2><p><strong>Context</strong>: Entire partition deleted, cleanup all segments</p><h3>Timeline &amp; Messages</h3><table class=\"wrapped relative-table\" style=\"width: 64.9718%;\"><colgroup><col style=\"width: 7.98182%;\" /><col style=\"width: 28.154%;\" /><col style=\"width: 13.3514%;\" /><col style=\"width: 50.5127%;\" /></colgroup><tbody><tr><th><p>Time</p></th><th><p>Event</p></th><th><p>Key</p></th><th><p>Value</p></th></tr><tr><td><p>T1</p></td><td><p>Start partition delete</p></td><td><code>abc123:topicA:0</code> </td><td><p>apiKey=2, state=DELETE_PARTITION_STARTED</p></td></tr><tr><td><p>T2</p></td><td><p>Partition delete done</p></td><td><code>abc123:topicA:0</code> </td><td><p>apiKey=2, state=DELETE_PARTITION_FINISHED</p></td></tr></tbody></table><h3>Cleanup Process</h3><p><strong>Compacted topic</strong>: All segment keys for <code>abc123:topicA:0:*:*</code>  get tombstones, partition delete marker remains</p><hr /><h1>Public Interfaces</h1><p>This KIP will add 2 new fields to the following records to help construct the message’s key published to the compacted topic, one is the logSegment’s endOffset and another one is brokerLeaderEpoch.</p><p>A backfill strategy to convert the current message to the new message will be shared in the migration plan part to make sure there is no public visible changes to the Kafka users.</p><p>RemoteLogSegmentMetadataRecord.json</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"0db19768-5084-4c96-ad11-bb25a83638ca\"><ac:plain-text-body><![CDATA[[\n//...\n  {\n    \"name\": \"BrokerId\",\n    \"type\": \"int32\",\n    \"versions\": \"0+\"\n  },\n  {\n    \"name\": \"RemoteLogSegmentId\",\n    \"type\": \"RemoteLogSegmentIdEntry\",\n    \"versions\": \"0+\"\n  },\n  {\n    \"name\": \"StartOffset\",\n    \"type\": \"int64\",\n    \"versions\": \"0+\"\n  },\n  {\n    \"name\": \"EndOffset\",\n    \"type\": \"int64\",\n    \"versions\": \"0+\"\n  },\n  {\n    \"name\": \"BrokerId\",\n    \"type\": \"int32\",\n    \"versions\": \"0+\"\n  },\n    {\n      \"name\": \"BrokerLeaderEpoch\",\n      \"type\": \"int32\",\n      \"versions\": \"1+\",\n      \"about\": \"The leader epoch of the broker (partition leader epoch) at the time this update is being published.\",\n      \"taggedVersions\": \"1+\",\n      \"tag\": 0\n    }\n]]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p>RemoteLogSegmentMetadataUpdateRecord.json</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"af33eff1-02cc-4fd1-a130-887b05b0f788\"><ac:plain-text-body><![CDATA[[\n  {\n    \"name\": \"RemoteLogSegmentId\",\n    \"type\": \"RemoteLogSegmentIdEntry\",\n    \"versions\": \"0+\"\n  },\n  {\n    \"name\": \"BrokerId\",\n    \"type\": \"int32\",\n    \"versions\": \"0+\"\n  },\n  //...\n  {\n    \"name\": \"RemoteLogSegmentState\",\n    \"type\": \"int8\",\n    \"versions\": \"0+\"\n  },\n    {\n      \"name\": \"BrokerLeaderEpoch\",\n      \"type\": \"int32\",\n      \"versions\": \"1+\",\n      \"about\": \"The leader epoch of the broker (partition leader epoch) at the time this update is being published.\",\n      \"taggedVersions\": \"1+\",\n      \"tag\": 0\n    },\n    {\n      \"name\": \"EndOffset\",\n      \"type\": \"int64\",\n      \"versions\": \"1+\",\n      \"about\": \"End offset of the segment being updated.\",\n      \"taggedVersions\": \"1+\",\n      \"tag\": 1\n    }\n]]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p>RemotePartitionDeleteMetadataRecord.json</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"74b9583c-4abe-4e86-b3e5-c38aa039a3dd\"><ac:plain-text-body><![CDATA[[\n  {\n    \"name\": \"TopicIdPartition\",\n    \"type\": \"TopicIdPartitionEntry\",\n    \"versions\": \"0+\"\n  },\n  {\n    \"name\": \"BrokerId\",\n    \"type\": \"int32\",\n    \"versions\": \"0+\"\n  },\n  {\n    \"name\": \"EventTimestampMs\",\n    \"type\": \"int64\",\n    \"versions\": \"0+\"\n  },\n  {\n    \"name\": \"RemotePartitionDeleteState\",\n    \"type\": \"int8\",\n    \"versions\": \"0+\"\n  },\n    {\n      \"name\": \"BrokerLeaderEpoch\",\n      \"type\": \"int32\",\n      \"versions\": \"1+\",\n      \"about\": \"The leader epoch of the broker (partition leader epoch) at the time this update is being published.\",\n      \"taggedVersions\": \"1+\",\n      \"tag\": 0\n    },\n    {\n      \"name\": \"EndOffset\",\n      \"type\": \"int64\",\n      \"versions\": \"1+\",\n      \"about\": \"End offset of the segment being updated.\",\n      \"taggedVersions\": \"1+\",\n      \"tag\": 1\n    }\n]]]></ac:plain-text-body></ac:structured-macro><h1>Compatibility, Deprecation, and Migration Plan</h1><p>For the message compatibility in the remote metadata topic, since the new fields are tagged fields, there will be no forward compatibility issue.</p><h2>Migration Plan</h2><p><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">The </span><span class=\"css-textHasAncestor-1jxf684 unistyles_nr0q36tpsr r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">remote.log.metadata.version</span><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\"> feature is introduced to enables a safe migration from time-based deletion to space-efficient log compaction through a three-version upgrade path.</span><span class=\"css-textHasAncestor-1jxf684 unistyles_2df0b5zp8il r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Versions:</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_1b4tkabg5z4 r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Version 0</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">: Messages use null keys with </span><span class=\"css-textHasAncestor-1jxf684 unistyles_17s4ri2cyiz r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">cleanup.policy=delete</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">. Cannot use compaction. This is the default and starting value for the field.</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_1b4tkabg5z4 r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Version 1</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">: Topic uses </span><span class=\"css-textHasAncestor-1jxf684 unistyles_17s4ri2cyiz r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">cleanup.policy=compact,delete</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\"> with customized retention to safely expire old null-key messages while enabling compaction for new keyed messages.</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_1b4tkabg5z4 r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Version 2</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">: Pure </span><span class=\"css-textHasAncestor-1jxf684 unistyles_17s4ri2cyiz r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">cleanup.policy=compact</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\"> mode. Removes retention limits for more aggressive compaction. Requires validation that no null-key messages remain in the topic.</span></p><p>Once the feature level is upgraded, <strong>downgrading or disabling the feature is not supported</strong>.</p><h3>Scenario 1: New Cluster (Fresh Install)</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"6e08a460-52fa-461f-9a5d-00952ff01d5f\"><ac:plain-text-body><![CDATA[kafka-storage.sh format -t <cluster-id> -c server.properties\nkafka-server-start.sh server.properties]]></ac:plain-text-body></ac:structured-macro><p><br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- `<span style=\"color:var(--ds-text-accent-gray,#44546f);\">remote.log.metadata.version</span></span><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">` </span>automatically set to 2 (LATEST_PRODUCTION)<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Topic created with <span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>cleanup.policy=compact<span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`<br /></span><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>All messages have keys from the start<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>No migration required<span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\"><br /></span></p><h3>Scenario 2: Existing Cluster with Tiered Storage Already Enabled</h3><p>For clusters that already have tiered storage enabled and an existing  <span>__remote_log_metadata</span> topic populated with historical metadata, the migration is incremental and non-disruptive.</p><p>Once the broker image with this KIP change runs on the machine, the broker will start to emit messages with keys, but the topic config change only happens with human operation.</p><p>A script kafka-remote-log-metadata-migration.sh will be provided to assist the migration. A metadata record with key remote.log.metadata.version will be used to track the progress of migration.</p><p><br />Upgrade Path<span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\"> </span>(0 → 1 → 2):</p><h4><br />Step 1: Upgrade to Version 1</h4><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"173770e4-011f-43e0-81de-476d1d75d50a\"><ac:plain-text-body><![CDATA[kafka-remote-log-metadata-migration.sh \\\n--bootstrap-server localhost:9092 \\\n--upgrade-to-v1 \\\n--retention-ms 1209600000 # 14 days]]></ac:plain-text-body></ac:structured-macro><p><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\"><br /></span>Result:<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Topic config: <span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>cleanup.policy=compact,delete<span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>, <span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>retention.ms=1209600000<span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>, <span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>min.compaction.lag.ms=1209600000<span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>, <span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>segment.ms=604800000<span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`<br /></span><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Feature: <span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>remote.log.metadata.version=1<span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`<br /></span><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>New messages have keys, old null-key messages will expire via retention</p><h4>Step 2: Wait for Retention Period</h4><p><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Wait at least 14 days (or your specified retention period)<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Allows all null-key messages to expire naturally<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Log cleaner won't compact yet (blocked by min.compaction.lag.ms)</p><h4>Step 3: Validate and Upgrade to Version 2</h4><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"8d2cc2d7-b603-4b76-9882-587604a3aab3\"><ac:plain-text-body><![CDATA[kafka-remote-log-metadata-migration.sh \\\n--bootstrap-server localhost:9092 \\\n--check \\\n--upgrade-to-v2]]></ac:plain-text-body></ac:structured-macro><p>Result:<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Tool displays retention reminder and checks if enough time has passed<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Scans topic for null-key messages<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Records last null-key message timestamp and suggests retry time if validation fails<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>If validation passes:<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Feature: <span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>remote.log.metadata.version=2<span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`<br /></span><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\"> - </span>Topic config: <span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>cleanup.policy=compact<span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">` </span>(min.compaction.lag.ms and retention.ms overrides removed)<br /><br /></p><h3>Scenario 3: Existing Cluster Enabling Tiered Storage for First Time</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"278bb748-c6fe-4142-902c-b2f24a9f8abc\"><ac:plain-text-body><![CDATA[# Edit server.properties\nremote.log.storage.system.enable=true\n\n# Restart broker\nkafka-server-start.sh server.properties\n\n# Manually upgrade feature\nkafka-features.sh upgrade --feature remote.log.metadata.version=2]]></ac:plain-text-body></ac:structured-macro><p><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\"><br /></span><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Feature version starts at 0 (not automatically upgraded)<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Topic will be created with the correct config on first use<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>The feature value needs to be upgraded to 2 manually while no change will be applied to the topic.</p><p><br /></p><h1>Migration Script Sample Running Result</h1><p><strong>Help</strong></p><p>usage: kafka-remote-log-metadata-migration</p><p class=\"p1\">       [-h] --bootstrap-server BOOTSTRAP_SERVER [--command-config COMMAND_CONFIG] [--upgrade-to-v1] [--check] [--upgrade-to-v2] [--auto-upgrade] [--force]</p><p class=\"p1\">       [--retention-ms RETENTION_MS] [--segment-ms SEGMENT_MS] [--timeout-ms TIMEOUT_MS]</p><p class=\"p2\"><br /></p><p class=\"p1\">Tool to manage remote.log.metadata.version upgrades and migrate the __remote_log_metadata topic.</p><p class=\"p2\"><br /></p><p class=\"p1\">optional arguments:</p><p class=\"p1\">  -h, --help             show this help message and exit</p><p class=\"p1\">  --bootstrap-server BOOTSTRAP_SERVER</p><p class=\"p1\">                         REQUIRED: A comma-separated list of host:port pairs to use for establishing the connection to the Kafka cluster.</p><p class=\"p1\">  --command-config COMMAND_CONFIG</p><p class=\"p1\">                         Property file containing configs to be passed to Admin/Consumer Client.</p><p class=\"p1\">  --upgrade-to-v1        Upgrade from remote.log.metadata.version=0 to version 1, and configure topic with <a href=\"http://min.compaction.lag.ms\">min.compaction.lag.ms</a>. (default: false)</p><p class=\"p1\">  --check                Check if the topic contains any messages with null keys. This is required before upgrading to version 2. (default: false)</p><p class=\"p1\">  --upgrade-to-v2        Upgrade to remote.log.metadata.version=2 after validation. Requires --check and --auto-upgrade. (default: false)</p><p class=\"p1\">  --auto-upgrade         Automatically upgrade to version 2 if validation passes. Must be  used  with  --check --upgrade-to-v2. This is a safety flag to prevent accidental upgrades. (default: false)</p><p class=\"p1\">  --force                Force upgrade to version 2 even if null-key messages  are  found.  Use  with  caution: null-key messages will be lost during compaction. (default:</p><p class=\"p1\">                         false)</p><p class=\"p1\">  --retention-ms RETENTION_MS</p><p class=\"p1\">                         Retention period in milliseconds for the __remote_log_metadata topic when  upgrading  to  version  1 (default: 1209600000, which is 14 days). This</p><p class=\"p1\">                         parameter is CRITICAL: it serves two purposes: 1) <a href=\"http://retention.ms\">retention.ms</a>: Ensures  old-format  (null-key) messages expire and are deleted after this period.</p><p class=\"p1\">                         2) <a href=\"http://min.compaction.lag.ms\">min.compaction.lag.ms</a>: Set to the same value to prevent log cleaner  from  compacting before old messages expire. Once the topic cleanup policy</p><p class=\"p1\">                         is changed to 'compact,delete', the log cleaner could  immediately  delete  null-key  messages during compaction. By setting both <a href=\"http://retention.ms\">retention.ms</a> and</p><p class=\"p1\">                         <a href=\"http://min.compaction.lag.ms\">min.compaction.lag.ms</a> to the same value, we ensure null-key  messages  expire  naturally  via  retention before the log cleaner begins compacting.</p><p class=\"p1\">                         This prevents data loss during the migration period. Used with --upgrade-to-v1. (default: 1209600000)</p><p class=\"p1\">  --segment-ms SEGMENT_MS</p><p class=\"p1\">                         Segment rolling time in milliseconds for the __remote_log_metadata topic  when  upgrading  to  version 1 (default: 86400000, which is 1 day). This</p><p class=\"p1\">                         controls how frequently new log segments are created. Smaller  values  create  more segments, which can improve compaction efficiency but increase</p><p class=\"p1\">                         overhead. Used with --upgrade-to-v1. (default: 86400000)</p><p class=\"p1\">  --timeout-ms TIMEOUT_MS</p><p class=\"p1\">                         Maximum time in milliseconds to wait while checking for messages (default: 60000). Used with --check. (default: 60000)</p><p class=\"p1\"><br /></p><p class=\"p1\"><strong>Upgrade-to-v1</strong></p><p class=\"p1\"><br /></p><p class=\"p1\"><strong>Upgrade-to-v2</strong></p><p class=\"p1\"><strong>When there are still keyless messages</strong></p><p class=\"p1\"><br /></p><p class=\"p1\"><strong>When there are no keless messages</strong></p><p><br /></p><pre><br /></pre><h1>Test Plan</h1><p><strong>Topic Functionality Tests</strong></p><ul class=\"ak-ul\"><li><p>Confirm all metadata events are properly written to both topics with correct key formats</p></li><li><p>Validate that the compacted topic maintains only the latest state per segment while the original topic preserves full history</p></li></ul><p><strong>Migration Verification</strong></p><ul class=\"ak-ul\"><li><h5>Migration (Existing Clusters)</h5><ul><li>With finite <span><a href=\"http://retention.ms\">retention.ms</a></span>, upgrade brokers.</li><li>Confirm new records are keyed and readable.</li><li>Rebuild <span>RemoteLogMetadataCache</span> from <span>__remote_log_metadata</span> and verify:<ul><li>All expected remote segments are present.</li><li>Offsets and states are correct.</li></ul></li><li>After ≥ one retention window and with compaction enabled (if not already), confirm:<ul><li>Logical state (live segments, states) is unchanged.</li><li>Topic only contains keyed records and tombstones.</li></ul></li></ul></li></ul><p><strong>Durability and Recovery Tests</strong></p><ul class=\"ak-ul\"><li><p>Simulate broker failures during various stages of segment lifecycle (upload, deletion)</p></li><li><p>Test leader changes during metadata operations to verify correct handling of concurrent operations</p></li><li><p>Verify metadata consistency after unclean shutdowns and broker restarts</p></li></ul><p><strong>Performance Benchmarks</strong></p><ul class=\"ak-ul\"><li><p>Measure broker startup time before and after implementation</p></li><li><p>Compare metadata topic size growth over time between current and new implementation</p></li></ul><h1>Rejected Alternatives</h1><h2>Alternative A: Snapshot Approach (<a href=\"https://issues.apache.org/jira/browse/KAFKA-19265?focusedCommentId=18046308\">KAFKA-19265</a>)</h2><p>Rejected Reasons:</p><ol class=\"ak-ol\"><li><p><strong>Distributed Coordination Complexity</strong>: Creating consistent snapshots across distributed brokers with different partition leaders is extremely challenging and error-prone.</p></li><li><p><strong>Leader Transition Reliability</strong>: Ensuring new leaders receive the latest snapshot during transitions is difficult to guarantee, especially during network partitions or failures.</p></li><li><p><strong>Recovery Vulnerabilities</strong>: Corrupted or incomplete snapshots would require complex recovery procedures, potentially defeating the purpose of having snapshots.</p></li><li><p><strong>Operational Overhead</strong>: Additional storage requirements, snapshot management create significant operational burden.</p></li></ol><h2>Alternative B: Adjust Retention Time Based on Maximum Tiered Storage Topic Retention</h2><p>Rejected Reasons:</p><ol class=\"ak-ol\"><li><p><strong>Fails to Address Core Problem</strong>: This approach doesn't solve the unbounded metadata growth issue - it merely postpones it by extending retention periods.</p></li><li><p><strong>Resource Inefficiency and Lack of Granularity</strong>: Most metadata records would be retained far longer than necessary, wasting the storage and impacting query and bootstrap performance.</p></li><li><p><strong>Implementation Complexity</strong>: Creating a mechanism to track and dynamically update retention across all tiered storage topics introduces unnecessary complexity.</p></li><li><p><strong>Risk of Irrecoverable Metadata Loss:</strong><span> </span>If the remote storage module experiences downtime, truncating the<span> <code>__remote_log_metadata</code> </span><span> </span>topic based on retention policies could lead to permanent loss of remote log metadata, even when the remote storage still has those remote log segments, it will cause certain discrepancy between the remote storage and remote logsegment metadata state broker is preserving.</p><p><br /></p><p><br /></p></li></ol>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/406618613?status=historical&version=26"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1259
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=446071378",
+    "edit": "/pages/resumedraft.action?draftId=446071378&draftShareId=1ef8d4d0-0001-409b-b095-bc290798eaf7",
+    "tinyui": "/x/UoKWGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/406618613?status=historical&version=26"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/406618613/child?parentVersion=26",
+    "restrictions": "/rest/api/content/406618613/restriction/byOperation",
+    "history": "/rest/api/content/406618613/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/406618613/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/406618613/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "406618613",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1266: Bounding The Number Of RemoteLogMetadata Messages via Compacted Topic",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "lijuntong",
+     "userKey": "073590d29b4ab60c019b8918430b000e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lijun Tong",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8918430b000e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-09T17:32:34.000Z",
+    "message": "",
+    "number": 25,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618613/version/25"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618613?status=historical&version=25"
+    }
+   },
+   "position": 1259,
+   "body": {
+    "storage": {
+     "value": "<h1><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"ca1c9c69-0f7e-4562-a665-9ff3c26af00b\" /></h1><h1>Status</h1><p><strong>Current state</strong>: <em>[&quot;Under Discussion&quot;]</em></p><p><strong>Discussion thread</strong>: <a href=\"https://lists.apache.org/thread/6mgjxlfqv6lq6bz9qt8mcll28xybr98d\">here</a><br /><strong>JIRA</strong>: <em><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"5227fa59-8135-4dbd-81c9-77f006247fbd\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20033</ac:parameter></ac:structured-macro></em><em><br /></em></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p><strong>Background</strong>: What is __remote_log_metadata and how is it used?</p><ul class=\"ak-ul\"><li><p>Tiered storage: When local segments close, brokers upload them to remote storage (S3/Azure/GCS).</p></li><li><p><em>remote_log_metadata: An internal topic used by TopicBasedRemoteLogMetadataManager to record remote-segment lifecycle events per topic-partition (COPY* and DELETE</em>*), including start/end offsets, leader epoch and timestamps.</p></li><li><p>Why it matters: Brokers maintain an in-memory RemoteLogMetadataCache to answer “which segment contains offset X?” and “what is the highest remote offset?” This cache drives remote fetches and cleanup.</p></li><li><p>How state is built today: On startup/leadership changes, brokers consume the relevant metadata partitions from earliest available offset, replay all events, and rebuild the cache (apply STARTED → FINISHED → optional DELETE states; index by endOffset and leaderEpoch). Because the topic is append-only, full replay is required to compute current state.</p></li></ul><p><strong>Operational challenges</strong></p><p>Problem 1: Unbounded Growth</p><ul class=\"ak-ul\"><li><p>cleanup.policy=delete with infinite retention (-1)</p></li><li><p>All lifecycle events retained forever</p></li><li><p>~1.2M metadata records/year at 1 TB/day upload, topic can grow out of bounds, stressing I/O and page cache</p></li></ul><p>Problem 2: No Cleanup Mechanism</p><ul class=\"ak-ul\"><li><p>Metadata persists after remote segments expire</p></li><li><p>No removal for segments already deleted in remote storage</p></li><li><p>Orphaned records from failed/retried uploads accumulate indefinitely</p></li></ul><p>Problem 3: Slow Bootstrap</p><ul class=\"ak-ul\"><li><p>Full replay from offset 0 to rebuild cache</p></li><li><p>Bootstrap time grows with topic size; restarts and leadership changes take increasingly long time</p></li></ul><p>This KIP aims to solve this issue through making the current topic <code>__remote_log_metadata</code> compacted.</p><h1>Goals</h1><ol class=\"ak-ol\"><li><p>Enable bounded metadata storage to support faster bootstrap for the broker restart/leadership changes: the number of messages in the remote metadata topic is proportional to active remote segments, not the total history.</p></li><li><p>Support metadata cleanup: remove metadata when segments expire from remote storage.</p></li></ol><h1>Non-Goals</h1><ol class=\"ak-ol\"><li><p>Wire-level backward compatibility for keys in the compacted projection (breaking change there is acceptable).</p></li><li><p>Online migration with zero operational steps: clusters that have the tiered storage enabled before must go through an automated migration to adopt the compacted projection change, clusters that don’t have the tiered storage enabled can adopt the change directly without any migration.</p></li><li><p>Support for other RLMM implementations is not considered: focus is on TopicBasedRemoteLogMetadataManager.</p></li></ol><h1>Proposed Changes</h1><ol class=\"ak-ol\"><li><p>Topics and Configurations<br />This KIP updates the behavior and usage of the existing internal topic <code>__remote_log_metadata</code> , the current default configuration for this topic is:</p><ul class=\"ak-ul\"><li><p>cleanup.policy=delete</p></li><li><p><a href=\"http://retention.ms\"><u>retention.ms</u></a>=-1 <br /><br />With this change, the topic's configuration can be updated to be compacted:</p></li><li><p>cleanup.policy=compact</p></li><li><p>min.cleanable.dirty.ratio=0.1</p></li><li><p><a href=\"http://delete.retention.ms\">delete.retention.ms</a>=86400000 // 1 day</p></li><li><p><a href=\"http://segment.ms\">segment.ms</a>=3600000 // 1 hour</p><p>Once the topic becomes compacted, it will only has bounded number of messages for cache bootstrap and steady-state reads; supports tombstones</p></li></ul></li><li><p><span class=\"css-textHasAncestor-1jxf684 unistyles_2a7hse6hphi r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Keyed Metadata Records in __remote_log_metadata</span><br />All metadata records in __remote_log_metadata become <strong>keyed</strong>. The <strong>value</strong> carries the detailed metadata; the <strong>key</strong> defines the uniqueness and compaction behavior.<br /><strong><span class=\"css-textHasAncestor-1jxf684 unistyles_20e3u2kmncu r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Key Format: </span><span class=\"css-textHasAncestor-1jxf684 unistyles_1psnyyc6epf r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text-accent-purple-bolder,#352c63);\">TopicIdPartition:TopicName:Partition:EndOffset:BrokerLeaderEpoch</span></strong></p><p><span class=\"css-textHasAncestor-1jxf684 unistyles_2df0b5zp8il r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Example:</span><br /><span class=\"css-textHasAncestor-1jxf684 unistyles_1psnyyc6epf r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text-accent-purple-bolder,#352c63);\">T8fJ9Kz3RyWxP2mQ4nL7vB:topicA:0:1999:5</span></p><p><span class=\"css-textHasAncestor-1jxf684 unistyles_20e3u2kmncu r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Key Components</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_1b4tkabg5z4 r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">TopicIdPartition</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">: Unique UUID identifying the topic and partition</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_1b4tkabg5z4 r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">TopicName</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">: Human-readable topic name</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_1b4tkabg5z4 r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Partition</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">: Partition number</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_1b4tkabg5z4 r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">EndOffset</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">: Last offset in the segment (deterministic since tiered storage only uploads closed segments)</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_1b4tkabg5z4 r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">BrokerLeaderEpoch</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">: Leader epoch of the broker that owned the topic-partition during upload, disambiguating concurrent/retry scenarios</span></p><p><br /><strong><span class=\"css-textHasAncestor-1jxf684 unistyles_20e3u2kmncu r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Properties and Behavior</span></strong><br /><span class=\"css-textHasAncestor-1jxf684 unistyles_2df0b5zp8il r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">For Segment Metadata:</span></p><ul class=\"ak-ul\"><li><p>For <strong>the same segment</strong> under <strong>the same leader epoch</strong>, retries or updates share the same key (compaction keeps the latest state).</p></li><li><p>For <strong>the same segment</strong> under <strong>different leader epochs</strong>, records use <strong>different keys</strong>, allowing the system to distinguish concurrent or overlapping uploads across different brokers.</p></li></ul><p><br /><span class=\"css-textHasAncestor-1jxf684 unistyles_2df0b5zp8il r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">State Transition Keys:</span><br /><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">All segment lifecycle state transitions use the same key with an </span><span class=\"css-textHasAncestor-1jxf684 unistyles_nr0q36tpsr r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">:UPDATE</span><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\"> suffix:</span><br /><strong><span class=\"css-textHasAncestor-1jxf684 unistyles_1psnyyc6epf r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text-accent-purple-bolder,#352c63);\">TopicIdPartition:TopicName:Partition:EndOffset:BrokerLeaderEpoch:UPDATE</span></strong></p><p><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">This applies to all state transitions in the segment lifecycle:</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_17s4ri2cyiz r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">COPY_SEGMENT_STARTED</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\"> → </span><span class=\"css-textHasAncestor-1jxf684 unistyles_17s4ri2cyiz r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">COPY_SEGMENT_FINISHED</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_17s4ri2cyiz r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">COPY_SEGMENT_FINISHED</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\"> → </span><span class=\"css-textHasAncestor-1jxf684 unistyles_17s4ri2cyiz r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">DELETE_SEGMENT_STARTED</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_17s4ri2cyiz r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">DELETE_SEGMENT_STARTED</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\"> → </span><span class=\"css-textHasAncestor-1jxf684 unistyles_17s4ri2cyiz r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">DELETE_SEGMENT_FINISHED</span><br /><span class=\"css-textHasAncestor-1jxf684 unistyles_2df0b5zp8il r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Rationale for :UPDATE Suffix:</span><br /><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">The </span><span class=\"css-textHasAncestor-1jxf684 unistyles_nr0q36tpsr r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">:UPDATE</span><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\"> suffix is necessary to differentiate state transition records from the initial segment metadata record. This design avoids duplicating fields (such as </span><span class=\"css-textHasAncestor-1jxf684 unistyles_nr0q36tpsr r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">SegmentLeaderEpochs</span><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">, </span><span class=\"css-textHasAncestor-1jxf684 unistyles_nr0q36tpsr r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">MaxTimestampMs</span><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">, </span><span class=\"css-textHasAncestor-1jxf684 unistyles_nr0q36tpsr r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">SegmentSizeInBytes</span><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">, etc.) in </span><span class=\"css-textHasAncestor-1jxf684 unistyles_nr0q36tpsr r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">RemoteLogSegmentMetadataUpdateRecord</span><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\"> that already exist in </span><span class=\"css-textHasAncestor-1jxf684 unistyles_nr0q36tpsr r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">RemoteLogSegmentMetadataRecord</span><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">. By using distinct keys:</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">The full segment metadata record compacts independently (contains all segment details)</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">State transition records compact independently (contains only state and timestamp)</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Both can coexist without redundant field duplication</span></p><p><br /></p></li><li><p>Broker Write Path<br />The broker continues to write lifecycle events for remote log segments and partitions, but now with:</p><ul class=\"ak-ul\"><li><p>Deterministic keys.</p></li><li><p>Tombstone semantics once the log segment is expired.</p></li></ul></li></ol><h4>           Lifecycle events</h4><ul><li style=\"list-style-type: none;\"><ul class=\"ak-ul\"><li><p>Segment upload:</p><ul class=\"ak-ul\"><li><p>COPY_SEGMENT_STARTED</p></li><li><p>COPY_SEGMENT_FINISHED</p></li></ul></li><li><p>Segment deletion:</p><ul class=\"ak-ul\"><li><p>DELETE_SEGMENT_STARTED</p></li><li><p>DELETE_SEGMENT_FINISHED</p></li></ul></li><li><p>Partition deletion:</p><ul class=\"ak-ul\"><li><p>DELETE_PARTITION_STARTED</p></li><li><p>DELETE_PARTITION_FINISHED</p></li></ul></li></ul></li></ul><p>It will also receive the tombstone messages for those expired metadata messages, expired metadata messages are defined as the messages that belong to the log segments that are already in the <em><strong>DELETE_SEGMENT_FINISHED</strong></em> states. </p><p>A series of tombstone messages will be published for all the keys that share the same prefix <code>topicIdPartition:endOffset</code>  and keys that have no bigger brokerLeaderEpoch than the current one. While the original storeRemoteLogMetadata() method will wait for the consumer of <code>__remote_log_metadata</code>  to finish the consumption of the latest <em><strong>DELETE_SEGMENT_FINISHED</strong></em> message, in order to minimize the impact for the performance, for the tombstone messages, the consumers will finish the consumption asynchronously. And also, to guarantee the expired messages are tomb-stoned, a background cleanup thread executed by <code>RemoteMetadataCleanupManager</code>    will scan the <code>__remote_log_metadata</code>  periodically to check whether there are orphaned messages that can be deleted.</p><p>4. Broker Read Path</p><p>There is no change in how the <code>ConsumerTask</code> read the messages and build the state in <code>TopicBasedRemoteLogMetadataManager</code>  since there is not much meaningful value format change.</p><p>There is no change to <code>RemoteLogMetadataTopicPartitioner</code>  neither.</p><h1>User Scenario</h1><h2>RemoteLogSegmentState Enum Values</h2><table class=\"wrapped relative-table\" style=\"width: 47.8343%;\"><colgroup><col style=\"width: 11.6402%;\" /><col style=\"width: 42.6148%;\" /><col style=\"width: 45.745%;\" /></colgroup><tbody><tr><th><p>Value</p></th><th><p>State</p></th><th><p>Description</p></th></tr><tr><td><p>0</p></td><td><p>COPY_SEGMENT_STARTED</p></td><td><p>Upload in progress</p></td></tr><tr><td><p>1</p></td><td><p>COPY_SEGMENT_FINISHED</p></td><td><p>Upload completed successfully</p></td></tr><tr><td><p>2</p></td><td><p>DELETE_SEGMENT_STARTED</p></td><td><p>Deletion in progress</p></td></tr><tr><td><p>3</p></td><td><p>DELETE_SEGMENT_FINISHED</p></td><td><p>Deletion completed</p></td></tr></tbody></table><h2>Scenario 1: Normal Segment Upload</h2><p><strong>Context</strong>: Topic <code>orders</code>   (ID:  <code>abc123</code> )</p><p>Partition 0, Broker 101 at epoch 3</p><h3>Timeline &amp; Messages</h3><table class=\"wrapped relative-table\" style=\"width: 78.3427%;\"><colgroup><col style=\"width: 6.61836%;\" /><col style=\"width: 17.8094%;\" /><col style=\"width: 35.9824%;\" /><col style=\"width: 39.5898%;\" /></colgroup><tbody><tr><th><p>Time</p></th><th><p>Event</p></th><th><p>Message Key in the Compacted Topic</p></th><th><p>Value</p></th></tr><tr><td><p>T1</p></td><td><p>Start upload</p></td><td><code>abc123:topicA:0:1000:3</code> </td><td><p>apiKey=0, uuid=UUID-A, state=0 (STARTED)</p></td></tr><tr><td><p>T2</p></td><td><p>Upload completes</p></td><td><code>abc123:topicA:0:1000:3:UPDATE</code></td><td><p>apiKey=1, uuid=UUID-A, state=1 (FINISHED)</p></td></tr></tbody></table><h3>After Compaction</h3><p><strong>Compacted topic</strong>: Retains only latest → <code>abc123:topicA:0:1000:3</code>  = FINISHED (T1 compacted away)</p><p><strong>Cache result</strong>: 1 segment with uuid=UUID-A, endOffset=1000, state=FINISHED</p><h2>Scenario 2: Leadership Change During Upload</h2><p><strong>Context</strong>: Broker 101 (epoch 3) starts upload, leadership changes to Broker 102 (epoch 4), both complete</p><h3>Timeline &amp; Messages</h3><table class=\"wrapped relative-table\" style=\"width: 85.5447%;\"><colgroup><col style=\"width: 6.04856%;\" /><col style=\"width: 20.6795%;\" /><col style=\"width: 27.5322%;\" /><col style=\"width: 45.6912%;\" /></colgroup><tbody><tr><th><p>Time</p></th><th><p>Event</p></th><th><p>Key</p></th><th><p>Value</p></th></tr><tr><td><p>T1</p></td><td><p>Broker 101 starts</p></td><td><p><code>abc123:topicA:0:2000:3</code> </p></td><td><p>apiKey=0, uuid=UUID-A, state=0, epoch=3</p></td></tr><tr><td><p>T2</p></td><td><p>Leadership → 102</p></td><td><p>-</p></td><td><p>-</p></td></tr><tr><td><p>T3</p></td><td><p>Broker 102 starts</p></td><td><code>abc123:topicA:0:2000:4</code> </td><td><p>apiKey=0, uuid=UUID-B, state=0, epoch=4 ← Different key!</p></td></tr><tr><td><p>T4</p></td><td><p>Broker 101 finishes</p></td><td><code>abc123:topicA:0:2000:3:</code>UPDATE</td><td><p>apiKey=1, uuid=UUID-A, state=1, epoch=3</p></td></tr><tr><td><p>T5</p></td><td><p>Broker 102 finishes</p></td><td><code>abc123:topicA:0:2000:4:UPDATE</code></td><td><p>apiKey=1, uuid=UUID-B, state=1, epoch=4</p></td></tr></tbody></table><h3>After Compaction</h3><p><strong>Compacted topic</strong>: 2 keys, each with latest state</p><ul class=\"ak-ul\"><li><p><code>abc123:topicA:0:2000:3</code> → FINISHED (UUID-A, orphaned)</p></li><li><p> <code>abc123:topicA:0:2000:4</code> → FINISHED (UUID-B, active)</p></li></ul><p><strong>Cache result</strong>: Returns both segments, selects UUID-B (epoch 4 &gt; 3) for reads</p><hr /><h2>Scenario 3: Failed Upload Under the Same Leader Epoch</h2><p><strong>Context</strong>: Broker 101 (epoch 5) tries upload, fails, retries with new UUID</p><h3>Timeline &amp; Messages</h3><table class=\"wrapped relative-table\" style=\"width: 92.3184%;\"><colgroup><col style=\"width: 5.52468%;\" /><col style=\"width: 18.012%;\" /><col style=\"width: 33.8203%;\" /><col style=\"width: 42.6082%;\" /></colgroup><tbody><tr><th><p>Time</p></th><th><p>Event</p></th><th><p>Key</p></th><th><p>Value</p></th></tr><tr><td><p>T1</p></td><td><p>First attempt</p></td><td><code>abc123:topicA:0:3000:5</code> </td><td><p>apiKey=0, uuid=UUID-A, state=0</p></td></tr><tr><td><p>T2</p></td><td><p>Network timeout</p></td><td><p>-</p></td><td><p>(no message)</p></td></tr><tr><td><p>T3</p></td><td><p>Retry</p></td><td><code>abc123:topicA:0:3000:5</code> </td><td><p>apiKey=0, uuid=UUID-B, state=0 ← Same key, different UUID!</p></td></tr><tr><td><p>T4</p></td><td><p>Success</p></td><td><code>abc123:topicA:0:3000:5:UPDATE</code></td><td><p>apiKey=1, uuid=UUID-B, state=1</p></td></tr></tbody></table><h3>After Compaction</h3><p><strong>Compacted topic</strong>: Retains only latest → <code>abc123:topicA:0:3000:5</code>  = FINISHED (UUID-B)</p><p><strong>Cache result</strong>: Only UUID-B appears (UUID-A compacted away)</p><p><strong>Key insight</strong>: Same epoch = same key, but new UUID for each attempt</p><hr /><h2>Scenario 4: Segment Deletion</h2><p><strong>Context</strong>: Segment at endOffset=1000 has 3 upload keys (epochs 3,4,5), now being deleted by current leader (epoch 6)</p><h3>Initial State</h3><p><code>abc123:topicA:0:1000:3 → FINISHED (UUID-A, orphaned)\n</code></p><p><code>abc123:topicA:0:1000:4 → FINISHED (UUID-B, orphaned)\n</code></p><p><code>abc123:topicA:0:1000:5 → FINISHED (UUID-C, active)\n</code></p><h3>Timeline &amp; Messages</h3><table class=\"wrapped relative-table\" style=\"width: 60.992%;\"><colgroup><col style=\"width: 11.2545%;\" /><col style=\"width: 28.1362%;\" /><col style=\"width: 28.1362%;\" /><col style=\"width: 53.3583%;\" /></colgroup><tbody><tr><th><p>Time</p></th><th><p>Event</p></th><th><p>Key</p></th><th><p>Value</p></th></tr><tr><td><p>T1</p></td><td><p>Retention triggers</p></td><td><p>-</p></td><td><p>(identify segment)</p></td></tr><tr><td><p>T2</p></td><td><p>Delete from S3</p></td><td><p>-</p></td><td><p>(physical deletion)</p></td></tr><tr><td><p>T3</p></td><td><p>Mark deletion</p></td><td><p><code>abc123:topicA:0:1000:6:UPDATE</code></p></td><td><p>apiKey=1, state=2 (DELETE_STARTED)</p></td></tr><tr><td><p>T4</p></td><td><p>Deletion finished</p></td><td><code>abc123:topicA:0:1000:6:UPDATE</code></td><td><p>apiKey=1, state=3 (DELETE_FINISHED)</p></td></tr><tr><td><p>T5</p></td><td><p>Tombstone epoch 3</p></td><td><code>abc123:topicA:0:1000:3:UPDATE</code></td><td><p>null</p></td></tr><tr><td><p>T5.5</p></td><td><p><br /></p></td><td><code>abc123:topicA:0:1000:3</code></td><td><p>null</p></td></tr><tr><td><p>T6</p></td><td><p>Tombstone epoch 4</p></td><td><code>abc123:topicA:0:1000:4:UPDATE</code></td><td><p>null</p></td></tr><tr><td><p>T6.5</p></td><td><p><br /></p></td><td><code>abc123:topicA:0:1000:4</code></td><td><p>null</p></td></tr><tr><td><p>T7</p></td><td><p>Tombstone epoch 5</p></td><td><code>abc123:topicA:0:1000:5:UPDATE</code></td><td><p>null</p></td></tr><tr><td><p>T7.5</p></td><td><p><br /></p></td><td><code>abc123:topicA:0:1000:5</code></td><td><p>null</p></td></tr><tr><td><p>T8</p></td><td><p>Tombstone epoch 6</p></td><td><code>abc123:topicA:0:1000:6:UPDATE</code></td><td><p>null</p></td></tr><tr><td><p>T8.5</p></td><td><p><br /></p></td><td><code>abc123:topicA:0:1000:6</code></td><td><p>null</p></td></tr><tr><td><p>T5+24Hour</p></td><td><p>Message that has key as <code>abc123:0:1000:3</code> deleted</p></td><td>-</td><td><p>-</p></td></tr><tr><td><p>T6+24Hour</p></td><td><p>Message that has key as<br /><code>abc123:0:1000:4 deleted</code></p></td><td>-</td><td><p>-</p></td></tr><tr><td><p>T7+24Hour</p></td><td><p><code>Message that has key as<br />abc123:0:1000:5 deleted</code></p></td><td>-</td><td><p>-</p></td></tr><tr><td><p>T8+24Hour</p></td><td><p>Message that has key as<br /><code>abc123:0:1000:6 deleted</code></p></td><td>-</td><td><p>-</p></td></tr></tbody></table><h3>Tombstone Details (Compacted Topic ONLY)</h3><p>After DELETE_FINISHED (T4), tombstones written for ALL 8 keys:</p><p><code>abc123:topicA:0:1000:3 → null  (epoch 3, UUID-A)</code></p><p><code>abc123:topicA:0:1000:3:UPDATE → null  (epoch 3, UUID-A)</code></p><p><code>abc123:topicA:0:1000:4 → null  (epoch 4, UUID-B)</code></p><p><code>abc123:topicA:0:1000:4:UPDATE → null  (epoch 4, UUID-B)</code></p><p><code>abc123:topicA:0:1000:5 → null  (epoch 5, UUID-C)</code></p><p><code>abc123:topicA:0:1000:5:UPDATE → null  (epoch 5, UUID-C)</code></p><p><code>abc123:topicA:0:1000:6 → null  (epoch 6, deletion marker)</code></p><p><code>abc123:topicA:0:1000:6:UPDATE → null  (epoch 5, deletion marker)</code></p><p><br /></p><h3>After Compaction</h3><p><strong>Compacted topic</strong>: All 4 keys removed (segment completely forgotten)</p><p><strong>Cache result</strong>: Empty (segment no longer exists)</p><p><strong>Why tombstone all 8 keys?</strong></p><ul class=\"ak-ul\"><li><p>Remove all historical metadata (successful + orphaned uploads + deletion marker)</p></li><li><p>Ensures compacted topic completely &quot;forgets&quot; this segment</p></li></ul><hr /><h2>Scenario 5: Partition Deletion</h2><p><strong>Context</strong>: Entire partition deleted, cleanup all segments</p><h3>Timeline &amp; Messages</h3><table class=\"wrapped relative-table\" style=\"width: 64.9718%;\"><colgroup><col style=\"width: 7.98182%;\" /><col style=\"width: 28.154%;\" /><col style=\"width: 13.3514%;\" /><col style=\"width: 50.5127%;\" /></colgroup><tbody><tr><th><p>Time</p></th><th><p>Event</p></th><th><p>Key</p></th><th><p>Value</p></th></tr><tr><td><p>T1</p></td><td><p>Start partition delete</p></td><td><code>abc123:topicA:0</code> </td><td><p>apiKey=2, state=DELETE_PARTITION_STARTED</p></td></tr><tr><td><p>T2</p></td><td><p>Partition delete done</p></td><td><code>abc123:topicA:0</code> </td><td><p>apiKey=2, state=DELETE_PARTITION_FINISHED</p></td></tr></tbody></table><h3>Cleanup Process</h3><p><strong>Compacted topic</strong>: All segment keys for <code>abc123:topicA:0:*:*</code>  get tombstones, partition delete marker remains</p><hr /><h1>Public Interfaces</h1><p>This KIP will add 2 new fields to the following records to help construct the message’s key published to the compacted topic, one is the logSegment’s endOffset and another one is brokerLeaderEpoch.</p><p>A backfill strategy to convert the current message to the new message will be shared in the migration plan part to make sure there is no public visible changes to the Kafka users.</p><p>RemoteLogSegmentMetadataRecord.json</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"0db19768-5084-4c96-ad11-bb25a83638ca\"><ac:plain-text-body><![CDATA[[\n//...\n  {\n    \"name\": \"BrokerId\",\n    \"type\": \"int32\",\n    \"versions\": \"0+\"\n  },\n  {\n    \"name\": \"RemoteLogSegmentId\",\n    \"type\": \"RemoteLogSegmentIdEntry\",\n    \"versions\": \"0+\"\n  },\n  {\n    \"name\": \"StartOffset\",\n    \"type\": \"int64\",\n    \"versions\": \"0+\"\n  },\n  {\n    \"name\": \"EndOffset\",\n    \"type\": \"int64\",\n    \"versions\": \"0+\"\n  },\n  {\n    \"name\": \"BrokerId\",\n    \"type\": \"int32\",\n    \"versions\": \"0+\"\n  },\n    {\n      \"name\": \"BrokerLeaderEpoch\",\n      \"type\": \"int32\",\n      \"versions\": \"1+\",\n      \"about\": \"The leader epoch of the broker (partition leader epoch) at the time this update is being published.\",\n      \"taggedVersions\": \"1+\",\n      \"tag\": 0\n    }\n]]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p>RemoteLogSegmentMetadataUpdateRecord.json</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"af33eff1-02cc-4fd1-a130-887b05b0f788\"><ac:plain-text-body><![CDATA[[\n  {\n    \"name\": \"RemoteLogSegmentId\",\n    \"type\": \"RemoteLogSegmentIdEntry\",\n    \"versions\": \"0+\"\n  },\n  {\n    \"name\": \"BrokerId\",\n    \"type\": \"int32\",\n    \"versions\": \"0+\"\n  },\n  //...\n  {\n    \"name\": \"RemoteLogSegmentState\",\n    \"type\": \"int8\",\n    \"versions\": \"0+\"\n  },\n    {\n      \"name\": \"BrokerLeaderEpoch\",\n      \"type\": \"int32\",\n      \"versions\": \"1+\",\n      \"about\": \"The leader epoch of the broker (partition leader epoch) at the time this update is being published.\",\n      \"taggedVersions\": \"1+\",\n      \"tag\": 0\n    },\n    {\n      \"name\": \"EndOffset\",\n      \"type\": \"int64\",\n      \"versions\": \"1+\",\n      \"about\": \"End offset of the segment being updated.\",\n      \"taggedVersions\": \"1+\",\n      \"tag\": 1\n    }\n]]]></ac:plain-text-body></ac:structured-macro><p><br /></p><p>RemotePartitionDeleteMetadataRecord.json</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"74b9583c-4abe-4e86-b3e5-c38aa039a3dd\"><ac:plain-text-body><![CDATA[[\n  {\n    \"name\": \"TopicIdPartition\",\n    \"type\": \"TopicIdPartitionEntry\",\n    \"versions\": \"0+\"\n  },\n  {\n    \"name\": \"BrokerId\",\n    \"type\": \"int32\",\n    \"versions\": \"0+\"\n  },\n  {\n    \"name\": \"EventTimestampMs\",\n    \"type\": \"int64\",\n    \"versions\": \"0+\"\n  },\n  {\n    \"name\": \"RemotePartitionDeleteState\",\n    \"type\": \"int8\",\n    \"versions\": \"0+\"\n  },\n    {\n      \"name\": \"BrokerLeaderEpoch\",\n      \"type\": \"int32\",\n      \"versions\": \"1+\",\n      \"about\": \"The leader epoch of the broker (partition leader epoch) at the time this update is being published.\",\n      \"taggedVersions\": \"1+\",\n      \"tag\": 0\n    },\n    {\n      \"name\": \"EndOffset\",\n      \"type\": \"int64\",\n      \"versions\": \"1+\",\n      \"about\": \"End offset of the segment being updated.\",\n      \"taggedVersions\": \"1+\",\n      \"tag\": 1\n    }\n]]]></ac:plain-text-body></ac:structured-macro><h1>Compatibility, Deprecation, and Migration Plan</h1><p>For the message compatibility in the remote metadata topic, since the new fields are tagged fields, there will be no forward compatibility issue.</p><h2>Migration Plan</h2><p><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">The </span><span class=\"css-textHasAncestor-1jxf684 unistyles_nr0q36tpsr r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">remote.log.metadata.version</span><span class=\"css-textHasAncestor-1jxf684 unistyles_1kvqv1lqp4w r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\"> feature is introduced to enables a safe migration from time-based deletion to space-efficient log compaction through a three-version upgrade path.</span><span class=\"css-textHasAncestor-1jxf684 unistyles_2df0b5zp8il r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Versions:</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_1b4tkabg5z4 r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Version 0</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">: Messages use null keys with </span><span class=\"css-textHasAncestor-1jxf684 unistyles_17s4ri2cyiz r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">cleanup.policy=delete</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">. Cannot use compaction. This is the default and starting value for the field.</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_1b4tkabg5z4 r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Version 1</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">: Topic uses </span><span class=\"css-textHasAncestor-1jxf684 unistyles_17s4ri2cyiz r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">cleanup.policy=compact,delete</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\"> with customized retention to safely expire old null-key messages while enabling compaction for new keyed messages.</span><br />- <span class=\"css-textHasAncestor-1jxf684 unistyles_1b4tkabg5z4 r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">Version 2</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">: Pure </span><span class=\"css-textHasAncestor-1jxf684 unistyles_17s4ri2cyiz r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\">cleanup.policy=compact</span><span class=\"css-textHasAncestor-1jxf684 unistyles_w879vbptjl r-userSelect-1xnzce8\" style=\"text-decoration: none;color:var(--ds-text,#000000);\"> mode. Removes retention limits for more aggressive compaction. Requires validation that no null-key messages remain in the topic.</span></p><p>Once the feature level is upgraded, <strong>downgrading or disabling the feature is not supported</strong>.</p><h3>Scenario 1: New Cluster (Fresh Install)</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"6e08a460-52fa-461f-9a5d-00952ff01d5f\"><ac:plain-text-body><![CDATA[kafka-storage.sh format -t <cluster-id> -c server.properties\nkafka-server-start.sh server.properties]]></ac:plain-text-body></ac:structured-macro><p><br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- `<span style=\"color:var(--ds-text-accent-gray,#44546F);\">remote.log.metadata.version</span></span><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">` </span>automatically set to 2 (LATEST_PRODUCTION)<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Topic created with <span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>cleanup.policy=compact<span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`<br /></span><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>All messages have keys from the start<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>No migration required<span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\"><br /></span></p><h3>Scenario 2: Existing Cluster with Tiered Storage Already Enabled</h3><p>For clusters that already have tiered storage enabled and an existing  <span>__remote_log_metadata</span> topic populated with historical metadata, the migration is incremental and non-disruptive.</p><p>Once the broker image with this KIP change runs on the machine, the broker will start to emit messages with keys, but the topic config change only happens with human operation.</p><p>A script kafka-remote-log-metadata-migration.sh will be provided to assist the migration. A metadata record with key remote.log.metadata.version will be used to track the progress of migration.</p><p><br />Upgrade Path<span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\"> </span>(0 → 1 → 2):</p><h4><br />Step 1: Upgrade to Version 1</h4><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"173770e4-011f-43e0-81de-476d1d75d50a\"><ac:plain-text-body><![CDATA[kafka-remote-log-metadata-migration.sh \\\n--bootstrap-server localhost:9092 \\\n--upgrade-to-v1 \\\n--retention-ms 1209600000 # 14 days]]></ac:plain-text-body></ac:structured-macro><p><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\"><br /></span>Result:<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Topic config: <span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>cleanup.policy=compact,delete<span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>, <span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>retention.ms=1209600000<span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>, <span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>min.compaction.lag.ms=1209600000<span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>, <span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>segment.ms=604800000<span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`<br /></span><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Feature: <span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>remote.log.metadata.version=1<span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`<br /></span><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>New messages have keys, old null-key messages will expire via retention</p><h4>Step 2: Wait for Retention Period</h4><p><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Wait at least 14 days (or your specified retention period)<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Allows all null-key messages to expire naturally<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Log cleaner won't compact yet (blocked by min.compaction.lag.ms)</p><h4>Step 3: Validate and Upgrade to Version 2</h4><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"8d2cc2d7-b603-4b76-9882-587604a3aab3\"><ac:plain-text-body><![CDATA[kafka-remote-log-metadata-migration.sh \\\n--bootstrap-server localhost:9092 \\\n--check \\\n--upgrade-to-v2]]></ac:plain-text-body></ac:structured-macro><p>Result:<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Tool displays retention reminder and checks if enough time has passed<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Scans topic for null-key messages<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Records last null-key message timestamp and suggests retry time if validation fails<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>If validation passes:<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Feature: <span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>remote.log.metadata.version=2<span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`<br /></span><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\"> - </span>Topic config: <span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">`</span>cleanup.policy=compact<span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">` </span>(min.compaction.lag.ms and retention.ms overrides removed)<br /><br /></p><h3>Scenario 3: Existing Cluster Enabling Tiered Storage for First Time</h3><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"278bb748-c6fe-4142-902c-b2f24a9f8abc\"><ac:plain-text-body><![CDATA[# Edit server.properties\nremote.log.storage.system.enable=true\n\n# Restart broker\nkafka-server-start.sh server.properties\n\n# Manually upgrade feature\nkafka-features.sh upgrade --feature remote.log.metadata.version=2]]></ac:plain-text-body></ac:structured-macro><p><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\"><br /></span><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Feature version starts at 0 (not automatically upgraded)<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>Topic will be created with the correct config on first use<br /><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\">- </span>The feature value needs to be upgraded to 2 manually while no change will be applied to the topic.</p><pre><br /></pre><h1>Test Plan</h1><p><strong>Topic Functionality Tests</strong></p><ul class=\"ak-ul\"><li><p>Confirm all metadata events are properly written to both topics with correct key formats</p></li><li><p>Validate that the compacted topic maintains only the latest state per segment while the original topic preserves full history</p></li></ul><p><strong>Migration Verification</strong></p><ul class=\"ak-ul\"><li><h5>Migration (Existing Clusters)</h5><ul><li>With finite <span><a href=\"http://retention.ms\">retention.ms</a></span>, upgrade brokers.</li><li>Confirm new records are keyed and readable.</li><li>Rebuild <span>RemoteLogMetadataCache</span> from <span>__remote_log_metadata</span> and verify:<ul><li>All expected remote segments are present.</li><li>Offsets and states are correct.</li></ul></li><li>After ≥ one retention window and with compaction enabled (if not already), confirm:<ul><li>Logical state (live segments, states) is unchanged.</li><li>Topic only contains keyed records and tombstones.</li></ul></li></ul></li></ul><p><strong>Durability and Recovery Tests</strong></p><ul class=\"ak-ul\"><li><p>Simulate broker failures during various stages of segment lifecycle (upload, deletion)</p></li><li><p>Test leader changes during metadata operations to verify correct handling of concurrent operations</p></li><li><p>Verify metadata consistency after unclean shutdowns and broker restarts</p></li></ul><p><strong>Performance Benchmarks</strong></p><ul class=\"ak-ul\"><li><p>Measure broker startup time before and after implementation</p></li><li><p>Compare metadata topic size growth over time between current and new implementation</p></li></ul><h1>Rejected Alternatives</h1><h2>Alternative A: Snapshot Approach (<a href=\"https://issues.apache.org/jira/browse/KAFKA-19265?focusedCommentId=18046308\">KAFKA-19265</a>)</h2><p>Rejected Reasons:</p><ol class=\"ak-ol\"><li><p><strong>Distributed Coordination Complexity</strong>: Creating consistent snapshots across distributed brokers with different partition leaders is extremely challenging and error-prone.</p></li><li><p><strong>Leader Transition Reliability</strong>: Ensuring new leaders receive the latest snapshot during transitions is difficult to guarantee, especially during network partitions or failures.</p></li><li><p><strong>Recovery Vulnerabilities</strong>: Corrupted or incomplete snapshots would require complex recovery procedures, potentially defeating the purpose of having snapshots.</p></li><li><p><strong>Operational Overhead</strong>: Additional storage requirements, snapshot management create significant operational burden.</p></li></ol><h2>Alternative B: Adjust Retention Time Based on Maximum Tiered Storage Topic Retention</h2><p>Rejected Reasons:</p><ol class=\"ak-ol\"><li><p><strong>Fails to Address Core Problem</strong>: This approach doesn't solve the unbounded metadata growth issue - it merely postpones it by extending retention periods.</p></li><li><p><strong>Resource Inefficiency and Lack of Granularity</strong>: Most metadata records would be retained far longer than necessary, wasting the storage and impacting query and bootstrap performance.</p></li><li><p><strong>Implementation Complexity</strong>: Creating a mechanism to track and dynamically update retention across all tiered storage topics introduces unnecessary complexity.</p></li><li><p><strong>Risk of Irrecoverable Metadata Loss:</strong><span> </span>If the remote storage module experiences downtime, truncating the<span> <code>__remote_log_metadata</code> </span><span> </span>topic based on retention policies could lead to permanent loss of remote log metadata, even when the remote storage still has those remote log segments, it will cause certain discrepancy between the remote storage and remote logsegment metadata state broker is preserving.</p><p><br /></p><p><br /></p></li></ol>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/406618613?status=historical&version=25"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1259
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=446071377",
+    "edit": "/pages/resumedraft.action?draftId=446071377&draftShareId=1ef8d4d0-0001-409b-b095-bc290798eaf7",
+    "tinyui": "/x/UYKWGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/406618613?status=historical&version=25"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/406618613/child?parentVersion=25",
+    "restrictions": "/rest/api/content/406618613/restriction/byOperation",
+    "history": "/rest/api/content/406618613/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/406618613/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/406618613/restriction/relevantViewRestrictions"
+   }
+  }
+ ],
+ "comments": {
+  "results": [],
+  "start": 0,
+  "limit": 200,
+  "size": 0,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/api/content/406618613/child/comment?expand=body.storage%2Cversion%2Cancestors&depth=all",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ }
+}

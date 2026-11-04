@@ -1,0 +1,1196 @@
+{
+ "pull": {
+  "url": "https://api.github.com/repos/apache/kafka/pulls/24003",
+  "id": 5056236407,
+  "node_id": "PR_kwDOACG9q88AAAABLWALdw",
+  "html_url": "https://github.com/apache/kafka/pull/24003",
+  "diff_url": "https://github.com/apache/kafka/pull/24003.diff",
+  "patch_url": "https://github.com/apache/kafka/pull/24003.patch",
+  "issue_url": "https://api.github.com/repos/apache/kafka/issues/24003",
+  "commits_url": "https://api.github.com/repos/apache/kafka/pulls/24003/commits",
+  "review_comments_url": "https://api.github.com/repos/apache/kafka/pulls/24003/comments",
+  "review_comment_url": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}",
+  "comments_url": "https://api.github.com/repos/apache/kafka/issues/24003/comments",
+  "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/e2d02a4280938489e7b59ab029bb30f208b2f945",
+  "number": 24003,
+  "state": "open",
+  "locked": false,
+  "title": "KAFKA-21389: Keep a ready streams member ready on ASSIGNMENT_DELAYED",
+  "user": {
+   "login": "lucasbru",
+   "id": 1628637,
+   "node_id": "MDQ6VXNlcjE2Mjg2Mzc=",
+   "avatar_url": "https://avatars.githubusercontent.com/u/1628637?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/lucasbru",
+   "html_url": "https://github.com/lucasbru",
+   "followers_url": "https://api.github.com/users/lucasbru/followers",
+   "following_url": "https://api.github.com/users/lucasbru/following{/other_user}",
+   "gists_url": "https://api.github.com/users/lucasbru/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/lucasbru/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/lucasbru/subscriptions",
+   "organizations_url": "https://api.github.com/users/lucasbru/orgs",
+   "repos_url": "https://api.github.com/users/lucasbru/repos",
+   "events_url": "https://api.github.com/users/lucasbru/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/lucasbru/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "body": "The group coordinator returns `ASSIGNMENT_DELAYED` in two situations:\nduring the initial rebalance delay of a new streams group, and when it\ndefers computing a new target assignment because the configured\nassignment interval has not elapsed yet. In the second case the member\nkeeps its current assignment, but `StreamsMembershipManager` mapped the\nstatus to `isGroupReady=false`. The membership manager then\nre-reconciled the unchanged tasks as not ready, and `StreamThread`\nskipped processing, committing and punctuating for all owned tasks until\na later heartbeat (up to one heartbeat interval) no longer carried the\nstatus.\n\nWith this change, `ASSIGNMENT_DELAYED` on its own keeps the readiness of\nthe previous target assignment. Since the target assignment starts out\nnot ready and is reset when the member leaves or is fenced, a member\nthat has not been ready yet, including one waiting out the initial\nrebalance delay, still does not enter `RUNNING` with an empty\nassignment. A ready member keeps processing the tasks it owns. Missing\nor incorrectly partitioned topics still mark the group as not ready,\nalso when reported together with `ASSIGNMENT_DELAYED`.\n\nThe new unit tests in `StreamsMembershipManagerTest` reproduce the issue\n(a ready member owning a task receiving a second tasks-assigned event\nwith `isGroupReady=false`) and cover the combination with a\nmissing-topics status. The existing test for a ready/not-ready\ntransition without task changes now uses `MISSING_SOURCE_TOPICS`, since\nit previously asserted the behaviour being fixed.\n\nReviewers: ChickenchickenLove <ojt90902@naver.com>\n",
+  "labels": [
+   {
+    "id": 851033232,
+    "node_id": "MDU6TGFiZWw4NTEwMzMyMzI=",
+    "url": "https://api.github.com/repos/apache/kafka/labels/consumer",
+    "name": "consumer",
+    "description": "",
+    "color": "bf6a03",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 7491388177,
+    "node_id": "LA_kwDOACG9q88AAAABvoWDEQ",
+    "url": "https://api.github.com/repos/apache/kafka/labels/clients",
+    "name": "clients",
+    "description": null,
+    "color": "ededed",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   }
+  ],
+  "milestone": null,
+  "active_lock_reason": null,
+  "created_at": "2026-10-28T19:13:06Z",
+  "updated_at": "2026-10-29T10:32:36Z",
+  "closed_at": null,
+  "merged_at": null,
+  "merge_commit_sha": "84541bad8a38fdd4684f7a21d57abaf0b4f8d61e",
+  "assignee": null,
+  "assignees": [],
+  "requested_reviewers": [],
+  "requested_teams": [],
+  "head": {
+   "label": "lucasbru:lb/assignment-delayed-keeps-ready",
+   "ref": "lb/assignment-delayed-keeps-ready",
+   "repo": {
+    "id": 533369486,
+    "node_id": "R_kgDOH8qSjg",
+    "name": "kafka",
+    "full_name": "lucasbru/kafka",
+    "owner": {
+     "login": "lucasbru",
+     "id": 1628637,
+     "node_id": "MDQ6VXNlcjE2Mjg2Mzc=",
+     "avatar_url": "https://avatars.githubusercontent.com/u/1628637?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/lucasbru",
+     "html_url": "https://github.com/lucasbru",
+     "followers_url": "https://api.github.com/users/lucasbru/followers",
+     "following_url": "https://api.github.com/users/lucasbru/following{/other_user}",
+     "gists_url": "https://api.github.com/users/lucasbru/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/lucasbru/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/lucasbru/subscriptions",
+     "organizations_url": "https://api.github.com/users/lucasbru/orgs",
+     "repos_url": "https://api.github.com/users/lucasbru/repos",
+     "events_url": "https://api.github.com/users/lucasbru/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/lucasbru/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": true,
+    "archived": false,
+    "disabled": false,
+    "description": "Mirror of Apache Kafka",
+    "homepage": null,
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [],
+    "forks_count": 0,
+    "forks": 0,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "watchers": 0,
+    "open_issues_count": 0,
+    "open_issues": 0,
+    "size": 296315,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-29T08:46:05Z",
+    "created_at": "2022-09-06T14:44:51Z",
+    "updated_at": "2025-04-10T09:24:16Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/lucasbru/kafka",
+    "html_url": "https://github.com/lucasbru/kafka",
+    "archive_url": "https://api.github.com/repos/lucasbru/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/lucasbru/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/lucasbru/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/lucasbru/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/lucasbru/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/lucasbru/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/lucasbru/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/lucasbru/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/lucasbru/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/lucasbru/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/lucasbru/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/lucasbru/kafka/downloads",
+    "events_url": "https://api.github.com/repos/lucasbru/kafka/events",
+    "forks_url": "https://api.github.com/repos/lucasbru/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/lucasbru/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/lucasbru/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/lucasbru/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/lucasbru/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/lucasbru/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/lucasbru/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/lucasbru/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/lucasbru/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/lucasbru/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/lucasbru/kafka/languages",
+    "merges_url": "https://api.github.com/repos/lucasbru/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/lucasbru/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/lucasbru/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/lucasbru/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/lucasbru/kafka/releases{/id}",
+    "ssh_url": "git@github.com:lucasbru/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/lucasbru/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/lucasbru/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/lucasbru/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/lucasbru/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/lucasbru/kafka/tags",
+    "teams_url": "https://api.github.com/repos/lucasbru/kafka/teams",
+    "trees_url": "https://api.github.com/repos/lucasbru/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/lucasbru/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/lucasbru/kafka/hooks",
+    "svn_url": "https://github.com/lucasbru/kafka"
+   },
+   "sha": "e2d02a4280938489e7b59ab029bb30f208b2f945",
+   "user": {
+    "login": "lucasbru",
+    "id": 1628637,
+    "node_id": "MDQ6VXNlcjE2Mjg2Mzc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1628637?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lucasbru",
+    "html_url": "https://github.com/lucasbru",
+    "followers_url": "https://api.github.com/users/lucasbru/followers",
+    "following_url": "https://api.github.com/users/lucasbru/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lucasbru/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lucasbru/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lucasbru/subscriptions",
+    "organizations_url": "https://api.github.com/users/lucasbru/orgs",
+    "repos_url": "https://api.github.com/users/lucasbru/repos",
+    "events_url": "https://api.github.com/users/lucasbru/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lucasbru/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "base": {
+   "label": "apache:trunk",
+   "ref": "trunk",
+   "repo": {
+    "id": 2211243,
+    "node_id": "MDEwOlJlcG9zaXRvcnkyMjExMjQz",
+    "name": "kafka",
+    "full_name": "apache/kafka",
+    "owner": {
+     "login": "apache",
+     "id": 47359,
+     "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+     "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/apache",
+     "html_url": "https://github.com/apache",
+     "followers_url": "https://api.github.com/users/apache/followers",
+     "following_url": "https://api.github.com/users/apache/following{/other_user}",
+     "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+     "organizations_url": "https://api.github.com/users/apache/orgs",
+     "repos_url": "https://api.github.com/users/apache/repos",
+     "events_url": "https://api.github.com/users/apache/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/apache/received_events",
+     "type": "Organization",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": false,
+    "archived": false,
+    "disabled": false,
+    "description": "Apache Kafka - A distributed event streaming platform",
+    "homepage": "https://kafka.apache.org/",
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [
+     "java",
+     "kafka",
+     "scala",
+     "streaming"
+    ],
+    "forks_count": 15637,
+    "forks": 15637,
+    "stargazers_count": 34153,
+    "watchers_count": 34153,
+    "watchers": 34153,
+    "open_issues_count": 674,
+    "open_issues": 674,
+    "size": 322164,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-29T11:37:21Z",
+    "created_at": "2011-08-15T18:06:16Z",
+    "updated_at": "2026-10-29T11:37:29Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/apache/kafka",
+    "html_url": "https://github.com/apache/kafka",
+    "archive_url": "https://api.github.com/repos/apache/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/apache/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/apache/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/apache/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/apache/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/apache/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/apache/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/apache/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/apache/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/apache/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/apache/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/apache/kafka/downloads",
+    "events_url": "https://api.github.com/repos/apache/kafka/events",
+    "forks_url": "https://api.github.com/repos/apache/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/apache/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/apache/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/apache/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/apache/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/apache/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/apache/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/apache/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/apache/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/apache/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/apache/kafka/languages",
+    "merges_url": "https://api.github.com/repos/apache/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/apache/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/apache/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/apache/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/apache/kafka/releases{/id}",
+    "ssh_url": "git@github.com:apache/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/apache/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/apache/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/apache/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/apache/kafka/tags",
+    "teams_url": "https://api.github.com/repos/apache/kafka/teams",
+    "trees_url": "https://api.github.com/repos/apache/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/apache/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/apache/kafka/hooks",
+    "svn_url": "https://github.com/apache/kafka"
+   },
+   "sha": "aa62a433553c14866521bd40ff446b6920d4d67e",
+   "user": {
+    "login": "apache",
+    "id": 47359,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/apache",
+    "html_url": "https://github.com/apache",
+    "followers_url": "https://api.github.com/users/apache/followers",
+    "following_url": "https://api.github.com/users/apache/following{/other_user}",
+    "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+    "organizations_url": "https://api.github.com/users/apache/orgs",
+    "repos_url": "https://api.github.com/users/apache/repos",
+    "events_url": "https://api.github.com/users/apache/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/apache/received_events",
+    "type": "Organization",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "_links": {
+   "comments": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/24003/comments"
+   },
+   "commits": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/24003/commits"
+   },
+   "statuses": {
+    "href": "https://api.github.com/repos/apache/kafka/statuses/e2d02a4280938489e7b59ab029bb30f208b2f945"
+   },
+   "html": {
+    "href": "https://github.com/apache/kafka/pull/24003"
+   },
+   "issue": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/24003"
+   },
+   "review_comments": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/24003/comments"
+   },
+   "review_comment": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}"
+   },
+   "self": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/24003"
+   }
+  },
+  "author_association": "MEMBER",
+  "auto_merge": null,
+  "draft": false,
+  "merged": false,
+  "mergeable": true,
+  "rebaseable": false,
+  "mergeable_state": "blocked",
+  "merged_by": null,
+  "comments": 0,
+  "review_comments": 2,
+  "maintainer_can_modify": true,
+  "commits": 2,
+  "additions": 168,
+  "deletions": 4,
+  "changed_files": 2
+ },
+ "reviews": [
+  {
+   "id": 5691022649,
+   "node_id": "PRR_kwDOACG9q88AAAABUzYdOQ",
+   "user": {
+    "login": "chickenchickenlove",
+    "id": 90125071,
+    "node_id": "MDQ6VXNlcjkwMTI1MDcx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/90125071?u=f7dbfbdf717c86c90d6588368a3f7952679d1e3e&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chickenchickenlove",
+    "html_url": "https://github.com/chickenchickenlove",
+    "followers_url": "https://api.github.com/users/chickenchickenlove/followers",
+    "following_url": "https://api.github.com/users/chickenchickenlove/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chickenchickenlove/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chickenchickenlove/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chickenchickenlove/subscriptions",
+    "organizations_url": "https://api.github.com/users/chickenchickenlove/orgs",
+    "repos_url": "https://api.github.com/users/chickenchickenlove/repos",
+    "events_url": "https://api.github.com/users/chickenchickenlove/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chickenchickenlove/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "Thanks for your hard work!\nOverall, Looks good to me.\nI've left a comment about the test codes.\nWhen you get a chance, please take a look! ",
+   "state": "APPROVED",
+   "html_url": "https://github.com/apache/kafka/pull/24003#pullrequestreview-5691022649",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/24003",
+   "author_association": "COLLABORATOR",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/24003#pullrequestreview-5691022649"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/24003"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-28T23:28:43Z",
+   "commit_id": "30e8a45e79b544b5cab2ec4cb013678091761bee"
+  },
+  {
+   "id": 5694989729,
+   "node_id": "PRR_kwDOACG9q88AAAABU3KloQ",
+   "user": {
+    "login": "lucasbru",
+    "id": 1628637,
+    "node_id": "MDQ6VXNlcjE2Mjg2Mzc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1628637?u=ff4de28a95378278da3bab2f4e8023fe2e58fc3c&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lucasbru",
+    "html_url": "https://github.com/lucasbru",
+    "followers_url": "https://api.github.com/users/lucasbru/followers",
+    "following_url": "https://api.github.com/users/lucasbru/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lucasbru/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lucasbru/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lucasbru/subscriptions",
+    "organizations_url": "https://api.github.com/users/lucasbru/orgs",
+    "repos_url": "https://api.github.com/users/lucasbru/repos",
+    "events_url": "https://api.github.com/users/lucasbru/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lucasbru/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/24003#pullrequestreview-5694989729",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/24003",
+   "author_association": "MEMBER",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/24003#pullrequestreview-5694989729"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/24003"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-29T08:46:10Z",
+   "commit_id": "e2d02a4280938489e7b59ab029bb30f208b2f945"
+  },
+  {
+   "id": 5696274936,
+   "node_id": "PRR_kwDOACG9q88AAAABU4ZB-A",
+   "user": {
+    "login": "chickenchickenlove",
+    "id": 90125071,
+    "node_id": "MDQ6VXNlcjkwMTI1MDcx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/90125071?u=f7dbfbdf717c86c90d6588368a3f7952679d1e3e&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chickenchickenlove",
+    "html_url": "https://github.com/chickenchickenlove",
+    "followers_url": "https://api.github.com/users/chickenchickenlove/followers",
+    "following_url": "https://api.github.com/users/chickenchickenlove/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chickenchickenlove/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chickenchickenlove/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chickenchickenlove/subscriptions",
+    "organizations_url": "https://api.github.com/users/chickenchickenlove/orgs",
+    "repos_url": "https://api.github.com/users/chickenchickenlove/repos",
+    "events_url": "https://api.github.com/users/chickenchickenlove/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chickenchickenlove/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "Looks good to me. Thanks for your work! ",
+   "state": "APPROVED",
+   "html_url": "https://github.com/apache/kafka/pull/24003#pullrequestreview-5696274936",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/24003",
+   "author_association": "COLLABORATOR",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/24003#pullrequestreview-5696274936"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/24003"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-29T10:32:36Z",
+   "commit_id": "e2d02a4280938489e7b59ab029bb30f208b2f945"
+  }
+ ],
+ "review_comments": [
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4407160115",
+   "pull_request_review_id": 5691022649,
+   "id": 4407160115,
+   "node_id": "PRRC_kwDOACG9q88AAAABBq_tMw",
+   "diff_hunk": "@@ -2487,6 +2487,68 @@ public void testIsGroupReadyChangeWhenTasksAreNull() {\n         completeAssignment(tasksAssignedEvent2);\n     }\n \n+    @Test\n+    public void testAssignmentDelayedKeepsReadyGroupReady() {",
+   "path": "clients/src/test/java/org/apache/kafka/clients/consumer/internals/StreamsMembershipManagerTest.java",
+   "commit_id": "e2d02a4280938489e7b59ab029bb30f208b2f945",
+   "original_commit_id": "30e8a45e79b544b5cab2ec4cb013678091761bee",
+   "user": {
+    "login": "chickenchickenlove",
+    "id": 90125071,
+    "node_id": "MDQ6VXNlcjkwMTI1MDcx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/90125071?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chickenchickenlove",
+    "html_url": "https://github.com/chickenchickenlove",
+    "followers_url": "https://api.github.com/users/chickenchickenlove/followers",
+    "following_url": "https://api.github.com/users/chickenchickenlove/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chickenchickenlove/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chickenchickenlove/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chickenchickenlove/subscriptions",
+    "organizations_url": "https://api.github.com/users/chickenchickenlove/orgs",
+    "repos_url": "https://api.github.com/users/chickenchickenlove/repos",
+    "events_url": "https://api.github.com/users/chickenchickenlove/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chickenchickenlove/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "Could we add two more test cases to cover the readiness preservation here?\n- `ASSIGNMENT_DELAYED` while an assignment callback is pending. Start with `currentAssignment.isGroupReady != targetAssignment.isGroupReady`, receive a delayed response, then complete the pending callback and generate the ACK. Verify that the latest target readiness is preserved, with no additional assignment callback. Covering both directions would distinguish the intended behavior from accidentally using `currentAssignment.isGroupReady`; the current tests have already completed reconciliation when the delayed response arrives.\n- `ASSIGNMENT_DELAYED` with a non-null, unchanged assignment while `STABLE`. Complete reconciliation, generate the `ACK` to transition to `STABLE`, then receive the delayed response with the same task sets. Verify that the member stays ready and `STABLE` without another assignment callback. This matches a possible broker response: it echoes the assignment when owned tasks are reported, even while computing the next target assignment is delayed.\n\nWhat do you think? ",
+   "created_at": "2026-10-28T23:28:10Z",
+   "updated_at": "2026-10-28T23:28:43Z",
+   "html_url": "https://github.com/apache/kafka/pull/24003#discussion_r4407160115",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/24003",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4407160115"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/24003#discussion_r4407160115"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/24003"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4407160115/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": 2491,
+   "original_line": 2491,
+   "side": "RIGHT",
+   "author_association": "COLLABORATOR",
+   "original_position": 16,
+   "position": 16,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4410289673",
+   "pull_request_review_id": 5694989729,
+   "id": 4410289673,
+   "node_id": "PRRC_kwDOACG9q88AAAABBt-uCQ",
+   "diff_hunk": "@@ -2487,6 +2487,68 @@ public void testIsGroupReadyChangeWhenTasksAreNull() {\n         completeAssignment(tasksAssignedEvent2);\n     }\n \n+    @Test\n+    public void testAssignmentDelayedKeepsReadyGroupReady() {",
+   "path": "clients/src/test/java/org/apache/kafka/clients/consumer/internals/StreamsMembershipManagerTest.java",
+   "commit_id": "e2d02a4280938489e7b59ab029bb30f208b2f945",
+   "original_commit_id": "30e8a45e79b544b5cab2ec4cb013678091761bee",
+   "user": {
+    "login": "lucasbru",
+    "id": 1628637,
+    "node_id": "MDQ6VXNlcjE2Mjg2Mzc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1628637?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lucasbru",
+    "html_url": "https://github.com/lucasbru",
+    "followers_url": "https://api.github.com/users/lucasbru/followers",
+    "following_url": "https://api.github.com/users/lucasbru/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lucasbru/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lucasbru/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lucasbru/subscriptions",
+    "organizations_url": "https://api.github.com/users/lucasbru/orgs",
+    "repos_url": "https://api.github.com/users/lucasbru/repos",
+    "events_url": "https://api.github.com/users/lucasbru/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lucasbru/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "Agreed, both are worth pinning down. Added `testAssignmentDelayedWhileReconcilingKeepsTargetReady` / `...KeepsTargetNotReady` for the pending-callback case in both directions (both fail if the readiness is taken from `currentAssignment`), and `testAssignmentDelayedWithUnchangedAssignmentKeepsStableMemberReady` for the echoed assignment while `STABLE`, which also fails without the fix.",
+   "created_at": "2026-10-29T08:46:10Z",
+   "updated_at": "2026-10-29T08:46:10Z",
+   "html_url": "https://github.com/apache/kafka/pull/24003#discussion_r4410289673",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/24003",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4410289673"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/24003#discussion_r4410289673"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/24003"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4410289673/reactions",
+    "total_count": 1,
+    "+1": 1,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": 2491,
+   "original_line": 2491,
+   "side": "RIGHT",
+   "in_reply_to_id": 4407160115,
+   "author_association": "MEMBER",
+   "original_position": 16,
+   "position": 16,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  }
+ ],
+ "issue_comments": [],
+ "commits": [
+  {
+   "sha": "30e8a45e79b544b5cab2ec4cb013678091761bee",
+   "node_id": "C_kwDOH8qSjtoAKDMwZThhNDVlNzliNTQ0YjVjYWIyZWM0Y2IwMTM2NzgwOTE3NjFiZWU",
+   "commit": {
+    "author": {
+     "name": "Lucas Brutschy",
+     "email": "lbrutschy@confluent.io",
+     "date": "2026-10-28T19:12:25Z"
+    },
+    "committer": {
+     "name": "Lucas Brutschy",
+     "email": "lbrutschy@confluent.io",
+     "date": "2026-10-28T19:12:25Z"
+    },
+    "message": "MINOR: Keep a ready streams member ready on ASSIGNMENT_DELAYED\n\nThe group coordinator returns ASSIGNMENT_DELAYED both during the initial\nrebalance delay of a new group and when it defers computing a new target\nassignment because of the configured assignment interval. In the second\ncase the member keeps its current assignment, but the client mapped the\nstatus to isGroupReady=false, which made the StreamThread stop processing\nall owned tasks until a later heartbeat no longer carried the status.\n\nASSIGNMENT_DELAYED now keeps the readiness of the previous target\nassignment. A member that has not been ready yet, including one waiting\nout the initial rebalance delay, stays not ready, while a ready member\nkeeps processing. Missing or incorrectly partitioned topics still mark\nthe group as not ready, also when reported together with\nASSIGNMENT_DELAYED.",
+    "tree": {
+     "sha": "8334612624565cb6f039d198278f829534c62ac6",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/8334612624565cb6f039d198278f829534c62ac6"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/30e8a45e79b544b5cab2ec4cb013678091761bee",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unknown_key",
+     "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgdliZ1FCnQCcceBPjA59PKByi7B\noqh8yDdQj3dZ5uopUAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQFjE1SlLj1UpXk+XbvAF6Mlpd4K7zUzdCQgc/eQFdyIxxofngIG318mVeH8Q1V1wwZ\n0jydM5Uk8a8MEEOhUS2AI=\n-----END SSH SIGNATURE-----",
+     "payload": "tree 8334612624565cb6f039d198278f829534c62ac6\nparent 9a61f5711c1506ab1b6fb526cf907295ffb9defe\nauthor Lucas Brutschy <lbrutschy@confluent.io> 1793214745 +0100\ncommitter Lucas Brutschy <lbrutschy@confluent.io> 1793214745 +0100\n\nMINOR: Keep a ready streams member ready on ASSIGNMENT_DELAYED\n\nThe group coordinator returns ASSIGNMENT_DELAYED both during the initial\nrebalance delay of a new group and when it defers computing a new target\nassignment because of the configured assignment interval. In the second\ncase the member keeps its current assignment, but the client mapped the\nstatus to isGroupReady=false, which made the StreamThread stop processing\nall owned tasks until a later heartbeat no longer carried the status.\n\nASSIGNMENT_DELAYED now keeps the readiness of the previous target\nassignment. A member that has not been ready yet, including one waiting\nout the initial rebalance delay, stays not ready, while a ready member\nkeeps processing. Missing or incorrectly partitioned topics still mark\nthe group as not ready, also when reported together with\nASSIGNMENT_DELAYED.\n",
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/30e8a45e79b544b5cab2ec4cb013678091761bee",
+   "html_url": "https://github.com/apache/kafka/commit/30e8a45e79b544b5cab2ec4cb013678091761bee",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/30e8a45e79b544b5cab2ec4cb013678091761bee/comments",
+   "author": {
+    "login": "lucasbru",
+    "id": 1628637,
+    "node_id": "MDQ6VXNlcjE2Mjg2Mzc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1628637?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lucasbru",
+    "html_url": "https://github.com/lucasbru",
+    "followers_url": "https://api.github.com/users/lucasbru/followers",
+    "following_url": "https://api.github.com/users/lucasbru/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lucasbru/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lucasbru/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lucasbru/subscriptions",
+    "organizations_url": "https://api.github.com/users/lucasbru/orgs",
+    "repos_url": "https://api.github.com/users/lucasbru/repos",
+    "events_url": "https://api.github.com/users/lucasbru/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lucasbru/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "lucasbru",
+    "id": 1628637,
+    "node_id": "MDQ6VXNlcjE2Mjg2Mzc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1628637?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lucasbru",
+    "html_url": "https://github.com/lucasbru",
+    "followers_url": "https://api.github.com/users/lucasbru/followers",
+    "following_url": "https://api.github.com/users/lucasbru/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lucasbru/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lucasbru/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lucasbru/subscriptions",
+    "organizations_url": "https://api.github.com/users/lucasbru/orgs",
+    "repos_url": "https://api.github.com/users/lucasbru/repos",
+    "events_url": "https://api.github.com/users/lucasbru/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lucasbru/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "9a61f5711c1506ab1b6fb526cf907295ffb9defe",
+     "url": "https://api.github.com/repos/apache/kafka/commits/9a61f5711c1506ab1b6fb526cf907295ffb9defe",
+     "html_url": "https://github.com/apache/kafka/commit/9a61f5711c1506ab1b6fb526cf907295ffb9defe"
+    }
+   ]
+  },
+  {
+   "sha": "e2d02a4280938489e7b59ab029bb30f208b2f945",
+   "node_id": "C_kwDOH8qSjtoAKGUyZDAyYTQyODA5Mzg0ODllN2I1OWFiMDI5YmIzMGYyMDhiMmY5NDU",
+   "commit": {
+    "author": {
+     "name": "Lucas Brutschy",
+     "email": "lbrutschy@confluent.io",
+     "date": "2026-10-29T08:35:42Z"
+    },
+    "committer": {
+     "name": "Lucas Brutschy",
+     "email": "lbrutschy@confluent.io",
+     "date": "2026-10-29T08:35:42Z"
+    },
+    "message": "Cover ASSIGNMENT_DELAYED during reconciliation and with an echoed assignment",
+    "tree": {
+     "sha": "5b1c9ff79358082f62868fd1d17de3b11612d89e",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/5b1c9ff79358082f62868fd1d17de3b11612d89e"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/e2d02a4280938489e7b59ab029bb30f208b2f945",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unknown_key",
+     "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgdliZ1FCnQCcceBPjA59PKByi7B\noqh8yDdQj3dZ5uopUAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQGbKMqcZr0hNY2/NY28dEtcN6TJwQm0EAvjAjzk/+MnsQ8SOUk3KPABgDiCorIMuah\nI41BO0G5stXZPZ9rq9Owg=\n-----END SSH SIGNATURE-----",
+     "payload": "tree 5b1c9ff79358082f62868fd1d17de3b11612d89e\nparent 30e8a45e79b544b5cab2ec4cb013678091761bee\nauthor Lucas Brutschy <lbrutschy@confluent.io> 1793262942 +0100\ncommitter Lucas Brutschy <lbrutschy@confluent.io> 1793262942 +0100\n\nCover ASSIGNMENT_DELAYED during reconciliation and with an echoed assignment\n",
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/e2d02a4280938489e7b59ab029bb30f208b2f945",
+   "html_url": "https://github.com/apache/kafka/commit/e2d02a4280938489e7b59ab029bb30f208b2f945",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/e2d02a4280938489e7b59ab029bb30f208b2f945/comments",
+   "author": {
+    "login": "lucasbru",
+    "id": 1628637,
+    "node_id": "MDQ6VXNlcjE2Mjg2Mzc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1628637?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lucasbru",
+    "html_url": "https://github.com/lucasbru",
+    "followers_url": "https://api.github.com/users/lucasbru/followers",
+    "following_url": "https://api.github.com/users/lucasbru/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lucasbru/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lucasbru/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lucasbru/subscriptions",
+    "organizations_url": "https://api.github.com/users/lucasbru/orgs",
+    "repos_url": "https://api.github.com/users/lucasbru/repos",
+    "events_url": "https://api.github.com/users/lucasbru/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lucasbru/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "lucasbru",
+    "id": 1628637,
+    "node_id": "MDQ6VXNlcjE2Mjg2Mzc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1628637?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lucasbru",
+    "html_url": "https://github.com/lucasbru",
+    "followers_url": "https://api.github.com/users/lucasbru/followers",
+    "following_url": "https://api.github.com/users/lucasbru/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lucasbru/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lucasbru/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lucasbru/subscriptions",
+    "organizations_url": "https://api.github.com/users/lucasbru/orgs",
+    "repos_url": "https://api.github.com/users/lucasbru/repos",
+    "events_url": "https://api.github.com/users/lucasbru/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lucasbru/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "30e8a45e79b544b5cab2ec4cb013678091761bee",
+     "url": "https://api.github.com/repos/apache/kafka/commits/30e8a45e79b544b5cab2ec4cb013678091761bee",
+     "html_url": "https://github.com/apache/kafka/commit/30e8a45e79b544b5cab2ec4cb013678091761bee"
+    }
+   ]
+  }
+ ],
+ "files": [
+  {
+   "sha": "62b043fffb88b0dd27a4e89adcf85d3461233f79",
+   "filename": "clients/src/main/java/org/apache/kafka/clients/consumer/internals/StreamsMembershipManager.java",
+   "status": "modified",
+   "additions": 12,
+   "deletions": 2,
+   "changes": 14,
+   "blob_url": "https://github.com/apache/kafka/blob/e2d02a4280938489e7b59ab029bb30f208b2f945/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fconsumer%2Finternals%2FStreamsMembershipManager.java",
+   "raw_url": "https://github.com/apache/kafka/raw/e2d02a4280938489e7b59ab029bb30f208b2f945/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fconsumer%2Finternals%2FStreamsMembershipManager.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fconsumer%2Finternals%2FStreamsMembershipManager.java?ref=e2d02a4280938489e7b59ab029bb30f208b2f945",
+   "patch": "@@ -803,21 +803,31 @@ public void onHeartbeatSuccess(StreamsGroupHeartbeatResponse response) {\n         }\n     }\n \n+    /**\n+     * Determines whether the group is ready from the statuses of a heartbeat response.\n+     * <p>\n+     * {@code ASSIGNMENT_DELAYED} only means that the coordinator deferred computing a new target assignment, so it\n+     * keeps the previous readiness: a member that has not yet been ready (e.g., during the initial rebalance delay)\n+     * stays not ready, while a ready member keeps processing the tasks it owns.\n+     */\n     private boolean isGroupReady(List<StreamsGroupHeartbeatResponseData.Status> statuses) {\n+        boolean assignmentDelayed = false;\n         if (statuses != null) {\n             for (final StreamsGroupHeartbeatResponseData.Status status : statuses) {\n                 switch (StreamsGroupHeartbeatResponse.Status.fromCode(status.statusCode())) {\n                     case MISSING_SOURCE_TOPICS:\n                     case MISSING_INTERNAL_TOPICS:\n                     case INCORRECTLY_PARTITIONED_TOPICS:\n-                    case ASSIGNMENT_DELAYED:\n                         return false;\n+                    case ASSIGNMENT_DELAYED:\n+                        assignmentDelayed = true;\n+                        break;\n                     default:\n                         // continue checking other statuses\n                 }\n             }\n         }\n-        return true;\n+        return !assignmentDelayed || targetAssignment.isGroupReady;\n     }\n \n     /**"
+  },
+  {
+   "sha": "08488a242efe62a23b72fa3fd461396f89e7f74c",
+   "filename": "clients/src/test/java/org/apache/kafka/clients/consumer/internals/StreamsMembershipManagerTest.java",
+   "status": "modified",
+   "additions": 156,
+   "deletions": 2,
+   "changes": 158,
+   "blob_url": "https://github.com/apache/kafka/blob/e2d02a4280938489e7b59ab029bb30f208b2f945/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fconsumer%2Finternals%2FStreamsMembershipManagerTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/e2d02a4280938489e7b59ab029bb30f208b2f945/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fconsumer%2Finternals%2FStreamsMembershipManagerTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fconsumer%2Finternals%2FStreamsMembershipManagerTest.java?ref=e2d02a4280938489e7b59ab029bb30f208b2f945",
+   "patch": "@@ -2463,8 +2463,8 @@ public void testIsGroupReadyChangeWhenTasksAreNull() {\n \n         final List<StreamsGroupHeartbeatResponseData.Status> statuses = List.of(\n             new StreamsGroupHeartbeatResponseData.Status()\n-                .setStatusCode(StreamsGroupHeartbeatResponse.Status.ASSIGNMENT_DELAYED.code())\n-                .setStatusDetail(\"Assignment delayed due to the configured initial rebalance delay.\")\n+                .setStatusCode(StreamsGroupHeartbeatResponse.Status.MISSING_SOURCE_TOPICS.code())\n+                .setStatusDetail(\"Source topics are missing.\")\n         );\n \n         final StreamsGroupHeartbeatResponse responseWithoutTasks = makeHeartbeatResponse(\n@@ -2487,6 +2487,160 @@ public void testIsGroupReadyChangeWhenTasksAreNull() {\n         completeAssignment(tasksAssignedEvent2);\n     }\n \n+    @Test\n+    public void testAssignmentDelayedKeepsReadyGroupReady() {\n+        setupStreamsRebalanceDataWithOneSubtopologyOneSourceTopic(SUBTOPOLOGY_ID_0, TOPIC_0);\n+        final Set<StreamsRebalanceData.TaskId> activeTasks =\n+            Set.of(new StreamsRebalanceData.TaskId(SUBTOPOLOGY_ID_0, PARTITION_0));\n+        when(subscriptionState.assignedPartitions())\n+            .thenReturn(Set.of())\n+            .thenReturn(Set.of(new TopicPartition(TOPIC_0, PARTITION_0)));\n+        joining();\n+        reconcile(makeHeartbeatResponseWithActiveTasks(SUBTOPOLOGY_ID_0, List.of(PARTITION_0)));\n+        acknowledging(verifyOnTasksAssignedCallbackNeededEventAddedToBackgroundEventHandler(activeTasks, Set.of(), Set.of(), true));\n+\n+        final StreamsGroupHeartbeatResponse delayedResponse = makeHeartbeatResponse(\n+            null,\n+            null,\n+            null,\n+            MEMBER_EPOCH,\n+            List.of(\n+                new StreamsGroupHeartbeatResponseData.Status()\n+                    .setStatusCode(StreamsGroupHeartbeatResponse.Status.ASSIGNMENT_DELAYED.code())\n+                    .setStatusDetail(\"Assignment delayed due to the configured assignment interval.\")\n+            )\n+        );\n+        membershipManager.onHeartbeatSuccess(delayedResponse);\n+        membershipManager.poll(time.milliseconds());\n+\n+        verify(backgroundEventHandler, times(tasksAssignedAddCount)).add(any(StreamsTasksAssignedEvent.class));\n+        verifyInStateAcknowledging(membershipManager);\n+    }\n+\n+    @Test\n+    public void testAssignmentDelayedWithMissingTopicsMakesReadyGroupNotReady() {\n+        setupStreamsRebalanceDataWithOneSubtopologyOneSourceTopic(SUBTOPOLOGY_ID_0, TOPIC_0);\n+        final Set<StreamsRebalanceData.TaskId> activeTasks =\n+            Set.of(new StreamsRebalanceData.TaskId(SUBTOPOLOGY_ID_0, PARTITION_0));\n+        when(subscriptionState.assignedPartitions())\n+            .thenReturn(Set.of())\n+            .thenReturn(Set.of(new TopicPartition(TOPIC_0, PARTITION_0)));\n+        joining();\n+        reconcile(makeHeartbeatResponseWithActiveTasks(SUBTOPOLOGY_ID_0, List.of(PARTITION_0)));\n+        acknowledging(verifyOnTasksAssignedCallbackNeededEventAddedToBackgroundEventHandler(activeTasks, Set.of(), Set.of(), true));\n+\n+        final StreamsGroupHeartbeatResponse delayedResponse = makeHeartbeatResponse(\n+            null,\n+            null,\n+            null,\n+            MEMBER_EPOCH,\n+            List.of(\n+                new StreamsGroupHeartbeatResponseData.Status()\n+                    .setStatusCode(StreamsGroupHeartbeatResponse.Status.ASSIGNMENT_DELAYED.code())\n+                    .setStatusDetail(\"Assignment delayed due to the configured assignment interval.\"),\n+                new StreamsGroupHeartbeatResponseData.Status()\n+                    .setStatusCode(StreamsGroupHeartbeatResponse.Status.MISSING_INTERNAL_TOPICS.code())\n+                    .setStatusDetail(\"One or more internal topics are missing.\")\n+            )\n+        );\n+        membershipManager.onHeartbeatSuccess(delayedResponse);\n+        membershipManager.poll(time.milliseconds());\n+\n+        verifyOnTasksAssignedCallbackNeededEventAddedToBackgroundEventHandler(activeTasks, Set.of(), Set.of(), false);\n+    }\n+\n+    @Test\n+    public void testAssignmentDelayedWhileReconcilingKeepsTargetReady() {\n+        setupStreamsRebalanceDataWithOneSubtopologyOneSourceTopic(SUBTOPOLOGY_ID_0, TOPIC_0);\n+        final Set<StreamsRebalanceData.TaskId> activeTasks =\n+            Set.of(new StreamsRebalanceData.TaskId(SUBTOPOLOGY_ID_0, PARTITION_0));\n+        joining();\n+        // The target assignment is ready, while the current assignment is not ready until the callback completes.\n+        reconcile(makeHeartbeatResponseWithActiveTasks(SUBTOPOLOGY_ID_0, List.of(PARTITION_0)));\n+        final StreamsTasksAssignedEvent tasksAssignedEvent =\n+            verifyOnTasksAssignedCallbackNeededEventAddedToBackgroundEventHandler(activeTasks, Set.of(), Set.of(), true);\n+\n+        membershipManager.onHeartbeatSuccess(makeHeartbeatResponse(null, null, null, MEMBER_EPOCH, List.of(assignmentDelayedStatus())));\n+        membershipManager.poll(time.milliseconds());\n+        acknowledging(tasksAssignedEvent);\n+        membershipManager.onHeartbeatRequestGenerated();\n+        membershipManager.poll(time.milliseconds());\n+\n+        verify(backgroundEventHandler, times(tasksAssignedAddCount)).add(any(StreamsTasksAssignedEvent.class));\n+        verifyInStateStable(membershipManager);\n+    }\n+\n+    @Test\n+    public void testAssignmentDelayedWhileReconcilingKeepsTargetNotReady() {\n+        setupStreamsRebalanceDataWithOneSubtopologyOneSourceTopic(SUBTOPOLOGY_ID_0, TOPIC_0);\n+        final Set<StreamsRebalanceData.TaskId> activeTasks =\n+            Set.of(new StreamsRebalanceData.TaskId(SUBTOPOLOGY_ID_0, PARTITION_0));\n+        when(subscriptionState.assignedPartitions())\n+            .thenReturn(Set.of())\n+            .thenReturn(Set.of(new TopicPartition(TOPIC_0, PARTITION_0)));\n+        joining();\n+        reconcile(makeHeartbeatResponseWithActiveTasks(SUBTOPOLOGY_ID_0, List.of(PARTITION_0)));\n+        acknowledging(verifyOnTasksAssignedCallbackNeededEventAddedToBackgroundEventHandler(activeTasks, Set.of(), Set.of(), true));\n+        // The target assignment is not ready, while the current assignment stays ready until the callback completes.\n+        reconcile(makeHeartbeatResponse(\n+            List.of(taskIds(SUBTOPOLOGY_ID_0, List.of(PARTITION_0))),\n+            List.of(),\n+            List.of(),\n+            MEMBER_EPOCH,\n+            List.of(missingInternalTopicsStatus())\n+        ));\n+        final StreamsTasksAssignedEvent tasksAssignedEvent =\n+            verifyOnTasksAssignedCallbackNeededEventAddedToBackgroundEventHandler(activeTasks, Set.of(), Set.of(), false);\n+\n+        membershipManager.onHeartbeatSuccess(makeHeartbeatResponse(null, null, null, MEMBER_EPOCH, List.of(assignmentDelayedStatus())));\n+        membershipManager.poll(time.milliseconds());\n+        acknowledging(tasksAssignedEvent);\n+        membershipManager.onHeartbeatRequestGenerated();\n+        membershipManager.poll(time.milliseconds());\n+\n+        verify(backgroundEventHandler, times(tasksAssignedAddCount)).add(any(StreamsTasksAssignedEvent.class));\n+        verifyInStateStable(membershipManager);\n+    }\n+\n+    @Test\n+    public void testAssignmentDelayedWithUnchangedAssignmentKeepsStableMemberReady() {\n+        setupStreamsRebalanceDataWithOneSubtopologyOneSourceTopic(SUBTOPOLOGY_ID_0, TOPIC_0);\n+        final Set<StreamsRebalanceData.TaskId> activeTasks =\n+            Set.of(new StreamsRebalanceData.TaskId(SUBTOPOLOGY_ID_0, PARTITION_0));\n+        when(subscriptionState.assignedPartitions())\n+            .thenReturn(Set.of())\n+            .thenReturn(Set.of(new TopicPartition(TOPIC_0, PARTITION_0)));\n+        joining();\n+        reconcile(makeHeartbeatResponseWithActiveTasks(SUBTOPOLOGY_ID_0, List.of(PARTITION_0)));\n+        acknowledging(verifyOnTasksAssignedCallbackNeededEventAddedToBackgroundEventHandler(activeTasks, Set.of(), Set.of(), true));\n+        membershipManager.onHeartbeatRequestGenerated();\n+        verifyInStateStable(membershipManager);\n+\n+        membershipManager.onHeartbeatSuccess(makeHeartbeatResponse(\n+            List.of(taskIds(SUBTOPOLOGY_ID_0, List.of(PARTITION_0))),\n+            List.of(),\n+            List.of(),\n+            MEMBER_EPOCH,\n+            List.of(assignmentDelayedStatus())\n+        ));\n+        membershipManager.poll(time.milliseconds());\n+\n+        verify(backgroundEventHandler, times(tasksAssignedAddCount)).add(any(StreamsTasksAssignedEvent.class));\n+        verifyInStateStable(membershipManager);\n+    }\n+\n+    private static StreamsGroupHeartbeatResponseData.Status assignmentDelayedStatus() {\n+        return new StreamsGroupHeartbeatResponseData.Status()\n+            .setStatusCode(StreamsGroupHeartbeatResponse.Status.ASSIGNMENT_DELAYED.code())\n+            .setStatusDetail(\"Assignment delayed due to the configured assignment interval.\");\n+    }\n+\n+    private static StreamsGroupHeartbeatResponseData.Status missingInternalTopicsStatus() {\n+        return new StreamsGroupHeartbeatResponseData.Status()\n+            .setStatusCode(StreamsGroupHeartbeatResponse.Status.MISSING_INTERNAL_TOPICS.code())\n+            .setStatusDetail(\"One or more internal topics are missing.\");\n+    }\n+\n     private void verifyThatNoTasksHaveBeenRevoked() {\n         verify(backgroundEventHandler, never()).add(any(StreamsOnTasksRevokedCallbackNeededEvent.class));\n         verify(subscriptionState, never()).markPendingRevocation(any());"
+  }
+ ],
+ "timeline": [
+  {
+   "sha": "30e8a45e79b544b5cab2ec4cb013678091761bee",
+   "node_id": "C_kwDOACG9q9oAKDMwZThhNDVlNzliNTQ0YjVjYWIyZWM0Y2IwMTM2NzgwOTE3NjFiZWU",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/30e8a45e79b544b5cab2ec4cb013678091761bee",
+   "html_url": "https://github.com/apache/kafka/commit/30e8a45e79b544b5cab2ec4cb013678091761bee",
+   "author": {
+    "name": "Lucas Brutschy",
+    "email": "lbrutschy@confluent.io",
+    "date": "2026-10-28T19:12:25Z"
+   },
+   "committer": {
+    "name": "Lucas Brutschy",
+    "email": "lbrutschy@confluent.io",
+    "date": "2026-10-28T19:12:25Z"
+   },
+   "tree": {
+    "sha": "8334612624565cb6f039d198278f829534c62ac6",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/8334612624565cb6f039d198278f829534c62ac6"
+   },
+   "message": "MINOR: Keep a ready streams member ready on ASSIGNMENT_DELAYED\n\nThe group coordinator returns ASSIGNMENT_DELAYED both during the initial\nrebalance delay of a new group and when it defers computing a new target\nassignment because of the configured assignment interval. In the second\ncase the member keeps its current assignment, but the client mapped the\nstatus to isGroupReady=false, which made the StreamThread stop processing\nall owned tasks until a later heartbeat no longer carried the status.\n\nASSIGNMENT_DELAYED now keeps the readiness of the previous target\nassignment. A member that has not been ready yet, including one waiting\nout the initial rebalance delay, stays not ready, while a ready member\nkeeps processing. Missing or incorrectly partitioned topics still mark\nthe group as not ready, also when reported together with\nASSIGNMENT_DELAYED.",
+   "parents": [
+    {
+     "sha": "9a61f5711c1506ab1b6fb526cf907295ffb9defe",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/9a61f5711c1506ab1b6fb526cf907295ffb9defe",
+     "html_url": "https://github.com/apache/kafka/commit/9a61f5711c1506ab1b6fb526cf907295ffb9defe"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unknown_key",
+    "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgdliZ1FCnQCcceBPjA59PKByi7B\noqh8yDdQj3dZ5uopUAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQFjE1SlLj1UpXk+XbvAF6Mlpd4K7zUzdCQgc/eQFdyIxxofngIG318mVeH8Q1V1wwZ\n0jydM5Uk8a8MEEOhUS2AI=\n-----END SSH SIGNATURE-----",
+    "payload": "tree 8334612624565cb6f039d198278f829534c62ac6\nparent 9a61f5711c1506ab1b6fb526cf907295ffb9defe\nauthor Lucas Brutschy <lbrutschy@confluent.io> 1793214745 +0100\ncommitter Lucas Brutschy <lbrutschy@confluent.io> 1793214745 +0100\n\nMINOR: Keep a ready streams member ready on ASSIGNMENT_DELAYED\n\nThe group coordinator returns ASSIGNMENT_DELAYED both during the initial\nrebalance delay of a new group and when it defers computing a new target\nassignment because of the configured assignment interval. In the second\ncase the member keeps its current assignment, but the client mapped the\nstatus to isGroupReady=false, which made the StreamThread stop processing\nall owned tasks until a later heartbeat no longer carried the status.\n\nASSIGNMENT_DELAYED now keeps the readiness of the previous target\nassignment. A member that has not been ready yet, including one waiting\nout the initial rebalance delay, stays not ready, while a ready member\nkeeps processing. Missing or incorrectly partitioned topics still mark\nthe group as not ready, also when reported together with\nASSIGNMENT_DELAYED.\n",
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "id": 34511250833,
+   "node_id": "LE_lADOACG9q88AAAABar1Fi88AAAAICQflkQ",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34511250833",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-28T19:15:23Z",
+   "label": {
+    "name": "consumer",
+    "color": "bf6a03"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34511250894,
+   "node_id": "LE_lADOACG9q88AAAABar1Fi88AAAAICQflzg",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34511250894",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-28T19:15:23Z",
+   "label": {
+    "name": "clients",
+    "color": "ededed"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34511254106,
+   "node_id": "LE_lADOACG9q88AAAABar1Fi88AAAAICQfyWg",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34511254106",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-28T19:15:25Z",
+   "label": {
+    "name": "small",
+    "color": "FEF2C0"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 5691022649,
+   "node_id": "PRR_kwDOACG9q88AAAABUzYdOQ",
+   "user": {
+    "login": "chickenchickenlove",
+    "id": 90125071,
+    "node_id": "MDQ6VXNlcjkwMTI1MDcx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/90125071?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chickenchickenlove",
+    "html_url": "https://github.com/chickenchickenlove",
+    "followers_url": "https://api.github.com/users/chickenchickenlove/followers",
+    "following_url": "https://api.github.com/users/chickenchickenlove/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chickenchickenlove/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chickenchickenlove/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chickenchickenlove/subscriptions",
+    "organizations_url": "https://api.github.com/users/chickenchickenlove/orgs",
+    "repos_url": "https://api.github.com/users/chickenchickenlove/repos",
+    "events_url": "https://api.github.com/users/chickenchickenlove/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chickenchickenlove/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "Thanks for your hard work!\nOverall, Looks good to me.\nI've left a comment about the test codes.\nWhen you get a chance, please take a look! ",
+   "commit_id": "30e8a45e79b544b5cab2ec4cb013678091761bee",
+   "state": "approved",
+   "html_url": "https://github.com/apache/kafka/pull/24003#pullrequestreview-5691022649",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/24003",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/24003#pullrequestreview-5691022649"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/24003"
+    }
+   },
+   "submitted_at": "2026-10-28T23:28:43Z",
+   "updated_at": "2026-10-28T23:28:43Z",
+   "author_association": "COLLABORATOR",
+   "event": "reviewed"
+  },
+  {
+   "sha": "e2d02a4280938489e7b59ab029bb30f208b2f945",
+   "node_id": "C_kwDOACG9q9oAKGUyZDAyYTQyODA5Mzg0ODllN2I1OWFiMDI5YmIzMGYyMDhiMmY5NDU",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/e2d02a4280938489e7b59ab029bb30f208b2f945",
+   "html_url": "https://github.com/apache/kafka/commit/e2d02a4280938489e7b59ab029bb30f208b2f945",
+   "author": {
+    "name": "Lucas Brutschy",
+    "email": "lbrutschy@confluent.io",
+    "date": "2026-10-29T08:35:42Z"
+   },
+   "committer": {
+    "name": "Lucas Brutschy",
+    "email": "lbrutschy@confluent.io",
+    "date": "2026-10-29T08:35:42Z"
+   },
+   "tree": {
+    "sha": "5b1c9ff79358082f62868fd1d17de3b11612d89e",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/5b1c9ff79358082f62868fd1d17de3b11612d89e"
+   },
+   "message": "Cover ASSIGNMENT_DELAYED during reconciliation and with an echoed assignment",
+   "parents": [
+    {
+     "sha": "30e8a45e79b544b5cab2ec4cb013678091761bee",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/30e8a45e79b544b5cab2ec4cb013678091761bee",
+     "html_url": "https://github.com/apache/kafka/commit/30e8a45e79b544b5cab2ec4cb013678091761bee"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unknown_key",
+    "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgdliZ1FCnQCcceBPjA59PKByi7B\noqh8yDdQj3dZ5uopUAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQGbKMqcZr0hNY2/NY28dEtcN6TJwQm0EAvjAjzk/+MnsQ8SOUk3KPABgDiCorIMuah\nI41BO0G5stXZPZ9rq9Owg=\n-----END SSH SIGNATURE-----",
+    "payload": "tree 5b1c9ff79358082f62868fd1d17de3b11612d89e\nparent 30e8a45e79b544b5cab2ec4cb013678091761bee\nauthor Lucas Brutschy <lbrutschy@confluent.io> 1793262942 +0100\ncommitter Lucas Brutschy <lbrutschy@confluent.io> 1793262942 +0100\n\nCover ASSIGNMENT_DELAYED during reconciliation and with an echoed assignment\n",
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "id": 34564783115,
+   "node_id": "UNLE_lADOACG9q88AAAABar1Fi88AAAAIDDi8Cw",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34564783115",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "unlabeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-29T08:49:32Z",
+   "label": {
+    "name": "small",
+    "color": "FEF2C0"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34573541961,
+   "node_id": "RTE_lADOACG9q88AAAABar1Fi88AAAAIDL5iSQ",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34573541961",
+   "actor": {
+    "login": "lucasbru",
+    "id": 1628637,
+    "node_id": "MDQ6VXNlcjE2Mjg2Mzc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1628637?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lucasbru",
+    "html_url": "https://github.com/lucasbru",
+    "followers_url": "https://api.github.com/users/lucasbru/followers",
+    "following_url": "https://api.github.com/users/lucasbru/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lucasbru/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lucasbru/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lucasbru/subscriptions",
+    "organizations_url": "https://api.github.com/users/lucasbru/orgs",
+    "repos_url": "https://api.github.com/users/lucasbru/repos",
+    "events_url": "https://api.github.com/users/lucasbru/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lucasbru/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "renamed",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-29T10:32:30Z",
+   "rename": {
+    "from": "MINOR: Keep a ready streams member ready on ASSIGNMENT_DELAYED",
+    "to": "KAFKA-21389: Keep a ready streams member ready on ASSIGNMENT_DELAYED"
+   },
+   "performed_via_github_app": null
+  },
+  {
+   "id": 5696274936,
+   "node_id": "PRR_kwDOACG9q88AAAABU4ZB-A",
+   "user": {
+    "login": "chickenchickenlove",
+    "id": 90125071,
+    "node_id": "MDQ6VXNlcjkwMTI1MDcx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/90125071?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chickenchickenlove",
+    "html_url": "https://github.com/chickenchickenlove",
+    "followers_url": "https://api.github.com/users/chickenchickenlove/followers",
+    "following_url": "https://api.github.com/users/chickenchickenlove/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chickenchickenlove/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chickenchickenlove/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chickenchickenlove/subscriptions",
+    "organizations_url": "https://api.github.com/users/chickenchickenlove/orgs",
+    "repos_url": "https://api.github.com/users/chickenchickenlove/repos",
+    "events_url": "https://api.github.com/users/chickenchickenlove/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chickenchickenlove/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "Looks good to me. Thanks for your work! ",
+   "commit_id": "e2d02a4280938489e7b59ab029bb30f208b2f945",
+   "state": "approved",
+   "html_url": "https://github.com/apache/kafka/pull/24003#pullrequestreview-5696274936",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/24003",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/24003#pullrequestreview-5696274936"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/24003"
+    }
+   },
+   "submitted_at": "2026-10-29T10:32:36Z",
+   "updated_at": "2026-10-29T10:32:36Z",
+   "author_association": "COLLABORATOR",
+   "event": "reviewed"
+  }
+ ]
+}

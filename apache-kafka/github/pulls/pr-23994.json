@@ -1,0 +1,940 @@
+{
+ "pull": {
+  "url": "https://api.github.com/repos/apache/kafka/pulls/23994",
+  "id": 5046886452,
+  "node_id": "PR_kwDOACG9q88AAAABLNFgNA",
+  "html_url": "https://github.com/apache/kafka/pull/23994",
+  "diff_url": "https://github.com/apache/kafka/pull/23994.diff",
+  "patch_url": "https://github.com/apache/kafka/pull/23994.patch",
+  "issue_url": "https://api.github.com/repos/apache/kafka/issues/23994",
+  "commits_url": "https://api.github.com/repos/apache/kafka/pulls/23994/commits",
+  "review_comments_url": "https://api.github.com/repos/apache/kafka/pulls/23994/comments",
+  "review_comment_url": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}",
+  "comments_url": "https://api.github.com/repos/apache/kafka/issues/23994/comments",
+  "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/5a2bb372c3b8b0dfdd897f72c2d22c547f6b4151",
+  "number": 23994,
+  "state": "open",
+  "locked": false,
+  "title": "KAFKA-19042 Rewrite MetricsTest from Scala to Java",
+  "user": {
+   "login": "m1a2st",
+   "id": 100591800,
+   "node_id": "U_kgDOBf7ouA",
+   "avatar_url": "https://avatars.githubusercontent.com/u/100591800?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/m1a2st",
+   "html_url": "https://github.com/m1a2st",
+   "followers_url": "https://api.github.com/users/m1a2st/followers",
+   "following_url": "https://api.github.com/users/m1a2st/following{/other_user}",
+   "gists_url": "https://api.github.com/users/m1a2st/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/m1a2st/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/m1a2st/subscriptions",
+   "organizations_url": "https://api.github.com/users/m1a2st/orgs",
+   "repos_url": "https://api.github.com/users/m1a2st/repos",
+   "events_url": "https://api.github.com/users/m1a2st/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/m1a2st/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "body": "Rewrite MetricsTest from Scala to Java and move it to server module\n",
+  "labels": [
+   {
+    "id": 838330122,
+    "node_id": "MDU6TGFiZWw4MzgzMzAxMjI=",
+    "url": "https://api.github.com/repos/apache/kafka/labels/core",
+    "name": "core",
+    "description": "Kafka Broker",
+    "color": "ed5a86",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   }
+  ],
+  "milestone": null,
+  "active_lock_reason": null,
+  "created_at": "2026-10-28T07:33:42Z",
+  "updated_at": "2026-10-29T03:15:23Z",
+  "closed_at": null,
+  "merged_at": null,
+  "merge_commit_sha": "3bfb84319ac2050c2f01ce461f1cfbd7169a2fbe",
+  "assignee": null,
+  "assignees": [],
+  "requested_reviewers": [],
+  "requested_teams": [],
+  "head": {
+   "label": "m1a2st:KAFKA-19042-12",
+   "ref": "KAFKA-19042-12",
+   "repo": {
+    "id": 789639498,
+    "node_id": "R_kgDOLxDxSg",
+    "name": "kafka",
+    "full_name": "m1a2st/kafka",
+    "owner": {
+     "login": "m1a2st",
+     "id": 100591800,
+     "node_id": "U_kgDOBf7ouA",
+     "avatar_url": "https://avatars.githubusercontent.com/u/100591800?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/m1a2st",
+     "html_url": "https://github.com/m1a2st",
+     "followers_url": "https://api.github.com/users/m1a2st/followers",
+     "following_url": "https://api.github.com/users/m1a2st/following{/other_user}",
+     "gists_url": "https://api.github.com/users/m1a2st/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/m1a2st/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/m1a2st/subscriptions",
+     "organizations_url": "https://api.github.com/users/m1a2st/orgs",
+     "repos_url": "https://api.github.com/users/m1a2st/repos",
+     "events_url": "https://api.github.com/users/m1a2st/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/m1a2st/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": true,
+    "archived": false,
+    "disabled": false,
+    "description": "Mirror of Apache Kafka",
+    "homepage": null,
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [],
+    "forks_count": 0,
+    "forks": 0,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "watchers": 0,
+    "open_issues_count": 0,
+    "open_issues": 0,
+    "size": 297052,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-28T08:58:33Z",
+    "created_at": "2024-04-21T06:01:36Z",
+    "updated_at": "2026-10-27T12:49:57Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/m1a2st/kafka",
+    "html_url": "https://github.com/m1a2st/kafka",
+    "archive_url": "https://api.github.com/repos/m1a2st/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/m1a2st/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/m1a2st/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/m1a2st/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/m1a2st/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/m1a2st/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/m1a2st/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/m1a2st/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/m1a2st/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/m1a2st/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/m1a2st/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/m1a2st/kafka/downloads",
+    "events_url": "https://api.github.com/repos/m1a2st/kafka/events",
+    "forks_url": "https://api.github.com/repos/m1a2st/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/m1a2st/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/m1a2st/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/m1a2st/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/m1a2st/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/m1a2st/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/m1a2st/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/m1a2st/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/m1a2st/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/m1a2st/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/m1a2st/kafka/languages",
+    "merges_url": "https://api.github.com/repos/m1a2st/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/m1a2st/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/m1a2st/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/m1a2st/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/m1a2st/kafka/releases{/id}",
+    "ssh_url": "git@github.com:m1a2st/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/m1a2st/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/m1a2st/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/m1a2st/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/m1a2st/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/m1a2st/kafka/tags",
+    "teams_url": "https://api.github.com/repos/m1a2st/kafka/teams",
+    "trees_url": "https://api.github.com/repos/m1a2st/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/m1a2st/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/m1a2st/kafka/hooks",
+    "svn_url": "https://github.com/m1a2st/kafka"
+   },
+   "sha": "5a2bb372c3b8b0dfdd897f72c2d22c547f6b4151",
+   "user": {
+    "login": "m1a2st",
+    "id": 100591800,
+    "node_id": "U_kgDOBf7ouA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100591800?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/m1a2st",
+    "html_url": "https://github.com/m1a2st",
+    "followers_url": "https://api.github.com/users/m1a2st/followers",
+    "following_url": "https://api.github.com/users/m1a2st/following{/other_user}",
+    "gists_url": "https://api.github.com/users/m1a2st/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/m1a2st/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/m1a2st/subscriptions",
+    "organizations_url": "https://api.github.com/users/m1a2st/orgs",
+    "repos_url": "https://api.github.com/users/m1a2st/repos",
+    "events_url": "https://api.github.com/users/m1a2st/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/m1a2st/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "base": {
+   "label": "apache:trunk",
+   "ref": "trunk",
+   "repo": {
+    "id": 2211243,
+    "node_id": "MDEwOlJlcG9zaXRvcnkyMjExMjQz",
+    "name": "kafka",
+    "full_name": "apache/kafka",
+    "owner": {
+     "login": "apache",
+     "id": 47359,
+     "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+     "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/apache",
+     "html_url": "https://github.com/apache",
+     "followers_url": "https://api.github.com/users/apache/followers",
+     "following_url": "https://api.github.com/users/apache/following{/other_user}",
+     "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+     "organizations_url": "https://api.github.com/users/apache/orgs",
+     "repos_url": "https://api.github.com/users/apache/repos",
+     "events_url": "https://api.github.com/users/apache/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/apache/received_events",
+     "type": "Organization",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": false,
+    "archived": false,
+    "disabled": false,
+    "description": "Apache Kafka - A distributed event streaming platform",
+    "homepage": "https://kafka.apache.org/",
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [
+     "java",
+     "kafka",
+     "scala",
+     "streaming"
+    ],
+    "forks_count": 15637,
+    "forks": 15637,
+    "stargazers_count": 34153,
+    "watchers_count": 34153,
+    "watchers": 34153,
+    "open_issues_count": 674,
+    "open_issues": 674,
+    "size": 322164,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-29T11:37:21Z",
+    "created_at": "2011-08-15T18:06:16Z",
+    "updated_at": "2026-10-29T11:37:29Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/apache/kafka",
+    "html_url": "https://github.com/apache/kafka",
+    "archive_url": "https://api.github.com/repos/apache/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/apache/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/apache/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/apache/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/apache/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/apache/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/apache/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/apache/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/apache/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/apache/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/apache/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/apache/kafka/downloads",
+    "events_url": "https://api.github.com/repos/apache/kafka/events",
+    "forks_url": "https://api.github.com/repos/apache/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/apache/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/apache/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/apache/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/apache/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/apache/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/apache/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/apache/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/apache/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/apache/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/apache/kafka/languages",
+    "merges_url": "https://api.github.com/repos/apache/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/apache/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/apache/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/apache/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/apache/kafka/releases{/id}",
+    "ssh_url": "git@github.com:apache/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/apache/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/apache/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/apache/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/apache/kafka/tags",
+    "teams_url": "https://api.github.com/repos/apache/kafka/teams",
+    "trees_url": "https://api.github.com/repos/apache/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/apache/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/apache/kafka/hooks",
+    "svn_url": "https://github.com/apache/kafka"
+   },
+   "sha": "1224f3d4b24e3cff7df7815b472ab12240421266",
+   "user": {
+    "login": "apache",
+    "id": 47359,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/apache",
+    "html_url": "https://github.com/apache",
+    "followers_url": "https://api.github.com/users/apache/followers",
+    "following_url": "https://api.github.com/users/apache/following{/other_user}",
+    "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+    "organizations_url": "https://api.github.com/users/apache/orgs",
+    "repos_url": "https://api.github.com/users/apache/repos",
+    "events_url": "https://api.github.com/users/apache/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/apache/received_events",
+    "type": "Organization",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "_links": {
+   "comments": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23994/comments"
+   },
+   "commits": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23994/commits"
+   },
+   "statuses": {
+    "href": "https://api.github.com/repos/apache/kafka/statuses/5a2bb372c3b8b0dfdd897f72c2d22c547f6b4151"
+   },
+   "html": {
+    "href": "https://github.com/apache/kafka/pull/23994"
+   },
+   "issue": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23994"
+   },
+   "review_comments": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23994/comments"
+   },
+   "review_comment": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}"
+   },
+   "self": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23994"
+   }
+  },
+  "author_association": "CONTRIBUTOR",
+  "auto_merge": null,
+  "draft": false,
+  "merged": false,
+  "mergeable": true,
+  "rebaseable": false,
+  "mergeable_state": "blocked",
+  "merged_by": null,
+  "comments": 0,
+  "review_comments": 1,
+  "maintainer_can_modify": true,
+  "commits": 2,
+  "additions": 288,
+  "deletions": 305,
+  "changed_files": 4
+ },
+ "reviews": [
+  {
+   "id": 5679250154,
+   "node_id": "PRR_kwDOACG9q88AAAABUoJ66g",
+   "user": {
+    "login": "m1a2st",
+    "id": 100591800,
+    "node_id": "U_kgDOBf7ouA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100591800?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/m1a2st",
+    "html_url": "https://github.com/m1a2st",
+    "followers_url": "https://api.github.com/users/m1a2st/followers",
+    "following_url": "https://api.github.com/users/m1a2st/following{/other_user}",
+    "gists_url": "https://api.github.com/users/m1a2st/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/m1a2st/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/m1a2st/subscriptions",
+    "organizations_url": "https://api.github.com/users/m1a2st/orgs",
+    "repos_url": "https://api.github.com/users/m1a2st/repos",
+    "events_url": "https://api.github.com/users/m1a2st/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/m1a2st/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23994#pullrequestreview-5679250154",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23994",
+   "author_association": "CONTRIBUTOR",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23994#pullrequestreview-5679250154"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23994"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-28T07:36:12Z",
+   "commit_id": "29826871fea2dea8407ec3b5f46d8d608b9a2214"
+  }
+ ],
+ "review_comments": [
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4397999704",
+   "pull_request_review_id": 5679250154,
+   "id": 4397999704,
+   "node_id": "PRRC_kwDOACG9q88AAAABBiQmWA",
+   "diff_hunk": "@@ -0,0 +1,287 @@\n+/*\n+ * Licensed to the Apache Software Foundation (ASF) under one or more\n+ * contributor license agreements. See the NOTICE file distributed with\n+ * this work for additional information regarding copyright ownership.\n+ * The ASF licenses this file to You under the Apache License, Version 2.0\n+ * (the \"License\"); you may not use this file except in compliance with\n+ * the License. You may obtain a copy of the License at\n+ *\n+ *    http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n+package org.apache.kafka.server.metrics;\n+\n+import org.apache.kafka.clients.consumer.ConsumerConfig;\n+import org.apache.kafka.clients.consumer.GroupProtocol;\n+import org.apache.kafka.clients.producer.ProducerRecord;\n+import org.apache.kafka.common.TopicPartition;\n+import org.apache.kafka.common.config.TopicConfig;\n+import org.apache.kafka.common.metrics.JmxReporter;\n+import org.apache.kafka.common.test.ClusterInstance;\n+import org.apache.kafka.common.test.api.ClusterConfigProperty;\n+import org.apache.kafka.common.test.api.ClusterTest;\n+import org.apache.kafka.common.test.api.ClusterTestDefaults;\n+import org.apache.kafka.common.test.api.Type;\n+import org.apache.kafka.common.utils.Time;\n+import org.apache.kafka.coordinator.group.GroupCoordinatorConfig;\n+import org.apache.kafka.server.config.ServerConfigs;\n+import org.apache.kafka.server.config.ServerLogConfigs;\n+import org.apache.kafka.storage.log.metrics.BrokerTopicMetrics;\n+import org.apache.kafka.test.TestUtils;\n+\n+import com.yammer.metrics.core.Meter;\n+import com.yammer.metrics.core.MetricName;\n+import com.yammer.metrics.core.MetricPredicate;\n+\n+import java.lang.management.ManagementFactory;\n+import java.nio.ByteBuffer;\n+import java.nio.charset.StandardCharsets;\n+import java.time.Duration;\n+import java.util.Collection;\n+import java.util.Map;\n+import java.util.Set;\n+import java.util.regex.Pattern;\n+import java.util.stream.Collectors;\n+\n+import javax.management.ObjectName;\n+\n+import static org.junit.jupiter.api.Assertions.assertEquals;\n+import static org.junit.jupiter.api.Assertions.assertFalse;\n+import static org.junit.jupiter.api.Assertions.assertNotNull;\n+import static org.junit.jupiter.api.Assertions.assertTrue;\n+\n+@ClusterTestDefaults(\n+    types = Type.KRAFT,\n+    brokers = 2,\n+    serverProperties = {\n+        @ClusterConfigProperty(key = ServerLogConfigs.NUM_PARTITIONS_CONFIG, value = \"2\"),\n+        @ClusterConfigProperty(key = ServerConfigs.CONTROLLED_SHUTDOWN_ENABLE_CONFIG, value = \"false\"),\n+        @ClusterConfigProperty(key = GroupCoordinatorConfig.OFFSETS_TOPIC_REPLICATION_FACTOR_CONFIG, value = \"1\"),\n+        @ClusterConfigProperty(key = GroupCoordinatorConfig.OFFSETS_TOPIC_PARTITIONS_CONFIG, value = \"5\"),\n+        @ClusterConfigProperty(key = GroupCoordinatorConfig.GROUP_INITIAL_REBALANCE_DELAY_MS_CONFIG, value = \"0\"),\n+        @ClusterConfigProperty(key = JmxReporter.EXCLUDE_CONFIG, value = MetricsTest.KAFKA_SERVER_PREFIX + \"=ClusterId\")\n+    }\n+)\n+public class MetricsTest {\n+    static final String KAFKA_SERVER_PREFIX = \"kafka.server:type=KafkaServer,name\";\n+    private static final int NUM_MESSAGES = 2;\n+\n+    private final ClusterInstance cluster;\n+\n+    MetricsTest(ClusterInstance cluster) {\n+        this.cluster = cluster;\n+    }\n+\n+    @ClusterTest\n+    public void testMetricsReporterAfterDeletingTopic() {\n+        var topic = \"test-topic-metric\";\n+        cluster.createTopic(topic, 1, (short) 1);\n+        cluster.deleteTopic(topic);",
+   "path": "server/src/test/java/org/apache/kafka/server/metrics/MetricsTest.java",
+   "commit_id": "5a2bb372c3b8b0dfdd897f72c2d22c547f6b4151",
+   "original_commit_id": "29826871fea2dea8407ec3b5f46d8d608b9a2214",
+   "user": {
+    "login": "m1a2st",
+    "id": 100591800,
+    "node_id": "U_kgDOBf7ouA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100591800?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/m1a2st",
+    "html_url": "https://github.com/m1a2st",
+    "followers_url": "https://api.github.com/users/m1a2st/followers",
+    "following_url": "https://api.github.com/users/m1a2st/following{/other_user}",
+    "gists_url": "https://api.github.com/users/m1a2st/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/m1a2st/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/m1a2st/subscriptions",
+    "organizations_url": "https://api.github.com/users/m1a2st/orgs",
+    "repos_url": "https://api.github.com/users/m1a2st/repos",
+    "events_url": "https://api.github.com/users/m1a2st/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/m1a2st/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "Topic metrics are unrelated to whether the physical topic file exists or has been deleted, so I removed hard-delete directory assertion.",
+   "created_at": "2026-10-28T07:36:12Z",
+   "updated_at": "2026-10-28T07:36:12Z",
+   "html_url": "https://github.com/apache/kafka/pull/23994#discussion_r4397999704",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23994",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4397999704"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23994#discussion_r4397999704"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23994"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4397999704/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": 84,
+   "original_line": 84,
+   "side": "RIGHT",
+   "author_association": "CONTRIBUTOR",
+   "original_position": 84,
+   "position": 84,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  }
+ ],
+ "issue_comments": [],
+ "commits": [
+  {
+   "sha": "29826871fea2dea8407ec3b5f46d8d608b9a2214",
+   "node_id": "C_kwDOLxDxStoAKDI5ODI2ODcxZmVhMmRlYTg0MDdlYzNiNWY0NmQ4ZDYwOGI5YTIyMTQ",
+   "commit": {
+    "author": {
+     "name": "Ken Huang",
+     "email": "s7133700@gmail.com",
+     "date": "2026-10-28T07:32:05Z"
+    },
+    "committer": {
+     "name": "Ken Huang",
+     "email": "s7133700@gmail.com",
+     "date": "2026-10-28T07:32:05Z"
+    },
+    "message": "rewrite the test",
+    "tree": {
+     "sha": "8b35146c514619dcd448ef406e3a73ad3c0cc17b",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/8b35146c514619dcd448ef406e3a73ad3c0cc17b"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/29826871fea2dea8407ec3b5f46d8d608b9a2214",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/29826871fea2dea8407ec3b5f46d8d608b9a2214",
+   "html_url": "https://github.com/apache/kafka/commit/29826871fea2dea8407ec3b5f46d8d608b9a2214",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/29826871fea2dea8407ec3b5f46d8d608b9a2214/comments",
+   "author": {
+    "login": "m1a2st",
+    "id": 100591800,
+    "node_id": "U_kgDOBf7ouA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100591800?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/m1a2st",
+    "html_url": "https://github.com/m1a2st",
+    "followers_url": "https://api.github.com/users/m1a2st/followers",
+    "following_url": "https://api.github.com/users/m1a2st/following{/other_user}",
+    "gists_url": "https://api.github.com/users/m1a2st/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/m1a2st/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/m1a2st/subscriptions",
+    "organizations_url": "https://api.github.com/users/m1a2st/orgs",
+    "repos_url": "https://api.github.com/users/m1a2st/repos",
+    "events_url": "https://api.github.com/users/m1a2st/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/m1a2st/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "m1a2st",
+    "id": 100591800,
+    "node_id": "U_kgDOBf7ouA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100591800?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/m1a2st",
+    "html_url": "https://github.com/m1a2st",
+    "followers_url": "https://api.github.com/users/m1a2st/followers",
+    "following_url": "https://api.github.com/users/m1a2st/following{/other_user}",
+    "gists_url": "https://api.github.com/users/m1a2st/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/m1a2st/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/m1a2st/subscriptions",
+    "organizations_url": "https://api.github.com/users/m1a2st/orgs",
+    "repos_url": "https://api.github.com/users/m1a2st/repos",
+    "events_url": "https://api.github.com/users/m1a2st/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/m1a2st/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "1224f3d4b24e3cff7df7815b472ab12240421266",
+     "url": "https://api.github.com/repos/apache/kafka/commits/1224f3d4b24e3cff7df7815b472ab12240421266",
+     "html_url": "https://github.com/apache/kafka/commit/1224f3d4b24e3cff7df7815b472ab12240421266"
+    }
+   ]
+  },
+  {
+   "sha": "5a2bb372c3b8b0dfdd897f72c2d22c547f6b4151",
+   "node_id": "C_kwDOLxDxStoAKDVhMmJiMzcyYzNiOGIwZGZkZDg5N2Y3MmMyZDIyYzU0N2Y2YjQxNTE",
+   "commit": {
+    "author": {
+     "name": "Ken Huang",
+     "email": "s7133700@gmail.com",
+     "date": "2026-10-28T08:58:26Z"
+    },
+    "committer": {
+     "name": "Ken Huang",
+     "email": "s7133700@gmail.com",
+     "date": "2026-10-28T08:58:26Z"
+    },
+    "message": "remove unused import",
+    "tree": {
+     "sha": "4baf2981fc9d0d66fd4de6037eaebb1d84e882a8",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/4baf2981fc9d0d66fd4de6037eaebb1d84e882a8"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/5a2bb372c3b8b0dfdd897f72c2d22c547f6b4151",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/5a2bb372c3b8b0dfdd897f72c2d22c547f6b4151",
+   "html_url": "https://github.com/apache/kafka/commit/5a2bb372c3b8b0dfdd897f72c2d22c547f6b4151",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/5a2bb372c3b8b0dfdd897f72c2d22c547f6b4151/comments",
+   "author": {
+    "login": "m1a2st",
+    "id": 100591800,
+    "node_id": "U_kgDOBf7ouA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100591800?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/m1a2st",
+    "html_url": "https://github.com/m1a2st",
+    "followers_url": "https://api.github.com/users/m1a2st/followers",
+    "following_url": "https://api.github.com/users/m1a2st/following{/other_user}",
+    "gists_url": "https://api.github.com/users/m1a2st/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/m1a2st/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/m1a2st/subscriptions",
+    "organizations_url": "https://api.github.com/users/m1a2st/orgs",
+    "repos_url": "https://api.github.com/users/m1a2st/repos",
+    "events_url": "https://api.github.com/users/m1a2st/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/m1a2st/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "m1a2st",
+    "id": 100591800,
+    "node_id": "U_kgDOBf7ouA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100591800?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/m1a2st",
+    "html_url": "https://github.com/m1a2st",
+    "followers_url": "https://api.github.com/users/m1a2st/followers",
+    "following_url": "https://api.github.com/users/m1a2st/following{/other_user}",
+    "gists_url": "https://api.github.com/users/m1a2st/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/m1a2st/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/m1a2st/subscriptions",
+    "organizations_url": "https://api.github.com/users/m1a2st/orgs",
+    "repos_url": "https://api.github.com/users/m1a2st/repos",
+    "events_url": "https://api.github.com/users/m1a2st/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/m1a2st/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "29826871fea2dea8407ec3b5f46d8d608b9a2214",
+     "url": "https://api.github.com/repos/apache/kafka/commits/29826871fea2dea8407ec3b5f46d8d608b9a2214",
+     "html_url": "https://github.com/apache/kafka/commit/29826871fea2dea8407ec3b5f46d8d608b9a2214"
+    }
+   ]
+  }
+ ],
+ "files": [
+  {
+   "sha": "9d11e14ac9159dded8644b3644961e02c7122395",
+   "filename": "checkstyle/import-control-server.xml",
+   "status": "modified",
+   "additions": 1,
+   "deletions": 0,
+   "changes": 1,
+   "blob_url": "https://github.com/apache/kafka/blob/5a2bb372c3b8b0dfdd897f72c2d22c547f6b4151/checkstyle%2Fimport-control-server.xml",
+   "raw_url": "https://github.com/apache/kafka/raw/5a2bb372c3b8b0dfdd897f72c2d22c547f6b4151/checkstyle%2Fimport-control-server.xml",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/checkstyle%2Fimport-control-server.xml?ref=5a2bb372c3b8b0dfdd897f72c2d22c547f6b4151",
+   "patch": "@@ -95,6 +95,7 @@\n     <allow pkg=\"org.apache.logging.log4j\" />\n     <allow pkg=\"no.nav.security.mock.oauth2\" />\n     <subpackage name=\"metrics\">\n+      <allow class=\"org.apache.kafka.storage.log.metrics.BrokerTopicMetrics\" />\n       <allow class=\"org.apache.kafka.server.authorizer.AuthorizableRequestContext\" />\n       <allow class=\"org.apache.kafka.controller.QuorumFeatures\" />\n       <allow class=\"org.apache.kafka.controller.metrics.ControllerMetadataMetrics\" />"
+  },
+  {
+   "sha": "df85330f431cd7d9d011c05c437cef473c053127",
+   "filename": "core/src/test/scala/unit/kafka/metrics/MetricsTest.scala",
+   "status": "removed",
+   "additions": 0,
+   "deletions": 294,
+   "changes": 294,
+   "blob_url": "https://github.com/apache/kafka/blob/1224f3d4b24e3cff7df7815b472ab12240421266/core%2Fsrc%2Ftest%2Fscala%2Funit%2Fkafka%2Fmetrics%2FMetricsTest.scala",
+   "raw_url": "https://github.com/apache/kafka/raw/1224f3d4b24e3cff7df7815b472ab12240421266/core%2Fsrc%2Ftest%2Fscala%2Funit%2Fkafka%2Fmetrics%2FMetricsTest.scala",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/core%2Fsrc%2Ftest%2Fscala%2Funit%2Fkafka%2Fmetrics%2FMetricsTest.scala?ref=1224f3d4b24e3cff7df7815b472ab12240421266",
+   "patch": "@@ -1,294 +0,0 @@\n-/**\n- * Licensed to the Apache Software Foundation (ASF) under one or more\n- * contributor license agreements.  See the NOTICE file distributed with\n- * this work for additional information regarding copyright ownership.\n- * The ASF licenses this file to You under the Apache License, Version 2.0\n- * (the \"License\"); you may not use this file except in compliance with\n- * the License.  You may obtain a copy of the License at\n- *\n- * http://www.apache.org/licenses/LICENSE-2.0\n- *\n- * Unless required by applicable law or agreed to in writing, software\n- * distributed under the License is distributed on an \"AS IS\" BASIS,\n- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n- * See the License for the specific language governing permissions and\n- * limitations under the License.\n- */\n-\n-package kafka.metrics\n-\n-import java.lang.management.ManagementFactory\n-import java.util\n-import java.util.Properties\n-import javax.management.ObjectName\n-import com.yammer.metrics.core.MetricPredicate\n-import org.junit.jupiter.api.Assertions._\n-import kafka.integration.KafkaServerTestHarness\n-import kafka.server._\n-import kafka.utils._\n-import org.apache.kafka.clients.consumer.GroupProtocol\n-\n-import scala.collection._\n-import scala.jdk.CollectionConverters._\n-import org.apache.kafka.common.TopicPartition\n-import org.apache.kafka.common.config.TopicConfig\n-import org.apache.kafka.common.metrics.JmxReporter\n-import org.apache.kafka.common.utils.Time\n-import org.apache.kafka.server.config.ServerLogConfigs\n-import org.apache.kafka.server.metrics.{KafkaMetricsGroup, KafkaYammerMetrics, LinuxIoMetricsCollector}\n-import org.apache.kafka.storage.internals.checkpoint.OffsetCheckpointFile\n-import org.apache.kafka.storage.internals.log.UnifiedLog\n-import org.apache.kafka.storage.log.metrics.BrokerTopicMetrics\n-import org.junit.jupiter.api.{Test, Timeout}\n-import org.junit.jupiter.params.ParameterizedTest\n-import org.junit.jupiter.params.provider.MethodSource\n-\n-import java.io.File\n-import scala.jdk.OptionConverters.RichOptional\n-\n-@Timeout(120)\n-class MetricsTest extends KafkaServerTestHarness with Logging {\n-  val numNodes = 2\n-  val numParts = 2\n-\n-  val requiredKafkaServerPrefix = \"kafka.server:type=KafkaServer,name\"\n-  val overridingProps = new Properties\n-  overridingProps.put(ServerLogConfigs.NUM_PARTITIONS_CONFIG, numParts.toString)\n-  overridingProps.put(JmxReporter.EXCLUDE_CONFIG, s\"$requiredKafkaServerPrefix=ClusterId\")\n-\n-  def generateConfigs: Seq[KafkaConfig] =\n-    TestUtils.createBrokerConfigs(numNodes, enableControlledShutdown = false).\n-      map(KafkaConfig.fromProps(_, overridingProps))\n-\n-  val nMessages = 2\n-\n-  @Test\n-  def testMetricsReporterAfterDeletingTopic(): Unit = {\n-    val topic = \"test-topic-metric\"\n-    createTopic(topic)\n-    deleteTopic(topic)\n-    verifyTopicDeletion(topic, brokers)\n-    assertEquals(Set.empty, topicMetricGroups(topic), \"Topic metrics exists after deleteTopic\")\n-  }\n-\n-  @Test\n-  def testBrokerTopicMetricsUnregisteredAfterDeletingTopic(): Unit = {\n-    val topic = \"test-broker-topic-metric\"\n-    createTopic(topic, 2)\n-    // Produce a few messages to create the metrics\n-    // Don't consume messages as it may cause metrics to be re-created causing the test to fail, see KAFKA-5238\n-    TestUtils.generateAndProduceMessages(brokers, topic, nMessages)\n-    assertTrue(topicMetricGroups(topic).nonEmpty, \"Topic metrics don't exist\")\n-    brokers.foreach(b => assertNotNull(b.brokerTopicStats.topicStats(topic)))\n-    deleteTopic(topic)\n-    verifyTopicDeletion(topic, brokers)\n-    assertEquals(Set.empty, topicMetricGroups(topic), \"Topic metrics exists after deleteTopic\")\n-  }\n-\n-  @Test\n-  def testClusterIdMetric(): Unit = {\n-    // Check if clusterId metric exists.\n-    val metrics = KafkaYammerMetrics.defaultRegistry.allMetrics\n-    assertEquals(metrics.keySet.asScala.count(_.getMBeanName == s\"$requiredKafkaServerPrefix=ClusterId\"), 1)\n-  }\n-\n-  @Test\n-  def testBrokerStateMetric(): Unit = {\n-    // Check if BrokerState metric exists.\n-    val metrics = KafkaYammerMetrics.defaultRegistry.allMetrics\n-    assertEquals(metrics.keySet.asScala.count(_.getMBeanName == s\"$requiredKafkaServerPrefix=BrokerState\"), 1)\n-  }\n-\n-  @Test\n-  def testYammerMetricsCountMetric(): Unit = {\n-    // Check if yammer-metrics-count metric exists.\n-    val metrics = KafkaYammerMetrics.defaultRegistry.allMetrics\n-    assertEquals(metrics.keySet.asScala.count(_.getMBeanName == s\"$requiredKafkaServerPrefix=yammer-metrics-count\"), 1)\n-  }\n-\n-  @Test\n-  def testLinuxIoMetrics(): Unit = {\n-    // Check if the linux-disk-* I/O metrics either do or do not exist depending on whether we are or are not\n-    // able to collect those metrics on the platform where this test is running.\n-    val usable = new LinuxIoMetricsCollector(\"/proc\", Time.SYSTEM).usable()\n-    val expectedCount = if (usable) 1 else 0\n-    val metrics = KafkaYammerMetrics.defaultRegistry.allMetrics\n-    Set(\n-      \"linux-disk-read-bytes\",\n-      \"linux-disk-write-bytes\",\n-      \"linux-disk-rchar\",\n-      \"linux-disk-wchar\",\n-      \"linux-disk-syscr\",\n-      \"linux-disk-syscw\",\n-      \"linux-disk-cancelled-write-bytes\"\n-    ).foreach(name =>\n-      assertEquals(metrics.keySet.asScala.count(_.getMBeanName == s\"$requiredKafkaServerPrefix=$name\"), expectedCount))\n-  }\n-\n-  @Test\n-  def testJMXFilter(): Unit = {\n-    // Check if cluster id metrics is not exposed in JMX\n-    assertTrue(ManagementFactory.getPlatformMBeanServer\n-                 .isRegistered(new ObjectName(\"kafka.controller:type=KafkaController,name=ActiveControllerCount\")))\n-    assertFalse(ManagementFactory.getPlatformMBeanServer\n-                  .isRegistered(new ObjectName(s\"$requiredKafkaServerPrefix=ClusterId\")))\n-  }\n-\n-  @Test\n-  def testUpdateJMXFilter(): Unit = {\n-    // verify previously exposed metrics are removed and existing matching metrics are added\n-    brokers.foreach(broker => broker.kafkaYammerMetrics.reconfigure(\n-      util.Map.of(JmxReporter.EXCLUDE_CONFIG, \"kafka.controller:type=KafkaController,name=ActiveControllerCount\")\n-    ))\n-    assertFalse(ManagementFactory.getPlatformMBeanServer\n-                 .isRegistered(new ObjectName(\"kafka.controller:type=KafkaController,name=ActiveControllerCount\")))\n-    assertTrue(ManagementFactory.getPlatformMBeanServer\n-                  .isRegistered(new ObjectName(s\"$requiredKafkaServerPrefix=ClusterId\")))\n-  }\n-\n-  @Test\n-  def testGeneralBrokerTopicMetricsAreGreedilyRegistered(): Unit = {\n-    val topic = \"test-broker-topic-metric\"\n-    createTopic(topic, 2)\n-\n-    // The broker metrics for all topics should be greedily registered\n-    assertTrue(topicMetrics(None).nonEmpty, \"General topic metrics don't exist\")\n-    assertEquals(brokers.head.brokerTopicStats.allTopicsStats.metricMapKeySet().size, topicMetrics(None).size)\n-    assertEquals(0, brokers.head.brokerTopicStats.allTopicsStats.metricGaugeMap.size)\n-    // topic metrics should be lazily registered\n-    assertTrue(topicMetricGroups(topic).isEmpty, \"Topic metrics aren't lazily registered\")\n-    TestUtils.generateAndProduceMessages(brokers, topic, nMessages)\n-    assertTrue(topicMetricGroups(topic).nonEmpty, \"Topic metrics aren't registered\")\n-  }\n-\n-  @Test\n-  def testWindowsStyleTagNames(): Unit = {\n-    val path = \"C:\\\\windows-path\\\\kafka-logs\"\n-    val tags = util.Map.of(\"dir\", path)\n-    val expectedMBeanName = Set(tags.keySet().iterator().next(), ObjectName.quote(path)).mkString(\"=\")\n-\n-    // Changing the package or class name may cause incompatibility with existing code and metrics configuration\n-    val metricsPackage = \"kafka.metrics\"\n-    val metricsClassName = \"MetricsTest\"\n-    val metric = new KafkaMetricsGroup(metricsPackage, metricsClassName).metricName(\"test-metric\", tags)\n-    assert(metric.getMBeanName.endsWith(expectedMBeanName))\n-  }\n-\n-  @ParameterizedTest(name = TestInfoUtils.TestWithParameterizedGroupProtocolNames)\n-  @MethodSource(Array(\"getTestGroupProtocolParametersAll\"))\n-  def testBrokerTopicMetricsBytesInOut(groupProtocol: String): Unit = {\n-    val topic = \"test-bytes-in-out\"\n-    val replicationBytesIn = BrokerTopicMetrics.REPLICATION_BYTES_IN_PER_SEC\n-    val replicationBytesOut = BrokerTopicMetrics.REPLICATION_BYTES_OUT_PER_SEC\n-    val bytesIn = s\"${BrokerTopicMetrics.BYTES_IN_PER_SEC},topic=$topic\"\n-    val bytesOut = s\"${BrokerTopicMetrics.BYTES_OUT_PER_SEC},topic=$topic\"\n-\n-    val topicConfigs = util.Map.of(TopicConfig.MIN_IN_SYNC_REPLICAS_CONFIG, \"2\")\n-    createTopic(topic, 1, numNodes, topicConfigs)\n-    // Produce a few messages to create the metrics\n-    TestUtils.generateAndProduceMessages(brokers, topic, nMessages)\n-\n-    // Check the log size for each broker so that we can distinguish between failures caused by replication issues\n-    // versus failures caused by the metrics\n-    val topicPartition = new TopicPartition(topic, 0)\n-    brokers.foreach { broker =>\n-      val log = broker.logManager.getLog(new TopicPartition(topic, 0)).toScala\n-      val brokerId = broker.config.brokerId\n-      val logSize = log.map(_.size)\n-      assertTrue(logSize.exists(_ > 0), s\"Expected broker $brokerId to have a Log for $topicPartition with positive size, actual: $logSize\")\n-    }\n-\n-    // Consume messages to make bytesOut tick\n-    TestUtils.consumeTopicRecords(brokers, topic, nMessages, GroupProtocol.of(groupProtocol))\n-    val initialReplicationBytesIn = TestUtils.meterCount(replicationBytesIn)\n-    val initialReplicationBytesOut = TestUtils.meterCount(replicationBytesOut)\n-    val initialBytesIn = TestUtils.meterCount(bytesIn)\n-    val initialBytesOut = TestUtils.meterCount(bytesOut)\n-\n-    // Produce a few messages to make the metrics tick\n-    TestUtils.generateAndProduceMessages(brokers, topic, nMessages)\n-\n-    assertTrue(TestUtils.meterCount(replicationBytesIn) > initialReplicationBytesIn)\n-    assertTrue(TestUtils.meterCount(replicationBytesOut) > initialReplicationBytesOut)\n-    assertTrue(TestUtils.meterCount(bytesIn) > initialBytesIn)\n-    // BytesOut doesn't include replication, so it shouldn't have changed\n-    assertEquals(initialBytesOut, TestUtils.meterCount(bytesOut))\n-\n-    // Consume messages to make bytesOut tick\n-    TestUtils.consumeTopicRecords(brokers, topic, nMessages, GroupProtocol.of(groupProtocol))\n-\n-    assertTrue(TestUtils.meterCount(bytesOut) > initialBytesOut)\n-  }\n-\n-  @Test\n-  def testKRaftControllerMetrics(): Unit = {\n-    val metrics = KafkaYammerMetrics.defaultRegistry.allMetrics\n-    Set(\n-      \"kafka.controller:type=KafkaController,name=ActiveControllerCount\",\n-      \"kafka.controller:type=KafkaController,name=GlobalPartitionCount\",\n-      \"kafka.controller:type=KafkaController,name=GlobalTopicCount\",\n-      \"kafka.controller:type=KafkaController,name=LastAppliedRecordLagMs\",\n-      \"kafka.controller:type=KafkaController,name=LastAppliedRecordOffset\",\n-      \"kafka.controller:type=KafkaController,name=LastAppliedRecordTimestamp\",\n-      \"kafka.controller:type=KafkaController,name=LastCommittedRecordOffset\",\n-      \"kafka.controller:type=KafkaController,name=MetadataErrorCount\",\n-      \"kafka.controller:type=KafkaController,name=OfflinePartitionsCount\",\n-      \"kafka.controller:type=KafkaController,name=PreferredReplicaImbalanceCount\",\n-    ).foreach(expected => {\n-      assertEquals(1, metrics.keySet.asScala.count(_.getMBeanName.equals(expected)),\n-        s\"Unable to find $expected\")\n-    })\n-  }\n-\n-  private def topicMetrics(topic: Option[String]): Set[String] = {\n-    val metricNames = KafkaYammerMetrics.defaultRegistry.allMetrics().keySet.asScala.map(_.getMBeanName)\n-    filterByTopicMetricRegex(metricNames, topic)\n-  }\n-\n-  private def topicMetricGroups(topic: String): Set[String] = {\n-    val metricGroups = KafkaYammerMetrics.defaultRegistry.groupedMetrics(MetricPredicate.ALL).keySet.asScala\n-    filterByTopicMetricRegex(metricGroups, Some(topic))\n-  }\n-\n-  private def filterByTopicMetricRegex(metrics: Set[String], topic: Option[String]): Set[String] = {\n-    val pattern = (\".*BrokerTopicMetrics.*\" + topic.map(t => s\"($t)$$\").getOrElse(\"\")).r.pattern\n-    metrics.filter(pattern.matcher(_).matches())\n-  }\n-\n-  private def verifyTopicDeletion[B <: KafkaBroker](topic: String, brokers: Seq[B]): Unit = {\n-    val topicPartitions = (0 until 1).map(new TopicPartition(topic, _))\n-    // ensure that the topic-partition has been deleted from all brokers' replica managers\n-    TestUtils.waitUntilTrue(() =>\n-      brokers.forall(broker => topicPartitions.forall(tp => broker.replicaManager.onlinePartition(tp).isEmpty)),\n-      \"Replica manager's should have deleted all of this topic's partitions\")\n-    // ensure that logs from all replicas are deleted\n-    TestUtils.waitUntilTrue(() => brokers.forall(broker => topicPartitions.forall(tp => broker.logManager.getLog(tp).isEmpty)),\n-      \"Replica logs not deleted after delete topic is complete\")\n-    // ensure that topic is removed from all cleaner offsets\n-    TestUtils.waitUntilTrue(() => brokers.forall(broker => topicPartitions.forall { tp =>\n-      val checkpoints = broker.logManager.liveLogDirs.asScala.map { logDir =>\n-        new OffsetCheckpointFile(new File(logDir, \"cleaner-offset-checkpoint\"), null).read()\n-      }\n-      checkpoints.forall(checkpointsPerLogDir => !checkpointsPerLogDir.containsKey(tp))\n-    }), \"Cleaner offset for deleted partition should have been removed\")\n-    TestUtils.waitUntilTrue(() => brokers.forall(broker =>\n-      broker.config.logDirs.stream().allMatch { logDir =>\n-        topicPartitions.forall { tp =>\n-          !new File(logDir, tp.topic + \"-\" + tp.partition).exists()\n-        }\n-      }\n-    ), \"Failed to soft-delete the data to a delete directory\")\n-    TestUtils.waitUntilTrue(() => brokers.forall(broker =>\n-      broker.config.logDirs.stream().allMatch { logDir =>\n-        topicPartitions.forall { tp =>\n-          !util.List.of(new File(logDir).list()).asScala.exists { partitionDirectoryNames =>\n-            partitionDirectoryNames.exists { directoryName =>\n-              directoryName.startsWith(tp.topic + \"-\" + tp.partition) &&\n-                directoryName.endsWith(UnifiedLog.DELETE_DIR_SUFFIX)\n-            }\n-          }\n-        }\n-      }\n-    ), \"Failed to hard-delete the delete directory\")\n-  }\n-}"
+  },
+  {
+   "sha": "d352537da225d681efcd579eea189b8a68089f81",
+   "filename": "core/src/test/scala/unit/kafka/utils/TestUtils.scala",
+   "status": "modified",
+   "additions": 0,
+   "deletions": 11,
+   "changes": 11,
+   "blob_url": "https://github.com/apache/kafka/blob/5a2bb372c3b8b0dfdd897f72c2d22c547f6b4151/core%2Fsrc%2Ftest%2Fscala%2Funit%2Fkafka%2Futils%2FTestUtils.scala",
+   "raw_url": "https://github.com/apache/kafka/raw/5a2bb372c3b8b0dfdd897f72c2d22c547f6b4151/core%2Fsrc%2Ftest%2Fscala%2Funit%2Fkafka%2Futils%2FTestUtils.scala",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/core%2Fsrc%2Ftest%2Fscala%2Funit%2Fkafka%2Futils%2FTestUtils.scala?ref=5a2bb372c3b8b0dfdd897f72c2d22c547f6b4151",
+   "patch": "@@ -16,7 +16,6 @@\n  */\n package kafka.utils\n \n-import com.yammer.metrics.core.Meter\n import kafka.server._\n import kafka.utils.Implicits._\n import org.apache.kafka.clients.admin.AlterConfigOp.OpType\n@@ -46,7 +45,6 @@ import org.apache.kafka.raft.{KRaftConfigs, QuorumConfig}\n import org.apache.kafka.security.JaasTestUtils\n import org.apache.kafka.server.authorizer.{Authorizer => JAuthorizer}\n import org.apache.kafka.server.config.{DelegationTokenManagerConfigs, ReplicationConfigs, ServerConfigs, ServerLogConfigs}\n-import org.apache.kafka.server.metrics.KafkaYammerMetrics\n import org.apache.kafka.server.util.MockTime\n import org.apache.kafka.storage.internals.log._\n import org.apache.kafka.storage.log.metrics.BrokerTopicStats\n@@ -1098,13 +1096,4 @@ object TestUtils extends Logging {\n       .foldLeft(0.0)((total, metric) => total + metric.metricValue.asInstanceOf[Double])\n     total.toLong\n   }\n-\n-  def meterCount(metricName: String): Long = {\n-    KafkaYammerMetrics.defaultRegistry.allMetrics.asScala\n-      .filter { case (k, _) => k.getMBeanName.endsWith(metricName) }\n-      .values\n-      .headOption\n-      .map(_.asInstanceOf[Meter].count)\n-      .getOrElse(fail(s\"Unable to find metric $metricName\"))\n-  }\n }"
+  },
+  {
+   "sha": "0daa14b15bfcfcd34b8f80c9d815bf81f66b6ffa",
+   "filename": "server/src/test/java/org/apache/kafka/server/metrics/MetricsTest.java",
+   "status": "added",
+   "additions": 287,
+   "deletions": 0,
+   "changes": 287,
+   "blob_url": "https://github.com/apache/kafka/blob/5a2bb372c3b8b0dfdd897f72c2d22c547f6b4151/server%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fserver%2Fmetrics%2FMetricsTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/5a2bb372c3b8b0dfdd897f72c2d22c547f6b4151/server%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fserver%2Fmetrics%2FMetricsTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/server%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fserver%2Fmetrics%2FMetricsTest.java?ref=5a2bb372c3b8b0dfdd897f72c2d22c547f6b4151",
+   "patch": "@@ -0,0 +1,287 @@\n+/*\n+ * Licensed to the Apache Software Foundation (ASF) under one or more\n+ * contributor license agreements. See the NOTICE file distributed with\n+ * this work for additional information regarding copyright ownership.\n+ * The ASF licenses this file to You under the Apache License, Version 2.0\n+ * (the \"License\"); you may not use this file except in compliance with\n+ * the License. You may obtain a copy of the License at\n+ *\n+ *    http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n+package org.apache.kafka.server.metrics;\n+\n+import org.apache.kafka.clients.consumer.ConsumerConfig;\n+import org.apache.kafka.clients.consumer.GroupProtocol;\n+import org.apache.kafka.clients.producer.ProducerRecord;\n+import org.apache.kafka.common.TopicPartition;\n+import org.apache.kafka.common.config.TopicConfig;\n+import org.apache.kafka.common.metrics.JmxReporter;\n+import org.apache.kafka.common.test.ClusterInstance;\n+import org.apache.kafka.common.test.api.ClusterConfigProperty;\n+import org.apache.kafka.common.test.api.ClusterTest;\n+import org.apache.kafka.common.test.api.ClusterTestDefaults;\n+import org.apache.kafka.common.test.api.Type;\n+import org.apache.kafka.common.utils.Time;\n+import org.apache.kafka.coordinator.group.GroupCoordinatorConfig;\n+import org.apache.kafka.server.config.ServerConfigs;\n+import org.apache.kafka.server.config.ServerLogConfigs;\n+import org.apache.kafka.storage.log.metrics.BrokerTopicMetrics;\n+import org.apache.kafka.test.TestUtils;\n+\n+import com.yammer.metrics.core.Meter;\n+import com.yammer.metrics.core.MetricName;\n+import com.yammer.metrics.core.MetricPredicate;\n+\n+import java.lang.management.ManagementFactory;\n+import java.nio.ByteBuffer;\n+import java.nio.charset.StandardCharsets;\n+import java.time.Duration;\n+import java.util.Collection;\n+import java.util.Map;\n+import java.util.Set;\n+import java.util.regex.Pattern;\n+import java.util.stream.Collectors;\n+\n+import javax.management.ObjectName;\n+\n+import static org.junit.jupiter.api.Assertions.assertEquals;\n+import static org.junit.jupiter.api.Assertions.assertFalse;\n+import static org.junit.jupiter.api.Assertions.assertNotNull;\n+import static org.junit.jupiter.api.Assertions.assertTrue;\n+\n+@ClusterTestDefaults(\n+    types = Type.KRAFT,\n+    brokers = 2,\n+    serverProperties = {\n+        @ClusterConfigProperty(key = ServerLogConfigs.NUM_PARTITIONS_CONFIG, value = \"2\"),\n+        @ClusterConfigProperty(key = ServerConfigs.CONTROLLED_SHUTDOWN_ENABLE_CONFIG, value = \"false\"),\n+        @ClusterConfigProperty(key = GroupCoordinatorConfig.OFFSETS_TOPIC_REPLICATION_FACTOR_CONFIG, value = \"1\"),\n+        @ClusterConfigProperty(key = GroupCoordinatorConfig.OFFSETS_TOPIC_PARTITIONS_CONFIG, value = \"5\"),\n+        @ClusterConfigProperty(key = GroupCoordinatorConfig.GROUP_INITIAL_REBALANCE_DELAY_MS_CONFIG, value = \"0\"),\n+        @ClusterConfigProperty(key = JmxReporter.EXCLUDE_CONFIG, value = MetricsTest.KAFKA_SERVER_PREFIX + \"=ClusterId\")\n+    }\n+)\n+public class MetricsTest {\n+    static final String KAFKA_SERVER_PREFIX = \"kafka.server:type=KafkaServer,name\";\n+    private static final int NUM_MESSAGES = 2;\n+\n+    private final ClusterInstance cluster;\n+\n+    MetricsTest(ClusterInstance cluster) {\n+        this.cluster = cluster;\n+    }\n+\n+    @ClusterTest\n+    public void testMetricsReporterAfterDeletingTopic() {\n+        var topic = \"test-topic-metric\";\n+        cluster.createTopic(topic, 1, (short) 1);\n+        cluster.deleteTopic(topic);\n+        assertEquals(Set.of(), topicMetricGroups(topic), \"Topic metrics exists after deleteTopic\");\n+    }\n+\n+    @ClusterTest\n+    public void testBrokerTopicMetricsUnregisteredAfterDeletingTopic() throws Exception {\n+        var topic = \"test-broker-topic-metric\";\n+        cluster.createTopic(topic, 2, (short) 1);\n+        // Produce a few messages to create the metrics.\n+        // Don't consume messages as it may cause metrics to be re-created causing the test to fail, see KAFKA-5238.\n+        produceMessages(topic);\n+        assertFalse(topicMetricGroups(topic).isEmpty(), \"Topic metrics don't exist\");\n+        cluster.brokers().values().forEach(broker -> assertNotNull(broker.brokerTopicStats().topicStats(topic)));\n+        cluster.deleteTopic(topic);\n+        assertEquals(Set.of(), topicMetricGroups(topic), \"Topic metrics exists after deleteTopic\");\n+    }\n+\n+    @ClusterTest\n+    public void testClusterIdMetric() {\n+        assertEquals(1, metricCount(KAFKA_SERVER_PREFIX + \"=ClusterId\"));\n+    }\n+\n+    @ClusterTest\n+    public void testBrokerStateMetric() {\n+        assertEquals(1, metricCount(KAFKA_SERVER_PREFIX + \"=BrokerState\"));\n+    }\n+\n+    @ClusterTest\n+    public void testYammerMetricsCountMetric() {\n+        assertEquals(1, metricCount(KAFKA_SERVER_PREFIX + \"=yammer-metrics-count\"));\n+    }\n+\n+    @ClusterTest\n+    public void testLinuxIoMetrics() {\n+        // The linux-disk-* metrics exist only when I/O metrics can be collected on this platform.\n+        int expectedCount = new LinuxIoMetricsCollector(\"/proc\", Time.SYSTEM).usable() ? 1 : 0;\n+        Set.of(\n+            \"linux-disk-read-bytes\",\n+            \"linux-disk-write-bytes\",\n+            \"linux-disk-rchar\",\n+            \"linux-disk-wchar\",\n+            \"linux-disk-syscr\",\n+            \"linux-disk-syscw\",\n+            \"linux-disk-cancelled-write-bytes\"\n+        ).forEach(name -> assertEquals(expectedCount, metricCount(KAFKA_SERVER_PREFIX + \"=\" + name)));\n+    }\n+\n+    @ClusterTest\n+    public void testJMXFilter() throws Exception {\n+        assertTrue(ManagementFactory.getPlatformMBeanServer().isRegistered(\n+            new ObjectName(\"kafka.controller:type=KafkaController,name=ActiveControllerCount\")));\n+        assertFalse(ManagementFactory.getPlatformMBeanServer().isRegistered(new ObjectName(KAFKA_SERVER_PREFIX + \"=ClusterId\")));\n+    }\n+\n+    @ClusterTest\n+    public void testUpdateJMXFilter(ClusterInstance cluster) throws Exception {\n+        // Verify previously exposed metrics are removed and existing matching metrics are added.\n+        cluster.brokers().values().forEach(broker -> broker.kafkaYammerMetrics().reconfigure(\n+            Map.of(JmxReporter.EXCLUDE_CONFIG, \"kafka.controller:type=KafkaController,name=ActiveControllerCount\")));\n+        assertFalse(ManagementFactory.getPlatformMBeanServer().isRegistered(\n+            new ObjectName(\"kafka.controller:type=KafkaController,name=ActiveControllerCount\")));\n+        assertTrue(ManagementFactory.getPlatformMBeanServer().isRegistered(new ObjectName(KAFKA_SERVER_PREFIX + \"=ClusterId\")));\n+    }\n+\n+    @ClusterTest\n+    public void testGeneralBrokerTopicMetricsAreGreedilyRegistered(ClusterInstance cluster) throws Exception {\n+        var topic = \"test-broker-topic-metric\";\n+        cluster.createTopic(topic, 2, (short) 1);\n+\n+        // The broker metrics for all topics should be greedily registered.\n+        assertFalse(topicMetrics().isEmpty(), \"General topic metrics don't exist\");\n+        var broker = cluster.brokers().values().iterator().next();\n+        assertEquals(broker.brokerTopicStats().allTopicsStats().metricMapKeySet().size(), topicMetrics().size());\n+        assertEquals(0, broker.brokerTopicStats().allTopicsStats().metricGaugeMap().size());\n+        // Topic metrics should be lazily registered.\n+        assertTrue(topicMetricGroups(topic).isEmpty(), \"Topic metrics aren't lazily registered\");\n+        produceMessages(topic);\n+        assertFalse(topicMetricGroups(topic).isEmpty(), \"Topic metrics aren't registered\");\n+    }\n+\n+    @ClusterTest\n+    public void testWindowsStyleTagNames() {\n+        var path = \"C:\\\\windows-path\\\\kafka-logs\";\n+        var tags = Map.of(\"dir\", path);\n+        var expectedMBeanName = \"dir=\" + ObjectName.quote(path);\n+\n+        // Changing the package or class name may cause incompatibility with existing code and metrics configuration.\n+        var metric = new KafkaMetricsGroup(\"kafka.metrics\", \"MetricsTest\").metricName(\"test-metric\", tags);\n+        assertTrue(metric.getMBeanName().endsWith(expectedMBeanName));\n+    }\n+\n+    @ClusterTest\n+    public void testClassicConsumerBrokerTopicMetricsBytesInOut() throws Exception {\n+        testBrokerTopicMetricsBytesInOut(GroupProtocol.CLASSIC);\n+    }\n+\n+    @ClusterTest\n+    public void testAsyncConsumerBrokerTopicMetricsBytesInOut() throws Exception {\n+        testBrokerTopicMetricsBytesInOut(GroupProtocol.CONSUMER);\n+    }\n+\n+    private void testBrokerTopicMetricsBytesInOut(GroupProtocol groupProtocol) throws Exception {\n+        var topic = \"test-bytes-in-out\";\n+        var replicationBytesIn = BrokerTopicMetrics.REPLICATION_BYTES_IN_PER_SEC;\n+        var replicationBytesOut = BrokerTopicMetrics.REPLICATION_BYTES_OUT_PER_SEC;\n+        var bytesIn = BrokerTopicMetrics.BYTES_IN_PER_SEC + \",topic=\" + topic;\n+        var bytesOut = BrokerTopicMetrics.BYTES_OUT_PER_SEC + \",topic=\" + topic;\n+\n+        cluster.createTopic(topic, 1, (short) 2, Map.of(TopicConfig.MIN_IN_SYNC_REPLICAS_CONFIG, \"2\"));\n+        produceMessages(topic);\n+\n+        // Check log sizes to distinguish replication failures from metrics failures.\n+        var topicPartition = new TopicPartition(topic, 0);\n+        for (var broker : cluster.brokers().values()) {\n+            var log = broker.logManager().getLog(topicPartition, false);\n+            assertTrue(\n+                log.isPresent() && !log.get().isEmpty(),\n+                \"Expected broker \" + broker.config().brokerId() + \" to have a Log for \" + topicPartition + \" with positive size, actual: \" + log\n+            );\n+        }\n+\n+        consumeMessages(topic, groupProtocol);\n+        long initialReplicationBytesIn = meterCount(replicationBytesIn);\n+        long initialReplicationBytesOut = meterCount(replicationBytesOut);\n+        long initialBytesIn = meterCount(bytesIn);\n+        long initialBytesOut = meterCount(bytesOut);\n+\n+        produceMessages(topic);\n+        assertTrue(meterCount(replicationBytesIn) > initialReplicationBytesIn);\n+        assertTrue(meterCount(replicationBytesOut) > initialReplicationBytesOut);\n+        assertTrue(meterCount(bytesIn) > initialBytesIn);\n+        // BytesOut doesn't include replication, so it shouldn't have changed.\n+        assertEquals(initialBytesOut, meterCount(bytesOut));\n+\n+        consumeMessages(topic, groupProtocol);\n+        assertTrue(meterCount(bytesOut) > initialBytesOut);\n+    }\n+\n+    @ClusterTest\n+    public void testKRaftControllerMetrics() {\n+        Set.of(\n+            \"kafka.controller:type=KafkaController,name=ActiveControllerCount\",\n+            \"kafka.controller:type=KafkaController,name=GlobalPartitionCount\",\n+            \"kafka.controller:type=KafkaController,name=GlobalTopicCount\",\n+            \"kafka.controller:type=KafkaController,name=LastAppliedRecordLagMs\",\n+            \"kafka.controller:type=KafkaController,name=LastAppliedRecordOffset\",\n+            \"kafka.controller:type=KafkaController,name=LastAppliedRecordTimestamp\",\n+            \"kafka.controller:type=KafkaController,name=LastCommittedRecordOffset\",\n+            \"kafka.controller:type=KafkaController,name=MetadataErrorCount\",\n+            \"kafka.controller:type=KafkaController,name=OfflinePartitionsCount\",\n+            \"kafka.controller:type=KafkaController,name=PreferredReplicaImbalanceCount\"\n+        ).forEach(expected -> assertEquals(1, metricCount(expected), \"Unable to find \" + expected));\n+    }\n+\n+    private long metricCount(String mBeanName) {\n+        return KafkaYammerMetrics.defaultRegistry().allMetrics().keySet().stream()\n+            .filter(name -> name.getMBeanName().equals(mBeanName)).count();\n+    }\n+\n+    private Set<String> topicMetrics() {\n+        return filterByTopicMetricRegex(KafkaYammerMetrics.defaultRegistry().allMetrics().keySet().stream()\n+            .map(MetricName::getMBeanName).collect(Collectors.toSet()), \"\");\n+    }\n+\n+    private Set<String> topicMetricGroups(String topic) {\n+        return filterByTopicMetricRegex(KafkaYammerMetrics.defaultRegistry().groupedMetrics(MetricPredicate.ALL).keySet(), \"(\" + topic + \")$\");\n+    }\n+\n+    private Set<String> filterByTopicMetricRegex(Collection<String> metrics, String topicPattern) {\n+        var pattern = Pattern.compile(\".*BrokerTopicMetrics.*\" + topicPattern);\n+        return metrics.stream().filter(name -> pattern.matcher(name).matches()).collect(Collectors.toSet());\n+    }\n+\n+    private long meterCount(String metricName) {\n+        var metric = KafkaYammerMetrics.defaultRegistry().allMetrics().entrySet().stream()\n+            .filter(entry -> entry.getKey().getMBeanName().endsWith(metricName))\n+            .map(Map.Entry::getValue).findFirst()\n+            .orElseThrow(() -> new AssertionError(\"Unable to find metric \" + metricName));\n+        return ((Meter) metric).count();\n+    }\n+\n+    private void produceMessages(String topic) throws Exception {\n+        try (var producer = cluster.<byte[], byte[]>producer()) {\n+            for (int i = 0; i < NUM_MESSAGES; i++) {\n+                var key = ByteBuffer.allocate(Integer.BYTES).putInt(i).array();\n+                producer.send(new ProducerRecord<>(topic, key, (\"test-\" + i).getBytes(StandardCharsets.UTF_8))).get();\n+            }\n+        }\n+    }\n+\n+    private void consumeMessages(String topic, GroupProtocol groupProtocol) throws Exception {\n+        try (var consumer = cluster.<byte[], byte[]>consumer(Map.of(\n+            ConsumerConfig.GROUP_PROTOCOL_CONFIG, groupProtocol.name,\n+            ConsumerConfig.GROUP_ID_CONFIG, \"group\"))) {\n+            consumer.subscribe(Set.of(topic));\n+            int[] received = {0};\n+            TestUtils.waitForCondition(() -> {\n+                received[0] += consumer.poll(Duration.ofMillis(100)).count();\n+                return received[0] >= NUM_MESSAGES;\n+            }, \"Failed to consume \" + NUM_MESSAGES + \" records\");\n+            assertEquals(NUM_MESSAGES, received[0], \"Consumed more records than expected\");\n+        }\n+    }\n+}"
+  }
+ ],
+ "timeline": [
+  {
+   "sha": "29826871fea2dea8407ec3b5f46d8d608b9a2214",
+   "node_id": "C_kwDOACG9q9oAKDI5ODI2ODcxZmVhMmRlYTg0MDdlYzNiNWY0NmQ4ZDYwOGI5YTIyMTQ",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/29826871fea2dea8407ec3b5f46d8d608b9a2214",
+   "html_url": "https://github.com/apache/kafka/commit/29826871fea2dea8407ec3b5f46d8d608b9a2214",
+   "author": {
+    "name": "Ken Huang",
+    "email": "s7133700@gmail.com",
+    "date": "2026-10-28T07:32:05Z"
+   },
+   "committer": {
+    "name": "Ken Huang",
+    "email": "s7133700@gmail.com",
+    "date": "2026-10-28T07:32:05Z"
+   },
+   "tree": {
+    "sha": "8b35146c514619dcd448ef406e3a73ad3c0cc17b",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/8b35146c514619dcd448ef406e3a73ad3c0cc17b"
+   },
+   "message": "rewrite the test",
+   "parents": [
+    {
+     "sha": "1224f3d4b24e3cff7df7815b472ab12240421266",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/1224f3d4b24e3cff7df7815b472ab12240421266",
+     "html_url": "https://github.com/apache/kafka/commit/1224f3d4b24e3cff7df7815b472ab12240421266"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "id": 34449450683,
+   "node_id": "LE_lADOACG9q88AAAABahOHrs8AAAAIBVjmuw",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34449450683",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-28T07:33:52Z",
+   "label": {
+    "name": "triage",
+    "color": "006b75"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34449458220,
+   "node_id": "LE_lADOACG9q88AAAABahOHrs8AAAAIBVkELA",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34449458220",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-28T07:33:58Z",
+   "label": {
+    "name": "core",
+    "color": "ed5a86"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 5679250154,
+   "node_id": "PRR_kwDOACG9q88AAAABUoJ66g",
+   "user": {
+    "login": "m1a2st",
+    "id": 100591800,
+    "node_id": "U_kgDOBf7ouA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100591800?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/m1a2st",
+    "html_url": "https://github.com/m1a2st",
+    "followers_url": "https://api.github.com/users/m1a2st/followers",
+    "following_url": "https://api.github.com/users/m1a2st/following{/other_user}",
+    "gists_url": "https://api.github.com/users/m1a2st/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/m1a2st/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/m1a2st/subscriptions",
+    "organizations_url": "https://api.github.com/users/m1a2st/orgs",
+    "repos_url": "https://api.github.com/users/m1a2st/repos",
+    "events_url": "https://api.github.com/users/m1a2st/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/m1a2st/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": null,
+   "commit_id": "29826871fea2dea8407ec3b5f46d8d608b9a2214",
+   "state": "commented",
+   "html_url": "https://github.com/apache/kafka/pull/23994#pullrequestreview-5679250154",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23994",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23994#pullrequestreview-5679250154"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23994"
+    }
+   },
+   "submitted_at": "2026-10-28T07:36:12Z",
+   "updated_at": "2026-10-28T07:36:12Z",
+   "author_association": "CONTRIBUTOR",
+   "event": "reviewed"
+  },
+  {
+   "sha": "5a2bb372c3b8b0dfdd897f72c2d22c547f6b4151",
+   "node_id": "C_kwDOACG9q9oAKDVhMmJiMzcyYzNiOGIwZGZkZDg5N2Y3MmMyZDIyYzU0N2Y2YjQxNTE",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/5a2bb372c3b8b0dfdd897f72c2d22c547f6b4151",
+   "html_url": "https://github.com/apache/kafka/commit/5a2bb372c3b8b0dfdd897f72c2d22c547f6b4151",
+   "author": {
+    "name": "Ken Huang",
+    "email": "s7133700@gmail.com",
+    "date": "2026-10-28T08:58:26Z"
+   },
+   "committer": {
+    "name": "Ken Huang",
+    "email": "s7133700@gmail.com",
+    "date": "2026-10-28T08:58:26Z"
+   },
+   "tree": {
+    "sha": "4baf2981fc9d0d66fd4de6037eaebb1d84e882a8",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/4baf2981fc9d0d66fd4de6037eaebb1d84e882a8"
+   },
+   "message": "remove unused import",
+   "parents": [
+    {
+     "sha": "29826871fea2dea8407ec3b5f46d8d608b9a2214",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/29826871fea2dea8407ec3b5f46d8d608b9a2214",
+     "html_url": "https://github.com/apache/kafka/commit/29826871fea2dea8407ec3b5f46d8d608b9a2214"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "id": 34543824091,
+   "node_id": "UNLE_lADOACG9q88AAAABahOHrs8AAAAICvjs2w",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34543824091",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "unlabeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-29T03:15:23Z",
+   "label": {
+    "name": "triage",
+    "color": "006b75"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  }
+ ]
+}

@@ -1,0 +1,2959 @@
+{
+ "id": "421958844",
+ "versions": {
+  "results": [
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-01T08:45:13.000Z",
+    "message": "",
+    "number": 87,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/87"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-25T18:03:55.000Z",
+    "message": "",
+    "number": 86,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/86"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=86"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-25T18:02:47.000Z",
+    "message": "",
+    "number": 85,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/85"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=85"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-25T18:02:34.000Z",
+    "message": "",
+    "number": 84,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/84"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=84"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-25T18:01:08.000Z",
+    "message": "",
+    "number": 83,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/83"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=83"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-25T17:58:38.000Z",
+    "message": "",
+    "number": 82,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/82"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=82"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-25T17:56:49.000Z",
+    "message": "",
+    "number": 81,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/81"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=81"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-25T16:35:15.000Z",
+    "message": "",
+    "number": 80,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/80"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=80"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-14T12:04:29.000Z",
+    "message": "",
+    "number": 79,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/79"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=79"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-14T12:01:15.000Z",
+    "message": "",
+    "number": 78,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/78"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=78"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-14T11:57:26.000Z",
+    "message": "",
+    "number": 77,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/77"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=77"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-14T11:53:05.000Z",
+    "message": "",
+    "number": 76,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/76"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=76"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-14T11:51:02.000Z",
+    "message": "",
+    "number": 75,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/75"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=75"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-14T11:45:04.000Z",
+    "message": "",
+    "number": 74,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/74"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=74"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-14T11:42:37.000Z",
+    "message": "",
+    "number": 73,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/73"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=73"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-14T11:41:30.000Z",
+    "message": "",
+    "number": 72,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/72"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=72"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-14T11:25:30.000Z",
+    "message": "",
+    "number": 71,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/71"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=71"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-14T11:15:15.000Z",
+    "message": "",
+    "number": 70,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/70"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=70"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-14T11:05:43.000Z",
+    "message": "",
+    "number": 69,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/69"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=69"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-14T11:05:11.000Z",
+    "message": "",
+    "number": 68,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/68"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=68"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-14T10:50:29.000Z",
+    "message": "",
+    "number": 67,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/67"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=67"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-14T10:49:02.000Z",
+    "message": "",
+    "number": 66,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/66"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=66"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-14T10:39:03.000Z",
+    "message": "",
+    "number": 65,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/65"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=65"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-10T17:21:00.000Z",
+    "message": "",
+    "number": 64,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/64"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=64"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-10T16:56:20.000Z",
+    "message": "",
+    "number": 63,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/63"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=63"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-10T16:48:39.000Z",
+    "message": "",
+    "number": 62,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/62"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=62"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-14T13:07:31.000Z",
+    "message": "",
+    "number": 61,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/61"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=61"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-14T12:55:16.000Z",
+    "message": "",
+    "number": 60,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/60"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=60"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-14T12:43:42.000Z",
+    "message": "",
+    "number": 59,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/59"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=59"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-14T12:24:54.000Z",
+    "message": "",
+    "number": 58,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/58"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=58"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-14T11:25:29.000Z",
+    "message": "",
+    "number": 57,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/57"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=57"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-14T11:21:30.000Z",
+    "message": "",
+    "number": 56,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/56"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=56"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-14T10:53:07.000Z",
+    "message": "",
+    "number": 55,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/55"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=55"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-14T10:47:06.000Z",
+    "message": "",
+    "number": 54,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/54"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=54"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-14T07:34:50.000Z",
+    "message": "",
+    "number": 53,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/53"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=53"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-14T07:31:34.000Z",
+    "message": "",
+    "number": 52,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/52"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=52"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-14T07:24:36.000Z",
+    "message": "",
+    "number": 51,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/51"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=51"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-14T07:23:28.000Z",
+    "message": "",
+    "number": 50,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/50"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=50"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-13T20:48:44.000Z",
+    "message": "",
+    "number": 49,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/49"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=49"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-13T20:44:06.000Z",
+    "message": "",
+    "number": 48,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/48"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=48"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-13T20:34:16.000Z",
+    "message": "",
+    "number": 47,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/47"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=47"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-13T20:22:11.000Z",
+    "message": "",
+    "number": 46,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/46"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=46"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-13T20:00:33.000Z",
+    "message": "",
+    "number": 45,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/45"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=45"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-13T19:58:52.000Z",
+    "message": "",
+    "number": 44,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/44"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=44"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-13T19:39:33.000Z",
+    "message": "",
+    "number": 43,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/43"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=43"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-13T19:30:32.000Z",
+    "message": "",
+    "number": 42,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/42"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=42"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-11T18:16:00.000Z",
+    "message": "",
+    "number": 41,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/41"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=41"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-11T18:13:14.000Z",
+    "message": "",
+    "number": 40,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/40"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=40"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-22T19:33:13.000Z",
+    "message": "",
+    "number": 39,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/39"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=39"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-22T19:32:52.000Z",
+    "message": "",
+    "number": 38,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/38"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=38"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-22T19:09:18.000Z",
+    "message": "",
+    "number": 37,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/37"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=37"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-22T19:06:51.000Z",
+    "message": "",
+    "number": 36,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/36"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=36"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-22T19:05:16.000Z",
+    "message": "",
+    "number": 35,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/35"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=35"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-22T19:04:21.000Z",
+    "message": "",
+    "number": 34,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/34"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=34"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-22T18:56:05.000Z",
+    "message": "",
+    "number": 33,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/33"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=33"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-22T18:31:16.000Z",
+    "message": "",
+    "number": 32,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/32"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=32"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-22T18:29:48.000Z",
+    "message": "",
+    "number": 31,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/31"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=31"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-22T18:29:08.000Z",
+    "message": "",
+    "number": 30,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/30"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=30"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-22T18:27:36.000Z",
+    "message": "",
+    "number": 29,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/29"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=29"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-22T18:25:40.000Z",
+    "message": "",
+    "number": 28,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/28"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=28"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-22T18:20:46.000Z",
+    "message": "",
+    "number": 27,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/27"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=27"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-22T18:19:09.000Z",
+    "message": "",
+    "number": 26,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/26"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=26"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-22T18:17:37.000Z",
+    "message": "",
+    "number": 25,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/25"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=25"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-22T18:17:09.000Z",
+    "message": "",
+    "number": 24,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/24"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=24"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-22T18:13:22.000Z",
+    "message": "",
+    "number": 23,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/23"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=23"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-21T18:55:34.000Z",
+    "message": "",
+    "number": 22,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/22"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=22"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-21T17:53:30.000Z",
+    "message": "",
+    "number": 21,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/21"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=21"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-21T17:49:51.000Z",
+    "message": "",
+    "number": 20,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/20"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=20"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-21T17:34:57.000Z",
+    "message": "",
+    "number": 19,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/19"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=19"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-21T17:29:29.000Z",
+    "message": "",
+    "number": 18,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/18"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=18"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-21T17:17:27.000Z",
+    "message": "",
+    "number": 17,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/17"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=17"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-21T17:16:48.000Z",
+    "message": "",
+    "number": 16,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/16"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=16"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-21T16:54:53.000Z",
+    "message": "",
+    "number": 15,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/15"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=15"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-20T21:18:43.000Z",
+    "message": "",
+    "number": 14,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/14"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=14"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-20T21:12:25.000Z",
+    "message": "",
+    "number": 13,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/13"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=13"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-20T21:06:32.000Z",
+    "message": "",
+    "number": 12,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/12"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=12"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-20T21:04:53.000Z",
+    "message": "",
+    "number": 11,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/11"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=11"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-20T21:04:04.000Z",
+    "message": "",
+    "number": 10,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/10"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=10"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-20T21:02:58.000Z",
+    "message": "",
+    "number": 9,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/9"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=9"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-20T18:36:27.000Z",
+    "message": "",
+    "number": 8,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/8"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=8"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-20T18:35:47.000Z",
+    "message": "",
+    "number": 7,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/7"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=7"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-20T18:33:39.000Z",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/6"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=6"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-20T18:30:15.000Z",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/5"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=5"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-20T18:29:45.000Z",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/4"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=4"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-20T17:54:04.000Z",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/3"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=3"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-20T17:52:57.000Z",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/2"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=2"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-17T14:07:50.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=1"
+    }
+   }
+  ],
+  "start": 0,
+  "limit": 200,
+  "size": 87,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ },
+ "version_bodies": [
+  {
+   "id": "421958844",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1349: Bytes-based configurable snapshot frequency for share groups",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-25T18:03:55.000Z",
+    "message": "",
+    "number": 86,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/86"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=86"
+    }
+   },
+   "position": 1338,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><h1>Status</h1><p><strong>Current state</strong>: &quot;Under Discussion&quot;</p><p><strong>Discussion thread</strong>: <em><a href=\"https://lists.apache.org/thread/lpwmfgq28lz8ghzyb0wp8s8o4zpgw2tc\">here</a> <br /></em></p><p><strong>JIRA</strong>: <em><a href=\"https://issues.apache.org/jira/browse/KAFKA-20070\">here</a> </em></p><h1>Motivation</h1><p><br />Kafka has share groups. As multiple consumers in the same share group can consume from the same partition concurrently, records get individually acknowledged and broker tracks per record state(delivered, acked, in-flight etc).</p><p>To handle all that per record state, across broker restarts, Kafka writes to an internal topic called __share_group_state.<br />Two kind of records go there.<br />- Update records (small and incremental)<br />- Snapshot records (big, complete)</p><p>We need snapshots, because when a broker restarts, replaying millions of updates would take forever, and snapshots are like save points.</p><p>Today snapshots are controlled only with this one broker level config : share.coordinator.snapshot.update.records.per.snapshot(is for number of small updates which get written before saving it as a full snapshot.)</p><p>If we set it low, too many snapshots are written, and recovery is fast. If we set it to high, we mostly write tiny updates, and less disk is used but recovery is replaying several tiny udpates, might take long.</p><p>So it's a trade off. write-cost vs recovery-cost</p><p>It's range is 0-500 (<a href=\"https://github.com/apache/kafka/blob/ac031bb4e2c95ce00a90c8be6ca3f7c087fe5fbe/share-coordinator/src/main/java/org/apache/kafka/coordinator/share/ShareCoordinatorConfig.java#L103\">https://github.com/apache/kafka/blob/ac031bb4e2c95ce00a90c8be6ca3f7c087fe5fbe/share-coordinator/src/main/java/org/apache/kafka/coordinator/share/ShareCoordinatorConfig.java#L103</a>)</p><p class=\"p1\"><span class=\"s1\">Measurements on a local 4.3.0 cluster show </span><span class=\"s2\">__share_group_state</span><span class=\"s1\"> update records are small (~154 bytes average), so the records-based default of 500 corresponds to only </span><span class=\"s1\">~75 KB between snapshots. A bytes-based 20 MB default (matching KRaft) is a more predictable, workload-independent trigger.</span></p><h2>Problems</h2><p><strong>Records-based</strong> control is workload-dependent. Different share groups have different state-batch sizes. A records-based threshold means &quot;snapshot every N updates,&quot; but those N updates can be 5 KB on one workload and 500 KB on another, so disk impact is unpredictable.</p><p>One config at the broker level cannot fit all share groups. Different groups have different traffic patterns. With mixed workloads sharing the same state topic, one value may fit one group but not others.</p><p>Is 500 too low ? Probably for high traffic share groups it is low and they get benefitted from snapshotting less often. It <span class=\"s1\">is conservative for high-traffic workloads</span></p><p>What if we remove the upper limit ? If there is no cap, a misconfigured group can write millions of updates without ever triggering an update (count-based) snapshot. This will fill up the disk, as broker cannot delete old log files.</p><p>What if we have one config at broker level : There would be different kinds of share groups with different traffic patterns and with mixed workloads, and as they share the same state topic, it may fit one, but not others.</p><h2 class=\"p1\"><span class=\"s1\">Proposal</span></h2><p class=\"p1\"><span class=\"s1\">Switch to bytes-based control (similar to </span><span class=\"s1\">metadata.log.max.record.bytes.between.snapshots in </span><span class=\"s1\">MetadataLogConfig.java</span><span class=\"s1\">)</span></p><p class=\"p1\"><strong><span class=\"s1\">- </span></strong><span class=\"s2\"><strong>Broker-level</strong>: </span><span class=\"s1\">share.coordinator.max.record.bytes.between.snapshots</span><span class=\"s2\">, default 20 MB, (matching KRaft's well-tested default.)</span></p><p class=\"p1\"><strong><span class=\"s1\">- </span><span class=\"s2\">Per-group</span></strong><span class=\"s1\">: </span><span class=\"s1\">share.max.record.bytes.between.snapshots</span><span class=\"s1\">, configurable per share group. This would allow every share group with different traffic patterns to handle the snapshots/disk sizes etc very well. </span></p><p class=\"p1\"><span class=\"s1\">The existing records-based config (share.coordinator.snapshot.update.records.per.snapshot) is deprecated with a warning at broker startup if set, and removed in a future release.</span></p><p class=\"p1\"><span class=\"s1\">Bytes-based control gives operators predictable disk impact, independent of workload, and follows the same pattern Kafka already uses for the metadata log. (also in kip 770)</span></p><p><strong>Note</strong> : There is another config <em>share.coordinator.cold.partition.snapshot.interval.ms</em> (default 5 mins) which forces snapshotting on a timely basis, but only for share partitions with no updates. So the old log recs of the idle groups would be eligible for cleanup.</p><h1>Public Interfaces</h1><h2>New broker-level config</h2><ul><li><p class=\"p1\"><span class=\"s1\">share.coordinator.max.record.bytes.between.snapshots</span></p></li></ul><p><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"520ec306-c711-449b-ae6a-c4bb2bdacca2\"><ac:plain-text-body><![CDATA[| Name | share.coordinator.max.record.bytes.between.snapshots |\n| Type | LONG |\n| Default | 20 * 1024 * 1024 (20 MB)  |\n| Validator | atLeast(1)  |\n| Importance | HIGH  |\n| Doc | \"The maximum number of bytes of update records the share coordinator writes between snapshot records, applied as a ceiling across all share groups on this broker. May be overridden per group via share.max.record.bytes.between.snapshots; per-group values are clamped to this ceiling.\"]]></ac:plain-text-body></ac:structured-macro><h2>New per-group dynamic config</h2><ul><li><p class=\"p1\"><span class=\"s1\">share.max.record.bytes.between.snapshots</span></p></li></ul><p>A new entry on ConfigResource.Type.GROUP, set via AdminClient.incrementalAlterConfigs.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"8e9e59d2-30e0-4296-bfcc-4661b0e18e32\"><ac:plain-text-body><![CDATA[| Name | share.max.record.bytes.between.snapshots |\n| Type | LONG |\n| Default | unset — falls back to share.coordinator.max.record.bytes.between.snapshots |\n| Validator | atLeast(1). Values exceeding the current broker-level ceiling are rejected at incrementalAlterConfigs time with InvalidConfigurationException.   |\n| Importance | LOW |\n| Doc | \"Specifies update-record bytes between snapshots for this share group. If unset, falls back to share.coordinator.max.record.bytes.between.snapshots. Values above the broker-level ceiling are rejected at the time of the alter request.\"]]></ac:plain-text-body></ac:structured-macro><h2>Deprecated Config</h2><p class=\"p1\"><span class=\"s1\">share.coordinator.snapshot.update.records.per.snapshot</span><span class=\"s2\"> will be marked </span><span class=\"s1\">@Deprecated</span><span class=\"s2\">. If set on broker startup, a warning is logged. The config is honored for the deprecation period; if both records-based and bytes-based configs are set, the bytes-based config wins and a warning is logged. Removed in Kafka 5.0.</span></p><p class=\"p1\"><span class=\"s1\">Resolution happens once at broker startup, in </span><span class=\"s2\">ShareCoordinatorConfig</span><span class=\"s1\">. If </span><span class=\"s1\">share.coordinator.max.record.bytes.between.snapshots </span><span class=\"s1\">is explicitly set, </span><span class=\"s1\">the shard runs </span><span class=\"s1\">in bytes mode. If only the records-based config is explicitly set, the shard runs in records mode.</span></p><p class=\"p1\"><strong><span class=\"s1\">Resolution of set vs. default.</span></strong><span class=\"s2\"> Because the bytes-based config has a 20 MB default, its resolved value alone cannot tell us whether an operator </span><span class=\"s1\">set it. We use </span><span class=\"s2\">AbstractConfig.originals().containsKey(...)</span><span class=\"s1\"> — the established idiom in the codebase (see </span><span class=\"s2\">ProducerConfig</span><span class=\"s1\"> idempotence resolution </span><span class=\"s1\">and </span><span class=\"s2\">GroupConfig</span><span class=\"s1\">'s own </span><span class=\"s2\">Optional</span><span class=\"s1\"> getters</span><span class=\"s1\">. At broker startup </span><span class=\"s1\">ShareCoordinatorConfig</span><span class=\"s2\"> resolves the snapshot mode once:</span></p><p class=\"p1\"><span class=\"s2\">1. If </span><span class=\"s1\">share.coordinator.max.record.bytes.between.snapshots </span><span class=\"s2\">is in originals() → bytes mode.<br />2. Else if share.coordinator.snapshot.update.records.per.snapshot is in originals() → records mode (deprecated path).<br />3. Else (neither explicitly set) → bytes mode at the 20 MB default.<br />4. If both are in originals() → bytes mode wins and a WARN is logged.</span></p><h2>Java constants</h2><p><span class=\"s1\">Add the new bytes-based config in </span><span class=\"s2\">ShareCoordinatorConfig.java </span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"24c7292a-5132-4950-bb14-00bd8c6bbc85\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[public static final String MAX_RECORD_BYTES_BETWEEN_SNAPSHOTS_CONFIG = \"share.coordinator.max.record.bytes.between.snapshots\";]]></ac:plain-text-body></ac:structured-macro><pre><br /></pre><p><span class=\"s1\">Add the new bytes-based per-group config in </span><span class=\"s2\">GroupConfig.java</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"be1528e5-1c2d-4b5e-9929-452ec6e1fe4a\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[public static final String SHARE_MAX_RECORD_BYTES_BETWEEN_SNAPSHOTS_CONFIG = \"share.max.record.bytes.between.snapshots\";\n]]></ac:plain-text-body></ac:structured-macro><h2>New metric</h2><p class=\"p1\"><span class=\"s1\">A new per-partition metric is added to the share coordinator, following the same convention as the existing </span><span class=\"s2\">last-pruned-offset</span><span class=\"s1\"> metric (</span><span class=\"s2\">ShareCoordinatorMetrics</span><span class=\"s1\">):</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"d9abccea-396b-499b-bc15-b1aeda283bb0\"><ac:plain-text-body><![CDATA[│ Name        │ bytes-since-snapshot                                                                                                                             │\n│ Group       │ share-coordinator-metrics                                                                                                                        │\n│ Type        │ Value (gauge)                                                                                                                                    │\n│ Tags        │ topic, partition                                                                                                                                 │\n│ Description │ \"The number of uncompressed update-record bytes written to this __share_group_state partition since the last snapshot record. Reset to zero when a snapshot   │\n│             │ is written.\"                                                                                                                                     │\n]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><strong><span class=\"s1\">Full MBean name:</span></strong></p><p class=\"p3\"><span class=\"s1\">kafka.server:type=share-coordinator-metrics,topic=__share_group_state,partition=([0-9]+)</span></p><p class=\"p1\"><span class=\"s1\">bytes-since-snapshot</span><span class=\"s2\"> is exposed as a </span><span class=\"s1\">Value</span><span class=\"s2\"> (gauge) attribute on this MBean (similar to </span><span class=\"s1\">last-pruned-offset</span><span class=\"s2\">)</span></p><p class=\"p1\"><span class=\"s1\">Semantics :</span><span class=\"s2\"> The value tracks accumulated update bytes </span><span class=\"s1\">for the share partitions hosted on a given </span><span class=\"s1\">__share_group_state</span><span class=\"s2\"> partition. </span><span class=\"s1\">It rises as </span><span class=\"s2\">ShareUpdate</span><span class=\"s1\"> records are written and drops after a </span><span class=\"s2\">ShareSnapshot</span><span class=\"s1\"> is emitted. </span></p><p class=\"p1\"><span class=\"s1\">The metric is tagged per </span><span class=\"s2\">__share_group_state</span><span class=\"s1\"> partition, not per share group or per share partition. </span><span class=\"s1\">Because multiple share partitions (and groups) can map to the </span><span class=\"s1\">same state-topic partition, the value aggregates their in-flight update bytes.</span></p><h1>Proposed Changes</h1><h2>Broker level config</h2><p class=\"p1\"><span class=\"s1\">share-coordinator/src/main/java/org/apache/kafka/coordinator/share/ShareCoordinatorConfig.java</span></p><p class=\"p1\"><span class=\"s1\">Add </span><span class=\"s1\">MAX_RECORD_BYTES_BETWEEN_SNAPSHOTS_CONFIG </span><span class=\"s1\">constant, register it in </span><span class=\"s2\">CONFIG_DEF</span><span class=\"s1\">, validate apply-time clamp to broker value.</span></p><h2>Per-group config</h2><p><a href=\"https://github.com/apache/kafka/blob/ac031bb4e2c95ce00a90c8be6ca3f7c087fe5fbe/group-coordinator/src/main/java/org/apache/kafka/coordinator/group/GroupConfig.java#L47\">group-coordinator/src/main/java/org/apache/kafka/coordinator/group/GroupConfig.java</a></p><p class=\"p1\"><span class=\"s1\">Add </span><span class=\"s1\">SHARE_MAX_RECORD_BYTES_BETWEEN_SNAPSHOTS_CONFIG </span><span class=\"s1\">constant, register it in </span><span class=\"s2\">CONFIG_DEF</span><span class=\"s1\">, validate apply-time clamp to broker value.</span></p><h2 class=\"p1\"><span class=\"s1\">Add bytes counter</span></h2><p><span class=\"s1\">In </span>ShareCoordinatorShard.java</p><ul style=\"list-style-type: square;\"><li>similar to snapshotUpdateCount, create another variable <span class=\"s1\">snapshotUpdateBytes</span></li><li><span class=\"s1\">increment the update. (around line 282) and the existing snapshotUpdateCount increment stays.</span></li></ul><pre><br /></pre><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"ec32b672-877a-4717-811b-b09506c006b0\"><ac:plain-text-body><![CDATA[// In replay(...), SHARE_UPDATE branch — full record is in scope here:\n  case SHARE_UPDATE:\n      long updateBytes = recordSerde.recordSize(record);   // see \"Serialized size\" below\n      handleShareUpdate((ShareUpdateKey) key, (ShareUpdateValue) messageOrNull(value), updateBytes);\n      break;]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><span class=\"s1\">- Accumulate in </span><span class=\"s2\">handleShareUpdate</span><span class=\"s1\"> (the existing </span><span class=\"s2\">snapshotUpdateCount</span><span class=\"s1\"> increment at ~line 282 stays):</span></p><p class=\"p1\"><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b22a22ac-34a4-479f-abfb-902a419a2454\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[ snapshotUpdateBytes.compute(mapKey, (k, v) -> v == null ? updateBytes : v + updateBytes);]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><span class=\"s1\">- Check the byte limit in the write path (around line 662, via the </span><span class=\"s2\">snapshotThresholdReached(key)</span><span class=\"s1\"> helper):</span></p><p class=\"p1\"><span class=\"s1\"> </span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"24069205-b05b-458d-9798-a94b154c4a9f\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[ if (snapshotUpdateBytes.getOrDefault(key, 0L) >= maxBytesBetweenSnapshots) { ... }]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><span class=\"s1\"> - Also update tombstone handling to clear the new map (similar to </span><span class=\"s2\">snapshotUpdateCount.remove(mapKey)</span><span class=\"s1\">).</span></p><p>Also update tombstone handling. (similar to snapshotUpdateCount.remove(mapKey))</p><p><strong>Serialized size</strong></p><p>The serialized size in bytes of the full CoordinatorRecord (key + value) produced for a share update, as measured via ShareCoordinatorRecordSerde. This matches what the runtime appends to the __share_group_state log and is computed in ShareCoordinatorShard.replay(...) where the full record is in scope. Compression is not accounted for; the threshold is on uncompressed record bytes.</p><p class=\"p1\"><span class=\"s1\">long updateBytes = recordSerde.recordSize(record); and we add </span><span class=\"s1\">recordSize </span><span class=\"s2\">to </span><span class=\"s1\">CoordinatorRecordSerde</span></p><p class=\"p1\"><span class=\"s1\"><strong>Note</strong> - Both counters are maintained throughout the deprecation period. </span><span class=\"s1\">Keeping both counters preserves </span><span class=\"s1\">exact records-based behavior at the cost of one extra map write per update.</span></p><h2>Propagate the override to <em>ShareCoordinatorShard</em></h2><p><a href=\"https://github.com/apache/kafka/blob/ac031bb4e2c95ce00a90c8be6ca3f7c087fe5fbe/share-coordinator/src/main/java/org/apache/kafka/coordinator/share/ShareCoordinatorShard.java#L75\">share-coordinator/src/main/java/org/apache/kafka/coordinator/share/ShareCoordinatorShard.java</a></p><p>Today the shard reads the broker-level value directly:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"e17036f0-9c03-456e-b376-3c6f84da72a4\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[int updatesPerSnapshotLimit = config.shareCoordinatorSnapshotUpdateRecordsPerSnapshot();]]></ac:plain-text-body></ac:structured-macro><p>This needs to change in two places: (1) the look-up path needs to consult the per-group config first and fall back to the broker default, and (2) the unit changes from records (int) to bytes (long).</p><p><strong>Add a new accessor:</strong></p><p class=\"p1\"><span class=\"s1\">Accessor</span><span class=\"s2\"> </span><span class=\"s1\">(group-coordinator</span><span class=\"s2\"> </span><span class=\"s1\">side).</span><span class=\"s2\"> Add </span><span class=\"s1\">maxRecordBytesBetweenSnapshotsOrDefault</span><span class=\"s3\">(String</span><span class=\"s2\"> </span><span class=\"s3\">groupId,</span><span class=\"s2\"> </span><span class=\"s3\">long</span><span class=\"s2\"> </span><span class=\"s3\">brokerDefault)</span><span class=\"s2\"> on </span><span class=\"s3\">ShareGroupConfigProvider</span><span class=\"s2\">, following the </span><span class=\"s3\">existing accessor pattern:</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"4ed11e2b-95fd-4c7d-a546-af347609014c\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[ public long maxRecordBytesBetweenSnapshotsOrDefault(String groupId, long brokerDefault) {\n      return manager.groupConfig(groupId)\n          .flatMap(GroupConfig::shareMaxRecordBytesBetweenSnapshots)\n          .orElse(brokerDefault);\n  }]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><span class=\"s1\">This requires a corresponding </span><span class=\"s2\">Optional&lt;Long&gt;</span><span class=\"s1\">shareMaxRecordBytesBetweenSnapshots</span><span class=\"s2\">()</span><span class=\"s1\"> getter on </span><span class=\"s2\">GroupConfig</span><span class=\"s1\">.</span></p><p class=\"p1\"><span class=\"s1\"><strong>Interface</strong> (share-coordinator side).</span><span class=\"s2\"> </span><span class=\"s3\">ShareGroupConfigProvider</span><span class=\"s2\"> lives in group-coordinator, so share-coordinator does not reference it. Instead, share-coordinator </span><span class=\"s2\">defines the </span><span class=\"s3\">ShareGroupConfigLookup</span><span class=\"s2\"> interface (see Module dependency), and the shard depends only on that:</span></p><p class=\"p1\"><span class=\"s2\">  </span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"8507f7c3-2d48-42c1-a7b5-31e4c6189662\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[public interface ShareGroupConfigLookup {\n      long maxRecordBytesBetweenSnapshotsOrDefault(String groupId, long brokerDefault);\n  }]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><br /></p><p class=\"p1\"><strong><span class=\"s1\">Inject the lookup into </span><span class=\"s2\">ShareCoordinatorShard</span></strong></p><p class=\"p1\"><span class=\"s2\">The shard is constructed via its inner Builder (ShareCoordinatorShard.java). </span></p><p class=\"p1\"><span class=\"s1\">The Builder constructor takes </span><span class=\"s2\">ShareCoordinatorConfig</span><span class=\"s1\">. Add a new optional setter alongside the existing ones (</span><span class=\"s2\">withTime</span><span class=\"s1\">, </span><span class=\"s2\">withCoordinatorMetrics</span>, <span class=\"s1\">withTopicPartition</span><span class=\"s3\">, etc.):</span></p><p class=\"p1\"><strong><span class=\"s1\">Add an optional setter:</span></strong></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"08cf3667-7e35-4f20-94ac-e2031cff8db8\"><ac:plain-text-body><![CDATA[private ShareGroupConfigLookup shareGroupConfigLookup;                                                                                     \npublic Builder withShareGroupConfigLookup(ShareGroupConfigLookup lookup) {\n    this.shareGroupConfigLookup = lookup;\n    return this;\n  }]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><span class=\"s1\">And wire it through the </span><span class=\"s2\">build()</span><span class=\"s1\"> method to a new field on the shard itself:</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"1613db96-6588-44b5-ae6e-4094dd4bbba6\"><ac:plain-text-body><![CDATA[private final ShareGroupConfigLookup shareGroupConfigLookup;]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><span class=\"s1\">Update both </span><span class=\"s2\">ShareCoordinatorShard</span><span class=\"s1\"> constructors (</span><span class=\"s2\">ShareCoordinatorShard.java around line 176</span><span class=\"s1\">) to accept and store the lookup, and pass it through </span><span class=\"s2\">build()</span><span class=\"s1\">.</span></p><p class=\"p1\"><strong><span class=\"s1\">Wire the lookup into </span><span class=\"s2\">ShareCoordinatorService.Builder</span></strong></p><p class=\"p1\"><span class=\"s1\">Add a </span><span class=\"s2\">withShareGroupConfigLookup(ShareGroupConfigLookup)</span><span class=\"s1\"> setter to </span><span class=\"s2\">ShareCoordinatorService.Builder</span><span class=\"s1\">, store it as a field. Update the </span><span class=\"s1\">CoordinatorShardBuilderSupplier.</span></p><p class=\"p1\"><strong><span class=\"s1\">Pass the lookup in from BrokerServer.scala</span></strong></p><p class=\"p1\"><span class=\"s1\">BrokerServer</span><span class=\"s2\"> constructs an adapter</span><span class=\"s2\"> that implements </span><span class=\"s1\">ShareGroupConfigLookup</span><span class=\"s2\">, and passes it via </span><span class=\"s1\">.withShareGroupConfigLookup(...) on </span><span class=\"s1\">ShareCoordinatorService.Builder</span></p><p class=\"p1\"><strong><span class=\"s1\">Use the lookup at the snapshot-decision sites</span></strong></p><p class=\"p1\"><span class=\"s1\">ShareCoordinatorShard</span><span class=\"s2\"> decides between writing a </span><span class=\"s1\">ShareSnapshot</span><span class=\"s2\"> and a </span><span class=\"s1\">ShareUpdate</span><span class=\"s2\"> at two sites, both governed by the same threshold. Both are updated to consult the </span><span class=\"s2\">startup-resolved mode via a single helper.</span></p><p class=\"p1\"><span class=\"s1\">Write path — </span><span class=\"s2\">generateShareStateRecord </span><span class=\"s1\">(</span><span class=\"s2\">ShareCoordinatorShard.java)</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"c853a62d-2abc-4f0e-9d1c-2f41f76da9f1\"><ac:plain-text-body><![CDATA[// Before\n  int updatesPerSnapshotLimit = config.shareCoordinatorSnapshotUpdateRecordsPerSnapshot();\n  ...\n  if (snapshotUpdateCount.getOrDefault(key, 0) >= updatesPerSnapshotLimit) { ... write snapshot ... }\n\n  // After\n  if (snapshotThresholdReached(key)) { ... write snapshot ... }]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><span class=\"s1\">Reset path — </span><span class=\"s2\">handleShareSnapshot</span><span class=\"s1\"> (</span><span class=\"s2\">ShareCoordinatorShard.java)</span></p><p class=\"p1\"><span class=\"s1\">The same helper decides when the accumulated counter for </span><span class=\"s2\">key</span><span class=\"s1\"> should be reset after a snapshot record is replayed:</span></p><p class=\"p1\"><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"32bf05d4-7fa8-4517-a77e-861e0f729744\"><ac:plain-text-body><![CDATA[  if (snapshotThresholdReached(key)) {\n      // reset the active counter for this key\n  }]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><br /></p><p class=\"p1\"><span class=\"s1\">snapshotThresholdReached(SharePartitionKey key)</span><span class=\"s2\"> encapsulates mode selection so both sites stay in sync. The mode is resolved once at startup (see Deprecated config </span><span class=\"s2\">resolution); the helper does not re-resolve per call:</span></p><p class=\"p1\"><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"129e451b-04fc-4c5e-9c9a-4b56587f2c03\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[private boolean snapshotThresholdReached(SharePartitionKey key) {\n      if (snapshotMode == SnapshotMode.BYTES) {\n          long brokerLimit = config.shareCoordinatorMaxRecordBytesBetweenSnapshots();\n          long limit = shareGroupConfigLookup.maxRecordBytesBetweenSnapshotsOrDefault(key.groupId(), brokerLimit);\n          return snapshotUpdateBytes.getOrDefault(key, 0L) >= limit;\n      } else { // RECORDS (deprecated path)\n          return snapshotUpdateCount.getOrDefault(key, 0) >= config.shareCoordinatorSnapshotUpdateRecordsPerSnapshot();\n      }\n  }]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><br /></p><p>- In bytes mode, the per-group override (<span class=\"s1\">share.max.record.bytes.between.snapshots</span>) is consulted first via shareGroupConfigLookup, falling back to the broker-level <span class=\"s1\">share.coordinator.max.record.bytes.between.snapshots</span>. The per-group value is already bounded at alter time to not exceed the broker ceiling.<br />- In records mode (only the deprecated config is set), the threshold is the broker records limit; there is no per-group records override. </p><p>shareGroupConfigLookup is the ShareGroupConfigLookup interface defined in share-coordinator and is required — ShareCoordinatorShard.Builder.build() rejects a null lookup, mirroring the existing null-checks in ShareCoordinatorService.Builder.build() (ShareCoordinatorService.java: around line 190). This avoids a silent no-op if the wiring in BrokerServer is ever omitted. </p><p class=\"p1\"><strong><span class=\"s1\">Emit the bytes-since-snapshot metric</span></strong></p><p class=\"p1\"><span class=\"s1\">New metric is wired through the existing </span><span class=\"s2\">ShareCoordinatorMetrics</span><span class=\"s1\"> / </span><span class=\"s2\">ShareCoordinatorMetricsShard</span></p><p><strong>Module dependency</strong></p><p class=\"p1\"><span class=\"s1\">share-coordinator needs to look up per-group config overrides, which live in group-coordinator.</span></p><p class=\"p1\"><span class=\"s1\">Config lookup interface - </span><span class=\"s1\">share-coordinator defines a small interface, </span><span class=\"s2\">ShareGroupConfigLookup. </span><span class=\"s1\">BrokerServer </span><span class=\"s1\">constructs an </span><span class=\"s1\">adapter over the existing </span><span class=\"s2\">ShareGroupConfigProvider</span><span class=\"s1\"> and passes it in, so the p</span><span class=\"s2\">rovider is </span><span class=\"s1\">adapted into the share-coordinator interface at the broker composition root. </span></p><p class=\"p1\"><span class=\"s1\">share-coordinator gains no new module dependency, preserving t</span><span class=\"s1\">he layering that </span><span class=\"s2\">coordinator-common</span><span class=\"s1\"> was created to protect.</span></p><h2>Documentation</h2><ul style=\"list-style-type: square;\"><li>Update the [Kafka Configuration](<a href=\"https://kafka.apache.org/documentation/#configuration\">https://kafka.apache.org/documentation/#configuration</a>) page to reflect the new broker ceiling and to add the new group-level entry under &quot;Share Group Configurations.&quot;</li><li>Update the share-group operator documentation (`docs/streams/...` equivalent for share groups, exact location to be confirmed during implementation) with a tuning section explaining the snapshot/update tradeoff.</li></ul><h1>Compatibility, Deprecation, and Migration Plan</h1><h2>Cluster-roll backward compatibility</h2><p>During a rolling upgrade, yes brokers run mixed versions. Each broker's shard independently decides snapshot cadence, from its own local config. A newer broker replaying records written by an older broker interprets them identically. So cadence may differ in the mid-roll, but there is no on-disk format change and no coordination required I see. A broker that hasn't yet had the new config set, will simply use the 20 MB default.</p><h2>Behavioral compatibility:</h2><p>- The default snapshot trigger changes from 500 records to 20 MB of update bytes. For typical workloads this means snapshots are written less frequently, reducing write amplification.<br />- Brokers that set share.coordinator.snapshot.update.records.per.snapshot continue to use the records-based threshold during the deprecation period. A warning is logged at startup.<br />- The new per-group config is opt-in.</p><h2>Deprecation:</h2><p>share.coordinator.snapshot.update.records.per.snapshot will be marked @Deprecated in this release and removed in a future major release. Operators are encouraged to migrate to the bytes-based config.</p><h2>Migration:</h2><p>Operators who don't touch any config get the new 20 MB default.</p><p>Operators who explicitly set the records-based config can either:<br />- Remove the records-based config and accept the new 20 MB default, or<br />- Set the new bytes-based config (<span class=\"s1\">share.coordinator.max.record.bytes.between.snapshots</span>) to a value that matches their previous tuning intent.</p><p>Operators who set the records-based config to 0 (snapshot every write) cannot perfectly preserve that behavior under the bytes-based config (which has atLeast(1)); they should set the new config to a small value like 1 if they need snapshots after every update.</p><p>The deprecated records-based config continues to work during the deprecation period; if both records-based and bytes-based configs are set, the bytes-based config takes precedence and a warning is logged.</p><h1>Test Plan</h1><h2>Unit Tests</h2><p class=\"p1\"><span class=\"s1\">- </span><span class=\"s2\">ShareCoordinatorConfigTest</span><span class=\"s1\"> — bytes-based broker bounds, deprecation warning, both-configs-set precedence.</span></p><p class=\"p1\"><span class=\"s1\">- </span><span class=\"s2\">ShareCoordinatorShardTest</span><span class=\"s1\"> — counter accumulates serialized bytes, snapshot triggers at threshold, both read sites stay consistent, per-group override propagated</span></p><p class=\"p1\"><span class=\"s1\">- </span><span class=\"s2\">GroupConfigTest</span><span class=\"s1\"> — per-group bytes config validation, apply-time clamp to broker ceiling.</span></p><p class=\"p1\"><strong><span class=\"s1\">Performance investigation</span></strong></p><p class=\"p1\"><span class=\"s1\">Before the deprecated records-based config is removed, we will measure the snapshot-cadence change (snapshots become substantially less frequent for small update </span><span class=\"s1\">records — ~154 bytes measured) and its effect on recovery time and retained-log size, using an out-of-order-ack workload that exercises the snapshot threshold. We will </span><span class=\"s1\">also benchmark the per-update overhead (extra counter + record-size computation) against trunk before merge, and publish migration guidance.</span></p><h2>Integration Tests</h2><p> ShareCoordinatorIntegrationTest (<span class=\"s1\">covers end-to-end propagation of the per-group config</span>)</p><h1>Rejected Alternatives</h1><p>Here are the rejected alternatives.</p><h2>Raise broker max only. No per-group override</h2><p>A single broker-level setting forces all share groups on the cluster to use the same value. Different groups have different write profiles. A low-traffic group benefits from a low value (fast recovery), while a high-traffic group benefits from a high value. Without a per-group override, operators must pick one value that compromises for all groups.<br />Additionally, since all groups on the same __share_group_state partition share log-pruning behavior, one group set very high can delay pruning for unrelated groups on the same partition.</p><h2>Per-group override only. Keep broker max at 500. </h2><p>The broker ceiling acts as a hard cap on every per-group value <span class=\"s1\">(per-group </span><span class=\"s2\">between(1, broker_value)</span><span class=\"s1\">)</span>. If we keep the broker max at 500 means, per-group overrides cannot exceed 500 either, so high-traffic groups cannot benefit from the per-group config. In this case operators would have to raise the broker ceiling immediately anyway to use the new per-group setting meaningfully. Basically the per-group config is not of much use without the ceiling raise.</p><h2>Keep records-based control, just adjust bounds.</h2><p>Records-based control is workload-dependent — the same N records can be very different bytes on different workloads, making disk impact unpredictable. Bytes-based control mirrors KRaft's well-established metadata.log.max.record.bytes.between.snapshots and gives operators a metric they can reason about directly</p><p><br /></p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/421958844?status=historical&version=86"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1338
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=451971106",
+    "edit": "/pages/resumedraft.action?draftId=451971106&draftShareId=748e16d3-0957-453d-9cb7-addcf7b02376",
+    "tinyui": "/x/IojwGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/421958844?status=historical&version=86"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/421958844/child?parentVersion=86",
+    "restrictions": "/rest/api/content/421958844/restriction/byOperation",
+    "history": "/rest/api/content/421958844/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/421958844/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/421958844/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "421958844",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1349: Bytes-based configurable snapshot frequency for share groups",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-25T18:02:47.000Z",
+    "message": "",
+    "number": 85,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/85"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=85"
+    }
+   },
+   "position": 1338,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><h1>Status</h1><p><strong>Current state</strong>: &quot;Under Discussion&quot;</p><p><strong>Discussion thread</strong>: <em><a href=\"https://lists.apache.org/thread/lpwmfgq28lz8ghzyb0wp8s8o4zpgw2tc\">here</a> <br /></em></p><p><strong>JIRA</strong>: <em><a href=\"https://issues.apache.org/jira/browse/KAFKA-20070\">here</a> </em></p><h1>Motivation</h1><p><br />Kafka has share groups. As multiple consumers in the same share group can consume from the same partition concurrently, records get individually acknowledged and broker tracks per record state(delivered, acked, in-flight etc).</p><p>To handle all that per record state, across broker restarts, Kafka writes to an internal topic called __share_group_state.<br />Two kind of records go there.<br />- Update records (small and incremental)<br />- Snapshot records (big, complete)</p><p>We need snapshots, because when a broker restarts, replaying millions of updates would take forever, and snapshots are like save points.</p><p>Today snapshots are controlled only with this one broker level config : share.coordinator.snapshot.update.records.per.snapshot(is for number of small updates which get written before saving it as a full snapshot.)</p><p>If we set it low, too many snapshots are written, and recovery is fast. If we set it to high, we mostly write tiny updates, and less disk is used but recovery is replaying several tiny udpates, might take long.</p><p>So it's a trade off. write-cost vs recovery-cost</p><p>It's range is 0-500 (<a href=\"https://github.com/apache/kafka/blob/ac031bb4e2c95ce00a90c8be6ca3f7c087fe5fbe/share-coordinator/src/main/java/org/apache/kafka/coordinator/share/ShareCoordinatorConfig.java#L103\">https://github.com/apache/kafka/blob/ac031bb4e2c95ce00a90c8be6ca3f7c087fe5fbe/share-coordinator/src/main/java/org/apache/kafka/coordinator/share/ShareCoordinatorConfig.java#L103</a>)</p><p class=\"p1\"><span class=\"s1\">Measurements on a local 4.3.0 cluster show </span><span class=\"s2\">__share_group_state</span><span class=\"s1\"> update records are small (~154 bytes average), so the records-based default of 500 corresponds to only </span><span class=\"s1\">~75 KB between snapshots. A bytes-based 20 MB default (matching KRaft) is a more predictable, workload-independent trigger.</span></p><h2>Problems</h2><p><strong>Records-based</strong> control is workload-dependent. Different share groups have different state-batch sizes. A records-based threshold means &quot;snapshot every N updates,&quot; but those N updates can be 5 KB on one workload and 500 KB on another, so disk impact is unpredictable.</p><p>One config at the broker level cannot fit all share groups. Different groups have different traffic patterns. With mixed workloads sharing the same state topic, one value may fit one group but not others.</p><p>Is 500 too low ? Probably for high traffic share groups it is low and they get benefitted from snapshotting less often. It <span class=\"s1\">is conservative for high-traffic workloads</span></p><p>What if we remove the upper limit ? If there is no cap, a misconfigured group can write millions of updates without ever triggering an update (count-based) snapshot. This will fill up the disk, as broker cannot delete old log files.</p><p>What if we have one config at broker level : There would be different kinds of share groups with different traffic patterns and with mixed workloads, and as they share the same state topic, it may fit one, but not others.</p><h2 class=\"p1\"><span class=\"s1\">Proposal</span></h2><p class=\"p1\"><span class=\"s1\">Switch to bytes-based control (similar to </span><span class=\"s1\">metadata.log.max.record.bytes.between.snapshots in </span><span class=\"s1\">MetadataLogConfig.java</span><span class=\"s1\">)</span></p><p class=\"p1\"><strong><span class=\"s1\">- </span></strong><span class=\"s2\"><strong>Broker-level</strong>: </span><span class=\"s1\">share.coordinator.max.record.bytes.between.snapshots</span><span class=\"s2\">, default 20 MB, (matching KRaft's well-tested default.)</span></p><p class=\"p1\"><strong><span class=\"s1\">- </span><span class=\"s2\">Per-group</span></strong><span class=\"s1\">: </span><span class=\"s1\">share.max.record.bytes.between.snapshots</span><span class=\"s1\">, configurable per share group. This would allow every share group with different traffic patterns to handle the snapshots/disk sizes etc very well. </span></p><p class=\"p1\"><span class=\"s1\">The existing records-based config (share.coordinator.snapshot.update.records.per.snapshot) is deprecated with a warning at broker startup if set, and removed in a future release.</span></p><p class=\"p1\"><span class=\"s1\">Bytes-based control gives operators predictable disk impact, independent of workload, and follows the same pattern Kafka already uses for the metadata log. (also in kip 770)</span></p><p><strong>Note</strong> : There is another config <em>share.coordinator.cold.partition.snapshot.interval.ms</em> (default 5 mins) which forces snapshotting on a timely basis, but only for share partitions with no updates. So the old log recs of the idle groups would be eligible for cleanup.</p><h1>Public Interfaces</h1><h2>New broker-level config</h2><ul><li><p class=\"p1\"><span class=\"s1\">share.coordinator.max.record.bytes.between.snapshots</span></p></li></ul><p><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"520ec306-c711-449b-ae6a-c4bb2bdacca2\"><ac:plain-text-body><![CDATA[| Name | share.coordinator.max.record.bytes.between.snapshots |\n| Type | LONG |\n| Default | 20 * 1024 * 1024 (20 MB)  |\n| Validator | atLeast(1)  |\n| Importance | HIGH  |\n| Doc | \"The maximum number of bytes of update records the share coordinator writes between snapshot records, applied as a ceiling across all share groups on this broker. May be overridden per group via share.max.record.bytes.between.snapshots; per-group values are clamped to this ceiling.\"]]></ac:plain-text-body></ac:structured-macro><h2>New per-group dynamic config</h2><ul><li><p class=\"p1\"><span class=\"s1\">share.max.record.bytes.between.snapshots</span></p></li></ul><p>A new entry on ConfigResource.Type.GROUP, set via AdminClient.incrementalAlterConfigs.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"8e9e59d2-30e0-4296-bfcc-4661b0e18e32\"><ac:plain-text-body><![CDATA[| Name | share.max.record.bytes.between.snapshots |\n| Type | LONG |\n| Default | unset — falls back to share.coordinator.max.record.bytes.between.snapshots |\n| Validator | atLeast(1). Values exceeding the current broker-level ceiling are rejected at incrementalAlterConfigs time with InvalidConfigurationException.   |\n| Importance | MEDIUM |\n| Doc | \"Specifies update-record bytes between snapshots for this share group. If unset, falls back to share.coordinator.max.record.bytes.between.snapshots. Values above the broker-level ceiling are rejected at the time of the alter request.\"]]></ac:plain-text-body></ac:structured-macro><h2>Deprecated Config</h2><p class=\"p1\"><span class=\"s1\">share.coordinator.snapshot.update.records.per.snapshot</span><span class=\"s2\"> will be marked </span><span class=\"s1\">@Deprecated</span><span class=\"s2\">. If set on broker startup, a warning is logged. The config is honored for the deprecation period; if both records-based and bytes-based configs are set, the bytes-based config wins and a warning is logged. Removed in Kafka 5.0.</span></p><p class=\"p1\"><span class=\"s1\">Resolution happens once at broker startup, in </span><span class=\"s2\">ShareCoordinatorConfig</span><span class=\"s1\">. If </span><span class=\"s1\">share.coordinator.max.record.bytes.between.snapshots </span><span class=\"s1\">is explicitly set, </span><span class=\"s1\">the shard runs </span><span class=\"s1\">in bytes mode. If only the records-based config is explicitly set, the shard runs in records mode.</span></p><p class=\"p1\"><strong><span class=\"s1\">Resolution of set vs. default.</span></strong><span class=\"s2\"> Because the bytes-based config has a 20 MB default, its resolved value alone cannot tell us whether an operator </span><span class=\"s1\">set it. We use </span><span class=\"s2\">AbstractConfig.originals().containsKey(...)</span><span class=\"s1\"> — the established idiom in the codebase (see </span><span class=\"s2\">ProducerConfig</span><span class=\"s1\"> idempotence resolution </span><span class=\"s1\">and </span><span class=\"s2\">GroupConfig</span><span class=\"s1\">'s own </span><span class=\"s2\">Optional</span><span class=\"s1\"> getters</span><span class=\"s1\">. At broker startup </span><span class=\"s1\">ShareCoordinatorConfig</span><span class=\"s2\"> resolves the snapshot mode once:</span></p><p class=\"p1\"><span class=\"s2\">1. If </span><span class=\"s1\">share.coordinator.max.record.bytes.between.snapshots </span><span class=\"s2\">is in originals() → bytes mode.<br />2. Else if share.coordinator.snapshot.update.records.per.snapshot is in originals() → records mode (deprecated path).<br />3. Else (neither explicitly set) → bytes mode at the 20 MB default.<br />4. If both are in originals() → bytes mode wins and a WARN is logged.</span></p><h2>Java constants</h2><p><span class=\"s1\">Add the new bytes-based config in </span><span class=\"s2\">ShareCoordinatorConfig.java </span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"24c7292a-5132-4950-bb14-00bd8c6bbc85\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[public static final String MAX_RECORD_BYTES_BETWEEN_SNAPSHOTS_CONFIG = \"share.coordinator.max.record.bytes.between.snapshots\";]]></ac:plain-text-body></ac:structured-macro><pre><br /></pre><p><span class=\"s1\">Add the new bytes-based per-group config in </span><span class=\"s2\">GroupConfig.java</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"be1528e5-1c2d-4b5e-9929-452ec6e1fe4a\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[public static final String SHARE_MAX_RECORD_BYTES_BETWEEN_SNAPSHOTS_CONFIG = \"share.max.record.bytes.between.snapshots\";\n]]></ac:plain-text-body></ac:structured-macro><h2>New metric</h2><p class=\"p1\"><span class=\"s1\">A new per-partition metric is added to the share coordinator, following the same convention as the existing </span><span class=\"s2\">last-pruned-offset</span><span class=\"s1\"> metric (</span><span class=\"s2\">ShareCoordinatorMetrics</span><span class=\"s1\">):</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"d9abccea-396b-499b-bc15-b1aeda283bb0\"><ac:plain-text-body><![CDATA[│ Name        │ bytes-since-snapshot                                                                                                                             │\n│ Group       │ share-coordinator-metrics                                                                                                                        │\n│ Type        │ Value (gauge)                                                                                                                                    │\n│ Tags        │ topic, partition                                                                                                                                 │\n│ Description │ \"The number of uncompressed update-record bytes written to this __share_group_state partition since the last snapshot record. Reset to zero when a snapshot   │\n│             │ is written.\"                                                                                                                                     │\n]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><strong><span class=\"s1\">Full MBean name:</span></strong></p><p class=\"p3\"><span class=\"s1\">kafka.server:type=share-coordinator-metrics,topic=__share_group_state,partition=([0-9]+)</span></p><p class=\"p1\"><span class=\"s1\">bytes-since-snapshot</span><span class=\"s2\"> is exposed as a </span><span class=\"s1\">Value</span><span class=\"s2\"> (gauge) attribute on this MBean (similar to </span><span class=\"s1\">last-pruned-offset</span><span class=\"s2\">)</span></p><p class=\"p1\"><span class=\"s1\">Semantics :</span><span class=\"s2\"> The value tracks accumulated update bytes </span><span class=\"s1\">for the share partitions hosted on a given </span><span class=\"s1\">__share_group_state</span><span class=\"s2\"> partition. </span><span class=\"s1\">It rises as </span><span class=\"s2\">ShareUpdate</span><span class=\"s1\"> records are written and drops after a </span><span class=\"s2\">ShareSnapshot</span><span class=\"s1\"> is emitted. </span></p><p class=\"p1\"><span class=\"s1\">The metric is tagged per </span><span class=\"s2\">__share_group_state</span><span class=\"s1\"> partition, not per share group or per share partition. </span><span class=\"s1\">Because multiple share partitions (and groups) can map to the </span><span class=\"s1\">same state-topic partition, the value aggregates their in-flight update bytes.</span></p><h1>Proposed Changes</h1><h2>Broker level config</h2><p class=\"p1\"><span class=\"s1\">share-coordinator/src/main/java/org/apache/kafka/coordinator/share/ShareCoordinatorConfig.java</span></p><p class=\"p1\"><span class=\"s1\">Add </span><span class=\"s1\">MAX_RECORD_BYTES_BETWEEN_SNAPSHOTS_CONFIG </span><span class=\"s1\">constant, register it in </span><span class=\"s2\">CONFIG_DEF</span><span class=\"s1\">, validate apply-time clamp to broker value.</span></p><h2>Per-group config</h2><p><a href=\"https://github.com/apache/kafka/blob/ac031bb4e2c95ce00a90c8be6ca3f7c087fe5fbe/group-coordinator/src/main/java/org/apache/kafka/coordinator/group/GroupConfig.java#L47\">group-coordinator/src/main/java/org/apache/kafka/coordinator/group/GroupConfig.java</a></p><p class=\"p1\"><span class=\"s1\">Add </span><span class=\"s1\">SHARE_MAX_RECORD_BYTES_BETWEEN_SNAPSHOTS_CONFIG </span><span class=\"s1\">constant, register it in </span><span class=\"s2\">CONFIG_DEF</span><span class=\"s1\">, validate apply-time clamp to broker value.</span></p><h2 class=\"p1\"><span class=\"s1\">Add bytes counter</span></h2><p><span class=\"s1\">In </span>ShareCoordinatorShard.java</p><ul style=\"list-style-type: square;\"><li>similar to snapshotUpdateCount, create another variable <span class=\"s1\">snapshotUpdateBytes</span></li><li><span class=\"s1\">increment the update. (around line 282) and the existing snapshotUpdateCount increment stays.</span></li></ul><pre><br /></pre><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"ec32b672-877a-4717-811b-b09506c006b0\"><ac:plain-text-body><![CDATA[// In replay(...), SHARE_UPDATE branch — full record is in scope here:\n  case SHARE_UPDATE:\n      long updateBytes = recordSerde.recordSize(record);   // see \"Serialized size\" below\n      handleShareUpdate((ShareUpdateKey) key, (ShareUpdateValue) messageOrNull(value), updateBytes);\n      break;]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><span class=\"s1\">- Accumulate in </span><span class=\"s2\">handleShareUpdate</span><span class=\"s1\"> (the existing </span><span class=\"s2\">snapshotUpdateCount</span><span class=\"s1\"> increment at ~line 282 stays):</span></p><p class=\"p1\"><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b22a22ac-34a4-479f-abfb-902a419a2454\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[ snapshotUpdateBytes.compute(mapKey, (k, v) -> v == null ? updateBytes : v + updateBytes);]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><span class=\"s1\">- Check the byte limit in the write path (around line 662, via the </span><span class=\"s2\">snapshotThresholdReached(key)</span><span class=\"s1\"> helper):</span></p><p class=\"p1\"><span class=\"s1\"> </span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"24069205-b05b-458d-9798-a94b154c4a9f\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[ if (snapshotUpdateBytes.getOrDefault(key, 0L) >= maxBytesBetweenSnapshots) { ... }]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><span class=\"s1\"> - Also update tombstone handling to clear the new map (similar to </span><span class=\"s2\">snapshotUpdateCount.remove(mapKey)</span><span class=\"s1\">).</span></p><p>Also update tombstone handling. (similar to snapshotUpdateCount.remove(mapKey))</p><p><strong>Serialized size</strong></p><p>The serialized size in bytes of the full CoordinatorRecord (key + value) produced for a share update, as measured via ShareCoordinatorRecordSerde. This matches what the runtime appends to the __share_group_state log and is computed in ShareCoordinatorShard.replay(...) where the full record is in scope. Compression is not accounted for; the threshold is on uncompressed record bytes.</p><p class=\"p1\"><span class=\"s1\">long updateBytes = recordSerde.recordSize(record); and we add </span><span class=\"s1\">recordSize </span><span class=\"s2\">to </span><span class=\"s1\">CoordinatorRecordSerde</span></p><p class=\"p1\"><span class=\"s1\"><strong>Note</strong> - Both counters are maintained throughout the deprecation period. </span><span class=\"s1\">Keeping both counters preserves </span><span class=\"s1\">exact records-based behavior at the cost of one extra map write per update.</span></p><h2>Propagate the override to <em>ShareCoordinatorShard</em></h2><p><a href=\"https://github.com/apache/kafka/blob/ac031bb4e2c95ce00a90c8be6ca3f7c087fe5fbe/share-coordinator/src/main/java/org/apache/kafka/coordinator/share/ShareCoordinatorShard.java#L75\">share-coordinator/src/main/java/org/apache/kafka/coordinator/share/ShareCoordinatorShard.java</a></p><p>Today the shard reads the broker-level value directly:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"e17036f0-9c03-456e-b376-3c6f84da72a4\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[int updatesPerSnapshotLimit = config.shareCoordinatorSnapshotUpdateRecordsPerSnapshot();]]></ac:plain-text-body></ac:structured-macro><p>This needs to change in two places: (1) the look-up path needs to consult the per-group config first and fall back to the broker default, and (2) the unit changes from records (int) to bytes (long).</p><p><strong>Add a new accessor:</strong></p><p class=\"p1\"><span class=\"s1\">Accessor</span><span class=\"s2\"> </span><span class=\"s1\">(group-coordinator</span><span class=\"s2\"> </span><span class=\"s1\">side).</span><span class=\"s2\"> Add </span><span class=\"s1\">maxRecordBytesBetweenSnapshotsOrDefault</span><span class=\"s3\">(String</span><span class=\"s2\"> </span><span class=\"s3\">groupId,</span><span class=\"s2\"> </span><span class=\"s3\">long</span><span class=\"s2\"> </span><span class=\"s3\">brokerDefault)</span><span class=\"s2\"> on </span><span class=\"s3\">ShareGroupConfigProvider</span><span class=\"s2\">, following the </span><span class=\"s3\">existing accessor pattern:</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"4ed11e2b-95fd-4c7d-a546-af347609014c\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[ public long maxRecordBytesBetweenSnapshotsOrDefault(String groupId, long brokerDefault) {\n      return manager.groupConfig(groupId)\n          .flatMap(GroupConfig::shareMaxRecordBytesBetweenSnapshots)\n          .orElse(brokerDefault);\n  }]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><span class=\"s1\">This requires a corresponding </span><span class=\"s2\">Optional&lt;Long&gt;</span><span class=\"s1\">shareMaxRecordBytesBetweenSnapshots</span><span class=\"s2\">()</span><span class=\"s1\"> getter on </span><span class=\"s2\">GroupConfig</span><span class=\"s1\">.</span></p><p class=\"p1\"><span class=\"s1\"><strong>Interface</strong> (share-coordinator side).</span><span class=\"s2\"> </span><span class=\"s3\">ShareGroupConfigProvider</span><span class=\"s2\"> lives in group-coordinator, so share-coordinator does not reference it. Instead, share-coordinator </span><span class=\"s2\">defines the </span><span class=\"s3\">ShareGroupConfigLookup</span><span class=\"s2\"> interface (see Module dependency), and the shard depends only on that:</span></p><p class=\"p1\"><span class=\"s2\">  </span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"8507f7c3-2d48-42c1-a7b5-31e4c6189662\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[public interface ShareGroupConfigLookup {\n      long maxRecordBytesBetweenSnapshotsOrDefault(String groupId, long brokerDefault);\n  }]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><br /></p><p class=\"p1\"><strong><span class=\"s1\">Inject the lookup into </span><span class=\"s2\">ShareCoordinatorShard</span></strong></p><p class=\"p1\"><span class=\"s2\">The shard is constructed via its inner Builder (ShareCoordinatorShard.java). </span></p><p class=\"p1\"><span class=\"s1\">The Builder constructor takes </span><span class=\"s2\">ShareCoordinatorConfig</span><span class=\"s1\">. Add a new optional setter alongside the existing ones (</span><span class=\"s2\">withTime</span><span class=\"s1\">, </span><span class=\"s2\">withCoordinatorMetrics</span>, <span class=\"s1\">withTopicPartition</span><span class=\"s3\">, etc.):</span></p><p class=\"p1\"><strong><span class=\"s1\">Add an optional setter:</span></strong></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"08cf3667-7e35-4f20-94ac-e2031cff8db8\"><ac:plain-text-body><![CDATA[private ShareGroupConfigLookup shareGroupConfigLookup;                                                                                     \npublic Builder withShareGroupConfigLookup(ShareGroupConfigLookup lookup) {\n    this.shareGroupConfigLookup = lookup;\n    return this;\n  }]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><span class=\"s1\">And wire it through the </span><span class=\"s2\">build()</span><span class=\"s1\"> method to a new field on the shard itself:</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"1613db96-6588-44b5-ae6e-4094dd4bbba6\"><ac:plain-text-body><![CDATA[private final ShareGroupConfigLookup shareGroupConfigLookup;]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><span class=\"s1\">Update both </span><span class=\"s2\">ShareCoordinatorShard</span><span class=\"s1\"> constructors (</span><span class=\"s2\">ShareCoordinatorShard.java around line 176</span><span class=\"s1\">) to accept and store the lookup, and pass it through </span><span class=\"s2\">build()</span><span class=\"s1\">.</span></p><p class=\"p1\"><strong><span class=\"s1\">Wire the lookup into </span><span class=\"s2\">ShareCoordinatorService.Builder</span></strong></p><p class=\"p1\"><span class=\"s1\">Add a </span><span class=\"s2\">withShareGroupConfigLookup(ShareGroupConfigLookup)</span><span class=\"s1\"> setter to </span><span class=\"s2\">ShareCoordinatorService.Builder</span><span class=\"s1\">, store it as a field. Update the </span><span class=\"s1\">CoordinatorShardBuilderSupplier.</span></p><p class=\"p1\"><strong><span class=\"s1\">Pass the lookup in from BrokerServer.scala</span></strong></p><p class=\"p1\"><span class=\"s1\">BrokerServer</span><span class=\"s2\"> constructs an adapter</span><span class=\"s2\"> that implements </span><span class=\"s1\">ShareGroupConfigLookup</span><span class=\"s2\">, and passes it via </span><span class=\"s1\">.withShareGroupConfigLookup(...) on </span><span class=\"s1\">ShareCoordinatorService.Builder</span></p><p class=\"p1\"><strong><span class=\"s1\">Use the lookup at the snapshot-decision sites</span></strong></p><p class=\"p1\"><span class=\"s1\">ShareCoordinatorShard</span><span class=\"s2\"> decides between writing a </span><span class=\"s1\">ShareSnapshot</span><span class=\"s2\"> and a </span><span class=\"s1\">ShareUpdate</span><span class=\"s2\"> at two sites, both governed by the same threshold. Both are updated to consult the </span><span class=\"s2\">startup-resolved mode via a single helper.</span></p><p class=\"p1\"><span class=\"s1\">Write path — </span><span class=\"s2\">generateShareStateRecord </span><span class=\"s1\">(</span><span class=\"s2\">ShareCoordinatorShard.java)</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"c853a62d-2abc-4f0e-9d1c-2f41f76da9f1\"><ac:plain-text-body><![CDATA[// Before\n  int updatesPerSnapshotLimit = config.shareCoordinatorSnapshotUpdateRecordsPerSnapshot();\n  ...\n  if (snapshotUpdateCount.getOrDefault(key, 0) >= updatesPerSnapshotLimit) { ... write snapshot ... }\n\n  // After\n  if (snapshotThresholdReached(key)) { ... write snapshot ... }]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><span class=\"s1\">Reset path — </span><span class=\"s2\">handleShareSnapshot</span><span class=\"s1\"> (</span><span class=\"s2\">ShareCoordinatorShard.java)</span></p><p class=\"p1\"><span class=\"s1\">The same helper decides when the accumulated counter for </span><span class=\"s2\">key</span><span class=\"s1\"> should be reset after a snapshot record is replayed:</span></p><p class=\"p1\"><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"32bf05d4-7fa8-4517-a77e-861e0f729744\"><ac:plain-text-body><![CDATA[  if (snapshotThresholdReached(key)) {\n      // reset the active counter for this key\n  }]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><br /></p><p class=\"p1\"><span class=\"s1\">snapshotThresholdReached(SharePartitionKey key)</span><span class=\"s2\"> encapsulates mode selection so both sites stay in sync. The mode is resolved once at startup (see Deprecated config </span><span class=\"s2\">resolution); the helper does not re-resolve per call:</span></p><p class=\"p1\"><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"129e451b-04fc-4c5e-9c9a-4b56587f2c03\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[private boolean snapshotThresholdReached(SharePartitionKey key) {\n      if (snapshotMode == SnapshotMode.BYTES) {\n          long brokerLimit = config.shareCoordinatorMaxRecordBytesBetweenSnapshots();\n          long limit = shareGroupConfigLookup.maxRecordBytesBetweenSnapshotsOrDefault(key.groupId(), brokerLimit);\n          return snapshotUpdateBytes.getOrDefault(key, 0L) >= limit;\n      } else { // RECORDS (deprecated path)\n          return snapshotUpdateCount.getOrDefault(key, 0) >= config.shareCoordinatorSnapshotUpdateRecordsPerSnapshot();\n      }\n  }]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><br /></p><p>- In bytes mode, the per-group override (<span class=\"s1\">share.max.record.bytes.between.snapshots</span>) is consulted first via shareGroupConfigLookup, falling back to the broker-level <span class=\"s1\">share.coordinator.max.record.bytes.between.snapshots</span>. The per-group value is already bounded at alter time to not exceed the broker ceiling.<br />- In records mode (only the deprecated config is set), the threshold is the broker records limit; there is no per-group records override. </p><p>shareGroupConfigLookup is the ShareGroupConfigLookup interface defined in share-coordinator and is required — ShareCoordinatorShard.Builder.build() rejects a null lookup, mirroring the existing null-checks in ShareCoordinatorService.Builder.build() (ShareCoordinatorService.java: around line 190). This avoids a silent no-op if the wiring in BrokerServer is ever omitted. </p><p class=\"p1\"><strong><span class=\"s1\">Emit the bytes-since-snapshot metric</span></strong></p><p class=\"p1\"><span class=\"s1\">New metric is wired through the existing </span><span class=\"s2\">ShareCoordinatorMetrics</span><span class=\"s1\"> / </span><span class=\"s2\">ShareCoordinatorMetricsShard</span></p><p><strong>Module dependency</strong></p><p class=\"p1\"><span class=\"s1\">share-coordinator needs to look up per-group config overrides, which live in group-coordinator.</span></p><p class=\"p1\"><span class=\"s1\">Config lookup interface - </span><span class=\"s1\">share-coordinator defines a small interface, </span><span class=\"s2\">ShareGroupConfigLookup. </span><span class=\"s1\">BrokerServer </span><span class=\"s1\">constructs an </span><span class=\"s1\">adapter over the existing </span><span class=\"s2\">ShareGroupConfigProvider</span><span class=\"s1\"> and passes it in, so the p</span><span class=\"s2\">rovider is </span><span class=\"s1\">adapted into the share-coordinator interface at the broker composition root. </span></p><p class=\"p1\"><span class=\"s1\">share-coordinator gains no new module dependency, preserving t</span><span class=\"s1\">he layering that </span><span class=\"s2\">coordinator-common</span><span class=\"s1\"> was created to protect.</span></p><h2>Documentation</h2><ul style=\"list-style-type: square;\"><li>Update the [Kafka Configuration](<a href=\"https://kafka.apache.org/documentation/#configuration\">https://kafka.apache.org/documentation/#configuration</a>) page to reflect the new broker ceiling and to add the new group-level entry under &quot;Share Group Configurations.&quot;</li><li>Update the share-group operator documentation (`docs/streams/...` equivalent for share groups, exact location to be confirmed during implementation) with a tuning section explaining the snapshot/update tradeoff.</li></ul><h1>Compatibility, Deprecation, and Migration Plan</h1><h2>Cluster-roll backward compatibility</h2><p>During a rolling upgrade, yes brokers run mixed versions. Each broker's shard independently decides snapshot cadence, from its own local config. A newer broker replaying records written by an older broker interprets them identically. So cadence may differ in the mid-roll, but there is no on-disk format change and no coordination required I see. A broker that hasn't yet had the new config set, will simply use the 20 MB default.</p><h2>Behavioral compatibility:</h2><p>- The default snapshot trigger changes from 500 records to 20 MB of update bytes. For typical workloads this means snapshots are written less frequently, reducing write amplification.<br />- Brokers that set share.coordinator.snapshot.update.records.per.snapshot continue to use the records-based threshold during the deprecation period. A warning is logged at startup.<br />- The new per-group config is opt-in.</p><h2>Deprecation:</h2><p>share.coordinator.snapshot.update.records.per.snapshot will be marked @Deprecated in this release and removed in a future major release. Operators are encouraged to migrate to the bytes-based config.</p><h2>Migration:</h2><p>Operators who don't touch any config get the new 20 MB default.</p><p>Operators who explicitly set the records-based config can either:<br />- Remove the records-based config and accept the new 20 MB default, or<br />- Set the new bytes-based config (<span class=\"s1\">share.coordinator.max.record.bytes.between.snapshots</span>) to a value that matches their previous tuning intent.</p><p>Operators who set the records-based config to 0 (snapshot every write) cannot perfectly preserve that behavior under the bytes-based config (which has atLeast(1)); they should set the new config to a small value like 1 if they need snapshots after every update.</p><p>The deprecated records-based config continues to work during the deprecation period; if both records-based and bytes-based configs are set, the bytes-based config takes precedence and a warning is logged.</p><h1>Test Plan</h1><h2>Unit Tests</h2><p class=\"p1\"><span class=\"s1\">- </span><span class=\"s2\">ShareCoordinatorConfigTest</span><span class=\"s1\"> — bytes-based broker bounds, deprecation warning, both-configs-set precedence.</span></p><p class=\"p1\"><span class=\"s1\">- </span><span class=\"s2\">ShareCoordinatorShardTest</span><span class=\"s1\"> — counter accumulates serialized bytes, snapshot triggers at threshold, both read sites stay consistent, per-group override propagated</span></p><p class=\"p1\"><span class=\"s1\">- </span><span class=\"s2\">GroupConfigTest</span><span class=\"s1\"> — per-group bytes config validation, apply-time clamp to broker ceiling.</span></p><p class=\"p1\"><strong><span class=\"s1\">Performance investigation</span></strong></p><p class=\"p1\"><span class=\"s1\">Before the deprecated records-based config is removed, we will measure the snapshot-cadence change (snapshots become substantially less frequent for small update </span><span class=\"s1\">records — ~154 bytes measured) and its effect on recovery time and retained-log size, using an out-of-order-ack workload that exercises the snapshot threshold. We will </span><span class=\"s1\">also benchmark the per-update overhead (extra counter + record-size computation) against trunk before merge, and publish migration guidance.</span></p><h2>Integration Tests</h2><p> ShareCoordinatorIntegrationTest (<span class=\"s1\">covers end-to-end propagation of the per-group config</span>)</p><h1>Rejected Alternatives</h1><p>Here are the rejected alternatives.</p><h2>Raise broker max only. No per-group override</h2><p>A single broker-level setting forces all share groups on the cluster to use the same value. Different groups have different write profiles. A low-traffic group benefits from a low value (fast recovery), while a high-traffic group benefits from a high value. Without a per-group override, operators must pick one value that compromises for all groups.<br />Additionally, since all groups on the same __share_group_state partition share log-pruning behavior, one group set very high can delay pruning for unrelated groups on the same partition.</p><h2>Per-group override only. Keep broker max at 500. </h2><p>The broker ceiling acts as a hard cap on every per-group value <span class=\"s1\">(per-group </span><span class=\"s2\">between(1, broker_value)</span><span class=\"s1\">)</span>. If we keep the broker max at 500 means, per-group overrides cannot exceed 500 either, so high-traffic groups cannot benefit from the per-group config. In this case operators would have to raise the broker ceiling immediately anyway to use the new per-group setting meaningfully. Basically the per-group config is not of much use without the ceiling raise.</p><h2>Keep records-based control, just adjust bounds.</h2><p>Records-based control is workload-dependent — the same N records can be very different bytes on different workloads, making disk impact unpredictable. Bytes-based control mirrors KRaft's well-established metadata.log.max.record.bytes.between.snapshots and gives operators a metric they can reason about directly</p><p><br /></p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/421958844?status=historical&version=85"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1338
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=444334215",
+    "edit": "/pages/resumedraft.action?draftId=444334215&draftShareId=748e16d3-0957-453d-9cb7-addcf7b02376",
+    "tinyui": "/x/hwB8Gg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/421958844?status=historical&version=85"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/421958844/child?parentVersion=85",
+    "restrictions": "/rest/api/content/421958844/restriction/byOperation",
+    "history": "/rest/api/content/421958844/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/421958844/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/421958844/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "421958844",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1349: Bytes-based configurable snapshot frequency for share groups",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "muralibasani",
+     "userKey": "ae84fb5e833a343f018356a0e1260123",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Muralidhar Basani",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e833a343f018356a0e1260123"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-25T18:02:34.000Z",
+    "message": "",
+    "number": 84,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/421958844/version/84"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/421958844?status=historical&version=84"
+    }
+   },
+   "position": 1338,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><h1>Status</h1><p><strong>Current state</strong>: &quot;Under Discussion&quot;</p><p><strong>Discussion thread</strong>: <em><a href=\"https://lists.apache.org/thread/lpwmfgq28lz8ghzyb0wp8s8o4zpgw2tc\">here</a> <br /></em></p><p><strong>JIRA</strong>: <em><a href=\"https://issues.apache.org/jira/browse/KAFKA-20070\">here</a> </em></p><h1>Motivation</h1><p><br />Kafka has share groups. As multiple consumers in the same share group can consume from the same partition concurrently, records get individually acknowledged and broker tracks per record state(delivered, acked, in-flight etc).</p><p>To handle all that per record state, across broker restarts, Kafka writes to an internal topic called __share_group_state.<br />Two kind of records go there.<br />- Update records (small and incremental)<br />- Snapshot records (big, complete)</p><p>We need snapshots, because when a broker restarts, replaying millions of updates would take forever, and snapshots are like save points.</p><p>Today snapshots are controlled only with this one broker level config : share.coordinator.snapshot.update.records.per.snapshot(is for number of small updates which get written before saving it as a full snapshot.)</p><p>If we set it low, too many snapshots are written, and recovery is fast. If we set it to high, we mostly write tiny updates, and less disk is used but recovery is replaying several tiny udpates, might take long.</p><p>So it's a trade off. write-cost vs recovery-cost</p><p>It's range is 0-500 (<a href=\"https://github.com/apache/kafka/blob/ac031bb4e2c95ce00a90c8be6ca3f7c087fe5fbe/share-coordinator/src/main/java/org/apache/kafka/coordinator/share/ShareCoordinatorConfig.java#L103\">https://github.com/apache/kafka/blob/ac031bb4e2c95ce00a90c8be6ca3f7c087fe5fbe/share-coordinator/src/main/java/org/apache/kafka/coordinator/share/ShareCoordinatorConfig.java#L103</a>)</p><p class=\"p1\"><span class=\"s1\">Measurements on a local 4.3.0 cluster show </span><span class=\"s2\">__share_group_state</span><span class=\"s1\"> update records are small (~154 bytes average), so the records-based default of 500 corresponds to only </span><span class=\"s1\">~75 KB between snapshots. A bytes-based 20 MB default (matching KRaft) is a more predictable, workload-independent trigger.</span></p><h2>Problems</h2><p><strong>Records-based</strong> control is workload-dependent. Different share groups have different state-batch sizes. A records-based threshold means &quot;snapshot every N updates,&quot; but those N updates can be 5 KB on one workload and 500 KB on another, so disk impact is unpredictable.</p><p>One config at the broker level cannot fit all share groups. Different groups have different traffic patterns. With mixed workloads sharing the same state topic, one value may fit one group but not others.</p><p>Is 500 too low ? Probably for high traffic share groups it is low and they get benefitted from snapshotting less often. It <span class=\"s1\">is conservative for high-traffic workloads</span></p><p>What if we remove the upper limit ? If there is no cap, a misconfigured group can write millions of updates without ever triggering an update (count-based) snapshot. This will fill up the disk, as broker cannot delete old log files.</p><p>What if we have one config at broker level : There would be different kinds of share groups with different traffic patterns and with mixed workloads, and as they share the same state topic, it may fit one, but not others.</p><h2 class=\"p1\"><span class=\"s1\">Proposal</span></h2><p class=\"p1\"><span class=\"s1\">Switch to bytes-based control (similar to </span><span class=\"s1\">metadata.log.max.record.bytes.between.snapshots in </span><span class=\"s1\">MetadataLogConfig.java</span><span class=\"s1\">)</span></p><p class=\"p1\"><strong><span class=\"s1\">- </span></strong><span class=\"s2\"><strong>Broker-level</strong>: </span><span class=\"s1\">share.coordinator.max.record.bytes.between.snapshots</span><span class=\"s2\">, default 20 MB, (matching KRaft's well-tested default.)</span></p><p class=\"p1\"><strong><span class=\"s1\">- </span><span class=\"s2\">Per-group</span></strong><span class=\"s1\">: </span><span class=\"s1\">share.max.record.bytes.between.snapshots</span><span class=\"s1\">, configurable per share group. This would allow every share group with different traffic patterns to handle the snapshots/disk sizes etc very well. </span></p><p class=\"p1\"><span class=\"s1\">The existing records-based config (share.coordinator.snapshot.update.records.per.snapshot) is deprecated with a warning at broker startup if set, and removed in a future release.</span></p><p class=\"p1\"><span class=\"s1\">Bytes-based control gives operators predictable disk impact, independent of workload, and follows the same pattern Kafka already uses for the metadata log. (also in kip 770)</span></p><p><strong>Note</strong> : There is another config <em>share.coordinator.cold.partition.snapshot.interval.ms</em> (default 5 mins) which forces snapshotting on a timely basis, but only for share partitions with no updates. So the old log recs of the idle groups would be eligible for cleanup.</p><h1>Public Interfaces</h1><h2>New broker-level config</h2><ul><li><p class=\"p1\"><span class=\"s1\">share.coordinator.max.record.bytes.between.snapshots</span></p></li></ul><p><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"520ec306-c711-449b-ae6a-c4bb2bdacca2\"><ac:plain-text-body><![CDATA[| Name | share.coordinator.max.record.bytes.between.snapshots |\n| Type | LONG |\n| Default | 20 * 1024 * 1024 (20 MB)  |\n| Validator | atLeast(1)  |\n| Importance | HIGH  |\n| Doc | \"The maximum number of bytes of update records the share coordinator writes between snapshot records, applied as a ceiling across all share groups on this broker. May be overridden per group via share.max.record.bytes.between.snapshots; per-group values are clamped to this ceiling.\"]]></ac:plain-text-body></ac:structured-macro><h2>New per-group dynamic config</h2><ul><li><p class=\"p1\"><span class=\"s1\">share.max.record.bytes.between.snapshots</span></p></li></ul><p>A new entry on ConfigResource.Type.GROUP, set via AdminClient.incrementalAlterConfigs.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"8e9e59d2-30e0-4296-bfcc-4661b0e18e32\"><ac:plain-text-body><![CDATA[| Name | share.max.record.bytes.between.snapshots |\n| Type | LONG |\n| Default | unset — falls back to share.coordinator.max.record.bytes.between.snapshots |\n| Validator | atLeast(1). Values exceeding the current broker-level ceiling are rejected at incrementalAlterConfigs time with InvalidConfigurationException.   |\n| Importance | MEDIUM |\n| Doc | \"Specifies update-record bytes between snapshots for this share group. If unset, falls back to share.coordinator.max.record.bytes.between.snapshots. Values above the broker-level ceiling are rejected at the time of the alter request.\"]]></ac:plain-text-body></ac:structured-macro><h2>Deprecated Config</h2><p class=\"p1\"><span class=\"s1\">share.coordinator.snapshot.update.records.per.snapshot</span><span class=\"s2\"> will be marked </span><span class=\"s1\">@Deprecated</span><span class=\"s2\">. If set on broker startup, a warning is logged. The config is honored for the deprecation period; if both records-based and bytes-based configs are set, the bytes-based config wins and a warning is logged. Removed in Kafka 5.0.</span></p><p class=\"p1\"><span class=\"s1\">Resolution happens once at broker startup, in </span><span class=\"s2\">ShareCoordinatorConfig</span><span class=\"s1\">. If </span><span class=\"s1\">share.coordinator.max.record.bytes.between.snapshots </span><span class=\"s1\">is explicitly set, </span><span class=\"s1\">the shard runs </span><span class=\"s1\">in bytes mode. If only the records-based config is explicitly set, the shard runs in records mode.</span></p><p class=\"p1\"><strong><span class=\"s1\">Resolution of set vs. default.</span></strong><span class=\"s2\"> Because the bytes-based config has a 20 MB default, its resolved value alone cannot tell us whether an operator </span><span class=\"s1\">set it. We use </span><span class=\"s2\">AbstractConfig.originals().containsKey(...)</span><span class=\"s1\"> — the established idiom in the codebase (see </span><span class=\"s2\">ProducerConfig</span><span class=\"s1\"> idempotence resolution </span><span class=\"s1\">and </span><span class=\"s2\">GroupConfig</span><span class=\"s1\">'s own </span><span class=\"s2\">Optional</span><span class=\"s1\"> getters</span><span class=\"s1\">. At broker startup </span><span class=\"s1\">ShareCoordinatorConfig</span><span class=\"s2\"> resolves the snapshot mode once:</span></p><p class=\"p1\"><span class=\"s2\">1. If </span><span class=\"s1\">share.coordinator.max.record.bytes.between.snapshots </span><span class=\"s2\">is in originals() → bytes mode.<br />2. Else if share.coordinator.snapshot.update.records.per.snapshot is in originals() → records mode (deprecated path).<br />3. Else (neither explicitly set) → bytes mode at the 20 MB default.<br />4. If both are in originals() → bytes mode wins and a WARN is logged.</span></p><h2>Java constants</h2><p><span class=\"s1\">Add the new bytes-based config in </span><span class=\"s2\">ShareCoordinatorConfig.java </span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"24c7292a-5132-4950-bb14-00bd8c6bbc85\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[public static final String MAX_RECORD_BYTES_BETWEEN_SNAPSHOTS_CONFIG = \"share.coordinator.max.record.bytes.between.snapshots\";]]></ac:plain-text-body></ac:structured-macro><pre><br /></pre><p><span class=\"s1\">Add the new bytes-based per-group config in </span><span class=\"s2\">GroupConfig.java</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"be1528e5-1c2d-4b5e-9929-452ec6e1fe4a\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[public static final String SHARE_MAX_RECORD_BYTES_BETWEEN_SNAPSHOTS_CONFIG = \"share.max.record.bytes.between.snapshots\";\n]]></ac:plain-text-body></ac:structured-macro><h2>New metric</h2><p class=\"p1\"><span class=\"s1\">A new per-partition metric is added to the share coordinator, following the same convention as the existing </span><span class=\"s2\">last-pruned-offset</span><span class=\"s1\"> metric (</span><span class=\"s2\">ShareCoordinatorMetrics</span><span class=\"s1\">):</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"d9abccea-396b-499b-bc15-b1aeda283bb0\"><ac:plain-text-body><![CDATA[│ Name        │ bytes-since-snapshot                                                                                                                             │\n│ Group       │ share-coordinator-metrics                                                                                                                        │\n│ Type        │ Value (gauge)                                                                                                                                    │\n│ Tags        │ topic, partition                                                                                                                                 │\n│ Description │ \"The number of uncompressed update-record bytes written to this __share_group_state partition since the last snapshot record. Reset to zero when a snapshot   │\n│             │ is written.\"                                                                                                                                     │\n]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><strong><span class=\"s1\">Full MBean name:</span></strong></p><p class=\"p3\"><span class=\"s1\">kafka.server:type=share-coordinator-metrics,topic=__share_group_state,partition=([0-9]+)</span></p><p class=\"p1\"><span class=\"s1\">bytes-since-snapshot</span><span class=\"s2\"> is exposed as a </span><span class=\"s1\">Value</span><span class=\"s2\"> (gauge) attribute on this MBean (similar to </span><span class=\"s1\">last-pruned-offset</span><span class=\"s2\">)</span></p><p class=\"p1\"><span class=\"s1\">Semantics :</span><span class=\"s2\"> The value tracks accumulated update bytes </span><span class=\"s1\">for the share partitions hosted on a given </span><span class=\"s1\">__share_group_state</span><span class=\"s2\"> partition. </span><span class=\"s1\">It rises as </span><span class=\"s2\">ShareUpdate</span><span class=\"s1\"> records are written and drops after a </span><span class=\"s2\">ShareSnapshot</span><span class=\"s1\"> is emitted. </span></p><p class=\"p1\"><span class=\"s1\">The metric is tagged per </span><span class=\"s2\">__share_group_state</span><span class=\"s1\"> partition, not per share group or per share partition. </span><span class=\"s1\">Because multiple share partitions (and groups) can map to the </span><span class=\"s1\">same state-topic partition, the value aggregates their in-flight update bytes.</span></p><h1>Proposed Changes</h1><h2>Broker level config</h2><p class=\"p1\"><span class=\"s1\">share-coordinator/src/main/java/org/apache/kafka/coordinator/share/ShareCoordinatorConfig.java</span></p><p class=\"p1\"><span class=\"s1\">Add </span><span class=\"s1\">MAX_RECORD_BYTES_BETWEEN_SNAPSHOTS_CONFIG </span><span class=\"s1\">constant, register it in </span><span class=\"s2\">CONFIG_DEF</span><span class=\"s1\">, validate apply-time clamp to broker value.</span></p><h2>Per-group config</h2><p><a href=\"https://github.com/apache/kafka/blob/ac031bb4e2c95ce00a90c8be6ca3f7c087fe5fbe/group-coordinator/src/main/java/org/apache/kafka/coordinator/group/GroupConfig.java#L47\">group-coordinator/src/main/java/org/apache/kafka/coordinator/group/GroupConfig.java</a></p><p class=\"p1\"><span class=\"s1\">Add </span><span class=\"s1\">SHARE_MAX_RECORD_BYTES_BETWEEN_SNAPSHOTS_CONFIG </span><span class=\"s1\">constant, register it in </span><span class=\"s2\">CONFIG_DEF</span><span class=\"s1\">, validate apply-time clamp to broker value.</span></p><h2 class=\"p1\"><span class=\"s1\">Add bytes counter</span></h2><p><span class=\"s1\">In </span>ShareCoordinatorShard.java</p><ul style=\"list-style-type: square;\"><li>similar to snapshotUpdateCount, create another variable <span class=\"s1\">snapshotUpdateBytes</span></li><li><span class=\"s1\">increment the update. (around line 282) and the existing snapshotUpdateCount increment stays.</span></li></ul><pre><br /></pre><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"ec32b672-877a-4717-811b-b09506c006b0\"><ac:plain-text-body><![CDATA[// In replay(...), SHARE_UPDATE branch — full record is in scope here:\n  case SHARE_UPDATE:\n      long updateBytes = recordSerde.recordSize(record);   // see \"Serialized size\" below\n      handleShareUpdate((ShareUpdateKey) key, (ShareUpdateValue) messageOrNull(value), updateBytes);\n      break;]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><span class=\"s1\">- Accumulate in </span><span class=\"s2\">handleShareUpdate</span><span class=\"s1\"> (the existing </span><span class=\"s2\">snapshotUpdateCount</span><span class=\"s1\"> increment at ~line 282 stays):</span></p><p class=\"p1\"><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b22a22ac-34a4-479f-abfb-902a419a2454\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[ snapshotUpdateBytes.compute(mapKey, (k, v) -> v == null ? updateBytes : v + updateBytes);]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><span class=\"s1\">- Check the byte limit in the write path (around line 662, via the </span><span class=\"s2\">snapshotThresholdReached(key)</span><span class=\"s1\"> helper):</span></p><p class=\"p1\"><span class=\"s1\"> </span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"24069205-b05b-458d-9798-a94b154c4a9f\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[ if (snapshotUpdateBytes.getOrDefault(key, 0L) >= maxBytesBetweenSnapshots) { ... }]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><span class=\"s1\"> - Also update tombstone handling to clear the new map (similar to </span><span class=\"s2\">snapshotUpdateCount.remove(mapKey)</span><span class=\"s1\">).</span></p><p>Also update tombstone handling. (similar to snapshotUpdateCount.remove(mapKey))</p><p><strong>Serialized size</strong></p><p>The serialized size in bytes of the full CoordinatorRecord (key + value) produced for a share update, as measured via ShareCoordinatorRecordSerde. This matches what the runtime appends to the __share_group_state log and is computed in ShareCoordinatorShard.replay(...) where the full record is in scope. Compression is not accounted for; the threshold is on uncompressed record bytes.</p><p class=\"p1\"><span class=\"s1\">long updateBytes = recordSerde.recordSize(record); and we add </span><span class=\"s1\">recordSize </span><span class=\"s2\">to </span><span class=\"s1\">CoordinatorRecordSerde</span></p><p class=\"p1\"><span class=\"s1\"><strong>Note</strong> - Both counters are maintained throughout the deprecation period. </span><span class=\"s1\">Keeping both counters preserves </span><span class=\"s1\">exact records-based behavior at the cost of one extra map write per update.</span></p><h2>Propagate the override to <em>ShareCoordinatorShard</em></h2><p><a href=\"https://github.com/apache/kafka/blob/ac031bb4e2c95ce00a90c8be6ca3f7c087fe5fbe/share-coordinator/src/main/java/org/apache/kafka/coordinator/share/ShareCoordinatorShard.java#L75\">share-coordinator/src/main/java/org/apache/kafka/coordinator/share/ShareCoordinatorShard.java</a></p><p>Today the shard reads the broker-level value directly:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"e17036f0-9c03-456e-b376-3c6f84da72a4\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[int updatesPerSnapshotLimit = config.shareCoordinatorSnapshotUpdateRecordsPerSnapshot();]]></ac:plain-text-body></ac:structured-macro><p>This needs to change in two places: (1) the look-up path needs to consult the per-group config first and fall back to the broker default, and (2) the unit changes from records (int) to bytes (long).</p><p><strong>Add a new accessor:</strong></p><p class=\"p1\"><span class=\"s1\">Accessor</span><span class=\"s2\"> </span><span class=\"s1\">(group-coordinator</span><span class=\"s2\"> </span><span class=\"s1\">side).</span><span class=\"s2\"> Add </span><span class=\"s1\">maxRecordBytesBetweenSnapshotsOrDefault</span><span class=\"s3\">(String</span><span class=\"s2\"> </span><span class=\"s3\">groupId,</span><span class=\"s2\"> </span><span class=\"s3\">long</span><span class=\"s2\"> </span><span class=\"s3\">brokerDefault)</span><span class=\"s2\"> on </span><span class=\"s3\">ShareGroupConfigProvider</span><span class=\"s2\">, following the </span><span class=\"s3\">existing accessor pattern:</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"4ed11e2b-95fd-4c7d-a546-af347609014c\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[ public long maxRecordBytesBetweenSnapshotsOrDefault(String groupId, long brokerDefault) {\n      return manager.groupConfig(groupId)\n          .flatMap(GroupConfig::shareMaxRecordBytesBetweenSnapshots)\n          .orElse(brokerDefault);\n  }]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><span class=\"s1\">This requires a corresponding </span><span class=\"s2\">Optional&lt;Long&gt;</span><span class=\"s1\">shareMaxRecordBytesBetweenSnapshots</span><span class=\"s2\">()</span><span class=\"s1\"> getter on </span><span class=\"s2\">GroupConfig</span><span class=\"s1\">.</span></p><p class=\"p1\"><span class=\"s1\"><strong>Interface</strong> (share-coordinator side).</span><span class=\"s2\"> </span><span class=\"s3\">ShareGroupConfigProvider</span><span class=\"s2\"> lives in group-coordinator, so share-coordinator does not reference it. Instead, share-coordinator </span><span class=\"s2\">defines the </span><span class=\"s3\">ShareGroupConfigLookup</span><span class=\"s2\"> interface (see Module dependency), and the shard depends only on that:</span></p><p class=\"p1\"><span class=\"s2\">  </span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"8507f7c3-2d48-42c1-a7b5-31e4c6189662\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[public interface ShareGroupConfigLookup {\n      long maxRecordBytesBetweenSnapshotsOrDefault(String groupId, long brokerDefault);\n  }]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><br /></p><p class=\"p1\"><strong><span class=\"s1\">Inject the lookup into </span><span class=\"s2\">ShareCoordinatorShard</span></strong></p><p class=\"p1\"><span class=\"s2\">The shard is constructed via its inner Builder (ShareCoordinatorShard.java). </span></p><p class=\"p1\"><span class=\"s1\">The Builder constructor takes </span><span class=\"s2\">ShareCoordinatorConfig</span><span class=\"s1\">. Add a new optional setter alongside the existing ones (</span><span class=\"s2\">withTime</span><span class=\"s1\">, </span><span class=\"s2\">withCoordinatorMetrics</span>, <span class=\"s1\">withTopicPartition</span><span class=\"s3\">, etc.):</span></p><p class=\"p1\"><strong><span class=\"s1\">Add an optional setter:</span></strong></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"08cf3667-7e35-4f20-94ac-e2031cff8db8\"><ac:plain-text-body><![CDATA[private ShareGroupConfigLookup shareGroupConfigLookup;                                                                                     \npublic Builder withShareGroupConfigLookup(ShareGroupConfigLookup lookup) {\n    this.shareGroupConfigLookup = lookup;\n    return this;\n  }]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><span class=\"s1\">And wire it through the </span><span class=\"s2\">build()</span><span class=\"s1\"> method to a new field on the shard itself:</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"1613db96-6588-44b5-ae6e-4094dd4bbba6\"><ac:plain-text-body><![CDATA[private final ShareGroupConfigLookup shareGroupConfigLookup;]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><span class=\"s1\">Update both </span><span class=\"s2\">ShareCoordinatorShard</span><span class=\"s1\"> constructors (</span><span class=\"s2\">ShareCoordinatorShard.java around line 176</span><span class=\"s1\">) to accept and store the lookup, and pass it through </span><span class=\"s2\">build()</span><span class=\"s1\">.</span></p><p class=\"p1\"><strong><span class=\"s1\">Wire the lookup into </span><span class=\"s2\">ShareCoordinatorService.Builder</span></strong></p><p class=\"p1\"><span class=\"s1\">Add a </span><span class=\"s2\">withShareGroupConfigLookup(ShareGroupConfigLookup)</span><span class=\"s1\"> setter to </span><span class=\"s2\">ShareCoordinatorService.Builder</span><span class=\"s1\">, store it as a field. Update the </span><span class=\"s1\">CoordinatorShardBuilderSupplier.</span></p><p class=\"p1\"><strong><span class=\"s1\">Pass the lookup in from BrokerServer.scala</span></strong></p><p class=\"p1\"><span class=\"s1\">BrokerServer</span><span class=\"s2\"> constructs an adapter</span><span class=\"s2\"> that implements </span><span class=\"s1\">ShareGroupConfigLookup</span><span class=\"s2\">, and passes it via </span><span class=\"s1\">.withShareGroupConfigLookup(...) on </span><span class=\"s1\">ShareCoordinatorService.Builder</span></p><p class=\"p1\"><strong><span class=\"s1\">Use the lookup at the snapshot-decision sites</span></strong></p><p class=\"p1\"><span class=\"s1\">ShareCoordinatorShard</span><span class=\"s2\"> decides between writing a </span><span class=\"s1\">ShareSnapshot</span><span class=\"s2\"> and a </span><span class=\"s1\">ShareUpdate</span><span class=\"s2\"> at two sites, both governed by the same threshold. Both are updated to consult the </span><span class=\"s2\">startup-resolved mode via a single helper.</span></p><p class=\"p1\"><span class=\"s1\">Write path — </span><span class=\"s2\">generateShareStateRecord </span><span class=\"s1\">(</span><span class=\"s2\">ShareCoordinatorShard.java)</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"c853a62d-2abc-4f0e-9d1c-2f41f76da9f1\"><ac:plain-text-body><![CDATA[// Before\n  int updatesPerSnapshotLimit = config.shareCoordinatorSnapshotUpdateRecordsPerSnapshot();\n  ...\n  if (snapshotUpdateCount.getOrDefault(key, 0) >= updatesPerSnapshotLimit) { ... write snapshot ... }\n\n  // After\n  if (snapshotThresholdReached(key)) { ... write snapshot ... }]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><span class=\"s1\">Reset path — </span><span class=\"s2\">handleShareSnapshot</span><span class=\"s1\"> (</span><span class=\"s2\">ShareCoordinatorShard.java)</span></p><p class=\"p1\"><span class=\"s1\">The same helper decides when the accumulated counter for </span><span class=\"s2\">key</span><span class=\"s1\"> should be reset after a snapshot record is replayed:</span></p><p class=\"p1\"><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"32bf05d4-7fa8-4517-a77e-861e0f729744\"><ac:plain-text-body><![CDATA[  if (snapshotThresholdReached(key)) {\n      // reset the active counter for this key\n  }]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><br /></p><p class=\"p1\"><span class=\"s1\">snapshotThresholdReached(SharePartitionKey key)</span><span class=\"s2\"> encapsulates mode selection so both sites stay in sync. The mode is resolved once at startup (see Deprecated config </span><span class=\"s2\">resolution); the helper does not re-resolve per call:</span></p><p class=\"p1\"><br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"129e451b-04fc-4c5e-9c9a-4b56587f2c03\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[private boolean snapshotThresholdReached(SharePartitionKey key) {\n      if (snapshotMode == SnapshotMode.BYTES) {\n          long brokerLimit = config.shareCoordinatorMaxRecordBytesBetweenSnapshots();\n          long limit = shareGroupConfigLookup.maxRecordBytesBetweenSnapshotsOrDefault(key.groupId(), brokerLimit);\n          return snapshotUpdateBytes.getOrDefault(key, 0L) >= limit;\n      } else { // RECORDS (deprecated path)\n          return snapshotUpdateCount.getOrDefault(key, 0) >= config.shareCoordinatorSnapshotUpdateRecordsPerSnapshot();\n      }\n  }]]></ac:plain-text-body></ac:structured-macro><p class=\"p1\"><br /></p><p>- In bytes mode, the per-group override (<span class=\"s1\">share.max.record.bytes.between.snapshots</span>) is consulted first via shareGroupConfigLookup, falling back to the broker-level <span class=\"s1\">share.coordinator.max.record.bytes.between.snapshots</span>. The per-group value is already bounded at alter time to not exceed the broker ceiling.<br />- In records mode (only the deprecated config is set), the threshold is the broker records limit; there is no per-group records override. </p><p>shareGroupConfigLookup is the ShareGroupConfigLookup interface defined in share-coordinator and is required — ShareCoordinatorShard.Builder.build() rejects a null lookup, mirroring the existing null-checks in ShareCoordinatorService.Builder.build() (ShareCoordinatorService.java: around line 190). This avoids a silent no-op if the wiring in BrokerServer is ever omitted. </p><p class=\"p1\"><strong><span class=\"s1\">Emit the bytes-since-snapshot metric</span></strong></p><p class=\"p1\"><span class=\"s1\">New metric is wired through the existing </span><span class=\"s2\">ShareCoordinatorMetrics</span><span class=\"s1\"> / </span><span class=\"s2\">ShareCoordinatorMetricsShard</span></p><p><strong>Module dependency</strong></p><p class=\"p1\"><span class=\"s1\">share-coordinator needs to look up per-group config overrides, which live in group-coordinator.</span></p><p class=\"p1\"><span class=\"s1\">Config lookup interface - </span><span class=\"s1\">share-coordinator defines a small interface, </span><span class=\"s2\">ShareGroupConfigLookup. </span><span class=\"s1\">BrokerServer </span><span class=\"s1\">constructs an </span><span class=\"s1\">adapter over the existing </span><span class=\"s2\">ShareGroupConfigProvider</span><span class=\"s1\"> and passes it in, so the p</span><span class=\"s2\">rovider is </span><span class=\"s1\">adapted into the share-coordinator interface at the broker composition root. </span></p><p class=\"p1\"><span class=\"s1\">share-coordinator gains no new module dependency, preserving t</span><span class=\"s1\">he layering that </span><span class=\"s2\">coordinator-common</span><span class=\"s1\"> was created to protect.</span></p><h2>Documentation</h2><ul style=\"list-style-type: square;\"><li>Update the [Kafka Configuration](<a href=\"https://kafka.apache.org/documentation/#configuration\">https://kafka.apache.org/documentation/#configuration</a>) page to reflect the new broker ceiling and to add the new group-level entry under &quot;Share Group Configurations.&quot;</li><li>Update the share-group operator documentation (`docs/streams/...` equivalent for share groups, exact location to be confirmed during implementation) with a tuning section explaining the snapshot/update tradeoff.</li></ul><h1>Compatibility, Deprecation, and Migration Plan</h1><h2>Cluster-roll backward compatibility</h2><p>During a rolling upgrade, yes brokers run mixed versions. Each broker's shard independently decides snapshot cadence, from its own local config. A newer broker replaying records written by an older broker interprets them identically. So cadence may differ in the mid-roll, but there is no on-disk format change and no coordination required I see. A broker that hasn't yet had the new config set, will simply use the 20 MB default.</p><h2>Behavioral compatibility:</h2><p>- The default snapshot trigger changes from 500 records to 20 MB of update bytes. For typical workloads this means snapshots are written less frequently, reducing write amplification.<br />- Brokers that set share.coordinator.snapshot.update.records.per.snapshot continue to use the records-based threshold during the deprecation period. A warning is logged at startup.<br />- The new per-group config is opt-in.</p><h2>Deprecation:</h2><p>share.coordinator.snapshot.update.records.per.snapshot will be marked @Deprecated in this release and removed in a future major release. Operators are encouraged to migrate to the bytes-based config.</p><h2>Migration:</h2><p>Operators who don't touch any config get the new 20 MB default.</p><p>Operators who explicitly set the records-based config can either:<br />- Remove the records-based config and accept the new 20 MB default, or<br />- Set the new bytes-based config (<span class=\"s1\">share.coordinator.max.record.bytes.between.snapshots</span>) to a value that matches their previous tuning intent.</p><p>Operators who set the records-based config to 0 (snapshot every write) cannot perfectly preserve that behavior under the bytes-based config (which has atLeast(1)); they should set the new config to a small value like 1 if they need snapshots after every update.</p><p>The deprecated records-based config continues to work during the deprecation period; if both records-based and bytes-based configs are set, the bytes-based config takes precedence and a warning is logged.</p><h1>Test Plan</h1><h2>Unit Tests</h2><p class=\"p1\"><span class=\"s1\">- </span><span class=\"s2\">ShareCoordinatorConfigTest</span><span class=\"s1\"> — bytes-based broker bounds, deprecation warning, both-configs-set precedence.</span></p><p class=\"p1\"><span class=\"s1\">- </span><span class=\"s2\">ShareCoordinatorShardTest</span><span class=\"s1\"> — counter accumulates serialized bytes, snapshot triggers at threshold, both read sites stay consistent, per-group override propagated</span></p><p class=\"p1\"><span class=\"s1\">- </span><span class=\"s2\">GroupConfigTest</span><span class=\"s1\"> — per-group bytes config validation, apply-time clamp to broker ceiling.</span></p><p class=\"p1\"><span class=\"s1\">Performance investigation</span></p><p class=\"p1\"><span class=\"s1\">Before the deprecated records-based config is removed, we will measure the snapshot-cadence change (snapshots become substantially less frequent for small update </span><span class=\"s1\">records — ~154 bytes measured) and its effect on recovery time and retained-log size, using an out-of-order-ack workload that exercises the snapshot threshold. We will </span><span class=\"s1\">also benchmark the per-update overhead (extra counter + record-size computation) against trunk before merge, and publish migration guidance.</span></p><h2>Integration Tests</h2><p> ShareCoordinatorIntegrationTest (<span class=\"s1\">covers end-to-end propagation of the per-group config</span>)</p><h1>Rejected Alternatives</h1><p>Here are the rejected alternatives.</p><h2>Raise broker max only. No per-group override</h2><p>A single broker-level setting forces all share groups on the cluster to use the same value. Different groups have different write profiles. A low-traffic group benefits from a low value (fast recovery), while a high-traffic group benefits from a high value. Without a per-group override, operators must pick one value that compromises for all groups.<br />Additionally, since all groups on the same __share_group_state partition share log-pruning behavior, one group set very high can delay pruning for unrelated groups on the same partition.</p><h2>Per-group override only. Keep broker max at 500. </h2><p>The broker ceiling acts as a hard cap on every per-group value <span class=\"s1\">(per-group </span><span class=\"s2\">between(1, broker_value)</span><span class=\"s1\">)</span>. If we keep the broker max at 500 means, per-group overrides cannot exceed 500 either, so high-traffic groups cannot benefit from the per-group config. In this case operators would have to raise the broker ceiling immediately anyway to use the new per-group setting meaningfully. Basically the per-group config is not of much use without the ceiling raise.</p><h2>Keep records-based control, just adjust bounds.</h2><p>Records-based control is workload-dependent — the same N records can be very different bytes on different workloads, making disk impact unpredictable. Bytes-based control mirrors KRaft's well-established metadata.log.max.record.bytes.between.snapshots and gives operators a metric they can reason about directly</p><p><br /></p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/421958844?status=historical&version=84"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1338
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=444334214",
+    "edit": "/pages/resumedraft.action?draftId=444334214&draftShareId=748e16d3-0957-453d-9cb7-addcf7b02376",
+    "tinyui": "/x/hgB8Gg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/421958844?status=historical&version=84"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/421958844/child?parentVersion=84",
+    "restrictions": "/rest/api/content/421958844/restriction/byOperation",
+    "history": "/rest/api/content/421958844/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/421958844/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/421958844/restriction/relevantViewRestrictions"
+   }
+  }
+ ],
+ "comments": {
+  "results": [],
+  "start": 0,
+  "limit": 200,
+  "size": 0,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/api/content/421958844/child/comment?expand=body.storage%2Cversion%2Cancestors&depth=all",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ }
+}

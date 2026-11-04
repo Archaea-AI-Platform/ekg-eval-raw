@@ -1,0 +1,277 @@
+{
+ "id": "446070934",
+ "versions": {
+  "results": [
+   {
+    "by": {
+     "type": "known",
+     "username": "vaquarkhan1",
+     "userKey": "073590d29b4ab60c019b8ec43a84000f",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/406618635/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "ViquarKhan",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8ec43a84000f"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-02T05:50:43.000Z",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/446070934/version/3"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/446070934"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "vaquarkhan1",
+     "userKey": "073590d29b4ab60c019b8ec43a84000f",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/406618635/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "ViquarKhan",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8ec43a84000f"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-02T05:49:41.000Z",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/446070934/version/2"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/446070934?status=historical&version=2"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "vaquarkhan1",
+     "userKey": "073590d29b4ab60c019b8ec43a84000f",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/406618635/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "ViquarKhan",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8ec43a84000f"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-02T05:42:09.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/446070934/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/446070934?status=historical&version=1"
+    }
+   }
+  ],
+  "start": 0,
+  "limit": 200,
+  "size": 3,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/experimental/content/446070934/version",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ },
+ "version_bodies": [
+  {
+   "id": "446070934",
+   "type": "page",
+   "status": "historical",
+   "title": "604: A First-Party MCP Server and Agent-Access Governance Layer for Apache Flink",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "vaquarkhan1",
+     "userKey": "073590d29b4ab60c019b8ec43a84000f",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/406618635/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "ViquarKhan",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8ec43a84000f"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-02T05:49:41.000Z",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/446070934/version/2"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/446070934?status=historical&version=2"
+    }
+   },
+   "position": -1,
+   "body": {
+    "storage": {
+     "value": "<p class=\"code-line\">Status: Draft</p><p class=\"code-line\"> JIRA:<span> </span></p><p class=\"code-line\">Vote thread:<span> </span></p><p class=\"code-line\">Discussion thread:</p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/446070934?status=historical&version=2"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": "none"
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=446070939",
+    "edit": "/pages/resumedraft.action?draftId=446070939&draftShareId=4346d1ce-f7cf-4a60-bd4e-c532a61dd964",
+    "tinyui": "/x/m4CWGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/446070934?status=historical&version=2"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/446070934/child?parentVersion=2",
+    "restrictions": "/rest/api/content/446070934/restriction/byOperation",
+    "history": "/rest/api/content/446070934/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/446070934/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/446070934/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "446070934",
+   "type": "page",
+   "status": "historical",
+   "title": "FLIP-604: A First-Party MCP Server and Agent-Access Governance Layer for Apache Flink",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "vaquarkhan1",
+     "userKey": "073590d29b4ab60c019b8ec43a84000f",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/406618635/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "ViquarKhan",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29b4ab60c019b8ec43a84000f"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-02T05:42:09.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/446070934/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/446070934?status=historical&version=1"
+    }
+   },
+   "position": -1,
+   "body": {
+    "storage": {
+     "value": "<p class=\"code-line\" style=\"\" data-line=\"2\">Status: Draft</p><p class=\"code-line\" style=\"\" data-line=\"2\"> JIRA:<span> </span></p><p class=\"code-line\" style=\"\" data-line=\"2\">Vote thread:<span> </span></p><p class=\"code-line\" style=\"\" data-line=\"2\">Discussion thread:</p><h2 class=\"code-line\" style=\"\" data-line=\"18\">1. TL;DR</h2><p class=\"code-line\" style=\"\" data-line=\"20\">Apache Flink is rapidly becoming a Model Context Protocol (MCP)<span> </span><strong>client</strong>: FLIP-531 (Flink Agents) and FLIP-548 (Tool and Agent in Flink SQL) both let Flink jobs and agents<span> </span><strong>consume</strong><span> </span>external MCP servers as tools. What does not exist is the mirror image: a first-party, security-hardened MCP<span> </span><strong>server</strong><span> </span>that exposes Flink's own control and observability plane (jobs, the SQL Gateway, savepoints, checkpoints, metrics, exceptions, JARs, and catalog) to agents in a governed way.</p><p class=\"code-line\" style=\"\" data-line=\"27\">Third-party Flink MCP servers exist but are read-only monitoring wrappers over the REST API with no authorization model, no audit trail, no tool-exposure policy, and single-maintainer sustainability risk. This proposal adapts the KIP-1318 fail-closed security control model to Flink and proposes a first-party MCP server plus a reusable agent-access governance layer.</p><p class=\"code-line\" style=\"\" data-line=\"33\">Important scope note aligned with FLIP-577: this proposal does<span> </span><strong>not</strong><span> </span>ask to bake the MCP protocol into the Flink engine or runtime. FLIP-577 explicitly lists &quot;LLM-specific APIs, agent frameworks, or prompt/tool protocols&quot; as engine non-goals. The server is proposed as an ecosystem or sub-project artifact (candidate home: the Flink Agents sub-project from FLIP-531), wrapping already-external interfaces (the JobManager REST API and the SQL Gateway). The part proposed for standardization is the<span> </span><strong>governance and access-control contract</strong>, not a protocol in the engine.</p><hr class=\"code-line\" style=\"\" data-line=\"41\" /><h2 class=\"code-line\" style=\"\" data-line=\"43\">2. Motivation and the gap</h2><h3 class=\"code-line\" style=\"\" data-line=\"45\">2.1 What Flink already has (verified)</h3><ul class=\"code-line\" style=\"\" data-line=\"47\"><li class=\"code-line\" data-line=\"47\" data-uuid=\"375cfccb-f8b4-46c4-a09e-b7a6c05a4841\">A JobManager REST API with a large, stable surface. The generated OpenAPI spec in the repo (<code>docs/static/generated/rest_v1_dispatcher.yml</code>) includes operational endpoints such as<span> </span><code>/jars</code>,<span> </span><code>/jars/upload</code>,<span> </span><code>/jars/{jarid}/run</code>,<span> </span><code>/jars/{jarid}/run-application</code>,<span> </span><code>/jobs</code>,<span> </span><code>/jobs/{jobid}</code>,<span> </span><code>/jobs/{jobid}/status</code>,<span> </span><code>/jobs/{jobid}/stop</code>,<span> </span><code>/jobs/{jobid}/savepoints</code>,<span> </span><code>/jobs/{jobid}/checkpoints</code>,<span> </span><code>/jobs/{jobid}/exceptions</code>,<span> </span><code>/jobs/{jobid}/metrics</code>,<span> </span><code>/jobs/{jobid}/rescaling</code>, and<span> </span><code>/jobs/{jobid}/resource-requirements</code>.</li><li class=\"code-line\" data-line=\"54\" data-uuid=\"12dec7c5-ba9f-4df7-8fe8-98fac67c2d5d\">A SQL Gateway, present as first-party modules<span> </span><code>flink-table/flink-sql-gateway</code><span> </span>and<span> </span><code>flink-table/flink-sql-gateway-api</code>, which exposes session and statement execution over a REST endpoint (and a HiveServer2 endpoint).</li></ul><p class=\"code-line\" style=\"\" data-line=\"58\">These interfaces already exist and are already external to the core operator runtime, which matters for the design (see 8.4).</p><h3 class=\"code-line\" style=\"\" data-line=\"61\">2.2 What is being built for AI in Flink (verified)</h3><ul class=\"code-line\" style=\"\" data-line=\"63\"><li class=\"code-line\" data-line=\"63\" data-uuid=\"868b9ec7-445c-4e33-a782-2bd0851b5734\">FLIP-531 &quot;Initiate Flink Agents as a new Sub-Project&quot; proposes<span> </span><code>flink-agents</code>, a native framework to build and run agents on Flink. Its API mockups make Flink a<span> </span><strong>consumer</strong><span> </span>of MCP servers: Java<span> </span><code>.mcpServer(&quot;my_mcp_server&quot;)</code><span> </span>with<span> </span><code>.tools([...])</code>, and Python<span> </span><code>MCPServerStdio(command=..., args=[...])</code><span> </span>inside an<span> </span><code>AgentWorkflow</code>.</li><li class=\"code-line\" data-line=\"67\" data-uuid=\"afd78474-25a3-472e-b9f2-1986cb20624e\">FLIP-548 &quot;Introduce Tool and Agent in Flink SQL&quot; proposes<span> </span><code>CREATE TOOL ... USING CONNECTION</code><span> </span>with<span> </span><code>'type' = 'mcp'</code>,<span> </span><code>'allowed_tools'</code>, and<span> </span><code>'read_timeout'</code>, and<span> </span><code>CREATE AGENT ... USING TOOLS</code>. Again Flink SQL is an MCP<span> </span><strong>client</strong><span> </span>that calls out to MCP servers.</li><li class=\"code-line\" data-line=\"71\" data-uuid=\"374d5293-60e5-4330-be07-e40d5b91d52a\">FLIP-577 &quot;AI-Native Flink&quot; (accepted, umbrella) sets the boundary: agent and tool/prompt protocols belong in the SDK and ecosystem layer, not the engine.</li></ul><h3 class=\"code-line\" style=\"\" data-line=\"74\">2.3 The gap</h3><p class=\"code-line\" style=\"\" data-line=\"76\">There is no first-party way for an agent to safely<span> </span><strong>operate and observe Flink itself</strong>: submit or stop a job, trigger a savepoint, inspect an exception, read metrics, or run a governed SQL query, behind an authorization model designed for autonomous, non-human callers. Flink can call tools; nothing lets tools call Flink safely. This is the same gap KIP-1318 identified for Kafka, and the same control model applies.</p><h2 class=\"code-line\" style=\"\" data-line=\"85\">3. Scope, Non-goals, and Consensus criteria</h2><h3 class=\"code-line\" style=\"\" data-line=\"87\">In scope</h3><ul class=\"code-line\" style=\"\" data-line=\"88\"><li class=\"code-line\" data-line=\"88\" data-uuid=\"f0a9454a-5f23-4b41-a038-c574de9ade18\">A first-party MCP server that exposes a curated, classified subset of the Flink REST API and SQL Gateway as MCP tools and resources.</li><li class=\"code-line\" data-line=\"90\" data-uuid=\"b5d921d9-20f2-40bc-a7af-741e01e61fbf\">A reusable agent-access governance layer: tool-exposure policy, authorization scoping, approval gating for destructive actions, rate limiting, audit, and output controls, adapted from the KIP-1318 control model.</li><li class=\"code-line\" data-line=\"93\" data-uuid=\"aa125209-216c-47a7-96a7-0995e299202d\">Where this should live (sub-project vs ecosystem) and how it relates to FLIP-531 and FLIP-548.</li></ul><h3 class=\"code-line\" style=\"\" data-line=\"96\">Non-goals</h3><ul class=\"code-line\" style=\"\" data-line=\"97\"><li class=\"code-line\" data-line=\"97\" data-uuid=\"ea2054c4-62e0-4e23-920e-1c7de98fb1b1\">Not baking the MCP protocol into the Flink engine or runtime (respects FLIP-577).</li><li class=\"code-line\" data-line=\"98\" data-uuid=\"f22eca19-b5db-4cbf-bda1-29203ea864f4\">Not replacing FLIP-531 or FLIP-548. Those make Flink an MCP client; this makes Flink an MCP server. They are complementary, not competing.</li><li class=\"code-line\" data-line=\"100\" data-uuid=\"334db3b5-d265-4602-81b1-6c3598d73b86\">Not an agent framework, LLM router, or model-serving layer.</li><li class=\"code-line\" data-line=\"101\" data-uuid=\"41452e8a-9632-43c9-ac80-7adf6b8f53ff\">Not a general observability backend. It surfaces existing REST and Gateway data; it does not store or replace metrics systems.</li></ul><h3 class=\"code-line\" style=\"\" data-line=\"104\">Consensus criteria</h3><p class=\"code-line\" style=\"\" data-line=\"105\">Agreement that (a) a first-party, governed Flink MCP server is worth having, (b) it should live in a sub-project or ecosystem rather than the engine, and (c) the governance contract is the piece worth standardizing. Detailed tool schemas and the wire protocol version are deferred to the implementation phase.</p><h2 class=\"code-line\" style=\"\">4. Why now</h2><ul class=\"code-line\" style=\"\" data-line=\"114\"><li class=\"code-line\" data-line=\"114\" data-uuid=\"2ca156cf-a513-4d38-a1aa-4d231fdceb38\">Flink is actively adding MCP client capabilities (FLIP-531, FLIP-548), so agents operating on Flink is an imminent pattern, not a hypothetical one.</li><li class=\"code-line\" data-line=\"116\" data-uuid=\"48597e93-0dab-44d9-bd6c-ef3a10e72524\">Third-party Flink MCP servers already exist and are being used, which means the demand is real and the security posture of those servers is now a live concern (see section 7).</li><li class=\"code-line\" data-line=\"119\" data-uuid=\"96d00788-88aa-4626-9f3d-f3f8548aca8e\">FLIP-577 has drawn the engine boundary, which gives a clear, non-controversial place for this work: outside the engine, in the ecosystem or the Flink Agents sub-project.</li></ul><h3 class=\"code-line\" style=\"\" data-line=\"122\">4.1 Cross-project precedent (verified, and honestly labeled)</h3><p class=\"code-line\" style=\"\" data-line=\"124\">The pattern of exposing an Apache data system to agents over MCP is already emerging across the ecosystem. This is stated precisely, because a reviewer will check it:</p><table style=\"\"><thead class=\"\"><tr class=\"\"><th style=\"text-align: left;\">Project</th><th style=\"text-align: left;\">What ships</th><th style=\"text-align: left;\">Governance / provenance</th><th style=\"text-align: left;\">Relevance</th></tr></thead><tbody class=\"\"><tr class=\"\"><td>Apache Doris MCP Server</td><td>Official, documented on<span> </span><code><a href=\"http://doris.apache.org\">doris.apache.org</a></code>: a Python MCP service exposing Doris as tools (list tables, run SQL, fetch schemas, and read audit logs)</td><td>First-party, in-project docs; audit-log awareness is notable</td><td>Direct ASF precedent that a first-party MCP server is an accepted, in-project artifact, and that audit is treated as a first-class surface</td></tr><tr class=\"\"><td>Apache Ambari</td><td><code>call518/MCP-Ambari-API</code><span> </span>(GitHub) and<span> </span><code>mcp-ambari-api</code><span> </span>(PyPI): service operations, config management, status monitoring, request tracking</td><td>Third-party, single-maintainer; not an official Apache Ambari initiative that could be verified</td><td>Illustrates the exact problem this proposal addresses: privileged control-plane MCP servers for Apache infra projects are being built third-party, without a first-party governance model</td></tr><tr class=\"\"><td>Google Managed Service for Apache Spark (Dataproc)</td><td>Vendor remote MCP server: create cluster, submit job, create autoscaling policy</td><td>Vendor-owned</td><td>Shows cluster-operations over MCP is becoming a norm, including write/destructive actions, which raises the governance stakes</td></tr></tbody></table><p class=\"code-line\" style=\"\" data-line=\"133\">Honesty note: an earlier draft email in this workstream referenced an &quot;AMBARI-26532&quot; official MCP initiative. That could not be verified as an official Apache Ambari proposal. The Ambari MCP work that does exist is third-party. It is cited here as a third-party effort, not an official one, on purpose. The verifiable first-party ASF precedent is Apache Doris, not Ambari.</p><h2 class=\"code-line\" style=\"\" data-line=\"141\">5. Why Flink is a natural fit (and why the KIP-1318 model transfers)</h2><p class=\"code-line\" style=\"\" data-line=\"143\">Two properties make the KIP-1318 control model reusable here with minimal change:</p><ol class=\"code-line\" style=\"\" data-line=\"145\"><li class=\"code-line\" data-line=\"145\" data-uuid=\"460b75bc-77c8-4dee-8543-00e75ee039e4\">Flink already exposes an external control plane (REST API and SQL Gateway). The MCP server is a thin, governed adapter over interfaces that are already outside the operator runtime. This means the server introduces no new in-runtime failure domain, which is the same isolation argument KIP-1318 made for keeping the Kafka MCP server outside the broker JVM. For Flink the isolation is even more natural because the REST and Gateway boundaries already exist.</li><li class=\"code-line\" data-line=\"151\" data-uuid=\"5e3d1439-b55c-4d4e-8b09-17fc1566d4de\">The risk profile of an autonomous caller is identical in shape to the Kafka case: an agent that can list is low risk; an agent that can<span> </span><code>stop</code><span> </span>a job,<span> </span><code>run</code><span> </span>a JAR, or run arbitrary SQL against the Gateway is high blast-radius. The KIP-1318 tool classification (read / mutate / destructive), secure-by-default exposure, scoping, approval tokens, rate limits, and audit map directly onto Flink operations.</li></ol><h3 class=\"code-line\" style=\"\" data-line=\"157\">Relationship to existing Flink AI work (verified)</h3><table style=\"\"><thead class=\"\"><tr class=\"\"><th style=\"text-align: left;\">Effort</th><th style=\"text-align: left;\">What it does</th><th style=\"text-align: left;\">Relationship to this proposal</th></tr></thead><tbody class=\"\"><tr class=\"\"><td>FLIP-531 Flink Agents</td><td>Flink runs agents that<span> </span><strong>consume</strong><span> </span>MCP servers as tools</td><td>Complementary; a governed Flink MCP server can itself be one of the servers a Flink (or external) agent consumes. Candidate host sub-project.</td></tr><tr class=\"\"><td>FLIP-548 Tool/Agent in Flink SQL</td><td><code>CREATE TOOL ... 'type'='mcp'</code>; Flink SQL as MCP<span> </span><strong>client</strong></td><td>Complementary; same client-side direction, does not expose Flink itself</td></tr><tr class=\"\"><td>FLIP-577 AI-Native Flink</td><td>Umbrella; declares agent/tool protocols an engine non-goal</td><td>Boundary setter; this proposal stays outside the engine to comply</td></tr><tr class=\"\"><td>FLIP-529 Connections</td><td>Connection resource incl.<span> </span><code>type='mcp'</code></td><td>The client side of MCP wiring; unrelated to serving Flink as MCP</td></tr></tbody></table><h2 class=\"code-line\" style=\"\" data-line=\"168\">6. Proposed design (all items in this section are design intent, not built)</h2><h3 class=\"code-line\" style=\"\" data-line=\"170\">6.0 Architecture at a glance</h3><p>Operator runtime</p><p>Existing Flink control plane - verified to exist</p><p class=\"code-line\" style=\"\" data-line=\"833\">TBD</p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/446070934?status=historical&version=1"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": "none"
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=446070938",
+    "edit": "/pages/resumedraft.action?draftId=446070938&draftShareId=4346d1ce-f7cf-4a60-bd4e-c532a61dd964",
+    "tinyui": "/x/moCWGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/446070934?status=historical&version=1"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/446070934/child?parentVersion=1",
+    "restrictions": "/rest/api/content/446070934/restriction/byOperation",
+    "history": "/rest/api/content/446070934/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/446070934/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/446070934/restriction/relevantViewRestrictions"
+   }
+  }
+ ],
+ "comments": {
+  "results": [],
+  "start": 0,
+  "limit": 200,
+  "size": 0,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/api/content/446070934/child/comment?expand=body.storage%2Cversion%2Cancestors&depth=all",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ }
+}

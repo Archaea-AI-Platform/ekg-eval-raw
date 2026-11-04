@@ -1,0 +1,1873 @@
+{
+ "pull": {
+  "url": "https://api.github.com/repos/apache/kafka/pulls/23929",
+  "id": 4976902943,
+  "node_id": "PR_kwDOACG9q88AAAABKKWDHw",
+  "html_url": "https://github.com/apache/kafka/pull/23929",
+  "diff_url": "https://github.com/apache/kafka/pull/23929.diff",
+  "patch_url": "https://github.com/apache/kafka/pull/23929.patch",
+  "issue_url": "https://api.github.com/repos/apache/kafka/issues/23929",
+  "commits_url": "https://api.github.com/repos/apache/kafka/pulls/23929/commits",
+  "review_comments_url": "https://api.github.com/repos/apache/kafka/pulls/23929/comments",
+  "review_comment_url": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}",
+  "comments_url": "https://api.github.com/repos/apache/kafka/issues/23929/comments",
+  "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/b2be58b57d17a812a7e171eb15ad19a241491d3f",
+  "number": 23929,
+  "state": "closed",
+  "locked": false,
+  "title": "MINOR: Close leaked resources in tests",
+  "user": {
+   "login": "unknowntpo",
+   "id": 10594519,
+   "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+   "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/unknowntpo",
+   "html_url": "https://github.com/unknowntpo",
+   "followers_url": "https://api.github.com/users/unknowntpo/followers",
+   "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+   "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+   "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+   "repos_url": "https://api.github.com/users/unknowntpo/repos",
+   "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "body": "Follow-up to #23604. Several tests create a client, metrics, or log\nmanager that the cleanup method never closes, either because a local\nvariable shadows the field closed in `@AfterEach`, or because the field\nset up in `@BeforeEach` is reassigned without closing the old instance.\nThis fixes the same pattern in `KafkaConsumerTest`, `MetricsTest`,\n`LogManagerTest`, and `WorkerTaskTest`.\n\nGenerated-by: Claude Opus 5.5\n\nReviewers: Chia-Ping Tsai <chia7712@gmail.com>\n",
+  "labels": [
+   {
+    "id": 851033232,
+    "node_id": "MDU6TGFiZWw4NTEwMzMyMzI=",
+    "url": "https://api.github.com/repos/apache/kafka/labels/consumer",
+    "name": "consumer",
+    "description": "",
+    "color": "bf6a03",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 851037639,
+    "node_id": "MDU6TGFiZWw4NTEwMzc2Mzk=",
+    "url": "https://api.github.com/repos/apache/kafka/labels/connect",
+    "name": "connect",
+    "description": "",
+    "color": "0052cc",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 1257747426,
+    "node_id": "MDU6TGFiZWwxMjU3NzQ3NDI2",
+    "url": "https://api.github.com/repos/apache/kafka/labels/tests",
+    "name": "tests",
+    "description": "Test fixes (including flaky tests)",
+    "color": "cfff60",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 5610263660,
+    "node_id": "LA_kwDOACG9q88AAAABTmXUbA",
+    "url": "https://api.github.com/repos/apache/kafka/labels/storage",
+    "name": "storage",
+    "description": "Pull requests that target the storage module",
+    "color": "5319e7",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 7491388177,
+    "node_id": "LA_kwDOACG9q88AAAABvoWDEQ",
+    "url": "https://api.github.com/repos/apache/kafka/labels/clients",
+    "name": "clients",
+    "description": null,
+    "color": "ededed",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 7559660738,
+    "node_id": "LA_kwDOACG9q88AAAABwpdEwg",
+    "url": "https://api.github.com/repos/apache/kafka/labels/small",
+    "name": "small",
+    "description": "Small PRs",
+    "color": "FEF2C0",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   }
+  ],
+  "milestone": null,
+  "active_lock_reason": null,
+  "created_at": "2026-10-23T02:27:40Z",
+  "updated_at": "2026-10-27T00:42:34Z",
+  "closed_at": "2026-10-26T16:44:47Z",
+  "merged_at": "2026-10-26T16:44:47Z",
+  "merge_commit_sha": "286b144260187dc51fe128d22ded78f68280a48f",
+  "assignee": null,
+  "assignees": [],
+  "requested_reviewers": [],
+  "requested_teams": [],
+  "head": {
+   "label": "unknowntpo:fix-test-resource-leaks",
+   "ref": "fix-test-resource-leaks",
+   "repo": {
+    "id": 809274704,
+    "node_id": "R_kgDOMDyNUA",
+    "name": "kafka",
+    "full_name": "unknowntpo/kafka",
+    "owner": {
+     "login": "unknowntpo",
+     "id": 10594519,
+     "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+     "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/unknowntpo",
+     "html_url": "https://github.com/unknowntpo",
+     "followers_url": "https://api.github.com/users/unknowntpo/followers",
+     "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+     "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+     "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+     "repos_url": "https://api.github.com/users/unknowntpo/repos",
+     "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": true,
+    "archived": false,
+    "disabled": false,
+    "description": "Mirror of Apache Kafka",
+    "homepage": null,
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [],
+    "forks_count": 0,
+    "forks": 0,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "watchers": 0,
+    "open_issues_count": 11,
+    "open_issues": 11,
+    "size": 293291,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-28T23:57:36Z",
+    "created_at": "2024-06-02T08:15:46Z",
+    "updated_at": "2026-10-27T00:03:14Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/unknowntpo/kafka",
+    "html_url": "https://github.com/unknowntpo/kafka",
+    "archive_url": "https://api.github.com/repos/unknowntpo/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/unknowntpo/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/unknowntpo/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/unknowntpo/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/unknowntpo/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/unknowntpo/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/unknowntpo/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/unknowntpo/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/unknowntpo/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/unknowntpo/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/unknowntpo/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/unknowntpo/kafka/downloads",
+    "events_url": "https://api.github.com/repos/unknowntpo/kafka/events",
+    "forks_url": "https://api.github.com/repos/unknowntpo/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/unknowntpo/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/unknowntpo/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/unknowntpo/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/unknowntpo/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/unknowntpo/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/unknowntpo/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/unknowntpo/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/unknowntpo/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/unknowntpo/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/unknowntpo/kafka/languages",
+    "merges_url": "https://api.github.com/repos/unknowntpo/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/unknowntpo/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/unknowntpo/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/unknowntpo/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/unknowntpo/kafka/releases{/id}",
+    "ssh_url": "git@github.com:unknowntpo/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/unknowntpo/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/unknowntpo/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/unknowntpo/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/unknowntpo/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/unknowntpo/kafka/tags",
+    "teams_url": "https://api.github.com/repos/unknowntpo/kafka/teams",
+    "trees_url": "https://api.github.com/repos/unknowntpo/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/unknowntpo/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/unknowntpo/kafka/hooks",
+    "svn_url": "https://github.com/unknowntpo/kafka"
+   },
+   "sha": "b2be58b57d17a812a7e171eb15ad19a241491d3f",
+   "user": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "base": {
+   "label": "apache:trunk",
+   "ref": "trunk",
+   "repo": {
+    "id": 2211243,
+    "node_id": "MDEwOlJlcG9zaXRvcnkyMjExMjQz",
+    "name": "kafka",
+    "full_name": "apache/kafka",
+    "owner": {
+     "login": "apache",
+     "id": 47359,
+     "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+     "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/apache",
+     "html_url": "https://github.com/apache",
+     "followers_url": "https://api.github.com/users/apache/followers",
+     "following_url": "https://api.github.com/users/apache/following{/other_user}",
+     "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+     "organizations_url": "https://api.github.com/users/apache/orgs",
+     "repos_url": "https://api.github.com/users/apache/repos",
+     "events_url": "https://api.github.com/users/apache/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/apache/received_events",
+     "type": "Organization",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": false,
+    "archived": false,
+    "disabled": false,
+    "description": "Apache Kafka - A distributed event streaming platform",
+    "homepage": "https://kafka.apache.org/",
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [
+     "java",
+     "kafka",
+     "scala",
+     "streaming"
+    ],
+    "forks_count": 15637,
+    "forks": 15637,
+    "stargazers_count": 34153,
+    "watchers_count": 34153,
+    "watchers": 34153,
+    "open_issues_count": 674,
+    "open_issues": 674,
+    "size": 322164,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-29T11:37:21Z",
+    "created_at": "2011-08-15T18:06:16Z",
+    "updated_at": "2026-10-29T11:37:29Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/apache/kafka",
+    "html_url": "https://github.com/apache/kafka",
+    "archive_url": "https://api.github.com/repos/apache/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/apache/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/apache/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/apache/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/apache/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/apache/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/apache/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/apache/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/apache/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/apache/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/apache/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/apache/kafka/downloads",
+    "events_url": "https://api.github.com/repos/apache/kafka/events",
+    "forks_url": "https://api.github.com/repos/apache/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/apache/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/apache/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/apache/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/apache/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/apache/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/apache/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/apache/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/apache/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/apache/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/apache/kafka/languages",
+    "merges_url": "https://api.github.com/repos/apache/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/apache/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/apache/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/apache/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/apache/kafka/releases{/id}",
+    "ssh_url": "git@github.com:apache/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/apache/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/apache/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/apache/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/apache/kafka/tags",
+    "teams_url": "https://api.github.com/repos/apache/kafka/teams",
+    "trees_url": "https://api.github.com/repos/apache/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/apache/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/apache/kafka/hooks",
+    "svn_url": "https://github.com/apache/kafka"
+   },
+   "sha": "d18f93f9852d4ea06f47d256df642070e986a67a",
+   "user": {
+    "login": "apache",
+    "id": 47359,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/apache",
+    "html_url": "https://github.com/apache",
+    "followers_url": "https://api.github.com/users/apache/followers",
+    "following_url": "https://api.github.com/users/apache/following{/other_user}",
+    "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+    "organizations_url": "https://api.github.com/users/apache/orgs",
+    "repos_url": "https://api.github.com/users/apache/repos",
+    "events_url": "https://api.github.com/users/apache/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/apache/received_events",
+    "type": "Organization",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "_links": {
+   "comments": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23929/comments"
+   },
+   "commits": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23929/commits"
+   },
+   "statuses": {
+    "href": "https://api.github.com/repos/apache/kafka/statuses/b2be58b57d17a812a7e171eb15ad19a241491d3f"
+   },
+   "html": {
+    "href": "https://github.com/apache/kafka/pull/23929"
+   },
+   "issue": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23929"
+   },
+   "review_comments": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23929/comments"
+   },
+   "review_comment": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}"
+   },
+   "self": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23929"
+   }
+  },
+  "author_association": "CONTRIBUTOR",
+  "auto_merge": null,
+  "draft": false,
+  "merged": true,
+  "mergeable": null,
+  "rebaseable": null,
+  "mergeable_state": "unknown",
+  "merged_by": {
+   "login": "chia7712",
+   "id": 6234750,
+   "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+   "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/chia7712",
+   "html_url": "https://github.com/chia7712",
+   "followers_url": "https://api.github.com/users/chia7712/followers",
+   "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+   "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+   "organizations_url": "https://api.github.com/users/chia7712/orgs",
+   "repos_url": "https://api.github.com/users/chia7712/repos",
+   "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/chia7712/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "comments": 0,
+  "review_comments": 2,
+  "maintainer_can_modify": false,
+  "commits": 5,
+  "additions": 23,
+  "deletions": 26,
+  "changed_files": 4
+ },
+ "reviews": [
+  {
+   "id": 5635461025,
+   "node_id": "PRR_kwDOACG9q88AAAABT-ZPoQ",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?u=d6a720105c14e445ea603b93ca071290c3955670&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23929#pullrequestreview-5635461025",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23929",
+   "author_association": "MEMBER",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23929#pullrequestreview-5635461025"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23929"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-23T23:22:46Z",
+   "commit_id": "9d5ba86165808c969da5df39c1da4a46231e741c"
+  },
+  {
+   "id": 5635656086,
+   "node_id": "PRR_kwDOACG9q88AAAABT-lJlg",
+   "user": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?u=f012a1ce49ba96fd86b23f5dc073d83ed1e44674&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23929#pullrequestreview-5635656086",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23929",
+   "author_association": "CONTRIBUTOR",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23929#pullrequestreview-5635656086"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23929"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-23T23:56:12Z",
+   "commit_id": "9d5ba86165808c969da5df39c1da4a46231e741c"
+  },
+  {
+   "id": 5655690959,
+   "node_id": "PRR_kwDOACG9q88AAAABURr-zw",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?u=d6a720105c14e445ea603b93ca071290c3955670&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "LGTM",
+   "state": "APPROVED",
+   "html_url": "https://github.com/apache/kafka/pull/23929#pullrequestreview-5655690959",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23929",
+   "author_association": "MEMBER",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23929#pullrequestreview-5655690959"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23929"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-26T16:44:15Z",
+   "commit_id": "b2be58b57d17a812a7e171eb15ad19a241491d3f"
+  }
+ ],
+ "review_comments": [
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4365031202",
+   "pull_request_review_id": 5635461025,
+   "id": 4365031202,
+   "node_id": "PRRC_kwDOACG9q88AAAABBC0XIg",
+   "diff_hunk": "@@ -67,7 +67,7 @@ public class WorkerTaskTest {\n     @Mock private TaskStatus.Listener statusListener;\n     @Mock private ClassLoader loader;\n     @Mock private StatusBackingStore statusBackingStore;\n-    private ConnectMetrics metrics;\n+    private MockConnectMetrics metrics;",
+   "path": "connect/runtime/src/test/java/org/apache/kafka/connect/runtime/WorkerTaskTest.java",
+   "commit_id": "9d5ba86165808c969da5df39c1da4a46231e741c",
+   "original_commit_id": "9d5ba86165808c969da5df39c1da4a46231e741c",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "Could you initialize it directly and then remove setup and the null check in tearDown?",
+   "created_at": "2026-10-23T23:22:46Z",
+   "updated_at": "2026-10-23T23:22:46Z",
+   "html_url": "https://github.com/apache/kafka/pull/23929#discussion_r4365031202",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23929",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4365031202"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23929#discussion_r4365031202"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23929"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4365031202/reactions",
+    "total_count": 1,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 1,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": null,
+   "original_line": 70,
+   "side": "RIGHT",
+   "author_association": "MEMBER",
+   "original_position": 5,
+   "position": 1,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4365180538",
+   "pull_request_review_id": 5635656086,
+   "id": 4365180538,
+   "node_id": "PRRC_kwDOACG9q88AAAABBC9eeg",
+   "diff_hunk": "@@ -67,7 +67,7 @@ public class WorkerTaskTest {\n     @Mock private TaskStatus.Listener statusListener;\n     @Mock private ClassLoader loader;\n     @Mock private StatusBackingStore statusBackingStore;\n-    private ConnectMetrics metrics;\n+    private MockConnectMetrics metrics;",
+   "path": "connect/runtime/src/test/java/org/apache/kafka/connect/runtime/WorkerTaskTest.java",
+   "commit_id": "9d5ba86165808c969da5df39c1da4a46231e741c",
+   "original_commit_id": "9d5ba86165808c969da5df39c1da4a46231e741c",
+   "user": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "ok, fixed.",
+   "created_at": "2026-10-23T23:56:12Z",
+   "updated_at": "2026-10-23T23:56:12Z",
+   "html_url": "https://github.com/apache/kafka/pull/23929#discussion_r4365180538",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23929",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4365180538"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23929#discussion_r4365180538"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23929"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4365180538/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": null,
+   "original_line": 70,
+   "side": "RIGHT",
+   "in_reply_to_id": 4365031202,
+   "author_association": "CONTRIBUTOR",
+   "original_position": 5,
+   "position": 1,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  }
+ ],
+ "issue_comments": [],
+ "commits": [
+  {
+   "sha": "1fb11c75d8d45d31dee222760543ac1b59e3a710",
+   "node_id": "C_kwDOMDyNUNoAKDFmYjExYzc1ZDhkNDVkMzFkZWUyMjI3NjA1NDNhYzFiNTllM2E3MTA",
+   "commit": {
+    "author": {
+     "name": "Eric Chang",
+     "email": "e850506@gmail.com",
+     "date": "2026-09-29T13:57:13Z"
+    },
+    "committer": {
+     "name": "Eric Chang",
+     "email": "e850506@gmail.com",
+     "date": "2026-10-23T02:16:06Z"
+    },
+    "message": "MINOR: Close the KafkaConsumer created in KafkaConsumerTest tests\n\nFourteen tests declared a local KafkaConsumer named consumer, which shadows\nthe field that cleanup() closes, and never closed it. Each leaked consumer\nkept its JMX reporter and metrics registered, and with the CONSUMER group\nprotocol also its background thread.\n\nAssign the field instead, like the other tests in this class, so cleanup()\ncloses the consumer.",
+    "tree": {
+     "sha": "0784819a25cd00b559d0b8fa1418a417660c1c6f",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/0784819a25cd00b559d0b8fa1418a417660c1c6f"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/1fb11c75d8d45d31dee222760543ac1b59e3a710",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/1fb11c75d8d45d31dee222760543ac1b59e3a710",
+   "html_url": "https://github.com/apache/kafka/commit/1fb11c75d8d45d31dee222760543ac1b59e3a710",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/1fb11c75d8d45d31dee222760543ac1b59e3a710/comments",
+   "author": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "d18f93f9852d4ea06f47d256df642070e986a67a",
+     "url": "https://api.github.com/repos/apache/kafka/commits/d18f93f9852d4ea06f47d256df642070e986a67a",
+     "html_url": "https://github.com/apache/kafka/commit/d18f93f9852d4ea06f47d256df642070e986a67a"
+    }
+   ]
+  },
+  {
+   "sha": "5a27785dd4d1d84f34e93e81bf8c84543fdf150d",
+   "node_id": "C_kwDOMDyNUNoAKDVhMjc3ODVkZDRkMWQ4NGYzNGU5M2U4MWJmOGM4NDU0M2ZkZjE1MGQ",
+   "commit": {
+    "author": {
+     "name": "Eric Chang",
+     "email": "e850506@gmail.com",
+     "date": "2026-10-01T06:26:55Z"
+    },
+    "committer": {
+     "name": "Eric Chang",
+     "email": "e850506@gmail.com",
+     "date": "2026-10-23T02:16:06Z"
+    },
+    "message": "MINOR: Close leaked Metrics instances in MetricsTest\n\ntestConcurrentReadUpdate replaced the setUp Metrics (JMX reporter and\nsensor expiry thread) without closing it. testRemoveChildSensor created a\nlocal Metrics that was never closed; it now uses the field closed in tearDown.",
+    "tree": {
+     "sha": "62ba796a5e93520dc7f86ebb2f24afc76fa60633",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/62ba796a5e93520dc7f86ebb2f24afc76fa60633"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/5a27785dd4d1d84f34e93e81bf8c84543fdf150d",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/5a27785dd4d1d84f34e93e81bf8c84543fdf150d",
+   "html_url": "https://github.com/apache/kafka/commit/5a27785dd4d1d84f34e93e81bf8c84543fdf150d",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/5a27785dd4d1d84f34e93e81bf8c84543fdf150d/comments",
+   "author": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "1fb11c75d8d45d31dee222760543ac1b59e3a710",
+     "url": "https://api.github.com/repos/apache/kafka/commits/1fb11c75d8d45d31dee222760543ac1b59e3a710",
+     "html_url": "https://github.com/apache/kafka/commit/1fb11c75d8d45d31dee222760543ac1b59e3a710"
+    }
+   ]
+  },
+  {
+   "sha": "afce98ae7a89ecb60c1823af4e70d997a24178b2",
+   "node_id": "C_kwDOMDyNUNoAKGFmY2U5OGFlN2E4OWVjYjYwYzE4MjNhZjRlNzBkOTk3YTI0MTc4YjI",
+   "commit": {
+    "author": {
+     "name": "Eric Chang",
+     "email": "e850506@gmail.com",
+     "date": "2026-10-01T06:27:32Z"
+    },
+    "committer": {
+     "name": "Eric Chang",
+     "email": "e850506@gmail.com",
+     "date": "2026-10-23T02:16:06Z"
+    },
+    "message": "MINOR: Shut down the setUp LogManager before reassigning it in LogManagerTest\n\nSix tests reassigned the logManager field without shutting down the instance\nstarted in setUp: testCreateLogOnTargetedLogDirectory, testLoadLogsSkipRemoteIndexCache,\ntestLoadLogRenameLogThatShouldBeStray, testMetricsAreRemovedWhenMovingCurrentToFutureLog,\ntestLoadDirectoryIds and testReplaceCurrentWithFutureLogDoesNotCloseSourceLog.\ntearDown only shut down the new one, leaking the old one's metrics and open log files.",
+    "tree": {
+     "sha": "0b98133cb87841a59527298e69dc9bd376cd625f",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/0b98133cb87841a59527298e69dc9bd376cd625f"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/afce98ae7a89ecb60c1823af4e70d997a24178b2",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/afce98ae7a89ecb60c1823af4e70d997a24178b2",
+   "html_url": "https://github.com/apache/kafka/commit/afce98ae7a89ecb60c1823af4e70d997a24178b2",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/afce98ae7a89ecb60c1823af4e70d997a24178b2/comments",
+   "author": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "5a27785dd4d1d84f34e93e81bf8c84543fdf150d",
+     "url": "https://api.github.com/repos/apache/kafka/commits/5a27785dd4d1d84f34e93e81bf8c84543fdf150d",
+     "html_url": "https://github.com/apache/kafka/commit/5a27785dd4d1d84f34e93e81bf8c84543fdf150d"
+    }
+   ]
+  },
+  {
+   "sha": "9d5ba86165808c969da5df39c1da4a46231e741c",
+   "node_id": "C_kwDOMDyNUNoAKDlkNWJhODYxNjU4MDhjOTY5ZGE1ZGYzOWMxZGE0YTQ2MjMxZTc0MWM",
+   "commit": {
+    "author": {
+     "name": "Eric Chang",
+     "email": "e850506@gmail.com",
+     "date": "2026-10-01T06:27:16Z"
+    },
+    "committer": {
+     "name": "Eric Chang",
+     "email": "e850506@gmail.com",
+     "date": "2026-10-23T02:16:06Z"
+    },
+    "message": "MINOR: Stop the ConnectMetrics created in WorkerTaskTest tests\n\nTwo tests created a local MockConnectMetrics that shadowed the field and was never stopped, leaking its registered metrics and MBeans.\nReuse the field created in setup, which tearDown already stops, and declare it as MockConnectMetrics so the tests can use its helpers.",
+    "tree": {
+     "sha": "ec49b8007eb1eecef4645249de9bca7a90e91225",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/ec49b8007eb1eecef4645249de9bca7a90e91225"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/9d5ba86165808c969da5df39c1da4a46231e741c",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/9d5ba86165808c969da5df39c1da4a46231e741c",
+   "html_url": "https://github.com/apache/kafka/commit/9d5ba86165808c969da5df39c1da4a46231e741c",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/9d5ba86165808c969da5df39c1da4a46231e741c/comments",
+   "author": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "afce98ae7a89ecb60c1823af4e70d997a24178b2",
+     "url": "https://api.github.com/repos/apache/kafka/commits/afce98ae7a89ecb60c1823af4e70d997a24178b2",
+     "html_url": "https://github.com/apache/kafka/commit/afce98ae7a89ecb60c1823af4e70d997a24178b2"
+    }
+   ]
+  },
+  {
+   "sha": "b2be58b57d17a812a7e171eb15ad19a241491d3f",
+   "node_id": "C_kwDOMDyNUNoAKGIyYmU1OGI1N2QxN2E4MTJhN2UxNzFlYjE1YWQxOWEyNDE0OTFkM2Y",
+   "commit": {
+    "author": {
+     "name": "Eric Chang",
+     "email": "e850506@gmail.com",
+     "date": "2026-10-23T23:54:05Z"
+    },
+    "committer": {
+     "name": "Eric Chang",
+     "email": "e850506@gmail.com",
+     "date": "2026-10-23T23:54:05Z"
+    },
+    "message": "MINOR: Initialize ConnectMetrics directly in WorkerTaskTest",
+    "tree": {
+     "sha": "9b08f79353da4b82c04ac15958394e916d75018f",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/9b08f79353da4b82c04ac15958394e916d75018f"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/b2be58b57d17a812a7e171eb15ad19a241491d3f",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/b2be58b57d17a812a7e171eb15ad19a241491d3f",
+   "html_url": "https://github.com/apache/kafka/commit/b2be58b57d17a812a7e171eb15ad19a241491d3f",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/b2be58b57d17a812a7e171eb15ad19a241491d3f/comments",
+   "author": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "9d5ba86165808c969da5df39c1da4a46231e741c",
+     "url": "https://api.github.com/repos/apache/kafka/commits/9d5ba86165808c969da5df39c1da4a46231e741c",
+     "html_url": "https://github.com/apache/kafka/commit/9d5ba86165808c969da5df39c1da4a46231e741c"
+    }
+   ]
+  }
+ ],
+ "files": [
+  {
+   "sha": "3b5392f11bdf7ff60ff701bda190fe6f747517e5",
+   "filename": "clients/src/test/java/org/apache/kafka/clients/consumer/KafkaConsumerTest.java",
+   "status": "modified",
+   "additions": 14,
+   "deletions": 14,
+   "changes": 28,
+   "blob_url": "https://github.com/apache/kafka/blob/b2be58b57d17a812a7e171eb15ad19a241491d3f/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fconsumer%2FKafkaConsumerTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/b2be58b57d17a812a7e171eb15ad19a241491d3f/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fconsumer%2FKafkaConsumerTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fconsumer%2FKafkaConsumerTest.java?ref=b2be58b57d17a812a7e171eb15ad19a241491d3f",
+   "patch": "@@ -1321,7 +1321,7 @@ public void testResetToCommittedOffset(GroupProtocol groupProtocol) {\n         Node node = metadata.fetch().nodes().get(0);\n \n         client.prepareResponseFrom(FindCoordinatorResponse.prepareResponse(Errors.NONE, groupId, node), node);\n-        KafkaConsumer<String, String> consumer = newConsumer(groupProtocol, time, client, subscription, metadata, assignor,\n+        consumer = newConsumer(groupProtocol, time, client, subscription, metadata, assignor,\n                 true, groupId, groupInstanceId, false);\n         consumer.assign(List.of(tp0));\n \n@@ -2576,7 +2576,7 @@ public void testPartitionsForNonExistingTopic(GroupProtocol groupProtocol) {\n             Collections.emptyList());\n         client.prepareResponse(updateResponse);\n \n-        KafkaConsumer<String, String> consumer = newConsumer(groupProtocol, time, client, subscription, metadata, assignor, true, groupInstanceId);\n+        consumer = newConsumer(groupProtocol, time, client, subscription, metadata, assignor, true, groupInstanceId);\n         assertEquals(Collections.emptyList(), consumer.partitionsFor(\"non-exist-topic\"));\n     }\n \n@@ -2613,7 +2613,7 @@ public void testEndOffsetsAuthenticationFailure(GroupProtocol groupProtocol) {\n     @ParameterizedTest\n     @EnumSource(GroupProtocol.class)\n     public void testPollAuthenticationFailure(GroupProtocol groupProtocol) throws InterruptedException {\n-        final KafkaConsumer<String, String> consumer = consumerWithPendingAuthenticationError(groupProtocol);\n+        consumer = consumerWithPendingAuthenticationError(groupProtocol);\n         consumer.subscribe(Set.of(topic));\n \n         if (groupProtocol == GroupProtocol.CONSUMER) {\n@@ -2686,7 +2686,7 @@ public void testMeasureCommitSyncDuration(GroupProtocol groupProtocol) {\n         MockClient client = new MockClient(time, metadata);\n         initMetadata(client, Map.of(topic, 2));\n         Node node = metadata.fetch().nodes().get(0);\n-        KafkaConsumer<String, String> consumer = newConsumer(groupProtocol, time, client, subscription, metadata,\n+        consumer = newConsumer(groupProtocol, time, client, subscription, metadata,\n             assignor, true, groupInstanceId);\n         consumer.assign(List.of(tp0));\n \n@@ -2734,7 +2734,7 @@ public void testMeasureCommittedDuration(GroupProtocol groupProtocol) {\n         MockClient client = new MockClient(time, metadata);\n         initMetadata(client, Map.of(topic, 2));\n         Node node = metadata.fetch().nodes().get(0);\n-        KafkaConsumer<String, String> consumer = newConsumer(groupProtocol, time, client, subscription, metadata,\n+        consumer = newConsumer(groupProtocol, time, client, subscription, metadata,\n             assignor, true, groupInstanceId);\n         consumer.assign(List.of(tp0));\n \n@@ -2965,7 +2965,7 @@ public void testGetGroupMetadata(GroupProtocol groupProtocol) {\n         initMetadata(client, Map.of(topic, 1));\n         final Node node = metadata.fetch().nodes().get(0);\n \n-        final KafkaConsumer<String, String> consumer = newConsumer(groupProtocol, time, client, subscription, metadata, assignor, true, groupInstanceId);\n+        consumer = newConsumer(groupProtocol, time, client, subscription, metadata, assignor, true, groupInstanceId);\n \n         final ConsumerGroupMetadata groupMetadataOnStart = consumer.groupMetadata();\n         assertEquals(groupId, groupMetadataOnStart.groupId());\n@@ -3709,7 +3709,7 @@ public void testSubscriptionOnInvalidTopic(GroupProtocol groupProtocol) throws I\n                 topicMetadata);\n         client.prepareMetadataUpdate(updateResponse);\n \n-        KafkaConsumer<String, String> consumer = newConsumer(groupProtocol, time, client, subscription, metadata, assignor, true, groupInstanceId);\n+        consumer = newConsumer(groupProtocol, time, client, subscription, metadata, assignor, true, groupInstanceId);\n         consumer.setRebalanceListener(getRebalanceListener());\n         consumer.subscribe(Set.of(invalidTopicName));\n \n@@ -3743,7 +3743,7 @@ public void testPollTimeMetrics(GroupProtocol groupProtocol) {\n         MockClient client = new MockClient(time, metadata);\n         initMetadata(client, Map.of(topic, 1));\n \n-        KafkaConsumer<String, String> consumer = newConsumer(groupProtocol, time, client, subscription, metadata, assignor, true, groupInstanceId);\n+        consumer = newConsumer(groupProtocol, time, client, subscription, metadata, assignor, true, groupInstanceId);\n         consumer.subscribe(List.of(topic));\n         // MetricName objects to check\n         Metrics metrics = consumer.metricsRegistry();\n@@ -3789,7 +3789,7 @@ public void testPollIdleRatio(GroupProtocol groupProtocol) {\n         MockClient client = new MockClient(time, metadata);\n         initMetadata(client, Map.of(topic, 1));\n \n-        KafkaConsumer<String, String> consumer = newConsumer(groupProtocol, time, client, subscription, metadata, assignor, true, groupInstanceId);\n+        consumer = newConsumer(groupProtocol, time, client, subscription, metadata, assignor, true, groupInstanceId);\n         // MetricName object to check\n         Metrics metrics = consumer.metricsRegistry();\n         MetricName pollIdleRatio = metrics.metricName(\"poll-idle-ratio-avg\", \"consumer-metrics\");\n@@ -3831,7 +3831,7 @@ public void testPollIdleRatioZero(GroupProtocol groupProtocol) {\n         MockClient client = new MockClient(time, metadata);\n         initMetadata(client, Map.of(topic, 1));\n \n-        KafkaConsumer<String, String> consumer = newConsumer(groupProtocol, time, client, subscription, metadata, assignor, true, groupInstanceId);\n+        consumer = newConsumer(groupProtocol, time, client, subscription, metadata, assignor, true, groupInstanceId);\n         // MetricName object to check\n         Metrics metrics = consumer.metricsRegistry();\n         MetricName pollIdleRatio = metrics.metricName(\"poll-idle-ratio-avg\", \"consumer-metrics\");\n@@ -3884,7 +3884,7 @@ public void testEnforceRebalanceTriggersRebalanceOnNextPoll(GroupProtocol groupP\n         Time time = new MockTime(1L);\n         ConsumerMetadata metadata = createMetadata(subscription);\n         MockClient client = new MockClient(time, metadata);\n-        KafkaConsumer<String, String> consumer = newConsumer(groupProtocol, time, client, subscription, metadata, assignor, true, groupInstanceId);\n+        consumer = newConsumer(groupProtocol, time, client, subscription, metadata, assignor, true, groupInstanceId);\n         MockRebalanceListener countingRebalanceListener = new MockRebalanceListener();\n         initMetadata(client, Map.of(topic, 1, topic2, 1, topic3, 1));\n \n@@ -4184,7 +4184,7 @@ public void testPreventMultiThread(GroupProtocol groupProtocol) throws Interrupt\n         ConsumerMetadata metadata = createMetadata(subscription);\n         MockClient client = new MockClient(time, metadata);\n         initMetadata(client, Map.of(topic, 1));\n-        KafkaConsumer<String, String> consumer = newConsumer(groupProtocol, time, client, subscription, metadata,\n+        consumer = newConsumer(groupProtocol, time, client, subscription, metadata,\n                 new RoundRobinAssignor(), true, groupInstanceId);\n         consumer.subscribe(List.of(topic));\n \n@@ -4212,7 +4212,7 @@ public void testPollSendsRequestToJoin(GroupProtocol groupProtocol) throws Inter\n         Node node = metadata.fetch().nodes().get(0);\n \n         client.prepareResponseFrom(FindCoordinatorResponse.prepareResponse(Errors.NONE, groupId, node), node);\n-        KafkaConsumer<String, String> consumer = newConsumer(groupProtocol, time, client, subscription, metadata,\n+        consumer = newConsumer(groupProtocol, time, client, subscription, metadata,\n                 assignor, true, groupInstanceId);\n         consumer.subscribe(List.of(topic));\n         assertFalse(groupProtocol == GroupProtocol.CLASSIC ?\n@@ -4230,7 +4230,7 @@ public void testPollSendsRequestToJoin(GroupProtocol groupProtocol) throws Inter\n     @ParameterizedTest\n     @EnumSource(value = GroupProtocol.class, names = \"CLASSIC\")\n     public void testSubscribeToRe2jPatternNotSupportedForClassicConsumer(GroupProtocol groupProtocol) {\n-        KafkaConsumer<String, String> consumer = newConsumerNoAutoCommit(groupProtocol, time, mock(NetworkClient.class), subscription,\n+        consumer = newConsumerNoAutoCommit(groupProtocol, time, mock(NetworkClient.class), subscription,\n             mock(ConsumerMetadata.class));\n         assertThrows(UnsupportedOperationException.class, () ->\n             consumer.subscribe(new SubscriptionPattern(\"t*\")));"
+  },
+  {
+   "sha": "17af5b609f4deae6d300f4e713fb13caa668d873",
+   "filename": "clients/src/test/java/org/apache/kafka/common/metrics/MetricsTest.java",
+   "status": "modified",
+   "additions": 1,
+   "deletions": 2,
+   "changes": 3,
+   "blob_url": "https://github.com/apache/kafka/blob/b2be58b57d17a812a7e171eb15ad19a241491d3f/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Fmetrics%2FMetricsTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/b2be58b57d17a812a7e171eb15ad19a241491d3f/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Fmetrics%2FMetricsTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Fmetrics%2FMetricsTest.java?ref=b2be58b57d17a812a7e171eb15ad19a241491d3f",
+   "patch": "@@ -207,8 +207,6 @@ public void testBadSensorHierarchy() {\n \n     @Test\n     public void testRemoveChildSensor() {\n-        final Metrics metrics = new Metrics();\n-\n         final Sensor parent = metrics.sensor(\"parent\");\n         final Sensor child = metrics.sensor(\"child\", parent);\n \n@@ -709,6 +707,7 @@ public void testMetricInstances() {\n     public void testConcurrentReadUpdate() {\n         final Random random = new Random();\n         final Deque<Sensor> sensors = new ConcurrentLinkedDeque<>();\n+        metrics.close();\n         metrics = new Metrics(new MockTime(10));\n         SensorCreator sensorCreator = new SensorCreator(metrics);\n "
+  },
+  {
+   "sha": "6c36be502e307959c0747567b7c22c85012b9f36",
+   "filename": "connect/runtime/src/test/java/org/apache/kafka/connect/runtime/WorkerTaskTest.java",
+   "status": "modified",
+   "additions": 2,
+   "deletions": 10,
+   "changes": 12,
+   "blob_url": "https://github.com/apache/kafka/blob/b2be58b57d17a812a7e171eb15ad19a241491d3f/connect%2Fruntime%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fconnect%2Fruntime%2FWorkerTaskTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/b2be58b57d17a812a7e171eb15ad19a241491d3f/connect%2Fruntime%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fconnect%2Fruntime%2FWorkerTaskTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/connect%2Fruntime%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fconnect%2Fruntime%2FWorkerTaskTest.java?ref=b2be58b57d17a812a7e171eb15ad19a241491d3f",
+   "patch": "@@ -31,7 +31,6 @@\n import org.apache.kafka.connect.util.ConnectorTaskId;\n \n import org.junit.jupiter.api.AfterEach;\n-import org.junit.jupiter.api.BeforeEach;\n import org.junit.jupiter.api.Test;\n import org.junit.jupiter.api.extension.ExtendWith;\n import org.mockito.Mock;\n@@ -67,20 +66,15 @@ public class WorkerTaskTest {\n     @Mock private TaskStatus.Listener statusListener;\n     @Mock private ClassLoader loader;\n     @Mock private StatusBackingStore statusBackingStore;\n-    private ConnectMetrics metrics;\n+    private final MockConnectMetrics metrics = new MockConnectMetrics();\n     @Mock private ErrorHandlingMetrics errorHandlingMetrics;\n     @Mock private RetryWithToleranceOperator<Object> retryWithToleranceOperator;\n     @Mock private TransformationChain<Object, SourceRecord> transformationChain;\n     @Mock private Supplier<List<ErrorReporter<Object>>> errorReportersSupplier;\n \n-    @BeforeEach\n-    public void setup() {\n-        metrics = new MockConnectMetrics();\n-    }\n-\n     @AfterEach\n     public void tearDown() {\n-        if (metrics != null) metrics.stop();\n+        metrics.stop();\n     }\n \n     @Test\n@@ -221,7 +215,6 @@ protected void close() {\n     @Test\n     public void updateMetricsOnListenerEventsForStartupPauseResumeAndShutdown() {\n         ConnectorTaskId taskId = new ConnectorTaskId(\"foo\", 0);\n-        ConnectMetrics metrics = new MockConnectMetrics();\n         TaskMetricsGroup group = new TaskMetricsGroup(taskId, metrics, statusListener);\n \n         group.onStartup(taskId);\n@@ -242,7 +235,6 @@ public void updateMetricsOnListenerEventsForStartupPauseResumeAndShutdown() {\n     @Test\n     public void updateMetricsOnListenerEventsForStartupPauseResumeAndFailure() {\n         ConnectorTaskId taskId = new ConnectorTaskId(\"foo\", 0);\n-        MockConnectMetrics metrics = new MockConnectMetrics();\n         MockTime time = metrics.time();\n         ConnectException error = new ConnectException(\"error\");\n         TaskMetricsGroup group = new TaskMetricsGroup(taskId, metrics, statusListener);"
+  },
+  {
+   "sha": "f96005f0b7889e082aa972b3ae07fa81cf4368f3",
+   "filename": "storage/src/test/java/org/apache/kafka/storage/internals/log/LogManagerTest.java",
+   "status": "modified",
+   "additions": 6,
+   "deletions": 0,
+   "changes": 6,
+   "blob_url": "https://github.com/apache/kafka/blob/b2be58b57d17a812a7e171eb15ad19a241491d3f/storage%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstorage%2Finternals%2Flog%2FLogManagerTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/b2be58b57d17a812a7e171eb15ad19a241491d3f/storage%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstorage%2Finternals%2Flog%2FLogManagerTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/storage%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstorage%2Finternals%2Flog%2FLogManagerTest.java?ref=b2be58b57d17a812a7e171eb15ad19a241491d3f",
+   "patch": "@@ -168,6 +168,7 @@ public void testCreateLogOnTargetedLogDirectory() throws IOException {\n         writeMetaProperties(dirs.get(3), Optional.of(DirectoryId.random()));\n         writeMetaProperties(dirs.get(4));\n \n+        logManager.shutdown();\n         logManager = createLogManager(dirs);\n \n         UnifiedLog log = logManager.getOrCreateLog(new TopicPartition(NAME, 0), false, false, Optional.empty(), Optional.of(targetedLogDirectoryId));\n@@ -592,6 +593,7 @@ public void testLoadLogsSkipRemoteIndexCache() throws Exception {\n         File logDir = TestUtils.tempDirectory();\n         File remoteIndexCache = new File(logDir, RemoteIndexCache.DIR_NAME);\n         remoteIndexCache.mkdir();\n+        logManager.shutdown();\n         logManager = createLogManager(List.of(logDir));\n         logManager.loadLogs(LOG_CONFIG, Map.of(), unifiedLog ->  false);\n     }\n@@ -600,6 +602,7 @@ public void testLoadLogsSkipRemoteIndexCache() throws Exception {\n     public void testLoadLogRenameLogThatShouldBeStray() throws IOException {\n         AtomicInteger invokedCount = new AtomicInteger(0);\n         File logDir = TestUtils.tempDirectory();\n+        logManager.shutdown();\n         logManager = createLogManager(List.of(logDir));\n \n         String testTopic = \"test-stray-topic\";\n@@ -1241,6 +1244,7 @@ private static Set<MetricName> allMetrics() {\n     public void testMetricsAreRemovedWhenMovingCurrentToFutureLog() throws Exception {\n         File dir1 = TestUtils.tempDirectory();\n         File dir2 = TestUtils.tempDirectory();\n+        logManager.shutdown();\n         logManager = createLogManager(List.of(dir1, dir2));\n         logManager.startup(Set.of());\n \n@@ -1287,6 +1291,7 @@ public void testLoadDirectoryIds() throws IOException {\n         writeMetaProperties(dirs.get(3), Optional.of(Uuid.fromString(\"kQfNPJ2FTHq_6Qlyyv6Jqg\")));\n         writeMetaProperties(dirs.get(4));\n \n+        logManager.shutdown();\n         logManager = createLogManager(dirs);\n \n         assertFalse(logManager.directoryId(dirs.get(0).getAbsolutePath()).isPresent());\n@@ -1306,6 +1311,7 @@ public void testLoadDirectoryIds() throws IOException {\n     public void testReplaceCurrentWithFutureLogDoesNotCloseSourceLog() throws Exception {\n         File logDir1 = TestUtils.tempDirectory();\n         File logDir2 = TestUtils.tempDirectory();\n+        logManager.shutdown();\n         logManager = createLogManager(List.of(logDir1, logDir2));\n         logManager.startup(Set.of());\n "
+  }
+ ],
+ "timeline": [
+  {
+   "sha": "1fb11c75d8d45d31dee222760543ac1b59e3a710",
+   "node_id": "C_kwDOACG9q9oAKDFmYjExYzc1ZDhkNDVkMzFkZWUyMjI3NjA1NDNhYzFiNTllM2E3MTA",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/1fb11c75d8d45d31dee222760543ac1b59e3a710",
+   "html_url": "https://github.com/apache/kafka/commit/1fb11c75d8d45d31dee222760543ac1b59e3a710",
+   "author": {
+    "name": "Eric Chang",
+    "email": "e850506@gmail.com",
+    "date": "2026-09-29T13:57:13Z"
+   },
+   "committer": {
+    "name": "Eric Chang",
+    "email": "e850506@gmail.com",
+    "date": "2026-10-23T02:16:06Z"
+   },
+   "tree": {
+    "sha": "0784819a25cd00b559d0b8fa1418a417660c1c6f",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/0784819a25cd00b559d0b8fa1418a417660c1c6f"
+   },
+   "message": "MINOR: Close the KafkaConsumer created in KafkaConsumerTest tests\n\nFourteen tests declared a local KafkaConsumer named consumer, which shadows\nthe field that cleanup() closes, and never closed it. Each leaked consumer\nkept its JMX reporter and metrics registered, and with the CONSUMER group\nprotocol also its background thread.\n\nAssign the field instead, like the other tests in this class, so cleanup()\ncloses the consumer.",
+   "parents": [
+    {
+     "sha": "d18f93f9852d4ea06f47d256df642070e986a67a",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/d18f93f9852d4ea06f47d256df642070e986a67a",
+     "html_url": "https://github.com/apache/kafka/commit/d18f93f9852d4ea06f47d256df642070e986a67a"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "5a27785dd4d1d84f34e93e81bf8c84543fdf150d",
+   "node_id": "C_kwDOACG9q9oAKDVhMjc3ODVkZDRkMWQ4NGYzNGU5M2U4MWJmOGM4NDU0M2ZkZjE1MGQ",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/5a27785dd4d1d84f34e93e81bf8c84543fdf150d",
+   "html_url": "https://github.com/apache/kafka/commit/5a27785dd4d1d84f34e93e81bf8c84543fdf150d",
+   "author": {
+    "name": "Eric Chang",
+    "email": "e850506@gmail.com",
+    "date": "2026-10-01T06:26:55Z"
+   },
+   "committer": {
+    "name": "Eric Chang",
+    "email": "e850506@gmail.com",
+    "date": "2026-10-23T02:16:06Z"
+   },
+   "tree": {
+    "sha": "62ba796a5e93520dc7f86ebb2f24afc76fa60633",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/62ba796a5e93520dc7f86ebb2f24afc76fa60633"
+   },
+   "message": "MINOR: Close leaked Metrics instances in MetricsTest\n\ntestConcurrentReadUpdate replaced the setUp Metrics (JMX reporter and\nsensor expiry thread) without closing it. testRemoveChildSensor created a\nlocal Metrics that was never closed; it now uses the field closed in tearDown.",
+   "parents": [
+    {
+     "sha": "1fb11c75d8d45d31dee222760543ac1b59e3a710",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/1fb11c75d8d45d31dee222760543ac1b59e3a710",
+     "html_url": "https://github.com/apache/kafka/commit/1fb11c75d8d45d31dee222760543ac1b59e3a710"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "afce98ae7a89ecb60c1823af4e70d997a24178b2",
+   "node_id": "C_kwDOACG9q9oAKGFmY2U5OGFlN2E4OWVjYjYwYzE4MjNhZjRlNzBkOTk3YTI0MTc4YjI",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/afce98ae7a89ecb60c1823af4e70d997a24178b2",
+   "html_url": "https://github.com/apache/kafka/commit/afce98ae7a89ecb60c1823af4e70d997a24178b2",
+   "author": {
+    "name": "Eric Chang",
+    "email": "e850506@gmail.com",
+    "date": "2026-10-01T06:27:32Z"
+   },
+   "committer": {
+    "name": "Eric Chang",
+    "email": "e850506@gmail.com",
+    "date": "2026-10-23T02:16:06Z"
+   },
+   "tree": {
+    "sha": "0b98133cb87841a59527298e69dc9bd376cd625f",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/0b98133cb87841a59527298e69dc9bd376cd625f"
+   },
+   "message": "MINOR: Shut down the setUp LogManager before reassigning it in LogManagerTest\n\nSix tests reassigned the logManager field without shutting down the instance\nstarted in setUp: testCreateLogOnTargetedLogDirectory, testLoadLogsSkipRemoteIndexCache,\ntestLoadLogRenameLogThatShouldBeStray, testMetricsAreRemovedWhenMovingCurrentToFutureLog,\ntestLoadDirectoryIds and testReplaceCurrentWithFutureLogDoesNotCloseSourceLog.\ntearDown only shut down the new one, leaking the old one's metrics and open log files.",
+   "parents": [
+    {
+     "sha": "5a27785dd4d1d84f34e93e81bf8c84543fdf150d",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/5a27785dd4d1d84f34e93e81bf8c84543fdf150d",
+     "html_url": "https://github.com/apache/kafka/commit/5a27785dd4d1d84f34e93e81bf8c84543fdf150d"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "9d5ba86165808c969da5df39c1da4a46231e741c",
+   "node_id": "C_kwDOACG9q9oAKDlkNWJhODYxNjU4MDhjOTY5ZGE1ZGYzOWMxZGE0YTQ2MjMxZTc0MWM",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/9d5ba86165808c969da5df39c1da4a46231e741c",
+   "html_url": "https://github.com/apache/kafka/commit/9d5ba86165808c969da5df39c1da4a46231e741c",
+   "author": {
+    "name": "Eric Chang",
+    "email": "e850506@gmail.com",
+    "date": "2026-10-01T06:27:16Z"
+   },
+   "committer": {
+    "name": "Eric Chang",
+    "email": "e850506@gmail.com",
+    "date": "2026-10-23T02:16:06Z"
+   },
+   "tree": {
+    "sha": "ec49b8007eb1eecef4645249de9bca7a90e91225",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/ec49b8007eb1eecef4645249de9bca7a90e91225"
+   },
+   "message": "MINOR: Stop the ConnectMetrics created in WorkerTaskTest tests\n\nTwo tests created a local MockConnectMetrics that shadowed the field and was never stopped, leaking its registered metrics and MBeans.\nReuse the field created in setup, which tearDown already stops, and declare it as MockConnectMetrics so the tests can use its helpers.",
+   "parents": [
+    {
+     "sha": "afce98ae7a89ecb60c1823af4e70d997a24178b2",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/afce98ae7a89ecb60c1823af4e70d997a24178b2",
+     "html_url": "https://github.com/apache/kafka/commit/afce98ae7a89ecb60c1823af4e70d997a24178b2"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "id": 34012330595,
+   "node_id": "LE_lADOACG9q88AAAABZRQsJs8AAAAH60r6Yw",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34012330595",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-23T02:28:08Z",
+   "label": {
+    "name": "triage",
+    "color": "006b75"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34012459758,
+   "node_id": "LE_lADOACG9q88AAAABZRQsJs8AAAAH60zy7g",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34012459758",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-23T02:30:36Z",
+   "label": {
+    "name": "consumer",
+    "color": "bf6a03"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34012459801,
+   "node_id": "LE_lADOACG9q88AAAABZRQsJs8AAAAH60zzGQ",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34012459801",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-23T02:30:36Z",
+   "label": {
+    "name": "connect",
+    "color": "0052cc"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34012459839,
+   "node_id": "LE_lADOACG9q88AAAABZRQsJs8AAAAH60zzPw",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34012459839",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-23T02:30:36Z",
+   "label": {
+    "name": "tests",
+    "color": "cfff60"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34012459866,
+   "node_id": "LE_lADOACG9q88AAAABZRQsJs8AAAAH60zzWg",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34012459866",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-23T02:30:36Z",
+   "label": {
+    "name": "storage",
+    "color": "5319e7"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34012459908,
+   "node_id": "LE_lADOACG9q88AAAABZRQsJs8AAAAH60zzhA",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34012459908",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-23T02:30:36Z",
+   "label": {
+    "name": "clients",
+    "color": "ededed"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34012462428,
+   "node_id": "LE_lADOACG9q88AAAABZRQsJs8AAAAH60z9XA",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34012462428",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-23T02:30:39Z",
+   "label": {
+    "name": "small",
+    "color": "FEF2C0"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34012549634,
+   "node_id": "RFRE_lADOACG9q88AAAABZRQsJs8AAAAH605SAg",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34012549634",
+   "actor": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "ready_for_review",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-23T02:32:24Z",
+   "performed_via_github_app": null
+  },
+  {
+   "id": 5635461025,
+   "node_id": "PRR_kwDOACG9q88AAAABT-ZPoQ",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": null,
+   "commit_id": "9d5ba86165808c969da5df39c1da4a46231e741c",
+   "state": "commented",
+   "html_url": "https://github.com/apache/kafka/pull/23929#pullrequestreview-5635461025",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23929",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23929#pullrequestreview-5635461025"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23929"
+    }
+   },
+   "submitted_at": "2026-10-23T23:22:46Z",
+   "updated_at": "2026-10-23T23:22:46Z",
+   "author_association": "MEMBER",
+   "event": "reviewed"
+  },
+  {
+   "sha": "b2be58b57d17a812a7e171eb15ad19a241491d3f",
+   "node_id": "C_kwDOACG9q9oAKGIyYmU1OGI1N2QxN2E4MTJhN2UxNzFlYjE1YWQxOWEyNDE0OTFkM2Y",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/b2be58b57d17a812a7e171eb15ad19a241491d3f",
+   "html_url": "https://github.com/apache/kafka/commit/b2be58b57d17a812a7e171eb15ad19a241491d3f",
+   "author": {
+    "name": "Eric Chang",
+    "email": "e850506@gmail.com",
+    "date": "2026-10-23T23:54:05Z"
+   },
+   "committer": {
+    "name": "Eric Chang",
+    "email": "e850506@gmail.com",
+    "date": "2026-10-23T23:54:05Z"
+   },
+   "tree": {
+    "sha": "9b08f79353da4b82c04ac15958394e916d75018f",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/9b08f79353da4b82c04ac15958394e916d75018f"
+   },
+   "message": "MINOR: Initialize ConnectMetrics directly in WorkerTaskTest",
+   "parents": [
+    {
+     "sha": "9d5ba86165808c969da5df39c1da4a46231e741c",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/9d5ba86165808c969da5df39c1da4a46231e741c",
+     "html_url": "https://github.com/apache/kafka/commit/9d5ba86165808c969da5df39c1da4a46231e741c"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "id": 34108514549,
+   "node_id": "UNLE_lADOACG9q88AAAABZRQsJs8AAAAH8Qag9Q",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34108514549",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "unlabeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-24T03:18:47Z",
+   "label": {
+    "name": "triage",
+    "color": "006b75"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 5655690959,
+   "node_id": "PRR_kwDOACG9q88AAAABURr-zw",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "LGTM",
+   "commit_id": "b2be58b57d17a812a7e171eb15ad19a241491d3f",
+   "state": "approved",
+   "html_url": "https://github.com/apache/kafka/pull/23929#pullrequestreview-5655690959",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23929",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23929#pullrequestreview-5655690959"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23929"
+    }
+   },
+   "submitted_at": "2026-10-26T16:44:15Z",
+   "updated_at": "2026-10-26T16:44:15Z",
+   "author_association": "MEMBER",
+   "event": "reviewed"
+  },
+  {
+   "id": 34282647028,
+   "node_id": "ME_lADOACG9q88AAAABZRQsJs8AAAAH-2et9A",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34282647028",
+   "actor": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "merged",
+   "commit_id": "286b144260187dc51fe128d22ded78f68280a48f",
+   "commit_url": "https://api.github.com/repos/apache/kafka/commits/286b144260187dc51fe128d22ded78f68280a48f",
+   "created_at": "2026-10-26T16:44:47Z",
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34282647160,
+   "node_id": "CE_lADOACG9q88AAAABZRQsJs8AAAAH-2eueA",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34282647160",
+   "actor": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "closed",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-26T16:44:47Z",
+   "state_reason": null,
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34319072465,
+   "node_id": "HRDE_lADOACG9q88AAAABZRQsJs8AAAAH_ZN80Q",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34319072465",
+   "actor": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "head_ref_deleted",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-27T00:42:34Z",
+   "performed_via_github_app": null
+  }
+ ]
+}

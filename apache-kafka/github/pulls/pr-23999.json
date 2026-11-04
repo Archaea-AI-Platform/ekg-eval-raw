@@ -1,0 +1,1282 @@
+{
+ "pull": {
+  "url": "https://api.github.com/repos/apache/kafka/pulls/23999",
+  "id": 5054221995,
+  "node_id": "PR_kwDOACG9q88AAAABLUFOqw",
+  "html_url": "https://github.com/apache/kafka/pull/23999",
+  "diff_url": "https://github.com/apache/kafka/pull/23999.diff",
+  "patch_url": "https://github.com/apache/kafka/pull/23999.patch",
+  "issue_url": "https://api.github.com/repos/apache/kafka/issues/23999",
+  "commits_url": "https://api.github.com/repos/apache/kafka/pulls/23999/commits",
+  "review_comments_url": "https://api.github.com/repos/apache/kafka/pulls/23999/comments",
+  "review_comment_url": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}",
+  "comments_url": "https://api.github.com/repos/apache/kafka/issues/23999/comments",
+  "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+  "number": 23999,
+  "state": "open",
+  "locked": false,
+  "title": "KAFKA-21230: Build RocksDB WriteBatch at commit",
+  "user": {
+   "login": "nicktelford",
+   "id": 548378,
+   "node_id": "MDQ6VXNlcjU0ODM3OA==",
+   "avatar_url": "https://avatars.githubusercontent.com/u/548378?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/nicktelford",
+   "html_url": "https://github.com/nicktelford",
+   "followers_url": "https://api.github.com/users/nicktelford/followers",
+   "following_url": "https://api.github.com/users/nicktelford/following{/other_user}",
+   "gists_url": "https://api.github.com/users/nicktelford/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/nicktelford/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/nicktelford/subscriptions",
+   "organizations_url": "https://api.github.com/users/nicktelford/orgs",
+   "repos_url": "https://api.github.com/users/nicktelford/repos",
+   "events_url": "https://api.github.com/users/nicktelford/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/nicktelford/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "body": "`RocksDBTransactionBuffer` writes every staged write twice: to `pendingWrites` on the heap, which serves reads, and to a native RocksDB `WriteBatch`. The `WriteBatch` holds native memory for the whole transaction, and the buffer changes it while it holds the write lock.\n\nThe buffer now stages writes on the heap only. Writes to other column families and range deletes also stay on the heap until the commit. At commit, `prepareFlush()` builds the `WriteBatch` from the staged state outside the write lock, and `flushToBase()` writes it to RocksDB under the write lock. A JMH model of the two designs measured writes 2 to 7 times faster, and commits 8 to 12 times faster when the transaction overwrites keys. A commit with no overwrites and 1000-byte values is up to 28% slower.\n\nBecause no buffer writes to a backend at stage time now, the `stageToBackend` hook of `AbstractTransactionBuffer` has no function. This change removes it and all of its implementations.\n\nThe uncommitted-bytes estimate also counted a key once for each write in a transaction, so a key written many times could cause an early commit with little staged data. `AbstractTransactionBuffer.stage` now subtracts the size of the previous entry for the key before it adds the new entry. `RocksDBTransactionBuffer` uses this shared accounting for all of its staged data.\n\n`statestore.uncommitted.max.bytes` now counts each staged write once. Before, it counted the heap copy and the `WriteBatch` copy. The commit still needs a native `WriteBatch`, but only for one store at a time, because stores commit one after the other. The extra memory at commit is therefore at most the uncommitted bytes of the largest store. A thread now commits early when its uncommitted bytes plus the uncommitted bytes of its largest store exceed its share of the limit. The global thread uses the same check. The limit is thus again a bound on the memory at commit.\n\nThe check uses the largest value of `StateStore.approximateNumUncommittedBytes()`, so it needs no change to a public interface. In-memory stores need no extra memory at commit, so applications with only in-memory stores commit early after less data than in 4.4. Applications with more than one transactional RocksDB store can buffer more data before an early commit. The 4.5.0 upgrade guide and the documentation of the config record this. The default stays at 64 MB.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n",
+  "labels": [
+   {
+    "id": 820747028,
+    "node_id": "MDU6TGFiZWw4MjA3NDcwMjg=",
+    "url": "https://api.github.com/repos/apache/kafka/labels/streams",
+    "name": "streams",
+    "description": null,
+    "color": "63edea",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 7865607612,
+    "node_id": "LA_kwDOACG9q88AAAAB1NOlvA",
+    "url": "https://api.github.com/repos/apache/kafka/labels/triage",
+    "name": "triage",
+    "description": "PRs from the community",
+    "color": "006b75",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   }
+  ],
+  "milestone": null,
+  "active_lock_reason": null,
+  "created_at": "2026-10-28T16:44:32Z",
+  "updated_at": "2026-10-28T16:44:58Z",
+  "closed_at": null,
+  "merged_at": null,
+  "merge_commit_sha": "f265d57ce3da8267a026e56a8c033dba284c75d5",
+  "assignee": null,
+  "assignees": [],
+  "requested_reviewers": [],
+  "requested_teams": [],
+  "head": {
+   "label": "nicktelford:KAFKA-21230-lazy-writebatch",
+   "ref": "KAFKA-21230-lazy-writebatch",
+   "repo": {
+    "id": 439367730,
+    "node_id": "R_kgDOGjA4Mg",
+    "name": "kafka",
+    "full_name": "nicktelford/kafka",
+    "owner": {
+     "login": "nicktelford",
+     "id": 548378,
+     "node_id": "MDQ6VXNlcjU0ODM3OA==",
+     "avatar_url": "https://avatars.githubusercontent.com/u/548378?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/nicktelford",
+     "html_url": "https://github.com/nicktelford",
+     "followers_url": "https://api.github.com/users/nicktelford/followers",
+     "following_url": "https://api.github.com/users/nicktelford/following{/other_user}",
+     "gists_url": "https://api.github.com/users/nicktelford/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/nicktelford/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/nicktelford/subscriptions",
+     "organizations_url": "https://api.github.com/users/nicktelford/orgs",
+     "repos_url": "https://api.github.com/users/nicktelford/repos",
+     "events_url": "https://api.github.com/users/nicktelford/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/nicktelford/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": true,
+    "archived": false,
+    "disabled": false,
+    "description": "Mirror of Apache Kafka",
+    "homepage": null,
+    "language": null,
+    "visibility": "public",
+    "is_template": false,
+    "topics": [],
+    "forks_count": 0,
+    "forks": 0,
+    "stargazers_count": 1,
+    "watchers_count": 1,
+    "watchers": 1,
+    "open_issues_count": 0,
+    "open_issues": 0,
+    "size": 288558,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-28T16:57:38Z",
+    "created_at": "2021-12-17T14:55:17Z",
+    "updated_at": "2024-04-12T11:22:01Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/nicktelford/kafka",
+    "html_url": "https://github.com/nicktelford/kafka",
+    "archive_url": "https://api.github.com/repos/nicktelford/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/nicktelford/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/nicktelford/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/nicktelford/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/nicktelford/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/nicktelford/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/nicktelford/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/nicktelford/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/nicktelford/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/nicktelford/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/nicktelford/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/nicktelford/kafka/downloads",
+    "events_url": "https://api.github.com/repos/nicktelford/kafka/events",
+    "forks_url": "https://api.github.com/repos/nicktelford/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/nicktelford/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/nicktelford/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/nicktelford/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/nicktelford/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/nicktelford/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/nicktelford/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/nicktelford/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/nicktelford/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/nicktelford/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/nicktelford/kafka/languages",
+    "merges_url": "https://api.github.com/repos/nicktelford/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/nicktelford/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/nicktelford/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/nicktelford/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/nicktelford/kafka/releases{/id}",
+    "ssh_url": "git@github.com:nicktelford/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/nicktelford/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/nicktelford/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/nicktelford/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/nicktelford/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/nicktelford/kafka/tags",
+    "teams_url": "https://api.github.com/repos/nicktelford/kafka/teams",
+    "trees_url": "https://api.github.com/repos/nicktelford/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/nicktelford/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/nicktelford/kafka/hooks",
+    "svn_url": "https://github.com/nicktelford/kafka"
+   },
+   "sha": "aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "user": {
+    "login": "nicktelford",
+    "id": 548378,
+    "node_id": "MDQ6VXNlcjU0ODM3OA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/548378?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nicktelford",
+    "html_url": "https://github.com/nicktelford",
+    "followers_url": "https://api.github.com/users/nicktelford/followers",
+    "following_url": "https://api.github.com/users/nicktelford/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nicktelford/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nicktelford/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nicktelford/subscriptions",
+    "organizations_url": "https://api.github.com/users/nicktelford/orgs",
+    "repos_url": "https://api.github.com/users/nicktelford/repos",
+    "events_url": "https://api.github.com/users/nicktelford/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nicktelford/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "base": {
+   "label": "apache:trunk",
+   "ref": "trunk",
+   "repo": {
+    "id": 2211243,
+    "node_id": "MDEwOlJlcG9zaXRvcnkyMjExMjQz",
+    "name": "kafka",
+    "full_name": "apache/kafka",
+    "owner": {
+     "login": "apache",
+     "id": 47359,
+     "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+     "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/apache",
+     "html_url": "https://github.com/apache",
+     "followers_url": "https://api.github.com/users/apache/followers",
+     "following_url": "https://api.github.com/users/apache/following{/other_user}",
+     "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+     "organizations_url": "https://api.github.com/users/apache/orgs",
+     "repos_url": "https://api.github.com/users/apache/repos",
+     "events_url": "https://api.github.com/users/apache/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/apache/received_events",
+     "type": "Organization",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": false,
+    "archived": false,
+    "disabled": false,
+    "description": "Apache Kafka - A distributed event streaming platform",
+    "homepage": "https://kafka.apache.org/",
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [
+     "java",
+     "kafka",
+     "scala",
+     "streaming"
+    ],
+    "forks_count": 15637,
+    "forks": 15637,
+    "stargazers_count": 34153,
+    "watchers_count": 34153,
+    "watchers": 34153,
+    "open_issues_count": 674,
+    "open_issues": 674,
+    "size": 322164,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-29T11:37:21Z",
+    "created_at": "2011-08-15T18:06:16Z",
+    "updated_at": "2026-10-29T11:37:29Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/apache/kafka",
+    "html_url": "https://github.com/apache/kafka",
+    "archive_url": "https://api.github.com/repos/apache/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/apache/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/apache/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/apache/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/apache/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/apache/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/apache/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/apache/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/apache/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/apache/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/apache/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/apache/kafka/downloads",
+    "events_url": "https://api.github.com/repos/apache/kafka/events",
+    "forks_url": "https://api.github.com/repos/apache/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/apache/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/apache/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/apache/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/apache/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/apache/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/apache/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/apache/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/apache/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/apache/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/apache/kafka/languages",
+    "merges_url": "https://api.github.com/repos/apache/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/apache/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/apache/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/apache/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/apache/kafka/releases{/id}",
+    "ssh_url": "git@github.com:apache/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/apache/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/apache/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/apache/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/apache/kafka/tags",
+    "teams_url": "https://api.github.com/repos/apache/kafka/teams",
+    "trees_url": "https://api.github.com/repos/apache/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/apache/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/apache/kafka/hooks",
+    "svn_url": "https://github.com/apache/kafka"
+   },
+   "sha": "9a61f5711c1506ab1b6fb526cf907295ffb9defe",
+   "user": {
+    "login": "apache",
+    "id": 47359,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/apache",
+    "html_url": "https://github.com/apache",
+    "followers_url": "https://api.github.com/users/apache/followers",
+    "following_url": "https://api.github.com/users/apache/following{/other_user}",
+    "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+    "organizations_url": "https://api.github.com/users/apache/orgs",
+    "repos_url": "https://api.github.com/users/apache/repos",
+    "events_url": "https://api.github.com/users/apache/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/apache/received_events",
+    "type": "Organization",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "_links": {
+   "comments": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23999/comments"
+   },
+   "commits": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23999/commits"
+   },
+   "statuses": {
+    "href": "https://api.github.com/repos/apache/kafka/statuses/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4"
+   },
+   "html": {
+    "href": "https://github.com/apache/kafka/pull/23999"
+   },
+   "issue": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23999"
+   },
+   "review_comments": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23999/comments"
+   },
+   "review_comment": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}"
+   },
+   "self": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23999"
+   }
+  },
+  "author_association": "CONTRIBUTOR",
+  "auto_merge": null,
+  "draft": false,
+  "merged": false,
+  "mergeable": true,
+  "rebaseable": false,
+  "mergeable_state": "blocked",
+  "merged_by": null,
+  "comments": 0,
+  "review_comments": 0,
+  "maintainer_can_modify": true,
+  "commits": 4,
+  "additions": 374,
+  "deletions": 75,
+  "changed_files": 28
+ },
+ "reviews": [],
+ "review_comments": [],
+ "issue_comments": [],
+ "commits": [
+  {
+   "sha": "0ce891474c8dd5ded334b31a64d9bac3728644aa",
+   "node_id": "C_kwDOGjA4MtoAKDBjZTg5MTQ3NGM4ZGQ1ZGVkMzM0YjMxYTY0ZDliYWMzNzI4NjQ0YWE",
+   "commit": {
+    "author": {
+     "name": "Nick Telford",
+     "email": "nick.telford@gmail.com",
+     "date": "2026-10-06T17:33:54Z"
+    },
+    "committer": {
+     "name": "Nick Telford",
+     "email": "nick.telford@gmail.com",
+     "date": "2026-10-28T12:38:12Z"
+    },
+    "message": "KAFKA-21230: Fix byte count for overwritten keys in transaction buffer\n\nThe uncommitted-bytes estimate of a transaction buffer is too high when\nthe same key is written more than once in one transaction. The estimate\ncan then reach the pause threshold when the real amount of staged data\nis smaller.\n\nThe buffer added the key size and value size on each write. It did not\nremove the size of the value that the write replaced. A key written\nmany times was counted many times.\n\nAbstractTransactionBuffer.stage now subtracts the size of the previous\nentry for the key before it adds the new one. RocksDBTransactionBuffer\nhad its own copy of the byte counting. It now calls the shared\nimplementation for its default column family, and its stageToBackend\nwrites to the write batch directly. This keeps the counting in one\nplace and prevents a double count from the shared path.\n\nCo-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>",
+    "tree": {
+     "sha": "ca2ea32e57e2743e04fe08052517882b64deafcf",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/ca2ea32e57e2743e04fe08052517882b64deafcf"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/0ce891474c8dd5ded334b31a64d9bac3728644aa",
+    "comment_count": 0,
+    "verification": {
+     "verified": true,
+     "reason": "valid",
+     "signature": "-----BEGIN PGP SIGNATURE-----\n\niQFLBAABCgA1FiEEk5hGDOGvzTP3sq6z4p3QPp12vXAFAmrh7LQXHG5pY2sudGVs\nZm9yZEBnbWFpbC5jb20ACgkQ4p3QPp12vXBxQQf/TC8BV9KBR/E2gOdLosGVJp/v\nufKhe+Q7+PoxaN8+jXhSOiw9z1nLiywSiQkfmYUSU/Dz9R5OtMnTs+sMkvymR45Z\n7nP0TzagV3AlfhgkMN+ppgfYnZaAjIX/5yLW1csUEedkrS7yDttM69z8KvdD0zN0\njBeWeyBHOP4adBEKLYCW0sTHHn8lVmhaTg0PJb1Y782jKl+Iims6gmHfZs7aUIY6\n1XIQPFfN9zfkhgxJu7B25558ROxOstNy721qed5BBc5P4+QMHHjrctMYSHm6f5LW\nHyQQOaAsS+JZxZXG18ZShwaMlAc/QBt+9E6fDgHLi4WEyhNkI2/7D4brEZ/XVw==\n=c2QP\n-----END PGP SIGNATURE-----",
+     "payload": "tree ca2ea32e57e2743e04fe08052517882b64deafcf\nparent a589c272c1666724af8bf137bf1fda1e2b568ef4\nauthor Nick Telford <nick.telford@gmail.com> 1791308034 +0100\ncommitter Nick Telford <nick.telford@gmail.com> 1793191092 +0000\n\nKAFKA-21230: Fix byte count for overwritten keys in transaction buffer\n\nThe uncommitted-bytes estimate of a transaction buffer is too high when\nthe same key is written more than once in one transaction. The estimate\ncan then reach the pause threshold when the real amount of staged data\nis smaller.\n\nThe buffer added the key size and value size on each write. It did not\nremove the size of the value that the write replaced. A key written\nmany times was counted many times.\n\nAbstractTransactionBuffer.stage now subtracts the size of the previous\nentry for the key before it adds the new one. RocksDBTransactionBuffer\nhad its own copy of the byte counting. It now calls the shared\nimplementation for its default column family, and its stageToBackend\nwrites to the write batch directly. This keeps the counting in one\nplace and prevents a double count from the shared path.\n\nCo-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>\n",
+     "verified_at": "2026-10-28T16:44:31Z"
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/0ce891474c8dd5ded334b31a64d9bac3728644aa",
+   "html_url": "https://github.com/apache/kafka/commit/0ce891474c8dd5ded334b31a64d9bac3728644aa",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/0ce891474c8dd5ded334b31a64d9bac3728644aa/comments",
+   "author": {
+    "login": "nicktelford",
+    "id": 548378,
+    "node_id": "MDQ6VXNlcjU0ODM3OA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/548378?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nicktelford",
+    "html_url": "https://github.com/nicktelford",
+    "followers_url": "https://api.github.com/users/nicktelford/followers",
+    "following_url": "https://api.github.com/users/nicktelford/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nicktelford/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nicktelford/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nicktelford/subscriptions",
+    "organizations_url": "https://api.github.com/users/nicktelford/orgs",
+    "repos_url": "https://api.github.com/users/nicktelford/repos",
+    "events_url": "https://api.github.com/users/nicktelford/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nicktelford/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "nicktelford",
+    "id": 548378,
+    "node_id": "MDQ6VXNlcjU0ODM3OA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/548378?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nicktelford",
+    "html_url": "https://github.com/nicktelford",
+    "followers_url": "https://api.github.com/users/nicktelford/followers",
+    "following_url": "https://api.github.com/users/nicktelford/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nicktelford/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nicktelford/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nicktelford/subscriptions",
+    "organizations_url": "https://api.github.com/users/nicktelford/orgs",
+    "repos_url": "https://api.github.com/users/nicktelford/repos",
+    "events_url": "https://api.github.com/users/nicktelford/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nicktelford/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "a589c272c1666724af8bf137bf1fda1e2b568ef4",
+     "url": "https://api.github.com/repos/apache/kafka/commits/a589c272c1666724af8bf137bf1fda1e2b568ef4",
+     "html_url": "https://github.com/apache/kafka/commit/a589c272c1666724af8bf137bf1fda1e2b568ef4"
+    }
+   ]
+  },
+  {
+   "sha": "ab996a7c5bd42fd73ec17e00650bde8aae222f34",
+   "node_id": "C_kwDOGjA4MtoAKGFiOTk2YTdjNWJkNDJmZDczZWMxN2UwMDY1MGJkZThhYWUyMjJmMzQ",
+   "commit": {
+    "author": {
+     "name": "Nick Telford",
+     "email": "nick.telford@gmail.com",
+     "date": "2026-10-06T17:45:15Z"
+    },
+    "committer": {
+     "name": "Nick Telford",
+     "email": "nick.telford@gmail.com",
+     "date": "2026-10-28T12:38:13Z"
+    },
+    "message": "KAFKA-21230: Build the RocksDB WriteBatch at commit\n\nThe transaction buffer built a RocksDB WriteBatch on every write. This\nheld native memory for the whole transaction, and the batch was\nchanged while the write lock was held.\n\nNow the buffer stages writes on the heap only. The prepareFlush step\nbuilds the WriteBatch outside the write lock. Writes to other column\nfamilies and range deletes are also held on the heap until then.\n\nCo-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>",
+    "tree": {
+     "sha": "211e2d888de6047a6a8760d131861e8d0338e447",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/211e2d888de6047a6a8760d131861e8d0338e447"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/ab996a7c5bd42fd73ec17e00650bde8aae222f34",
+    "comment_count": 0,
+    "verification": {
+     "verified": true,
+     "reason": "valid",
+     "signature": "-----BEGIN PGP SIGNATURE-----\n\niQFLBAABCgA1FiEEk5hGDOGvzTP3sq6z4p3QPp12vXAFAmrh7LUXHG5pY2sudGVs\nZm9yZEBnbWFpbC5jb20ACgkQ4p3QPp12vXD96Af/SkSlNTLDQGKJ6yRVgs8996f5\nTORKFrCPibIewZ1T3AT0iID95AJw5z2BREEG1x5o9yk7qam3tzdBFndv1QpUz+7N\n1CwkiFVOr4GSmUmP34mdl6DnXZKlcezbWOrlwuiuKeMHwEorSmiKErcaYzx/7m/M\n/aI1vj7iJG06cNlxNlbIEl6a3Lt2KHni6i4DzliF4NMiIX9jgKqld7LynzH1vxSJ\nbv2evR07jW+LG1XFjp1DNKgZNvl8Ln4Ezq4VgmA7K3fsSG8/48MdGDf1YKHdYpNL\ntE/veVDGp/g41IRsp/AgxuPI7l1QA8x6eSC3PFia+y0vVIxNrneJ3a9UcUW/Bw==\n=yuuX\n-----END PGP SIGNATURE-----",
+     "payload": "tree 211e2d888de6047a6a8760d131861e8d0338e447\nparent 0ce891474c8dd5ded334b31a64d9bac3728644aa\nauthor Nick Telford <nick.telford@gmail.com> 1791308715 +0100\ncommitter Nick Telford <nick.telford@gmail.com> 1793191093 +0000\n\nKAFKA-21230: Build the RocksDB WriteBatch at commit\n\nThe transaction buffer built a RocksDB WriteBatch on every write. This\nheld native memory for the whole transaction, and the batch was\nchanged while the write lock was held.\n\nNow the buffer stages writes on the heap only. The prepareFlush step\nbuilds the WriteBatch outside the write lock. Writes to other column\nfamilies and range deletes are also held on the heap until then.\n\nCo-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>\n",
+     "verified_at": "2026-10-28T16:44:31Z"
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/ab996a7c5bd42fd73ec17e00650bde8aae222f34",
+   "html_url": "https://github.com/apache/kafka/commit/ab996a7c5bd42fd73ec17e00650bde8aae222f34",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/ab996a7c5bd42fd73ec17e00650bde8aae222f34/comments",
+   "author": {
+    "login": "nicktelford",
+    "id": 548378,
+    "node_id": "MDQ6VXNlcjU0ODM3OA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/548378?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nicktelford",
+    "html_url": "https://github.com/nicktelford",
+    "followers_url": "https://api.github.com/users/nicktelford/followers",
+    "following_url": "https://api.github.com/users/nicktelford/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nicktelford/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nicktelford/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nicktelford/subscriptions",
+    "organizations_url": "https://api.github.com/users/nicktelford/orgs",
+    "repos_url": "https://api.github.com/users/nicktelford/repos",
+    "events_url": "https://api.github.com/users/nicktelford/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nicktelford/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "nicktelford",
+    "id": 548378,
+    "node_id": "MDQ6VXNlcjU0ODM3OA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/548378?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nicktelford",
+    "html_url": "https://github.com/nicktelford",
+    "followers_url": "https://api.github.com/users/nicktelford/followers",
+    "following_url": "https://api.github.com/users/nicktelford/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nicktelford/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nicktelford/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nicktelford/subscriptions",
+    "organizations_url": "https://api.github.com/users/nicktelford/orgs",
+    "repos_url": "https://api.github.com/users/nicktelford/repos",
+    "events_url": "https://api.github.com/users/nicktelford/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nicktelford/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "0ce891474c8dd5ded334b31a64d9bac3728644aa",
+     "url": "https://api.github.com/repos/apache/kafka/commits/0ce891474c8dd5ded334b31a64d9bac3728644aa",
+     "html_url": "https://github.com/apache/kafka/commit/0ce891474c8dd5ded334b31a64d9bac3728644aa"
+    }
+   ]
+  },
+  {
+   "sha": "582c8005bdf30fb98b830ca8658e40064ed9725f",
+   "node_id": "C_kwDOGjA4MtoAKDU4MmM4MDA1YmRmMzBmYjk4YjgzMGNhODY1OGU0MDA2NGVkOTcyNWY",
+   "commit": {
+    "author": {
+     "name": "Nick Telford",
+     "email": "nick.telford@gmail.com",
+     "date": "2026-10-06T17:49:50Z"
+    },
+    "committer": {
+     "name": "Nick Telford",
+     "email": "nick.telford@gmail.com",
+     "date": "2026-10-28T12:38:13Z"
+    },
+    "message": "KAFKA-21230: Remove the stageToBackend hook from transaction buffers\n\nThe RocksDB transaction buffer now builds its WriteBatch at commit\ntime, from the staged state. Because of this, no buffer needs to be\ntold about each write when it is staged. Every implementation of\nstageToBackend was a no-op.\n\nRemove the abstract method, its call in the put path, and all of its\nimplementations. Update the test buffer to flush from the pending\nwrites map instead of keeping its own copy of the pending batch.\n\nCo-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>",
+    "tree": {
+     "sha": "ddcf7e226acb5168e93ca1e79f1516ae02f79c83",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/ddcf7e226acb5168e93ca1e79f1516ae02f79c83"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/582c8005bdf30fb98b830ca8658e40064ed9725f",
+    "comment_count": 0,
+    "verification": {
+     "verified": true,
+     "reason": "valid",
+     "signature": "-----BEGIN PGP SIGNATURE-----\n\niQFLBAABCgA1FiEEk5hGDOGvzTP3sq6z4p3QPp12vXAFAmrh7LUXHG5pY2sudGVs\nZm9yZEBnbWFpbC5jb20ACgkQ4p3QPp12vXAkFQf/XpWARgWJ7Hb3xQ1AH3k7TfXo\nmDBG9xIyPQTd4MNt6lYShyLXCFCyq5iKYpP2JEzZefMgPaGG2eIUoU7ruMMqjNjH\n70M13swKtBJeU+ohbrKQXQcIq+MQX36+sziMCQl54NHQ//lSj3umD597/25l4+68\n+yPcXGtd7fWQ4JYD3Pwg351lxfj2kJcHpUzbR0gUI9bYavEtdNbuWOj0IgAr3riQ\nmzBScYCTGPqVvgit1G1/vle0Z2KW9Jls08UGCiqG02fSjza5TIjTmWgf1BPUXcgF\n2lojANiN08/NrNSyzW2gDgMetKB/s4ti3LYz/H3gjitN/xzqy5+iE9G6BpZUUg==\n=aWGN\n-----END PGP SIGNATURE-----",
+     "payload": "tree ddcf7e226acb5168e93ca1e79f1516ae02f79c83\nparent ab996a7c5bd42fd73ec17e00650bde8aae222f34\nauthor Nick Telford <nick.telford@gmail.com> 1791308990 +0100\ncommitter Nick Telford <nick.telford@gmail.com> 1793191093 +0000\n\nKAFKA-21230: Remove the stageToBackend hook from transaction buffers\n\nThe RocksDB transaction buffer now builds its WriteBatch at commit\ntime, from the staged state. Because of this, no buffer needs to be\ntold about each write when it is staged. Every implementation of\nstageToBackend was a no-op.\n\nRemove the abstract method, its call in the put path, and all of its\nimplementations. Update the test buffer to flush from the pending\nwrites map instead of keeping its own copy of the pending batch.\n\nCo-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>\n",
+     "verified_at": "2026-10-28T16:44:31Z"
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/582c8005bdf30fb98b830ca8658e40064ed9725f",
+   "html_url": "https://github.com/apache/kafka/commit/582c8005bdf30fb98b830ca8658e40064ed9725f",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/582c8005bdf30fb98b830ca8658e40064ed9725f/comments",
+   "author": {
+    "login": "nicktelford",
+    "id": 548378,
+    "node_id": "MDQ6VXNlcjU0ODM3OA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/548378?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nicktelford",
+    "html_url": "https://github.com/nicktelford",
+    "followers_url": "https://api.github.com/users/nicktelford/followers",
+    "following_url": "https://api.github.com/users/nicktelford/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nicktelford/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nicktelford/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nicktelford/subscriptions",
+    "organizations_url": "https://api.github.com/users/nicktelford/orgs",
+    "repos_url": "https://api.github.com/users/nicktelford/repos",
+    "events_url": "https://api.github.com/users/nicktelford/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nicktelford/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "nicktelford",
+    "id": 548378,
+    "node_id": "MDQ6VXNlcjU0ODM3OA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/548378?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nicktelford",
+    "html_url": "https://github.com/nicktelford",
+    "followers_url": "https://api.github.com/users/nicktelford/followers",
+    "following_url": "https://api.github.com/users/nicktelford/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nicktelford/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nicktelford/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nicktelford/subscriptions",
+    "organizations_url": "https://api.github.com/users/nicktelford/orgs",
+    "repos_url": "https://api.github.com/users/nicktelford/repos",
+    "events_url": "https://api.github.com/users/nicktelford/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nicktelford/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "ab996a7c5bd42fd73ec17e00650bde8aae222f34",
+     "url": "https://api.github.com/repos/apache/kafka/commits/ab996a7c5bd42fd73ec17e00650bde8aae222f34",
+     "html_url": "https://github.com/apache/kafka/commit/ab996a7c5bd42fd73ec17e00650bde8aae222f34"
+    }
+   ]
+  },
+  {
+   "sha": "aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "node_id": "C_kwDOGjA4MtoAKGFhZDU2ZDRkYWY1YzIxYjdiMzFkMzBmMDRhZmFhMWIxNzE1YTE2YzQ",
+   "commit": {
+    "author": {
+     "name": "Nick Telford",
+     "email": "nick.telford@gmail.com",
+     "date": "2026-10-27T18:46:09Z"
+    },
+    "committer": {
+     "name": "Nick Telford",
+     "email": "nick.telford@gmail.com",
+     "date": "2026-10-28T12:38:13Z"
+    },
+    "message": "KAFKA-21230: Bound commit memory in the uncommitted-bytes limit\n\nA thread pauses processing and commits when its uncommitted bytes pass\nits share of statestore.uncommitted.max.bytes. A commit can itself need\nextra memory. The thread can therefore go over the limit while it\ncommits.\n\nStores commit one at a time. During the commit of one store, the extra\nmemory needed is up to the size of that store's uncommitted data. The\nlargest store gives the worst case.\n\nAdd maxStoreUncommittedBytes to ProcessorStateManager, Task and\nTaskManager. It returns the largest uncommitted byte count of any one\nstore. StreamThread now adds this value to the total uncommitted bytes\nbefore it compares the sum with the limit.\n\nApply the same check to the global state thread. Add\nmaxStoreUncommittedBytes to GlobalStateManager and\nGlobalStateMaintainer, and make GlobalStreamThread compare the total\nplus the largest store's bytes with its limit.\n\nBoth threads now commit earlier, so the commit stays inside the limit.\nUpdate the statestore.uncommitted.max.bytes documentation and the 4.5.0\nupgrade guide to describe the new check and how it changes the point of\nan early commit compared with 4.4.\n\nCo-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nReviewed-by: Claude Opus 5.5 <noreply@anthropic.com>",
+    "tree": {
+     "sha": "fea59f7bb99c6756bed10b37596884c89cf6bf5f",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/fea59f7bb99c6756bed10b37596884c89cf6bf5f"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+    "comment_count": 0,
+    "verification": {
+     "verified": true,
+     "reason": "valid",
+     "signature": "-----BEGIN PGP SIGNATURE-----\n\niQFLBAABCgA1FiEEk5hGDOGvzTP3sq6z4p3QPp12vXAFAmrh7LUXHG5pY2sudGVs\nZm9yZEBnbWFpbC5jb20ACgkQ4p3QPp12vXBqxgf+PLuzo2jA9/ICCW0XiLJBAnN5\nAvmXbust9YJTsM/6APnQGuGwDz/e5wJ9kOkizfYvYwvboCAviUaqENiFD2iPizhF\ns60Lq+HZbghdUgXslOQMDc88Q7BSJl26yp0Ud0FDCgJJD043pYjWv7S5h7EQ/S8F\njNYKxKX2+iq+57Q9D6CSLEXDxM79oPCUrDtkgWx/QBzWevfsTFgINJoUp8m+KX+/\ntxCLPvYgRhzO/7pj4EDqp5/kT8xm3nxVHqjBAw3mNeERspkCkG9aIktyvX2STo+W\nU4OfHtdsg4myyrqT1j9azpsCTS0NggFe1AehnpWGZTRdWpVMCTmEtgFzadW6EQ==\n=3WF7\n-----END PGP SIGNATURE-----",
+     "payload": "tree fea59f7bb99c6756bed10b37596884c89cf6bf5f\nparent 582c8005bdf30fb98b830ca8658e40064ed9725f\nauthor Nick Telford <nick.telford@gmail.com> 1793126769 +0000\ncommitter Nick Telford <nick.telford@gmail.com> 1793191093 +0000\n\nKAFKA-21230: Bound commit memory in the uncommitted-bytes limit\n\nA thread pauses processing and commits when its uncommitted bytes pass\nits share of statestore.uncommitted.max.bytes. A commit can itself need\nextra memory. The thread can therefore go over the limit while it\ncommits.\n\nStores commit one at a time. During the commit of one store, the extra\nmemory needed is up to the size of that store's uncommitted data. The\nlargest store gives the worst case.\n\nAdd maxStoreUncommittedBytes to ProcessorStateManager, Task and\nTaskManager. It returns the largest uncommitted byte count of any one\nstore. StreamThread now adds this value to the total uncommitted bytes\nbefore it compares the sum with the limit.\n\nApply the same check to the global state thread. Add\nmaxStoreUncommittedBytes to GlobalStateManager and\nGlobalStateMaintainer, and make GlobalStreamThread compare the total\nplus the largest store's bytes with its limit.\n\nBoth threads now commit earlier, so the commit stays inside the limit.\nUpdate the statestore.uncommitted.max.bytes documentation and the 4.5.0\nupgrade guide to describe the new check and how it changes the point of\nan early commit compared with 4.4.\n\nCo-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nReviewed-by: Claude Opus 5.5 <noreply@anthropic.com>\n",
+     "verified_at": "2026-10-28T16:44:31Z"
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "html_url": "https://github.com/apache/kafka/commit/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/comments",
+   "author": {
+    "login": "nicktelford",
+    "id": 548378,
+    "node_id": "MDQ6VXNlcjU0ODM3OA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/548378?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nicktelford",
+    "html_url": "https://github.com/nicktelford",
+    "followers_url": "https://api.github.com/users/nicktelford/followers",
+    "following_url": "https://api.github.com/users/nicktelford/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nicktelford/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nicktelford/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nicktelford/subscriptions",
+    "organizations_url": "https://api.github.com/users/nicktelford/orgs",
+    "repos_url": "https://api.github.com/users/nicktelford/repos",
+    "events_url": "https://api.github.com/users/nicktelford/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nicktelford/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "nicktelford",
+    "id": 548378,
+    "node_id": "MDQ6VXNlcjU0ODM3OA==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/548378?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nicktelford",
+    "html_url": "https://github.com/nicktelford",
+    "followers_url": "https://api.github.com/users/nicktelford/followers",
+    "following_url": "https://api.github.com/users/nicktelford/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nicktelford/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nicktelford/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nicktelford/subscriptions",
+    "organizations_url": "https://api.github.com/users/nicktelford/orgs",
+    "repos_url": "https://api.github.com/users/nicktelford/repos",
+    "events_url": "https://api.github.com/users/nicktelford/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nicktelford/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "582c8005bdf30fb98b830ca8658e40064ed9725f",
+     "url": "https://api.github.com/repos/apache/kafka/commits/582c8005bdf30fb98b830ca8658e40064ed9725f",
+     "html_url": "https://github.com/apache/kafka/commit/582c8005bdf30fb98b830ca8658e40064ed9725f"
+    }
+   ]
+  }
+ ],
+ "files": [
+  {
+   "sha": "92aa5ca5f1a5985821e51f6faf4e4b9dcc9adf5c",
+   "filename": "docs/streams/upgrade-guide.md",
+   "status": "modified",
+   "additions": 2,
+   "deletions": 0,
+   "changes": 2,
+   "blob_url": "https://github.com/apache/kafka/blob/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/docs%2Fstreams%2Fupgrade-guide.md",
+   "raw_url": "https://github.com/apache/kafka/raw/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/docs%2Fstreams%2Fupgrade-guide.md",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/docs%2Fstreams%2Fupgrade-guide.md?ref=aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "patch": "@@ -71,6 +71,8 @@ Processors returning the same `StoreBuilder` instance from `ConnectedStoreProvid\n \n Upgraded RocksDB dependency to version 10.10.1(from 10.1.3). RocksDB deleted `max_write_buffer_number_to_maintain` from its `ColumnFamilyOptions` in version 10.5.0. To preserve compatibility, Kafka Streams' `Options#setMaxWriteBufferNumberToMaintain` and `Options#maxWriteBufferNumberToMaintain` are now deprecated no-ops: the setter has no effect, and the getter always returns `0` regardless of what was previously configured. This change is primarily relevant to users implementing custom RocksDB configurations via `rocksdb.config.setter`. Users relying on `max_write_buffer_number_to_maintain` should remove that configuration, since it no longer has any effect. Consult the [RocksDB changelog](https://github.com/facebook/rocksdb/blob/main/HISTORY.md) between 10.1.3 and 10.10.1 for other changes.\n \n+Transactional RocksDB stores now build their write batch at commit, not on each write. The commit of a store needs extra memory up to the size of the uncommitted data of that store. To stay within `statestore.uncommitted.max.bytes`, a thread now commits early when its uncommitted bytes plus the uncommitted bytes of its largest store exceed its share of the limit. Applications with more than one transactional RocksDB store can therefore buffer more data before an early commit than in 4.4. Applications with only in-memory stores commit early after less data than in 4.4.\n+\n ## Streams API changes in 4.4.0\n \n Kafka Streams does not support the asynchronous bootstrap DNS resolution mode introduced by [KIP-909](https://cwiki.apache.org/confluence/x/MJtbDg) yet. For every client it creates internally, `bootstrap.resolve.timeout.ms` is forced to `0`, and a user-supplied positive value, through any prefix form, is ignored with a warning."
+  },
+  {
+   "sha": "f81fa23363333c282fe52ca98767b067cfdd20cd",
+   "filename": "streams/src/main/java/org/apache/kafka/streams/StreamsConfig.java",
+   "status": "modified",
+   "additions": 3,
+   "deletions": 1,
+   "changes": 4,
+   "blob_url": "https://github.com/apache/kafka/blob/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2FStreamsConfig.java",
+   "raw_url": "https://github.com/apache/kafka/raw/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2FStreamsConfig.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2FStreamsConfig.java?ref=aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "patch": "@@ -824,7 +824,9 @@ public class StreamsConfig extends AbstractConfig {\n     private static final String STATESTORE_UNCOMMITTED_MAX_BYTES_DOC =\n         \"The maximum number of uncommitted bytes across all transactional state stores on this \" +\n         \"application instance before an early commit is triggered, regardless of commit.interval.ms. \" +\n-        \"The limit is divided equally across the configured number of stream threads, and the global state thread,\" +\n+        \"The check adds the uncommitted bytes of the largest single state store to the total, \" +\n+        \"because the commit of a store can need that much extra memory. \" +\n+        \"The limit is divided equally across the configured number of stream threads, and the global state thread, \" +\n         \"if the topology has any global stores. Set to -1 to disable. Default is 67108864 (64 MB).\";\n     private static final long STATESTORE_UNCOMMITTED_MAX_BYTES_DEFAULT = 67_108_864L;\n "
+  },
+  {
+   "sha": "5e77885f43fc2696f66b9b51f34a464a6720fb93",
+   "filename": "streams/src/main/java/org/apache/kafka/streams/processor/internals/GlobalStateMaintainer.java",
+   "status": "modified",
+   "additions": 2,
+   "deletions": 0,
+   "changes": 2,
+   "blob_url": "https://github.com/apache/kafka/blob/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FGlobalStateMaintainer.java",
+   "raw_url": "https://github.com/apache/kafka/raw/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FGlobalStateMaintainer.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FGlobalStateMaintainer.java?ref=aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "patch": "@@ -38,4 +38,6 @@ interface GlobalStateMaintainer {\n     void maybeCheckpoint();\n \n     long approximateNumUncommittedBytes();\n+\n+    long maxStoreUncommittedBytes();\n }"
+  },
+  {
+   "sha": "6434fd1a1ab9b4b1f1175067abb8905905515e8f",
+   "filename": "streams/src/main/java/org/apache/kafka/streams/processor/internals/GlobalStateManager.java",
+   "status": "modified",
+   "additions": 2,
+   "deletions": 0,
+   "changes": 2,
+   "blob_url": "https://github.com/apache/kafka/blob/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FGlobalStateManager.java",
+   "raw_url": "https://github.com/apache/kafka/raw/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FGlobalStateManager.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FGlobalStateManager.java?ref=aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "patch": "@@ -31,4 +31,6 @@ public interface GlobalStateManager extends StateManager {\n     Set<String> initialize();\n \n     long approximateNumUncommittedBytes();\n+\n+    long maxStoreUncommittedBytes();\n }"
+  },
+  {
+   "sha": "d5fdf290cdaa19d17f2d4de5c1c382abba2af31d",
+   "filename": "streams/src/main/java/org/apache/kafka/streams/processor/internals/GlobalStateManagerImpl.java",
+   "status": "modified",
+   "additions": 11,
+   "deletions": 0,
+   "changes": 11,
+   "blob_url": "https://github.com/apache/kafka/blob/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FGlobalStateManagerImpl.java",
+   "raw_url": "https://github.com/apache/kafka/raw/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FGlobalStateManagerImpl.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FGlobalStateManagerImpl.java?ref=aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "patch": "@@ -581,6 +581,17 @@ public long approximateNumUncommittedBytes() {\n         return total;\n     }\n \n+    @Override\n+    public long maxStoreUncommittedBytes() {\n+        long max = 0;\n+        for (final Optional<StateStore> entry : globalStores.values()) {\n+            if (entry.isPresent()) {\n+                max = Math.max(max, entry.get().approximateNumUncommittedBytes());\n+            }\n+        }\n+        return max;\n+    }\n+\n     @Override\n     public void commit() {\n         log.debug(\"Committing all global globalStores registered in the state manager\");"
+  },
+  {
+   "sha": "37e42080709c8e28d62c722034e67e34d64197ab",
+   "filename": "streams/src/main/java/org/apache/kafka/streams/processor/internals/GlobalStateUpdateTask.java",
+   "status": "modified",
+   "additions": 5,
+   "deletions": 0,
+   "changes": 5,
+   "blob_url": "https://github.com/apache/kafka/blob/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FGlobalStateUpdateTask.java",
+   "raw_url": "https://github.com/apache/kafka/raw/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FGlobalStateUpdateTask.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FGlobalStateUpdateTask.java?ref=aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "patch": "@@ -173,6 +173,11 @@ public long approximateNumUncommittedBytes() {\n         return stateMgr.approximateNumUncommittedBytes();\n     }\n \n+    @Override\n+    public long maxStoreUncommittedBytes() {\n+        return stateMgr.maxStoreUncommittedBytes();\n+    }\n+\n     @Override\n     public void maybeCheckpoint() {\n         final long now = time.milliseconds();"
+  },
+  {
+   "sha": "026ddc86a1b57699c189323fea915cda7d2fb943",
+   "filename": "streams/src/main/java/org/apache/kafka/streams/processor/internals/GlobalStreamThread.java",
+   "status": "modified",
+   "additions": 6,
+   "deletions": 1,
+   "changes": 7,
+   "blob_url": "https://github.com/apache/kafka/blob/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FGlobalStreamThread.java",
+   "raw_url": "https://github.com/apache/kafka/raw/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FGlobalStreamThread.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FGlobalStreamThread.java?ref=aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "patch": "@@ -273,6 +273,10 @@ long approximateNumUncommittedBytes() {\n             return stateMaintainer.approximateNumUncommittedBytes();\n         }\n \n+        long maxStoreUncommittedBytes() {\n+            return stateMaintainer.maxStoreUncommittedBytes();\n+        }\n+\n         public void close(final boolean wipeStateStore) throws IOException {\n             try {\n                 globalConsumer.close();\n@@ -316,8 +320,9 @@ public void run() {\n                 stateConsumer.pollAndUpdate();\n \n                 final long uncommittedLimit = maxUncommittedBytes;\n+                // stores commit one at a time, and a commit can need extra memory up to the size of the store's uncommitted data\n                 if (uncommittedLimit > 0\n-                        && stateConsumer.approximateNumUncommittedBytes() > uncommittedLimit) {\n+                        && stateConsumer.approximateNumUncommittedBytes() + stateConsumer.maxStoreUncommittedBytes() > uncommittedLimit) {\n                     log.debug(\"Committing global state: uncommitted bytes exceeded {}\", uncommittedLimit);\n                     stateConsumer.flushState();\n                 }"
+  },
+  {
+   "sha": "0a17f95887640721f706e45d3465cdbc8d8aa99c",
+   "filename": "streams/src/main/java/org/apache/kafka/streams/processor/internals/ProcessorStateManager.java",
+   "status": "modified",
+   "additions": 8,
+   "deletions": 0,
+   "changes": 8,
+   "blob_url": "https://github.com/apache/kafka/blob/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FProcessorStateManager.java",
+   "raw_url": "https://github.com/apache/kafka/raw/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FProcessorStateManager.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FProcessorStateManager.java?ref=aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "patch": "@@ -672,6 +672,14 @@ long approximateNumUncommittedBytes() {\n         return total;\n     }\n \n+    long maxStoreUncommittedBytes() {\n+        long max = 0;\n+        for (final StateStoreMetadata metadata : stores.values()) {\n+            max = Math.max(max, metadata.stateStore.approximateNumUncommittedBytes());\n+        }\n+        return max;\n+    }\n+\n     /**\n      * {@link StateStore#close() Close} all stores (even in case of failure).\n      * Log all exceptions and re-throw the first exception that occurred at the end."
+  },
+  {
+   "sha": "98099e791e79276f249c75b56eb439d2ac986953",
+   "filename": "streams/src/main/java/org/apache/kafka/streams/processor/internals/ReadOnlyTask.java",
+   "status": "modified",
+   "additions": 5,
+   "deletions": 0,
+   "changes": 5,
+   "blob_url": "https://github.com/apache/kafka/blob/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FReadOnlyTask.java",
+   "raw_url": "https://github.com/apache/kafka/raw/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FReadOnlyTask.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FReadOnlyTask.java?ref=aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "patch": "@@ -256,4 +256,9 @@ public ProcessorStateManager stateManager() {\n     public long approximateNumUncommittedBytes() {\n         throw new UnsupportedOperationException(\"This task is read-only\");\n     }\n+\n+    @Override\n+    public long maxStoreUncommittedBytes() {\n+        throw new UnsupportedOperationException(\"This task is read-only\");\n+    }\n }"
+  },
+  {
+   "sha": "bd957d7714552e649b5b2fa1cd2f242140df8c8b",
+   "filename": "streams/src/main/java/org/apache/kafka/streams/processor/internals/StreamTask.java",
+   "status": "modified",
+   "additions": 5,
+   "deletions": 0,
+   "changes": 5,
+   "blob_url": "https://github.com/apache/kafka/blob/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FStreamTask.java",
+   "raw_url": "https://github.com/apache/kafka/raw/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FStreamTask.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FStreamTask.java?ref=aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "patch": "@@ -1459,6 +1459,11 @@ public long approximateNumUncommittedBytes() {\n         return stateMgr.approximateNumUncommittedBytes();\n     }\n \n+    @Override\n+    public long maxStoreUncommittedBytes() {\n+        return stateMgr.maxStoreUncommittedBytes();\n+    }\n+\n     @Override\n     public boolean commitNeeded() {\n         // we need to do an extra check if the flag was false, that"
+  },
+  {
+   "sha": "fc9631a58ef376d6bbbab1b92e8a52baf0bf13cc",
+   "filename": "streams/src/main/java/org/apache/kafka/streams/processor/internals/StreamThread.java",
+   "status": "modified",
+   "additions": 2,
+   "deletions": 1,
+   "changes": 3,
+   "blob_url": "https://github.com/apache/kafka/blob/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FStreamThread.java",
+   "raw_url": "https://github.com/apache/kafka/raw/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FStreamThread.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FStreamThread.java?ref=aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "patch": "@@ -1933,7 +1933,8 @@ private boolean maybePauseProcessingForUncommittedBytes() {\n     private boolean shouldCommitDueToUncommittedBytes() {\n         final long limit = maxUncommittedBytesPerThread;\n         if (limit <= 0) return false;\n-        return taskManager.totalUncommittedBytes() > limit;\n+        // stores commit one at a time, and a commit can need extra memory up to the size of the store's uncommitted data\n+        return taskManager.totalUncommittedBytes() + taskManager.maxStoreUncommittedBytes() > limit;\n     }\n \n     public void resizeMaxUncommittedBytes(final long maxUncommittedBytesPerThread) {"
+  },
+  {
+   "sha": "731c78bdb696f5d9360f8ee67bbdcaf60ecf099a",
+   "filename": "streams/src/main/java/org/apache/kafka/streams/processor/internals/Task.java",
+   "status": "modified",
+   "additions": 4,
+   "deletions": 0,
+   "changes": 4,
+   "blob_url": "https://github.com/apache/kafka/blob/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FTask.java",
+   "raw_url": "https://github.com/apache/kafka/raw/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FTask.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FTask.java?ref=aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "patch": "@@ -255,6 +255,10 @@ default long approximateNumUncommittedBytes() {\n         return 0;\n     }\n \n+    default long maxStoreUncommittedBytes() {\n+        return 0;\n+    }\n+\n     default boolean commitRequested() {\n         return false;\n     }"
+  },
+  {
+   "sha": "4feb7a1e7a4ded154fedc1b046c46f31824830ef",
+   "filename": "streams/src/main/java/org/apache/kafka/streams/processor/internals/TaskManager.java",
+   "status": "modified",
+   "additions": 8,
+   "deletions": 0,
+   "changes": 8,
+   "blob_url": "https://github.com/apache/kafka/blob/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FTaskManager.java",
+   "raw_url": "https://github.com/apache/kafka/raw/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FTaskManager.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FTaskManager.java?ref=aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "patch": "@@ -1787,6 +1787,14 @@ long totalUncommittedBytes() {\n         return total;\n     }\n \n+    long maxStoreUncommittedBytes() {\n+        long max = 0;\n+        for (final Task task : allRunningTasks().values()) {\n+            max = Math.max(max, task.maxStoreUncommittedBytes());\n+        }\n+        return max;\n+    }\n+\n     Set<Task> readOnlyAllTasks() {\n         // not bothering with an unmodifiable map, since the tasks themselves are mutable, but\n         // if any outside code modifies the map or the tasks, it would be a severe transgression."
+  },
+  {
+   "sha": "ae7e4b6cf27e93983954151122c851e7d3dfa70a",
+   "filename": "streams/src/main/java/org/apache/kafka/streams/state/internals/AbstractTransactionBuffer.java",
+   "status": "modified",
+   "additions": 11,
+   "deletions": 5,
+   "changes": 16,
+   "blob_url": "https://github.com/apache/kafka/blob/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fstate%2Finternals%2FAbstractTransactionBuffer.java",
+   "raw_url": "https://github.com/apache/kafka/raw/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fstate%2Finternals%2FAbstractTransactionBuffer.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fstate%2Finternals%2FAbstractTransactionBuffer.java?ref=aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "patch": "@@ -61,9 +61,6 @@ abstract class AbstractTransactionBuffer<K extends Comparable<K>> implements Tra\n \n     // -- Abstract methods to be implemented by backend-specific subclasses --\n \n-    /** Append the write to the backend-specific batch (e.g. WriteBatch for RocksDB). */\n-    abstract void stageToBackend(K key, byte[] value);\n-\n     /** Create a base store iterator for the given range. Upper bound is inclusive. Forward direction. */\n     abstract ManagedKeyValueIterator<K, byte[]> newBaseIterator(K from, K to);\n \n@@ -85,6 +82,12 @@ ManagedKeyValueIterator<K, byte[]> newBaseIterator(final K from, final K to,\n     abstract ManagedKeyValueIterator<K, byte[]> newBaseSnapshotIterator(K from, K to,\n                                                                         boolean forward, boolean toInclusive);\n \n+    /**\n+     * Called by the owner thread before the write lock is taken in {@link #commit()}.\n+     * Must not change state that non-owner readers see.\n+     */\n+    void prepareFlush() { }\n+\n     /** Atomically apply the accumulated writes to the base store. */\n     abstract void flushToBase();\n \n@@ -100,9 +103,11 @@ abstract ManagedKeyValueIterator<K, byte[]> newBaseSnapshotIterator(K from, K to\n     public void stage(final K key, final byte[] value) {\n         snapshotLock.writeLock().lock();\n         try {\n-            pendingWrites.put(key, Optional.ofNullable(value));\n+            final Optional<byte[]> previous = pendingWrites.put(key, Optional.ofNullable(value));\n+            if (previous != null) {\n+                pendingWritesBytes -= estimateKeySize(key) + previous.map(v -> v.length).orElse(0);\n+            }\n             pendingWritesBytes += estimateKeySize(key) + (value != null ? value.length : 0);\n-            stageToBackend(key, value);\n         } finally {\n             snapshotLock.writeLock().unlock();\n         }\n@@ -168,6 +173,7 @@ ManagedKeyValueIterator<K, byte[]> range(final K from, final K to, final boolean\n \n     @Override\n     public void commit() {\n+        prepareFlush();\n         snapshotLock.writeLock().lock();\n         try {\n             flushToBase();"
+  },
+  {
+   "sha": "788ed0b0ececec8ef4dde3a41a506629c5fb1bcd",
+   "filename": "streams/src/main/java/org/apache/kafka/streams/state/internals/InMemorySessionTransactionBuffer.java",
+   "status": "modified",
+   "additions": 0,
+   "deletions": 5,
+   "changes": 5,
+   "blob_url": "https://github.com/apache/kafka/blob/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fstate%2Finternals%2FInMemorySessionTransactionBuffer.java",
+   "raw_url": "https://github.com/apache/kafka/raw/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fstate%2Finternals%2FInMemorySessionTransactionBuffer.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fstate%2Finternals%2FInMemorySessionTransactionBuffer.java?ref=aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "patch": "@@ -117,11 +117,6 @@ int estimateKeySize(final SessionEntryKey key) {\n         return 2 * Long.BYTES + key.key().get().length;\n     }\n \n-    @Override\n-    void stageToBackend(final SessionEntryKey key, final byte[] value) {\n-        // no-op — staging map is sufficient; no write-batch concept for in-memory\n-    }\n-\n     @Override\n     ManagedKeyValueIterator<SessionEntryKey, byte[]> newBaseIterator(final SessionEntryKey from, final SessionEntryKey to) {\n         return newBaseIterator(from, to, true, true);"
+  },
+  {
+   "sha": "4b034d754a158bd7904a22dc9f1b6765f73010ae",
+   "filename": "streams/src/main/java/org/apache/kafka/streams/state/internals/InMemoryTransactionBuffer.java",
+   "status": "modified",
+   "additions": 0,
+   "deletions": 5,
+   "changes": 5,
+   "blob_url": "https://github.com/apache/kafka/blob/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fstate%2Finternals%2FInMemoryTransactionBuffer.java",
+   "raw_url": "https://github.com/apache/kafka/raw/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fstate%2Finternals%2FInMemoryTransactionBuffer.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fstate%2Finternals%2FInMemoryTransactionBuffer.java?ref=aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "patch": "@@ -55,11 +55,6 @@ int estimateKeySize(final Bytes key) {\n         return key.get().length;\n     }\n \n-    @Override\n-    void stageToBackend(final Bytes key, final byte[] value) {\n-        // no-op — staging map is sufficient; no write-batch concept for in-memory\n-    }\n-\n     @Override\n     ManagedKeyValueIterator<Bytes, byte[]> newBaseIterator(final Bytes from, final Bytes to) {\n         return newBaseIterator(from, to, true, true);"
+  },
+  {
+   "sha": "d8b33df306a7f2820ef565fc11bd57545975d64a",
+   "filename": "streams/src/main/java/org/apache/kafka/streams/state/internals/InMemoryWindowTransactionBuffer.java",
+   "status": "modified",
+   "additions": 0,
+   "deletions": 5,
+   "changes": 5,
+   "blob_url": "https://github.com/apache/kafka/blob/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fstate%2Finternals%2FInMemoryWindowTransactionBuffer.java",
+   "raw_url": "https://github.com/apache/kafka/raw/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fstate%2Finternals%2FInMemoryWindowTransactionBuffer.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fstate%2Finternals%2FInMemoryWindowTransactionBuffer.java?ref=aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "patch": "@@ -108,11 +108,6 @@ int estimateKeySize(final WindowEntryKey key) {\n         return Long.BYTES + key.key().get().length;\n     }\n \n-    @Override\n-    void stageToBackend(final WindowEntryKey key, final byte[] value) {\n-        // no-op — staging map is sufficient; no write-batch concept for in-memory\n-    }\n-\n     @Override\n     ManagedKeyValueIterator<WindowEntryKey, byte[]> newBaseIterator(final WindowEntryKey from, final WindowEntryKey to) {\n         return newBaseIterator(from, to, true, true);"
+  },
+  {
+   "sha": "b9c6d50b6679e71aebbb73fac5b4d24bfbd309df",
+   "filename": "streams/src/main/java/org/apache/kafka/streams/state/internals/RocksDBTransactionBuffer.java",
+   "status": "modified",
+   "additions": 92,
+   "deletions": 40,
+   "changes": 132,
+   "blob_url": "https://github.com/apache/kafka/blob/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fstate%2Finternals%2FRocksDBTransactionBuffer.java",
+   "raw_url": "https://github.com/apache/kafka/raw/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fstate%2Finternals%2FRocksDBTransactionBuffer.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fstate%2Finternals%2FRocksDBTransactionBuffer.java?ref=aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "patch": "@@ -31,6 +31,7 @@\n \n import java.util.ArrayList;\n import java.util.Collections;\n+import java.util.HashMap;\n import java.util.List;\n import java.util.Map;\n import java.util.NavigableMap;\n@@ -40,7 +41,10 @@\n \n /**\n  * A {@link TransactionBuffer} implementation for RocksDB-backed stores.\n- * Uses a {@link WriteBatch} (without index) to accumulate writes for atomic commit.\n+ * Writes are staged on the heap only. {@link #prepareFlush()} builds a {@link WriteBatch} from the\n+ * staged state at commit, outside the write lock, so the data is not also held in native memory\n+ * between commits. Range deletes go into the batch before point writes; this is correct because a\n+ * range delete removes the staged point writes it covers.\n  * Reads are handled entirely by the shared staging map in\n  * {@link AbstractTransactionBuffer}, so a {@code WriteBatchWithIndex} is not needed.\n  * <p>\n@@ -58,7 +62,11 @@ class RocksDBTransactionBuffer extends AbstractTransactionBuffer<Bytes> {\n     private final ColumnFamilyHandle cfHandle;\n     private final WriteOptions wOptions;\n     private final String storeName;\n-    private WriteBatch writeBatch;\n+    // Staged writes to column families other than cfHandle; they are never read back, only committed.\n+    private final Map<ColumnFamilyHandle, NavigableMap<Bytes, Optional<byte[]>>> otherCfWrites = new HashMap<>();\n+    private final List<PendingRangeDelete> pendingRangeDeletes = new ArrayList<>();\n+    // Non-null only between prepareFlush() and the end of flushToBase().\n+    private WriteBatch preparedBatch;\n     private volatile NavigableMap<Bytes, List<Bytes>> rangeTombstones = Collections.emptyNavigableMap();\n     // Position deltas for writes staged in the current (uncommitted) transaction. Merged into the\n     // store's committed Position and cleared on commit; discarded on rollback. Guarded by\n@@ -74,39 +82,35 @@ class RocksDBTransactionBuffer extends AbstractTransactionBuffer<Bytes> {\n         this.cfHandle = cfHandle;\n         this.wOptions = wOptions;\n         this.storeName = storeName;\n-        this.writeBatch = new WriteBatch();\n     }\n \n     @Override\n     int estimateKeySize(final Bytes key) {\n         return key.get().length;\n     }\n \n-    @Override\n-    void stageToBackend(final Bytes key, final byte[] value) {\n-        stage(cfHandle, key, value);\n+    private long entrySize(final Bytes key, final Optional<byte[]> value) {\n+        return estimateKeySize(key) + value.map(v -> v.length).orElse(0);\n     }\n \n     /**\n-     * Stages a write for an explicit column family. Updates the shared read buffer\n-     * ({@code pendingWrites}) and appends the write to the shared {@link WriteBatch}\n-     * under {@code cf}, so every staged CF is committed atomically on {@link #commit()}.\n+     * Stages a write for an explicit column family. Writes to the data column family go to the\n+     * shared read buffer ({@code pendingWrites}); writes to any other column family are held\n+     * separately. All staged column families are committed atomically on {@link #commit()}.\n      */\n     void stage(final ColumnFamilyHandle cf, final Bytes key, final byte[] value) {\n         snapshotLock.writeLock().lock();\n         try {\n             if (cf == cfHandle) {\n-                pendingWrites.put(key, Optional.ofNullable(value));\n-                pendingWritesBytes += estimateKeySize(key) + (value != null ? value.length : 0);\n-            }\n-            try {\n-                if (value != null) {\n-                    writeBatch.put(cf, key.get(), value);\n-                } else {\n-                    writeBatch.delete(cf, key.get());\n+                super.stage(key, value);\n+            } else {\n+                final Optional<byte[]> staged = Optional.ofNullable(value);\n+                final Optional<byte[]> previous =\n+                    otherCfWrites.computeIfAbsent(cf, c -> new TreeMap<>()).put(key, staged);\n+                if (previous != null) {\n+                    pendingWritesBytes -= entrySize(key, previous);\n                 }\n-            } catch (final RocksDBException e) {\n-                throw new ProcessorStateException(\"Error staging write in transaction buffer for store \" + storeName, e);\n+                pendingWritesBytes += entrySize(key, staged);\n             }\n         } finally {\n             snapshotLock.writeLock().unlock();\n@@ -135,16 +139,24 @@ void stageAll(final Runnable stagingOperations) {\n     /**\n      * Stages a range deletion for an explicit column family. Updates the shared\n      * {@code pendingWrites} and {@code rangeTombstones} so iterators opened before\n-     * commit hide the deleted range, and appends the range delete to the shared\n-     * {@link WriteBatch} under {@code cf}.\n+     * commit hide the deleted range, and records the range delete for {@code cf} so\n+     * {@link #prepareFlush()} adds it to the {@link WriteBatch}.\n      */\n     void stageDeleteRange(final ColumnFamilyHandle cf, final Bytes from, final Bytes to) {\n         snapshotLock.writeLock().lock();\n         try {\n             // Multi-node subMap().clear() on the (non-thread-safe) TreeMap staging buffer must hold\n             // the write lock; doing it together with the rangeTombstones swap also makes the two\n             // updates atomic with respect to a non-owner snapshot scan.\n-            pendingWrites.subMap(from, true, to, false).clear();\n+            final NavigableMap<Bytes, Optional<byte[]>> staged =\n+                cf == cfHandle ? pendingWrites : otherCfWrites.get(cf);\n+            if (staged != null) {\n+                final NavigableMap<Bytes, Optional<byte[]>> covered = staged.subMap(from, true, to, false);\n+                for (final Map.Entry<Bytes, Optional<byte[]>> entry : covered.entrySet()) {\n+                    pendingWritesBytes -= entrySize(entry.getKey(), entry.getValue());\n+                }\n+                covered.clear();\n+            }\n             // Copy-on-write: clone the map AND the affected key's list, so a non-owner iterator\n             // holding the previous rangeTombstones map (and its lists) is never mutated underneath\n             // it. A shallow map copy alone would share the List<Bytes> values and corrupt in-flight\n@@ -156,11 +168,7 @@ void stageDeleteRange(final ColumnFamilyHandle cf, final Bytes from, final Bytes\n             copy.put(from, updated);\n             rangeTombstones = copy;\n             pendingWritesBytes += estimateKeySize(from) + estimateKeySize(to);\n-            try {\n-                writeBatch.deleteRange(cf, from.get(), to.get());\n-            } catch (final RocksDBException e) {\n-                throw new ProcessorStateException(\"Error staging delete range in transaction buffer for store \" + storeName, e);\n-            }\n+            pendingRangeDeletes.add(new PendingRangeDelete(cf, from, to));\n         } finally {\n             snapshotLock.writeLock().unlock();\n         }\n@@ -286,21 +294,58 @@ private ManagedKeyValueIterator<Bytes, byte[]> newBaseIterator(final ColumnFamil\n         return new RangeTombstoneFilterIterator(iter, rangeTombstones);\n     }\n \n+    @Override\n+    void prepareFlush() {\n+        preparedBatch = new WriteBatch();\n+        try {\n+            for (final PendingRangeDelete delete : pendingRangeDeletes) {\n+                preparedBatch.deleteRange(delete.cf, delete.from.get(), delete.to.get());\n+            }\n+            addPoints(cfHandle, pendingWrites);\n+            for (final Map.Entry<ColumnFamilyHandle, NavigableMap<Bytes, Optional<byte[]>>> cfWrites : otherCfWrites.entrySet()) {\n+                addPoints(cfWrites.getKey(), cfWrites.getValue());\n+            }\n+        } catch (final RocksDBException e) {\n+            preparedBatch.close();\n+            preparedBatch = null;\n+            throw new ProcessorStateException(\"Error preparing commit batch for store \" + storeName, e);\n+        }\n+    }\n+\n+    private void addPoints(final ColumnFamilyHandle cf,\n+                           final NavigableMap<Bytes, Optional<byte[]>> writes) throws RocksDBException {\n+        for (final Map.Entry<Bytes, Optional<byte[]>> entry : writes.entrySet()) {\n+            if (entry.getValue().isPresent()) {\n+                preparedBatch.put(cf, entry.getKey().get(), entry.getValue().get());\n+            } else {\n+                preparedBatch.delete(cf, entry.getKey().get());\n+            }\n+        }\n+    }\n+\n     @Override\n     void flushToBase() {\n         try {\n-            db.write(wOptions, writeBatch);\n+            db.write(wOptions, preparedBatch);\n         } catch (final RocksDBException e) {\n             throw new ProcessorStateException(\"Error committing transaction buffer for store \" + storeName, e);\n+        } finally {\n+            preparedBatch.close();\n+            preparedBatch = null;\n         }\n-        writeBatch.close();\n-        writeBatch = new WriteBatch();\n+        otherCfWrites.clear();\n+        pendingRangeDeletes.clear();\n         rangeTombstones = Collections.emptyNavigableMap();\n     }\n \n     @Override\n     void discardPendingBatch() {\n-        writeBatch.clear();\n+        if (preparedBatch != null) {\n+            preparedBatch.close();\n+            preparedBatch = null;\n+        }\n+        otherCfWrites.clear();\n+        pendingRangeDeletes.clear();\n         rangeTombstones = Collections.emptyNavigableMap();\n         pendingPosition = Position.emptyPosition();\n     }\n@@ -333,17 +378,12 @@ void mergePendingPositionInto(final Position committed) {\n         }\n     }\n \n-    @Override\n-    public long approximateNumUncommittedBytes() {\n-        // an empty WriteBatch still reports its fixed header, which no commit can release; counting it would\n-        // keep the uncommitted-bytes limit exceeded after every commit when the limit is below that baseline\n-        final long batchBytes = writeBatch.count() > 0 ? writeBatch.getDataSize() : 0;\n-        return super.approximateNumUncommittedBytes() + batchBytes;\n-    }\n-\n     @Override\n     public void close() {\n-        writeBatch.close();\n+        if (preparedBatch != null) {\n+            preparedBatch.close();\n+            preparedBatch = null;\n+        }\n     }\n \n     static boolean isCoveredByRangeTombstone(final Bytes key,\n@@ -361,6 +401,18 @@ static boolean isCoveredByRangeTombstone(final Bytes key,\n         return false;\n     }\n \n+    private static final class PendingRangeDelete {\n+        private final ColumnFamilyHandle cf;\n+        private final Bytes from;\n+        private final Bytes to;\n+\n+        PendingRangeDelete(final ColumnFamilyHandle cf, final Bytes from, final Bytes to) {\n+            this.cf = cf;\n+            this.from = from;\n+            this.to = to;\n+        }\n+    }\n+\n     private static class RangeTombstoneFilterIterator implements ManagedKeyValueIterator<Bytes, byte[]> {\n \n         private final ManagedKeyValueIterator<Bytes, byte[]> wrapped;"
+  },
+  {
+   "sha": "abe1073273c36f9dc56723c31398b6480fbc2209",
+   "filename": "streams/src/main/java/org/apache/kafka/streams/state/internals/TransactionBuffer.java",
+   "status": "modified",
+   "additions": 1,
+   "deletions": 1,
+   "changes": 2,
+   "blob_url": "https://github.com/apache/kafka/blob/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fstate%2Finternals%2FTransactionBuffer.java",
+   "raw_url": "https://github.com/apache/kafka/raw/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fstate%2Finternals%2FTransactionBuffer.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fstate%2Finternals%2FTransactionBuffer.java?ref=aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "patch": "@@ -80,7 +80,7 @@ interface TransactionBuffer<K extends Comparable<K>> extends Closeable {\n \n     /**\n      * Returns an approximation of the number of uncommitted bytes currently staged in this buffer.\n-     * This is not exact — it does not account for overwrites of the same key, and may not include\n+     * This is not exact — it may not include\n      * all overhead (e.g. object headers in the staging map). It is intended for use in triggering\n      * early commits when the buffer grows too large.\n      */"
+  },
+  {
+   "sha": "f471c9890c8beaa7e3b80890f23ec1ea81e4cf36",
+   "filename": "streams/src/test/java/org/apache/kafka/streams/processor/internals/GlobalStateManagerImplTest.java",
+   "status": "modified",
+   "additions": 28,
+   "deletions": 0,
+   "changes": 28,
+   "blob_url": "https://github.com/apache/kafka/blob/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FGlobalStateManagerImplTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FGlobalStateManagerImplTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FGlobalStateManagerImplTest.java?ref=aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "patch": "@@ -407,6 +407,34 @@ public long approximateNumUncommittedBytes() {\n         assertEquals(350L, stateManager.approximateNumUncommittedBytes());\n     }\n \n+    @Test\n+    public void shouldReportZeroMaxStoreUncommittedBytesBeforeStoresAreRegistered() {\n+        initializeConsumer(0, 0, t1, t2, t3, t4, t5);\n+        stateManager.initialize();\n+        assertEquals(0L, stateManager.maxStoreUncommittedBytes());\n+    }\n+\n+    @Test\n+    public void shouldReportLargestStoreUncommittedBytes() {\n+        initializeConsumer(0, 0, t1, t2, t3, t4, t5);\n+        stateManager.initialize();\n+        initializeConsumer(1, 0, t1);\n+        stateManager.registerStore(new NoOpReadOnlyStore<>(store1.name()) {\n+            @Override\n+            public long approximateNumUncommittedBytes() {\n+                return 100L;\n+            }\n+        }, stateRestoreCallback, null);\n+        initializeConsumer(1, 0, t2);\n+        stateManager.registerStore(new NoOpReadOnlyStore<>(store2.name()) {\n+            @Override\n+            public long approximateNumUncommittedBytes() {\n+                return 250L;\n+            }\n+        }, stateRestoreCallback, null);\n+        assertEquals(250L, stateManager.maxStoreUncommittedBytes());\n+    }\n+\n     @Test\n     public void shouldCommitStateStores() {\n         initializeConsumer(0, 0, t1, t2, t3, t4, t5);"
+  },
+  {
+   "sha": "090e7c428ed4c06e8307a1ba2515bb2a066c066a",
+   "filename": "streams/src/test/java/org/apache/kafka/streams/processor/internals/GlobalStateTaskTest.java",
+   "status": "modified",
+   "additions": 6,
+   "deletions": 0,
+   "changes": 6,
+   "blob_url": "https://github.com/apache/kafka/blob/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FGlobalStateTaskTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FGlobalStateTaskTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FGlobalStateTaskTest.java?ref=aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "patch": "@@ -252,6 +252,12 @@ public void shouldDelegateApproximateNumUncommittedBytesToStateManager() {\n         assertEquals(4242L, globalStateTask.approximateNumUncommittedBytes());\n     }\n \n+    @Test\n+    public void shouldDelegateMaxStoreUncommittedBytesToStateManager() {\n+        stateMgr.maxStoreUncommittedBytes = 4242L;\n+        assertEquals(4242L, globalStateTask.maxStoreUncommittedBytes());\n+    }\n+\n     @Test\n     public void shouldCommitStateManagerWithOffsets() {\n         final Map<TopicPartition, Long> expectedOffsets = new HashMap<>();"
+  },
+  {
+   "sha": "e960f6be75410e35b453a3378170625719f977b2",
+   "filename": "streams/src/test/java/org/apache/kafka/streams/processor/internals/ProcessorStateManagerTest.java",
+   "status": "modified",
+   "additions": 42,
+   "deletions": 0,
+   "changes": 42,
+   "blob_url": "https://github.com/apache/kafka/blob/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FProcessorStateManagerTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FProcessorStateManagerTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FProcessorStateManagerTest.java?ref=aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "patch": "@@ -235,6 +235,48 @@ public void shouldFindSingleStoreForChangelog() {\n         );\n     }\n \n+    @Test\n+    public void shouldReportLargestStoreUncommittedBytes() {\n+        final MockKeyValueStore smallStore = new MockKeyValueStore(persistentStoreName, true) {\n+            @Override\n+            public long approximateNumUncommittedBytes() {\n+                return 100L;\n+            }\n+        };\n+        final MockKeyValueStore largeStore = new MockKeyValueStore(persistentStoreTwoName, true) {\n+            @Override\n+            public long approximateNumUncommittedBytes() {\n+                return 250L;\n+            }\n+        };\n+        final ProcessorStateManager stateMgr = new ProcessorStateManager(\n+            taskId,\n+            Task.TaskType.ACTIVE,\n+            false,\n+            false,\n+            logContext,\n+            stateDirectory,\n+            time,\n+            mkMap(\n+                mkEntry(persistentStoreName, persistentStoreTopicName),\n+                mkEntry(persistentStoreTwoName, persistentStoreTwoTopicName)\n+            ),\n+            Collections.emptySet());\n+\n+        stateMgr.registerStore(smallStore, smallStore.stateRestoreCallback, null);\n+        stateMgr.registerStore(largeStore, largeStore.stateRestoreCallback, null);\n+\n+        assertEquals(250L, stateMgr.maxStoreUncommittedBytes());\n+        assertEquals(350L, stateMgr.approximateNumUncommittedBytes());\n+    }\n+\n+    @Test\n+    public void shouldReportZeroMaxStoreUncommittedBytesWithoutStores() {\n+        final ProcessorStateManager stateMgr = getStateManager(Task.TaskType.ACTIVE);\n+\n+        assertEquals(0L, stateMgr.maxStoreUncommittedBytes());\n+    }\n+\n     @Test\n     public void shouldRestoreStoreWithRestoreCallback() {\n         final MockRestoreCallback restoreCallback = new MockRestoreCallback();"
+  },
+  {
+   "sha": "70404d064926899c0ac9b76d338d38ccbb128194",
+   "filename": "streams/src/test/java/org/apache/kafka/streams/processor/internals/StateConsumerTest.java",
+   "status": "modified",
+   "additions": 5,
+   "deletions": 0,
+   "changes": 5,
+   "blob_url": "https://github.com/apache/kafka/blob/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FStateConsumerTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FStateConsumerTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FStateConsumerTest.java?ref=aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "patch": "@@ -150,6 +150,11 @@ public void maybeCheckpoint() {\n         public long approximateNumUncommittedBytes() {\n             return 0;\n         }\n+\n+        @Override\n+        public long maxStoreUncommittedBytes() {\n+            return 0;\n+        }\n     }\n \n }"
+  },
+  {
+   "sha": "72bec0efe687bdff8e13c6e4e65d0349ae081984",
+   "filename": "streams/src/test/java/org/apache/kafka/streams/processor/internals/StreamThreadTest.java",
+   "status": "modified",
+   "additions": 50,
+   "deletions": 0,
+   "changes": 50,
+   "blob_url": "https://github.com/apache/kafka/blob/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FStreamThreadTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FStreamThreadTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fprocessor%2Finternals%2FStreamThreadTest.java?ref=aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "patch": "@@ -743,6 +743,56 @@ public void shouldResumeProcessingOnceUncommittedBytesAreCommitted() {\n         verify(taskManager).punctuate();\n     }\n \n+    @Test\n+    public void shouldNotProcessWhenUncommittedBytesPlusLargestStoreExceedLimit() {\n+        final long maxUncommittedBytesPerThread = 1024L;\n+        final StreamsConfig config = new StreamsConfig(configProps(false, false));\n+        when(mainConsumer.poll(Mockito.any())).thenReturn(ConsumerRecords.empty());\n+        final ConsumerGroupMetadata consumerGroupMetadata = mock(ConsumerGroupMetadata.class);\n+        when(mainConsumer.groupMetadata()).thenReturn(consumerGroupMetadata);\n+        when(consumerGroupMetadata.groupInstanceId()).thenReturn(Optional.empty());\n+        final TaskManager taskManager = mockTaskManager();\n+        when(taskManager.totalUncommittedBytes()).thenReturn(maxUncommittedBytesPerThread - 10);\n+        when(taskManager.maxStoreUncommittedBytes()).thenReturn(20L);\n+        // a rebalance is in progress, so the commit is skipped\n+        when(taskManager.commit(Mockito.any())).thenReturn(-1);\n+\n+        final TopologyMetadata topologyMetadata = new TopologyMetadata(internalTopologyBuilder, config);\n+        topologyMetadata.buildAndRewriteTopology();\n+        thread = buildStreamThread(mainConsumer, taskManager, config, topologyMetadata, maxUncommittedBytesPerThread);\n+        thread.setState(State.STARTING);\n+        thread.setState(State.PARTITIONS_ASSIGNED);\n+        thread.runOnceWithoutProcessingThreads();\n+\n+        verify(mainConsumer).poll(Mockito.any());\n+        verify(taskManager).commit(Mockito.any());\n+        verify(taskManager, never()).process(Mockito.anyInt(), Mockito.any());\n+        verify(taskManager, never()).punctuate();\n+    }\n+\n+    @Test\n+    public void shouldProcessWhenUncommittedBytesPlusLargestStoreAreWithinLimit() {\n+        final long maxUncommittedBytesPerThread = 1024L;\n+        final StreamsConfig config = new StreamsConfig(configProps(false, false));\n+        when(mainConsumer.poll(Mockito.any())).thenReturn(ConsumerRecords.empty());\n+        final ConsumerGroupMetadata consumerGroupMetadata = mock(ConsumerGroupMetadata.class);\n+        when(mainConsumer.groupMetadata()).thenReturn(consumerGroupMetadata);\n+        when(consumerGroupMetadata.groupInstanceId()).thenReturn(Optional.empty());\n+        final TaskManager taskManager = mockTaskManager();\n+        when(taskManager.totalUncommittedBytes()).thenReturn(maxUncommittedBytesPerThread - 30);\n+        when(taskManager.maxStoreUncommittedBytes()).thenReturn(20L);\n+\n+        final TopologyMetadata topologyMetadata = new TopologyMetadata(internalTopologyBuilder, config);\n+        topologyMetadata.buildAndRewriteTopology();\n+        thread = buildStreamThread(mainConsumer, taskManager, config, topologyMetadata, maxUncommittedBytesPerThread);\n+        thread.setState(State.STARTING);\n+        thread.setState(State.PARTITIONS_ASSIGNED);\n+        thread.runOnceWithoutProcessingThreads();\n+\n+        verify(taskManager).process(Mockito.anyInt(), Mockito.any());\n+        verify(taskManager).punctuate();\n+    }\n+\n     @Test\n     public void shouldNotProcessWhenPartitionRevoked() {\n         final Properties props = configProps(false, false);"
+  },
+  {
+   "sha": "cf864173b6fea7d302cd15fbf212ab093f8e8e19",
+   "filename": "streams/src/test/java/org/apache/kafka/streams/state/internals/AbstractTransactionBufferTest.java",
+   "status": "modified",
+   "additions": 15,
+   "deletions": 9,
+   "changes": 24,
+   "blob_url": "https://github.com/apache/kafka/blob/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fstate%2Finternals%2FAbstractTransactionBufferTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fstate%2Finternals%2FAbstractTransactionBufferTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fstate%2Finternals%2FAbstractTransactionBufferTest.java?ref=aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "patch": "@@ -103,6 +103,20 @@ void byteCountAccumulatesAcrossMultipleStages() {\n         assertEquals(2 * Integer.BYTES + 4 + 8, buffer.approximateNumUncommittedBytes());\n     }\n \n+    @Test\n+    void byteCountCountsOverwrittenKeyOnce() {\n+        buffer.stage(1, new byte[4]);\n+        buffer.stage(1, new byte[8]);\n+        assertEquals(Integer.BYTES + 8, buffer.approximateNumUncommittedBytes());\n+    }\n+\n+    @Test\n+    void byteCountReplacesValueWithTombstone() {\n+        buffer.stage(1, new byte[4]);\n+        buffer.stage(1, null);\n+        assertEquals(Integer.BYTES, buffer.approximateNumUncommittedBytes());\n+    }\n+\n     // -- commit --\n \n     @Test\n@@ -452,12 +466,6 @@ private static List<Integer> drainKeys(final ManagedKeyValueIterator<Integer, by\n \n     static class TestBuffer extends AbstractTransactionBuffer<Integer> {\n         final TreeMap<Integer, byte[]> base = new TreeMap<>();\n-        private final TreeMap<Integer, Optional<byte[]>> pendingBatch = new TreeMap<>();\n-\n-        @Override\n-        void stageToBackend(final Integer key, final byte[] value) {\n-            pendingBatch.put(key, Optional.ofNullable(value));\n-        }\n \n         @Override\n         ManagedKeyValueIterator<Integer, byte[]> newBaseIterator(final Integer from, final Integer to) {\n@@ -492,19 +500,17 @@ ManagedKeyValueIterator<Integer, byte[]> newBaseSnapshotIterator(\n \n         @Override\n         void flushToBase() {\n-            for (final Map.Entry<Integer, Optional<byte[]>> entry : pendingBatch.entrySet()) {\n+            for (final Map.Entry<Integer, Optional<byte[]>> entry : pendingWrites.entrySet()) {\n                 if (entry.getValue().isPresent()) {\n                     base.put(entry.getKey(), entry.getValue().get());\n                 } else {\n                     base.remove(entry.getKey());\n                 }\n             }\n-            pendingBatch.clear();\n         }\n \n         @Override\n         void discardPendingBatch() {\n-            pendingBatch.clear();\n         }\n \n         @Override"
+  },
+  {
+   "sha": "be551aa67d1ec6a72a324db02331aaa9ede6fddf",
+   "filename": "streams/src/test/java/org/apache/kafka/streams/state/internals/RocksDBStoreTest.java",
+   "status": "modified",
+   "additions": 2,
+   "deletions": 2,
+   "changes": 4,
+   "blob_url": "https://github.com/apache/kafka/blob/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fstate%2Finternals%2FRocksDBStoreTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fstate%2Finternals%2FRocksDBStoreTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fstate%2Finternals%2FRocksDBStoreTest.java?ref=aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "patch": "@@ -1404,7 +1404,7 @@ public void shouldNotStageRestoredRecordsInTransactionBuffer() {\n         rocksDBStore = getRocksDBStore();\n         rocksDBStore.init(eosContext, rocksDBStore);\n \n-        // An empty RocksDB WriteBatch already reports a fixed header size, so the baseline is non-zero.\n+        // An empty buffer reports zero uncommitted bytes.\n         final long emptyBufferBytes = rocksDBStore.approximateNumUncommittedBytes();\n \n         final List<KeyValue<byte[], byte[]>> entries = new ArrayList<>();\n@@ -1687,7 +1687,7 @@ public void putAllShouldStageWritesUntilCommitWhenTransactional() {\n         rocksDBStore = getRocksDBStore();\n         rocksDBStore.init(eosContext, rocksDBStore);\n \n-        // An empty RocksDB WriteBatch already reports a fixed header size, so the baseline is non-zero.\n+        // An empty buffer reports zero uncommitted bytes.\n         final long emptyBufferBytes = rocksDBStore.approximateNumUncommittedBytes();\n \n         final Bytes k1 = new Bytes(stringSerializer.serialize(null, \"k1\"));"
+  },
+  {
+   "sha": "b30a4b54b99388c9449749ee1eb6daad7e6ba66e",
+   "filename": "streams/src/test/java/org/apache/kafka/streams/state/internals/RocksDBTransactionBufferTest.java",
+   "status": "modified",
+   "additions": 53,
+   "deletions": 0,
+   "changes": 53,
+   "blob_url": "https://github.com/apache/kafka/blob/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fstate%2Finternals%2FRocksDBTransactionBufferTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fstate%2Finternals%2FRocksDBTransactionBufferTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2Fstate%2Finternals%2FRocksDBTransactionBufferTest.java?ref=aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "patch": "@@ -569,4 +569,57 @@ public void shouldCommitWritesAcrossCFsAtomically() throws RocksDBException {\n         assertEquals(\"other-o\", str(db.get(otherCfHandle, key(\"o\").get())));\n         assertTrue(buffer.isEmpty());\n     }\n+\n+    @Test\n+    public void shouldCommitLastOverwriteToOtherCF() throws RocksDBException {\n+        buffer.stage(otherCfHandle, key(\"o\"), val(\"v1\"));\n+        buffer.stage(otherCfHandle, key(\"o\"), val(\"v2\"));\n+\n+        buffer.commit();\n+\n+        assertEquals(\"v2\", str(db.get(otherCfHandle, key(\"o\").get())));\n+    }\n+\n+    @Test\n+    public void shouldCommitPutAfterRangeDeleteOnOtherCF() throws RocksDBException {\n+        db.put(otherCfHandle, key(\"a\").get(), val(\"old-a\"));\n+        db.put(otherCfHandle, key(\"b\").get(), val(\"old-b\"));\n+\n+        buffer.stage(otherCfHandle, key(\"a\"), val(\"new-a\"));\n+        buffer.stageDeleteRange(otherCfHandle, key(\"a\"), key(\"c\"));\n+        buffer.stage(otherCfHandle, key(\"b\"), val(\"new-b\"));\n+        buffer.commit();\n+\n+        assertNull(db.get(otherCfHandle, key(\"a\").get()));\n+        assertEquals(\"new-b\", str(db.get(otherCfHandle, key(\"b\").get())));\n+    }\n+\n+    @Test\n+    public void shouldKeepDataCFWriteWhenOtherCFRangeDeleted() throws RocksDBException {\n+        buffer.stage(cfHandle, key(\"b\"), val(\"data-b\"));\n+        buffer.stageDeleteRange(otherCfHandle, key(\"a\"), key(\"c\"));\n+\n+        assertEquals(\"data-b\", str(buffer.get(key(\"b\")).get()));\n+\n+        buffer.commit();\n+\n+        assertEquals(\"data-b\", str(db.get(cfHandle, key(\"b\").get())));\n+    }\n+\n+    @Test\n+    public void shouldCountOtherCFWritesInUncommittedBytes() {\n+        buffer.stage(otherCfHandle, key(\"o\"), new byte[5]);\n+        buffer.stage(otherCfHandle, key(\"o\"), new byte[5]);\n+\n+        assertEquals(key(\"o\").get().length + 5, buffer.approximateNumUncommittedBytes());\n+    }\n+\n+    @Test\n+    public void shouldDiscardOtherCFWritesOnRollback() throws RocksDBException {\n+        buffer.stage(otherCfHandle, key(\"o\"), val(\"other-o\"));\n+        buffer.rollback();\n+        buffer.commit();\n+\n+        assertNull(db.get(otherCfHandle, key(\"o\").get()));\n+    }\n }"
+  },
+  {
+   "sha": "f328f8b01daebe9abb87b9877c4ffb16e6f0fcaf",
+   "filename": "streams/src/test/java/org/apache/kafka/test/GlobalStateManagerStub.java",
+   "status": "modified",
+   "additions": 6,
+   "deletions": 0,
+   "changes": 6,
+   "blob_url": "https://github.com/apache/kafka/blob/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Ftest%2FGlobalStateManagerStub.java",
+   "raw_url": "https://github.com/apache/kafka/raw/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4/streams%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Ftest%2FGlobalStateManagerStub.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Ftest%2FGlobalStateManagerStub.java?ref=aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "patch": "@@ -37,6 +37,7 @@ public class GlobalStateManagerStub implements GlobalStateManager {\n     public boolean closed;\n     public boolean committed;\n     public long approximateNumUncommittedBytes;\n+    public long maxStoreUncommittedBytes;\n \n     public GlobalStateManagerStub(final Set<String> storeNames,\n                                   final Map<TopicPartition, Long> offsets,\n@@ -75,6 +76,11 @@ public long approximateNumUncommittedBytes() {\n         return approximateNumUncommittedBytes;\n     }\n \n+    @Override\n+    public long maxStoreUncommittedBytes() {\n+        return maxStoreUncommittedBytes;\n+    }\n+\n     @Override\n     public void close() {\n         closed = true;"
+  }
+ ],
+ "timeline": [
+  {
+   "sha": "0ce891474c8dd5ded334b31a64d9bac3728644aa",
+   "node_id": "C_kwDOACG9q9oAKDBjZTg5MTQ3NGM4ZGQ1ZGVkMzM0YjMxYTY0ZDliYWMzNzI4NjQ0YWE",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/0ce891474c8dd5ded334b31a64d9bac3728644aa",
+   "html_url": "https://github.com/apache/kafka/commit/0ce891474c8dd5ded334b31a64d9bac3728644aa",
+   "author": {
+    "name": "Nick Telford",
+    "email": "nick.telford@gmail.com",
+    "date": "2026-10-06T17:33:54Z"
+   },
+   "committer": {
+    "name": "Nick Telford",
+    "email": "nick.telford@gmail.com",
+    "date": "2026-10-28T12:38:12Z"
+   },
+   "tree": {
+    "sha": "ca2ea32e57e2743e04fe08052517882b64deafcf",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/ca2ea32e57e2743e04fe08052517882b64deafcf"
+   },
+   "message": "KAFKA-21230: Fix byte count for overwritten keys in transaction buffer\n\nThe uncommitted-bytes estimate of a transaction buffer is too high when\nthe same key is written more than once in one transaction. The estimate\ncan then reach the pause threshold when the real amount of staged data\nis smaller.\n\nThe buffer added the key size and value size on each write. It did not\nremove the size of the value that the write replaced. A key written\nmany times was counted many times.\n\nAbstractTransactionBuffer.stage now subtracts the size of the previous\nentry for the key before it adds the new one. RocksDBTransactionBuffer\nhad its own copy of the byte counting. It now calls the shared\nimplementation for its default column family, and its stageToBackend\nwrites to the write batch directly. This keeps the counting in one\nplace and prevents a double count from the shared path.\n\nCo-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>",
+   "parents": [
+    {
+     "sha": "a589c272c1666724af8bf137bf1fda1e2b568ef4",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/a589c272c1666724af8bf137bf1fda1e2b568ef4",
+     "html_url": "https://github.com/apache/kafka/commit/a589c272c1666724af8bf137bf1fda1e2b568ef4"
+    }
+   ],
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN PGP SIGNATURE-----\n\niQFLBAABCgA1FiEEk5hGDOGvzTP3sq6z4p3QPp12vXAFAmrh7LQXHG5pY2sudGVs\nZm9yZEBnbWFpbC5jb20ACgkQ4p3QPp12vXBxQQf/TC8BV9KBR/E2gOdLosGVJp/v\nufKhe+Q7+PoxaN8+jXhSOiw9z1nLiywSiQkfmYUSU/Dz9R5OtMnTs+sMkvymR45Z\n7nP0TzagV3AlfhgkMN+ppgfYnZaAjIX/5yLW1csUEedkrS7yDttM69z8KvdD0zN0\njBeWeyBHOP4adBEKLYCW0sTHHn8lVmhaTg0PJb1Y782jKl+Iims6gmHfZs7aUIY6\n1XIQPFfN9zfkhgxJu7B25558ROxOstNy721qed5BBc5P4+QMHHjrctMYSHm6f5LW\nHyQQOaAsS+JZxZXG18ZShwaMlAc/QBt+9E6fDgHLi4WEyhNkI2/7D4brEZ/XVw==\n=c2QP\n-----END PGP SIGNATURE-----",
+    "payload": "tree ca2ea32e57e2743e04fe08052517882b64deafcf\nparent a589c272c1666724af8bf137bf1fda1e2b568ef4\nauthor Nick Telford <nick.telford@gmail.com> 1791308034 +0100\ncommitter Nick Telford <nick.telford@gmail.com> 1793191092 +0000\n\nKAFKA-21230: Fix byte count for overwritten keys in transaction buffer\n\nThe uncommitted-bytes estimate of a transaction buffer is too high when\nthe same key is written more than once in one transaction. The estimate\ncan then reach the pause threshold when the real amount of staged data\nis smaller.\n\nThe buffer added the key size and value size on each write. It did not\nremove the size of the value that the write replaced. A key written\nmany times was counted many times.\n\nAbstractTransactionBuffer.stage now subtracts the size of the previous\nentry for the key before it adds the new one. RocksDBTransactionBuffer\nhad its own copy of the byte counting. It now calls the shared\nimplementation for its default column family, and its stageToBackend\nwrites to the write batch directly. This keeps the counting in one\nplace and prevents a double count from the shared path.\n\nCo-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>\n",
+    "verified_at": "2026-10-28T16:44:31Z"
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "ab996a7c5bd42fd73ec17e00650bde8aae222f34",
+   "node_id": "C_kwDOACG9q9oAKGFiOTk2YTdjNWJkNDJmZDczZWMxN2UwMDY1MGJkZThhYWUyMjJmMzQ",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/ab996a7c5bd42fd73ec17e00650bde8aae222f34",
+   "html_url": "https://github.com/apache/kafka/commit/ab996a7c5bd42fd73ec17e00650bde8aae222f34",
+   "author": {
+    "name": "Nick Telford",
+    "email": "nick.telford@gmail.com",
+    "date": "2026-10-06T17:45:15Z"
+   },
+   "committer": {
+    "name": "Nick Telford",
+    "email": "nick.telford@gmail.com",
+    "date": "2026-10-28T12:38:13Z"
+   },
+   "tree": {
+    "sha": "211e2d888de6047a6a8760d131861e8d0338e447",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/211e2d888de6047a6a8760d131861e8d0338e447"
+   },
+   "message": "KAFKA-21230: Build the RocksDB WriteBatch at commit\n\nThe transaction buffer built a RocksDB WriteBatch on every write. This\nheld native memory for the whole transaction, and the batch was\nchanged while the write lock was held.\n\nNow the buffer stages writes on the heap only. The prepareFlush step\nbuilds the WriteBatch outside the write lock. Writes to other column\nfamilies and range deletes are also held on the heap until then.\n\nCo-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>",
+   "parents": [
+    {
+     "sha": "0ce891474c8dd5ded334b31a64d9bac3728644aa",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/0ce891474c8dd5ded334b31a64d9bac3728644aa",
+     "html_url": "https://github.com/apache/kafka/commit/0ce891474c8dd5ded334b31a64d9bac3728644aa"
+    }
+   ],
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN PGP SIGNATURE-----\n\niQFLBAABCgA1FiEEk5hGDOGvzTP3sq6z4p3QPp12vXAFAmrh7LUXHG5pY2sudGVs\nZm9yZEBnbWFpbC5jb20ACgkQ4p3QPp12vXD96Af/SkSlNTLDQGKJ6yRVgs8996f5\nTORKFrCPibIewZ1T3AT0iID95AJw5z2BREEG1x5o9yk7qam3tzdBFndv1QpUz+7N\n1CwkiFVOr4GSmUmP34mdl6DnXZKlcezbWOrlwuiuKeMHwEorSmiKErcaYzx/7m/M\n/aI1vj7iJG06cNlxNlbIEl6a3Lt2KHni6i4DzliF4NMiIX9jgKqld7LynzH1vxSJ\nbv2evR07jW+LG1XFjp1DNKgZNvl8Ln4Ezq4VgmA7K3fsSG8/48MdGDf1YKHdYpNL\ntE/veVDGp/g41IRsp/AgxuPI7l1QA8x6eSC3PFia+y0vVIxNrneJ3a9UcUW/Bw==\n=yuuX\n-----END PGP SIGNATURE-----",
+    "payload": "tree 211e2d888de6047a6a8760d131861e8d0338e447\nparent 0ce891474c8dd5ded334b31a64d9bac3728644aa\nauthor Nick Telford <nick.telford@gmail.com> 1791308715 +0100\ncommitter Nick Telford <nick.telford@gmail.com> 1793191093 +0000\n\nKAFKA-21230: Build the RocksDB WriteBatch at commit\n\nThe transaction buffer built a RocksDB WriteBatch on every write. This\nheld native memory for the whole transaction, and the batch was\nchanged while the write lock was held.\n\nNow the buffer stages writes on the heap only. The prepareFlush step\nbuilds the WriteBatch outside the write lock. Writes to other column\nfamilies and range deletes are also held on the heap until then.\n\nCo-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>\n",
+    "verified_at": "2026-10-28T16:44:31Z"
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "582c8005bdf30fb98b830ca8658e40064ed9725f",
+   "node_id": "C_kwDOACG9q9oAKDU4MmM4MDA1YmRmMzBmYjk4YjgzMGNhODY1OGU0MDA2NGVkOTcyNWY",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/582c8005bdf30fb98b830ca8658e40064ed9725f",
+   "html_url": "https://github.com/apache/kafka/commit/582c8005bdf30fb98b830ca8658e40064ed9725f",
+   "author": {
+    "name": "Nick Telford",
+    "email": "nick.telford@gmail.com",
+    "date": "2026-10-06T17:49:50Z"
+   },
+   "committer": {
+    "name": "Nick Telford",
+    "email": "nick.telford@gmail.com",
+    "date": "2026-10-28T12:38:13Z"
+   },
+   "tree": {
+    "sha": "ddcf7e226acb5168e93ca1e79f1516ae02f79c83",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/ddcf7e226acb5168e93ca1e79f1516ae02f79c83"
+   },
+   "message": "KAFKA-21230: Remove the stageToBackend hook from transaction buffers\n\nThe RocksDB transaction buffer now builds its WriteBatch at commit\ntime, from the staged state. Because of this, no buffer needs to be\ntold about each write when it is staged. Every implementation of\nstageToBackend was a no-op.\n\nRemove the abstract method, its call in the put path, and all of its\nimplementations. Update the test buffer to flush from the pending\nwrites map instead of keeping its own copy of the pending batch.\n\nCo-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>",
+   "parents": [
+    {
+     "sha": "ab996a7c5bd42fd73ec17e00650bde8aae222f34",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/ab996a7c5bd42fd73ec17e00650bde8aae222f34",
+     "html_url": "https://github.com/apache/kafka/commit/ab996a7c5bd42fd73ec17e00650bde8aae222f34"
+    }
+   ],
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN PGP SIGNATURE-----\n\niQFLBAABCgA1FiEEk5hGDOGvzTP3sq6z4p3QPp12vXAFAmrh7LUXHG5pY2sudGVs\nZm9yZEBnbWFpbC5jb20ACgkQ4p3QPp12vXAkFQf/XpWARgWJ7Hb3xQ1AH3k7TfXo\nmDBG9xIyPQTd4MNt6lYShyLXCFCyq5iKYpP2JEzZefMgPaGG2eIUoU7ruMMqjNjH\n70M13swKtBJeU+ohbrKQXQcIq+MQX36+sziMCQl54NHQ//lSj3umD597/25l4+68\n+yPcXGtd7fWQ4JYD3Pwg351lxfj2kJcHpUzbR0gUI9bYavEtdNbuWOj0IgAr3riQ\nmzBScYCTGPqVvgit1G1/vle0Z2KW9Jls08UGCiqG02fSjza5TIjTmWgf1BPUXcgF\n2lojANiN08/NrNSyzW2gDgMetKB/s4ti3LYz/H3gjitN/xzqy5+iE9G6BpZUUg==\n=aWGN\n-----END PGP SIGNATURE-----",
+    "payload": "tree ddcf7e226acb5168e93ca1e79f1516ae02f79c83\nparent ab996a7c5bd42fd73ec17e00650bde8aae222f34\nauthor Nick Telford <nick.telford@gmail.com> 1791308990 +0100\ncommitter Nick Telford <nick.telford@gmail.com> 1793191093 +0000\n\nKAFKA-21230: Remove the stageToBackend hook from transaction buffers\n\nThe RocksDB transaction buffer now builds its WriteBatch at commit\ntime, from the staged state. Because of this, no buffer needs to be\ntold about each write when it is staged. Every implementation of\nstageToBackend was a no-op.\n\nRemove the abstract method, its call in the put path, and all of its\nimplementations. Update the test buffer to flush from the pending\nwrites map instead of keeping its own copy of the pending batch.\n\nCo-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>\n",
+    "verified_at": "2026-10-28T16:44:31Z"
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "node_id": "C_kwDOACG9q9oAKGFhZDU2ZDRkYWY1YzIxYjdiMzFkMzBmMDRhZmFhMWIxNzE1YTE2YzQ",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "html_url": "https://github.com/apache/kafka/commit/aad56d4daf5c21b7b31d30f04afaa1b1715a16c4",
+   "author": {
+    "name": "Nick Telford",
+    "email": "nick.telford@gmail.com",
+    "date": "2026-10-27T18:46:09Z"
+   },
+   "committer": {
+    "name": "Nick Telford",
+    "email": "nick.telford@gmail.com",
+    "date": "2026-10-28T12:38:13Z"
+   },
+   "tree": {
+    "sha": "fea59f7bb99c6756bed10b37596884c89cf6bf5f",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/fea59f7bb99c6756bed10b37596884c89cf6bf5f"
+   },
+   "message": "KAFKA-21230: Bound commit memory in the uncommitted-bytes limit\n\nA thread pauses processing and commits when its uncommitted bytes pass\nits share of statestore.uncommitted.max.bytes. A commit can itself need\nextra memory. The thread can therefore go over the limit while it\ncommits.\n\nStores commit one at a time. During the commit of one store, the extra\nmemory needed is up to the size of that store's uncommitted data. The\nlargest store gives the worst case.\n\nAdd maxStoreUncommittedBytes to ProcessorStateManager, Task and\nTaskManager. It returns the largest uncommitted byte count of any one\nstore. StreamThread now adds this value to the total uncommitted bytes\nbefore it compares the sum with the limit.\n\nApply the same check to the global state thread. Add\nmaxStoreUncommittedBytes to GlobalStateManager and\nGlobalStateMaintainer, and make GlobalStreamThread compare the total\nplus the largest store's bytes with its limit.\n\nBoth threads now commit earlier, so the commit stays inside the limit.\nUpdate the statestore.uncommitted.max.bytes documentation and the 4.5.0\nupgrade guide to describe the new check and how it changes the point of\nan early commit compared with 4.4.\n\nCo-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nReviewed-by: Claude Opus 5.5 <noreply@anthropic.com>",
+   "parents": [
+    {
+     "sha": "582c8005bdf30fb98b830ca8658e40064ed9725f",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/582c8005bdf30fb98b830ca8658e40064ed9725f",
+     "html_url": "https://github.com/apache/kafka/commit/582c8005bdf30fb98b830ca8658e40064ed9725f"
+    }
+   ],
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN PGP SIGNATURE-----\n\niQFLBAABCgA1FiEEk5hGDOGvzTP3sq6z4p3QPp12vXAFAmrh7LUXHG5pY2sudGVs\nZm9yZEBnbWFpbC5jb20ACgkQ4p3QPp12vXBqxgf+PLuzo2jA9/ICCW0XiLJBAnN5\nAvmXbust9YJTsM/6APnQGuGwDz/e5wJ9kOkizfYvYwvboCAviUaqENiFD2iPizhF\ns60Lq+HZbghdUgXslOQMDc88Q7BSJl26yp0Ud0FDCgJJD043pYjWv7S5h7EQ/S8F\njNYKxKX2+iq+57Q9D6CSLEXDxM79oPCUrDtkgWx/QBzWevfsTFgINJoUp8m+KX+/\ntxCLPvYgRhzO/7pj4EDqp5/kT8xm3nxVHqjBAw3mNeERspkCkG9aIktyvX2STo+W\nU4OfHtdsg4myyrqT1j9azpsCTS0NggFe1AehnpWGZTRdWpVMCTmEtgFzadW6EQ==\n=3WF7\n-----END PGP SIGNATURE-----",
+    "payload": "tree fea59f7bb99c6756bed10b37596884c89cf6bf5f\nparent 582c8005bdf30fb98b830ca8658e40064ed9725f\nauthor Nick Telford <nick.telford@gmail.com> 1793126769 +0000\ncommitter Nick Telford <nick.telford@gmail.com> 1793191093 +0000\n\nKAFKA-21230: Bound commit memory in the uncommitted-bytes limit\n\nA thread pauses processing and commits when its uncommitted bytes pass\nits share of statestore.uncommitted.max.bytes. A commit can itself need\nextra memory. The thread can therefore go over the limit while it\ncommits.\n\nStores commit one at a time. During the commit of one store, the extra\nmemory needed is up to the size of that store's uncommitted data. The\nlargest store gives the worst case.\n\nAdd maxStoreUncommittedBytes to ProcessorStateManager, Task and\nTaskManager. It returns the largest uncommitted byte count of any one\nstore. StreamThread now adds this value to the total uncommitted bytes\nbefore it compares the sum with the limit.\n\nApply the same check to the global state thread. Add\nmaxStoreUncommittedBytes to GlobalStateManager and\nGlobalStateMaintainer, and make GlobalStreamThread compare the total\nplus the largest store's bytes with its limit.\n\nBoth threads now commit earlier, so the commit stays inside the limit.\nUpdate the statestore.uncommitted.max.bytes documentation and the 4.5.0\nupgrade guide to describe the new check and how it changes the point of\nan early commit compared with 4.4.\n\nCo-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nReviewed-by: Claude Opus 5.5 <noreply@anthropic.com>\n",
+    "verified_at": "2026-10-28T16:44:31Z"
+   },
+   "event": "committed"
+  },
+  {
+   "id": 34498080919,
+   "node_id": "LE_lADOACG9q88AAAABapkBxc8AAAAICD7wlw",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34498080919",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-28T16:44:47Z",
+   "label": {
+    "name": "triage",
+    "color": "006b75"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34498098155,
+   "node_id": "LE_lADOACG9q88AAAABapkBxc8AAAAICD8z6w",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34498098155",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-28T16:44:58Z",
+   "label": {
+    "name": "streams",
+    "color": "63edea"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  }
+ ]
+}

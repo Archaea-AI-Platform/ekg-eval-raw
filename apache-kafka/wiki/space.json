@@ -1,0 +1,87 @@
+{
+ "id": 28114946,
+ "key": "KAFKA",
+ "name": "Apache Kafka",
+ "status": "current",
+ "description": {
+  "plain": {
+   "value": "",
+   "representation": "plain"
+  },
+  "_expandable": {
+   "view": ""
+  }
+ },
+ "homepage": {
+  "id": "27821303",
+  "type": "page",
+  "status": "current",
+  "title": "Index",
+  "position": -1,
+  "extensions": {
+   "position": "none"
+  },
+  "_links": {
+   "webui": "/spaces/KAFKA/pages/27821303/Index",
+   "edit": "/pages/resumedraft.action?draftId=27821303",
+   "tinyui": "/x/94SoAQ",
+   "self": "https://cwiki.apache.org/confluence/rest/api/content/27821303"
+  },
+  "_expandable": {
+   "container": "/rest/api/space/KAFKA",
+   "metadata": "",
+   "operations": "",
+   "children": "/rest/api/content/27821303/child",
+   "restrictions": "/rest/api/content/27821303/restriction/byOperation",
+   "history": "/rest/api/content/27821303/history",
+   "ancestors": "",
+   "body": "",
+   "version": "",
+   "descendants": "/rest/api/content/27821303/descendant",
+   "space": "/rest/api/space/KAFKA",
+   "relevantViewRestrictions": "/rest/api/content/27821303/restriction/relevantViewRestrictions"
+  }
+ },
+ "type": "global",
+ "creator": {
+  "type": "known",
+  "username": "adc",
+  "userKey": "8aa980874e36a1eb014e36a2ab1b4846",
+  "displayName": "Alan Cabrera",
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa980874e36a1eb014e36a2ab1b4846"
+  },
+  "_expandable": {
+   "profilePicture": "",
+   "status": ""
+  }
+ },
+ "creationDate": "2011-07-07T14:21:29.000Z",
+ "lastModifier": {
+  "type": "known",
+  "username": "adc",
+  "userKey": "8aa980874e36a1eb014e36a2ab1b4846",
+  "displayName": "Alan Cabrera",
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa980874e36a1eb014e36a2ab1b4846"
+  },
+  "_expandable": {
+   "profilePicture": "",
+   "status": ""
+  }
+ },
+ "lastModificationDate": "2011-07-07T14:21:29.000Z",
+ "_links": {
+  "webui": "/spaces/KAFKA/overview",
+  "collection": "/rest/api/space",
+  "base": "https://cwiki.apache.org/confluence",
+  "context": "/confluence",
+  "self": "https://cwiki.apache.org/confluence/rest/api/space/KAFKA"
+ },
+ "_expandable": {
+  "metadata": "",
+  "permissions": "",
+  "icon": "",
+  "retentionPolicy": ""
+ }
+}

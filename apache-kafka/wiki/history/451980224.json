@@ -1,0 +1,386 @@
+{
+ "id": "451980224",
+ "versions": {
+  "results": [
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-21T08:07:27.000Z",
+    "message": "Added discussion thread link",
+    "number": 4,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451980224/version/4"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451980224"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-20T17:29:45.000Z",
+    "message": "Cl fk",
+    "number": 3,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451980224/version/3"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451980224?status=historical&version=3"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-19T17:45:07.000Z",
+    "message": "Initial content",
+    "number": 2,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451980224/version/2"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451980224?status=historical&version=2"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-19T16:01:53.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451980224/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451980224?status=historical&version=1"
+    }
+   }
+  ],
+  "start": 0,
+  "limit": 200,
+  "size": 4,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451980224/version",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ },
+ "version_bodies": [
+  {
+   "id": "451980224",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1383: Standard record headers for content type",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-20T17:29:45.000Z",
+    "message": "Cl fk",
+    "number": 3,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451980224/version/3"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451980224?status=historical&version=3"
+    }
+   },
+   "position": 1374,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><h1>Status</h1><p><strong>Current state</strong>: <em>Under Discussion</em></p><p><strong>Discussion thread</strong>: <em><a href=\"http://mail-archives.apache.org/mod_mbox/kafka-dev/201501.mbox/%3CCAOeJiJh6Vkkca85bWYgkeOZ8rC6%2BKDh7zzq8vMKECL_7PNExTA%40mail.gmail.com%3E\">here</a> [Change the link from the KIP proposal email archive to your own email thread]<br /></em></p><p><strong>JIRA</strong>: <em><a href=\"https://issues.apache.org/jira/browse/KAFKA-1\">here</a> [Change the link from KAFKA-1 to your own ticket]<br /></em></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p>For many releases, Kafka records have been able to include additional information alongside the payload in the form of headers. Compared with other messaging technologies, Kafka has very little standard metadata which describes the records. One obvious kind of metadata which is would be helpful to carry is the “content type” of the records. In a future Kafka with schema support, the schema information would naturally live in the record headers. This KIP proposes using standard headers for carrying this kind of metadata.</p><p>The presence of this information makes many scenarios easier. For example, a UI for browsing the records on a topic has a much better chance of being able to render the records properly if it can tell what they are. An error topic used to accumulate records which could not be delivered can safely contain many different kinds of records if they have headers enabling them to be deserialized. Finally, people trying to write a &quot;smart deserializer&quot; no longer need to guess what the records are.</p><h1>Proposed Changes</h1><p>This KIP introduces the concept of <strong>standard record headers</strong>. A standard record header is a record header used by Kafka to annotate records with additional metadata. Kafka reserves headers with keys starting with the characters <code>&quot;__&quot;</code>  (double underscore). KIP-298 introduced headers starting with these characters for dead-letter queues in Kafka Connect, and KIP-1191 did a similar thing for dead-letter queues in share groups, so there is clear precedent.</p><p>The KIP defines the following standard record headers.</p><table class=\"wrapped\"><colgroup><col /><col /><col /><col /></colgroup><tbody><tr><th scope=\"col\">Header name</th><th scope=\"col\">Java constant</th><th scope=\"col\">String value</th><th scope=\"col\">Meaning</th></tr><tr><td>Key content type</td><td><code>Header.CONTENT_TYPE_KEY</code> </td><td><code>&quot;__ct.k&quot;</code> </td><td>This header describes the content type of the record's key. The value of this header is one of the content types is defined in the table below.</td></tr><tr><td>Value content type</td><td><code>Header.CONTENT_TYPE_VALUE</code> </td><td><code>&quot;__ct.v&quot;</code> </td><td>This header describes the content type of the record's value. The value of this header is one of the content types is defined in the table below.</td></tr></tbody></table><p>Schema information would be another obvious candidate for standard record headers.</p><h2>Content type</h2><p>The KIP defines two standard record headers for describing the content type of a record. <code class=\"_0Of8r24Jdh _1ZnuxbEwa9 _1wydGW4Jdh _2Zuz6QEwa9 _0bjKvDzXzM _2sNsIgNxAV _4bt5LAIZbP _2WAcuGIZbP _3hxITiYbGa _3iDTPbS8kF _0KLXruTnLi _2NnhnEXpc7 _1UtDYzy7kJ _26BoRwOLYo _3zvHkHwPeg _1ANEUSlpBW\">&quot;__ct.k&quot;</code> describes the content type of the record's key, while <code class=\"_0Of8r24Jdh _1ZnuxbEwa9 _1wydGW4Jdh _2Zuz6QEwa9 _0bjKvDzXzM _2sNsIgNxAV _4bt5LAIZbP _2WAcuGIZbP _3hxITiYbGa _3iDTPbS8kF _0KLXruTnLi _2NnhnEXpc7 _1UtDYzy7kJ _26BoRwOLYo _3zvHkHwPeg _1ANEUSlpBW\">&quot;__ct.v&quot;</code> describes the content type of the record's value. These are the equivalent of the HTTP <code class=\"_0Of8r24Jdh _1ZnuxbEwa9 _1wydGW4Jdh _2Zuz6QEwa9 _0bjKvDzXzM _2sNsIgNxAV _4bt5LAIZbP _2WAcuGIZbP _3hxITiYbGa _3iDTPbS8kF _0KLXruTnLi _2NnhnEXpc7 _1UtDYzy7kJ _26BoRwOLYo _3zvHkHwPeg _1ANEUSlpBW\">content-type</code> header giving the consumers knowledge of the content they are about to receive.</p><p>The following table contains the values used for the content-type headers, <code class=\"_0Of8r24Jdh _1ZnuxbEwa9 _1wydGW4Jdh _2Zuz6QEwa9 _0bjKvDzXzM _2sNsIgNxAV _4bt5LAIZbP _2WAcuGIZbP _3hxITiYbGa _3iDTPbS8kF _0KLXruTnLi _2NnhnEXpc7 _1UtDYzy7kJ _26BoRwOLYo _3zvHkHwPeg _1ANEUSlpBW\">&quot;__ct.k&quot;</code> and <code class=\"_0Of8r24Jdh _1ZnuxbEwa9 _1wydGW4Jdh _2Zuz6QEwa9 _0bjKvDzXzM _2sNsIgNxAV _4bt5LAIZbP _2WAcuGIZbP _3hxITiYbGa _3iDTPbS8kF _0KLXruTnLi _2NnhnEXpc7 _1UtDYzy7kJ _26BoRwOLYo _3zvHkHwPeg _1ANEUSlpBW\">&quot;__ct.v&quot;</code>:</p><table class=\"wrapped\"><colgroup><col /><col /><col /><col /></colgroup><tbody><tr><th scope=\"col\">Java constant</th><th scope=\"col\">Byte value</th><th scope=\"col\">Meaning</th><th scope=\"col\">Associated serializer</th></tr><tr><td><code>Content.BYTES</code> </td><td>0</td><td>The content is an array of bytes.</td><td>ByteArraySerializer, ByteBufferSerializer</td></tr><tr><td><code>Content.STRING_UTF8</code> </td><td>1</td><td>The content is a string in UTF8 encoding.</td><td>StringSerializer</td></tr><tr><td><code>Content.BOOLEAN</code> </td><td>2</td><td>The content is a boolean.</td><td>BooleanSerializer</td></tr><tr><td><code>Content.DOUBLE</code> </td><td>3</td><td>The content is a 64-bit floating-point number.</td><td>DoubleSerializer</td></tr><tr><td><code>Content.FLOAT</code> </td><td>4</td><td>The content is a 32-bit floating-point number.</td><td>FloatSerializer</td></tr><tr><td><code>Content.INTEGER</code> </td><td>5</td><td>The content is a 32-bit integer.</td><td>IntegerSerializer</td></tr><tr><td><code>Content.LONG</code> </td><td>6</td><td>The content is a 64-bit integer.</td><td>LongSerializer</td></tr><tr><td><code>Content.SHORT</code> </td><td>7</td><td>The content is a 16-bit integer.</td><td>ShortSerializer</td></tr><tr><td><code>Content.UUID</code> </td><td>8</td><td>The content is a UUID expressed as a string in UTF8 format.</td><td>UuidSerializer</td></tr><tr><td><code>Content.JSON</code> </td><td>9</td><td>The content is in JSON encoding.</td><td>JsonSerializer</td></tr><tr><td><code>Content.MIME</code> </td><td>255, followed by any MIME type in UTF8 encoding</td><td>The content is in the MIME type.</td><td><br /></td></tr></tbody></table><p>Additional <code>Content</code>  values can be added by future KIPs.</p><h2>Handling by serializers and deserializers</h2><p>The serializers mentioned in the table above can annotate the records they serialize with the content-type record headers. For compatibility reasons, this behavior is controlled by configuration, <code>key.serializer.content.type.enable</code>  and <code>value.serializer.content.type.enable</code> for key and value serializers respectively. In AK 4.x, these configurations default to <code>false</code> while in AK 5.0, they default to <code>true</code> . If <code>true</code> , the serializer adds the content-type header to the record headers. This means that an application using one of these serializers and not setting an explicit value for these configurations will have the content-type headers added to its records as it migrates to Apache Kafka 5.0 serializers.</p><p>The deserializers use the content-type header in the equivalent way with the new behaviour controlled by configuration, <code>key.deserializer.content.type.enable</code>  and <code>value.deserializer.content.type.enable</code> for key and value deserializers respectively. If the configuration is <code>false</code> , the deserializer does not look for or validate the content-type header. If the configuration is <code>true</code> , the deserializer deserializes the record if it does not have a content-type header or if the value of the header matches the content type it supports. If the content-type header is present and does not contain the expected value, the deserializer throws the new exception <code>org.apache.kafka.common.errors.ContentTypeException</code>  which is a subclass of <code>SerializationException</code> .</p><h1>Public Interfaces</h1><h2>Client API</h2><p>The following are added to the <code>org.apache.kafka.common.header.Header</code>  interface.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"3bd6fc95-b333-4884-80de-11785068db42\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[// Standard header keys\n\n// CONTENT_TYPE_KEY header indicates the content type of the record key.\npublic static final String CONTENT_TYPE_KEY = \"__ct.k\";\n\n// CONTENT_TYPE_VALUE header indicates the content type of the record value.\npublic static final String CONTENT_TYPE_VALUE = \"__ct.v\";]]></ac:plain-text-body></ac:structured-macro><p>The following interfacei is added to the package <code>org.apache.kafka.common.serialization</code> .</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"fbcf6c64-58dd-470a-aa1d-95553d429708\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[package org.apache.kafka.common.serialization;\n\npublic interface Content {\n  public static final byte BYTES = (byte)0;\n  public static final byte STRING_UTF8 = (byte)1;\n  public static final byte BOOLEAN = (byte)2;\n  public static final byte DOUBLE = (byte)3;\n  public static final byte FLOAT = (byte)4;\n  public static final byte INTEGER = (byte)5;\n  public static final byte LONG = (byte)6;\n  public static final byte SHORT = (byte)7;\n  public static final byte UUID = (byte)8;\n  public static final byte JSON = (byte)9;\n  public static final byte MIME = (byte)255;\n}]]></ac:plain-text-body></ac:structured-macro><p>A new exception <code>org.apache.kafka.common.errors.ContentTypeException</code>  is introduced which is a subclass of <code>SerializationException</code> . </p><h2>Client configurations</h2><p>The following new client configurations are introduced to configure the behavior in the serializers and deserializers.</p><table><colgroup><col /><col /><col /></colgroup><tbody><tr><th scope=\"col\">Configuration</th><th scope=\"col\">Description</th><th scope=\"col\">Values</th></tr><tr><td><code>key.serializer.content.type.enable</code> </td><td>Controls whether the key serializer adds a content-type record header to the record.</td><td>Boolean. Default <code>false</code>  in AK 4.x, default <code>true</code>  in AK 5.0 and later.</td></tr><tr><td><code>value.serializer.content.type.enable</code> </td><td>Controls whether the value serializer adds a content-type record header to the record.</td><td>Boolean. Default <code>false</code>  in AK 4.x, default <code>true</code>  in AK 5.0 and later.</td></tr><tr><td><code>key.deserializer.content.type.enable</code> </td><td>Controls whether the key deserializer validates a content-type record header in the record.</td><td>Boolean. Default <code>false</code>  in AK 4.x, default <code>true</code>  in AK 5.0 and later.</td></tr><tr><td><code>value.deserialier.content.type.enable</code> </td><td>Controls whether the value deserializer validates a content-type record header in the record.</td><td>Boolean. Default <code>false</code>  in AK 4.x, default <code>true</code>  in AK 5.0 and later.</td></tr></tbody></table><h1>Compatibility, Deprecation, and Migration Plan</h1><p>As a client application begins to use an Apache Kafka 5.0 or later serializer, the content-type record headers will be added to its records, unless it sets <code>key.serializer.content.type.enable=false</code>  or the value serializer equivalent.</p><p>As a client application begings to use an Apache kafka 5.0 or later deserializer, the content-type record headers if present must match the values expected by the deserializer, unless it sets <code>key.deserializer.content.type.enable=false</code>  or the value deserializer equivalent.</p><h1>Test Plan</h1><p>The KIP will be tested by unit and integration tests in the usual way.</p><h1>Rejected Alternatives</h1><p>None so far.</p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/451980224?status=historical&version=3"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1374
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=461570391",
+    "edit": "/pages/resumedraft.action?draftId=461570391&draftShareId=f80719d1-0ece-4c12-8f87-dd3de20f57f0",
+    "tinyui": "/x/VwGDGw",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/451980224?status=historical&version=3"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/451980224/child?parentVersion=3",
+    "restrictions": "/rest/api/content/451980224/restriction/byOperation",
+    "history": "/rest/api/content/451980224/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/451980224/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/451980224/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "451980224",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1383: Standard record headers for content type",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-19T17:45:07.000Z",
+    "message": "Initial content",
+    "number": 2,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451980224/version/2"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451980224?status=historical&version=2"
+    }
+   },
+   "position": 1374,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><h1>Status</h1><p><strong>Current state</strong>: <em>[One of &quot;Under Discussion&quot;, &quot;Accepted&quot;, &quot;Rejected&quot;]</em></p><p><strong>Discussion thread</strong>: <em><a href=\"http://mail-archives.apache.org/mod_mbox/kafka-dev/201501.mbox/%3CCAOeJiJh6Vkkca85bWYgkeOZ8rC6%2BKDh7zzq8vMKECL_7PNExTA%40mail.gmail.com%3E\">here</a> [Change the link from the KIP proposal email archive to your own email thread]<br /></em></p><p><strong>JIRA</strong>: <em><a href=\"https://issues.apache.org/jira/browse/KAFKA-1\">here</a> [Change the link from KAFKA-1 to your own ticket]<br /></em></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p style=\"\" data-renderer-start-pos=\"609\">For many releases, Kafka records have been able to include additional information alongside the payload in the form of headers. Compared with other messaging technologies, Kafka has very little standard metadata which describes the records. One obvious kind of metadata which is would be helpful to carry is the “content type” of the records. In a future Kafka with schema support, the schema information would naturally live in the record headers. This KIP proposes using standard headers for carrying this kind of metadata.</p><p style=\"\" data-renderer-start-pos=\"1388\">The presence of this information makes many scenarios easier. For example, a UI for browsing the records on a topic has a much better chance of being able to render the records properly if it can tell what they are. An error topic used to accumulate records which could not be delivered can safely contain many different kinds of records if they have headers enabling them to be deserialized.</p><h1>Proposed Changes</h1><p>This KIP introduces the concept of standard headers. A standard header is a record header used by Kafka to annotate records with additional metadata. Kafka reserves headers with keys starting with the characters <code>&quot;__&quot;</code>  (double underscore). KIP-298 introduced headers starting with these characters for dead-letter queues in Kafka Connect, and KIP-1191 did a similar thing for dead-letter queues in share groups, so there is clear precedent.</p><p>The KIP defines the following standard headers.</p><table><colgroup><col /><col /><col /><col /></colgroup><tbody><tr><th scope=\"col\">Header name</th><th scope=\"col\">Java constant</th><th scope=\"col\">String value</th><th scope=\"col\">Meaning</th></tr><tr><td>Key content type</td><td><code>Header.CONTENT_TYPE_KEY</code> </td><td><code>&quot;__ct.k&quot;</code> </td><td>This header describes the content type of the record's key. The value of this header is one of the content types is defined in the table below.</td></tr><tr><td>Value content type</td><td><code>Header.CONTENT_TYPE_VALUE</code> </td><td><code>&quot;__ct.v&quot;</code> </td><td>This header describes the content type of the record's value. The value of this header is one of the content types is defined in the table below.</td></tr></tbody></table><p>Schema information would be another obvious candidate for standard headers.</p><h2>Content type</h2><p style=\"\" data-renderer-start-pos=\"3177\">The KIP defines two standard headers for describing the content type of a record. <code class=\"_0Of8r24Jdh _1ZnuxbEwa9 _1wydGW4Jdh _2Zuz6QEwa9 _0bjKvDzXzM _2sNsIgNxAV _4bt5LAIZbP _2WAcuGIZbP _3hxITiYbGa _3iDTPbS8kF _0KLXruTnLi _2NnhnEXpc7 _1UtDYzy7kJ _26BoRwOLYo _3zvHkHwPeg _1ANEUSlpBW\" data-renderer-mark=\"true\">&quot;__ct.k&quot;</code> describes the content type of the record's key, while <code class=\"_0Of8r24Jdh _1ZnuxbEwa9 _1wydGW4Jdh _2Zuz6QEwa9 _0bjKvDzXzM _2sNsIgNxAV _4bt5LAIZbP _2WAcuGIZbP _3hxITiYbGa _3iDTPbS8kF _0KLXruTnLi _2NnhnEXpc7 _1UtDYzy7kJ _26BoRwOLYo _3zvHkHwPeg _1ANEUSlpBW\" data-renderer-mark=\"true\">&quot;__ct.v&quot;</code> describes the content type of the record's value. These are the equivalent of the HTTP <code class=\"_0Of8r24Jdh _1ZnuxbEwa9 _1wydGW4Jdh _2Zuz6QEwa9 _0bjKvDzXzM _2sNsIgNxAV _4bt5LAIZbP _2WAcuGIZbP _3hxITiYbGa _3iDTPbS8kF _0KLXruTnLi _2NnhnEXpc7 _1UtDYzy7kJ _26BoRwOLYo _3zvHkHwPeg _1ANEUSlpBW\" data-renderer-mark=\"true\">content-type</code> header giving the consumers knowledge of the content they are about to receive.</p><p style=\"\" data-renderer-start-pos=\"3512\">The content-type header information is optionally returned by the serializer when it serializes the key or value data. The content-type header information is optionally validated by the deserializer when it deserializes the key or value data.</p><p style=\"\" data-renderer-start-pos=\"3756\">The following table contains the values used for the content-type headers, <code class=\"_0Of8r24Jdh _1ZnuxbEwa9 _1wydGW4Jdh _2Zuz6QEwa9 _0bjKvDzXzM _2sNsIgNxAV _4bt5LAIZbP _2WAcuGIZbP _3hxITiYbGa _3iDTPbS8kF _0KLXruTnLi _2NnhnEXpc7 _1UtDYzy7kJ _26BoRwOLYo _3zvHkHwPeg _1ANEUSlpBW\" data-renderer-mark=\"true\">&quot;__ct.k&quot;</code> and <code class=\"_0Of8r24Jdh _1ZnuxbEwa9 _1wydGW4Jdh _2Zuz6QEwa9 _0bjKvDzXzM _2sNsIgNxAV _4bt5LAIZbP _2WAcuGIZbP _3hxITiYbGa _3iDTPbS8kF _0KLXruTnLi _2NnhnEXpc7 _1UtDYzy7kJ _26BoRwOLYo _3zvHkHwPeg _1ANEUSlpBW\" data-renderer-mark=\"true\">&quot;__ct.v&quot;</code>:</p><table><colgroup><col /><col /><col /><col /></colgroup><tbody><tr><th scope=\"col\">Java constant</th><th scope=\"col\">Byte value</th><th scope=\"col\">Meaning</th><th scope=\"col\">Associated serializer</th></tr><tr><td><code>Content.BYTES</code> </td><td>0</td><td>The content is an array of bytes.</td><td>ByteArraySerializer, ByteBufferSerializer</td></tr><tr><td><code>Content.STRING_UTF8</code> </td><td>1</td><td>The content is a string in UTF8 encoding.</td><td>StringSerializer</td></tr><tr><td><code>Content.JSON</code> </td><td>2</td><td>The conte is in JSON encoding.</td><td>JsonSerializer</td></tr><tr><td><code>Content.BOOLEAN</code> </td><td>3</td><td>The content is a boolean.</td><td>BooleanSerializer</td></tr><tr><td><code>Content.DOUBLE</code> </td><td>4</td><td>The content is a 64-bit floating-point number.</td><td>DoubleSerializer</td></tr><tr><td><code>Content.FLOAT</code> </td><td>5</td><td>The content is a 32-bit floating-point number.</td><td>FloatSerializer</td></tr><tr><td><code>Content.INTEGER</code> </td><td>6</td><td>The content is a 32-bit integer.</td><td>IntegerSerializer</td></tr><tr><td><code>Content.LONG</code> </td><td>7</td><td>The content is a 64-bit integer.</td><td>LongSerializer</td></tr><tr><td><code>Content.SHORT</code> </td><td>8</td><td>The content is a 16-bit integer.</td><td>ShortSerializer</td></tr><tr><td><code>Content.UUID</code> </td><td>9</td><td>The content is a UUID expressed as a string in UTF8 format.</td><td>UuidSerializer</td></tr><tr><td><code>Content.MIME</code> </td><td>255, followed by any MIME type in UTF8 encoding</td><td>The content is in the MIME type.</td><td><br /></td></tr></tbody></table><h1>Public Interfaces</h1><h2>Client API</h2><p>The following are added to the <code>org.apache.kafka.common.header.Header</code>  interface.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"3bd6fc95-b333-4884-80de-11785068db42\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[// Standard header keys\n\n// CONTENT_TYPE_KEY header indicates the content type of the record key.\npublic static final String CONTENT_TYPE_KEY = \"__ct.k\";\n\n// CONTENT_TYPE_VALUE header indicates the content type of the record value.\npublic static final String CONTENT_TYPE_VALUE = \"__ct.v\";]]></ac:plain-text-body></ac:structured-macro><p>The following interfacei is added to the package <code>org.apache.kafka.common.serialization</code> .</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"fbcf6c64-58dd-470a-aa1d-95553d429708\"><ac:parameter ac:name=\"language\">java</ac:parameter><ac:plain-text-body><![CDATA[package org.apache.kafka.common.serialization;\n\npublic interface Content {\n  public static final byte BYTES = (byte)0;\n  public static final byte STRING_UTF8 = (byte)1;\n  public static final byte JSON = (byte)2;\n  public static final byte BOOLEAN = (byte)3;\n  public static final byte DOUBLE = (byte)4;\n  public static final byte FLOAT = (byte)5;\n  public static final byte INTEGER = (byte)6;\n  public static final byte LONG = (byte)7;\n  public static final byte SHORT = (byte)8;\n  public static final byte UUID = (byte)9;\n  public static final byte MIME = (byte)255;\n}]]></ac:plain-text-body></ac:structured-macro><h1>Compatibility, Deprecation, and Migration Plan</h1><ul><li><em>What impact (if any) will there be on existing users? </em></li><li><em>If we are changing behavior how will we phase out the older behavior? </em></li><li><em>If we need special migration tools, describe them here.</em></li><li><em>When will we remove the existing behavior?</em></li></ul><h1>Test Plan</h1><p><em>Describe in few sentences how the KIP will be tested. We are mostly interested in system tests (since unit-tests are specific to implementation details). How will we know that the implementation works as expected? How will we know nothing broke?</em></p><h1>Rejected Alternatives</h1><p><em><span>If there are alternative ways of accomplishing the same thing, what were they? The purpose of this section is to motivate why the design is the way it is and not some other way.</span></em></p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/451980224?status=historical&version=2"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1374
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=451980258",
+    "edit": "/pages/resumedraft.action?draftId=451980258&draftShareId=f80719d1-0ece-4c12-8f87-dd3de20f57f0",
+    "tinyui": "/x/4qvwGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/451980224?status=historical&version=2"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/451980224/child?parentVersion=2",
+    "restrictions": "/rest/api/content/451980224/restriction/byOperation",
+    "history": "/rest/api/content/451980224/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/451980224/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/451980224/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "451980224",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1383: Standard record headers for content type",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-19T16:01:53.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451980224/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451980224?status=historical&version=1"
+    }
+   },
+   "position": 1374,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><p><em>This page is meant as a template for writing a <ac:link><ri:page ri:content-title=\"Kafka Improvement Proposals\" /><ac:plain-text-link-body><![CDATA[KIP]]></ac:plain-text-link-body></ac:link>. To create a KIP choose Tools-&gt;Copy on this page and modify with your content and replace the heading with the next KIP number and a description of your issue. Replace anything in italics with your own description.</em></p><h1>Status</h1><p><strong>Current state</strong>: <em>[One of &quot;Under Discussion&quot;, &quot;Accepted&quot;, &quot;Rejected&quot;]</em></p><p><strong>Discussion thread</strong>: <em><a href=\"http://mail-archives.apache.org/mod_mbox/kafka-dev/201501.mbox/%3CCAOeJiJh6Vkkca85bWYgkeOZ8rC6%2BKDh7zzq8vMKECL_7PNExTA%40mail.gmail.com%3E\">here</a> [Change the link from the KIP proposal email archive to your own email thread]<br /></em></p><p><strong>JIRA</strong>: <em><a href=\"https://issues.apache.org/jira/browse/KAFKA-1\">here</a> [Change the link from KAFKA-1 to your own ticket]<br /></em></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p><em><span>Describe the problems you are trying to solve.</span></em></p><h1>Public Interfaces</h1><p><em><span>Briefly list any new interfaces that will be introduced as part of this proposal or any existing interfaces that will be removed or changed. The purpose of this section is to concisely call out the public contract that will come along with this feature.</span></em></p><p><em><span>A public interface is any change to the following:</span></em></p><ul><li><p><em>Binary log format</em></p></li><li><p><em>The network protocol and api behavior</em></p></li><li><p>Any class in the public packages under clientsConfiguration, especially client configuration</p><ul><li><p class=\"p1\"><span class=\"s1\">org/apache/kafka/common/serialization</span></p></li><li><p class=\"p1\"><span class=\"s1\">org/apache/kafka/common</span></p></li><li><p class=\"p1\"><span class=\"s1\">org/apache/kafka/common/errors</span></p></li><li><p class=\"p1\"><span>org/apache/kafka/clients/producer</span></p></li><li><p class=\"p1\"><span>org/apache/kafka/clients/consumer (eventually, once stable)</span></p></li></ul></li><li><p><em>Monitoring</em></p></li><li><p><em>Command line tools and arguments</em></p></li><li><em>Anything else that will likely break existing users in some way when they upgrade</em></li></ul><h1>Proposed Changes</h1><p><em><span>Describe the new thing you want to do in appropriate detail. This may be fairly extensive and have large subsections of its own. Or it may be a few sentences. Use judgement based on the scope of the change.</span></em></p><h1>Compatibility, Deprecation, and Migration Plan</h1><ul><li><em>What impact (if any) will there be on existing users? </em></li><li><em>If we are changing behavior how will we phase out the older behavior? </em></li><li><em>If we need special migration tools, describe them here.</em></li><li><em>When will we remove the existing behavior?</em></li></ul><h1>Test Plan</h1><p><em>Describe in few sentences how the KIP will be tested. We are mostly interested in system tests (since unit-tests are specific to implementation details). How will we know that the implementation works as expected? How will we know nothing broke?</em></p><h1>Rejected Alternatives</h1><p><em><span>If there are alternative ways of accomplishing the same thing, what were they? The purpose of this section is to motivate why the design is the way it is and not some other way.</span></em></p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/451980224?status=historical&version=1"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1374
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=451980229",
+    "edit": "/pages/resumedraft.action?draftId=451980229&draftShareId=f80719d1-0ece-4c12-8f87-dd3de20f57f0",
+    "tinyui": "/x/xavwGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/451980224?status=historical&version=1"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/451980224/child?parentVersion=1",
+    "restrictions": "/rest/api/content/451980224/restriction/byOperation",
+    "history": "/rest/api/content/451980224/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/451980224/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/451980224/restriction/relevantViewRestrictions"
+   }
+  }
+ ],
+ "comments": {
+  "results": [],
+  "start": 0,
+  "limit": 200,
+  "size": 0,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/api/content/451980224/child/comment?expand=body.storage%2Cversion%2Cancestors&depth=all",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ }
+}

@@ -1,0 +1,1679 @@
+{
+ "pull": {
+  "url": "https://api.github.com/repos/apache/kafka/pulls/23909",
+  "id": 4962459956,
+  "node_id": "PR_kwDOACG9q88AAAABJ8khNA",
+  "html_url": "https://github.com/apache/kafka/pull/23909",
+  "diff_url": "https://github.com/apache/kafka/pull/23909.diff",
+  "patch_url": "https://github.com/apache/kafka/pull/23909.patch",
+  "issue_url": "https://api.github.com/repos/apache/kafka/issues/23909",
+  "commits_url": "https://api.github.com/repos/apache/kafka/pulls/23909/commits",
+  "review_comments_url": "https://api.github.com/repos/apache/kafka/pulls/23909/comments",
+  "review_comment_url": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}",
+  "comments_url": "https://api.github.com/repos/apache/kafka/issues/23909/comments",
+  "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/cb773bf0a40646a7ede6b754689db3e83f6c9743",
+  "number": 23909,
+  "state": "closed",
+  "locked": false,
+  "title": "MINOR: Use Locale.ROOT for the SCRAM iteration count and remove the unused credential string format",
+  "user": {
+   "login": "sharanggupta",
+   "id": 17857381,
+   "node_id": "MDQ6VXNlcjE3ODU3Mzgx",
+   "avatar_url": "https://avatars.githubusercontent.com/u/17857381?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/sharanggupta",
+   "html_url": "https://github.com/sharanggupta",
+   "followers_url": "https://api.github.com/users/sharanggupta/followers",
+   "following_url": "https://api.github.com/users/sharanggupta/following{/other_user}",
+   "gists_url": "https://api.github.com/users/sharanggupta/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/sharanggupta/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/sharanggupta/subscriptions",
+   "organizations_url": "https://api.github.com/users/sharanggupta/orgs",
+   "repos_url": "https://api.github.com/users/sharanggupta/repos",
+   "events_url": "https://api.github.com/users/sharanggupta/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/sharanggupta/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "body": "`ScramMessages.ServerFirstMessage.toMessage()` builds the SCRAM\nserver-first-message with `String.format(\"r=%s,s=%s,i=%d\", ...)`.\nWithout an explicit `Locale`, `%d` follows the JVM's default locale, and\non a broker whose default locale uses native digits (for example\n`ar-EG`, `fa-IR`, `bn-BD`, `ne-NP`; JDK 9+ CLDR data) the iteration\ncount is emitted as `i=٤٠٩٦` instead of `i=4096`.\n\nRFC 5802 requires ASCII digits, and `ServerFirstMessage` itself parses\nthe count with `i=(?<iterations>[0-9]+)`, so every SCRAM handshake\nagainst such a broker fails with `SaslException: Invalid SCRAM server\nfirst message format: r=...,i=٤٠٩٦` (non-Java clients reject it the same\nway).\n\nThis passes `Locale.ROOT` to that `String.format` call, as already done\nfor `toLowerCase()` under KAFKA-20638 and for the\n`tools`/`server-common` modules under KAFKA-20646 (which does not cover\n`clients`), and adds a test that switches the default locale to `ar-EG`\n(guarded with `@ResourceLock(Resources.LOCALE)`) and verifies the\nmessage still uses ASCII digits. The other `String.format` calls in\n`ScramMessages` only use `%s` and are not locale-sensitive.\n\nFollowing review, it also removes\n`ScramCredentialUtils.credentialToString()` / `credentialFromString()`:\nthe ZooKeeper-era credential string format had the same `%d` problem but\nno callers left outside its own tests, so the methods, their constants\nand the tests that only exercised them are gone.\n`ScramCredentialUtils.createCache()` and its test are unchanged.\n\nReproduced against the released `kafka-clients` 4.4.0 jar on JDK 25:\n```\njava -Duser.language=ar -Duser.country=EG ...\nserver-first-message on the wire =\nr=clientnonceservernonce,s=MDEy...,i=٤٠٩٦\nclient parse                     = FAILED: Invalid SCRAM server first\nmessage format\n```\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>\n\nReviewers: Andrew Schofield <aschofield@confluent.io>\n",
+  "labels": [
+   {
+    "id": 7491388177,
+    "node_id": "LA_kwDOACG9q88AAAABvoWDEQ",
+    "url": "https://api.github.com/repos/apache/kafka/labels/clients",
+    "name": "clients",
+    "description": null,
+    "color": "ededed",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 7522931565,
+    "node_id": "LA_kwDOACG9q88AAAABwGbTbQ",
+    "url": "https://api.github.com/repos/apache/kafka/labels/ci-approved",
+    "name": "ci-approved",
+    "description": "",
+    "color": "ffffff",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   }
+  ],
+  "milestone": null,
+  "active_lock_reason": null,
+  "created_at": "2026-10-22T05:12:38Z",
+  "updated_at": "2026-10-27T17:37:43Z",
+  "closed_at": "2026-10-27T17:37:43Z",
+  "merged_at": "2026-10-27T17:37:43Z",
+  "merge_commit_sha": "c9e355086b7341c76e0b069595deb45cfa3e195e",
+  "assignee": null,
+  "assignees": [],
+  "requested_reviewers": [],
+  "requested_teams": [],
+  "head": {
+   "label": "sharanggupta:minor-scram-locale-root",
+   "ref": "minor-scram-locale-root",
+   "repo": {
+    "id": 1428968457,
+    "node_id": "R_kgDOVSxUCQ",
+    "name": "kafka",
+    "full_name": "sharanggupta/kafka",
+    "owner": {
+     "login": "sharanggupta",
+     "id": 17857381,
+     "node_id": "MDQ6VXNlcjE3ODU3Mzgx",
+     "avatar_url": "https://avatars.githubusercontent.com/u/17857381?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/sharanggupta",
+     "html_url": "https://github.com/sharanggupta",
+     "followers_url": "https://api.github.com/users/sharanggupta/followers",
+     "following_url": "https://api.github.com/users/sharanggupta/following{/other_user}",
+     "gists_url": "https://api.github.com/users/sharanggupta/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/sharanggupta/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/sharanggupta/subscriptions",
+     "organizations_url": "https://api.github.com/users/sharanggupta/orgs",
+     "repos_url": "https://api.github.com/users/sharanggupta/repos",
+     "events_url": "https://api.github.com/users/sharanggupta/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/sharanggupta/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": true,
+    "archived": false,
+    "disabled": false,
+    "description": "Apache Kafka - A distributed event streaming platform",
+    "homepage": "https://kafka.apache.org/",
+    "language": null,
+    "visibility": "public",
+    "is_template": false,
+    "topics": [],
+    "forks_count": 0,
+    "forks": 0,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "watchers": 0,
+    "open_issues_count": 0,
+    "open_issues": 0,
+    "size": 320676,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-25T19:05:05Z",
+    "created_at": "2026-10-21T21:52:55Z",
+    "updated_at": "2026-10-21T21:52:55Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/sharanggupta/kafka",
+    "html_url": "https://github.com/sharanggupta/kafka",
+    "archive_url": "https://api.github.com/repos/sharanggupta/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/sharanggupta/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/sharanggupta/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/sharanggupta/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/sharanggupta/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/sharanggupta/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/sharanggupta/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/sharanggupta/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/sharanggupta/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/sharanggupta/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/sharanggupta/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/sharanggupta/kafka/downloads",
+    "events_url": "https://api.github.com/repos/sharanggupta/kafka/events",
+    "forks_url": "https://api.github.com/repos/sharanggupta/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/sharanggupta/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/sharanggupta/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/sharanggupta/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/sharanggupta/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/sharanggupta/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/sharanggupta/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/sharanggupta/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/sharanggupta/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/sharanggupta/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/sharanggupta/kafka/languages",
+    "merges_url": "https://api.github.com/repos/sharanggupta/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/sharanggupta/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/sharanggupta/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/sharanggupta/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/sharanggupta/kafka/releases{/id}",
+    "ssh_url": "git@github.com:sharanggupta/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/sharanggupta/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/sharanggupta/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/sharanggupta/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/sharanggupta/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/sharanggupta/kafka/tags",
+    "teams_url": "https://api.github.com/repos/sharanggupta/kafka/teams",
+    "trees_url": "https://api.github.com/repos/sharanggupta/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/sharanggupta/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/sharanggupta/kafka/hooks",
+    "svn_url": "https://github.com/sharanggupta/kafka"
+   },
+   "sha": "cb773bf0a40646a7ede6b754689db3e83f6c9743",
+   "user": {
+    "login": "sharanggupta",
+    "id": 17857381,
+    "node_id": "MDQ6VXNlcjE3ODU3Mzgx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17857381?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sharanggupta",
+    "html_url": "https://github.com/sharanggupta",
+    "followers_url": "https://api.github.com/users/sharanggupta/followers",
+    "following_url": "https://api.github.com/users/sharanggupta/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sharanggupta/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sharanggupta/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sharanggupta/subscriptions",
+    "organizations_url": "https://api.github.com/users/sharanggupta/orgs",
+    "repos_url": "https://api.github.com/users/sharanggupta/repos",
+    "events_url": "https://api.github.com/users/sharanggupta/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sharanggupta/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "base": {
+   "label": "apache:trunk",
+   "ref": "trunk",
+   "repo": {
+    "id": 2211243,
+    "node_id": "MDEwOlJlcG9zaXRvcnkyMjExMjQz",
+    "name": "kafka",
+    "full_name": "apache/kafka",
+    "owner": {
+     "login": "apache",
+     "id": 47359,
+     "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+     "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/apache",
+     "html_url": "https://github.com/apache",
+     "followers_url": "https://api.github.com/users/apache/followers",
+     "following_url": "https://api.github.com/users/apache/following{/other_user}",
+     "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+     "organizations_url": "https://api.github.com/users/apache/orgs",
+     "repos_url": "https://api.github.com/users/apache/repos",
+     "events_url": "https://api.github.com/users/apache/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/apache/received_events",
+     "type": "Organization",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": false,
+    "archived": false,
+    "disabled": false,
+    "description": "Apache Kafka - A distributed event streaming platform",
+    "homepage": "https://kafka.apache.org/",
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [
+     "java",
+     "kafka",
+     "scala",
+     "streaming"
+    ],
+    "forks_count": 15637,
+    "forks": 15637,
+    "stargazers_count": 34153,
+    "watchers_count": 34153,
+    "watchers": 34153,
+    "open_issues_count": 674,
+    "open_issues": 674,
+    "size": 322164,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-29T11:37:21Z",
+    "created_at": "2011-08-15T18:06:16Z",
+    "updated_at": "2026-10-29T11:37:29Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/apache/kafka",
+    "html_url": "https://github.com/apache/kafka",
+    "archive_url": "https://api.github.com/repos/apache/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/apache/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/apache/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/apache/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/apache/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/apache/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/apache/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/apache/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/apache/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/apache/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/apache/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/apache/kafka/downloads",
+    "events_url": "https://api.github.com/repos/apache/kafka/events",
+    "forks_url": "https://api.github.com/repos/apache/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/apache/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/apache/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/apache/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/apache/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/apache/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/apache/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/apache/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/apache/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/apache/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/apache/kafka/languages",
+    "merges_url": "https://api.github.com/repos/apache/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/apache/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/apache/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/apache/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/apache/kafka/releases{/id}",
+    "ssh_url": "git@github.com:apache/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/apache/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/apache/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/apache/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/apache/kafka/tags",
+    "teams_url": "https://api.github.com/repos/apache/kafka/teams",
+    "trees_url": "https://api.github.com/repos/apache/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/apache/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/apache/kafka/hooks",
+    "svn_url": "https://github.com/apache/kafka"
+   },
+   "sha": "a3444d8b32beee97bd0afaa267a9c4180815de60",
+   "user": {
+    "login": "apache",
+    "id": 47359,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/apache",
+    "html_url": "https://github.com/apache",
+    "followers_url": "https://api.github.com/users/apache/followers",
+    "following_url": "https://api.github.com/users/apache/following{/other_user}",
+    "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+    "organizations_url": "https://api.github.com/users/apache/orgs",
+    "repos_url": "https://api.github.com/users/apache/repos",
+    "events_url": "https://api.github.com/users/apache/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/apache/received_events",
+    "type": "Organization",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "_links": {
+   "comments": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23909/comments"
+   },
+   "commits": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23909/commits"
+   },
+   "statuses": {
+    "href": "https://api.github.com/repos/apache/kafka/statuses/cb773bf0a40646a7ede6b754689db3e83f6c9743"
+   },
+   "html": {
+    "href": "https://github.com/apache/kafka/pull/23909"
+   },
+   "issue": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23909"
+   },
+   "review_comments": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23909/comments"
+   },
+   "review_comment": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}"
+   },
+   "self": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23909"
+   }
+  },
+  "author_association": "CONTRIBUTOR",
+  "auto_merge": null,
+  "draft": false,
+  "merged": true,
+  "mergeable": null,
+  "rebaseable": null,
+  "mergeable_state": "unknown",
+  "merged_by": {
+   "login": "AndrewJSchofield",
+   "id": 13795597,
+   "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+   "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/AndrewJSchofield",
+   "html_url": "https://github.com/AndrewJSchofield",
+   "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+   "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+   "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+   "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+   "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+   "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "comments": 0,
+  "review_comments": 4,
+  "maintainer_can_modify": false,
+  "commits": 3,
+  "additions": 28,
+  "deletions": 102,
+  "changed_files": 4
+ },
+ "reviews": [
+  {
+   "id": 5644711195,
+   "node_id": "PRR_kwDOACG9q88AAAABUHN1Gw",
+   "user": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?u=7dbeb75783bacbd2c86daee91460abbfe5d0e2a7&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "Thanks for the PR. It seems to me that some of this code is changing legacy code from ZooKeeper days which could probably just be removed.",
+   "state": "CHANGES_REQUESTED",
+   "html_url": "https://github.com/apache/kafka/pull/23909#pullrequestreview-5644711195",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23909",
+   "author_association": "MEMBER",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23909#pullrequestreview-5644711195"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23909"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-25T18:53:56Z",
+   "commit_id": "2c661d907fdfd4c3324d0b7d8f4350477b18ba6e"
+  },
+  {
+   "id": 5644788728,
+   "node_id": "PRR_kwDOACG9q88AAAABUHSj-A",
+   "user": {
+    "login": "sharanggupta",
+    "id": 17857381,
+    "node_id": "MDQ6VXNlcjE3ODU3Mzgx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17857381?u=b74050fe76eba7c3b7781bb8d26c328507e786cb&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sharanggupta",
+    "html_url": "https://github.com/sharanggupta",
+    "followers_url": "https://api.github.com/users/sharanggupta/followers",
+    "following_url": "https://api.github.com/users/sharanggupta/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sharanggupta/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sharanggupta/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sharanggupta/subscriptions",
+    "organizations_url": "https://api.github.com/users/sharanggupta/orgs",
+    "repos_url": "https://api.github.com/users/sharanggupta/repos",
+    "events_url": "https://api.github.com/users/sharanggupta/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sharanggupta/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23909#pullrequestreview-5644788728",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23909",
+   "author_association": "CONTRIBUTOR",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23909#pullrequestreview-5644788728"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23909"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-25T19:05:37Z",
+   "commit_id": "cb773bf0a40646a7ede6b754689db3e83f6c9743"
+  },
+  {
+   "id": 5644788930,
+   "node_id": "PRR_kwDOACG9q88AAAABUHSkwg",
+   "user": {
+    "login": "sharanggupta",
+    "id": 17857381,
+    "node_id": "MDQ6VXNlcjE3ODU3Mzgx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17857381?u=b74050fe76eba7c3b7781bb8d26c328507e786cb&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sharanggupta",
+    "html_url": "https://github.com/sharanggupta",
+    "followers_url": "https://api.github.com/users/sharanggupta/followers",
+    "following_url": "https://api.github.com/users/sharanggupta/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sharanggupta/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sharanggupta/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sharanggupta/subscriptions",
+    "organizations_url": "https://api.github.com/users/sharanggupta/orgs",
+    "repos_url": "https://api.github.com/users/sharanggupta/repos",
+    "events_url": "https://api.github.com/users/sharanggupta/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sharanggupta/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23909#pullrequestreview-5644788930",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23909",
+   "author_association": "CONTRIBUTOR",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23909#pullrequestreview-5644788930"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23909"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-25T19:05:39Z",
+   "commit_id": "cb773bf0a40646a7ede6b754689db3e83f6c9743"
+  },
+  {
+   "id": 5650872692,
+   "node_id": "PRR_kwDOACG9q88AAAABUNF5dA",
+   "user": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?u=7dbeb75783bacbd2c86daee91460abbfe5d0e2a7&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "Thanks for the updates. Looks good to me.",
+   "state": "APPROVED",
+   "html_url": "https://github.com/apache/kafka/pull/23909#pullrequestreview-5650872692",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23909",
+   "author_association": "MEMBER",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23909#pullrequestreview-5650872692"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23909"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-26T10:51:46Z",
+   "commit_id": "cb773bf0a40646a7ede6b754689db3e83f6c9743"
+  }
+ ],
+ "review_comments": [
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4371964107",
+   "pull_request_review_id": 5644711195,
+   "id": 4371964107,
+   "node_id": "PRRC_kwDOACG9q88AAAABBJbgyw",
+   "diff_hunk": "@@ -41,7 +42,8 @@ public final class ScramCredentialUtils {\n     private ScramCredentialUtils() {}\n \n     public static String credentialToString(ScramCredential credential) {",
+   "path": "clients/src/main/java/org/apache/kafka/common/security/scram/internals/ScramCredentialUtils.java",
+   "commit_id": "2c661d907fdfd4c3324d0b7d8f4350477b18ba6e",
+   "original_commit_id": "2c661d907fdfd4c3324d0b7d8f4350477b18ba6e",
+   "user": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "This appears to be code that is no longer used, apart from a handful of tests.",
+   "created_at": "2026-10-25T18:47:51Z",
+   "updated_at": "2026-10-25T18:53:56Z",
+   "html_url": "https://github.com/apache/kafka/pull/23909#discussion_r4371964107",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23909",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4371964107"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23909#discussion_r4371964107"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23909"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4371964107/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": null,
+   "original_line": 44,
+   "side": "RIGHT",
+   "author_association": "MEMBER",
+   "original_position": 11,
+   "position": 1,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4371969556",
+   "pull_request_review_id": 5644711195,
+   "id": 4371969556,
+   "node_id": "PRRC_kwDOACG9q88AAAABBJb2FA",
+   "diff_hunk": "@@ -166,6 +167,26 @@ public void validServerFirstMessage() throws SaslException {\n         }\n     }\n \n+    @Test\n+    public void serverFirstMessageUsesAsciiDigitsRegardlessOfDefaultLocale() throws SaslException {\n+        String clientNonce = formatter.secureRandomString();\n+        String serverNonce = formatter.secureRandomString();\n+        String nonce = clientNonce + serverNonce;\n+        String salt = randomBytesAsString();\n+\n+        // Under a default locale with native digits (e.g. ar-EG formats %d as Arabic-Indic digits) the\n+        // iteration count must still be sent as ASCII digits, otherwise clients cannot parse the message\n+        Locale defaultLocale = Locale.getDefault();\n+        Locale.setDefault(Locale.forLanguageTag(\"ar-EG\"));",
+   "path": "clients/src/test/java/org/apache/kafka/common/security/scram/internals/ScramMessagesTest.java",
+   "commit_id": "cb773bf0a40646a7ede6b754689db3e83f6c9743",
+   "original_commit_id": "2c661d907fdfd4c3324d0b7d8f4350477b18ba6e",
+   "user": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "This is a JVM-wide global state which is being changed. Consider `@ResourceLock(Resources.LOCALE)` to ensure that concurrent execution of other tests will not fall foul of the local change.",
+   "created_at": "2026-10-25T18:49:46Z",
+   "updated_at": "2026-10-25T18:53:57Z",
+   "html_url": "https://github.com/apache/kafka/pull/23909#discussion_r4371969556",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23909",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4371969556"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23909#discussion_r4371969556"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23909"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4371969556/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": 183,
+   "original_line": 180,
+   "side": "RIGHT",
+   "author_association": "MEMBER",
+   "original_position": 22,
+   "position": 29,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4372030608",
+   "pull_request_review_id": 5644788728,
+   "id": 4372030608,
+   "node_id": "PRRC_kwDOACG9q88AAAABBJfkkA",
+   "diff_hunk": "@@ -41,7 +42,8 @@ public final class ScramCredentialUtils {\n     private ScramCredentialUtils() {}\n \n     public static String credentialToString(ScramCredential credential) {",
+   "path": "clients/src/main/java/org/apache/kafka/common/security/scram/internals/ScramCredentialUtils.java",
+   "commit_id": "2c661d907fdfd4c3324d0b7d8f4350477b18ba6e",
+   "original_commit_id": "2c661d907fdfd4c3324d0b7d8f4350477b18ba6e",
+   "user": {
+    "login": "sharanggupta",
+    "id": 17857381,
+    "node_id": "MDQ6VXNlcjE3ODU3Mzgx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17857381?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sharanggupta",
+    "html_url": "https://github.com/sharanggupta",
+    "followers_url": "https://api.github.com/users/sharanggupta/followers",
+    "following_url": "https://api.github.com/users/sharanggupta/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sharanggupta/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sharanggupta/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sharanggupta/subscriptions",
+    "organizations_url": "https://api.github.com/users/sharanggupta/orgs",
+    "repos_url": "https://api.github.com/users/sharanggupta/repos",
+    "events_url": "https://api.github.com/users/sharanggupta/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sharanggupta/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "Agreed. `credentialToString`/`credentialFromString` (the ZooKeeper credential-store format) have no callers left outside `ScramCredentialUtilsTest`, so I removed them together with `toProps`, the field-name constants and the tests that only exercised them. `createCache` stays (still used by `CredentialProvider` and `DelegationTokenCache`), and so does its `scramCredentialCache` test. The `Locale.ROOT` fix is now only in `ServerFirstMessage.toMessage()`.\n",
+   "created_at": "2026-10-25T19:05:37Z",
+   "updated_at": "2026-10-25T19:05:37Z",
+   "html_url": "https://github.com/apache/kafka/pull/23909#discussion_r4372030608",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23909",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4372030608"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23909#discussion_r4372030608"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23909"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4372030608/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": null,
+   "original_line": 44,
+   "side": "RIGHT",
+   "in_reply_to_id": 4371964107,
+   "author_association": "CONTRIBUTOR",
+   "original_position": 11,
+   "position": 1,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4372030797",
+   "pull_request_review_id": 5644788930,
+   "id": 4372030797,
+   "node_id": "PRRC_kwDOACG9q88AAAABBJflTQ",
+   "diff_hunk": "@@ -166,6 +167,26 @@ public void validServerFirstMessage() throws SaslException {\n         }\n     }\n \n+    @Test\n+    public void serverFirstMessageUsesAsciiDigitsRegardlessOfDefaultLocale() throws SaslException {\n+        String clientNonce = formatter.secureRandomString();\n+        String serverNonce = formatter.secureRandomString();\n+        String nonce = clientNonce + serverNonce;\n+        String salt = randomBytesAsString();\n+\n+        // Under a default locale with native digits (e.g. ar-EG formats %d as Arabic-Indic digits) the\n+        // iteration count must still be sent as ASCII digits, otherwise clients cannot parse the message\n+        Locale defaultLocale = Locale.getDefault();\n+        Locale.setDefault(Locale.forLanguageTag(\"ar-EG\"));",
+   "path": "clients/src/test/java/org/apache/kafka/common/security/scram/internals/ScramMessagesTest.java",
+   "commit_id": "cb773bf0a40646a7ede6b754689db3e83f6c9743",
+   "original_commit_id": "2c661d907fdfd4c3324d0b7d8f4350477b18ba6e",
+   "user": {
+    "login": "sharanggupta",
+    "id": 17857381,
+    "node_id": "MDQ6VXNlcjE3ODU3Mzgx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17857381?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sharanggupta",
+    "html_url": "https://github.com/sharanggupta",
+    "followers_url": "https://api.github.com/users/sharanggupta/followers",
+    "following_url": "https://api.github.com/users/sharanggupta/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sharanggupta/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sharanggupta/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sharanggupta/subscriptions",
+    "organizations_url": "https://api.github.com/users/sharanggupta/orgs",
+    "repos_url": "https://api.github.com/users/sharanggupta/repos",
+    "events_url": "https://api.github.com/users/sharanggupta/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sharanggupta/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "Done, `serverFirstMessageUsesAsciiDigitsRegardlessOfDefaultLocale` now carries `@ResourceLock(Resources.LOCALE)`. The other locale test went away with the removed credential string format.\n",
+   "created_at": "2026-10-25T19:05:39Z",
+   "updated_at": "2026-10-25T19:05:39Z",
+   "html_url": "https://github.com/apache/kafka/pull/23909#discussion_r4372030797",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23909",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4372030797"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23909#discussion_r4372030797"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23909"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4372030797/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": 183,
+   "original_line": 180,
+   "side": "RIGHT",
+   "in_reply_to_id": 4371969556,
+   "author_association": "CONTRIBUTOR",
+   "original_position": 22,
+   "position": 29,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  }
+ ],
+ "issue_comments": [],
+ "commits": [
+  {
+   "sha": "2c661d907fdfd4c3324d0b7d8f4350477b18ba6e",
+   "node_id": "C_kwDOVSxUCdoAKDJjNjYxZDkwN2ZkZmQ0YzMzMjRkMGI3ZDhmNDM1MDQ3N2IxOGJhNmU",
+   "commit": {
+    "author": {
+     "name": "Sharang Gupta",
+     "email": "sharang@sharanggupta.dev",
+     "date": "2026-10-21T22:09:10Z"
+    },
+    "committer": {
+     "name": "Sharang Gupta",
+     "email": "sharang@sharanggupta.dev",
+     "date": "2026-10-21T22:09:10Z"
+    },
+    "message": "MINOR: Use Locale.ROOT when formatting SCRAM iteration counts\n\nServerFirstMessage.toMessage() and ScramCredentialUtils.credentialToString()\nformat the iteration count with String.format(\"%d\") and no explicit Locale,\nso on a JVM whose default locale uses native digits (for example ar-EG or\nfa-IR) the server-first-message is sent as \"i=٤٠٩٦\" instead of \"i=4096\".\nRFC 5802 requires ASCII digits and ServerFirstMessage parses the count with\n[0-9]+, so every SCRAM handshake against such a broker fails with\n\"Invalid SCRAM server first message format\". The persisted credential\nstring has the same problem.\n\nPass Locale.ROOT to both calls and add tests that switch the default\nlocale to ar-EG and verify the message and the credential string still\nuse ASCII digits.\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>",
+    "tree": {
+     "sha": "ee0a11b44fd94769158bb6fd988acdf33962cfc4",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/ee0a11b44fd94769158bb6fd988acdf33962cfc4"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/2c661d907fdfd4c3324d0b7d8f4350477b18ba6e",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/2c661d907fdfd4c3324d0b7d8f4350477b18ba6e",
+   "html_url": "https://github.com/apache/kafka/commit/2c661d907fdfd4c3324d0b7d8f4350477b18ba6e",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/2c661d907fdfd4c3324d0b7d8f4350477b18ba6e/comments",
+   "author": {
+    "login": "sharanggupta",
+    "id": 17857381,
+    "node_id": "MDQ6VXNlcjE3ODU3Mzgx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17857381?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sharanggupta",
+    "html_url": "https://github.com/sharanggupta",
+    "followers_url": "https://api.github.com/users/sharanggupta/followers",
+    "following_url": "https://api.github.com/users/sharanggupta/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sharanggupta/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sharanggupta/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sharanggupta/subscriptions",
+    "organizations_url": "https://api.github.com/users/sharanggupta/orgs",
+    "repos_url": "https://api.github.com/users/sharanggupta/repos",
+    "events_url": "https://api.github.com/users/sharanggupta/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sharanggupta/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "sharanggupta",
+    "id": 17857381,
+    "node_id": "MDQ6VXNlcjE3ODU3Mzgx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17857381?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sharanggupta",
+    "html_url": "https://github.com/sharanggupta",
+    "followers_url": "https://api.github.com/users/sharanggupta/followers",
+    "following_url": "https://api.github.com/users/sharanggupta/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sharanggupta/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sharanggupta/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sharanggupta/subscriptions",
+    "organizations_url": "https://api.github.com/users/sharanggupta/orgs",
+    "repos_url": "https://api.github.com/users/sharanggupta/repos",
+    "events_url": "https://api.github.com/users/sharanggupta/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sharanggupta/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "8b5fc1bb0280f42edef6f1e39d71dca55089faa0",
+     "url": "https://api.github.com/repos/apache/kafka/commits/8b5fc1bb0280f42edef6f1e39d71dca55089faa0",
+     "html_url": "https://github.com/apache/kafka/commit/8b5fc1bb0280f42edef6f1e39d71dca55089faa0"
+    }
+   ]
+  },
+  {
+   "sha": "a8eae7c46070a631320e64184033fddd70d7e475",
+   "node_id": "C_kwDOVSxUCdoAKGE4ZWFlN2M0NjA3MGE2MzEzMjBlNjQxODQwMzNmZGRkNzBkN2U0NzU",
+   "commit": {
+    "author": {
+     "name": "Sharang Gupta",
+     "email": "sharang@sharanggupta.dev",
+     "date": "2026-10-25T19:05:02Z"
+    },
+    "committer": {
+     "name": "Sharang Gupta",
+     "email": "sharang@sharanggupta.dev",
+     "date": "2026-10-25T19:05:02Z"
+    },
+    "message": "MINOR: Guard the SCRAM locale test with @ResourceLock(Resources.LOCALE)\n\nserverFirstMessageUsesAsciiDigitsRegardlessOfDefaultLocale switches the\nJVM-wide default locale, so declare the LOCALE resource lock to keep it\nfrom interfering with other tests under concurrent execution.\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>",
+    "tree": {
+     "sha": "756c938504c9442958c3e07f516ee01919158766",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/756c938504c9442958c3e07f516ee01919158766"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/a8eae7c46070a631320e64184033fddd70d7e475",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/a8eae7c46070a631320e64184033fddd70d7e475",
+   "html_url": "https://github.com/apache/kafka/commit/a8eae7c46070a631320e64184033fddd70d7e475",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/a8eae7c46070a631320e64184033fddd70d7e475/comments",
+   "author": {
+    "login": "sharanggupta",
+    "id": 17857381,
+    "node_id": "MDQ6VXNlcjE3ODU3Mzgx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17857381?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sharanggupta",
+    "html_url": "https://github.com/sharanggupta",
+    "followers_url": "https://api.github.com/users/sharanggupta/followers",
+    "following_url": "https://api.github.com/users/sharanggupta/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sharanggupta/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sharanggupta/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sharanggupta/subscriptions",
+    "organizations_url": "https://api.github.com/users/sharanggupta/orgs",
+    "repos_url": "https://api.github.com/users/sharanggupta/repos",
+    "events_url": "https://api.github.com/users/sharanggupta/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sharanggupta/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "sharanggupta",
+    "id": 17857381,
+    "node_id": "MDQ6VXNlcjE3ODU3Mzgx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17857381?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sharanggupta",
+    "html_url": "https://github.com/sharanggupta",
+    "followers_url": "https://api.github.com/users/sharanggupta/followers",
+    "following_url": "https://api.github.com/users/sharanggupta/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sharanggupta/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sharanggupta/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sharanggupta/subscriptions",
+    "organizations_url": "https://api.github.com/users/sharanggupta/orgs",
+    "repos_url": "https://api.github.com/users/sharanggupta/repos",
+    "events_url": "https://api.github.com/users/sharanggupta/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sharanggupta/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "2c661d907fdfd4c3324d0b7d8f4350477b18ba6e",
+     "url": "https://api.github.com/repos/apache/kafka/commits/2c661d907fdfd4c3324d0b7d8f4350477b18ba6e",
+     "html_url": "https://github.com/apache/kafka/commit/2c661d907fdfd4c3324d0b7d8f4350477b18ba6e"
+    }
+   ]
+  },
+  {
+   "sha": "cb773bf0a40646a7ede6b754689db3e83f6c9743",
+   "node_id": "C_kwDOVSxUCdoAKGNiNzczYmYwYTQwNjQ2YTdlZGU2Yjc1NDY4OWRiM2U4M2Y2Yzk3NDM",
+   "commit": {
+    "author": {
+     "name": "Sharang Gupta",
+     "email": "sharang@sharanggupta.dev",
+     "date": "2026-10-25T19:05:02Z"
+    },
+    "committer": {
+     "name": "Sharang Gupta",
+     "email": "sharang@sharanggupta.dev",
+     "date": "2026-10-25T19:05:02Z"
+    },
+    "message": "MINOR: Remove the unused ZooKeeper-era SCRAM credential string format\n\nScramCredentialUtils.credentialToString() and credentialFromString()\nimplemented the credential-store format used when SCRAM credentials were\npersisted in ZooKeeper. Nothing calls them any more apart from their own\ntests, so remove them together with toProps(), the field-name constants\nand those tests. createCache() and its test are unchanged.\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>",
+    "tree": {
+     "sha": "daf6feb97dfd434719b5c688e82bd8e8b9e94e29",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/daf6feb97dfd434719b5c688e82bd8e8b9e94e29"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/cb773bf0a40646a7ede6b754689db3e83f6c9743",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/cb773bf0a40646a7ede6b754689db3e83f6c9743",
+   "html_url": "https://github.com/apache/kafka/commit/cb773bf0a40646a7ede6b754689db3e83f6c9743",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/cb773bf0a40646a7ede6b754689db3e83f6c9743/comments",
+   "author": {
+    "login": "sharanggupta",
+    "id": 17857381,
+    "node_id": "MDQ6VXNlcjE3ODU3Mzgx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17857381?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sharanggupta",
+    "html_url": "https://github.com/sharanggupta",
+    "followers_url": "https://api.github.com/users/sharanggupta/followers",
+    "following_url": "https://api.github.com/users/sharanggupta/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sharanggupta/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sharanggupta/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sharanggupta/subscriptions",
+    "organizations_url": "https://api.github.com/users/sharanggupta/orgs",
+    "repos_url": "https://api.github.com/users/sharanggupta/repos",
+    "events_url": "https://api.github.com/users/sharanggupta/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sharanggupta/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "sharanggupta",
+    "id": 17857381,
+    "node_id": "MDQ6VXNlcjE3ODU3Mzgx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17857381?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sharanggupta",
+    "html_url": "https://github.com/sharanggupta",
+    "followers_url": "https://api.github.com/users/sharanggupta/followers",
+    "following_url": "https://api.github.com/users/sharanggupta/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sharanggupta/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sharanggupta/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sharanggupta/subscriptions",
+    "organizations_url": "https://api.github.com/users/sharanggupta/orgs",
+    "repos_url": "https://api.github.com/users/sharanggupta/repos",
+    "events_url": "https://api.github.com/users/sharanggupta/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sharanggupta/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "a8eae7c46070a631320e64184033fddd70d7e475",
+     "url": "https://api.github.com/repos/apache/kafka/commits/a8eae7c46070a631320e64184033fddd70d7e475",
+     "html_url": "https://github.com/apache/kafka/commit/a8eae7c46070a631320e64184033fddd70d7e475"
+    }
+   ]
+  }
+ ],
+ "files": [
+  {
+   "sha": "e292b1fb0a97f4f0f2e1b7cba1bbb55a9660afc6",
+   "filename": "clients/src/main/java/org/apache/kafka/common/security/scram/internals/ScramCredentialUtils.java",
+   "status": "modified",
+   "additions": 1,
+   "deletions": 50,
+   "changes": 51,
+   "blob_url": "https://github.com/apache/kafka/blob/cb773bf0a40646a7ede6b754689db3e83f6c9743/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Fsecurity%2Fscram%2Finternals%2FScramCredentialUtils.java",
+   "raw_url": "https://github.com/apache/kafka/raw/cb773bf0a40646a7ede6b754689db3e83f6c9743/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Fsecurity%2Fscram%2Finternals%2FScramCredentialUtils.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Fsecurity%2Fscram%2Finternals%2FScramCredentialUtils.java?ref=cb773bf0a40646a7ede6b754689db3e83f6c9743",
+   "patch": "@@ -19,64 +19,15 @@\n import org.apache.kafka.common.security.authenticator.CredentialCache;\n import org.apache.kafka.common.security.scram.ScramCredential;\n \n-import java.util.Base64;\n import java.util.Collection;\n-import java.util.Properties;\n \n /**\n- * SCRAM Credential persistence utility functions. Implements format conversion used\n- * for the credential store implemented in Kafka. Credentials are persisted as a comma-separated\n- * String of key-value pairs:\n- * <pre>\n- *   salt=<i>salt</i>,stored_key=<i>stored_key</i>,server_key=<i>server_key</i>,iterations=<i>iterations</i>\n- * </pre>\n- *\n+ * SCRAM credential utility functions.\n  */\n public final class ScramCredentialUtils {\n-    private static final String SALT = \"salt\";\n-    private static final String STORED_KEY = \"stored_key\";\n-    private static final String SERVER_KEY = \"server_key\";\n-    private static final String ITERATIONS = \"iterations\";\n \n     private ScramCredentialUtils() {}\n \n-    public static String credentialToString(ScramCredential credential) {\n-        return String.format(\"%s=%s,%s=%s,%s=%s,%s=%d\",\n-               SALT,\n-               Base64.getEncoder().encodeToString(credential.salt()),\n-               STORED_KEY,\n-               Base64.getEncoder().encodeToString(credential.storedKey()),\n-               SERVER_KEY,\n-               Base64.getEncoder().encodeToString(credential.serverKey()),\n-               ITERATIONS,\n-               credential.iterations());\n-    }\n-\n-    public static ScramCredential credentialFromString(String str) {\n-        Properties props = toProps(str);\n-        if (props.size() != 4 || !props.containsKey(SALT) || !props.containsKey(STORED_KEY) ||\n-                !props.containsKey(SERVER_KEY) || !props.containsKey(ITERATIONS)) {\n-            throw new IllegalArgumentException(\"Credentials not valid: \" + str);\n-        }\n-        byte[] salt = Base64.getDecoder().decode(props.getProperty(SALT));\n-        byte[] storedKey = Base64.getDecoder().decode(props.getProperty(STORED_KEY));\n-        byte[] serverKey = Base64.getDecoder().decode(props.getProperty(SERVER_KEY));\n-        int iterations = Integer.parseInt(props.getProperty(ITERATIONS));\n-        return new ScramCredential(salt, storedKey, serverKey, iterations);\n-    }\n-\n-    private static Properties toProps(String str) {\n-        Properties props = new Properties();\n-        String[] tokens = str.split(\",\");\n-        for (String token : tokens) {\n-            int index = token.indexOf('=');\n-            if (index <= 0)\n-                throw new IllegalArgumentException(\"Credentials not valid: \" + str);\n-            props.put(token.substring(0, index), token.substring(index + 1));\n-        }\n-        return props;\n-    }\n-\n     public static void createCache(CredentialCache cache, Collection<String> mechanisms) {\n         for (String mechanism : ScramMechanism.mechanismNames()) {\n             if (mechanisms.contains(mechanism))"
+  },
+  {
+   "sha": "25388a94b27f9e5de22c0385f1e9c4f8afb2ef60",
+   "filename": "clients/src/main/java/org/apache/kafka/common/security/scram/internals/ScramMessages.java",
+   "status": "modified",
+   "additions": 3,
+   "deletions": 1,
+   "changes": 4,
+   "blob_url": "https://github.com/apache/kafka/blob/cb773bf0a40646a7ede6b754689db3e83f6c9743/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Fsecurity%2Fscram%2Finternals%2FScramMessages.java",
+   "raw_url": "https://github.com/apache/kafka/raw/cb773bf0a40646a7ede6b754689db3e83f6c9743/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Fsecurity%2Fscram%2Finternals%2FScramMessages.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Fsecurity%2Fscram%2Finternals%2FScramMessages.java?ref=cb773bf0a40646a7ede6b754689db3e83f6c9743",
+   "patch": "@@ -20,6 +20,7 @@\n \n import java.nio.charset.StandardCharsets;\n import java.util.Base64;\n+import java.util.Locale;\n import java.util.Map;\n import java.util.regex.Matcher;\n import java.util.regex.Pattern;\n@@ -175,7 +176,8 @@ public int iterations() {\n             return iterations;\n         }\n         String toMessage() {\n-            return String.format(\"r=%s,s=%s,i=%d\", nonce, Base64.getEncoder().encodeToString(salt), iterations);\n+            // Locale.ROOT: the iteration count must use ASCII digits regardless of the JVM's default locale\n+            return String.format(Locale.ROOT, \"r=%s,s=%s,i=%d\", nonce, Base64.getEncoder().encodeToString(salt), iterations);\n         }\n     }\n     /**"
+  },
+  {
+   "sha": "ec6880d8777ee90b6cf658e62e3c52d1fb75c8dd",
+   "filename": "clients/src/test/java/org/apache/kafka/common/security/scram/internals/ScramCredentialUtilsTest.java",
+   "status": "modified",
+   "additions": 0,
+   "deletions": 51,
+   "changes": 51,
+   "blob_url": "https://github.com/apache/kafka/blob/cb773bf0a40646a7ede6b754689db3e83f6c9743/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Fsecurity%2Fscram%2Finternals%2FScramCredentialUtilsTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/cb773bf0a40646a7ede6b754689db3e83f6c9743/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Fsecurity%2Fscram%2Finternals%2FScramCredentialUtilsTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Fsecurity%2Fscram%2Finternals%2FScramCredentialUtilsTest.java?ref=cb773bf0a40646a7ede6b754689db3e83f6c9743",
+   "patch": "@@ -19,68 +19,17 @@\n import org.apache.kafka.common.security.authenticator.CredentialCache;\n import org.apache.kafka.common.security.scram.ScramCredential;\n \n-import org.junit.jupiter.api.BeforeEach;\n import org.junit.jupiter.api.Test;\n \n-import java.security.NoSuchAlgorithmException;\n import java.util.Arrays;\n \n-import static org.junit.jupiter.api.Assertions.assertArrayEquals;\n import static org.junit.jupiter.api.Assertions.assertEquals;\n-import static org.junit.jupiter.api.Assertions.assertNotEquals;\n import static org.junit.jupiter.api.Assertions.assertNotNull;\n import static org.junit.jupiter.api.Assertions.assertNull;\n-import static org.junit.jupiter.api.Assertions.assertThrows;\n-import static org.junit.jupiter.api.Assertions.assertTrue;\n \n \n public class ScramCredentialUtilsTest {\n \n-    private ScramFormatter formatter;\n-\n-    @BeforeEach\n-    public void setUp() throws NoSuchAlgorithmException {\n-        formatter = new ScramFormatter(ScramMechanism.SCRAM_SHA_256);\n-    }\n-\n-    @Test\n-    public void stringConversion() {\n-        ScramCredential credential = formatter.generateCredential(\"password\", 1024);\n-        assertTrue(credential.salt().length > 0, \"Salt must not be empty\");\n-        assertTrue(credential.storedKey().length > 0, \"Stored key must not be empty\");\n-        assertTrue(credential.serverKey().length > 0, \"Server key must not be empty\");\n-        ScramCredential credential2 = ScramCredentialUtils.credentialFromString(ScramCredentialUtils.credentialToString(credential));\n-        assertArrayEquals(credential.salt(), credential2.salt());\n-        assertArrayEquals(credential.storedKey(), credential2.storedKey());\n-        assertArrayEquals(credential.serverKey(), credential2.serverKey());\n-        assertEquals(credential.iterations(), credential2.iterations());\n-    }\n-\n-    @Test\n-    public void generateCredential() {\n-        ScramCredential credential1 = formatter.generateCredential(\"password\", 4096);\n-        ScramCredential credential2 = formatter.generateCredential(\"password\", 4096);\n-        // Random salt should ensure that the credentials persisted are different every time\n-        assertNotEquals(ScramCredentialUtils.credentialToString(credential1), ScramCredentialUtils.credentialToString(credential2));\n-    }\n-\n-    @Test\n-    public void invalidCredential() {\n-        assertThrows(IllegalArgumentException.class, () -> ScramCredentialUtils.credentialFromString(\"abc\"));\n-    }\n-\n-    @Test\n-    public void missingFields() {\n-        String cred = ScramCredentialUtils.credentialToString(formatter.generateCredential(\"password\", 2048));\n-        assertThrows(IllegalArgumentException.class, () -> ScramCredentialUtils.credentialFromString(cred.substring(cred.indexOf(','))));\n-    }\n-\n-    @Test\n-    public void extraneousFields() {\n-        String cred = ScramCredentialUtils.credentialToString(formatter.generateCredential(\"password\", 2048));\n-        assertThrows(IllegalArgumentException.class, () -> ScramCredentialUtils.credentialFromString(cred + \",a=test\"));\n-    }\n-\n     @Test\n     public void scramCredentialCache() throws Exception {\n         CredentialCache cache = new CredentialCache();"
+  },
+  {
+   "sha": "3aba46553fd8d4234b73bb23cc102dfc1e1540e4",
+   "filename": "clients/src/test/java/org/apache/kafka/common/security/scram/internals/ScramMessagesTest.java",
+   "status": "modified",
+   "additions": 24,
+   "deletions": 0,
+   "changes": 24,
+   "blob_url": "https://github.com/apache/kafka/blob/cb773bf0a40646a7ede6b754689db3e83f6c9743/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Fsecurity%2Fscram%2Finternals%2FScramMessagesTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/cb773bf0a40646a7ede6b754689db3e83f6c9743/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Fsecurity%2Fscram%2Finternals%2FScramMessagesTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Fsecurity%2Fscram%2Finternals%2FScramMessagesTest.java?ref=cb773bf0a40646a7ede6b754689db3e83f6c9743",
+   "patch": "@@ -24,10 +24,13 @@\n \n import org.junit.jupiter.api.BeforeEach;\n import org.junit.jupiter.api.Test;\n+import org.junit.jupiter.api.parallel.ResourceLock;\n+import org.junit.jupiter.api.parallel.Resources;\n \n import java.nio.charset.StandardCharsets;\n import java.util.Base64;\n import java.util.Collections;\n+import java.util.Locale;\n \n import javax.security.sasl.SaslException;\n \n@@ -166,6 +169,27 @@ public void validServerFirstMessage() throws SaslException {\n         }\n     }\n \n+    @Test\n+    @ResourceLock(Resources.LOCALE)\n+    public void serverFirstMessageUsesAsciiDigitsRegardlessOfDefaultLocale() throws SaslException {\n+        String clientNonce = formatter.secureRandomString();\n+        String serverNonce = formatter.secureRandomString();\n+        String nonce = clientNonce + serverNonce;\n+        String salt = randomBytesAsString();\n+\n+        // Under a default locale with native digits (e.g. ar-EG formats %d as Arabic-Indic digits) the\n+        // iteration count must still be sent as ASCII digits, otherwise clients cannot parse the message\n+        Locale defaultLocale = Locale.getDefault();\n+        Locale.setDefault(Locale.forLanguageTag(\"ar-EG\"));\n+        try {\n+            ServerFirstMessage m = new ServerFirstMessage(clientNonce, serverNonce, toBytes(salt), 4096);\n+            assertEquals(String.format(Locale.ROOT, \"r=%s,s=%s,i=4096\", nonce, salt), new String(m.toBytes(), StandardCharsets.UTF_8));\n+            checkServerFirstMessage(new ServerFirstMessage(m.toBytes()), nonce, salt, 4096);\n+        } finally {\n+            Locale.setDefault(defaultLocale);\n+        }\n+    }\n+\n     @Test\n     public void invalidServerFirstMessage() {\n         String nonce = formatter.secureRandomString();"
+  }
+ ],
+ "timeline": [
+  {
+   "sha": "2c661d907fdfd4c3324d0b7d8f4350477b18ba6e",
+   "node_id": "C_kwDOACG9q9oAKDJjNjYxZDkwN2ZkZmQ0YzMzMjRkMGI3ZDhmNDM1MDQ3N2IxOGJhNmU",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/2c661d907fdfd4c3324d0b7d8f4350477b18ba6e",
+   "html_url": "https://github.com/apache/kafka/commit/2c661d907fdfd4c3324d0b7d8f4350477b18ba6e",
+   "author": {
+    "name": "Sharang Gupta",
+    "email": "sharang@sharanggupta.dev",
+    "date": "2026-10-21T22:09:10Z"
+   },
+   "committer": {
+    "name": "Sharang Gupta",
+    "email": "sharang@sharanggupta.dev",
+    "date": "2026-10-21T22:09:10Z"
+   },
+   "tree": {
+    "sha": "ee0a11b44fd94769158bb6fd988acdf33962cfc4",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/ee0a11b44fd94769158bb6fd988acdf33962cfc4"
+   },
+   "message": "MINOR: Use Locale.ROOT when formatting SCRAM iteration counts\n\nServerFirstMessage.toMessage() and ScramCredentialUtils.credentialToString()\nformat the iteration count with String.format(\"%d\") and no explicit Locale,\nso on a JVM whose default locale uses native digits (for example ar-EG or\nfa-IR) the server-first-message is sent as \"i=٤٠٩٦\" instead of \"i=4096\".\nRFC 5802 requires ASCII digits and ServerFirstMessage parses the count with\n[0-9]+, so every SCRAM handshake against such a broker fails with\n\"Invalid SCRAM server first message format\". The persisted credential\nstring has the same problem.\n\nPass Locale.ROOT to both calls and add tests that switch the default\nlocale to ar-EG and verify the message and the credential string still\nuse ASCII digits.\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>",
+   "parents": [
+    {
+     "sha": "8b5fc1bb0280f42edef6f1e39d71dca55089faa0",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/8b5fc1bb0280f42edef6f1e39d71dca55089faa0",
+     "html_url": "https://github.com/apache/kafka/commit/8b5fc1bb0280f42edef6f1e39d71dca55089faa0"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "id": 33916470630,
+   "node_id": "LE_lADOACG9q88AAAABZAw0ms8AAAAH5ZRFZg",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33916470630",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-22T05:12:51Z",
+   "label": {
+    "name": "triage",
+    "color": "006b75"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 33916473737,
+   "node_id": "LE_lADOACG9q88AAAABZAw0ms8AAAAH5ZRRiQ",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33916473737",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-22T05:12:55Z",
+   "label": {
+    "name": "clients",
+    "color": "ededed"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 33916475384,
+   "node_id": "LE_lADOACG9q88AAAABZAw0ms8AAAAH5ZRX-A",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33916475384",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-22T05:12:56Z",
+   "label": {
+    "name": "small",
+    "color": "FEF2C0"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 5644711195,
+   "node_id": "PRR_kwDOACG9q88AAAABUHN1Gw",
+   "user": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "Thanks for the PR. It seems to me that some of this code is changing legacy code from ZooKeeper days which could probably just be removed.",
+   "commit_id": "2c661d907fdfd4c3324d0b7d8f4350477b18ba6e",
+   "state": "changes_requested",
+   "html_url": "https://github.com/apache/kafka/pull/23909#pullrequestreview-5644711195",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23909",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23909#pullrequestreview-5644711195"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23909"
+    }
+   },
+   "submitted_at": "2026-10-25T18:53:56Z",
+   "updated_at": "2026-10-25T18:53:56Z",
+   "author_association": "MEMBER",
+   "event": "reviewed"
+  },
+  {
+   "sha": "a8eae7c46070a631320e64184033fddd70d7e475",
+   "node_id": "C_kwDOACG9q9oAKGE4ZWFlN2M0NjA3MGE2MzEzMjBlNjQxODQwMzNmZGRkNzBkN2U0NzU",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/a8eae7c46070a631320e64184033fddd70d7e475",
+   "html_url": "https://github.com/apache/kafka/commit/a8eae7c46070a631320e64184033fddd70d7e475",
+   "author": {
+    "name": "Sharang Gupta",
+    "email": "sharang@sharanggupta.dev",
+    "date": "2026-10-25T19:05:02Z"
+   },
+   "committer": {
+    "name": "Sharang Gupta",
+    "email": "sharang@sharanggupta.dev",
+    "date": "2026-10-25T19:05:02Z"
+   },
+   "tree": {
+    "sha": "756c938504c9442958c3e07f516ee01919158766",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/756c938504c9442958c3e07f516ee01919158766"
+   },
+   "message": "MINOR: Guard the SCRAM locale test with @ResourceLock(Resources.LOCALE)\n\nserverFirstMessageUsesAsciiDigitsRegardlessOfDefaultLocale switches the\nJVM-wide default locale, so declare the LOCALE resource lock to keep it\nfrom interfering with other tests under concurrent execution.\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>",
+   "parents": [
+    {
+     "sha": "2c661d907fdfd4c3324d0b7d8f4350477b18ba6e",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/2c661d907fdfd4c3324d0b7d8f4350477b18ba6e",
+     "html_url": "https://github.com/apache/kafka/commit/2c661d907fdfd4c3324d0b7d8f4350477b18ba6e"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "cb773bf0a40646a7ede6b754689db3e83f6c9743",
+   "node_id": "C_kwDOACG9q9oAKGNiNzczYmYwYTQwNjQ2YTdlZGU2Yjc1NDY4OWRiM2U4M2Y2Yzk3NDM",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/cb773bf0a40646a7ede6b754689db3e83f6c9743",
+   "html_url": "https://github.com/apache/kafka/commit/cb773bf0a40646a7ede6b754689db3e83f6c9743",
+   "author": {
+    "name": "Sharang Gupta",
+    "email": "sharang@sharanggupta.dev",
+    "date": "2026-10-25T19:05:02Z"
+   },
+   "committer": {
+    "name": "Sharang Gupta",
+    "email": "sharang@sharanggupta.dev",
+    "date": "2026-10-25T19:05:02Z"
+   },
+   "tree": {
+    "sha": "daf6feb97dfd434719b5c688e82bd8e8b9e94e29",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/daf6feb97dfd434719b5c688e82bd8e8b9e94e29"
+   },
+   "message": "MINOR: Remove the unused ZooKeeper-era SCRAM credential string format\n\nScramCredentialUtils.credentialToString() and credentialFromString()\nimplemented the credential-store format used when SCRAM credentials were\npersisted in ZooKeeper. Nothing calls them any more apart from their own\ntests, so remove them together with toProps(), the field-name constants\nand those tests. createCache() and its test are unchanged.\n\nCo-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>",
+   "parents": [
+    {
+     "sha": "a8eae7c46070a631320e64184033fddd70d7e475",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/a8eae7c46070a631320e64184033fddd70d7e475",
+     "html_url": "https://github.com/apache/kafka/commit/a8eae7c46070a631320e64184033fddd70d7e475"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "id": 34198608418,
+   "node_id": "UNLE_lADOACG9q88AAAABZAw0ms8AAAAH9mVaIg",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34198608418",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "unlabeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-25T19:05:21Z",
+   "label": {
+    "name": "small",
+    "color": "FEF2C0"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34198619305,
+   "node_id": "RTE_lADOACG9q88AAAABZAw0ms8AAAAH9mWEqQ",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34198619305",
+   "actor": {
+    "login": "sharanggupta",
+    "id": 17857381,
+    "node_id": "MDQ6VXNlcjE3ODU3Mzgx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17857381?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sharanggupta",
+    "html_url": "https://github.com/sharanggupta",
+    "followers_url": "https://api.github.com/users/sharanggupta/followers",
+    "following_url": "https://api.github.com/users/sharanggupta/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sharanggupta/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sharanggupta/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sharanggupta/subscriptions",
+    "organizations_url": "https://api.github.com/users/sharanggupta/orgs",
+    "repos_url": "https://api.github.com/users/sharanggupta/repos",
+    "events_url": "https://api.github.com/users/sharanggupta/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sharanggupta/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "renamed",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-25T19:05:34Z",
+   "rename": {
+    "from": "MINOR: Use Locale.ROOT when formatting SCRAM iteration counts",
+    "to": "MINOR: Use Locale.ROOT for the SCRAM iteration count and remove the unused credential string format"
+   },
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34221107960,
+   "node_id": "UNLE_lADOACG9q88AAAABZAw0ms8AAAAH97yq-A",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34221107960",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "unlabeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-26T03:24:09Z",
+   "label": {
+    "name": "triage",
+    "color": "006b75"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34236644483,
+   "node_id": "LE_lADOACG9q88AAAABZAw0ms8AAAAH-Km8gw",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34236644483",
+   "actor": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-26T08:05:35Z",
+   "label": {
+    "name": "ci-approved",
+    "color": "ffffff"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 5650872692,
+   "node_id": "PRR_kwDOACG9q88AAAABUNF5dA",
+   "user": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "Thanks for the updates. Looks good to me.",
+   "commit_id": "cb773bf0a40646a7ede6b754689db3e83f6c9743",
+   "state": "approved",
+   "html_url": "https://github.com/apache/kafka/pull/23909#pullrequestreview-5650872692",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23909",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23909#pullrequestreview-5650872692"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23909"
+    }
+   },
+   "submitted_at": "2026-10-26T10:51:46Z",
+   "updated_at": "2026-10-26T10:51:46Z",
+   "author_association": "MEMBER",
+   "event": "reviewed"
+  },
+  {
+   "id": 34394867438,
+   "node_id": "ME_lADOACG9q88AAAABZAw0ms8AAAAIAhgG7g",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34394867438",
+   "actor": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "merged",
+   "commit_id": "c9e355086b7341c76e0b069595deb45cfa3e195e",
+   "commit_url": "https://api.github.com/repos/apache/kafka/commits/c9e355086b7341c76e0b069595deb45cfa3e195e",
+   "created_at": "2026-10-27T17:37:43Z",
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34394867647,
+   "node_id": "CE_lADOACG9q88AAAABZAw0ms8AAAAIAhgHvw",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34394867647",
+   "actor": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "closed",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-27T17:37:43Z",
+   "state_reason": null,
+   "intent": null,
+   "performed_via_github_app": null
+  }
+ ]
+}

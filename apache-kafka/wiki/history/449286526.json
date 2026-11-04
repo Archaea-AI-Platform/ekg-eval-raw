@@ -1,0 +1,168 @@
+{
+ "id": "449286526",
+ "versions": {
+  "results": [
+   {
+    "by": {
+     "type": "known",
+     "username": "shunpo",
+     "userKey": "073590d2a00b371701a01dd376100004",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gavin Wang",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2a00b371701a01dd376100004"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-27T06:07:31.000Z",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/449286526/version/2"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/449286526"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "shunpo",
+     "userKey": "073590d2a00b371701a01dd376100004",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gavin Wang",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2a00b371701a01dd376100004"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-27T06:06:58.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/449286526/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/449286526?status=historical&version=1"
+    }
+   }
+  ],
+  "start": 0,
+  "limit": 200,
+  "size": 2,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/experimental/content/449286526/version",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ },
+ "version_bodies": [
+  {
+   "id": "449286526",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1372: Reject topic configurations where min.insync.replicas exceeds the replication factor",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "shunpo",
+     "userKey": "073590d2a00b371701a01dd376100004",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Gavin Wang",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2a00b371701a01dd376100004"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-27T06:06:58.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/449286526/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/449286526?status=historical&version=1"
+    }
+   },
+   "position": 1363,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><h1>Status</h1><p><strong>Current state</strong>: <em>Under Discussion</em></p><p><strong>Discussion thread</strong>: <em><a href=\"http://mail-archives.apache.org/mod_mbox/kafka-dev/201501.mbox/%3CCAOeJiJh6Vkkca85bWYgkeOZ8rC6%2BKDh7zzq8vMKECL_7PNExTA%40mail.gmail.com%3E\">here</a> [Change the link from the KIP proposal email archive to your own email thread]<br /></em></p><p><strong>JIRA</strong>: <em><a href=\"https://issues.apache.org/jira/browse/KAFKA-1\">here</a> [<a class=\"\" href=\"https://issues.apache.org/jira/projects/KAFKA/issues/KAFKA-19726\">https://issues.apache.org/jira/projects/KAFKA/issues/KAFKA-19726</a>]<br /></em></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p>Kafka currently accepts any <code>min.insync.replicas</code> value of 1 or more, with no relation to the replication factor of the topics it applies to. A topic can be created with <code>--replication-factor 1 --config min.insync.replicas=2</code> and the request succeeds, even though the configuration is contradictory: the topic can never have enough in-sync replicas to satisfy the configured minimum.</p><p>This misconfiguration is not hypothetical. It has been reported since 2017 (<a href=\"https://issues.apache.org/jira/browse/KAFKA-4680\">KAFKA-4680</a>), where producing with <code>acks=all</code> to such a topic fails with the <em>retriable</em> <code>NotEnoughReplicasException</code> (retries that can never succeed), and the resulting error-log flood filled a broker's disk in a production cluster. Replication tooling that creates topics on a destination cluster whose default <code>min.insync.replicas</code> exceeds the source topic's replication factor hits the same trap, and the failure surfaces far from its cause.</p><p>KIP-966 (Eligible Leader Replicas) has already settled the semantic question: the <em>effective</em> minimum ISR of a partition is defined as <code>min(min.insync.replicas, replication factor)</code>, and both the controller and the broker silently clamp to that value (<code>ReplicationControlManager#getTopicEffectiveMinIsr</code>, <code>Partition#effectiveMinIsr</code>). In other words, a <code>min.insync.replicas</code> above the replication factor already has no effect: the configured value is simply ignored beyond the clamp. Accepting a value the cluster will never honor is a silent footgun: the user believes they have configured a durability guarantee that does not exist.</p><p>This KIP proposes to reject such configurations at the API boundary, where the mistake is made: topic creation and topic-level configuration changes<code>.</code></p><h1>Public Interfaces</h1><p>No new configurations, request/response schema fields, error codes, or APIs are introduced. The change is new validation behavior on two existing request types, using the existing <code>INVALID_CONFIG</code> (40) error code:</p><table><thead class=\"\"><tr class=\"\"><th>API</th><th>Scenario</th><th>Current behavior</th><th>Proposed behavior</th></tr></thead><tbody class=\"\"><tr class=\"\"><td><code>CreateTopics</code></td><td>The topic's resolved replication factor is lower than its effective <code>min.insync.replicas</code></td><td>Topic is created; the configured min ISR is silently clamped to the replication factor</td><td>Request fails with <code>INVALID_CONFIG</code></td></tr><tr class=\"\"><td><code>IncrementalAlterConfigs</code> / <code>AlterConfigs</code> (TOPIC resource)</td><td><code>min.insync.replicas</code> is set to a value higher than the topic's replication factor</td><td>Change is accepted and silently clamped</td><td>Request fails with <code>INVALID_CONFIG</code></td></tr><tr class=\"\"><td><code>CreatePartitions</code>, <code>AlterPartitionReassignments</code>, broker-, cluster-, and controller-level configuration changes</td><td>n/a</td><td>n/a</td><td>Unchanged (see Proposed Changes for rationale)</td></tr></tbody></table><p>For <code>CreateTopics</code>, the <em>resolved</em> replication factor is the request's value, the size of the manual replica assignment if one is given, or the cluster default (<code>default.replication.factor</code>) when the request passes <code>-1</code>. The <em>effective</em> <code>min.insync.replicas</code> is the value that would govern the new topic: the topic-level override in the request if present, otherwise the cluster-level dynamic default, otherwise the static broker/controller configuration.<br />Example error messages:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"bf43d8bd-b780-4bed-98c6-09f7d9cd6a70\"><ac:plain-text-body><![CDATA[CreateTopics:  The topic's min.insync.replicas (3) must not exceed its replication factor (1).\nAlterConfigs:  Cannot set min.insync.replicas to 3, which exceeds the replication factor (1) of topic 'foo'.]]></ac:plain-text-body></ac:structured-macro><p><br /></p><h1>Proposed Changes</h1><h3>Validation at topic creation</h3><p>In the KRaft controller (<code>ReplicationControlManager#createTopic</code>), after the replication factor has been resolved (from the request, the manual assignment, or the cluster default) and before any records are generated, the controller computes the effective <code>min.insync.replicas</code> for the new topic and rejects the creation with <code>INVALID_CONFIG</code> if it exceeds the replication factor.</p><p>The check must live here rather than in the existing topic-config validation path (<code>ControllerConfigurationValidator</code> / <code>LogConfig.validate</code>), because that path runs before the replication factor is resolved and receives only the topic name; the replication factor is structurally unavailable to it.</p><p>Internal topics (<code>__consumer_offsets</code>, <code>__transaction_state</code>, the share-group and remote-log-metadata state topics) are created through the same path and are validated identically. A rejection there can only occur when the broker's own settings are contradictory (e.g. <code>offsets.topic.replication.factor</code> below the cluster's <code>min.insync.replicas</code>); failing the creation with a clear message surfaces that operator misconfiguration instead of leaving an internal topic that cannot accept <code>acks=all</code> writes. Internal topic creation is retried by brokers, so fixing the configuration heals the cluster without manual intervention.</p><h3>Validation at topic-level configuration changes</h3><p>In the controller's configuration handling (<code>ConfigurationControlManager</code>, alongside the ELR-related <code>min.insync.replicas</code> checks introduced by KIP-966), a <code>SET</code> or legacy-alter of <code>min.insync.replicas</code> on a TOPIC resource is rejected with <code>INVALID_CONFIG</code> when the new value exceeds the topic's current replication factor. Both <code>IncrementalAlterConfigs</code> and the deprecated <code>AlterConfigs</code> funnel through the same validation and are covered.</p><p>A <code>DELETE</code> of a topic-level <code>min.insync.replicas</code> override remains allowed, even when the topic then falls back to a cluster-level or static default that exceeds its replication factor. The fallback value is not chosen by the caller, and rejecting the delete would prevent returning a topic to defaults; a topic in that state is governed by the effective min ISR clamp, like other grandfathered configurations. (<code>APPEND</code> and <code>SUBTRACT</code> do not arise, since <code>min.insync.replicas</code> is not a list-type config.)</p><h3>What is deliberately not validated</h3><ul><li data-uuid=\"04e42444-f58d-426e-a6ae-52b999f3871d\"><strong>Existing topics are grandfathered.</strong> No existing topic is touched, invalidated, or mutated by this KIP. Topics that already carry <code>min.insync.replicas</code> above their replication factor continue to work exactly as today, governed by the KIP-966 clamp. Only new requests that would <em>create or change into</em> a contradictory state are rejected.</li><li data-uuid=\"e8134830-d63c-462a-b53d-acfd1aa88067\"><strong>Deletes of topic-level <code>min.insync.replicas</code> overrides</strong>, which fall back to a default that may exceed the replication factor. See &quot;Validation at topic-level configuration changes&quot; above for the rationale.</li><li data-uuid=\"ea7527df-e725-4c72-a80e-26585e18348b\"><strong>Cluster-level <code>min.insync.replicas</code> changes.</strong> Raising the cluster-wide default may put existing low-replication topics above the threshold, but validating it would require scanning every topic on the controller and would block a legitimate operation (hardening the default for future topics). Existing topics remain protected by the clamp; the recommended operator workflow is unchanged.</li><li data-uuid=\"e4cb502d-d718-4908-aed8-82dbcfb7e6de\"><strong>Partition reassignments that lower the replication factor</strong> below a topic's <code>min.insync.replicas</code>. Reassignment is an operator-driven surface with its own safeguard (<code>allowReplicationFactorChange</code>, KIP-860), and the clamp keeps the partition writable throughout. Extending validation there can be a follow-up if the community wants it.</li></ul><h3>Upgrade behavior</h3><p>The validation is request-time logic on the active controller and requires no new metadata records, so it is not gated on a metadata version or feature flag. In a cluster with mixed controller versions during a rolling upgrade, enforcement begins when an upgraded controller becomes active.</p><h1>Compatibility, Deprecation, and Migration Plan</h1><p>This is a backward-incompatible behavior change by design: requests that previously succeeded (and produced a configuration the cluster silently ignores) will now fail. We believe the break is acceptable because:</p><ol><li data-uuid=\"9ddacfdb-d5fc-47ba-9697-eb70319a6943\">The rejected configurations have no effect today: since KIP-966 the effective min ISR is clamped to the replication factor, no working setup can depend on the accepted-but-ignored value.</li><li data-uuid=\"1e091840-a333-457c-a4ca-71272ee34c8c\">The failure is immediate, at the API call that introduces the contradiction, with a message naming both values, as opposed to today's failure modes (producer retry storms, silent clamping) that surface later and elsewhere.</li><li data-uuid=\"3b23009d-e3b5-40a8-afd9-b09db1cecca6\">There is precedent for tightening configuration constraints in a major/minor release when the old values were harmful (e.g. KIP-1030).</li></ol><p>One workflow requires reordering: increasing durability on an existing topic by setting <code>min.insync.replicas</code> above the current replication factor <em>before</em> adding replicas. After this KIP, the replication factor must be increased first (via reassignment), then <code>min.insync.replicas</code>. Topic-creation workflows are unaffected as long as the requested configuration is self-consistent.</p><p>Known deployment patterns affected:</p><ul><li data-uuid=\"bd9d67c6-f3d8-48ca-84f2-cc2122e219fd\">Kafka Connect accepts topic-level settings for its internal topics (for example <code>config.storage.min.insync.replicas</code> together with <code>config.storage.replication.factor=-1</code> to use the broker default; likewise for the offset and status topics, and for source-connector auto-created topics via <code>topic.creation.&lt;alias&gt;.*</code>). Where the resulting <code>min.insync.replicas</code> exceeds the resolved replication factor, internal-topic creation now fails at worker startup with an explicit error, instead of silently creating a topic with a weaker guarantee than the one requested. The remedy is to make the two settings consistent.</li><li data-uuid=\"e2872576-2512-4761-b3af-ffd0dadc50b1\">MirrorMaker 2 is unaffected in its default configuration: <code>min.insync.replicas</code> is on the default <code>config.properties.exclude</code> list and is not synced to mirror topics. Deployments that override the exclude list to sync <code>min.insync.replicas</code> can hit the new validation when the source topic's value exceeds the mirror topic's replication factor.</li></ul><p>No deprecation or migration tooling is needed: nothing is removed, and existing topics, including already-contradictory ones, are untouched. Lowering a topic's replication factor is not blocked, so any grandfathered topic can still be repaired in either direction (raise RF or lower min ISR).</p><h1>Test Plan</h1><p>Unit tests in <code>ReplicationControlManagerTest</code> and <code>ConfigurationControlManagerTest</code> covering: creation with explicit, defaulted, and manually-assigned replication factors against topic-level, cluster-level, and static min ISR sources; topic-level alteration above/at/below the replication factor; and legacy <code>AlterConfigs</code>. The existing test asserting that a topic with <code>min.insync.replicas</code> above its replication factor is accepted (<code>testEligibleLeaderReplicas_EffectiveMinIsr</code>) will be updated accordingly. Integration coverage is added to the existing <code>CreateTopics</code>/<code>AlterConfigs</code> admin-client tests.</p><h1>Documentation Plan</h1><p>The <code>min.insync.replicas</code> description in the topic and broker configuration reference will state the new constraint, and the release's upgrade notes will call out the behavior change.</p><h1>Rejected Alternatives</h1><ul><li data-uuid=\"5b2e493e-9817-4183-bad4-965fec77dfaa\"><strong>Throw a new non-retriable exception at produce time (KIP-579's approach).</strong> This was the direction proposed in 2020 for KAFKA-4680: keep the configuration legal but fail <code>acks=all</code> produces with a dedicated <code>InconsistentReplicaConfigurationException</code>. It only fires once the data path is exercised: the misconfiguration is accepted and discovered later, by a different principal than the one who made it. It also predates KIP-966, which has since made the configuration semantically void rather than &quot;legal but dangerous&quot;. Rejecting at configuration time is strictly earlier and clearer. (KIP-579 itself rejected configuration-time validation partly because such topics were usable with <code>acks!=all</code>; the KIP-966 clamp has since removed any behavior that depended on the un-clamped value, which is why this KIP revisits that conclusion.)</li><li data-uuid=\"d01eaa7d-4a08-4556-a493-2e2edc9c6ad0\"><strong>Introduce a new error code</strong> (KIP-579 had reserved <code>INCONSISTENT_REPLICA_CONFIGURATION(89)</code>; that code has since been assigned to <code>THROTTLING_QUOTA_EXCEEDED</code>). Clients that don't know a new code surface it as <code>UnknownServerException</code>. <code>INVALID_CONFIG</code> is already returned by both affected APIs for other invalid topic configurations, is handled by every client version, and describes the problem accurately.</li><li data-uuid=\"76ca800a-2136-4a4d-87dc-8bb488e51d87\"><strong>Validate cluster-level <code>min.insync.replicas</code> changes against all existing topics.</strong> Requires an O(topics) scan on the controller for a dynamic-config update, and would block hardening the default for future topics just because legacy low-replication topics exist. The clamp already protects existing topics.</li><li data-uuid=\"3bdb2334-46f7-4978-a3c9-0128d0bfedd8\"><strong>Rely on <code>CreateTopicPolicy</code>/<code>AlterConfigPolicy</code> (KIP-108/KIP-133).</strong> Operators can enforce this today with a custom policy, but policies are opt-in, must be deployed on every cluster, and don't help the users who hit this by accident, which is exactly the population this KIP is for. A contradiction between two settings of the same topic is a consistency rule, not a site policy.</li><li data-uuid=\"680ac18f-101b-441b-88f5-aa3a8761068b\"><strong>Documentation-only fix.</strong> The constraint has been documented in the <code>min.insync.replicas</code> description for years; KAFKA-4680-style incidents kept occurring regardless.</li></ul><p><br /></p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/449286526?status=historical&version=1"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1363
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=449286530",
+    "edit": "/pages/resumedraft.action?draftId=449286530&draftShareId=441e2a5d-d66b-4caf-a081-c060990f546a",
+    "tinyui": "/x/gpHHGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/449286526?status=historical&version=1"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/449286526/child?parentVersion=1",
+    "restrictions": "/rest/api/content/449286526/restriction/byOperation",
+    "history": "/rest/api/content/449286526/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/449286526/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/449286526/restriction/relevantViewRestrictions"
+   }
+  }
+ ],
+ "comments": {
+  "results": [],
+  "start": 0,
+  "limit": 200,
+  "size": 0,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/api/content/449286526/child/comment?expand=body.storage%2Cversion%2Cancestors&depth=all",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ }
+}

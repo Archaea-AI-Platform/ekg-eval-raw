@@ -1,0 +1,2198 @@
+{
+ "pull": {
+  "url": "https://api.github.com/repos/apache/kafka/pulls/23840",
+  "id": 4888498017,
+  "node_id": "PR_kwDOACG9q88AAAABI2CPYQ",
+  "html_url": "https://github.com/apache/kafka/pull/23840",
+  "diff_url": "https://github.com/apache/kafka/pull/23840.diff",
+  "patch_url": "https://github.com/apache/kafka/pull/23840.patch",
+  "issue_url": "https://api.github.com/repos/apache/kafka/issues/23840",
+  "commits_url": "https://api.github.com/repos/apache/kafka/pulls/23840/commits",
+  "review_comments_url": "https://api.github.com/repos/apache/kafka/pulls/23840/comments",
+  "review_comment_url": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}",
+  "comments_url": "https://api.github.com/repos/apache/kafka/issues/23840/comments",
+  "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/ccc45dfd4798b00b46bad1e6fe3a862c53378cc0",
+  "number": 23840,
+  "state": "closed",
+  "locked": false,
+  "title": "KAFKA-21294: Add missing OAuth login configs to production SASL examples",
+  "user": {
+   "login": "dybyte",
+   "id": 132787602,
+   "node_id": "U_kgDOB-otkg",
+   "avatar_url": "https://avatars.githubusercontent.com/u/132787602?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/dybyte",
+   "html_url": "https://github.com/dybyte",
+   "followers_url": "https://api.github.com/users/dybyte/followers",
+   "following_url": "https://api.github.com/users/dybyte/following{/other_user}",
+   "gists_url": "https://api.github.com/users/dybyte/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/dybyte/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/dybyte/subscriptions",
+   "organizations_url": "https://api.github.com/users/dybyte/orgs",
+   "repos_url": "https://api.github.com/users/dybyte/repos",
+   "events_url": "https://api.github.com/users/dybyte/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/dybyte/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "body": "The production OAUTHBEARER examples don't work as written. Add the\nmissing login callback handler to the broker and client examples, and\nthe org.apache.kafka.sasl.oauthbearer.allowed.urls system property,\nwhich has defaulted to empty since 4.0.\n\nAlso add an integration test that runs the documented broker config with\na replicated topic.\n\nGenerated-by: Claude Opus 5.5\n\nReviewers: Chia-Ping Tsai <chia7712@gmail.com>\n",
+  "labels": [
+   {
+    "id": 820768376,
+    "node_id": "MDU6TGFiZWw4MjA3NjgzNzY=",
+    "url": "https://api.github.com/repos/apache/kafka/labels/docs",
+    "name": "docs",
+    "description": null,
+    "color": "017c4f",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 838330122,
+    "node_id": "MDU6TGFiZWw4MzgzMzAxMjI=",
+    "url": "https://api.github.com/repos/apache/kafka/labels/core",
+    "name": "core",
+    "description": "Kafka Broker",
+    "color": "ed5a86",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 7388474305,
+    "node_id": "LA_kwDOACG9q88AAAABuGMrwQ",
+    "url": "https://api.github.com/repos/apache/kafka/labels/build",
+    "name": "build",
+    "description": "Gradle build or GitHub Actions",
+    "color": "d4c5f9",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 7522931565,
+    "node_id": "LA_kwDOACG9q88AAAABwGbTbQ",
+    "url": "https://api.github.com/repos/apache/kafka/labels/ci-approved",
+    "name": "ci-approved",
+    "description": "",
+    "color": "ffffff",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   }
+  ],
+  "milestone": null,
+  "active_lock_reason": null,
+  "created_at": "2026-10-16T12:40:18Z",
+  "updated_at": "2026-10-27T08:11:41Z",
+  "closed_at": "2026-10-22T16:32:23Z",
+  "merged_at": "2026-10-22T16:32:23Z",
+  "merge_commit_sha": "0290810b879fc7c965991a02288d444b0347fcba",
+  "assignee": null,
+  "assignees": [],
+  "requested_reviewers": [],
+  "requested_teams": [],
+  "head": {
+   "label": "dybyte:KAFKA-21294",
+   "ref": "KAFKA-21294",
+   "repo": {
+    "id": 1352152948,
+    "node_id": "R_kgDOUJg3dA",
+    "name": "kafka",
+    "full_name": "dybyte/kafka",
+    "owner": {
+     "login": "dybyte",
+     "id": 132787602,
+     "node_id": "U_kgDOB-otkg",
+     "avatar_url": "https://avatars.githubusercontent.com/u/132787602?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/dybyte",
+     "html_url": "https://github.com/dybyte",
+     "followers_url": "https://api.github.com/users/dybyte/followers",
+     "following_url": "https://api.github.com/users/dybyte/following{/other_user}",
+     "gists_url": "https://api.github.com/users/dybyte/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/dybyte/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/dybyte/subscriptions",
+     "organizations_url": "https://api.github.com/users/dybyte/orgs",
+     "repos_url": "https://api.github.com/users/dybyte/repos",
+     "events_url": "https://api.github.com/users/dybyte/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/dybyte/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": true,
+    "archived": false,
+    "disabled": false,
+    "description": "Apache Kafka - A distributed event streaming platform",
+    "homepage": "https://kafka.apache.org/",
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [],
+    "forks_count": 0,
+    "forks": 0,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "watchers": 0,
+    "open_issues_count": 0,
+    "open_issues": 0,
+    "size": 270699,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-28T06:50:23Z",
+    "created_at": "2026-08-31T08:03:05Z",
+    "updated_at": "2026-09-30T15:46:32Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/dybyte/kafka",
+    "html_url": "https://github.com/dybyte/kafka",
+    "archive_url": "https://api.github.com/repos/dybyte/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/dybyte/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/dybyte/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/dybyte/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/dybyte/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/dybyte/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/dybyte/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/dybyte/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/dybyte/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/dybyte/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/dybyte/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/dybyte/kafka/downloads",
+    "events_url": "https://api.github.com/repos/dybyte/kafka/events",
+    "forks_url": "https://api.github.com/repos/dybyte/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/dybyte/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/dybyte/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/dybyte/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/dybyte/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/dybyte/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/dybyte/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/dybyte/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/dybyte/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/dybyte/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/dybyte/kafka/languages",
+    "merges_url": "https://api.github.com/repos/dybyte/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/dybyte/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/dybyte/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/dybyte/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/dybyte/kafka/releases{/id}",
+    "ssh_url": "git@github.com:dybyte/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/dybyte/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/dybyte/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/dybyte/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/dybyte/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/dybyte/kafka/tags",
+    "teams_url": "https://api.github.com/repos/dybyte/kafka/teams",
+    "trees_url": "https://api.github.com/repos/dybyte/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/dybyte/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/dybyte/kafka/hooks",
+    "svn_url": "https://github.com/dybyte/kafka"
+   },
+   "sha": "ccc45dfd4798b00b46bad1e6fe3a862c53378cc0",
+   "user": {
+    "login": "dybyte",
+    "id": 132787602,
+    "node_id": "U_kgDOB-otkg",
+    "avatar_url": "https://avatars.githubusercontent.com/u/132787602?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dybyte",
+    "html_url": "https://github.com/dybyte",
+    "followers_url": "https://api.github.com/users/dybyte/followers",
+    "following_url": "https://api.github.com/users/dybyte/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dybyte/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dybyte/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dybyte/subscriptions",
+    "organizations_url": "https://api.github.com/users/dybyte/orgs",
+    "repos_url": "https://api.github.com/users/dybyte/repos",
+    "events_url": "https://api.github.com/users/dybyte/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dybyte/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "base": {
+   "label": "apache:trunk",
+   "ref": "trunk",
+   "repo": {
+    "id": 2211243,
+    "node_id": "MDEwOlJlcG9zaXRvcnkyMjExMjQz",
+    "name": "kafka",
+    "full_name": "apache/kafka",
+    "owner": {
+     "login": "apache",
+     "id": 47359,
+     "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+     "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/apache",
+     "html_url": "https://github.com/apache",
+     "followers_url": "https://api.github.com/users/apache/followers",
+     "following_url": "https://api.github.com/users/apache/following{/other_user}",
+     "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+     "organizations_url": "https://api.github.com/users/apache/orgs",
+     "repos_url": "https://api.github.com/users/apache/repos",
+     "events_url": "https://api.github.com/users/apache/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/apache/received_events",
+     "type": "Organization",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": false,
+    "archived": false,
+    "disabled": false,
+    "description": "Apache Kafka - A distributed event streaming platform",
+    "homepage": "https://kafka.apache.org/",
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [
+     "java",
+     "kafka",
+     "scala",
+     "streaming"
+    ],
+    "forks_count": 15637,
+    "forks": 15637,
+    "stargazers_count": 34153,
+    "watchers_count": 34153,
+    "watchers": 34153,
+    "open_issues_count": 674,
+    "open_issues": 674,
+    "size": 322164,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-29T11:37:21Z",
+    "created_at": "2011-08-15T18:06:16Z",
+    "updated_at": "2026-10-29T11:37:29Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/apache/kafka",
+    "html_url": "https://github.com/apache/kafka",
+    "archive_url": "https://api.github.com/repos/apache/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/apache/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/apache/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/apache/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/apache/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/apache/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/apache/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/apache/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/apache/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/apache/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/apache/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/apache/kafka/downloads",
+    "events_url": "https://api.github.com/repos/apache/kafka/events",
+    "forks_url": "https://api.github.com/repos/apache/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/apache/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/apache/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/apache/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/apache/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/apache/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/apache/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/apache/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/apache/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/apache/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/apache/kafka/languages",
+    "merges_url": "https://api.github.com/repos/apache/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/apache/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/apache/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/apache/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/apache/kafka/releases{/id}",
+    "ssh_url": "git@github.com:apache/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/apache/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/apache/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/apache/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/apache/kafka/tags",
+    "teams_url": "https://api.github.com/repos/apache/kafka/teams",
+    "trees_url": "https://api.github.com/repos/apache/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/apache/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/apache/kafka/hooks",
+    "svn_url": "https://github.com/apache/kafka"
+   },
+   "sha": "65566690ca1ddb584388c1026e2ff6673e9c6f19",
+   "user": {
+    "login": "apache",
+    "id": 47359,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/apache",
+    "html_url": "https://github.com/apache",
+    "followers_url": "https://api.github.com/users/apache/followers",
+    "following_url": "https://api.github.com/users/apache/following{/other_user}",
+    "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+    "organizations_url": "https://api.github.com/users/apache/orgs",
+    "repos_url": "https://api.github.com/users/apache/repos",
+    "events_url": "https://api.github.com/users/apache/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/apache/received_events",
+    "type": "Organization",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "_links": {
+   "comments": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23840/comments"
+   },
+   "commits": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23840/commits"
+   },
+   "statuses": {
+    "href": "https://api.github.com/repos/apache/kafka/statuses/ccc45dfd4798b00b46bad1e6fe3a862c53378cc0"
+   },
+   "html": {
+    "href": "https://github.com/apache/kafka/pull/23840"
+   },
+   "issue": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23840"
+   },
+   "review_comments": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23840/comments"
+   },
+   "review_comment": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}"
+   },
+   "self": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23840"
+   }
+  },
+  "author_association": "MEMBER",
+  "auto_merge": null,
+  "draft": false,
+  "merged": true,
+  "mergeable": null,
+  "rebaseable": null,
+  "mergeable_state": "unknown",
+  "merged_by": {
+   "login": "chia7712",
+   "id": 6234750,
+   "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+   "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/chia7712",
+   "html_url": "https://github.com/chia7712",
+   "followers_url": "https://api.github.com/users/chia7712/followers",
+   "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+   "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+   "organizations_url": "https://api.github.com/users/chia7712/orgs",
+   "repos_url": "https://api.github.com/users/chia7712/repos",
+   "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/chia7712/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "comments": 0,
+  "review_comments": 6,
+  "maintainer_can_modify": false,
+  "commits": 3,
+  "additions": 192,
+  "deletions": 2,
+  "changed_files": 4
+ },
+ "reviews": [
+  {
+   "id": 5593091562,
+   "node_id": "PRR_kwDOACG9q88AAAABTV_N6g",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?u=d6a720105c14e445ea603b93ca071290c3955670&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23840#pullrequestreview-5593091562",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23840",
+   "author_association": "MEMBER",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23840#pullrequestreview-5593091562"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23840"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-20T23:29:30Z",
+   "commit_id": "318c44617c41ed9a31e6bd1e238dd5da8c26ce86"
+  },
+  {
+   "id": 5593096099,
+   "node_id": "PRR_kwDOACG9q88AAAABTV_fow",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?u=d6a720105c14e445ea603b93ca071290c3955670&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23840#pullrequestreview-5593096099",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23840",
+   "author_association": "MEMBER",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23840#pullrequestreview-5593096099"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23840"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-20T23:30:10Z",
+   "commit_id": "318c44617c41ed9a31e6bd1e238dd5da8c26ce86"
+  },
+  {
+   "id": 5609651222,
+   "node_id": "PRR_kwDOACG9q88AAAABTlx8Fg",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?u=d6a720105c14e445ea603b93ca071290c3955670&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23840#pullrequestreview-5609651222",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23840",
+   "author_association": "MEMBER",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23840#pullrequestreview-5609651222"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23840"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-22T05:28:56Z",
+   "commit_id": "062b5c570ea2cec4a7102d85097945c9f3ae9c0f"
+  },
+  {
+   "id": 5609667452,
+   "node_id": "PRR_kwDOACG9q88AAAABTly7fA",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?u=d6a720105c14e445ea603b93ca071290c3955670&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23840#pullrequestreview-5609667452",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23840",
+   "author_association": "MEMBER",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23840#pullrequestreview-5609667452"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23840"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-22T05:31:26Z",
+   "commit_id": "062b5c570ea2cec4a7102d85097945c9f3ae9c0f"
+  },
+  {
+   "id": 5609669746,
+   "node_id": "PRR_kwDOACG9q88AAAABTlzEcg",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?u=d6a720105c14e445ea603b93ca071290c3955670&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23840#pullrequestreview-5609669746",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23840",
+   "author_association": "MEMBER",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23840#pullrequestreview-5609669746"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23840"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-22T05:31:48Z",
+   "commit_id": "062b5c570ea2cec4a7102d85097945c9f3ae9c0f"
+  },
+  {
+   "id": 5616200401,
+   "node_id": "PRR_kwDOACG9q88AAAABTsBq0Q",
+   "user": {
+    "login": "dybyte",
+    "id": 132787602,
+    "node_id": "U_kgDOB-otkg",
+    "avatar_url": "https://avatars.githubusercontent.com/u/132787602?u=dd9184fb3a940568185c87c932e786adcb00bf96&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dybyte",
+    "html_url": "https://github.com/dybyte",
+    "followers_url": "https://api.github.com/users/dybyte/followers",
+    "following_url": "https://api.github.com/users/dybyte/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dybyte/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dybyte/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dybyte/subscriptions",
+    "organizations_url": "https://api.github.com/users/dybyte/orgs",
+    "repos_url": "https://api.github.com/users/dybyte/repos",
+    "events_url": "https://api.github.com/users/dybyte/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dybyte/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23840#pullrequestreview-5616200401",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23840",
+   "author_association": "MEMBER",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23840#pullrequestreview-5616200401"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23840"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-22T14:54:08Z",
+   "commit_id": "062b5c570ea2cec4a7102d85097945c9f3ae9c0f"
+  },
+  {
+   "id": 5617523845,
+   "node_id": "PRR_kwDOACG9q88AAAABTtSchQ",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?u=d6a720105c14e445ea603b93ca071290c3955670&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "LGTM",
+   "state": "APPROVED",
+   "html_url": "https://github.com/apache/kafka/pull/23840#pullrequestreview-5617523845",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23840",
+   "author_association": "MEMBER",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23840#pullrequestreview-5617523845"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23840"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-22T16:27:08Z",
+   "commit_id": "ccc45dfd4798b00b46bad1e6fe3a862c53378cc0"
+  }
+ ],
+ "review_comments": [
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4331426440",
+   "pull_request_review_id": 5593091562,
+   "id": 4331426440,
+   "node_id": "PRRC_kwDOACG9q88AAAABAixSiA",
+   "diff_hunk": "@@ -0,0 +1,159 @@\n+/*\n+ * Licensed to the Apache Software Foundation (ASF) under one or more\n+ * contributor license agreements. See the NOTICE file distributed with\n+ * this work for additional information regarding copyright ownership.\n+ * The ASF licenses this file to You under the Apache License, Version 2.0\n+ * (the \"License\"); you may not use this file except in compliance with\n+ * the License. You may obtain a copy of the License at\n+ *\n+ *    http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n+package kafka.server;",
+   "path": "core/src/test/java/kafka/server/InterBrokerOAuthIntegrationTest.java",
+   "commit_id": "318c44617c41ed9a31e6bd1e238dd5da8c26ce86",
+   "original_commit_id": "318c44617c41ed9a31e6bd1e238dd5da8c26ce86",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "Please move it to server module ",
+   "created_at": "2026-10-20T23:29:30Z",
+   "updated_at": "2026-10-20T23:29:30Z",
+   "html_url": "https://github.com/apache/kafka/pull/23840#discussion_r4331426440",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23840",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4331426440"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23840#discussion_r4331426440"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23840"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4331426440/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": null,
+   "original_line": 17,
+   "side": "RIGHT",
+   "author_association": "MEMBER",
+   "original_position": 17,
+   "position": 1,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4331430661",
+   "pull_request_review_id": 5593096099,
+   "id": 4331430661,
+   "node_id": "PRRC_kwDOACG9q88AAAABAixjBQ",
+   "diff_hunk": "@@ -0,0 +1,159 @@\n+/*\n+ * Licensed to the Apache Software Foundation (ASF) under one or more\n+ * contributor license agreements. See the NOTICE file distributed with\n+ * this work for additional information regarding copyright ownership.\n+ * The ASF licenses this file to You under the Apache License, Version 2.0\n+ * (the \"License\"); you may not use this file except in compliance with\n+ * the License. You may obtain a copy of the License at\n+ *\n+ *    http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n+package kafka.server;\n+\n+import org.apache.kafka.clients.CommonClientConfigs;\n+import org.apache.kafka.clients.admin.Admin;\n+import org.apache.kafka.clients.admin.NewTopic;\n+import org.apache.kafka.clients.producer.KafkaProducer;\n+import org.apache.kafka.clients.producer.ProducerConfig;\n+import org.apache.kafka.clients.producer.ProducerRecord;\n+import org.apache.kafka.common.TopicPartition;\n+import org.apache.kafka.common.config.SaslConfigs;\n+import org.apache.kafka.common.config.internals.BrokerSecurityConfigs;\n+import org.apache.kafka.common.network.ListenerName;\n+import org.apache.kafka.common.security.JaasUtils;\n+import org.apache.kafka.common.security.auth.SecurityProtocol;\n+import org.apache.kafka.common.security.authenticator.LoginManager;\n+import org.apache.kafka.common.security.oauthbearer.OAuthBearerLoginCallbackHandler;\n+import org.apache.kafka.common.security.oauthbearer.OAuthBearerLoginModule;\n+import org.apache.kafka.common.security.oauthbearer.OAuthBearerValidatorCallbackHandler;\n+import org.apache.kafka.common.serialization.ByteArraySerializer;\n+import org.apache.kafka.common.test.KafkaClusterTestKit;\n+import org.apache.kafka.common.test.TestKitNodes;\n+import org.apache.kafka.common.test.api.TestKitDefaults;\n+import org.apache.kafka.test.TestUtils;\n+\n+import org.junit.jupiter.api.AfterEach;\n+import org.junit.jupiter.api.BeforeEach;\n+import org.junit.jupiter.api.Tag;\n+import org.junit.jupiter.api.Test;\n+import org.junit.jupiter.api.Timeout;\n+\n+import java.io.File;\n+import java.nio.charset.StandardCharsets;\n+import java.util.HashMap;\n+import java.util.List;\n+import java.util.Map;\n+\n+import javax.security.auth.login.Configuration;\n+\n+import no.nav.security.mock.oauth2.MockOAuth2Server;\n+\n+/**\n+ * Integration test for brokers that use OAUTHBEARER as the inter-broker SASL mechanism, configured as described in\n+ * the \"Configuring Production Kafka Brokers\" section of the security documentation.\n+ */\n+@Tag(\"integration\")\n+public class InterBrokerOAuthIntegrationTest {\n+\n+    private static final String MECHANISM = \"OAUTHBEARER\";\n+    private static final String ISSUER_ID = \"default\";\n+    private static final int NUM_BROKERS = 3;\n+\n+    private MockOAuth2Server oauthServer;\n+    private String jwksUrl;\n+    private String tokenEndpointUrl;\n+\n+    @BeforeEach\n+    public void setUp() throws Exception {\n+        oauthServer = new MockOAuth2Server();\n+        oauthServer.start();\n+        jwksUrl = oauthServer.jwksUrl(ISSUER_ID).toString();\n+        tokenEndpointUrl = oauthServer.tokenEndpointUrl(ISSUER_ID).toString();\n+\n+        // A static JAAS file without any login module options, and the allowed OAuth URLs\n+        File jaasFile = TestUtils.tempFile(\"KafkaServer {\\n    \" + OAuthBearerLoginModule.class.getName() + \" required ;\\n};\\n\");\n+        System.setProperty(JaasUtils.JAVA_LOGIN_CONFIG_PARAM, jaasFile.getAbsolutePath());\n+        Configuration.setConfiguration(null);\n+        System.setProperty(BrokerSecurityConfigs.ALLOWED_SASL_OAUTHBEARER_URLS_CONFIG, jwksUrl + \",\" + tokenEndpointUrl);\n+    }\n+\n+    @AfterEach\n+    public void tearDown() {\n+        if (oauthServer != null)\n+            oauthServer.shutdown();\n+        LoginManager.closeAll();\n+        System.clearProperty(JaasUtils.JAVA_LOGIN_CONFIG_PARAM);\n+        System.clearProperty(BrokerSecurityConfigs.ALLOWED_SASL_OAUTHBEARER_URLS_CONFIG);\n+        Configuration.setConfiguration(null);\n+    }\n+\n+    @Test\n+    @Timeout(180)\n+    public void testReplicationWithBrokerLoginCallbackHandler() throws Exception {\n+        TestKitNodes nodes = new TestKitNodes.Builder()\n+            .setNumBrokerNodes(NUM_BROKERS)\n+            .setNumControllerNodes(1)\n+            .setBrokerSecurityProtocol(SecurityProtocol.SASL_PLAINTEXT)\n+            .build();\n+        String prefix = ListenerName.normalised(TestKitDefaults.DEFAULT_BROKER_LISTENER_NAME).saslMechanismConfigPrefix(MECHANISM);\n+\n+        try (KafkaClusterTestKit cluster = new KafkaClusterTestKit.Builder(nodes)\n+                .setConfigProp(BrokerSecurityConfigs.SASL_ENABLED_MECHANISMS_CONFIG, MECHANISM)\n+                .setConfigProp(BrokerSecurityConfigs.SASL_MECHANISM_INTER_BROKER_PROTOCOL_CONFIG, MECHANISM)\n+                // Validate the tokens of incoming connections\n+                .setConfigProp(prefix + BrokerSecurityConfigs.SASL_SERVER_CALLBACK_HANDLER_CLASS_CONFIG, OAuthBearerValidatorCallbackHandler.class.getName())\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_JWKS_ENDPOINT_URL, jwksUrl)\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_EXPECTED_AUDIENCE, ISSUER_ID)\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_EXPECTED_ISSUER, oauthServer.issuerUrl(ISSUER_ID).toString())\n+                // Retrieve a token for outgoing inter-broker connections\n+                .setConfigProp(prefix + SaslConfigs.SASL_LOGIN_CALLBACK_HANDLER_CLASS, OAuthBearerLoginCallbackHandler.class.getName())\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_TOKEN_ENDPOINT_URL, tokenEndpointUrl)\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_CLIENT_CREDENTIALS_CLIENT_ID, \"kafka-broker\")\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_CLIENT_CREDENTIALS_CLIENT_SECRET, \"broker-secret\")\n+                .build()) {\n+            cluster.format();\n+            cluster.startup();\n+            cluster.waitForReadyBrokers();\n+\n+            String topic = \"inter-broker-replication-test\";\n+            Map<String, Object> clientConfigs = clientConfigs();\n+            try (Admin admin = cluster.admin(clientConfigs)) {\n+                admin.createTopics(List.of(new NewTopic(topic, 1, (short) NUM_BROKERS))).all().get();\n+            }\n+\n+            Map<String, Object> producerConfigs = new HashMap<>(clientConfigs);\n+            producerConfigs.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, cluster.bootstrapServers());\n+            int numRecords = 10;\n+            try (KafkaProducer<byte[], byte[]> producer = new KafkaProducer<>(producerConfigs, new ByteArraySerializer(), new ByteArraySerializer())) {\n+                for (int i = 0; i < numRecords; i++) {\n+                    producer.send(new ProducerRecord<>(topic,\n+                        (\"key-\" + i).getBytes(StandardCharsets.UTF_8),\n+                        (\"value-\" + i).getBytes(StandardCharsets.UTF_8))).get();\n+                }\n+            }\n+\n+            // The followers can only replicate the records if they authenticate to the leader over the inter-broker listener\n+            TopicPartition tp = new TopicPartition(topic, 0);\n+            TestUtils.waitForCondition(() -> cluster.brokers().values().stream()\n+                    .allMatch(broker -> broker.replicaManager().localLog(tp).exists(log -> log.logEndOffset() == numRecords)),",
+   "path": "core/src/test/java/kafka/server/InterBrokerOAuthIntegrationTest.java",
+   "commit_id": "318c44617c41ed9a31e6bd1e238dd5da8c26ce86",
+   "original_commit_id": "318c44617c41ed9a31e6bd1e238dd5da8c26ce86",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "Could you use client APIs to verify the output instead?",
+   "created_at": "2026-10-20T23:30:10Z",
+   "updated_at": "2026-10-20T23:30:10Z",
+   "html_url": "https://github.com/apache/kafka/pull/23840#discussion_r4331430661",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23840",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4331430661"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23840#discussion_r4331430661"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23840"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4331430661/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": null,
+   "original_line": 144,
+   "side": "RIGHT",
+   "author_association": "MEMBER",
+   "original_position": 144,
+   "position": 1,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4344863300",
+   "pull_request_review_id": 5609651222,
+   "id": 4344863300,
+   "node_id": "PRRC_kwDOACG9q88AAAABAvlaRA",
+   "diff_hunk": "@@ -0,0 +1,181 @@\n+/*\n+ * Licensed to the Apache Software Foundation (ASF) under one or more\n+ * contributor license agreements. See the NOTICE file distributed with\n+ * this work for additional information regarding copyright ownership.\n+ * The ASF licenses this file to You under the Apache License, Version 2.0\n+ * (the \"License\"); you may not use this file except in compliance with\n+ * the License. You may obtain a copy of the License at\n+ *\n+ *    http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n+package org.apache.kafka.server;\n+\n+import org.apache.kafka.clients.CommonClientConfigs;\n+import org.apache.kafka.clients.admin.Admin;\n+import org.apache.kafka.clients.admin.NewTopic;\n+import org.apache.kafka.clients.consumer.ConsumerConfig;\n+import org.apache.kafka.clients.consumer.ConsumerRecord;\n+import org.apache.kafka.clients.consumer.KafkaConsumer;\n+import org.apache.kafka.clients.producer.KafkaProducer;\n+import org.apache.kafka.clients.producer.ProducerConfig;\n+import org.apache.kafka.clients.producer.ProducerRecord;\n+import org.apache.kafka.common.TopicPartition;\n+import org.apache.kafka.common.config.SaslConfigs;\n+import org.apache.kafka.common.config.TopicConfig;\n+import org.apache.kafka.common.config.internals.BrokerSecurityConfigs;\n+import org.apache.kafka.common.network.ListenerName;\n+import org.apache.kafka.common.security.JaasUtils;\n+import org.apache.kafka.common.security.auth.SecurityProtocol;\n+import org.apache.kafka.common.security.authenticator.LoginManager;\n+import org.apache.kafka.common.security.oauthbearer.OAuthBearerLoginCallbackHandler;\n+import org.apache.kafka.common.security.oauthbearer.OAuthBearerLoginModule;\n+import org.apache.kafka.common.security.oauthbearer.OAuthBearerValidatorCallbackHandler;\n+import org.apache.kafka.common.serialization.StringDeserializer;\n+import org.apache.kafka.common.serialization.StringSerializer;\n+import org.apache.kafka.common.test.KafkaClusterTestKit;\n+import org.apache.kafka.common.test.TestKitNodes;\n+import org.apache.kafka.common.test.api.TestKitDefaults;\n+import org.apache.kafka.test.TestUtils;\n+\n+import org.junit.jupiter.api.AfterEach;\n+import org.junit.jupiter.api.BeforeEach;\n+import org.junit.jupiter.api.Tag;\n+import org.junit.jupiter.api.Test;\n+import org.junit.jupiter.api.Timeout;\n+\n+import java.io.File;\n+import java.time.Duration;\n+import java.util.ArrayList;\n+import java.util.HashMap;\n+import java.util.List;\n+import java.util.Map;\n+\n+import javax.security.auth.login.Configuration;\n+\n+import no.nav.security.mock.oauth2.MockOAuth2Server;\n+\n+import static org.junit.jupiter.api.Assertions.assertEquals;\n+\n+/**\n+ * Integration test for brokers that use OAUTHBEARER as the inter-broker SASL mechanism, configured as described in\n+ * the \"Configuring Production Kafka Brokers\" section of the security documentation.\n+ */\n+@Tag(\"integration\")\n+public class InterBrokerOAuthIntegrationTest {\n+\n+    private static final String MECHANISM = \"OAUTHBEARER\";\n+    private static final String ISSUER_ID = \"default\";\n+    private static final int NUM_BROKERS = 3;\n+\n+    private MockOAuth2Server oauthServer;\n+    private String jwksUrl;\n+    private String tokenEndpointUrl;\n+\n+    @BeforeEach\n+    public void setUp() throws Exception {\n+        oauthServer = new MockOAuth2Server();\n+        oauthServer.start();\n+        jwksUrl = oauthServer.jwksUrl(ISSUER_ID).toString();\n+        tokenEndpointUrl = oauthServer.tokenEndpointUrl(ISSUER_ID).toString();\n+\n+        // A static JAAS file without any login module options, and the allowed OAuth URLs\n+        File jaasFile = TestUtils.tempFile(\"KafkaServer {\\n    \" + OAuthBearerLoginModule.class.getName() + \" required ;\\n};\\n\");\n+        System.setProperty(JaasUtils.JAVA_LOGIN_CONFIG_PARAM, jaasFile.getAbsolutePath());\n+        Configuration.setConfiguration(null);\n+        System.setProperty(BrokerSecurityConfigs.ALLOWED_SASL_OAUTHBEARER_URLS_CONFIG, jwksUrl + \",\" + tokenEndpointUrl);\n+    }\n+\n+    @AfterEach\n+    public void tearDown() {\n+        if (oauthServer != null)\n+            oauthServer.shutdown();\n+        LoginManager.closeAll();\n+        System.clearProperty(JaasUtils.JAVA_LOGIN_CONFIG_PARAM);\n+        System.clearProperty(BrokerSecurityConfigs.ALLOWED_SASL_OAUTHBEARER_URLS_CONFIG);\n+        Configuration.setConfiguration(null);\n+    }\n+\n+    @Test\n+    @Timeout(180)\n+    public void testReplicationWithBrokerLoginCallbackHandler() throws Exception {\n+        TestKitNodes nodes = new TestKitNodes.Builder()\n+            .setNumBrokerNodes(NUM_BROKERS)\n+            .setNumControllerNodes(1)\n+            .setBrokerSecurityProtocol(SecurityProtocol.SASL_PLAINTEXT)\n+            .build();\n+        String prefix = ListenerName.normalised(TestKitDefaults.DEFAULT_BROKER_LISTENER_NAME).saslMechanismConfigPrefix(MECHANISM);\n+\n+        try (KafkaClusterTestKit cluster = new KafkaClusterTestKit.Builder(nodes)\n+                .setConfigProp(BrokerSecurityConfigs.SASL_ENABLED_MECHANISMS_CONFIG, MECHANISM)\n+                .setConfigProp(BrokerSecurityConfigs.SASL_MECHANISM_INTER_BROKER_PROTOCOL_CONFIG, MECHANISM)\n+                // Validate the tokens of incoming connections\n+                .setConfigProp(prefix + BrokerSecurityConfigs.SASL_SERVER_CALLBACK_HANDLER_CLASS_CONFIG, OAuthBearerValidatorCallbackHandler.class.getName())\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_JWKS_ENDPOINT_URL, jwksUrl)\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_EXPECTED_AUDIENCE, ISSUER_ID)\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_EXPECTED_ISSUER, oauthServer.issuerUrl(ISSUER_ID).toString())\n+                // Retrieve a token for outgoing inter-broker connections\n+                .setConfigProp(prefix + SaslConfigs.SASL_LOGIN_CALLBACK_HANDLER_CLASS, OAuthBearerLoginCallbackHandler.class.getName())\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_TOKEN_ENDPOINT_URL, tokenEndpointUrl)\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_CLIENT_CREDENTIALS_CLIENT_ID, \"kafka-broker\")\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_CLIENT_CREDENTIALS_CLIENT_SECRET, \"broker-secret\")\n+                .build()) {\n+            cluster.format();\n+            cluster.startup();\n+            cluster.waitForReadyBrokers();\n+\n+            // With acks=all and min.insync.replicas equal to the replication factor, a send succeeds only after every\n+            // replica has the record, so the followers must authenticate to the leader over the inter-broker listener\n+            String topic = \"inter-broker-replication-test\";\n+            NewTopic newTopic = new NewTopic(topic, 1, (short) NUM_BROKERS)\n+                .configs(Map.of(TopicConfig.MIN_IN_SYNC_REPLICAS_CONFIG, String.valueOf(NUM_BROKERS)));\n+            try (Admin admin = cluster.admin(clientConfigs(cluster))) {\n+                admin.createTopics(List.of(newTopic)).all().get();\n+            }\n+\n+            Map<String, Object> producerConfigs = clientConfigs(cluster);\n+            producerConfigs.put(ProducerConfig.ACKS_CONFIG, \"all\");",
+   "path": "server/src/test/java/org/apache/kafka/server/InterBrokerOAuthIntegrationTest.java",
+   "commit_id": "062b5c570ea2cec4a7102d85097945c9f3ae9c0f",
+   "original_commit_id": "062b5c570ea2cec4a7102d85097945c9f3ae9c0f",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "the default value is `all`, so we don't need this I think",
+   "created_at": "2026-10-22T05:28:56Z",
+   "updated_at": "2026-10-22T05:28:56Z",
+   "html_url": "https://github.com/apache/kafka/pull/23840#discussion_r4344863300",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23840",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4344863300"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23840#discussion_r4344863300"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23840"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4344863300/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": null,
+   "original_line": 142,
+   "side": "RIGHT",
+   "author_association": "MEMBER",
+   "original_position": 142,
+   "position": 1,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4344876523",
+   "pull_request_review_id": 5609667452,
+   "id": 4344876523,
+   "node_id": "PRRC_kwDOACG9q88AAAABAvmN6w",
+   "diff_hunk": "@@ -0,0 +1,181 @@\n+/*\n+ * Licensed to the Apache Software Foundation (ASF) under one or more\n+ * contributor license agreements. See the NOTICE file distributed with\n+ * this work for additional information regarding copyright ownership.\n+ * The ASF licenses this file to You under the Apache License, Version 2.0\n+ * (the \"License\"); you may not use this file except in compliance with\n+ * the License. You may obtain a copy of the License at\n+ *\n+ *    http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n+package org.apache.kafka.server;\n+\n+import org.apache.kafka.clients.CommonClientConfigs;\n+import org.apache.kafka.clients.admin.Admin;\n+import org.apache.kafka.clients.admin.NewTopic;\n+import org.apache.kafka.clients.consumer.ConsumerConfig;\n+import org.apache.kafka.clients.consumer.ConsumerRecord;\n+import org.apache.kafka.clients.consumer.KafkaConsumer;\n+import org.apache.kafka.clients.producer.KafkaProducer;\n+import org.apache.kafka.clients.producer.ProducerConfig;\n+import org.apache.kafka.clients.producer.ProducerRecord;\n+import org.apache.kafka.common.TopicPartition;\n+import org.apache.kafka.common.config.SaslConfigs;\n+import org.apache.kafka.common.config.TopicConfig;\n+import org.apache.kafka.common.config.internals.BrokerSecurityConfigs;\n+import org.apache.kafka.common.network.ListenerName;\n+import org.apache.kafka.common.security.JaasUtils;\n+import org.apache.kafka.common.security.auth.SecurityProtocol;\n+import org.apache.kafka.common.security.authenticator.LoginManager;\n+import org.apache.kafka.common.security.oauthbearer.OAuthBearerLoginCallbackHandler;\n+import org.apache.kafka.common.security.oauthbearer.OAuthBearerLoginModule;\n+import org.apache.kafka.common.security.oauthbearer.OAuthBearerValidatorCallbackHandler;\n+import org.apache.kafka.common.serialization.StringDeserializer;\n+import org.apache.kafka.common.serialization.StringSerializer;\n+import org.apache.kafka.common.test.KafkaClusterTestKit;\n+import org.apache.kafka.common.test.TestKitNodes;\n+import org.apache.kafka.common.test.api.TestKitDefaults;\n+import org.apache.kafka.test.TestUtils;\n+\n+import org.junit.jupiter.api.AfterEach;\n+import org.junit.jupiter.api.BeforeEach;\n+import org.junit.jupiter.api.Tag;\n+import org.junit.jupiter.api.Test;\n+import org.junit.jupiter.api.Timeout;\n+\n+import java.io.File;\n+import java.time.Duration;\n+import java.util.ArrayList;\n+import java.util.HashMap;\n+import java.util.List;\n+import java.util.Map;\n+\n+import javax.security.auth.login.Configuration;\n+\n+import no.nav.security.mock.oauth2.MockOAuth2Server;\n+\n+import static org.junit.jupiter.api.Assertions.assertEquals;\n+\n+/**\n+ * Integration test for brokers that use OAUTHBEARER as the inter-broker SASL mechanism, configured as described in\n+ * the \"Configuring Production Kafka Brokers\" section of the security documentation.\n+ */\n+@Tag(\"integration\")\n+public class InterBrokerOAuthIntegrationTest {\n+\n+    private static final String MECHANISM = \"OAUTHBEARER\";\n+    private static final String ISSUER_ID = \"default\";\n+    private static final int NUM_BROKERS = 3;\n+\n+    private MockOAuth2Server oauthServer;\n+    private String jwksUrl;\n+    private String tokenEndpointUrl;\n+\n+    @BeforeEach\n+    public void setUp() throws Exception {\n+        oauthServer = new MockOAuth2Server();\n+        oauthServer.start();\n+        jwksUrl = oauthServer.jwksUrl(ISSUER_ID).toString();\n+        tokenEndpointUrl = oauthServer.tokenEndpointUrl(ISSUER_ID).toString();\n+\n+        // A static JAAS file without any login module options, and the allowed OAuth URLs\n+        File jaasFile = TestUtils.tempFile(\"KafkaServer {\\n    \" + OAuthBearerLoginModule.class.getName() + \" required ;\\n};\\n\");\n+        System.setProperty(JaasUtils.JAVA_LOGIN_CONFIG_PARAM, jaasFile.getAbsolutePath());\n+        Configuration.setConfiguration(null);\n+        System.setProperty(BrokerSecurityConfigs.ALLOWED_SASL_OAUTHBEARER_URLS_CONFIG, jwksUrl + \",\" + tokenEndpointUrl);\n+    }\n+\n+    @AfterEach\n+    public void tearDown() {\n+        if (oauthServer != null)\n+            oauthServer.shutdown();\n+        LoginManager.closeAll();\n+        System.clearProperty(JaasUtils.JAVA_LOGIN_CONFIG_PARAM);\n+        System.clearProperty(BrokerSecurityConfigs.ALLOWED_SASL_OAUTHBEARER_URLS_CONFIG);\n+        Configuration.setConfiguration(null);\n+    }\n+\n+    @Test\n+    @Timeout(180)\n+    public void testReplicationWithBrokerLoginCallbackHandler() throws Exception {\n+        TestKitNodes nodes = new TestKitNodes.Builder()\n+            .setNumBrokerNodes(NUM_BROKERS)\n+            .setNumControllerNodes(1)\n+            .setBrokerSecurityProtocol(SecurityProtocol.SASL_PLAINTEXT)\n+            .build();\n+        String prefix = ListenerName.normalised(TestKitDefaults.DEFAULT_BROKER_LISTENER_NAME).saslMechanismConfigPrefix(MECHANISM);\n+\n+        try (KafkaClusterTestKit cluster = new KafkaClusterTestKit.Builder(nodes)\n+                .setConfigProp(BrokerSecurityConfigs.SASL_ENABLED_MECHANISMS_CONFIG, MECHANISM)\n+                .setConfigProp(BrokerSecurityConfigs.SASL_MECHANISM_INTER_BROKER_PROTOCOL_CONFIG, MECHANISM)\n+                // Validate the tokens of incoming connections\n+                .setConfigProp(prefix + BrokerSecurityConfigs.SASL_SERVER_CALLBACK_HANDLER_CLASS_CONFIG, OAuthBearerValidatorCallbackHandler.class.getName())\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_JWKS_ENDPOINT_URL, jwksUrl)\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_EXPECTED_AUDIENCE, ISSUER_ID)\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_EXPECTED_ISSUER, oauthServer.issuerUrl(ISSUER_ID).toString())\n+                // Retrieve a token for outgoing inter-broker connections\n+                .setConfigProp(prefix + SaslConfigs.SASL_LOGIN_CALLBACK_HANDLER_CLASS, OAuthBearerLoginCallbackHandler.class.getName())\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_TOKEN_ENDPOINT_URL, tokenEndpointUrl)\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_CLIENT_CREDENTIALS_CLIENT_ID, \"kafka-broker\")\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_CLIENT_CREDENTIALS_CLIENT_SECRET, \"broker-secret\")\n+                .build()) {\n+            cluster.format();\n+            cluster.startup();\n+            cluster.waitForReadyBrokers();\n+\n+            // With acks=all and min.insync.replicas equal to the replication factor, a send succeeds only after every\n+            // replica has the record, so the followers must authenticate to the leader over the inter-broker listener\n+            String topic = \"inter-broker-replication-test\";\n+            NewTopic newTopic = new NewTopic(topic, 1, (short) NUM_BROKERS)\n+                .configs(Map.of(TopicConfig.MIN_IN_SYNC_REPLICAS_CONFIG, String.valueOf(NUM_BROKERS)));\n+            try (Admin admin = cluster.admin(clientConfigs(cluster))) {\n+                admin.createTopics(List.of(newTopic)).all().get();\n+            }\n+\n+            Map<String, Object> producerConfigs = clientConfigs(cluster);\n+            producerConfigs.put(ProducerConfig.ACKS_CONFIG, \"all\");\n+            int numRecords = 10;\n+            try (KafkaProducer<String, String> producer = new KafkaProducer<>(producerConfigs, new StringSerializer(), new StringSerializer())) {\n+                for (int i = 0; i < numRecords; i++) {\n+                    producer.send(new ProducerRecord<>(topic, \"key-\" + i, \"value-\" + i)).get();\n+                }\n+            }\n+\n+            Map<String, Object> consumerConfigs = clientConfigs(cluster);\n+            consumerConfigs.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, \"earliest\");",
+   "path": "server/src/test/java/org/apache/kafka/server/InterBrokerOAuthIntegrationTest.java",
+   "commit_id": "062b5c570ea2cec4a7102d85097945c9f3ae9c0f",
+   "original_commit_id": "062b5c570ea2cec4a7102d85097945c9f3ae9c0f",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "`consumer.seekToBeginning(List.of(tp));` can substitute for it. ",
+   "created_at": "2026-10-22T05:31:27Z",
+   "updated_at": "2026-10-22T05:31:27Z",
+   "html_url": "https://github.com/apache/kafka/pull/23840#discussion_r4344876523",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23840",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4344876523"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23840#discussion_r4344876523"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23840"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4344876523/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": null,
+   "original_line": 151,
+   "side": "RIGHT",
+   "author_association": "MEMBER",
+   "original_position": 151,
+   "position": 1,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4344878386",
+   "pull_request_review_id": 5609669746,
+   "id": 4344878386,
+   "node_id": "PRRC_kwDOACG9q88AAAABAvmVMg",
+   "diff_hunk": "@@ -0,0 +1,181 @@\n+/*\n+ * Licensed to the Apache Software Foundation (ASF) under one or more\n+ * contributor license agreements. See the NOTICE file distributed with\n+ * this work for additional information regarding copyright ownership.\n+ * The ASF licenses this file to You under the Apache License, Version 2.0\n+ * (the \"License\"); you may not use this file except in compliance with\n+ * the License. You may obtain a copy of the License at\n+ *\n+ *    http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n+package org.apache.kafka.server;\n+\n+import org.apache.kafka.clients.CommonClientConfigs;\n+import org.apache.kafka.clients.admin.Admin;\n+import org.apache.kafka.clients.admin.NewTopic;\n+import org.apache.kafka.clients.consumer.ConsumerConfig;\n+import org.apache.kafka.clients.consumer.ConsumerRecord;\n+import org.apache.kafka.clients.consumer.KafkaConsumer;\n+import org.apache.kafka.clients.producer.KafkaProducer;\n+import org.apache.kafka.clients.producer.ProducerConfig;\n+import org.apache.kafka.clients.producer.ProducerRecord;\n+import org.apache.kafka.common.TopicPartition;\n+import org.apache.kafka.common.config.SaslConfigs;\n+import org.apache.kafka.common.config.TopicConfig;\n+import org.apache.kafka.common.config.internals.BrokerSecurityConfigs;\n+import org.apache.kafka.common.network.ListenerName;\n+import org.apache.kafka.common.security.JaasUtils;\n+import org.apache.kafka.common.security.auth.SecurityProtocol;\n+import org.apache.kafka.common.security.authenticator.LoginManager;\n+import org.apache.kafka.common.security.oauthbearer.OAuthBearerLoginCallbackHandler;\n+import org.apache.kafka.common.security.oauthbearer.OAuthBearerLoginModule;\n+import org.apache.kafka.common.security.oauthbearer.OAuthBearerValidatorCallbackHandler;\n+import org.apache.kafka.common.serialization.StringDeserializer;\n+import org.apache.kafka.common.serialization.StringSerializer;\n+import org.apache.kafka.common.test.KafkaClusterTestKit;\n+import org.apache.kafka.common.test.TestKitNodes;\n+import org.apache.kafka.common.test.api.TestKitDefaults;\n+import org.apache.kafka.test.TestUtils;\n+\n+import org.junit.jupiter.api.AfterEach;\n+import org.junit.jupiter.api.BeforeEach;\n+import org.junit.jupiter.api.Tag;\n+import org.junit.jupiter.api.Test;\n+import org.junit.jupiter.api.Timeout;\n+\n+import java.io.File;\n+import java.time.Duration;\n+import java.util.ArrayList;\n+import java.util.HashMap;\n+import java.util.List;\n+import java.util.Map;\n+\n+import javax.security.auth.login.Configuration;\n+\n+import no.nav.security.mock.oauth2.MockOAuth2Server;\n+\n+import static org.junit.jupiter.api.Assertions.assertEquals;\n+\n+/**\n+ * Integration test for brokers that use OAUTHBEARER as the inter-broker SASL mechanism, configured as described in\n+ * the \"Configuring Production Kafka Brokers\" section of the security documentation.\n+ */\n+@Tag(\"integration\")\n+public class InterBrokerOAuthIntegrationTest {\n+\n+    private static final String MECHANISM = \"OAUTHBEARER\";\n+    private static final String ISSUER_ID = \"default\";\n+    private static final int NUM_BROKERS = 3;\n+\n+    private MockOAuth2Server oauthServer;\n+    private String jwksUrl;\n+    private String tokenEndpointUrl;\n+\n+    @BeforeEach\n+    public void setUp() throws Exception {\n+        oauthServer = new MockOAuth2Server();\n+        oauthServer.start();\n+        jwksUrl = oauthServer.jwksUrl(ISSUER_ID).toString();\n+        tokenEndpointUrl = oauthServer.tokenEndpointUrl(ISSUER_ID).toString();\n+\n+        // A static JAAS file without any login module options, and the allowed OAuth URLs\n+        File jaasFile = TestUtils.tempFile(\"KafkaServer {\\n    \" + OAuthBearerLoginModule.class.getName() + \" required ;\\n};\\n\");\n+        System.setProperty(JaasUtils.JAVA_LOGIN_CONFIG_PARAM, jaasFile.getAbsolutePath());\n+        Configuration.setConfiguration(null);\n+        System.setProperty(BrokerSecurityConfigs.ALLOWED_SASL_OAUTHBEARER_URLS_CONFIG, jwksUrl + \",\" + tokenEndpointUrl);\n+    }\n+\n+    @AfterEach\n+    public void tearDown() {\n+        if (oauthServer != null)\n+            oauthServer.shutdown();\n+        LoginManager.closeAll();\n+        System.clearProperty(JaasUtils.JAVA_LOGIN_CONFIG_PARAM);\n+        System.clearProperty(BrokerSecurityConfigs.ALLOWED_SASL_OAUTHBEARER_URLS_CONFIG);\n+        Configuration.setConfiguration(null);\n+    }\n+\n+    @Test\n+    @Timeout(180)\n+    public void testReplicationWithBrokerLoginCallbackHandler() throws Exception {\n+        TestKitNodes nodes = new TestKitNodes.Builder()\n+            .setNumBrokerNodes(NUM_BROKERS)\n+            .setNumControllerNodes(1)\n+            .setBrokerSecurityProtocol(SecurityProtocol.SASL_PLAINTEXT)\n+            .build();\n+        String prefix = ListenerName.normalised(TestKitDefaults.DEFAULT_BROKER_LISTENER_NAME).saslMechanismConfigPrefix(MECHANISM);\n+\n+        try (KafkaClusterTestKit cluster = new KafkaClusterTestKit.Builder(nodes)\n+                .setConfigProp(BrokerSecurityConfigs.SASL_ENABLED_MECHANISMS_CONFIG, MECHANISM)\n+                .setConfigProp(BrokerSecurityConfigs.SASL_MECHANISM_INTER_BROKER_PROTOCOL_CONFIG, MECHANISM)\n+                // Validate the tokens of incoming connections\n+                .setConfigProp(prefix + BrokerSecurityConfigs.SASL_SERVER_CALLBACK_HANDLER_CLASS_CONFIG, OAuthBearerValidatorCallbackHandler.class.getName())\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_JWKS_ENDPOINT_URL, jwksUrl)\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_EXPECTED_AUDIENCE, ISSUER_ID)\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_EXPECTED_ISSUER, oauthServer.issuerUrl(ISSUER_ID).toString())\n+                // Retrieve a token for outgoing inter-broker connections\n+                .setConfigProp(prefix + SaslConfigs.SASL_LOGIN_CALLBACK_HANDLER_CLASS, OAuthBearerLoginCallbackHandler.class.getName())\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_TOKEN_ENDPOINT_URL, tokenEndpointUrl)\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_CLIENT_CREDENTIALS_CLIENT_ID, \"kafka-broker\")\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_CLIENT_CREDENTIALS_CLIENT_SECRET, \"broker-secret\")\n+                .build()) {\n+            cluster.format();\n+            cluster.startup();\n+            cluster.waitForReadyBrokers();\n+\n+            // With acks=all and min.insync.replicas equal to the replication factor, a send succeeds only after every\n+            // replica has the record, so the followers must authenticate to the leader over the inter-broker listener\n+            String topic = \"inter-broker-replication-test\";\n+            NewTopic newTopic = new NewTopic(topic, 1, (short) NUM_BROKERS)\n+                .configs(Map.of(TopicConfig.MIN_IN_SYNC_REPLICAS_CONFIG, String.valueOf(NUM_BROKERS)));\n+            try (Admin admin = cluster.admin(clientConfigs(cluster))) {\n+                admin.createTopics(List.of(newTopic)).all().get();\n+            }\n+\n+            Map<String, Object> producerConfigs = clientConfigs(cluster);\n+            producerConfigs.put(ProducerConfig.ACKS_CONFIG, \"all\");\n+            int numRecords = 10;\n+            try (KafkaProducer<String, String> producer = new KafkaProducer<>(producerConfigs, new StringSerializer(), new StringSerializer())) {\n+                for (int i = 0; i < numRecords; i++) {\n+                    producer.send(new ProducerRecord<>(topic, \"key-\" + i, \"value-\" + i)).get();\n+                }\n+            }\n+\n+            Map<String, Object> consumerConfigs = clientConfigs(cluster);\n+            consumerConfigs.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, \"earliest\");\n+            TopicPartition tp = new TopicPartition(topic, 0);\n+            List<ConsumerRecord<String, String>> records = new ArrayList<>();\n+            try (KafkaConsumer<String, String> consumer = new KafkaConsumer<>(consumerConfigs, new StringDeserializer(), new StringDeserializer())) {\n+                consumer.assign(List.of(tp));\n+                TestUtils.waitForCondition(() -> {\n+                    consumer.poll(Duration.ofMillis(100)).forEach(records::add);\n+                    return records.size() >= numRecords;\n+                }, \"Should consume \" + numRecords + \" records\");\n+            }\n+            assertEquals(numRecords, records.size());\n+            for (int i = 0; i < numRecords; i++) {\n+                assertEquals(\"key-\" + i, records.get(i).key());\n+                assertEquals(\"value-\" + i, records.get(i).value());\n+            }\n+        }\n+    }\n+\n+    private Map<String, Object> clientConfigs(KafkaClusterTestKit cluster) {",
+   "path": "server/src/test/java/org/apache/kafka/server/InterBrokerOAuthIntegrationTest.java",
+   "commit_id": "ccc45dfd4798b00b46bad1e6fe3a862c53378cc0",
+   "original_commit_id": "062b5c570ea2cec4a7102d85097945c9f3ae9c0f",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "By adopting above comment, this helper method could leverage `Map.of`",
+   "created_at": "2026-10-22T05:31:48Z",
+   "updated_at": "2026-10-22T05:31:48Z",
+   "html_url": "https://github.com/apache/kafka/pull/23840#discussion_r4344878386",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23840",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4344878386"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23840#discussion_r4344878386"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23840"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4344878386/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": 163,
+   "original_line": 169,
+   "side": "RIGHT",
+   "author_association": "MEMBER",
+   "original_position": 169,
+   "position": 163,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4349868882",
+   "pull_request_review_id": 5616200401,
+   "id": 4349868882,
+   "node_id": "PRRC_kwDOACG9q88AAAABA0W7Ug",
+   "diff_hunk": "@@ -0,0 +1,181 @@\n+/*\n+ * Licensed to the Apache Software Foundation (ASF) under one or more\n+ * contributor license agreements. See the NOTICE file distributed with\n+ * this work for additional information regarding copyright ownership.\n+ * The ASF licenses this file to You under the Apache License, Version 2.0\n+ * (the \"License\"); you may not use this file except in compliance with\n+ * the License. You may obtain a copy of the License at\n+ *\n+ *    http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n+package org.apache.kafka.server;\n+\n+import org.apache.kafka.clients.CommonClientConfigs;\n+import org.apache.kafka.clients.admin.Admin;\n+import org.apache.kafka.clients.admin.NewTopic;\n+import org.apache.kafka.clients.consumer.ConsumerConfig;\n+import org.apache.kafka.clients.consumer.ConsumerRecord;\n+import org.apache.kafka.clients.consumer.KafkaConsumer;\n+import org.apache.kafka.clients.producer.KafkaProducer;\n+import org.apache.kafka.clients.producer.ProducerConfig;\n+import org.apache.kafka.clients.producer.ProducerRecord;\n+import org.apache.kafka.common.TopicPartition;\n+import org.apache.kafka.common.config.SaslConfigs;\n+import org.apache.kafka.common.config.TopicConfig;\n+import org.apache.kafka.common.config.internals.BrokerSecurityConfigs;\n+import org.apache.kafka.common.network.ListenerName;\n+import org.apache.kafka.common.security.JaasUtils;\n+import org.apache.kafka.common.security.auth.SecurityProtocol;\n+import org.apache.kafka.common.security.authenticator.LoginManager;\n+import org.apache.kafka.common.security.oauthbearer.OAuthBearerLoginCallbackHandler;\n+import org.apache.kafka.common.security.oauthbearer.OAuthBearerLoginModule;\n+import org.apache.kafka.common.security.oauthbearer.OAuthBearerValidatorCallbackHandler;\n+import org.apache.kafka.common.serialization.StringDeserializer;\n+import org.apache.kafka.common.serialization.StringSerializer;\n+import org.apache.kafka.common.test.KafkaClusterTestKit;\n+import org.apache.kafka.common.test.TestKitNodes;\n+import org.apache.kafka.common.test.api.TestKitDefaults;\n+import org.apache.kafka.test.TestUtils;\n+\n+import org.junit.jupiter.api.AfterEach;\n+import org.junit.jupiter.api.BeforeEach;\n+import org.junit.jupiter.api.Tag;\n+import org.junit.jupiter.api.Test;\n+import org.junit.jupiter.api.Timeout;\n+\n+import java.io.File;\n+import java.time.Duration;\n+import java.util.ArrayList;\n+import java.util.HashMap;\n+import java.util.List;\n+import java.util.Map;\n+\n+import javax.security.auth.login.Configuration;\n+\n+import no.nav.security.mock.oauth2.MockOAuth2Server;\n+\n+import static org.junit.jupiter.api.Assertions.assertEquals;\n+\n+/**\n+ * Integration test for brokers that use OAUTHBEARER as the inter-broker SASL mechanism, configured as described in\n+ * the \"Configuring Production Kafka Brokers\" section of the security documentation.\n+ */\n+@Tag(\"integration\")\n+public class InterBrokerOAuthIntegrationTest {\n+\n+    private static final String MECHANISM = \"OAUTHBEARER\";\n+    private static final String ISSUER_ID = \"default\";\n+    private static final int NUM_BROKERS = 3;\n+\n+    private MockOAuth2Server oauthServer;\n+    private String jwksUrl;\n+    private String tokenEndpointUrl;\n+\n+    @BeforeEach\n+    public void setUp() throws Exception {\n+        oauthServer = new MockOAuth2Server();\n+        oauthServer.start();\n+        jwksUrl = oauthServer.jwksUrl(ISSUER_ID).toString();\n+        tokenEndpointUrl = oauthServer.tokenEndpointUrl(ISSUER_ID).toString();\n+\n+        // A static JAAS file without any login module options, and the allowed OAuth URLs\n+        File jaasFile = TestUtils.tempFile(\"KafkaServer {\\n    \" + OAuthBearerLoginModule.class.getName() + \" required ;\\n};\\n\");\n+        System.setProperty(JaasUtils.JAVA_LOGIN_CONFIG_PARAM, jaasFile.getAbsolutePath());\n+        Configuration.setConfiguration(null);\n+        System.setProperty(BrokerSecurityConfigs.ALLOWED_SASL_OAUTHBEARER_URLS_CONFIG, jwksUrl + \",\" + tokenEndpointUrl);\n+    }\n+\n+    @AfterEach\n+    public void tearDown() {\n+        if (oauthServer != null)\n+            oauthServer.shutdown();\n+        LoginManager.closeAll();\n+        System.clearProperty(JaasUtils.JAVA_LOGIN_CONFIG_PARAM);\n+        System.clearProperty(BrokerSecurityConfigs.ALLOWED_SASL_OAUTHBEARER_URLS_CONFIG);\n+        Configuration.setConfiguration(null);\n+    }\n+\n+    @Test\n+    @Timeout(180)\n+    public void testReplicationWithBrokerLoginCallbackHandler() throws Exception {\n+        TestKitNodes nodes = new TestKitNodes.Builder()\n+            .setNumBrokerNodes(NUM_BROKERS)\n+            .setNumControllerNodes(1)\n+            .setBrokerSecurityProtocol(SecurityProtocol.SASL_PLAINTEXT)\n+            .build();\n+        String prefix = ListenerName.normalised(TestKitDefaults.DEFAULT_BROKER_LISTENER_NAME).saslMechanismConfigPrefix(MECHANISM);\n+\n+        try (KafkaClusterTestKit cluster = new KafkaClusterTestKit.Builder(nodes)\n+                .setConfigProp(BrokerSecurityConfigs.SASL_ENABLED_MECHANISMS_CONFIG, MECHANISM)\n+                .setConfigProp(BrokerSecurityConfigs.SASL_MECHANISM_INTER_BROKER_PROTOCOL_CONFIG, MECHANISM)\n+                // Validate the tokens of incoming connections\n+                .setConfigProp(prefix + BrokerSecurityConfigs.SASL_SERVER_CALLBACK_HANDLER_CLASS_CONFIG, OAuthBearerValidatorCallbackHandler.class.getName())\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_JWKS_ENDPOINT_URL, jwksUrl)\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_EXPECTED_AUDIENCE, ISSUER_ID)\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_EXPECTED_ISSUER, oauthServer.issuerUrl(ISSUER_ID).toString())\n+                // Retrieve a token for outgoing inter-broker connections\n+                .setConfigProp(prefix + SaslConfigs.SASL_LOGIN_CALLBACK_HANDLER_CLASS, OAuthBearerLoginCallbackHandler.class.getName())\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_TOKEN_ENDPOINT_URL, tokenEndpointUrl)\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_CLIENT_CREDENTIALS_CLIENT_ID, \"kafka-broker\")\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_CLIENT_CREDENTIALS_CLIENT_SECRET, \"broker-secret\")\n+                .build()) {\n+            cluster.format();\n+            cluster.startup();\n+            cluster.waitForReadyBrokers();\n+\n+            // With acks=all and min.insync.replicas equal to the replication factor, a send succeeds only after every\n+            // replica has the record, so the followers must authenticate to the leader over the inter-broker listener\n+            String topic = \"inter-broker-replication-test\";\n+            NewTopic newTopic = new NewTopic(topic, 1, (short) NUM_BROKERS)\n+                .configs(Map.of(TopicConfig.MIN_IN_SYNC_REPLICAS_CONFIG, String.valueOf(NUM_BROKERS)));\n+            try (Admin admin = cluster.admin(clientConfigs(cluster))) {\n+                admin.createTopics(List.of(newTopic)).all().get();\n+            }\n+\n+            Map<String, Object> producerConfigs = clientConfigs(cluster);\n+            producerConfigs.put(ProducerConfig.ACKS_CONFIG, \"all\");\n+            int numRecords = 10;\n+            try (KafkaProducer<String, String> producer = new KafkaProducer<>(producerConfigs, new StringSerializer(), new StringSerializer())) {\n+                for (int i = 0; i < numRecords; i++) {\n+                    producer.send(new ProducerRecord<>(topic, \"key-\" + i, \"value-\" + i)).get();\n+                }\n+            }\n+\n+            Map<String, Object> consumerConfigs = clientConfigs(cluster);\n+            consumerConfigs.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, \"earliest\");\n+            TopicPartition tp = new TopicPartition(topic, 0);\n+            List<ConsumerRecord<String, String>> records = new ArrayList<>();\n+            try (KafkaConsumer<String, String> consumer = new KafkaConsumer<>(consumerConfigs, new StringDeserializer(), new StringDeserializer())) {\n+                consumer.assign(List.of(tp));\n+                TestUtils.waitForCondition(() -> {\n+                    consumer.poll(Duration.ofMillis(100)).forEach(records::add);\n+                    return records.size() >= numRecords;\n+                }, \"Should consume \" + numRecords + \" records\");\n+            }\n+            assertEquals(numRecords, records.size());\n+            for (int i = 0; i < numRecords; i++) {\n+                assertEquals(\"key-\" + i, records.get(i).key());\n+                assertEquals(\"value-\" + i, records.get(i).value());\n+            }\n+        }\n+    }\n+\n+    private Map<String, Object> clientConfigs(KafkaClusterTestKit cluster) {",
+   "path": "server/src/test/java/org/apache/kafka/server/InterBrokerOAuthIntegrationTest.java",
+   "commit_id": "ccc45dfd4798b00b46bad1e6fe3a862c53378cc0",
+   "original_commit_id": "062b5c570ea2cec4a7102d85097945c9f3ae9c0f",
+   "user": {
+    "login": "dybyte",
+    "id": 132787602,
+    "node_id": "U_kgDOB-otkg",
+    "avatar_url": "https://avatars.githubusercontent.com/u/132787602?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dybyte",
+    "html_url": "https://github.com/dybyte",
+    "followers_url": "https://api.github.com/users/dybyte/followers",
+    "following_url": "https://api.github.com/users/dybyte/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dybyte/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dybyte/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dybyte/subscriptions",
+    "organizations_url": "https://api.github.com/users/dybyte/orgs",
+    "repos_url": "https://api.github.com/users/dybyte/repos",
+    "events_url": "https://api.github.com/users/dybyte/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dybyte/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "@chia7712 I've addressed all the comments. Thanks for the review :)",
+   "created_at": "2026-10-22T14:54:07Z",
+   "updated_at": "2026-10-22T14:54:08Z",
+   "html_url": "https://github.com/apache/kafka/pull/23840#discussion_r4349868882",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23840",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4349868882"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23840#discussion_r4349868882"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23840"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4349868882/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": 163,
+   "original_line": 169,
+   "side": "RIGHT",
+   "in_reply_to_id": 4344878386,
+   "author_association": "MEMBER",
+   "original_position": 169,
+   "position": 163,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  }
+ ],
+ "issue_comments": [],
+ "commits": [
+  {
+   "sha": "318c44617c41ed9a31e6bd1e238dd5da8c26ce86",
+   "node_id": "C_kwDOUJg3dNoAKDMxOGM0NDYxN2M0MWVkOWEzMWU2YmQxZTIzOGRkNWRhOGMyNmNlODY",
+   "commit": {
+    "author": {
+     "name": "Doyeon Kim",
+     "email": "ekagnlek2@gmail.com",
+     "date": "2026-10-16T12:24:43Z"
+    },
+    "committer": {
+     "name": "Doyeon Kim",
+     "email": "ekagnlek2@gmail.com",
+     "date": "2026-10-17T03:31:47Z"
+    },
+    "message": "KAFKA-21294: Add missing OAuth login configs to production SASL examples",
+    "tree": {
+     "sha": "ad3f5b7818f5efb203c0c58c1fc92baf94406742",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/ad3f5b7818f5efb203c0c58c1fc92baf94406742"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/318c44617c41ed9a31e6bd1e238dd5da8c26ce86",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/318c44617c41ed9a31e6bd1e238dd5da8c26ce86",
+   "html_url": "https://github.com/apache/kafka/commit/318c44617c41ed9a31e6bd1e238dd5da8c26ce86",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/318c44617c41ed9a31e6bd1e238dd5da8c26ce86/comments",
+   "author": {
+    "login": "dybyte",
+    "id": 132787602,
+    "node_id": "U_kgDOB-otkg",
+    "avatar_url": "https://avatars.githubusercontent.com/u/132787602?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dybyte",
+    "html_url": "https://github.com/dybyte",
+    "followers_url": "https://api.github.com/users/dybyte/followers",
+    "following_url": "https://api.github.com/users/dybyte/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dybyte/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dybyte/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dybyte/subscriptions",
+    "organizations_url": "https://api.github.com/users/dybyte/orgs",
+    "repos_url": "https://api.github.com/users/dybyte/repos",
+    "events_url": "https://api.github.com/users/dybyte/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dybyte/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "dybyte",
+    "id": 132787602,
+    "node_id": "U_kgDOB-otkg",
+    "avatar_url": "https://avatars.githubusercontent.com/u/132787602?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dybyte",
+    "html_url": "https://github.com/dybyte",
+    "followers_url": "https://api.github.com/users/dybyte/followers",
+    "following_url": "https://api.github.com/users/dybyte/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dybyte/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dybyte/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dybyte/subscriptions",
+    "organizations_url": "https://api.github.com/users/dybyte/orgs",
+    "repos_url": "https://api.github.com/users/dybyte/repos",
+    "events_url": "https://api.github.com/users/dybyte/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dybyte/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "e09cc6332101a976c738d38041e945402bc941e1",
+     "url": "https://api.github.com/repos/apache/kafka/commits/e09cc6332101a976c738d38041e945402bc941e1",
+     "html_url": "https://github.com/apache/kafka/commit/e09cc6332101a976c738d38041e945402bc941e1"
+    }
+   ]
+  },
+  {
+   "sha": "062b5c570ea2cec4a7102d85097945c9f3ae9c0f",
+   "node_id": "C_kwDOUJg3dNoAKDA2MmI1YzU3MGVhMmNlYzRhNzEwMmQ4NTA5Nzk0NWM5ZjNhZTljMGY",
+   "commit": {
+    "author": {
+     "name": "Doyeon Kim",
+     "email": "ekagnlek2@gmail.com",
+     "date": "2026-10-21T23:27:32Z"
+    },
+    "committer": {
+     "name": "Doyeon Kim",
+     "email": "ekagnlek2@gmail.com",
+     "date": "2026-10-21T23:27:32Z"
+    },
+    "message": "Address Chia-Ping's comments",
+    "tree": {
+     "sha": "d1bde8e2b8c46d8b5a95016b67580605f53fe865",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/d1bde8e2b8c46d8b5a95016b67580605f53fe865"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/062b5c570ea2cec4a7102d85097945c9f3ae9c0f",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/062b5c570ea2cec4a7102d85097945c9f3ae9c0f",
+   "html_url": "https://github.com/apache/kafka/commit/062b5c570ea2cec4a7102d85097945c9f3ae9c0f",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/062b5c570ea2cec4a7102d85097945c9f3ae9c0f/comments",
+   "author": {
+    "login": "dybyte",
+    "id": 132787602,
+    "node_id": "U_kgDOB-otkg",
+    "avatar_url": "https://avatars.githubusercontent.com/u/132787602?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dybyte",
+    "html_url": "https://github.com/dybyte",
+    "followers_url": "https://api.github.com/users/dybyte/followers",
+    "following_url": "https://api.github.com/users/dybyte/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dybyte/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dybyte/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dybyte/subscriptions",
+    "organizations_url": "https://api.github.com/users/dybyte/orgs",
+    "repos_url": "https://api.github.com/users/dybyte/repos",
+    "events_url": "https://api.github.com/users/dybyte/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dybyte/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "dybyte",
+    "id": 132787602,
+    "node_id": "U_kgDOB-otkg",
+    "avatar_url": "https://avatars.githubusercontent.com/u/132787602?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dybyte",
+    "html_url": "https://github.com/dybyte",
+    "followers_url": "https://api.github.com/users/dybyte/followers",
+    "following_url": "https://api.github.com/users/dybyte/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dybyte/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dybyte/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dybyte/subscriptions",
+    "organizations_url": "https://api.github.com/users/dybyte/orgs",
+    "repos_url": "https://api.github.com/users/dybyte/repos",
+    "events_url": "https://api.github.com/users/dybyte/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dybyte/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "318c44617c41ed9a31e6bd1e238dd5da8c26ce86",
+     "url": "https://api.github.com/repos/apache/kafka/commits/318c44617c41ed9a31e6bd1e238dd5da8c26ce86",
+     "html_url": "https://github.com/apache/kafka/commit/318c44617c41ed9a31e6bd1e238dd5da8c26ce86"
+    }
+   ]
+  },
+  {
+   "sha": "ccc45dfd4798b00b46bad1e6fe3a862c53378cc0",
+   "node_id": "C_kwDOUJg3dNoAKGNjYzQ1ZGZkNDc5OGIwMGI0NmJhZDFlNmZlM2E4NjJjNTMzNzhjYzA",
+   "commit": {
+    "author": {
+     "name": "Doyeon Kim",
+     "email": "ekagnlek2@gmail.com",
+     "date": "2026-10-22T10:04:08Z"
+    },
+    "committer": {
+     "name": "Doyeon Kim",
+     "email": "ekagnlek2@gmail.com",
+     "date": "2026-10-22T10:04:08Z"
+    },
+    "message": "Address Chia-Ping's comments",
+    "tree": {
+     "sha": "c74387abc99edbfb106ebb7b4bce6e2130d14aa7",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/c74387abc99edbfb106ebb7b4bce6e2130d14aa7"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/ccc45dfd4798b00b46bad1e6fe3a862c53378cc0",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/ccc45dfd4798b00b46bad1e6fe3a862c53378cc0",
+   "html_url": "https://github.com/apache/kafka/commit/ccc45dfd4798b00b46bad1e6fe3a862c53378cc0",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/ccc45dfd4798b00b46bad1e6fe3a862c53378cc0/comments",
+   "author": {
+    "login": "dybyte",
+    "id": 132787602,
+    "node_id": "U_kgDOB-otkg",
+    "avatar_url": "https://avatars.githubusercontent.com/u/132787602?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dybyte",
+    "html_url": "https://github.com/dybyte",
+    "followers_url": "https://api.github.com/users/dybyte/followers",
+    "following_url": "https://api.github.com/users/dybyte/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dybyte/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dybyte/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dybyte/subscriptions",
+    "organizations_url": "https://api.github.com/users/dybyte/orgs",
+    "repos_url": "https://api.github.com/users/dybyte/repos",
+    "events_url": "https://api.github.com/users/dybyte/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dybyte/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "dybyte",
+    "id": 132787602,
+    "node_id": "U_kgDOB-otkg",
+    "avatar_url": "https://avatars.githubusercontent.com/u/132787602?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dybyte",
+    "html_url": "https://github.com/dybyte",
+    "followers_url": "https://api.github.com/users/dybyte/followers",
+    "following_url": "https://api.github.com/users/dybyte/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dybyte/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dybyte/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dybyte/subscriptions",
+    "organizations_url": "https://api.github.com/users/dybyte/orgs",
+    "repos_url": "https://api.github.com/users/dybyte/repos",
+    "events_url": "https://api.github.com/users/dybyte/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dybyte/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "062b5c570ea2cec4a7102d85097945c9f3ae9c0f",
+     "url": "https://api.github.com/repos/apache/kafka/commits/062b5c570ea2cec4a7102d85097945c9f3ae9c0f",
+     "html_url": "https://github.com/apache/kafka/commit/062b5c570ea2cec4a7102d85097945c9f3ae9c0f"
+    }
+   ]
+  }
+ ],
+ "files": [
+  {
+   "sha": "06fdf0e5c458a419dbc802663dc58972043690fc",
+   "filename": "build.gradle",
+   "status": "modified",
+   "additions": 4,
+   "deletions": 0,
+   "changes": 4,
+   "blob_url": "https://github.com/apache/kafka/blob/ccc45dfd4798b00b46bad1e6fe3a862c53378cc0/build.gradle",
+   "raw_url": "https://github.com/apache/kafka/raw/ccc45dfd4798b00b46bad1e6fe3a862c53378cc0/build.gradle",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/build.gradle?ref=ccc45dfd4798b00b46bad1e6fe3a862c53378cc0",
+   "patch": "@@ -1046,6 +1046,9 @@ project(':server') {\n     testFixturesImplementation.exclude group: 'org.bouncycastle', module: 'bcprov-jdk15on'\n     testCompileClasspath.exclude group: 'org.bouncycastle', module: 'bcprov-jdk15on'\n     testRuntimeClasspath.exclude group: 'org.bouncycastle', module: 'bcprov-jdk15on'\n+    // JUnit 4 is a transitive runtime dependency of mock-oauth2-server (via okhttp3 mockwebserver),\n+    // keep it off the compile classpath so tests can't accidentally use JUnit 4 APIs.\n+    testCompileClasspath.exclude group: 'junit', module: 'junit'\n   }\n \n   dependencies {\n@@ -1076,6 +1079,7 @@ project(':server') {\n     testImplementation testFixtures(project(':storage:storage-api'))\n     testImplementation testFixtures(project(':server-common'))\n     testImplementation testFixtures(project(':metadata'))\n+    testImplementation libs.mockOAuth2Server\n \n     testFixturesImplementation project(':clients')\n     testFixturesImplementation testFixtures(project(':clients'))"
+  },
+  {
+   "sha": "8e18af084b0d6a2f7dfa789433853e42b1a5beb8",
+   "filename": "checkstyle/import-control-server.xml",
+   "status": "modified",
+   "additions": 1,
+   "deletions": 0,
+   "changes": 1,
+   "blob_url": "https://github.com/apache/kafka/blob/ccc45dfd4798b00b46bad1e6fe3a862c53378cc0/checkstyle%2Fimport-control-server.xml",
+   "raw_url": "https://github.com/apache/kafka/raw/ccc45dfd4798b00b46bad1e6fe3a862c53378cc0/checkstyle%2Fimport-control-server.xml",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/checkstyle%2Fimport-control-server.xml?ref=ccc45dfd4798b00b46bad1e6fe3a862c53378cc0",
+   "patch": "@@ -93,6 +93,7 @@\n     <allow pkg=\"org.apache.kafka.storage.internals.checkpoint\" />\n     <allow pkg=\"org.apache.kafka.snapshot\" />\n     <allow pkg=\"org.apache.logging.log4j\" />\n+    <allow pkg=\"no.nav.security.mock.oauth2\" />\n     <subpackage name=\"metrics\">\n       <allow class=\"org.apache.kafka.server.authorizer.AuthorizableRequestContext\" />\n       <allow class=\"org.apache.kafka.controller.QuorumFeatures\" />"
+  },
+  {
+   "sha": "7f61204774370a572cc3a31b3775afca366026fc",
+   "filename": "docs/security/authentication-using-sasl.md",
+   "status": "modified",
+   "additions": 13,
+   "deletions": 2,
+   "changes": 15,
+   "blob_url": "https://github.com/apache/kafka/blob/ccc45dfd4798b00b46bad1e6fe3a862c53378cc0/docs%2Fsecurity%2Fauthentication-using-sasl.md",
+   "raw_url": "https://github.com/apache/kafka/raw/ccc45dfd4798b00b46bad1e6fe3a862c53378cc0/docs%2Fsecurity%2Fauthentication-using-sasl.md",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/docs%2Fsecurity%2Fauthentication-using-sasl.md?ref=ccc45dfd4798b00b46bad1e6fe3a862c53378cc0",
+   "patch": "@@ -470,10 +470,11 @@ Set to a positive integer value if you wish to allow up to some number of positi\n    };\n    ```\n \n-2. Pass the JAAS config file location as JVM parameter to each Kafka broker: \n+2. Pass the JAAS config file location as JVM parameter to each Kafka broker. The JWKS endpoint and token endpoint URLs must also be listed in the `org.apache.kafka.sasl.oauthbearer.allowed.urls` system property, which defaults to an empty list:\n \n    ```text\n    -Djava.security.auth.login.config=/etc/kafka/kafka_server_jaas.conf\n+   -Dorg.apache.kafka.sasl.oauthbearer.allowed.urls=https://example.com/oauth2/v1/keys,https://example.com/oauth2/v1/token\n    ```\n \n 3. Configure SASL port and SASL mechanisms in server.properties as described here. For example: \n@@ -487,10 +488,16 @@ Set to a positive integer value if you wish to allow up to some number of positi\n    listener.name.<listener name>.oauthbearer.sasl.oauthbearer.jwks.endpoint.url=https://example.com/oauth2/v1/keys\n    listener.name.<listener name>.oauthbearer.sasl.oauthbearer.expected.audience=my-kafka-cluster\n    listener.name.<listener name>.oauthbearer.sasl.oauthbearer.expected.issuer=https://example.com\n+   listener.name.<listener name>.oauthbearer.sasl.login.callback.handler.class=org.apache.kafka.common.security.oauthbearer.OAuthBearerLoginCallbackHandler\n+   listener.name.<listener name>.oauthbearer.sasl.oauthbearer.token.endpoint.url=https://example.com/oauth2/v1/token\n+   listener.name.<listener name>.oauthbearer.sasl.oauthbearer.client.credentials.client.id=kafka-broker\n+   listener.name.<listener name>.oauthbearer.sasl.oauthbearer.client.credentials.client.secret=$3cr3+\n    ```\n \n    When `sasl.oauthbearer.jwks.endpoint.url` is set, the broker fails at startup unless `sasl.oauthbearer.expected.audience` and `sasl.oauthbearer.expected.issuer` are also set. To accept tokens without verifying the `aud` or `iss` claim, set `sasl.oauthbearer.allow.unverified.audience` or `sasl.oauthbearer.allow.unverified.issuer` to `true` instead. This is insecure and strongly discouraged.\n \n+   Since OAUTHBEARER is also the inter-broker protocol, each broker needs a token of its own to connect to other brokers. `sasl.login.callback.handler.class` must be set to `OAuthBearerLoginCallbackHandler` so that the broker retrieves the token from the OAuth identity provider; otherwise, no token is available and inter-broker connections fail to authenticate. The token issued to the broker must carry the `aud` and `iss` claims expected by the other brokers.\n+\n The OAUTHBEARER broker configuration includes: \n    * sasl.oauthbearer.allow.unverified.audience\n    * sasl.oauthbearer.allow.unverified.issuer\n@@ -612,13 +619,14 @@ To configure SASL authentication on the clients:\n \n JAAS configuration for clients may alternatively be specified as a JVM parameter similar to brokers as described here. Clients use the login section named `KafkaClient`. This option allows only one user for all client connections from a JVM.\n \n-2. Configure the following properties in producer.properties or consumer.properties. The `sasl.oauthbearer.jwt.retriever.class` property defaults to `DefaultJwtRetriever`, which automatically delegates to `ClientCredentialsJwtRetriever` for HTTP/HTTPS token endpoint URLs and `FileJwtRetriever` for `file://` URLs. In most cases, this property does not need to be set explicitly.\n+2. Configure the following properties in producer.properties or consumer.properties. `sasl.login.callback.handler.class` must be set to `OAuthBearerLoginCallbackHandler` so that the client retrieves a token from the OAuth identity provider; otherwise, the client has no token and fails to authenticate. The token endpoint URL must also be listed in the `org.apache.kafka.sasl.oauthbearer.allowed.urls` system property, which defaults to an empty list (for example, `-Dorg.apache.kafka.sasl.oauthbearer.allowed.urls=https://example.com/oauth2/v1/token`). The `sasl.oauthbearer.jwt.retriever.class` property defaults to `DefaultJwtRetriever`, which automatically delegates to `ClientCredentialsJwtRetriever` for HTTP/HTTPS token endpoint URLs and `FileJwtRetriever` for `file://` URLs. In most cases, this property does not need to be set explicitly.\n \n For example, if using the OAuth `client_credentials` grant type with a client secret to communicate with the OAuth identity provider, the configuration might look like this:\n \n    ```java-properties\n    security.protocol=SASL_SSL\n    sasl.mechanism=OAUTHBEARER\n+   sasl.login.callback.handler.class=org.apache.kafka.common.security.oauthbearer.OAuthBearerLoginCallbackHandler\n    sasl.oauthbearer.client.credentials.client.id=jdoe\n    sasl.oauthbearer.client.credentials.client.secret=$3cr3+\n    sasl.oauthbearer.scope=my-application-scope\n@@ -632,6 +640,7 @@ When using client assertion with dynamically-generated JWTs (recommended), the c\n    ```java-properties\n    security.protocol=SASL_SSL\n    sasl.mechanism=OAUTHBEARER\n+   sasl.login.callback.handler.class=org.apache.kafka.common.security.oauthbearer.OAuthBearerLoginCallbackHandler\n    sasl.oauthbearer.token.endpoint.url=https://example.com/oauth2/v1/token\n    sasl.oauthbearer.assertion.private.key.file=/path/to/private-key.pem\n    sasl.oauthbearer.assertion.algorithm=RS256\n@@ -648,6 +657,7 @@ Alternatively, a pre-generated JWT assertion can be read from a file. This is us\n    ```java-properties\n    security.protocol=SASL_SSL\n    sasl.mechanism=OAUTHBEARER\n+   sasl.login.callback.handler.class=org.apache.kafka.common.security.oauthbearer.OAuthBearerLoginCallbackHandler\n    sasl.oauthbearer.token.endpoint.url=https://example.com/oauth2/v1/token\n    sasl.oauthbearer.assertion.file=/path/to/assertion.jwt\n    sasl.oauthbearer.scope=my-application-scope\n@@ -681,6 +691,7 @@ Or, if using the OAuth `urn:ietf:params:oauth:grant-type:jwt-bearer` grant type\n    ```java-properties\n    security.protocol=SASL_SSL\n    sasl.mechanism=OAUTHBEARER\n+   sasl.login.callback.handler.class=org.apache.kafka.common.security.oauthbearer.OAuthBearerLoginCallbackHandler\n    sasl.oauthbearer.jwt.retriever.class=org.apache.kafka.common.security.oauthbearer.JwtBearerJwtRetriever\n    sasl.oauthbearer.assertion.private.key.file=/path/to/private.key\n    sasl.oauthbearer.assertion.algorithm=RS256"
+  },
+  {
+   "sha": "6b4c2e4d448262607bae49c1f84d5731d4d49e06",
+   "filename": "server/src/test/java/org/apache/kafka/server/InterBrokerOAuthIntegrationTest.java",
+   "status": "added",
+   "additions": 174,
+   "deletions": 0,
+   "changes": 174,
+   "blob_url": "https://github.com/apache/kafka/blob/ccc45dfd4798b00b46bad1e6fe3a862c53378cc0/server%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fserver%2FInterBrokerOAuthIntegrationTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/ccc45dfd4798b00b46bad1e6fe3a862c53378cc0/server%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fserver%2FInterBrokerOAuthIntegrationTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/server%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fserver%2FInterBrokerOAuthIntegrationTest.java?ref=ccc45dfd4798b00b46bad1e6fe3a862c53378cc0",
+   "patch": "@@ -0,0 +1,174 @@\n+/*\n+ * Licensed to the Apache Software Foundation (ASF) under one or more\n+ * contributor license agreements. See the NOTICE file distributed with\n+ * this work for additional information regarding copyright ownership.\n+ * The ASF licenses this file to You under the Apache License, Version 2.0\n+ * (the \"License\"); you may not use this file except in compliance with\n+ * the License. You may obtain a copy of the License at\n+ *\n+ *    http://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n+package org.apache.kafka.server;\n+\n+import org.apache.kafka.clients.CommonClientConfigs;\n+import org.apache.kafka.clients.admin.Admin;\n+import org.apache.kafka.clients.admin.NewTopic;\n+import org.apache.kafka.clients.consumer.ConsumerRecord;\n+import org.apache.kafka.clients.consumer.KafkaConsumer;\n+import org.apache.kafka.clients.producer.KafkaProducer;\n+import org.apache.kafka.clients.producer.ProducerRecord;\n+import org.apache.kafka.common.TopicPartition;\n+import org.apache.kafka.common.config.SaslConfigs;\n+import org.apache.kafka.common.config.TopicConfig;\n+import org.apache.kafka.common.config.internals.BrokerSecurityConfigs;\n+import org.apache.kafka.common.network.ListenerName;\n+import org.apache.kafka.common.security.JaasUtils;\n+import org.apache.kafka.common.security.auth.SecurityProtocol;\n+import org.apache.kafka.common.security.authenticator.LoginManager;\n+import org.apache.kafka.common.security.oauthbearer.OAuthBearerLoginCallbackHandler;\n+import org.apache.kafka.common.security.oauthbearer.OAuthBearerLoginModule;\n+import org.apache.kafka.common.security.oauthbearer.OAuthBearerValidatorCallbackHandler;\n+import org.apache.kafka.common.serialization.StringDeserializer;\n+import org.apache.kafka.common.serialization.StringSerializer;\n+import org.apache.kafka.common.test.KafkaClusterTestKit;\n+import org.apache.kafka.common.test.TestKitNodes;\n+import org.apache.kafka.common.test.api.TestKitDefaults;\n+import org.apache.kafka.test.TestUtils;\n+\n+import org.junit.jupiter.api.AfterEach;\n+import org.junit.jupiter.api.BeforeEach;\n+import org.junit.jupiter.api.Tag;\n+import org.junit.jupiter.api.Test;\n+import org.junit.jupiter.api.Timeout;\n+\n+import java.io.File;\n+import java.time.Duration;\n+import java.util.ArrayList;\n+import java.util.List;\n+import java.util.Map;\n+\n+import javax.security.auth.login.Configuration;\n+\n+import no.nav.security.mock.oauth2.MockOAuth2Server;\n+\n+import static org.junit.jupiter.api.Assertions.assertEquals;\n+\n+/**\n+ * Integration test for brokers that use OAUTHBEARER as the inter-broker SASL mechanism, configured as described in\n+ * the \"Configuring Production Kafka Brokers\" section of the security documentation.\n+ */\n+@Tag(\"integration\")\n+public class InterBrokerOAuthIntegrationTest {\n+\n+    private static final String MECHANISM = \"OAUTHBEARER\";\n+    private static final String ISSUER_ID = \"default\";\n+    private static final int NUM_BROKERS = 3;\n+\n+    private MockOAuth2Server oauthServer;\n+    private String jwksUrl;\n+    private String tokenEndpointUrl;\n+\n+    @BeforeEach\n+    public void setUp() throws Exception {\n+        oauthServer = new MockOAuth2Server();\n+        oauthServer.start();\n+        jwksUrl = oauthServer.jwksUrl(ISSUER_ID).toString();\n+        tokenEndpointUrl = oauthServer.tokenEndpointUrl(ISSUER_ID).toString();\n+\n+        // A static JAAS file without any login module options, and the allowed OAuth URLs\n+        File jaasFile = TestUtils.tempFile(\"KafkaServer {\\n    \" + OAuthBearerLoginModule.class.getName() + \" required ;\\n};\\n\");\n+        System.setProperty(JaasUtils.JAVA_LOGIN_CONFIG_PARAM, jaasFile.getAbsolutePath());\n+        Configuration.setConfiguration(null);\n+        System.setProperty(BrokerSecurityConfigs.ALLOWED_SASL_OAUTHBEARER_URLS_CONFIG, jwksUrl + \",\" + tokenEndpointUrl);\n+    }\n+\n+    @AfterEach\n+    public void tearDown() {\n+        if (oauthServer != null)\n+            oauthServer.shutdown();\n+        LoginManager.closeAll();\n+        System.clearProperty(JaasUtils.JAVA_LOGIN_CONFIG_PARAM);\n+        System.clearProperty(BrokerSecurityConfigs.ALLOWED_SASL_OAUTHBEARER_URLS_CONFIG);\n+        Configuration.setConfiguration(null);\n+    }\n+\n+    @Test\n+    @Timeout(180)\n+    public void testReplicationWithBrokerLoginCallbackHandler() throws Exception {\n+        TestKitNodes nodes = new TestKitNodes.Builder()\n+            .setNumBrokerNodes(NUM_BROKERS)\n+            .setNumControllerNodes(1)\n+            .setBrokerSecurityProtocol(SecurityProtocol.SASL_PLAINTEXT)\n+            .build();\n+        String prefix = ListenerName.normalised(TestKitDefaults.DEFAULT_BROKER_LISTENER_NAME).saslMechanismConfigPrefix(MECHANISM);\n+\n+        try (KafkaClusterTestKit cluster = new KafkaClusterTestKit.Builder(nodes)\n+                .setConfigProp(BrokerSecurityConfigs.SASL_ENABLED_MECHANISMS_CONFIG, MECHANISM)\n+                .setConfigProp(BrokerSecurityConfigs.SASL_MECHANISM_INTER_BROKER_PROTOCOL_CONFIG, MECHANISM)\n+                // Validate the tokens of incoming connections\n+                .setConfigProp(prefix + BrokerSecurityConfigs.SASL_SERVER_CALLBACK_HANDLER_CLASS_CONFIG, OAuthBearerValidatorCallbackHandler.class.getName())\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_JWKS_ENDPOINT_URL, jwksUrl)\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_EXPECTED_AUDIENCE, ISSUER_ID)\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_EXPECTED_ISSUER, oauthServer.issuerUrl(ISSUER_ID).toString())\n+                // Retrieve a token for outgoing inter-broker connections\n+                .setConfigProp(prefix + SaslConfigs.SASL_LOGIN_CALLBACK_HANDLER_CLASS, OAuthBearerLoginCallbackHandler.class.getName())\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_TOKEN_ENDPOINT_URL, tokenEndpointUrl)\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_CLIENT_CREDENTIALS_CLIENT_ID, \"kafka-broker\")\n+                .setConfigProp(prefix + SaslConfigs.SASL_OAUTHBEARER_CLIENT_CREDENTIALS_CLIENT_SECRET, \"broker-secret\")\n+                .build()) {\n+            cluster.format();\n+            cluster.startup();\n+            cluster.waitForReadyBrokers();\n+\n+            // min.insync.replicas equals the replication factor, so a send succeeds only if\n+            // the followers authenticate to the leader and replicate the record\n+            String topic = \"inter-broker-replication-test\";\n+            NewTopic newTopic = new NewTopic(topic, 1, (short) NUM_BROKERS)\n+                .configs(Map.of(TopicConfig.MIN_IN_SYNC_REPLICAS_CONFIG, String.valueOf(NUM_BROKERS)));\n+            try (Admin admin = cluster.admin(clientConfigs(cluster))) {\n+                admin.createTopics(List.of(newTopic)).all().get();\n+            }\n+\n+            int numRecords = 10;\n+            try (KafkaProducer<String, String> producer = new KafkaProducer<>(clientConfigs(cluster), new StringSerializer(), new StringSerializer())) {\n+                for (int i = 0; i < numRecords; i++) {\n+                    producer.send(new ProducerRecord<>(topic, \"key-\" + i, \"value-\" + i)).get();\n+                }\n+            }\n+\n+            TopicPartition tp = new TopicPartition(topic, 0);\n+            List<ConsumerRecord<String, String>> records = new ArrayList<>();\n+            try (KafkaConsumer<String, String> consumer = new KafkaConsumer<>(clientConfigs(cluster), new StringDeserializer(), new StringDeserializer())) {\n+                consumer.assign(List.of(tp));\n+                consumer.seekToBeginning(List.of(tp));\n+                TestUtils.waitForCondition(() -> {\n+                    consumer.poll(Duration.ofMillis(100)).forEach(records::add);\n+                    return records.size() >= numRecords;\n+                }, \"Should consume \" + numRecords + \" records\");\n+            }\n+            assertEquals(numRecords, records.size());\n+            for (int i = 0; i < numRecords; i++) {\n+                assertEquals(\"key-\" + i, records.get(i).key());\n+                assertEquals(\"value-\" + i, records.get(i).value());\n+            }\n+        }\n+    }\n+\n+    private Map<String, Object> clientConfigs(KafkaClusterTestKit cluster) {\n+        return Map.of(\n+            CommonClientConfigs.BOOTSTRAP_SERVERS_CONFIG, cluster.bootstrapServers(),\n+            CommonClientConfigs.SECURITY_PROTOCOL_CONFIG, SecurityProtocol.SASL_PLAINTEXT.name,\n+            SaslConfigs.SASL_MECHANISM, MECHANISM,\n+            SaslConfigs.SASL_JAAS_CONFIG, OAuthBearerLoginModule.class.getName() + \" required ;\",\n+            SaslConfigs.SASL_LOGIN_CALLBACK_HANDLER_CLASS, OAuthBearerLoginCallbackHandler.class.getName(),\n+            SaslConfigs.SASL_OAUTHBEARER_TOKEN_ENDPOINT_URL, tokenEndpointUrl,\n+            SaslConfigs.SASL_OAUTHBEARER_CLIENT_CREDENTIALS_CLIENT_ID, \"test-client\",\n+            SaslConfigs.SASL_OAUTHBEARER_CLIENT_CREDENTIALS_CLIENT_SECRET, \"test-secret\");\n+    }\n+}"
+  }
+ ],
+ "timeline": [
+  {
+   "id": 33445204646,
+   "node_id": "LE_lADOACG9q88AAAABXruDBs8AAAAHyX1Spg",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33445204646",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-16T12:40:49Z",
+   "label": {
+    "name": "docs",
+    "color": "017c4f"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 33445207039,
+   "node_id": "LE_lADOACG9q88AAAABXruDBs8AAAAHyX1b_w",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33445207039",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-16T12:40:52Z",
+   "label": {
+    "name": "small",
+    "color": "FEF2C0"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "sha": "318c44617c41ed9a31e6bd1e238dd5da8c26ce86",
+   "node_id": "C_kwDOACG9q9oAKDMxOGM0NDYxN2M0MWVkOWEzMWU2YmQxZTIzOGRkNWRhOGMyNmNlODY",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/318c44617c41ed9a31e6bd1e238dd5da8c26ce86",
+   "html_url": "https://github.com/apache/kafka/commit/318c44617c41ed9a31e6bd1e238dd5da8c26ce86",
+   "author": {
+    "name": "Doyeon Kim",
+    "email": "ekagnlek2@gmail.com",
+    "date": "2026-10-16T12:24:43Z"
+   },
+   "committer": {
+    "name": "Doyeon Kim",
+    "email": "ekagnlek2@gmail.com",
+    "date": "2026-10-17T03:31:47Z"
+   },
+   "tree": {
+    "sha": "ad3f5b7818f5efb203c0c58c1fc92baf94406742",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/ad3f5b7818f5efb203c0c58c1fc92baf94406742"
+   },
+   "message": "KAFKA-21294: Add missing OAuth login configs to production SASL examples",
+   "parents": [
+    {
+     "sha": "e09cc6332101a976c738d38041e945402bc941e1",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/e09cc6332101a976c738d38041e945402bc941e1",
+     "html_url": "https://github.com/apache/kafka/commit/e09cc6332101a976c738d38041e945402bc941e1"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "id": 33500618552,
+   "node_id": "HRFPE_lADOACG9q88AAAABXruDBs8AAAAHzMrfOA",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33500618552",
+   "actor": {
+    "login": "dybyte",
+    "id": 132787602,
+    "node_id": "U_kgDOB-otkg",
+    "avatar_url": "https://avatars.githubusercontent.com/u/132787602?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dybyte",
+    "html_url": "https://github.com/dybyte",
+    "followers_url": "https://api.github.com/users/dybyte/followers",
+    "following_url": "https://api.github.com/users/dybyte/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dybyte/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dybyte/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dybyte/subscriptions",
+    "organizations_url": "https://api.github.com/users/dybyte/orgs",
+    "repos_url": "https://api.github.com/users/dybyte/repos",
+    "events_url": "https://api.github.com/users/dybyte/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dybyte/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "head_ref_force_pushed",
+   "commit_id": "318c44617c41ed9a31e6bd1e238dd5da8c26ce86",
+   "commit_url": "https://api.github.com/repos/dybyte/kafka/commits/318c44617c41ed9a31e6bd1e238dd5da8c26ce86",
+   "created_at": "2026-10-17T03:31:58Z",
+   "performed_via_github_app": null
+  },
+  {
+   "id": 33500628839,
+   "node_id": "RTE_lADOACG9q88AAAABXruDBs8AAAAHzMsHZw",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33500628839",
+   "actor": {
+    "login": "dybyte",
+    "id": 132787602,
+    "node_id": "U_kgDOB-otkg",
+    "avatar_url": "https://avatars.githubusercontent.com/u/132787602?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dybyte",
+    "html_url": "https://github.com/dybyte",
+    "followers_url": "https://api.github.com/users/dybyte/followers",
+    "following_url": "https://api.github.com/users/dybyte/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dybyte/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dybyte/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dybyte/subscriptions",
+    "organizations_url": "https://api.github.com/users/dybyte/orgs",
+    "repos_url": "https://api.github.com/users/dybyte/repos",
+    "events_url": "https://api.github.com/users/dybyte/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dybyte/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "renamed",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-17T03:32:11Z",
+   "rename": {
+    "from": "KAFKA-21294: Add login callback handler to the production broker OAuth example",
+    "to": "KAFKA-21294: Add missing OAuth login configs to production SASL examples"
+   },
+   "performed_via_github_app": null
+  },
+  {
+   "id": 33500628877,
+   "node_id": "LE_lADOACG9q88AAAABXruDBs8AAAAHzMsHjQ",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33500628877",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-17T03:32:12Z",
+   "label": {
+    "name": "core",
+    "color": "ed5a86"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 33500630149,
+   "node_id": "UNLE_lADOACG9q88AAAABXruDBs8AAAAHzMsMhQ",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33500630149",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "unlabeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-17T03:32:14Z",
+   "label": {
+    "name": "small",
+    "color": "FEF2C0"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 33524085543,
+   "node_id": "LE_lADOACG9q88AAAABXruDBs8AAAAHzjDzJw",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33524085543",
+   "actor": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-17T14:36:41Z",
+   "label": {
+    "name": "ci-approved",
+    "color": "ffffff"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 5593091562,
+   "node_id": "PRR_kwDOACG9q88AAAABTV_N6g",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": null,
+   "commit_id": "318c44617c41ed9a31e6bd1e238dd5da8c26ce86",
+   "state": "commented",
+   "html_url": "https://github.com/apache/kafka/pull/23840#pullrequestreview-5593091562",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23840",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23840#pullrequestreview-5593091562"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23840"
+    }
+   },
+   "submitted_at": "2026-10-20T23:29:30Z",
+   "updated_at": "2026-10-20T23:29:30Z",
+   "author_association": "MEMBER",
+   "event": "reviewed"
+  },
+  {
+   "id": 5593096099,
+   "node_id": "PRR_kwDOACG9q88AAAABTV_fow",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": null,
+   "commit_id": "318c44617c41ed9a31e6bd1e238dd5da8c26ce86",
+   "state": "commented",
+   "html_url": "https://github.com/apache/kafka/pull/23840#pullrequestreview-5593096099",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23840",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23840#pullrequestreview-5593096099"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23840"
+    }
+   },
+   "submitted_at": "2026-10-20T23:30:10Z",
+   "updated_at": "2026-10-20T23:30:10Z",
+   "author_association": "MEMBER",
+   "event": "reviewed"
+  },
+  {
+   "sha": "062b5c570ea2cec4a7102d85097945c9f3ae9c0f",
+   "node_id": "C_kwDOACG9q9oAKDA2MmI1YzU3MGVhMmNlYzRhNzEwMmQ4NTA5Nzk0NWM5ZjNhZTljMGY",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/062b5c570ea2cec4a7102d85097945c9f3ae9c0f",
+   "html_url": "https://github.com/apache/kafka/commit/062b5c570ea2cec4a7102d85097945c9f3ae9c0f",
+   "author": {
+    "name": "Doyeon Kim",
+    "email": "ekagnlek2@gmail.com",
+    "date": "2026-10-21T23:27:32Z"
+   },
+   "committer": {
+    "name": "Doyeon Kim",
+    "email": "ekagnlek2@gmail.com",
+    "date": "2026-10-21T23:27:32Z"
+   },
+   "tree": {
+    "sha": "d1bde8e2b8c46d8b5a95016b67580605f53fe865",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/d1bde8e2b8c46d8b5a95016b67580605f53fe865"
+   },
+   "message": "Address Chia-Ping's comments",
+   "parents": [
+    {
+     "sha": "318c44617c41ed9a31e6bd1e238dd5da8c26ce86",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/318c44617c41ed9a31e6bd1e238dd5da8c26ce86",
+     "html_url": "https://github.com/apache/kafka/commit/318c44617c41ed9a31e6bd1e238dd5da8c26ce86"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "id": 33898419768,
+   "node_id": "LE_lADOACG9q88AAAABXruDBs8AAAAH5IDWOA",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33898419768",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-21T23:29:53Z",
+   "label": {
+    "name": "build",
+    "color": "d4c5f9"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 5609651222,
+   "node_id": "PRR_kwDOACG9q88AAAABTlx8Fg",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": null,
+   "commit_id": "062b5c570ea2cec4a7102d85097945c9f3ae9c0f",
+   "state": "commented",
+   "html_url": "https://github.com/apache/kafka/pull/23840#pullrequestreview-5609651222",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23840",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23840#pullrequestreview-5609651222"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23840"
+    }
+   },
+   "submitted_at": "2026-10-22T05:28:56Z",
+   "updated_at": "2026-10-22T05:28:56Z",
+   "author_association": "MEMBER",
+   "event": "reviewed"
+  },
+  {
+   "id": 5609667452,
+   "node_id": "PRR_kwDOACG9q88AAAABTly7fA",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": null,
+   "commit_id": "062b5c570ea2cec4a7102d85097945c9f3ae9c0f",
+   "state": "commented",
+   "html_url": "https://github.com/apache/kafka/pull/23840#pullrequestreview-5609667452",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23840",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23840#pullrequestreview-5609667452"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23840"
+    }
+   },
+   "submitted_at": "2026-10-22T05:31:26Z",
+   "updated_at": "2026-10-22T05:31:27Z",
+   "author_association": "MEMBER",
+   "event": "reviewed"
+  },
+  {
+   "id": 5609669746,
+   "node_id": "PRR_kwDOACG9q88AAAABTlzEcg",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": null,
+   "commit_id": "062b5c570ea2cec4a7102d85097945c9f3ae9c0f",
+   "state": "commented",
+   "html_url": "https://github.com/apache/kafka/pull/23840#pullrequestreview-5609669746",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23840",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23840#pullrequestreview-5609669746"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23840"
+    }
+   },
+   "submitted_at": "2026-10-22T05:31:48Z",
+   "updated_at": "2026-10-22T05:31:48Z",
+   "author_association": "MEMBER",
+   "event": "reviewed"
+  },
+  {
+   "sha": "ccc45dfd4798b00b46bad1e6fe3a862c53378cc0",
+   "node_id": "C_kwDOACG9q9oAKGNjYzQ1ZGZkNDc5OGIwMGI0NmJhZDFlNmZlM2E4NjJjNTMzNzhjYzA",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/ccc45dfd4798b00b46bad1e6fe3a862c53378cc0",
+   "html_url": "https://github.com/apache/kafka/commit/ccc45dfd4798b00b46bad1e6fe3a862c53378cc0",
+   "author": {
+    "name": "Doyeon Kim",
+    "email": "ekagnlek2@gmail.com",
+    "date": "2026-10-22T10:04:08Z"
+   },
+   "committer": {
+    "name": "Doyeon Kim",
+    "email": "ekagnlek2@gmail.com",
+    "date": "2026-10-22T10:04:08Z"
+   },
+   "tree": {
+    "sha": "c74387abc99edbfb106ebb7b4bce6e2130d14aa7",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/c74387abc99edbfb106ebb7b4bce6e2130d14aa7"
+   },
+   "message": "Address Chia-Ping's comments",
+   "parents": [
+    {
+     "sha": "062b5c570ea2cec4a7102d85097945c9f3ae9c0f",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/062b5c570ea2cec4a7102d85097945c9f3ae9c0f",
+     "html_url": "https://github.com/apache/kafka/commit/062b5c570ea2cec4a7102d85097945c9f3ae9c0f"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "id": 5617523845,
+   "node_id": "PRR_kwDOACG9q88AAAABTtSchQ",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "LGTM",
+   "commit_id": "ccc45dfd4798b00b46bad1e6fe3a862c53378cc0",
+   "state": "approved",
+   "html_url": "https://github.com/apache/kafka/pull/23840#pullrequestreview-5617523845",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23840",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23840#pullrequestreview-5617523845"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23840"
+    }
+   },
+   "submitted_at": "2026-10-22T16:27:08Z",
+   "updated_at": "2026-10-22T16:27:08Z",
+   "author_association": "MEMBER",
+   "event": "reviewed"
+  },
+  {
+   "id": 33971479574,
+   "node_id": "ME_lADOACG9q88AAAABXruDBs8AAAAH6NukFg",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33971479574",
+   "actor": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "merged",
+   "commit_id": "0290810b879fc7c965991a02288d444b0347fcba",
+   "commit_url": "https://api.github.com/repos/apache/kafka/commits/0290810b879fc7c965991a02288d444b0347fcba",
+   "created_at": "2026-10-22T16:32:23Z",
+   "performed_via_github_app": null
+  },
+  {
+   "id": 33971479729,
+   "node_id": "CE_lADOACG9q88AAAABXruDBs8AAAAH6NuksQ",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33971479729",
+   "actor": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "closed",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-22T16:32:23Z",
+   "state_reason": null,
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34343630043,
+   "node_id": "HRDE_lADOACG9q88AAAABXruDBs8AAAAH_wo02w",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34343630043",
+   "actor": {
+    "login": "dybyte",
+    "id": 132787602,
+    "node_id": "U_kgDOB-otkg",
+    "avatar_url": "https://avatars.githubusercontent.com/u/132787602?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dybyte",
+    "html_url": "https://github.com/dybyte",
+    "followers_url": "https://api.github.com/users/dybyte/followers",
+    "following_url": "https://api.github.com/users/dybyte/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dybyte/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dybyte/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dybyte/subscriptions",
+    "organizations_url": "https://api.github.com/users/dybyte/orgs",
+    "repos_url": "https://api.github.com/users/dybyte/repos",
+    "events_url": "https://api.github.com/users/dybyte/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dybyte/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "head_ref_deleted",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-27T08:11:41Z",
+   "performed_via_github_app": null
+  }
+ ]
+}

@@ -1,0 +1,820 @@
+{
+ "id": "393677342",
+ "versions": {
+  "results": [
+   {
+    "by": {
+     "type": "known",
+     "username": "mingyen066",
+     "userKey": "073590d2966bb14e01966ea8fad00000",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Ming-Yen Chung",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2966bb14e01966ea8fad00000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-31T11:43:06.000Z",
+    "message": "",
+    "number": 18,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/393677342/version/18"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/393677342"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mingyen066",
+     "userKey": "073590d2966bb14e01966ea8fad00000",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Ming-Yen Chung",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2966bb14e01966ea8fad00000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-29T17:42:58.000Z",
+    "message": "",
+    "number": 17,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/393677342/version/17"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/393677342?status=historical&version=17"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mingyen066",
+     "userKey": "073590d2966bb14e01966ea8fad00000",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Ming-Yen Chung",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2966bb14e01966ea8fad00000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-11T15:23:54.000Z",
+    "message": "",
+    "number": 16,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/393677342/version/16"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/393677342?status=historical&version=16"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mingyen066",
+     "userKey": "073590d2966bb14e01966ea8fad00000",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Ming-Yen Chung",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2966bb14e01966ea8fad00000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-03-06T09:26:07.000Z",
+    "message": "",
+    "number": 15,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/393677342/version/15"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/393677342?status=historical&version=15"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mingyen066",
+     "userKey": "073590d2966bb14e01966ea8fad00000",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Ming-Yen Chung",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2966bb14e01966ea8fad00000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-02-24T15:11:14.000Z",
+    "message": "",
+    "number": 14,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/393677342/version/14"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/393677342?status=historical&version=14"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mingyen066",
+     "userKey": "073590d2966bb14e01966ea8fad00000",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Ming-Yen Chung",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2966bb14e01966ea8fad00000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-02-17T07:18:30.000Z",
+    "message": "",
+    "number": 13,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/393677342/version/13"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/393677342?status=historical&version=13"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mingyen066",
+     "userKey": "073590d2966bb14e01966ea8fad00000",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Ming-Yen Chung",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2966bb14e01966ea8fad00000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-02-17T02:55:52.000Z",
+    "message": "",
+    "number": 12,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/393677342/version/12"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/393677342?status=historical&version=12"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mingyen066",
+     "userKey": "073590d2966bb14e01966ea8fad00000",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Ming-Yen Chung",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2966bb14e01966ea8fad00000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-02-17T02:45:02.000Z",
+    "message": "",
+    "number": 11,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/393677342/version/11"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/393677342?status=historical&version=11"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mingyen066",
+     "userKey": "073590d2966bb14e01966ea8fad00000",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Ming-Yen Chung",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2966bb14e01966ea8fad00000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-02-16T16:43:51.000Z",
+    "message": "",
+    "number": 10,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/393677342/version/10"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/393677342?status=historical&version=10"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mingyen066",
+     "userKey": "073590d2966bb14e01966ea8fad00000",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Ming-Yen Chung",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2966bb14e01966ea8fad00000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-02-16T06:43:31.000Z",
+    "message": "",
+    "number": 9,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/393677342/version/9"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/393677342?status=historical&version=9"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mingyen066",
+     "userKey": "073590d2966bb14e01966ea8fad00000",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Ming-Yen Chung",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2966bb14e01966ea8fad00000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-02-16T06:14:59.000Z",
+    "message": "",
+    "number": 8,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/393677342/version/8"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/393677342?status=historical&version=8"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mingyen066",
+     "userKey": "073590d2966bb14e01966ea8fad00000",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Ming-Yen Chung",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2966bb14e01966ea8fad00000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-02-16T06:03:01.000Z",
+    "message": "",
+    "number": 7,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/393677342/version/7"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/393677342?status=historical&version=7"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mingyen066",
+     "userKey": "073590d2966bb14e01966ea8fad00000",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Ming-Yen Chung",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2966bb14e01966ea8fad00000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-02-16T05:53:53.000Z",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/393677342/version/6"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/393677342?status=historical&version=6"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mingyen066",
+     "userKey": "073590d2966bb14e01966ea8fad00000",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Ming-Yen Chung",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2966bb14e01966ea8fad00000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-02-16T05:52:29.000Z",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/393677342/version/5"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/393677342?status=historical&version=5"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mingyen066",
+     "userKey": "073590d2966bb14e01966ea8fad00000",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Ming-Yen Chung",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2966bb14e01966ea8fad00000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-02-16T05:38:27.000Z",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/393677342/version/4"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/393677342?status=historical&version=4"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mingyen066",
+     "userKey": "073590d2966bb14e01966ea8fad00000",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Ming-Yen Chung",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2966bb14e01966ea8fad00000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-02-15T07:05:37.000Z",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/393677342/version/3"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/393677342?status=historical&version=3"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mingyen066",
+     "userKey": "073590d2966bb14e01966ea8fad00000",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Ming-Yen Chung",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2966bb14e01966ea8fad00000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-02-13T15:23:54.000Z",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/393677342/version/2"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/393677342?status=historical&version=2"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mingyen066",
+     "userKey": "073590d2966bb14e01966ea8fad00000",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Ming-Yen Chung",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2966bb14e01966ea8fad00000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2025-10-20T07:03:01.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/393677342/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/393677342?status=historical&version=1"
+    }
+   }
+  ],
+  "start": 0,
+  "limit": 200,
+  "size": 18,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/experimental/content/393677342/version",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ },
+ "version_bodies": [
+  {
+   "id": "393677342",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1232: Deprecate broker.id config",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "mingyen066",
+     "userKey": "073590d2966bb14e01966ea8fad00000",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Ming-Yen Chung",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2966bb14e01966ea8fad00000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-29T17:42:58.000Z",
+    "message": "",
+    "number": 17,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/393677342/version/17"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/393677342?status=historical&version=17"
+    }
+   },
+   "position": 1224,
+   "body": {
+    "storage": {
+     "value": "<h1><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"230ce5a4-7bc9-4266-a7bb-5f0fc2f07ed9\" /></h1><h1>Status</h1><p><strong>Current state</strong>: <span style=\"color:var(--ds-text,#172b4d);\">Accepted</span></p><p><strong>Discussion thread</strong>: <a class=\"\" href=\"https://lists.apache.org/thread/6zsr70lpzqp96g4jf6kngyms4kkz1tp1\">https://lists.apache.org/thread/6zsr70lpzqp96g4jf6kngyms4kkz1tp1</a></p><p><strong>Vote thread</strong>: <a class=\"\" href=\"https://lists.apache.org/thread/dtc48g4zjdj4s4n0hm99hm0xoho5sp1n\">https://lists.apache.org/thread/dtc48g4zjdj4s4n0hm99hm0xoho5sp1n</a></p><p><strong>JIRA</strong>: <ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"9e33b602-9aa6-4067-8c49-9286dddfdf7b\"><ac:parameter ac:name=\"\">KAFKA-18628</ac:parameter></ac:structured-macro></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p>Since Apache Kafka 4.0, ZooKeeper has been removed and KRaft is the only supported mode (<a href=\"https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=123898922\">KIP-500</a>). In KRaft mode, a single process can serve as a broker, a controller, or both. <a href=\"https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=158864865\">KIP-631</a> therefore introduced <code>node.id</code> to replace <code>broker.id</code> as the canonical node identifier.</p><p>However, the legacy <code>broker.id</code> configuration still exists and is treated as a synonym of <code>node.id</code>. If only one is set, the other is automatically populated with the same value. If both are explicitly set, they must be equal; otherwise, a <code>ConfigException</code> is thrown.</p><p>Having two configuration properties that must always hold the same value causes unnecessary confusion and contradicts the documentation, which describes <code>node.id</code> as required in KRaft mode.</p><p>Related ZooKeeper-era configurations such as <code>broker.id.generation.enable</code> and <code>reserved.broker.max.id</code> were already removed in Kafka 4.0, making <code>broker.id</code> the only remaining legacy identifier config. We should deprecate it to simplify the configuration surface and guide all users toward the single, canonical configuration: <code>node.id</code>.  <code>broker.id</code> is also the key the tiered storage plugins are configured with, so removing the broker config alone would leave the legacy name in the plugin contract.</p><h1>Public Interfaces</h1><p>This KIP proposes to deprecate the <code>broker.id</code> server configuration property in Apache Kafka 4.4 and remove it in Apache Kafka 5.0.</p><table class=\"wrapped\"><tbody><tr><th><p>Config</p></th><th><p>Default</p></th><th><p>4.4</p></th><th><p>5.0</p></th></tr><tr><td><p><code>broker.id</code></p></td><td><p>-1</p></td><td><p><strong>Deprecated</strong></p></td><td><p><strong>Removed</strong></p></td></tr><tr><td><p><code>node.id</code></p></td><td><p><em>(required)</em></p></td><td><p>No change</p></td><td><p>No change</p></td></tr></tbody></table><p>Notes:</p><ul><li>The default value of <code>-1</code> for <code>broker.id</code> is effectively unused in KRaft mode. If <code>node.id</code> is set, the synonym mechanism overwrites <code>broker.id</code> with the value of <code>node.id</code>. If neither is set, <code>node.id</code> validation fails with a <code>ConfigException</code> before the default is ever used.</li><li>The documentation describes <code>node.id</code> as required in KRaft mode, but it can actually be omitted currently if <code>broker.id</code> is set, because the synonym mechanism automatically populates <code>node.id</code> from <code>broker.id</code>. After the removal in 5.0, <code>node.id</code> must be explicitly set.</li></ul><p>The behavior is the same for all <code>process.roles</code> (broker, controller, or combined). No changes to public APIs, network protocols, metrics, or command-line tools.</p><h2>Tiered storage plugin configuration</h2><p><code>RemoteLogManager</code> configures <code>RemoteStorageManager</code> and <code>RemoteLogMetadataManager</code> instances with a map that includes <code>broker.id</code> but not <code>node.id</code>.</p><table><tbody><tr><th><p>Key passed to RSM/RLMM</p></th><th><p>4.4</p></th><th><p>5.0</p></th></tr><tr><td><p><code>broker.id</code></p></td><td><p>passed (unchanged)</p></td><td><p><strong>not passed</strong></p></td></tr><tr><td><p><code>node.id</code></p></td><td><p><strong>newly passed</strong>, same value</p></td><td><p>passed</p></td></tr></tbody></table><p><code>TopicBasedRemoteLogMetadataManagerConfig.BROKER_ID</code> is deprecated and replaced by <code>NODE_ID</code>:</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"2b1f0cb9-0d7a-4dcc-b9a1-5b0df835cea9\"><ac:parameter ac:name=\"\">java</ac:parameter><ac:plain-text-body><![CDATA[/**\n * @deprecated Use {@link #NODE_ID} instead. This key is no longer passed to plugins from Kafka 5.0 (KIP-1232).\n */\n@Deprecated(since = \"4.4\", forRemoval = true)\npublic static final String BROKER_ID = \"broker.id\";\n\npublic static final String NODE_ID = \"node.id\";\n]]></ac:plain-text-body></ac:structured-macro><p>Metrics reporter plugins are unaffected: they are configured through <code>AbstractConfig#getConfiguredInstances</code>, which passes the broker's full <code>originals()</code>, so both keys are already visible to them.</p><h1>Proposed Changes</h1><h2>Phase 1: Deprecation (Apache Kafka 4.4)</h2><ol><li><strong>Log deprecation warning</strong>: When <code>broker.id</code> is explicitly set in the server configuration, log a WARN-level message at startup:<ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"48f9be04-5d6a-4f5b-bd60-e195d7633879\"><ac:plain-text-body><![CDATA[The 'broker.id' configuration is deprecated and will be removed in Apache Kafka 5.0. Please use 'node.id' instead.\n]]></ac:plain-text-body></ac:structured-macro></li><li><strong>Preserve backward compatibility</strong>: The existing synonym mechanism will continue to function. Users who only set <code>broker.id</code> will still have it automatically copied to <code>node.id</code>. The validation requiring both to be equal (if both are explicitly set) also remains unchanged.</li><li data-uuid=\"9eb9fd1d-5a64-4f12-8bf6-1758b8239a0e\"><p>Pass <code>node.id</code> to the tiered storage plugins alongside <code>broker.id</code>, and switch the default <code>RemoteLogMetadataManager</code> implementation to read <code>node.id</code>.</p></li></ol><h2>Phase 2: Removal (Apache Kafka 5.0)</h2><ol><li><strong>Remove <code>broker.id</code> configuration</strong>: The <code>BROKER_ID_CONFIG</code> will be removed from <code>ServerConfigs</code>. Setting it will be silently ignored.</li><li><strong>Remove synonym logic</strong>: Remove the <code>broker.id</code>/<code>node.id</code> synonym handling from <code>AbstractKafkaConfig.populateSynonyms()</code>.</li><li><strong>Retain internal <code>brokerId()</code> accessor</strong>: The <code>brokerId()</code> method will continue to exist for internal use, delegating to <code>nodeId()</code>.</li><li data-uuid=\"353ebd10-f629-427d-84e1-6148582b8d94\"><p>Stop passing <code>broker.id</code> to the tiered storage plugins, and remove <code>TopicBasedRemoteLogMetadataManagerConfig.BROKER_ID</code>.</p></li></ol><h2>Behavior Matrix</h2><p>The following table summarizes the expected behavior for each configuration scenario across version ranges:</p><table class=\"wrapped\"><tbody><tr><th><p>Configuration</p></th><th><p>Current (4.0 ~ 4.2)</p></th><th><p>Phase 1: Deprecated (4.4 ~ 4.x)</p></th><th><p>Phase 2: Removed (5.0)</p></th></tr><tr><td><p>Only <code>node.id</code> set</p></td><td><p>Valid</p></td><td><p>Valid</p></td><td><p>Valid</p></td></tr><tr><td><p>Only <code>broker.id</code> set</p></td><td><p>Valid; <code>node.id</code> is auto-populated from <code>broker.id</code></p></td><td><p>Valid + <code>broker.id</code> deprecation warning; <code>node.id</code> is auto-populated from <code>broker.id</code></p></td><td><p><code>ConfigException</code>: <code>node.id</code> is required</p></td></tr><tr><td><p>Both set, same value</p></td><td><p>Valid</p></td><td><p>Valid + <code>broker.id</code> deprecation warning</p></td><td><p>Valid; <code>broker.id</code> is ignored</p></td></tr><tr><td><p>Both set, different values</p></td><td><p><code>ConfigException</code>: <code>node.id</code> must equal <code>broker.id</code></p></td><td><p><code>ConfigException</code>: <code>node.id</code> must equal <code>broker.id</code></p></td><td><p>Valid; <code>broker.id</code> is ignored</p></td></tr><tr><td><p>Neither set</p></td><td><p><code>ConfigException</code>: <code>node.id</code> is required</p></td><td><p><code>ConfigException</code>: <code>node.id</code> is required</p></td><td><p><code>ConfigException</code>: <code>node.id</code> is required</p></td></tr></tbody></table><p>Note: In the 5.0 column, &quot;ignored&quot; means <code>broker.id</code> is treated as an unrecognized configuration and silently ignored. The Kafka server does not log warnings for unrecognized configurations.</p><h1>Compatibility, Deprecation, and Migration Plan</h1><p><strong>Tiered storage plugins.</strong> Implementations that read <code><a href=\"http://broker.id\">broker.id</a></code> from <code>configure(Map)</code> keep working through 4.x, since both keys are passed, and must switch to <code><a href=\"http://node.id\">node.id</a></code> before 5.0. This is the only breakage in this KIP outside the broker.</p><h2>Migration Steps</h2><p>Users should replace <code>broker.id</code> with <code>node.id</code> in their server configuration. If both are configured, simply remove <code>broker.id</code>.</p><h2>Downgrade Considerations</h2><p>Downgrading from 5.0 to 4.x is safe as long as the same configuration file is used — any config that was valid on 4.x before the upgrade remains valid after the rollback. The only edge case is if <code>broker.id</code> and <code>node.id</code> are set to different values on a 5.0 binary (where <code>broker.id</code> is ignored) and then downgraded to 4.x, which would result in a <code>ConfigException</code>. In practice, this cannot happen if the config was originally used on 4.x.</p><p><strong>Tiered storage plugins.</strong> Implementations that read <code>broker.id</code> from <code>configure(Map)</code> keep working through 4.x, since both keys are passed, and must switch to <code>node.id</code> before 5.0. This is the only breakage in this KIP outside the broker.</p><h1>Test Plan</h1><h2>Phase 1: Deprecation (Apache Kafka 4.4)</h2><p>Unit tests to verify:</p><ul><li>A deprecation warning is logged when <code>broker.id</code> is explicitly set (with or without <code>node.id</code>).</li><li>Backward compatibility: setting only <code>broker.id</code> still works (existing tests in <code>KafkaConfigTest</code> already create configs with only <code>broker.id</code> set).</li></ul><h2>Phase 2: Removal (Apache Kafka 5.0)</h2><p>Unit tests to verify:</p><ul><li><code>broker.id</code> is no longer recognized and is silently ignored.</li><li>Setting only <code>broker.id</code> without <code>node.id</code> results in a <code>ConfigException</code>.</li></ul><h1>Rejected Alternatives</h1><h2>Throw <code>ConfigException</code> when <code>broker.id</code> is set in 5.0</h2><p>Instead of silently ignoring <code>broker.id</code> in 5.0, we could explicitly throw a <code>ConfigException</code>. However, this would force users to update their configuration files before upgrading, making the upgrade process more disruptive. Silently ignoring unrecognized configurations is consistent with how other removed configurations are handled in Kafka.</p><h2>Log a customized warning when <code>broker.id</code> is set in 5.0</h2><p>We could add special-case logic to detect and warn users that <code>broker.id</code> has been removed. However, the Kafka server does not log warnings for unrecognized configurations, and adding a one-off check just for <code>broker.id</code> would be inconsistent with how other removed configurations are handled. The deprecation warning in Phase 1 already provides sufficient notice for users to migrate.</p><h1>References</h1><ul><li><a href=\"https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=123898922\">KIP-500: Replace ZooKeeper with a Self-Managed Metadata Quorum</a></li><li><a href=\"https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=158864865\">KIP-631: The Quorum-based Kafka Controller</a></li></ul>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/393677342?status=historical&version=17"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1224
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=446070898",
+    "edit": "/pages/resumedraft.action?draftId=446070898&draftShareId=ca6dcce0-1544-4c0f-83fd-14382e280ba3",
+    "tinyui": "/x/coCWGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/393677342?status=historical&version=17"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/393677342/child?parentVersion=17",
+    "restrictions": "/rest/api/content/393677342/restriction/byOperation",
+    "history": "/rest/api/content/393677342/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/393677342/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/393677342/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "393677342",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1232: Deprecate broker.id config",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "mingyen066",
+     "userKey": "073590d2966bb14e01966ea8fad00000",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Ming-Yen Chung",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2966bb14e01966ea8fad00000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-11T15:23:54.000Z",
+    "message": "",
+    "number": 16,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/393677342/version/16"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/393677342?status=historical&version=16"
+    }
+   },
+   "position": 1224,
+   "body": {
+    "storage": {
+     "value": "<h1><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"230ce5a4-7bc9-4266-a7bb-5f0fc2f07ed9\" /></h1><h1>Status</h1><p><strong>Current state</strong>: <span style=\"color: rgb(23,43,77);\">Accepted</span></p><p><strong>Discussion thread</strong>: <a class=\"\" href=\"https://lists.apache.org/thread/6zsr70lpzqp96g4jf6kngyms4kkz1tp1\">https://lists.apache.org/thread/6zsr70lpzqp96g4jf6kngyms4kkz1tp1</a></p><p><strong>Vote thread</strong>: <a class=\"\" href=\"https://lists.apache.org/thread/dtc48g4zjdj4s4n0hm99hm0xoho5sp1n\">https://lists.apache.org/thread/dtc48g4zjdj4s4n0hm99hm0xoho5sp1n</a></p><p><strong>JIRA</strong>: <ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"9e33b602-9aa6-4067-8c49-9286dddfdf7b\"><ac:parameter ac:name=\"\">KAFKA-18628</ac:parameter></ac:structured-macro></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p>Since Apache Kafka 4.0, ZooKeeper has been removed and KRaft is the only supported mode (<a href=\"https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=123898922\">KIP-500</a>). In KRaft mode, a single process can serve as a broker, a controller, or both. <a href=\"https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=158864865\">KIP-631</a> therefore introduced <code>node.id</code> to replace <code>broker.id</code> as the canonical node identifier.</p><p>However, the legacy <code>broker.id</code> configuration still exists and is treated as a synonym of <code>node.id</code>. If only one is set, the other is automatically populated with the same value. If both are explicitly set, they must be equal; otherwise, a <code>ConfigException</code> is thrown.</p><p>Having two configuration properties that must always hold the same value causes unnecessary confusion and contradicts the documentation, which describes <code>node.id</code> as required in KRaft mode.</p><p>Related ZooKeeper-era configurations such as <code>broker.id.generation.enable</code> and <code>reserved.broker.max.id</code> were already removed in Kafka 4.0, making <code>broker.id</code> the only remaining legacy identifier config. We should deprecate it to simplify the configuration surface and guide all users toward the single, canonical configuration: <code>node.id</code>.</p><h1>Public Interfaces</h1><p>This KIP proposes to deprecate the <code>broker.id</code> server configuration property in Apache Kafka 4.4 and remove it in Apache Kafka 5.0.</p><table class=\"wrapped\"><tbody><tr><th><p>Config</p></th><th><p>Default</p></th><th><p>4.4</p></th><th><p>5.0</p></th></tr><tr><td><p><code>broker.id</code></p></td><td><p>-1</p></td><td><p><strong>Deprecated</strong></p></td><td><p><strong>Removed</strong></p></td></tr><tr><td><p><code>node.id</code></p></td><td><p><em>(required)</em></p></td><td><p>No change</p></td><td><p>No change</p></td></tr></tbody></table><p>Notes:</p><ul><li>The default value of <code>-1</code> for <code>broker.id</code> is effectively unused in KRaft mode. If <code>node.id</code> is set, the synonym mechanism overwrites <code>broker.id</code> with the value of <code>node.id</code>. If neither is set, <code>node.id</code> validation fails with a <code>ConfigException</code> before the default is ever used.</li><li>The documentation describes <code>node.id</code> as required in KRaft mode, but it can actually be omitted currently if <code>broker.id</code> is set, because the synonym mechanism automatically populates <code>node.id</code> from <code>broker.id</code>. After the removal in 5.0, <code>node.id</code> must be explicitly set.</li></ul><p>The behavior is the same for all <code>process.roles</code> (broker, controller, or combined). No changes to public APIs, network protocols, metrics, or command-line tools.</p><h1>Proposed Changes</h1><h2>Phase 1: Deprecation (Apache Kafka 4.4)</h2><ol><li><strong>Log deprecation warning</strong>: When <code>broker.id</code> is explicitly set in the server configuration, log a WARN-level message at startup:<ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"48f9be04-5d6a-4f5b-bd60-e195d7633879\"><ac:plain-text-body><![CDATA[The 'broker.id' configuration is deprecated and will be removed in Apache Kafka 5.0. Please use 'node.id' instead.\n]]></ac:plain-text-body></ac:structured-macro></li><li><strong>Preserve backward compatibility</strong>: The existing synonym mechanism will continue to function. Users who only set <code>broker.id</code> will still have it automatically copied to <code>node.id</code>. The validation requiring both to be equal (if both are explicitly set) also remains unchanged.</li></ol><h2>Phase 2: Removal (Apache Kafka 5.0)</h2><ol><li><strong>Remove <code>broker.id</code> configuration</strong>: The <code>BROKER_ID_CONFIG</code> will be removed from <code>ServerConfigs</code>. Setting it will be silently ignored.</li><li><strong>Remove synonym logic</strong>: Remove the <code>broker.id</code>/<code>node.id</code> synonym handling from <code>AbstractKafkaConfig.populateSynonyms()</code>.</li><li><strong>Retain internal <code>brokerId()</code> accessor</strong>: The <code>brokerId()</code> method will continue to exist for internal use, delegating to <code>nodeId()</code>.</li></ol><h2>Behavior Matrix</h2><p>The following table summarizes the expected behavior for each configuration scenario across version ranges:</p><table class=\"wrapped\"><tbody><tr><th><p>Configuration</p></th><th><p>Current (4.0 ~ 4.2)</p></th><th><p>Phase 1: Deprecated (4.4 ~ 4.x)</p></th><th><p>Phase 2: Removed (5.0)</p></th></tr><tr><td><p>Only <code>node.id</code> set</p></td><td><p>Valid</p></td><td><p>Valid</p></td><td><p>Valid</p></td></tr><tr><td><p>Only <code>broker.id</code> set</p></td><td><p>Valid; <code>node.id</code> is auto-populated from <code>broker.id</code></p></td><td><p>Valid + <code>broker.id</code> deprecation warning; <code>node.id</code> is auto-populated from <code>broker.id</code></p></td><td><p><code>ConfigException</code>: <code>node.id</code> is required</p></td></tr><tr><td><p>Both set, same value</p></td><td><p>Valid</p></td><td><p>Valid + <code>broker.id</code> deprecation warning</p></td><td><p>Valid; <code>broker.id</code> is ignored</p></td></tr><tr><td><p>Both set, different values</p></td><td><p><code>ConfigException</code>: <code>node.id</code> must equal <code>broker.id</code></p></td><td><p><code>ConfigException</code>: <code>node.id</code> must equal <code>broker.id</code></p></td><td><p>Valid; <code>broker.id</code> is ignored</p></td></tr><tr><td><p>Neither set</p></td><td><p><code>ConfigException</code>: <code>node.id</code> is required</p></td><td><p><code>ConfigException</code>: <code>node.id</code> is required</p></td><td><p><code>ConfigException</code>: <code>node.id</code> is required</p></td></tr></tbody></table><p>Note: In the 5.0 column, &quot;ignored&quot; means <code>broker.id</code> is treated as an unrecognized configuration and silently ignored. The Kafka server does not log warnings for unrecognized configurations.</p><h1>Compatibility, Deprecation, and Migration Plan</h1><h2>Migration Steps</h2><p>Users should replace <code>broker.id</code> with <code>node.id</code> in their server configuration. If both are configured, simply remove <code>broker.id</code>.</p><h2>Downgrade Considerations</h2><p>Downgrading from 5.0 to 4.x is safe as long as the same configuration file is used — any config that was valid on 4.x before the upgrade remains valid after the rollback. The only edge case is if <code>broker.id</code> and <code>node.id</code> are set to different values on a 5.0 binary (where <code>broker.id</code> is ignored) and then downgraded to 4.x, which would result in a <code>ConfigException</code>. In practice, this cannot happen if the config was originally used on 4.x.</p><h1>Test Plan</h1><h2>Phase 1: Deprecation (Apache Kafka 4.4)</h2><p>Unit tests to verify:</p><ul><li>A deprecation warning is logged when <code>broker.id</code> is explicitly set (with or without <code>node.id</code>).</li><li>Backward compatibility: setting only <code>broker.id</code> still works (existing tests in <code>KafkaConfigTest</code> already create configs with only <code>broker.id</code> set).</li></ul><h2>Phase 2: Removal (Apache Kafka 5.0)</h2><p>Unit tests to verify:</p><ul><li><code>broker.id</code> is no longer recognized and is silently ignored.</li><li>Setting only <code>broker.id</code> without <code>node.id</code> results in a <code>ConfigException</code>.</li></ul><h1>Rejected Alternatives</h1><h2>Throw <code>ConfigException</code> when <code>broker.id</code> is set in 5.0</h2><p>Instead of silently ignoring <code>broker.id</code> in 5.0, we could explicitly throw a <code>ConfigException</code>. However, this would force users to update their configuration files before upgrading, making the upgrade process more disruptive. Silently ignoring unrecognized configurations is consistent with how other removed configurations are handled in Kafka.</p><h2>Log a customized warning when <code>broker.id</code> is set in 5.0</h2><p>We could add special-case logic to detect and warn users that <code>broker.id</code> has been removed. However, the Kafka server does not log warnings for unrecognized configurations, and adding a one-off check just for <code>broker.id</code> would be inconsistent with how other removed configurations are handled. The deprecation warning in Phase 1 already provides sufficient notice for users to migrate.</p><h1>References</h1><ul><li><a href=\"https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=123898922\">KIP-500: Replace ZooKeeper with a Self-Managed Metadata Quorum</a></li><li><a href=\"https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=158864865\">KIP-631: The Quorum-based Kafka Controller</a></li></ul>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/393677342?status=historical&version=16"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1224
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=444334590",
+    "edit": "/pages/resumedraft.action?draftId=444334590&draftShareId=ca6dcce0-1544-4c0f-83fd-14382e280ba3",
+    "tinyui": "/x/-gF8Gg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/393677342?status=historical&version=16"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/393677342/child?parentVersion=16",
+    "restrictions": "/rest/api/content/393677342/restriction/byOperation",
+    "history": "/rest/api/content/393677342/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/393677342/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/393677342/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "393677342",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1232: Deprecate broker.id config",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "mingyen066",
+     "userKey": "073590d2966bb14e01966ea8fad00000",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Ming-Yen Chung",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2966bb14e01966ea8fad00000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-03-06T09:26:07.000Z",
+    "message": "",
+    "number": 15,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/393677342/version/15"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/393677342?status=historical&version=15"
+    }
+   },
+   "position": 1224,
+   "body": {
+    "storage": {
+     "value": "<h1><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"230ce5a4-7bc9-4266-a7bb-5f0fc2f07ed9\" /></h1><h1>Status</h1><p><strong>Current state</strong>: Under Discussion</p><p><strong>Discussion thread</strong>: <a class=\"\" href=\"https://lists.apache.org/thread/6zsr70lpzqp96g4jf6kngyms4kkz1tp1\">https://lists.apache.org/thread/6zsr70lpzqp96g4jf6kngyms4kkz1tp1</a></p><p><strong>Vote thread</strong>: <a class=\"\" href=\"https://lists.apache.org/thread/dtc48g4zjdj4s4n0hm99hm0xoho5sp1n\">https://lists.apache.org/thread/dtc48g4zjdj4s4n0hm99hm0xoho5sp1n</a></p><p><strong>JIRA</strong>: <ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"9e33b602-9aa6-4067-8c49-9286dddfdf7b\"><ac:parameter ac:name=\"\">KAFKA-18628</ac:parameter></ac:structured-macro></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p>Since Apache Kafka 4.0, ZooKeeper has been removed and KRaft is the only supported mode (<a href=\"https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=123898922\">KIP-500</a>). In KRaft mode, a single process can serve as a broker, a controller, or both. <a href=\"https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=158864865\">KIP-631</a> therefore introduced <code>node.id</code> to replace <code>broker.id</code> as the canonical node identifier.</p><p>However, the legacy <code>broker.id</code> configuration still exists and is treated as a synonym of <code>node.id</code>. If only one is set, the other is automatically populated with the same value. If both are explicitly set, they must be equal; otherwise, a <code>ConfigException</code> is thrown.</p><p>Having two configuration properties that must always hold the same value causes unnecessary confusion and contradicts the documentation, which describes <code>node.id</code> as required in KRaft mode.</p><p>Related ZooKeeper-era configurations such as <code>broker.id.generation.enable</code> and <code>reserved.broker.max.id</code> were already removed in Kafka 4.0, making <code>broker.id</code> the only remaining legacy identifier config. We should deprecate it to simplify the configuration surface and guide all users toward the single, canonical configuration: <code>node.id</code>.</p><h1>Public Interfaces</h1><p>This KIP proposes to deprecate the <code>broker.id</code> server configuration property in Apache Kafka 4.4 and remove it in Apache Kafka 5.0.</p><table class=\"wrapped\"><tbody><tr><th><p>Config</p></th><th><p>Default</p></th><th><p>4.4</p></th><th><p>5.0</p></th></tr><tr><td><p><code>broker.id</code></p></td><td><p>-1</p></td><td><p><strong>Deprecated</strong></p></td><td><p><strong>Removed</strong></p></td></tr><tr><td><p><code>node.id</code></p></td><td><p><em>(required)</em></p></td><td><p>No change</p></td><td><p>No change</p></td></tr></tbody></table><p>Notes:</p><ul><li>The default value of <code>-1</code> for <code>broker.id</code> is effectively unused in KRaft mode. If <code>node.id</code> is set, the synonym mechanism overwrites <code>broker.id</code> with the value of <code>node.id</code>. If neither is set, <code>node.id</code> validation fails with a <code>ConfigException</code> before the default is ever used.</li><li>The documentation describes <code>node.id</code> as required in KRaft mode, but it can actually be omitted currently if <code>broker.id</code> is set, because the synonym mechanism automatically populates <code>node.id</code> from <code>broker.id</code>. After the removal in 5.0, <code>node.id</code> must be explicitly set.</li></ul><p>The behavior is the same for all <code>process.roles</code> (broker, controller, or combined). No changes to public APIs, network protocols, metrics, or command-line tools.</p><h1>Proposed Changes</h1><h2>Phase 1: Deprecation (Apache Kafka 4.4)</h2><ol><li><strong>Log deprecation warning</strong>: When <code>broker.id</code> is explicitly set in the server configuration, log a WARN-level message at startup:<ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"48f9be04-5d6a-4f5b-bd60-e195d7633879\"><ac:plain-text-body><![CDATA[The 'broker.id' configuration is deprecated and will be removed in Apache Kafka 5.0. Please use 'node.id' instead.\n]]></ac:plain-text-body></ac:structured-macro></li><li><strong>Preserve backward compatibility</strong>: The existing synonym mechanism will continue to function. Users who only set <code>broker.id</code> will still have it automatically copied to <code>node.id</code>. The validation requiring both to be equal (if both are explicitly set) also remains unchanged.</li></ol><h2>Phase 2: Removal (Apache Kafka 5.0)</h2><ol><li><strong>Remove <code>broker.id</code> configuration</strong>: The <code>BROKER_ID_CONFIG</code> will be removed from <code>ServerConfigs</code>. Setting it will be silently ignored.</li><li><strong>Remove synonym logic</strong>: Remove the <code>broker.id</code>/<code>node.id</code> synonym handling from <code>AbstractKafkaConfig.populateSynonyms()</code>.</li><li><strong>Retain internal <code>brokerId()</code> accessor</strong>: The <code>brokerId()</code> method will continue to exist for internal use, delegating to <code>nodeId()</code>.</li></ol><h2>Behavior Matrix</h2><p>The following table summarizes the expected behavior for each configuration scenario across version ranges:</p><table class=\"wrapped\"><tbody><tr><th><p>Configuration</p></th><th><p>Current (4.0 ~ 4.2)</p></th><th><p>Phase 1: Deprecated (4.4 ~ 4.x)</p></th><th><p>Phase 2: Removed (5.0)</p></th></tr><tr><td><p>Only <code>node.id</code> set</p></td><td><p>Valid</p></td><td><p>Valid</p></td><td><p>Valid</p></td></tr><tr><td><p>Only <code>broker.id</code> set</p></td><td><p>Valid; <code>node.id</code> is auto-populated from <code>broker.id</code></p></td><td><p>Valid + <code>broker.id</code> deprecation warning; <code>node.id</code> is auto-populated from <code>broker.id</code></p></td><td><p><code>ConfigException</code>: <code>node.id</code> is required</p></td></tr><tr><td><p>Both set, same value</p></td><td><p>Valid</p></td><td><p>Valid + <code>broker.id</code> deprecation warning</p></td><td><p>Valid; <code>broker.id</code> is ignored</p></td></tr><tr><td><p>Both set, different values</p></td><td><p><code>ConfigException</code>: <code>node.id</code> must equal <code>broker.id</code></p></td><td><p><code>ConfigException</code>: <code>node.id</code> must equal <code>broker.id</code></p></td><td><p>Valid; <code>broker.id</code> is ignored</p></td></tr><tr><td><p>Neither set</p></td><td><p><code>ConfigException</code>: <code>node.id</code> is required</p></td><td><p><code>ConfigException</code>: <code>node.id</code> is required</p></td><td><p><code>ConfigException</code>: <code>node.id</code> is required</p></td></tr></tbody></table><p>Note: In the 5.0 column, &quot;ignored&quot; means <code>broker.id</code> is treated as an unrecognized configuration and silently ignored. The Kafka server does not log warnings for unrecognized configurations.</p><h1>Compatibility, Deprecation, and Migration Plan</h1><h2>Migration Steps</h2><p>Users should replace <code>broker.id</code> with <code>node.id</code> in their server configuration. If both are configured, simply remove <code>broker.id</code>.</p><h2>Downgrade Considerations</h2><p>Downgrading from 5.0 to 4.x is safe as long as the same configuration file is used — any config that was valid on 4.x before the upgrade remains valid after the rollback. The only edge case is if <code>broker.id</code> and <code>node.id</code> are set to different values on a 5.0 binary (where <code>broker.id</code> is ignored) and then downgraded to 4.x, which would result in a <code>ConfigException</code>. In practice, this cannot happen if the config was originally used on 4.x.</p><h1>Test Plan</h1><h2>Phase 1: Deprecation (Apache Kafka 4.4)</h2><p>Unit tests to verify:</p><ul><li>A deprecation warning is logged when <code>broker.id</code> is explicitly set (with or without <code>node.id</code>).</li><li>Backward compatibility: setting only <code>broker.id</code> still works (existing tests in <code>KafkaConfigTest</code> already create configs with only <code>broker.id</code> set).</li></ul><h2>Phase 2: Removal (Apache Kafka 5.0)</h2><p>Unit tests to verify:</p><ul><li><code>broker.id</code> is no longer recognized and is silently ignored.</li><li>Setting only <code>broker.id</code> without <code>node.id</code> results in a <code>ConfigException</code>.</li></ul><h1>Rejected Alternatives</h1><h2>Throw <code>ConfigException</code> when <code>broker.id</code> is set in 5.0</h2><p>Instead of silently ignoring <code>broker.id</code> in 5.0, we could explicitly throw a <code>ConfigException</code>. However, this would force users to update their configuration files before upgrading, making the upgrade process more disruptive. Silently ignoring unrecognized configurations is consistent with how other removed configurations are handled in Kafka.</p><h2>Log a customized warning when <code>broker.id</code> is set in 5.0</h2><p>We could add special-case logic to detect and warn users that <code>broker.id</code> has been removed. However, the Kafka server does not log warnings for unrecognized configurations, and adding a one-off check just for <code>broker.id</code> would be inconsistent with how other removed configurations are handled. The deprecation warning in Phase 1 already provides sufficient notice for users to migrate.</p><h1>References</h1><ul><li><a href=\"https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=123898922\">KIP-500: Replace ZooKeeper with a Self-Managed Metadata Quorum</a></li><li><a href=\"https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=158864865\">KIP-631: The Quorum-based Kafka Controller</a></li></ul>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/393677342?status=historical&version=15"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1224
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=421954068",
+    "edit": "/pages/resumedraft.action?draftId=421954068&draftShareId=ca6dcce0-1544-4c0f-83fd-14382e280ba3",
+    "tinyui": "/x/FIImGQ",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/393677342?status=historical&version=15"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/393677342/child?parentVersion=15",
+    "restrictions": "/rest/api/content/393677342/restriction/byOperation",
+    "history": "/rest/api/content/393677342/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/393677342/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/393677342/restriction/relevantViewRestrictions"
+   }
+  }
+ ],
+ "comments": {
+  "results": [],
+  "start": 0,
+  "limit": 200,
+  "size": 0,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/api/content/393677342/child/comment?expand=body.storage%2Cversion%2Cancestors&depth=all",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ }
+}

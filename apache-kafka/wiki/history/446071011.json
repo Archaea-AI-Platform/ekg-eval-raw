@@ -1,0 +1,572 @@
+{
+ "id": "446071011",
+ "versions": {
+  "results": [
+   {
+    "by": {
+     "type": "known",
+     "username": "chickenchickenlove",
+     "userKey": "073590d29a7abced019ab51adea6000d",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "sanghyeok an",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019ab51adea6000d"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-09T13:17:06.000Z",
+    "message": "",
+    "number": 10,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/446071011/version/10"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/446071011"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "chickenchickenlove",
+     "userKey": "073590d29a7abced019ab51adea6000d",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "sanghyeok an",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019ab51adea6000d"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-04T14:06:34.000Z",
+    "message": "",
+    "number": 9,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/446071011/version/9"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/446071011?status=historical&version=9"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "chickenchickenlove",
+     "userKey": "073590d29a7abced019ab51adea6000d",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "sanghyeok an",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019ab51adea6000d"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-04T14:06:10.000Z",
+    "message": "",
+    "number": 8,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/446071011/version/8"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/446071011?status=historical&version=8"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "chickenchickenlove",
+     "userKey": "073590d29a7abced019ab51adea6000d",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "sanghyeok an",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019ab51adea6000d"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-04T14:05:27.000Z",
+    "message": "",
+    "number": 7,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/446071011/version/7"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/446071011?status=historical&version=7"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "chickenchickenlove",
+     "userKey": "073590d29a7abced019ab51adea6000d",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "sanghyeok an",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019ab51adea6000d"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-04T14:05:12.000Z",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/446071011/version/6"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/446071011?status=historical&version=6"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "chickenchickenlove",
+     "userKey": "073590d29a7abced019ab51adea6000d",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "sanghyeok an",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019ab51adea6000d"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-04T14:01:27.000Z",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/446071011/version/5"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/446071011?status=historical&version=5"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "chickenchickenlove",
+     "userKey": "073590d29a7abced019ab51adea6000d",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "sanghyeok an",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019ab51adea6000d"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-04T13:58:52.000Z",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/446071011/version/4"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/446071011?status=historical&version=4"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "chickenchickenlove",
+     "userKey": "073590d29a7abced019ab51adea6000d",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "sanghyeok an",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019ab51adea6000d"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-04T13:53:42.000Z",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/446071011/version/3"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/446071011?status=historical&version=3"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "chickenchickenlove",
+     "userKey": "073590d29a7abced019ab51adea6000d",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "sanghyeok an",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019ab51adea6000d"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-04T13:32:31.000Z",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/446071011/version/2"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/446071011?status=historical&version=2"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "chickenchickenlove",
+     "userKey": "073590d29a7abced019ab51adea6000d",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "sanghyeok an",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019ab51adea6000d"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-04T13:28:17.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/446071011/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/446071011?status=historical&version=1"
+    }
+   }
+  ],
+  "start": 0,
+  "limit": 200,
+  "size": 10,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/experimental/content/446071011/version",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ },
+ "version_bodies": [
+  {
+   "id": "446071011",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1370: Include Instance and Rack IDs in kafka-streams-groups.sh Member Output",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "chickenchickenlove",
+     "userKey": "073590d29a7abced019ab51adea6000d",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "sanghyeok an",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019ab51adea6000d"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-04T14:06:34.000Z",
+    "message": "",
+    "number": 9,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/446071011/version/9"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/446071011?status=historical&version=9"
+    }
+   },
+   "position": 1361,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><p><br /></p><h1>Status</h1><p><strong>Current state</strong>: Under Discussion</p><p><strong>Discussion thread</strong>: <a href=\"https://lists.apache.org/thread/1m9p7m2x1btb5dofcbjkc56hpcfvmwrm\">here</a><em><br /></em></p><p><strong>JIRA</strong>: <ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"8edc3f43-41ab-4fea-8ff2-12f8f4dba9ab\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20888</ac:parameter></ac:structured-macro>, <ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"c48fc742-df54-48ba-8c1e-f083b42a0225\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20883</ac:parameter></ac:structured-macro><em><br /></em></p><p><br /></p><h1>Motivation</h1><p class=\"p1\"><span class=\"s1\">KIP-1071 (</span><span class=\"s2\"><a href=\"https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=393677857\">https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=393677857</a></span><span class=\"s1\">) introduced Streams groups, the</span><span class=\"s1\"> </span><code><span class=\"s3\">StreamsGroupDescribe</span></code><span class=\"s1\"> API, and the  <code>kafka-streams-group.sh</code> </span><span class=\"s1\">command-line tool.</span></p><p class=\"p3\"><span class=\"s3\">The </span><span class=\"s4\">StreamsGroupDescribe</span><span class=\"s3\"> response and the corresponding Admin API representation already expose the optional instance ID and rack</span><span class=\"s3\"> ID of each Streams group member. However, </span><code><span class=\"s4\">kafka-streams-groups.sh --describe --members</span></code><span class=\"s3\"> does not currently display either field.</span></p><p class=\"p3\"><br /></p><p class=\"p3\"><span class=\"s3\">The instance ID identifies a static group member and remains stable when the member restarts. Displaying it is useful for mapping</span><span class=\"s3\"> dynamically generated member IDs to application instances and for diagnosing static membership issues. </span><span class=\"s3\">The rack ID is primarily useful when investigating rack-aware task placement. Since it is optional and is generally needed only for</span><span class=\"s3\"> detailed diagnostics, it should be included only in verbose member output.</span></p><p class=\"p2\"><br /></p><p class=\"p3\"><span class=\"s3\">This KIP proposes the following behavior:</span></p><ul style=\"list-style-type: square;\"><li class=\"p3\"><span class=\"s3\">The instance ID is always displayed when </span><span class=\"s4\">--members</span><span class=\"s3\"> is specified, including when </span><span class=\"s4\">--verbose</span><span class=\"s3\"> is also specified.</span></li><li class=\"p3\" data-uuid=\"8da5c849-9010-498d-8aca-aca8addaffa0\"><span class=\"s3\">The rack ID is displayed only when </span><span class=\"s4\">--members</span><span class=\"s3\"> and </span><span class=\"s4\">--verbose</span><span class=\"s3\"> are specified together.</span></li></ul><p class=\"p3\"><span class=\"s3\">  This also makes verbose member output an additive extension of the regular member output: information available in the regular</span><span class=\"s3\"> output, including the instance ID, is not omitted when verbose output is requested.</span></p><h1>Public Interfaces</h1><p class=\"p1\"><span class=\"s1\">This KIP introduces no new command-line options and does not change any public Java API, network protocol, configuration, metric,</span><span class=\"s1\">  or persisted data format.</span></p><p class=\"p1\"><span class=\"s1\">It changes the human-readable output of the existing </span><code><span class=\"s2\">kafka-streams-groups.sh --describe --members</span></code><span class=\"s1\"> command by adding member instance</span><span class=\"s1\"> and rack information. Although console tool output is not considered a formal public interface under the Kafka KIP process, the</span><span class=\"s1\"> output changes are documented in this KIP because they are user-visible and may affect scripts that parse the command output.</span></p><h1>Proposed Changes</h1><p class=\"p1\"><span class=\"s1\">The member output of </span><code><span class=\"s2\">kafka-streams-groups.sh</span></code><span class=\"s1\"> will expose the instance ID and rack ID already available in</span><span class=\"s3\"> </span><span class=\"s1\">StreamsGroupMemberDescription</span><span class=\"s3\">.</span></p><table class=\"wrapped\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th scope=\"col\">Command</th><th scope=\"col\">INSTANCE-ID</th><th scope=\"col\">RACK-ID</th></tr><tr><td>--describe --members</td><td>Included</td><td>Not included</td></tr><tr><td>--describe --members --verbose</td><td>Included</td><td>Included</td></tr></tbody></table><p><br /></p><p class=\"p1\"><span class=\"s1\">The column order will change as follows:</span></p><table class=\"wrapped\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th>Command</th><th>From</th><th>To</th></tr><tr><td>--describe --members</td><td><p class=\"p1\"><span class=\"s1\">GROUP</span><span class=\"s2\"> → </span><span class=\"s1\">MEMBER</span><span class=\"s2\"> → </span><span class=\"s1\">PROCESS</span><span class=\"s2\"> → </span><span class=\"s1\">CLIENT-ID</span><span class=\"s2\"> → </span><span class=\"s1\">ASSIGNMENTS</span></p></td><td><p class=\"p1\"><span class=\"s1\">GROUP</span><span class=\"s2\"> → </span><span class=\"s1\">MEMBER</span><span class=\"s2\"> → </span><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\"><strong><span class=\"s1\">INSTANCE-ID</span></strong></span><span class=\"s2\"> → </span><span class=\"s1\">PROCESS</span><span class=\"s2\"> → </span><span class=\"s1\">CLIENT-ID</span><span class=\"s1\"> → </span><span class=\"s3\">ASSIGNMENTS</span></p></td></tr><tr><td>--describe --members --verbose</td><td><p class=\"p1\"><span class=\"s1\">GROUP</span><span class=\"s2\"> → </span><span class=\"s1\">TARGET-ASSIGNMENT-EPOCH</span><span class=\"s2\"> → </span><span class=\"s1\">TOPOLOGY-EPOCH</span><span class=\"s2\"> → </span></p><p class=\"p1\"><span class=\"s1\">MEMBER</span><span class=\"s2\"> → </span><span class=\"s1\">MEMBER-PROTOCOL</span><span class=\"s2\"> → </span><span class=\"s1\">MEMBER-EPOCH</span><span class=\"s2\"> → </span><span class=\"s1\">PROCESS</span><span class=\"s2\"> →</span></p><p class=\"p1\"><span class=\"s1\">CLIENT-ID</span><span class=\"s2\"> → </span><span class=\"s1\">ASSIGNMENTS</span></p></td><td><p class=\"p1\"><span class=\"s1\">GROUP</span><span class=\"s2\"> → </span><span class=\"s1\">TARGET-ASSIGNMENT-EPOCH</span><span class=\"s2\"> → </span><span class=\"s1\">TOPOLOGY-EPOCH</span><span class=\"s2\"> → </span></p><p class=\"p1\"><span class=\"s1\">MEMBER</span><span class=\"s2\"> → </span><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\"><strong><span class=\"s1\">INSTANCE-ID</span></strong></span><span class=\"s2\"> → </span><span class=\"s1\">MEMBER-PROTOCOL</span><span class=\"s2\"> → </span><span class=\"s1\">MEMBER-</span><span class=\"s1\">EPOCH</span><span class=\"s2\"> </span></p><p class=\"p1\"><span class=\"s2\">→ </span><span class=\"s1\">PROCESS</span><span class=\"s2\"> → </span><span class=\"s1\">CLIENT-ID</span><span class=\"s2\"> → </span><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\"><strong><span class=\"s1\">RACK-ID</span></strong></span><span class=\"s2\"> → </span><span class=\"s1\">ASSIGNMENTS</span></p></td></tr></tbody></table><p class=\"p1\"><span class=\"s1\">The instance ID will be displayed whenever </span><code><span class=\"s2\">--members</span></code><span class=\"s1\"> is specified. The rack ID will only be displayed when </span><code><span class=\"s2\">--members</span></code><span class=\"s1\"> and </span><code><span class=\"s2\">--verbose</span></code><span class=\"s1\"> are specified together.</span></p><p class=\"p1\"><span class=\"s1\">Instance IDs and rack IDs will be rendered as follows:</span></p><table class=\"wrapped\"><colgroup><col /><col /></colgroup><tbody><tr><th scope=\"col\">Source Value</th><th scope=\"col\">Console output</th></tr><tr><td>null or Optional.empty()</td><td>-</td></tr><tr><td>Empty String (&quot;&quot;)</td><td>-</td></tr><tr><td>Non-empty string</td><td>The value as reported</td></tr></tbody></table><p class=\"p1\"><span class=\"s1\">Although a </span><span class=\"s2\">null</span><span class=\"s1\"> protocol value is converted to </span><span class=\"s2\">Optional.empty()</span><span class=\"s1\"> by the Admin client, an empty string may be represented as a</span><span class=\"s1\"> present optional value. The command will treat both cases as an unavailable value to avoid producing an empty table column.</span><span class=\"s1\"> All other columns and their ordering will remain unchanged. The implementation will use the existing</span><span class=\"s3\"> </span><code><span class=\"s1\">StreamsGroupMemberDescription#instanceId()</span></code><span class=\"s3\"> and </span><code><span class=\"s1\">StreamsGroupMemberDescription#rackId()</span></code><span class=\"s3\"> methods. No Admin API or protocol changes are</span><span class=\"s1\"> required.</span></p><p><br /></p><h1>Compatibility, Deprecation, and Migration Plan</h1><p class=\"p1\"><span class=\"s1\">This change does not affect the Admin API, network protocol, broker or client configurations, or persisted data formats. No broker</span><span class=\"s1\"> or Kafka Streams client migration is required.</span></p><p class=\"p1\"><span class=\"s1\">The only user-visible impact is the addition of columns to the human-readable member output:</span></p><ul style=\"list-style-type: square;\"><li class=\"p3\"><code><span class=\"s1\">--describe --members</span></code><span class=\"s2\"> adds </span><code><span class=\"s1\">INSTANCE-ID</span></code><span class=\"s2\">.</span></li><li class=\"p3\" data-uuid=\"bd5d116e-58dd-43f8-8e07-31bcbcab2348\"><code><span class=\"s1\">--describe --members --verbose</span></code><span class=\"s2\"> adds </span><code><span class=\"s1\">INSTANCE-ID</span></code><span class=\"s2\"> and </span><code><span class=\"s1\">RACK-ID</span></code><span class=\"s2\">.</span></li></ul><p class=\"p1\"><span class=\"s1\">Users or scripts that rely on fixed column positions may need to update their parsing logic after upgrading the command-line tool. </span><span class=\"s1\">No deprecation period or special migration tool is required. The new output format will take effect when the updated </span><code><span class=\"s3\">kafka-streams-</span><span class=\"s3\">groups.sh</span></code><span class=\"s1\"> is used; older versions of the tool will continue to produce the previous format. </span><span class=\"s1\" style=\"letter-spacing: 0.0px;\">The previous output layout will not be</span><span class=\"s1\" style=\"letter-spacing: 0.0px;\"> retained as a separate mode.</span></p><p><br /></p><h1>Test Plan</h1><p class=\"p1\"><span class=\"s1\">The existing kafka-streams-groups.sh tests will be extended to verify that:</span></p><ul style=\"list-style-type: square;\"><li class=\"p3\"><code><span class=\"s1\">--describe --members</span></code><span class=\"s3\"> includes </span><code><span class=\"s1\">INSTANCE-ID</span></code><span class=\"s3\"> but not </span><code><span class=\"s1\">RACK-ID</span></code><span class=\"s3\">.</span></li><li class=\"p3\" data-uuid=\"c53f403f-e346-46a6-b29b-6b493346d3b2\"><code><span class=\"s1\">--describe --members --verbose</span></code><span class=\"s3\"> includes both </span><code><span class=\"s1\">INSTANCE-ID</span></code><span class=\"s3\"> and </span><code><span class=\"s1\">RACK-ID</span></code><span class=\"s3\">.</span></li><li class=\"p3\" data-uuid=\"e5ea927d-ebb4-4d94-a6d4-31e833715387\"><p class=\"p1\"><span class=\"s1\">Non-empty instance IDs and rack IDs match the corresponding Streams group member metadata.</span></p></li><li class=\"p3\" data-uuid=\"2f5dfa9e-6834-4088-8ab6-9ad5602c58c8\"><p class=\"p1\"><span class=\"s1\">Both </span><span class=\"s2\">null</span><span class=\"s1\"> values, represented as </span><code><span class=\"s2\">Optional.empty()</span></code><span class=\"s1\">, and empty strings (</span><code><span class=\"s2\">&quot;&quot;</span></code><span class=\"s1\">) are rendered as </span><code><span class=\"s2\">-</span></code><span class=\"s1\">. (If it is possible for empty strings)</span></p></li><li class=\"p3\" data-uuid=\"24094272-0312-4c70-b9ef-bf6f74dcefde\"><span class=\"s1\">Existing columns, assignments, and other describe modes remain unchanged.</span></li></ul><p class=\"p1\"><span class=\"s1\">The existing Streams group command test suite will continue to validate that listing, state, offsets, topology, and other member</span><span class=\"s1\"> output behavior is not affected.</span></p><p class=\"p1\"><span class=\"s1\">Integration tests will verify the command output with actual group metadata, while command-level unit tests will cover absent and</span><span class=\"s1\"> empty-string values.</span></p><p class=\"p2\"><br /></p><h1>Rejected Alternatives</h1><h3 class=\"p1\"><span class=\"s1\">Include both IDs only in verbose output</span></h3><p class=\"p1\"><span class=\"s1\">This was rejected because the instance ID represents the stable identity of a static member and should be available in the regular</span><span class=\"s1\"> member view.</span></p><h3 class=\"p1\"><span class=\"s1\">Include the rack ID in non-verbose output</span></h3><p class=\"p1\"><span class=\"s1\">This was rejected because rack information is optional and primarily useful for detailed assignment diagnostics. Including it by</span><span class=\"s1\"> default would unnecessarily widen the regular member output.</span></p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/446071011?status=historical&version=9"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1361
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=446071368",
+    "edit": "/pages/resumedraft.action?draftId=446071368&draftShareId=819a5f92-8df5-447c-9029-4802543aa2e5",
+    "tinyui": "/x/SIKWGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/446071011?status=historical&version=9"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/446071011/child?parentVersion=9",
+    "restrictions": "/rest/api/content/446071011/restriction/byOperation",
+    "history": "/rest/api/content/446071011/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/446071011/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/446071011/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "446071011",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1370: Include Instance and Rack IDs in kafka-streams-groups.sh Member Output",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "chickenchickenlove",
+     "userKey": "073590d29a7abced019ab51adea6000d",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "sanghyeok an",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019ab51adea6000d"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-04T14:06:10.000Z",
+    "message": "",
+    "number": 8,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/446071011/version/8"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/446071011?status=historical&version=8"
+    }
+   },
+   "position": 1361,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><p><br /></p><h1>Status</h1><p><strong>Current state</strong>: Under Discussion</p><p><strong>Discussion thread</strong>: <a href=\"https://lists.apache.org/thread/1m9p7m2x1btb5dofcbjkc56hpcfvmwrm\">here</a><em><br /></em></p><p><strong>JIRA</strong>: <ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"8edc3f43-41ab-4fea-8ff2-12f8f4dba9ab\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20888</ac:parameter></ac:structured-macro>, <ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"c48fc742-df54-48ba-8c1e-f083b42a0225\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20883</ac:parameter></ac:structured-macro><em><br /></em></p><p><br /></p><h1>Motivation</h1><p class=\"p1\"><span class=\"s1\">KIP-1071 (</span><span class=\"s2\"><a href=\"https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=393677857\">https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=393677857</a></span><span class=\"s1\">) introduced Streams groups, the</span><span class=\"s1\"> </span><code><span class=\"s3\">StreamsGroupDescribe</span></code><span class=\"s1\"> API, and the  <code>kafka-streams-group.sh</code> </span><span class=\"s1\">command-line tool.</span></p><p class=\"p3\"><span class=\"s3\">The </span><span class=\"s4\">StreamsGroupDescribe</span><span class=\"s3\"> response and the corresponding Admin API representation already expose the optional instance ID and rack</span><span class=\"s3\"> ID of each Streams group member. However, </span><code><span class=\"s4\">kafka-streams-groups.sh --describe --members</span></code><span class=\"s3\"> does not currently display either field.</span></p><p class=\"p3\"><br /></p><p class=\"p3\"><span class=\"s3\">The instance ID identifies a static group member and remains stable when the member restarts. Displaying it is useful for mapping</span><span class=\"s3\"> dynamically generated member IDs to application instances and for diagnosing static membership issues. </span><span class=\"s3\">The rack ID is primarily useful when investigating rack-aware task placement. Since it is optional and is generally needed only for</span><span class=\"s3\"> detailed diagnostics, it should be included only in verbose member output.</span></p><p class=\"p2\"><br /></p><p class=\"p3\"><span class=\"s3\">This KIP proposes the following behavior:</span></p><ul style=\"list-style-type: square;\"><li class=\"p3\"><span class=\"s3\">The instance ID is always displayed when </span><span class=\"s4\">--members</span><span class=\"s3\"> is specified, including when </span><span class=\"s4\">--verbose</span><span class=\"s3\"> is also specified.</span></li><li class=\"p3\" data-uuid=\"8da5c849-9010-498d-8aca-aca8addaffa0\"><span class=\"s3\">The rack ID is displayed only when </span><span class=\"s4\">--members</span><span class=\"s3\"> and </span><span class=\"s4\">--verbose</span><span class=\"s3\"> are specified together.</span></li></ul><p class=\"p3\"><span class=\"s3\">  This also makes verbose member output an additive extension of the regular member output: information available in the regular</span><span class=\"s3\"> output, including the instance ID, is not omitted when verbose output is requested.</span></p><h1>Public Interfaces</h1><p class=\"p1\"><span class=\"s1\">This KIP introduces no new command-line options and does not change any public Java API, network protocol, configuration, metric,</span><span class=\"s1\">  or persisted data format.</span></p><p class=\"p1\"><span class=\"s1\">It changes the human-readable output of the existing </span><code><span class=\"s2\">kafka-streams-groups.sh --describe --members</span></code><span class=\"s1\"> command by adding member instance</span><span class=\"s1\"> and rack information. Although console tool output is not considered a formal public interface under the Kafka KIP process, the</span><span class=\"s1\"> output changes are documented in this KIP because they are user-visible and may affect scripts that parse the command output.</span></p><h1>Proposed Changes</h1><p class=\"p1\"><span class=\"s1\">The member output of </span><code><span class=\"s2\">kafka-streams-groups.sh</span></code><span class=\"s1\"> will expose the instance ID and rack ID already available in</span><span class=\"s3\"> </span><span class=\"s1\">StreamsGroupMemberDescription</span><span class=\"s3\">.</span></p><table class=\"wrapped\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th scope=\"col\">Command</th><th scope=\"col\">INSTANCE-ID</th><th scope=\"col\">RACK-ID</th></tr><tr><td>--describe --members</td><td>Included</td><td>Not included</td></tr><tr><td>--describe --members --verbose</td><td>Included</td><td>Included</td></tr></tbody></table><p><br /></p><p class=\"p1\"><span class=\"s1\">The column order will change as follows:</span></p><table class=\"wrapped\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th>Command</th><th>From</th><th>To</th></tr><tr><td>--describe --members</td><td><p class=\"p1\"><span class=\"s1\">GROUP</span><span class=\"s2\"> → </span><span class=\"s1\">MEMBER</span><span class=\"s2\"> → </span><span class=\"s1\">PROCESS</span><span class=\"s2\"> → </span><span class=\"s1\">CLIENT-ID</span><span class=\"s2\"> → </span><span class=\"s1\">ASSIGNMENTS</span></p></td><td><p class=\"p1\"><span class=\"s1\">GROUP</span><span class=\"s2\"> → </span><span class=\"s1\">MEMBER</span><span class=\"s2\"> → </span><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\"><strong><span class=\"s1\">INSTANCE-ID</span></strong></span><span class=\"s2\"> → </span><span class=\"s1\">PROCESS</span><span class=\"s2\"> → </span><span class=\"s1\">CLIENT-ID</span><span class=\"s1\"> → </span><span class=\"s3\">ASSIGNMENTS</span></p></td></tr><tr><td>--describe --members --verbose</td><td><p class=\"p1\"><span class=\"s1\">GROUP</span><span class=\"s2\"> → </span><span class=\"s1\">TARGET-ASSIGNMENT-EPOCH</span><span class=\"s2\"> → </span><span class=\"s1\">TOPOLOGY-EPOCH</span><span class=\"s2\"> → </span></p><p class=\"p1\"><span class=\"s1\">MEMBER</span><span class=\"s2\"> → </span><span class=\"s1\">MEMBER-PROTOCOL</span><span class=\"s2\"> → </span><span class=\"s1\">MEMBER-EPOCH</span><span class=\"s2\"> → </span><span class=\"s1\">PROCESS</span><span class=\"s2\"> →</span></p><p class=\"p1\"><span class=\"s1\">CLIENT-ID</span><span class=\"s2\"> → </span><span class=\"s1\">ASSIGNMENTS</span></p></td><td><p class=\"p1\"><span class=\"s1\">GROUP</span><span class=\"s2\"> → </span><span class=\"s1\">TARGET-ASSIGNMENT-EPOCH</span><span class=\"s2\"> → </span><span class=\"s1\">TOPOLOGY-EPOCH</span><span class=\"s2\"> → </span></p><p class=\"p1\"><span class=\"s1\">MEMBER</span><span class=\"s2\"> → </span><span class=\"s1\">INSTANCE-ID</span><span class=\"s2\"> → </span><span class=\"s1\">MEMBER-PROTOCOL</span><span class=\"s2\"> → </span><span class=\"s1\">MEMBER-</span><span class=\"s1\">EPOCH</span><span class=\"s2\"> </span></p><p class=\"p1\"><span class=\"s2\">→ </span><span class=\"s1\">PROCESS</span><span class=\"s2\"> → </span><span class=\"s1\">CLIENT-ID</span><span class=\"s2\"> → </span><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\"><strong><span class=\"s1\">RACK-ID</span></strong></span><span class=\"s2\"> → </span><span class=\"s1\">ASSIGNMENTS</span></p></td></tr></tbody></table><p class=\"p1\"><span class=\"s1\">The instance ID will be displayed whenever </span><code><span class=\"s2\">--members</span></code><span class=\"s1\"> is specified. The rack ID will only be displayed when </span><code><span class=\"s2\">--members</span></code><span class=\"s1\"> and </span><code><span class=\"s2\">--verbose</span></code><span class=\"s1\"> are specified together.</span></p><p class=\"p1\"><span class=\"s1\">Instance IDs and rack IDs will be rendered as follows:</span></p><table class=\"wrapped\"><colgroup><col /><col /></colgroup><tbody><tr><th scope=\"col\">Source Value</th><th scope=\"col\">Console output</th></tr><tr><td>null or Optional.empty()</td><td>-</td></tr><tr><td>Empty String (&quot;&quot;)</td><td>-</td></tr><tr><td>Non-empty string</td><td>The value as reported</td></tr></tbody></table><p class=\"p1\"><span class=\"s1\">Although a </span><span class=\"s2\">null</span><span class=\"s1\"> protocol value is converted to </span><span class=\"s2\">Optional.empty()</span><span class=\"s1\"> by the Admin client, an empty string may be represented as a</span><span class=\"s1\"> present optional value. The command will treat both cases as an unavailable value to avoid producing an empty table column.</span><span class=\"s1\"> All other columns and their ordering will remain unchanged. The implementation will use the existing</span><span class=\"s3\"> </span><code><span class=\"s1\">StreamsGroupMemberDescription#instanceId()</span></code><span class=\"s3\"> and </span><code><span class=\"s1\">StreamsGroupMemberDescription#rackId()</span></code><span class=\"s3\"> methods. No Admin API or protocol changes are</span><span class=\"s1\"> required.</span></p><p><br /></p><h1>Compatibility, Deprecation, and Migration Plan</h1><p class=\"p1\"><span class=\"s1\">This change does not affect the Admin API, network protocol, broker or client configurations, or persisted data formats. No broker</span><span class=\"s1\"> or Kafka Streams client migration is required.</span></p><p class=\"p1\"><span class=\"s1\">The only user-visible impact is the addition of columns to the human-readable member output:</span></p><ul style=\"list-style-type: square;\"><li class=\"p3\"><code><span class=\"s1\">--describe --members</span></code><span class=\"s2\"> adds </span><code><span class=\"s1\">INSTANCE-ID</span></code><span class=\"s2\">.</span></li><li class=\"p3\" data-uuid=\"bd5d116e-58dd-43f8-8e07-31bcbcab2348\"><code><span class=\"s1\">--describe --members --verbose</span></code><span class=\"s2\"> adds </span><code><span class=\"s1\">INSTANCE-ID</span></code><span class=\"s2\"> and </span><code><span class=\"s1\">RACK-ID</span></code><span class=\"s2\">.</span></li></ul><p class=\"p1\"><span class=\"s1\">Users or scripts that rely on fixed column positions may need to update their parsing logic after upgrading the command-line tool. </span><span class=\"s1\">No deprecation period or special migration tool is required. The new output format will take effect when the updated </span><code><span class=\"s3\">kafka-streams-</span><span class=\"s3\">groups.sh</span></code><span class=\"s1\"> is used; older versions of the tool will continue to produce the previous format. </span><span class=\"s1\" style=\"letter-spacing: 0.0px;\">The previous output layout will not be</span><span class=\"s1\" style=\"letter-spacing: 0.0px;\"> retained as a separate mode.</span></p><p><br /></p><h1>Test Plan</h1><p class=\"p1\"><span class=\"s1\">The existing kafka-streams-groups.sh tests will be extended to verify that:</span></p><ul style=\"list-style-type: square;\"><li class=\"p3\"><code><span class=\"s1\">--describe --members</span></code><span class=\"s3\"> includes </span><code><span class=\"s1\">INSTANCE-ID</span></code><span class=\"s3\"> but not </span><code><span class=\"s1\">RACK-ID</span></code><span class=\"s3\">.</span></li><li class=\"p3\" data-uuid=\"c53f403f-e346-46a6-b29b-6b493346d3b2\"><code><span class=\"s1\">--describe --members --verbose</span></code><span class=\"s3\"> includes both </span><code><span class=\"s1\">INSTANCE-ID</span></code><span class=\"s3\"> and </span><code><span class=\"s1\">RACK-ID</span></code><span class=\"s3\">.</span></li><li class=\"p3\" data-uuid=\"e5ea927d-ebb4-4d94-a6d4-31e833715387\"><p class=\"p1\"><span class=\"s1\">Non-empty instance IDs and rack IDs match the corresponding Streams group member metadata.</span></p></li><li class=\"p3\" data-uuid=\"2f5dfa9e-6834-4088-8ab6-9ad5602c58c8\"><p class=\"p1\"><span class=\"s1\">Both </span><span class=\"s2\">null</span><span class=\"s1\"> values, represented as </span><code><span class=\"s2\">Optional.empty()</span></code><span class=\"s1\">, and empty strings (</span><code><span class=\"s2\">&quot;&quot;</span></code><span class=\"s1\">) are rendered as </span><code><span class=\"s2\">-</span></code><span class=\"s1\">. (If it is possible for empty strings)</span></p></li><li class=\"p3\" data-uuid=\"24094272-0312-4c70-b9ef-bf6f74dcefde\"><span class=\"s1\">Existing columns, assignments, and other describe modes remain unchanged.</span></li></ul><p class=\"p1\"><span class=\"s1\">The existing Streams group command test suite will continue to validate that listing, state, offsets, topology, and other member</span><span class=\"s1\"> output behavior is not affected.</span></p><p class=\"p1\"><span class=\"s1\">Integration tests will verify the command output with actual group metadata, while command-level unit tests will cover absent and</span><span class=\"s1\"> empty-string values.</span></p><p class=\"p2\"><br /></p><h1>Rejected Alternatives</h1><h3 class=\"p1\"><span class=\"s1\">Include both IDs only in verbose output</span></h3><p class=\"p1\"><span class=\"s1\">This was rejected because the instance ID represents the stable identity of a static member and should be available in the regular</span><span class=\"s1\"> member view.</span></p><h3 class=\"p1\"><span class=\"s1\">Include the rack ID in non-verbose output</span></h3><p class=\"p1\"><span class=\"s1\">This was rejected because rack information is optional and primarily useful for detailed assignment diagnostics. Including it by</span><span class=\"s1\"> default would unnecessarily widen the regular member output.</span></p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/446071011?status=historical&version=8"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1361
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=446071026",
+    "edit": "/pages/resumedraft.action?draftId=446071026&draftShareId=819a5f92-8df5-447c-9029-4802543aa2e5",
+    "tinyui": "/x/8oCWGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/446071011?status=historical&version=8"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/446071011/child?parentVersion=8",
+    "restrictions": "/rest/api/content/446071011/restriction/byOperation",
+    "history": "/rest/api/content/446071011/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/446071011/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/446071011/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "446071011",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1370: Include Instance and Rack IDs in kafka-streams-groups.sh Member Output",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "chickenchickenlove",
+     "userKey": "073590d29a7abced019ab51adea6000d",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "sanghyeok an",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019ab51adea6000d"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-04T14:05:27.000Z",
+    "message": "",
+    "number": 7,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/446071011/version/7"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/446071011?status=historical&version=7"
+    }
+   },
+   "position": 1361,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><p><br /></p><h1>Status</h1><p><strong>Current state</strong>: Under Discussion</p><p><strong>Discussion thread</strong>: <a href=\"https://lists.apache.org/thread/1m9p7m2x1btb5dofcbjkc56hpcfvmwrm\">here</a><em><br /></em></p><p><strong>JIRA</strong>: <ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"8edc3f43-41ab-4fea-8ff2-12f8f4dba9ab\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20888</ac:parameter></ac:structured-macro>, <ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"c48fc742-df54-48ba-8c1e-f083b42a0225\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20883</ac:parameter></ac:structured-macro><em><br /></em></p><p><br /></p><h1>Motivation</h1><p class=\"p1\"><span class=\"s1\">KIP-1071 (</span><span class=\"s2\"><a href=\"https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=393677857\">https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=393677857</a></span><span class=\"s1\">) introduced Streams groups, the</span><span class=\"s1\"> </span><code><span class=\"s3\">StreamsGroupDescribe</span></code><span class=\"s1\"> API, and the  <code>kafka-streams-group.sh</code> </span><span class=\"s1\">command-line tool.</span></p><p class=\"p3\"><span class=\"s3\">The </span><span class=\"s4\">StreamsGroupDescribe</span><span class=\"s3\"> response and the corresponding Admin API representation already expose the optional instance ID and rack</span><span class=\"s3\"> ID of each Streams group member. However, </span><code><span class=\"s4\">kafka-streams-groups.sh --describe --members</span></code><span class=\"s3\"> does not currently display either field.</span></p><p class=\"p3\"><br /></p><p class=\"p3\"><span class=\"s3\">The instance ID identifies a static group member and remains stable when the member restarts. Displaying it is useful for mapping</span><span class=\"s3\"> dynamically generated member IDs to application instances and for diagnosing static membership issues. </span><span class=\"s3\">The rack ID is primarily useful when investigating rack-aware task placement. Since it is optional and is generally needed only for</span><span class=\"s3\"> detailed diagnostics, it should be included only in verbose member output.</span></p><p class=\"p2\"><br /></p><p class=\"p3\"><span class=\"s3\">This KIP proposes the following behavior:</span></p><ul style=\"list-style-type: square;\"><li class=\"p3\"><span class=\"s3\">The instance ID is always displayed when </span><span class=\"s4\">--members</span><span class=\"s3\"> is specified, including when </span><span class=\"s4\">--verbose</span><span class=\"s3\"> is also specified.</span></li><li class=\"p3\" data-uuid=\"8da5c849-9010-498d-8aca-aca8addaffa0\"><span class=\"s3\">The rack ID is displayed only when </span><span class=\"s4\">--members</span><span class=\"s3\"> and </span><span class=\"s4\">--verbose</span><span class=\"s3\"> are specified together.</span></li></ul><p class=\"p3\"><span class=\"s3\">  This also makes verbose member output an additive extension of the regular member output: information available in the regular</span><span class=\"s3\"> output, including the instance ID, is not omitted when verbose output is requested.</span></p><h1>Public Interfaces</h1><p class=\"p1\"><span class=\"s1\">This KIP introduces no new command-line options and does not change any public Java API, network protocol, configuration, metric,</span><span class=\"s1\">  or persisted data format.</span></p><p class=\"p1\"><span class=\"s1\">It changes the human-readable output of the existing </span><code><span class=\"s2\">kafka-streams-groups.sh --describe --members</span></code><span class=\"s1\"> command by adding member instance</span><span class=\"s1\"> and rack information. Although console tool output is not considered a formal public interface under the Kafka KIP process, the</span><span class=\"s1\"> output changes are documented in this KIP because they are user-visible and may affect scripts that parse the command output.</span></p><h1>Proposed Changes</h1><p class=\"p1\"><span class=\"s1\">The member output of </span><code><span class=\"s2\">kafka-streams-groups.sh</span></code><span class=\"s1\"> will expose the instance ID and rack ID already available in</span><span class=\"s3\"> </span><span class=\"s1\">StreamsGroupMemberDescription</span><span class=\"s3\">.</span></p><table class=\"wrapped\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th scope=\"col\">Command</th><th scope=\"col\">INSTANCE-ID</th><th scope=\"col\">RACK-ID</th></tr><tr><td>--describe --members</td><td>Included</td><td>Not included</td></tr><tr><td>--describe --members --verbose</td><td>Included</td><td>Included</td></tr></tbody></table><p><br /></p><p class=\"p1\"><span class=\"s1\">The column order will change as follows:</span></p><table class=\"wrapped\"><colgroup><col /><col /><col /></colgroup><tbody><tr><th>Command</th><th>From</th><th>To</th></tr><tr><td>--describe --members</td><td><p class=\"p1\"><span class=\"s1\">GROUP</span><span class=\"s2\"> → </span><span class=\"s1\">MEMBER</span><span class=\"s2\"> → </span><span class=\"s1\">PROCESS</span><span class=\"s2\"> → </span><span class=\"s1\">CLIENT-ID</span><span class=\"s2\"> → </span><span class=\"s1\">ASSIGNMENTS</span></p></td><td><p class=\"p1\"><span class=\"s1\">GROUP</span><span class=\"s2\"> → </span><span class=\"s1\">MEMBER</span><span class=\"s2\"> → </span><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\"><strong><span class=\"s1\">INSTANCE-ID</span></strong></span><span class=\"s2\"> → </span><span class=\"s1\">PROCESS</span><span class=\"s2\"> → </span><span class=\"s1\">CLIENT-ID</span><span class=\"s1\"> → </span><span class=\"s3\">ASSIGNMENTS</span></p></td></tr><tr><td>--describe --members --verbose</td><td><p class=\"p1\"><span class=\"s1\">GROUP</span><span class=\"s2\"> → </span><span class=\"s1\">TARGET-ASSIGNMENT-EPOCH</span><span class=\"s2\"> → </span><span class=\"s1\">TOPOLOGY-EPOCH</span><span class=\"s2\"> → </span></p><p class=\"p1\"><span class=\"s1\">MEMBER</span><span class=\"s2\"> → </span><span class=\"s1\">MEMBER-PROTOCOL</span><span class=\"s2\"> → </span><span class=\"s1\">MEMBER-EPOCH</span><span class=\"s2\"> → </span><span class=\"s1\">PROCESS</span><span class=\"s2\"> →</span></p><p class=\"p1\"><span class=\"s1\">CLIENT-ID</span><span class=\"s2\"> → </span><span class=\"s1\">ASSIGNMENTS</span></p></td><td><p class=\"p1\"><span class=\"s1\">GROUP</span><span class=\"s2\"> → </span><span class=\"s1\">TARGET-ASSIGNMENT-EPOCH</span><span class=\"s2\"> → </span><span class=\"s1\">TOPOLOGY-EPOCH</span><span class=\"s2\"> → </span></p><p class=\"p1\"><span class=\"s1\">MEMBER</span><span class=\"s2\"> → </span><span class=\"s1\">INSTANCE-ID</span><span class=\"s2\"> → </span><span class=\"s1\">MEMBER-PROTOCOL</span><span class=\"s2\"> → </span><span class=\"s1\">MEMBER-</span><span class=\"s1\">EPOCH</span><span class=\"s2\"> </span></p><p class=\"p1\"><span class=\"s2\">→ </span><span class=\"s1\">PROCESS</span><span class=\"s2\"> → </span><span class=\"s1\">CLIENT-ID</span><span class=\"s2\"> → </span><span style=\"color:var(--ds-background-accent-red-subtle,#f87168);\"><strong><span class=\"s1\">RACK-ID</span></strong></span><span class=\"s2\"> → </span><span class=\"s1\">ASSIGNMENTS</span></p></td></tr></tbody></table><p class=\"p1\"><span class=\"s1\">The instance ID will be displayed whenever </span><code><span class=\"s2\">--members</span></code><span class=\"s1\"> is specified. The rack ID will only be displayed when </span><code><span class=\"s2\">--members</span></code><span class=\"s1\"> and </span><code><span class=\"s2\">--verbose</span></code><span class=\"s1\"> are specified together.</span></p><p class=\"p1\"><span class=\"s1\">Instance IDs and rack IDs will be rendered as follows:</span></p><table class=\"wrapped\"><colgroup><col /><col /></colgroup><tbody><tr><th scope=\"col\">Source Value</th><th scope=\"col\">Console output</th></tr><tr><td>null or Optional.empty()</td><td>-</td></tr><tr><td>Empty String (&quot;&quot;)</td><td>-</td></tr><tr><td>Non-empty string</td><td>The value as reported</td></tr></tbody></table><p class=\"p1\"><span class=\"s1\"> Although a </span><span class=\"s2\">null</span><span class=\"s1\"> protocol value is converted to </span><span class=\"s2\">Optional.empty()</span><span class=\"s1\"> by the Admin client, an empty string may be represented as a</span><span class=\"s1\"> present optional value. The command will treat both cases as an unavailable value to avoid producing an empty table column.</span></p><p class=\"p1\"><span class=\"s1\"> All other columns and their ordering will remain unchanged. The implementation will use the existing</span><span class=\"s3\"> </span><code><span class=\"s1\">StreamsGroupMemberDescription#instanceId()</span></code><span class=\"s3\"> and </span><code><span class=\"s1\">StreamsGroupMemberDescription#rackId()</span></code><span class=\"s3\"> methods. No Admin API or protocol changes are</span><span class=\"s1\"> required.</span></p><p><br /></p><h1>Compatibility, Deprecation, and Migration Plan</h1><p class=\"p1\"><span class=\"s1\">This change does not affect the Admin API, network protocol, broker or client configurations, or persisted data formats. No broker</span><span class=\"s1\"> or Kafka Streams client migration is required.</span></p><p class=\"p1\"><span class=\"s1\">The only user-visible impact is the addition of columns to the human-readable member output:</span></p><ul style=\"list-style-type: square;\"><li class=\"p3\"><code><span class=\"s1\">--describe --members</span></code><span class=\"s2\"> adds </span><code><span class=\"s1\">INSTANCE-ID</span></code><span class=\"s2\">.</span></li><li class=\"p3\" data-uuid=\"bd5d116e-58dd-43f8-8e07-31bcbcab2348\"><code><span class=\"s1\">--describe --members --verbose</span></code><span class=\"s2\"> adds </span><code><span class=\"s1\">INSTANCE-ID</span></code><span class=\"s2\"> and </span><code><span class=\"s1\">RACK-ID</span></code><span class=\"s2\">.</span></li></ul><p class=\"p1\"><span class=\"s1\">Users or scripts that rely on fixed column positions may need to update their parsing logic after upgrading the command-line tool.</span></p><p class=\"p1\"><span class=\"s1\">No deprecation period or special migration tool is required. The new output format will take effect when the updated </span><code><span class=\"s3\">kafka-streams-</span><span class=\"s3\">groups.sh</span></code><span class=\"s1\"> is used; older versions of the tool will continue to produce the previous format. </span></p><p class=\"p1\"><span class=\"s1\">The previous output layout will not be</span><span class=\"s1\"> retained as a separate mode.</span></p><p><br /></p><h1>Test Plan</h1><p class=\"p1\"><span class=\"s1\">The existing kafka-streams-groups.sh tests will be extended to verify that:</span></p><ul style=\"list-style-type: square;\"><li class=\"p3\"><code><span class=\"s1\">--describe --members</span></code><span class=\"s3\"> includes </span><code><span class=\"s1\">INSTANCE-ID</span></code><span class=\"s3\"> but not </span><code><span class=\"s1\">RACK-ID</span></code><span class=\"s3\">.</span></li><li class=\"p3\" data-uuid=\"c53f403f-e346-46a6-b29b-6b493346d3b2\"><code><span class=\"s1\">--describe --members --verbose</span></code><span class=\"s3\"> includes both </span><code><span class=\"s1\">INSTANCE-ID</span></code><span class=\"s3\"> and </span><code><span class=\"s1\">RACK-ID</span></code><span class=\"s3\">.</span></li><li class=\"p3\" data-uuid=\"e5ea927d-ebb4-4d94-a6d4-31e833715387\"><p class=\"p1\"><span class=\"s1\">Non-empty instance IDs and rack IDs match the corresponding Streams group member metadata.</span></p></li><li class=\"p3\" data-uuid=\"2f5dfa9e-6834-4088-8ab6-9ad5602c58c8\"><p class=\"p1\"><span class=\"s1\">Both </span><span class=\"s2\">null</span><span class=\"s1\"> values, represented as </span><code><span class=\"s2\">Optional.empty()</span></code><span class=\"s1\">, and empty strings (</span><code><span class=\"s2\">&quot;&quot;</span></code><span class=\"s1\">) are rendered as </span><code><span class=\"s2\">-</span></code><span class=\"s1\">. (If it is possible for empty strings)</span></p></li><li class=\"p3\" data-uuid=\"24094272-0312-4c70-b9ef-bf6f74dcefde\"><span class=\"s1\">Existing columns, assignments, and other describe modes remain unchanged.</span></li></ul><p class=\"p1\"><span class=\"s1\">The existing Streams group command test suite will continue to validate that listing, state, offsets, topology, and other member</span><span class=\"s1\"> output behavior is not affected.</span></p><p class=\"p1\"><span class=\"s1\">Integration tests will verify the command output with actual group metadata, while command-level unit tests will cover absent and</span><span class=\"s1\"> empty-string values.</span></p><p class=\"p2\"><br /></p><h1>Rejected Alternatives</h1><h3 class=\"p1\"><span class=\"s1\">Include both IDs only in verbose output</span></h3><p class=\"p1\"><span class=\"s1\">This was rejected because the instance ID represents the stable identity of a static member and should be available in the regular</span><span class=\"s1\"> member view.</span></p><h3 class=\"p1\"><span class=\"s1\">Include the rack ID in non-verbose output</span></h3><p class=\"p1\"><span class=\"s1\">This was rejected because rack information is optional and primarily useful for detailed assignment diagnostics. Including it by</span><span class=\"s1\"> default would unnecessarily widen the regular member output.</span></p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/446071011?status=historical&version=7"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1361
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=446071025",
+    "edit": "/pages/resumedraft.action?draftId=446071025&draftShareId=819a5f92-8df5-447c-9029-4802543aa2e5",
+    "tinyui": "/x/8YCWGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/446071011?status=historical&version=7"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/446071011/child?parentVersion=7",
+    "restrictions": "/rest/api/content/446071011/restriction/byOperation",
+    "history": "/rest/api/content/446071011/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/446071011/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/446071011/restriction/relevantViewRestrictions"
+   }
+  }
+ ],
+ "comments": {
+  "results": [],
+  "start": 0,
+  "limit": 200,
+  "size": 0,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/api/content/446071011/child/comment?expand=body.storage%2Cversion%2Cancestors&depth=all",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ }
+}

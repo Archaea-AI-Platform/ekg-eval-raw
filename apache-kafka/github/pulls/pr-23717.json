@@ -1,0 +1,2462 @@
+{
+ "pull": {
+  "url": "https://api.github.com/repos/apache/kafka/pulls/23717",
+  "id": 4749926405,
+  "node_id": "PR_kwDOACG9q88AAAABGx4gBQ",
+  "html_url": "https://github.com/apache/kafka/pull/23717",
+  "diff_url": "https://github.com/apache/kafka/pull/23717.diff",
+  "patch_url": "https://github.com/apache/kafka/pull/23717.patch",
+  "issue_url": "https://api.github.com/repos/apache/kafka/issues/23717",
+  "commits_url": "https://api.github.com/repos/apache/kafka/pulls/23717/commits",
+  "review_comments_url": "https://api.github.com/repos/apache/kafka/pulls/23717/comments",
+  "review_comment_url": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}",
+  "comments_url": "https://api.github.com/repos/apache/kafka/issues/23717/comments",
+  "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/c935332de32c03db61cb8446064be9c9972cbb42",
+  "number": 23717,
+  "state": "closed",
+  "locked": false,
+  "title": "MINOR: Add tests that tagged fields are written in ascending tag order",
+  "user": {
+   "login": "gabriellefu",
+   "id": 100360154,
+   "node_id": "U_kgDOBftf2g",
+   "avatar_url": "https://avatars.githubusercontent.com/u/100360154?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/gabriellefu",
+   "html_url": "https://github.com/gabriellefu",
+   "followers_url": "https://api.github.com/users/gabriellefu/followers",
+   "following_url": "https://api.github.com/users/gabriellefu/following{/other_user}",
+   "gists_url": "https://api.github.com/users/gabriellefu/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/gabriellefu/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/gabriellefu/subscriptions",
+   "organizations_url": "https://api.github.com/users/gabriellefu/orgs",
+   "repos_url": "https://api.github.com/users/gabriellefu/repos",
+   "events_url": "https://api.github.com/users/gabriellefu/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/gabriellefu/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "body": "Add tests that tagged fields are written in ascending tag order\n\nReviewers: Shay Elkin (github:shayelkin), TengYao Chi\n <frankvicky@apache.org>\n",
+  "labels": [
+   {
+    "id": 1257747426,
+    "node_id": "MDU6TGFiZWwxMjU3NzQ3NDI2",
+    "url": "https://api.github.com/repos/apache/kafka/labels/tests",
+    "name": "tests",
+    "description": "Test fixes (including flaky tests)",
+    "color": "cfff60",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 7491388177,
+    "node_id": "LA_kwDOACG9q88AAAABvoWDEQ",
+    "url": "https://api.github.com/repos/apache/kafka/labels/clients",
+    "name": "clients",
+    "description": null,
+    "color": "ededed",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 7522931565,
+    "node_id": "LA_kwDOACG9q88AAAABwGbTbQ",
+    "url": "https://api.github.com/repos/apache/kafka/labels/ci-approved",
+    "name": "ci-approved",
+    "description": "",
+    "color": "ffffff",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 7559660738,
+    "node_id": "LA_kwDOACG9q88AAAABwpdEwg",
+    "url": "https://api.github.com/repos/apache/kafka/labels/small",
+    "name": "small",
+    "description": "Small PRs",
+    "color": "FEF2C0",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   }
+  ],
+  "milestone": null,
+  "active_lock_reason": null,
+  "created_at": "2026-10-05T19:35:52Z",
+  "updated_at": "2026-10-26T16:14:46Z",
+  "closed_at": "2026-10-26T16:14:45Z",
+  "merged_at": "2026-10-26T16:14:45Z",
+  "merge_commit_sha": "11da0602756c157d75887b529935c92ff7ee14e5",
+  "assignee": null,
+  "assignees": [],
+  "requested_reviewers": [],
+  "requested_teams": [],
+  "head": {
+   "label": "gabriellefu:ca_tag",
+   "ref": "ca_tag",
+   "repo": {
+    "id": 1171031153,
+    "node_id": "R_kgDORcyEcQ",
+    "name": "kafka",
+    "full_name": "gabriellefu/kafka",
+    "owner": {
+     "login": "gabriellefu",
+     "id": 100360154,
+     "node_id": "U_kgDOBftf2g",
+     "avatar_url": "https://avatars.githubusercontent.com/u/100360154?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/gabriellefu",
+     "html_url": "https://github.com/gabriellefu",
+     "followers_url": "https://api.github.com/users/gabriellefu/followers",
+     "following_url": "https://api.github.com/users/gabriellefu/following{/other_user}",
+     "gists_url": "https://api.github.com/users/gabriellefu/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/gabriellefu/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/gabriellefu/subscriptions",
+     "organizations_url": "https://api.github.com/users/gabriellefu/orgs",
+     "repos_url": "https://api.github.com/users/gabriellefu/repos",
+     "events_url": "https://api.github.com/users/gabriellefu/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/gabriellefu/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": true,
+    "archived": false,
+    "disabled": false,
+    "description": "Mirror of Apache Kafka",
+    "homepage": null,
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [],
+    "forks_count": 0,
+    "forks": 0,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "watchers": 0,
+    "open_issues_count": 0,
+    "open_issues": 0,
+    "size": 272740,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-28T19:07:10Z",
+    "created_at": "2026-03-02T19:53:15Z",
+    "updated_at": "2026-06-18T20:08:35Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/gabriellefu/kafka",
+    "html_url": "https://github.com/gabriellefu/kafka",
+    "archive_url": "https://api.github.com/repos/gabriellefu/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/gabriellefu/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/gabriellefu/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/gabriellefu/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/gabriellefu/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/gabriellefu/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/gabriellefu/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/gabriellefu/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/gabriellefu/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/gabriellefu/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/gabriellefu/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/gabriellefu/kafka/downloads",
+    "events_url": "https://api.github.com/repos/gabriellefu/kafka/events",
+    "forks_url": "https://api.github.com/repos/gabriellefu/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/gabriellefu/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/gabriellefu/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/gabriellefu/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/gabriellefu/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/gabriellefu/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/gabriellefu/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/gabriellefu/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/gabriellefu/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/gabriellefu/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/gabriellefu/kafka/languages",
+    "merges_url": "https://api.github.com/repos/gabriellefu/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/gabriellefu/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/gabriellefu/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/gabriellefu/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/gabriellefu/kafka/releases{/id}",
+    "ssh_url": "git@github.com:gabriellefu/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/gabriellefu/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/gabriellefu/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/gabriellefu/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/gabriellefu/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/gabriellefu/kafka/tags",
+    "teams_url": "https://api.github.com/repos/gabriellefu/kafka/teams",
+    "trees_url": "https://api.github.com/repos/gabriellefu/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/gabriellefu/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/gabriellefu/kafka/hooks",
+    "svn_url": "https://github.com/gabriellefu/kafka"
+   },
+   "sha": "c935332de32c03db61cb8446064be9c9972cbb42",
+   "user": {
+    "login": "gabriellefu",
+    "id": 100360154,
+    "node_id": "U_kgDOBftf2g",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100360154?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gabriellefu",
+    "html_url": "https://github.com/gabriellefu",
+    "followers_url": "https://api.github.com/users/gabriellefu/followers",
+    "following_url": "https://api.github.com/users/gabriellefu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gabriellefu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gabriellefu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gabriellefu/subscriptions",
+    "organizations_url": "https://api.github.com/users/gabriellefu/orgs",
+    "repos_url": "https://api.github.com/users/gabriellefu/repos",
+    "events_url": "https://api.github.com/users/gabriellefu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gabriellefu/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "base": {
+   "label": "apache:trunk",
+   "ref": "trunk",
+   "repo": {
+    "id": 2211243,
+    "node_id": "MDEwOlJlcG9zaXRvcnkyMjExMjQz",
+    "name": "kafka",
+    "full_name": "apache/kafka",
+    "owner": {
+     "login": "apache",
+     "id": 47359,
+     "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+     "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/apache",
+     "html_url": "https://github.com/apache",
+     "followers_url": "https://api.github.com/users/apache/followers",
+     "following_url": "https://api.github.com/users/apache/following{/other_user}",
+     "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+     "organizations_url": "https://api.github.com/users/apache/orgs",
+     "repos_url": "https://api.github.com/users/apache/repos",
+     "events_url": "https://api.github.com/users/apache/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/apache/received_events",
+     "type": "Organization",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": false,
+    "archived": false,
+    "disabled": false,
+    "description": "Apache Kafka - A distributed event streaming platform",
+    "homepage": "https://kafka.apache.org/",
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [
+     "java",
+     "kafka",
+     "scala",
+     "streaming"
+    ],
+    "forks_count": 15637,
+    "forks": 15637,
+    "stargazers_count": 34153,
+    "watchers_count": 34153,
+    "watchers": 34153,
+    "open_issues_count": 674,
+    "open_issues": 674,
+    "size": 322164,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-29T11:37:21Z",
+    "created_at": "2011-08-15T18:06:16Z",
+    "updated_at": "2026-10-29T11:37:29Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/apache/kafka",
+    "html_url": "https://github.com/apache/kafka",
+    "archive_url": "https://api.github.com/repos/apache/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/apache/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/apache/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/apache/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/apache/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/apache/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/apache/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/apache/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/apache/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/apache/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/apache/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/apache/kafka/downloads",
+    "events_url": "https://api.github.com/repos/apache/kafka/events",
+    "forks_url": "https://api.github.com/repos/apache/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/apache/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/apache/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/apache/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/apache/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/apache/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/apache/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/apache/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/apache/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/apache/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/apache/kafka/languages",
+    "merges_url": "https://api.github.com/repos/apache/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/apache/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/apache/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/apache/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/apache/kafka/releases{/id}",
+    "ssh_url": "git@github.com:apache/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/apache/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/apache/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/apache/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/apache/kafka/tags",
+    "teams_url": "https://api.github.com/repos/apache/kafka/teams",
+    "trees_url": "https://api.github.com/repos/apache/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/apache/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/apache/kafka/hooks",
+    "svn_url": "https://github.com/apache/kafka"
+   },
+   "sha": "7f231b8f37fb10af48ef6acddc6deb68ec3910f4",
+   "user": {
+    "login": "apache",
+    "id": 47359,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/apache",
+    "html_url": "https://github.com/apache",
+    "followers_url": "https://api.github.com/users/apache/followers",
+    "following_url": "https://api.github.com/users/apache/following{/other_user}",
+    "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+    "organizations_url": "https://api.github.com/users/apache/orgs",
+    "repos_url": "https://api.github.com/users/apache/repos",
+    "events_url": "https://api.github.com/users/apache/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/apache/received_events",
+    "type": "Organization",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "_links": {
+   "comments": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23717/comments"
+   },
+   "commits": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23717/commits"
+   },
+   "statuses": {
+    "href": "https://api.github.com/repos/apache/kafka/statuses/c935332de32c03db61cb8446064be9c9972cbb42"
+   },
+   "html": {
+    "href": "https://github.com/apache/kafka/pull/23717"
+   },
+   "issue": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23717"
+   },
+   "review_comments": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23717/comments"
+   },
+   "review_comment": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}"
+   },
+   "self": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23717"
+   }
+  },
+  "author_association": "COLLABORATOR",
+  "auto_merge": null,
+  "draft": false,
+  "merged": true,
+  "mergeable": null,
+  "rebaseable": null,
+  "mergeable_state": "unknown",
+  "merged_by": {
+   "login": "frankvicky",
+   "id": 51072200,
+   "node_id": "MDQ6VXNlcjUxMDcyMjAw",
+   "avatar_url": "https://avatars.githubusercontent.com/u/51072200?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/frankvicky",
+   "html_url": "https://github.com/frankvicky",
+   "followers_url": "https://api.github.com/users/frankvicky/followers",
+   "following_url": "https://api.github.com/users/frankvicky/following{/other_user}",
+   "gists_url": "https://api.github.com/users/frankvicky/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/frankvicky/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/frankvicky/subscriptions",
+   "organizations_url": "https://api.github.com/users/frankvicky/orgs",
+   "repos_url": "https://api.github.com/users/frankvicky/repos",
+   "events_url": "https://api.github.com/users/frankvicky/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/frankvicky/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "comments": 0,
+  "review_comments": 7,
+  "maintainer_can_modify": false,
+  "commits": 6,
+  "additions": 52,
+  "deletions": 0,
+  "changed_files": 1
+ },
+ "reviews": [
+  {
+   "id": 5419954867,
+   "node_id": "PRR_kwDOACG9q88AAAABQw3ysw",
+   "user": {
+    "login": "shayelkin",
+    "id": 2046772,
+    "node_id": "MDQ6VXNlcjIwNDY3NzI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2046772?u=f80b8a48c9f435781cc5faff9e37e36f10d4414e&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/shayelkin",
+    "html_url": "https://github.com/shayelkin",
+    "followers_url": "https://api.github.com/users/shayelkin/followers",
+    "following_url": "https://api.github.com/users/shayelkin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/shayelkin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/shayelkin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/shayelkin/subscriptions",
+    "organizations_url": "https://api.github.com/users/shayelkin/orgs",
+    "repos_url": "https://api.github.com/users/shayelkin/repos",
+    "events_url": "https://api.github.com/users/shayelkin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/shayelkin/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "I don't think this tests what we expect: it verifies that the tags are written in the order they are added, which is not the same as ascending tag order.\n\nThe right properties to validate are:\n1. The tags are indeed in the expected order, which can be checked multiple ways. For example, that or every two consecutive tags `t1, t2` in the message, `t1 < t2`, or that sorting the tags keeps their order the same, and there are no duplicates.\n2. And that all tags in expectedTags were written to the message.",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23717#pullrequestreview-5419954867",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23717",
+   "author_association": "CONTRIBUTOR",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23717#pullrequestreview-5419954867"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23717"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-05T20:12:40Z",
+   "commit_id": "93b7b5ba5f47ec3f5e486fc7ee29bfe4d5ba83e8"
+  },
+  {
+   "id": 5525723851,
+   "node_id": "PRR_kwDOACG9q88AAAABSVvayw",
+   "user": {
+    "login": "shayelkin",
+    "id": 2046772,
+    "node_id": "MDQ6VXNlcjIwNDY3NzI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2046772?u=f80b8a48c9f435781cc5faff9e37e36f10d4414e&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/shayelkin",
+    "html_url": "https://github.com/shayelkin",
+    "followers_url": "https://api.github.com/users/shayelkin/followers",
+    "following_url": "https://api.github.com/users/shayelkin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/shayelkin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/shayelkin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/shayelkin/subscriptions",
+    "organizations_url": "https://api.github.com/users/shayelkin/orgs",
+    "repos_url": "https://api.github.com/users/shayelkin/repos",
+    "events_url": "https://api.github.com/users/shayelkin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/shayelkin/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "LGTM, but you need a proper review from a comitter to merge this.",
+   "state": "APPROVED",
+   "html_url": "https://github.com/apache/kafka/pull/23717#pullrequestreview-5525723851",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23717",
+   "author_association": "CONTRIBUTOR",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23717#pullrequestreview-5525723851"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23717"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-14T22:44:22Z",
+   "commit_id": "9a217196162b5f6ed69626d6e17ef71d87303fd1"
+  },
+  {
+   "id": 5618234111,
+   "node_id": "PRR_kwDOACG9q88AAAABTt9y_w",
+   "user": {
+    "login": "frankvicky",
+    "id": 51072200,
+    "node_id": "MDQ6VXNlcjUxMDcyMjAw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/51072200?u=363986cc3cf5c89c76057d7549d45d6fe90ccd7d&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/frankvicky",
+    "html_url": "https://github.com/frankvicky",
+    "followers_url": "https://api.github.com/users/frankvicky/followers",
+    "following_url": "https://api.github.com/users/frankvicky/following{/other_user}",
+    "gists_url": "https://api.github.com/users/frankvicky/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/frankvicky/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/frankvicky/subscriptions",
+    "organizations_url": "https://api.github.com/users/frankvicky/orgs",
+    "repos_url": "https://api.github.com/users/frankvicky/repos",
+    "events_url": "https://api.github.com/users/frankvicky/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/frankvicky/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23717#pullrequestreview-5618234111",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23717",
+   "author_association": "CONTRIBUTOR",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23717#pullrequestreview-5618234111"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23717"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-22T17:32:49Z",
+   "commit_id": "9a217196162b5f6ed69626d6e17ef71d87303fd1"
+  },
+  {
+   "id": 5633113359,
+   "node_id": "PRR_kwDOACG9q88AAAABT8J9Dw",
+   "user": {
+    "login": "gabriellefu",
+    "id": 100360154,
+    "node_id": "U_kgDOBftf2g",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100360154?u=a6cec721f67122d8964ecee10943f596a72d4e57&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gabriellefu",
+    "html_url": "https://github.com/gabriellefu",
+    "followers_url": "https://api.github.com/users/gabriellefu/followers",
+    "following_url": "https://api.github.com/users/gabriellefu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gabriellefu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gabriellefu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gabriellefu/subscriptions",
+    "organizations_url": "https://api.github.com/users/gabriellefu/orgs",
+    "repos_url": "https://api.github.com/users/gabriellefu/repos",
+    "events_url": "https://api.github.com/users/gabriellefu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gabriellefu/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23717#pullrequestreview-5633113359",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23717",
+   "author_association": "COLLABORATOR",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23717#pullrequestreview-5633113359"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23717"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-23T18:56:04Z",
+   "commit_id": "9a217196162b5f6ed69626d6e17ef71d87303fd1"
+  },
+  {
+   "id": 5655204981,
+   "node_id": "PRR_kwDOACG9q88AAAABUROUdQ",
+   "user": {
+    "login": "frankvicky",
+    "id": 51072200,
+    "node_id": "MDQ6VXNlcjUxMDcyMjAw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/51072200?u=363986cc3cf5c89c76057d7549d45d6fe90ccd7d&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/frankvicky",
+    "html_url": "https://github.com/frankvicky",
+    "followers_url": "https://api.github.com/users/frankvicky/followers",
+    "following_url": "https://api.github.com/users/frankvicky/following{/other_user}",
+    "gists_url": "https://api.github.com/users/frankvicky/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/frankvicky/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/frankvicky/subscriptions",
+    "organizations_url": "https://api.github.com/users/frankvicky/orgs",
+    "repos_url": "https://api.github.com/users/frankvicky/repos",
+    "events_url": "https://api.github.com/users/frankvicky/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/frankvicky/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "LGTM",
+   "state": "APPROVED",
+   "html_url": "https://github.com/apache/kafka/pull/23717#pullrequestreview-5655204981",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23717",
+   "author_association": "CONTRIBUTOR",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23717#pullrequestreview-5655204981"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23717"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-26T16:11:52Z",
+   "commit_id": "c935332de32c03db61cb8446064be9c9972cbb42"
+  },
+  {
+   "id": 5655218567,
+   "node_id": "PRR_kwDOACG9q88AAAABURPJhw",
+   "user": {
+    "login": "frankvicky",
+    "id": 51072200,
+    "node_id": "MDQ6VXNlcjUxMDcyMjAw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/51072200?u=363986cc3cf5c89c76057d7549d45d6fe90ccd7d&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/frankvicky",
+    "html_url": "https://github.com/frankvicky",
+    "followers_url": "https://api.github.com/users/frankvicky/followers",
+    "following_url": "https://api.github.com/users/frankvicky/following{/other_user}",
+    "gists_url": "https://api.github.com/users/frankvicky/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/frankvicky/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/frankvicky/subscriptions",
+    "organizations_url": "https://api.github.com/users/frankvicky/orgs",
+    "repos_url": "https://api.github.com/users/frankvicky/repos",
+    "events_url": "https://api.github.com/users/frankvicky/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/frankvicky/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "The remaining gap (a schema with non-contiguous tags to exercise the interleaving path in the generated writer) can go in a follow-up along with the RawTaggedFieldWriter test.",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23717#pullrequestreview-5655218567",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23717",
+   "author_association": "CONTRIBUTOR",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23717#pullrequestreview-5655218567"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23717"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-26T16:12:54Z",
+   "commit_id": "c935332de32c03db61cb8446064be9c9972cbb42"
+  }
+ ],
+ "review_comments": [
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4277074349",
+   "pull_request_review_id": 5525723851,
+   "id": 4277074349,
+   "node_id": "PRRC_kwDOACG9q87-7vmt",
+   "diff_hunk": "@@ -858,6 +861,77 @@ public void testUnknownTaggedFields() {\n         verifyWriteSucceeds((short) 6, createTopics);\n     }\n \n+    @Test\n+    public void testTaggedFieldsWrittenInAscendingTagOrder() {\n+        // KIP-482 requires tagged fields in strictly ascending tag order.\n+        // Setters for SimpleExampleMessage's known tagged fields, indexed by tag.\n+        List<Consumer<SimpleExampleMessageData>> knownTagSetters = List.of(\n+            m -> m.setMyTaggedIntArray(List.of(1)),\n+            m -> m.setMyNullableString(\"a\"),\n+            m -> m.setMyInt16((short) 1),\n+            m -> m.setMyFloat64(1.0),\n+            m -> m.setMyString(\"b\"),\n+            m -> m.setMyBytes(new byte[] {0x1}),\n+            m -> m.setTaggedUuid(new Uuid(1L, 2L)),\n+            m -> m.setTaggedLong(1L),\n+            m -> m.setMyTaggedStruct(new SimpleExampleMessageData.TaggedStruct().setStructId(\"c\")),\n+            m -> m.setTaggedLongFlexibleVersionSubset(1L));\n+        for (int run = 0; run < 100; run++) {\n+            long seed = System.nanoTime() + run;\n+            Random random = new Random(seed);\n+            short version = (short) (1 + random.nextInt(2));\n+            // Tags 8 and 9 are only valid from version 2.\n+            int numKnownTags = version == 1 ? 8 : knownTagSetters.size();\n+            SimpleExampleMessageData message = new SimpleExampleMessageData();\n+            List<Integer> expectedTags = new ArrayList<>();\n+            for (int tag = 0; tag < numKnownTags; tag++) {\n+                if (random.nextBoolean()) {\n+                    expectedTags.add(tag);\n+                }\n+            }\n+            // Set the known tagged fields in random order, so the written order cannot come from it.\n+            Collections.shuffle(expectedTags, random);\n+            for (int tag : expectedTags) {\n+                knownTagSetters.get(tag).accept(message);\n+            }\n+            // Unknown tags are the ones the schema does not define, so they are above all known tags.\n+            // They must be added in ascending order, since RawTaggedFieldWriter rejects an unsorted list.",
+   "path": "clients/src/test/java/org/apache/kafka/common/message/MessageTest.java",
+   "commit_id": "9a217196162b5f6ed69626d6e17ef71d87303fd1",
+   "original_commit_id": "9a217196162b5f6ed69626d6e17ef71d87303fd1",
+   "user": {
+    "login": "shayelkin",
+    "id": 2046772,
+    "node_id": "MDQ6VXNlcjIwNDY3NzI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2046772?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/shayelkin",
+    "html_url": "https://github.com/shayelkin",
+    "followers_url": "https://api.github.com/users/shayelkin/followers",
+    "following_url": "https://api.github.com/users/shayelkin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/shayelkin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/shayelkin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/shayelkin/subscriptions",
+    "organizations_url": "https://api.github.com/users/shayelkin/orgs",
+    "repos_url": "https://api.github.com/users/shayelkin/repos",
+    "events_url": "https://api.github.com/users/shayelkin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/shayelkin/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "> since RawTaggedFieldWriter rejects an unsorted list.\n\nIf we don't have an explicit test for that, it'd be useful to add one as a follow up PR.",
+   "created_at": "2026-10-14T22:43:27Z",
+   "updated_at": "2026-10-14T22:44:22Z",
+   "html_url": "https://github.com/apache/kafka/pull/23717#discussion_r4277074349",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23717",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4277074349"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23717#discussion_r4277074349"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23717"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4277074349/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": null,
+   "original_line": 898,
+   "side": "RIGHT",
+   "author_association": "CONTRIBUTOR",
+   "original_position": 48,
+   "position": 1,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4351432736",
+   "pull_request_review_id": 5618234111,
+   "id": 4351432736,
+   "node_id": "PRRC_kwDOACG9q88AAAABA12YIA",
+   "diff_hunk": "@@ -858,6 +861,77 @@ public void testUnknownTaggedFields() {\n         verifyWriteSucceeds((short) 6, createTopics);\n     }\n \n+    @Test\n+    public void testTaggedFieldsWrittenInAscendingTagOrder() {\n+        // KIP-482 requires tagged fields in strictly ascending tag order.",
+   "path": "clients/src/test/java/org/apache/kafka/common/message/MessageTest.java",
+   "commit_id": "9a217196162b5f6ed69626d6e17ef71d87303fd1",
+   "original_commit_id": "9a217196162b5f6ed69626d6e17ef71d87303fd1",
+   "user": {
+    "login": "frankvicky",
+    "id": 51072200,
+    "node_id": "MDQ6VXNlcjUxMDcyMjAw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/51072200?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/frankvicky",
+    "html_url": "https://github.com/frankvicky",
+    "followers_url": "https://api.github.com/users/frankvicky/followers",
+    "following_url": "https://api.github.com/users/frankvicky/following{/other_user}",
+    "gists_url": "https://api.github.com/users/frankvicky/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/frankvicky/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/frankvicky/subscriptions",
+    "organizations_url": "https://api.github.com/users/frankvicky/orgs",
+    "repos_url": "https://api.github.com/users/frankvicky/repos",
+    "events_url": "https://api.github.com/users/frankvicky/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/frankvicky/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "nit: I would drop the KIP reference here; the KIP number belongs in the PR description rather than in source comments.",
+   "created_at": "2026-10-22T17:26:38Z",
+   "updated_at": "2026-10-22T17:32:49Z",
+   "html_url": "https://github.com/apache/kafka/pull/23717#discussion_r4351432736",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23717",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4351432736"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23717#discussion_r4351432736"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23717"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4351432736/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": null,
+   "original_line": 866,
+   "side": "RIGHT",
+   "author_association": "CONTRIBUTOR",
+   "original_position": 16,
+   "position": 1,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4351432759",
+   "pull_request_review_id": 5618234111,
+   "id": 4351432759,
+   "node_id": "PRRC_kwDOACG9q88AAAABA12YNw",
+   "diff_hunk": "@@ -858,6 +861,77 @@ public void testUnknownTaggedFields() {\n         verifyWriteSucceeds((short) 6, createTopics);\n     }\n \n+    @Test\n+    public void testTaggedFieldsWrittenInAscendingTagOrder() {\n+        // KIP-482 requires tagged fields in strictly ascending tag order.\n+        // Setters for SimpleExampleMessage's known tagged fields, indexed by tag.\n+        List<Consumer<SimpleExampleMessageData>> knownTagSetters = List.of(\n+            m -> m.setMyTaggedIntArray(List.of(1)),\n+            m -> m.setMyNullableString(\"a\"),\n+            m -> m.setMyInt16((short) 1),\n+            m -> m.setMyFloat64(1.0),\n+            m -> m.setMyString(\"b\"),\n+            m -> m.setMyBytes(new byte[] {0x1}),\n+            m -> m.setTaggedUuid(new Uuid(1L, 2L)),\n+            m -> m.setTaggedLong(1L),\n+            m -> m.setMyTaggedStruct(new SimpleExampleMessageData.TaggedStruct().setStructId(\"c\")),\n+            m -> m.setTaggedLongFlexibleVersionSubset(1L));\n+        for (int run = 0; run < 100; run++) {\n+            long seed = System.nanoTime() + run;",
+   "path": "clients/src/test/java/org/apache/kafka/common/message/MessageTest.java",
+   "commit_id": "9a217196162b5f6ed69626d6e17ef71d87303fd1",
+   "original_commit_id": "9a217196162b5f6ed69626d6e17ef71d87303fd1",
+   "user": {
+    "login": "frankvicky",
+    "id": 51072200,
+    "node_id": "MDQ6VXNlcjUxMDcyMjAw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/51072200?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/frankvicky",
+    "html_url": "https://github.com/frankvicky",
+    "followers_url": "https://api.github.com/users/frankvicky/followers",
+    "following_url": "https://api.github.com/users/frankvicky/following{/other_user}",
+    "gists_url": "https://api.github.com/users/frankvicky/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/frankvicky/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/frankvicky/subscriptions",
+    "organizations_url": "https://api.github.com/users/frankvicky/orgs",
+    "repos_url": "https://api.github.com/users/frankvicky/repos",
+    "events_url": "https://api.github.com/users/frankvicky/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/frankvicky/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "I don't think the randomization buys us anything here. \nThe write order is fixed at code-generation time, and the setters each touch an independent field, so the order in which they are called cannot affect the output. \nRandomly choosing a subset of tags only toggles independent `if` blocks.\n\nA deterministic `@ParameterizedTest` over versions 1 and 2 that sets every known tagged field (8 for v1, 10 for v2) plus a few unknown tags would verify the same property without the 100-iteration loop and the seed plumbing. ",
+   "created_at": "2026-10-22T17:26:38Z",
+   "updated_at": "2026-10-22T17:32:49Z",
+   "html_url": "https://github.com/apache/kafka/pull/23717#discussion_r4351432759",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23717",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4351432759"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23717#discussion_r4351432759"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23717"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4351432759/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": null,
+   "original_line": 880,
+   "side": "RIGHT",
+   "author_association": "CONTRIBUTOR",
+   "original_position": 30,
+   "position": 1,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4351432774",
+   "pull_request_review_id": 5618234111,
+   "id": 4351432774,
+   "node_id": "PRRC_kwDOACG9q88AAAABA12YRg",
+   "diff_hunk": "@@ -858,6 +861,77 @@ public void testUnknownTaggedFields() {\n         verifyWriteSucceeds((short) 6, createTopics);\n     }\n \n+    @Test\n+    public void testTaggedFieldsWrittenInAscendingTagOrder() {\n+        // KIP-482 requires tagged fields in strictly ascending tag order.\n+        // Setters for SimpleExampleMessage's known tagged fields, indexed by tag.\n+        List<Consumer<SimpleExampleMessageData>> knownTagSetters = List.of(\n+            m -> m.setMyTaggedIntArray(List.of(1)),\n+            m -> m.setMyNullableString(\"a\"),\n+            m -> m.setMyInt16((short) 1),\n+            m -> m.setMyFloat64(1.0),\n+            m -> m.setMyString(\"b\"),\n+            m -> m.setMyBytes(new byte[] {0x1}),\n+            m -> m.setTaggedUuid(new Uuid(1L, 2L)),\n+            m -> m.setTaggedLong(1L),\n+            m -> m.setMyTaggedStruct(new SimpleExampleMessageData.TaggedStruct().setStructId(\"c\")),\n+            m -> m.setTaggedLongFlexibleVersionSubset(1L));\n+        for (int run = 0; run < 100; run++) {\n+            long seed = System.nanoTime() + run;\n+            Random random = new Random(seed);\n+            short version = (short) (1 + random.nextInt(2));\n+            // Tags 8 and 9 are only valid from version 2.\n+            int numKnownTags = version == 1 ? 8 : knownTagSetters.size();\n+            SimpleExampleMessageData message = new SimpleExampleMessageData();\n+            List<Integer> expectedTags = new ArrayList<>();\n+            for (int tag = 0; tag < numKnownTags; tag++) {\n+                if (random.nextBoolean()) {\n+                    expectedTags.add(tag);\n+                }\n+            }\n+            // Set the known tagged fields in random order, so the written order cannot come from it.\n+            Collections.shuffle(expectedTags, random);\n+            for (int tag : expectedTags) {\n+                knownTagSetters.get(tag).accept(message);\n+            }\n+            // Unknown tags are the ones the schema does not define, so they are above all known tags.",
+   "path": "clients/src/test/java/org/apache/kafka/common/message/MessageTest.java",
+   "commit_id": "9a217196162b5f6ed69626d6e17ef71d87303fd1",
+   "original_commit_id": "9a217196162b5f6ed69626d6e17ef71d87303fd1",
+   "user": {
+    "login": "frankvicky",
+    "id": 51072200,
+    "node_id": "MDQ6VXNlcjUxMDcyMjAw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/51072200?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/frankvicky",
+    "html_url": "https://github.com/frankvicky",
+    "followers_url": "https://api.github.com/users/frankvicky/followers",
+    "following_url": "https://api.github.com/users/frankvicky/following{/other_user}",
+    "gists_url": "https://api.github.com/users/frankvicky/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/frankvicky/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/frankvicky/subscriptions",
+    "organizations_url": "https://api.github.com/users/frankvicky/orgs",
+    "repos_url": "https://api.github.com/users/frankvicky/repos",
+    "events_url": "https://api.github.com/users/frankvicky/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/frankvicky/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "This statement isn't true in general. \nUnknown tags can be lower than the highest known tag.\nfor example, in version 1 of this message tags 8 and 9 are unknown, and a schema may have gaps between its tags.\n\nThat matters for coverage. The generator interleaves unknown tags between known ones by emitting `_rawWriter.writeRawTags(_writable, <nextKnownTag>)` wherever there is a gap. `SimpleExampleMessage` has contiguous tags 0-9, so the generated writer only calls `writeRawTags(_writable, Integer.MAX_VALUE)` at the very end, and this test only exercises that trailing path. I checked the production schemas under `clients/src/main/resources/common/message` and none of them has a tag gap either, so the interleaving path has no test anywhere in the repo.\n\nIf the goal is \"tags are written in ascending order\", the two cases worth adding are:\n1. version 1 with `RawTaggedField`s for tags 8 and 9, asserting they are written after tag 7;\n2. a test schema with a gap in its tags (either a new field in `SimpleExampleMessage.json` or a small dedicated schema), with unknown tags placed inside the gap.",
+   "created_at": "2026-10-22T17:26:38Z",
+   "updated_at": "2026-10-22T17:32:49Z",
+   "html_url": "https://github.com/apache/kafka/pull/23717#discussion_r4351432774",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23717",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4351432774"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23717#discussion_r4351432774"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23717"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4351432774/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": null,
+   "original_line": 897,
+   "side": "RIGHT",
+   "author_association": "CONTRIBUTOR",
+   "original_position": 47,
+   "position": 1,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4351432789",
+   "pull_request_review_id": 5618234111,
+   "id": 4351432789,
+   "node_id": "PRRC_kwDOACG9q88AAAABA12YVQ",
+   "diff_hunk": "@@ -858,6 +861,77 @@ public void testUnknownTaggedFields() {\n         verifyWriteSucceeds((short) 6, createTopics);\n     }\n \n+    @Test\n+    public void testTaggedFieldsWrittenInAscendingTagOrder() {\n+        // KIP-482 requires tagged fields in strictly ascending tag order.\n+        // Setters for SimpleExampleMessage's known tagged fields, indexed by tag.\n+        List<Consumer<SimpleExampleMessageData>> knownTagSetters = List.of(\n+            m -> m.setMyTaggedIntArray(List.of(1)),\n+            m -> m.setMyNullableString(\"a\"),\n+            m -> m.setMyInt16((short) 1),\n+            m -> m.setMyFloat64(1.0),\n+            m -> m.setMyString(\"b\"),\n+            m -> m.setMyBytes(new byte[] {0x1}),\n+            m -> m.setTaggedUuid(new Uuid(1L, 2L)),\n+            m -> m.setTaggedLong(1L),\n+            m -> m.setMyTaggedStruct(new SimpleExampleMessageData.TaggedStruct().setStructId(\"c\")),\n+            m -> m.setTaggedLongFlexibleVersionSubset(1L));\n+        for (int run = 0; run < 100; run++) {\n+            long seed = System.nanoTime() + run;\n+            Random random = new Random(seed);\n+            short version = (short) (1 + random.nextInt(2));\n+            // Tags 8 and 9 are only valid from version 2.\n+            int numKnownTags = version == 1 ? 8 : knownTagSetters.size();\n+            SimpleExampleMessageData message = new SimpleExampleMessageData();\n+            List<Integer> expectedTags = new ArrayList<>();\n+            for (int tag = 0; tag < numKnownTags; tag++) {\n+                if (random.nextBoolean()) {\n+                    expectedTags.add(tag);\n+                }\n+            }\n+            // Set the known tagged fields in random order, so the written order cannot come from it.\n+            Collections.shuffle(expectedTags, random);\n+            for (int tag : expectedTags) {\n+                knownTagSetters.get(tag).accept(message);\n+            }\n+            // Unknown tags are the ones the schema does not define, so they are above all known tags.\n+            // They must be added in ascending order, since RawTaggedFieldWriter rejects an unsorted list.\n+            int unknownTag = knownTagSetters.size() - 1;\n+            int numUnknownTags = random.nextInt(5);\n+            for (int i = 0; i < numUnknownTags; i++) {\n+                unknownTag += 1 + random.nextInt(1000);\n+                message.unknownTaggedFields().add(new RawTaggedField(unknownTag, new byte[random.nextInt(3)]));\n+                expectedTags.add(unknownTag);\n+            }\n+            List<Integer> writtenTags = writtenTaggedFieldTags(message, version);\n+            for (int i = 1; i < writtenTags.size(); i++) {\n+                assertTrue(\n+                    writtenTags.get(i - 1) < writtenTags.get(i),\n+                    \"Tags \" + writtenTags + \" are not strictly ascending, seed=\" + seed);\n+            }\n+            assertEquals(Set.copyOf(expectedTags), Set.copyOf(writtenTags), \"Failed with seed=\" + seed);",
+   "path": "clients/src/test/java/org/apache/kafka/common/message/MessageTest.java",
+   "commit_id": "9a217196162b5f6ed69626d6e17ef71d87303fd1",
+   "original_commit_id": "9a217196162b5f6ed69626d6e17ef71d87303fd1",
+   "user": {
+    "login": "frankvicky",
+    "id": 51072200,
+    "node_id": "MDQ6VXNlcjUxMDcyMjAw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/51072200?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/frankvicky",
+    "html_url": "https://github.com/frankvicky",
+    "followers_url": "https://api.github.com/users/frankvicky/followers",
+    "following_url": "https://api.github.com/users/frankvicky/following{/other_user}",
+    "gists_url": "https://api.github.com/users/frankvicky/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/frankvicky/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/frankvicky/subscriptions",
+    "organizations_url": "https://api.github.com/users/frankvicky/orgs",
+    "repos_url": "https://api.github.com/users/frankvicky/repos",
+    "events_url": "https://api.github.com/users/frankvicky/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/frankvicky/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "These two assertions can be collapsed into one that is also stricter:\n\n```java\nassertEquals(expectedTags.stream().sorted().toList(), writtenTags);\n```",
+   "created_at": "2026-10-22T17:26:38Z",
+   "updated_at": "2026-10-22T17:32:49Z",
+   "html_url": "https://github.com/apache/kafka/pull/23717#discussion_r4351432789",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23717",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4351432789"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23717#discussion_r4351432789"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23717"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4351432789/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": null,
+   "original_line": 912,
+   "side": "RIGHT",
+   "author_association": "CONTRIBUTOR",
+   "original_position": 62,
+   "position": 1,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4351450957",
+   "pull_request_review_id": 5618234111,
+   "id": 4351450957,
+   "node_id": "PRRC_kwDOACG9q88AAAABA13fTQ",
+   "diff_hunk": "@@ -858,6 +861,77 @@ public void testUnknownTaggedFields() {\n         verifyWriteSucceeds((short) 6, createTopics);\n     }\n \n+    @Test\n+    public void testTaggedFieldsWrittenInAscendingTagOrder() {\n+        // KIP-482 requires tagged fields in strictly ascending tag order.\n+        // Setters for SimpleExampleMessage's known tagged fields, indexed by tag.\n+        List<Consumer<SimpleExampleMessageData>> knownTagSetters = List.of(\n+            m -> m.setMyTaggedIntArray(List.of(1)),\n+            m -> m.setMyNullableString(\"a\"),\n+            m -> m.setMyInt16((short) 1),\n+            m -> m.setMyFloat64(1.0),\n+            m -> m.setMyString(\"b\"),\n+            m -> m.setMyBytes(new byte[] {0x1}),\n+            m -> m.setTaggedUuid(new Uuid(1L, 2L)),\n+            m -> m.setTaggedLong(1L),\n+            m -> m.setMyTaggedStruct(new SimpleExampleMessageData.TaggedStruct().setStructId(\"c\")),\n+            m -> m.setTaggedLongFlexibleVersionSubset(1L));\n+        for (int run = 0; run < 100; run++) {\n+            long seed = System.nanoTime() + run;",
+   "path": "clients/src/test/java/org/apache/kafka/common/message/MessageTest.java",
+   "commit_id": "9a217196162b5f6ed69626d6e17ef71d87303fd1",
+   "original_commit_id": "9a217196162b5f6ed69626d6e17ef71d87303fd1",
+   "user": {
+    "login": "frankvicky",
+    "id": 51072200,
+    "node_id": "MDQ6VXNlcjUxMDcyMjAw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/51072200?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/frankvicky",
+    "html_url": "https://github.com/frankvicky",
+    "followers_url": "https://api.github.com/users/frankvicky/followers",
+    "following_url": "https://api.github.com/users/frankvicky/following{/other_user}",
+    "gists_url": "https://api.github.com/users/frankvicky/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/frankvicky/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/frankvicky/subscriptions",
+    "organizations_url": "https://api.github.com/users/frankvicky/orgs",
+    "repos_url": "https://api.github.com/users/frankvicky/repos",
+    "events_url": "https://api.github.com/users/frankvicky/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/frankvicky/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "If you do want to keep randomness, `TestUtils.SEEDED_RANDOM` is what the rest of the clients tests use.\n`System.nanoTime()` seeds make a failure non-reproducible unless someone copies the seed out of the log.",
+   "created_at": "2026-10-22T17:28:25Z",
+   "updated_at": "2026-10-22T17:32:49Z",
+   "html_url": "https://github.com/apache/kafka/pull/23717#discussion_r4351450957",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23717",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4351450957"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23717#discussion_r4351450957"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23717"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4351450957/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": null,
+   "original_line": 880,
+   "side": "RIGHT",
+   "in_reply_to_id": 4351432759,
+   "author_association": "CONTRIBUTOR",
+   "original_position": 30,
+   "position": 1,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4363192003",
+   "pull_request_review_id": 5633113359,
+   "id": 4363192003,
+   "node_id": "PRRC_kwDOACG9q88AAAABBBEGww",
+   "diff_hunk": "@@ -858,6 +861,77 @@ public void testUnknownTaggedFields() {\n         verifyWriteSucceeds((short) 6, createTopics);\n     }\n \n+    @Test\n+    public void testTaggedFieldsWrittenInAscendingTagOrder() {\n+        // KIP-482 requires tagged fields in strictly ascending tag order.",
+   "path": "clients/src/test/java/org/apache/kafka/common/message/MessageTest.java",
+   "commit_id": "9a217196162b5f6ed69626d6e17ef71d87303fd1",
+   "original_commit_id": "9a217196162b5f6ed69626d6e17ef71d87303fd1",
+   "user": {
+    "login": "gabriellefu",
+    "id": 100360154,
+    "node_id": "U_kgDOBftf2g",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100360154?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gabriellefu",
+    "html_url": "https://github.com/gabriellefu",
+    "followers_url": "https://api.github.com/users/gabriellefu/followers",
+    "following_url": "https://api.github.com/users/gabriellefu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gabriellefu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gabriellefu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gabriellefu/subscriptions",
+    "organizations_url": "https://api.github.com/users/gabriellefu/orgs",
+    "repos_url": "https://api.github.com/users/gabriellefu/repos",
+    "events_url": "https://api.github.com/users/gabriellefu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gabriellefu/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "done, thanks",
+   "created_at": "2026-10-23T18:56:04Z",
+   "updated_at": "2026-10-23T18:56:04Z",
+   "html_url": "https://github.com/apache/kafka/pull/23717#discussion_r4363192003",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23717",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4363192003"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23717#discussion_r4363192003"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23717"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4363192003/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": null,
+   "original_line": 866,
+   "side": "RIGHT",
+   "in_reply_to_id": 4351432736,
+   "author_association": "COLLABORATOR",
+   "original_position": 16,
+   "position": 1,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  }
+ ],
+ "issue_comments": [],
+ "commits": [
+  {
+   "sha": "e44bb3eb3dabd7271a7fc50a4b21aa9840287231",
+   "node_id": "C_kwDORcyEcdoAKGU0NGJiM2ViM2RhYmQ3MjcxYTdmYzUwYTRiMjFhYTk4NDAyODcyMzE",
+   "commit": {
+    "author": {
+     "name": "Gabriella Fu",
+     "email": "2234862823@qq.com",
+     "date": "2026-10-05T19:33:02Z"
+    },
+    "committer": {
+     "name": "Gabriella Fu",
+     "email": "2234862823@qq.com",
+     "date": "2026-10-05T19:33:02Z"
+    },
+    "message": "Add a test that tagged fields are written in ascending tag order",
+    "tree": {
+     "sha": "0b0c10948ef8e2920daa0651bbe0a0944f0b2e94",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/0b0c10948ef8e2920daa0651bbe0a0944f0b2e94"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/e44bb3eb3dabd7271a7fc50a4b21aa9840287231",
+    "comment_count": 0,
+    "verification": {
+     "verified": true,
+     "reason": "valid",
+     "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgU7d3kaNiqMvzYkeAxlS9TQbEyT\nqmVfIHNNziOHfehDsAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQP/969wiSKF+OLC+ce7vPD5VSeVr8NpcNkCUouwMyL3lhfSYmoiHZYhyAaTvCX0LLe\noXXssZRAfGNbWXlatwLQA=\n-----END SSH SIGNATURE-----",
+     "payload": "tree 0b0c10948ef8e2920daa0651bbe0a0944f0b2e94\nparent c2fbf6f52f78ecc1c11c6511242aade6a2c50b71\nauthor Gabriella Fu <2234862823@qq.com> 1791228782 -0400\ncommitter Gabriella Fu <2234862823@qq.com> 1791228782 -0400\n\nAdd a test that tagged fields are written in ascending tag order\n",
+     "verified_at": "2026-10-05T19:35:11Z"
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/e44bb3eb3dabd7271a7fc50a4b21aa9840287231",
+   "html_url": "https://github.com/apache/kafka/commit/e44bb3eb3dabd7271a7fc50a4b21aa9840287231",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/e44bb3eb3dabd7271a7fc50a4b21aa9840287231/comments",
+   "author": {
+    "login": "gabriellefu",
+    "id": 100360154,
+    "node_id": "U_kgDOBftf2g",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100360154?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gabriellefu",
+    "html_url": "https://github.com/gabriellefu",
+    "followers_url": "https://api.github.com/users/gabriellefu/followers",
+    "following_url": "https://api.github.com/users/gabriellefu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gabriellefu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gabriellefu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gabriellefu/subscriptions",
+    "organizations_url": "https://api.github.com/users/gabriellefu/orgs",
+    "repos_url": "https://api.github.com/users/gabriellefu/repos",
+    "events_url": "https://api.github.com/users/gabriellefu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gabriellefu/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "gabriellefu",
+    "id": 100360154,
+    "node_id": "U_kgDOBftf2g",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100360154?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gabriellefu",
+    "html_url": "https://github.com/gabriellefu",
+    "followers_url": "https://api.github.com/users/gabriellefu/followers",
+    "following_url": "https://api.github.com/users/gabriellefu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gabriellefu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gabriellefu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gabriellefu/subscriptions",
+    "organizations_url": "https://api.github.com/users/gabriellefu/orgs",
+    "repos_url": "https://api.github.com/users/gabriellefu/repos",
+    "events_url": "https://api.github.com/users/gabriellefu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gabriellefu/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "c2fbf6f52f78ecc1c11c6511242aade6a2c50b71",
+     "url": "https://api.github.com/repos/apache/kafka/commits/c2fbf6f52f78ecc1c11c6511242aade6a2c50b71",
+     "html_url": "https://github.com/apache/kafka/commit/c2fbf6f52f78ecc1c11c6511242aade6a2c50b71"
+    }
+   ]
+  },
+  {
+   "sha": "93b7b5ba5f47ec3f5e486fc7ee29bfe4d5ba83e8",
+   "node_id": "C_kwDORcyEcdoAKDkzYjdiNWJhNWY0N2VjM2Y1ZTQ4NmZjN2VlMjliZmU0ZDViYTgzZTg",
+   "commit": {
+    "author": {
+     "name": "Gabriella Fu",
+     "email": "2234862823@qq.com",
+     "date": "2026-10-05T19:47:27Z"
+    },
+    "committer": {
+     "name": "Gabriella Fu",
+     "email": "2234862823@qq.com",
+     "date": "2026-10-05T19:47:27Z"
+    },
+    "message": "change it to junit test",
+    "tree": {
+     "sha": "01f44962cf75355ea2074ccabc7bf48749d484bb",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/01f44962cf75355ea2074ccabc7bf48749d484bb"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/93b7b5ba5f47ec3f5e486fc7ee29bfe4d5ba83e8",
+    "comment_count": 0,
+    "verification": {
+     "verified": true,
+     "reason": "valid",
+     "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgU7d3kaNiqMvzYkeAxlS9TQbEyT\nqmVfIHNNziOHfehDsAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQNFs1Ch7Odf3CIImVmv9ZzQ4Z43eh3fosl71lqHhiSUUYFGP6oFoU4PfiCWQW0sK5v\nCpA9aWLmUP7mwpdwHrnQ4=\n-----END SSH SIGNATURE-----",
+     "payload": "tree 01f44962cf75355ea2074ccabc7bf48749d484bb\nparent e44bb3eb3dabd7271a7fc50a4b21aa9840287231\nauthor Gabriella Fu <2234862823@qq.com> 1791229647 -0400\ncommitter Gabriella Fu <2234862823@qq.com> 1791229647 -0400\n\nchange it to junit test\n",
+     "verified_at": "2026-10-05T19:49:28Z"
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/93b7b5ba5f47ec3f5e486fc7ee29bfe4d5ba83e8",
+   "html_url": "https://github.com/apache/kafka/commit/93b7b5ba5f47ec3f5e486fc7ee29bfe4d5ba83e8",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/93b7b5ba5f47ec3f5e486fc7ee29bfe4d5ba83e8/comments",
+   "author": {
+    "login": "gabriellefu",
+    "id": 100360154,
+    "node_id": "U_kgDOBftf2g",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100360154?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gabriellefu",
+    "html_url": "https://github.com/gabriellefu",
+    "followers_url": "https://api.github.com/users/gabriellefu/followers",
+    "following_url": "https://api.github.com/users/gabriellefu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gabriellefu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gabriellefu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gabriellefu/subscriptions",
+    "organizations_url": "https://api.github.com/users/gabriellefu/orgs",
+    "repos_url": "https://api.github.com/users/gabriellefu/repos",
+    "events_url": "https://api.github.com/users/gabriellefu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gabriellefu/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "gabriellefu",
+    "id": 100360154,
+    "node_id": "U_kgDOBftf2g",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100360154?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gabriellefu",
+    "html_url": "https://github.com/gabriellefu",
+    "followers_url": "https://api.github.com/users/gabriellefu/followers",
+    "following_url": "https://api.github.com/users/gabriellefu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gabriellefu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gabriellefu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gabriellefu/subscriptions",
+    "organizations_url": "https://api.github.com/users/gabriellefu/orgs",
+    "repos_url": "https://api.github.com/users/gabriellefu/repos",
+    "events_url": "https://api.github.com/users/gabriellefu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gabriellefu/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "e44bb3eb3dabd7271a7fc50a4b21aa9840287231",
+     "url": "https://api.github.com/repos/apache/kafka/commits/e44bb3eb3dabd7271a7fc50a4b21aa9840287231",
+     "html_url": "https://github.com/apache/kafka/commit/e44bb3eb3dabd7271a7fc50a4b21aa9840287231"
+    }
+   ]
+  },
+  {
+   "sha": "0205b82ac3dbac28d24374f4408f8ab3101002d2",
+   "node_id": "C_kwDORcyEcdoAKDAyMDViODJhYzNkYmFjMjhkMjQzNzRmNDQwOGY4YWIzMTAxMDAyZDI",
+   "commit": {
+    "author": {
+     "name": "Gabriella Fu",
+     "email": "2234862823@qq.com",
+     "date": "2026-10-14T18:41:35Z"
+    },
+    "committer": {
+     "name": "Gabriella Fu",
+     "email": "2234862823@qq.com",
+     "date": "2026-10-14T18:41:35Z"
+    },
+    "message": "Merge branch 'trunk' into ca_tag",
+    "tree": {
+     "sha": "b049f988727a20304b8ddb054053890c6d24d9bc",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/b049f988727a20304b8ddb054053890c6d24d9bc"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/0205b82ac3dbac28d24374f4408f8ab3101002d2",
+    "comment_count": 0,
+    "verification": {
+     "verified": true,
+     "reason": "valid",
+     "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgU7d3kaNiqMvzYkeAxlS9TQbEyT\nqmVfIHNNziOHfehDsAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQDWpoph5yWtv3uZMNGwodu3h4UfgEry8w9OSLj0oSG5XhBaENoTYizgiRBDITrJlGo\nor/gWYTwDkcf/sGs6EsQU=\n-----END SSH SIGNATURE-----",
+     "payload": "tree b049f988727a20304b8ddb054053890c6d24d9bc\nparent 93b7b5ba5f47ec3f5e486fc7ee29bfe4d5ba83e8\nparent abc2906503edc3509faf63e83ce424bc51c3432b\nauthor Gabriella Fu <2234862823@qq.com> 1792003295 -0400\ncommitter Gabriella Fu <2234862823@qq.com> 1792003295 -0400\n\nMerge branch 'trunk' into ca_tag\n",
+     "verified_at": "2026-10-14T18:52:18Z"
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/0205b82ac3dbac28d24374f4408f8ab3101002d2",
+   "html_url": "https://github.com/apache/kafka/commit/0205b82ac3dbac28d24374f4408f8ab3101002d2",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/0205b82ac3dbac28d24374f4408f8ab3101002d2/comments",
+   "author": {
+    "login": "gabriellefu",
+    "id": 100360154,
+    "node_id": "U_kgDOBftf2g",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100360154?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gabriellefu",
+    "html_url": "https://github.com/gabriellefu",
+    "followers_url": "https://api.github.com/users/gabriellefu/followers",
+    "following_url": "https://api.github.com/users/gabriellefu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gabriellefu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gabriellefu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gabriellefu/subscriptions",
+    "organizations_url": "https://api.github.com/users/gabriellefu/orgs",
+    "repos_url": "https://api.github.com/users/gabriellefu/repos",
+    "events_url": "https://api.github.com/users/gabriellefu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gabriellefu/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "gabriellefu",
+    "id": 100360154,
+    "node_id": "U_kgDOBftf2g",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100360154?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gabriellefu",
+    "html_url": "https://github.com/gabriellefu",
+    "followers_url": "https://api.github.com/users/gabriellefu/followers",
+    "following_url": "https://api.github.com/users/gabriellefu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gabriellefu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gabriellefu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gabriellefu/subscriptions",
+    "organizations_url": "https://api.github.com/users/gabriellefu/orgs",
+    "repos_url": "https://api.github.com/users/gabriellefu/repos",
+    "events_url": "https://api.github.com/users/gabriellefu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gabriellefu/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "93b7b5ba5f47ec3f5e486fc7ee29bfe4d5ba83e8",
+     "url": "https://api.github.com/repos/apache/kafka/commits/93b7b5ba5f47ec3f5e486fc7ee29bfe4d5ba83e8",
+     "html_url": "https://github.com/apache/kafka/commit/93b7b5ba5f47ec3f5e486fc7ee29bfe4d5ba83e8"
+    },
+    {
+     "sha": "abc2906503edc3509faf63e83ce424bc51c3432b",
+     "url": "https://api.github.com/repos/apache/kafka/commits/abc2906503edc3509faf63e83ce424bc51c3432b",
+     "html_url": "https://github.com/apache/kafka/commit/abc2906503edc3509faf63e83ce424bc51c3432b"
+    }
+   ]
+  },
+  {
+   "sha": "9a217196162b5f6ed69626d6e17ef71d87303fd1",
+   "node_id": "C_kwDORcyEcdoAKDlhMjE3MTk2MTYyYjVmNmVkNjk2MjZkNmUxN2VmNzFkODczMDNmZDE",
+   "commit": {
+    "author": {
+     "name": "Gabriella Fu",
+     "email": "2234862823@qq.com",
+     "date": "2026-10-14T18:50:04Z"
+    },
+    "committer": {
+     "name": "Gabriella Fu",
+     "email": "2234862823@qq.com",
+     "date": "2026-10-14T18:50:04Z"
+    },
+    "message": "update base on comment",
+    "tree": {
+     "sha": "75a8223ff77f00e7ecbd75ff5024d02b2b82908e",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/75a8223ff77f00e7ecbd75ff5024d02b2b82908e"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/9a217196162b5f6ed69626d6e17ef71d87303fd1",
+    "comment_count": 0,
+    "verification": {
+     "verified": true,
+     "reason": "valid",
+     "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgU7d3kaNiqMvzYkeAxlS9TQbEyT\nqmVfIHNNziOHfehDsAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQNinG4M4plgslq3T37HR7DSRIf14SIukBKdjsbvba80iSUN8XUJYUKvlBGPz0ik2d7\nFNWBuP3k4Tea7kbyMiDgk=\n-----END SSH SIGNATURE-----",
+     "payload": "tree 75a8223ff77f00e7ecbd75ff5024d02b2b82908e\nparent 0205b82ac3dbac28d24374f4408f8ab3101002d2\nauthor Gabriella Fu <2234862823@qq.com> 1792003804 -0400\ncommitter Gabriella Fu <2234862823@qq.com> 1792003804 -0400\n\nupdate base on comment\n",
+     "verified_at": "2026-10-14T18:52:18Z"
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/9a217196162b5f6ed69626d6e17ef71d87303fd1",
+   "html_url": "https://github.com/apache/kafka/commit/9a217196162b5f6ed69626d6e17ef71d87303fd1",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/9a217196162b5f6ed69626d6e17ef71d87303fd1/comments",
+   "author": {
+    "login": "gabriellefu",
+    "id": 100360154,
+    "node_id": "U_kgDOBftf2g",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100360154?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gabriellefu",
+    "html_url": "https://github.com/gabriellefu",
+    "followers_url": "https://api.github.com/users/gabriellefu/followers",
+    "following_url": "https://api.github.com/users/gabriellefu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gabriellefu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gabriellefu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gabriellefu/subscriptions",
+    "organizations_url": "https://api.github.com/users/gabriellefu/orgs",
+    "repos_url": "https://api.github.com/users/gabriellefu/repos",
+    "events_url": "https://api.github.com/users/gabriellefu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gabriellefu/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "gabriellefu",
+    "id": 100360154,
+    "node_id": "U_kgDOBftf2g",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100360154?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gabriellefu",
+    "html_url": "https://github.com/gabriellefu",
+    "followers_url": "https://api.github.com/users/gabriellefu/followers",
+    "following_url": "https://api.github.com/users/gabriellefu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gabriellefu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gabriellefu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gabriellefu/subscriptions",
+    "organizations_url": "https://api.github.com/users/gabriellefu/orgs",
+    "repos_url": "https://api.github.com/users/gabriellefu/repos",
+    "events_url": "https://api.github.com/users/gabriellefu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gabriellefu/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "0205b82ac3dbac28d24374f4408f8ab3101002d2",
+     "url": "https://api.github.com/repos/apache/kafka/commits/0205b82ac3dbac28d24374f4408f8ab3101002d2",
+     "html_url": "https://github.com/apache/kafka/commit/0205b82ac3dbac28d24374f4408f8ab3101002d2"
+    }
+   ]
+  },
+  {
+   "sha": "546817083679da1a85277c33c4a3a4a30b5e5c4d",
+   "node_id": "C_kwDORcyEcdoAKDU0NjgxNzA4MzY3OWRhMWE4NTI3N2MzM2M0YTNhNGEzMGI1ZTVjNGQ",
+   "commit": {
+    "author": {
+     "name": "Gabriella Fu",
+     "email": "2234862823@qq.com",
+     "date": "2026-10-22T19:19:34Z"
+    },
+    "committer": {
+     "name": "Gabriella Fu",
+     "email": "2234862823@qq.com",
+     "date": "2026-10-22T19:19:34Z"
+    },
+    "message": "Merge branch 'trunk' into ca_tag",
+    "tree": {
+     "sha": "0d89523e627e862bc19904b349cd316438fc6a15",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/0d89523e627e862bc19904b349cd316438fc6a15"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/546817083679da1a85277c33c4a3a4a30b5e5c4d",
+    "comment_count": 0,
+    "verification": {
+     "verified": true,
+     "reason": "valid",
+     "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgU7d3kaNiqMvzYkeAxlS9TQbEyT\nqmVfIHNNziOHfehDsAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQK5WovcLLEt1VcROrl1lF005CZ9Sa733uAEcPZ53G2mT4wYuJorrSSSitKCFJOlAsN\neqLmvyOxE5YFc3M/0z2Ao=\n-----END SSH SIGNATURE-----",
+     "payload": "tree 0d89523e627e862bc19904b349cd316438fc6a15\nparent 9a217196162b5f6ed69626d6e17ef71d87303fd1\nparent 7f231b8f37fb10af48ef6acddc6deb68ec3910f4\nauthor Gabriella Fu <2234862823@qq.com> 1792696774 -0400\ncommitter Gabriella Fu <2234862823@qq.com> 1792696774 -0400\n\nMerge branch 'trunk' into ca_tag\n",
+     "verified_at": "2026-10-23T15:34:58Z"
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/546817083679da1a85277c33c4a3a4a30b5e5c4d",
+   "html_url": "https://github.com/apache/kafka/commit/546817083679da1a85277c33c4a3a4a30b5e5c4d",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/546817083679da1a85277c33c4a3a4a30b5e5c4d/comments",
+   "author": {
+    "login": "gabriellefu",
+    "id": 100360154,
+    "node_id": "U_kgDOBftf2g",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100360154?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gabriellefu",
+    "html_url": "https://github.com/gabriellefu",
+    "followers_url": "https://api.github.com/users/gabriellefu/followers",
+    "following_url": "https://api.github.com/users/gabriellefu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gabriellefu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gabriellefu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gabriellefu/subscriptions",
+    "organizations_url": "https://api.github.com/users/gabriellefu/orgs",
+    "repos_url": "https://api.github.com/users/gabriellefu/repos",
+    "events_url": "https://api.github.com/users/gabriellefu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gabriellefu/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "gabriellefu",
+    "id": 100360154,
+    "node_id": "U_kgDOBftf2g",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100360154?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gabriellefu",
+    "html_url": "https://github.com/gabriellefu",
+    "followers_url": "https://api.github.com/users/gabriellefu/followers",
+    "following_url": "https://api.github.com/users/gabriellefu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gabriellefu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gabriellefu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gabriellefu/subscriptions",
+    "organizations_url": "https://api.github.com/users/gabriellefu/orgs",
+    "repos_url": "https://api.github.com/users/gabriellefu/repos",
+    "events_url": "https://api.github.com/users/gabriellefu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gabriellefu/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "9a217196162b5f6ed69626d6e17ef71d87303fd1",
+     "url": "https://api.github.com/repos/apache/kafka/commits/9a217196162b5f6ed69626d6e17ef71d87303fd1",
+     "html_url": "https://github.com/apache/kafka/commit/9a217196162b5f6ed69626d6e17ef71d87303fd1"
+    },
+    {
+     "sha": "7f231b8f37fb10af48ef6acddc6deb68ec3910f4",
+     "url": "https://api.github.com/repos/apache/kafka/commits/7f231b8f37fb10af48ef6acddc6deb68ec3910f4",
+     "html_url": "https://github.com/apache/kafka/commit/7f231b8f37fb10af48ef6acddc6deb68ec3910f4"
+    }
+   ]
+  },
+  {
+   "sha": "c935332de32c03db61cb8446064be9c9972cbb42",
+   "node_id": "C_kwDORcyEcdoAKGM5MzUzMzJkZTMyYzAzZGI2MWNiODQ0NjA2NGJlOWM5OTcyY2JiNDI",
+   "commit": {
+    "author": {
+     "name": "Gabriella Fu",
+     "email": "2234862823@qq.com",
+     "date": "2026-10-23T15:32:47Z"
+    },
+    "committer": {
+     "name": "Gabriella Fu",
+     "email": "2234862823@qq.com",
+     "date": "2026-10-23T15:32:47Z"
+    },
+    "message": "update base on comments",
+    "tree": {
+     "sha": "6c706dbb26ee6277f776fdb1e1891172032283dd",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/6c706dbb26ee6277f776fdb1e1891172032283dd"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/c935332de32c03db61cb8446064be9c9972cbb42",
+    "comment_count": 0,
+    "verification": {
+     "verified": true,
+     "reason": "valid",
+     "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgU7d3kaNiqMvzYkeAxlS9TQbEyT\nqmVfIHNNziOHfehDsAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQHAvktDjVs1+vDpUXXV9K56mYgJusSiguDO0mXBzpLegRyyeAZQIqOD7tyZQFOQNvk\nzaZIMYff0wIgN4KWOsYwI=\n-----END SSH SIGNATURE-----",
+     "payload": "tree 6c706dbb26ee6277f776fdb1e1891172032283dd\nparent 546817083679da1a85277c33c4a3a4a30b5e5c4d\nauthor Gabriella Fu <2234862823@qq.com> 1792769567 -0400\ncommitter Gabriella Fu <2234862823@qq.com> 1792769567 -0400\n\nupdate base on comments\n",
+     "verified_at": "2026-10-23T15:34:58Z"
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/c935332de32c03db61cb8446064be9c9972cbb42",
+   "html_url": "https://github.com/apache/kafka/commit/c935332de32c03db61cb8446064be9c9972cbb42",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/c935332de32c03db61cb8446064be9c9972cbb42/comments",
+   "author": {
+    "login": "gabriellefu",
+    "id": 100360154,
+    "node_id": "U_kgDOBftf2g",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100360154?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gabriellefu",
+    "html_url": "https://github.com/gabriellefu",
+    "followers_url": "https://api.github.com/users/gabriellefu/followers",
+    "following_url": "https://api.github.com/users/gabriellefu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gabriellefu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gabriellefu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gabriellefu/subscriptions",
+    "organizations_url": "https://api.github.com/users/gabriellefu/orgs",
+    "repos_url": "https://api.github.com/users/gabriellefu/repos",
+    "events_url": "https://api.github.com/users/gabriellefu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gabriellefu/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "gabriellefu",
+    "id": 100360154,
+    "node_id": "U_kgDOBftf2g",
+    "avatar_url": "https://avatars.githubusercontent.com/u/100360154?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gabriellefu",
+    "html_url": "https://github.com/gabriellefu",
+    "followers_url": "https://api.github.com/users/gabriellefu/followers",
+    "following_url": "https://api.github.com/users/gabriellefu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gabriellefu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gabriellefu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gabriellefu/subscriptions",
+    "organizations_url": "https://api.github.com/users/gabriellefu/orgs",
+    "repos_url": "https://api.github.com/users/gabriellefu/repos",
+    "events_url": "https://api.github.com/users/gabriellefu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gabriellefu/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "546817083679da1a85277c33c4a3a4a30b5e5c4d",
+     "url": "https://api.github.com/repos/apache/kafka/commits/546817083679da1a85277c33c4a3a4a30b5e5c4d",
+     "html_url": "https://github.com/apache/kafka/commit/546817083679da1a85277c33c4a3a4a30b5e5c4d"
+    }
+   ]
+  }
+ ],
+ "files": [
+  {
+   "sha": "2616577cd8a275b1e5126a32098eabee49887037",
+   "filename": "clients/src/test/java/org/apache/kafka/common/message/MessageTest.java",
+   "status": "modified",
+   "additions": 52,
+   "deletions": 0,
+   "changes": 52,
+   "blob_url": "https://github.com/apache/kafka/blob/c935332de32c03db61cb8446064be9c9972cbb42/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Fmessage%2FMessageTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/c935332de32c03db61cb8446064be9c9972cbb42/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Fmessage%2FMessageTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Fmessage%2FMessageTest.java?ref=c935332de32c03db61cb8446064be9c9972cbb42",
+   "patch": "@@ -64,6 +64,7 @@\n import org.junit.jupiter.api.Test;\n import org.junit.jupiter.api.Timeout;\n import org.junit.jupiter.params.ParameterizedTest;\n+import org.junit.jupiter.params.provider.ValueSource;\n \n import java.lang.reflect.Method;\n import java.nio.ByteBuffer;\n@@ -858,6 +859,57 @@ public void testUnknownTaggedFields() {\n         verifyWriteSucceeds((short) 6, createTopics);\n     }\n \n+    @ParameterizedTest\n+    @ValueSource(shorts = {1, 2})\n+    public void testTaggedFieldsWrittenInAscendingTagOrder(short version) {\n+        SimpleExampleMessageData message = new SimpleExampleMessageData()\n+            .setMyTaggedIntArray(List.of(1))\n+            .setMyNullableString(\"a\")\n+            .setMyInt16((short) 1)\n+            .setMyFloat64(1.0)\n+            .setMyString(\"b\")\n+            .setMyBytes(new byte[] {0x1})\n+            .setTaggedUuid(new Uuid(1L, 2L))\n+            .setTaggedLong(1L);\n+        List<Integer> expectedTags;\n+        if (version == 1) {\n+            // Tags 8 and 9 are only defined from version 2, so here they are unknown tags.\n+            addUnknownTaggedFields(message, 8, 9);\n+            expectedTags = List.of(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);\n+        } else {\n+            message.setMyTaggedStruct(new SimpleExampleMessageData.TaggedStruct().setStructId(\"c\"))\n+                .setTaggedLongFlexibleVersionSubset(1L);\n+            addUnknownTaggedFields(message, 10, 11);\n+            expectedTags = List.of(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11);\n+        }\n+        assertEquals(expectedTags, writtenTaggedFieldTags(message, version));\n+    }\n+\n+    private void addUnknownTaggedFields(SimpleExampleMessageData message, int... tags) {\n+        for (int tag : tags) {\n+            message.unknownTaggedFields().add(new RawTaggedField(tag, new byte[] {0x1}));\n+        }\n+    }\n+\n+    private List<Integer> writtenTaggedFieldTags(SimpleExampleMessageData message, short version) {\n+        ObjectSerializationCache cache = new ObjectSerializationCache();\n+        ByteBuffer buf = ByteBuffer.allocate(message.size(cache, version));\n+        message.write(new ByteBufferAccessor(buf), cache, version);\n+        buf.flip();\n+\n+        // The tagged-fields section comes last; a message with no tagged fields set has the same\n+        // bytes before it, followed by a single zero byte for its empty section.\n+        buf.position(new SimpleExampleMessageData().size(new ObjectSerializationCache(), version) - 1);\n+        ByteBufferAccessor accessor = new ByteBufferAccessor(buf);\n+        int numTaggedFields = accessor.readUnsignedVarint();\n+        List<Integer> tags = new ArrayList<>(numTaggedFields);\n+        for (int i = 0; i < numTaggedFields; i++) {\n+            tags.add(accessor.readUnsignedVarint());\n+            accessor.readArray(accessor.readUnsignedVarint());\n+        }\n+        return tags;\n+    }\n+\n     private byte[] rawTaggedFieldsSection(int declaredCount, int... tagsAndSizes) {\n         ByteBuffer scratch = ByteBuffer.allocate(64);\n         ByteUtils.writeUnsignedVarint(declaredCount, scratch);"
+  }
+ ],
+ "timeline": [
+  {
+   "sha": "e44bb3eb3dabd7271a7fc50a4b21aa9840287231",
+   "node_id": "C_kwDOACG9q9oAKGU0NGJiM2ViM2RhYmQ3MjcxYTdmYzUwYTRiMjFhYTk4NDAyODcyMzE",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/e44bb3eb3dabd7271a7fc50a4b21aa9840287231",
+   "html_url": "https://github.com/apache/kafka/commit/e44bb3eb3dabd7271a7fc50a4b21aa9840287231",
+   "author": {
+    "name": "Gabriella Fu",
+    "email": "2234862823@qq.com",
+    "date": "2026-10-05T19:33:02Z"
+   },
+   "committer": {
+    "name": "Gabriella Fu",
+    "email": "2234862823@qq.com",
+    "date": "2026-10-05T19:33:02Z"
+   },
+   "tree": {
+    "sha": "0b0c10948ef8e2920daa0651bbe0a0944f0b2e94",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/0b0c10948ef8e2920daa0651bbe0a0944f0b2e94"
+   },
+   "message": "Add a test that tagged fields are written in ascending tag order",
+   "parents": [
+    {
+     "sha": "c2fbf6f52f78ecc1c11c6511242aade6a2c50b71",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/c2fbf6f52f78ecc1c11c6511242aade6a2c50b71",
+     "html_url": "https://github.com/apache/kafka/commit/c2fbf6f52f78ecc1c11c6511242aade6a2c50b71"
+    }
+   ],
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgU7d3kaNiqMvzYkeAxlS9TQbEyT\nqmVfIHNNziOHfehDsAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQP/969wiSKF+OLC+ce7vPD5VSeVr8NpcNkCUouwMyL3lhfSYmoiHZYhyAaTvCX0LLe\noXXssZRAfGNbWXlatwLQA=\n-----END SSH SIGNATURE-----",
+    "payload": "tree 0b0c10948ef8e2920daa0651bbe0a0944f0b2e94\nparent c2fbf6f52f78ecc1c11c6511242aade6a2c50b71\nauthor Gabriella Fu <2234862823@qq.com> 1791228782 -0400\ncommitter Gabriella Fu <2234862823@qq.com> 1791228782 -0400\n\nAdd a test that tagged fields are written in ascending tag order\n",
+    "verified_at": "2026-10-05T19:35:11Z"
+   },
+   "event": "committed"
+  },
+  {
+   "id": 32540097862,
+   "node_id": "LE_lADOACG9q88AAAABVNBqFs8AAAAHk4p9Rg",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/32540097862",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-05T19:41:55Z",
+   "label": {
+    "name": "triage",
+    "color": "006b75"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 32540105522,
+   "node_id": "LE_lADOACG9q88AAAABVNBqFs8AAAAHk4qbMg",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/32540105522",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-05T19:42:04Z",
+   "label": {
+    "name": "tests",
+    "color": "cfff60"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 32540105582,
+   "node_id": "LE_lADOACG9q88AAAABVNBqFs8AAAAHk4qbbg",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/32540105582",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-05T19:42:04Z",
+   "label": {
+    "name": "clients",
+    "color": "ededed"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 32540109355,
+   "node_id": "LE_lADOACG9q88AAAABVNBqFs8AAAAHk4qqKw",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/32540109355",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-05T19:42:08Z",
+   "label": {
+    "name": "small",
+    "color": "FEF2C0"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "sha": "93b7b5ba5f47ec3f5e486fc7ee29bfe4d5ba83e8",
+   "node_id": "C_kwDOACG9q9oAKDkzYjdiNWJhNWY0N2VjM2Y1ZTQ4NmZjN2VlMjliZmU0ZDViYTgzZTg",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/93b7b5ba5f47ec3f5e486fc7ee29bfe4d5ba83e8",
+   "html_url": "https://github.com/apache/kafka/commit/93b7b5ba5f47ec3f5e486fc7ee29bfe4d5ba83e8",
+   "author": {
+    "name": "Gabriella Fu",
+    "email": "2234862823@qq.com",
+    "date": "2026-10-05T19:47:27Z"
+   },
+   "committer": {
+    "name": "Gabriella Fu",
+    "email": "2234862823@qq.com",
+    "date": "2026-10-05T19:47:27Z"
+   },
+   "tree": {
+    "sha": "01f44962cf75355ea2074ccabc7bf48749d484bb",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/01f44962cf75355ea2074ccabc7bf48749d484bb"
+   },
+   "message": "change it to junit test",
+   "parents": [
+    {
+     "sha": "e44bb3eb3dabd7271a7fc50a4b21aa9840287231",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/e44bb3eb3dabd7271a7fc50a4b21aa9840287231",
+     "html_url": "https://github.com/apache/kafka/commit/e44bb3eb3dabd7271a7fc50a4b21aa9840287231"
+    }
+   ],
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgU7d3kaNiqMvzYkeAxlS9TQbEyT\nqmVfIHNNziOHfehDsAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQNFs1Ch7Odf3CIImVmv9ZzQ4Z43eh3fosl71lqHhiSUUYFGP6oFoU4PfiCWQW0sK5v\nCpA9aWLmUP7mwpdwHrnQ4=\n-----END SSH SIGNATURE-----",
+    "payload": "tree 01f44962cf75355ea2074ccabc7bf48749d484bb\nparent e44bb3eb3dabd7271a7fc50a4b21aa9840287231\nauthor Gabriella Fu <2234862823@qq.com> 1791229647 -0400\ncommitter Gabriella Fu <2234862823@qq.com> 1791229647 -0400\n\nchange it to junit test\n",
+    "verified_at": "2026-10-05T19:49:28Z"
+   },
+   "event": "committed"
+  },
+  {
+   "id": 5419954867,
+   "node_id": "PRR_kwDOACG9q88AAAABQw3ysw",
+   "user": {
+    "login": "shayelkin",
+    "id": 2046772,
+    "node_id": "MDQ6VXNlcjIwNDY3NzI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2046772?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/shayelkin",
+    "html_url": "https://github.com/shayelkin",
+    "followers_url": "https://api.github.com/users/shayelkin/followers",
+    "following_url": "https://api.github.com/users/shayelkin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/shayelkin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/shayelkin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/shayelkin/subscriptions",
+    "organizations_url": "https://api.github.com/users/shayelkin/orgs",
+    "repos_url": "https://api.github.com/users/shayelkin/repos",
+    "events_url": "https://api.github.com/users/shayelkin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/shayelkin/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "I don't think this tests what we expect: it verifies that the tags are written in the order they are added, which is not the same as ascending tag order.\n\nThe right properties to validate are:\n1. The tags are indeed in the expected order, which can be checked multiple ways. For example, that or every two consecutive tags `t1, t2` in the message, `t1 < t2`, or that sorting the tags keeps their order the same, and there are no duplicates.\n2. And that all tags in expectedTags were written to the message.",
+   "commit_id": "93b7b5ba5f47ec3f5e486fc7ee29bfe4d5ba83e8",
+   "state": "commented",
+   "html_url": "https://github.com/apache/kafka/pull/23717#pullrequestreview-5419954867",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23717",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23717#pullrequestreview-5419954867"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23717"
+    }
+   },
+   "submitted_at": "2026-10-05T20:12:40Z",
+   "updated_at": "2026-10-05T20:12:40Z",
+   "author_association": "CONTRIBUTOR",
+   "event": "reviewed"
+  },
+  {
+   "id": 32564637471,
+   "node_id": "UNLE_lADOACG9q88AAAABVNBqFs8AAAAHlQDvHw",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/32564637471",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "unlabeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-06T03:22:15Z",
+   "label": {
+    "name": "triage",
+    "color": "006b75"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 32583913114,
+   "node_id": "LE_lADOACG9q88AAAABVNBqFs8AAAAHlicOmg",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/32583913114",
+   "actor": {
+    "login": "frankvicky",
+    "id": 51072200,
+    "node_id": "MDQ6VXNlcjUxMDcyMjAw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/51072200?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/frankvicky",
+    "html_url": "https://github.com/frankvicky",
+    "followers_url": "https://api.github.com/users/frankvicky/followers",
+    "following_url": "https://api.github.com/users/frankvicky/following{/other_user}",
+    "gists_url": "https://api.github.com/users/frankvicky/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/frankvicky/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/frankvicky/subscriptions",
+    "organizations_url": "https://api.github.com/users/frankvicky/orgs",
+    "repos_url": "https://api.github.com/users/frankvicky/repos",
+    "events_url": "https://api.github.com/users/frankvicky/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/frankvicky/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-06T09:12:06Z",
+   "label": {
+    "name": "ci-approved",
+    "color": "ffffff"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "sha": "0205b82ac3dbac28d24374f4408f8ab3101002d2",
+   "node_id": "C_kwDOACG9q9oAKDAyMDViODJhYzNkYmFjMjhkMjQzNzRmNDQwOGY4YWIzMTAxMDAyZDI",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/0205b82ac3dbac28d24374f4408f8ab3101002d2",
+   "html_url": "https://github.com/apache/kafka/commit/0205b82ac3dbac28d24374f4408f8ab3101002d2",
+   "author": {
+    "name": "Gabriella Fu",
+    "email": "2234862823@qq.com",
+    "date": "2026-10-14T18:41:35Z"
+   },
+   "committer": {
+    "name": "Gabriella Fu",
+    "email": "2234862823@qq.com",
+    "date": "2026-10-14T18:41:35Z"
+   },
+   "tree": {
+    "sha": "b049f988727a20304b8ddb054053890c6d24d9bc",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/b049f988727a20304b8ddb054053890c6d24d9bc"
+   },
+   "message": "Merge branch 'trunk' into ca_tag",
+   "parents": [
+    {
+     "sha": "93b7b5ba5f47ec3f5e486fc7ee29bfe4d5ba83e8",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/93b7b5ba5f47ec3f5e486fc7ee29bfe4d5ba83e8",
+     "html_url": "https://github.com/apache/kafka/commit/93b7b5ba5f47ec3f5e486fc7ee29bfe4d5ba83e8"
+    },
+    {
+     "sha": "abc2906503edc3509faf63e83ce424bc51c3432b",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/abc2906503edc3509faf63e83ce424bc51c3432b",
+     "html_url": "https://github.com/apache/kafka/commit/abc2906503edc3509faf63e83ce424bc51c3432b"
+    }
+   ],
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgU7d3kaNiqMvzYkeAxlS9TQbEyT\nqmVfIHNNziOHfehDsAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQDWpoph5yWtv3uZMNGwodu3h4UfgEry8w9OSLj0oSG5XhBaENoTYizgiRBDITrJlGo\nor/gWYTwDkcf/sGs6EsQU=\n-----END SSH SIGNATURE-----",
+    "payload": "tree b049f988727a20304b8ddb054053890c6d24d9bc\nparent 93b7b5ba5f47ec3f5e486fc7ee29bfe4d5ba83e8\nparent abc2906503edc3509faf63e83ce424bc51c3432b\nauthor Gabriella Fu <2234862823@qq.com> 1792003295 -0400\ncommitter Gabriella Fu <2234862823@qq.com> 1792003295 -0400\n\nMerge branch 'trunk' into ca_tag\n",
+    "verified_at": "2026-10-14T18:52:18Z"
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "9a217196162b5f6ed69626d6e17ef71d87303fd1",
+   "node_id": "C_kwDOACG9q9oAKDlhMjE3MTk2MTYyYjVmNmVkNjk2MjZkNmUxN2VmNzFkODczMDNmZDE",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/9a217196162b5f6ed69626d6e17ef71d87303fd1",
+   "html_url": "https://github.com/apache/kafka/commit/9a217196162b5f6ed69626d6e17ef71d87303fd1",
+   "author": {
+    "name": "Gabriella Fu",
+    "email": "2234862823@qq.com",
+    "date": "2026-10-14T18:50:04Z"
+   },
+   "committer": {
+    "name": "Gabriella Fu",
+    "email": "2234862823@qq.com",
+    "date": "2026-10-14T18:50:04Z"
+   },
+   "tree": {
+    "sha": "75a8223ff77f00e7ecbd75ff5024d02b2b82908e",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/75a8223ff77f00e7ecbd75ff5024d02b2b82908e"
+   },
+   "message": "update base on comment",
+   "parents": [
+    {
+     "sha": "0205b82ac3dbac28d24374f4408f8ab3101002d2",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/0205b82ac3dbac28d24374f4408f8ab3101002d2",
+     "html_url": "https://github.com/apache/kafka/commit/0205b82ac3dbac28d24374f4408f8ab3101002d2"
+    }
+   ],
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgU7d3kaNiqMvzYkeAxlS9TQbEyT\nqmVfIHNNziOHfehDsAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQNinG4M4plgslq3T37HR7DSRIf14SIukBKdjsbvba80iSUN8XUJYUKvlBGPz0ik2d7\nFNWBuP3k4Tea7kbyMiDgk=\n-----END SSH SIGNATURE-----",
+    "payload": "tree 75a8223ff77f00e7ecbd75ff5024d02b2b82908e\nparent 0205b82ac3dbac28d24374f4408f8ab3101002d2\nauthor Gabriella Fu <2234862823@qq.com> 1792003804 -0400\ncommitter Gabriella Fu <2234862823@qq.com> 1792003804 -0400\n\nupdate base on comment\n",
+    "verified_at": "2026-10-14T18:52:18Z"
+   },
+   "event": "committed"
+  },
+  {
+   "id": 5525723851,
+   "node_id": "PRR_kwDOACG9q88AAAABSVvayw",
+   "user": {
+    "login": "shayelkin",
+    "id": 2046772,
+    "node_id": "MDQ6VXNlcjIwNDY3NzI=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2046772?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/shayelkin",
+    "html_url": "https://github.com/shayelkin",
+    "followers_url": "https://api.github.com/users/shayelkin/followers",
+    "following_url": "https://api.github.com/users/shayelkin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/shayelkin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/shayelkin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/shayelkin/subscriptions",
+    "organizations_url": "https://api.github.com/users/shayelkin/orgs",
+    "repos_url": "https://api.github.com/users/shayelkin/repos",
+    "events_url": "https://api.github.com/users/shayelkin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/shayelkin/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "LGTM, but you need a proper review from a comitter to merge this.",
+   "commit_id": "9a217196162b5f6ed69626d6e17ef71d87303fd1",
+   "state": "approved",
+   "html_url": "https://github.com/apache/kafka/pull/23717#pullrequestreview-5525723851",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23717",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23717#pullrequestreview-5525723851"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23717"
+    }
+   },
+   "submitted_at": "2026-10-14T22:44:22Z",
+   "updated_at": "2026-10-14T22:44:53Z",
+   "author_association": "CONTRIBUTOR",
+   "event": "reviewed"
+  },
+  {
+   "id": 33351509518,
+   "node_id": "RTE_lADOACG9q88AAAABVNBqFs8AAAAHw-emDg",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33351509518",
+   "actor": {
+    "login": "frankvicky",
+    "id": 51072200,
+    "node_id": "MDQ6VXNlcjUxMDcyMjAw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/51072200?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/frankvicky",
+    "html_url": "https://github.com/frankvicky",
+    "followers_url": "https://api.github.com/users/frankvicky/followers",
+    "following_url": "https://api.github.com/users/frankvicky/following{/other_user}",
+    "gists_url": "https://api.github.com/users/frankvicky/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/frankvicky/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/frankvicky/subscriptions",
+    "organizations_url": "https://api.github.com/users/frankvicky/orgs",
+    "repos_url": "https://api.github.com/users/frankvicky/repos",
+    "events_url": "https://api.github.com/users/frankvicky/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/frankvicky/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "renamed",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-15T16:00:18Z",
+   "rename": {
+    "from": " MINOR: Add tests that tagged fields are written in ascending tag order",
+    "to": "MINOR: Add tests that tagged fields are written in ascending tag order"
+   },
+   "performed_via_github_app": null
+  },
+  {
+   "id": 5618234111,
+   "node_id": "PRR_kwDOACG9q88AAAABTt9y_w",
+   "user": {
+    "login": "frankvicky",
+    "id": 51072200,
+    "node_id": "MDQ6VXNlcjUxMDcyMjAw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/51072200?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/frankvicky",
+    "html_url": "https://github.com/frankvicky",
+    "followers_url": "https://api.github.com/users/frankvicky/followers",
+    "following_url": "https://api.github.com/users/frankvicky/following{/other_user}",
+    "gists_url": "https://api.github.com/users/frankvicky/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/frankvicky/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/frankvicky/subscriptions",
+    "organizations_url": "https://api.github.com/users/frankvicky/orgs",
+    "repos_url": "https://api.github.com/users/frankvicky/repos",
+    "events_url": "https://api.github.com/users/frankvicky/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/frankvicky/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "commit_id": "9a217196162b5f6ed69626d6e17ef71d87303fd1",
+   "state": "commented",
+   "html_url": "https://github.com/apache/kafka/pull/23717#pullrequestreview-5618234111",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23717",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23717#pullrequestreview-5618234111"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23717"
+    }
+   },
+   "submitted_at": "2026-10-22T17:32:49Z",
+   "updated_at": "2026-10-22T17:32:49Z",
+   "author_association": "CONTRIBUTOR",
+   "event": "reviewed"
+  },
+  {
+   "sha": "546817083679da1a85277c33c4a3a4a30b5e5c4d",
+   "node_id": "C_kwDOACG9q9oAKDU0NjgxNzA4MzY3OWRhMWE4NTI3N2MzM2M0YTNhNGEzMGI1ZTVjNGQ",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/546817083679da1a85277c33c4a3a4a30b5e5c4d",
+   "html_url": "https://github.com/apache/kafka/commit/546817083679da1a85277c33c4a3a4a30b5e5c4d",
+   "author": {
+    "name": "Gabriella Fu",
+    "email": "2234862823@qq.com",
+    "date": "2026-10-22T19:19:34Z"
+   },
+   "committer": {
+    "name": "Gabriella Fu",
+    "email": "2234862823@qq.com",
+    "date": "2026-10-22T19:19:34Z"
+   },
+   "tree": {
+    "sha": "0d89523e627e862bc19904b349cd316438fc6a15",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/0d89523e627e862bc19904b349cd316438fc6a15"
+   },
+   "message": "Merge branch 'trunk' into ca_tag",
+   "parents": [
+    {
+     "sha": "9a217196162b5f6ed69626d6e17ef71d87303fd1",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/9a217196162b5f6ed69626d6e17ef71d87303fd1",
+     "html_url": "https://github.com/apache/kafka/commit/9a217196162b5f6ed69626d6e17ef71d87303fd1"
+    },
+    {
+     "sha": "7f231b8f37fb10af48ef6acddc6deb68ec3910f4",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/7f231b8f37fb10af48ef6acddc6deb68ec3910f4",
+     "html_url": "https://github.com/apache/kafka/commit/7f231b8f37fb10af48ef6acddc6deb68ec3910f4"
+    }
+   ],
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgU7d3kaNiqMvzYkeAxlS9TQbEyT\nqmVfIHNNziOHfehDsAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQK5WovcLLEt1VcROrl1lF005CZ9Sa733uAEcPZ53G2mT4wYuJorrSSSitKCFJOlAsN\neqLmvyOxE5YFc3M/0z2Ao=\n-----END SSH SIGNATURE-----",
+    "payload": "tree 0d89523e627e862bc19904b349cd316438fc6a15\nparent 9a217196162b5f6ed69626d6e17ef71d87303fd1\nparent 7f231b8f37fb10af48ef6acddc6deb68ec3910f4\nauthor Gabriella Fu <2234862823@qq.com> 1792696774 -0400\ncommitter Gabriella Fu <2234862823@qq.com> 1792696774 -0400\n\nMerge branch 'trunk' into ca_tag\n",
+    "verified_at": "2026-10-23T15:34:58Z"
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "c935332de32c03db61cb8446064be9c9972cbb42",
+   "node_id": "C_kwDOACG9q9oAKGM5MzUzMzJkZTMyYzAzZGI2MWNiODQ0NjA2NGJlOWM5OTcyY2JiNDI",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/c935332de32c03db61cb8446064be9c9972cbb42",
+   "html_url": "https://github.com/apache/kafka/commit/c935332de32c03db61cb8446064be9c9972cbb42",
+   "author": {
+    "name": "Gabriella Fu",
+    "email": "2234862823@qq.com",
+    "date": "2026-10-23T15:32:47Z"
+   },
+   "committer": {
+    "name": "Gabriella Fu",
+    "email": "2234862823@qq.com",
+    "date": "2026-10-23T15:32:47Z"
+   },
+   "tree": {
+    "sha": "6c706dbb26ee6277f776fdb1e1891172032283dd",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/6c706dbb26ee6277f776fdb1e1891172032283dd"
+   },
+   "message": "update base on comments",
+   "parents": [
+    {
+     "sha": "546817083679da1a85277c33c4a3a4a30b5e5c4d",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/546817083679da1a85277c33c4a3a4a30b5e5c4d",
+     "html_url": "https://github.com/apache/kafka/commit/546817083679da1a85277c33c4a3a4a30b5e5c4d"
+    }
+   ],
+   "verification": {
+    "verified": true,
+    "reason": "valid",
+    "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgU7d3kaNiqMvzYkeAxlS9TQbEyT\nqmVfIHNNziOHfehDsAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQHAvktDjVs1+vDpUXXV9K56mYgJusSiguDO0mXBzpLegRyyeAZQIqOD7tyZQFOQNvk\nzaZIMYff0wIgN4KWOsYwI=\n-----END SSH SIGNATURE-----",
+    "payload": "tree 6c706dbb26ee6277f776fdb1e1891172032283dd\nparent 546817083679da1a85277c33c4a3a4a30b5e5c4d\nauthor Gabriella Fu <2234862823@qq.com> 1792769567 -0400\ncommitter Gabriella Fu <2234862823@qq.com> 1792769567 -0400\n\nupdate base on comments\n",
+    "verified_at": "2026-10-23T15:34:58Z"
+   },
+   "event": "committed"
+  },
+  {
+   "id": 5655204981,
+   "node_id": "PRR_kwDOACG9q88AAAABUROUdQ",
+   "user": {
+    "login": "frankvicky",
+    "id": 51072200,
+    "node_id": "MDQ6VXNlcjUxMDcyMjAw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/51072200?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/frankvicky",
+    "html_url": "https://github.com/frankvicky",
+    "followers_url": "https://api.github.com/users/frankvicky/followers",
+    "following_url": "https://api.github.com/users/frankvicky/following{/other_user}",
+    "gists_url": "https://api.github.com/users/frankvicky/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/frankvicky/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/frankvicky/subscriptions",
+    "organizations_url": "https://api.github.com/users/frankvicky/orgs",
+    "repos_url": "https://api.github.com/users/frankvicky/repos",
+    "events_url": "https://api.github.com/users/frankvicky/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/frankvicky/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "LGTM",
+   "commit_id": "c935332de32c03db61cb8446064be9c9972cbb42",
+   "state": "approved",
+   "html_url": "https://github.com/apache/kafka/pull/23717#pullrequestreview-5655204981",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23717",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23717#pullrequestreview-5655204981"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23717"
+    }
+   },
+   "submitted_at": "2026-10-26T16:11:52Z",
+   "updated_at": "2026-10-26T16:11:52Z",
+   "author_association": "CONTRIBUTOR",
+   "event": "reviewed"
+  },
+  {
+   "id": 5655218567,
+   "node_id": "PRR_kwDOACG9q88AAAABURPJhw",
+   "user": {
+    "login": "frankvicky",
+    "id": 51072200,
+    "node_id": "MDQ6VXNlcjUxMDcyMjAw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/51072200?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/frankvicky",
+    "html_url": "https://github.com/frankvicky",
+    "followers_url": "https://api.github.com/users/frankvicky/followers",
+    "following_url": "https://api.github.com/users/frankvicky/following{/other_user}",
+    "gists_url": "https://api.github.com/users/frankvicky/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/frankvicky/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/frankvicky/subscriptions",
+    "organizations_url": "https://api.github.com/users/frankvicky/orgs",
+    "repos_url": "https://api.github.com/users/frankvicky/repos",
+    "events_url": "https://api.github.com/users/frankvicky/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/frankvicky/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "The remaining gap (a schema with non-contiguous tags to exercise the interleaving path in the generated writer) can go in a follow-up along with the RawTaggedFieldWriter test.",
+   "commit_id": "c935332de32c03db61cb8446064be9c9972cbb42",
+   "state": "commented",
+   "html_url": "https://github.com/apache/kafka/pull/23717#pullrequestreview-5655218567",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23717",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23717#pullrequestreview-5655218567"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23717"
+    }
+   },
+   "submitted_at": "2026-10-26T16:12:54Z",
+   "updated_at": "2026-10-26T16:12:54Z",
+   "author_association": "CONTRIBUTOR",
+   "event": "reviewed"
+  },
+  {
+   "id": 34279773363,
+   "node_id": "ME_lADOACG9q88AAAABVNBqFs8AAAAH-zvUsw",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34279773363",
+   "actor": {
+    "login": "frankvicky",
+    "id": 51072200,
+    "node_id": "MDQ6VXNlcjUxMDcyMjAw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/51072200?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/frankvicky",
+    "html_url": "https://github.com/frankvicky",
+    "followers_url": "https://api.github.com/users/frankvicky/followers",
+    "following_url": "https://api.github.com/users/frankvicky/following{/other_user}",
+    "gists_url": "https://api.github.com/users/frankvicky/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/frankvicky/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/frankvicky/subscriptions",
+    "organizations_url": "https://api.github.com/users/frankvicky/orgs",
+    "repos_url": "https://api.github.com/users/frankvicky/repos",
+    "events_url": "https://api.github.com/users/frankvicky/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/frankvicky/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "merged",
+   "commit_id": "11da0602756c157d75887b529935c92ff7ee14e5",
+   "commit_url": "https://api.github.com/repos/apache/kafka/commits/11da0602756c157d75887b529935c92ff7ee14e5",
+   "created_at": "2026-10-26T16:14:45Z",
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34279773578,
+   "node_id": "CE_lADOACG9q88AAAABVNBqFs8AAAAH-zvVig",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34279773578",
+   "actor": {
+    "login": "frankvicky",
+    "id": 51072200,
+    "node_id": "MDQ6VXNlcjUxMDcyMjAw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/51072200?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/frankvicky",
+    "html_url": "https://github.com/frankvicky",
+    "followers_url": "https://api.github.com/users/frankvicky/followers",
+    "following_url": "https://api.github.com/users/frankvicky/following{/other_user}",
+    "gists_url": "https://api.github.com/users/frankvicky/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/frankvicky/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/frankvicky/subscriptions",
+    "organizations_url": "https://api.github.com/users/frankvicky/orgs",
+    "repos_url": "https://api.github.com/users/frankvicky/repos",
+    "events_url": "https://api.github.com/users/frankvicky/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/frankvicky/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "closed",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-26T16:14:46Z",
+   "state_reason": null,
+   "intent": null,
+   "performed_via_github_app": null
+  }
+ ]
+}

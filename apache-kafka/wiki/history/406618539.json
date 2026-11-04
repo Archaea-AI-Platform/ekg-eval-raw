@@ -1,0 +1,541 @@
+{
+ "id": "406618539",
+ "versions": {
+  "results": [
+   {
+    "by": {
+     "type": "known",
+     "username": "nandini12396",
+     "userKey": "073590d29a7abced019b027b44c60022",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Nandini Singhal",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019b027b44c60022"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-07T12:08:59.000Z",
+    "message": "",
+    "number": 9,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618539/version/9"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618539"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "nandini12396",
+     "userKey": "073590d29a7abced019b027b44c60022",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Nandini Singhal",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019b027b44c60022"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-05T11:27:40.000Z",
+    "message": "",
+    "number": 8,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618539/version/8"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618539?status=historical&version=8"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "nandini12396",
+     "userKey": "073590d29a7abced019b027b44c60022",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Nandini Singhal",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019b027b44c60022"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-04T15:44:48.000Z",
+    "message": "",
+    "number": 7,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618539/version/7"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618539?status=historical&version=7"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "nandini12396",
+     "userKey": "073590d29a7abced019b027b44c60022",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Nandini Singhal",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019b027b44c60022"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-04T15:42:15.000Z",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618539/version/6"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618539?status=historical&version=6"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "nandini12396",
+     "userKey": "073590d29a7abced019b027b44c60022",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Nandini Singhal",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019b027b44c60022"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-04T15:20:16.000Z",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618539/version/5"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618539?status=historical&version=5"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "nandini12396",
+     "userKey": "073590d29a7abced019b027b44c60022",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Nandini Singhal",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019b027b44c60022"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-03T23:54:50.000Z",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618539/version/4"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618539?status=historical&version=4"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "nandini12396",
+     "userKey": "073590d29a7abced019b027b44c60022",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Nandini Singhal",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019b027b44c60022"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-03T21:28:26.000Z",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618539/version/3"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618539?status=historical&version=3"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "nandini12396",
+     "userKey": "073590d29a7abced019b027b44c60022",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Nandini Singhal",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019b027b44c60022"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-03T20:02:33.000Z",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618539/version/2"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618539?status=historical&version=2"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "nandini12396",
+     "userKey": "073590d29a7abced019b027b44c60022",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Nandini Singhal",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019b027b44c60022"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-03T20:01:44.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618539/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618539?status=historical&version=1"
+    }
+   }
+  ],
+  "start": 0,
+  "limit": 200,
+  "size": 9,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618539/version",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ },
+ "version_bodies": [
+  {
+   "id": "406618539",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1264: Configurable TTL for Tiered Storage Index Cache",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "nandini12396",
+     "userKey": "073590d29a7abced019b027b44c60022",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Nandini Singhal",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019b027b44c60022"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-05T11:27:40.000Z",
+    "message": "",
+    "number": 8,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618539/version/8"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618539?status=historical&version=8"
+    }
+   },
+   "position": 1257,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><h1>Status</h1><p><strong>Current state</strong>: <em>&quot;Under discussion&quot;</em></p><p><strong>Discussion thread</strong>: <em><a href=\"https://lists.apache.org/thread/rhvk1pspwjo6vckhm8dmdh6xtrgnyhc3\">here</a><br /></em></p><p><strong>JIRA</strong>: <a class=\"issue-link\" href=\"https://issues.apache.org/jira/browse/KAFKA-19970\">KAFKA-19970</a></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p>Apache Kafka's tiered storage feature introduced in KIP-405 enables offloading log segments to remote storage systems (e.g., S3, HDFS, Azure Blob Storage), significantly reducing local disk requirements for large-scale deployments. To efficiently serve fetch requests from remote storage, Kafka brokers maintain a local cache of remote log segment indexes (offset, time, transaction, and producer snapshot indexes) in the RemoteIndexCache.</p><p>This KIP addresses a critical bug in the remote index cache implementation. The RemoteIndexCache currently holds expired and stale indexes indefinitely, leading to memory waste and suboptimal cache utilization.</p><p>In Kafka's tiered storage architecture, <em>only the leader</em> of a partition deletes remote log segments and clears any associated cached index files. This design creates a fundamental problem:</p><p>1. After Leadership Changes: When a broker loses leadership of a partition, it retains all previously cached index files in memory. The new leader may eventually delete old remote log segments, but the previous leader has no mechanism to learn about these deletions and continues holding stale indexes indefinitely.</p><p>2. With Read-From-Replica Enabled: When consumers read from follower replicas using the read-from-replica feature, follower brokers cache index files for the partitions they serve. These follower brokers never receive deletion notifications when the leader removes old segments, causing stale indexes to accumulate on follower replicas.</p><p>Without time-based eviction, these stale index files remain in the cache until either:<br />    - The broker restarts (clearing all cache)<br />    - The cache size limit is reached and size-based eviction removes them (which may never happen if they are small enough)</p><p>The current size-based eviction (`remote.log.index.file.cache.total.size.bytes`) is insufficient because it only triggers when the cache is full, and doesn't distinguish between active and stale entries. During backfill workloads, this causes &quot;cache thrashing&quot; where small stale indexes remain while large active indexes are repeatedly evicted and re-fetched.</p><h1>Impact</h1><p>The lack of time-based eviction causes operational problems:</p><ol><li>Memory Waste: Stale indexes accumulate indefinitely, consuming heap memory that cannot be reclaimed. In the leadership change and read-from-replica scenarios described above, brokers retain indexes for partitions they no longer serve, leading to:<p>  - Heap utilization<br />  - GC pressure</p></li><li>Reduced Cache Effectiveness: When stale entries occupy cache space, active indexes are evicted prematurely, reducing cache hit rates and increasing remote storage API calls.</li></ol><h1>Proposed Changes</h1><p>To address the unbounded memory growth outlined above, we propose adding time-based eviction (TTL) alongside the existing size-based eviction. This KIP proposes to expose <code>remote.log.index.file.cache.ttl.ms</code>  as a user-configurable broker configuration parameter, enabling operators to tune the index cache time-based eviction behavior to address the stale index bug and optimize cache performance for their deployment requirements. The implementation leverages Caffeine cache's `expireAfterAccess()` mechanism, which evicts cache entries after a specified duration since their last access (read or write). This provides automatic cleanup of stale indexes and complements the existing size-based eviction strategy.</p><p>The implementation combines two independent eviction mechanisms:</p><p>  1. Time-Based Eviction (TTL):<br />    - Tracks last access time for each entry<br />    - Background thread periodically scans for expired entries<br />    - Eviction happens asynchronously without blocking reads<br />    - Access resets the TTL timer (entries are &quot;promoted&quot;)<br />  2. Size-Based Eviction (Existing):<br />    - Enforces <code>remote.log.index.file.cache.total.size.bytes</code>  limit<br />    - Uses LRU (Least Recently Used) policy<br />    - Triggered immediately when cache size exceeds limit<br />    - Takes precedence over TTL (hard limit)</p><p><strong>How It Solves the Stale Index Bug:</strong></p><p>Time-based eviction provides the missing cleanup mechanism:</p><ol><li>After leadership loss: Index files cached by the previous leader are automatically evicted after the TTL expires (default: 15 minutes), freeing memory without requiring coordination with the new leader</li><li>On follower replicas: Index files cached by followers (when read-from-replica is enabled) are automatically cleaned up after inactivity, preventing unbounded accumulation</li><li>No coordination required: Each broker independently manages its cache TTL, eliminating the need for cross-broker deletion notifications</li></ol><p>Combined Eviction Strategy:</p><ol><li>Size-based eviction: Continues to enforce the <code>remote.log.index.file.cache.total.size.bytes</code>  limit</li><li>Time-based eviction: New TTL-based eviction ensures entries are removed after <code>remote.log.index.file.cache.ttl.ms</code>  milliseconds of inactivity</li></ol><p>When an index entry is evicted (either due to size or TTL constraints), it is simply removed from the in-memory cache. Subsequent fetch requests requiring the evicted index will transparently re-fetch it from remote storage.</p><h1>Monitoring</h1><p>The implementation supports optional cache statistics recording via Caffeine's recordStats() method. Statistics recording is <em>disabled by default</em> to avoid bookkeeping performance overhead on cache operations.</p><p>While this KIP does not propose new metrics, operators can monitor the effectiveness of TTL configuration and detect stale index issues through existing broker metrics:</p><ul style=\"list-style-type: square;\"><li>RemoteBytesInPerSec - Higher values may indicate excessive index re-fetching</li><li>Fetch request latency metrics - Increased P99 latency may indicate cache thrashing</li></ul><h1>Public Interfaces</h1><h2>Broker Configuration </h2><p>New Public Configuration Parameter:</p><p><ac:structured-macro ac:name=\"status\" ac:schema-version=\"1\" ac:macro-id=\"d5eef127-b923-43e0-84ed-917ab874a970\"><ac:parameter ac:name=\"title\">Configuration</ac:parameter></ac:structured-macro></p><p>public static final String REMOTE_LOG_INDEX_FILE_CACHE_TTL_MS_PROP = &quot;remote.log.index.file.cache.ttl.ms&quot;;</p><p>public static final String REMOTE_LOG_INDEX_FILE_CACHE_TTL_MS_DOC = &quot;The maximum time in milliseconds an index file entry can remain in the cache after its last access. After this duration, the entry will be evicted even if there is available space. This helps prevent stale index files from remaining in cache indefinitely, particularly when a broker is no longer the leader for a partition or when read-from-replica is enabled. Evicted index files are automatically re-fetched from remote storage when needed. Default is 15 minutes (900000 ms), which provides sufficient time for clients to read a partition/segment while ensuring stale entries don't accumulate. Set to -1 to disable time-based eviction and use only size-based eviction.&quot;;</p><p>public static final long DEFAULT_REMOTE_LOG_INDEX_FILE_CACHE_TTL_MS = 900000L; // 15 minutes</p><p>Leverage Caffeine Cache's expireAfterAccess() API to implement time-based eviction:</p><p>  CacheBuilder.newBuilder()<br />      .maximumSize(maxCacheSize)<br />      .expireAfterAccess(Duration.ofMillis(ttlMs))<br />      .removalListener(this::handleRemoval)<br />      .build();</p><p><br />No API changes. This configuration affects only internal broker behavior and does not modify any client-facing APIs, protocols, or semantics. Evicted indexes (including stale ones) are transparently re-fetched from remote storage if needed again.</p><h1>Compatibility, Deprecation, and Migration Plan</h1><p>This change is fully backward compatible.</p><ul style=\"list-style-type: square;\"><li>No configuration changes are required during upgrade</li><li>No client-side changes required</li><li>No deprecations are introduced by this KIP.</li></ul><h1>Test Plan</h1><p>The implementation includes comprehensive test coverage in RemoteIndexCacheTest.java through unit and integration tests. </p><h2>Unit tests</h2><ol><li>testCacheTtlEviction <ol><li>Validates that cache entries are evicted after the configured TTL expires</li><li>Uses Ticker mock to advance time deterministically</li><li>Verifies that accessing an entry before TTL expiry resets the expiration timer</li></ol></li><li>testCacheEntryExpiry - Ensures cache respects remote.log.index.file.cache.total.size.bytes limit</li><li>Combined Eviction Strategy Test - Validates that size-based and TTL-based eviction work together</li></ol><h2>Integration tests</h2><p>Existing RemoteLogManager integration tests cover scenarios where evicted indexes (including stale ones) are re-fetched</p><h1>Rejected Alternatives</h1><p>New leader notifies old leaders to evict partition indexes<em><span> - rejected because it requires new inter-broker protocol and it doesn't address read-from-replica scenario</span></em></p><p><br /></p><p><br /></p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/406618539?status=historical&version=8"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1257
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=451979324",
+    "edit": "/pages/resumedraft.action?draftId=451979324&draftShareId=fd4de40c-31ce-4b68-8435-d523ffe94133",
+    "tinyui": "/x/PKjwGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/406618539?status=historical&version=8"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/406618539/child?parentVersion=8",
+    "restrictions": "/rest/api/content/406618539/restriction/byOperation",
+    "history": "/rest/api/content/406618539/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/406618539/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/406618539/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "406618539",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1264: Configurable TTL for Tiered Storage Index Cache",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "nandini12396",
+     "userKey": "073590d29a7abced019b027b44c60022",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Nandini Singhal",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019b027b44c60022"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-04T15:44:48.000Z",
+    "message": "",
+    "number": 7,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618539/version/7"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618539?status=historical&version=7"
+    }
+   },
+   "position": 1257,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><h1>Status</h1><p><strong>Current state</strong>: <em>&quot;Under discussion&quot;</em></p><p><strong>Discussion thread</strong>: <em><a href=\"https://lists.apache.org/thread/rhvk1pspwjo6vckhm8dmdh6xtrgnyhc3\">here</a><br /></em></p><p><strong>JIRA</strong>: <a class=\"issue-link\" href=\"https://issues.apache.org/jira/browse/KAFKA-19970\">KAFKA-19970</a></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p>Apache Kafka's tiered storage feature introduced in KIP-405 enables offloading log segments to remote storage systems (e.g., S3, HDFS, Azure Blob Storage), significantly reducing local disk requirements for large-scale deployments. To efficiently serve fetch requests from remote storage, Kafka brokers maintain a local cache of remote log segment indexes (offset, time, transaction, and producer snapshot indexes) in the RemoteIndexCache.</p><p>This KIP addresses a critical bug in the remote index cache implementation. The RemoteIndexCache currently holds expired and stale indexes indefinitely, leading to memory waste and suboptimal cache utilization.</p><p>In Kafka's tiered storage architecture, <em>only the leader</em> of a partition deletes remote log segments and clears any associated cached index files. This design creates a fundamental problem:</p><p>1. After Leadership Changes: When a broker loses leadership of a partition, it retains all previously cached index files in memory. The new leader may eventually delete old remote log segments, but the previous leader has no mechanism to learn about these deletions and continues holding stale indexes indefinitely.</p><p>2. With Read-From-Replica Enabled: When consumers read from follower replicas using the read-from-replica feature, follower brokers cache index files for the partitions they serve. These follower brokers never receive deletion notifications when the leader removes old segments, causing stale indexes to accumulate on follower replicas.</p><p>Without time-based eviction, these stale index files remain in the cache until either:<br />    - The broker restarts (clearing all cache)<br />    - The cache size limit is reached and size-based eviction removes them (which may never happen if they are small enough)</p><p>The current size-based eviction (`remote.log.index.file.cache.total.size.bytes`) is insufficient because it only triggers when the cache is full, and doesn't distinguish between active and stale entries. During backfill workloads, this causes &quot;cache thrashing&quot; where small stale indexes remain while large active indexes are repeatedly evicted and re-fetched.</p><h1>Impact</h1><p>The lack of time-based eviction causes operational problems:</p><ol><li>Memory Waste: Stale indexes accumulate indefinitely, consuming heap memory that cannot be reclaimed. In the leadership change and read-from-replica scenarios described above, brokers retain indexes for partitions they no longer serve, leading to:<p>  - Heap utilization: Grows unbounded over time (observed: 5GB → 12GB over 7 days)<br />  - GC pressure: Increased full GC frequency as heap fills<br />  - OOM risk: Eventually requires manual broker restart to clear cache</p></li><li>Reduced Cache Effectiveness: When stale entries occupy cache space, active indexes are evicted prematurely, reducing cache hit rates and increasing remote storage API calls.</li></ol><h1>Proposed Changes</h1><p>To address the unbounded memory growth outlined above, we propose adding time-based eviction (TTL) alongside the existing size-based eviction. This KIP proposes to expose <code>remote.log.index.file.cache.ttl.ms</code>  as a user-configurable broker configuration parameter, enabling operators to tune the index cache time-based eviction behavior to address the stale index bug and optimize cache performance for their deployment requirements. The implementation leverages Caffeine cache's `expireAfterAccess()` mechanism, which evicts cache entries after a specified duration since their last access (read or write). This provides automatic cleanup of stale indexes and complements the existing size-based eviction strategy.</p><p>The implementation combines two independent eviction mechanisms:</p><p>  1. Time-Based Eviction (TTL):<br />    - Tracks last access time for each entry<br />    - Background thread periodically scans for expired entries<br />    - Eviction happens asynchronously without blocking reads<br />    - Access resets the TTL timer (entries are &quot;promoted&quot;)<br />  2. Size-Based Eviction (Existing):<br />    - Enforces <code>remote.log.index.file.cache.total.size.bytes</code>  limit<br />    - Uses LRU (Least Recently Used) policy<br />    - Triggered immediately when cache size exceeds limit<br />    - Takes precedence over TTL (hard limit)</p><p><strong>How It Solves the Stale Index Bug:</strong></p><p>Time-based eviction provides the missing cleanup mechanism:</p><ol><li>After leadership loss: Index files cached by the previous leader are automatically evicted after the TTL expires (default: 15 minutes), freeing memory without requiring coordination with the new leader</li><li>On follower replicas: Index files cached by followers (when read-from-replica is enabled) are automatically cleaned up after inactivity, preventing unbounded accumulation</li><li>No coordination required: Each broker independently manages its cache TTL, eliminating the need for cross-broker deletion notifications</li></ol><p>Combined Eviction Strategy:</p><ol><li>Size-based eviction: Continues to enforce the <code>remote.log.index.file.cache.total.size.bytes</code>  limit</li><li>Time-based eviction: New TTL-based eviction ensures entries are removed after <code>remote.log.index.file.cache.ttl.ms</code>  milliseconds of inactivity</li></ol><p>When an index entry is evicted (either due to size or TTL constraints), it is simply removed from the in-memory cache. Subsequent fetch requests requiring the evicted index will transparently re-fetch it from remote storage.</p><h1>Monitoring</h1><p>The implementation supports optional cache statistics recording via Caffeine's recordStats() method. Statistics recording is <em>disabled by default</em> to avoid bookkeeping performance overhead on cache operations.</p><p>While this KIP does not propose new metrics, operators can monitor the effectiveness of TTL configuration and detect stale index issues through existing broker metrics:</p><ul style=\"list-style-type: square;\"><li>RemoteBytesInPerSec - Higher values may indicate excessive index re-fetching</li><li>Fetch request latency metrics - Increased P99 latency may indicate cache thrashing</li></ul><h1>Public Interfaces</h1><h2>Broker Configuration </h2><p>New Public Configuration Parameter:</p><p><ac:structured-macro ac:name=\"status\" ac:schema-version=\"1\" ac:macro-id=\"d5eef127-b923-43e0-84ed-917ab874a970\"><ac:parameter ac:name=\"title\">Configuration</ac:parameter></ac:structured-macro></p><p>public static final String REMOTE_LOG_INDEX_FILE_CACHE_TTL_MS_PROP = &quot;remote.log.index.file.cache.ttl.ms&quot;;</p><p>public static final String REMOTE_LOG_INDEX_FILE_CACHE_TTL_MS_DOC = &quot;The maximum time in milliseconds an index file entry can remain in the cache after its last access. After this duration, the entry will be evicted even if there is available space. This helps prevent stale index files from remaining in cache indefinitely, particularly when a broker is no longer the leader for a partition or when read-from-replica is enabled. Evicted index files are automatically re-fetched from remote storage when needed. Default is 15 minutes (900000 ms), which provides sufficient time for clients to read a partition/segment while ensuring stale entries don't accumulate. Set to -1 to disable time-based eviction and use only size-based eviction.&quot;;</p><p>public static final long DEFAULT_REMOTE_LOG_INDEX_FILE_CACHE_TTL_MS = 900000L; // 15 minutes</p><p>Leverage Caffeine Cache's expireAfterAccess() API to implement time-based eviction:</p><p>  CacheBuilder.newBuilder()<br />      .maximumSize(maxCacheSize)<br />      .expireAfterAccess(Duration.ofMillis(ttlMs))<br />      .removalListener(this::handleRemoval)<br />      .build();</p><p><br />No API changes. This configuration affects only internal broker behavior and does not modify any client-facing APIs, protocols, or semantics. Evicted indexes (including stale ones) are transparently re-fetched from remote storage if needed again.</p><h1>Compatibility, Deprecation, and Migration Plan</h1><p>This change is fully backward compatible.</p><ul style=\"list-style-type: square;\"><li>No configuration changes are required during upgrade</li><li>No client-side changes required</li><li>No deprecations are introduced by this KIP.</li></ul><h1>Test Plan</h1><p>The implementation includes comprehensive test coverage in RemoteIndexCacheTest.java through unit and integration tests. </p><h2>Unit tests</h2><ol><li>testCacheTtlEviction <ol><li>Validates that cache entries are evicted after the configured TTL expires</li><li>Uses Ticker mock to advance time deterministically</li><li>Verifies that accessing an entry before TTL expiry resets the expiration timer</li></ol></li><li>testCacheEntryExpiry - Ensures cache respects remote.log.index.file.cache.total.size.bytes limit</li><li>Combined Eviction Strategy Test - Validates that size-based and TTL-based eviction work together</li></ol><h2>Integration tests</h2><p>Existing RemoteLogManager integration tests cover scenarios where evicted indexes (including stale ones) are re-fetched</p><h1>Rejected Alternatives</h1><p>New leader notifies old leaders to evict partition indexes<em><span> - rejected because it requires new inter-broker protocol and it doesn't address read-from-replica scenario</span></em></p><p><br /></p><p><br /></p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/406618539?status=historical&version=7"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1257
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=406618630",
+    "edit": "/pages/resumedraft.action?draftId=406618630&draftShareId=fd4de40c-31ce-4b68-8435-d523ffe94133",
+    "tinyui": "/x/BoI8G",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/406618539?status=historical&version=7"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/406618539/child?parentVersion=7",
+    "restrictions": "/rest/api/content/406618539/restriction/byOperation",
+    "history": "/rest/api/content/406618539/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/406618539/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/406618539/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "406618539",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1264: Configurable TTL for Tiered Storage Index Cache",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "nandini12396",
+     "userKey": "073590d29a7abced019b027b44c60022",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Nandini Singhal",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29a7abced019b027b44c60022"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-01-04T15:42:15.000Z",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406618539/version/6"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406618539?status=historical&version=6"
+    }
+   },
+   "position": 1257,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><h1>Status</h1><p><strong>Current state</strong>: <em>&quot;Draft&quot;</em></p><p><strong>Discussion thread</strong>: <em><a href=\"http://mail-archives.apache.org/mod_mbox/kafka-dev/201501.mbox/%3CCAOeJiJh6Vkkca85bWYgkeOZ8rC6%2BKDh7zzq8vMKECL_7PNExTA%40mail.gmail.com%3E\">here</a> [TBU]<br /></em></p><p><strong>JIRA</strong>: <a class=\"issue-link\" href=\"https://issues.apache.org/jira/browse/KAFKA-19970\">KAFKA-19970</a></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p>Apache Kafka's tiered storage feature introduced in KIP-405 enables offloading log segments to remote storage systems (e.g., S3, HDFS, Azure Blob Storage), significantly reducing local disk requirements for large-scale deployments. To efficiently serve fetch requests from remote storage, Kafka brokers maintain a local cache of remote log segment indexes (offset, time, transaction, and producer snapshot indexes) in the RemoteIndexCache.</p><p>This KIP addresses a critical bug in the remote index cache implementation. The RemoteIndexCache currently holds expired and stale indexes indefinitely, leading to memory waste and suboptimal cache utilization.</p><p>In Kafka's tiered storage architecture, <em>only the leader</em> of a partition deletes remote log segments and clears any associated cached index files. This design creates a fundamental problem:</p><p>1. After Leadership Changes: When a broker loses leadership of a partition, it retains all previously cached index files in memory. The new leader may eventually delete old remote log segments, but the previous leader has no mechanism to learn about these deletions and continues holding stale indexes indefinitely.</p><p>2. With Read-From-Replica Enabled: When consumers read from follower replicas using the read-from-replica feature, follower brokers cache index files for the partitions they serve. These follower brokers never receive deletion notifications when the leader removes old segments, causing stale indexes to accumulate on follower replicas.</p><p>Without time-based eviction, these stale index files remain in the cache until either:<br />    - The broker restarts (clearing all cache)<br />    - The cache size limit is reached and size-based eviction removes them (which may never happen if they are small enough)</p><p>The current size-based eviction (`remote.log.index.file.cache.total.size.bytes`) is insufficient because it only triggers when the cache is full, and doesn't distinguish between active and stale entries. During backfill workloads, this causes &quot;cache thrashing&quot; where small stale indexes remain while large active indexes are repeatedly evicted and re-fetched.</p><h1>Impact</h1><p>The lack of time-based eviction causes operational problems:</p><ol><li>Memory Waste: Stale indexes accumulate indefinitely, consuming heap memory that cannot be reclaimed. In the leadership change and read-from-replica scenarios described above, brokers retain indexes for partitions they no longer serve, leading to:<p>  - Heap utilization: Grows unbounded over time (observed: 5GB → 12GB over 7 days)<br />  - GC pressure: Increased full GC frequency as heap fills<br />  - OOM risk: Eventually requires manual broker restart to clear cache</p></li><li>Reduced Cache Effectiveness: When stale entries occupy cache space, active indexes are evicted prematurely, reducing cache hit rates and increasing remote storage API calls.</li></ol><h1>Proposed Changes</h1><p>To address the unbounded memory growth outlined above, we propose adding time-based eviction (TTL) alongside the existing size-based eviction. This KIP proposes to expose <code>remote.log.index.file.cache.ttl.ms</code>  as a user-configurable broker configuration parameter, enabling operators to tune the index cache time-based eviction behavior to address the stale index bug and optimize cache performance for their deployment requirements. The implementation leverages Caffeine cache's `expireAfterAccess()` mechanism, which evicts cache entries after a specified duration since their last access (read or write). This provides automatic cleanup of stale indexes and complements the existing size-based eviction strategy.</p><p>The implementation combines two independent eviction mechanisms:</p><p>  1. Time-Based Eviction (TTL):<br />    - Tracks last access time for each entry<br />    - Background thread periodically scans for expired entries<br />    - Eviction happens asynchronously without blocking reads<br />    - Access resets the TTL timer (entries are &quot;promoted&quot;)<br />  2. Size-Based Eviction (Existing):<br />    - Enforces <code>remote.log.index.file.cache.total.size.bytes</code>  limit<br />    - Uses LRU (Least Recently Used) policy<br />    - Triggered immediately when cache size exceeds limit<br />    - Takes precedence over TTL (hard limit)</p><p><strong>How It Solves the Stale Index Bug:</strong></p><p>Time-based eviction provides the missing cleanup mechanism:</p><ol><li>After leadership loss: Index files cached by the previous leader are automatically evicted after the TTL expires (default: 15 minutes), freeing memory without requiring coordination with the new leader</li><li>On follower replicas: Index files cached by followers (when read-from-replica is enabled) are automatically cleaned up after inactivity, preventing unbounded accumulation</li><li>No coordination required: Each broker independently manages its cache TTL, eliminating the need for cross-broker deletion notifications</li></ol><p>Combined Eviction Strategy:</p><ol><li>Size-based eviction: Continues to enforce the <code>remote.log.index.file.cache.total.size.bytes</code>  limit</li><li>Time-based eviction: New TTL-based eviction ensures entries are removed after <code>remote.log.index.file.cache.ttl.ms</code>  milliseconds of inactivity</li></ol><p>When an index entry is evicted (either due to size or TTL constraints), it is simply removed from the in-memory cache. Subsequent fetch requests requiring the evicted index will transparently re-fetch it from remote storage.</p><h1>Monitoring</h1><p>The implementation supports optional cache statistics recording via Caffeine's recordStats() method. Statistics recording is <em>disabled by default</em> to avoid bookkeeping performance overhead on cache operations.</p><p>While this KIP does not propose new metrics, operators can monitor the effectiveness of TTL configuration and detect stale index issues through existing broker metrics:</p><ul style=\"list-style-type: square;\"><li>RemoteBytesInPerSec - Higher values may indicate excessive index re-fetching</li><li>Fetch request latency metrics - Increased P99 latency may indicate cache thrashing</li></ul><h1>Public Interfaces</h1><h2>Broker Configuration </h2><p>New Public Configuration Parameter:</p><p><ac:structured-macro ac:name=\"status\" ac:schema-version=\"1\" ac:macro-id=\"d5eef127-b923-43e0-84ed-917ab874a970\"><ac:parameter ac:name=\"title\">Configuration</ac:parameter></ac:structured-macro></p><p>public static final String REMOTE_LOG_INDEX_FILE_CACHE_TTL_MS_PROP = &quot;remote.log.index.file.cache.ttl.ms&quot;;</p><p>public static final String REMOTE_LOG_INDEX_FILE_CACHE_TTL_MS_DOC = &quot;The maximum time in milliseconds an index file entry can remain in the cache after its last access. After this duration, the entry will be evicted even if there is available space. This helps prevent stale index files from remaining in cache indefinitely, particularly when a broker is no longer the leader for a partition or when read-from-replica is enabled. Evicted index files are automatically re-fetched from remote storage when needed. Default is 15 minutes (900000 ms), which provides sufficient time for clients to read a partition/segment while ensuring stale entries don't accumulate. Set to -1 to disable time-based eviction and use only size-based eviction.&quot;;</p><p>public static final long DEFAULT_REMOTE_LOG_INDEX_FILE_CACHE_TTL_MS = 900000L; // 15 minutes</p><p>Leverage Caffeine Cache's expireAfterAccess() API to implement time-based eviction:</p><p>  CacheBuilder.newBuilder()<br />      .maximumSize(maxCacheSize)<br />      .expireAfterAccess(Duration.ofMillis(ttlMs))<br />      .removalListener(this::handleRemoval)<br />      .build();</p><p><br />No API changes. This configuration affects only internal broker behavior and does not modify any client-facing APIs, protocols, or semantics. Evicted indexes (including stale ones) are transparently re-fetched from remote storage if needed again.</p><h1>Compatibility, Deprecation, and Migration Plan</h1><p>This change is fully backward compatible.</p><ul style=\"list-style-type: square;\"><li>No configuration changes are required during upgrade</li><li>No client-side changes required</li><li>No deprecations are introduced by this KIP.</li></ul><h1>Test Plan</h1><p>The implementation includes comprehensive test coverage in RemoteIndexCacheTest.java through unit and integration tests. </p><h2>Unit tests</h2><ol><li>testCacheTtlEviction <ol><li>Validates that cache entries are evicted after the configured TTL expires</li><li>Uses Ticker mock to advance time deterministically</li><li>Verifies that accessing an entry before TTL expiry resets the expiration timer</li></ol></li><li>testCacheEntryExpiry - Ensures cache respects remote.log.index.file.cache.total.size.bytes limit</li><li>Combined Eviction Strategy Test - Validates that size-based and TTL-based eviction work together</li></ol><h2>Integration tests</h2><p>Existing RemoteLogManager integration tests cover scenarios where evicted indexes (including stale ones) are re-fetched</p><h1>Rejected Alternatives</h1><p>New leader notifies old leaders to evict partition indexes<em><span> - rejected because it requires new inter-broker protocol and it doesn't address read-from-replica scenario</span></em></p><p><br /></p><p><br /></p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/406618539?status=historical&version=6"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1257
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=406618594",
+    "edit": "/pages/resumedraft.action?draftId=406618594&draftShareId=fd4de40c-31ce-4b68-8435-d523ffe94133",
+    "tinyui": "/x/4oE8G",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/406618539?status=historical&version=6"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/406618539/child?parentVersion=6",
+    "restrictions": "/rest/api/content/406618539/restriction/byOperation",
+    "history": "/rest/api/content/406618539/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/406618539/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/406618539/restriction/relevantViewRestrictions"
+   }
+  }
+ ],
+ "comments": {
+  "results": [],
+  "start": 0,
+  "limit": 200,
+  "size": 0,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/api/content/406618539/child/comment?expand=body.storage%2Cversion%2Cancestors&depth=all",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ }
+}

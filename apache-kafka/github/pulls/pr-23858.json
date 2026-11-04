@@ -1,0 +1,1757 @@
+{
+ "pull": {
+  "url": "https://api.github.com/repos/apache/kafka/pulls/23858",
+  "id": 4910201863,
+  "node_id": "PR_kwDOACG9q88AAAABJKu8Bw",
+  "html_url": "https://github.com/apache/kafka/pull/23858",
+  "diff_url": "https://github.com/apache/kafka/pull/23858.diff",
+  "patch_url": "https://github.com/apache/kafka/pull/23858.patch",
+  "issue_url": "https://api.github.com/repos/apache/kafka/issues/23858",
+  "commits_url": "https://api.github.com/repos/apache/kafka/pulls/23858/commits",
+  "review_comments_url": "https://api.github.com/repos/apache/kafka/pulls/23858/comments",
+  "review_comment_url": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}",
+  "comments_url": "https://api.github.com/repos/apache/kafka/issues/23858/comments",
+  "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/86e00a4aad56fdfa6cd3f8bb244423a9241f651b",
+  "number": 23858,
+  "state": "open",
+  "locked": false,
+  "title": "KAFKA-21252: Use partition 0's replication factor when adding partitions",
+  "user": {
+   "login": "unknowntpo",
+   "id": 10594519,
+   "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+   "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/unknowntpo",
+   "html_url": "https://github.com/unknowntpo",
+   "followers_url": "https://api.github.com/users/unknowntpo/followers",
+   "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+   "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+   "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+   "repos_url": "https://api.github.com/users/unknowntpo/repos",
+   "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "body": "When adding partitions, the KRaft controller takes the replication\nfactor from the first partition returned by iterating the topic's\npartitions. This order depends on the hash layout, so it is not always\npartition 0. This patch uses partition 0, like the ZooKeeper-based\nbroker did.\n\nThis also applies to manual assignments: their replica count is now\nchecked against partition 0's replication factor.\n\nThe Javadoc of NewPartitions#increaseTo now says that new partitions\nfollow partition 0's replication factor. This matches the old ZooKeeper\nbehavior; there is no API change.\n",
+  "labels": [
+   {
+    "id": 2650268685,
+    "node_id": "MDU6TGFiZWwyNjUwMjY4Njg1",
+    "url": "https://api.github.com/repos/apache/kafka/labels/kraft",
+    "name": "kraft",
+    "description": "",
+    "color": "FBCA04",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 7491388177,
+    "node_id": "LA_kwDOACG9q88AAAABvoWDEQ",
+    "url": "https://api.github.com/repos/apache/kafka/labels/clients",
+    "name": "clients",
+    "description": null,
+    "color": "ededed",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 7559660738,
+    "node_id": "LA_kwDOACG9q88AAAABwpdEwg",
+    "url": "https://api.github.com/repos/apache/kafka/labels/small",
+    "name": "small",
+    "description": "Small PRs",
+    "color": "FEF2C0",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 7865607612,
+    "node_id": "LA_kwDOACG9q88AAAAB1NOlvA",
+    "url": "https://api.github.com/repos/apache/kafka/labels/triage",
+    "name": "triage",
+    "description": "PRs from the community",
+    "color": "006b75",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 7865613726,
+    "node_id": "LA_kwDOACG9q88AAAAB1NO9ng",
+    "url": "https://api.github.com/repos/apache/kafka/labels/needs-attention",
+    "name": "needs-attention",
+    "description": "",
+    "color": "FBCA04",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   }
+  ],
+  "milestone": null,
+  "active_lock_reason": null,
+  "created_at": "2026-10-18T15:06:46Z",
+  "updated_at": "2026-10-29T03:16:00Z",
+  "closed_at": null,
+  "merged_at": null,
+  "merge_commit_sha": "490bed529c2a62a318b45bc12a231ebbee61a748",
+  "assignee": null,
+  "assignees": [],
+  "requested_reviewers": [],
+  "requested_teams": [],
+  "head": {
+   "label": "unknowntpo:kafka-21252-partition0-rf",
+   "ref": "kafka-21252-partition0-rf",
+   "repo": {
+    "id": 809274704,
+    "node_id": "R_kgDOMDyNUA",
+    "name": "kafka",
+    "full_name": "unknowntpo/kafka",
+    "owner": {
+     "login": "unknowntpo",
+     "id": 10594519,
+     "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+     "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/unknowntpo",
+     "html_url": "https://github.com/unknowntpo",
+     "followers_url": "https://api.github.com/users/unknowntpo/followers",
+     "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+     "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+     "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+     "repos_url": "https://api.github.com/users/unknowntpo/repos",
+     "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": true,
+    "archived": false,
+    "disabled": false,
+    "description": "Mirror of Apache Kafka",
+    "homepage": null,
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [],
+    "forks_count": 0,
+    "forks": 0,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "watchers": 0,
+    "open_issues_count": 11,
+    "open_issues": 11,
+    "size": 293291,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-28T23:57:36Z",
+    "created_at": "2024-06-02T08:15:46Z",
+    "updated_at": "2026-10-27T00:03:14Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/unknowntpo/kafka",
+    "html_url": "https://github.com/unknowntpo/kafka",
+    "archive_url": "https://api.github.com/repos/unknowntpo/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/unknowntpo/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/unknowntpo/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/unknowntpo/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/unknowntpo/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/unknowntpo/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/unknowntpo/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/unknowntpo/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/unknowntpo/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/unknowntpo/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/unknowntpo/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/unknowntpo/kafka/downloads",
+    "events_url": "https://api.github.com/repos/unknowntpo/kafka/events",
+    "forks_url": "https://api.github.com/repos/unknowntpo/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/unknowntpo/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/unknowntpo/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/unknowntpo/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/unknowntpo/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/unknowntpo/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/unknowntpo/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/unknowntpo/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/unknowntpo/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/unknowntpo/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/unknowntpo/kafka/languages",
+    "merges_url": "https://api.github.com/repos/unknowntpo/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/unknowntpo/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/unknowntpo/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/unknowntpo/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/unknowntpo/kafka/releases{/id}",
+    "ssh_url": "git@github.com:unknowntpo/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/unknowntpo/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/unknowntpo/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/unknowntpo/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/unknowntpo/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/unknowntpo/kafka/tags",
+    "teams_url": "https://api.github.com/repos/unknowntpo/kafka/teams",
+    "trees_url": "https://api.github.com/repos/unknowntpo/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/unknowntpo/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/unknowntpo/kafka/hooks",
+    "svn_url": "https://github.com/unknowntpo/kafka"
+   },
+   "sha": "86e00a4aad56fdfa6cd3f8bb244423a9241f651b",
+   "user": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "base": {
+   "label": "apache:trunk",
+   "ref": "trunk",
+   "repo": {
+    "id": 2211243,
+    "node_id": "MDEwOlJlcG9zaXRvcnkyMjExMjQz",
+    "name": "kafka",
+    "full_name": "apache/kafka",
+    "owner": {
+     "login": "apache",
+     "id": 47359,
+     "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+     "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/apache",
+     "html_url": "https://github.com/apache",
+     "followers_url": "https://api.github.com/users/apache/followers",
+     "following_url": "https://api.github.com/users/apache/following{/other_user}",
+     "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+     "organizations_url": "https://api.github.com/users/apache/orgs",
+     "repos_url": "https://api.github.com/users/apache/repos",
+     "events_url": "https://api.github.com/users/apache/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/apache/received_events",
+     "type": "Organization",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": false,
+    "archived": false,
+    "disabled": false,
+    "description": "Apache Kafka - A distributed event streaming platform",
+    "homepage": "https://kafka.apache.org/",
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [
+     "java",
+     "kafka",
+     "scala",
+     "streaming"
+    ],
+    "forks_count": 15637,
+    "forks": 15637,
+    "stargazers_count": 34153,
+    "watchers_count": 34153,
+    "watchers": 34153,
+    "open_issues_count": 674,
+    "open_issues": 674,
+    "size": 322164,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-29T11:37:21Z",
+    "created_at": "2011-08-15T18:06:16Z",
+    "updated_at": "2026-10-29T11:37:29Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/apache/kafka",
+    "html_url": "https://github.com/apache/kafka",
+    "archive_url": "https://api.github.com/repos/apache/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/apache/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/apache/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/apache/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/apache/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/apache/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/apache/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/apache/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/apache/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/apache/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/apache/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/apache/kafka/downloads",
+    "events_url": "https://api.github.com/repos/apache/kafka/events",
+    "forks_url": "https://api.github.com/repos/apache/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/apache/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/apache/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/apache/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/apache/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/apache/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/apache/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/apache/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/apache/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/apache/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/apache/kafka/languages",
+    "merges_url": "https://api.github.com/repos/apache/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/apache/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/apache/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/apache/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/apache/kafka/releases{/id}",
+    "ssh_url": "git@github.com:apache/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/apache/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/apache/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/apache/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/apache/kafka/tags",
+    "teams_url": "https://api.github.com/repos/apache/kafka/teams",
+    "trees_url": "https://api.github.com/repos/apache/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/apache/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/apache/kafka/hooks",
+    "svn_url": "https://github.com/apache/kafka"
+   },
+   "sha": "cc8baadc9f0363f2bdfe68a2f1cd8dbe4372d282",
+   "user": {
+    "login": "apache",
+    "id": 47359,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/apache",
+    "html_url": "https://github.com/apache",
+    "followers_url": "https://api.github.com/users/apache/followers",
+    "following_url": "https://api.github.com/users/apache/following{/other_user}",
+    "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+    "organizations_url": "https://api.github.com/users/apache/orgs",
+    "repos_url": "https://api.github.com/users/apache/repos",
+    "events_url": "https://api.github.com/users/apache/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/apache/received_events",
+    "type": "Organization",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "_links": {
+   "comments": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23858/comments"
+   },
+   "commits": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23858/commits"
+   },
+   "statuses": {
+    "href": "https://api.github.com/repos/apache/kafka/statuses/86e00a4aad56fdfa6cd3f8bb244423a9241f651b"
+   },
+   "html": {
+    "href": "https://github.com/apache/kafka/pull/23858"
+   },
+   "issue": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23858"
+   },
+   "review_comments": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23858/comments"
+   },
+   "review_comment": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}"
+   },
+   "self": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23858"
+   }
+  },
+  "author_association": "CONTRIBUTOR",
+  "auto_merge": null,
+  "draft": false,
+  "merged": false,
+  "mergeable": true,
+  "rebaseable": false,
+  "mergeable_state": "blocked",
+  "merged_by": null,
+  "comments": 1,
+  "review_comments": 0,
+  "maintainer_can_modify": true,
+  "commits": 6,
+  "additions": 79,
+  "deletions": 5,
+  "changed_files": 4
+ },
+ "reviews": [],
+ "review_comments": [],
+ "issue_comments": [
+  {
+   "url": "https://api.github.com/repos/apache/kafka/issues/comments/6486901140",
+   "html_url": "https://github.com/apache/kafka/pull/23858#issuecomment-6486901140",
+   "issue_url": "https://api.github.com/repos/apache/kafka/issues/23858",
+   "id": 6486901140,
+   "node_id": "IC_kwDOACG9q88AAAABgqZBlA",
+   "user": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "created_at": "2026-10-29T03:15:59Z",
+   "updated_at": "2026-10-29T03:15:59Z",
+   "body": "A label of 'needs-attention' was automatically added to this PR in order to raise the\nattention of the committers. Once this issue has been triaged, the `triage` label\nshould be removed to prevent this automation from happening again.",
+   "author_association": "NONE",
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/issues/comments/6486901140/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "performed_via_github_app": {
+    "id": 15368,
+    "client_id": "Iv1.05c79e9ad1f6bdfa",
+    "slug": "github-actions",
+    "node_id": "MDM6QXBwMTUzNjg=",
+    "owner": {
+     "login": "github",
+     "id": 9919,
+     "node_id": "MDEyOk9yZ2FuaXphdGlvbjk5MTk=",
+     "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/github",
+     "html_url": "https://github.com/github",
+     "followers_url": "https://api.github.com/users/github/followers",
+     "following_url": "https://api.github.com/users/github/following{/other_user}",
+     "gists_url": "https://api.github.com/users/github/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/github/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/github/subscriptions",
+     "organizations_url": "https://api.github.com/users/github/orgs",
+     "repos_url": "https://api.github.com/users/github/repos",
+     "events_url": "https://api.github.com/users/github/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/github/received_events",
+     "type": "Organization",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "name": "GitHub Actions",
+    "description": "Automate your workflow from idea to production",
+    "external_url": "https://help.github.com/en/actions",
+    "html_url": "https://github.com/apps/github-actions",
+    "created_at": "2018-07-30T09:30:17Z",
+    "updated_at": "2026-06-18T16:17:48Z",
+    "permissions": {
+     "actions": "write",
+     "administration": "read",
+     "artifact_metadata": "write",
+     "attestations": "write",
+     "checks": "write",
+     "code_quality": "write",
+     "contents": "write",
+     "copilot_requests": "write",
+     "deployments": "write",
+     "discussions": "write",
+     "drives": "write",
+     "issues": "write",
+     "merge_queues": "write",
+     "metadata": "read",
+     "models": "read",
+     "packages": "write",
+     "pages": "write",
+     "pull_requests": "write",
+     "repository_hooks": "write",
+     "repository_projects": "write",
+     "security_events": "write",
+     "statuses": "write",
+     "vulnerability_alerts": "read"
+    },
+    "events": [
+     "branch_protection_rule",
+     "check_run",
+     "check_suite",
+     "create",
+     "delete",
+     "deployment",
+     "deployment_status",
+     "discussion",
+     "discussion_comment",
+     "fork",
+     "gollum",
+     "issues",
+     "issue_comment",
+     "label",
+     "merge_group",
+     "milestone",
+     "page_build",
+     "public",
+     "pull_request",
+     "pull_request_review",
+     "pull_request_review_comment",
+     "push",
+     "registry_package",
+     "release",
+     "repository",
+     "repository_dispatch",
+     "status",
+     "watch",
+     "workflow_dispatch",
+     "workflow_run"
+    ]
+   },
+   "minimized": null
+  }
+ ],
+ "commits": [
+  {
+   "sha": "5017b8483f9f46f36fdbf1b870b1f8935bc2e94e",
+   "node_id": "C_kwDOMDyNUNoAKDUwMTdiODQ4M2Y5ZjQ2ZjM2ZmRiZjFiODcwYjFmODkzNWJjMmU5NGU",
+   "commit": {
+    "author": {
+     "name": "Eric Chang",
+     "email": "e850506@gmail.com",
+     "date": "2026-10-09T13:32:15Z"
+    },
+    "committer": {
+     "name": "Eric Chang",
+     "email": "e850506@gmail.com",
+     "date": "2026-10-18T13:53:43Z"
+    },
+    "message": "KAFKA-21252: Use partition 0's replication factor when adding partitions\n\nThe KRaft controller took the replication factor from the first partition\nreturned by the hash map iterator, which is not always partition 0. Use\npartition 0 so the behavior matches the ZooKeeper-based broker.\n\nGenerated-by: Claude Opus 5.5",
+    "tree": {
+     "sha": "74c846d42dc292655ae053878c57c20877478eca",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/74c846d42dc292655ae053878c57c20877478eca"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/5017b8483f9f46f36fdbf1b870b1f8935bc2e94e",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/5017b8483f9f46f36fdbf1b870b1f8935bc2e94e",
+   "html_url": "https://github.com/apache/kafka/commit/5017b8483f9f46f36fdbf1b870b1f8935bc2e94e",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/5017b8483f9f46f36fdbf1b870b1f8935bc2e94e/comments",
+   "author": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "65566690ca1ddb584388c1026e2ff6673e9c6f19",
+     "url": "https://api.github.com/repos/apache/kafka/commits/65566690ca1ddb584388c1026e2ff6673e9c6f19",
+     "html_url": "https://github.com/apache/kafka/commit/65566690ca1ddb584388c1026e2ff6673e9c6f19"
+    }
+   ]
+  },
+  {
+   "sha": "c31c11b513e94b25bcd923a425e1c5fbe3dacdeb",
+   "node_id": "C_kwDOMDyNUNoAKGMzMWMxMWI1MTNlOTRiMjViY2Q5MjNhNDI1ZTFjNWZiZTNkYWNkZWI",
+   "commit": {
+    "author": {
+     "name": "Eric Chang",
+     "email": "e850506@gmail.com",
+     "date": "2026-10-19T00:48:37Z"
+    },
+    "committer": {
+     "name": "Eric Chang",
+     "email": "e850506@gmail.com",
+     "date": "2026-10-19T00:48:37Z"
+    },
+    "message": "Use PartitionChangeRecord version 2 in the test\n\nGenerated-by: Claude Opus 5.5",
+    "tree": {
+     "sha": "fc7578567a3389c9c5394466bd953922f1888f0a",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/fc7578567a3389c9c5394466bd953922f1888f0a"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/c31c11b513e94b25bcd923a425e1c5fbe3dacdeb",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/c31c11b513e94b25bcd923a425e1c5fbe3dacdeb",
+   "html_url": "https://github.com/apache/kafka/commit/c31c11b513e94b25bcd923a425e1c5fbe3dacdeb",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/c31c11b513e94b25bcd923a425e1c5fbe3dacdeb/comments",
+   "author": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "5017b8483f9f46f36fdbf1b870b1f8935bc2e94e",
+     "url": "https://api.github.com/repos/apache/kafka/commits/5017b8483f9f46f36fdbf1b870b1f8935bc2e94e",
+     "html_url": "https://github.com/apache/kafka/commit/5017b8483f9f46f36fdbf1b870b1f8935bc2e94e"
+    }
+   ]
+  },
+  {
+   "sha": "8a01e7830244efeb5142694cfaaf0eeb5047f935",
+   "node_id": "C_kwDOMDyNUNoAKDhhMDFlNzgzMDI0NGVmZWI1MTQyNjk0Y2ZhYWYwZWViNTA0N2Y5MzU",
+   "commit": {
+    "author": {
+     "name": "Eric Chang",
+     "email": "e850506@gmail.com",
+     "date": "2026-10-19T00:55:10Z"
+    },
+    "committer": {
+     "name": "Eric Chang",
+     "email": "e850506@gmail.com",
+     "date": "2026-10-19T00:55:10Z"
+    },
+    "message": "Add an Admin API test for the replication factor of new partitions\n\nGenerated-by: Claude Opus 5.5",
+    "tree": {
+     "sha": "4e96b0b1d99b890c5b655d5710acde7860ce6c3b",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/4e96b0b1d99b890c5b655d5710acde7860ce6c3b"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/8a01e7830244efeb5142694cfaaf0eeb5047f935",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/8a01e7830244efeb5142694cfaaf0eeb5047f935",
+   "html_url": "https://github.com/apache/kafka/commit/8a01e7830244efeb5142694cfaaf0eeb5047f935",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/8a01e7830244efeb5142694cfaaf0eeb5047f935/comments",
+   "author": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "c31c11b513e94b25bcd923a425e1c5fbe3dacdeb",
+     "url": "https://api.github.com/repos/apache/kafka/commits/c31c11b513e94b25bcd923a425e1c5fbe3dacdeb",
+     "html_url": "https://github.com/apache/kafka/commit/c31c11b513e94b25bcd923a425e1c5fbe3dacdeb"
+    }
+   ]
+  },
+  {
+   "sha": "66351e85f507d3d95c64e95bbdaa1564b78c1689",
+   "node_id": "C_kwDOMDyNUNoAKDY2MzUxZTg1ZjUwN2QzZDk1YzY0ZTk1YmJkYWExNTY0Yjc4YzE2ODk",
+   "commit": {
+    "author": {
+     "name": "Eric Chang",
+     "email": "e850506@gmail.com",
+     "date": "2026-10-19T00:55:10Z"
+    },
+    "committer": {
+     "name": "Eric Chang",
+     "email": "e850506@gmail.com",
+     "date": "2026-10-19T00:55:52Z"
+    },
+    "message": "Document that new partitions follow partition 0's replication factor\n\nGenerated-by: Claude Opus 5.5",
+    "tree": {
+     "sha": "5354d6c0bdb404051f07dbe05ea8b201a4a77e65",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/5354d6c0bdb404051f07dbe05ea8b201a4a77e65"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/66351e85f507d3d95c64e95bbdaa1564b78c1689",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/66351e85f507d3d95c64e95bbdaa1564b78c1689",
+   "html_url": "https://github.com/apache/kafka/commit/66351e85f507d3d95c64e95bbdaa1564b78c1689",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/66351e85f507d3d95c64e95bbdaa1564b78c1689/comments",
+   "author": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "8a01e7830244efeb5142694cfaaf0eeb5047f935",
+     "url": "https://api.github.com/repos/apache/kafka/commits/8a01e7830244efeb5142694cfaaf0eeb5047f935",
+     "html_url": "https://github.com/apache/kafka/commit/8a01e7830244efeb5142694cfaaf0eeb5047f935"
+    }
+   ]
+  },
+  {
+   "sha": "0011fab28c88ade85f83fd58d1468d956640f8f4",
+   "node_id": "C_kwDOMDyNUNoAKDAwMTFmYWIyOGM4OGFkZTg1ZjgzZmQ1OGQxNDY4ZDk1NjY0MGY4ZjQ",
+   "commit": {
+    "author": {
+     "name": "Eric Chang",
+     "email": "e850506@gmail.com",
+     "date": "2026-10-19T02:35:44Z"
+    },
+    "committer": {
+     "name": "Eric Chang",
+     "email": "e850506@gmail.com",
+     "date": "2026-10-19T02:35:44Z"
+    },
+    "message": "Use the highest supported PartitionChangeRecord version in the test\n\nGenerated-by: Claude Opus 5.5",
+    "tree": {
+     "sha": "a1c55949b0dcae97955942a3dfb8f3d102fa6084",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/a1c55949b0dcae97955942a3dfb8f3d102fa6084"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/0011fab28c88ade85f83fd58d1468d956640f8f4",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/0011fab28c88ade85f83fd58d1468d956640f8f4",
+   "html_url": "https://github.com/apache/kafka/commit/0011fab28c88ade85f83fd58d1468d956640f8f4",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/0011fab28c88ade85f83fd58d1468d956640f8f4/comments",
+   "author": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "66351e85f507d3d95c64e95bbdaa1564b78c1689",
+     "url": "https://api.github.com/repos/apache/kafka/commits/66351e85f507d3d95c64e95bbdaa1564b78c1689",
+     "html_url": "https://github.com/apache/kafka/commit/66351e85f507d3d95c64e95bbdaa1564b78c1689"
+    }
+   ]
+  },
+  {
+   "sha": "86e00a4aad56fdfa6cd3f8bb244423a9241f651b",
+   "node_id": "C_kwDOMDyNUNoAKDg2ZTAwYTRhYWQ1NmZkZmE2Y2QzZjhiYjI0NDQyM2E5MjQxZjY1MWI",
+   "commit": {
+    "author": {
+     "name": "Eric Chang",
+     "email": "e850506@gmail.com",
+     "date": "2026-10-19T03:33:54Z"
+    },
+    "committer": {
+     "name": "Eric Chang",
+     "email": "e850506@gmail.com",
+     "date": "2026-10-19T03:33:54Z"
+    },
+    "message": "Use 3 partitions in the tests and explain why\n\nGenerated-by: Claude Opus 5.5",
+    "tree": {
+     "sha": "37f8314d91d3cc8e7cb97dd9f427023d7736e12e",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/37f8314d91d3cc8e7cb97dd9f427023d7736e12e"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/86e00a4aad56fdfa6cd3f8bb244423a9241f651b",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/86e00a4aad56fdfa6cd3f8bb244423a9241f651b",
+   "html_url": "https://github.com/apache/kafka/commit/86e00a4aad56fdfa6cd3f8bb244423a9241f651b",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/86e00a4aad56fdfa6cd3f8bb244423a9241f651b/comments",
+   "author": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "0011fab28c88ade85f83fd58d1468d956640f8f4",
+     "url": "https://api.github.com/repos/apache/kafka/commits/0011fab28c88ade85f83fd58d1468d956640f8f4",
+     "html_url": "https://github.com/apache/kafka/commit/0011fab28c88ade85f83fd58d1468d956640f8f4"
+    }
+   ]
+  }
+ ],
+ "files": [
+  {
+   "sha": "152b8fee4afc3eea529bccdf9fc37747d6dcf1d4",
+   "filename": "clients/clients-integration-tests/src/test/java/org/apache/kafka/clients/admin/AddPartitionsTest.java",
+   "status": "modified",
+   "additions": 36,
+   "deletions": 0,
+   "changes": 36,
+   "blob_url": "https://github.com/apache/kafka/blob/86e00a4aad56fdfa6cd3f8bb244423a9241f651b/clients%2Fclients-integration-tests%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fadmin%2FAddPartitionsTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/86e00a4aad56fdfa6cd3f8bb244423a9241f651b/clients%2Fclients-integration-tests%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fadmin%2FAddPartitionsTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fclients-integration-tests%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fadmin%2FAddPartitionsTest.java?ref=86e00a4aad56fdfa6cd3f8bb244423a9241f651b",
+   "patch": "@@ -18,6 +18,7 @@\n \n import org.apache.kafka.common.KafkaFuture;\n import org.apache.kafka.common.Node;\n+import org.apache.kafka.common.TopicPartition;\n import org.apache.kafka.common.TopicPartitionInfo;\n import org.apache.kafka.common.errors.InvalidPartitionsException;\n import org.apache.kafka.common.errors.InvalidReplicaAssignmentException;\n@@ -29,13 +30,16 @@\n import org.apache.kafka.common.test.api.ClusterTests;\n import org.apache.kafka.common.test.api.Type;\n import org.apache.kafka.server.common.MetadataVersion;\n+import org.apache.kafka.test.TestUtils;\n \n import java.util.Comparator;\n import java.util.List;\n import java.util.Map;\n+import java.util.Optional;\n import java.util.Set;\n import java.util.concurrent.ExecutionException;\n import java.util.stream.Collectors;\n+import java.util.stream.IntStream;\n \n import static org.junit.jupiter.api.Assertions.assertEquals;\n import static org.junit.jupiter.api.Assertions.assertInstanceOf;\n@@ -179,6 +183,34 @@ public void testManualAssignmentOfReplicas(ClusterInstance cluster) throws Excep\n         }\n     }\n \n+    @ClusterTest\n+    public void testIncreasePartitionsUsesReplicationFactorOfPartitionZero(ClusterInstance cluster) throws Exception {\n+        try (Admin admin = cluster.admin()) {\n+            // The partitions are kept in a hash map. With 3 partitions, iterating over it does not\n+            // start at partition 0, so this test fails if the controller uses the iterator's first\n+            // partition instead of partition 0.\n+            Map<Integer, List<Integer>> assignment = IntStream.range(0, 3).boxed()\n+                .collect(Collectors.toMap(p -> p, p -> List.of(p % 4)));\n+            cluster.createTopicWithAssignment(\"foo\", assignment);\n+\n+            // Increase the replication factor of partition 0 only.\n+            admin.alterPartitionReassignments(Map.of(new TopicPartition(\"foo\", 0),\n+                Optional.of(new NewPartitionReassignment(List.of(0, 1, 2))))).all().get();\n+            TestUtils.waitForCondition(() -> admin.listPartitionReassignments().reassignments().get().isEmpty() &&\n+                partition(admin, \"foo\", 0).replicas().size() == 3,\n+                \"Timed out waiting for the reassignment of partition 0\");\n+\n+            admin.createPartitions(Map.of(\"foo\", NewPartitions.increaseTo(4))).all().get();\n+            cluster.waitTopicCreation(\"foo\", 4);\n+            assertEquals(3, partition(admin, \"foo\", 3).replicas().size());\n+\n+            // Manual assignments are also validated against partition 0.\n+            ExecutionException e = assertThrows(ExecutionException.class, () -> admin.createPartitions(Map.of(\"foo\",\n+                NewPartitions.increaseTo(5, List.of(List.of(0))))).all().get());\n+            assertInstanceOf(InvalidReplicaAssignmentException.class, e.getCause());\n+        }\n+    }\n+\n     @ClusterTest\n     public void testReplicaPlacementAllServers(ClusterInstance cluster) throws Exception {\n         try (Admin admin = cluster.admin()) {\n@@ -407,6 +439,10 @@ private static List<TopicPartitionInfo> partitions(Admin admin, String topic) th\n         return admin.describeTopics(List.of(topic)).allTopicNames().get().get(topic).partitions();\n     }\n \n+    private static TopicPartitionInfo partition(Admin admin, String topic, int partition) throws Exception {\n+        return partitions(admin, topic).stream().filter(p -> p.partition() == partition).findFirst().orElseThrow();\n+    }\n+\n     private static List<Integer> replicaIds(TopicPartitionInfo partition) {\n         return partition.replicas().stream().map(Node::id).toList();\n     }"
+  },
+  {
+   "sha": "7016e32b517d1e5612ac2c9814444e992a208077",
+   "filename": "clients/src/main/java/org/apache/kafka/clients/admin/NewPartitions.java",
+   "status": "modified",
+   "additions": 2,
+   "deletions": 1,
+   "changes": 3,
+   "blob_url": "https://github.com/apache/kafka/blob/86e00a4aad56fdfa6cd3f8bb244423a9241f651b/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fadmin%2FNewPartitions.java",
+   "raw_url": "https://github.com/apache/kafka/raw/86e00a4aad56fdfa6cd3f8bb244423a9241f651b/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fadmin%2FNewPartitions.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fadmin%2FNewPartitions.java?ref=86e00a4aad56fdfa6cd3f8bb244423a9241f651b",
+   "patch": "@@ -40,6 +40,7 @@ private NewPartitions(int totalCount, List<List<Integer>> newAssignments) {\n     /**\n      * Increase the partition count for a topic to the given {@code totalCount}.\n      * The assignment of new replicas to brokers will be decided by the broker.\n+     * The new partitions use the same replication factor as partition 0.\n      *\n      * @param totalCount The total number of partitions after the operation succeeds.\n      */\n@@ -53,7 +54,7 @@ public static NewPartitions increaseTo(int totalCount) {\n      * The length of the given {@code newAssignments} should equal {@code totalCount - oldCount}, since\n      * the assignment of existing partitions are not changed.\n      * Each inner list of {@code newAssignments} should have a length equal to\n-     * the topic's replication factor.\n+     * the topic's replication factor, which is the replication factor of partition 0.\n      * The first broker id in each inner list is the \"preferred replica\".</p>\n      *\n      * <p>For example, suppose a topic currently has a replication factor of 2, and"
+  },
+  {
+   "sha": "4b03abe1596c5a4fe9f2f1f65ddc25eeb888d781",
+   "filename": "metadata/src/main/java/org/apache/kafka/controller/ReplicationControlManager.java",
+   "status": "modified",
+   "additions": 3,
+   "deletions": 4,
+   "changes": 7,
+   "blob_url": "https://github.com/apache/kafka/blob/86e00a4aad56fdfa6cd3f8bb244423a9241f651b/metadata%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcontroller%2FReplicationControlManager.java",
+   "raw_url": "https://github.com/apache/kafka/raw/86e00a4aad56fdfa6cd3f8bb244423a9241f651b/metadata%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcontroller%2FReplicationControlManager.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/metadata%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcontroller%2FReplicationControlManager.java?ref=86e00a4aad56fdfa6cd3f8bb244423a9241f651b",
+   "patch": "@@ -1989,12 +1989,11 @@ void createPartitions(ControllerRequestContext context,\n                 additional, e.throttleTimeMs());\n             throw e;\n         }\n-        Iterator<PartitionRegistration> iterator = topicInfo.parts.values().iterator();\n-        if (!iterator.hasNext()) {\n+        PartitionRegistration partitionInfo = topicInfo.parts.get(0);\n+        if (partitionInfo == null) {\n             throw new UnknownServerException(\"Invalid state: topic \" + topic.name() +\n-                \" appears to have no partitions.\");\n+                \" appears to have no partition 0.\");\n         }\n-        PartitionRegistration partitionInfo = iterator.next();\n         if (partitionInfo.replicas.length > Short.MAX_VALUE) {\n             throw new UnknownServerException(\"Invalid replication factor \" +\n                 partitionInfo.replicas.length + \": expected a number equal to less than \" +"
+  },
+  {
+   "sha": "6b6bbf568673b65cf23ecef7ee4fd60c437ee7ca",
+   "filename": "metadata/src/test/java/org/apache/kafka/controller/ReplicationControlManagerTest.java",
+   "status": "modified",
+   "additions": 38,
+   "deletions": 0,
+   "changes": 38,
+   "blob_url": "https://github.com/apache/kafka/blob/86e00a4aad56fdfa6cd3f8bb244423a9241f651b/metadata%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcontroller%2FReplicationControlManagerTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/86e00a4aad56fdfa6cd3f8bb244423a9241f651b/metadata%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcontroller%2FReplicationControlManagerTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/metadata%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fcontroller%2FReplicationControlManagerTest.java?ref=86e00a4aad56fdfa6cd3f8bb244423a9241f651b",
+   "patch": "@@ -130,6 +130,7 @@\n \n import static org.apache.kafka.common.config.TopicConfig.SEGMENT_BYTES_CONFIG;\n import static org.apache.kafka.common.metadata.MetadataRecordType.CLEAR_ELR_RECORD;\n+import static org.apache.kafka.common.metadata.MetadataRecordType.PARTITION_CHANGE_RECORD;\n import static org.apache.kafka.common.protocol.Errors.ELECTION_NOT_NEEDED;\n import static org.apache.kafka.common.protocol.Errors.ELIGIBLE_LEADERS_NOT_AVAILABLE;\n import static org.apache.kafka.common.protocol.Errors.INELIGIBLE_REPLICA;\n@@ -1712,6 +1713,43 @@ public void testCreatePartitions() {\n                 replicationControl.getPartition(replicationControl.getTopicId(\"foo\"), 5).directories);\n     }\n \n+    @Test\n+    public void testCreatePartitionsUsesReplicationFactorOfPartitionZero() {\n+        ReplicationControlTestContext ctx = new ReplicationControlTestContext.Builder().build();\n+        ReplicationControlManager replicationControl = ctx.replicationControl;\n+        ctx.registerBrokers(0, 1, 2);\n+        ctx.unfenceBrokers(0, 1, 2);\n+        // The partitions are kept in a hash map. With 3 partitions, iterating over it does not\n+        // start at partition 0, so this test fails if the controller uses the iterator's first\n+        // partition instead of partition 0.\n+        int[][] replicas = new int[3][];\n+        for (int i = 0; i < replicas.length; i++) {\n+            replicas[i] = new int[] {i % 3};\n+        }\n+        Uuid fooId = ctx.createTestTopic(\"foo\", replicas).topicId();\n+        // Increase the replication factor of partition 0 only.\n+        ctx.replay(List.of(new ApiMessageAndVersion(new PartitionChangeRecord().\n+            setTopicId(fooId).\n+            setPartitionId(0).\n+            setReplicas(List.of(0, 1, 2)).\n+            setIsr(List.of(0, 1, 2)).\n+            setDirectories(List.of(DirectoryId.UNASSIGNED, DirectoryId.UNASSIGNED, DirectoryId.UNASSIGNED)),\n+            PARTITION_CHANGE_RECORD.highestSupportedVersion())));\n+\n+        ControllerRequestContext requestContext = anonymousContextFor(ApiKeys.CREATE_PARTITIONS);\n+        ControllerResult<List<CreatePartitionsTopicResult>> result = replicationControl.createPartitions(\n+            requestContext, List.of(new CreatePartitionsTopic().setName(\"foo\").setCount(4).setAssignments(null)));\n+        assertEquals(NONE.code(), result.response().get(0).errorCode());\n+        ctx.replay(result.records());\n+        assertEquals(3, replicationControl.getPartition(fooId, 3).replicas.length);\n+\n+        // Manual assignments are also validated against partition 0.\n+        result = replicationControl.createPartitions(requestContext, List.of(new CreatePartitionsTopic().\n+            setName(\"foo\").setCount(5).setAssignments(List.of(\n+                new CreatePartitionsAssignment().setBrokerIds(List.of(0))))));\n+        assertEquals(INVALID_REPLICA_ASSIGNMENT.code(), result.response().get(0).errorCode());\n+    }\n+\n     @Test\n     public void testCreatePartitionsWithMutationQuotaExceeded() {\n         ReplicationControlTestContext ctx = new ReplicationControlTestContext.Builder().build();"
+  }
+ ],
+ "timeline": [
+  {
+   "sha": "5017b8483f9f46f36fdbf1b870b1f8935bc2e94e",
+   "node_id": "C_kwDOACG9q9oAKDUwMTdiODQ4M2Y5ZjQ2ZjM2ZmRiZjFiODcwYjFmODkzNWJjMmU5NGU",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/5017b8483f9f46f36fdbf1b870b1f8935bc2e94e",
+   "html_url": "https://github.com/apache/kafka/commit/5017b8483f9f46f36fdbf1b870b1f8935bc2e94e",
+   "author": {
+    "name": "Eric Chang",
+    "email": "e850506@gmail.com",
+    "date": "2026-10-09T13:32:15Z"
+   },
+   "committer": {
+    "name": "Eric Chang",
+    "email": "e850506@gmail.com",
+    "date": "2026-10-18T13:53:43Z"
+   },
+   "tree": {
+    "sha": "74c846d42dc292655ae053878c57c20877478eca",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/74c846d42dc292655ae053878c57c20877478eca"
+   },
+   "message": "KAFKA-21252: Use partition 0's replication factor when adding partitions\n\nThe KRaft controller took the replication factor from the first partition\nreturned by the hash map iterator, which is not always partition 0. Use\npartition 0 so the behavior matches the ZooKeeper-based broker.\n\nGenerated-by: Claude Opus 5.5",
+   "parents": [
+    {
+     "sha": "65566690ca1ddb584388c1026e2ff6673e9c6f19",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/65566690ca1ddb584388c1026e2ff6673e9c6f19",
+     "html_url": "https://github.com/apache/kafka/commit/65566690ca1ddb584388c1026e2ff6673e9c6f19"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "id": 33577386675,
+   "node_id": "LE_lADOACG9q88AAAABYFFkpM8AAAAH0V5Csw",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33577386675",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-18T15:06:54Z",
+   "label": {
+    "name": "triage",
+    "color": "006b75"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 33577391156,
+   "node_id": "LE_lADOACG9q88AAAABYFFkpM8AAAAH0V5UNA",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33577391156",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-18T15:07:01Z",
+   "label": {
+    "name": "kraft",
+    "color": "FBCA04"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 33577392773,
+   "node_id": "LE_lADOACG9q88AAAABYFFkpM8AAAAH0V5ahQ",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33577392773",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-18T15:07:03Z",
+   "label": {
+    "name": "small",
+    "color": "FEF2C0"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "sha": "c31c11b513e94b25bcd923a425e1c5fbe3dacdeb",
+   "node_id": "C_kwDOACG9q9oAKGMzMWMxMWI1MTNlOTRiMjViY2Q5MjNhNDI1ZTFjNWZiZTNkYWNkZWI",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/c31c11b513e94b25bcd923a425e1c5fbe3dacdeb",
+   "html_url": "https://github.com/apache/kafka/commit/c31c11b513e94b25bcd923a425e1c5fbe3dacdeb",
+   "author": {
+    "name": "Eric Chang",
+    "email": "e850506@gmail.com",
+    "date": "2026-10-19T00:48:37Z"
+   },
+   "committer": {
+    "name": "Eric Chang",
+    "email": "e850506@gmail.com",
+    "date": "2026-10-19T00:48:37Z"
+   },
+   "tree": {
+    "sha": "fc7578567a3389c9c5394466bd953922f1888f0a",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/fc7578567a3389c9c5394466bd953922f1888f0a"
+   },
+   "message": "Use PartitionChangeRecord version 2 in the test\n\nGenerated-by: Claude Opus 5.5",
+   "parents": [
+    {
+     "sha": "5017b8483f9f46f36fdbf1b870b1f8935bc2e94e",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/5017b8483f9f46f36fdbf1b870b1f8935bc2e94e",
+     "html_url": "https://github.com/apache/kafka/commit/5017b8483f9f46f36fdbf1b870b1f8935bc2e94e"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "8a01e7830244efeb5142694cfaaf0eeb5047f935",
+   "node_id": "C_kwDOACG9q9oAKDhhMDFlNzgzMDI0NGVmZWI1MTQyNjk0Y2ZhYWYwZWViNTA0N2Y5MzU",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/8a01e7830244efeb5142694cfaaf0eeb5047f935",
+   "html_url": "https://github.com/apache/kafka/commit/8a01e7830244efeb5142694cfaaf0eeb5047f935",
+   "author": {
+    "name": "Eric Chang",
+    "email": "e850506@gmail.com",
+    "date": "2026-10-19T00:55:10Z"
+   },
+   "committer": {
+    "name": "Eric Chang",
+    "email": "e850506@gmail.com",
+    "date": "2026-10-19T00:55:10Z"
+   },
+   "tree": {
+    "sha": "4e96b0b1d99b890c5b655d5710acde7860ce6c3b",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/4e96b0b1d99b890c5b655d5710acde7860ce6c3b"
+   },
+   "message": "Add an Admin API test for the replication factor of new partitions\n\nGenerated-by: Claude Opus 5.5",
+   "parents": [
+    {
+     "sha": "c31c11b513e94b25bcd923a425e1c5fbe3dacdeb",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/c31c11b513e94b25bcd923a425e1c5fbe3dacdeb",
+     "html_url": "https://github.com/apache/kafka/commit/c31c11b513e94b25bcd923a425e1c5fbe3dacdeb"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "66351e85f507d3d95c64e95bbdaa1564b78c1689",
+   "node_id": "C_kwDOACG9q9oAKDY2MzUxZTg1ZjUwN2QzZDk1YzY0ZTk1YmJkYWExNTY0Yjc4YzE2ODk",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/66351e85f507d3d95c64e95bbdaa1564b78c1689",
+   "html_url": "https://github.com/apache/kafka/commit/66351e85f507d3d95c64e95bbdaa1564b78c1689",
+   "author": {
+    "name": "Eric Chang",
+    "email": "e850506@gmail.com",
+    "date": "2026-10-19T00:55:10Z"
+   },
+   "committer": {
+    "name": "Eric Chang",
+    "email": "e850506@gmail.com",
+    "date": "2026-10-19T00:55:52Z"
+   },
+   "tree": {
+    "sha": "5354d6c0bdb404051f07dbe05ea8b201a4a77e65",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/5354d6c0bdb404051f07dbe05ea8b201a4a77e65"
+   },
+   "message": "Document that new partitions follow partition 0's replication factor\n\nGenerated-by: Claude Opus 5.5",
+   "parents": [
+    {
+     "sha": "8a01e7830244efeb5142694cfaaf0eeb5047f935",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/8a01e7830244efeb5142694cfaaf0eeb5047f935",
+     "html_url": "https://github.com/apache/kafka/commit/8a01e7830244efeb5142694cfaaf0eeb5047f935"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "id": 33601368915,
+   "node_id": "LE_lADOACG9q88AAAABYFFkpM8AAAAH0swzUw",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33601368915",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-19T00:59:49Z",
+   "label": {
+    "name": "clients",
+    "color": "ededed"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "sha": "0011fab28c88ade85f83fd58d1468d956640f8f4",
+   "node_id": "C_kwDOACG9q9oAKDAwMTFmYWIyOGM4OGFkZTg1ZjgzZmQ1OGQxNDY4ZDk1NjY0MGY4ZjQ",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/0011fab28c88ade85f83fd58d1468d956640f8f4",
+   "html_url": "https://github.com/apache/kafka/commit/0011fab28c88ade85f83fd58d1468d956640f8f4",
+   "author": {
+    "name": "Eric Chang",
+    "email": "e850506@gmail.com",
+    "date": "2026-10-19T02:35:44Z"
+   },
+   "committer": {
+    "name": "Eric Chang",
+    "email": "e850506@gmail.com",
+    "date": "2026-10-19T02:35:44Z"
+   },
+   "tree": {
+    "sha": "a1c55949b0dcae97955942a3dfb8f3d102fa6084",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/a1c55949b0dcae97955942a3dfb8f3d102fa6084"
+   },
+   "message": "Use the highest supported PartitionChangeRecord version in the test\n\nGenerated-by: Claude Opus 5.5",
+   "parents": [
+    {
+     "sha": "66351e85f507d3d95c64e95bbdaa1564b78c1689",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/66351e85f507d3d95c64e95bbdaa1564b78c1689",
+     "html_url": "https://github.com/apache/kafka/commit/66351e85f507d3d95c64e95bbdaa1564b78c1689"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "86e00a4aad56fdfa6cd3f8bb244423a9241f651b",
+   "node_id": "C_kwDOACG9q9oAKDg2ZTAwYTRhYWQ1NmZkZmE2Y2QzZjhiYjI0NDQyM2E5MjQxZjY1MWI",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/86e00a4aad56fdfa6cd3f8bb244423a9241f651b",
+   "html_url": "https://github.com/apache/kafka/commit/86e00a4aad56fdfa6cd3f8bb244423a9241f651b",
+   "author": {
+    "name": "Eric Chang",
+    "email": "e850506@gmail.com",
+    "date": "2026-10-19T03:33:54Z"
+   },
+   "committer": {
+    "name": "Eric Chang",
+    "email": "e850506@gmail.com",
+    "date": "2026-10-19T03:33:54Z"
+   },
+   "tree": {
+    "sha": "37f8314d91d3cc8e7cb97dd9f427023d7736e12e",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/37f8314d91d3cc8e7cb97dd9f427023d7736e12e"
+   },
+   "message": "Use 3 partitions in the tests and explain why\n\nGenerated-by: Claude Opus 5.5",
+   "parents": [
+    {
+     "sha": "0011fab28c88ade85f83fd58d1468d956640f8f4",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/0011fab28c88ade85f83fd58d1468d956640f8f4",
+     "html_url": "https://github.com/apache/kafka/commit/0011fab28c88ade85f83fd58d1468d956640f8f4"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "id": 33607957357,
+   "node_id": "RFRE_lADOACG9q88AAAABYFFkpM8AAAAH0zC7bQ",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33607957357",
+   "actor": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "ready_for_review",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-19T03:34:26Z",
+   "performed_via_github_app": null
+  },
+  {
+   "id": 33610872455,
+   "node_id": "CTDE_lADOACG9q88AAAABYFFkpM8AAAAH0102hw",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33610872455",
+   "actor": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "convert_to_draft",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-19T04:38:55Z",
+   "performed_via_github_app": null
+  },
+  {
+   "id": 33610874463,
+   "node_id": "RFRE_lADOACG9q88AAAABYFFkpM8AAAAH010-Xw",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/33610874463",
+   "actor": {
+    "login": "unknowntpo",
+    "id": 10594519,
+    "node_id": "MDQ6VXNlcjEwNTk0NTE5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10594519?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/unknowntpo",
+    "html_url": "https://github.com/unknowntpo",
+    "followers_url": "https://api.github.com/users/unknowntpo/followers",
+    "following_url": "https://api.github.com/users/unknowntpo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/unknowntpo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/unknowntpo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/unknowntpo/subscriptions",
+    "organizations_url": "https://api.github.com/users/unknowntpo/orgs",
+    "repos_url": "https://api.github.com/users/unknowntpo/repos",
+    "events_url": "https://api.github.com/users/unknowntpo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/unknowntpo/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "ready_for_review",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-19T04:38:57Z",
+   "performed_via_github_app": null
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/issues/comments/6486901140",
+   "html_url": "https://github.com/apache/kafka/pull/23858#issuecomment-6486901140",
+   "issue_url": "https://api.github.com/repos/apache/kafka/issues/23858",
+   "id": 6486901140,
+   "node_id": "IC_kwDOACG9q88AAAABgqZBlA",
+   "user": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "created_at": "2026-10-29T03:15:59Z",
+   "updated_at": "2026-10-29T03:15:59Z",
+   "body": "A label of 'needs-attention' was automatically added to this PR in order to raise the\nattention of the committers. Once this issue has been triaged, the `triage` label\nshould be removed to prevent this automation from happening again.",
+   "author_association": "NONE",
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/issues/comments/6486901140/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "performed_via_github_app": {
+    "id": 15368,
+    "client_id": "Iv1.05c79e9ad1f6bdfa",
+    "slug": "github-actions",
+    "node_id": "MDM6QXBwMTUzNjg=",
+    "owner": {
+     "login": "github",
+     "id": 9919,
+     "node_id": "MDEyOk9yZ2FuaXphdGlvbjk5MTk=",
+     "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/github",
+     "html_url": "https://github.com/github",
+     "followers_url": "https://api.github.com/users/github/followers",
+     "following_url": "https://api.github.com/users/github/following{/other_user}",
+     "gists_url": "https://api.github.com/users/github/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/github/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/github/subscriptions",
+     "organizations_url": "https://api.github.com/users/github/orgs",
+     "repos_url": "https://api.github.com/users/github/repos",
+     "events_url": "https://api.github.com/users/github/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/github/received_events",
+     "type": "Organization",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "name": "GitHub Actions",
+    "description": "Automate your workflow from idea to production",
+    "external_url": "https://help.github.com/en/actions",
+    "html_url": "https://github.com/apps/github-actions",
+    "created_at": "2018-07-30T09:30:17Z",
+    "updated_at": "2026-06-18T16:17:48Z",
+    "permissions": {
+     "actions": "write",
+     "administration": "read",
+     "artifact_metadata": "write",
+     "attestations": "write",
+     "checks": "write",
+     "code_quality": "write",
+     "contents": "write",
+     "copilot_requests": "write",
+     "deployments": "write",
+     "discussions": "write",
+     "drives": "write",
+     "issues": "write",
+     "merge_queues": "write",
+     "metadata": "read",
+     "models": "read",
+     "packages": "write",
+     "pages": "write",
+     "pull_requests": "write",
+     "repository_hooks": "write",
+     "repository_projects": "write",
+     "security_events": "write",
+     "statuses": "write",
+     "vulnerability_alerts": "read"
+    },
+    "events": [
+     "branch_protection_rule",
+     "check_run",
+     "check_suite",
+     "create",
+     "delete",
+     "deployment",
+     "deployment_status",
+     "discussion",
+     "discussion_comment",
+     "fork",
+     "gollum",
+     "issues",
+     "issue_comment",
+     "label",
+     "merge_group",
+     "milestone",
+     "page_build",
+     "public",
+     "pull_request",
+     "pull_request_review",
+     "pull_request_review_comment",
+     "push",
+     "registry_package",
+     "release",
+     "repository",
+     "repository_dispatch",
+     "status",
+     "watch",
+     "workflow_dispatch",
+     "workflow_run"
+    ]
+   },
+   "minimized": null,
+   "event": "commented",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  {
+   "id": 34543856553,
+   "node_id": "LE_lADOACG9q88AAAABYFFkpM8AAAAICvlrqQ",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34543856553",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-29T03:16:00Z",
+   "label": {
+    "name": "needs-attention",
+    "color": "FBCA04"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  }
+ ]
+}

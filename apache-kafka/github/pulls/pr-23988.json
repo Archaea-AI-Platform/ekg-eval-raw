@@ -1,0 +1,1705 @@
+{
+ "pull": {
+  "url": "https://api.github.com/repos/apache/kafka/pulls/23988",
+  "id": 5041017357,
+  "node_id": "PR_kwDOACG9q88AAAABLHfSDQ",
+  "html_url": "https://github.com/apache/kafka/pull/23988",
+  "diff_url": "https://github.com/apache/kafka/pull/23988.diff",
+  "patch_url": "https://github.com/apache/kafka/pull/23988.patch",
+  "issue_url": "https://api.github.com/repos/apache/kafka/issues/23988",
+  "commits_url": "https://api.github.com/repos/apache/kafka/pulls/23988/commits",
+  "review_comments_url": "https://api.github.com/repos/apache/kafka/pulls/23988/comments",
+  "review_comment_url": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}",
+  "comments_url": "https://api.github.com/repos/apache/kafka/issues/23988/comments",
+  "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/31313667a645ba1a014394fe0399b3dcaf6d89a1",
+  "number": 23988,
+  "state": "open",
+  "locked": false,
+  "title": "KAFKA-21368: Lift non-public config key strings into public",
+  "user": {
+   "login": "AndrewJSchofield",
+   "id": 13795597,
+   "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+   "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/AndrewJSchofield",
+   "html_url": "https://github.com/AndrewJSchofield",
+   "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+   "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+   "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+   "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+   "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+   "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "body": "`o.a.k.clients.CommonClientConfigs` is not part of the public interface\nto Apache Kafka. It is neither in the javadoc nor is it marked\n`@InterfaceAudience.Public`. However, a handful of the config keys for\nproducer, consumer, and streams were defined in this class, essentially\nmeaning that an application using the string constants was stepping\noutside the Kafka public interface.\n\nFor example, `CommonClientConfigs.METADATA_RECOVERY_STRATEGY_CONFIG`\nwhich is allowed as a producer config should really be\n`ProducerConfig.METADATA_RECOVERY_STRATEGY_CONFIG`. The latter is in a\nproperly public class.\n\nThis PR adds all of the missing string constants to `ProducerConfig`,\n`ConsumerConfig` and `StreamsConfig`.\n\nIt is debatable whether this is tidying up the code by implementing the\nintent of KIPs, or whether it needs a KIP. For example, KIP-1242 added\n`metadata.cluster.check.enable` as a config for producer, consumer and\nadmin. In explicably, the constant was added to `CommonClientConfigs`\n(not public) and `AdminClientConfigs`, but not `ProducerConfig` nor\n`ConsumerConfig`. This was a simple omission and was the intent of the\nKIP (which I wrote).\n\nReviewers: Chia-Ping Tsai <chia7712@gmail.com>\n",
+  "labels": [
+   {
+    "id": 820747028,
+    "node_id": "MDU6TGFiZWw4MjA3NDcwMjg=",
+    "url": "https://api.github.com/repos/apache/kafka/labels/streams",
+    "name": "streams",
+    "description": null,
+    "color": "63edea",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 851033135,
+    "node_id": "MDU6TGFiZWw4NTEwMzMxMzU=",
+    "url": "https://api.github.com/repos/apache/kafka/labels/producer",
+    "name": "producer",
+    "description": "",
+    "color": "682dad",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 851033232,
+    "node_id": "MDU6TGFiZWw4NTEwMzMyMzI=",
+    "url": "https://api.github.com/repos/apache/kafka/labels/consumer",
+    "name": "consumer",
+    "description": "",
+    "color": "bf6a03",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 851034845,
+    "node_id": "MDU6TGFiZWw4NTEwMzQ4NDU=",
+    "url": "https://api.github.com/repos/apache/kafka/labels/tools",
+    "name": "tools",
+    "description": "",
+    "color": "fbca04",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 7491388177,
+    "node_id": "LA_kwDOACG9q88AAAABvoWDEQ",
+    "url": "https://api.github.com/repos/apache/kafka/labels/clients",
+    "name": "clients",
+    "description": null,
+    "color": "ededed",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   }
+  ],
+  "milestone": null,
+  "active_lock_reason": null,
+  "created_at": "2026-10-27T20:58:51Z",
+  "updated_at": "2026-10-29T08:24:29Z",
+  "closed_at": null,
+  "merged_at": null,
+  "merge_commit_sha": "c170ce1ba208661173c01ee16aaa3d00dbb19bfa",
+  "assignee": null,
+  "assignees": [],
+  "requested_reviewers": [
+   {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  ],
+  "requested_teams": [],
+  "head": {
+   "label": "AndrewJSchofield:KAFKA-21368",
+   "ref": "KAFKA-21368",
+   "repo": {
+    "id": 180165101,
+    "node_id": "MDEwOlJlcG9zaXRvcnkxODAxNjUxMDE=",
+    "name": "kafka",
+    "full_name": "AndrewJSchofield/kafka",
+    "owner": {
+     "login": "AndrewJSchofield",
+     "id": 13795597,
+     "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+     "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/AndrewJSchofield",
+     "html_url": "https://github.com/AndrewJSchofield",
+     "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+     "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+     "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+     "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+     "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+     "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": true,
+    "archived": false,
+    "disabled": false,
+    "description": "Mirror of Apache Kafka",
+    "homepage": null,
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [],
+    "forks_count": 0,
+    "forks": 0,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "watchers": 0,
+    "open_issues_count": 0,
+    "open_issues": 0,
+    "size": 285180,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-28T21:10:36Z",
+    "created_at": "2019-04-08T14:19:40Z",
+    "updated_at": "2026-10-28T21:09:53Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/AndrewJSchofield/kafka",
+    "html_url": "https://github.com/AndrewJSchofield/kafka",
+    "archive_url": "https://api.github.com/repos/AndrewJSchofield/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/AndrewJSchofield/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/AndrewJSchofield/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/AndrewJSchofield/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/AndrewJSchofield/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/AndrewJSchofield/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/AndrewJSchofield/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/AndrewJSchofield/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/AndrewJSchofield/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/AndrewJSchofield/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/AndrewJSchofield/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/AndrewJSchofield/kafka/downloads",
+    "events_url": "https://api.github.com/repos/AndrewJSchofield/kafka/events",
+    "forks_url": "https://api.github.com/repos/AndrewJSchofield/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/AndrewJSchofield/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/AndrewJSchofield/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/AndrewJSchofield/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/AndrewJSchofield/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/AndrewJSchofield/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/AndrewJSchofield/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/AndrewJSchofield/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/AndrewJSchofield/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/AndrewJSchofield/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/AndrewJSchofield/kafka/languages",
+    "merges_url": "https://api.github.com/repos/AndrewJSchofield/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/AndrewJSchofield/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/AndrewJSchofield/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/AndrewJSchofield/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/AndrewJSchofield/kafka/releases{/id}",
+    "ssh_url": "git@github.com:AndrewJSchofield/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/AndrewJSchofield/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/AndrewJSchofield/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/AndrewJSchofield/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/AndrewJSchofield/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/AndrewJSchofield/kafka/tags",
+    "teams_url": "https://api.github.com/repos/AndrewJSchofield/kafka/teams",
+    "trees_url": "https://api.github.com/repos/AndrewJSchofield/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/AndrewJSchofield/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/AndrewJSchofield/kafka/hooks",
+    "svn_url": "https://github.com/AndrewJSchofield/kafka"
+   },
+   "sha": "31313667a645ba1a014394fe0399b3dcaf6d89a1",
+   "user": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "base": {
+   "label": "apache:trunk",
+   "ref": "trunk",
+   "repo": {
+    "id": 2211243,
+    "node_id": "MDEwOlJlcG9zaXRvcnkyMjExMjQz",
+    "name": "kafka",
+    "full_name": "apache/kafka",
+    "owner": {
+     "login": "apache",
+     "id": 47359,
+     "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+     "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/apache",
+     "html_url": "https://github.com/apache",
+     "followers_url": "https://api.github.com/users/apache/followers",
+     "following_url": "https://api.github.com/users/apache/following{/other_user}",
+     "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+     "organizations_url": "https://api.github.com/users/apache/orgs",
+     "repos_url": "https://api.github.com/users/apache/repos",
+     "events_url": "https://api.github.com/users/apache/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/apache/received_events",
+     "type": "Organization",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": false,
+    "archived": false,
+    "disabled": false,
+    "description": "Apache Kafka - A distributed event streaming platform",
+    "homepage": "https://kafka.apache.org/",
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [
+     "java",
+     "kafka",
+     "scala",
+     "streaming"
+    ],
+    "forks_count": 15637,
+    "forks": 15637,
+    "stargazers_count": 34153,
+    "watchers_count": 34153,
+    "watchers": 34153,
+    "open_issues_count": 674,
+    "open_issues": 674,
+    "size": 322164,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-29T11:37:21Z",
+    "created_at": "2011-08-15T18:06:16Z",
+    "updated_at": "2026-10-29T11:37:29Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/apache/kafka",
+    "html_url": "https://github.com/apache/kafka",
+    "archive_url": "https://api.github.com/repos/apache/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/apache/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/apache/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/apache/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/apache/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/apache/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/apache/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/apache/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/apache/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/apache/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/apache/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/apache/kafka/downloads",
+    "events_url": "https://api.github.com/repos/apache/kafka/events",
+    "forks_url": "https://api.github.com/repos/apache/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/apache/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/apache/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/apache/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/apache/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/apache/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/apache/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/apache/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/apache/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/apache/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/apache/kafka/languages",
+    "merges_url": "https://api.github.com/repos/apache/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/apache/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/apache/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/apache/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/apache/kafka/releases{/id}",
+    "ssh_url": "git@github.com:apache/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/apache/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/apache/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/apache/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/apache/kafka/tags",
+    "teams_url": "https://api.github.com/repos/apache/kafka/teams",
+    "trees_url": "https://api.github.com/repos/apache/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/apache/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/apache/kafka/hooks",
+    "svn_url": "https://github.com/apache/kafka"
+   },
+   "sha": "b1093f64c085d82c08fd6462b26a190e2eb3cb83",
+   "user": {
+    "login": "apache",
+    "id": 47359,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/apache",
+    "html_url": "https://github.com/apache",
+    "followers_url": "https://api.github.com/users/apache/followers",
+    "following_url": "https://api.github.com/users/apache/following{/other_user}",
+    "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+    "organizations_url": "https://api.github.com/users/apache/orgs",
+    "repos_url": "https://api.github.com/users/apache/repos",
+    "events_url": "https://api.github.com/users/apache/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/apache/received_events",
+    "type": "Organization",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "_links": {
+   "comments": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23988/comments"
+   },
+   "commits": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23988/commits"
+   },
+   "statuses": {
+    "href": "https://api.github.com/repos/apache/kafka/statuses/31313667a645ba1a014394fe0399b3dcaf6d89a1"
+   },
+   "html": {
+    "href": "https://github.com/apache/kafka/pull/23988"
+   },
+   "issue": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23988"
+   },
+   "review_comments": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23988/comments"
+   },
+   "review_comment": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}"
+   },
+   "self": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23988"
+   }
+  },
+  "author_association": "MEMBER",
+  "auto_merge": null,
+  "draft": false,
+  "merged": false,
+  "mergeable": true,
+  "rebaseable": false,
+  "mergeable_state": "blocked",
+  "merged_by": null,
+  "comments": 0,
+  "review_comments": 3,
+  "maintainer_can_modify": true,
+  "commits": 4,
+  "additions": 99,
+  "deletions": 50,
+  "changed_files": 9
+ },
+ "reviews": [
+  {
+   "id": 5674372331,
+   "node_id": "PRR_kwDOACG9q88AAAABUjgM6w",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?u=d6a720105c14e445ea603b93ca071290c3955670&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "@AndrewJSchofield thanks for this patch. I think those public APIs have been missing for a long while. It is truly an issue after `CommonClientConfigs` was marked as non-public API.",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23988#pullrequestreview-5674372331",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23988",
+   "author_association": "MEMBER",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23988#pullrequestreview-5674372331"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23988"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-27T21:16:54Z",
+   "commit_id": "4bbf08703121a3d8633c760fdc5911e79be1eb92"
+  },
+  {
+   "id": 5674906518,
+   "node_id": "PRR_kwDOACG9q88AAAABUkAzlg",
+   "user": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?u=7dbeb75783bacbd2c86daee91460abbfe5d0e2a7&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23988#pullrequestreview-5674906518",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23988",
+   "author_association": "MEMBER",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23988#pullrequestreview-5674906518"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23988"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-27T21:50:57Z",
+   "commit_id": "4bbf08703121a3d8633c760fdc5911e79be1eb92"
+  }
+ ],
+ "review_comments": [
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4394183775",
+   "pull_request_review_id": 5674372331,
+   "id": 4394183775,
+   "node_id": "PRRC_kwDOACG9q88AAAABBensXw",
+   "diff_hunk": "@@ -583,6 +583,22 @@ public class StreamsConfig extends AbstractConfig {\n     public static final String DEFAULT_VALUE_SERDE_CLASS_CONFIG = \"default.value.serde\";\n     private static final String DEFAULT_VALUE_SERDE_CLASS_DOC = \"Default serializer / deserializer class for value that implements the <code>org.apache.kafka.common.serialization.Serde</code> interface. \";\n \n+    /** {@code default.list.key.serde.inner} */\n+    @SuppressWarnings(\"WeakerAccess\")\n+    public static final String DEFAULT_LIST_KEY_SERDE_INNER_CLASS = CommonClientConfigs.DEFAULT_LIST_KEY_SERDE_INNER_CLASS;",
+   "path": "streams/src/main/java/org/apache/kafka/streams/StreamsConfig.java",
+   "commit_id": "4bbf08703121a3d8633c760fdc5911e79be1eb92",
+   "original_commit_id": "4bbf08703121a3d8633c760fdc5911e79be1eb92",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "Should we follow the naming convention by adding the `_CONFIG` suffix?",
+   "created_at": "2026-10-27T21:09:31Z",
+   "updated_at": "2026-10-27T21:16:54Z",
+   "html_url": "https://github.com/apache/kafka/pull/23988#discussion_r4394183775",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23988",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4394183775"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23988#discussion_r4394183775"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23988"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4394183775/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": null,
+   "original_line": 588,
+   "side": "RIGHT",
+   "author_association": "MEMBER",
+   "original_position": 6,
+   "position": 1,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4394206888",
+   "pull_request_review_id": 5674372331,
+   "id": 4394206888,
+   "node_id": "PRRC_kwDOACG9q88AAAABBepGqA",
+   "diff_hunk": "",
+   "path": "streams/src/main/java/org/apache/kafka/streams/StreamsConfig.java",
+   "commit_id": "4bbf08703121a3d8633c760fdc5911e79be1eb92",
+   "original_commit_id": "4bbf08703121a3d8633c760fdc5911e79be1eb92",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "Should we update this `CommonClientConfigs#BOOTSTRAP_RESOLVE_TIMEOUT_MS_CONFIG` as well?",
+   "created_at": "2026-10-27T21:11:42Z",
+   "updated_at": "2026-10-27T21:16:54Z",
+   "html_url": "https://github.com/apache/kafka/pull/23988#discussion_r4394206888",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23988",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4394206888"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23988#discussion_r4394206888"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23988"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4394206888/reactions",
+    "total_count": 1,
+    "+1": 1,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": null,
+   "original_line": 152,
+   "side": "RIGHT",
+   "author_association": "MEMBER",
+   "original_position": 1,
+   "position": 1,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4394595671",
+   "pull_request_review_id": 5674906518,
+   "id": 4394595671,
+   "node_id": "PRRC_kwDOACG9q88AAAABBfA1Vw",
+   "diff_hunk": "@@ -583,6 +583,22 @@ public class StreamsConfig extends AbstractConfig {\n     public static final String DEFAULT_VALUE_SERDE_CLASS_CONFIG = \"default.value.serde\";\n     private static final String DEFAULT_VALUE_SERDE_CLASS_DOC = \"Default serializer / deserializer class for value that implements the <code>org.apache.kafka.common.serialization.Serde</code> interface. \";\n \n+    /** {@code default.list.key.serde.inner} */\n+    @SuppressWarnings(\"WeakerAccess\")\n+    public static final String DEFAULT_LIST_KEY_SERDE_INNER_CLASS = CommonClientConfigs.DEFAULT_LIST_KEY_SERDE_INNER_CLASS;",
+   "path": "streams/src/main/java/org/apache/kafka/streams/StreamsConfig.java",
+   "commit_id": "4bbf08703121a3d8633c760fdc5911e79be1eb92",
+   "original_commit_id": "4bbf08703121a3d8633c760fdc5911e79be1eb92",
+   "user": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "There could perhaps be `o.a.k.common.serialization.SerializerConfigs` or similar because the public classes in that package do still refer to `CommonClientConfigs` and don't have any legitimate alternative as far as I can see.",
+   "created_at": "2026-10-27T21:50:56Z",
+   "updated_at": "2026-10-27T21:50:57Z",
+   "html_url": "https://github.com/apache/kafka/pull/23988#discussion_r4394595671",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23988",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4394595671"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23988#discussion_r4394595671"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23988"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4394595671/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": null,
+   "original_line": 588,
+   "side": "RIGHT",
+   "in_reply_to_id": 4394183775,
+   "author_association": "MEMBER",
+   "original_position": 6,
+   "position": 1,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  }
+ ],
+ "issue_comments": [],
+ "commits": [
+  {
+   "sha": "0172baab066c8570de371b5b5d48f771f449a0b7",
+   "node_id": "C_kwDOCr0Z7doAKDAxNzJiYWFiMDY2Yzg1NzBkZTM3MWI1YjVkNDhmNzcxZjQ0OWEwYjc",
+   "commit": {
+    "author": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-27T20:49:02Z"
+    },
+    "committer": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-27T20:49:02Z"
+    },
+    "message": "KAFKA-21368: Lift non-public config key strings into public",
+    "tree": {
+     "sha": "96465aab1d18645c1c2f6e44b61dd89143a39169",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/96465aab1d18645c1c2f6e44b61dd89143a39169"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/0172baab066c8570de371b5b5d48f771f449a0b7",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/0172baab066c8570de371b5b5d48f771f449a0b7",
+   "html_url": "https://github.com/apache/kafka/commit/0172baab066c8570de371b5b5d48f771f449a0b7",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/0172baab066c8570de371b5b5d48f771f449a0b7/comments",
+   "author": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "058f67ef5c05c8397dcd8511be77ce564a21c0fa",
+     "url": "https://api.github.com/repos/apache/kafka/commits/058f67ef5c05c8397dcd8511be77ce564a21c0fa",
+     "html_url": "https://github.com/apache/kafka/commit/058f67ef5c05c8397dcd8511be77ce564a21c0fa"
+    }
+   ]
+  },
+  {
+   "sha": "4bbf08703121a3d8633c760fdc5911e79be1eb92",
+   "node_id": "C_kwDOCr0Z7doAKDRiYmYwODcwMzEyMWEzZDg2MzNjNzYwZmRjNTkxMWU3OWJlMWViOTI",
+   "commit": {
+    "author": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-27T20:55:24Z"
+    },
+    "committer": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-27T20:55:24Z"
+    },
+    "message": "Checkstyle",
+    "tree": {
+     "sha": "2d06a12092c14c52bb871549a210155f3027e239",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/2d06a12092c14c52bb871549a210155f3027e239"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/4bbf08703121a3d8633c760fdc5911e79be1eb92",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/4bbf08703121a3d8633c760fdc5911e79be1eb92",
+   "html_url": "https://github.com/apache/kafka/commit/4bbf08703121a3d8633c760fdc5911e79be1eb92",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/4bbf08703121a3d8633c760fdc5911e79be1eb92/comments",
+   "author": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "0172baab066c8570de371b5b5d48f771f449a0b7",
+     "url": "https://api.github.com/repos/apache/kafka/commits/0172baab066c8570de371b5b5d48f771f449a0b7",
+     "html_url": "https://github.com/apache/kafka/commit/0172baab066c8570de371b5b5d48f771f449a0b7"
+    }
+   ]
+  },
+  {
+   "sha": "229777fd3190c797ee88e5f995d39fd76e64f5ee",
+   "node_id": "C_kwDOCr0Z7doAKDIyOTc3N2ZkMzE5MGM3OTdlZTg4ZTVmOTk1ZDM5ZmQ3NmU2NGY1ZWU",
+   "commit": {
+    "author": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-27T21:51:47Z"
+    },
+    "committer": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-27T21:51:47Z"
+    },
+    "message": "Review comments",
+    "tree": {
+     "sha": "e06efba45637fad42fd083731c472a98f3debfb7",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/e06efba45637fad42fd083731c472a98f3debfb7"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/229777fd3190c797ee88e5f995d39fd76e64f5ee",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/229777fd3190c797ee88e5f995d39fd76e64f5ee",
+   "html_url": "https://github.com/apache/kafka/commit/229777fd3190c797ee88e5f995d39fd76e64f5ee",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/229777fd3190c797ee88e5f995d39fd76e64f5ee/comments",
+   "author": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "4bbf08703121a3d8633c760fdc5911e79be1eb92",
+     "url": "https://api.github.com/repos/apache/kafka/commits/4bbf08703121a3d8633c760fdc5911e79be1eb92",
+     "html_url": "https://github.com/apache/kafka/commit/4bbf08703121a3d8633c760fdc5911e79be1eb92"
+    }
+   ]
+  },
+  {
+   "sha": "31313667a645ba1a014394fe0399b3dcaf6d89a1",
+   "node_id": "C_kwDOCr0Z7doAKDMxMzEzNjY3YTY0NWJhMWEwMTQzOTRmZTAzOTliM2RjYWY2ZDg5YTE",
+   "commit": {
+    "author": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-28T17:47:25Z"
+    },
+    "committer": {
+     "name": "Andrew Schofield",
+     "email": "aschofield@confluent.io",
+     "date": "2026-10-28T17:47:25Z"
+    },
+    "message": "Checkstyle",
+    "tree": {
+     "sha": "ed121e111defa0594ff328657d5904f20ab597a4",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/ed121e111defa0594ff328657d5904f20ab597a4"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/31313667a645ba1a014394fe0399b3dcaf6d89a1",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/31313667a645ba1a014394fe0399b3dcaf6d89a1",
+   "html_url": "https://github.com/apache/kafka/commit/31313667a645ba1a014394fe0399b3dcaf6d89a1",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/31313667a645ba1a014394fe0399b3dcaf6d89a1/comments",
+   "author": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "229777fd3190c797ee88e5f995d39fd76e64f5ee",
+     "url": "https://api.github.com/repos/apache/kafka/commits/229777fd3190c797ee88e5f995d39fd76e64f5ee",
+     "html_url": "https://github.com/apache/kafka/commit/229777fd3190c797ee88e5f995d39fd76e64f5ee"
+    }
+   ]
+  }
+ ],
+ "files": [
+  {
+   "sha": "7aa4a57df91b4867da2231171e10a081087f340f",
+   "filename": "clients/clients-integration-tests/src/test/java/org/apache/kafka/clients/ClientRebootstrapTest.java",
+   "status": "modified",
+   "additions": 4,
+   "deletions": 3,
+   "changes": 7,
+   "blob_url": "https://github.com/apache/kafka/blob/31313667a645ba1a014394fe0399b3dcaf6d89a1/clients%2Fclients-integration-tests%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2FClientRebootstrapTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/31313667a645ba1a014394fe0399b3dcaf6d89a1/clients%2Fclients-integration-tests%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2FClientRebootstrapTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fclients-integration-tests%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2FClientRebootstrapTest.java?ref=31313667a645ba1a014394fe0399b3dcaf6d89a1",
+   "patch": "@@ -16,6 +16,7 @@\n  */\n package org.apache.kafka.clients;\n \n+import org.apache.kafka.clients.admin.AdminClientConfig;\n import org.apache.kafka.clients.admin.NewTopic;\n import org.apache.kafka.clients.consumer.ConsumerConfig;\n import org.apache.kafka.clients.consumer.GroupProtocol;\n@@ -92,7 +93,7 @@ public void testAdminRebootstrapDisabled(ClusterInstance clusterInstance) throws\n \n         clusterInstance.shutdownBroker(broker0);\n \n-        var admin = clusterInstance.admin(Map.of(CommonClientConfigs.METADATA_RECOVERY_STRATEGY_CONFIG, \"none\"));\n+        var admin = clusterInstance.admin(Map.of(AdminClientConfig.METADATA_RECOVERY_STRATEGY_CONFIG, \"none\"));\n         try {\n             admin.createTopics(List.of(new NewTopic(TOPIC, PARTITIONS, (short) REPLICAS))).all().get();\n             // Only the broker 1 is available for the admin client during the bootstrap.\n@@ -160,7 +161,7 @@ public void testProducerRebootstrapDisabled(ClusterInstance clusterInstance) thr\n         // It's ok to shut the leader down, cause the reelection is small enough to the producer timeout.\n         clusterInstance.shutdownBroker(broker0);\n \n-        var producer = clusterInstance.producer(Map.of(CommonClientConfigs.METADATA_RECOVERY_STRATEGY_CONFIG, \"none\"));\n+        var producer = clusterInstance.producer(Map.of(ProducerConfig.METADATA_RECOVERY_STRATEGY_CONFIG, \"none\"));\n \n         // Only the broker 1 is available for the producer during the bootstrap.\n         var recordMetadata0 = producer.send(new ProducerRecord<>(TOPIC, \"value 0\".getBytes())).get();\n@@ -248,7 +249,7 @@ public void consumerRebootstrapDisabled(ClusterInstance clusterInstance, GroupPr\n         clusterInstance.shutdownBroker(broker0);\n \n         try (var consumer = clusterInstance.consumer(Map.of(\n-            CommonClientConfigs.METADATA_RECOVERY_STRATEGY_CONFIG, \"none\",\n+            ConsumerConfig.METADATA_RECOVERY_STRATEGY_CONFIG, \"none\",\n             ConsumerConfig.GROUP_PROTOCOL_CONFIG, groupProtocol.name)\n         )) {\n             // Only the server 1 is available for the consumer during the bootstrap."
+  },
+  {
+   "sha": "30f34ad380fe560c245bd5daa7fc18e17822cef1",
+   "filename": "clients/src/main/java/org/apache/kafka/clients/consumer/ConsumerConfig.java",
+   "status": "modified",
+   "additions": 20,
+   "deletions": 8,
+   "changes": 28,
+   "blob_url": "https://github.com/apache/kafka/blob/31313667a645ba1a014394fe0399b3dcaf6d89a1/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fconsumer%2FConsumerConfig.java",
+   "raw_url": "https://github.com/apache/kafka/raw/31313667a645ba1a014394fe0399b3dcaf6d89a1/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fconsumer%2FConsumerConfig.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fconsumer%2FConsumerConfig.java?ref=31313667a645ba1a014394fe0399b3dcaf6d89a1",
+   "patch": "@@ -394,6 +394,18 @@ public class ConsumerConfig extends AbstractConfig {\n     public static final String SECURITY_PROVIDERS_CONFIG = SecurityConfig.SECURITY_PROVIDERS_CONFIG;\n     private static final String SECURITY_PROVIDERS_DOC = SecurityConfig.SECURITY_PROVIDERS_DOC;\n \n+    /** <code>security.protocol</code> */\n+    public static final String SECURITY_PROTOCOL_CONFIG = CommonClientConfigs.SECURITY_PROTOCOL_CONFIG;\n+\n+    /** <code>metadata.recovery.strategy</code> */\n+    public static final String METADATA_RECOVERY_STRATEGY_CONFIG = CommonClientConfigs.METADATA_RECOVERY_STRATEGY_CONFIG;\n+\n+    /** <code>metadata.recovery.rebootstrap.trigger.ms</code> */\n+    public static final String METADATA_RECOVERY_REBOOTSTRAP_TRIGGER_MS_CONFIG = CommonClientConfigs.METADATA_RECOVERY_REBOOTSTRAP_TRIGGER_MS_CONFIG;\n+\n+    /** <code>metadata.cluster.check.enable</code> */\n+    public static final String METADATA_CLUSTER_CHECK_ENABLE_CONFIG = CommonClientConfigs.METADATA_CLUSTER_CHECK_ENABLE_CONFIG;\n+\n     /**\n      * <code>share.acknowledgement.mode</code>\n      */\n@@ -698,7 +710,7 @@ public class ConsumerConfig extends AbstractConfig {\n                                         null,\n                                         Importance.LOW,\n                                         SECURITY_PROVIDERS_DOC)\n-                                .define(CommonClientConfigs.SECURITY_PROTOCOL_CONFIG,\n+                                .define(SECURITY_PROTOCOL_CONFIG,\n                                         Type.STRING,\n                                         CommonClientConfigs.DEFAULT_SECURITY_PROTOCOL,\n                                         ConfigDef.CaseInsensitiveValidString\n@@ -707,36 +719,36 @@ public class ConsumerConfig extends AbstractConfig {\n                                         CommonClientConfigs.SECURITY_PROTOCOL_DOC)\n                                 .withClientSslSupport()\n                                 .withClientSaslSupport()\n-                                .define(CommonClientConfigs.METADATA_RECOVERY_STRATEGY_CONFIG,\n+                                .define(METADATA_RECOVERY_STRATEGY_CONFIG,\n                                         Type.STRING,\n                                         CommonClientConfigs.DEFAULT_METADATA_RECOVERY_STRATEGY,\n                                         ConfigDef.CaseInsensitiveValidString\n                                                 .in(Utils.enumOptions(MetadataRecoveryStrategy.class)),\n                                         Importance.LOW,\n                                         CommonClientConfigs.METADATA_RECOVERY_STRATEGY_DOC)\n-                                .define(CommonClientConfigs.METADATA_RECOVERY_REBOOTSTRAP_TRIGGER_MS_CONFIG,\n+                                .define(METADATA_RECOVERY_REBOOTSTRAP_TRIGGER_MS_CONFIG,\n                                         Type.LONG,\n                                         CommonClientConfigs.DEFAULT_METADATA_RECOVERY_REBOOTSTRAP_TRIGGER_MS,\n                                         atLeast(0),\n                                         Importance.LOW,\n                                         CommonClientConfigs.METADATA_RECOVERY_REBOOTSTRAP_TRIGGER_MS_DOC)\n-                                .define(CommonClientConfigs.METADATA_CLUSTER_CHECK_ENABLE_CONFIG,\n+                                .define(METADATA_CLUSTER_CHECK_ENABLE_CONFIG,\n                                         Type.BOOLEAN,\n                                         true,\n                                         Importance.LOW,\n                                         CommonClientConfigs.METADATA_CLUSTER_CHECK_ENABLE_DOC)\n-                                .define(ConsumerConfig.SHARE_ACKNOWLEDGEMENT_MODE_CONFIG,\n+                                .define(SHARE_ACKNOWLEDGEMENT_MODE_CONFIG,\n                                         Type.STRING,\n                                         ShareAcknowledgementMode.IMPLICIT.name(),\n                                         new ShareAcknowledgementMode.Validator(),\n                                         Importance.MEDIUM,\n-                                        ConsumerConfig.SHARE_ACKNOWLEDGEMENT_MODE_DOC)\n-                                .define(ConsumerConfig.SHARE_ACQUIRE_MODE_CONFIG,\n+                                        SHARE_ACKNOWLEDGEMENT_MODE_DOC)\n+                                .define(SHARE_ACQUIRE_MODE_CONFIG,\n                                         Type.STRING,\n                                         DEFAULT_SHARE_ACQUIRE_MODE,\n                                         new ShareAcquireMode.Validator(),\n                                         Importance.MEDIUM,\n-                                        ConsumerConfig.SHARE_ACQUIRE_MODE_DOC)\n+                                        SHARE_ACQUIRE_MODE_DOC)\n                                 .define(CONFIG_PROVIDERS_CONFIG,\n                                         Type.LIST,\n                                         List.of(),"
+  },
+  {
+   "sha": "d6de0545ae7bdb4a374ca9d6da9f5aebc84c8410",
+   "filename": "clients/src/main/java/org/apache/kafka/clients/producer/ProducerConfig.java",
+   "status": "modified",
+   "additions": 17,
+   "deletions": 7,
+   "changes": 24,
+   "blob_url": "https://github.com/apache/kafka/blob/31313667a645ba1a014394fe0399b3dcaf6d89a1/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fproducer%2FProducerConfig.java",
+   "raw_url": "https://github.com/apache/kafka/raw/31313667a645ba1a014394fe0399b3dcaf6d89a1/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fproducer%2FProducerConfig.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fproducer%2FProducerConfig.java?ref=31313667a645ba1a014394fe0399b3dcaf6d89a1",
+   "patch": "@@ -395,12 +395,22 @@ public class ProducerConfig extends AbstractConfig {\n     private static final String TRANSACTION_TWO_PHASE_COMMIT_ENABLE_DOC = \"If set to true, then the broker is informed that the client is participating in \" +\n             \"two phase commit protocol and transactions that this client starts never expire.\";\n \n-    /**\n-     * <code>security.providers</code>\n-     */\n+    /** <code>security.protocol</code> */\n+    public static final String SECURITY_PROTOCOL_CONFIG = CommonClientConfigs.SECURITY_PROTOCOL_CONFIG;\n+\n+    /** <code>security.providers</code> */\n     public static final String SECURITY_PROVIDERS_CONFIG = SecurityConfig.SECURITY_PROVIDERS_CONFIG;\n     private static final String SECURITY_PROVIDERS_DOC = SecurityConfig.SECURITY_PROVIDERS_DOC;\n \n+    /** <code>metadata.recovery.strategy</code> */\n+    public static final String METADATA_RECOVERY_STRATEGY_CONFIG = CommonClientConfigs.METADATA_RECOVERY_STRATEGY_CONFIG;\n+\n+    /** <code>metadata.recovery.rebootstrap.trigger.ms</code> */\n+    public static final String METADATA_RECOVERY_REBOOTSTRAP_TRIGGER_MS_CONFIG = CommonClientConfigs.METADATA_RECOVERY_REBOOTSTRAP_TRIGGER_MS_CONFIG;\n+\n+    /** <code>metadata.cluster.check.enable</code> */\n+    public static final String METADATA_CLUSTER_CHECK_ENABLE_CONFIG = CommonClientConfigs.METADATA_CLUSTER_CHECK_ENABLE_CONFIG;\n+\n     private static final AtomicInteger PRODUCER_CLIENT_ID_SEQUENCE = new AtomicInteger(1);\n \n     static {\n@@ -557,7 +567,7 @@ public class ProducerConfig extends AbstractConfig {\n                                         ConfigDef.ValidList.anyNonDuplicateValues(true, false),\n                                         Importance.LOW,\n                                         INTERCEPTOR_CLASSES_DOC)\n-                                .define(CommonClientConfigs.SECURITY_PROTOCOL_CONFIG,\n+                                .define(SECURITY_PROTOCOL_CONFIG,\n                                         Type.STRING,\n                                         CommonClientConfigs.DEFAULT_SECURITY_PROTOCOL,\n                                         ConfigDef.CaseInsensitiveValidString\n@@ -592,20 +602,20 @@ public class ProducerConfig extends AbstractConfig {\n                                         false,\n                                         Importance.LOW,\n                                         TRANSACTION_TWO_PHASE_COMMIT_ENABLE_DOC)\n-                                .define(CommonClientConfigs.METADATA_RECOVERY_STRATEGY_CONFIG,\n+                                .define(METADATA_RECOVERY_STRATEGY_CONFIG,\n                                         Type.STRING,\n                                         CommonClientConfigs.DEFAULT_METADATA_RECOVERY_STRATEGY,\n                                         ConfigDef.CaseInsensitiveValidString\n                                                 .in(Utils.enumOptions(MetadataRecoveryStrategy.class)),\n                                         Importance.LOW,\n                                         CommonClientConfigs.METADATA_RECOVERY_STRATEGY_DOC)\n-                                .define(CommonClientConfigs.METADATA_RECOVERY_REBOOTSTRAP_TRIGGER_MS_CONFIG,\n+                                .define(METADATA_RECOVERY_REBOOTSTRAP_TRIGGER_MS_CONFIG,\n                                         Type.LONG,\n                                         CommonClientConfigs.DEFAULT_METADATA_RECOVERY_REBOOTSTRAP_TRIGGER_MS,\n                                         atLeast(0),\n                                         Importance.LOW,\n                                         CommonClientConfigs.METADATA_RECOVERY_REBOOTSTRAP_TRIGGER_MS_DOC)\n-                                .define(CommonClientConfigs.METADATA_CLUSTER_CHECK_ENABLE_CONFIG,\n+                                .define(METADATA_CLUSTER_CHECK_ENABLE_CONFIG,\n                                         Type.BOOLEAN,\n                                         true,\n                                         Importance.LOW,"
+  },
+  {
+   "sha": "e4e303d6044e343bd05c04f9d8095a2beed8fba7",
+   "filename": "clients/src/main/java/org/apache/kafka/common/errors/BootstrapResolutionException.java",
+   "status": "modified",
+   "additions": 3,
+   "deletions": 2,
+   "changes": 5,
+   "blob_url": "https://github.com/apache/kafka/blob/31313667a645ba1a014394fe0399b3dcaf6d89a1/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Ferrors%2FBootstrapResolutionException.java",
+   "raw_url": "https://github.com/apache/kafka/raw/31313667a645ba1a014394fe0399b3dcaf6d89a1/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Ferrors%2FBootstrapResolutionException.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fcommon%2Ferrors%2FBootstrapResolutionException.java?ref=31313667a645ba1a014394fe0399b3dcaf6d89a1",
+   "patch": "@@ -22,7 +22,8 @@\n \n /**\n  * Indicates that the {@link org.apache.kafka.clients.NetworkClient} was unable to resolve a DNS address within\n- * the time specified by {@link org.apache.kafka.clients.CommonClientConfigs#BOOTSTRAP_RESOLVE_TIMEOUT_MS_CONFIG}.\n+ * the time specified by {@link org.apache.kafka.clients.producer.ProducerConfig#BOOTSTRAP_RESOLVE_TIMEOUT_MS_CONFIG}\n+ * and the equivalents for consumer and admin clients.\n  * <p>\n  * This is an unrecoverable error: the failure is permanently attached to the client and is re-thrown on every\n  * subsequent API call. Callers must close the client and construct a new one after resolving the underlying\n@@ -31,7 +32,7 @@\n  * This exception is only thrown when {@code bootstrap.resolve.timeout.ms} is set to a positive value.\n  * This feature is evolving and may undergo compatibility-breaking changes in a minor release.\n  *\n- * @see org.apache.kafka.clients.CommonClientConfigs\n+ * @see org.apache.kafka.clients.producer.ProducerConfig\n  */\n @InterfaceAudience.Public\n @InterfaceStability.Evolving"
+  },
+  {
+   "sha": "bf395dfd06693a349f18913f5135d887ca712878",
+   "filename": "clients/src/test/java/org/apache/kafka/clients/admin/AdminClientConfigTest.java",
+   "status": "modified",
+   "additions": 3,
+   "deletions": 4,
+   "changes": 7,
+   "blob_url": "https://github.com/apache/kafka/blob/31313667a645ba1a014394fe0399b3dcaf6d89a1/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fadmin%2FAdminClientConfigTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/31313667a645ba1a014394fe0399b3dcaf6d89a1/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fadmin%2FAdminClientConfigTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fadmin%2FAdminClientConfigTest.java?ref=31313667a645ba1a014394fe0399b3dcaf6d89a1",
+   "patch": "@@ -17,7 +17,6 @@\n \n package org.apache.kafka.clients.admin;\n \n-import org.apache.kafka.clients.CommonClientConfigs;\n import org.apache.kafka.clients.MetadataRecoveryStrategy;\n import org.apache.kafka.common.config.ConfigException;\n \n@@ -35,15 +34,15 @@ public class AdminClientConfigTest {\n     public void testDefaultMetadataRecoveryStrategy() {\n         Map<String, Object> configs = new HashMap<>();\n         final AdminClientConfig adminClientConfig = new AdminClientConfig(configs);\n-        assertEquals(MetadataRecoveryStrategy.REBOOTSTRAP.name, adminClientConfig.getString(CommonClientConfigs.METADATA_RECOVERY_STRATEGY_CONFIG));\n+        assertEquals(MetadataRecoveryStrategy.REBOOTSTRAP.name, adminClientConfig.getString(AdminClientConfig.METADATA_RECOVERY_STRATEGY_CONFIG));\n \n     }\n \n     @Test\n     public void testInvalidMetadataRecoveryStrategy() {\n         Map<String, Object> configs = new HashMap<>();\n-        configs.put(CommonClientConfigs.METADATA_RECOVERY_STRATEGY_CONFIG, \"abc\");\n+        configs.put(AdminClientConfig.METADATA_RECOVERY_STRATEGY_CONFIG, \"abc\");\n         ConfigException ce = assertThrows(ConfigException.class, () -> new AdminClientConfig(configs));\n-        assertTrue(ce.getMessage().contains(CommonClientConfigs.METADATA_RECOVERY_STRATEGY_CONFIG));\n+        assertTrue(ce.getMessage().contains(AdminClientConfig.METADATA_RECOVERY_STRATEGY_CONFIG));\n     }\n }"
+  },
+  {
+   "sha": "c8e0dac88ff849448868ca55620bd8551a3663a3",
+   "filename": "clients/src/test/java/org/apache/kafka/clients/consumer/ConsumerConfigTest.java",
+   "status": "modified",
+   "additions": 7,
+   "deletions": 8,
+   "changes": 15,
+   "blob_url": "https://github.com/apache/kafka/blob/31313667a645ba1a014394fe0399b3dcaf6d89a1/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fconsumer%2FConsumerConfigTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/31313667a645ba1a014394fe0399b3dcaf6d89a1/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fconsumer%2FConsumerConfigTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fconsumer%2FConsumerConfigTest.java?ref=31313667a645ba1a014394fe0399b3dcaf6d89a1",
+   "patch": "@@ -16,7 +16,6 @@\n  */\n package org.apache.kafka.clients.consumer;\n \n-import org.apache.kafka.clients.CommonClientConfigs;\n import org.apache.kafka.clients.MetadataRecoveryStrategy;\n import org.apache.kafka.common.config.ConfigException;\n import org.apache.kafka.common.errors.InvalidConfigurationException;\n@@ -158,10 +157,10 @@ public void testInvalidSecurityProtocol() {\n         Map<String, Object> configs = new HashMap<>();\n         configs.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, keyDeserializerClass);\n         configs.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, valueDeserializerClass);\n-        configs.put(CommonClientConfigs.SECURITY_PROTOCOL_CONFIG, \"abc\");\n+        configs.put(ConsumerConfig.SECURITY_PROTOCOL_CONFIG, \"abc\");\n         configs.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, \"localhost:9092\");\n         ConfigException ce = assertThrows(ConfigException.class, () -> new ConsumerConfig(configs));\n-        assertTrue(ce.getMessage().contains(CommonClientConfigs.SECURITY_PROTOCOL_CONFIG));\n+        assertTrue(ce.getMessage().contains(ConsumerConfig.SECURITY_PROTOCOL_CONFIG));\n     }\n \n     @Test\n@@ -171,9 +170,9 @@ public void testCaseInsensitiveSecurityProtocol() {\n         configs.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, keyDeserializerClass);\n         configs.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, valueDeserializerClass);\n         configs.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, \"localhost:9092\");\n-        configs.put(CommonClientConfigs.SECURITY_PROTOCOL_CONFIG, saslSslLowerCase);\n+        configs.put(ConsumerConfig.SECURITY_PROTOCOL_CONFIG, saslSslLowerCase);\n         final ConsumerConfig consumerConfig = new ConsumerConfig(configs);\n-        assertEquals(saslSslLowerCase, consumerConfig.originals().get(CommonClientConfigs.SECURITY_PROTOCOL_CONFIG));\n+        assertEquals(saslSslLowerCase, consumerConfig.originals().get(ConsumerConfig.SECURITY_PROTOCOL_CONFIG));\n     }\n \n     @Test\n@@ -221,18 +220,18 @@ public void testDefaultMetadataRecoveryStrategy() {\n         configs.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, valueDeserializerClass);\n         configs.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, \"localhost:9092\");\n         final ConsumerConfig consumerConfig = new ConsumerConfig(configs);\n-        assertEquals(MetadataRecoveryStrategy.REBOOTSTRAP.name, consumerConfig.getString(CommonClientConfigs.METADATA_RECOVERY_STRATEGY_CONFIG));\n+        assertEquals(MetadataRecoveryStrategy.REBOOTSTRAP.name, consumerConfig.getString(ConsumerConfig.METADATA_RECOVERY_STRATEGY_CONFIG));\n     }\n \n     @Test\n     public void testInvalidMetadataRecoveryStrategy() {\n         Map<String, Object> configs = new HashMap<>();\n         configs.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, keyDeserializerClass);\n         configs.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, valueDeserializerClass);\n-        configs.put(CommonClientConfigs.METADATA_RECOVERY_STRATEGY_CONFIG, \"abc\");\n+        configs.put(ConsumerConfig.METADATA_RECOVERY_STRATEGY_CONFIG, \"abc\");\n         configs.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, \"localhost:9092\");\n         ConfigException ce = assertThrows(ConfigException.class, () -> new ConsumerConfig(configs));\n-        assertTrue(ce.getMessage().contains(CommonClientConfigs.METADATA_RECOVERY_STRATEGY_CONFIG));\n+        assertTrue(ce.getMessage().contains(ConsumerConfig.METADATA_RECOVERY_STRATEGY_CONFIG));\n     }\n \n     @ParameterizedTest"
+  },
+  {
+   "sha": "56dda5f06dce6f10df4147c85fa2be6d604e73b3",
+   "filename": "clients/src/test/java/org/apache/kafka/clients/producer/ProducerConfigTest.java",
+   "status": "modified",
+   "additions": 7,
+   "deletions": 8,
+   "changes": 15,
+   "blob_url": "https://github.com/apache/kafka/blob/31313667a645ba1a014394fe0399b3dcaf6d89a1/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fproducer%2FProducerConfigTest.java",
+   "raw_url": "https://github.com/apache/kafka/raw/31313667a645ba1a014394fe0399b3dcaf6d89a1/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fproducer%2FProducerConfigTest.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/clients%2Fsrc%2Ftest%2Fjava%2Forg%2Fapache%2Fkafka%2Fclients%2Fproducer%2FProducerConfigTest.java?ref=31313667a645ba1a014394fe0399b3dcaf6d89a1",
+   "patch": "@@ -16,7 +16,6 @@\n  */\n package org.apache.kafka.clients.producer;\n \n-import org.apache.kafka.clients.CommonClientConfigs;\n import org.apache.kafka.clients.MetadataRecoveryStrategy;\n import org.apache.kafka.clients.consumer.ConsumerConfig;\n import org.apache.kafka.common.config.ConfigException;\n@@ -102,10 +101,10 @@ public void testInvalidSecurityProtocol() {\n         Map<String, Object> configs = new HashMap<>();\n         configs.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, keySerializerClass);\n         configs.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, valueSerializerClass);\n-        configs.put(CommonClientConfigs.SECURITY_PROTOCOL_CONFIG, \"abc\");\n+        configs.put(ProducerConfig.SECURITY_PROTOCOL_CONFIG, \"abc\");\n         configs.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, \"localhost:9092\");\n         ConfigException ce = assertThrows(ConfigException.class, () -> new ProducerConfig(configs));\n-        assertTrue(ce.getMessage().contains(CommonClientConfigs.SECURITY_PROTOCOL_CONFIG));\n+        assertTrue(ce.getMessage().contains(ProducerConfig.SECURITY_PROTOCOL_CONFIG));\n     }\n \n     @Test\n@@ -115,18 +114,18 @@ public void testDefaultMetadataRecoveryStrategy() {\n         configs.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, valueSerializerClass);\n         configs.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, \"localhost:9092\");\n         final ProducerConfig producerConfig = new ProducerConfig(configs);\n-        assertEquals(MetadataRecoveryStrategy.REBOOTSTRAP.name, producerConfig.getString(CommonClientConfigs.METADATA_RECOVERY_STRATEGY_CONFIG));\n+        assertEquals(MetadataRecoveryStrategy.REBOOTSTRAP.name, producerConfig.getString(ProducerConfig.METADATA_RECOVERY_STRATEGY_CONFIG));\n     }\n \n     @Test\n     public void testInvalidMetadataRecoveryStrategy() {\n         Map<String, Object> configs = new HashMap<>();\n         configs.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, keySerializerClass);\n         configs.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, valueSerializerClass);\n-        configs.put(CommonClientConfigs.METADATA_RECOVERY_STRATEGY_CONFIG, \"abc\");\n+        configs.put(ProducerConfig.METADATA_RECOVERY_STRATEGY_CONFIG, \"abc\");\n         configs.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, \"localhost:9092\");\n         ConfigException ce = assertThrows(ConfigException.class, () -> new ProducerConfig(configs));\n-        assertTrue(ce.getMessage().contains(CommonClientConfigs.METADATA_RECOVERY_STRATEGY_CONFIG));\n+        assertTrue(ce.getMessage().contains(ProducerConfig.METADATA_RECOVERY_STRATEGY_CONFIG));\n     }\n \n     @Test\n@@ -170,10 +169,10 @@ public void testCaseInsensitiveSecurityProtocol() {\n         final Map<String, Object> configs = new HashMap<>();\n         configs.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, keySerializerClass);\n         configs.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, valueSerializerClass);\n-        configs.put(CommonClientConfigs.SECURITY_PROTOCOL_CONFIG, saslSslLowerCase);\n+        configs.put(ProducerConfig.SECURITY_PROTOCOL_CONFIG, saslSslLowerCase);\n         configs.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, \"localhost:9092\");\n         final ProducerConfig producerConfig = new ProducerConfig(configs);\n-        assertEquals(saslSslLowerCase, producerConfig.originals().get(CommonClientConfigs.SECURITY_PROTOCOL_CONFIG));\n+        assertEquals(saslSslLowerCase, producerConfig.originals().get(ProducerConfig.SECURITY_PROTOCOL_CONFIG));\n     }\n \n     @Test"
+  },
+  {
+   "sha": "dd9e29cca1594f7c51ab4bf62b49f7a81c13eb57",
+   "filename": "streams/src/main/java/org/apache/kafka/streams/StreamsConfig.java",
+   "status": "modified",
+   "additions": 36,
+   "deletions": 8,
+   "changes": 44,
+   "blob_url": "https://github.com/apache/kafka/blob/31313667a645ba1a014394fe0399b3dcaf6d89a1/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2FStreamsConfig.java",
+   "raw_url": "https://github.com/apache/kafka/raw/31313667a645ba1a014394fe0399b3dcaf6d89a1/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2FStreamsConfig.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/streams%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Fstreams%2FStreamsConfig.java?ref=31313667a645ba1a014394fe0399b3dcaf6d89a1",
+   "patch": "@@ -149,7 +149,7 @@\n  *   <li>{@link ConsumerConfig#ALLOW_AUTO_CREATE_TOPICS_CONFIG \"allow.auto.create.topics\"} (false) - Consumers will never trigger automatic topic creation</li>\n  *   <li>{@link ConsumerConfig#GROUP_PROTOCOL_CONFIG \"group.protocol\"} as a consumer config, e.g. {@code consumer.group.protocol} (classic) -\n  *       Streams ignores it; to select the rebalance protocol, set the Streams config {@link #GROUP_PROTOCOL_CONFIG \"group.protocol\"} instead</li>\n- *   <li>{@link CommonClientConfigs#BOOTSTRAP_RESOLVE_TIMEOUT_MS_CONFIG \"bootstrap.resolve.timeout.ms\"} (0) - All clients created by Streams\n+ *   <li>{@link ConsumerConfig#BOOTSTRAP_RESOLVE_TIMEOUT_MS_CONFIG \"bootstrap.resolve.timeout.ms\"} (0) - All clients created by Streams\n  *       will always resolve bootstrap servers synchronously</li>\n  * </ul>\n  *\n@@ -583,6 +583,22 @@ public class StreamsConfig extends AbstractConfig {\n     public static final String DEFAULT_VALUE_SERDE_CLASS_CONFIG = \"default.value.serde\";\n     private static final String DEFAULT_VALUE_SERDE_CLASS_DOC = \"Default serializer / deserializer class for value that implements the <code>org.apache.kafka.common.serialization.Serde</code> interface. \";\n \n+    /** {@code default.list.key.serde.inner} */\n+    @SuppressWarnings(\"WeakerAccess\")\n+    public static final String DEFAULT_LIST_KEY_SERDE_INNER_CLASS_CONFIG = CommonClientConfigs.DEFAULT_LIST_KEY_SERDE_INNER_CLASS;\n+\n+    /** {@code default.list.value.serde.inner} */\n+    @SuppressWarnings(\"WeakerAccess\")\n+    public static final String DEFAULT_LIST_VALUE_SERDE_INNER_CLASS_CONFIG = CommonClientConfigs.DEFAULT_LIST_VALUE_SERDE_INNER_CLASS;\n+\n+    /** {@code default.list.key.serde.type} */\n+    @SuppressWarnings(\"WeakerAccess\")\n+    public static final String DEFAULT_LIST_KEY_SERDE_TYPE_CLASS_CONFIG = CommonClientConfigs.DEFAULT_LIST_KEY_SERDE_TYPE_CLASS;\n+\n+    /** {@code default.list.value.serde.type} */\n+    @SuppressWarnings(\"WeakerAccess\")\n+    public static final String DEFAULT_LIST_VALUE_SERDE_TYPE_CLASS_CONFIG = CommonClientConfigs.DEFAULT_LIST_VALUE_SERDE_TYPE_CLASS;\n+\n     /** {@code default.timestamp.extractor} */\n     @SuppressWarnings(\"WeakerAccess\")\n     public static final String DEFAULT_TIMESTAMP_EXTRACTOR_CLASS_CONFIG = \"default.timestamp.extractor\";\n@@ -785,6 +801,18 @@ public class StreamsConfig extends AbstractConfig {\n     @SuppressWarnings(\"WeakerAccess\")\n     public static final String RETRY_BACKOFF_MS_CONFIG = CommonClientConfigs.RETRY_BACKOFF_MS_CONFIG;\n \n+    /** {@code metadata.recovery.strategy} */\n+    @SuppressWarnings(\"WeakerAccess\")\n+    public static final String METADATA_RECOVERY_STRATEGY_CONFIG = CommonClientConfigs.METADATA_RECOVERY_STRATEGY_CONFIG;\n+\n+    /** {@code metadata.recovery.rebootstrap.trigger.ms} */\n+    @SuppressWarnings(\"WeakerAccess\")\n+    public static final String METADATA_RECOVERY_REBOOTSTRAP_TRIGGER_MS_CONFIG = CommonClientConfigs.METADATA_RECOVERY_REBOOTSTRAP_TRIGGER_MS_CONFIG;\n+\n+    /** {@code metadata.cluster.check.enable} */\n+    @SuppressWarnings(\"WeakerAccess\")\n+    public static final String METADATA_CLUSTER_CHECK_ENABLE_CONFIG = CommonClientConfigs.METADATA_CLUSTER_CHECK_ENABLE_CONFIG;\n+\n     /** {@code rocksdb.config.setter} */\n     @SuppressWarnings(\"WeakerAccess\")\n     public static final String ROCKSDB_CONFIG_SETTER_CLASS_CONFIG = \"rocksdb.config.setter\";\n@@ -996,22 +1024,22 @@ public class StreamsConfig extends AbstractConfig {\n                     null,\n                     Importance.MEDIUM,\n                     DEFAULT_KEY_SERDE_CLASS_DOC)\n-            .define(CommonClientConfigs.DEFAULT_LIST_KEY_SERDE_INNER_CLASS,\n+            .define(DEFAULT_LIST_KEY_SERDE_INNER_CLASS_CONFIG,\n                     Type.CLASS,\n                     null,\n                     Importance.MEDIUM,\n                     CommonClientConfigs.DEFAULT_LIST_KEY_SERDE_INNER_CLASS_DOC)\n-            .define(CommonClientConfigs.DEFAULT_LIST_VALUE_SERDE_INNER_CLASS,\n+            .define(DEFAULT_LIST_VALUE_SERDE_INNER_CLASS_CONFIG,\n                     Type.CLASS,\n                     null,\n                     Importance.MEDIUM,\n                     CommonClientConfigs.DEFAULT_LIST_VALUE_SERDE_INNER_CLASS_DOC)\n-            .define(CommonClientConfigs.DEFAULT_LIST_KEY_SERDE_TYPE_CLASS,\n+            .define(DEFAULT_LIST_KEY_SERDE_TYPE_CLASS_CONFIG,\n                     Type.CLASS,\n                     null,\n                     Importance.MEDIUM,\n                     CommonClientConfigs.DEFAULT_LIST_KEY_SERDE_TYPE_CLASS_DOC)\n-            .define(CommonClientConfigs.DEFAULT_LIST_VALUE_SERDE_TYPE_CLASS,\n+            .define(DEFAULT_LIST_VALUE_SERDE_TYPE_CLASS_CONFIG,\n                     Type.CLASS,\n                     null,\n                     Importance.MEDIUM,\n@@ -1302,20 +1330,20 @@ public class StreamsConfig extends AbstractConfig {\n                     atLeast(0),\n                     Importance.LOW,\n                     CommonClientConfigs.REQUEST_TIMEOUT_MS_DOC)\n-            .define(CommonClientConfigs.METADATA_RECOVERY_STRATEGY_CONFIG,\n+            .define(METADATA_RECOVERY_STRATEGY_CONFIG,\n                     Type.STRING,\n                     CommonClientConfigs.DEFAULT_METADATA_RECOVERY_STRATEGY,\n                     ConfigDef.CaseInsensitiveValidString\n                     .in(Utils.enumOptions(MetadataRecoveryStrategy.class)),\n                     Importance.LOW,\n                     CommonClientConfigs.METADATA_RECOVERY_STRATEGY_DOC)\n-            .define(CommonClientConfigs.METADATA_RECOVERY_REBOOTSTRAP_TRIGGER_MS_CONFIG,\n+            .define(METADATA_RECOVERY_REBOOTSTRAP_TRIGGER_MS_CONFIG,\n                     Type.LONG,\n                     CommonClientConfigs.DEFAULT_METADATA_RECOVERY_REBOOTSTRAP_TRIGGER_MS,\n                     atLeast(0),\n                     Importance.LOW,\n                     CommonClientConfigs.METADATA_RECOVERY_REBOOTSTRAP_TRIGGER_MS_DOC)\n-            .define(CommonClientConfigs.METADATA_CLUSTER_CHECK_ENABLE_CONFIG,\n+            .define(METADATA_CLUSTER_CHECK_ENABLE_CONFIG,\n                     Type.BOOLEAN,\n                     true,\n                     Importance.LOW,"
+  },
+  {
+   "sha": "c261451d100020a14762defdf5a06e2f23723f42",
+   "filename": "tools/src/main/java/org/apache/kafka/tools/ReplicaVerificationTool.java",
+   "status": "modified",
+   "additions": 2,
+   "deletions": 2,
+   "changes": 4,
+   "blob_url": "https://github.com/apache/kafka/blob/31313667a645ba1a014394fe0399b3dcaf6d89a1/tools%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Ftools%2FReplicaVerificationTool.java",
+   "raw_url": "https://github.com/apache/kafka/raw/31313667a645ba1a014394fe0399b3dcaf6d89a1/tools%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Ftools%2FReplicaVerificationTool.java",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/tools%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fkafka%2Ftools%2FReplicaVerificationTool.java?ref=31313667a645ba1a014394fe0399b3dcaf6d89a1",
+   "patch": "@@ -689,9 +689,9 @@ private static class ReplicaFetcherBlockingSend {\n                 false,\n                 new ApiVersions(),\n                 logContext,\n-                MetadataRecoveryStrategy.forName(consumerConfig.getString(CommonClientConfigs.METADATA_RECOVERY_STRATEGY_CONFIG)),\n+                MetadataRecoveryStrategy.forName(consumerConfig.getString(ConsumerConfig.METADATA_RECOVERY_STRATEGY_CONFIG)),\n                 BootstrapConfiguration.DISABLED,\n-                consumerConfig.getBoolean(CommonClientConfigs.METADATA_CLUSTER_CHECK_ENABLE_CONFIG)\n+                consumerConfig.getBoolean(ConsumerConfig.METADATA_CLUSTER_CHECK_ENABLE_CONFIG)\n             );\n         }\n "
+  }
+ ],
+ "timeline": [
+  {
+   "sha": "0172baab066c8570de371b5b5d48f771f449a0b7",
+   "node_id": "C_kwDOACG9q9oAKDAxNzJiYWFiMDY2Yzg1NzBkZTM3MWI1YjVkNDhmNzcxZjQ0OWEwYjc",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/0172baab066c8570de371b5b5d48f771f449a0b7",
+   "html_url": "https://github.com/apache/kafka/commit/0172baab066c8570de371b5b5d48f771f449a0b7",
+   "author": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-27T20:49:02Z"
+   },
+   "committer": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-27T20:49:02Z"
+   },
+   "tree": {
+    "sha": "96465aab1d18645c1c2f6e44b61dd89143a39169",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/96465aab1d18645c1c2f6e44b61dd89143a39169"
+   },
+   "message": "KAFKA-21368: Lift non-public config key strings into public",
+   "parents": [
+    {
+     "sha": "058f67ef5c05c8397dcd8511be77ce564a21c0fa",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/058f67ef5c05c8397dcd8511be77ce564a21c0fa",
+     "html_url": "https://github.com/apache/kafka/commit/058f67ef5c05c8397dcd8511be77ce564a21c0fa"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "4bbf08703121a3d8633c760fdc5911e79be1eb92",
+   "node_id": "C_kwDOACG9q9oAKDRiYmYwODcwMzEyMWEzZDg2MzNjNzYwZmRjNTkxMWU3OWJlMWViOTI",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/4bbf08703121a3d8633c760fdc5911e79be1eb92",
+   "html_url": "https://github.com/apache/kafka/commit/4bbf08703121a3d8633c760fdc5911e79be1eb92",
+   "author": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-27T20:55:24Z"
+   },
+   "committer": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-27T20:55:24Z"
+   },
+   "tree": {
+    "sha": "2d06a12092c14c52bb871549a210155f3027e239",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/2d06a12092c14c52bb871549a210155f3027e239"
+   },
+   "message": "Checkstyle",
+   "parents": [
+    {
+     "sha": "0172baab066c8570de371b5b5d48f771f449a0b7",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/0172baab066c8570de371b5b5d48f771f449a0b7",
+     "html_url": "https://github.com/apache/kafka/commit/0172baab066c8570de371b5b5d48f771f449a0b7"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "id": 34411829910,
+   "node_id": "RRE_lADOACG9q88AAAABaafuqc8AAAAIAxralg",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34411829910",
+   "actor": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "review_requested",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-27T20:59:14Z",
+   "review_requester": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "requested_reviewer": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34411954482,
+   "node_id": "LE_lADOACG9q88AAAABaafuqc8AAAAIAxzBMg",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34411954482",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-27T21:00:50Z",
+   "label": {
+    "name": "streams",
+    "color": "63edea"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34411954561,
+   "node_id": "LE_lADOACG9q88AAAABaafuqc8AAAAIAxzBgQ",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34411954561",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-27T21:00:50Z",
+   "label": {
+    "name": "producer",
+    "color": "682dad"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34411954628,
+   "node_id": "LE_lADOACG9q88AAAABaafuqc8AAAAIAxzBxA",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34411954628",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-27T21:00:50Z",
+   "label": {
+    "name": "consumer",
+    "color": "bf6a03"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34411954699,
+   "node_id": "LE_lADOACG9q88AAAABaafuqc8AAAAIAxzCCw",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34411954699",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-27T21:00:50Z",
+   "label": {
+    "name": "tools",
+    "color": "fbca04"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34411954780,
+   "node_id": "LE_lADOACG9q88AAAABaafuqc8AAAAIAxzCXA",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34411954780",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-27T21:00:51Z",
+   "label": {
+    "name": "clients",
+    "color": "ededed"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 5674372331,
+   "node_id": "PRR_kwDOACG9q88AAAABUjgM6w",
+   "user": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "@AndrewJSchofield thanks for this patch. I think those public APIs have been missing for a long while. It is truly an issue after `CommonClientConfigs` was marked as non-public API.",
+   "commit_id": "4bbf08703121a3d8633c760fdc5911e79be1eb92",
+   "state": "commented",
+   "html_url": "https://github.com/apache/kafka/pull/23988#pullrequestreview-5674372331",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23988",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23988#pullrequestreview-5674372331"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23988"
+    }
+   },
+   "submitted_at": "2026-10-27T21:16:54Z",
+   "updated_at": "2026-10-27T21:16:54Z",
+   "author_association": "MEMBER",
+   "event": "reviewed"
+  },
+  {
+   "sha": "229777fd3190c797ee88e5f995d39fd76e64f5ee",
+   "node_id": "C_kwDOACG9q9oAKDIyOTc3N2ZkMzE5MGM3OTdlZTg4ZTVmOTk1ZDM5ZmQ3NmU2NGY1ZWU",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/229777fd3190c797ee88e5f995d39fd76e64f5ee",
+   "html_url": "https://github.com/apache/kafka/commit/229777fd3190c797ee88e5f995d39fd76e64f5ee",
+   "author": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-27T21:51:47Z"
+   },
+   "committer": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-27T21:51:47Z"
+   },
+   "tree": {
+    "sha": "e06efba45637fad42fd083731c472a98f3debfb7",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/e06efba45637fad42fd083731c472a98f3debfb7"
+   },
+   "message": "Review comments",
+   "parents": [
+    {
+     "sha": "4bbf08703121a3d8633c760fdc5911e79be1eb92",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/4bbf08703121a3d8633c760fdc5911e79be1eb92",
+     "html_url": "https://github.com/apache/kafka/commit/4bbf08703121a3d8633c760fdc5911e79be1eb92"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "sha": "31313667a645ba1a014394fe0399b3dcaf6d89a1",
+   "node_id": "C_kwDOACG9q9oAKDMxMzEzNjY3YTY0NWJhMWEwMTQzOTRmZTAzOTliM2RjYWY2ZDg5YTE",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/31313667a645ba1a014394fe0399b3dcaf6d89a1",
+   "html_url": "https://github.com/apache/kafka/commit/31313667a645ba1a014394fe0399b3dcaf6d89a1",
+   "author": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-28T17:47:25Z"
+   },
+   "committer": {
+    "name": "Andrew Schofield",
+    "email": "aschofield@confluent.io",
+    "date": "2026-10-28T17:47:25Z"
+   },
+   "tree": {
+    "sha": "ed121e111defa0594ff328657d5904f20ab597a4",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/ed121e111defa0594ff328657d5904f20ab597a4"
+   },
+   "message": "Checkstyle",
+   "parents": [
+    {
+     "sha": "229777fd3190c797ee88e5f995d39fd76e64f5ee",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/229777fd3190c797ee88e5f995d39fd76e64f5ee",
+     "html_url": "https://github.com/apache/kafka/commit/229777fd3190c797ee88e5f995d39fd76e64f5ee"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "id": 34562808117,
+   "node_id": "RRE_lADOACG9q88AAAABaafuqc8AAAAIDBqZNQ",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34562808117",
+   "actor": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "review_requested",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-29T08:24:29Z",
+   "review_requester": {
+    "login": "AndrewJSchofield",
+    "id": 13795597,
+    "node_id": "MDQ6VXNlcjEzNzk1NTk3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13795597?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AndrewJSchofield",
+    "html_url": "https://github.com/AndrewJSchofield",
+    "followers_url": "https://api.github.com/users/AndrewJSchofield/followers",
+    "following_url": "https://api.github.com/users/AndrewJSchofield/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AndrewJSchofield/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AndrewJSchofield/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AndrewJSchofield/subscriptions",
+    "organizations_url": "https://api.github.com/users/AndrewJSchofield/orgs",
+    "repos_url": "https://api.github.com/users/AndrewJSchofield/repos",
+    "events_url": "https://api.github.com/users/AndrewJSchofield/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AndrewJSchofield/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "requested_reviewer": {
+    "login": "chia7712",
+    "id": 6234750,
+    "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chia7712",
+    "html_url": "https://github.com/chia7712",
+    "followers_url": "https://api.github.com/users/chia7712/followers",
+    "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+    "organizations_url": "https://api.github.com/users/chia7712/orgs",
+    "repos_url": "https://api.github.com/users/chia7712/repos",
+    "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chia7712/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "performed_via_github_app": null
+  }
+ ]
+}

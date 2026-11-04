@@ -1,0 +1,2435 @@
+{
+ "pull": {
+  "url": "https://api.github.com/repos/apache/kafka/pulls/23943",
+  "id": 4990341790,
+  "node_id": "PR_kwDOACG9q88AAAABKXKSng",
+  "html_url": "https://github.com/apache/kafka/pull/23943",
+  "diff_url": "https://github.com/apache/kafka/pull/23943.diff",
+  "patch_url": "https://github.com/apache/kafka/pull/23943.patch",
+  "issue_url": "https://api.github.com/repos/apache/kafka/issues/23943",
+  "commits_url": "https://api.github.com/repos/apache/kafka/pulls/23943/commits",
+  "review_comments_url": "https://api.github.com/repos/apache/kafka/pulls/23943/comments",
+  "review_comment_url": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}",
+  "comments_url": "https://api.github.com/repos/apache/kafka/issues/23943/comments",
+  "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/3cc66f34f0018bf960e228fd5ea92ba1d614d067",
+  "number": 23943,
+  "state": "closed",
+  "locked": false,
+  "title": "KAFKA-21349: Wait for the high watermark before loading transaction metadata",
+  "user": {
+   "login": "artemlivshits",
+   "id": 84364232,
+   "node_id": "MDQ6VXNlcjg0MzY0MjMy",
+   "avatar_url": "https://avatars.githubusercontent.com/u/84364232?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/artemlivshits",
+   "html_url": "https://github.com/artemlivshits",
+   "followers_url": "https://api.github.com/users/artemlivshits/followers",
+   "following_url": "https://api.github.com/users/artemlivshits/following{/other_user}",
+   "gists_url": "https://api.github.com/users/artemlivshits/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/artemlivshits/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/artemlivshits/subscriptions",
+   "organizations_url": "https://api.github.com/users/artemlivshits/orgs",
+   "repos_url": "https://api.github.com/users/artemlivshits/repos",
+   "events_url": "https://api.github.com/users/artemlivshits/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/artemlivshits/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "body": "When a broker becomes the leader of a `__transaction_state` partition,\n`TransactionStateManager` loads the log up to the log end offset. A\nnewly elected leader can have records above the high watermark that are\nnot committed yet and can still be truncated if leadership moves again,\neven with clean elections. The coordinator then acts on state that is\nlater rolled back. For example, it can send COMMIT markers for a\nPREPARE_COMMIT that the next leader doesn't have, and that leader later\ntimes out and aborts the transaction, so the transaction is committed on\nsome partitions and aborted on others.\n\nLoading with `FetchIsolation.HIGH_WATERMARK` is not enough, because a\nnew leader's high watermark can lag behind the true one, so the load\nwould miss committed records.\n\nThe coordinator doesn't write to the partition while it is loading\n(requests get `COORDINATOR_LOAD_IN_PROGRESS`), so the log end offset at\nthe start of the load doesn't change. Once the high watermark reaches\nit, every record the load reads is committed. This change:\n\n- In `loadTransactionsForTxnTopicPartition`, if the high watermark is\nbelow the log end offset, registers a `PartitionListener` and schedules\nthe load once the high watermark reaches the log end offset. The high\nwatermark is checked again after the listener is added, since an update\nbetween reading it and adding the listener isn't delivered to the\nlistener.\n- Abandons the load (removes the `loadingPartitions` entry) if the\npartition is not online, becomes a follower, fails or is deleted before\nthe high watermark catches up. This runs on the scheduler, since\nlisteners are invoked with partition locks held.\n- Skips partitions that are loading in\n`removeExpiredTransactionalIds()`. On a leader epoch bump, the previous\nepoch's cache entry stays until the new load replaces it, and tombstones\nwritten for it would move the log end offset while the load waits.\n- Logs the time spent waiting for the high watermark as part of the load\ntime.\n\nIn the normal case the wait is about one follower fetch round trip. If\nan ISR follower is unavailable, the load waits until it is removed from\nthe ISR (`replica.lag.time.max.ms`). This does not cover unclean leader\nelection, where committed records can be lost.\n\nTesting: added unit tests to `TransactionStateManagerTest` for waiting\nfor the high watermark, abandoning on each partition transition and when\nthe partition is not online, the high watermark advancing during\nlistener registration, a leader epoch bump while waiting, and expiration\nof a partition that is being reloaded.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nReviewers: Justine Olshan <jolshan@confluent.io>\n",
+  "labels": [
+   {
+    "id": 838330122,
+    "node_id": "MDU6TGFiZWw4MzgzMzAxMjI=",
+    "url": "https://api.github.com/repos/apache/kafka/labels/core",
+    "name": "core",
+    "description": "Kafka Broker",
+    "color": "ed5a86",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   },
+   {
+    "id": 7522931565,
+    "node_id": "LA_kwDOACG9q88AAAABwGbTbQ",
+    "url": "https://api.github.com/repos/apache/kafka/labels/ci-approved",
+    "name": "ci-approved",
+    "description": "",
+    "color": "ffffff",
+    "default": false,
+    "archived_at": null,
+    "archived_by": null
+   }
+  ],
+  "milestone": null,
+  "active_lock_reason": null,
+  "created_at": "2026-10-23T23:05:21Z",
+  "updated_at": "2026-10-27T20:23:47Z",
+  "closed_at": "2026-10-27T20:23:47Z",
+  "merged_at": "2026-10-27T20:23:46Z",
+  "merge_commit_sha": "b1093f64c085d82c08fd6462b26a190e2eb3cb83",
+  "assignee": null,
+  "assignees": [],
+  "requested_reviewers": [],
+  "requested_teams": [],
+  "head": {
+   "label": "artemlivshits:KAFKA-21349",
+   "ref": "KAFKA-21349",
+   "repo": {
+    "id": 481061142,
+    "node_id": "R_kgDOHKxpFg",
+    "name": "kafka",
+    "full_name": "artemlivshits/kafka",
+    "owner": {
+     "login": "artemlivshits",
+     "id": 84364232,
+     "node_id": "MDQ6VXNlcjg0MzY0MjMy",
+     "avatar_url": "https://avatars.githubusercontent.com/u/84364232?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/artemlivshits",
+     "html_url": "https://github.com/artemlivshits",
+     "followers_url": "https://api.github.com/users/artemlivshits/followers",
+     "following_url": "https://api.github.com/users/artemlivshits/following{/other_user}",
+     "gists_url": "https://api.github.com/users/artemlivshits/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/artemlivshits/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/artemlivshits/subscriptions",
+     "organizations_url": "https://api.github.com/users/artemlivshits/orgs",
+     "repos_url": "https://api.github.com/users/artemlivshits/repos",
+     "events_url": "https://api.github.com/users/artemlivshits/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/artemlivshits/received_events",
+     "type": "User",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": true,
+    "archived": false,
+    "disabled": false,
+    "description": "Mirror of Apache Kafka",
+    "homepage": null,
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [],
+    "forks_count": 0,
+    "forks": 0,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "watchers": 0,
+    "open_issues_count": 0,
+    "open_issues": 0,
+    "size": 285022,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-27T17:17:09Z",
+    "created_at": "2022-04-13T03:47:26Z",
+    "updated_at": "2026-10-23T21:37:08Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/artemlivshits/kafka",
+    "html_url": "https://github.com/artemlivshits/kafka",
+    "archive_url": "https://api.github.com/repos/artemlivshits/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/artemlivshits/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/artemlivshits/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/artemlivshits/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/artemlivshits/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/artemlivshits/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/artemlivshits/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/artemlivshits/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/artemlivshits/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/artemlivshits/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/artemlivshits/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/artemlivshits/kafka/downloads",
+    "events_url": "https://api.github.com/repos/artemlivshits/kafka/events",
+    "forks_url": "https://api.github.com/repos/artemlivshits/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/artemlivshits/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/artemlivshits/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/artemlivshits/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/artemlivshits/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/artemlivshits/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/artemlivshits/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/artemlivshits/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/artemlivshits/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/artemlivshits/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/artemlivshits/kafka/languages",
+    "merges_url": "https://api.github.com/repos/artemlivshits/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/artemlivshits/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/artemlivshits/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/artemlivshits/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/artemlivshits/kafka/releases{/id}",
+    "ssh_url": "git@github.com:artemlivshits/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/artemlivshits/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/artemlivshits/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/artemlivshits/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/artemlivshits/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/artemlivshits/kafka/tags",
+    "teams_url": "https://api.github.com/repos/artemlivshits/kafka/teams",
+    "trees_url": "https://api.github.com/repos/artemlivshits/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/artemlivshits/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/artemlivshits/kafka/hooks",
+    "svn_url": "https://github.com/artemlivshits/kafka"
+   },
+   "sha": "3cc66f34f0018bf960e228fd5ea92ba1d614d067",
+   "user": {
+    "login": "artemlivshits",
+    "id": 84364232,
+    "node_id": "MDQ6VXNlcjg0MzY0MjMy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/84364232?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/artemlivshits",
+    "html_url": "https://github.com/artemlivshits",
+    "followers_url": "https://api.github.com/users/artemlivshits/followers",
+    "following_url": "https://api.github.com/users/artemlivshits/following{/other_user}",
+    "gists_url": "https://api.github.com/users/artemlivshits/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/artemlivshits/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/artemlivshits/subscriptions",
+    "organizations_url": "https://api.github.com/users/artemlivshits/orgs",
+    "repos_url": "https://api.github.com/users/artemlivshits/repos",
+    "events_url": "https://api.github.com/users/artemlivshits/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/artemlivshits/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "base": {
+   "label": "apache:trunk",
+   "ref": "trunk",
+   "repo": {
+    "id": 2211243,
+    "node_id": "MDEwOlJlcG9zaXRvcnkyMjExMjQz",
+    "name": "kafka",
+    "full_name": "apache/kafka",
+    "owner": {
+     "login": "apache",
+     "id": 47359,
+     "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+     "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+     "gravatar_id": "",
+     "url": "https://api.github.com/users/apache",
+     "html_url": "https://github.com/apache",
+     "followers_url": "https://api.github.com/users/apache/followers",
+     "following_url": "https://api.github.com/users/apache/following{/other_user}",
+     "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+     "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+     "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+     "organizations_url": "https://api.github.com/users/apache/orgs",
+     "repos_url": "https://api.github.com/users/apache/repos",
+     "events_url": "https://api.github.com/users/apache/events{/privacy}",
+     "received_events_url": "https://api.github.com/users/apache/received_events",
+     "type": "Organization",
+     "user_view_type": "public",
+     "site_admin": false
+    },
+    "private": false,
+    "fork": false,
+    "archived": false,
+    "disabled": false,
+    "description": "Apache Kafka - A distributed event streaming platform",
+    "homepage": "https://kafka.apache.org/",
+    "language": "Java",
+    "visibility": "public",
+    "is_template": false,
+    "topics": [
+     "java",
+     "kafka",
+     "scala",
+     "streaming"
+    ],
+    "forks_count": 15637,
+    "forks": 15637,
+    "stargazers_count": 34153,
+    "watchers_count": 34153,
+    "watchers": 34153,
+    "open_issues_count": 674,
+    "open_issues": 674,
+    "size": 322164,
+    "default_branch": "trunk",
+    "has_issues": false,
+    "has_projects": true,
+    "has_wiki": false,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_discussions": false,
+    "has_pull_requests": true,
+    "pushed_at": "2026-10-29T11:37:21Z",
+    "created_at": "2011-08-15T18:06:16Z",
+    "updated_at": "2026-10-29T11:37:29Z",
+    "allow_forking": true,
+    "web_commit_signoff_required": false,
+    "pull_request_creation_policy": "all",
+    "license": {
+     "key": "apache-2.0",
+     "name": "Apache License 2.0",
+     "url": "https://api.github.com/licenses/apache-2.0",
+     "spdx_id": "Apache-2.0",
+     "node_id": "MDc6TGljZW5zZTI="
+    },
+    "url": "https://api.github.com/repos/apache/kafka",
+    "html_url": "https://github.com/apache/kafka",
+    "archive_url": "https://api.github.com/repos/apache/kafka/{archive_format}{/ref}",
+    "assignees_url": "https://api.github.com/repos/apache/kafka/assignees{/user}",
+    "blobs_url": "https://api.github.com/repos/apache/kafka/git/blobs{/sha}",
+    "branches_url": "https://api.github.com/repos/apache/kafka/branches{/branch}",
+    "collaborators_url": "https://api.github.com/repos/apache/kafka/collaborators{/collaborator}",
+    "comments_url": "https://api.github.com/repos/apache/kafka/comments{/number}",
+    "commits_url": "https://api.github.com/repos/apache/kafka/commits{/sha}",
+    "compare_url": "https://api.github.com/repos/apache/kafka/compare/{base}...{head}",
+    "contents_url": "https://api.github.com/repos/apache/kafka/contents/{+path}",
+    "contributors_url": "https://api.github.com/repos/apache/kafka/contributors",
+    "deployments_url": "https://api.github.com/repos/apache/kafka/deployments",
+    "downloads_url": "https://api.github.com/repos/apache/kafka/downloads",
+    "events_url": "https://api.github.com/repos/apache/kafka/events",
+    "forks_url": "https://api.github.com/repos/apache/kafka/forks",
+    "git_commits_url": "https://api.github.com/repos/apache/kafka/git/commits{/sha}",
+    "git_refs_url": "https://api.github.com/repos/apache/kafka/git/refs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/apache/kafka/git/tags{/sha}",
+    "git_url": "git://github.com/apache/kafka.git",
+    "issue_comment_url": "https://api.github.com/repos/apache/kafka/issues/comments{/number}",
+    "issue_events_url": "https://api.github.com/repos/apache/kafka/issues/events{/number}",
+    "issues_url": "https://api.github.com/repos/apache/kafka/issues{/number}",
+    "keys_url": "https://api.github.com/repos/apache/kafka/keys{/key_id}",
+    "labels_url": "https://api.github.com/repos/apache/kafka/labels{/name}",
+    "languages_url": "https://api.github.com/repos/apache/kafka/languages",
+    "merges_url": "https://api.github.com/repos/apache/kafka/merges",
+    "milestones_url": "https://api.github.com/repos/apache/kafka/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/apache/kafka/notifications{?since,all,participating}",
+    "pulls_url": "https://api.github.com/repos/apache/kafka/pulls{/number}",
+    "releases_url": "https://api.github.com/repos/apache/kafka/releases{/id}",
+    "ssh_url": "git@github.com:apache/kafka.git",
+    "stargazers_url": "https://api.github.com/repos/apache/kafka/stargazers",
+    "statuses_url": "https://api.github.com/repos/apache/kafka/statuses/{sha}",
+    "subscribers_url": "https://api.github.com/repos/apache/kafka/subscribers",
+    "subscription_url": "https://api.github.com/repos/apache/kafka/subscription",
+    "tags_url": "https://api.github.com/repos/apache/kafka/tags",
+    "teams_url": "https://api.github.com/repos/apache/kafka/teams",
+    "trees_url": "https://api.github.com/repos/apache/kafka/git/trees{/sha}",
+    "clone_url": "https://github.com/apache/kafka.git",
+    "mirror_url": null,
+    "hooks_url": "https://api.github.com/repos/apache/kafka/hooks",
+    "svn_url": "https://github.com/apache/kafka"
+   },
+   "sha": "71312a111e9fe07214a8d2849049a5baad1ca8b3",
+   "user": {
+    "login": "apache",
+    "id": 47359,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ3MzU5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/47359?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/apache",
+    "html_url": "https://github.com/apache",
+    "followers_url": "https://api.github.com/users/apache/followers",
+    "following_url": "https://api.github.com/users/apache/following{/other_user}",
+    "gists_url": "https://api.github.com/users/apache/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/apache/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/apache/subscriptions",
+    "organizations_url": "https://api.github.com/users/apache/orgs",
+    "repos_url": "https://api.github.com/users/apache/repos",
+    "events_url": "https://api.github.com/users/apache/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/apache/received_events",
+    "type": "Organization",
+    "user_view_type": "public",
+    "site_admin": false
+   }
+  },
+  "_links": {
+   "comments": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23943/comments"
+   },
+   "commits": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23943/commits"
+   },
+   "statuses": {
+    "href": "https://api.github.com/repos/apache/kafka/statuses/3cc66f34f0018bf960e228fd5ea92ba1d614d067"
+   },
+   "html": {
+    "href": "https://github.com/apache/kafka/pull/23943"
+   },
+   "issue": {
+    "href": "https://api.github.com/repos/apache/kafka/issues/23943"
+   },
+   "review_comments": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23943/comments"
+   },
+   "review_comment": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/comments{/number}"
+   },
+   "self": {
+    "href": "https://api.github.com/repos/apache/kafka/pulls/23943"
+   }
+  },
+  "author_association": "CONTRIBUTOR",
+  "auto_merge": null,
+  "draft": false,
+  "merged": true,
+  "mergeable": null,
+  "rebaseable": null,
+  "mergeable_state": "unknown",
+  "merged_by": {
+   "login": "jolshan",
+   "id": 25566826,
+   "node_id": "MDQ6VXNlcjI1NTY2ODI2",
+   "avatar_url": "https://avatars.githubusercontent.com/u/25566826?v=4",
+   "gravatar_id": "",
+   "url": "https://api.github.com/users/jolshan",
+   "html_url": "https://github.com/jolshan",
+   "followers_url": "https://api.github.com/users/jolshan/followers",
+   "following_url": "https://api.github.com/users/jolshan/following{/other_user}",
+   "gists_url": "https://api.github.com/users/jolshan/gists{/gist_id}",
+   "starred_url": "https://api.github.com/users/jolshan/starred{/owner}{/repo}",
+   "subscriptions_url": "https://api.github.com/users/jolshan/subscriptions",
+   "organizations_url": "https://api.github.com/users/jolshan/orgs",
+   "repos_url": "https://api.github.com/users/jolshan/repos",
+   "events_url": "https://api.github.com/users/jolshan/events{/privacy}",
+   "received_events_url": "https://api.github.com/users/jolshan/received_events",
+   "type": "User",
+   "user_view_type": "public",
+   "site_admin": false
+  },
+  "comments": 0,
+  "review_comments": 10,
+  "maintainer_can_modify": false,
+  "commits": 2,
+  "additions": 253,
+  "deletions": 10,
+  "changed_files": 2
+ },
+ "reviews": [
+  {
+   "id": 5660114150,
+   "node_id": "PRR_kwDOACG9q88AAAABUV585g",
+   "user": {
+    "login": "jolshan",
+    "id": 25566826,
+    "node_id": "MDQ6VXNlcjI1NTY2ODI2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/25566826?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jolshan",
+    "html_url": "https://github.com/jolshan",
+    "followers_url": "https://api.github.com/users/jolshan/followers",
+    "following_url": "https://api.github.com/users/jolshan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jolshan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jolshan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jolshan/subscriptions",
+    "organizations_url": "https://api.github.com/users/jolshan/orgs",
+    "repos_url": "https://api.github.com/users/jolshan/repos",
+    "events_url": "https://api.github.com/users/jolshan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jolshan/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5660114150",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23943",
+   "author_association": "MEMBER",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5660114150"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23943"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-26T22:45:42Z",
+   "commit_id": "e466d2691b3ae917eebe8085542a75e9ba4b2498"
+  },
+  {
+   "id": 5660170768,
+   "node_id": "PRR_kwDOACG9q88AAAABUV9aEA",
+   "user": {
+    "login": "jolshan",
+    "id": 25566826,
+    "node_id": "MDQ6VXNlcjI1NTY2ODI2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/25566826?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jolshan",
+    "html_url": "https://github.com/jolshan",
+    "followers_url": "https://api.github.com/users/jolshan/followers",
+    "following_url": "https://api.github.com/users/jolshan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jolshan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jolshan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jolshan/subscriptions",
+    "organizations_url": "https://api.github.com/users/jolshan/orgs",
+    "repos_url": "https://api.github.com/users/jolshan/repos",
+    "events_url": "https://api.github.com/users/jolshan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jolshan/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5660170768",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23943",
+   "author_association": "MEMBER",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5660170768"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23943"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-26T22:52:35Z",
+   "commit_id": "e466d2691b3ae917eebe8085542a75e9ba4b2498"
+  },
+  {
+   "id": 5660265412,
+   "node_id": "PRR_kwDOACG9q88AAAABUWDLxA",
+   "user": {
+    "login": "jolshan",
+    "id": 25566826,
+    "node_id": "MDQ6VXNlcjI1NTY2ODI2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/25566826?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jolshan",
+    "html_url": "https://github.com/jolshan",
+    "followers_url": "https://api.github.com/users/jolshan/followers",
+    "following_url": "https://api.github.com/users/jolshan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jolshan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jolshan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jolshan/subscriptions",
+    "organizations_url": "https://api.github.com/users/jolshan/orgs",
+    "repos_url": "https://api.github.com/users/jolshan/repos",
+    "events_url": "https://api.github.com/users/jolshan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jolshan/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5660265412",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23943",
+   "author_association": "MEMBER",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5660265412"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23943"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-26T23:04:52Z",
+   "commit_id": "e466d2691b3ae917eebe8085542a75e9ba4b2498"
+  },
+  {
+   "id": 5660278869,
+   "node_id": "PRR_kwDOACG9q88AAAABUWEAVQ",
+   "user": {
+    "login": "jolshan",
+    "id": 25566826,
+    "node_id": "MDQ6VXNlcjI1NTY2ODI2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/25566826?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jolshan",
+    "html_url": "https://github.com/jolshan",
+    "followers_url": "https://api.github.com/users/jolshan/followers",
+    "following_url": "https://api.github.com/users/jolshan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jolshan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jolshan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jolshan/subscriptions",
+    "organizations_url": "https://api.github.com/users/jolshan/orgs",
+    "repos_url": "https://api.github.com/users/jolshan/repos",
+    "events_url": "https://api.github.com/users/jolshan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jolshan/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5660278869",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23943",
+   "author_association": "MEMBER",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5660278869"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23943"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-26T23:06:33Z",
+   "commit_id": "e466d2691b3ae917eebe8085542a75e9ba4b2498"
+  },
+  {
+   "id": 5660361386,
+   "node_id": "PRR_kwDOACG9q88AAAABUWJCqg",
+   "user": {
+    "login": "jolshan",
+    "id": 25566826,
+    "node_id": "MDQ6VXNlcjI1NTY2ODI2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/25566826?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jolshan",
+    "html_url": "https://github.com/jolshan",
+    "followers_url": "https://api.github.com/users/jolshan/followers",
+    "following_url": "https://api.github.com/users/jolshan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jolshan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jolshan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jolshan/subscriptions",
+    "organizations_url": "https://api.github.com/users/jolshan/orgs",
+    "repos_url": "https://api.github.com/users/jolshan/repos",
+    "events_url": "https://api.github.com/users/jolshan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jolshan/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5660361386",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23943",
+   "author_association": "MEMBER",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5660361386"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23943"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-26T23:17:45Z",
+   "commit_id": "e466d2691b3ae917eebe8085542a75e9ba4b2498"
+  },
+  {
+   "id": 5660397068,
+   "node_id": "PRR_kwDOACG9q88AAAABUWLODA",
+   "user": {
+    "login": "jolshan",
+    "id": 25566826,
+    "node_id": "MDQ6VXNlcjI1NTY2ODI2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/25566826?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jolshan",
+    "html_url": "https://github.com/jolshan",
+    "followers_url": "https://api.github.com/users/jolshan/followers",
+    "following_url": "https://api.github.com/users/jolshan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jolshan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jolshan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jolshan/subscriptions",
+    "organizations_url": "https://api.github.com/users/jolshan/orgs",
+    "repos_url": "https://api.github.com/users/jolshan/repos",
+    "events_url": "https://api.github.com/users/jolshan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jolshan/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5660397068",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23943",
+   "author_association": "MEMBER",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5660397068"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23943"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-26T23:22:08Z",
+   "commit_id": "e466d2691b3ae917eebe8085542a75e9ba4b2498"
+  },
+  {
+   "id": 5671398224,
+   "node_id": "PRR_kwDOACG9q88AAAABUgqrUA",
+   "user": {
+    "login": "artemlivshits",
+    "id": 84364232,
+    "node_id": "MDQ6VXNlcjg0MzY0MjMy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/84364232?u=d04635f6841263915c6cfca2c154ee979d38970f&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/artemlivshits",
+    "html_url": "https://github.com/artemlivshits",
+    "followers_url": "https://api.github.com/users/artemlivshits/followers",
+    "following_url": "https://api.github.com/users/artemlivshits/following{/other_user}",
+    "gists_url": "https://api.github.com/users/artemlivshits/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/artemlivshits/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/artemlivshits/subscriptions",
+    "organizations_url": "https://api.github.com/users/artemlivshits/orgs",
+    "repos_url": "https://api.github.com/users/artemlivshits/repos",
+    "events_url": "https://api.github.com/users/artemlivshits/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/artemlivshits/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5671398224",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23943",
+   "author_association": "CONTRIBUTOR",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5671398224"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23943"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-27T17:17:21Z",
+   "commit_id": "3cc66f34f0018bf960e228fd5ea92ba1d614d067"
+  },
+  {
+   "id": 5671398751,
+   "node_id": "PRR_kwDOACG9q88AAAABUgqtXw",
+   "user": {
+    "login": "artemlivshits",
+    "id": 84364232,
+    "node_id": "MDQ6VXNlcjg0MzY0MjMy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/84364232?u=d04635f6841263915c6cfca2c154ee979d38970f&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/artemlivshits",
+    "html_url": "https://github.com/artemlivshits",
+    "followers_url": "https://api.github.com/users/artemlivshits/followers",
+    "following_url": "https://api.github.com/users/artemlivshits/following{/other_user}",
+    "gists_url": "https://api.github.com/users/artemlivshits/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/artemlivshits/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/artemlivshits/subscriptions",
+    "organizations_url": "https://api.github.com/users/artemlivshits/orgs",
+    "repos_url": "https://api.github.com/users/artemlivshits/repos",
+    "events_url": "https://api.github.com/users/artemlivshits/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/artemlivshits/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5671398751",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23943",
+   "author_association": "CONTRIBUTOR",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5671398751"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23943"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-27T17:17:24Z",
+   "commit_id": "3cc66f34f0018bf960e228fd5ea92ba1d614d067"
+  },
+  {
+   "id": 5671399290,
+   "node_id": "PRR_kwDOACG9q88AAAABUgqveg",
+   "user": {
+    "login": "artemlivshits",
+    "id": 84364232,
+    "node_id": "MDQ6VXNlcjg0MzY0MjMy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/84364232?u=d04635f6841263915c6cfca2c154ee979d38970f&v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/artemlivshits",
+    "html_url": "https://github.com/artemlivshits",
+    "followers_url": "https://api.github.com/users/artemlivshits/followers",
+    "following_url": "https://api.github.com/users/artemlivshits/following{/other_user}",
+    "gists_url": "https://api.github.com/users/artemlivshits/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/artemlivshits/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/artemlivshits/subscriptions",
+    "organizations_url": "https://api.github.com/users/artemlivshits/orgs",
+    "repos_url": "https://api.github.com/users/artemlivshits/repos",
+    "events_url": "https://api.github.com/users/artemlivshits/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/artemlivshits/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5671399290",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23943",
+   "author_association": "CONTRIBUTOR",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5671399290"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23943"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-27T17:17:26Z",
+   "commit_id": "3cc66f34f0018bf960e228fd5ea92ba1d614d067"
+  },
+  {
+   "id": 5673704554,
+   "node_id": "PRR_kwDOACG9q88AAAABUi3cag",
+   "user": {
+    "login": "jolshan",
+    "id": 25566826,
+    "node_id": "MDQ6VXNlcjI1NTY2ODI2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/25566826?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jolshan",
+    "html_url": "https://github.com/jolshan",
+    "followers_url": "https://api.github.com/users/jolshan/followers",
+    "following_url": "https://api.github.com/users/jolshan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jolshan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jolshan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jolshan/subscriptions",
+    "organizations_url": "https://api.github.com/users/jolshan/orgs",
+    "repos_url": "https://api.github.com/users/jolshan/repos",
+    "events_url": "https://api.github.com/users/jolshan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jolshan/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "COMMENTED",
+   "html_url": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5673704554",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23943",
+   "author_association": "MEMBER",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5673704554"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23943"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-27T20:17:22Z",
+   "commit_id": "3cc66f34f0018bf960e228fd5ea92ba1d614d067"
+  },
+  {
+   "id": 5673739311,
+   "node_id": "PRR_kwDOACG9q88AAAABUi5kLw",
+   "user": {
+    "login": "jolshan",
+    "id": 25566826,
+    "node_id": "MDQ6VXNlcjI1NTY2ODI2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/25566826?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jolshan",
+    "html_url": "https://github.com/jolshan",
+    "followers_url": "https://api.github.com/users/jolshan/followers",
+    "following_url": "https://api.github.com/users/jolshan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jolshan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jolshan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jolshan/subscriptions",
+    "organizations_url": "https://api.github.com/users/jolshan/orgs",
+    "repos_url": "https://api.github.com/users/jolshan/repos",
+    "events_url": "https://api.github.com/users/jolshan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jolshan/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "",
+   "state": "APPROVED",
+   "html_url": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5673739311",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23943",
+   "author_association": "MEMBER",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5673739311"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23943"
+    }
+   },
+   "is_copilot_code_review": false,
+   "copilot_code_review_effort": null,
+   "submitted_at": "2026-10-27T20:20:26Z",
+   "commit_id": "3cc66f34f0018bf960e228fd5ea92ba1d614d067"
+  }
+ ],
+ "review_comments": [
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4383325988",
+   "pull_request_review_id": 5660114150,
+   "id": 4383325988,
+   "node_id": "PRRC_kwDOACG9q88AAAABBUQ_JA",
+   "diff_hunk": "@@ -605,7 +611,85 @@ class TransactionStateManager(brokerId: Int,\n     }\n \n     val scheduleStartMs = time.milliseconds()\n-    scheduler.scheduleOnce(s\"load-txns-for-partition-$topicPartition\", () => loadTransactions(scheduleStartMs))\n+\n+    def scheduleLoad(hwmWaitTimeMs: Long): Unit =\n+      scheduler.scheduleOnce(s\"load-txns-for-partition-$topicPartition\", () => loadTransactions(scheduleStartMs, hwmWaitTimeMs))\n+\n+    // The listener is invoked with partition locks held, so instead of blocking on stateLock there, this runs on\n+    // the scheduler, which also serializes it with the load tasks for the partition.\n+    def scheduleAbandonLoad(reason: String): Unit =\n+      scheduler.scheduleOnce(s\"abandon-load-txns-for-partition-$topicPartition\", () => {\n+        inWriteLock[Exception](stateLock, () => {\n+          loadingPartitions.remove(partitionAndLeaderEpoch)\n+        })\n+        info(s\"Abandoned loading transaction metadata from $topicPartition at epoch $coordinatorEpoch because $reason\")\n+      })\n+\n+    // The load reads up to the log end offset, but a newly elected leader may have records above the high watermark\n+    // that are not committed yet and may still get truncated. The coordinator does not write to the partition while\n+    // it is loading, so the log end offset doesn't change; wait until the high watermark catches up to it so that\n+    // all the records the load reads are committed.\n+    replicaManager.getLog(topicPartition) match {\n+      case Some(log) if log.highWatermark < log.logEndOffset =>\n+        val logEndOffset = log.logEndOffset\n+        info(s\"Waiting for the high watermark of $topicPartition (currently ${log.highWatermark}) to reach the log end \" +\n+          s\"offset $logEndOffset before loading transaction metadata at epoch $coordinatorEpoch\")\n+        val listener = new HighWatermarkWaitListener(topicPartition, logEndOffset, coordinatorEpoch, scheduleLoad, scheduleAbandonLoad)\n+        if (!replicaManager.maybeAddListener(topicPartition, listener)) {\n+          listener.abandon(s\"$topicPartition is not online\")\n+        } else {\n+          // the high watermark may have been updated after it was read above but before the listener was added,\n+          // in which case the listener isn't notified of the update: check it again now that the listener is added\n+          listener.onHighWatermarkUpdated(topicPartition, log.highWatermark)\n+          // the wait may have finished before the listener was added; in that case remove it again\n+          if (listener.isFinished)\n+            replicaManager.removeListener(topicPartition, listener)\n+        }\n+      case _ =>",
+   "path": "core/src/main/scala/kafka/coordinator/transaction/TransactionStateManager.scala",
+   "commit_id": "3cc66f34f0018bf960e228fd5ea92ba1d614d067",
+   "original_commit_id": "e466d2691b3ae917eebe8085542a75e9ba4b2498",
+   "user": {
+    "login": "jolshan",
+    "id": 25566826,
+    "node_id": "MDQ6VXNlcjI1NTY2ODI2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/25566826?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jolshan",
+    "html_url": "https://github.com/jolshan",
+    "followers_url": "https://api.github.com/users/jolshan/followers",
+    "following_url": "https://api.github.com/users/jolshan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jolshan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jolshan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jolshan/subscriptions",
+    "organizations_url": "https://api.github.com/users/jolshan/orgs",
+    "repos_url": "https://api.github.com/users/jolshan/repos",
+    "events_url": "https://api.github.com/users/jolshan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jolshan/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "What would this case represent in the case where it is None?",
+   "created_at": "2026-10-26T22:45:42Z",
+   "updated_at": "2026-10-26T22:47:13Z",
+   "html_url": "https://github.com/apache/kafka/pull/23943#discussion_r4383325988",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23943",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4383325988"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23943#discussion_r4383325988"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23943"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4383325988/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": 649,
+   "original_line": 648,
+   "side": "RIGHT",
+   "author_association": "MEMBER",
+   "original_position": 83,
+   "position": 84,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4383373617",
+   "pull_request_review_id": 5660170768,
+   "id": 4383373617,
+   "node_id": "PRRC_kwDOACG9q88AAAABBUT5MQ",
+   "diff_hunk": "@@ -605,7 +611,85 @@ class TransactionStateManager(brokerId: Int,\n     }\n \n     val scheduleStartMs = time.milliseconds()\n-    scheduler.scheduleOnce(s\"load-txns-for-partition-$topicPartition\", () => loadTransactions(scheduleStartMs))\n+\n+    def scheduleLoad(hwmWaitTimeMs: Long): Unit =\n+      scheduler.scheduleOnce(s\"load-txns-for-partition-$topicPartition\", () => loadTransactions(scheduleStartMs, hwmWaitTimeMs))\n+\n+    // The listener is invoked with partition locks held, so instead of blocking on stateLock there, this runs on\n+    // the scheduler, which also serializes it with the load tasks for the partition.\n+    def scheduleAbandonLoad(reason: String): Unit =\n+      scheduler.scheduleOnce(s\"abandon-load-txns-for-partition-$topicPartition\", () => {\n+        inWriteLock[Exception](stateLock, () => {\n+          loadingPartitions.remove(partitionAndLeaderEpoch)\n+        })\n+        info(s\"Abandoned loading transaction metadata from $topicPartition at epoch $coordinatorEpoch because $reason\")\n+      })\n+\n+    // The load reads up to the log end offset, but a newly elected leader may have records above the high watermark\n+    // that are not committed yet and may still get truncated. The coordinator does not write to the partition while\n+    // it is loading, so the log end offset doesn't change; wait until the high watermark catches up to it so that\n+    // all the records the load reads are committed.\n+    replicaManager.getLog(topicPartition) match {\n+      case Some(log) if log.highWatermark < log.logEndOffset =>\n+        val logEndOffset = log.logEndOffset\n+        info(s\"Waiting for the high watermark of $topicPartition (currently ${log.highWatermark}) to reach the log end \" +\n+          s\"offset $logEndOffset before loading transaction metadata at epoch $coordinatorEpoch\")\n+        val listener = new HighWatermarkWaitListener(topicPartition, logEndOffset, coordinatorEpoch, scheduleLoad, scheduleAbandonLoad)\n+        if (!replicaManager.maybeAddListener(topicPartition, listener)) {\n+          listener.abandon(s\"$topicPartition is not online\")\n+        } else {\n+          // the high watermark may have been updated after it was read above but before the listener was added,\n+          // in which case the listener isn't notified of the update: check it again now that the listener is added\n+          listener.onHighWatermarkUpdated(topicPartition, log.highWatermark)\n+          // the wait may have finished before the listener was added; in that case remove it again\n+          if (listener.isFinished)\n+            replicaManager.removeListener(topicPartition, listener)\n+        }\n+      case _ =>\n+        scheduleLoad(0L)\n+    }\n+  }\n+\n+  /**\n+   * Waits for the high watermark of a transaction log partition to reach the given log end offset and then\n+   * schedules the load. If this broker stops being the leader first, the load is abandoned instead.\n+   */\n+  private class HighWatermarkWaitListener(topicPartition: TopicPartition,\n+                                          logEndOffset: Long,\n+                                          coordinatorEpoch: Int,\n+                                          scheduleLoad: Long => Unit,\n+                                          scheduleAbandonLoad: String => Unit) extends PartitionListener {\n+    private val waitStartMs = time.milliseconds()\n+    private val finished = new AtomicBoolean(false)\n+\n+    def isFinished: Boolean = finished.get\n+\n+    def abandon(reason: String): Unit = {\n+      if (finished.compareAndSet(false, true))\n+        finish(scheduleAbandonLoad(reason))\n+    }\n+\n+    private def finish(schedule: => Unit): Unit = {\n+      try {\n+        schedule\n+      } finally {\n+        replicaManager.removeListener(topicPartition, this)\n+      }\n+    }\n+\n+    override def onHighWatermarkUpdated(partition: TopicPartition, offset: Long): Unit = {\n+      if (offset >= logEndOffset && finished.compareAndSet(false, true)) {",
+   "path": "core/src/main/scala/kafka/coordinator/transaction/TransactionStateManager.scala",
+   "commit_id": "3cc66f34f0018bf960e228fd5ea92ba1d614d067",
+   "original_commit_id": "e466d2691b3ae917eebe8085542a75e9ba4b2498",
+   "user": {
+    "login": "jolshan",
+    "id": 25566826,
+    "node_id": "MDQ6VXNlcjI1NTY2ODI2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/25566826?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jolshan",
+    "html_url": "https://github.com/jolshan",
+    "followers_url": "https://api.github.com/users/jolshan/followers",
+    "following_url": "https://api.github.com/users/jolshan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jolshan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jolshan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jolshan/subscriptions",
+    "organizations_url": "https://api.github.com/users/jolshan/orgs",
+    "repos_url": "https://api.github.com/users/jolshan/repos",
+    "events_url": "https://api.github.com/users/jolshan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jolshan/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "nice -- we only finish this once per listener. 👍 ",
+   "created_at": "2026-10-26T22:52:36Z",
+   "updated_at": "2026-10-26T22:52:36Z",
+   "html_url": "https://github.com/apache/kafka/pull/23943#discussion_r4383373617",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23943",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4383373617"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23943#discussion_r4383373617"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23943"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4383373617/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": 684,
+   "original_line": 681,
+   "side": "RIGHT",
+   "author_association": "MEMBER",
+   "original_position": 116,
+   "position": 119,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4383452525",
+   "pull_request_review_id": 5660265412,
+   "id": 4383452525,
+   "node_id": "PRRC_kwDOACG9q88AAAABBUYtbQ",
+   "diff_hunk": "@@ -201,6 +203,133 @@ class TransactionStateManagerTest {\n     assertEquals(Some(metadata2.producerEpoch), cachedProducerEpoch(metadata2.transactionalId))\n   }\n \n+  @Test\n+  def testLoadWaitsForHighWatermarkToReachLogEndOffset(): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    val partitionListener = listener.getValue\n+    assertEquals(Left(Errors.COORDINATOR_LOAD_IN_PROGRESS), transactionManager.getTransactionState(transactionalId1))\n+\n+    // the high watermark advances but doesn't reach the log end offset yet\n+    partitionListener.onHighWatermarkUpdated(topicPartition, 1L)\n+    assertEquals(Left(Errors.COORDINATOR_LOAD_IN_PROGRESS), transactionManager.getTransactionState(transactionalId1))\n+    verify(replicaManager, never()).removeListener(topicPartition, partitionListener)\n+\n+    partitionListener.onHighWatermarkUpdated(topicPartition, 2L)\n+    verify(replicaManager).removeListener(topicPartition, partitionListener)\n+    val cachedMetadata = transactionManager.getTransactionState(transactionalId1).fold(\n+      err => throw new AssertionError(s\"$transactionalId1's transaction state access returns error $err\"),\n+      entry => entry.getOrElse(throw new AssertionError(s\"$transactionalId1's transaction state was not loaded into the cache\"))\n+    )\n+    assertEquals(txnMetadata1, cachedMetadata.transactionMetadata)\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+  }\n+\n+  @Test\n+  def testLoadAbandonedWhenPartitionIsNotOnline(): Unit = {\n+    prepareTxnLogAboveHighWatermark(online = false)\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    assertEquals(Left(Errors.NOT_COORDINATOR), transactionManager.getTransactionState(transactionalId1))\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+    verify(logMockOf(topicPartition), never()).read(anyLong(), anyInt(), any(), anyBoolean())\n+  }\n+\n+  @ParameterizedTest\n+  @ValueSource(strings = Array(\"follower\", \"failed\", \"deleted\"))\n+  def testLoadAbandonedWhenPartitionTransitionsBeforeHighWatermarkReachesLogEndOffset(transition: String): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    val partitionListener = listener.getValue\n+    assertEquals(Left(Errors.COORDINATOR_LOAD_IN_PROGRESS), transactionManager.getTransactionState(transactionalId1))\n+\n+    transition match {\n+      case \"follower\" => partitionListener.onBecomingFollower(topicPartition)\n+      case \"failed\" => partitionListener.onFailed(topicPartition)\n+      case \"deleted\" => partitionListener.onDeleted(topicPartition)\n+    }\n+    verify(replicaManager).removeListener(topicPartition, partitionListener)\n+    assertEquals(Left(Errors.NOT_COORDINATOR), transactionManager.getTransactionState(transactionalId1))\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+    verify(logMockOf(topicPartition), never()).read(anyLong(), anyInt(), any(), anyBoolean())\n+  }\n+\n+  @Test\n+  def testLoadAtNewLeaderEpochWhileWaitingForHighWatermark(): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    // the leader epoch is bumped while the load at the previous epoch waits for the high watermark\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch + 1, (_, _, _, _) => ())",
+   "path": "core/src/test/scala/unit/kafka/coordinator/transaction/TransactionStateManagerTest.scala",
+   "commit_id": "3cc66f34f0018bf960e228fd5ea92ba1d614d067",
+   "original_commit_id": "e466d2691b3ae917eebe8085542a75e9ba4b2498",
+   "user": {
+    "login": "jolshan",
+    "id": 25566826,
+    "node_id": "MDQ6VXNlcjI1NTY2ODI2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/25566826?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jolshan",
+    "html_url": "https://github.com/jolshan",
+    "followers_url": "https://api.github.com/users/jolshan/followers",
+    "following_url": "https://api.github.com/users/jolshan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jolshan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jolshan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jolshan/subscriptions",
+    "organizations_url": "https://api.github.com/users/jolshan/orgs",
+    "repos_url": "https://api.github.com/users/jolshan/repos",
+    "events_url": "https://api.github.com/users/jolshan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jolshan/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "I was curious about what would happen if we had multiple loads, so glad to see this test :) ",
+   "created_at": "2026-10-26T23:04:52Z",
+   "updated_at": "2026-10-26T23:04:52Z",
+   "html_url": "https://github.com/apache/kafka/pull/23943#discussion_r4383452525",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23943",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4383452525"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23943#discussion_r4383452525"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23943"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4383452525/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": 265,
+   "original_line": 265,
+   "side": "RIGHT",
+   "author_association": "MEMBER",
+   "original_position": 92,
+   "position": 92,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4383463815",
+   "pull_request_review_id": 5660278869,
+   "id": 4383463815,
+   "node_id": "PRRC_kwDOACG9q88AAAABBUZZhw",
+   "diff_hunk": "@@ -201,6 +203,133 @@ class TransactionStateManagerTest {\n     assertEquals(Some(metadata2.producerEpoch), cachedProducerEpoch(metadata2.transactionalId))\n   }\n \n+  @Test\n+  def testLoadWaitsForHighWatermarkToReachLogEndOffset(): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    val partitionListener = listener.getValue\n+    assertEquals(Left(Errors.COORDINATOR_LOAD_IN_PROGRESS), transactionManager.getTransactionState(transactionalId1))\n+\n+    // the high watermark advances but doesn't reach the log end offset yet\n+    partitionListener.onHighWatermarkUpdated(topicPartition, 1L)\n+    assertEquals(Left(Errors.COORDINATOR_LOAD_IN_PROGRESS), transactionManager.getTransactionState(transactionalId1))\n+    verify(replicaManager, never()).removeListener(topicPartition, partitionListener)\n+\n+    partitionListener.onHighWatermarkUpdated(topicPartition, 2L)\n+    verify(replicaManager).removeListener(topicPartition, partitionListener)\n+    val cachedMetadata = transactionManager.getTransactionState(transactionalId1).fold(\n+      err => throw new AssertionError(s\"$transactionalId1's transaction state access returns error $err\"),\n+      entry => entry.getOrElse(throw new AssertionError(s\"$transactionalId1's transaction state was not loaded into the cache\"))\n+    )\n+    assertEquals(txnMetadata1, cachedMetadata.transactionMetadata)\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+  }\n+\n+  @Test\n+  def testLoadAbandonedWhenPartitionIsNotOnline(): Unit = {\n+    prepareTxnLogAboveHighWatermark(online = false)\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    assertEquals(Left(Errors.NOT_COORDINATOR), transactionManager.getTransactionState(transactionalId1))\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+    verify(logMockOf(topicPartition), never()).read(anyLong(), anyInt(), any(), anyBoolean())\n+  }\n+\n+  @ParameterizedTest\n+  @ValueSource(strings = Array(\"follower\", \"failed\", \"deleted\"))\n+  def testLoadAbandonedWhenPartitionTransitionsBeforeHighWatermarkReachesLogEndOffset(transition: String): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    val partitionListener = listener.getValue\n+    assertEquals(Left(Errors.COORDINATOR_LOAD_IN_PROGRESS), transactionManager.getTransactionState(transactionalId1))\n+\n+    transition match {\n+      case \"follower\" => partitionListener.onBecomingFollower(topicPartition)\n+      case \"failed\" => partitionListener.onFailed(topicPartition)\n+      case \"deleted\" => partitionListener.onDeleted(topicPartition)\n+    }\n+    verify(replicaManager).removeListener(topicPartition, partitionListener)\n+    assertEquals(Left(Errors.NOT_COORDINATOR), transactionManager.getTransactionState(transactionalId1))\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+    verify(logMockOf(topicPartition), never()).read(anyLong(), anyInt(), any(), anyBoolean())\n+  }\n+\n+  @Test\n+  def testLoadAtNewLeaderEpochWhileWaitingForHighWatermark(): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    // the leader epoch is bumped while the load at the previous epoch waits for the high watermark\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch + 1, (_, _, _, _) => ())\n+    val Seq(oldEpochListener, newEpochListener) = listener.getAllValues.asScala.toSeq.takeRight(2)\n+    assertEquals(Left(Errors.COORDINATOR_LOAD_IN_PROGRESS), transactionManager.getTransactionState(transactionalId1))\n+\n+    oldEpochListener.onHighWatermarkUpdated(topicPartition, 2L)\n+    newEpochListener.onHighWatermarkUpdated(topicPartition, 2L)\n+    val cachedMetadata = transactionManager.getTransactionState(transactionalId1).fold(\n+      err => throw new AssertionError(s\"$transactionalId1's transaction state access returns error $err\"),\n+      entry => entry.getOrElse(throw new AssertionError(s\"$transactionalId1's transaction state was not loaded into the cache\"))\n+    )\n+    assertEquals(coordinatorEpoch + 1, cachedMetadata.coordinatorEpoch)\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+  }\n+\n+  @Test\n+  def testLoadWhenHighWatermarkReachesLogEndOffsetDuringListenerRegistration(): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+    val highWatermark = new AtomicLong(0L)\n+    when(logMockOf(topicPartition).highWatermark).thenAnswer(_ => highWatermark.get)\n+    // the high watermark advances after the listener is notified of the current state but before it's added,\n+    // so the listener isn't notified of the update\n+    when(replicaManager.maybeAddListener(ArgumentMatchers.eq(topicPartition), listener.capture())).thenAnswer { _ =>\n+      highWatermark.set(2L)\n+      true\n+    }\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    verify(replicaManager, times(2)).removeListener(topicPartition, listener.getValue)\n+    assertTrue(transactionManager.getTransactionState(transactionalId1).exists(_.isDefined))\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+  }\n+\n+  @Test\n+  def testLoadWithoutWaitingWhenHighWatermarkAlreadyReachedOnRegistration(): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+    // the high watermark catches up between reading it and registering the listener\n+    when(replicaManager.maybeAddListener(ArgumentMatchers.eq(topicPartition), listener.capture())).thenAnswer { invocation =>\n+      invocation.getArgument[PartitionListener](1).onHighWatermarkUpdated(topicPartition, 2L)\n+      true\n+    }\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    // removed after registration since the callback ran before the listener was added\n+    verify(replicaManager, times(2)).removeListener(topicPartition, listener.getValue)",
+   "path": "core/src/test/scala/unit/kafka/coordinator/transaction/TransactionStateManagerTest.scala",
+   "commit_id": "3cc66f34f0018bf960e228fd5ea92ba1d614d067",
+   "original_commit_id": "e466d2691b3ae917eebe8085542a75e9ba4b2498",
+   "user": {
+    "login": "jolshan",
+    "id": 25566826,
+    "node_id": "MDQ6VXNlcjI1NTY2ODI2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/25566826?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jolshan",
+    "html_url": "https://github.com/jolshan",
+    "followers_url": "https://api.github.com/users/jolshan/followers",
+    "following_url": "https://api.github.com/users/jolshan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jolshan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jolshan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jolshan/subscriptions",
+    "organizations_url": "https://api.github.com/users/jolshan/orgs",
+    "repos_url": "https://api.github.com/users/jolshan/repos",
+    "events_url": "https://api.github.com/users/jolshan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jolshan/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "Any reason to have this comment here but not in the above test?",
+   "created_at": "2026-10-26T23:06:33Z",
+   "updated_at": "2026-10-26T23:06:33Z",
+   "html_url": "https://github.com/apache/kafka/pull/23943#discussion_r4383463815",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23943",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4383463815"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23943#discussion_r4383463815"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23943"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4383463815/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": 311,
+   "original_line": 308,
+   "side": "RIGHT",
+   "author_association": "MEMBER",
+   "original_position": 135,
+   "position": 138,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4383532340",
+   "pull_request_review_id": 5660361386,
+   "id": 4383532340,
+   "node_id": "PRRC_kwDOACG9q88AAAABBUdlNA",
+   "diff_hunk": "@@ -201,6 +203,133 @@ class TransactionStateManagerTest {\n     assertEquals(Some(metadata2.producerEpoch), cachedProducerEpoch(metadata2.transactionalId))\n   }\n \n+  @Test\n+  def testLoadWaitsForHighWatermarkToReachLogEndOffset(): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    val partitionListener = listener.getValue\n+    assertEquals(Left(Errors.COORDINATOR_LOAD_IN_PROGRESS), transactionManager.getTransactionState(transactionalId1))\n+\n+    // the high watermark advances but doesn't reach the log end offset yet\n+    partitionListener.onHighWatermarkUpdated(topicPartition, 1L)\n+    assertEquals(Left(Errors.COORDINATOR_LOAD_IN_PROGRESS), transactionManager.getTransactionState(transactionalId1))\n+    verify(replicaManager, never()).removeListener(topicPartition, partitionListener)\n+\n+    partitionListener.onHighWatermarkUpdated(topicPartition, 2L)\n+    verify(replicaManager).removeListener(topicPartition, partitionListener)\n+    val cachedMetadata = transactionManager.getTransactionState(transactionalId1).fold(\n+      err => throw new AssertionError(s\"$transactionalId1's transaction state access returns error $err\"),\n+      entry => entry.getOrElse(throw new AssertionError(s\"$transactionalId1's transaction state was not loaded into the cache\"))\n+    )\n+    assertEquals(txnMetadata1, cachedMetadata.transactionMetadata)\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+  }\n+\n+  @Test\n+  def testLoadAbandonedWhenPartitionIsNotOnline(): Unit = {\n+    prepareTxnLogAboveHighWatermark(online = false)\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    assertEquals(Left(Errors.NOT_COORDINATOR), transactionManager.getTransactionState(transactionalId1))\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+    verify(logMockOf(topicPartition), never()).read(anyLong(), anyInt(), any(), anyBoolean())\n+  }\n+\n+  @ParameterizedTest\n+  @ValueSource(strings = Array(\"follower\", \"failed\", \"deleted\"))\n+  def testLoadAbandonedWhenPartitionTransitionsBeforeHighWatermarkReachesLogEndOffset(transition: String): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    val partitionListener = listener.getValue\n+    assertEquals(Left(Errors.COORDINATOR_LOAD_IN_PROGRESS), transactionManager.getTransactionState(transactionalId1))\n+\n+    transition match {\n+      case \"follower\" => partitionListener.onBecomingFollower(topicPartition)\n+      case \"failed\" => partitionListener.onFailed(topicPartition)\n+      case \"deleted\" => partitionListener.onDeleted(topicPartition)\n+    }\n+    verify(replicaManager).removeListener(topicPartition, partitionListener)\n+    assertEquals(Left(Errors.NOT_COORDINATOR), transactionManager.getTransactionState(transactionalId1))\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+    verify(logMockOf(topicPartition), never()).read(anyLong(), anyInt(), any(), anyBoolean())\n+  }\n+\n+  @Test\n+  def testLoadAtNewLeaderEpochWhileWaitingForHighWatermark(): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    // the leader epoch is bumped while the load at the previous epoch waits for the high watermark\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch + 1, (_, _, _, _) => ())\n+    val Seq(oldEpochListener, newEpochListener) = listener.getAllValues.asScala.toSeq.takeRight(2)\n+    assertEquals(Left(Errors.COORDINATOR_LOAD_IN_PROGRESS), transactionManager.getTransactionState(transactionalId1))\n+\n+    oldEpochListener.onHighWatermarkUpdated(topicPartition, 2L)\n+    newEpochListener.onHighWatermarkUpdated(topicPartition, 2L)\n+    val cachedMetadata = transactionManager.getTransactionState(transactionalId1).fold(\n+      err => throw new AssertionError(s\"$transactionalId1's transaction state access returns error $err\"),\n+      entry => entry.getOrElse(throw new AssertionError(s\"$transactionalId1's transaction state was not loaded into the cache\"))\n+    )\n+    assertEquals(coordinatorEpoch + 1, cachedMetadata.coordinatorEpoch)\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+  }\n+\n+  @Test\n+  def testLoadWhenHighWatermarkReachesLogEndOffsetDuringListenerRegistration(): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+    val highWatermark = new AtomicLong(0L)\n+    when(logMockOf(topicPartition).highWatermark).thenAnswer(_ => highWatermark.get)\n+    // the high watermark advances after the listener is notified of the current state but before it's added,\n+    // so the listener isn't notified of the update\n+    when(replicaManager.maybeAddListener(ArgumentMatchers.eq(topicPartition), listener.capture())).thenAnswer { _ =>\n+      highWatermark.set(2L)\n+      true\n+    }\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    verify(replicaManager, times(2)).removeListener(topicPartition, listener.getValue)\n+    assertTrue(transactionManager.getTransactionState(transactionalId1).exists(_.isDefined))\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+  }\n+\n+  @Test\n+  def testLoadWithoutWaitingWhenHighWatermarkAlreadyReachedOnRegistration(): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+    // the high watermark catches up between reading it and registering the listener\n+    when(replicaManager.maybeAddListener(ArgumentMatchers.eq(topicPartition), listener.capture())).thenAnswer { invocation =>\n+      invocation.getArgument[PartitionListener](1).onHighWatermarkUpdated(topicPartition, 2L)\n+      true\n+    }\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    // removed after registration since the callback ran before the listener was added\n+    verify(replicaManager, times(2)).removeListener(topicPartition, listener.getValue)\n+    assertTrue(transactionManager.getTransactionState(transactionalId1).exists(_.isDefined))\n+  }\n+\n+  // Prepares a log with two records for transactionalId1 where the high watermark is below the log end offset\n+  private def prepareTxnLogAboveHighWatermark(online: Boolean = true): ArgumentCaptor[PartitionListener] = {",
+   "path": "core/src/test/scala/unit/kafka/coordinator/transaction/TransactionStateManagerTest.scala",
+   "commit_id": "3cc66f34f0018bf960e228fd5ea92ba1d614d067",
+   "original_commit_id": "e466d2691b3ae917eebe8085542a75e9ba4b2498",
+   "user": {
+    "login": "jolshan",
+    "id": 25566826,
+    "node_id": "MDQ6VXNlcjI1NTY2ODI2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/25566826?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jolshan",
+    "html_url": "https://github.com/jolshan",
+    "followers_url": "https://api.github.com/users/jolshan/followers",
+    "following_url": "https://api.github.com/users/jolshan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jolshan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jolshan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jolshan/subscriptions",
+    "organizations_url": "https://api.github.com/users/jolshan/orgs",
+    "repos_url": "https://api.github.com/users/jolshan/repos",
+    "events_url": "https://api.github.com/users/jolshan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jolshan/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "One thing I wasn't totally sure about was in the scenario we saw, was when the high watermark updated on the leader.\n\nIe, in these testing scenarios, we are manually setting the high watermark to be updated, but how does it work in reality? Let me read https://github.com/apache/kafka/blob/2bd1d20063ce7e0843bb1482f7252b67c2a40421/core/src/main/scala/kafka/cluster/Partition.scala#L1013 again. 😂 ",
+   "created_at": "2026-10-26T23:17:45Z",
+   "updated_at": "2026-10-26T23:17:45Z",
+   "html_url": "https://github.com/apache/kafka/pull/23943#discussion_r4383532340",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23943",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4383532340"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23943#discussion_r4383532340"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23943"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4383532340/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": 318,
+   "original_line": 313,
+   "side": "RIGHT",
+   "author_association": "MEMBER",
+   "original_position": 140,
+   "position": 145,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4383560553",
+   "pull_request_review_id": 5660397068,
+   "id": 4383560553,
+   "node_id": "PRRC_kwDOACG9q88AAAABBUfTaQ",
+   "diff_hunk": "@@ -201,6 +203,133 @@ class TransactionStateManagerTest {\n     assertEquals(Some(metadata2.producerEpoch), cachedProducerEpoch(metadata2.transactionalId))\n   }\n \n+  @Test\n+  def testLoadWaitsForHighWatermarkToReachLogEndOffset(): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    val partitionListener = listener.getValue\n+    assertEquals(Left(Errors.COORDINATOR_LOAD_IN_PROGRESS), transactionManager.getTransactionState(transactionalId1))\n+\n+    // the high watermark advances but doesn't reach the log end offset yet\n+    partitionListener.onHighWatermarkUpdated(topicPartition, 1L)\n+    assertEquals(Left(Errors.COORDINATOR_LOAD_IN_PROGRESS), transactionManager.getTransactionState(transactionalId1))\n+    verify(replicaManager, never()).removeListener(topicPartition, partitionListener)\n+\n+    partitionListener.onHighWatermarkUpdated(topicPartition, 2L)\n+    verify(replicaManager).removeListener(topicPartition, partitionListener)\n+    val cachedMetadata = transactionManager.getTransactionState(transactionalId1).fold(\n+      err => throw new AssertionError(s\"$transactionalId1's transaction state access returns error $err\"),\n+      entry => entry.getOrElse(throw new AssertionError(s\"$transactionalId1's transaction state was not loaded into the cache\"))\n+    )\n+    assertEquals(txnMetadata1, cachedMetadata.transactionMetadata)\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+  }\n+\n+  @Test\n+  def testLoadAbandonedWhenPartitionIsNotOnline(): Unit = {\n+    prepareTxnLogAboveHighWatermark(online = false)\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    assertEquals(Left(Errors.NOT_COORDINATOR), transactionManager.getTransactionState(transactionalId1))\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+    verify(logMockOf(topicPartition), never()).read(anyLong(), anyInt(), any(), anyBoolean())\n+  }\n+\n+  @ParameterizedTest\n+  @ValueSource(strings = Array(\"follower\", \"failed\", \"deleted\"))\n+  def testLoadAbandonedWhenPartitionTransitionsBeforeHighWatermarkReachesLogEndOffset(transition: String): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    val partitionListener = listener.getValue\n+    assertEquals(Left(Errors.COORDINATOR_LOAD_IN_PROGRESS), transactionManager.getTransactionState(transactionalId1))\n+\n+    transition match {\n+      case \"follower\" => partitionListener.onBecomingFollower(topicPartition)\n+      case \"failed\" => partitionListener.onFailed(topicPartition)\n+      case \"deleted\" => partitionListener.onDeleted(topicPartition)\n+    }\n+    verify(replicaManager).removeListener(topicPartition, partitionListener)\n+    assertEquals(Left(Errors.NOT_COORDINATOR), transactionManager.getTransactionState(transactionalId1))\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+    verify(logMockOf(topicPartition), never()).read(anyLong(), anyInt(), any(), anyBoolean())\n+  }\n+\n+  @Test\n+  def testLoadAtNewLeaderEpochWhileWaitingForHighWatermark(): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    // the leader epoch is bumped while the load at the previous epoch waits for the high watermark\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch + 1, (_, _, _, _) => ())\n+    val Seq(oldEpochListener, newEpochListener) = listener.getAllValues.asScala.toSeq.takeRight(2)\n+    assertEquals(Left(Errors.COORDINATOR_LOAD_IN_PROGRESS), transactionManager.getTransactionState(transactionalId1))\n+\n+    oldEpochListener.onHighWatermarkUpdated(topicPartition, 2L)\n+    newEpochListener.onHighWatermarkUpdated(topicPartition, 2L)\n+    val cachedMetadata = transactionManager.getTransactionState(transactionalId1).fold(\n+      err => throw new AssertionError(s\"$transactionalId1's transaction state access returns error $err\"),\n+      entry => entry.getOrElse(throw new AssertionError(s\"$transactionalId1's transaction state was not loaded into the cache\"))\n+    )\n+    assertEquals(coordinatorEpoch + 1, cachedMetadata.coordinatorEpoch)\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+  }\n+\n+  @Test\n+  def testLoadWhenHighWatermarkReachesLogEndOffsetDuringListenerRegistration(): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+    val highWatermark = new AtomicLong(0L)\n+    when(logMockOf(topicPartition).highWatermark).thenAnswer(_ => highWatermark.get)\n+    // the high watermark advances after the listener is notified of the current state but before it's added,\n+    // so the listener isn't notified of the update\n+    when(replicaManager.maybeAddListener(ArgumentMatchers.eq(topicPartition), listener.capture())).thenAnswer { _ =>\n+      highWatermark.set(2L)\n+      true\n+    }\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    verify(replicaManager, times(2)).removeListener(topicPartition, listener.getValue)\n+    assertTrue(transactionManager.getTransactionState(transactionalId1).exists(_.isDefined))\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+  }\n+\n+  @Test\n+  def testLoadWithoutWaitingWhenHighWatermarkAlreadyReachedOnRegistration(): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+    // the high watermark catches up between reading it and registering the listener\n+    when(replicaManager.maybeAddListener(ArgumentMatchers.eq(topicPartition), listener.capture())).thenAnswer { invocation =>\n+      invocation.getArgument[PartitionListener](1).onHighWatermarkUpdated(topicPartition, 2L)\n+      true\n+    }\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    // removed after registration since the callback ran before the listener was added\n+    verify(replicaManager, times(2)).removeListener(topicPartition, listener.getValue)\n+    assertTrue(transactionManager.getTransactionState(transactionalId1).exists(_.isDefined))\n+  }\n+\n+  // Prepares a log with two records for transactionalId1 where the high watermark is below the log end offset\n+  private def prepareTxnLogAboveHighWatermark(online: Boolean = true): ArgumentCaptor[PartitionListener] = {",
+   "path": "core/src/test/scala/unit/kafka/coordinator/transaction/TransactionStateManagerTest.scala",
+   "commit_id": "3cc66f34f0018bf960e228fd5ea92ba1d614d067",
+   "original_commit_id": "e466d2691b3ae917eebe8085542a75e9ba4b2498",
+   "user": {
+    "login": "jolshan",
+    "id": 25566826,
+    "node_id": "MDQ6VXNlcjI1NTY2ODI2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/25566826?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jolshan",
+    "html_url": "https://github.com/jolshan",
+    "followers_url": "https://api.github.com/users/jolshan/followers",
+    "following_url": "https://api.github.com/users/jolshan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jolshan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jolshan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jolshan/subscriptions",
+    "organizations_url": "https://api.github.com/users/jolshan/orgs",
+    "repos_url": "https://api.github.com/users/jolshan/repos",
+    "events_url": "https://api.github.com/users/jolshan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jolshan/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "Looks like we do it after updating follower state, which happens when the followers fetch. (I was curious if the mechanism was on appending itself or if it was from fetching)",
+   "created_at": "2026-10-26T23:22:08Z",
+   "updated_at": "2026-10-26T23:22:09Z",
+   "html_url": "https://github.com/apache/kafka/pull/23943#discussion_r4383560553",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23943",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4383560553"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23943#discussion_r4383560553"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23943"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4383560553/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": 318,
+   "original_line": 313,
+   "side": "RIGHT",
+   "in_reply_to_id": 4383532340,
+   "author_association": "MEMBER",
+   "original_position": 140,
+   "position": 145,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4391866922",
+   "pull_request_review_id": 5671398224,
+   "id": 4391866922,
+   "node_id": "PRRC_kwDOACG9q88AAAABBcaSKg",
+   "diff_hunk": "@@ -605,7 +611,85 @@ class TransactionStateManager(brokerId: Int,\n     }\n \n     val scheduleStartMs = time.milliseconds()\n-    scheduler.scheduleOnce(s\"load-txns-for-partition-$topicPartition\", () => loadTransactions(scheduleStartMs))\n+\n+    def scheduleLoad(hwmWaitTimeMs: Long): Unit =\n+      scheduler.scheduleOnce(s\"load-txns-for-partition-$topicPartition\", () => loadTransactions(scheduleStartMs, hwmWaitTimeMs))\n+\n+    // The listener is invoked with partition locks held, so instead of blocking on stateLock there, this runs on\n+    // the scheduler, which also serializes it with the load tasks for the partition.\n+    def scheduleAbandonLoad(reason: String): Unit =\n+      scheduler.scheduleOnce(s\"abandon-load-txns-for-partition-$topicPartition\", () => {\n+        inWriteLock[Exception](stateLock, () => {\n+          loadingPartitions.remove(partitionAndLeaderEpoch)\n+        })\n+        info(s\"Abandoned loading transaction metadata from $topicPartition at epoch $coordinatorEpoch because $reason\")\n+      })\n+\n+    // The load reads up to the log end offset, but a newly elected leader may have records above the high watermark\n+    // that are not committed yet and may still get truncated. The coordinator does not write to the partition while\n+    // it is loading, so the log end offset doesn't change; wait until the high watermark catches up to it so that\n+    // all the records the load reads are committed.\n+    replicaManager.getLog(topicPartition) match {\n+      case Some(log) if log.highWatermark < log.logEndOffset =>\n+        val logEndOffset = log.logEndOffset\n+        info(s\"Waiting for the high watermark of $topicPartition (currently ${log.highWatermark}) to reach the log end \" +\n+          s\"offset $logEndOffset before loading transaction metadata at epoch $coordinatorEpoch\")\n+        val listener = new HighWatermarkWaitListener(topicPartition, logEndOffset, coordinatorEpoch, scheduleLoad, scheduleAbandonLoad)\n+        if (!replicaManager.maybeAddListener(topicPartition, listener)) {\n+          listener.abandon(s\"$topicPartition is not online\")\n+        } else {\n+          // the high watermark may have been updated after it was read above but before the listener was added,\n+          // in which case the listener isn't notified of the update: check it again now that the listener is added\n+          listener.onHighWatermarkUpdated(topicPartition, log.highWatermark)\n+          // the wait may have finished before the listener was added; in that case remove it again\n+          if (listener.isFinished)\n+            replicaManager.removeListener(topicPartition, listener)\n+        }\n+      case _ =>",
+   "path": "core/src/main/scala/kafka/coordinator/transaction/TransactionStateManager.scala",
+   "commit_id": "3cc66f34f0018bf960e228fd5ea92ba1d614d067",
+   "original_commit_id": "e466d2691b3ae917eebe8085542a75e9ba4b2498",
+   "user": {
+    "login": "artemlivshits",
+    "id": 84364232,
+    "node_id": "MDQ6VXNlcjg0MzY0MjMy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/84364232?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/artemlivshits",
+    "html_url": "https://github.com/artemlivshits",
+    "followers_url": "https://api.github.com/users/artemlivshits/followers",
+    "following_url": "https://api.github.com/users/artemlivshits/following{/other_user}",
+    "gists_url": "https://api.github.com/users/artemlivshits/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/artemlivshits/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/artemlivshits/subscriptions",
+    "organizations_url": "https://api.github.com/users/artemlivshits/orgs",
+    "repos_url": "https://api.github.com/users/artemlivshits/repos",
+    "events_url": "https://api.github.com/users/artemlivshits/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/artemlivshits/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "If `getLog` returns `None`, the broker has no local log for the partition (e.g. it was deleted or its log dir went offline between becoming leader and this call). There is nothing to wait for then: `loadTransactionMetadata` already handles a missing log by logging a warning and loading nothing, so this keeps the existing behavior. This branch also covers the high watermark already being at the log end offset, where everything is committed. I added a comment to make both cases explicit.",
+   "created_at": "2026-10-27T17:17:21Z",
+   "updated_at": "2026-10-27T17:17:21Z",
+   "html_url": "https://github.com/apache/kafka/pull/23943#discussion_r4391866922",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23943",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4391866922"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23943#discussion_r4391866922"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23943"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4391866922/reactions",
+    "total_count": 1,
+    "+1": 1,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": 649,
+   "original_line": 648,
+   "side": "RIGHT",
+   "in_reply_to_id": 4383325988,
+   "author_association": "CONTRIBUTOR",
+   "original_position": 83,
+   "position": 84,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4391867307",
+   "pull_request_review_id": 5671398751,
+   "id": 4391867307,
+   "node_id": "PRRC_kwDOACG9q88AAAABBcaTqw",
+   "diff_hunk": "@@ -201,6 +203,133 @@ class TransactionStateManagerTest {\n     assertEquals(Some(metadata2.producerEpoch), cachedProducerEpoch(metadata2.transactionalId))\n   }\n \n+  @Test\n+  def testLoadWaitsForHighWatermarkToReachLogEndOffset(): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    val partitionListener = listener.getValue\n+    assertEquals(Left(Errors.COORDINATOR_LOAD_IN_PROGRESS), transactionManager.getTransactionState(transactionalId1))\n+\n+    // the high watermark advances but doesn't reach the log end offset yet\n+    partitionListener.onHighWatermarkUpdated(topicPartition, 1L)\n+    assertEquals(Left(Errors.COORDINATOR_LOAD_IN_PROGRESS), transactionManager.getTransactionState(transactionalId1))\n+    verify(replicaManager, never()).removeListener(topicPartition, partitionListener)\n+\n+    partitionListener.onHighWatermarkUpdated(topicPartition, 2L)\n+    verify(replicaManager).removeListener(topicPartition, partitionListener)\n+    val cachedMetadata = transactionManager.getTransactionState(transactionalId1).fold(\n+      err => throw new AssertionError(s\"$transactionalId1's transaction state access returns error $err\"),\n+      entry => entry.getOrElse(throw new AssertionError(s\"$transactionalId1's transaction state was not loaded into the cache\"))\n+    )\n+    assertEquals(txnMetadata1, cachedMetadata.transactionMetadata)\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+  }\n+\n+  @Test\n+  def testLoadAbandonedWhenPartitionIsNotOnline(): Unit = {\n+    prepareTxnLogAboveHighWatermark(online = false)\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    assertEquals(Left(Errors.NOT_COORDINATOR), transactionManager.getTransactionState(transactionalId1))\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+    verify(logMockOf(topicPartition), never()).read(anyLong(), anyInt(), any(), anyBoolean())\n+  }\n+\n+  @ParameterizedTest\n+  @ValueSource(strings = Array(\"follower\", \"failed\", \"deleted\"))\n+  def testLoadAbandonedWhenPartitionTransitionsBeforeHighWatermarkReachesLogEndOffset(transition: String): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    val partitionListener = listener.getValue\n+    assertEquals(Left(Errors.COORDINATOR_LOAD_IN_PROGRESS), transactionManager.getTransactionState(transactionalId1))\n+\n+    transition match {\n+      case \"follower\" => partitionListener.onBecomingFollower(topicPartition)\n+      case \"failed\" => partitionListener.onFailed(topicPartition)\n+      case \"deleted\" => partitionListener.onDeleted(topicPartition)\n+    }\n+    verify(replicaManager).removeListener(topicPartition, partitionListener)\n+    assertEquals(Left(Errors.NOT_COORDINATOR), transactionManager.getTransactionState(transactionalId1))\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+    verify(logMockOf(topicPartition), never()).read(anyLong(), anyInt(), any(), anyBoolean())\n+  }\n+\n+  @Test\n+  def testLoadAtNewLeaderEpochWhileWaitingForHighWatermark(): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    // the leader epoch is bumped while the load at the previous epoch waits for the high watermark\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch + 1, (_, _, _, _) => ())\n+    val Seq(oldEpochListener, newEpochListener) = listener.getAllValues.asScala.toSeq.takeRight(2)\n+    assertEquals(Left(Errors.COORDINATOR_LOAD_IN_PROGRESS), transactionManager.getTransactionState(transactionalId1))\n+\n+    oldEpochListener.onHighWatermarkUpdated(topicPartition, 2L)\n+    newEpochListener.onHighWatermarkUpdated(topicPartition, 2L)\n+    val cachedMetadata = transactionManager.getTransactionState(transactionalId1).fold(\n+      err => throw new AssertionError(s\"$transactionalId1's transaction state access returns error $err\"),\n+      entry => entry.getOrElse(throw new AssertionError(s\"$transactionalId1's transaction state was not loaded into the cache\"))\n+    )\n+    assertEquals(coordinatorEpoch + 1, cachedMetadata.coordinatorEpoch)\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+  }\n+\n+  @Test\n+  def testLoadWhenHighWatermarkReachesLogEndOffsetDuringListenerRegistration(): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+    val highWatermark = new AtomicLong(0L)\n+    when(logMockOf(topicPartition).highWatermark).thenAnswer(_ => highWatermark.get)\n+    // the high watermark advances after the listener is notified of the current state but before it's added,\n+    // so the listener isn't notified of the update\n+    when(replicaManager.maybeAddListener(ArgumentMatchers.eq(topicPartition), listener.capture())).thenAnswer { _ =>\n+      highWatermark.set(2L)\n+      true\n+    }\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    verify(replicaManager, times(2)).removeListener(topicPartition, listener.getValue)\n+    assertTrue(transactionManager.getTransactionState(transactionalId1).exists(_.isDefined))\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+  }\n+\n+  @Test\n+  def testLoadWithoutWaitingWhenHighWatermarkAlreadyReachedOnRegistration(): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+    // the high watermark catches up between reading it and registering the listener\n+    when(replicaManager.maybeAddListener(ArgumentMatchers.eq(topicPartition), listener.capture())).thenAnswer { invocation =>\n+      invocation.getArgument[PartitionListener](1).onHighWatermarkUpdated(topicPartition, 2L)\n+      true\n+    }\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    // removed after registration since the callback ran before the listener was added\n+    verify(replicaManager, times(2)).removeListener(topicPartition, listener.getValue)",
+   "path": "core/src/test/scala/unit/kafka/coordinator/transaction/TransactionStateManagerTest.scala",
+   "commit_id": "3cc66f34f0018bf960e228fd5ea92ba1d614d067",
+   "original_commit_id": "e466d2691b3ae917eebe8085542a75e9ba4b2498",
+   "user": {
+    "login": "artemlivshits",
+    "id": 84364232,
+    "node_id": "MDQ6VXNlcjg0MzY0MjMy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/84364232?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/artemlivshits",
+    "html_url": "https://github.com/artemlivshits",
+    "followers_url": "https://api.github.com/users/artemlivshits/followers",
+    "following_url": "https://api.github.com/users/artemlivshits/following{/other_user}",
+    "gists_url": "https://api.github.com/users/artemlivshits/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/artemlivshits/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/artemlivshits/subscriptions",
+    "organizations_url": "https://api.github.com/users/artemlivshits/orgs",
+    "repos_url": "https://api.github.com/users/artemlivshits/repos",
+    "events_url": "https://api.github.com/users/artemlivshits/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/artemlivshits/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "No good reason: both tests remove the listener twice for similar reasons, once when the wait finishes and again in `loadTransactionsForTxnTopicPartition`, because the wait is already finished by the time registration returns. I added a comment to both tests.",
+   "created_at": "2026-10-27T17:17:24Z",
+   "updated_at": "2026-10-27T17:17:24Z",
+   "html_url": "https://github.com/apache/kafka/pull/23943#discussion_r4391867307",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23943",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4391867307"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23943#discussion_r4391867307"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23943"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4391867307/reactions",
+    "total_count": 1,
+    "+1": 1,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": 311,
+   "original_line": 308,
+   "side": "RIGHT",
+   "in_reply_to_id": 4383463815,
+   "author_association": "CONTRIBUTOR",
+   "original_position": 135,
+   "position": 138,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4391867753",
+   "pull_request_review_id": 5671399290,
+   "id": 4391867753,
+   "node_id": "PRRC_kwDOACG9q88AAAABBcaVaQ",
+   "diff_hunk": "@@ -201,6 +203,133 @@ class TransactionStateManagerTest {\n     assertEquals(Some(metadata2.producerEpoch), cachedProducerEpoch(metadata2.transactionalId))\n   }\n \n+  @Test\n+  def testLoadWaitsForHighWatermarkToReachLogEndOffset(): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    val partitionListener = listener.getValue\n+    assertEquals(Left(Errors.COORDINATOR_LOAD_IN_PROGRESS), transactionManager.getTransactionState(transactionalId1))\n+\n+    // the high watermark advances but doesn't reach the log end offset yet\n+    partitionListener.onHighWatermarkUpdated(topicPartition, 1L)\n+    assertEquals(Left(Errors.COORDINATOR_LOAD_IN_PROGRESS), transactionManager.getTransactionState(transactionalId1))\n+    verify(replicaManager, never()).removeListener(topicPartition, partitionListener)\n+\n+    partitionListener.onHighWatermarkUpdated(topicPartition, 2L)\n+    verify(replicaManager).removeListener(topicPartition, partitionListener)\n+    val cachedMetadata = transactionManager.getTransactionState(transactionalId1).fold(\n+      err => throw new AssertionError(s\"$transactionalId1's transaction state access returns error $err\"),\n+      entry => entry.getOrElse(throw new AssertionError(s\"$transactionalId1's transaction state was not loaded into the cache\"))\n+    )\n+    assertEquals(txnMetadata1, cachedMetadata.transactionMetadata)\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+  }\n+\n+  @Test\n+  def testLoadAbandonedWhenPartitionIsNotOnline(): Unit = {\n+    prepareTxnLogAboveHighWatermark(online = false)\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    assertEquals(Left(Errors.NOT_COORDINATOR), transactionManager.getTransactionState(transactionalId1))\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+    verify(logMockOf(topicPartition), never()).read(anyLong(), anyInt(), any(), anyBoolean())\n+  }\n+\n+  @ParameterizedTest\n+  @ValueSource(strings = Array(\"follower\", \"failed\", \"deleted\"))\n+  def testLoadAbandonedWhenPartitionTransitionsBeforeHighWatermarkReachesLogEndOffset(transition: String): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    val partitionListener = listener.getValue\n+    assertEquals(Left(Errors.COORDINATOR_LOAD_IN_PROGRESS), transactionManager.getTransactionState(transactionalId1))\n+\n+    transition match {\n+      case \"follower\" => partitionListener.onBecomingFollower(topicPartition)\n+      case \"failed\" => partitionListener.onFailed(topicPartition)\n+      case \"deleted\" => partitionListener.onDeleted(topicPartition)\n+    }\n+    verify(replicaManager).removeListener(topicPartition, partitionListener)\n+    assertEquals(Left(Errors.NOT_COORDINATOR), transactionManager.getTransactionState(transactionalId1))\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+    verify(logMockOf(topicPartition), never()).read(anyLong(), anyInt(), any(), anyBoolean())\n+  }\n+\n+  @Test\n+  def testLoadAtNewLeaderEpochWhileWaitingForHighWatermark(): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    // the leader epoch is bumped while the load at the previous epoch waits for the high watermark\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch + 1, (_, _, _, _) => ())\n+    val Seq(oldEpochListener, newEpochListener) = listener.getAllValues.asScala.toSeq.takeRight(2)\n+    assertEquals(Left(Errors.COORDINATOR_LOAD_IN_PROGRESS), transactionManager.getTransactionState(transactionalId1))\n+\n+    oldEpochListener.onHighWatermarkUpdated(topicPartition, 2L)\n+    newEpochListener.onHighWatermarkUpdated(topicPartition, 2L)\n+    val cachedMetadata = transactionManager.getTransactionState(transactionalId1).fold(\n+      err => throw new AssertionError(s\"$transactionalId1's transaction state access returns error $err\"),\n+      entry => entry.getOrElse(throw new AssertionError(s\"$transactionalId1's transaction state was not loaded into the cache\"))\n+    )\n+    assertEquals(coordinatorEpoch + 1, cachedMetadata.coordinatorEpoch)\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+  }\n+\n+  @Test\n+  def testLoadWhenHighWatermarkReachesLogEndOffsetDuringListenerRegistration(): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+    val highWatermark = new AtomicLong(0L)\n+    when(logMockOf(topicPartition).highWatermark).thenAnswer(_ => highWatermark.get)\n+    // the high watermark advances after the listener is notified of the current state but before it's added,\n+    // so the listener isn't notified of the update\n+    when(replicaManager.maybeAddListener(ArgumentMatchers.eq(topicPartition), listener.capture())).thenAnswer { _ =>\n+      highWatermark.set(2L)\n+      true\n+    }\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    verify(replicaManager, times(2)).removeListener(topicPartition, listener.getValue)\n+    assertTrue(transactionManager.getTransactionState(transactionalId1).exists(_.isDefined))\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+  }\n+\n+  @Test\n+  def testLoadWithoutWaitingWhenHighWatermarkAlreadyReachedOnRegistration(): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+    // the high watermark catches up between reading it and registering the listener\n+    when(replicaManager.maybeAddListener(ArgumentMatchers.eq(topicPartition), listener.capture())).thenAnswer { invocation =>\n+      invocation.getArgument[PartitionListener](1).onHighWatermarkUpdated(topicPartition, 2L)\n+      true\n+    }\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    // removed after registration since the callback ran before the listener was added\n+    verify(replicaManager, times(2)).removeListener(topicPartition, listener.getValue)\n+    assertTrue(transactionManager.getTransactionState(transactionalId1).exists(_.isDefined))\n+  }\n+\n+  // Prepares a log with two records for transactionalId1 where the high watermark is below the log end offset\n+  private def prepareTxnLogAboveHighWatermark(online: Boolean = true): ArgumentCaptor[PartitionListener] = {",
+   "path": "core/src/test/scala/unit/kafka/coordinator/transaction/TransactionStateManagerTest.scala",
+   "commit_id": "3cc66f34f0018bf960e228fd5ea92ba1d614d067",
+   "original_commit_id": "e466d2691b3ae917eebe8085542a75e9ba4b2498",
+   "user": {
+    "login": "artemlivshits",
+    "id": 84364232,
+    "node_id": "MDQ6VXNlcjg0MzY0MjMy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/84364232?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/artemlivshits",
+    "html_url": "https://github.com/artemlivshits",
+    "followers_url": "https://api.github.com/users/artemlivshits/followers",
+    "following_url": "https://api.github.com/users/artemlivshits/following{/other_user}",
+    "gists_url": "https://api.github.com/users/artemlivshits/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/artemlivshits/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/artemlivshits/subscriptions",
+    "organizations_url": "https://api.github.com/users/artemlivshits/orgs",
+    "repos_url": "https://api.github.com/users/artemlivshits/repos",
+    "events_url": "https://api.github.com/users/artemlivshits/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/artemlivshits/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "Yes, it is driven by the followers fetching: the leader's high watermark advances in `maybeIncrementLeaderHW` after `updateFollowerFetchState`, once all ISR members have fetched up to an offset. It can also advance when a lagging follower is removed from the ISR (`maybeShrinkIsr`), on `makeLeader`, and on appends to the leader. The coordinator does not append while loading, so in practice it is the follower fetches, typically one fetch round trip after the election. I added a comment to the test helper saying that the tests drive the listener directly while on a real leader the updates come from follower fetches, and a line in the main code saying where the high watermark advances.",
+   "created_at": "2026-10-27T17:17:26Z",
+   "updated_at": "2026-10-27T17:17:26Z",
+   "html_url": "https://github.com/apache/kafka/pull/23943#discussion_r4391867753",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23943",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4391867753"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23943#discussion_r4391867753"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23943"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4391867753/reactions",
+    "total_count": 1,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 1,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": 318,
+   "original_line": 313,
+   "side": "RIGHT",
+   "in_reply_to_id": 4383532340,
+   "author_association": "CONTRIBUTOR",
+   "original_position": 140,
+   "position": 145,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  },
+  {
+   "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4393659779",
+   "pull_request_review_id": 5673704554,
+   "id": 4393659779,
+   "node_id": "PRRC_kwDOACG9q88AAAABBeHtgw",
+   "diff_hunk": "@@ -245,8 +246,12 @@ class TransactionStateManager(brokerId: Int,\n   private[transaction] def removeExpiredTransactionalIds(): Unit = {\n     inReadLock[Exception](stateLock, () => {\n       transactionMetadataCache.foreachEntry { (partitionId, partitionCacheEntry) =>\n-        val transactionPartition = new TopicPartition(Topic.TRANSACTION_STATE_TOPIC_NAME, partitionId)\n-        removeExpiredTransactionalIds(transactionPartition, partitionCacheEntry)\n+        // the cache entry of a partition that is being reloaded (e.g. after a leader epoch bump) is about to be\n+        // replaced, and the load relies on the log end offset not changing while it waits for the high watermark\n+        if (!loadingPartitions.exists(_.txnPartitionId == partitionId)) {",
+   "path": "core/src/main/scala/kafka/coordinator/transaction/TransactionStateManager.scala",
+   "commit_id": "3cc66f34f0018bf960e228fd5ea92ba1d614d067",
+   "original_commit_id": "3cc66f34f0018bf960e228fd5ea92ba1d614d067",
+   "user": {
+    "login": "jolshan",
+    "id": 25566826,
+    "node_id": "MDQ6VXNlcjI1NTY2ODI2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/25566826?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jolshan",
+    "html_url": "https://github.com/jolshan",
+    "followers_url": "https://api.github.com/users/jolshan/followers",
+    "following_url": "https://api.github.com/users/jolshan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jolshan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jolshan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jolshan/subscriptions",
+    "organizations_url": "https://api.github.com/users/jolshan/orgs",
+    "repos_url": "https://api.github.com/users/jolshan/repos",
+    "events_url": "https://api.github.com/users/jolshan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jolshan/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": "Looks like all other appended records are gated by `getAndMaybeAddTransactionState`. Interesting this one isn't. And good catch :)",
+   "created_at": "2026-10-27T20:17:22Z",
+   "updated_at": "2026-10-27T20:17:22Z",
+   "html_url": "https://github.com/apache/kafka/pull/23943#discussion_r4393659779",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23943",
+   "_links": {
+    "self": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/comments/4393659779"
+    },
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23943#discussion_r4393659779"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23943"
+    }
+   },
+   "reactions": {
+    "url": "https://api.github.com/repos/apache/kafka/pulls/comments/4393659779/reactions",
+    "total_count": 0,
+    "+1": 0,
+    "-1": 0,
+    "laugh": 0,
+    "hooray": 0,
+    "confused": 0,
+    "heart": 0,
+    "rocket": 0,
+    "eyes": 0
+   },
+   "start_line": null,
+   "original_start_line": null,
+   "start_side": null,
+   "line": 251,
+   "original_line": 251,
+   "side": "RIGHT",
+   "author_association": "MEMBER",
+   "original_position": 16,
+   "position": 16,
+   "subject_type": "line",
+   "is_copilot_code_review": false,
+   "copilot_code_review_sources": []
+  }
+ ],
+ "issue_comments": [],
+ "commits": [
+  {
+   "sha": "e466d2691b3ae917eebe8085542a75e9ba4b2498",
+   "node_id": "C_kwDOHKxpFtoAKGU0NjZkMjY5MWIzYWU5MTdlZWJlODA4NTU0MmE3NWU5YmE0YjI0OTg",
+   "commit": {
+    "author": {
+     "name": "Artem Livshits",
+     "email": "alivshits@confluent.io",
+     "date": "2026-10-23T23:04:49Z"
+    },
+    "committer": {
+     "name": "Artem Livshits",
+     "email": "alivshits@confluent.io",
+     "date": "2026-10-23T23:04:49Z"
+    },
+    "message": "KAFKA-21349: Wait for the high watermark before loading transaction metadata\n\nThe transaction coordinator loads __transaction_state up to the log end\noffset, so a newly elected leader can load records above the high\nwatermark that may still get truncated, and act on them (e.g. send\nCOMMIT markers for an uncommitted PREPARE_COMMIT that is later lost).\n\nThe coordinator doesn't write to the partition while loading, so the log\nend offset is fixed: wait with a PartitionListener until the high\nwatermark reaches it, then schedule the load. Abandon the load if the\npartition becomes a follower, fails or is deleted first, and skip\nexpiration for partitions that are loading so that tombstones don't move\nthe log end offset.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+    "tree": {
+     "sha": "17869961285ff46eea945b060bb38f5175a3aee1",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/17869961285ff46eea945b060bb38f5175a3aee1"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/e466d2691b3ae917eebe8085542a75e9ba4b2498",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/e466d2691b3ae917eebe8085542a75e9ba4b2498",
+   "html_url": "https://github.com/apache/kafka/commit/e466d2691b3ae917eebe8085542a75e9ba4b2498",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/e466d2691b3ae917eebe8085542a75e9ba4b2498/comments",
+   "author": {
+    "login": "artemlivshits",
+    "id": 84364232,
+    "node_id": "MDQ6VXNlcjg0MzY0MjMy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/84364232?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/artemlivshits",
+    "html_url": "https://github.com/artemlivshits",
+    "followers_url": "https://api.github.com/users/artemlivshits/followers",
+    "following_url": "https://api.github.com/users/artemlivshits/following{/other_user}",
+    "gists_url": "https://api.github.com/users/artemlivshits/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/artemlivshits/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/artemlivshits/subscriptions",
+    "organizations_url": "https://api.github.com/users/artemlivshits/orgs",
+    "repos_url": "https://api.github.com/users/artemlivshits/repos",
+    "events_url": "https://api.github.com/users/artemlivshits/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/artemlivshits/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "artemlivshits",
+    "id": 84364232,
+    "node_id": "MDQ6VXNlcjg0MzY0MjMy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/84364232?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/artemlivshits",
+    "html_url": "https://github.com/artemlivshits",
+    "followers_url": "https://api.github.com/users/artemlivshits/followers",
+    "following_url": "https://api.github.com/users/artemlivshits/following{/other_user}",
+    "gists_url": "https://api.github.com/users/artemlivshits/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/artemlivshits/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/artemlivshits/subscriptions",
+    "organizations_url": "https://api.github.com/users/artemlivshits/orgs",
+    "repos_url": "https://api.github.com/users/artemlivshits/repos",
+    "events_url": "https://api.github.com/users/artemlivshits/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/artemlivshits/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "71312a111e9fe07214a8d2849049a5baad1ca8b3",
+     "url": "https://api.github.com/repos/apache/kafka/commits/71312a111e9fe07214a8d2849049a5baad1ca8b3",
+     "html_url": "https://github.com/apache/kafka/commit/71312a111e9fe07214a8d2849049a5baad1ca8b3"
+    }
+   ]
+  },
+  {
+   "sha": "3cc66f34f0018bf960e228fd5ea92ba1d614d067",
+   "node_id": "C_kwDOHKxpFtoAKDNjYzY2ZjM0ZjAwMThiZjk2MGUyMjhmZDVlYTkyYmExZDYxNGQwNjc",
+   "commit": {
+    "author": {
+     "name": "Artem Livshits",
+     "email": "alivshits@confluent.io",
+     "date": "2026-10-27T17:16:50Z"
+    },
+    "committer": {
+     "name": "Artem Livshits",
+     "email": "alivshits@confluent.io",
+     "date": "2026-10-27T17:16:50Z"
+    },
+    "message": "Clarify comments on the high watermark wait\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+    "tree": {
+     "sha": "62cefbe0027f6717582b022991cd437a67e29eac",
+     "url": "https://api.github.com/repos/apache/kafka/git/trees/62cefbe0027f6717582b022991cd437a67e29eac"
+    },
+    "url": "https://api.github.com/repos/apache/kafka/git/commits/3cc66f34f0018bf960e228fd5ea92ba1d614d067",
+    "comment_count": 0,
+    "verification": {
+     "verified": false,
+     "reason": "unsigned",
+     "signature": null,
+     "payload": null,
+     "verified_at": null
+    }
+   },
+   "url": "https://api.github.com/repos/apache/kafka/commits/3cc66f34f0018bf960e228fd5ea92ba1d614d067",
+   "html_url": "https://github.com/apache/kafka/commit/3cc66f34f0018bf960e228fd5ea92ba1d614d067",
+   "comments_url": "https://api.github.com/repos/apache/kafka/commits/3cc66f34f0018bf960e228fd5ea92ba1d614d067/comments",
+   "author": {
+    "login": "artemlivshits",
+    "id": 84364232,
+    "node_id": "MDQ6VXNlcjg0MzY0MjMy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/84364232?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/artemlivshits",
+    "html_url": "https://github.com/artemlivshits",
+    "followers_url": "https://api.github.com/users/artemlivshits/followers",
+    "following_url": "https://api.github.com/users/artemlivshits/following{/other_user}",
+    "gists_url": "https://api.github.com/users/artemlivshits/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/artemlivshits/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/artemlivshits/subscriptions",
+    "organizations_url": "https://api.github.com/users/artemlivshits/orgs",
+    "repos_url": "https://api.github.com/users/artemlivshits/repos",
+    "events_url": "https://api.github.com/users/artemlivshits/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/artemlivshits/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "committer": {
+    "login": "artemlivshits",
+    "id": 84364232,
+    "node_id": "MDQ6VXNlcjg0MzY0MjMy",
+    "avatar_url": "https://avatars.githubusercontent.com/u/84364232?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/artemlivshits",
+    "html_url": "https://github.com/artemlivshits",
+    "followers_url": "https://api.github.com/users/artemlivshits/followers",
+    "following_url": "https://api.github.com/users/artemlivshits/following{/other_user}",
+    "gists_url": "https://api.github.com/users/artemlivshits/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/artemlivshits/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/artemlivshits/subscriptions",
+    "organizations_url": "https://api.github.com/users/artemlivshits/orgs",
+    "repos_url": "https://api.github.com/users/artemlivshits/repos",
+    "events_url": "https://api.github.com/users/artemlivshits/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/artemlivshits/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "parents": [
+    {
+     "sha": "e466d2691b3ae917eebe8085542a75e9ba4b2498",
+     "url": "https://api.github.com/repos/apache/kafka/commits/e466d2691b3ae917eebe8085542a75e9ba4b2498",
+     "html_url": "https://github.com/apache/kafka/commit/e466d2691b3ae917eebe8085542a75e9ba4b2498"
+    }
+   ]
+  }
+ ],
+ "files": [
+  {
+   "sha": "d4c6d6831dbbc0a02532105ed7086c893704ee6b",
+   "filename": "core/src/main/scala/kafka/coordinator/transaction/TransactionStateManager.scala",
+   "status": "modified",
+   "additions": 93,
+   "deletions": 6,
+   "changes": 99,
+   "blob_url": "https://github.com/apache/kafka/blob/3cc66f34f0018bf960e228fd5ea92ba1d614d067/core%2Fsrc%2Fmain%2Fscala%2Fkafka%2Fcoordinator%2Ftransaction%2FTransactionStateManager.scala",
+   "raw_url": "https://github.com/apache/kafka/raw/3cc66f34f0018bf960e228fd5ea92ba1d614d067/core%2Fsrc%2Fmain%2Fscala%2Fkafka%2Fcoordinator%2Ftransaction%2FTransactionStateManager.scala",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/core%2Fsrc%2Fmain%2Fscala%2Fkafka%2Fcoordinator%2Ftransaction%2FTransactionStateManager.scala?ref=3cc66f34f0018bf960e228fd5ea92ba1d614d067",
+   "patch": "@@ -37,6 +37,7 @@ import org.apache.kafka.common.{KafkaException, TopicIdPartition, TopicPartition\n import org.apache.kafka.coordinator.transaction.{CoordinatorEpochAndTxnMetadata, TransactionConfig, TransactionLog, TransactionMetadata, TransactionState, TransactionStateManagerConfig, TransactionPartitionAndLeaderEpoch, TransactionalIdAndProducerIdEpoch, TransactionalIdCoordinatorEpochAndMetadata, TransactionalIdCoordinatorEpochAndTransitMetadata, TxnMetadataCacheEntry, TxnTransitMetadata}\n import org.apache.kafka.metadata.MetadataCache\n import org.apache.kafka.server.common.{RequestLocal, TransactionVersion}\n+import org.apache.kafka.server.partition.PartitionListener\n import org.apache.kafka.server.storage.log.FetchIsolation\n import org.apache.kafka.server.util.Scheduler\n import org.apache.kafka.server.util.LockUtils.{inReadLock, inWriteLock}\n@@ -245,8 +246,12 @@ class TransactionStateManager(brokerId: Int,\n   private[transaction] def removeExpiredTransactionalIds(): Unit = {\n     inReadLock[Exception](stateLock, () => {\n       transactionMetadataCache.foreachEntry { (partitionId, partitionCacheEntry) =>\n-        val transactionPartition = new TopicPartition(Topic.TRANSACTION_STATE_TOPIC_NAME, partitionId)\n-        removeExpiredTransactionalIds(transactionPartition, partitionCacheEntry)\n+        // the cache entry of a partition that is being reloaded (e.g. after a leader epoch bump) is about to be\n+        // replaced, and the load relies on the log end offset not changing while it waits for the high watermark\n+        if (!loadingPartitions.exists(_.txnPartitionId == partitionId)) {\n+          val transactionPartition = new TopicPartition(Topic.TRANSACTION_STATE_TOPIC_NAME, partitionId)\n+          removeExpiredTransactionalIds(transactionPartition, partitionCacheEntry)\n+        }\n       }\n     })\n   }\n@@ -555,8 +560,8 @@ class TransactionStateManager(brokerId: Int,\n       loadingPartitions.add(partitionAndLeaderEpoch)\n     })\n \n-    def loadTransactions(startTimeMs: java.lang.Long): Unit = {\n-      val schedulerTimeMs = time.milliseconds() - startTimeMs\n+    def loadTransactions(startTimeMs: java.lang.Long, hwmWaitTimeMs: Long): Unit = {\n+      val schedulerTimeMs = time.milliseconds() - startTimeMs - hwmWaitTimeMs\n       info(s\"Loading transaction metadata from $topicPartition at epoch $coordinatorEpoch\")\n       validateTransactionTopicPartitionCountIsStable()\n \n@@ -565,7 +570,8 @@ class TransactionStateManager(brokerId: Int,\n       val totalLoadingTimeMs = endTimeMs - startTimeMs\n       partitionLoadSensor.record(totalLoadingTimeMs.toDouble, endTimeMs, false)\n       info(s\"Finished loading ${loadedTransactions.size} transaction metadata from $topicPartition in \" +\n-        s\"$totalLoadingTimeMs milliseconds, of which $schedulerTimeMs milliseconds was spent in the scheduler.\")\n+        s\"$totalLoadingTimeMs milliseconds, of which $hwmWaitTimeMs milliseconds was spent waiting for the high watermark \" +\n+        s\"to reach the log end offset and $schedulerTimeMs milliseconds was spent in the scheduler.\")\n \n       inWriteLock[Exception](stateLock, () => {\n         if (loadingPartitions.contains(partitionAndLeaderEpoch)) {\n@@ -605,7 +611,88 @@ class TransactionStateManager(brokerId: Int,\n     }\n \n     val scheduleStartMs = time.milliseconds()\n-    scheduler.scheduleOnce(s\"load-txns-for-partition-$topicPartition\", () => loadTransactions(scheduleStartMs))\n+\n+    def scheduleLoad(hwmWaitTimeMs: Long): Unit =\n+      scheduler.scheduleOnce(s\"load-txns-for-partition-$topicPartition\", () => loadTransactions(scheduleStartMs, hwmWaitTimeMs))\n+\n+    // The listener is invoked with partition locks held, so instead of blocking on stateLock there, this runs on\n+    // the scheduler, which also serializes it with the load tasks for the partition.\n+    def scheduleAbandonLoad(reason: String): Unit =\n+      scheduler.scheduleOnce(s\"abandon-load-txns-for-partition-$topicPartition\", () => {\n+        inWriteLock[Exception](stateLock, () => {\n+          loadingPartitions.remove(partitionAndLeaderEpoch)\n+        })\n+        info(s\"Abandoned loading transaction metadata from $topicPartition at epoch $coordinatorEpoch because $reason\")\n+      })\n+\n+    // The load reads up to the log end offset, but a newly elected leader may have records above the high watermark\n+    // that are not committed yet and may still get truncated. The coordinator does not write to the partition while\n+    // it is loading, so the log end offset doesn't change; wait until the high watermark catches up to it so that\n+    // all the records the load reads are committed. The high watermark of the leader advances as the followers in the\n+    // ISR fetch from it, or when a lagging follower is removed from the ISR.\n+    replicaManager.getLog(topicPartition) match {\n+      case Some(log) if log.highWatermark < log.logEndOffset =>\n+        val logEndOffset = log.logEndOffset\n+        info(s\"Waiting for the high watermark of $topicPartition (currently ${log.highWatermark}) to reach the log end \" +\n+          s\"offset $logEndOffset before loading transaction metadata at epoch $coordinatorEpoch\")\n+        val listener = new HighWatermarkWaitListener(topicPartition, logEndOffset, coordinatorEpoch, scheduleLoad, scheduleAbandonLoad)\n+        if (!replicaManager.maybeAddListener(topicPartition, listener)) {\n+          listener.abandon(s\"$topicPartition is not online\")\n+        } else {\n+          // the high watermark may have been updated after it was read above but before the listener was added,\n+          // in which case the listener isn't notified of the update: check it again now that the listener is added\n+          listener.onHighWatermarkUpdated(topicPartition, log.highWatermark)\n+          // the wait may have finished before the listener was added; in that case remove it again\n+          if (listener.isFinished)\n+            replicaManager.removeListener(topicPartition, listener)\n+        }\n+      case _ =>\n+        // either all the records are already committed, or there is no local log, in which case the load finds\n+        // no records\n+        scheduleLoad(0L)\n+    }\n+  }\n+\n+  /**\n+   * Waits for the high watermark of a transaction log partition to reach the given log end offset and then\n+   * schedules the load. If this broker stops being the leader first, the load is abandoned instead.\n+   */\n+  private class HighWatermarkWaitListener(topicPartition: TopicPartition,\n+                                          logEndOffset: Long,\n+                                          coordinatorEpoch: Int,\n+                                          scheduleLoad: Long => Unit,\n+                                          scheduleAbandonLoad: String => Unit) extends PartitionListener {\n+    private val waitStartMs = time.milliseconds()\n+    private val finished = new AtomicBoolean(false)\n+\n+    def isFinished: Boolean = finished.get\n+\n+    def abandon(reason: String): Unit = {\n+      if (finished.compareAndSet(false, true))\n+        finish(scheduleAbandonLoad(reason))\n+    }\n+\n+    private def finish(schedule: => Unit): Unit = {\n+      try {\n+        schedule\n+      } finally {\n+        replicaManager.removeListener(topicPartition, this)\n+      }\n+    }\n+\n+    override def onHighWatermarkUpdated(partition: TopicPartition, offset: Long): Unit = {\n+      if (offset >= logEndOffset && finished.compareAndSet(false, true)) {\n+        val hwmWaitTimeMs = time.milliseconds() - waitStartMs\n+        info(s\"The high watermark of $topicPartition reached $offset after waiting $hwmWaitTimeMs milliseconds\")\n+        finish(scheduleLoad(hwmWaitTimeMs))\n+      }\n+    }\n+\n+    override def onBecomingFollower(partition: TopicPartition): Unit = abandon(\"it became a follower\")\n+\n+    override def onFailed(partition: TopicPartition): Unit = abandon(\"it failed\")\n+\n+    override def onDeleted(partition: TopicPartition): Unit = abandon(\"it was deleted\")\n   }\n \n   def removeTransactionsForTxnTopicPartition(partitionId: Int): Unit = {"
+  },
+  {
+   "sha": "f9c22aeb879c2a01fddd54e2228cd3451788fb81",
+   "filename": "core/src/test/scala/unit/kafka/coordinator/transaction/TransactionStateManagerTest.scala",
+   "status": "modified",
+   "additions": 160,
+   "deletions": 4,
+   "changes": 164,
+   "blob_url": "https://github.com/apache/kafka/blob/3cc66f34f0018bf960e228fd5ea92ba1d614d067/core%2Fsrc%2Ftest%2Fscala%2Funit%2Fkafka%2Fcoordinator%2Ftransaction%2FTransactionStateManagerTest.scala",
+   "raw_url": "https://github.com/apache/kafka/raw/3cc66f34f0018bf960e228fd5ea92ba1d614d067/core%2Fsrc%2Ftest%2Fscala%2Funit%2Fkafka%2Fcoordinator%2Ftransaction%2FTransactionStateManagerTest.scala",
+   "contents_url": "https://api.github.com/repos/apache/kafka/contents/core%2Fsrc%2Ftest%2Fscala%2Funit%2Fkafka%2Fcoordinator%2Ftransaction%2FTransactionStateManagerTest.scala?ref=3cc66f34f0018bf960e228fd5ea92ba1d614d067",
+   "patch": "@@ -19,6 +19,7 @@ package kafka.coordinator.transaction\n import java.lang.management.ManagementFactory\n import java.nio.ByteBuffer\n import java.util.concurrent.{ConcurrentHashMap, CountDownLatch}\n+import java.util.concurrent.atomic.AtomicLong\n import javax.management.ObjectName\n import kafka.cluster.Partition\n import kafka.server.ReplicaManager\n@@ -40,16 +41,17 @@ import org.apache.kafka.server.common.{FinalizedFeatures, MetadataVersion, Reque\n import org.apache.kafka.server.common.TransactionVersion.{TV_0, TV_2}\n import org.apache.kafka.coordinator.transaction.generated.TransactionLogKey\n import org.apache.kafka.server.config.ServerLogConfigs\n+import org.apache.kafka.server.partition.PartitionListener\n import org.apache.kafka.server.storage.log.FetchIsolation\n import org.apache.kafka.server.util.MockScheduler\n import org.apache.kafka.storage.internals.log.{AppendOrigin, FetchDataInfo, LogConfig, LogOffsetMetadata, UnifiedLog}\n import org.junit.jupiter.api.Assertions._\n import org.junit.jupiter.api.{AfterEach, BeforeEach, Test}\n import org.junit.jupiter.params.ParameterizedTest\n-import org.junit.jupiter.params.provider.EnumSource\n+import org.junit.jupiter.params.provider.{EnumSource, ValueSource}\n import org.mockito.{ArgumentCaptor, ArgumentMatchers}\n-import org.mockito.ArgumentMatchers.{any, anyInt, anyLong, anyShort}\n-import org.mockito.Mockito.{RETURNS_DEFAULTS, atLeastOnce, mock, reset, times, verify, when, withSettings}\n+import org.mockito.ArgumentMatchers.{any, anyBoolean, anyInt, anyLong, anyShort}\n+import org.mockito.Mockito.{RETURNS_DEFAULTS, atLeastOnce, mock, never, reset, times, verify, when, withSettings}\n import org.mockito.invocation.InvocationOnMock\n import org.mockito.stubbing.Answer\n \n@@ -201,6 +203,138 @@ class TransactionStateManagerTest {\n     assertEquals(Some(metadata2.producerEpoch), cachedProducerEpoch(metadata2.transactionalId))\n   }\n \n+  @Test\n+  def testLoadWaitsForHighWatermarkToReachLogEndOffset(): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    val partitionListener = listener.getValue\n+    assertEquals(Left(Errors.COORDINATOR_LOAD_IN_PROGRESS), transactionManager.getTransactionState(transactionalId1))\n+\n+    // the high watermark advances but doesn't reach the log end offset yet\n+    partitionListener.onHighWatermarkUpdated(topicPartition, 1L)\n+    assertEquals(Left(Errors.COORDINATOR_LOAD_IN_PROGRESS), transactionManager.getTransactionState(transactionalId1))\n+    verify(replicaManager, never()).removeListener(topicPartition, partitionListener)\n+\n+    partitionListener.onHighWatermarkUpdated(topicPartition, 2L)\n+    verify(replicaManager).removeListener(topicPartition, partitionListener)\n+    val cachedMetadata = transactionManager.getTransactionState(transactionalId1).fold(\n+      err => throw new AssertionError(s\"$transactionalId1's transaction state access returns error $err\"),\n+      entry => entry.getOrElse(throw new AssertionError(s\"$transactionalId1's transaction state was not loaded into the cache\"))\n+    )\n+    assertEquals(txnMetadata1, cachedMetadata.transactionMetadata)\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+  }\n+\n+  @Test\n+  def testLoadAbandonedWhenPartitionIsNotOnline(): Unit = {\n+    prepareTxnLogAboveHighWatermark(online = false)\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    assertEquals(Left(Errors.NOT_COORDINATOR), transactionManager.getTransactionState(transactionalId1))\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+    verify(logMockOf(topicPartition), never()).read(anyLong(), anyInt(), any(), anyBoolean())\n+  }\n+\n+  @ParameterizedTest\n+  @ValueSource(strings = Array(\"follower\", \"failed\", \"deleted\"))\n+  def testLoadAbandonedWhenPartitionTransitionsBeforeHighWatermarkReachesLogEndOffset(transition: String): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    val partitionListener = listener.getValue\n+    assertEquals(Left(Errors.COORDINATOR_LOAD_IN_PROGRESS), transactionManager.getTransactionState(transactionalId1))\n+\n+    transition match {\n+      case \"follower\" => partitionListener.onBecomingFollower(topicPartition)\n+      case \"failed\" => partitionListener.onFailed(topicPartition)\n+      case \"deleted\" => partitionListener.onDeleted(topicPartition)\n+    }\n+    verify(replicaManager).removeListener(topicPartition, partitionListener)\n+    assertEquals(Left(Errors.NOT_COORDINATOR), transactionManager.getTransactionState(transactionalId1))\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+    verify(logMockOf(topicPartition), never()).read(anyLong(), anyInt(), any(), anyBoolean())\n+  }\n+\n+  @Test\n+  def testLoadAtNewLeaderEpochWhileWaitingForHighWatermark(): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    // the leader epoch is bumped while the load at the previous epoch waits for the high watermark\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch + 1, (_, _, _, _) => ())\n+    val Seq(oldEpochListener, newEpochListener) = listener.getAllValues.asScala.toSeq.takeRight(2)\n+    assertEquals(Left(Errors.COORDINATOR_LOAD_IN_PROGRESS), transactionManager.getTransactionState(transactionalId1))\n+\n+    oldEpochListener.onHighWatermarkUpdated(topicPartition, 2L)\n+    newEpochListener.onHighWatermarkUpdated(topicPartition, 2L)\n+    val cachedMetadata = transactionManager.getTransactionState(transactionalId1).fold(\n+      err => throw new AssertionError(s\"$transactionalId1's transaction state access returns error $err\"),\n+      entry => entry.getOrElse(throw new AssertionError(s\"$transactionalId1's transaction state was not loaded into the cache\"))\n+    )\n+    assertEquals(coordinatorEpoch + 1, cachedMetadata.coordinatorEpoch)\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+  }\n+\n+  @Test\n+  def testLoadWhenHighWatermarkReachesLogEndOffsetDuringListenerRegistration(): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+    val highWatermark = new AtomicLong(0L)\n+    when(logMockOf(topicPartition).highWatermark).thenAnswer(_ => highWatermark.get)\n+    // the high watermark advances after it's read but before the listener is added, so the listener isn't\n+    // notified of the update\n+    when(replicaManager.maybeAddListener(ArgumentMatchers.eq(topicPartition), listener.capture())).thenAnswer { _ =>\n+      highWatermark.set(2L)\n+      true\n+    }\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    // the check after registration finishes the wait and removes the listener, and since the wait is then finished\n+    // the registration removes it again\n+    verify(replicaManager, times(2)).removeListener(topicPartition, listener.getValue)\n+    assertTrue(transactionManager.getTransactionState(transactionalId1).exists(_.isDefined))\n+    assertTrue(transactionManager.loadingPartitions.isEmpty)\n+  }\n+\n+  @Test\n+  def testLoadWithoutWaitingWhenHighWatermarkAlreadyReachedOnRegistration(): Unit = {\n+    val listener = prepareTxnLogAboveHighWatermark()\n+    // the high watermark catches up between reading it and registering the listener\n+    when(replicaManager.maybeAddListener(ArgumentMatchers.eq(topicPartition), listener.capture())).thenAnswer { invocation =>\n+      invocation.getArgument[PartitionListener](1).onHighWatermarkUpdated(topicPartition, 2L)\n+      true\n+    }\n+\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, coordinatorEpoch, (_, _, _, _) => ())\n+    // the callback finishes the wait and removes the listener before it's added, so the registration removes it\n+    // again once it's added\n+    verify(replicaManager, times(2)).removeListener(topicPartition, listener.getValue)\n+    assertTrue(transactionManager.getTransactionState(transactionalId1).exists(_.isDefined))\n+  }\n+\n+  // Prepares a log with two records for transactionalId1 where the high watermark is below the log end offset.\n+  // The tests advance the high watermark by invoking the captured listener directly; on a real leader the\n+  // updates come from the followers fetching (or from the ISR shrinking).\n+  private def prepareTxnLogAboveHighWatermark(online: Boolean = true): ArgumentCaptor[PartitionListener] = {\n+    txnMetadata1.state(TransactionState.ONGOING)\n+    txnMetadata1.addPartitions(util.Set.of(new TopicPartition(\"topic1\", 0)))\n+    txnRecords += new SimpleRecord(txnMessageKeyBytes1, TransactionLog.valueToBytes(txnMetadata1.prepareNoTransit(), TV_2))\n+    txnMetadata1.state(TransactionState.PREPARE_COMMIT)\n+    txnRecords += new SimpleRecord(txnMessageKeyBytes1, TransactionLog.valueToBytes(txnMetadata1.prepareNoTransit(), TV_2))\n+    prepareTxnLog(topicPartition, 0L, MemoryRecords.withRecords(0L, Compression.NONE, txnRecords.toArray: _*))\n+\n+    val logMock = logMockOf(topicPartition)\n+    when(logMock.logEndOffset).thenReturn(2L)\n+    when(logMock.highWatermark).thenReturn(0L)\n+\n+    val listener: ArgumentCaptor[PartitionListener] = ArgumentCaptor.forClass(classOf[PartitionListener])\n+    when(replicaManager.maybeAddListener(ArgumentMatchers.eq(topicPartition), listener.capture())).thenReturn(online)\n+    listener\n+  }\n+\n+  private def logMockOf(topicPartition: TopicPartition): UnifiedLog =\n+    replicaManager.getLog(topicPartition).get\n+\n   @Test\n   def testDeleteLoadingPartition(): Unit = {\n     // Verify the handling of a call to delete state for a partition while it is in the\n@@ -771,6 +905,28 @@ class TransactionStateManagerTest {\n     assertEquals(1.toShort, loadedMetadata.producerEpoch)\n   }\n \n+  @Test\n+  def shouldNotExpireTransactionalIdsOfPartitionWaitingToBeReloaded(): Unit = {\n+    loadTransactionsForPartitions(Seq(partitionId))\n+    expectLogConfig(Seq(partitionId), ServerLogConfigs.MAX_MESSAGE_BYTES_DEFAULT)\n+    txnMetadata1.txnLastUpdateTimestamp(time.milliseconds() - txnConfig.transactionalIdExpirationMs)\n+    txnMetadata1.state(TransactionState.COMPLETE_COMMIT)\n+    transactionManager.putTransactionStateIfNotExists(txnMetadata1)\n+\n+    // the leader epoch is bumped and the reload waits for the high watermark to reach the log end offset\n+    val logMock = mock(classOf[UnifiedLog])\n+    when(replicaManager.getLog(topicPartition)).thenReturn(Some(logMock))\n+    when(logMock.logEndOffset).thenReturn(2L)\n+    when(logMock.highWatermark).thenReturn(0L)\n+    when(replicaManager.maybeAddListener(ArgumentMatchers.eq(topicPartition), any[PartitionListener]())).thenReturn(true)\n+    transactionManager.loadTransactionsForTxnTopicPartition(partitionId, 1, (_, _, _, _) => ())\n+\n+    val appendedRecords = mutable.Map.empty[TopicIdPartition, mutable.Buffer[MemoryRecords]]\n+    expectTransactionalIdExpiration(Errors.NONE, appendedRecords)\n+    transactionManager.removeExpiredTransactionalIds()\n+    assertEquals(Map.empty, appendedRecords)\n+  }\n+\n   @Test\n   def shouldRemoveCompleteCommitExpiredTransactionalIds(): Unit = {\n     setupAndRunTransactionalIdExpiration(Errors.NONE, TransactionState.COMPLETE_COMMIT)\n@@ -1100,7 +1256,7 @@ class TransactionStateManagerTest {\n     // let the time advance to trigger the background thread loading\n     scheduler.tick()\n \n-    verify(replicaManager).getLog(topicPartition)\n+    verify(replicaManager, times(2)).getLog(topicPartition)\n     verify(logMock).logStartOffset\n     verify(logMock).read(ArgumentMatchers.eq(startOffset),\n       anyInt(),"
+  }
+ ],
+ "timeline": [
+  {
+   "sha": "e466d2691b3ae917eebe8085542a75e9ba4b2498",
+   "node_id": "C_kwDOACG9q9oAKGU0NjZkMjY5MWIzYWU5MTdlZWJlODA4NTU0MmE3NWU5YmE0YjI0OTg",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/e466d2691b3ae917eebe8085542a75e9ba4b2498",
+   "html_url": "https://github.com/apache/kafka/commit/e466d2691b3ae917eebe8085542a75e9ba4b2498",
+   "author": {
+    "name": "Artem Livshits",
+    "email": "alivshits@confluent.io",
+    "date": "2026-10-23T23:04:49Z"
+   },
+   "committer": {
+    "name": "Artem Livshits",
+    "email": "alivshits@confluent.io",
+    "date": "2026-10-23T23:04:49Z"
+   },
+   "tree": {
+    "sha": "17869961285ff46eea945b060bb38f5175a3aee1",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/17869961285ff46eea945b060bb38f5175a3aee1"
+   },
+   "message": "KAFKA-21349: Wait for the high watermark before loading transaction metadata\n\nThe transaction coordinator loads __transaction_state up to the log end\noffset, so a newly elected leader can load records above the high\nwatermark that may still get truncated, and act on them (e.g. send\nCOMMIT markers for an uncommitted PREPARE_COMMIT that is later lost).\n\nThe coordinator doesn't write to the partition while loading, so the log\nend offset is fixed: wait with a PartitionListener until the high\nwatermark reaches it, then schedule the load. Abandon the load if the\npartition becomes a follower, fails or is deleted first, and skip\nexpiration for partitions that are loading so that tombstones don't move\nthe log end offset.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+   "parents": [
+    {
+     "sha": "71312a111e9fe07214a8d2849049a5baad1ca8b3",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/71312a111e9fe07214a8d2849049a5baad1ca8b3",
+     "html_url": "https://github.com/apache/kafka/commit/71312a111e9fe07214a8d2849049a5baad1ca8b3"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "id": 34098548338,
+   "node_id": "LE_lADOACG9q88AAAABZgebD88AAAAH8G6Ocg",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34098548338",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-23T23:05:38Z",
+   "label": {
+    "name": "core",
+    "color": "ed5a86"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34098551149,
+   "node_id": "LE_lADOACG9q88AAAABZgebD88AAAAH8G6ZbQ",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34098551149",
+   "actor": {
+    "login": "github-actions[bot]",
+    "id": 41898282,
+    "node_id": "MDM6Qm90NDE4OTgyODI=",
+    "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+    "html_url": "https://github.com/apps/github-actions",
+    "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-23T23:05:42Z",
+   "label": {
+    "name": "triage",
+    "color": "006b75"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34123771461,
+   "node_id": "UNLE_lADOACG9q88AAAABZgebD88AAAAH8e9uRQ",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34123771461",
+   "actor": {
+    "login": "dajac",
+    "id": 157182,
+    "node_id": "MDQ6VXNlcjE1NzE4Mg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/157182?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dajac",
+    "html_url": "https://github.com/dajac",
+    "followers_url": "https://api.github.com/users/dajac/followers",
+    "following_url": "https://api.github.com/users/dajac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dajac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dajac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dajac/subscriptions",
+    "organizations_url": "https://api.github.com/users/dajac/orgs",
+    "repos_url": "https://api.github.com/users/dajac/repos",
+    "events_url": "https://api.github.com/users/dajac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dajac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "unlabeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-24T10:41:25Z",
+   "label": {
+    "name": "triage",
+    "color": "006b75"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34123773934,
+   "node_id": "LE_lADOACG9q88AAAABZgebD88AAAAH8e937g",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34123773934",
+   "actor": {
+    "login": "dajac",
+    "id": 157182,
+    "node_id": "MDQ6VXNlcjE1NzE4Mg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/157182?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dajac",
+    "html_url": "https://github.com/dajac",
+    "followers_url": "https://api.github.com/users/dajac/followers",
+    "following_url": "https://api.github.com/users/dajac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dajac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dajac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dajac/subscriptions",
+    "organizations_url": "https://api.github.com/users/dajac/orgs",
+    "repos_url": "https://api.github.com/users/dajac/repos",
+    "events_url": "https://api.github.com/users/dajac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dajac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "labeled",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-24T10:41:30Z",
+   "label": {
+    "name": "ci-approved",
+    "color": "ffffff"
+   },
+   "intent": null,
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34123777404,
+   "node_id": "RRE_lADOACG9q88AAAABZgebD88AAAAH8e-FfA",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34123777404",
+   "actor": {
+    "login": "dajac",
+    "id": 157182,
+    "node_id": "MDQ6VXNlcjE1NzE4Mg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/157182?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dajac",
+    "html_url": "https://github.com/dajac",
+    "followers_url": "https://api.github.com/users/dajac/followers",
+    "following_url": "https://api.github.com/users/dajac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dajac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dajac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dajac/subscriptions",
+    "organizations_url": "https://api.github.com/users/dajac/orgs",
+    "repos_url": "https://api.github.com/users/dajac/repos",
+    "events_url": "https://api.github.com/users/dajac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dajac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "review_requested",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-24T10:41:36Z",
+   "review_requester": {
+    "login": "dajac",
+    "id": 157182,
+    "node_id": "MDQ6VXNlcjE1NzE4Mg==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/157182?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dajac",
+    "html_url": "https://github.com/dajac",
+    "followers_url": "https://api.github.com/users/dajac/followers",
+    "following_url": "https://api.github.com/users/dajac/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dajac/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dajac/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dajac/subscriptions",
+    "organizations_url": "https://api.github.com/users/dajac/orgs",
+    "repos_url": "https://api.github.com/users/dajac/repos",
+    "events_url": "https://api.github.com/users/dajac/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dajac/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "requested_reviewer": {
+    "login": "jolshan",
+    "id": 25566826,
+    "node_id": "MDQ6VXNlcjI1NTY2ODI2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/25566826?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jolshan",
+    "html_url": "https://github.com/jolshan",
+    "followers_url": "https://api.github.com/users/jolshan/followers",
+    "following_url": "https://api.github.com/users/jolshan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jolshan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jolshan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jolshan/subscriptions",
+    "organizations_url": "https://api.github.com/users/jolshan/orgs",
+    "repos_url": "https://api.github.com/users/jolshan/repos",
+    "events_url": "https://api.github.com/users/jolshan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jolshan/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "performed_via_github_app": null
+  },
+  {
+   "id": 5660114150,
+   "node_id": "PRR_kwDOACG9q88AAAABUV585g",
+   "user": {
+    "login": "jolshan",
+    "id": 25566826,
+    "node_id": "MDQ6VXNlcjI1NTY2ODI2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/25566826?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jolshan",
+    "html_url": "https://github.com/jolshan",
+    "followers_url": "https://api.github.com/users/jolshan/followers",
+    "following_url": "https://api.github.com/users/jolshan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jolshan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jolshan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jolshan/subscriptions",
+    "organizations_url": "https://api.github.com/users/jolshan/orgs",
+    "repos_url": "https://api.github.com/users/jolshan/repos",
+    "events_url": "https://api.github.com/users/jolshan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jolshan/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": null,
+   "commit_id": "e466d2691b3ae917eebe8085542a75e9ba4b2498",
+   "state": "commented",
+   "html_url": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5660114150",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23943",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5660114150"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23943"
+    }
+   },
+   "submitted_at": "2026-10-26T22:45:42Z",
+   "updated_at": "2026-10-26T22:45:42Z",
+   "author_association": "MEMBER",
+   "event": "reviewed"
+  },
+  {
+   "id": 5660170768,
+   "node_id": "PRR_kwDOACG9q88AAAABUV9aEA",
+   "user": {
+    "login": "jolshan",
+    "id": 25566826,
+    "node_id": "MDQ6VXNlcjI1NTY2ODI2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/25566826?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jolshan",
+    "html_url": "https://github.com/jolshan",
+    "followers_url": "https://api.github.com/users/jolshan/followers",
+    "following_url": "https://api.github.com/users/jolshan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jolshan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jolshan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jolshan/subscriptions",
+    "organizations_url": "https://api.github.com/users/jolshan/orgs",
+    "repos_url": "https://api.github.com/users/jolshan/repos",
+    "events_url": "https://api.github.com/users/jolshan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jolshan/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": null,
+   "commit_id": "e466d2691b3ae917eebe8085542a75e9ba4b2498",
+   "state": "commented",
+   "html_url": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5660170768",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23943",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5660170768"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23943"
+    }
+   },
+   "submitted_at": "2026-10-26T22:52:35Z",
+   "updated_at": "2026-10-26T22:52:36Z",
+   "author_association": "MEMBER",
+   "event": "reviewed"
+  },
+  {
+   "id": 5660265412,
+   "node_id": "PRR_kwDOACG9q88AAAABUWDLxA",
+   "user": {
+    "login": "jolshan",
+    "id": 25566826,
+    "node_id": "MDQ6VXNlcjI1NTY2ODI2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/25566826?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jolshan",
+    "html_url": "https://github.com/jolshan",
+    "followers_url": "https://api.github.com/users/jolshan/followers",
+    "following_url": "https://api.github.com/users/jolshan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jolshan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jolshan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jolshan/subscriptions",
+    "organizations_url": "https://api.github.com/users/jolshan/orgs",
+    "repos_url": "https://api.github.com/users/jolshan/repos",
+    "events_url": "https://api.github.com/users/jolshan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jolshan/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": null,
+   "commit_id": "e466d2691b3ae917eebe8085542a75e9ba4b2498",
+   "state": "commented",
+   "html_url": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5660265412",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23943",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5660265412"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23943"
+    }
+   },
+   "submitted_at": "2026-10-26T23:04:52Z",
+   "updated_at": "2026-10-26T23:04:52Z",
+   "author_association": "MEMBER",
+   "event": "reviewed"
+  },
+  {
+   "id": 5660278869,
+   "node_id": "PRR_kwDOACG9q88AAAABUWEAVQ",
+   "user": {
+    "login": "jolshan",
+    "id": 25566826,
+    "node_id": "MDQ6VXNlcjI1NTY2ODI2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/25566826?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jolshan",
+    "html_url": "https://github.com/jolshan",
+    "followers_url": "https://api.github.com/users/jolshan/followers",
+    "following_url": "https://api.github.com/users/jolshan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jolshan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jolshan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jolshan/subscriptions",
+    "organizations_url": "https://api.github.com/users/jolshan/orgs",
+    "repos_url": "https://api.github.com/users/jolshan/repos",
+    "events_url": "https://api.github.com/users/jolshan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jolshan/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": null,
+   "commit_id": "e466d2691b3ae917eebe8085542a75e9ba4b2498",
+   "state": "commented",
+   "html_url": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5660278869",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23943",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5660278869"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23943"
+    }
+   },
+   "submitted_at": "2026-10-26T23:06:33Z",
+   "updated_at": "2026-10-26T23:06:33Z",
+   "author_association": "MEMBER",
+   "event": "reviewed"
+  },
+  {
+   "id": 5660361386,
+   "node_id": "PRR_kwDOACG9q88AAAABUWJCqg",
+   "user": {
+    "login": "jolshan",
+    "id": 25566826,
+    "node_id": "MDQ6VXNlcjI1NTY2ODI2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/25566826?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jolshan",
+    "html_url": "https://github.com/jolshan",
+    "followers_url": "https://api.github.com/users/jolshan/followers",
+    "following_url": "https://api.github.com/users/jolshan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jolshan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jolshan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jolshan/subscriptions",
+    "organizations_url": "https://api.github.com/users/jolshan/orgs",
+    "repos_url": "https://api.github.com/users/jolshan/repos",
+    "events_url": "https://api.github.com/users/jolshan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jolshan/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": null,
+   "commit_id": "e466d2691b3ae917eebe8085542a75e9ba4b2498",
+   "state": "commented",
+   "html_url": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5660361386",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23943",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5660361386"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23943"
+    }
+   },
+   "submitted_at": "2026-10-26T23:17:45Z",
+   "updated_at": "2026-10-26T23:17:45Z",
+   "author_association": "MEMBER",
+   "event": "reviewed"
+  },
+  {
+   "sha": "3cc66f34f0018bf960e228fd5ea92ba1d614d067",
+   "node_id": "C_kwDOACG9q9oAKDNjYzY2ZjM0ZjAwMThiZjk2MGUyMjhmZDVlYTkyYmExZDYxNGQwNjc",
+   "url": "https://api.github.com/repos/apache/kafka/git/commits/3cc66f34f0018bf960e228fd5ea92ba1d614d067",
+   "html_url": "https://github.com/apache/kafka/commit/3cc66f34f0018bf960e228fd5ea92ba1d614d067",
+   "author": {
+    "name": "Artem Livshits",
+    "email": "alivshits@confluent.io",
+    "date": "2026-10-27T17:16:50Z"
+   },
+   "committer": {
+    "name": "Artem Livshits",
+    "email": "alivshits@confluent.io",
+    "date": "2026-10-27T17:16:50Z"
+   },
+   "tree": {
+    "sha": "62cefbe0027f6717582b022991cd437a67e29eac",
+    "url": "https://api.github.com/repos/apache/kafka/git/trees/62cefbe0027f6717582b022991cd437a67e29eac"
+   },
+   "message": "Clarify comments on the high watermark wait\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+   "parents": [
+    {
+     "sha": "e466d2691b3ae917eebe8085542a75e9ba4b2498",
+     "url": "https://api.github.com/repos/apache/kafka/git/commits/e466d2691b3ae917eebe8085542a75e9ba4b2498",
+     "html_url": "https://github.com/apache/kafka/commit/e466d2691b3ae917eebe8085542a75e9ba4b2498"
+    }
+   ],
+   "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+   },
+   "event": "committed"
+  },
+  {
+   "id": 5673704554,
+   "node_id": "PRR_kwDOACG9q88AAAABUi3cag",
+   "user": {
+    "login": "jolshan",
+    "id": 25566826,
+    "node_id": "MDQ6VXNlcjI1NTY2ODI2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/25566826?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jolshan",
+    "html_url": "https://github.com/jolshan",
+    "followers_url": "https://api.github.com/users/jolshan/followers",
+    "following_url": "https://api.github.com/users/jolshan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jolshan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jolshan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jolshan/subscriptions",
+    "organizations_url": "https://api.github.com/users/jolshan/orgs",
+    "repos_url": "https://api.github.com/users/jolshan/repos",
+    "events_url": "https://api.github.com/users/jolshan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jolshan/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": null,
+   "commit_id": "3cc66f34f0018bf960e228fd5ea92ba1d614d067",
+   "state": "commented",
+   "html_url": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5673704554",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23943",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5673704554"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23943"
+    }
+   },
+   "submitted_at": "2026-10-27T20:17:22Z",
+   "updated_at": "2026-10-27T20:17:22Z",
+   "author_association": "MEMBER",
+   "event": "reviewed"
+  },
+  {
+   "id": 5673739311,
+   "node_id": "PRR_kwDOACG9q88AAAABUi5kLw",
+   "user": {
+    "login": "jolshan",
+    "id": 25566826,
+    "node_id": "MDQ6VXNlcjI1NTY2ODI2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/25566826?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jolshan",
+    "html_url": "https://github.com/jolshan",
+    "followers_url": "https://api.github.com/users/jolshan/followers",
+    "following_url": "https://api.github.com/users/jolshan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jolshan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jolshan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jolshan/subscriptions",
+    "organizations_url": "https://api.github.com/users/jolshan/orgs",
+    "repos_url": "https://api.github.com/users/jolshan/repos",
+    "events_url": "https://api.github.com/users/jolshan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jolshan/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "body": null,
+   "commit_id": "3cc66f34f0018bf960e228fd5ea92ba1d614d067",
+   "state": "approved",
+   "html_url": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5673739311",
+   "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/23943",
+   "_links": {
+    "html": {
+     "href": "https://github.com/apache/kafka/pull/23943#pullrequestreview-5673739311"
+    },
+    "pull_request": {
+     "href": "https://api.github.com/repos/apache/kafka/pulls/23943"
+    }
+   },
+   "submitted_at": "2026-10-27T20:20:26Z",
+   "updated_at": "2026-10-27T20:20:26Z",
+   "author_association": "MEMBER",
+   "event": "reviewed"
+  },
+  {
+   "id": 34408899036,
+   "node_id": "ME_lADOACG9q88AAAABZgebD88AAAAIAu4h3A",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34408899036",
+   "actor": {
+    "login": "jolshan",
+    "id": 25566826,
+    "node_id": "MDQ6VXNlcjI1NTY2ODI2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/25566826?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jolshan",
+    "html_url": "https://github.com/jolshan",
+    "followers_url": "https://api.github.com/users/jolshan/followers",
+    "following_url": "https://api.github.com/users/jolshan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jolshan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jolshan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jolshan/subscriptions",
+    "organizations_url": "https://api.github.com/users/jolshan/orgs",
+    "repos_url": "https://api.github.com/users/jolshan/repos",
+    "events_url": "https://api.github.com/users/jolshan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jolshan/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "merged",
+   "commit_id": "b1093f64c085d82c08fd6462b26a190e2eb3cb83",
+   "commit_url": "https://api.github.com/repos/apache/kafka/commits/b1093f64c085d82c08fd6462b26a190e2eb3cb83",
+   "created_at": "2026-10-27T20:23:46Z",
+   "performed_via_github_app": null
+  },
+  {
+   "id": 34408899194,
+   "node_id": "CE_lADOACG9q88AAAABZgebD88AAAAIAu4ieg",
+   "url": "https://api.github.com/repos/apache/kafka/issues/events/34408899194",
+   "actor": {
+    "login": "jolshan",
+    "id": 25566826,
+    "node_id": "MDQ6VXNlcjI1NTY2ODI2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/25566826?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jolshan",
+    "html_url": "https://github.com/jolshan",
+    "followers_url": "https://api.github.com/users/jolshan/followers",
+    "following_url": "https://api.github.com/users/jolshan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jolshan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jolshan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jolshan/subscriptions",
+    "organizations_url": "https://api.github.com/users/jolshan/orgs",
+    "repos_url": "https://api.github.com/users/jolshan/repos",
+    "events_url": "https://api.github.com/users/jolshan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jolshan/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+   },
+   "event": "closed",
+   "commit_id": null,
+   "commit_url": null,
+   "created_at": "2026-10-27T20:23:47Z",
+   "state_reason": null,
+   "intent": null,
+   "performed_via_github_app": null
+  }
+ ]
+}

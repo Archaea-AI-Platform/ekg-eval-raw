@@ -1,0 +1,58 @@
+{
+ "id": "451979127",
+ "versions": {
+  "results": [
+   {
+    "by": {
+     "type": "known",
+     "username": "dajac",
+     "userKey": "8aa980874e36a1eb014e36a2cc9c0bc8",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "David Jacot",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa980874e36a1eb014e36a2cc9c0bc8"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-02T12:12:19.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451979127/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451979127"
+    }
+   }
+  ],
+  "start": 0,
+  "limit": 200,
+  "size": 1,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451979127/version",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ },
+ "version_bodies": [],
+ "comments": {
+  "results": [],
+  "start": 0,
+  "limit": 200,
+  "size": 0,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/api/content/451979127/child/comment?expand=body.storage%2Cversion%2Cancestors&depth=all",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ }
+}

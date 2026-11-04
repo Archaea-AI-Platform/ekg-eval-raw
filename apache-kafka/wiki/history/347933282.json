@@ -1,0 +1,479 @@
+{
+ "id": "347933282",
+ "versions": {
+  "results": [
+   {
+    "by": {
+     "type": "known",
+     "username": "kumarpritam863",
+     "userKey": "073590d2924f8e220192662a27c70003",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Pritam Kumar Mishra",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2924f8e220192662a27c70003"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-28T17:37:19.000Z",
+    "message": "",
+    "number": 7,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/347933282/version/7"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/347933282"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kumarpritam863",
+     "userKey": "073590d2924f8e220192662a27c70003",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Pritam Kumar Mishra",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2924f8e220192662a27c70003"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-07T16:41:06.000Z",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/347933282/version/6"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/347933282?status=historical&version=6"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kumarpritam863",
+     "userKey": "073590d2924f8e220192662a27c70003",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Pritam Kumar Mishra",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2924f8e220192662a27c70003"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-05T15:30:19.000Z",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/347933282/version/5"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/347933282?status=historical&version=5"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kumarpritam863",
+     "userKey": "073590d2924f8e220192662a27c70003",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Pritam Kumar Mishra",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2924f8e220192662a27c70003"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-05T15:13:39.000Z",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/347933282/version/4"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/347933282?status=historical&version=4"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kumarpritam863",
+     "userKey": "073590d2924f8e220192662a27c70003",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Pritam Kumar Mishra",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2924f8e220192662a27c70003"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-05T15:12:43.000Z",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/347933282/version/3"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/347933282?status=historical&version=3"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kumarpritam863",
+     "userKey": "073590d2924f8e220192662a27c70003",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Pritam Kumar Mishra",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2924f8e220192662a27c70003"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2025-04-17T11:28:24.000Z",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/347933282/version/2"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/347933282?status=historical&version=2"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "kumarpritam863",
+     "userKey": "073590d2924f8e220192662a27c70003",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Pritam Kumar Mishra",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2924f8e220192662a27c70003"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2025-04-05T01:18:21.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/347933282/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/347933282?status=historical&version=1"
+    }
+   }
+  ],
+  "start": 0,
+  "limit": 200,
+  "size": 7,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/experimental/content/347933282/version",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ },
+ "version_bodies": [
+  {
+   "id": "347933282",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1154: Extending support for Microsecond/Nanosecond Precision for Kafka Connect",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "kumarpritam863",
+     "userKey": "073590d2924f8e220192662a27c70003",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Pritam Kumar Mishra",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2924f8e220192662a27c70003"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-07T16:41:06.000Z",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/347933282/version/6"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/347933282?status=historical&version=6"
+    }
+   },
+   "position": 1146,
+   "body": {
+    "storage": {
+     "value": "<p><br /></p><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"06707d6b-99ff-4ee4-b3da-498dddfe9e9b\" /></p><h1>Status</h1><p><strong>Current state:</strong> &quot;<span style=\"color: rgb(23,43,77);text-decoration: none;\">Voting in progress</span>&quot;</p><p><strong>Discussion thread:</strong> <a href=\"https://lists.apache.org/thread/nowy4gpg9bv6htm19shkbs3ykokc66f5\">here</a></p><p><strong style=\"\">Vote thread: </strong><a href=\"https://lists.apache.org/thread/lr48dc3gj3ns08nv2ycfm074vd44v43v\">here</a></p><p><strong>JIRA:</strong> <a href=\"https://issues.apache.org/jira/browse/KAFKA-19086\">here</a></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p>Kafka Connect currently supports a single timestamp logical type (<code>org.apache.kafka.connect.data.Timestamp</code>) backed by <code>java.util.Date</code>, which is limited to millisecond precision. When source systems produce timestamps with microsecond or nanosecond precision — common in Avro, Parquet, databases like PostgreSQL, and event-driven systems — that precision is <strong>silently truncated</strong>.</p><p>For example, a source connector reading an Avro <code>timestamp-micros</code> field (e.g., <code>1617235200123456</code> microseconds) must currently either:</p><ul><li>Map it to the <code>Timestamp</code> logical type, losing the sub-millisecond component (<code>123456 µs</code> → <code>123 ms</code>)</li><li>Map it as a raw <code>INT64</code>, losing the semantic meaning of the field</li></ul><p><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-808%3A+Add+support+for+different+unix+precisions+in+TimestampConverter+SMT\">KIP-808</a> added <code>unix.precision</code> configuration to <code>TimestampConverter</code>, but the SMT still documents: <em>&quot;This SMT will cause precision loss during conversions from, and to, values with sub-millisecond components&quot;</em>, because the intermediate representation is <code>java.util.Date</code>.</p><p>This KIP introduces two new logical types — <strong>TimestampMicros</strong> and <strong>TimestampNanos</strong> — that preserve full precision using <code>java.time.Instant</code> as the Java representation.</p><h3>Why this matters</h3><ul><li><strong>Precision Loss:</strong> Formats like <a href=\"https://avro.apache.org/docs/1.12.0/specification/#timestamp-microsecond-precision\">Avro</a>, Parquet, and Protocol Buffers support microsecond and nanosecond timestamps. Without matching logical types in Kafka Connect, sub-millisecond data is silently corrupted.</li><li><strong>Increasing Adoption of High-Precision Time:</strong> Systems like event streams, financial applications, observability platforms, and databases (PostgreSQL, ClickHouse) increasingly rely on microsecond or nanosecond timestamps throughout the entire data pipeline.</li><li><strong>Data Fidelity:</strong> Supporting <code>timestamp-micros</code> and <code>timestamp-nanos</code> in Kafka Connect ensures the full precision of time data is preserved across the entire source → Kafka → sink pipeline without any loss of information.</li></ul><h1>Proposed Changes</h1><h3>1. New Logical Type: TimestampMicros</h3><p>A new class <code>org.apache.kafka.connect.data.TimestampMicros</code> in the <code>connect-api</code> module.</p><ul><li><strong>Logical name:</strong> <code>org.apache.kafka.connect.data.TimestampMicros</code></li><li><strong>Underlying schema type:</strong> <code>INT64</code></li><li><strong>Encoded representation:</strong> microseconds since Unix epoch</li><li><strong>Java representation:</strong> <code>java.time.Instant</code></li></ul><table class=\"relative-table wrapped\" style=\"width: 103.701454%;\"><colgroup><col style=\"width: 20.187244%;\" /><col style=\"width: 33.762432%;\" /><col style=\"width: 45.58221%;\" /></colgroup><thead><tr><th>Method</th><th>Signature</th><th>Description</th></tr></thead><tbody><tr><td><code>builder()</code></td><td><code>static SchemaBuilder builder()</code></td><td>Returns a <code>SchemaBuilder</code> with name <code>org.apache.kafka.connect.data.TimestampMicros</code>, type <code>INT64</code>, version <code>1</code></td></tr><tr><td><code>SCHEMA</code></td><td><code>static final Schema SCHEMA</code></td><td>The default schema instance</td></tr><tr><td><code>fromLogical(Schema, Instant)</code></td><td><code>static long fromLogical(Schema schema, Instant value)</code></td><td>Converts <code>Instant</code> → microseconds since epoch</td></tr><tr><td><code>toLogical(Schema, long)</code></td><td><code>static Instant toLogical(Schema schema, long value)</code></td><td>Converts microseconds since epoch → <code>Instant</code></td></tr></tbody></table><h3>2. New Logical Type: TimestampNanos</h3><p>A new class <code>org.apache.kafka.connect.data.TimestampNanos</code> in the <code>connect-api</code> module.</p><ul><li><strong>Logical name:</strong> <code>org.apache.kafka.connect.data.TimestampNanos</code></li><li><strong>Underlying schema type:</strong> <code>INT64</code></li><li><strong>Encoded representation:</strong> nanoseconds since Unix epoch</li><li><strong>Java representation:</strong> <code>java.time.Instant</code></li></ul><table class=\"wrapped\"><thead><tr><th>Method</th><th>Signature</th><th>Description</th></tr></thead><tbody><tr><td><code>builder()</code></td><td><code>static SchemaBuilder builder()</code></td><td>Returns a <code>SchemaBuilder</code> with name <code>org.apache.kafka.connect.data.TimestampNanos</code>, type <code>INT64</code>, version <code>1</code></td></tr><tr><td><code>SCHEMA</code></td><td><code>static final Schema SCHEMA</code></td><td>The default schema instance</td></tr><tr><td><code>fromLogical(Schema, Instant)</code></td><td><code>static long fromLogical(Schema schema, Instant value)</code></td><td>Converts <code>Instant</code> → nanoseconds since epoch</td></tr><tr><td><code>toLogical(Schema, long)</code></td><td><code>static Instant toLogical(Schema schema, long value)</code></td><td>Converts nanoseconds since epoch → <code>Instant</code></td></tr></tbody></table><p><code>TimestampNanos</code> uses <code>INT64</code>, which limits the representable range to approximately 1677-09-21 to 2262-04-11 (±2^63 nanoseconds). This matches the range supported by Avro's <code>timestamp-nanos</code> logical type.</p><h3>3. Updated: ConnectSchema</h3><p>The <code>LOGICAL_TYPE_CLASSES</code> map gains two new entries:</p><p>java TimestampMicros.LOGICAL_NAME → List.of(java.time.Instant.class) TimestampNanos.LOGICAL_NAME → List.of(java.time.Instant.class)</p><p>This enables runtime type validation for the new logical types. Existing entries for <code>Timestamp</code>, <code>Date</code>, and <code>Time</code> remain unchanged.</p><h3>4. Updated: ConnectHeaders</h3><p>Two new methods added to the <code>Headers</code> interface and <code>ConnectHeaders</code> implementation:</p><table class=\"wrapped\"><thead><tr><th>Method</th><th>Signature</th><th>Description</th></tr></thead><tbody><tr><td><code>addTimestampMicros</code></td><td><code>Headers addTimestampMicros(String key, Instant value)</code></td><td>Add a header with <code>TimestampMicros</code> schema</td></tr><tr><td><code>addTimestampNanos</code></td><td><code>Headers addTimestampNanos(String key, Instant value)</code></td><td>Add a header with <code>TimestampNanos</code> schema</td></tr></tbody></table><h3>5. Updated SMT: TimestampConverter</h3><h4>New target.type values</h4><p>The <code>target.type</code> configuration accepts two additional values: <code>TimestampMicros</code> and <code>TimestampNanos</code>.</p><table class=\"wrapped\"><thead><tr><th>target.type</th><th>Schema</th><th>Java type</th><th>Encoded as</th></tr></thead><tbody><tr><td><code>Timestamp</code> <em>(existing)</em></td><td><code>Timestamp.SCHEMA</code></td><td><code>java.util.Date</code></td><td>milliseconds since epoch</td></tr><tr><td><code>TimestampMicros</code> <em>(new)</em></td><td><code>TimestampMicros.SCHEMA</code></td><td><code>java.time.Instant</code></td><td>microseconds since epoch</td></tr><tr><td><code>TimestampNanos</code> <em>(new)</em></td><td><code>TimestampNanos.SCHEMA</code></td><td><code>java.time.Instant</code></td><td>nanoseconds since epoch</td></tr></tbody></table><h4>Precision-preserving unix conversion</h4><p>When <code>target.type=unix</code>, the <code>TimestampConverter</code> currently loses sub-millisecond precision because it routes through <code>java.util.Date</code>. After this KIP:</p><ul><li>Input with schema <code>TimestampMicros</code> → unix: full microsecond precision preserved</li><li>Input with schema <code>TimestampNanos</code> → unix: full nanosecond precision preserved</li><li>Input with schema <code>Timestamp</code> (existing) → unix: unchanged behavior</li></ul><h4>Updated timestampTypeFromSchema()</h4><p>This method is extended to recognize <code>TimestampMicros.LOGICAL_NAME</code> and <code>TimestampNanos.LOGICAL_NAME</code> as valid input schema types, routing them to the appropriate translators.</p><h4>Updated TimestampTranslator interface</h4><p>The internal <code>TimestampTranslator</code> interface is updated to support <code>java.time.Instant</code> as the intermediate representation alongside <code>java.util.Date</code>, enabling lossless conversion for the new types. The specific implementation approach (e.g., overloaded methods, a common temporal interface, or separate translator maps) is left to the implementation PR.</p><h3>6. Updated Converter: JsonConverter</h3><p>Two new entries added to <code>LOGICAL_CONVERTERS</code>:</p><table class=\"wrapped\"><thead><tr><th>Logical Name</th><th>toJson</th><th>toConnect</th></tr></thead><tbody><tr><td><code>TimestampMicros.LOGICAL_NAME</code></td><td><code>Instant</code> → JSON number (microseconds since epoch)</td><td>JSON number → <code>Instant</code></td></tr><tr><td><code>TimestampNanos.LOGICAL_NAME</code></td><td><code>Instant</code> → JSON number (nanoseconds since epoch)</td><td>JSON number → <code>Instant</code></td></tr></tbody></table><h3>7. Updated: Values</h3><p>New public conversion methods:</p><table class=\"wrapped\"><thead><tr><th>Method</th><th>Signature</th><th>Description</th></tr></thead><tbody><tr><td><code>convertToTimestampMicros</code></td><td><code>static Instant convertToTimestampMicros(Schema schema, Object value)</code></td><td>Converts various types to <code>Instant</code> with microsecond semantics</td></tr><tr><td><code>convertToTimestampNanos</code></td><td><code>static Instant convertToTimestampNanos(Schema schema, Object value)</code></td><td>Converts various types to <code>Instant</code> with nanosecond semantics</td></tr></tbody></table><p>These follow the same pattern as the existing <code>convertToTimestamp()</code>, <code>convertToDate()</code>, and <code>convertToTime()</code> methods.</p><h3>8. Updated SMT: Cast</h3><p>The <code>encodeLogicalType()</code> method is extended to handle the new types:</p><p>java case TimestampMicros.LOGICAL_NAME -&gt; TimestampMicros.fromLogical(schema, (Instant) value); case TimestampNanos.LOGICAL_NAME -&gt; TimestampNanos.fromLogical(schema, (Instant) value);</p><h3>Converter Use Case (e.g., Avro Converter)</h3><p>This KIP enables third-party converters (e.g., Confluent's Avro Converter) to properly map high-precision Avro timestamps. Before this KIP, a converter handling Avro's <code>LONG</code> type would fall through to raw <code>INT64</code> for non-millis timestamps:</p><ul><li><strong>Before this KIP</strong>:</li><li><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"0cd5c6e2-b060-4008-90aa-db645c4d6fd2\"><ac:plain-text-body><![CDATA[case LONG:\n\tif (AVRO_LOGICAL_TIMESTAMP_MILLIS.equalsIgnoreCase(logicalType)) { \n\t\tbuilder = Timestamp.builder(); \n\t} else { \n\t\tbuilder = SchemaBuilder.int64();\n \t// semantic meaning lost \n\t} ]]></ac:plain-text-body></ac:structured-macro></li><li><strong>After this KIP</strong>:</li><li><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"f076d629-8bfa-4609-a2ab-51a218218cf1\"><ac:plain-text-body><![CDATA[case LONG: \n\tif (AVRO_LOGICAL_TIMESTAMP_MILLIS.equalsIgnoreCase(logicalType)) { \n\t\tbuilder = Timestamp.builder(); \n\t} else if (AVRO_LOGICAL_TIMESTAMP_MICROS.equalsIgnoreCase(logicalType)) { \t\t\n\t\tbuilder = TimestampMicros.builder(); \n\t} else if (AVRO_LOGICAL_TIMESTAMP_NANOS.equalsIgnoreCase(logicalType)) { \n\t\tbuilder = TimestampNanos.builder(); \n\t} else { \n\t\tbuilder = SchemaBuilder.int64(); \n\t}]]></ac:plain-text-body></ac:structured-macro></li></ul><h3>Summary of All Changed Files</h3><table class=\"wrapped\"><thead><tr><th>Module</th><th>File</th><th>Change</th></tr></thead><tbody><tr><td><code>connect-api</code></td><td><code>TimestampMicros.java</code></td><td><strong>New file</strong> — microsecond logical type</td></tr><tr><td><code>connect-api</code></td><td><code>TimestampNanos.java</code></td><td><strong>New file</strong> — nanosecond logical type</td></tr><tr><td><code>connect-api</code></td><td><code>ConnectSchema.java</code></td><td>Add entries to <code>LOGICAL_TYPE_CLASSES</code></td></tr><tr><td><code>connect-api</code></td><td><code>Values.java</code></td><td>Add <code>convertToTimestampMicros()</code> and <code>convertToTimestampNanos()</code></td></tr><tr><td><code>connect-api</code></td><td><code>ConnectHeaders.java</code></td><td>Add <code>addTimestampMicros()</code> and <code>addTimestampNanos()</code></td></tr><tr><td><code>connect-json</code></td><td><code>JsonConverter.java</code></td><td>Add <code>LOGICAL_CONVERTERS</code> entries</td></tr><tr><td><code>connect-transforms</code></td><td><code>TimestampConverter.java</code></td><td>Add new target types, fix precision loss</td></tr><tr><td><code>connect-transforms</code></td><td><code>Cast.java</code></td><td>Handle new logical types in <code>encodeLogicalType()</code></td></tr></tbody></table><h1>Compatibility, Deprecation, and Migration Plan</h1><h3>Backward Compatibility</h3><p>This change is <strong>fully backward-compatible</strong> for existing deployments:</p><ul><li>Existing connectors producing <code>Timestamp</code> schemas continue to work identically.</li><li>Existing <code>TimestampConverter</code> configurations are unaffected — no existing <code>target.type</code> values change behavior.</li><li>No existing API signatures are modified.</li></ul><h3>Behavioral Changes</h3><p>The following behavioral changes apply only when the new types are actively used:</p><ul><li>Converters (JSON, Avro, Protobuf) that encounter fields with schema name <code>org.apache.kafka.connect.data.TimestampMicros</code> or <code>org.apache.kafka.connect.data.TimestampNanos</code> will serialize/deserialize them as <code>long</code> (micros/nanos since epoch) instead of treating them as raw <code>INT64</code>. This is <strong>opt-in</strong>: it only happens when a connector explicitly produces the new schema types.</li><li>The <code>TimestampConverter</code> SMT accepts two new <code>target.type</code> values. Existing configurations are unaffected.</li></ul><h3>Rolling Upgrades</h3><p>During a rolling upgrade where some workers have the new types and others do not:</p><ul><li>Connectors should <strong>not</strong> be configured to use the new logical types until <strong>all</strong> workers in the cluster are upgraded.</li><li>Workers running the old version will not recognize schemas with the new logical type names and will treat them as raw <code>INT64</code>, potentially causing data misinterpretation.</li><li>Once all workers are upgraded, connectors can begin producing <code>TimestampMicros</code> or <code>TimestampNanos</code> schemas.</li></ul><h3>Migration Path</h3><ul><li>Users who want microsecond/nanosecond precision: upgrade the Kafka Connect runtime and update their connector/converter configurations to use the new logical types.</li><li>Users who do not need sub-millisecond precision: no changes required.</li></ul><h2>Test Plan</h2><h3>Unit Tests: TimestampMicros</h3><ul><li><code>fromLogical()</code> / <code>toLogical()</code> round-trip correctness</li><li>Schema name validation (throws <code>DataException</code> for wrong schema)</li><li>Edge cases: epoch zero, negative timestamps (before 1970), max <code>long</code> boundary</li></ul><h3>Unit Tests: TimestampNanos</h3><ul><li><code>fromLogical()</code> / <code>toLogical()</code> round-trip correctness</li><li>Schema name validation (throws <code>DataException</code> for wrong schema)</li><li>Edge cases: epoch zero, negative timestamps, <code>INT64</code> overflow boundary (~292 years from epoch)</li></ul><h3>TimestampConverter Tests</h3><ul><li>Conversion from <code>TimestampMicros</code> → <code>unix</code> with microsecond precision preserved</li><li>Conversion from <code>TimestampNanos</code> → <code>unix</code> with nanosecond precision preserved</li><li>Conversion from <code>unix</code> → <code>TimestampMicros</code> / <code>TimestampNanos</code></li><li>Conversion from <code>Timestamp</code> (millis) → <code>TimestampMicros</code> / <code>TimestampNanos</code> (upscaling)</li><li>Conversion from <code>TimestampMicros</code> / <code>TimestampNanos</code> → <code>Timestamp</code> (precision truncation is expected and documented)</li><li>Both schema-based and schemaless modes</li></ul><h3>JsonConverter Tests</h3><ul><li>Round-trip serialization/deserialization of <code>TimestampMicros</code> and <code>TimestampNanos</code> values</li><li>Correct JSON representation (JSON number, not string)</li></ul><h3>ConnectSchema Validation Tests</h3><ul><li><code>Instant</code> values accepted for <code>TimestampMicros</code> / <code>TimestampNanos</code> schemas</li><li><code>java.util.Date</code> values rejected for <code>TimestampMicros</code> / <code>TimestampNanos</code> schemas</li></ul><h3>Cast SMT Tests</h3><ul><li>Casting from <code>TimestampMicros</code> / <code>TimestampNanos</code> to primitive types (int64, string)</li></ul><h2>Rejected Alternatives</h2><h3>1. Modifying the existing Timestamp class to support multiple precisions</h3><p>Changing <code>Timestamp</code>'s Java type from <code>java.util.Date</code> to <code>java.time.Instant</code> would be a <strong>breaking change</strong> for all existing connectors. Existing code calls <code>Timestamp.fromLogical(schema, (java.util.Date) value)</code> — changing the parameter type would break compilation for every connector and converter in the ecosystem.</p><h3>2. Adding precision variants within the existing Timestamp class</h3><p>Introducing <code>LOGICAL_NAME_MILLIS</code>, <code>LOGICAL_NAME_MICROS</code>, and <code>LOGICAL_NAME_NANOS</code> as constants within the existing <code>Timestamp</code> class would require modifying its public API surface and could break schema name checks in user code and third-party converters that compare against <code>Timestamp.LOGICAL_NAME</code>.</p><h3>3. Using java.util.Date for the new types</h3><p><code>java.util.Date</code> fundamentally cannot represent sub-millisecond precision, making it unsuitable for microsecond or nanosecond timestamps.</p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/347933282?status=historical&version=6"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1146
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=451978947",
+    "edit": "/pages/resumedraft.action?draftId=451978947&draftShareId=300563ab-a451-4ac5-a620-91df90fb4e17",
+    "tinyui": "/x/w6bwGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/347933282?status=historical&version=6"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/347933282/child?parentVersion=6",
+    "restrictions": "/rest/api/content/347933282/restriction/byOperation",
+    "history": "/rest/api/content/347933282/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/347933282/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/347933282/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "347933282",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1154: Extending support for Microsecond/Nanosecond Precision for Kafka Connect",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "kumarpritam863",
+     "userKey": "073590d2924f8e220192662a27c70003",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Pritam Kumar Mishra",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2924f8e220192662a27c70003"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-05T15:30:19.000Z",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/347933282/version/5"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/347933282?status=historical&version=5"
+    }
+   },
+   "position": 1146,
+   "body": {
+    "storage": {
+     "value": "<p><br /></p><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"06707d6b-99ff-4ee4-b3da-498dddfe9e9b\" /></p><h1>Status</h1><p><strong>Current state:</strong> &quot;Under Discussion&quot;</p><p><strong>Discussion thread:</strong> <a href=\"https://lists.apache.org/thread/nowy4gpg9bv6htm19shkbs3ykokc66f5\">here</a></p><p><strong>JIRA:</strong> <a href=\"https://issues.apache.org/jira/browse/KAFKA-19086\">here</a></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p>Kafka Connect currently supports a single timestamp logical type (<code>org.apache.kafka.connect.data.Timestamp</code>) backed by <code>java.util.Date</code>, which is limited to millisecond precision. When source systems produce timestamps with microsecond or nanosecond precision — common in Avro, Parquet, databases like PostgreSQL, and event-driven systems — that precision is <strong>silently truncated</strong>.</p><p>For example, a source connector reading an Avro <code>timestamp-micros</code> field (e.g., <code>1617235200123456</code> microseconds) must currently either:</p><ul><li>Map it to the <code>Timestamp</code> logical type, losing the sub-millisecond component (<code>123456 µs</code> → <code>123 ms</code>)</li><li>Map it as a raw <code>INT64</code>, losing the semantic meaning of the field</li></ul><p><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-808%3A+Add+support+for+different+unix+precisions+in+TimestampConverter+SMT\">KIP-808</a> added <code>unix.precision</code> configuration to <code>TimestampConverter</code>, but the SMT still documents: <em>&quot;This SMT will cause precision loss during conversions from, and to, values with sub-millisecond components&quot;</em>, because the intermediate representation is <code>java.util.Date</code>.</p><p>This KIP introduces two new logical types — <strong>TimestampMicros</strong> and <strong>TimestampNanos</strong> — that preserve full precision using <code>java.time.Instant</code> as the Java representation.</p><h3>Why this matters</h3><ul><li><strong>Precision Loss:</strong> Formats like <a href=\"https://avro.apache.org/docs/1.12.0/specification/#timestamp-microsecond-precision\">Avro</a>, Parquet, and Protocol Buffers support microsecond and nanosecond timestamps. Without matching logical types in Kafka Connect, sub-millisecond data is silently corrupted.</li><li><strong>Increasing Adoption of High-Precision Time:</strong> Systems like event streams, financial applications, observability platforms, and databases (PostgreSQL, ClickHouse) increasingly rely on microsecond or nanosecond timestamps throughout the entire data pipeline.</li><li><strong>Data Fidelity:</strong> Supporting <code>timestamp-micros</code> and <code>timestamp-nanos</code> in Kafka Connect ensures the full precision of time data is preserved across the entire source → Kafka → sink pipeline without any loss of information.</li></ul><h1>Proposed Changes</h1><h3>1. New Logical Type: TimestampMicros</h3><p>A new class <code>org.apache.kafka.connect.data.TimestampMicros</code> in the <code>connect-api</code> module.</p><ul><li><strong>Logical name:</strong> <code>org.apache.kafka.connect.data.TimestampMicros</code></li><li><strong>Underlying schema type:</strong> <code>INT64</code></li><li><strong>Encoded representation:</strong> microseconds since Unix epoch</li><li><strong>Java representation:</strong> <code>java.time.Instant</code></li></ul><table class=\"relative-table wrapped\" style=\"width: 103.701454%;\"><colgroup><col style=\"width: 20.187244%;\" /><col style=\"width: 33.762432%;\" /><col style=\"width: 45.58221%;\" /></colgroup><thead><tr><th>Method</th><th>Signature</th><th>Description</th></tr></thead><tbody><tr><td><code>builder()</code></td><td><code>static SchemaBuilder builder()</code></td><td>Returns a <code>SchemaBuilder</code> with name <code>org.apache.kafka.connect.data.TimestampMicros</code>, type <code>INT64</code>, version <code>1</code></td></tr><tr><td><code>SCHEMA</code></td><td><code>static final Schema SCHEMA</code></td><td>The default schema instance</td></tr><tr><td><code>fromLogical(Schema, Instant)</code></td><td><code>static long fromLogical(Schema schema, Instant value)</code></td><td>Converts <code>Instant</code> → microseconds since epoch</td></tr><tr><td><code>toLogical(Schema, long)</code></td><td><code>static Instant toLogical(Schema schema, long value)</code></td><td>Converts microseconds since epoch → <code>Instant</code></td></tr></tbody></table><h3>2. New Logical Type: TimestampNanos</h3><p>A new class <code>org.apache.kafka.connect.data.TimestampNanos</code> in the <code>connect-api</code> module.</p><ul><li><strong>Logical name:</strong> <code>org.apache.kafka.connect.data.TimestampNanos</code></li><li><strong>Underlying schema type:</strong> <code>INT64</code></li><li><strong>Encoded representation:</strong> nanoseconds since Unix epoch</li><li><strong>Java representation:</strong> <code>java.time.Instant</code></li></ul><table class=\"wrapped\"><thead><tr><th>Method</th><th>Signature</th><th>Description</th></tr></thead><tbody><tr><td><code>builder()</code></td><td><code>static SchemaBuilder builder()</code></td><td>Returns a <code>SchemaBuilder</code> with name <code>org.apache.kafka.connect.data.TimestampNanos</code>, type <code>INT64</code>, version <code>1</code></td></tr><tr><td><code>SCHEMA</code></td><td><code>static final Schema SCHEMA</code></td><td>The default schema instance</td></tr><tr><td><code>fromLogical(Schema, Instant)</code></td><td><code>static long fromLogical(Schema schema, Instant value)</code></td><td>Converts <code>Instant</code> → nanoseconds since epoch</td></tr><tr><td><code>toLogical(Schema, long)</code></td><td><code>static Instant toLogical(Schema schema, long value)</code></td><td>Converts nanoseconds since epoch → <code>Instant</code></td></tr></tbody></table><p><code>TimestampNanos</code> uses <code>INT64</code>, which limits the representable range to approximately 1677-09-21 to 2262-04-11 (±2^63 nanoseconds). This matches the range supported by Avro's <code>timestamp-nanos</code> logical type.</p><h3>3. Updated: ConnectSchema</h3><p>The <code>LOGICAL_TYPE_CLASSES</code> map gains two new entries:</p><p>java TimestampMicros.LOGICAL_NAME → List.of(java.time.Instant.class) TimestampNanos.LOGICAL_NAME → List.of(java.time.Instant.class)</p><p>This enables runtime type validation for the new logical types. Existing entries for <code>Timestamp</code>, <code>Date</code>, and <code>Time</code> remain unchanged.</p><h3>4. Updated: ConnectHeaders</h3><p>Two new methods added to the <code>Headers</code> interface and <code>ConnectHeaders</code> implementation:</p><table class=\"wrapped\"><thead><tr><th>Method</th><th>Signature</th><th>Description</th></tr></thead><tbody><tr><td><code>addTimestampMicros</code></td><td><code>Headers addTimestampMicros(String key, Instant value)</code></td><td>Add a header with <code>TimestampMicros</code> schema</td></tr><tr><td><code>addTimestampNanos</code></td><td><code>Headers addTimestampNanos(String key, Instant value)</code></td><td>Add a header with <code>TimestampNanos</code> schema</td></tr></tbody></table><h3>5. Updated SMT: TimestampConverter</h3><h4>New target.type values</h4><p>The <code>target.type</code> configuration accepts two additional values: <code>TimestampMicros</code> and <code>TimestampNanos</code>.</p><table class=\"wrapped\"><thead><tr><th>target.type</th><th>Schema</th><th>Java type</th><th>Encoded as</th></tr></thead><tbody><tr><td><code>Timestamp</code> <em>(existing)</em></td><td><code>Timestamp.SCHEMA</code></td><td><code>java.util.Date</code></td><td>milliseconds since epoch</td></tr><tr><td><code>TimestampMicros</code> <em>(new)</em></td><td><code>TimestampMicros.SCHEMA</code></td><td><code>java.time.Instant</code></td><td>microseconds since epoch</td></tr><tr><td><code>TimestampNanos</code> <em>(new)</em></td><td><code>TimestampNanos.SCHEMA</code></td><td><code>java.time.Instant</code></td><td>nanoseconds since epoch</td></tr></tbody></table><h4>Precision-preserving unix conversion</h4><p>When <code>target.type=unix</code>, the <code>TimestampConverter</code> currently loses sub-millisecond precision because it routes through <code>java.util.Date</code>. After this KIP:</p><ul><li>Input with schema <code>TimestampMicros</code> → unix: full microsecond precision preserved</li><li>Input with schema <code>TimestampNanos</code> → unix: full nanosecond precision preserved</li><li>Input with schema <code>Timestamp</code> (existing) → unix: unchanged behavior</li></ul><h4>Updated timestampTypeFromSchema()</h4><p>This method is extended to recognize <code>TimestampMicros.LOGICAL_NAME</code> and <code>TimestampNanos.LOGICAL_NAME</code> as valid input schema types, routing them to the appropriate translators.</p><h4>Updated TimestampTranslator interface</h4><p>The internal <code>TimestampTranslator</code> interface is updated to support <code>java.time.Instant</code> as the intermediate representation alongside <code>java.util.Date</code>, enabling lossless conversion for the new types. The specific implementation approach (e.g., overloaded methods, a common temporal interface, or separate translator maps) is left to the implementation PR.</p><h3>6. Updated Converter: JsonConverter</h3><p>Two new entries added to <code>LOGICAL_CONVERTERS</code>:</p><table class=\"wrapped\"><thead><tr><th>Logical Name</th><th>toJson</th><th>toConnect</th></tr></thead><tbody><tr><td><code>TimestampMicros.LOGICAL_NAME</code></td><td><code>Instant</code> → JSON number (microseconds since epoch)</td><td>JSON number → <code>Instant</code></td></tr><tr><td><code>TimestampNanos.LOGICAL_NAME</code></td><td><code>Instant</code> → JSON number (nanoseconds since epoch)</td><td>JSON number → <code>Instant</code></td></tr></tbody></table><h3>7. Updated: Values</h3><p>New public conversion methods:</p><table class=\"wrapped\"><thead><tr><th>Method</th><th>Signature</th><th>Description</th></tr></thead><tbody><tr><td><code>convertToTimestampMicros</code></td><td><code>static Instant convertToTimestampMicros(Schema schema, Object value)</code></td><td>Converts various types to <code>Instant</code> with microsecond semantics</td></tr><tr><td><code>convertToTimestampNanos</code></td><td><code>static Instant convertToTimestampNanos(Schema schema, Object value)</code></td><td>Converts various types to <code>Instant</code> with nanosecond semantics</td></tr></tbody></table><p>These follow the same pattern as the existing <code>convertToTimestamp()</code>, <code>convertToDate()</code>, and <code>convertToTime()</code> methods.</p><h3>8. Updated SMT: Cast</h3><p>The <code>encodeLogicalType()</code> method is extended to handle the new types:</p><p>java case TimestampMicros.LOGICAL_NAME -&gt; TimestampMicros.fromLogical(schema, (Instant) value); case TimestampNanos.LOGICAL_NAME -&gt; TimestampNanos.fromLogical(schema, (Instant) value);</p><h3>Converter Use Case (e.g., Avro Converter)</h3><p>This KIP enables third-party converters (e.g., Confluent's Avro Converter) to properly map high-precision Avro timestamps. Before this KIP, a converter handling Avro's <code>LONG</code> type would fall through to raw <code>INT64</code> for non-millis timestamps:</p><ul><li><strong>Before this KIP</strong>:</li><li><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"0cd5c6e2-b060-4008-90aa-db645c4d6fd2\"><ac:plain-text-body><![CDATA[case LONG:\n\tif (AVRO_LOGICAL_TIMESTAMP_MILLIS.equalsIgnoreCase(logicalType)) { \n\t\tbuilder = Timestamp.builder(); \n\t} else { \n\t\tbuilder = SchemaBuilder.int64();\n \t// semantic meaning lost \n\t} ]]></ac:plain-text-body></ac:structured-macro></li><li><strong>After this KIP</strong>:</li><li><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"f076d629-8bfa-4609-a2ab-51a218218cf1\"><ac:plain-text-body><![CDATA[case LONG: \n\tif (AVRO_LOGICAL_TIMESTAMP_MILLIS.equalsIgnoreCase(logicalType)) { \n\t\tbuilder = Timestamp.builder(); \n\t} else if (AVRO_LOGICAL_TIMESTAMP_MICROS.equalsIgnoreCase(logicalType)) { \t\t\n\t\tbuilder = TimestampMicros.builder(); \n\t} else if (AVRO_LOGICAL_TIMESTAMP_NANOS.equalsIgnoreCase(logicalType)) { \n\t\tbuilder = TimestampNanos.builder(); \n\t} else { \n\t\tbuilder = SchemaBuilder.int64(); \n\t}]]></ac:plain-text-body></ac:structured-macro></li></ul><h3>Summary of All Changed Files</h3><table class=\"wrapped\"><thead><tr><th>Module</th><th>File</th><th>Change</th></tr></thead><tbody><tr><td><code>connect-api</code></td><td><code>TimestampMicros.java</code></td><td><strong>New file</strong> — microsecond logical type</td></tr><tr><td><code>connect-api</code></td><td><code>TimestampNanos.java</code></td><td><strong>New file</strong> — nanosecond logical type</td></tr><tr><td><code>connect-api</code></td><td><code>ConnectSchema.java</code></td><td>Add entries to <code>LOGICAL_TYPE_CLASSES</code></td></tr><tr><td><code>connect-api</code></td><td><code>Values.java</code></td><td>Add <code>convertToTimestampMicros()</code> and <code>convertToTimestampNanos()</code></td></tr><tr><td><code>connect-api</code></td><td><code>ConnectHeaders.java</code></td><td>Add <code>addTimestampMicros()</code> and <code>addTimestampNanos()</code></td></tr><tr><td><code>connect-json</code></td><td><code>JsonConverter.java</code></td><td>Add <code>LOGICAL_CONVERTERS</code> entries</td></tr><tr><td><code>connect-transforms</code></td><td><code>TimestampConverter.java</code></td><td>Add new target types, fix precision loss</td></tr><tr><td><code>connect-transforms</code></td><td><code>Cast.java</code></td><td>Handle new logical types in <code>encodeLogicalType()</code></td></tr></tbody></table><h1>Compatibility, Deprecation, and Migration Plan</h1><h3>Backward Compatibility</h3><p>This change is <strong>fully backward-compatible</strong> for existing deployments:</p><ul><li>Existing connectors producing <code>Timestamp</code> schemas continue to work identically.</li><li>Existing <code>TimestampConverter</code> configurations are unaffected — no existing <code>target.type</code> values change behavior.</li><li>No existing API signatures are modified.</li></ul><h3>Behavioral Changes</h3><p>The following behavioral changes apply only when the new types are actively used:</p><ul><li>Converters (JSON, Avro, Protobuf) that encounter fields with schema name <code>org.apache.kafka.connect.data.TimestampMicros</code> or <code>org.apache.kafka.connect.data.TimestampNanos</code> will serialize/deserialize them as <code>long</code> (micros/nanos since epoch) instead of treating them as raw <code>INT64</code>. This is <strong>opt-in</strong>: it only happens when a connector explicitly produces the new schema types.</li><li>The <code>TimestampConverter</code> SMT accepts two new <code>target.type</code> values. Existing configurations are unaffected.</li></ul><h3>Rolling Upgrades</h3><p>During a rolling upgrade where some workers have the new types and others do not:</p><ul><li>Connectors should <strong>not</strong> be configured to use the new logical types until <strong>all</strong> workers in the cluster are upgraded.</li><li>Workers running the old version will not recognize schemas with the new logical type names and will treat them as raw <code>INT64</code>, potentially causing data misinterpretation.</li><li>Once all workers are upgraded, connectors can begin producing <code>TimestampMicros</code> or <code>TimestampNanos</code> schemas.</li></ul><h3>Migration Path</h3><ul><li>Users who want microsecond/nanosecond precision: upgrade the Kafka Connect runtime and update their connector/converter configurations to use the new logical types.</li><li>Users who do not need sub-millisecond precision: no changes required.</li></ul><h2>Test Plan</h2><h3>Unit Tests: TimestampMicros</h3><ul><li><code>fromLogical()</code> / <code>toLogical()</code> round-trip correctness</li><li>Schema name validation (throws <code>DataException</code> for wrong schema)</li><li>Edge cases: epoch zero, negative timestamps (before 1970), max <code>long</code> boundary</li></ul><h3>Unit Tests: TimestampNanos</h3><ul><li><code>fromLogical()</code> / <code>toLogical()</code> round-trip correctness</li><li>Schema name validation (throws <code>DataException</code> for wrong schema)</li><li>Edge cases: epoch zero, negative timestamps, <code>INT64</code> overflow boundary (~292 years from epoch)</li></ul><h3>TimestampConverter Tests</h3><ul><li>Conversion from <code>TimestampMicros</code> → <code>unix</code> with microsecond precision preserved</li><li>Conversion from <code>TimestampNanos</code> → <code>unix</code> with nanosecond precision preserved</li><li>Conversion from <code>unix</code> → <code>TimestampMicros</code> / <code>TimestampNanos</code></li><li>Conversion from <code>Timestamp</code> (millis) → <code>TimestampMicros</code> / <code>TimestampNanos</code> (upscaling)</li><li>Conversion from <code>TimestampMicros</code> / <code>TimestampNanos</code> → <code>Timestamp</code> (precision truncation is expected and documented)</li><li>Both schema-based and schemaless modes</li></ul><h3>JsonConverter Tests</h3><ul><li>Round-trip serialization/deserialization of <code>TimestampMicros</code> and <code>TimestampNanos</code> values</li><li>Correct JSON representation (JSON number, not string)</li></ul><h3>ConnectSchema Validation Tests</h3><ul><li><code>Instant</code> values accepted for <code>TimestampMicros</code> / <code>TimestampNanos</code> schemas</li><li><code>java.util.Date</code> values rejected for <code>TimestampMicros</code> / <code>TimestampNanos</code> schemas</li></ul><h3>Cast SMT Tests</h3><ul><li>Casting from <code>TimestampMicros</code> / <code>TimestampNanos</code> to primitive types (int64, string)</li></ul><h2>Rejected Alternatives</h2><h3>1. Modifying the existing Timestamp class to support multiple precisions</h3><p>Changing <code>Timestamp</code>'s Java type from <code>java.util.Date</code> to <code>java.time.Instant</code> would be a <strong>breaking change</strong> for all existing connectors. Existing code calls <code>Timestamp.fromLogical(schema, (java.util.Date) value)</code> — changing the parameter type would break compilation for every connector and converter in the ecosystem.</p><h3>2. Adding precision variants within the existing Timestamp class</h3><p>Introducing <code>LOGICAL_NAME_MILLIS</code>, <code>LOGICAL_NAME_MICROS</code>, and <code>LOGICAL_NAME_NANOS</code> as constants within the existing <code>Timestamp</code> class would require modifying its public API surface and could break schema name checks in user code and third-party converters that compare against <code>Timestamp.LOGICAL_NAME</code>.</p><h3>3. Using java.util.Date for the new types</h3><p><code>java.util.Date</code> fundamentally cannot represent sub-millisecond precision, making it unsuitable for microsecond or nanosecond timestamps.</p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/347933282?status=historical&version=5"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1146
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=421953710",
+    "edit": "/pages/resumedraft.action?draftId=421953710&draftShareId=300563ab-a451-4ac5-a620-91df90fb4e17",
+    "tinyui": "/x/roAmGQ",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/347933282?status=historical&version=5"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/347933282/child?parentVersion=5",
+    "restrictions": "/rest/api/content/347933282/restriction/byOperation",
+    "history": "/rest/api/content/347933282/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/347933282/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/347933282/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "347933282",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1154: Extending support for Microsecond/Nanosecond Precision for Kafka Connect",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "kumarpritam863",
+     "userKey": "073590d2924f8e220192662a27c70003",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Pritam Kumar Mishra",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2924f8e220192662a27c70003"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-05T15:13:39.000Z",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/347933282/version/4"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/347933282?status=historical&version=4"
+    }
+   },
+   "position": 1146,
+   "body": {
+    "storage": {
+     "value": "<p><br /></p><p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"de79dbfd-f991-4e84-9cb4-e0b524c03c5f\" /></p><h1>Status</h1><p><strong>Current state:</strong> &quot;Under Discussion&quot;</p><p><strong>Discussion thread:</strong> <a href=\"https://lists.apache.org/thread/nowy4gpg9bv6htm19shkbs3ykokc66f5\">here</a></p><p><strong>JIRA:</strong> <a href=\"https://issues.apache.org/jira/browse/KAFKA-19086\">here</a></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p>Kafka Connect currently supports a single timestamp logical type (<code>org.apache.kafka.connect.data.Timestamp</code>) backed by <code>java.util.Date</code>, which is limited to millisecond precision. When source systems produce timestamps with microsecond or nanosecond precision — common in Avro, Parquet, databases like PostgreSQL, and event-driven systems — that precision is <strong>silently truncated</strong>.</p><p>For example, a source connector reading an Avro <code>timestamp-micros</code> field (e.g., <code>1617235200123456</code> microseconds) must currently either:</p><ul><li>Map it to the <code>Timestamp</code> logical type, losing the sub-millisecond component (<code>123456 µs</code> → <code>123 ms</code>)</li><li>Map it as a raw <code>INT64</code>, losing the semantic meaning of the field</li></ul><p><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-808%3A+Add+support+for+different+unix+precisions+in+TimestampConverter+SMT\">KIP-808</a> added <code>unix.precision</code> configuration to <code>TimestampConverter</code>, but the SMT still documents: <em>&quot;This SMT will cause precision loss during conversions from, and to, values with sub-millisecond components&quot;</em>, because the intermediate representation is <code>java.util.Date</code>.</p><p>This KIP introduces two new logical types — <strong>TimestampMicros</strong> and <strong>TimestampNanos</strong> — that preserve full precision using <code>java.time.Instant</code> as the Java representation.</p><h3>Why this matters</h3><ul><li><strong>Precision Loss:</strong> Formats like <a href=\"https://avro.apache.org/docs/1.12.0/specification/#timestamp-microsecond-precision\">Avro</a>, Parquet, and Protocol Buffers support microsecond and nanosecond timestamps. Without matching logical types in Kafka Connect, sub-millisecond data is silently corrupted.</li><li><strong>Increasing Adoption of High-Precision Time:</strong> Systems like event streams, financial applications, observability platforms, and databases (PostgreSQL, ClickHouse) increasingly rely on microsecond or nanosecond timestamps throughout the entire data pipeline.</li><li><strong>Data Fidelity:</strong> Supporting <code>timestamp-micros</code> and <code>timestamp-nanos</code> in Kafka Connect ensures the full precision of time data is preserved across the entire source → Kafka → sink pipeline without any loss of information.</li></ul><h1>Proposed Changes</h1><h3>1. New Logical Type: TimestampMicros</h3><p>A new class <code>org.apache.kafka.connect.data.TimestampMicros</code> in the <code>connect-api</code> module.</p><ul><li><strong>Logical name:</strong> <code>org.apache.kafka.connect.data.TimestampMicros</code></li><li><strong>Underlying schema type:</strong> <code>INT64</code></li><li><strong>Encoded representation:</strong> microseconds since Unix epoch</li><li><strong>Java representation:</strong> <code>java.time.Instant</code></li></ul><table class=\"relative-table\" style=\"width: 103.701454%;\"><colgroup><col style=\"width: 20.187244%;\" /><col style=\"width: 33.762432%;\" /><col style=\"width: 45.58221%;\" /></colgroup><thead><tr><th>Method</th><th>Signature</th><th>Description</th></tr></thead><tbody><tr><td><code>builder()</code></td><td><code>static SchemaBuilder builder()</code></td><td>Returns a <code>SchemaBuilder</code> with name <code>org.apache.kafka.connect.data.TimestampMicros</code>, type <code>INT64</code>, version <code>1</code></td></tr><tr><td><code>SCHEMA</code></td><td><code>static final Schema SCHEMA</code></td><td>The default schema instance</td></tr><tr><td><code>fromLogical(Schema, Instant)</code></td><td><code>static long fromLogical(Schema schema, Instant value)</code></td><td>Converts <code>Instant</code> → microseconds since epoch</td></tr><tr><td><code>toLogical(Schema, long)</code></td><td><code>static Instant toLogical(Schema schema, long value)</code></td><td>Converts microseconds since epoch → <code>Instant</code></td></tr></tbody></table><h3>2. New Logical Type: TimestampNanos</h3><p>A new class <code>org.apache.kafka.connect.data.TimestampNanos</code> in the <code>connect-api</code> module.</p><ul><li><strong>Logical name:</strong> <code>org.apache.kafka.connect.data.TimestampNanos</code></li><li><strong>Underlying schema type:</strong> <code>INT64</code></li><li><strong>Encoded representation:</strong> nanoseconds since Unix epoch</li><li><strong>Java representation:</strong> <code>java.time.Instant</code></li></ul><table><thead><tr><th>Method</th><th>Signature</th><th>Description</th></tr></thead><tbody><tr><td><code>builder()</code></td><td><code>static SchemaBuilder builder()</code></td><td>Returns a <code>SchemaBuilder</code> with name <code>org.apache.kafka.connect.data.TimestampNanos</code>, type <code>INT64</code>, version <code>1</code></td></tr><tr><td><code>SCHEMA</code></td><td><code>static final Schema SCHEMA</code></td><td>The default schema instance</td></tr><tr><td><code>fromLogical(Schema, Instant)</code></td><td><code>static long fromLogical(Schema schema, Instant value)</code></td><td>Converts <code>Instant</code> → nanoseconds since epoch</td></tr><tr><td><code>toLogical(Schema, long)</code></td><td><code>static Instant toLogical(Schema schema, long value)</code></td><td>Converts nanoseconds since epoch → <code>Instant</code></td></tr></tbody></table><p><code>TimestampNanos</code> uses <code>INT64</code>, which limits the representable range to approximately 1677-09-21 to 2262-04-11 (±2^63 nanoseconds). This matches the range supported by Avro's <code>timestamp-nanos</code> logical type.</p><h3>3. Updated: ConnectSchema</h3><p>The <code>LOGICAL_TYPE_CLASSES</code> map gains two new entries:</p><p>java TimestampMicros.LOGICAL_NAME → List.of(java.time.Instant.class) TimestampNanos.LOGICAL_NAME → List.of(java.time.Instant.class)</p><p>This enables runtime type validation for the new logical types. Existing entries for <code>Timestamp</code>, <code>Date</code>, and <code>Time</code> remain unchanged.</p><h3>4. Updated: ConnectHeaders</h3><p>Two new methods added to the <code>Headers</code> interface and <code>ConnectHeaders</code> implementation:</p><table><thead><tr><th>Method</th><th>Signature</th><th>Description</th></tr></thead><tbody><tr><td><code>addTimestampMicros</code></td><td><code>Headers addTimestampMicros(String key, Instant value)</code></td><td>Add a header with <code>TimestampMicros</code> schema</td></tr><tr><td><code>addTimestampNanos</code></td><td><code>Headers addTimestampNanos(String key, Instant value)</code></td><td>Add a header with <code>TimestampNanos</code> schema</td></tr></tbody></table><h3>5. Updated SMT: TimestampConverter</h3><h4>New target.type values</h4><p>The <code>target.type</code> configuration accepts two additional values: <code>TimestampMicros</code> and <code>TimestampNanos</code>.</p><table><thead><tr><th>target.type</th><th>Schema</th><th>Java type</th><th>Encoded as</th></tr></thead><tbody><tr><td><code>Timestamp</code> <em>(existing)</em></td><td><code>Timestamp.SCHEMA</code></td><td><code>java.util.Date</code></td><td>milliseconds since epoch</td></tr><tr><td><code>TimestampMicros</code> <em>(new)</em></td><td><code>TimestampMicros.SCHEMA</code></td><td><code>java.time.Instant</code></td><td>microseconds since epoch</td></tr><tr><td><code>TimestampNanos</code> <em>(new)</em></td><td><code>TimestampNanos.SCHEMA</code></td><td><code>java.time.Instant</code></td><td>nanoseconds since epoch</td></tr></tbody></table><h4>Precision-preserving unix conversion</h4><p>When <code>target.type=unix</code>, the <code>TimestampConverter</code> currently loses sub-millisecond precision because it routes through <code>java.util.Date</code>. After this KIP:</p><ul><li>Input with schema <code>TimestampMicros</code> → unix: full microsecond precision preserved</li><li>Input with schema <code>TimestampNanos</code> → unix: full nanosecond precision preserved</li><li>Input with schema <code>Timestamp</code> (existing) → unix: unchanged behavior</li></ul><h4>Updated timestampTypeFromSchema()</h4><p>This method is extended to recognize <code>TimestampMicros.LOGICAL_NAME</code> and <code>TimestampNanos.LOGICAL_NAME</code> as valid input schema types, routing them to the appropriate translators.</p><h4>Updated TimestampTranslator interface</h4><p>The internal <code>TimestampTranslator</code> interface is updated to support <code>java.time.Instant</code> as the intermediate representation alongside <code>java.util.Date</code>, enabling lossless conversion for the new types. The specific implementation approach (e.g., overloaded methods, a common temporal interface, or separate translator maps) is left to the implementation PR.</p><h3>6. Updated Converter: JsonConverter</h3><p>Two new entries added to <code>LOGICAL_CONVERTERS</code>:</p><table><thead><tr><th>Logical Name</th><th>toJson</th><th>toConnect</th></tr></thead><tbody><tr><td><code>TimestampMicros.LOGICAL_NAME</code></td><td><code>Instant</code> → JSON number (microseconds since epoch)</td><td>JSON number → <code>Instant</code></td></tr><tr><td><code>TimestampNanos.LOGICAL_NAME</code></td><td><code>Instant</code> → JSON number (nanoseconds since epoch)</td><td>JSON number → <code>Instant</code></td></tr></tbody></table><h3>7. Updated: Values</h3><p>New public conversion methods:</p><table><thead><tr><th>Method</th><th>Signature</th><th>Description</th></tr></thead><tbody><tr><td><code>convertToTimestampMicros</code></td><td><code>static Instant convertToTimestampMicros(Schema schema, Object value)</code></td><td>Converts various types to <code>Instant</code> with microsecond semantics</td></tr><tr><td><code>convertToTimestampNanos</code></td><td><code>static Instant convertToTimestampNanos(Schema schema, Object value)</code></td><td>Converts various types to <code>Instant</code> with nanosecond semantics</td></tr></tbody></table><p>These follow the same pattern as the existing <code>convertToTimestamp()</code>, <code>convertToDate()</code>, and <code>convertToTime()</code> methods.</p><h3>8. Updated SMT: Cast</h3><p>The <code>encodeLogicalType()</code> method is extended to handle the new types:</p><p>java case TimestampMicros.LOGICAL_NAME -&gt; TimestampMicros.fromLogical(schema, (Instant) value); case TimestampNanos.LOGICAL_NAME -&gt; TimestampNanos.fromLogical(schema, (Instant) value);</p><h3>Converter Use Case (e.g., Avro Converter)</h3><p>This KIP enables third-party converters (e.g., Confluent's Avro Converter) to properly map high-precision Avro timestamps. Before this KIP, a converter handling Avro's <code>LONG</code> type would fall through to raw <code>INT64</code> for non-millis timestamps:</p><p>java // BEFORE: microsecond timestamps lose semantic meaning case LONG: if (AVRO_LOGICAL_TIMESTAMP_MILLIS.equalsIgnoreCase(logicalType)) { builder = Timestamp.builder(); } else { builder = SchemaBuilder.int64(); // semantic meaning lost } break;</p><p>After this KIP:</p><p>java // AFTER: full precision and semantic meaning preserved case LONG: if (AVRO_LOGICAL_TIMESTAMP_MILLIS.equalsIgnoreCase(logicalType)) { builder = Timestamp.builder(); } else if (AVRO_LOGICAL_TIMESTAMP_MICROS.equalsIgnoreCase(logicalType)) { builder = TimestampMicros.builder(); } else if (AVRO_LOGICAL_TIMESTAMP_NANOS.equalsIgnoreCase(logicalType)) { builder = TimestampNanos.builder(); } else { builder = SchemaBuilder.int64(); } break;</p><h3>Summary of All Changed Files</h3><table><thead><tr><th>Module</th><th>File</th><th>Change</th></tr></thead><tbody><tr><td><code>connect-api</code></td><td><code>TimestampMicros.java</code></td><td><strong>New file</strong> — microsecond logical type</td></tr><tr><td><code>connect-api</code></td><td><code>TimestampNanos.java</code></td><td><strong>New file</strong> — nanosecond logical type</td></tr><tr><td><code>connect-api</code></td><td><code>ConnectSchema.java</code></td><td>Add entries to <code>LOGICAL_TYPE_CLASSES</code></td></tr><tr><td><code>connect-api</code></td><td><code>Values.java</code></td><td>Add <code>convertToTimestampMicros()</code> and <code>convertToTimestampNanos()</code></td></tr><tr><td><code>connect-api</code></td><td><code>ConnectHeaders.java</code></td><td>Add <code>addTimestampMicros()</code> and <code>addTimestampNanos()</code></td></tr><tr><td><code>connect-json</code></td><td><code>JsonConverter.java</code></td><td>Add <code>LOGICAL_CONVERTERS</code> entries</td></tr><tr><td><code>connect-transforms</code></td><td><code>TimestampConverter.java</code></td><td>Add new target types, fix precision loss</td></tr><tr><td><code>connect-transforms</code></td><td><code>Cast.java</code></td><td>Handle new logical types in <code>encodeLogicalType()</code></td></tr></tbody></table><h1>Compatibility, Deprecation, and Migration Plan</h1><h3>Backward Compatibility</h3><p>This change is <strong>fully backward-compatible</strong> for existing deployments:</p><ul><li>Existing connectors producing <code>Timestamp</code> schemas continue to work identically.</li><li>Existing <code>TimestampConverter</code> configurations are unaffected — no existing <code>target.type</code> values change behavior.</li><li>No existing API signatures are modified.</li></ul><h3>Behavioral Changes</h3><p>The following behavioral changes apply only when the new types are actively used:</p><ul><li>Converters (JSON, Avro, Protobuf) that encounter fields with schema name <code>org.apache.kafka.connect.data.TimestampMicros</code> or <code>org.apache.kafka.connect.data.TimestampNanos</code> will serialize/deserialize them as <code>long</code> (micros/nanos since epoch) instead of treating them as raw <code>INT64</code>. This is <strong>opt-in</strong>: it only happens when a connector explicitly produces the new schema types.</li><li>The <code>TimestampConverter</code> SMT accepts two new <code>target.type</code> values. Existing configurations are unaffected.</li></ul><h3>Rolling Upgrades</h3><p>During a rolling upgrade where some workers have the new types and others do not:</p><ul><li>Connectors should <strong>not</strong> be configured to use the new logical types until <strong>all</strong> workers in the cluster are upgraded.</li><li>Workers running the old version will not recognize schemas with the new logical type names and will treat them as raw <code>INT64</code>, potentially causing data misinterpretation.</li><li>Once all workers are upgraded, connectors can begin producing <code>TimestampMicros</code> or <code>TimestampNanos</code> schemas.</li></ul><h3>Migration Path</h3><ul><li>Users who want microsecond/nanosecond precision: upgrade the Kafka Connect runtime and update their connector/converter configurations to use the new logical types.</li><li>Users who do not need sub-millisecond precision: no changes required.</li></ul><h2>Test Plan</h2><h3>Unit Tests: TimestampMicros</h3><ul><li><code>fromLogical()</code> / <code>toLogical()</code> round-trip correctness</li><li>Schema name validation (throws <code>DataException</code> for wrong schema)</li><li>Edge cases: epoch zero, negative timestamps (before 1970), max <code>long</code> boundary</li></ul><h3>Unit Tests: TimestampNanos</h3><ul><li><code>fromLogical()</code> / <code>toLogical()</code> round-trip correctness</li><li>Schema name validation (throws <code>DataException</code> for wrong schema)</li><li>Edge cases: epoch zero, negative timestamps, <code>INT64</code> overflow boundary (~292 years from epoch)</li></ul><h3>TimestampConverter Tests</h3><ul><li>Conversion from <code>TimestampMicros</code> → <code>unix</code> with microsecond precision preserved</li><li>Conversion from <code>TimestampNanos</code> → <code>unix</code> with nanosecond precision preserved</li><li>Conversion from <code>unix</code> → <code>TimestampMicros</code> / <code>TimestampNanos</code></li><li>Conversion from <code>Timestamp</code> (millis) → <code>TimestampMicros</code> / <code>TimestampNanos</code> (upscaling)</li><li>Conversion from <code>TimestampMicros</code> / <code>TimestampNanos</code> → <code>Timestamp</code> (precision truncation is expected and documented)</li><li>Both schema-based and schemaless modes</li></ul><h3>JsonConverter Tests</h3><ul><li>Round-trip serialization/deserialization of <code>TimestampMicros</code> and <code>TimestampNanos</code> values</li><li>Correct JSON representation (JSON number, not string)</li></ul><h3>ConnectSchema Validation Tests</h3><ul><li><code>Instant</code> values accepted for <code>TimestampMicros</code> / <code>TimestampNanos</code> schemas</li><li><code>java.util.Date</code> values rejected for <code>TimestampMicros</code> / <code>TimestampNanos</code> schemas</li></ul><h3>Cast SMT Tests</h3><ul><li>Casting from <code>TimestampMicros</code> / <code>TimestampNanos</code> to primitive types (int64, string)</li></ul><h2>Rejected Alternatives</h2><h3>1. Modifying the existing Timestamp class to support multiple precisions</h3><p>Changing <code>Timestamp</code>'s Java type from <code>java.util.Date</code> to <code>java.time.Instant</code> would be a <strong>breaking change</strong> for all existing connectors. Existing code calls <code>Timestamp.fromLogical(schema, (java.util.Date) value)</code> — changing the parameter type would break compilation for every connector and converter in the ecosystem.</p><h3>2. Adding precision variants within the existing Timestamp class</h3><p>Introducing <code>LOGICAL_NAME_MILLIS</code>, <code>LOGICAL_NAME_MICROS</code>, and <code>LOGICAL_NAME_NANOS</code> as constants within the existing <code>Timestamp</code> class would require modifying its public API surface and could break schema name checks in user code and third-party converters that compare against <code>Timestamp.LOGICAL_NAME</code>.</p><h3>3. Using java.util.Date for the new types</h3><p><code>java.util.Date</code> fundamentally cannot represent sub-millisecond precision, making it unsuitable for microsecond or nanosecond timestamps.</p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/347933282?status=historical&version=4"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1146
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=406624143",
+    "edit": "/pages/resumedraft.action?draftId=406624143&draftShareId=300563ab-a451-4ac5-a620-91df90fb4e17",
+    "tinyui": "/x/j5c8G",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/347933282?status=historical&version=4"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/347933282/child?parentVersion=4",
+    "restrictions": "/rest/api/content/347933282/restriction/byOperation",
+    "history": "/rest/api/content/347933282/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/347933282/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/347933282/restriction/relevantViewRestrictions"
+   }
+  }
+ ],
+ "comments": {
+  "results": [],
+  "start": 0,
+  "limit": 200,
+  "size": 0,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/api/content/347933282/child/comment?expand=body.storage%2Cversion%2Cancestors&depth=all",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ }
+}

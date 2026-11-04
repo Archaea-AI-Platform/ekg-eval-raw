@@ -1,0 +1,1223 @@
+{
+ "id": "406624038",
+ "versions": {
+  "results": [
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-10T07:17:59.000Z",
+    "message": "Voting passed",
+    "number": 31,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/31"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-06T19:03:32.000Z",
+    "message": "Tighten up rejection",
+    "number": 30,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/30"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=30"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-06T07:45:14.000Z",
+    "message": "Checking on non-initial requests",
+    "number": 29,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/29"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=29"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-04T20:16:59.000Z",
+    "message": "Only specify client instance ID on initial request",
+    "number": 28,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/28"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=28"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-04T12:47:36.000Z",
+    "message": "Reserved UUIDs excluded",
+    "number": 27,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/27"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=27"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-31T16:10:09.000Z",
+    "message": "Forward requests and feature versions",
+    "number": 26,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/26"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=26"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-26T07:51:06.000Z",
+    "message": "Request header version 3 uses tagged field",
+    "number": 25,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/25"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=25"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-24T09:15:14.000Z",
+    "message": "Additional compatibility information",
+    "number": 24,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/24"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=24"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-20T10:39:28.000Z",
+    "message": "ApiVersions request special handling",
+    "number": 23,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/23"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=23"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-16T07:30:57.000Z",
+    "message": "Reinstate client ID optimisation",
+    "number": 22,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/22"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=22"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-12T21:11:13.000Z",
+    "message": "headerVersions",
+    "number": 21,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/21"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=21"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-09T11:45:28.000Z",
+    "message": "Added RebalanceConsumer and tweaked ClientInstanceIdVersions",
+    "number": 20,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/20"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=20"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-02T14:37:12.000Z",
+    "message": "v3 of request header",
+    "number": 19,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/19"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=19"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-28T08:38:12.000Z",
+    "message": "Member ID and client instance ID alignment clarification",
+    "number": 18,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/18"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=18"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-19T09:48:44.000Z",
+    "message": "Formatting",
+    "number": 17,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/17"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=17"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-19T09:46:42.000Z",
+    "message": "Clarification for zero UUIDs",
+    "number": 16,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/16"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=16"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-18T11:42:29.000Z",
+    "message": "GetTelemetrySubscriptions updates",
+    "number": 15,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/15"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=15"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-12T07:58:40.000Z",
+    "message": "Added summary table",
+    "number": 14,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/14"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=14"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-08T09:45:10.000Z",
+    "message": "Alignment of identifiers",
+    "number": 13,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/13"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=13"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-05T19:21:10.000Z",
+    "message": "Fixed typo",
+    "number": 12,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/12"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=12"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-05T17:21:27.000Z",
+    "message": "Removed change to client ID and resolved review comments",
+    "number": 11,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/11"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=11"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mjsax",
+     "userKey": "8aa980874ebf4c1f014fb71c804106cc",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/61318460/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Matthias J. Sax",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa980874ebf4c1f014fb71c804106cc"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-05T04:54:25.000Z",
+    "message": "",
+    "number": 10,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/10"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=10"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-03T21:15:55.000Z",
+    "message": "Added JIRA",
+    "number": 9,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/9"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=9"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-02T16:50:30.000Z",
+    "message": "Started the vote",
+    "number": 8,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/8"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=8"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-30T09:59:08.000Z",
+    "message": "Use client instance ID as member ID too",
+    "number": 7,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/7"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=7"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-26T16:46:08.000Z",
+    "message": "Tighten definitions in response to review comments",
+    "number": 6,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/6"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=6"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-24T13:27:25.000Z",
+    "message": "Review comments",
+    "number": 5,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/5"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=5"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-24T13:25:51.000Z",
+    "message": "Update KIP-714 RPC handling",
+    "number": 4,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/4"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=4"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-21T16:02:30.000Z",
+    "message": "Add detail for client instance ID handling",
+    "number": 3,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/3"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=3"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-03T16:47:27.000Z",
+    "message": "Added discussion thread link",
+    "number": 2,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/2"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=2"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-03T16:13:11.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=1"
+    }
+   }
+  ],
+  "start": 0,
+  "limit": 200,
+  "size": 31,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ },
+ "version_bodies": [
+  {
+   "id": "406624038",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1313: Client instance ID in all request headers",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-06T19:03:32.000Z",
+    "message": "Tighten up rejection",
+    "number": 30,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/30"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=30"
+    }
+   },
+   "position": 1305,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><h1>Status</h1><p><strong>Current state</strong>: <em>Under discussion</em></p><p><strong>Discussion thread</strong>: <em><a href=\"https://lists.apache.org/thread/loxjb8owwjplnjz3sk6dqkm5gkkn3xt4\">here</a><br /></em></p><p><strong>Voting thread (1 of 2):</strong> <em><a href=\"https://lists.apache.org/thread/06qkdj9278h7jzt4glp8rbyzgbt3gvhq\">here</a> - KIP reworked following initial vote</em></p><p><strong>JIRA</strong>: <em><a href=\"https://issues.apache.org/jira/browse/KAFKA-20548\">here</a><br /></em></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p>Today, all Kafka protocol requests include the client ID. This identifier can be set by the user setting the client configuration property <code>client.id</code>. This is a useful capability, but it has limitations. The client ID was meant for identifying an application, and not the instances of an application. Often, it is not sufficient to identify a particular client instance.</p><p>This KIP adds a UUID called the client instance ID into the request header of (almost) all Kafka protocol requests. Each client has a different client instance ID, so correlating requests from a particular client becomes much easier. An immediate benefit is that it can be included in request logging for troubleshooting. It is being added to improve traceability and problem determination.</p><p><span style=\"text-decoration: none;color:var(--ds-text,#172b4d);\">In addition, the client ID is sent on each and every request. Users sometimes have use quite long client IDs, even encoding metadata such as the availability zone into the string. The client ID is then sent on every request, in spite of the fact that the Kafka protocol is connection-oriented and it is really only necessary to send the string on the first request after connection initiation. Sending it repeatedly is wasteful.</span></p><h1>Proposed Changes</h1><p>This KIP proposes the following changes to the Kafka protocol.</p><h2>Client Instance ID</h2><p>This KIP proposes adding a UUID called the <strong>client instance ID</strong> into the request header of all Kafka protocol requests (with a few exceptions as documented below). The client uses the same client instance ID for its connections to every broker throughout its lifetime, even when it rebootstraps and makes new connections. The consistency and uniqueness of the identifiers are both important characteristics.</p><p>Version 3 of the RPC request header is introduced which adds the client instance ID. A new version of every RPC is introduced using the v3 request header, with the exception of <code>SaslHandshake</code>  which cannot be bumped due to incorrect version negotiation in the past.</p><p>Those familiar with <ac:link><ri:page ri:space-key=\"KAFKA\" ri:content-title=\"KIP-714: Client metrics and observability\" /><ac:plain-text-link-body><![CDATA[KIP-714]]></ac:plain-text-link-body></ac:link> will be aware that it already introduced the client instance ID, so this KIP actually proposes elevating that concept into a universal unique identifier for client instances in all RPCs.</p><p>The client instance ID is calculated by the client during the constructor of the client before it makes its initial connection to the cluster. This differs slightly from how KIP-714 initialized the client instance ID. In KIP-714, the client instance ID was created by the broker which responded to a client's first <code>GetTelemetrySubscriptions</code> RPC. Similarly, in KIP-848, the member ID was created by the group coordinator in response to a heartbeat, but subsequently KIP-1082 changed this so that the client created its own member ID. The protocol now favors client-generated IDs so this KIP calculates the client instance ID on the client. The Apache Kafka Java client will use <code>org.apache.kafka.common.Uuid.randonUuid()</code>  to calculate the client instance ID. The client instance ID is not permitted to be either of the reserved UUIDs (zero or one).</p><p>If a connection uses the v3 request header in its first request, it must specify the client instance ID and then omit the client instance ID from all subsequent requests on that connection. Note that <code>SaslHandshake</code> is excluded from this checking because it cannot carry a client instance ID. The initial client instance ID for each connection will be cached by the broker (this is an implementation detail, but caching it in the <code>ChannelMetadataRegistry</code> is an option). Once a client has specified a client instance ID in its first request, any subsequent requests which specify a value for the client instance ID will be rejected with error code <code>INVALID_REQUEST</code>.</p><p>Because the versions of RPCs which can be used inter-broker are being increased, a new metadata version (provisionally <code>IBP_4_5_IV0</code> ) is also introduced to gate the use of the newer versions.</p><h2>Client ID</h2><p>This KIP proposes sending the client ID only on the initial request on each connection, and then sending a null client ID for all subsequent requests. <span style=\"text-decoration: none;color:var(--ds-text,#172b4d);\">This eliminates the unnecessary overhead of repeatedly sending the same client ID string to the broker on every request. The initial client ID for each connection will be cached by the broker (this is an implementation detail, but caching it in the </span><code>ChannelMetadataRegistry</code><span style=\"text-decoration: none;color:var(--ds-text,#172b4d);\"> is an option).</span></p><p><span style=\"text-decoration: none;color:var(--ds-text,#172b4d);\">This new behavior can only be completely adopted when both client and broker support it. It works as follows:</span></p><ul><li>For the initial request regardless of request header version, the client sends the client ID</li><li>For subsequent requests using the v3 request header (or higher), the client sends a null client ID</li><li>For subsequent requests using an earlier version of the request header, the client sends the client ID</li></ul><p><span style=\"text-decoration: none;color:var(--ds-text,#172b4d);\">After this KIP, the broker will assume that the client ID from the initial request applies to all subsequent requests on a connection, and it will ignore the client ID specified on any subsequent requests (request header older than v3) or reject subsequent requests with error code <code>INVALID_REQUEST</code>  if the client ID is specified (request header v3 or later).</span></p><h3>Forwarded RPC requests</h3><p>When a broker forwards an RPC request to a controller, the client ID must be populated in the forwarded request header. This is so request quotas can be enforced. If the forwarding broker has a cached client ID for a connection and needs to forward a request which omits the client ID, it populates the client ID in the forwarded request with the cached client ID.</p><h2>Alignment of identifiers</h2><p>By adding client instance ID to the request headers, we now had a unique application instance identifier which we can use for other purposes such as the client telemetry client instance ID and the member ID in the group protocols. The client instance ID from the request headers is used as the client telemetry client instance ID; new versions of the KIP-714 RPCs are introduced to ensure this. The alignment of other identifiers is by convention (and the Java client will follow the convention) rather than mandate. In the language of standards, the client SHOULD use the same UUID in request headers as it uses for the member ID in the group protocols. This alignment just makes traceability and problem determination more straightforward.</p><p style=\"margin-left: 40.0px;\">In the modern group protocol RPCs such as <code>ConsumerGroupHeartbeat</code>  and <code>ShareGroupHeartbeat</code> , the member ID is a string. In practice, it is a UUID which is encoded into a string, but the nature of this conversion is not specified in the protocol and it really is treated as a string in the broker. The Java client uses the <code>org.apache.kafka.common.Uuid</code>  class to generate the member ID and convert it into a string. The client instance ID really is a UUID in the protocol. When the Java code in the broker converts this into a string, it uses the same Java code as the client does for the member ID. As a result, the member ID and client instance ID can trivially be the same when represented as strings, even though they have different data types in the protocol. For traceability and problem determination, this &quot;conventional&quot; alignment works well.</p><p style=\"margin-left: 40.0px;\">However, at least one other Kafka client implementation uses a slightly different string encoding of the member ID which does not match that generated by <code>org.apache.kafka.common.Uuid</code> . This is valid with regards to KIP-848 and KIP-932, but does unfortunately mean that the member ID does not look the same as the client instance ID, even if they have the same original UUID value in the client.</p><p>The following table indicates the behavior of the KIP-714 RPCs before and after this KIP. A client implementing this KIP will always calculate its own client instance ID, which it sends to the broker in the <code>GetTelemetrySubscriptions</code>  request body for v0, or in the request header for v1.</p><p>Key:</p><ul><li><strong>UUID-H</strong> - client instance ID sent by client in header, generated by client</li><li><strong>UUID-R</strong> - client instance ID sent by client in request, generated by client</li><li><strong>UUID-B</strong> - client instance ID sent by broker in response, generated by broker</li></ul><p>In summary, for <strong>GetTelemetrySubscriptions</strong>, here are the combinations:</p><table class=\"relative-table wrapped\" style=\"width: 97.334755%;\"><colgroup><col style=\"width: 25.520264%;\" /><col style=\"width: 36.25411%;\" /><col style=\"width: 38.1161%;\" /></colgroup><tbody><tr><th scope=\"row\"><br /></th><th scope=\"col\">Old broker</th><th scope=\"col\">New broker</th></tr><tr><th scope=\"row\">Old client</th><td><p><span style=\"letter-spacing: 0.0px;\"><strong>GetTelemetrySubscriptions</strong> v0</span></p><p><span style=\"letter-spacing: 0.0px;\">Initial request:</span></p><ul><li>request.ClientInstanceID=0</li><li>response.ClientInstanceId=<strong>UUID-B</strong></li></ul><p>Subsequent requests:</p><ul><li>request.ClientInstanceId=<strong>UUID-B</strong></li><li>response.ClientInstanceId=0</li></ul></td><td><p><strong>GetTelemetrySubscriptions</strong> v0</p><p>Initial request:</p><ul><li>request.ClientInstanceID=0</li><li>response.ClientInstanceId=<strong>UUID-B</strong></li></ul><p>Subsequent requests:</p><ul><li>request.ClientInstanceId=<strong>UUID-B</strong></li><li>response.ClientInstanceId=0</li></ul></td></tr><tr><th scope=\"row\">New client</th><td><p><strong>GetTelemetrySubscriptions</strong> v0</p><p>Initial request:</p><ul><li>request.ClientInstanceId=<strong>UUID-R</strong></li><li>response.ClientInstanceId=0</li></ul><p>Subsequent requests:</p><ul><li>request.ClientInstanceId=<strong>UUID-R</strong></li><li>response.ClientInstanceId=0 </li></ul></td><td><p><strong>GetTelemetrySubscriptions</strong> v1</p><p>Initial request:</p><ul><li>header.ClientInstanceId=<strong>UUID-H</strong></li></ul><p>Subsequent requests:</p><ul><li>header.ClientInstanceId is omitted (<strong>UUID-H is cached in connection state)</strong></li></ul></td></tr></tbody></table><h2>Changes to the Kafka protocol message schemas</h2><p>In the JSON schema files which describe the RPC request and responses, the <code>&quot;flexibleVersions&quot;</code> property in the request schemas indicates which versions of the requests use the v2 request header. For example, consider the <code>DeleteGroups</code>  request schema prior to this KIP.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"f57c97a7-a718-435d-b44e-e3ee17b045b8\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 42,\n  \"type\": \"request\",\n  \"listeners\": [\"broker\"],\n  \"name\": \"DeleteGroupsRequest\",\n  \"validVersions\": \"0-2\",\n  \"flexibleVersions\": \"2+\",\n  \"fields\": [\n    { \"name\": \"GroupsNames\", \"type\": \"[]string\", \"versions\": \"0+\", \"entityType\": \"groupId\",\n      \"about\": \"The group names to delete.\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><p>This schema describes 3 versions of the request. Request versions 0 and 1 use v1 of the request header, and request version 2 uses v2 of the request header. Note that v0 of the request header is no longer used.</p><p>This KIP introduces a new property for the request schemas called <code>&quot;headerVersions&quot;</code> which contains a map from request version ranges to request header versions. The keys of the map can be single versions like &quot;0&quot;, closed version ranges like &quot;1-2&quot;, and must end with an open version range like &quot;3+&quot;. The ranges of the keys must be non-overlapping, continuous and cover the range of valid versions. For example, the <code>DeleteGroups</code>  request schema becomes the following.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"6d08f7ff-c7dc-4c1d-92e3-e089ea9263c8\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 42,\n  \"type\": \"request\",\n  \"listeners\": [\"broker\"],\n  \"name\": \"DeleteGroupsRequest\",\n  \"validVersions\": \"0-3\",\n  \"flexibleVersions\": \"2+\",\n  \"headerVersions\": {\n    \"0-1\": \"1\",\n    \"2\": \"2\",\n    \"3+\": \"3\"\n  },\n  \"fields\": [\n    { \"name\": \"GroupsNames\", \"type\": \"[]string\", \"versions\": \"0+\", \"entityType\": \"groupId\",\n      \"about\": \"The group names to delete.\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><p>The modified schema describes 4 versions of the request. Request versions 0 to 1 use v1 of the request header. Request version 2 uses v2 of the request header. Request versions 3 and higher use v3 of the request header, which includes the client instance ID.</p><p>In the same way, the <code>&quot;headerVersions&quot;</code>  property is also added to the response schemas. Only versions 0 and 1 of the response header exist.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"26d58af3-9eaa-4d36-9e47-06f79fa89e92\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 42,\n  \"type\": \"response\",\n  \"name\": \"DeleteGroupsResponse\",\n  // Starting in version 1, on quota violation, brokers send out responses before throttling.\n  //\n  // Version 2 is the first flexible version.\n  \"validVersions\": \"0-2\",\n  \"flexibleVersions\": \"2+\",\n  \"headerVersions\": {\n    \"0-1\": \"0\",\n    \"2+\": \"1\"\n  },\n  \"fields\": [\n    { \"name\": \"ThrottleTimeMs\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"The duration in milliseconds for which the request was throttled due to a quota violation, or zero if the request did not violate any quota.\" },\n    { \"name\": \"Results\", \"type\": \"[]DeletableGroupResult\", \"versions\": \"0+\",\n      \"about\": \"The deletion results.\", \"fields\": [\n      { \"name\": \"GroupId\", \"type\": \"string\", \"versions\": \"0+\", \"mapKey\": true, \"entityType\": \"groupId\",\n        \"about\": \"The group id.\" },\n      { \"name\": \"ErrorCode\", \"type\": \"int16\", \"versions\": \"0+\",\n        \"about\": \"The deletion error, or 0 if the deletion succeeded.\" }\n    ]}\n  ]\n}\n\n]]></ac:plain-text-body></ac:structured-macro><h1>Public Interfaces</h1><h2>Client API Changes</h2><p>The client instance ID is calculated during the constructor of the <code>Producer</code> , <code>Consumer</code> , <code>RebalanceConsumer</code> , <code>ShareConsumer</code> and <code>Admin</code>  implementations so there is no need to have a timeout parameter on the accessor method. The following method is added to these interfaces:</p><pre><span style=\"color:var(--ds-background-warning-bold-pressed,#cf9f02);\">public </span>Uuid <span style=\"color:var(--ds-background-accent-orange-subtler-pressed,#fea362);\">clientInstanceId</span>()</pre><p>and then the following method is deprecated for removal in Apache Kafka 5.0:</p><pre><span style=\"color:var(--ds-background-warning-bold-pressed,#cf9f02);\">public </span>Uuid <span style=\"color:var(--ds-background-accent-orange-subtler-pressed,#fea362);\">clientInstanceId</span>(Duration timeout)</pre><p>In a similar vein, the following method in <code>KafkaStreams</code> is added:</p><pre><span style=\"color:var(--ds-background-warning-bold-pressed,#cf9f02);\">public </span>ClientInstanceIds <span style=\"color:var(--ds-background-accent-orange-subtler-pressed,#fea362);\">clientInstanceIds</span>()</pre><p>and then the following method is deprecated for removal in Apache Kafka 5.0:</p><pre><span style=\"color:var(--ds-background-warning-bold-pressed,#cf9f02);\">public </span>ClientInstanceIds <span style=\"color:var(--ds-background-accent-orange-subtler-pressed,#fea362);\">clientInstanceIds</span>(Duration timeout)</pre><h2>Kafka Protocol Changes</h2><p>This KIP introduces new versions of all Kafka RPCs with the exception of <code>SaslHandshake</code> . Apart from the RPCs specifically called out below, the RPC requests are only changed by the addition of a version which uses v3 of the request header, as illustrated using the example of <code>DeleteGroups</code> earlier.</p><h3>Request Header</h3><p>This KIP introduces version 3 of the request header which adds the <code>ClientInstanceId</code> field. It is added as a tagged field to preserve deserialisation compatibility with version 2 of the request header, so that older brokers understand and safely ignore the new field.</p><p>In version 3 of the request header, the client ID is only sent on the initial request on each connection and must be null for subsequent requests. The client instance ID is only sent on the initial request on each connection and then must be omitted for subsequent requests.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"79376aa5-d489-400e-9559-e1f5067befd6\"><ac:plain-text-body><![CDATA[{\n  \"type\": \"header\",\n  \"name\": \"RequestHeader\",\n  // Version 0 was removed in Apache Kafka 4.0, Version 1 is the new baseline.\n  //\n  // Version 0 of the RequestHeader is only used by v0 of ControlledShutdownRequest.\n  //\n  // Version 1 is the first version with ClientId.\n  //\n  // Version 2 is the first flexible version.\n  //\n  // Version 3 introduces ClientInstanceId. (KIP-1313)\n  \"validVersions\": \"1-3\",\n  \"flexibleVersions\": \"2+\",\n  \"fields\": [\n    { \"name\": \"RequestApiKey\", \"type\": \"int16\", \"versions\": \"0+\",\n      \"about\": \"The API key of this request.\" },\n    { \"name\": \"RequestApiVersion\", \"type\": \"int16\", \"versions\": \"0+\",\n      \"about\": \"The API version of this request.\" },\n    { \"name\": \"CorrelationId\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"The correlation ID of this request.\" },\n\n    // The ClientId string must be serialized with the old-style two-byte length prefix.\n    // The reason is that older brokers must be able to read the request header for any\n    // ApiVersionsRequest, even if it is from a newer version.\n    // Since the client is sending the ApiVersionsRequest in order to discover what\n    // versions are supported, the client does not know the best version to use.\n    { \"name\": \"ClientId\", \"type\": \"string\", \"versions\": \"1+\", \"nullableVersions\": \"1+\", \"flexibleVersions\": \"none\",\n      \"about\": \"The client ID, for identifying an application.\" },\n    { \"name\": \"ClientInstanceId\", \"type\": \"uuid\", \"versions\": \"3+\", \"taggedVersions\": \"3+\", \"tag\": 0,\n      \"about\": \"The client instance ID, for identifying an instance of an application.\" }\n  ]\n}\n]]></ac:plain-text-body></ac:structured-macro><h3>OffsetDelete API</h3><p>A new version of <code>OffsetDelete</code>  is introduced.</p><h4>Request</h4><p>The v1 request uses the v3 request header and it is the first flexible version. None of the versions of this request use the v2 request header.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"d6043558-4ca6-4911-83f6-f2eb809a4431\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 47,\n  \"type\": \"request\",\n  \"listeners\": [\"broker\"],\n  \"name\": \"OffsetDeleteRequest\",\n  \"validVersions\": \"0-1\",\n  \"flexibleVersions\": \"1+\",\n  \"headerVersions\": {\n    \"0\": \"1\",\n    \"1+\": \"3\"\n  },\n  \"fields\": [\n    { \"name\": \"GroupId\", \"type\": \"string\", \"versions\": \"0+\", \"entityType\": \"groupId\",\n      \"about\": \"The unique group identifier.\" },\n    { \"name\": \"Topics\", \"type\": \"[]OffsetDeleteRequestTopic\", \"versions\": \"0+\",\n      \"about\": \"The topics to delete offsets for.\", \"fields\": [\n        { \"name\": \"Name\",  \"type\": \"string\",  \"versions\": \"0+\", \"mapKey\": true, \"entityType\": \"topicName\",\n          \"about\": \"The topic name.\" },\n        { \"name\": \"Partitions\", \"type\": \"[]OffsetDeleteRequestPartition\", \"versions\": \"0+\",\n          \"about\": \"Each partition to delete offsets for.\", \"fields\": [\n            { \"name\": \"PartitionIndex\", \"type\": \"int32\", \"versions\": \"0+\",\n              \"about\": \"The partition index.\" }\n          ]\n        }\n      ]\n    }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><h4><span>Response</span></h4><p><span>The v1 response is the first flexible version.</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"4a88b265-8bd5-4ee0-9699-afe6340e62cf\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 47,\n  \"type\": \"response\",\n  \"name\": \"OffsetDeleteResponse\",\n  \"validVersions\": \"0-1\",\n  \"flexibleVersions\": \"1+\",\n  \"headerVersions\": {\n    \"0\": \"0\",\n    \"1+\": \"1\"\n  },\n  \"fields\": [\n    { \"name\": \"ErrorCode\", \"type\": \"int16\", \"versions\": \"0+\",\n      \"about\": \"The top-level error code, or 0 if there was no error.\" },\n    { \"name\": \"ThrottleTimeMs\",  \"type\": \"int32\",  \"versions\": \"0+\", \"ignorable\": true,\n      \"about\": \"The duration in milliseconds for which the request was throttled due to a quota violation, or zero if the request did not violate any quota.\" },\n    { \"name\": \"Topics\", \"type\": \"[]OffsetDeleteResponseTopic\", \"versions\": \"0+\",\n      \"about\": \"The responses for each topic.\", \"fields\": [\n        { \"name\": \"Name\", \"type\": \"string\", \"versions\": \"0+\", \"mapKey\": true, \"entityType\": \"topicName\",\n          \"about\": \"The topic name.\" },\n        { \"name\": \"Partitions\", \"type\": \"[]OffsetDeleteResponsePartition\", \"versions\": \"0+\",\n          \"about\": \"The responses for each partition in the topic.\", \"fields\": [\n            { \"name\": \"PartitionIndex\", \"type\": \"int32\", \"versions\": \"0+\", \"mapKey\": true,\n              \"about\": \"The partition index.\" },\n            { \"name\": \"ErrorCode\", \"type\": \"int16\", \"versions\": \"0+\",\n              \"about\": \"The error code, or 0 if there was no error.\" }\n          ]\n        }\n      ]\n    }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><h3>GetTelemetrySubscriptions API</h3><p>A new version of <code>GetTelemetrySubscriptions</code>  is introduced which removes the <code>ClientInstanceId</code> from the request and response.</p><h4>Request</h4><p>The v1 request uses the v3 request header, which contains the client instance ID. As a result, the <code>clientInstanceId</code>  field is removed in the v1 request body. With v1, the client is responsible for calculating the client instance ID.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b8e9c2f0-27b7-428d-b498-e6f25572a622\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 71,\n  \"type\": \"request\",\n  \"listeners\": [\"broker\"],\n  \"name\": \"GetTelemetrySubscriptionsRequest\",\n  \"validVersions\": \"0-1\",\n  \"flexibleVersions\": \"0+\",\n  \"headerVersions\": {\n    \"0\": \"2\",\n    \"1+\": \"3\"\n  },\n  \"fields\": [\n    { \"name\": \"ClientInstanceId\", \"type\": \"uuid\", \"versions\": \"0\",\n      \"about\": \"Unique id for this client instance, must be set to 0 on the first request.\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><h4>Response</h4><p>The v1 response removes the <code>ClientInstanceId</code> . With v1, the client is responsible for calculating the client instance ID.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b890f742-1301-4136-87cd-33f6f15c6273\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 71,\n  \"type\": \"response\",\n  \"name\": \"GetTelemetrySubscriptionsResponse\",\n  \"validVersions\": \"0-1\",\n  \"flexibleVersions\": \"0+\",\n  \"headerVersions\": {\n    \"0+\": \"1\"\n  },\n  \"fields\": [\n    { \"name\": \"ThrottleTimeMs\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"The duration in milliseconds for which the request was throttled due to a quota violation, or zero if the request did not violate any quota.\" },\n    { \"name\": \"ErrorCode\", \"type\": \"int16\", \"versions\": \"0+\",\n      \"about\": \"The error code, or 0 if there was no error.\" },\n    { \"name\": \"ClientInstanceId\", \"type\": \"uuid\", \"versions\": \"0\",\n      \"about\": \"Assigned client instance id if ClientInstanceId was 0 in the request, else 0.\" },\n    { \"name\": \"SubscriptionId\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"Unique identifier for the current subscription set for this client instance.\" },\n    { \"name\": \"AcceptedCompressionTypes\", \"type\": \"[]int8\", \"versions\": \"0+\",\n      \"about\": \"Compression types that broker accepts for the PushTelemetryRequest.\" },\n    { \"name\": \"PushIntervalMs\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"Configured push interval, which is the lowest configured interval in the current subscription set.\" },\n    { \"name\": \"TelemetryMaxBytes\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"The maximum bytes of binary data the broker accepts in PushTelemetryRequest.\" },\n    { \"name\": \"DeltaTemporality\", \"type\": \"bool\", \"versions\": \"0+\",\n      \"about\": \"Flag to indicate monotonic/counter metrics are to be emitted as deltas or cumulative values.\" },\n    { \"name\": \"RequestedMetrics\", \"type\": \"[]string\", \"versions\": \"0+\",\n      \"about\": \"Requested metrics prefix string match. Empty array: No metrics subscribed, Array[0] empty string: All metrics subscribed.\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><h3>PushTelemetry API</h3><p>A new version of <code>PushTelemetry</code>  is introduced which removes <code>ClientInstanceId</code> from the request.</p><h4>Request</h4><p>The v1 request uses the v3 request header, which contains the client instance ID. As a result, the <code>clientInstanceId</code>  field is removed in the v1 request body.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"6fa62666-bc77-49a9-860e-9008de8d7f8f\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 72,\n  \"type\": \"request\",\n  \"listeners\": [\"broker\"],\n  \"name\": \"PushTelemetryRequest\",\n  \"validVersions\": \"0-1\",\n  \"flexibleVersions\": \"0+\",\n  \"headerVersions\": {\n    \"0\": \"2\",\n    \"1+\": \"3\"\n  },\n  \"fields\": [\n    { \"name\": \"ClientInstanceId\", \"type\": \"uuid\", \"versions\": \"0\",\n      \"about\": \"Unique id for this client instance.\" },\n    { \"name\": \"SubscriptionId\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"Unique identifier for the current subscription.\" },\n    { \"name\": \"Terminating\", \"type\": \"bool\", \"versions\": \"0+\",\n      \"about\": \"Client is terminating the connection.\" },\n    { \"name\": \"CompressionType\", \"type\": \"int8\", \"versions\": \"0+\",\n      \"about\": \"Compression codec used to compress the metrics.\" },\n    { \"name\": \"Metrics\", \"type\": \"bytes\", \"versions\": \"0+\", \"zeroCopy\": true,\n      \"about\": \"Metrics encoded in OpenTelemetry MetricsData v1 protobuf format.\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><h4>Response</h4><p>No change is made to the schema of the response.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"4295fcb7-1530-4bba-8096-bb43032d6441\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 72,\n  \"type\": \"response\",\n  \"name\": \"PushTelemetryResponse\",\n  \"validVersions\": \"0-1\",\n  \"flexibleVersions\": \"0+\",\n  \"headerVersions\": {\n    \"0+\": \"1\"\n  },\n  \"fields\": [\n    { \"name\": \"ThrottleTimeMs\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"The duration in milliseconds for which the request was throttled due to a quota violation, or zero if the request did not violate any quota.\" },\n    { \"name\": \"ErrorCode\", \"type\": \"int16\", \"versions\": \"0+\",\n      \"about\": \"The error code, or 0 if there was no error.\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><h1>Compatibility, Deprecation, and Migration Plan</h1><p>The change follows the usual mechanism for versioning of protocol requests. There should be no compatibility or migration issues introduced by this.</p><p>A new metadata version (provisionally <code>IBP_4_5_IV0</code> ) is introduced to ensure that inter-broker RPC versions are introduced safely and the bumped versions are only used when the cluster consists only of brokers which understand them.</p><p>The evolution of the request header needs careful handling because we must ensure that modern requests can be parsed by older broker versions. As a result, the v3 request header adds the <code>ClientInstanceId</code>  as a tagged field whose presence is expected and safely ignored by older brokers. This deserialization compatibility with the older request header versions is an important characteristic which must be maintained in the future.</p><p>This KIP does not need to introduce any additional feature version bumps. The RPC version negotiation is enough.</p><h1>Test Plan</h1><p>Unit tests will be added to ensure that the new behavior works as expected. The existing integration and system tests should be entirely unaffected by the change, which would show that there was no behavioral impact.</p><h1>Rejected Alternatives</h1><p>It was planned to add a tagged field for client instance ID to version 2 of the request header. Although this proposal passed a vote, discussion started up again centered around requiring a tagged field which is by its very nature optional. Consequently, the KIP was revised to introduce version 3 of the request header.</p><p>Version 3 of the request header was originally planned to add <code>ClientInstanceId</code>  as a proper field rather than a tagged field. However, it was realised during the KIP discussion that making it a tagged field gave better compatibility and migration characteristics. The combination of a request header version bump and a tagged field won through.</p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/406624038?status=historical&version=30"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1305
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=446071382",
+    "edit": "/pages/resumedraft.action?draftId=446071382&draftShareId=e822ebd8-347c-4b06-b837-25dd968f5b83",
+    "tinyui": "/x/VoKWGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/406624038?status=historical&version=30"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/406624038/child?parentVersion=30",
+    "restrictions": "/rest/api/content/406624038/restriction/byOperation",
+    "history": "/rest/api/content/406624038/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/406624038/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/406624038/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "406624038",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1313: Client instance ID in all request headers",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-06T07:45:14.000Z",
+    "message": "Checking on non-initial requests",
+    "number": 29,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/29"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=29"
+    }
+   },
+   "position": 1305,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><h1>Status</h1><p><strong>Current state</strong>: <em>Under discussion</em></p><p><strong>Discussion thread</strong>: <em><a href=\"https://lists.apache.org/thread/loxjb8owwjplnjz3sk6dqkm5gkkn3xt4\">here</a><br /></em></p><p><strong>Voting thread (1 of 2):</strong> <em><a href=\"https://lists.apache.org/thread/06qkdj9278h7jzt4glp8rbyzgbt3gvhq\">here</a> - KIP reworked following initial vote</em></p><p><strong>JIRA</strong>: <em><a href=\"https://issues.apache.org/jira/browse/KAFKA-20548\">here</a><br /></em></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p>Today, all Kafka protocol requests include the client ID. This identifier can be set by the user setting the client configuration property <code>client.id</code>. This is a useful capability, but it has limitations. The client ID was meant for identifying an application, and not the instances of an application. Often, it is not sufficient to identify a particular client instance.</p><p>This KIP adds a UUID called the client instance ID into the request header of (almost) all Kafka protocol requests. Each client has a different client instance ID, so correlating requests from a particular client becomes much easier. An immediate benefit is that it can be included in request logging for troubleshooting. It is being added to improve traceability and problem determination.</p><p><span style=\"text-decoration: none;color:var(--ds-text,#172b4d);\">In addition, the client ID is sent on each and every request. Users sometimes have use quite long client IDs, even encoding metadata such as the availability zone into the string. The client ID is then sent on every request, in spite of the fact that the Kafka protocol is connection-oriented and it is really only necessary to send the string on the first request after connection initiation. Sending it repeatedly is wasteful.</span></p><h1>Proposed Changes</h1><p>This KIP proposes the following changes to the Kafka protocol.</p><h2>Client Instance ID</h2><p>This KIP proposes adding a UUID called the <strong>client instance ID</strong> into the request header of all Kafka protocol requests (with a few exceptions as documented below). The client uses the same client instance ID for its connections to every broker throughout its lifetime, even when it rebootstraps and makes new connections. The consistency and uniqueness of the identifiers are both important characteristics.</p><p>Version 3 of the RPC request header is introduced which adds the client instance ID. A new version of every RPC is introduced using the v3 request header, with the exception of <code>SaslHandshake</code>  which cannot be bumped due to incorrect version negotiation in the past.</p><p>Those familiar with <ac:link><ri:page ri:space-key=\"KAFKA\" ri:content-title=\"KIP-714: Client metrics and observability\" /><ac:plain-text-link-body><![CDATA[KIP-714]]></ac:plain-text-link-body></ac:link> will be aware that it already introduced the client instance ID, so this KIP actually proposes elevating that concept into a universal unique identifier for client instances in all RPCs.</p><p>The client instance ID is calculated by the client during the constructor of the client before it makes its initial connection to the cluster. This differs slightly from how KIP-714 initialized the client instance ID. In KIP-714, the client instance ID was created by the broker which responded to a client's first <code>GetTelemetrySubscriptions</code> RPC. Similarly, in KIP-848, the member ID was created by the group coordinator in response to a heartbeat, but subsequently KIP-1082 changed this so that the client created its own member ID. The protocol now favors client-generated IDs so this KIP calculates the client instance ID on the client. The Apache Kafka Java client will use <code>org.apache.kafka.common.Uuid.randonUuid()</code>  to calculate the client instance ID. The client instance ID is not permitted to be either of the reserved UUIDs (zero or one).</p><p>If a connection uses the v3 request header in its first request, it must specify the client instance ID and then omit the client instance ID from all subsequent requests on that connection. Note that <code>SaslHandshake</code> is excluded from this checking because it cannot carry a client instance ID. The initial client instance ID for each connection will be cached by the broker (this is an implementation detail, but caching it in the <code>ChannelMetadataRegistry</code> is an option). Once a client has specified a client instance ID in its first request, any subsequent requests which specify a different value for the client instance ID will be rejected with error code <code>INVALID_REQUEST</code>.</p><p>Because the versions of RPCs which can be used inter-broker are being increased, a new metadata version (provisionally <code>IBP_4_5_IV0</code> ) is also introduced to gate the use of the newer versions.</p><h2>Client ID</h2><p>This KIP proposes sending the client ID only on the initial request on each connection, and then sending a null client ID for all subsequent requests. <span style=\"text-decoration: none;color:var(--ds-text,#172b4d);\">This eliminates the unnecessary overhead of repeatedly sending the same client ID string to the broker on every request. The initial client ID for each connection will be cached by the broker (this is an implementation detail, but caching it in the </span><code>ChannelMetadataRegistry</code><span style=\"text-decoration: none;color:var(--ds-text,#172b4d);\"> is an option).</span></p><p><span style=\"text-decoration: none;color:var(--ds-text,#172b4d);\">This new behavior can only be completely adopted when both client and broker support it. It works as follows:</span></p><ul><li>For the initial request regardless of request header version, the client sends the client ID</li><li>For subsequent requests using the v3 request header (or higher), the client sends a null client ID</li><li>For subsequent requests using an earlier version of the request header, the client sends the client ID</li></ul><p><span style=\"text-decoration: none;color:var(--ds-text,#172b4d);\">After this KIP, the broker will assume that the client ID from the initial request applies to all subsequent requests on a connection, and it will ignore the client ID specified on any subsequent requests (request header older than v3) or reject subsequent requests with error code <code>INVALID_REQUEST</code>  if the client ID is specified (request header v3 or later).</span></p><h3>Forwarded RPC requests</h3><p>When a broker forwards an RPC request to a controller, the client ID must be populated in the forwarded request header. This is so request quotas can be enforced. If the forwarding broker has a cached client ID for a connection and needs to forward a request which omits the client ID, it populates the client ID in the forwarded request with the cached client ID.</p><h2>Alignment of identifiers</h2><p>By adding client instance ID to the request headers, we now had a unique application instance identifier which we can use for other purposes such as the client telemetry client instance ID and the member ID in the group protocols. The client instance ID from the request headers is used as the client telemetry client instance ID; new versions of the KIP-714 RPCs are introduced to ensure this. The alignment of other identifiers is by convention (and the Java client will follow the convention) rather than mandate. In the language of standards, the client SHOULD use the same UUID in request headers as it uses for the member ID in the group protocols. This alignment just makes traceability and problem determination more straightforward.</p><p style=\"margin-left: 40.0px;\">In the modern group protocol RPCs such as <code>ConsumerGroupHeartbeat</code>  and <code>ShareGroupHeartbeat</code> , the member ID is a string. In practice, it is a UUID which is encoded into a string, but the nature of this conversion is not specified in the protocol and it really is treated as a string in the broker. The Java client uses the <code>org.apache.kafka.common.Uuid</code>  class to generate the member ID and convert it into a string. The client instance ID really is a UUID in the protocol. When the Java code in the broker converts this into a string, it uses the same Java code as the client does for the member ID. As a result, the member ID and client instance ID can trivially be the same when represented as strings, even though they have different data types in the protocol. For traceability and problem determination, this &quot;conventional&quot; alignment works well.</p><p style=\"margin-left: 40.0px;\">However, at least one other Kafka client implementation uses a slightly different string encoding of the member ID which does not match that generated by <code>org.apache.kafka.common.Uuid</code> . This is valid with regards to KIP-848 and KIP-932, but does unfortunately mean that the member ID does not look the same as the client instance ID, even if they have the same original UUID value in the client.</p><p>The following table indicates the behavior of the KIP-714 RPCs before and after this KIP. A client implementing this KIP will always calculate its own client instance ID, which it sends to the broker in the <code>GetTelemetrySubscriptions</code>  request body for v0, or in the request header for v1.</p><p>Key:</p><ul><li><strong>UUID-H</strong> - client instance ID sent by client in header, generated by client</li><li><strong>UUID-R</strong> - client instance ID sent by client in request, generated by client</li><li><strong>UUID-B</strong> - client instance ID sent by broker in response, generated by broker</li></ul><p>In summary, for <strong>GetTelemetrySubscriptions</strong>, here are the combinations:</p><table class=\"relative-table wrapped\" style=\"width: 97.334755%;\"><colgroup><col style=\"width: 25.520264%;\" /><col style=\"width: 36.25411%;\" /><col style=\"width: 38.1161%;\" /></colgroup><tbody><tr><th scope=\"row\"><br /></th><th scope=\"col\">Old broker</th><th scope=\"col\">New broker</th></tr><tr><th scope=\"row\">Old client</th><td><p><span style=\"letter-spacing: 0.0px;\"><strong>GetTelemetrySubscriptions</strong> v0</span></p><p><span style=\"letter-spacing: 0.0px;\">Initial request:</span></p><ul><li>request.ClientInstanceID=0</li><li>response.ClientInstanceId=<strong>UUID-B</strong></li></ul><p>Subsequent requests:</p><ul><li>request.ClientInstanceId=<strong>UUID-B</strong></li><li>response.ClientInstanceId=0</li></ul></td><td><p><strong>GetTelemetrySubscriptions</strong> v0</p><p>Initial request:</p><ul><li>request.ClientInstanceID=0</li><li>response.ClientInstanceId=<strong>UUID-B</strong></li></ul><p>Subsequent requests:</p><ul><li>request.ClientInstanceId=<strong>UUID-B</strong></li><li>response.ClientInstanceId=0</li></ul></td></tr><tr><th scope=\"row\">New client</th><td><p><strong>GetTelemetrySubscriptions</strong> v0</p><p>Initial request:</p><ul><li>request.ClientInstanceId=<strong>UUID-R</strong></li><li>response.ClientInstanceId=0</li></ul><p>Subsequent requests:</p><ul><li>request.ClientInstanceId=<strong>UUID-R</strong></li><li>response.ClientInstanceId=0 </li></ul></td><td><p><strong>GetTelemetrySubscriptions</strong> v1</p><p>Initial request:</p><ul><li>header.ClientInstanceId=<strong>UUID-H</strong></li></ul><p>Subsequent requests:</p><ul><li>header.ClientInstanceId is omitted (<strong>UUID-H is cached in connection state)</strong></li></ul></td></tr></tbody></table><h2>Changes to the Kafka protocol message schemas</h2><p>In the JSON schema files which describe the RPC request and responses, the <code>&quot;flexibleVersions&quot;</code> property in the request schemas indicates which versions of the requests use the v2 request header. For example, consider the <code>DeleteGroups</code>  request schema prior to this KIP.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"f57c97a7-a718-435d-b44e-e3ee17b045b8\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 42,\n  \"type\": \"request\",\n  \"listeners\": [\"broker\"],\n  \"name\": \"DeleteGroupsRequest\",\n  \"validVersions\": \"0-2\",\n  \"flexibleVersions\": \"2+\",\n  \"fields\": [\n    { \"name\": \"GroupsNames\", \"type\": \"[]string\", \"versions\": \"0+\", \"entityType\": \"groupId\",\n      \"about\": \"The group names to delete.\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><p>This schema describes 3 versions of the request. Request versions 0 and 1 use v1 of the request header, and request version 2 uses v2 of the request header. Note that v0 of the request header is no longer used.</p><p>This KIP introduces a new property for the request schemas called <code>&quot;headerVersions&quot;</code> which contains a map from request version ranges to request header versions. The keys of the map can be single versions like &quot;0&quot;, closed version ranges like &quot;1-2&quot;, and must end with an open version range like &quot;3+&quot;. The ranges of the keys must be non-overlapping, continuous and cover the range of valid versions. For example, the <code>DeleteGroups</code>  request schema becomes the following.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"6d08f7ff-c7dc-4c1d-92e3-e089ea9263c8\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 42,\n  \"type\": \"request\",\n  \"listeners\": [\"broker\"],\n  \"name\": \"DeleteGroupsRequest\",\n  \"validVersions\": \"0-3\",\n  \"flexibleVersions\": \"2+\",\n  \"headerVersions\": {\n    \"0-1\": \"1\",\n    \"2\": \"2\",\n    \"3+\": \"3\"\n  },\n  \"fields\": [\n    { \"name\": \"GroupsNames\", \"type\": \"[]string\", \"versions\": \"0+\", \"entityType\": \"groupId\",\n      \"about\": \"The group names to delete.\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><p>The modified schema describes 4 versions of the request. Request versions 0 to 1 use v1 of the request header. Request version 2 uses v2 of the request header. Request versions 3 and higher use v3 of the request header, which includes the client instance ID.</p><p>In the same way, the <code>&quot;headerVersions&quot;</code>  property is also added to the response schemas. Only versions 0 and 1 of the response header exist.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"26d58af3-9eaa-4d36-9e47-06f79fa89e92\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 42,\n  \"type\": \"response\",\n  \"name\": \"DeleteGroupsResponse\",\n  // Starting in version 1, on quota violation, brokers send out responses before throttling.\n  //\n  // Version 2 is the first flexible version.\n  \"validVersions\": \"0-2\",\n  \"flexibleVersions\": \"2+\",\n  \"headerVersions\": {\n    \"0-1\": \"0\",\n    \"2+\": \"1\"\n  },\n  \"fields\": [\n    { \"name\": \"ThrottleTimeMs\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"The duration in milliseconds for which the request was throttled due to a quota violation, or zero if the request did not violate any quota.\" },\n    { \"name\": \"Results\", \"type\": \"[]DeletableGroupResult\", \"versions\": \"0+\",\n      \"about\": \"The deletion results.\", \"fields\": [\n      { \"name\": \"GroupId\", \"type\": \"string\", \"versions\": \"0+\", \"mapKey\": true, \"entityType\": \"groupId\",\n        \"about\": \"The group id.\" },\n      { \"name\": \"ErrorCode\", \"type\": \"int16\", \"versions\": \"0+\",\n        \"about\": \"The deletion error, or 0 if the deletion succeeded.\" }\n    ]}\n  ]\n}\n\n]]></ac:plain-text-body></ac:structured-macro><h1>Public Interfaces</h1><h2>Client API Changes</h2><p>The client instance ID is calculated during the constructor of the <code>Producer</code> , <code>Consumer</code> , <code>RebalanceConsumer</code> , <code>ShareConsumer</code> and <code>Admin</code>  implementations so there is no need to have a timeout parameter on the accessor method. The following method is added to these interfaces:</p><pre><span style=\"color:var(--ds-background-warning-bold-pressed,#cf9f02);\">public </span>Uuid <span style=\"color:var(--ds-background-accent-orange-subtler-pressed,#fea362);\">clientInstanceId</span>()</pre><p>and then the following method is deprecated for removal in Apache Kafka 5.0:</p><pre><span style=\"color:var(--ds-background-warning-bold-pressed,#cf9f02);\">public </span>Uuid <span style=\"color:var(--ds-background-accent-orange-subtler-pressed,#fea362);\">clientInstanceId</span>(Duration timeout)</pre><p>In a similar vein, the following method in <code>KafkaStreams</code> is added:</p><pre><span style=\"color:var(--ds-background-warning-bold-pressed,#cf9f02);\">public </span>ClientInstanceIds <span style=\"color:var(--ds-background-accent-orange-subtler-pressed,#fea362);\">clientInstanceIds</span>()</pre><p>and then the following method is deprecated for removal in Apache Kafka 5.0:</p><pre><span style=\"color:var(--ds-background-warning-bold-pressed,#cf9f02);\">public </span>ClientInstanceIds <span style=\"color:var(--ds-background-accent-orange-subtler-pressed,#fea362);\">clientInstanceIds</span>(Duration timeout)</pre><h2>Kafka Protocol Changes</h2><p>This KIP introduces new versions of all Kafka RPCs with the exception of <code>SaslHandshake</code> . Apart from the RPCs specifically called out below, the RPC requests are only changed by the addition of a version which uses v3 of the request header, as illustrated using the example of <code>DeleteGroups</code> earlier.</p><h3>Request Header</h3><p>This KIP introduces version 3 of the request header which adds the <code>ClientInstanceId</code> field. It is added as a tagged field to preserve deserialisation compatibility with version 2 of the request header, so that older brokers understand and safely ignore the new field.</p><p>In version 3 of the request header, the client ID is only sent on the initial request on each connection and must be null for subsequent requests. The client instance ID is only sent on the initial request on each connection and then omitted for subsequent requests.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"79376aa5-d489-400e-9559-e1f5067befd6\"><ac:plain-text-body><![CDATA[{\n  \"type\": \"header\",\n  \"name\": \"RequestHeader\",\n  // Version 0 was removed in Apache Kafka 4.0, Version 1 is the new baseline.\n  //\n  // Version 0 of the RequestHeader is only used by v0 of ControlledShutdownRequest.\n  //\n  // Version 1 is the first version with ClientId.\n  //\n  // Version 2 is the first flexible version.\n  //\n  // Version 3 introduces ClientInstanceId. (KIP-1313)\n  \"validVersions\": \"1-3\",\n  \"flexibleVersions\": \"2+\",\n  \"fields\": [\n    { \"name\": \"RequestApiKey\", \"type\": \"int16\", \"versions\": \"0+\",\n      \"about\": \"The API key of this request.\" },\n    { \"name\": \"RequestApiVersion\", \"type\": \"int16\", \"versions\": \"0+\",\n      \"about\": \"The API version of this request.\" },\n    { \"name\": \"CorrelationId\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"The correlation ID of this request.\" },\n\n    // The ClientId string must be serialized with the old-style two-byte length prefix.\n    // The reason is that older brokers must be able to read the request header for any\n    // ApiVersionsRequest, even if it is from a newer version.\n    // Since the client is sending the ApiVersionsRequest in order to discover what\n    // versions are supported, the client does not know the best version to use.\n    { \"name\": \"ClientId\", \"type\": \"string\", \"versions\": \"1+\", \"nullableVersions\": \"1+\", \"flexibleVersions\": \"none\",\n      \"about\": \"The client ID, for identifying an application.\" },\n    { \"name\": \"ClientInstanceId\", \"type\": \"uuid\", \"versions\": \"3+\", \"taggedVersions\": \"3+\", \"tag\": 0,\n      \"about\": \"The client instance ID, for identifying an instance of an application.\" }\n  ]\n}\n]]></ac:plain-text-body></ac:structured-macro><h3>OffsetDelete API</h3><p>A new version of <code>OffsetDelete</code>  is introduced.</p><h4>Request</h4><p>The v1 request uses the v3 request header and it is the first flexible version. None of the versions of this request use the v2 request header.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"d6043558-4ca6-4911-83f6-f2eb809a4431\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 47,\n  \"type\": \"request\",\n  \"listeners\": [\"broker\"],\n  \"name\": \"OffsetDeleteRequest\",\n  \"validVersions\": \"0-1\",\n  \"flexibleVersions\": \"1+\",\n  \"headerVersions\": {\n    \"0\": \"1\",\n    \"1+\": \"3\"\n  },\n  \"fields\": [\n    { \"name\": \"GroupId\", \"type\": \"string\", \"versions\": \"0+\", \"entityType\": \"groupId\",\n      \"about\": \"The unique group identifier.\" },\n    { \"name\": \"Topics\", \"type\": \"[]OffsetDeleteRequestTopic\", \"versions\": \"0+\",\n      \"about\": \"The topics to delete offsets for.\", \"fields\": [\n        { \"name\": \"Name\",  \"type\": \"string\",  \"versions\": \"0+\", \"mapKey\": true, \"entityType\": \"topicName\",\n          \"about\": \"The topic name.\" },\n        { \"name\": \"Partitions\", \"type\": \"[]OffsetDeleteRequestPartition\", \"versions\": \"0+\",\n          \"about\": \"Each partition to delete offsets for.\", \"fields\": [\n            { \"name\": \"PartitionIndex\", \"type\": \"int32\", \"versions\": \"0+\",\n              \"about\": \"The partition index.\" }\n          ]\n        }\n      ]\n    }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><h4><span>Response</span></h4><p><span>The v1 response is the first flexible version.</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"4a88b265-8bd5-4ee0-9699-afe6340e62cf\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 47,\n  \"type\": \"response\",\n  \"name\": \"OffsetDeleteResponse\",\n  \"validVersions\": \"0-1\",\n  \"flexibleVersions\": \"1+\",\n  \"headerVersions\": {\n    \"0\": \"0\",\n    \"1+\": \"1\"\n  },\n  \"fields\": [\n    { \"name\": \"ErrorCode\", \"type\": \"int16\", \"versions\": \"0+\",\n      \"about\": \"The top-level error code, or 0 if there was no error.\" },\n    { \"name\": \"ThrottleTimeMs\",  \"type\": \"int32\",  \"versions\": \"0+\", \"ignorable\": true,\n      \"about\": \"The duration in milliseconds for which the request was throttled due to a quota violation, or zero if the request did not violate any quota.\" },\n    { \"name\": \"Topics\", \"type\": \"[]OffsetDeleteResponseTopic\", \"versions\": \"0+\",\n      \"about\": \"The responses for each topic.\", \"fields\": [\n        { \"name\": \"Name\", \"type\": \"string\", \"versions\": \"0+\", \"mapKey\": true, \"entityType\": \"topicName\",\n          \"about\": \"The topic name.\" },\n        { \"name\": \"Partitions\", \"type\": \"[]OffsetDeleteResponsePartition\", \"versions\": \"0+\",\n          \"about\": \"The responses for each partition in the topic.\", \"fields\": [\n            { \"name\": \"PartitionIndex\", \"type\": \"int32\", \"versions\": \"0+\", \"mapKey\": true,\n              \"about\": \"The partition index.\" },\n            { \"name\": \"ErrorCode\", \"type\": \"int16\", \"versions\": \"0+\",\n              \"about\": \"The error code, or 0 if there was no error.\" }\n          ]\n        }\n      ]\n    }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><h3>GetTelemetrySubscriptions API</h3><p>A new version of <code>GetTelemetrySubscriptions</code>  is introduced which removes the <code>ClientInstanceId</code> from the request and response.</p><h4>Request</h4><p>The v1 request uses the v3 request header, which contains the client instance ID. As a result, the <code>clientInstanceId</code>  field is removed in the v1 request body. With v1, the client is responsible for calculating the client instance ID.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b8e9c2f0-27b7-428d-b498-e6f25572a622\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 71,\n  \"type\": \"request\",\n  \"listeners\": [\"broker\"],\n  \"name\": \"GetTelemetrySubscriptionsRequest\",\n  \"validVersions\": \"0-1\",\n  \"flexibleVersions\": \"0+\",\n  \"headerVersions\": {\n    \"0\": \"2\",\n    \"1+\": \"3\"\n  },\n  \"fields\": [\n    { \"name\": \"ClientInstanceId\", \"type\": \"uuid\", \"versions\": \"0\",\n      \"about\": \"Unique id for this client instance, must be set to 0 on the first request.\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><h4>Response</h4><p>The v1 response removes the <code>ClientInstanceId</code> . With v1, the client is responsible for calculating the client instance ID.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b890f742-1301-4136-87cd-33f6f15c6273\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 71,\n  \"type\": \"response\",\n  \"name\": \"GetTelemetrySubscriptionsResponse\",\n  \"validVersions\": \"0-1\",\n  \"flexibleVersions\": \"0+\",\n  \"headerVersions\": {\n    \"0+\": \"1\"\n  },\n  \"fields\": [\n    { \"name\": \"ThrottleTimeMs\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"The duration in milliseconds for which the request was throttled due to a quota violation, or zero if the request did not violate any quota.\" },\n    { \"name\": \"ErrorCode\", \"type\": \"int16\", \"versions\": \"0+\",\n      \"about\": \"The error code, or 0 if there was no error.\" },\n    { \"name\": \"ClientInstanceId\", \"type\": \"uuid\", \"versions\": \"0\",\n      \"about\": \"Assigned client instance id if ClientInstanceId was 0 in the request, else 0.\" },\n    { \"name\": \"SubscriptionId\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"Unique identifier for the current subscription set for this client instance.\" },\n    { \"name\": \"AcceptedCompressionTypes\", \"type\": \"[]int8\", \"versions\": \"0+\",\n      \"about\": \"Compression types that broker accepts for the PushTelemetryRequest.\" },\n    { \"name\": \"PushIntervalMs\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"Configured push interval, which is the lowest configured interval in the current subscription set.\" },\n    { \"name\": \"TelemetryMaxBytes\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"The maximum bytes of binary data the broker accepts in PushTelemetryRequest.\" },\n    { \"name\": \"DeltaTemporality\", \"type\": \"bool\", \"versions\": \"0+\",\n      \"about\": \"Flag to indicate monotonic/counter metrics are to be emitted as deltas or cumulative values.\" },\n    { \"name\": \"RequestedMetrics\", \"type\": \"[]string\", \"versions\": \"0+\",\n      \"about\": \"Requested metrics prefix string match. Empty array: No metrics subscribed, Array[0] empty string: All metrics subscribed.\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><h3>PushTelemetry API</h3><p>A new version of <code>PushTelemetry</code>  is introduced which removes <code>ClientInstanceId</code> from the request.</p><h4>Request</h4><p>The v1 request uses the v3 request header, which contains the client instance ID. As a result, the <code>clientInstanceId</code>  field is removed in the v1 request body.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"6fa62666-bc77-49a9-860e-9008de8d7f8f\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 72,\n  \"type\": \"request\",\n  \"listeners\": [\"broker\"],\n  \"name\": \"PushTelemetryRequest\",\n  \"validVersions\": \"0-1\",\n  \"flexibleVersions\": \"0+\",\n  \"headerVersions\": {\n    \"0\": \"2\",\n    \"1+\": \"3\"\n  },\n  \"fields\": [\n    { \"name\": \"ClientInstanceId\", \"type\": \"uuid\", \"versions\": \"0\",\n      \"about\": \"Unique id for this client instance.\" },\n    { \"name\": \"SubscriptionId\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"Unique identifier for the current subscription.\" },\n    { \"name\": \"Terminating\", \"type\": \"bool\", \"versions\": \"0+\",\n      \"about\": \"Client is terminating the connection.\" },\n    { \"name\": \"CompressionType\", \"type\": \"int8\", \"versions\": \"0+\",\n      \"about\": \"Compression codec used to compress the metrics.\" },\n    { \"name\": \"Metrics\", \"type\": \"bytes\", \"versions\": \"0+\", \"zeroCopy\": true,\n      \"about\": \"Metrics encoded in OpenTelemetry MetricsData v1 protobuf format.\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><h4>Response</h4><p>No change is made to the schema of the response.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"4295fcb7-1530-4bba-8096-bb43032d6441\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 72,\n  \"type\": \"response\",\n  \"name\": \"PushTelemetryResponse\",\n  \"validVersions\": \"0-1\",\n  \"flexibleVersions\": \"0+\",\n  \"headerVersions\": {\n    \"0+\": \"1\"\n  },\n  \"fields\": [\n    { \"name\": \"ThrottleTimeMs\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"The duration in milliseconds for which the request was throttled due to a quota violation, or zero if the request did not violate any quota.\" },\n    { \"name\": \"ErrorCode\", \"type\": \"int16\", \"versions\": \"0+\",\n      \"about\": \"The error code, or 0 if there was no error.\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><h1>Compatibility, Deprecation, and Migration Plan</h1><p>The change follows the usual mechanism for versioning of protocol requests. There should be no compatibility or migration issues introduced by this.</p><p>A new metadata version (provisionally <code>IBP_4_5_IV0</code> ) is introduced to ensure that inter-broker RPC versions are introduced safely and the bumped versions are only used when the cluster consists only of brokers which understand them.</p><p>The evolution of the request header needs careful handling because we must ensure that modern requests can be parsed by older broker versions. As a result, the v3 request header adds the <code>ClientInstanceId</code>  as a tagged field whose presence is expected and safely ignored by older brokers. This deserialization compatibility with the older request header versions is an important characteristic which must be maintained in the future.</p><p>This KIP does not need to introduce any additional feature version bumps. The RPC version negotiation is enough.</p><h1>Test Plan</h1><p>Unit tests will be added to ensure that the new behavior works as expected. The existing integration and system tests should be entirely unaffected by the change, which would show that there was no behavioral impact.</p><h1>Rejected Alternatives</h1><p>It was planned to add a tagged field for client instance ID to version 2 of the request header. Although this proposal passed a vote, discussion started up again centered around requiring a tagged field which is by its very nature optional. Consequently, the KIP was revised to introduce version 3 of the request header.</p><p>Version 3 of the request header was originally planned to add <code>ClientInstanceId</code>  as a proper field rather than a tagged field. However, it was realised during the KIP discussion that making it a tagged field gave better compatibility and migration characteristics. The combination of a request header version bump and a tagged field won through.</p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/406624038?status=historical&version=29"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1305
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=446071231",
+    "edit": "/pages/resumedraft.action?draftId=446071231&draftShareId=e822ebd8-347c-4b06-b837-25dd968f5b83",
+    "tinyui": "/x/v4GWGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/406624038?status=historical&version=29"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/406624038/child?parentVersion=29",
+    "restrictions": "/rest/api/content/406624038/restriction/byOperation",
+    "history": "/rest/api/content/406624038/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/406624038/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/406624038/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "406624038",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1313: Client instance ID in all request headers",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-04T20:16:59.000Z",
+    "message": "Only specify client instance ID on initial request",
+    "number": 28,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/406624038/version/28"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/406624038?status=historical&version=28"
+    }
+   },
+   "position": 1305,
+   "body": {
+    "storage": {
+     "value": "<p><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></p><h1>Status</h1><p><strong>Current state</strong>: <em>Under discussion</em></p><p><strong>Discussion thread</strong>: <em><a href=\"https://lists.apache.org/thread/loxjb8owwjplnjz3sk6dqkm5gkkn3xt4\">here</a><br /></em></p><p><strong>Voting thread (1 of 2):</strong> <em><a href=\"https://lists.apache.org/thread/06qkdj9278h7jzt4glp8rbyzgbt3gvhq\">here</a> - KIP reworked following initial vote</em></p><p><strong>JIRA</strong>: <em><a href=\"https://issues.apache.org/jira/browse/KAFKA-20548\">here</a><br /></em></p><p>Please keep the discussion on the mailing list rather than commenting on the wiki (wiki discussions get unwieldy fast).</p><h1>Motivation</h1><p>Today, all Kafka protocol requests include the client ID. This identifier can be set by the user setting the client configuration property <code>client.id</code>. This is a useful capability, but it has limitations. The client ID was meant for identifying an application, and not the instances of an application. Often, it is not sufficient to identify a particular client instance.</p><p>This KIP adds a UUID called the client instance ID into the request header of (almost) all Kafka protocol requests. Each client has a different client instance ID, so correlating requests from a particular client becomes much easier. An immediate benefit is that it can be included in request logging for troubleshooting. It is being added to improve traceability and problem determination.</p><p><span style=\"text-decoration: none;color:var(--ds-text,#172b4d);\">In addition, the client ID is sent on each and every request. Users sometimes have use quite long client IDs, even encoding metadata such as the availability zone into the string. The client ID is then sent on every request, in spite of the fact that the Kafka protocol is connection-oriented and it is really only necessary to send the string on the first request after connection initiation. Sending it repeatedly is wasteful.</span></p><h1>Proposed Changes</h1><p>This KIP proposes the following changes to the Kafka protocol.</p><h2>Client Instance ID</h2><p>This KIP proposes adding a UUID called the <strong>client instance ID</strong> into the request header of all Kafka protocol requests (with a few exceptions as documented below). The client uses the same client instance ID for its connections to every broker throughout its lifetime, even when it rebootstraps and makes new connections. The consistency and uniqueness of the identifiers are both important characteristics.</p><p>Version 3 of the RPC request header is introduced which adds the client instance ID. A new version of every RPC is introduced using the v3 request header, with the exception of <code>SaslHandshake</code>  which cannot be bumped due to incorrect version negotiation in the past.</p><p>Those familiar with <ac:link><ri:page ri:space-key=\"KAFKA\" ri:content-title=\"KIP-714: Client metrics and observability\" /><ac:plain-text-link-body><![CDATA[KIP-714]]></ac:plain-text-link-body></ac:link> will be aware that it already introduced the client instance ID, so this KIP actually proposes elevating that concept into a universal unique identifier for client instances in all RPCs.</p><p>The client instance ID is calculated by the client during the constructor of the client before it makes its initial connection to the cluster. This differs slightly from how KIP-714 initialized the client instance ID. In KIP-714, the client instance ID was created by the broker which responded to a client's first <code>GetTelemetrySubscriptions</code> RPC. Similarly, in KIP-848, the member ID was created by the group coordinator in response to a heartbeat, but subsequently KIP-1082 changed this so that the client created its own member ID. The protocol now favors client-generated IDs so this KIP calculates the client instance ID on the client. The Apache Kafka Java client will use <code>org.apache.kafka.common.Uuid.randonUuid()</code>  to calculate the client instance ID. The client instance ID is not permitted to be either of the reserved UUIDs (zero or one).</p><p>If a connection uses the v3 request header in its first request, it must specify the client instance ID and then omit the client instance ID from all subsequent requests on that connection. Note that <code>SaslHandshake</code> is excluded from this checking because it cannot carry a client instance ID. The initial client instance ID for each connection will be cached by the broker (this is an implementation detail, but caching it in the <code>ChannelMetadataRegistry</code> is an option). Once a client has specified a client instance ID in its first request, any subsequent requests which specify a different value for the client instance ID will be rejected with error code <code>INVALID_REQUEST</code>. If a client specifies a reserved client instance ID (zero or one), the request will be rejected with error code <code>INVALID_REQUEST</code> .</p><p>Because the versions of RPCs which can be used inter-broker are being increased, a new metadata version (provisionally <code>IBP_4_5_IV0</code> ) is also introduced to gate the use of the newer versions.</p><h2>Client ID</h2><p>This KIP proposes sending the client ID only on the initial request on each connection, and then sending a null client ID for all subsequent requests. <span style=\"text-decoration: none;color:var(--ds-text,#172b4d);\">This eliminates the unnecessary overhead of repeatedly sending the same client ID string to the broker on every request. The initial client ID for each connection will be cached by the broker (this is an implementation detail, but caching it in the </span><code>ChannelMetadataRegistry</code><span style=\"text-decoration: none;color:var(--ds-text,#172b4d);\"> is an option).</span></p><p><span style=\"text-decoration: none;color:var(--ds-text,#172b4d);\">This new behavior can only be completely adopted when both client and broker support it. It works as follows:</span></p><ul><li>For the initial request regardless of request header version, the client sends the client ID</li><li>For subsequent requests using the v3 request header (or higher), the client sends a null client ID</li><li>For subsequent requests using an earlier version of the request header, the client sends the client ID</li></ul><p><span style=\"text-decoration: none;color:var(--ds-text,#172b4d);\">After this KIP, the broker will assume that the client ID from the initial request applies to all subsequent requests on a connection, and it will ignore the client ID specified on any subsequent requests.</span></p><h3>Forwarded RPC requests</h3><p>When a broker forwards an RPC request to a controller, the client ID must be populated in the forwarded request header. This is so request quotas can be enforced. If the forwarding broker has a cached client ID for a connection and needs to forward a request which omits the client ID, it populates the client ID in the forwarded request with the cached client ID.</p><h2>Alignment of identifiers</h2><p>By adding client instance ID to the request headers, we now had a unique application instance identifier which we can use for other purposes such as the client telemetry client instance ID and the member ID in the group protocols. The client instance ID from the request headers is used as the client telemetry client instance ID; new versions of the KIP-714 RPCs are introduced to ensure this. The alignment of other identifiers is by convention (and the Java client will follow the convention) rather than mandate. In the language of standards, the client SHOULD use the same UUID in request headers as it uses for the member ID in the group protocols. This alignment just makes traceability and problem determination more straightforward.</p><p style=\"margin-left: 40.0px;\">In the modern group protocol RPCs such as <code>ConsumerGroupHeartbeat</code>  and <code>ShareGroupHeartbeat</code> , the member ID is a string. In practice, it is a UUID which is encoded into a string, but the nature of this conversion is not specified in the protocol and it really is treated as a string in the broker. The Java client uses the <code>org.apache.kafka.common.Uuid</code>  class to generate the member ID and convert it into a string. The client instance ID really is a UUID in the protocol. When the Java code in the broker converts this into a string, it uses the same Java code as the client does for the member ID. As a result, the member ID and client instance ID can trivially be the same when represented as strings, even though they have different data types in the protocol. For traceability and problem determination, this &quot;conventional&quot; alignment works well.</p><p style=\"margin-left: 40.0px;\">However, at least one other Kafka client implementation uses a slightly different string encoding of the member ID which does not match that generated by <code>org.apache.kafka.common.Uuid</code> . This is valid with regards to KIP-848 and KIP-932, but does unfortunately mean that the member ID does not look the same as the client instance ID, even if they have the same original UUID value in the client.</p><p>The following table indicates the behavior of the KIP-714 RPCs before and after this KIP. A client implementing this KIP will always calculate its own client instance ID, which it sends to the broker in the <code>GetTelemetrySubscriptions</code>  request body for v0, or in the request header for v1.</p><p>Key:</p><ul><li><strong>UUID-H</strong> - client instance ID sent by client in header, generated by client</li><li><strong>UUID-R</strong> - client instance ID sent by client in request, generated by client</li><li><strong>UUID-B</strong> - client instance ID sent by broker in response, generated by broker</li></ul><p>In summary, for <strong>GetTelemetrySubscriptions</strong>, here are the combinations:</p><table class=\"relative-table wrapped\" style=\"width: 97.334755%;\"><colgroup><col style=\"width: 25.520264%;\" /><col style=\"width: 36.25411%;\" /><col style=\"width: 38.1161%;\" /></colgroup><tbody><tr><th scope=\"row\"><br /></th><th scope=\"col\">Old broker</th><th scope=\"col\">New broker</th></tr><tr><th scope=\"row\">Old client</th><td><p><span style=\"letter-spacing: 0.0px;\"><strong>GetTelemetrySubscriptions</strong> v0</span></p><p><span style=\"letter-spacing: 0.0px;\">Initial request:</span></p><ul><li>request.ClientInstanceID=0</li><li>response.ClientInstanceId=<strong>UUID-B</strong></li></ul><p>Subsequent requests:</p><ul><li>request.ClientInstanceId=<strong>UUID-B</strong></li><li>response.ClientInstanceId=0</li></ul></td><td><p><strong>GetTelemetrySubscriptions</strong> v0</p><p>Initial request:</p><ul><li>request.ClientInstanceID=0</li><li>response.ClientInstanceId=<strong>UUID-B</strong></li></ul><p>Subsequent requests:</p><ul><li>request.ClientInstanceId=<strong>UUID-B</strong></li><li>response.ClientInstanceId=0</li></ul></td></tr><tr><th scope=\"row\">New client</th><td><p><strong>GetTelemetrySubscriptions</strong> v0</p><p>Initial request:</p><ul><li>request.ClientInstanceId=<strong>UUID-R</strong></li><li>response.ClientInstanceId=0</li></ul><p>Subsequent requests:</p><ul><li>request.ClientInstanceId=<strong>UUID-R</strong></li><li>response.ClientInstanceId=0 </li></ul></td><td><p><strong>GetTelemetrySubscriptions</strong> v1</p><p>Initial request:</p><ul><li>header.ClientInstanceId=<strong>UUID-H</strong></li></ul><p>Subsequent requests:</p><ul><li>header.ClientInstanceId is omitted (<strong>UUID-H is cached in connection state)</strong></li></ul></td></tr></tbody></table><h2>Changes to the Kafka protocol message schemas</h2><p>In the JSON schema files which describe the RPC request and responses, the <code>&quot;flexibleVersions&quot;</code> property in the request schemas indicates which versions of the requests use the v2 request header. For example, consider the <code>DeleteGroups</code>  request schema prior to this KIP.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"f57c97a7-a718-435d-b44e-e3ee17b045b8\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 42,\n  \"type\": \"request\",\n  \"listeners\": [\"broker\"],\n  \"name\": \"DeleteGroupsRequest\",\n  \"validVersions\": \"0-2\",\n  \"flexibleVersions\": \"2+\",\n  \"fields\": [\n    { \"name\": \"GroupsNames\", \"type\": \"[]string\", \"versions\": \"0+\", \"entityType\": \"groupId\",\n      \"about\": \"The group names to delete.\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><p>This schema describes 3 versions of the request. Request versions 0 and 1 use v1 of the request header, and request version 2 uses v2 of the request header. Note that v0 of the request header is no longer used.</p><p>This KIP introduces a new property for the request schemas called <code>&quot;headerVersions&quot;</code> which contains a map from request version ranges to request header versions. The keys of the map can be single versions like &quot;0&quot;, closed version ranges like &quot;1-2&quot;, and must end with an open version range like &quot;3+&quot;. The ranges of the keys must be non-overlapping, continuous and cover the range of valid versions. For example, the <code>DeleteGroups</code>  request schema becomes the following.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"6d08f7ff-c7dc-4c1d-92e3-e089ea9263c8\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 42,\n  \"type\": \"request\",\n  \"listeners\": [\"broker\"],\n  \"name\": \"DeleteGroupsRequest\",\n  \"validVersions\": \"0-3\",\n  \"flexibleVersions\": \"2+\",\n  \"headerVersions\": {\n    \"0-1\": \"1\",\n    \"2\": \"2\",\n    \"3+\": \"3\"\n  },\n  \"fields\": [\n    { \"name\": \"GroupsNames\", \"type\": \"[]string\", \"versions\": \"0+\", \"entityType\": \"groupId\",\n      \"about\": \"The group names to delete.\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><p>The modified schema describes 4 versions of the request. Request versions 0 to 1 use v1 of the request header. Request version 2 uses v2 of the request header. Request versions 3 and higher use v3 of the request header, which includes the client instance ID.</p><p>In the same way, the <code>&quot;headerVersions&quot;</code>  property is also added to the response schemas. Only versions 0 and 1 of the response header exist.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"26d58af3-9eaa-4d36-9e47-06f79fa89e92\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 42,\n  \"type\": \"response\",\n  \"name\": \"DeleteGroupsResponse\",\n  // Starting in version 1, on quota violation, brokers send out responses before throttling.\n  //\n  // Version 2 is the first flexible version.\n  \"validVersions\": \"0-2\",\n  \"flexibleVersions\": \"2+\",\n  \"headerVersions\": {\n    \"0-1\": \"0\",\n    \"2+\": \"1\"\n  },\n  \"fields\": [\n    { \"name\": \"ThrottleTimeMs\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"The duration in milliseconds for which the request was throttled due to a quota violation, or zero if the request did not violate any quota.\" },\n    { \"name\": \"Results\", \"type\": \"[]DeletableGroupResult\", \"versions\": \"0+\",\n      \"about\": \"The deletion results.\", \"fields\": [\n      { \"name\": \"GroupId\", \"type\": \"string\", \"versions\": \"0+\", \"mapKey\": true, \"entityType\": \"groupId\",\n        \"about\": \"The group id.\" },\n      { \"name\": \"ErrorCode\", \"type\": \"int16\", \"versions\": \"0+\",\n        \"about\": \"The deletion error, or 0 if the deletion succeeded.\" }\n    ]}\n  ]\n}\n\n]]></ac:plain-text-body></ac:structured-macro><h1>Public Interfaces</h1><h2>Client API Changes</h2><p>The client instance ID is calculated during the constructor of the <code>Producer</code> , <code>Consumer</code> , <code>RebalanceConsumer</code> , <code>ShareConsumer</code> and <code>Admin</code>  implementations so there is no need to have a timeout parameter on the accessor method. The following method is added to these interfaces:</p><pre><span style=\"color:var(--ds-background-warning-bold-pressed,#cf9f02);\">public </span>Uuid <span style=\"color:var(--ds-background-accent-orange-subtler-pressed,#fea362);\">clientInstanceId</span>()</pre><p>and then the following method is deprecated for removal in Apache Kafka 5.0:</p><pre><span style=\"color:var(--ds-background-warning-bold-pressed,#cf9f02);\">public </span>Uuid <span style=\"color:var(--ds-background-accent-orange-subtler-pressed,#fea362);\">clientInstanceId</span>(Duration timeout)</pre><p>In a similar vein, the following method in <code>KafkaStreams</code> is added:</p><pre><span style=\"color:var(--ds-background-warning-bold-pressed,#cf9f02);\">public </span>ClientInstanceIds <span style=\"color:var(--ds-background-accent-orange-subtler-pressed,#fea362);\">clientInstanceIds</span>()</pre><p>and then the following method is deprecated for removal in Apache Kafka 5.0:</p><pre><span style=\"color:var(--ds-background-warning-bold-pressed,#cf9f02);\">public </span>ClientInstanceIds <span style=\"color:var(--ds-background-accent-orange-subtler-pressed,#fea362);\">clientInstanceIds</span>(Duration timeout)</pre><h2>Kafka Protocol Changes</h2><p>This KIP introduces new versions of all Kafka RPCs with the exception of <code>SaslHandshake</code> . Apart from the RPCs specifically called out below, the RPC requests are only changed by the addition of a version which uses v3 of the request header, as illustrated using the example of <code>DeleteGroups</code> earlier.</p><h3>Request Header</h3><p>This KIP introduces version 3 of the request header which adds the <code>ClientInstanceId</code> field. It is added as a tagged field to preserve deserialisation compatibility with version 2 of the request header, so that older brokers understand and safely ignore the new field.</p><p>In version 3 of the request header, the client ID is only sent on the initial request on each connection and must be null for subsequent requests. The client instance ID is only sent on the initial request on each connection and then omitted for subsequent requests.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"79376aa5-d489-400e-9559-e1f5067befd6\"><ac:plain-text-body><![CDATA[{\n  \"type\": \"header\",\n  \"name\": \"RequestHeader\",\n  // Version 0 was removed in Apache Kafka 4.0, Version 1 is the new baseline.\n  //\n  // Version 0 of the RequestHeader is only used by v0 of ControlledShutdownRequest.\n  //\n  // Version 1 is the first version with ClientId.\n  //\n  // Version 2 is the first flexible version.\n  //\n  // Version 3 introduces ClientInstanceId. (KIP-1313)\n  \"validVersions\": \"1-3\",\n  \"flexibleVersions\": \"2+\",\n  \"fields\": [\n    { \"name\": \"RequestApiKey\", \"type\": \"int16\", \"versions\": \"0+\",\n      \"about\": \"The API key of this request.\" },\n    { \"name\": \"RequestApiVersion\", \"type\": \"int16\", \"versions\": \"0+\",\n      \"about\": \"The API version of this request.\" },\n    { \"name\": \"CorrelationId\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"The correlation ID of this request.\" },\n\n    // The ClientId string must be serialized with the old-style two-byte length prefix.\n    // The reason is that older brokers must be able to read the request header for any\n    // ApiVersionsRequest, even if it is from a newer version.\n    // Since the client is sending the ApiVersionsRequest in order to discover what\n    // versions are supported, the client does not know the best version to use.\n    { \"name\": \"ClientId\", \"type\": \"string\", \"versions\": \"1+\", \"nullableVersions\": \"1+\", \"flexibleVersions\": \"none\",\n      \"about\": \"The client ID, for identifying an application.\" },\n    { \"name\": \"ClientInstanceId\", \"type\": \"uuid\", \"versions\": \"3+\", \"taggedVersions\": \"3+\", \"tag\": 0,\n      \"about\": \"The client instance ID, for identifying an instance of an application.\" }\n  ]\n}\n]]></ac:plain-text-body></ac:structured-macro><h3>OffsetDelete API</h3><p>A new version of <code>OffsetDelete</code>  is introduced.</p><h4>Request</h4><p>The v1 request uses the v3 request header and it is the first flexible version. None of the versions of this request use the v2 request header.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"d6043558-4ca6-4911-83f6-f2eb809a4431\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 47,\n  \"type\": \"request\",\n  \"listeners\": [\"broker\"],\n  \"name\": \"OffsetDeleteRequest\",\n  \"validVersions\": \"0-1\",\n  \"flexibleVersions\": \"1+\",\n  \"headerVersions\": {\n    \"0\": \"1\",\n    \"1+\": \"3\"\n  },\n  \"fields\": [\n    { \"name\": \"GroupId\", \"type\": \"string\", \"versions\": \"0+\", \"entityType\": \"groupId\",\n      \"about\": \"The unique group identifier.\" },\n    { \"name\": \"Topics\", \"type\": \"[]OffsetDeleteRequestTopic\", \"versions\": \"0+\",\n      \"about\": \"The topics to delete offsets for.\", \"fields\": [\n        { \"name\": \"Name\",  \"type\": \"string\",  \"versions\": \"0+\", \"mapKey\": true, \"entityType\": \"topicName\",\n          \"about\": \"The topic name.\" },\n        { \"name\": \"Partitions\", \"type\": \"[]OffsetDeleteRequestPartition\", \"versions\": \"0+\",\n          \"about\": \"Each partition to delete offsets for.\", \"fields\": [\n            { \"name\": \"PartitionIndex\", \"type\": \"int32\", \"versions\": \"0+\",\n              \"about\": \"The partition index.\" }\n          ]\n        }\n      ]\n    }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><h4><span>Response</span></h4><p><span>The v1 response is the first flexible version.</span></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"4a88b265-8bd5-4ee0-9699-afe6340e62cf\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 47,\n  \"type\": \"response\",\n  \"name\": \"OffsetDeleteResponse\",\n  \"validVersions\": \"0-1\",\n  \"flexibleVersions\": \"1+\",\n  \"headerVersions\": {\n    \"0\": \"0\",\n    \"1+\": \"1\"\n  },\n  \"fields\": [\n    { \"name\": \"ErrorCode\", \"type\": \"int16\", \"versions\": \"0+\",\n      \"about\": \"The top-level error code, or 0 if there was no error.\" },\n    { \"name\": \"ThrottleTimeMs\",  \"type\": \"int32\",  \"versions\": \"0+\", \"ignorable\": true,\n      \"about\": \"The duration in milliseconds for which the request was throttled due to a quota violation, or zero if the request did not violate any quota.\" },\n    { \"name\": \"Topics\", \"type\": \"[]OffsetDeleteResponseTopic\", \"versions\": \"0+\",\n      \"about\": \"The responses for each topic.\", \"fields\": [\n        { \"name\": \"Name\", \"type\": \"string\", \"versions\": \"0+\", \"mapKey\": true, \"entityType\": \"topicName\",\n          \"about\": \"The topic name.\" },\n        { \"name\": \"Partitions\", \"type\": \"[]OffsetDeleteResponsePartition\", \"versions\": \"0+\",\n          \"about\": \"The responses for each partition in the topic.\", \"fields\": [\n            { \"name\": \"PartitionIndex\", \"type\": \"int32\", \"versions\": \"0+\", \"mapKey\": true,\n              \"about\": \"The partition index.\" },\n            { \"name\": \"ErrorCode\", \"type\": \"int16\", \"versions\": \"0+\",\n              \"about\": \"The error code, or 0 if there was no error.\" }\n          ]\n        }\n      ]\n    }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><h3>GetTelemetrySubscriptions API</h3><p>A new version of <code>GetTelemetrySubscriptions</code>  is introduced which removes the <code>ClientInstanceId</code> from the request and response.</p><h4>Request</h4><p>The v1 request uses the v3 request header, which contains the client instance ID. As a result, the <code>clientInstanceId</code>  field is removed in the v1 request body. With v1, the client is responsible for calculating the client instance ID.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b8e9c2f0-27b7-428d-b498-e6f25572a622\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 71,\n  \"type\": \"request\",\n  \"listeners\": [\"broker\"],\n  \"name\": \"GetTelemetrySubscriptionsRequest\",\n  \"validVersions\": \"0-1\",\n  \"flexibleVersions\": \"0+\",\n  \"headerVersions\": {\n    \"0\": \"2\",\n    \"1+\": \"3\"\n  },\n  \"fields\": [\n    { \"name\": \"ClientInstanceId\", \"type\": \"uuid\", \"versions\": \"0\",\n      \"about\": \"Unique id for this client instance, must be set to 0 on the first request.\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><h4>Response</h4><p>The v1 response removes the <code>ClientInstanceId</code> . With v1, the client is responsible for calculating the client instance ID.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"b890f742-1301-4136-87cd-33f6f15c6273\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 71,\n  \"type\": \"response\",\n  \"name\": \"GetTelemetrySubscriptionsResponse\",\n  \"validVersions\": \"0-1\",\n  \"flexibleVersions\": \"0+\",\n  \"headerVersions\": {\n    \"0+\": \"1\"\n  },\n  \"fields\": [\n    { \"name\": \"ThrottleTimeMs\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"The duration in milliseconds for which the request was throttled due to a quota violation, or zero if the request did not violate any quota.\" },\n    { \"name\": \"ErrorCode\", \"type\": \"int16\", \"versions\": \"0+\",\n      \"about\": \"The error code, or 0 if there was no error.\" },\n    { \"name\": \"ClientInstanceId\", \"type\": \"uuid\", \"versions\": \"0\",\n      \"about\": \"Assigned client instance id if ClientInstanceId was 0 in the request, else 0.\" },\n    { \"name\": \"SubscriptionId\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"Unique identifier for the current subscription set for this client instance.\" },\n    { \"name\": \"AcceptedCompressionTypes\", \"type\": \"[]int8\", \"versions\": \"0+\",\n      \"about\": \"Compression types that broker accepts for the PushTelemetryRequest.\" },\n    { \"name\": \"PushIntervalMs\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"Configured push interval, which is the lowest configured interval in the current subscription set.\" },\n    { \"name\": \"TelemetryMaxBytes\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"The maximum bytes of binary data the broker accepts in PushTelemetryRequest.\" },\n    { \"name\": \"DeltaTemporality\", \"type\": \"bool\", \"versions\": \"0+\",\n      \"about\": \"Flag to indicate monotonic/counter metrics are to be emitted as deltas or cumulative values.\" },\n    { \"name\": \"RequestedMetrics\", \"type\": \"[]string\", \"versions\": \"0+\",\n      \"about\": \"Requested metrics prefix string match. Empty array: No metrics subscribed, Array[0] empty string: All metrics subscribed.\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><h3>PushTelemetry API</h3><p>A new version of <code>PushTelemetry</code>  is introduced which removes <code>ClientInstanceId</code> from the request.</p><h4>Request</h4><p>The v1 request uses the v3 request header, which contains the client instance ID. As a result, the <code>clientInstanceId</code>  field is removed in the v1 request body.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"6fa62666-bc77-49a9-860e-9008de8d7f8f\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 72,\n  \"type\": \"request\",\n  \"listeners\": [\"broker\"],\n  \"name\": \"PushTelemetryRequest\",\n  \"validVersions\": \"0-1\",\n  \"flexibleVersions\": \"0+\",\n  \"headerVersions\": {\n    \"0\": \"2\",\n    \"1+\": \"3\"\n  },\n  \"fields\": [\n    { \"name\": \"ClientInstanceId\", \"type\": \"uuid\", \"versions\": \"0\",\n      \"about\": \"Unique id for this client instance.\" },\n    { \"name\": \"SubscriptionId\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"Unique identifier for the current subscription.\" },\n    { \"name\": \"Terminating\", \"type\": \"bool\", \"versions\": \"0+\",\n      \"about\": \"Client is terminating the connection.\" },\n    { \"name\": \"CompressionType\", \"type\": \"int8\", \"versions\": \"0+\",\n      \"about\": \"Compression codec used to compress the metrics.\" },\n    { \"name\": \"Metrics\", \"type\": \"bytes\", \"versions\": \"0+\", \"zeroCopy\": true,\n      \"about\": \"Metrics encoded in OpenTelemetry MetricsData v1 protobuf format.\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><h4>Response</h4><p>No change is made to the schema of the response.</p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:macro-id=\"4295fcb7-1530-4bba-8096-bb43032d6441\"><ac:plain-text-body><![CDATA[{\n  \"apiKey\": 72,\n  \"type\": \"response\",\n  \"name\": \"PushTelemetryResponse\",\n  \"validVersions\": \"0-1\",\n  \"flexibleVersions\": \"0+\",\n  \"headerVersions\": {\n    \"0+\": \"1\"\n  },\n  \"fields\": [\n    { \"name\": \"ThrottleTimeMs\", \"type\": \"int32\", \"versions\": \"0+\",\n      \"about\": \"The duration in milliseconds for which the request was throttled due to a quota violation, or zero if the request did not violate any quota.\" },\n    { \"name\": \"ErrorCode\", \"type\": \"int16\", \"versions\": \"0+\",\n      \"about\": \"The error code, or 0 if there was no error.\" }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><h1>Compatibility, Deprecation, and Migration Plan</h1><p>The change follows the usual mechanism for versioning of protocol requests. There should be no compatibility or migration issues introduced by this.</p><p>A new metadata version (provisionally <code>IBP_4_5_IV0</code> ) is introduced to ensure that inter-broker RPC versions are introduced safely and the bumped versions are only used when the cluster consists only of brokers which understand them.</p><p>The evolution of the request header needs careful handling because we must ensure that modern requests can be parsed by older broker versions. As a result, the v3 request header adds the <code>ClientInstanceId</code>  as a tagged field whose presence is expected and safely ignored by older brokers. This deserialization compatibility with the older request header versions is an important characteristic which must be maintained in the future.</p><p>This KIP does not need to introduce any additional feature version bumps. The RPC version negotiation is enough.</p><h1>Test Plan</h1><p>Unit tests will be added to ensure that the new behavior works as expected. The existing integration and system tests should be entirely unaffected by the change, which would show that there was no behavioral impact.</p><h1>Rejected Alternatives</h1><p>It was planned to add a tagged field for client instance ID to version 2 of the request header. Although this proposal passed a vote, discussion started up again centered around requiring a tagged field which is by its very nature optional. Consequently, the KIP was revised to introduce version 3 of the request header.</p><p>Version 3 of the request header was originally planned to add <code>ClientInstanceId</code>  as a proper field rather than a tagged field. However, it was realised during the KIP discussion that making it a tagged field gave better compatibility and migration characteristics. The combination of a request header version bump and a tagged field won through.</p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/406624038?status=historical&version=28"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1305
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=446071156",
+    "edit": "/pages/resumedraft.action?draftId=446071156&draftShareId=e822ebd8-347c-4b06-b837-25dd968f5b83",
+    "tinyui": "/x/dIGWGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/406624038?status=historical&version=28"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/406624038/child?parentVersion=28",
+    "restrictions": "/rest/api/content/406624038/restriction/byOperation",
+    "history": "/rest/api/content/406624038/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/406624038/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/406624038/restriction/relevantViewRestrictions"
+   }
+  }
+ ],
+ "comments": {
+  "results": [],
+  "start": 0,
+  "limit": 200,
+  "size": 0,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/api/content/406624038/child/comment?expand=body.storage%2Cversion%2Cancestors&depth=all",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ }
+}

@@ -1,0 +1,1502 @@
+{
+ "id": "429064575",
+ "versions": {
+  "results": [
+   {
+    "by": {
+     "type": "known",
+     "username": "chia7712",
+     "userKey": "8aa9808763853cef0163d913c5e4012b",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/85477027/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Chia-Ping Tsai",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa9808763853cef0163d913c5e4012b"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-12T16:31:08.000Z",
+    "message": "",
+    "number": 40,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/40"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "lianetm",
+     "userKey": "073590d29145d24601919983aa95001e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lianet Magrans",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29145d24601919983aa95001e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-11T11:48:20.000Z",
+    "message": "",
+    "number": 39,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/39"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=39"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mjsax",
+     "userKey": "8aa980874ebf4c1f014fb71c804106cc",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/61318460/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Matthias J. Sax",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa980874ebf4c1f014fb71c804106cc"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-10T20:49:32.000Z",
+    "message": "",
+    "number": 38,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/38"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=38"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "chia7712",
+     "userKey": "8aa9808763853cef0163d913c5e4012b",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/85477027/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Chia-Ping Tsai",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa9808763853cef0163d913c5e4012b"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-06T12:24:30.000Z",
+    "message": "",
+    "number": 37,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/37"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=37"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "chia7712",
+     "userKey": "8aa9808763853cef0163d913c5e4012b",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/85477027/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Chia-Ping Tsai",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa9808763853cef0163d913c5e4012b"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-05T17:48:49.000Z",
+    "message": "",
+    "number": 36,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/36"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=36"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "chia7712",
+     "userKey": "8aa9808763853cef0163d913c5e4012b",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/85477027/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Chia-Ping Tsai",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa9808763853cef0163d913c5e4012b"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-05T17:44:48.000Z",
+    "message": "",
+    "number": 35,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/35"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=35"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "chia7712",
+     "userKey": "8aa9808763853cef0163d913c5e4012b",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/85477027/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Chia-Ping Tsai",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa9808763853cef0163d913c5e4012b"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-05T17:42:59.000Z",
+    "message": "",
+    "number": 34,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/34"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=34"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mjsax",
+     "userKey": "8aa980874ebf4c1f014fb71c804106cc",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/61318460/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Matthias J. Sax",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa980874ebf4c1f014fb71c804106cc"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-30T04:51:55.000Z",
+    "message": "",
+    "number": 33,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/33"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=33"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "chia7712",
+     "userKey": "8aa9808763853cef0163d913c5e4012b",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/85477027/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Chia-Ping Tsai",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa9808763853cef0163d913c5e4012b"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-29T02:59:56.000Z",
+    "message": "",
+    "number": 32,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/32"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=32"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "m1a2st",
+     "userKey": "073590d28f899a29018f963df4500003",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Ken Huang",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28f899a29018f963df4500003"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-28T14:28:00.000Z",
+    "message": "",
+    "number": 31,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/31"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=31"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "jess",
+     "userKey": "073590d29e5b625a019ea81b8fbc001f",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Jess Jin",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29e5b625a019ea81b8fbc001f"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-28T13:06:07.000Z",
+    "message": "add KIP-1356",
+    "number": 30,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/30"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=30"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-27T11:58:11.000Z",
+    "message": "KIP-1191 complete",
+    "number": 29,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/29"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=29"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mjsax",
+     "userKey": "8aa980874ebf4c1f014fb71c804106cc",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/61318460/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Matthias J. Sax",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa980874ebf4c1f014fb71c804106cc"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-26T01:18:12.000Z",
+    "message": "",
+    "number": 28,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/28"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=28"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mjsax",
+     "userKey": "8aa980874ebf4c1f014fb71c804106cc",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/61318460/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Matthias J. Sax",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa980874ebf4c1f014fb71c804106cc"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-20T16:58:12.000Z",
+    "message": "",
+    "number": 27,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/27"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=27"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "brandboat",
+     "userKey": "8aa980875d3a4e78015de15d830b0259",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/73633239/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Kuan Po Tseng",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa980875d3a4e78015de15d830b0259"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-10T01:21:15.000Z",
+    "message": "",
+    "number": 26,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/26"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=26"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mjsax",
+     "userKey": "8aa980874ebf4c1f014fb71c804106cc",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/61318460/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Matthias J. Sax",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa980874ebf4c1f014fb71c804106cc"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-09T19:26:34.000Z",
+    "message": "",
+    "number": 25,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/25"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=25"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mickael.maison",
+     "userKey": "8aa9808756417d2001570e322ca30383",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/65869643/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Mickael Maison",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa9808756417d2001570e322ca30383"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-09T14:12:17.000Z",
+    "message": "",
+    "number": 24,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/24"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=24"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "omnia",
+     "userKey": "ae84fb5e74d9bf270175f4a45d3605be",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Omnia Ibrahim",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e74d9bf270175f4a45d3605be"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-09T14:06:14.000Z",
+    "message": "Update KIPs Jira ",
+    "number": 23,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/23"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=23"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "omnia",
+     "userKey": "ae84fb5e74d9bf270175f4a45d3605be",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Omnia Ibrahim",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e74d9bf270175f4a45d3605be"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-09T14:03:08.000Z",
+    "message": "Update KIPs status ",
+    "number": 22,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/22"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=22"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-07-06T09:38:54.000Z",
+    "message": "KIP-1242 complete",
+    "number": 21,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/21"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=21"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mjsax",
+     "userKey": "8aa980874ebf4c1f014fb71c804106cc",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/61318460/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Matthias J. Sax",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa980874ebf4c1f014fb71c804106cc"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-27T00:46:29.000Z",
+    "message": "",
+    "number": 20,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/20"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=20"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "mjsax",
+     "userKey": "8aa980874ebf4c1f014fb71c804106cc",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/61318460/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Matthias J. Sax",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa980874ebf4c1f014fb71c804106cc"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-23T17:27:02.000Z",
+    "message": "",
+    "number": 19,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/19"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=19"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-23T13:18:52.000Z",
+    "message": "KIP-1323 complete",
+    "number": 18,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/18"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=18"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "lianetmr",
+     "userKey": "073590d28789c11c01879ef790f6003f",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lianet Magrans",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28789c11c01879ef790f6003f"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-22T16:56:43.000Z",
+    "message": "",
+    "number": 17,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/17"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=17"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "bloku",
+     "userKey": "073590d298d4e0f90198e0c219d50000",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Uladzislau Blok",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d298d4e0f90198e0c219d50000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-11T19:50:54.000Z",
+    "message": "",
+    "number": 16,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/16"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=16"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "dajac",
+     "userKey": "8aa980874e36a1eb014e36a2cc9c0bc8",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "David Jacot",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa980874e36a1eb014e36a2cc9c0bc8"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-10T14:03:37.000Z",
+    "message": "",
+    "number": 15,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/15"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=15"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "omnia",
+     "userKey": "ae84fb5e74d9bf270175f4a45d3605be",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Omnia Ibrahim",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e74d9bf270175f4a45d3605be"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-10T10:32:11.000Z",
+    "message": "update the release dates ",
+    "number": 14,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/14"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=14"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "sahildevgon",
+     "userKey": "073590d28b852b87018c29321a4a01fc",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Sahil Devgon",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28b852b87018c29321a4a01fc"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-02T16:52:29.000Z",
+    "message": "",
+    "number": 13,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/13"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=13"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "frankvicky",
+     "userKey": "073590d28f899a29018f96220f230000",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/308152773/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "TengYao Chi",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28f899a29018f96220f230000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-02T15:42:58.000Z",
+    "message": "",
+    "number": 12,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/12"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=12"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "seequick",
+     "userKey": "073590d297bed5d801983cae00fc0039",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Maroš Orsák",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d297bed5d801983cae00fc0039"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-02T10:24:43.000Z",
+    "message": "",
+    "number": 11,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/11"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=11"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "lucasbru",
+     "userKey": "073590d2893a89c8018ab85d11aa0435",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/263429718/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Lucas Brutschy",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2893a89c8018ab85d11aa0435"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-02T07:11:38.000Z",
+    "message": "",
+    "number": 10,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/10"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=10"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "lucasbru",
+     "userKey": "073590d2893a89c8018ab85d11aa0435",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/263429718/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Lucas Brutschy",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2893a89c8018ab85d11aa0435"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-28T07:51:42.000Z",
+    "message": "",
+    "number": 9,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/9"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=9"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "lucasbru",
+     "userKey": "073590d2893a89c8018ab85d11aa0435",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/263429718/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Lucas Brutschy",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2893a89c8018ab85d11aa0435"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-27T13:41:20.000Z",
+    "message": "",
+    "number": 8,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/8"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=8"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "omnia",
+     "userKey": "ae84fb5e74d9bf270175f4a45d3605be",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Omnia Ibrahim",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e74d9bf270175f4a45d3605be"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-26T18:04:33.000Z",
+    "message": "Update the schedule ",
+    "number": 7,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/7"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=7"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-25T13:57:16.000Z",
+    "message": "Added KIP-1323",
+    "number": 6,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/6"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=6"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "fujian1115",
+     "userKey": "073590d2856412c70186b47aa18f045f",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "fu.jian",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2856412c70186b47aa18f045f"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-24T04:08:59.000Z",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/5"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=5"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "omnia",
+     "userKey": "ae84fb5e74d9bf270175f4a45d3605be",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Omnia Ibrahim",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e74d9bf270175f4a45d3605be"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-23T07:34:36.000Z",
+    "message": "adjust dates",
+    "number": 4,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/4"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=4"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "bbejeck",
+     "userKey": "8aa980875bf24635015c64d51e7c0217",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/70257685/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Bill Bejeck",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa980875bf24635015c64d51e7c0217"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-22T18:27:34.000Z",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/3"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=3"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "bbejeck",
+     "userKey": "8aa980875bf24635015c64d51e7c0217",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/70257685/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Bill Bejeck",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa980875bf24635015c64d51e7c0217"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-22T18:26:54.000Z",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/2"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=2"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "omnia",
+     "userKey": "ae84fb5e74d9bf270175f4a45d3605be",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Omnia Ibrahim",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e74d9bf270175f4a45d3605be"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-05-22T17:54:08.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=1"
+    }
+   }
+  ],
+  "start": 0,
+  "limit": 200,
+  "size": 40,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ },
+ "version_bodies": [
+  {
+   "id": "429064575",
+   "type": "page",
+   "status": "historical",
+   "title": "Release Plan 4.4.0",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "lianetm",
+     "userKey": "073590d29145d24601919983aa95001e",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Lianet Magrans",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d29145d24601919983aa95001e"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-11T11:48:20.000Z",
+    "message": "",
+    "number": 39,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/39"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=39"
+    }
+   },
+   "position": -1,
+   "body": {
+    "storage": {
+     "value": "<h2><span>Release Dates</span></h2><ul><li><span>KIP Freeze: (8th July 2026<span style=\"color:var(--ds-text,#333333);\">)</span></span><ul><li><span>A KIP must be accepted by this date in order to be considered for this release. Note, any KIP that may not be implemented in a week, or that might destabilize the release, should be deferred.</span></li></ul></li><li><span>Feature Freeze:<strong><span style=\"color:var(--ds-text,#333333);\"> </span></strong><span style=\"color:var(--ds-text,#333333);\">(29th July 2026)</span></span><ul><li><em>major features merged &amp; working on stabilisation, minor features have PR, release branch cut; anything not in this state will be automatically moved to the next release in Jira</em></li></ul></li><li><span>Code Freeze:<strong><span class=\"hgKElc\"> </span></strong><span style=\"color:var(--ds-text,#333333);\">(12th Aug 2026)</span></span></li><li><span>At least four weeks of stabilization will follow Code Freeze (taking holidays into account), meaning we expect to release <strong>no earlier</strong> than<strong> September 9 2026</strong>.</span></li></ul><p><span><br /></span><span>These dates are goals and subject to change, but we expect to stay on the </span><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/Time+Based+Release+Plan\" rel=\"nofollow\"><span>Time Based Release Plan</span></a><span> unless unexpected critical issues come up. While the earliest possible release date is 2w after code freeze, release candidates (RCs) will roll out as needed until the release vote passes.</span></p><p><span>The release manager is <ac:link><ri:user ri:userkey=\"ae84fb5e74d9bf270175f4a45d3605be\" /></ac:link> </span></p><h2><span>How to Contribute</span></h2><h3><strong>Before code freeze:</strong></h3><ul><li><span>Participate in votes and discussions to land or postpone the open KIPs.</span></li><li><span>Review patches. We anticipate that this release, as it usually happens, <strong>will be bottlenecked mostly on reviews</strong>. The more reviewers, the more content we can fit in.</span></li><li><span>Write unit/integration/system tests. We want to preserve the tradition of high-quality releases in Apache Kafka. </span></li></ul><h3><strong>After code freeze:</strong></h3><ul><li><span>Write more unit/integration/system tests</span><strong>. </strong><span>We want to preserve the tradition of high-quality releases in Apache Kafka.</span></li><li><span>Improve documentation.</span></li><li><span>Test the release candidates. </span></li><li><span>Open blocker JIRAs on critical issues found. Open non-blocker JIRAs on any other issues found.</span></li><li><span>Fix critical bugs.</span></li><li><span>Review bug fixes.</span></li><li><span>Vote on release candidates. Even though only PMC votes are binding, community votes are super important as we evaluate the readiness of the release.</span></li></ul><h2>Open Issues</h2><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"187b849c-2955-4657-aeea-ad3767091264\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"maximumIssues\">20</ac:parameter><ac:parameter ac:name=\"jqlQuery\">project = KAFKA AND fixVersion = 4.4.0  AND status not in (resolved, closed) ORDER BY priority DESC, status DESC, updated DESC   </ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter></ac:structured-macro></p><p><br /></p><p>Also, feel free to refer to the 4.4.0 release page for more details of the included tickets (requires logging in to the Apache Kafka Jira project).</p><h2>Planned KIP Content</h2><p>Note: The planned content is not binding - the final content will be based on the features committed by the branch-cutting date.</p><p>See <a href=\"https://cwiki.apache.org/confluence/display/KAFKA/Kafka+Improvement+Proposals\">Kafka Improvement Proposals</a> for the full list of KIPs.</p><p>If you do not see your KIP here and want to, please reply to <a href=\"https://lists.apache.org/list.html?dev@kafka.apache.org\">the mailing list thread about the release</a>!</p><table class=\"relative-table wrapped\" style=\"width: 82.6271%;\"><colgroup><col style=\"width: 30.4339%;\" /><col style=\"width: 33.7692%;\" /><col style=\"width: 18.4827%;\" /><col style=\"width: 17.3015%;\" /></colgroup><tbody><tr><th>KIP</th><th>JIRA</th><th>Component</th><th>Status</th></tr><tr><td><p class=\"with-breadcrumbs\"><a href=\"https://cwiki.apache.org/confluence/spaces/KAFKA/pages/311627992/KIP-1071+Streams+Rebalance+Protocol\" style=\"text-align: left;\">KIP-1071: Streams Rebalance Protocol</a></p></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"6518dfe8-1e9f-427e-a751-f0680913f80a\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-17125</ac:parameter></ac:structured-macro> GA 4.2</p><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"a9b6820b-8d21-48d5-bf8c-8ef05e168caa\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20116</ac:parameter></ac:structured-macro> Adding warmup tasks</p><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"b64e55a9-0540-4c2a-984e-78e55c0680ca\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20169</ac:parameter></ac:structured-macro> Adding static group membership</p></div></td><td>Core / Streams</td><td><p>&quot;GA with limited feature set&quot; with AK 4.2</p><p>Adding new feature to get close to being feature complete.</p></td></tr><tr><td><p class=\"with-breadcrumbs\"><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-1319%3A+Align+TxnOffsetCommit+API+with+OffsetCommit+API\">KIP-1319: Align TxnOffsetCommit API with OffsetCommit API</a></p></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"0d127d90-b4e9-483d-9b8b-536fab3c6728\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,customfield_12311032,customfield_12311037,customfield_12311022,customfield_12311027,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,Priority,Priority,Priority,Priority,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20444</ac:parameter></ac:structured-macro></p></div></td><td>Clients</td><td>KIP Accepted</td></tr><tr><td><p class=\"with-breadcrumbs\"><ac:link><ri:page ri:space-key=\"KAFKA\" ri:content-title=\"KIP-1301: Deprecate Yammer-based metrics in `GroupCoordinatorMetrics`\" /></ac:link></p></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"4d0e7b20-eb3f-48bd-bc6e-cb6612baf05c\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20196</ac:parameter></ac:structured-macro></p></div></td><td>Core</td><td>Complete</td></tr><tr><td><p> <a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-1306%3A+Extend+ConsumerRebalanceListener+with+Consumer-Aware+methods\">KIP-1306: Extend ConsumerRebalanceListener with Consumer-Aware methods</a> </p></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"118f3fc9-3467-4c06-adf1-5ea65d799e37\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,customfield_12311032,customfield_12311037,customfield_12311022,customfield_12311027,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,Priority,Priority,Priority,Priority,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20385</ac:parameter></ac:structured-macro></p></div></td><td> Clients</td><td>KIP Accepted</td></tr><tr><td><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-1220%3A+Unify+kafka-broker-api-versions+tool+to+cluster-tool+and+support+bootstrap+controllers\">KIP-1220: Unify kafka-broker-api-versions tool to cluster-tool and support bootstrap controllers</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"91c491a3-b0ea-4bba-95e9-1153a9ee749e\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,customfield_12311032,customfield_12311037,customfield_12311022,customfield_12311027,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,Priority,Priority,Priority,Priority,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-19663</ac:parameter></ac:structured-macro></p></div></td><td> Tools</td><td>KIP Accepted</td></tr><tr><td><ac:link><ri:page ri:space-key=\"KAFKA\" ri:content-title=\"KIP-1245: Enforce 'application.server' &lt;server&gt;:&lt;port&gt; format at config level\" /></ac:link></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"0e09bf17-52eb-403f-a509-5709fd6312af\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-17164</ac:parameter></ac:structured-macro></p></div></td><td>Streams</td><td>Complete</td></tr><tr><td><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-1242%3A+Detection+and+handling+of+misrouted+connections\">KIP-1242: Detection and handling of misrouted connections</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"60ec3ce7-3a2f-4ade-88fa-0e853197678b\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,customfield_12311032,customfield_12311037,customfield_12311022,customfield_12311027,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,Priority,Priority,Priority,Priority,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20246</ac:parameter></ac:structured-macro></p></div></td><td> Clients</td><td>Complete</td></tr><tr><td> <a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-1241%3A+Reduce+tiered+storage+redundancy+with+delayed+upload\">KIP-1241: Reduce tiered storage redundancy with delayed upload</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"68415527-49d7-4ead-ab2f-f142f8ead316\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,customfield_12311032,customfield_12311037,customfield_12311022,customfield_12311027,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,Priority,Priority,Priority,Priority,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-19893</ac:parameter></ac:structured-macro></p></div></td><td> <span style=\"letter-spacing: 0.0px;\">Tiered-Storage</span></td><td>Complete</td></tr><tr><td><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-1232%3A+Deprecate+broker.id+config\">KIP-1232: Deprecate broker.id config</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"fc4615c0-613a-4ee0-90c8-bba5aba996c9\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,customfield_12311032,customfield_12311037,customfield_12311022,customfield_12311027,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,Priority,Priority,Priority,Priority,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-18628</ac:parameter></ac:structured-macro></p></div></td><td><span style=\"text-decoration: none;color:var(--ds-text,#172b4d);\">Core</span></td><td>KIP Accepted</td></tr><tr><td><a href=\"https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=373887083\">KIP-1200: Deprecate ClientQuotaCallback#updateClusterMetadata</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"cdd47239-619a-4d60-845b-fb7c66bc7beb\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-19566</ac:parameter></ac:structured-macro> Deprecate ClientQuotaCallback#updateClusterMetadata</p></div></td><td><span style=\"text-decoration: none;color:var(--ds-text,#172b4d);\">Core</span></td><td>Complete</td></tr><tr><td><p class=\"with-breadcrumbs\"><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-1191%3A+Dead-letter+queues+for+share+groups\">KIP-1191: Dead-letter queues for share groups</a></p></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"80a69b4d-7c57-4c47-a5cb-92b7bbbc796b\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,customfield_12311032,customfield_12311037,customfield_12311022,customfield_12311027,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,Priority,Priority,Priority,Priority,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-19469</ac:parameter></ac:structured-macro></p></div></td><td><span style=\"text-decoration: none;color:var(--ds-text,#172b4d);\">Core</span></td><td>Complete</td></tr><tr><td><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-1332%3A+Dynamic+memory+allocation+for+the+Kafka+producer\">KIP-1332: Dynamic memory allocation for the Kafka producer</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"ccd766e9-7574-45c3-b723-401ea3098314\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,customfield_12311032,customfield_12311037,customfield_12311022,customfield_12311027,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,Priority,Priority,Priority,Priority,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20576</ac:parameter></ac:structured-macro></p></div></td><td> Clients</td><td>KIP Accepted<br />Complete as &quot;Preview&quot; with limited functionality</td></tr><tr><td><p><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-1170%3A+Unify+cluster+metadata+bootstrapping\">KIP-1170: Unify cluster metadata bootstrapping</a></p></td><td><div class=\"content-wrapper\"><p><br /></p><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"e6522a30-b8ce-4b59-8fcf-9256d682c22e\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-19648</ac:parameter></ac:structured-macro></p></div><p><br /></p></div></td><td>KRaft</td><td>KIP Accepted</td></tr><tr><td><p><ac:link><ri:page ri:space-key=\"KAFKA\" ri:content-title=\"KIP-909: DNS Resolution Failure Should Not Fail the Clients\" /></ac:link></p></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"fcfe692e-326c-42f6-8b68-44ceb7e91cd3\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-14648</ac:parameter></ac:structured-macro></p></div></td><td>Clients</td><td>KIP Accepted</td></tr><tr><td><p><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-892%3A+Transactional+Semantics+for+StateStores\">KIP-892: Transactional Semantics for StateStores</a></p></td><td><div class=\"content-wrapper\"><p><br /></p><div class=\"content-wrapper\"><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"b7225e37-da00-4ce7-a3aa-b16f911d09b6\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-14412</ac:parameter></ac:structured-macro></div><p><br /></p></div></td><td>Streams</td><td>KIP Accepted</td></tr><tr><td><p><ac:link><ri:page ri:space-key=\"KAFKA\" ri:content-title=\"KIP-1323: Initialization of share group offsets from a specific offset or a file\" /></ac:link></p></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"b710e093-78c9-46d5-b632-6f0f2868a3fc\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20524</ac:parameter></ac:structured-macro></p></div></td><td>Tools</td><td>Complete</td></tr><tr><td><p><ac:link><ri:page ri:space-key=\"KAFKA\" ri:content-title=\"KIP-1331: Streams Group Topology Description Plugin\" /></ac:link></p></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"6838b021-26b5-4507-bb1b-92146bf49347\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20618</ac:parameter></ac:structured-macro></p></div></td><td>Streams</td><td>KIP Accepted</td></tr><tr><td><p><ac:link><ri:page ri:content-title=\"KIP-1284 Introduce CloseOptions.DEFAULT for Kafka Streams\" /></ac:link></p></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"96311cce-4d18-4b72-8103-97759c3ec565\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20167</ac:parameter></ac:structured-macro></p></div></td><td>Streams</td><td>Implemented</td></tr><tr><td><p class=\"with-breadcrumbs\"><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-1276%3A+CIDR-based+Host+Patterns+for+ACLs\" style=\"text-decoration: none;\">KIP-1276: CIDR-based Host Patterns for ACLs</a></p></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"f48d860c-d152-4cc0-ac0f-1db808558d78\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20088</ac:parameter></ac:structured-macro></p></div></td><td>Core</td><td>Complete</td></tr><tr><td><a href=\"https://cwiki.apache.org/confluence/x/co48G\">KIP-1291: Extended I/O Metrics Collection</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"8014f793-3b0b-4343-8034-c13ad6d73da2\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20223</ac:parameter></ac:structured-macro></p></div></td><td>Core</td><td>KIP Accepted</td></tr><tr><td><a href=\"https://cwiki.apache.org/confluence/x/pYwmGQ\" rel=\"nofollow\">KIP-1321: Headers aware StreamPartitioner</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"e1b6a43c-e10e-47fe-9072-be8bf777d89b\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20197</ac:parameter></ac:structured-macro></p></div></td><td>Streams</td><td>Complete</td></tr><tr><td><ac:link><ri:page ri:space-key=\"KAFKA\" ri:content-title=\"KIP-1340: Expose Both Mapped Key and Stream Key in Streams-GlobalKTable Joins\" /></ac:link></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"95ee1e2f-7ffb-41c2-9282-d1235de330e0\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-18731</ac:parameter></ac:structured-macro></p></div></td><td>Streams</td><td>Complete</td></tr><tr><td><ac:link><ri:page ri:space-key=\"KAFKA\" ri:content-title=\"KIP-1357: Add broker side custom assignors for &quot;streams&quot; groups\" /></ac:link></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"1a94ddf1-3ccd-43bd-8208-8d010726082c\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20683</ac:parameter></ac:structured-macro></p></div></td><td>Streams</td><td>Complete</td></tr><tr><td><a href=\"https://cwiki.apache.org/confluence/spaces/KAFKA/pages/430408653/KIP-1356+Introduce+IQv2+for+headers-aware+state+stores\">KIP-1356: Introduce IQv2 for headers-aware state stores</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"d94d5907-07e0-41d8-a4f0-e6b3fffaaf70\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20682</ac:parameter></ac:structured-macro></p></div></td><td>Streams</td><td>Major features merged, doc PR opened</td></tr><tr><td><a href=\"https://cwiki.apache.org/confluence/x/GAq2Fg\">KIP-1209: Add configuration to control internal topic creation in Kafka Connect</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"102b745f-51f7-455e-a9c2-1fa5472cd918\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20430</ac:parameter></ac:structured-macro></p></div></td><td>Connect</td><td>Major features merged. follow-up opened</td></tr><tr><td><a href=\"https://cwiki.apache.org/confluence/x/XpQ8G\">KIP-1299 Use key range in ProducerPerformance</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"11ab190c-146a-44f8-b8f3-84d8da17a8b4\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-967</ac:parameter></ac:structured-macro></p></div></td><td>Tools</td><td>Complete</td></tr><tr><td><ac:link><ri:page ri:space-key=\"KAFKA\" ri:content-title=\"KIP-1283: Clarify KafkaStreams cleanUp semantics to preserve process metadata and state directory lock file\" /></ac:link></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"18da04d0-95a2-4709-99f8-0b80dab49054\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-17251</ac:parameter></ac:structured-macro></p></div></td><td>Streams</td><td>Complete</td></tr></tbody></table><h2>Postponed to subsequent release</h2><table class=\"relative-table wrapped\" style=\"width: 82.9096%;\"><colgroup><col style=\"width: 35.9393%;\" /><col style=\"width: 26.3832%;\" /><col style=\"width: 14.6804%;\" /><col style=\"width: 22.9901%;\" /></colgroup><tbody><tr><th>KIP</th><th>JIRA</th><th>Component</th><th>Status</th></tr><tr><td><br /></td><td><br /></td><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td><td><br /></td><td><br /></td></tr></tbody></table><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/429064575?status=historical&version=39"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": "none"
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=446071574",
+    "edit": "/pages/resumedraft.action?draftId=446071574&draftShareId=f7d981f5-5018-4e0a-af14-fcb863d01a26",
+    "tinyui": "/x/FoOWGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/429064575?status=historical&version=39"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/429064575/child?parentVersion=39",
+    "restrictions": "/rest/api/content/429064575/restriction/byOperation",
+    "history": "/rest/api/content/429064575/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/429064575/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/429064575/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "429064575",
+   "type": "page",
+   "status": "historical",
+   "title": "Release Plan 4.4.0",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "mjsax",
+     "userKey": "8aa980874ebf4c1f014fb71c804106cc",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/61318460/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Matthias J. Sax",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa980874ebf4c1f014fb71c804106cc"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-10T20:49:32.000Z",
+    "message": "",
+    "number": 38,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/38"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=38"
+    }
+   },
+   "position": -1,
+   "body": {
+    "storage": {
+     "value": "<h2><span>Release Dates</span></h2><ul><li><span>KIP Freeze: (8th July 2026<span style=\"color:var(--ds-text,#333333);\">)</span></span><ul><li><span>A KIP must be accepted by this date in order to be considered for this release. Note, any KIP that may not be implemented in a week, or that might destabilize the release, should be deferred.</span></li></ul></li><li><span>Feature Freeze:<strong><span style=\"color:var(--ds-text,#333333);\"> </span></strong><span style=\"color:var(--ds-text,#333333);\">(29th July 2026)</span></span><ul><li><em>major features merged &amp; working on stabilisation, minor features have PR, release branch cut; anything not in this state will be automatically moved to the next release in Jira</em></li></ul></li><li><span>Code Freeze:<strong><span class=\"hgKElc\"> </span></strong><span style=\"color:var(--ds-text,#333333);\">(12th Aug 2026)</span></span></li><li><span>At least four weeks of stabilization will follow Code Freeze (taking holidays into account), meaning we expect to release <strong>no earlier</strong> than<strong> September 9 2026</strong>.</span></li></ul><p><span><br /></span><span>These dates are goals and subject to change, but we expect to stay on the </span><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/Time+Based+Release+Plan\" rel=\"nofollow\"><span>Time Based Release Plan</span></a><span> unless unexpected critical issues come up. While the earliest possible release date is 2w after code freeze, release candidates (RCs) will roll out as needed until the release vote passes.</span></p><p><span>The release manager is <ac:link><ri:user ri:userkey=\"ae84fb5e74d9bf270175f4a45d3605be\" /></ac:link> </span></p><h2><span>How to Contribute</span></h2><h3><strong>Before code freeze:</strong></h3><ul><li><span>Participate in votes and discussions to land or postpone the open KIPs.</span></li><li><span>Review patches. We anticipate that this release, as it usually happens, <strong>will be bottlenecked mostly on reviews</strong>. The more reviewers, the more content we can fit in.</span></li><li><span>Write unit/integration/system tests. We want to preserve the tradition of high-quality releases in Apache Kafka. </span></li></ul><h3><strong>After code freeze:</strong></h3><ul><li><span>Write more unit/integration/system tests</span><strong>. </strong><span>We want to preserve the tradition of high-quality releases in Apache Kafka.</span></li><li><span>Improve documentation.</span></li><li><span>Test the release candidates. </span></li><li><span>Open blocker JIRAs on critical issues found. Open non-blocker JIRAs on any other issues found.</span></li><li><span>Fix critical bugs.</span></li><li><span>Review bug fixes.</span></li><li><span>Vote on release candidates. Even though only PMC votes are binding, community votes are super important as we evaluate the readiness of the release.</span></li></ul><h2>Open Issues</h2><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"187b849c-2955-4657-aeea-ad3767091264\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"maximumIssues\">20</ac:parameter><ac:parameter ac:name=\"jqlQuery\">project = KAFKA AND fixVersion = 4.4.0  AND status not in (resolved, closed) ORDER BY priority DESC, status DESC, updated DESC   </ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter></ac:structured-macro></p><p><br /></p><p>Also, feel free to refer to the 4.4.0 release page for more details of the included tickets (requires logging in to the Apache Kafka Jira project).</p><h2>Planned KIP Content</h2><p>Note: The planned content is not binding - the final content will be based on the features committed by the branch-cutting date.</p><p>See <a href=\"https://cwiki.apache.org/confluence/display/KAFKA/Kafka+Improvement+Proposals\">Kafka Improvement Proposals</a> for the full list of KIPs.</p><p>If you do not see your KIP here and want to, please reply to <a href=\"https://lists.apache.org/list.html?dev@kafka.apache.org\">the mailing list thread about the release</a>!</p><table class=\"relative-table wrapped\" style=\"width: 82.6271%;\"><colgroup><col style=\"width: 30.4339%;\" /><col style=\"width: 33.7692%;\" /><col style=\"width: 18.4827%;\" /><col style=\"width: 17.3015%;\" /></colgroup><tbody><tr><th>KIP</th><th>JIRA</th><th>Component</th><th>Status</th></tr><tr><td><p class=\"with-breadcrumbs\"><a href=\"https://cwiki.apache.org/confluence/spaces/KAFKA/pages/311627992/KIP-1071+Streams+Rebalance+Protocol\" style=\"text-align: left;\">KIP-1071: Streams Rebalance Protocol</a></p></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"6518dfe8-1e9f-427e-a751-f0680913f80a\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-17125</ac:parameter></ac:structured-macro> GA 4.2</p><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"a9b6820b-8d21-48d5-bf8c-8ef05e168caa\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20116</ac:parameter></ac:structured-macro> Adding warmup tasks</p><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"b64e55a9-0540-4c2a-984e-78e55c0680ca\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20169</ac:parameter></ac:structured-macro> Adding static group membership</p></div></td><td>Core / Streams</td><td><p>&quot;GA with limited feature set&quot; with AK 4.2</p><p>Adding new feature to get close to being feature complete.</p></td></tr><tr><td><p class=\"with-breadcrumbs\"><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-1319%3A+Align+TxnOffsetCommit+API+with+OffsetCommit+API\">KIP-1319: Align TxnOffsetCommit API with OffsetCommit API</a></p></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"0d127d90-b4e9-483d-9b8b-536fab3c6728\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,customfield_12311032,customfield_12311037,customfield_12311022,customfield_12311027,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,Priority,Priority,Priority,Priority,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20444</ac:parameter></ac:structured-macro></p></div></td><td>Clients</td><td>KIP Accepted</td></tr><tr><td><p class=\"with-breadcrumbs\"><ac:link><ri:page ri:space-key=\"KAFKA\" ri:content-title=\"KIP-1301: Deprecate Yammer-based metrics in `GroupCoordinatorMetrics`\" /></ac:link></p></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"4d0e7b20-eb3f-48bd-bc6e-cb6612baf05c\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20196</ac:parameter></ac:structured-macro></p></div></td><td>Core</td><td>Complete</td></tr><tr><td><p> <a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-1306%3A+Extend+ConsumerRebalanceListener+with+Consumer-Aware+methods\">KIP-1306: Extend ConsumerRebalanceListener with Consumer-Aware methods</a> </p></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"118f3fc9-3467-4c06-adf1-5ea65d799e37\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,customfield_12311032,customfield_12311037,customfield_12311022,customfield_12311027,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,Priority,Priority,Priority,Priority,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20385</ac:parameter></ac:structured-macro></p></div></td><td> Clients</td><td>KIP Accepted</td></tr><tr><td><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-1220%3A+Unify+kafka-broker-api-versions+tool+to+cluster-tool+and+support+bootstrap+controllers\">KIP-1220: Unify kafka-broker-api-versions tool to cluster-tool and support bootstrap controllers</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"91c491a3-b0ea-4bba-95e9-1153a9ee749e\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,customfield_12311032,customfield_12311037,customfield_12311022,customfield_12311027,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,Priority,Priority,Priority,Priority,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-19663</ac:parameter></ac:structured-macro></p></div></td><td> Tools</td><td>KIP Accepted</td></tr><tr><td><ac:link><ri:page ri:space-key=\"KAFKA\" ri:content-title=\"KIP-1245: Enforce 'application.server' &lt;server&gt;:&lt;port&gt; format at config level\" /></ac:link></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"0e09bf17-52eb-403f-a509-5709fd6312af\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-17164</ac:parameter></ac:structured-macro></p></div></td><td>Streams</td><td>Complete</td></tr><tr><td><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-1242%3A+Detection+and+handling+of+misrouted+connections\">KIP-1242: Detection and handling of misrouted connections</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"60ec3ce7-3a2f-4ade-88fa-0e853197678b\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,customfield_12311032,customfield_12311037,customfield_12311022,customfield_12311027,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,Priority,Priority,Priority,Priority,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20246</ac:parameter></ac:structured-macro></p></div></td><td> Clients</td><td>Complete</td></tr><tr><td> <a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-1241%3A+Reduce+tiered+storage+redundancy+with+delayed+upload\">KIP-1241: Reduce tiered storage redundancy with delayed upload</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"68415527-49d7-4ead-ab2f-f142f8ead316\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,customfield_12311032,customfield_12311037,customfield_12311022,customfield_12311027,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,Priority,Priority,Priority,Priority,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-19893</ac:parameter></ac:structured-macro></p></div></td><td> <span style=\"letter-spacing: 0.0px;\">Tiered-Storage</span></td><td>Complete</td></tr><tr><td><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-1232%3A+Deprecate+broker.id+config\">KIP-1232: Deprecate broker.id config</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"fc4615c0-613a-4ee0-90c8-bba5aba996c9\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,customfield_12311032,customfield_12311037,customfield_12311022,customfield_12311027,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,Priority,Priority,Priority,Priority,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-18628</ac:parameter></ac:structured-macro></p></div></td><td><span style=\"text-decoration: none;color:var(--ds-text,#172b4d);\">Core</span></td><td>KIP Accepted</td></tr><tr><td><a href=\"https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=373887083\">KIP-1200: Deprecate ClientQuotaCallback#updateClusterMetadata</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"cdd47239-619a-4d60-845b-fb7c66bc7beb\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-19566</ac:parameter></ac:structured-macro> Deprecate ClientQuotaCallback#updateClusterMetadata</p></div></td><td><span style=\"text-decoration: none;color:var(--ds-text,#172b4d);\">Core</span></td><td>Complete</td></tr><tr><td><p class=\"with-breadcrumbs\"><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-1191%3A+Dead-letter+queues+for+share+groups\">KIP-1191: Dead-letter queues for share groups</a></p></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"80a69b4d-7c57-4c47-a5cb-92b7bbbc796b\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,customfield_12311032,customfield_12311037,customfield_12311022,customfield_12311027,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,Priority,Priority,Priority,Priority,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-19469</ac:parameter></ac:structured-macro></p></div></td><td><span style=\"text-decoration: none;color:var(--ds-text,#172b4d);\">Core</span></td><td>Complete</td></tr><tr><td><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-1332%3A+Dynamic+memory+allocation+for+the+Kafka+producer\">KIP-1332: Dynamic memory allocation for the Kafka producer</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"ccd766e9-7574-45c3-b723-401ea3098314\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,customfield_12311032,customfield_12311037,customfield_12311022,customfield_12311027,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,Priority,Priority,Priority,Priority,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20576</ac:parameter></ac:structured-macro></p></div></td><td> Clients</td><td>KIP Accepted</td></tr><tr><td><p><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-1170%3A+Unify+cluster+metadata+bootstrapping\">KIP-1170: Unify cluster metadata bootstrapping</a></p></td><td><div class=\"content-wrapper\"><p><br /></p><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"e6522a30-b8ce-4b59-8fcf-9256d682c22e\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-19648</ac:parameter></ac:structured-macro></p></div><p><br /></p></div></td><td>KRaft</td><td>KIP Accepted</td></tr><tr><td><p><ac:link><ri:page ri:space-key=\"KAFKA\" ri:content-title=\"KIP-909: DNS Resolution Failure Should Not Fail the Clients\" /></ac:link></p></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"fcfe692e-326c-42f6-8b68-44ceb7e91cd3\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-14648</ac:parameter></ac:structured-macro></p></div></td><td>Clients</td><td>KIP Accepted</td></tr><tr><td><p><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-892%3A+Transactional+Semantics+for+StateStores\">KIP-892: Transactional Semantics for StateStores</a></p></td><td><div class=\"content-wrapper\"><p><br /></p><div class=\"content-wrapper\"><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"b7225e37-da00-4ce7-a3aa-b16f911d09b6\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-14412</ac:parameter></ac:structured-macro></div><p><br /></p></div></td><td>Streams</td><td>KIP Accepted</td></tr><tr><td><p><ac:link><ri:page ri:space-key=\"KAFKA\" ri:content-title=\"KIP-1323: Initialization of share group offsets from a specific offset or a file\" /></ac:link></p></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"b710e093-78c9-46d5-b632-6f0f2868a3fc\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20524</ac:parameter></ac:structured-macro></p></div></td><td>Tools</td><td>Complete</td></tr><tr><td><p><ac:link><ri:page ri:space-key=\"KAFKA\" ri:content-title=\"KIP-1331: Streams Group Topology Description Plugin\" /></ac:link></p></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"6838b021-26b5-4507-bb1b-92146bf49347\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20618</ac:parameter></ac:structured-macro></p></div></td><td>Streams</td><td>KIP Accepted</td></tr><tr><td><p><ac:link><ri:page ri:content-title=\"KIP-1284 Introduce CloseOptions.DEFAULT for Kafka Streams\" /></ac:link></p></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"96311cce-4d18-4b72-8103-97759c3ec565\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20167</ac:parameter></ac:structured-macro></p></div></td><td>Streams</td><td>Implemented</td></tr><tr><td><p class=\"with-breadcrumbs\"><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-1276%3A+CIDR-based+Host+Patterns+for+ACLs\" style=\"text-decoration: none;\">KIP-1276: CIDR-based Host Patterns for ACLs</a></p></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"f48d860c-d152-4cc0-ac0f-1db808558d78\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20088</ac:parameter></ac:structured-macro></p></div></td><td>Core</td><td>Complete</td></tr><tr><td><a href=\"https://cwiki.apache.org/confluence/x/co48G\">KIP-1291: Extended I/O Metrics Collection</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"8014f793-3b0b-4343-8034-c13ad6d73da2\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20223</ac:parameter></ac:structured-macro></p></div></td><td>Core</td><td>KIP Accepted</td></tr><tr><td><a href=\"https://cwiki.apache.org/confluence/x/pYwmGQ\" rel=\"nofollow\">KIP-1321: Headers aware StreamPartitioner</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"e1b6a43c-e10e-47fe-9072-be8bf777d89b\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20197</ac:parameter></ac:structured-macro></p></div></td><td>Streams</td><td>Complete</td></tr><tr><td><ac:link><ri:page ri:space-key=\"KAFKA\" ri:content-title=\"KIP-1340: Expose Both Mapped Key and Stream Key in Streams-GlobalKTable Joins\" /></ac:link></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"95ee1e2f-7ffb-41c2-9282-d1235de330e0\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-18731</ac:parameter></ac:structured-macro></p></div></td><td>Streams</td><td>Complete</td></tr><tr><td><ac:link><ri:page ri:space-key=\"KAFKA\" ri:content-title=\"KIP-1357: Add broker side custom assignors for &quot;streams&quot; groups\" /></ac:link></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"1a94ddf1-3ccd-43bd-8208-8d010726082c\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20683</ac:parameter></ac:structured-macro></p></div></td><td>Streams</td><td>Complete</td></tr><tr><td><a href=\"https://cwiki.apache.org/confluence/spaces/KAFKA/pages/430408653/KIP-1356+Introduce+IQv2+for+headers-aware+state+stores\">KIP-1356: Introduce IQv2 for headers-aware state stores</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"d94d5907-07e0-41d8-a4f0-e6b3fffaaf70\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20682</ac:parameter></ac:structured-macro></p></div></td><td>Streams</td><td>Major features merged, doc PR opened</td></tr><tr><td><a href=\"https://cwiki.apache.org/confluence/x/GAq2Fg\">KIP-1209: Add configuration to control internal topic creation in Kafka Connect</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"102b745f-51f7-455e-a9c2-1fa5472cd918\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20430</ac:parameter></ac:structured-macro></p></div></td><td>Connect</td><td>Major features merged. follow-up opened</td></tr><tr><td><a href=\"https://cwiki.apache.org/confluence/x/XpQ8G\">KIP-1299 Use key range in ProducerPerformance</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"11ab190c-146a-44f8-b8f3-84d8da17a8b4\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-967</ac:parameter></ac:structured-macro></p></div></td><td>Tools</td><td>Complete</td></tr><tr><td><ac:link><ri:page ri:space-key=\"KAFKA\" ri:content-title=\"KIP-1283: Clarify KafkaStreams cleanUp semantics to preserve process metadata and state directory lock file\" /></ac:link></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"18da04d0-95a2-4709-99f8-0b80dab49054\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-17251</ac:parameter></ac:structured-macro></p></div></td><td>Streams</td><td>Complete</td></tr></tbody></table><h2>Postponed to subsequent release</h2><table class=\"relative-table wrapped\" style=\"width: 82.9096%;\"><colgroup><col style=\"width: 35.9393%;\" /><col style=\"width: 26.3832%;\" /><col style=\"width: 14.6804%;\" /><col style=\"width: 22.9901%;\" /></colgroup><tbody><tr><th>KIP</th><th>JIRA</th><th>Component</th><th>Status</th></tr><tr><td><br /></td><td><br /></td><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td><td><br /></td><td><br /></td></tr></tbody></table><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/429064575?status=historical&version=38"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": "none"
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=446071440",
+    "edit": "/pages/resumedraft.action?draftId=446071440&draftShareId=f7d981f5-5018-4e0a-af14-fcb863d01a26",
+    "tinyui": "/x/kIKWGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/429064575?status=historical&version=38"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/429064575/child?parentVersion=38",
+    "restrictions": "/rest/api/content/429064575/restriction/byOperation",
+    "history": "/rest/api/content/429064575/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/429064575/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/429064575/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "429064575",
+   "type": "page",
+   "status": "historical",
+   "title": "Release Plan 4.4.0",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "chia7712",
+     "userKey": "8aa9808763853cef0163d913c5e4012b",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/85477027/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Chia-Ping Tsai",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa9808763853cef0163d913c5e4012b"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-06T12:24:30.000Z",
+    "message": "",
+    "number": 37,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/429064575/version/37"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/429064575?status=historical&version=37"
+    }
+   },
+   "position": -1,
+   "body": {
+    "storage": {
+     "value": "<h2><span>Release Dates</span></h2><ul><li><span>KIP Freeze: (8th July 2026<span style=\"color:var(--ds-text,#333333);\">)</span></span><ul><li><span>A KIP must be accepted by this date in order to be considered for this release. Note, any KIP that may not be implemented in a week, or that might destabilize the release, should be deferred.</span></li></ul></li><li><span>Feature Freeze:<strong><span style=\"color:var(--ds-text,#333333);\"> </span></strong><span style=\"color:var(--ds-text,#333333);\">(29th July 2026)</span></span><ul><li><em>major features merged &amp; working on stabilisation, minor features have PR, release branch cut; anything not in this state will be automatically moved to the next release in Jira</em></li></ul></li><li><span>Code Freeze:<strong><span class=\"hgKElc\"> </span></strong><span style=\"color:var(--ds-text,#333333);\">(12th Aug 2026)</span></span></li><li><span>At least four weeks of stabilization will follow Code Freeze (taking holidays into account), meaning we expect to release <strong>no earlier</strong> than<strong> September 9 2026</strong>.</span></li></ul><p><span><br /></span><span>These dates are goals and subject to change, but we expect to stay on the </span><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/Time+Based+Release+Plan\" rel=\"nofollow\"><span>Time Based Release Plan</span></a><span> unless unexpected critical issues come up. While the earliest possible release date is 2w after code freeze, release candidates (RCs) will roll out as needed until the release vote passes.</span></p><p><span>The release manager is <ac:link><ri:user ri:userkey=\"ae84fb5e74d9bf270175f4a45d3605be\" /></ac:link> </span></p><h2><span>How to Contribute</span></h2><h3><strong>Before code freeze:</strong></h3><ul><li><span>Participate in votes and discussions to land or postpone the open KIPs.</span></li><li><span>Review patches. We anticipate that this release, as it usually happens, <strong>will be bottlenecked mostly on reviews</strong>. The more reviewers, the more content we can fit in.</span></li><li><span>Write unit/integration/system tests. We want to preserve the tradition of high-quality releases in Apache Kafka. </span></li></ul><h3><strong>After code freeze:</strong></h3><ul><li><span>Write more unit/integration/system tests</span><strong>. </strong><span>We want to preserve the tradition of high-quality releases in Apache Kafka.</span></li><li><span>Improve documentation.</span></li><li><span>Test the release candidates. </span></li><li><span>Open blocker JIRAs on critical issues found. Open non-blocker JIRAs on any other issues found.</span></li><li><span>Fix critical bugs.</span></li><li><span>Review bug fixes.</span></li><li><span>Vote on release candidates. Even though only PMC votes are binding, community votes are super important as we evaluate the readiness of the release.</span></li></ul><h2>Open Issues</h2><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"187b849c-2955-4657-aeea-ad3767091264\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"maximumIssues\">20</ac:parameter><ac:parameter ac:name=\"jqlQuery\">project = KAFKA AND fixVersion = 4.4.0  AND status not in (resolved, closed) ORDER BY priority DESC, status DESC, updated DESC   </ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter></ac:structured-macro></p><p><br /></p><p>Also, feel free to refer to the 4.4.0 release page for more details of the included tickets (requires logging in to the Apache Kafka Jira project).</p><h2>Planned KIP Content</h2><p>Note: The planned content is not binding - the final content will be based on the features committed by the branch-cutting date.</p><p>See <a href=\"https://cwiki.apache.org/confluence/display/KAFKA/Kafka+Improvement+Proposals\">Kafka Improvement Proposals</a> for the full list of KIPs.</p><p>If you do not see your KIP here and want to, please reply to <a href=\"https://lists.apache.org/list.html?dev@kafka.apache.org\">the mailing list thread about the release</a>!</p><table class=\"relative-table wrapped\" style=\"width: 82.6271%;\"><colgroup><col style=\"width: 30.4339%;\" /><col style=\"width: 33.7692%;\" /><col style=\"width: 18.4827%;\" /><col style=\"width: 17.3015%;\" /></colgroup><tbody><tr><th>KIP</th><th>JIRA</th><th>Component</th><th>Status</th></tr><tr><td><p class=\"with-breadcrumbs\"><a href=\"https://cwiki.apache.org/confluence/spaces/KAFKA/pages/311627992/KIP-1071+Streams+Rebalance+Protocol\" style=\"text-align: left;\">KIP-1071: Streams Rebalance Protocol</a></p></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"6518dfe8-1e9f-427e-a751-f0680913f80a\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-17125</ac:parameter></ac:structured-macro> GA 4.2</p><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"a9b6820b-8d21-48d5-bf8c-8ef05e168caa\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20116</ac:parameter></ac:structured-macro> Adding warmup tasks</p><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"b64e55a9-0540-4c2a-984e-78e55c0680ca\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20169</ac:parameter></ac:structured-macro> Adding static group membership</p></div></td><td>Core / Streams</td><td><p>&quot;GA with limited feature set&quot; with AK 4.2</p><p>Adding new feature to get close to being feature complete.</p></td></tr><tr><td><p class=\"with-breadcrumbs\"><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-1319%3A+Align+TxnOffsetCommit+API+with+OffsetCommit+API\">KIP-1319: Align TxnOffsetCommit API with OffsetCommit API</a></p></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"0d127d90-b4e9-483d-9b8b-536fab3c6728\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,customfield_12311032,customfield_12311037,customfield_12311022,customfield_12311027,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,Priority,Priority,Priority,Priority,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20444</ac:parameter></ac:structured-macro></p></div></td><td>Clients</td><td>KIP Accepted</td></tr><tr><td><p class=\"with-breadcrumbs\"><ac:link><ri:page ri:space-key=\"KAFKA\" ri:content-title=\"KIP-1301: Deprecate Yammer-based metrics in `GroupCoordinatorMetrics`\" /></ac:link></p></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"4d0e7b20-eb3f-48bd-bc6e-cb6612baf05c\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20196</ac:parameter></ac:structured-macro></p></div></td><td>Core</td><td>Complete</td></tr><tr><td><p> <a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-1306%3A+Extend+ConsumerRebalanceListener+with+Consumer-Aware+methods\">KIP-1306: Extend ConsumerRebalanceListener with Consumer-Aware methods</a> </p></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"118f3fc9-3467-4c06-adf1-5ea65d799e37\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,customfield_12311032,customfield_12311037,customfield_12311022,customfield_12311027,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,Priority,Priority,Priority,Priority,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20385</ac:parameter></ac:structured-macro></p></div></td><td> Clients</td><td>KIP Accepted</td></tr><tr><td><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-1220%3A+Unify+kafka-broker-api-versions+tool+to+cluster-tool+and+support+bootstrap+controllers\">KIP-1220: Unify kafka-broker-api-versions tool to cluster-tool and support bootstrap controllers</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"91c491a3-b0ea-4bba-95e9-1153a9ee749e\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,customfield_12311032,customfield_12311037,customfield_12311022,customfield_12311027,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,Priority,Priority,Priority,Priority,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-19663</ac:parameter></ac:structured-macro></p></div></td><td> Tools</td><td>KIP Accepted</td></tr><tr><td><ac:link><ri:page ri:space-key=\"KAFKA\" ri:content-title=\"KIP-1245: Enforce 'application.server' &lt;server&gt;:&lt;port&gt; format at config level\" /></ac:link></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"0e09bf17-52eb-403f-a509-5709fd6312af\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-17164</ac:parameter></ac:structured-macro></p></div></td><td>Streams</td><td>Complete</td></tr><tr><td><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-1242%3A+Detection+and+handling+of+misrouted+connections\">KIP-1242: Detection and handling of misrouted connections</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"60ec3ce7-3a2f-4ade-88fa-0e853197678b\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,customfield_12311032,customfield_12311037,customfield_12311022,customfield_12311027,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,Priority,Priority,Priority,Priority,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20246</ac:parameter></ac:structured-macro></p></div></td><td> Clients</td><td>Complete</td></tr><tr><td> <a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-1241%3A+Reduce+tiered+storage+redundancy+with+delayed+upload\">KIP-1241: Reduce tiered storage redundancy with delayed upload</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"68415527-49d7-4ead-ab2f-f142f8ead316\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,customfield_12311032,customfield_12311037,customfield_12311022,customfield_12311027,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,Priority,Priority,Priority,Priority,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-19893</ac:parameter></ac:structured-macro></p></div></td><td> <span style=\"letter-spacing: 0.0px;\">Tiered-Storage</span></td><td>Complete</td></tr><tr><td><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-1232%3A+Deprecate+broker.id+config\">KIP-1232: Deprecate broker.id config</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"fc4615c0-613a-4ee0-90c8-bba5aba996c9\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,customfield_12311032,customfield_12311037,customfield_12311022,customfield_12311027,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,Priority,Priority,Priority,Priority,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-18628</ac:parameter></ac:structured-macro></p></div></td><td><span style=\"text-decoration: none;color:var(--ds-text,#172b4d);\">Core</span></td><td>KIP Accepted</td></tr><tr><td><a href=\"https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=373887083\">KIP-1200: Deprecate ClientQuotaCallback#updateClusterMetadata</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"cdd47239-619a-4d60-845b-fb7c66bc7beb\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-19566</ac:parameter></ac:structured-macro> Deprecate ClientQuotaCallback#updateClusterMetadata</p></div></td><td><span style=\"text-decoration: none;color:var(--ds-text,#172b4d);\">Core</span></td><td>Complete</td></tr><tr><td><p class=\"with-breadcrumbs\"><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-1191%3A+Dead-letter+queues+for+share+groups\">KIP-1191: Dead-letter queues for share groups</a></p></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"80a69b4d-7c57-4c47-a5cb-92b7bbbc796b\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,customfield_12311032,customfield_12311037,customfield_12311022,customfield_12311027,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,Priority,Priority,Priority,Priority,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-19469</ac:parameter></ac:structured-macro></p></div></td><td><span style=\"text-decoration: none;color:var(--ds-text,#172b4d);\">Core</span></td><td>Complete</td></tr><tr><td><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-1332%3A+Dynamic+memory+allocation+for+the+Kafka+producer\">KIP-1332: Dynamic memory allocation for the Kafka producer</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"ccd766e9-7574-45c3-b723-401ea3098314\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,customfield_12311032,customfield_12311037,customfield_12311022,customfield_12311027,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,Priority,Priority,Priority,Priority,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20576</ac:parameter></ac:structured-macro></p></div></td><td> Clients</td><td>KIP Accepted</td></tr><tr><td><p><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-1170%3A+Unify+cluster+metadata+bootstrapping\">KIP-1170: Unify cluster metadata bootstrapping</a></p></td><td><div class=\"content-wrapper\"><p><br /></p><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"e6522a30-b8ce-4b59-8fcf-9256d682c22e\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-19648</ac:parameter></ac:structured-macro></p></div><p><br /></p></div></td><td>KRaft</td><td>KIP Accepted</td></tr><tr><td><p><ac:link><ri:page ri:space-key=\"KAFKA\" ri:content-title=\"KIP-909: DNS Resolution Failure Should Not Fail the Clients\" /></ac:link></p></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"fcfe692e-326c-42f6-8b68-44ceb7e91cd3\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-14648</ac:parameter></ac:structured-macro></p></div></td><td>Clients</td><td>KIP Accepted</td></tr><tr><td><p><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-892%3A+Transactional+Semantics+for+StateStores\">KIP-892: Transactional Semantics for StateStores</a></p></td><td><div class=\"content-wrapper\"><p><br /></p><div class=\"content-wrapper\"><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"b7225e37-da00-4ce7-a3aa-b16f911d09b6\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-14412</ac:parameter></ac:structured-macro></div><p><br /></p></div></td><td>Streams</td><td>KIP Accepted</td></tr><tr><td><p><ac:link><ri:page ri:space-key=\"KAFKA\" ri:content-title=\"KIP-1323: Initialization of share group offsets from a specific offset or a file\" /></ac:link></p></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"b710e093-78c9-46d5-b632-6f0f2868a3fc\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20524</ac:parameter></ac:structured-macro></p></div></td><td>Tools</td><td>Complete</td></tr><tr><td><p><ac:link><ri:page ri:space-key=\"KAFKA\" ri:content-title=\"KIP-1331: Streams Group Topology Description Plugin\" /></ac:link></p></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"6838b021-26b5-4507-bb1b-92146bf49347\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20618</ac:parameter></ac:structured-macro></p></div></td><td>Streams</td><td>KIP Accepted</td></tr><tr><td><p><ac:link><ri:page ri:content-title=\"KIP-1284 Introduce CloseOptions.DEFAULT for Kafka Streams\" /></ac:link></p></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"96311cce-4d18-4b72-8103-97759c3ec565\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20167</ac:parameter></ac:structured-macro></p></div></td><td>Streams</td><td>Implemented</td></tr><tr><td><p class=\"with-breadcrumbs\"><a href=\"https://cwiki.apache.org/confluence/display/KAFKA/KIP-1276%3A+CIDR-based+Host+Patterns+for+ACLs\" style=\"text-decoration: none;\">KIP-1276: CIDR-based Host Patterns for ACLs</a></p></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"f48d860c-d152-4cc0-ac0f-1db808558d78\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20088</ac:parameter></ac:structured-macro></p></div></td><td>Core</td><td>Complete</td></tr><tr><td><a href=\"https://cwiki.apache.org/confluence/x/co48G\">KIP-1291: Extended I/O Metrics Collection</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"8014f793-3b0b-4343-8034-c13ad6d73da2\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"columnIds\">issuekey,summary,issuetype,created,updated,duedate,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"columns\">key,summary,type,created,updated,due,assignee,reporter,priority,status,resolution</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20223</ac:parameter></ac:structured-macro></p></div></td><td>Core</td><td>KIP Accepted</td></tr><tr><td><a href=\"https://cwiki.apache.org/confluence/x/pYwmGQ\" rel=\"nofollow\">KIP-1321: Headers aware StreamPartitioner</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"e1b6a43c-e10e-47fe-9072-be8bf777d89b\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20197</ac:parameter></ac:structured-macro></p></div></td><td>Streams</td><td>Complete</td></tr><tr><td><ac:link><ri:page ri:space-key=\"KAFKA\" ri:content-title=\"KIP-1340: Expose Both Mapped Key and Stream Key in Streams-GlobalKTable Joins\" /></ac:link></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"95ee1e2f-7ffb-41c2-9282-d1235de330e0\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-18731</ac:parameter></ac:structured-macro></p></div></td><td>Streams</td><td>Complete</td></tr><tr><td><ac:link><ri:page ri:space-key=\"KAFKA\" ri:content-title=\"KIP-1357: Add broker side custom assignors for &quot;streams&quot; groups\" /></ac:link></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"1a94ddf1-3ccd-43bd-8208-8d010726082c\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20683</ac:parameter></ac:structured-macro></p></div></td><td>Streams</td><td>Complete</td></tr><tr><td><a href=\"https://cwiki.apache.org/confluence/spaces/KAFKA/pages/430408653/KIP-1356+Introduce+IQv2+for+headers-aware+state+stores\">KIP-1356: Introduce IQv2 for headers-aware state stores</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"d94d5907-07e0-41d8-a4f0-e6b3fffaaf70\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20682</ac:parameter></ac:structured-macro></p></div></td><td>Streams</td><td>Major features merged, doc PR opened</td></tr><tr><td><a href=\"https://cwiki.apache.org/confluence/x/GAq2Fg\">KIP-1209: Add configuration to control internal topic creation in Kafka Connect</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"102b745f-51f7-455e-a9c2-1fa5472cd918\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-20430</ac:parameter></ac:structured-macro></p></div></td><td>Connect</td><td>Major features merged. follow-up opened</td></tr><tr><td><a href=\"https://cwiki.apache.org/confluence/x/XpQ8G\">KIP-1299 Use key range in ProducerPerformance</a></td><td><div class=\"content-wrapper\"><p><ac:structured-macro ac:name=\"jira\" ac:schema-version=\"1\" ac:macro-id=\"11ab190c-146a-44f8-b8f3-84d8da17a8b4\"><ac:parameter ac:name=\"server\">ASF JIRA</ac:parameter><ac:parameter ac:name=\"serverId\">5aa69414-a9e9-3523-82ec-879b028fb15b</ac:parameter><ac:parameter ac:name=\"key\">KAFKA-967</ac:parameter></ac:structured-macro></p></div></td><td>Tools</td><td>Complete</td></tr></tbody></table><h2>Postponed to subsequent release</h2><table class=\"relative-table wrapped\" style=\"width: 82.9096%;\"><colgroup><col style=\"width: 35.9393%;\" /><col style=\"width: 26.3832%;\" /><col style=\"width: 14.6804%;\" /><col style=\"width: 22.9901%;\" /></colgroup><tbody><tr><th>KIP</th><th>JIRA</th><th>Component</th><th>Status</th></tr><tr><td><br /></td><td><br /></td><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td><td><br /></td><td><br /></td></tr><tr><td><br /></td><td><br /></td><td><br /></td><td><br /></td></tr></tbody></table><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/429064575?status=historical&version=37"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": "none"
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=446071421",
+    "edit": "/pages/resumedraft.action?draftId=446071421&draftShareId=f7d981f5-5018-4e0a-af14-fcb863d01a26",
+    "tinyui": "/x/fYKWGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/429064575?status=historical&version=37"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/429064575/child?parentVersion=37",
+    "restrictions": "/rest/api/content/429064575/restriction/byOperation",
+    "history": "/rest/api/content/429064575/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/429064575/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/429064575/restriction/relevantViewRestrictions"
+   }
+  }
+ ],
+ "comments": {
+  "results": [],
+  "start": 0,
+  "limit": 200,
+  "size": 0,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/api/content/429064575/child/comment?expand=body.storage%2Cversion%2Cancestors&depth=all",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ }
+}

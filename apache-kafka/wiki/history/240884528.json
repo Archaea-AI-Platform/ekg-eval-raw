@@ -1,0 +1,1409 @@
+{
+ "id": "240884528",
+ "versions": {
+  "results": [
+   {
+    "by": {
+     "type": "known",
+     "username": "frankvicky",
+     "userKey": "073590d28f899a29018f96220f230000",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/308152773/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "TengYao Chi",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28f899a29018f96220f230000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-09-08T16:29:19.000Z",
+    "message": "",
+    "number": 37,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/37"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "frankvicky",
+     "userKey": "073590d28f899a29018f96220f230000",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/308152773/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "TengYao Chi",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28f899a29018f96220f230000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-18T09:08:00.000Z",
+    "message": "",
+    "number": 36,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/36"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=36"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "frankvicky",
+     "userKey": "073590d28f899a29018f96220f230000",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/308152773/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "TengYao Chi",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28f899a29018f96220f230000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-24T15:31:22.000Z",
+    "message": "",
+    "number": 35,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/35"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=35"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "frankvicky",
+     "userKey": "073590d28f899a29018f96220f230000",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/308152773/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "TengYao Chi",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28f899a29018f96220f230000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-14T08:32:49.000Z",
+    "message": "",
+    "number": 34,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/34"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=34"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "frankvicky",
+     "userKey": "073590d28f899a29018f96220f230000",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/308152773/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "TengYao Chi",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28f899a29018f96220f230000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-14T08:24:21.000Z",
+    "message": "",
+    "number": 33,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/33"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=33"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "frankvicky",
+     "userKey": "073590d28f899a29018f96220f230000",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/308152773/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "TengYao Chi",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28f899a29018f96220f230000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-03-21T21:03:02.000Z",
+    "message": "",
+    "number": 32,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/32"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=32"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "frankvicky",
+     "userKey": "073590d28f899a29018f96220f230000",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/308152773/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "TengYao Chi",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28f899a29018f96220f230000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-03-21T20:57:07.000Z",
+    "message": "",
+    "number": 31,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/31"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=31"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "frankvicky",
+     "userKey": "073590d28f899a29018f96220f230000",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/308152773/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "TengYao Chi",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28f899a29018f96220f230000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-03-08T22:14:09.000Z",
+    "message": "",
+    "number": 30,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/30"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=30"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "pnee",
+     "userKey": "ae84fb5e7da6acf7017e54bf89dd0258",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/199531681/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Philip Nee",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e7da6acf7017e54bf89dd0258"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2023-04-26T01:14:37.000Z",
+    "message": "",
+    "number": 29,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/29"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=29"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "pnee",
+     "userKey": "ae84fb5e7da6acf7017e54bf89dd0258",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/199531681/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Philip Nee",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e7da6acf7017e54bf89dd0258"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2023-04-25T19:59:05.000Z",
+    "message": "",
+    "number": 28,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/28"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=28"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "pnee",
+     "userKey": "ae84fb5e7da6acf7017e54bf89dd0258",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/199531681/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Philip Nee",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e7da6acf7017e54bf89dd0258"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2023-04-25T19:39:26.000Z",
+    "message": "",
+    "number": 27,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/27"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=27"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "pnee",
+     "userKey": "ae84fb5e7da6acf7017e54bf89dd0258",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/199531681/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Philip Nee",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e7da6acf7017e54bf89dd0258"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2023-04-21T21:10:47.000Z",
+    "message": "",
+    "number": 26,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/26"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=26"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "pnee",
+     "userKey": "ae84fb5e7da6acf7017e54bf89dd0258",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/199531681/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Philip Nee",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e7da6acf7017e54bf89dd0258"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2023-04-05T18:23:15.000Z",
+    "message": "",
+    "number": 25,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/25"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=25"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "pnee",
+     "userKey": "ae84fb5e7da6acf7017e54bf89dd0258",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/199531681/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Philip Nee",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e7da6acf7017e54bf89dd0258"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2023-04-05T17:54:42.000Z",
+    "message": "",
+    "number": 24,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/24"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=24"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "pnee",
+     "userKey": "ae84fb5e7da6acf7017e54bf89dd0258",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/199531681/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Philip Nee",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e7da6acf7017e54bf89dd0258"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2023-04-05T03:38:31.000Z",
+    "message": "",
+    "number": 23,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/23"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=23"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "pnee",
+     "userKey": "ae84fb5e7da6acf7017e54bf89dd0258",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/199531681/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Philip Nee",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e7da6acf7017e54bf89dd0258"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2023-04-04T20:48:06.000Z",
+    "message": "",
+    "number": 22,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/22"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=22"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "pnee",
+     "userKey": "ae84fb5e7da6acf7017e54bf89dd0258",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/199531681/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Philip Nee",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e7da6acf7017e54bf89dd0258"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2023-04-04T20:45:32.000Z",
+    "message": "",
+    "number": 21,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/21"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=21"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "pnee",
+     "userKey": "ae84fb5e7da6acf7017e54bf89dd0258",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/199531681/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Philip Nee",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e7da6acf7017e54bf89dd0258"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2023-04-04T20:44:17.000Z",
+    "message": "",
+    "number": 20,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/20"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=20"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "pnee",
+     "userKey": "ae84fb5e7da6acf7017e54bf89dd0258",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/199531681/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Philip Nee",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e7da6acf7017e54bf89dd0258"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2023-04-04T20:41:13.000Z",
+    "message": "",
+    "number": 19,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/19"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=19"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "pnee",
+     "userKey": "ae84fb5e7da6acf7017e54bf89dd0258",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/199531681/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Philip Nee",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e7da6acf7017e54bf89dd0258"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2023-04-04T20:39:38.000Z",
+    "message": "",
+    "number": 18,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/18"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=18"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "pnee",
+     "userKey": "ae84fb5e7da6acf7017e54bf89dd0258",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/199531681/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Philip Nee",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e7da6acf7017e54bf89dd0258"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2023-04-04T20:39:12.000Z",
+    "message": "",
+    "number": 17,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/17"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=17"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "pnee",
+     "userKey": "ae84fb5e7da6acf7017e54bf89dd0258",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/199531681/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Philip Nee",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e7da6acf7017e54bf89dd0258"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2023-03-30T21:52:01.000Z",
+    "message": "",
+    "number": 16,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/16"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=16"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "pnee",
+     "userKey": "ae84fb5e7da6acf7017e54bf89dd0258",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/199531681/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Philip Nee",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e7da6acf7017e54bf89dd0258"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2023-03-29T05:40:14.000Z",
+    "message": "",
+    "number": 15,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/15"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=15"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "pnee",
+     "userKey": "ae84fb5e7da6acf7017e54bf89dd0258",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/199531681/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Philip Nee",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e7da6acf7017e54bf89dd0258"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2023-03-29T05:07:38.000Z",
+    "message": "",
+    "number": 14,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/14"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=14"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "pnee",
+     "userKey": "ae84fb5e7da6acf7017e54bf89dd0258",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/199531681/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Philip Nee",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e7da6acf7017e54bf89dd0258"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2023-03-28T19:10:12.000Z",
+    "message": "",
+    "number": 13,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/13"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=13"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "pnee",
+     "userKey": "ae84fb5e7da6acf7017e54bf89dd0258",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/199531681/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Philip Nee",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e7da6acf7017e54bf89dd0258"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2023-03-28T18:40:46.000Z",
+    "message": "",
+    "number": 12,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/12"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=12"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "pnee",
+     "userKey": "ae84fb5e7da6acf7017e54bf89dd0258",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/199531681/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Philip Nee",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e7da6acf7017e54bf89dd0258"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2023-03-28T18:37:59.000Z",
+    "message": "",
+    "number": 11,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/11"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=11"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "pnee",
+     "userKey": "ae84fb5e7da6acf7017e54bf89dd0258",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/199531681/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Philip Nee",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e7da6acf7017e54bf89dd0258"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2023-03-28T17:51:39.000Z",
+    "message": "",
+    "number": 10,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/10"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=10"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "pnee",
+     "userKey": "ae84fb5e7da6acf7017e54bf89dd0258",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/199531681/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Philip Nee",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e7da6acf7017e54bf89dd0258"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2023-03-28T06:29:11.000Z",
+    "message": "",
+    "number": 9,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/9"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=9"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "pnee",
+     "userKey": "ae84fb5e7da6acf7017e54bf89dd0258",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/199531681/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Philip Nee",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e7da6acf7017e54bf89dd0258"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2023-03-28T06:20:42.000Z",
+    "message": "",
+    "number": 8,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/8"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=8"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "pnee",
+     "userKey": "ae84fb5e7da6acf7017e54bf89dd0258",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/199531681/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Philip Nee",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e7da6acf7017e54bf89dd0258"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2023-02-28T18:46:25.000Z",
+    "message": "",
+    "number": 7,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/7"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=7"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "pnee",
+     "userKey": "ae84fb5e7da6acf7017e54bf89dd0258",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/199531681/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Philip Nee",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e7da6acf7017e54bf89dd0258"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2023-02-28T18:33:26.000Z",
+    "message": "",
+    "number": 6,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/6"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=6"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "pnee",
+     "userKey": "ae84fb5e7da6acf7017e54bf89dd0258",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/199531681/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Philip Nee",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e7da6acf7017e54bf89dd0258"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2023-02-25T00:10:38.000Z",
+    "message": "",
+    "number": 5,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/5"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=5"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "pnee",
+     "userKey": "ae84fb5e7da6acf7017e54bf89dd0258",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/199531681/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Philip Nee",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e7da6acf7017e54bf89dd0258"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2023-02-22T23:35:30.000Z",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/4"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=4"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "pnee",
+     "userKey": "ae84fb5e7da6acf7017e54bf89dd0258",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/199531681/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Philip Nee",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e7da6acf7017e54bf89dd0258"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2023-02-22T20:45:01.000Z",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/3"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=3"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "pnee",
+     "userKey": "ae84fb5e7da6acf7017e54bf89dd0258",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/199531681/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Philip Nee",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e7da6acf7017e54bf89dd0258"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2023-02-22T19:08:40.000Z",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/2"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=2"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "pnee",
+     "userKey": "ae84fb5e7da6acf7017e54bf89dd0258",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/199531681/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "Philip Nee",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=ae84fb5e7da6acf7017e54bf89dd0258"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2023-02-22T18:17:58.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=1"
+    }
+   }
+  ],
+  "start": 0,
+  "limit": 200,
+  "size": 37,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ },
+ "version_bodies": [
+  {
+   "id": "240884528",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-909: DNS Resolution Failure Should Not Fail the Clients",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "frankvicky",
+     "userKey": "073590d28f899a29018f96220f230000",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/308152773/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "TengYao Chi",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28f899a29018f96220f230000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-08-18T09:08:00.000Z",
+    "message": "",
+    "number": 36,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/36"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=36"
+    }
+   },
+   "position": 903,
+   "body": {
+    "storage": {
+     "value": "<h4><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></h4><h1>Status</h1><p><strong>Current state</strong>: Accepted</p><p><strong>Discussion thread</strong>: <em><a href=\"https://lists.apache.org/thread/st84zzwnq5m3pkzd1r7jk9lmqdt9m98s\">here</a></em></p><p><strong>JIRA</strong>: <em><a href=\"https://issues.apache.org/jira/browse/KAFKA-14648\">here</a></em></p><h1>Motivation</h1><p><span style=\"color:var(--ds-text-accent-purple-bolder,#352c63);\">Instantiating a new client may result in a fatal failure if the bootstrap server cannot be resolved due to misconfiguration or transient network issues such as slow DNS. This is suboptimal because of the fact that it might take a long time for the address to become available at the DNS server, and users will need to continue to retry.  Also, the ConfigException exception type does not accurately reflect the root cause of the problem, which makes it hard to handle this failure case.  We think it is reasonable to allow users to have a grace period to retry if the address cannot be resolved immediately. Also, poisoning the clients during the construction can be obstructive; I think it is better to fail the client on its first attempt to connect to the network.</span></p><h1>Proposed Changes</h1><p><span style=\"color:var(--ds-text-accent-purple-bolder,#352c63);\">This KIP proposes moving bootstrapping logic from the constructor to the NetworkClient poll for two purposes, </span></p><p><span style=\"color:var(--ds-text-accent-purple-bolder,#352c63);\">1. not failing the client upon instantiation. In many cases, this behavior also kills the app, which might not be desirable.</span></p><p><span style=\"color:var(--ds-text-accent-purple-bolder,#352c63);\">2. piggybacking onto the client poll is a more natural way to retry. </span></p><p><span style=\"color:var(--ds-text-accent-purple-bolder,#352c63);\">We propose to add a new configuration option for timing out the bootstrapping process, a new exception type for handling bootstrap-related issues, and additional logging to aid in diagnosing bootstrapping failures.</span></p><h3>Public Facing Changes</h3><ul><li><strong>Timeout Configuration: </strong><a href=\"http://bootstrap.connection.timeout.ms\">bootstrap.resolve.timeout.ms</a></li><li><strong>Exception</strong>: BootstrapResolutionException <em>extends KafkaException</em></li><li><strong>Logging: </strong>log.WARN(&quot;Unable to bootstrap after {} ms.&quot;, elapsedMs)</li></ul><h2>Internal Changes</h2><p>The client's bootstrap DNS resolution mode is selected by <code>bootstrap.resolve.timeout.ms</code> :</p><p>Synchronous mode (<code>bootstrap.resolve.timeout.ms</code> = 0, default):</p><ul><li data-uuid=\"2370bd72-8fdd-4676-aa7e-97ef7b982ecf\">The client constructor calls ClientUtils.parseAndValidateAddresses(...) and primes its Metadata with the resolved cluster.</li><li data-uuid=\"0aa0a7a1-368b-4a45-b32b-90930cf6a5bf\">A resolution failure is thrown from the constructor as ConfigException, wrapped by the constructor's outer catch into KafkaException; no client instance is created.</li><li data-uuid=\"8942669b-6bb0-41f5-8d0d-5552241793a1\">NetworkClient is constructed with BootstrapConfiguration.DISABLED and performs no bootstrap resolution of its own.</li></ul><p>Asynchronous mode (<code>bootstrap.resolve.timeout.ms</code>  &gt; 0):</p><ul><li data-uuid=\"4dd03542-4de0-4b32-b111-07d4b340800e\">The constructor parses the bootstrap configuration but does NOT resolve DNS. The client instance is returned to the caller immediately.</li><li data-uuid=\"fe6a52f8-2cd2-4651-87b3-746f0a7cc1df\">NetworkClient.ensureBootstrapped() is invoked on every poll and, when no pending resolution exists, submits an asynchronous DNS resolution via CompletableFuture.supplyAsync on a per-client executor.</li><li data-uuid=\"53d52bb5-0b4d-4592-8434-5c349a486fc5\">If a resolution completes successfully, the resolved addresses are handed to the MetadataUpdater (DefaultMetadataUpdater#bootstrap or AdminMetadataManager#bootstrap).</li><li data-uuid=\"b4c599a0-583b-45f1-b072-1134c09d9130\">If the bootstrap timer expires before any resolution succeeds, NetworkClient.checkBootstrapTimeout() records a BootstrapResolutionException as a permanent bootstrapFatalException on the Metadata (Metadata.bootstrapFatalError). ensureBootstrapped and maybeStartBootstrapResolution both short-circuit if the fatal exception is set; the client will not retry after this point.</li><li data-uuid=\"dbae9d79-0bcc-4471-9b41-4e26d0feabe8\">The permanent flag is intentional: Metadata.maybeThrowBootstrapFatalException() is called from Metadata.maybeThrowFatalException() and clearErrorsAndMaybeThrowException(), and also directly from the API-entry helpers of Producer / Consumer / ShareConsumer / Admin, so every subsequent API call re-throws BootstrapResolutionException. The caller must close the client and construct a new one to recover.</li></ul><p>The switch is centralized in ClientUtils:</p><ul><li data-uuid=\"1a181989-be36-4dd8-9eb2-3fb73549c8ec\">maybeBootstrapMetadataSynchronously(config, bootstrapServers, metadata): no-op when timeout &gt; 0; primes metadata otherwise.</li><li data-uuid=\"0f426922-4f4a-4370-94f2-4e81eb9d1f20\">bootstrapConfiguration(config, bootstrapServers): returns BootstrapConfiguration.DISABLED when timeout = 0, otherwise BootstrapConfiguration.enabled(...).</li></ul><p>Affected clients: KafkaProducer, AsyncKafkaConsumer, ClassicKafkaConsumer, ShareConsumerImpl, KafkaAdminClient, and Connect's WorkerGroupMember.</p><h3><span style=\"color:var(--ds-text-accent-purple-bolder,#352c63);\">DNS Resolution Blocking Behavior</span></h3><p><span style=\"color:var(--ds-text-accent-purple-bolder,#352c63);\">The bootstrap process performs blocking DNS lookups using <code>InetAddress.getAllByName()</code> .<br />This has the following implications:</span></p><ol><li><span style=\"color:var(--ds-text-accent-purple-bolder,#352c63);\">DNS queries may block indefinitely depending on network conditions and DNS server responsiveness</span></li><li><span style=\"color:var(--ds-text-accent-purple-bolder,#352c63);\">Client methods may block longer than their specified timeout parameters</span><ol><li><span style=\"color:var(--ds-text-accent-purple-bolder,#352c63);\"><code>consumer.poll(timeout)</code>  may block longer than `timeout` if DNS resolution is slow</span></li><li><span style=\"color:var(--ds-text-accent-purple-bolder,#352c63);\"><code>producer.send()</code>  and <code>partitionsFor()</code>  may block longer than <code>max.block.ms</code>  if DNS resolution is slow</span></li><li><span style=\"color:var(--ds-text-accent-purple-bolder,#352c63);\"><code>AdminClient</code>  API calls may take longer than their request timeout if DNS resolution is slow</span></li></ol></li><li><span style=\"color:var(--ds-text-accent-purple-bolder,#352c63);\">The actual blocking time is bounded only by:</span><ol><li><span style=\"color:var(--ds-text-accent-purple-bolder,#352c63);\">The bootstrap timeout (`bootstrap.resolve.timeout.ms`)</span></li><li><span style=\"color:var(--ds-text-accent-purple-bolder,#352c63);\">The underlying DNS resolver's timeout (typically 30-90 seconds per query)</span></li><li><span style=\"color:var(--ds-text-accent-purple-bolder,#352c63);\">Network timeout configurations at the OS level</span></li></ol></li></ol><p><span style=\"color:var(--ds-text-accent-purple-bolder,#352c63);\">Users should set <code>bootstrap.resolve.timeout.ms</code>  appropriately based on their network environment and DNS server reliability. The default value of 2 minutes provides a reasonable balance between allowing for transient DNS issues and avoiding excessive blocking.</span></p><h1>New Configuration</h1><p><em>bootstrap.resolve.timeout.ms</em></p><p>Selects the client's bootstrap DNS resolution mode.</p><ul><li data-uuid=\"69c1b974-4389-4d84-ad33-01c8765bf913\"> 0 (default)<ul><li data-uuid=\"b101bfbc-1686-4a0e-8702-4ff9287a90a1\">DNS is resolved synchronously during client construction. Any resolution failure surfaces as ConfigException (wrapped in KafkaException by the constructor's outer try/catch), so no client instance is created. This preserves the historical (pre-KIP-909) behavior.</li></ul></li><li data-uuid=\"f01d71c8-bcb7-4f16-bd61-0ff0085a9440\">positive value<ul><li data-uuid=\"50dacf33-c070-44cf-b822-1378ad3e6ca1\">DNS is resolved asynchronously. The client constructor returns immediately; NetworkClient retries DNS resolution up to this budget. If the budget is exhausted, the failure is recorded permanently on the client's Metadata layer and surfaces as BootstrapResolutionException from every subsequent API call. The failure is unrecoverable — the caller must close the client and construct a new one after fixing the underlying DNS or bootstrap.servers configuration.</li></ul></li></ul><table class=\"wrapped\"><colgroup><col /><col /></colgroup><tbody><tr><td>Type:</td><td>long</td></tr><tr><td>Default:</td><td>0 </td></tr><tr><td>Valid Values:</td><td>0 - LONG_MAX</td></tr><tr><td>Importance:</td><td>high</td></tr></tbody></table><h1>New Error</h1><p><strong>Name: </strong><em>BootstrapResolutionException</em> extends KafkaException</p><p><strong>Message</strong>: &quot;Couldn't resolve server {} from {} as DNS resolution failed for {}&quot;</p><p><strong>Type</strong>: Non-retriable.</p><h1>Compatibility, Deprecation, and Migration Plan</h1><h2>Compatibility &amp; Migration</h2><p>Default behavior is unchanged. <code>bootstrap.resolve.timeout.ms</code>  defaults to 0, which preserves the pre-KIP-909 synchronous bootstrap semantics: DNS resolution failure at construction time throws KafkaException (wrapping ConfigException) from the client constructor, and no client instance is created. Existing application error-handling code that catches this in `try { new KafkaProducer(...) } catch (KafkaException e)` (or the equivalent for Consumer / Admin / ShareConsumer) continues to work without modification.</p><p>Applications that need to opt in to the asynchronous bootstrap model (for example, to prevent transient DNS unavailability from failing client construction) must:</p><ol><li data-uuid=\"a09f3ba3-ad19-4e88-874c-257ca3969e59\">Set <code>bootstrap.resolve.timeout.ms</code>  to a positive value.</li><li data-uuid=\"128b4bab-f8b9-47d3-995b-cda0a78c3704\">Handle BootstrapResolutionException on every subsequent API call (poll, send, partitionsFor, listTopics, commitSync, acknowledge, etc.). BootstrapResolutionException extends KafkaException, so a generic `catch (KafkaException e)` is sufficient, but callers may want to distinguish it because:<ul><li data-uuid=\"26973ea4-18f9-444b-9213-e19c2bae5826\">It is unrecoverable within the same client instance — the exception is never cleared and every subsequent API call will re-throw it.</li><li data-uuid=\"689812e5-11d9-4889-8259-a2584020a650\">To recover, the application must close the client and construct a new one (typically after remediating the underlying DNS or bootstrap.servers issue).</li></ul></li></ol><h2>Deprecation</h2><ul style=\"list-style-type: square;\"><li>There's no deprecation plan</li></ul><h1>Case Study</h1><p>In this section, I outlined how clients can react to bootstrap failures. In particular, I want to cover two common cases:</p><ol><li>Misconfiguration or non-transient issues with the network</li><li>Transient network issues, e.g., slow DNS resolution.</li></ol><h2>KafkaConsumer</h2><p><strong>Case 1: Non-transient case</strong></p><p>When the bootstrap timeout expires, the client will throw a BootstrapResolutionException.</p><p><strong>Case 2: Transient Network Issue</strong></p><p><span style=\"color:var(--ds-text-accent-purple-bolder,#352c63);\">consumer poll won't return any record until the client has been bootstrapped. If the issue cannot be resolved within the bootstrap timeout, a BootstrapConnectionException will be thrown.</span></p><h2>KafkaProducer</h2><p><strong>Case 1: Non-transient case</strong></p><p>The BootstrapResolutionException will be thrown in send(), partitionsFor(), and sendOffsetsToTransaction() when the bootstrap timeout expires. If the `max.block.ms` elapsed before the timeout expires, a TimeoutException will be thrown instead.</p><p><strong>Case 2: Transient Network Issue</strong></p><p>The send(), partitionsFor(), and sendOffsetsToTransaction() methods will be blocked on bootstrap until either the `max.block.ms` or the bootstrap timeout elapses.</p><h2>AdminClient</h2><p><strong>Case 1: Non-transient case</strong></p><p><span style=\"color:var(--ds-text-accent-purple-bolder,#352c63);\">The API call results will either timeout if the request times out first or be completed exceptionally with a BootstrapResolutionException.</span></p><p><strong>Case 2: Transient Network Issue</strong></p><p><span style=\"color:var(--ds-text-accent-purple-bolder,#352c63);\">The user won't be able to get the results back until the address is resolved.  Meanwhile, the API calls can expire.</span></p><h2>Kafka Connect</h2><p><strong>Case 1: Non-transient case</strong></p><p>When the bootstrap timeout expires, the WorkerGroupMember will throw a BootstrapResolutionException during the poll() call. The Connect worker will fail to join the worker group and cannot participate in connector/task assignment.</p><p><strong>Case 2: Transient Network Issue</strong></p><p>The worker's poll() method will retry DNS resolution on each poll iteration until the issue is resolved or the bootstrap timeout expires. The worker will not be able to join the group or handle any connector/task assignments until bootstrap succeeds.</p><p><br /></p><h2><span style=\"color:var(--ds-text-accent-purple-bolder,#352c63);\">What should users do after the timeout expires?</span></h2><p><span style=\"color:var(--ds-text-accent-purple-bolder,#352c63);\">The exception is meant to be fatal, so the user should check their network setup, configuration, or adjust the timeout.</span></p><p><span style=\"color:var(--ds-text-accent-purple-bolder,#352c63);\">The user can continue to retry, but this exception is meant to alert user to take action upon failing to bootstrap.</span></p><h1>Test Plan</h1><ol class=\"ak-ol\"><li><p>NetworkClient</p><ol class=\"ak-ol\"><li><p>Test DNS resolution upon its initial poll</p></li><li><p>Test if the right exception type is thrown</p></li></ol></li><li><p>Existing clients (Consumer, Producer, AdminClient)</p><ol class=\"ak-ol\"><li><p>Test successful bootstrapping upon retrying</p></li></ol></li></ol><h1>Rejected Alternatives</h1><p>We've discussed many alternatives.  Eventually, we asked ourselves what's the goal of this KIP, i.e., giving people a chance to retry on DNS resolution without poisoning the client. Which came down to two resolutions: 1. giving people a configurable timeout, and 2. adding a fatal error to alert the user.</p><p>Here are the rejected alternatives:</p><ol class=\"ak-ol\"><li><p><span class=\"inline-highlight first-mark-highlight last-mark-highlight\">Maintain the current code behavior and add a retry loop with a timeout.</span></p><ol class=\"ak-ol\"><li><p><strong>Pros</strong>: Same logic, less code change.</p></li><li><p><strong>Cons</strong>: Do users want to be blocked on instantiating the client? I don't like this idea.</p></li></ol></li><li><p>Throw DNS resolution upon failing but no retry</p><ol class=\"ak-ol\"><li><p><strong>Pros</strong>: No additional config is needed</p></li><li><p><strong>Cons</strong>: <span class=\"inline-highlight first-mark-highlight last-mark-highlight\">This is a behavioral change, and the application owner might need to rewrite the exception handling, i.e. catching the DNS failure logic.</span></p></li></ol></li><li>No retry.  The network client will continue to retry until it is interrupted.<br /><ol class=\"ak-ol\"><li><strong>Pros</strong>: No compatibility break. No additional exception handling logic, the network client will just log the error and continue to retry upon the next poll</li><li><strong>Cons</strong>: I think we should have some failure mechanism to notify users.</li></ol></li><li>Making BootstrapResolutionException retriable<ol class=\"ak-ol\"><li><strong>Pros</strong>: For the transient case, we might not even need a timeout, people are expected to retry on catching this exception</li><li><strong>Cons</strong>: Then we reply on alerting mechanism to alert users the issue. If it is indeed a configuration issue, then it is harder to discover</li></ol></li><li>Combine DNS resolution and connection into a single timeout<ol class=\"ak-ol\"><li><strong>Pros</strong>: Using a single timer to account for the connection time.</li><li><strong>Cons</strong>: Should we make connection retry fatal after the timeout? Maybe not.</li></ol></li><li>5min default timeout<ol class=\"ak-ol\"><li>We've decided to reduce it to 2min to stay coherent to the delivery.timeout.ms</li><li>5min can be too long</li></ol></li></ol>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/240884528?status=historical&version=36"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 903
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=451973990",
+    "edit": "/pages/resumedraft.action?draftId=451973990&draftShareId=d1ff151f-4f7e-467d-babd-f5c9e2611085",
+    "tinyui": "/x/ZpPwGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/240884528?status=historical&version=36"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/240884528/child?parentVersion=36",
+    "restrictions": "/rest/api/content/240884528/restriction/byOperation",
+    "history": "/rest/api/content/240884528/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/240884528/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/240884528/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "240884528",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-909: DNS Resolution Failure Should Not Fail the Clients",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "frankvicky",
+     "userKey": "073590d28f899a29018f96220f230000",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/308152773/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "TengYao Chi",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28f899a29018f96220f230000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-06-24T15:31:22.000Z",
+    "message": "",
+    "number": 35,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/35"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=35"
+    }
+   },
+   "position": 903,
+   "body": {
+    "storage": {
+     "value": "<h4><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></h4><h1>Status</h1><p><strong>Current state</strong>: Accepted</p><p><strong>Discussion thread</strong>: <em><a href=\"https://lists.apache.org/thread/st84zzwnq5m3pkzd1r7jk9lmqdt9m98s\">here</a></em></p><p><strong>JIRA</strong>: <em><a href=\"https://issues.apache.org/jira/browse/KAFKA-14648\">here</a></em></p><h1>Motivation</h1><p><span style=\"color: rgb(55,65,81);\">Instantiating a new client may result in a fatal failure if the bootstrap server cannot be resolved due to misconfiguration or transient network issues such as slow DNS. This is suboptimal because of the fact that it might take a long time for the address to become available at the DNS server, and users will need to continue to retry.  Also, the ConfigException exception type does not accurately reflect the root cause of the problem, which makes it hard to handle this failure case.  We think it is reasonable to allow users to have a grace period to retry if the address cannot be resolved immediately. Also, poisoning the clients during the construction can be obstructive; I think it is better to fail the client on its first attempt to connect to the network.</span></p><h1>Proposed Changes</h1><p><span style=\"color: rgb(55,65,81);\">This KIP proposes moving bootstrapping logic from the constructor to the NetworkClient poll for two purposes, </span></p><p><span style=\"color: rgb(55,65,81);\">1. not failing the client upon instantiation. In many cases, this behavior also kills the app, which might not be desirable.</span></p><p><span style=\"color: rgb(55,65,81);\">2. piggybacking onto the client poll is a more natural way to retry. </span></p><p><span style=\"color: rgb(55,65,81);\">We propose to add a new configuration option for timing out the bootstrapping process, a new exception type for handling bootstrap-related issues, and additional logging to aid in diagnosing bootstrapping failures.</span></p><h3>Public Facing Changes</h3><ul><li><strong>Timeout Configuration: </strong><a href=\"http://bootstrap.connection.timeout.ms\">bootstrap.resolve.timeout.ms</a></li><li><strong>Exception</strong>: BootstrapResolutionException <em>extends KafkaException</em></li><li><strong>Logging: </strong>log.WARN(&quot;Unable to bootstrap after {} ms.&quot;, elapsedMs)</li></ul><h2>Internal Changes</h2><ul class=\"ak-ul\"><li><p><strong>Client Constructor</strong>: <span style=\"color: rgb(55,65,81);\">The constructor will only parse the bootstrap configuration.</span></p></li><li><p><strong>NetworkClient:</strong></p><ul><li>Bootstrapping will now occur in the poll method before attempting to update the metadata. This includes resolving the addresses and bootstrapping the metadata.</li><li>An error message will be logged in the event of a failed bootstrap process.</li><li>If the timeout exceeds, a non-retriable <em>BootstrapResolutionException</em> will be thrown.</li></ul></li><li><span style=\"color: rgb(55,65,81);\">Consumer, Producer, Admin and Connect Clients: The bootstrap code will be changed.</span></li></ul><h3><span style=\"color: rgb(55,65,81);\">DNS Resolution Blocking Behavior</span></h3><p><span style=\"color: rgb(55,65,81);\">The bootstrap process performs blocking DNS lookups using <code>InetAddress.getAllByName()</code> .<br />This has the following implications:</span></p><ol><li><span style=\"color: rgb(55,65,81);\">DNS queries may block indefinitely depending on network conditions and DNS server responsiveness</span></li><li><span style=\"color: rgb(55,65,81);\">Client methods may block longer than their specified timeout parameters</span><ol><li><span style=\"color: rgb(55,65,81);\"><code>consumer.poll(timeout)</code>  may block longer than `timeout` if DNS resolution is slow</span></li><li><span style=\"color: rgb(55,65,81);\"><code>producer.send()</code>  and <code>partitionsFor()</code>  may block longer than <code>max.block.ms</code>  if DNS resolution is slow</span></li><li><span style=\"color: rgb(55,65,81);\"><code>AdminClient</code>  API calls may take longer than their request timeout if DNS resolution is slow</span></li></ol></li><li><span style=\"color: rgb(55,65,81);\">The actual blocking time is bounded only by:</span><ol><li><span style=\"color: rgb(55,65,81);\">The bootstrap timeout (`bootstrap.resolve.timeout.ms`)</span></li><li><span style=\"color: rgb(55,65,81);\">The underlying DNS resolver's timeout (typically 30-90 seconds per query)</span></li><li><span style=\"color: rgb(55,65,81);\">Network timeout configurations at the OS level</span></li></ol></li></ol><p><span style=\"color: rgb(55,65,81);\">Users should set <code>bootstrap.resolve.timeout.ms</code>  appropriately based on their network environment and DNS server reliability. The default value of 2 minutes provides a reasonable balance between allowing for transient DNS issues and avoiding excessive blocking.</span></p><h1>New Configuration</h1><p><em>bootstrap.resolve.timeout.ms</em></p><p>The proposed configuration specifies the maximum amount of time clients can spend trying to resolve for the bootstrap server address. If the resolution cannot be completed within this timeframe, a BootstrapResolutionException will be thrown.</p><table class=\"wrapped\"><colgroup><col /><col /></colgroup><tbody><tr><td>Type:</td><td>long</td></tr><tr><td>Default:</td><td>120000 (i.e. 2 minutes)</td></tr><tr><td>Valid Values:</td><td>0 - LONG_MAX</td></tr><tr><td>Importance:</td><td>high</td></tr></tbody></table><h1>New Error</h1><p><strong>Name: </strong><em>BootstrapResolutionException</em> extends KafkaException</p><p><strong>Message</strong>: &quot;Couldn't resolve server {} from {} as DNS resolution failed for {}&quot;</p><p><strong>Type</strong>: Non-retriable.</p><h1>Compatibility, Deprecation, and Migration Plan</h1><h2>Compatibility</h2><ul style=\"list-style-type: square;\"><li>Failed DNS resolution throws BootstraResolutionException: Users are expected to catch the error or the client will be poisioned</li><li>Users who tried to catch ConfigException for DNS resolution error will no longer need this logic.</li></ul><h2>Deprecation</h2><ul style=\"list-style-type: square;\"><li>There's no deprecation plan</li></ul><h2>Migration</h2><ul style=\"list-style-type: square;\"><li>There's no migration plan</li></ul><h1>Case Study</h1><p>In this section, I outlined how clients can react to bootstrap failures. In particular, I want to cover two common cases:</p><ol><li>Misconfiguration or non-transient issues with the network</li><li>Transient network issues, e.g., slow DNS resolution.</li></ol><h2>KafkaConsumer</h2><p><strong>Case 1: Non-transient case</strong></p><p>When the bootstrap timeout expires, the client will throw a BootstrapResolutionException.</p><p><strong>Case 2: Transient Network Issue</strong></p><p><span style=\"color: rgb(55,65,81);\">consumer poll won't return any record until the client has been bootstrapped. If the issue cannot be resolved within the bootstrap timeout, a BootstrapConnectionException will be thrown.</span></p><h2>KafkaProducer</h2><p><strong>Case 1: Non-transient case</strong></p><p>The BootstrapResolutionException will be thrown in send(), partitionsFor(), and sendOffsetsToTransaction() when the bootstrap timeout expires. If the `max.block.ms` elapsed before the timeout expires, a TimeoutException will be thrown instead.</p><p><strong>Case 2: Transient Network Issue</strong></p><p>The send(), partitionsFor(), and sendOffsetsToTransaction() methods will be blocked on bootstrap until either the `max.block.ms` or the bootstrap timeout elapses.</p><h2>AdminClient</h2><p><strong>Case 1: Non-transient case</strong></p><p><span style=\"color: rgb(55,65,81);\">The API call results will either timeout if the request times out first or be completed exceptionally with a BootstrapResolutionException.</span></p><p><strong>Case 2: Transient Network Issue</strong></p><p><span style=\"color: rgb(55,65,81);\">The user won't be able to get the results back until the address is resolved.  Meanwhile, the API calls can expire.</span></p><h2>Kafka Connect</h2><p><strong>Case 1: Non-transient case</strong></p><p>When the bootstrap timeout expires, the WorkerGroupMember will throw a BootstrapResolutionException during the poll() call. The Connect worker will fail to join the worker group and cannot participate in connector/task assignment.</p><p><strong>Case 2: Transient Network Issue</strong></p><p>The worker's poll() method will retry DNS resolution on each poll iteration until the issue is resolved or the bootstrap timeout expires. The worker will not be able to join the group or handle any connector/task assignments until bootstrap succeeds.</p><p><br /></p><h2><span style=\"color: rgb(55,65,81);\">What should users do after the timeout expires?</span></h2><p><span style=\"color: rgb(55,65,81);\">The exception is meant to be fatal, so the user should check their network setup, configuration, or adjust the timeout.</span></p><p><span style=\"color: rgb(55,65,81);\">The user can continue to retry, but this exception is meant to alert user to take action upon failing to bootstrap.</span></p><h1>Test Plan</h1><ol class=\"ak-ol\"><li><p>NetworkClient</p><ol class=\"ak-ol\"><li><p>Test DNS resolution upon its initial poll</p></li><li><p>Test if the right exception type is thrown</p></li></ol></li><li><p>Existing clients (Consumer, Producer, AdminClient)</p><ol class=\"ak-ol\"><li><p>Test successful bootstrapping upon retrying</p></li></ol></li></ol><h1>Rejected Alternatives</h1><p>We've discussed many alternatives.  Eventually, we asked ourselves what's the goal of this KIP, i.e., giving people a chance to retry on DNS resolution without poisoning the client. Which came down to two resolutions: 1. giving people a configurable timeout, and 2. adding a fatal error to alert the user.</p><p>Here are the rejected alternatives:</p><ol class=\"ak-ol\"><li><p><span class=\"inline-highlight first-mark-highlight last-mark-highlight\">Maintain the current code behavior and add a retry loop with a timeout.</span></p><ol class=\"ak-ol\"><li><p><strong>Pros</strong>: Same logic, less code change.</p></li><li><p><strong>Cons</strong>: Do users want to be blocked on instantiating the client? I don't like this idea.</p></li></ol></li><li><p>Throw DNS resolution upon failing but no retry</p><ol class=\"ak-ol\"><li><p><strong>Pros</strong>: No additional config is needed</p></li><li><p><strong>Cons</strong>: <span class=\"inline-highlight first-mark-highlight last-mark-highlight\">This is a behavioral change, and the application owner might need to rewrite the exception handling, i.e. catching the DNS failure logic.</span></p></li></ol></li><li>No retry.  The network client will continue to retry until it is interrupted.<br /><ol class=\"ak-ol\"><li><strong>Pros</strong>: No compatibility break. No additional exception handling logic, the network client will just log the error and continue to retry upon the next poll</li><li><strong>Cons</strong>: I think we should have some failure mechanism to notify users.</li></ol></li><li>Making BootstrapResolutionException retriable<ol class=\"ak-ol\"><li><strong>Pros</strong>: For the transient case, we might not even need a timeout, people are expected to retry on catching this exception</li><li><strong>Cons</strong>: Then we reply on alerting mechanism to alert users the issue. If it is indeed a configuration issue, then it is harder to discover</li></ol></li><li>Combine DNS resolution and connection into a single timeout<ol class=\"ak-ol\"><li><strong>Pros</strong>: Using a single timer to account for the connection time.</li><li><strong>Cons</strong>: Should we make connection retry fatal after the timeout? Maybe not.</li></ol></li><li>5min default timeout<ol class=\"ak-ol\"><li>We've decided to reduce it to 2min to stay coherent to the delivery.timeout.ms</li><li>5min can be too long</li></ol></li></ol>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/240884528?status=historical&version=35"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 903
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=449282482",
+    "edit": "/pages/resumedraft.action?draftId=449282482&draftShareId=d1ff151f-4f7e-467d-babd-f5c9e2611085",
+    "tinyui": "/x/soHHGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/240884528?status=historical&version=35"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/240884528/child?parentVersion=35",
+    "restrictions": "/rest/api/content/240884528/restriction/byOperation",
+    "history": "/rest/api/content/240884528/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/240884528/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/240884528/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "240884528",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-909: DNS Resolution Failure Should Not Fail the Clients",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "frankvicky",
+     "userKey": "073590d28f899a29018f96220f230000",
+     "profilePicture": {
+      "path": "/confluence/download/attachments/308152773/user-avatar",
+      "width": 48,
+      "height": 48,
+      "isDefault": false
+     },
+     "displayName": "TengYao Chi",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d28f899a29018f96220f230000"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-04-14T08:32:49.000Z",
+    "message": "",
+    "number": 34,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/240884528/version/34"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/240884528?status=historical&version=34"
+    }
+   },
+   "position": 903,
+   "body": {
+    "storage": {
+     "value": "<h4><ac:structured-macro ac:name=\"toc\" ac:schema-version=\"1\" ac:macro-id=\"9aac097e-9615-4079-a55c-3bfbb979b937\" /></h4><h1>Status</h1><p><strong>Current state</strong>: Accepted</p><p><strong>Discussion thread</strong>: <em><a href=\"https://lists.apache.org/thread/st84zzwnq5m3pkzd1r7jk9lmqdt9m98s\">here</a></em></p><p><strong>JIRA</strong>: <em><a href=\"https://issues.apache.org/jira/browse/KAFKA-14648\">here</a></em></p><h1>Motivation</h1><p><span style=\"color: rgb(55,65,81);\">Instantiating a new client may result in a fatal failure if the bootstrap server cannot be resolved due to misconfiguration or transient network issues such as slow DNS. This is suboptimal because of the fact that it might take a long time for the address to become available at the DNS server, and users will need to continue to retry.  Also, the ConfigException exception type does not accurately reflect the root cause of the problem, which makes it hard to handle this failure case.  We think it is reasonable to allow users to have a grace period to retry if the address cannot be resolved immediately. Also, poisoning the clients during the construction can be obstructive; I think it is better to fail the client on its first attempt to connect to the network.</span></p><h1>Proposed Changes</h1><p><span style=\"color: rgb(55,65,81);\">This KIP proposes moving bootstrapping logic from the constructor to the NetworkClient poll for two purposes, </span></p><p><span style=\"color: rgb(55,65,81);\">1. not failing the client upon instantiation. In many cases, this behavior also kills the app, which might not be desirable.</span></p><p><span style=\"color: rgb(55,65,81);\">2. piggybacking onto the client poll is a more natural way to retry. </span></p><p><span style=\"color: rgb(55,65,81);\">We propose to add a new configuration option for timing out the bootstrapping process, a new exception type for handling bootstrap-related issues, and additional logging to aid in diagnosing bootstrapping failures.</span></p><h3>Public Facing Changes</h3><ul><li><strong>Timeout Configuration: </strong><a href=\"http://bootstrap.connection.timeout.ms\">bootstrap.resolve.timeout.ms</a></li><li><strong>Exception</strong>: BootstrapResolutionException <em>extends KafkaException</em></li><li><strong>Logging: </strong>log.WARN(&quot;Unable to bootstrap after {} ms.&quot;, elapsedMs)</li></ul><h2>Internal Changes</h2><ul class=\"ak-ul\"><li><p><strong>Client Constructor</strong>: <span style=\"color: rgb(55,65,81);\">The constructor will only parse the bootstrap configuration.</span></p></li><li><p><strong>NetworkClient:</strong></p><ul><li>Bootstrapping will now occur in the poll method before attempting to update the metadata. This includes resolving the addresses and bootstrapping the metadata.</li><li>An error message will be logged in the event of a failed bootstrap process.</li><li>If the timeout exceeds, a non-retriable <em>BootstrapResolutionException</em> will be thrown.</li></ul></li><li><span style=\"color: rgb(55,65,81);\">Consumer, Producer, Admin and Connect Clients: The bootstrap code will be changed.</span></li></ul><h3><span style=\"color: rgb(55,65,81);\">DNS Resolution Blocking Behavior</span></h3><p><span style=\"color: rgb(55,65,81);\">The bootstrap process performs blocking DNS lookups using <code>InetAddress.getAllByName()</code> .<br />This has the following implications:</span></p><ol><li><span style=\"color: rgb(55,65,81);\">DNS queries may block indefinitely depending on network conditions and DNS server responsiveness</span></li><li><span style=\"color: rgb(55,65,81);\">Client methods may block longer than their specified timeout parameters</span><ol><li><span style=\"color: rgb(55,65,81);\"><code>consumer.poll(timeout)</code>  may block longer than `timeout` if DNS resolution is slow</span></li><li><span style=\"color: rgb(55,65,81);\"><code>producer.send()</code>  and <code>partitionsFor()</code>  may block longer than <code>max.block.ms</code>  if DNS resolution is slow</span></li><li><span style=\"color: rgb(55,65,81);\"><code>AdminClient</code>  API calls may take longer than their request timeout if DNS resolution is slow</span></li></ol></li><li><span style=\"color: rgb(55,65,81);\">The actual blocking time is bounded only by:</span><ol><li><span style=\"color: rgb(55,65,81);\">The bootstrap timeout (`bootstrap.resolve.timeout.ms`)</span></li><li><span style=\"color: rgb(55,65,81);\">The underlying DNS resolver's timeout (typically 30-90 seconds per query)</span></li><li><span style=\"color: rgb(55,65,81);\">Network timeout configurations at the OS level</span></li></ol></li></ol><p><span style=\"color: rgb(55,65,81);\">Users should set <code>bootstrap.resolve.timeout.ms</code>  appropriately based on their network environment and DNS server reliability. The default value of 2 minutes provides a reasonable balance between allowing for transient DNS issues and avoiding excessive blocking.</span></p><h1>New Configuration</h1><p><em>bootstrap.resolve.timeout.ms</em></p><p>The proposed configuration specifies the maximum amount of time clients can spend trying to resolve for the bootstrap server address. If the resolution cannot be completed within this timeframe, a BootstrapResolutionException will be thrown.</p><table class=\"wrapped\"><colgroup><col /><col /></colgroup><tbody><tr><td>Type:</td><td>long</td></tr><tr><td>Default:</td><td>120000 (i.e. 2 minutes)</td></tr><tr><td>Valid Values:</td><td>0 - LONG_MAX</td></tr><tr><td>Importance:</td><td>high</td></tr></tbody></table><h1>New Error</h1><p><strong>Name: </strong><em>BootstrapResolutionException</em> extends KafkaException</p><p><strong>Message</strong>: &quot;Couldn't resolve server {} from {} as DNS resolution failed for {}&quot;</p><p><strong>Type</strong>: Non-retriable.</p><h1>Compatibility, Deprecation, and Migration Plan</h1><h2>Compatibility</h2><ul style=\"list-style-type: square;\"><li>Failed DNS resolution throws BootstraResolutionException: Users are expected to catch the error or the client will be poisioned</li><li>Users who tried to catch ConfigException for DNS resolution error will no longer need this logic.</li></ul><h2>Deprecation</h2><ul style=\"list-style-type: square;\"><li>There's no deprecation plan</li></ul><h2>Migration</h2><ul style=\"list-style-type: square;\"><li>There's no migration plan</li></ul><h1>Case Study</h1><p>In this section, I outlined how clients can react to bootstrap failures. In particular, I want to cover two common cases:</p><ol><li>Misconfiguration or non-transient issues with the network</li><li>Transient network issues, e.g., slow DNS resolution.</li></ol><h2>KafkaConsumer</h2><p><strong>Case 1: Non-transient case</strong></p><p>When the bootstrap timeout expires, the client will throw a BootstrapResolutionException.</p><p><strong>Case 2: Transient Network Issue</strong></p><p><span style=\"color: rgb(55,65,81);\">consumer poll won't return any record until the client has been bootstrapped. If the issue cannot be resolved within the bootstrap timeout, a BootstrapConnectionException will be thrown.</span></p><h2>KafkaProducer</h2><p><strong>Case 1: Non-transient case</strong></p><p>The BootstrapResolutionException will be thrown in send() and partitionsFor() when the bootstrap timeout expires. If the <a href=\"http://max.block.ms\">max.block.ms</a> elapsed before the timeout expires, a TimeoutException will be thrown instead.</p><p><strong>Case 2: Transient Network Issue</strong></p><p><span style=\"color: rgb(55,65,81);\">The <em>send() </em>and <em>partitionsFor() </em>methods will be blocked on bootstrap until either the <em>max.block.ms</em> or the bootstrap timeout elapses.</span></p><h2>AdminClient</h2><p><strong>Case 1: Non-transient case</strong></p><p><span style=\"color: rgb(55,65,81);\">The API call results will either timeout if the request times out first or be completed exceptionally with a BootstrapResolutionException.</span></p><p><strong>Case 2: Transient Network Issue</strong></p><p><span style=\"color: rgb(55,65,81);\">The user won't be able to get the results back until the address is resolved.  Meanwhile, the API calls can expire.</span></p><h2>Kafka Connect</h2><p><strong>Case 1: Non-transient case</strong></p><p>When the bootstrap timeout expires, the WorkerGroupMember will throw a BootstrapResolutionException during the poll() call. The Connect worker will fail to join the worker group and cannot participate in connector/task assignment.</p><p><strong>Case 2: Transient Network Issue</strong></p><p>The worker's poll() method will retry DNS resolution on each poll iteration until the issue is resolved or the bootstrap timeout expires. The worker will not be able to join the group or handle any connector/task assignments until bootstrap succeeds.</p><p><br /></p><h2><span style=\"color: rgb(55,65,81);\">What should users do after the timeout expires?</span></h2><p><span style=\"color: rgb(55,65,81);\">The exception is meant to be fatal, so the user should check their network setup, configuration, or adjust the timeout.</span></p><p><span style=\"color: rgb(55,65,81);\">The user can continue to retry, but this exception is meant to alert user to take action upon failing to bootstrap.</span></p><h1>Test Plan</h1><ol class=\"ak-ol\"><li><p>NetworkClient</p><ol class=\"ak-ol\"><li><p>Test DNS resolution upon its initial poll</p></li><li><p>Test if the right exception type is thrown</p></li></ol></li><li><p>Existing clients (Consumer, Producer, AdminClient)</p><ol class=\"ak-ol\"><li><p>Test successful bootstrapping upon retrying</p></li></ol></li></ol><h1>Rejected Alternatives</h1><p>We've discussed many alternatives.  Eventually, we asked ourselves what's the goal of this KIP, i.e., giving people a chance to retry on DNS resolution without poisoning the client. Which came down to two resolutions: 1. giving people a configurable timeout, and 2. adding a fatal error to alert the user.</p><p>Here are the rejected alternatives:</p><ol class=\"ak-ol\"><li><p><span class=\"inline-highlight first-mark-highlight last-mark-highlight\">Maintain the current code behavior and add a retry loop with a timeout.</span></p><ol class=\"ak-ol\"><li><p><strong>Pros</strong>: Same logic, less code change.</p></li><li><p><strong>Cons</strong>: Do users want to be blocked on instantiating the client? I don't like this idea.</p></li></ol></li><li><p>Throw DNS resolution upon failing but no retry</p><ol class=\"ak-ol\"><li><p><strong>Pros</strong>: No additional config is needed</p></li><li><p><strong>Cons</strong>: <span class=\"inline-highlight first-mark-highlight last-mark-highlight\">This is a behavioral change, and the application owner might need to rewrite the exception handling, i.e. catching the DNS failure logic.</span></p></li></ol></li><li>No retry.  The network client will continue to retry until it is interrupted.<br /><ol class=\"ak-ol\"><li><strong>Pros</strong>: No compatibility break. No additional exception handling logic, the network client will just log the error and continue to retry upon the next poll</li><li><strong>Cons</strong>: I think we should have some failure mechanism to notify users.</li></ol></li><li>Making BootstrapResolutionException retriable<ol class=\"ak-ol\"><li><strong>Pros</strong>: For the transient case, we might not even need a timeout, people are expected to retry on catching this exception</li><li><strong>Cons</strong>: Then we reply on alerting mechanism to alert users the issue. If it is indeed a configuration issue, then it is harder to discover</li></ol></li><li>Combine DNS resolution and connection into a single timeout<ol class=\"ak-ol\"><li><strong>Pros</strong>: Using a single timer to account for the connection time.</li><li><strong>Cons</strong>: Should we make connection retry fatal after the timeout? Maybe not.</li></ol></li><li>5min default timeout<ol class=\"ak-ol\"><li>We've decided to reduce it to 2min to stay coherent to the delivery.timeout.ms</li><li>5min can be too long</li></ol></li></ol>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/240884528?status=historical&version=34"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 903
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=435028175",
+    "edit": "/pages/resumedraft.action?draftId=435028175&draftShareId=d1ff151f-4f7e-467d-babd-f5c9e2611085",
+    "tinyui": "/x/zwDuGQ",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/240884528?status=historical&version=34"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/240884528/child?parentVersion=34",
+    "restrictions": "/rest/api/content/240884528/restriction/byOperation",
+    "history": "/rest/api/content/240884528/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/240884528/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/240884528/restriction/relevantViewRestrictions"
+   }
+  }
+ ],
+ "comments": {
+  "results": [],
+  "start": 0,
+  "limit": 200,
+  "size": 0,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/api/content/240884528/child/comment?expand=body.storage%2Cversion%2Cancestors&depth=all",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ }
+}

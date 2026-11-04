@@ -1,0 +1,43 @@
+{
+ "project": "kafka",
+ "repo": "apache/kafka",
+ "jira": "KAFKA",
+ "wiki_space": "KAFKA",
+ "lists": [
+  "dev",
+  "users"
+ ],
+ "window": {
+  "since": "2026-07-31",
+  "until": "2026-10-29"
+ },
+ "fetched_at": "2026-10-29T11:45:39Z",
+ "sources": {
+  "github": "https://api.github.com",
+  "jira": "https://issues.apache.org/jira/rest/api/2",
+  "wiki": "https://cwiki.apache.org/confluence/rest",
+  "mail": "https://lists.apache.org/api/mbox.lua",
+  "people": "https://whimsy.apache.org/public"
+ },
+ "stats": {
+  "people_files": [
+   "committee-info.json",
+   "member-info.json",
+   "public_ldap_groups.json",
+   "public_ldap_people.json",
+   "public_ldap_projects.json",
+   "public_ldap_services.json"
+  ],
+  "jira_issues_in_window": 1120,
+  "jira_jql": "project = KAFKA AND updated >= \"2026-07-31\" AND created < \"2026-10-30\" ORDER BY created ASC",
+  "mail_messages_approx": {
+   "dev@kafka.apache.org": 1887,
+   "users@kafka.apache.org": 123
+  },
+  "wiki_pages": 1671,
+  "wiki_pages_edited_in_window": 66,
+  "github_prs_in_window": 300,
+  "github_pr_details": 300,
+  "git_commits_in_window": 568
+ }
+}

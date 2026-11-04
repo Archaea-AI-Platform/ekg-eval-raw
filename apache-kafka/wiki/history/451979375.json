@@ -1,0 +1,417 @@
+{
+ "id": "451979375",
+ "versions": {
+  "results": [
+   {
+    "by": {
+     "type": "known",
+     "username": "arnabnandy7",
+     "userKey": "073590d2a049e1bb01a11a2b515d0034",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Arnab Nandy",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2a049e1bb01a11a2b515d0034"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-20T18:39:00.000Z",
+    "message": "updating discussion thread link",
+    "number": 5,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451979375/version/5"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451979375"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-09T10:33:27.000Z",
+    "message": "Renumbered to 1381",
+    "number": 4,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451979375/version/4"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451979375?status=historical&version=4"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "arnabnandy7",
+     "userKey": "073590d2a049e1bb01a11a2b515d0034",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Arnab Nandy",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2a049e1bb01a11a2b515d0034"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-08T14:04:31.000Z",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451979375/version/3"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451979375?status=historical&version=3"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "arnabnandy7",
+     "userKey": "073590d2a049e1bb01a11a2b515d0034",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Arnab Nandy",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2a049e1bb01a11a2b515d0034"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-08T14:03:30.000Z",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451979375/version/2"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451979375?status=historical&version=2"
+    }
+   },
+   {
+    "by": {
+     "type": "known",
+     "username": "arnabnandy7",
+     "userKey": "073590d2a049e1bb01a11a2b515d0034",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Arnab Nandy",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2a049e1bb01a11a2b515d0034"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-08T12:03:29.000Z",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451979375/version/1"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451979375?status=historical&version=1"
+    }
+   }
+  ],
+  "start": 0,
+  "limit": 200,
+  "size": 5,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451979375/version",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ },
+ "version_bodies": [
+  {
+   "id": "451979375",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1381: Allow Brokers to Disable Compression Types for Client Writes",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "schofielaj",
+     "userKey": "8aa98087664609da0166ab98daa30198",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Andrew Schofield",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=8aa98087664609da0166ab98daa30198"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-09T10:33:27.000Z",
+    "message": "Renumbered to 1381",
+    "number": 4,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451979375/version/4"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451979375?status=historical&version=4"
+    }
+   },
+   "position": 1372,
+   "body": {
+    "storage": {
+     "value": "<h1>Allow Brokers to Disable Compression Types for Client Writes</h1><h2>Status</h2><p><strong>Current state:</strong> Under Discussion</p><p><strong>Discussion thread:</strong> TBD</p><p><strong>JIRA:</strong> <a href=\"https://issues.apache.org/jira/browse/KAFKA-21178\">KAFKA-21178</a></p><p><strong>Released:</strong> TBD</p><p>Please keep the discussion on the mailing list rather than commenting on the wiki.</p><h2>Motivation</h2><p>Kafka supports gzip, Snappy, LZ4, and Zstandard compression for record batches. Brokers must retain support for decompressing every codec that may be present in existing log segments. Removing a codec implementation from Kafka would therefore prevent brokers from reading historical records that use that codec.</p><p>At the same time, operators may need to prevent new records from being written with a particular compression type. Reasons include a vulnerability in a compression library, a codec implementation becoming unmaintained, native-library compatibility problems, or an operational policy that prohibits a codec.</p><p>The existing <code>compression.type</code> broker and topic configuration does not provide this protection. When it is set to a specific codec, Kafka recompresses incoming records using that codec. However, Kafka must first decompress a producer-supplied batch. Consequently, forcing a different final compression type does not prevent a client from sending records encoded with an undesired codec.</p><p>This KIP proposes a broker-controlled denylist for compression types used by new client writes. The broker will reject a write before decompressing its records when either:</p><ol><li data-uuid=\"7159b8d5-3c14-49a7-88b5-986971a88196\">The producer supplied a disabled compression type; or</li><li data-uuid=\"61a5ca59-9f3c-414a-8258-553843022d78\">The broker would recompress the records using a disabled compression type.</li></ol><p>The restriction will not apply when reading or replicating existing records. This preserves compatibility with historical log data and allows replicas to remain synchronized.</p><h2>Public Interfaces</h2><h3>New broker configuration</h3><p>A new broker configuration will be introduced:</p><table class=\"wrapped\"><thead class=\"\"><tr class=\"\"><th>Property</th><th>Value</th></tr></thead><tbody class=\"\"><tr class=\"\"><td>Name</td><td><code>compression.disabled.types</code></td></tr><tr class=\"\"><td>Type</td><td>List</td></tr><tr class=\"\"><td>Default</td><td>Empty list</td></tr><tr class=\"\"><td>Valid values</td><td><code>gzip</code>, <code>snappy</code>, <code>lz4</code>, <code>zstd</code></td></tr><tr class=\"\"><td>Dynamic update mode</td><td>Cluster-wide</td></tr><tr class=\"\"><td>Importance</td><td>High</td></tr></tbody></table><p>Example:</p><pre><code class=\"language-properties\">compression.disabled.types=snappy,lz4\n</code></pre><p>The configuration contains a comma-separated list of compression types that brokers must reject for new client writes.</p><p>An empty list preserves the existing behavior and permits every compression type supported by Kafka.</p><p><code>none</code> is not a valid entry because uncompressed records do not invoke an external compression implementation.</p><p>This is a broker-only configuration. It will not have a corresponding topic-level configuration and therefore cannot be overridden by a topic configuration.</p><h3>Produce API behavior</h3><p>No request or response schema changes are proposed.</p><p>When a client produce request uses a disabled compression type, the affected partition will return the existing <code>UNSUPPORTED_COMPRESSION_TYPE</code> error.</p><p>The same error will be returned when the effective topic configuration would cause the broker to recompress the records using a disabled type.</p><p>For example, given:</p><pre><code class=\"language-properties\">compression.disabled.types=snappy\n</code></pre><p>the broker will reject both of the following cases:</p><ul><li data-uuid=\"6d9e5d65-43fe-4d05-a090-7550a68a8a50\">A producer sends a Snappy-compressed record batch, regardless of the effective <code>compression.type</code>.</li><li data-uuid=\"ea71a3fb-3a2c-41c8-a9d9-7f29700b2135\">The effective topic configuration has <code>compression.type=snappy</code>, even when the producer sends an uncompressed batch or uses another compression type.</li></ul><p>Other partitions in the same produce request will continue to be processed according to the existing produce-request behavior.</p><h3>Dynamic configuration</h3><p><code>compression.disabled.types</code> will support cluster-wide dynamic updates through the existing broker configuration API.</p><p>For example:</p><pre class=\"shiki shiki-themes github-light github-dark\"><code><span class=\"line\"><span style=\"color:var(--ds-text-accent-purple,#5e4db2);\">bin/kafka-configs.sh</span><span style=\"color:var(--ds-text-accent-blue,#0055cc);\"> \\</span></span>\n<span class=\"line\"><span style=\"color:var(--ds-text-accent-blue,#0055cc);\">  --bootstrap-server</span><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"> localhost:9092</span><span style=\"color:var(--ds-text-accent-blue,#0055cc);\"> \\</span></span>\n<span class=\"line\"><span style=\"color:var(--ds-text-accent-blue,#0055cc);\">  --entity-type</span><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"> brokers</span><span style=\"color:var(--ds-text-accent-blue,#0055cc);\"> \\</span></span>\n<span class=\"line\"><span style=\"color:var(--ds-text-accent-blue,#0055cc);\">  --entity-default</span><span style=\"color:var(--ds-text-accent-blue,#0055cc);\"> \\</span></span>\n<span class=\"line\"><span style=\"color:var(--ds-text-accent-blue,#0055cc);\">  --alter</span><span style=\"color:var(--ds-text-accent-blue,#0055cc);\"> \\</span></span>\n<span class=\"line\"><span style=\"color:var(--ds-text-accent-blue,#0055cc);\">  --add-config</span><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"> compression.disabled.types=snappy,lz4</span></span></code></pre><p>A dynamic update will be propagated to existing logs without requiring a broker restart.</p><p>As with other dynamic broker configurations, propagation is asynchronous. During propagation, brokers may temporarily observe different values. Enforcement for a partition is determined by the current configuration of its leader.</p><h2>Proposed Changes</h2><h3>Configuration parsing and propagation</h3><p>The broker configuration definition will declare <code>compression.disabled.types</code> as a list containing zero or more supported compressed record codecs.</p><p>Unknown values will cause configuration validation to fail. For example:</p><pre><code class=\"language-properties\">compression.disabled.types=brotli\n</code></pre><p>will be rejected because Brotli is not a Kafka record-batch compression type.</p><p>The parsed configuration will be represented internally as a set of compression types. It will be included in the broker’s default log configuration and propagated to existing logs when the dynamic broker configuration changes.</p><p>The value will be stored as an internal log property rather than exposed as a topic property. This prevents principals with topic-configuration privileges from overriding a restriction established by the cluster administrator.</p><h3>Produce-path validation</h3><p>Kafka currently determines two compression types while processing a client append:</p><ul><li data-uuid=\"5830340e-2cb1-483b-9c1e-5b44e6e1e17c\">The source compression type declared in the producer’s record-batch header.</li><li data-uuid=\"638ce8d5-302b-4e15-b88e-b0c922a2238c\">The target compression type selected from the effective <code>compression.type</code> configuration.</li></ul><p>For client-originated appends, Kafka will check both types against <code>compression.disabled.types</code> before record validation or decompression begins.</p><p>If either compression type is disabled, Kafka will throw <code>UnsupportedCompressionTypeException</code>. The existing exception-to-protocol mapping will return <code>UNSUPPORTED_COMPRESSION_TYPE</code> in the produce response.</p><p>Checking the producer compression type before decompression is important because it avoids invoking the disabled codec while processing the rejected request.</p><p>Checking the target compression type prevents Kafka itself from writing data with a disabled codec.</p><h3>Append origins</h3><p>The restriction will apply only to appends with <code>CLIENT</code> origin.</p><p>It will not apply to:</p><ul><li data-uuid=\"1d1a736f-ac1e-4f1d-8d4a-ac17cb3dab90\"><code>REPLICATION</code> appends</li><li data-uuid=\"134e5090-d9f4-4874-bf8a-06193d6b17f3\"><code>COORDINATOR</code> appends</li><li data-uuid=\"226bde2e-003c-4eb3-a659-eb886904a008\"><code>RAFT_LEADER</code> appends</li></ul><p>Replication must remain permitted so that followers can receive records already accepted by a leader and historical partitions can be reassigned or recovered.</p><p>Coordinator and Raft writes are trusted broker-internal operations and are not controlled by external producers. Compression used by internal topics continues to be governed by the existing internal-topic configurations.</p><h3>Existing records</h3><p>The proposed configuration does not disable decompression globally.</p><p>Existing records using a disabled compression type may still be:</p><ul><li data-uuid=\"6c5d3cf4-565b-4d2d-9856-017d07c4d3dc\">Fetched by consumers</li><li data-uuid=\"58c0097f-39a9-456d-a904-eccb86a3c7ed\">Replicated between brokers</li><li data-uuid=\"99d053c9-df64-4fa7-934d-eedbe0c15e30\">Recovered during broker startup</li><li data-uuid=\"41f6f8e5-c6f0-48d4-ac16-2a4f4c3dfdba\">Examined by broker log operations</li><li data-uuid=\"fade4781-513e-41cf-97a5-43684b699828\">Processed by log compaction</li></ul><p>This distinction is required because Kafka cannot safely remove the ability to interpret codecs already present in log segments.</p><p>The configuration prevents additional client data using the codec from entering the log; it is not a mechanism for removing or rewriting historical data.</p><h3>Interaction with <code>compression.type</code></h3><p>The existing <code>compression.type</code> setting continues to select the final on-disk compression type.</p><p>If its effective value selects a codec included in <code>compression.disabled.types</code>, new client writes will be rejected with <code>UNSUPPORTED_COMPRESSION_TYPE</code>.</p><p>For example:</p><pre><code class=\"language-properties\">compression.type=snappy\ncompression.disabled.types=snappy\n</code></pre><p>is a valid configuration, but client writes governed by that effective compression configuration will be rejected. This permits administrators to disable a codec dynamically even when existing topics or broker defaults still select it. Administrators can subsequently change <code>compression.type</code> without making the denylist update dependent on simultaneous topic-configuration changes.</p><p>When <code>compression.type=producer</code>, the producer’s source compression type is also the target type, and the same validation applies.</p><h2>Compatibility, Deprecation, and Migration Plan</h2><p>The default value is an empty list, so upgrading Kafka will not change existing behavior.</p><p>No existing configuration, API, record format, or compression type is deprecated or removed.</p><p>Operators who enable the configuration must ensure that producers stop using the disabled codecs. Produce requests that continue to use them will fail with <code>UNSUPPORTED_COMPRESSION_TYPE</code>.</p><p>A suggested migration sequence is:</p><ol><li data-uuid=\"30d732a0-7052-41bd-a9eb-e4a652e234a6\">Identify producers using the codec that will be disabled.</li><li data-uuid=\"68137172-8621-4480-a8e3-5e4738d08fef\">Reconfigure those producers to use another codec or no compression.</li><li data-uuid=\"3788a337-8d90-4ea0-8ca3-3e658a34273a\">Confirm that the new producer configuration has taken effect.</li><li data-uuid=\"2b118b06-4298-4fb0-a9c0-d91a8bd3ce05\">Add the codec to <code>compression.disabled.types</code>.</li><li data-uuid=\"a61fbd63-bbf1-403e-bf2e-58d404eb1630\">Monitor produce errors for clients that still use the disabled codec.</li></ol><p>Before enabling the setting during a rolling upgrade, every broker that may become a partition leader should run a Kafka version supporting this KIP. Otherwise, enforcement may depend on which broker is currently the leader.</p><p>Before downgrading to a version that does not support this KIP, operators should remove the dynamic configuration. Static configuration should also be removed from broker property files before starting an older broker version.</p><p>Disabling a codec does not rewrite existing segments. Operators must retain the corresponding codec library while historical records using that codec remain in the cluster.</p><h2>Test Plan</h2><p>Unit tests will verify that:</p><ul><li data-uuid=\"bc952b41-e503-4385-942b-ba6c344ce323\">The default disabled-type list is empty.</li><li data-uuid=\"a2f8123d-cf74-4c16-94b2-516116eb8584\">Every supported codec can be configured in the list.</li><li data-uuid=\"c921aed6-537c-4736-8ad4-07ef693e823b\">Unknown compression types are rejected during configuration validation.</li><li data-uuid=\"1d2254ee-41bc-4a07-b45e-d59ad2b5e879\">A producer batch using gzip, Snappy, LZ4, or Zstandard is rejected when its compression type is disabled.</li><li data-uuid=\"ee0aacb2-07ce-4098-b139-bfb53c0ed3ec\">An uncompressed producer batch is accepted when its type is not disabled.</li><li data-uuid=\"14b4f76d-af31-4b11-8cdd-ea60f2a01c5c\">A client write is rejected when the broker-selected target compression type is disabled.</li><li data-uuid=\"dcef5675-ee56-4b24-bde7-cbb1c0a47215\">A replication append using a disabled compression type remains accepted.</li><li data-uuid=\"2a008f89-3d0c-4c24-b2fa-996ba904a42a\">Rejected records are not appended to the log.</li></ul><p>Configuration tests will verify that:</p><ul><li data-uuid=\"6034ce65-e9c6-4ce5-95e8-603be07a59ad\">The broker configuration is parsed correctly.</li><li data-uuid=\"d095320e-6bb4-416d-a625-97f2b8d26698\">Dynamic updates are propagated through the broker and log configuration layers.</li><li data-uuid=\"b6a23805-e779-4da5-a98a-cd2c56841d35\">The setting is not exposed as an overridable topic configuration.</li></ul><p>Integration tests will dynamically disable a codec and verify that:</p><ul><li data-uuid=\"3e154d34-1b9d-46b9-992e-0ece255158ee\">A produce request using that codec succeeds before the update.</li><li data-uuid=\"ec9a2a9c-ba85-43d6-9a69-2098dc035494\">The same request returns <code>UNSUPPORTED_COMPRESSION_TYPE</code> after the update reaches the partition leader.</li><li data-uuid=\"7f17ff39-812c-4f15-a436-369b1788d31a\">The behavior works with isolated and combined KRaft deployments.</li></ul><p>No new system test is proposed because the behavior is localized to broker configuration propagation and produce-path validation, which are covered by the integration tests.</p><h2>Documentation Plan</h2><p>The generated broker configuration reference will document:</p><ul><li data-uuid=\"bddb4076-c56f-4561-8d85-b31899a5e829\">The configuration name and default</li><li data-uuid=\"2c2e12db-7b09-4baa-80cd-83c9c753ee3c\">Supported compression types</li><li data-uuid=\"a01c35a6-d0d3-4889-8db4-c510a2439372\">Dynamic update support</li><li data-uuid=\"a04511a1-f1f7-4e99-a0e9-584519af02b2\">The fact that it applies only to new client writes</li><li data-uuid=\"8b1bd870-28a4-4f3d-a72b-4945f8c7208c\">The behavior of historical records and replication</li><li data-uuid=\"26b2b4ca-0a57-4442-87d1-861bf537a0d4\">Its interaction with <code>compression.type</code></li></ul><p>The broker configuration documentation will also include <code>compression.disabled.types</code> in the section describing dynamic configuration updates.</p><h2>Rejected Alternatives</h2><h3>Remove the affected codec implementation</h3><p>Removing a codec implementation would make Kafka unable to read existing log segments using that codec. This could prevent broker recovery, replication, consumer fetches, and log maintenance.</p><p>Kafka must retain decompression support for historical data, so removing a codec is not a viable mitigation.</p><h3>Use <code>compression.type</code> to force a different codec</h3><p>Setting <code>compression.type</code> does not prevent clients from sending batches using another codec. Kafka may need to decompress the producer batch before recompressing it with the configured target codec.</p><p>Therefore, this does not protect the broker from processing an undesired producer-supplied codec.</p><h3>Introduce a topic-level configuration</h3><p>A topic-level configuration would allow a principal with topic configuration privileges to override the broker’s restriction. Codec disabling is an operator-controlled broker policy and should apply consistently across client-writable topics.</p><p>A broker-only configuration also avoids requiring administrators to update every existing and newly created topic.</p><h3>Use an allowlist instead of a denylist</h3><p>An allowlist could provide stricter control but would require operators to enumerate every permitted codec. It would also make the default and upgrade behavior more complicated when Kafka adds a new compression type.</p><p>A denylist preserves compatibility by default and directly supports the operational requirement to disable one or more problematic codecs.</p><h3>Apply the restriction to replication</h3><p>Rejecting replicated records would cause followers to fall out of sync when the leader contains records using a disabled codec. It would also interfere with partition reassignment and recovery of historical data.</p><p>The leader is responsible for enforcing the policy on new client writes. Followers must continue accepting the resulting replicated log.</p><h3>Disable decompression everywhere</h3><p>Preventing all decompression of a disabled codec would affect consumer fetches, log recovery, compaction, timestamp searches, and other operations over historical data.</p><p>The proposal intentionally limits enforcement to new client writes so that existing data remains usable.</p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/451979375?status=historical&version=4"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1372
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=451980261",
+    "edit": "/pages/resumedraft.action?draftId=451980261&draftShareId=f7fd6b9e-5b35-4a75-93fe-1c078bf6e9d0",
+    "tinyui": "/x/5avwGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/451979375?status=historical&version=4"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/451979375/child?parentVersion=4",
+    "restrictions": "/rest/api/content/451979375/restriction/byOperation",
+    "history": "/rest/api/content/451979375/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/451979375/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/451979375/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "451979375",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1379: Allow Brokers to Disable Compression Types for Client Writes",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "arnabnandy7",
+     "userKey": "073590d2a049e1bb01a11a2b515d0034",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Arnab Nandy",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2a049e1bb01a11a2b515d0034"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-08T14:04:31.000Z",
+    "message": "",
+    "number": 3,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451979375/version/3"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451979375?status=historical&version=3"
+    }
+   },
+   "position": 1372,
+   "body": {
+    "storage": {
+     "value": "<h1>Allow Brokers to Disable Compression Types for Client Writes</h1><h2>Status</h2><p><strong>Current state:</strong> Under Discussion</p><p><strong>Discussion thread:</strong> TBD</p><p><strong>JIRA:</strong> <a href=\"https://issues.apache.org/jira/browse/KAFKA-21178\">KAFKA-21178</a></p><p><strong>Released:</strong> TBD</p><p>Please keep the discussion on the mailing list rather than commenting on the wiki.</p><h2>Motivation</h2><p>Kafka supports gzip, Snappy, LZ4, and Zstandard compression for record batches. Brokers must retain support for decompressing every codec that may be present in existing log segments. Removing a codec implementation from Kafka would therefore prevent brokers from reading historical records that use that codec.</p><p>At the same time, operators may need to prevent new records from being written with a particular compression type. Reasons include a vulnerability in a compression library, a codec implementation becoming unmaintained, native-library compatibility problems, or an operational policy that prohibits a codec.</p><p>The existing <code>compression.type</code> broker and topic configuration does not provide this protection. When it is set to a specific codec, Kafka recompresses incoming records using that codec. However, Kafka must first decompress a producer-supplied batch. Consequently, forcing a different final compression type does not prevent a client from sending records encoded with an undesired codec.</p><p>This KIP proposes a broker-controlled denylist for compression types used by new client writes. The broker will reject a write before decompressing its records when either:</p><ol><li data-uuid=\"7159b8d5-3c14-49a7-88b5-986971a88196\">The producer supplied a disabled compression type; or</li><li data-uuid=\"61a5ca59-9f3c-414a-8258-553843022d78\">The broker would recompress the records using a disabled compression type.</li></ol><p>The restriction will not apply when reading or replicating existing records. This preserves compatibility with historical log data and allows replicas to remain synchronized.</p><h2>Public Interfaces</h2><h3>New broker configuration</h3><p>A new broker configuration will be introduced:</p><table class=\"wrapped\"><thead class=\"\"><tr class=\"\"><th>Property</th><th>Value</th></tr></thead><tbody class=\"\"><tr class=\"\"><td>Name</td><td><code>compression.disabled.types</code></td></tr><tr class=\"\"><td>Type</td><td>List</td></tr><tr class=\"\"><td>Default</td><td>Empty list</td></tr><tr class=\"\"><td>Valid values</td><td><code>gzip</code>, <code>snappy</code>, <code>lz4</code>, <code>zstd</code></td></tr><tr class=\"\"><td>Dynamic update mode</td><td>Cluster-wide</td></tr><tr class=\"\"><td>Importance</td><td>High</td></tr></tbody></table><p>Example:</p><pre><code class=\"language-properties\">compression.disabled.types=snappy,lz4\n</code></pre><p>The configuration contains a comma-separated list of compression types that brokers must reject for new client writes.</p><p>An empty list preserves the existing behavior and permits every compression type supported by Kafka.</p><p><code>none</code> is not a valid entry because uncompressed records do not invoke an external compression implementation.</p><p>This is a broker-only configuration. It will not have a corresponding topic-level configuration and therefore cannot be overridden by a topic configuration.</p><h3>Produce API behavior</h3><p>No request or response schema changes are proposed.</p><p>When a client produce request uses a disabled compression type, the affected partition will return the existing <code>UNSUPPORTED_COMPRESSION_TYPE</code> error.</p><p>The same error will be returned when the effective topic configuration would cause the broker to recompress the records using a disabled type.</p><p>For example, given:</p><pre><code class=\"language-properties\">compression.disabled.types=snappy\n</code></pre><p>the broker will reject both of the following cases:</p><ul><li data-uuid=\"6d9e5d65-43fe-4d05-a090-7550a68a8a50\">A producer sends a Snappy-compressed record batch, regardless of the effective <code>compression.type</code>.</li><li data-uuid=\"ea71a3fb-3a2c-41c8-a9d9-7f29700b2135\">The effective topic configuration has <code>compression.type=snappy</code>, even when the producer sends an uncompressed batch or uses another compression type.</li></ul><p>Other partitions in the same produce request will continue to be processed according to the existing produce-request behavior.</p><h3>Dynamic configuration</h3><p><code>compression.disabled.types</code> will support cluster-wide dynamic updates through the existing broker configuration API.</p><p>For example:</p><pre class=\"shiki shiki-themes github-light github-dark\"><code><span class=\"line\"><span style=\"color:var(--ds-text-accent-purple,#5e4db2);\">bin/kafka-configs.sh</span><span style=\"color:var(--ds-text-accent-blue,#0055cc);\"> \\</span></span>\n<span class=\"line\"><span style=\"color:var(--ds-text-accent-blue,#0055cc);\">  --bootstrap-server</span><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"> localhost:9092</span><span style=\"color:var(--ds-text-accent-blue,#0055cc);\"> \\</span></span>\n<span class=\"line\"><span style=\"color:var(--ds-text-accent-blue,#0055cc);\">  --entity-type</span><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"> brokers</span><span style=\"color:var(--ds-text-accent-blue,#0055cc);\"> \\</span></span>\n<span class=\"line\"><span style=\"color:var(--ds-text-accent-blue,#0055cc);\">  --entity-default</span><span style=\"color:var(--ds-text-accent-blue,#0055cc);\"> \\</span></span>\n<span class=\"line\"><span style=\"color:var(--ds-text-accent-blue,#0055cc);\">  --alter</span><span style=\"color:var(--ds-text-accent-blue,#0055cc);\"> \\</span></span>\n<span class=\"line\"><span style=\"color:var(--ds-text-accent-blue,#0055cc);\">  --add-config</span><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"> compression.disabled.types=snappy,lz4</span></span></code></pre><p>A dynamic update will be propagated to existing logs without requiring a broker restart.</p><p>As with other dynamic broker configurations, propagation is asynchronous. During propagation, brokers may temporarily observe different values. Enforcement for a partition is determined by the current configuration of its leader.</p><h2>Proposed Changes</h2><h3>Configuration parsing and propagation</h3><p>The broker configuration definition will declare <code>compression.disabled.types</code> as a list containing zero or more supported compressed record codecs.</p><p>Unknown values will cause configuration validation to fail. For example:</p><pre><code class=\"language-properties\">compression.disabled.types=brotli\n</code></pre><p>will be rejected because Brotli is not a Kafka record-batch compression type.</p><p>The parsed configuration will be represented internally as a set of compression types. It will be included in the broker’s default log configuration and propagated to existing logs when the dynamic broker configuration changes.</p><p>The value will be stored as an internal log property rather than exposed as a topic property. This prevents principals with topic-configuration privileges from overriding a restriction established by the cluster administrator.</p><h3>Produce-path validation</h3><p>Kafka currently determines two compression types while processing a client append:</p><ul><li data-uuid=\"5830340e-2cb1-483b-9c1e-5b44e6e1e17c\">The source compression type declared in the producer’s record-batch header.</li><li data-uuid=\"638ce8d5-302b-4e15-b88e-b0c922a2238c\">The target compression type selected from the effective <code>compression.type</code> configuration.</li></ul><p>For client-originated appends, Kafka will check both types against <code>compression.disabled.types</code> before record validation or decompression begins.</p><p>If either compression type is disabled, Kafka will throw <code>UnsupportedCompressionTypeException</code>. The existing exception-to-protocol mapping will return <code>UNSUPPORTED_COMPRESSION_TYPE</code> in the produce response.</p><p>Checking the producer compression type before decompression is important because it avoids invoking the disabled codec while processing the rejected request.</p><p>Checking the target compression type prevents Kafka itself from writing data with a disabled codec.</p><h3>Append origins</h3><p>The restriction will apply only to appends with <code>CLIENT</code> origin.</p><p>It will not apply to:</p><ul><li data-uuid=\"1d1a736f-ac1e-4f1d-8d4a-ac17cb3dab90\"><code>REPLICATION</code> appends</li><li data-uuid=\"134e5090-d9f4-4874-bf8a-06193d6b17f3\"><code>COORDINATOR</code> appends</li><li data-uuid=\"226bde2e-003c-4eb3-a659-eb886904a008\"><code>RAFT_LEADER</code> appends</li></ul><p>Replication must remain permitted so that followers can receive records already accepted by a leader and historical partitions can be reassigned or recovered.</p><p>Coordinator and Raft writes are trusted broker-internal operations and are not controlled by external producers. Compression used by internal topics continues to be governed by the existing internal-topic configurations.</p><h3>Existing records</h3><p>The proposed configuration does not disable decompression globally.</p><p>Existing records using a disabled compression type may still be:</p><ul><li data-uuid=\"6c5d3cf4-565b-4d2d-9856-017d07c4d3dc\">Fetched by consumers</li><li data-uuid=\"58c0097f-39a9-456d-a904-eccb86a3c7ed\">Replicated between brokers</li><li data-uuid=\"99d053c9-df64-4fa7-934d-eedbe0c15e30\">Recovered during broker startup</li><li data-uuid=\"41f6f8e5-c6f0-48d4-ac16-2a4f4c3dfdba\">Examined by broker log operations</li><li data-uuid=\"fade4781-513e-41cf-97a5-43684b699828\">Processed by log compaction</li></ul><p>This distinction is required because Kafka cannot safely remove the ability to interpret codecs already present in log segments.</p><p>The configuration prevents additional client data using the codec from entering the log; it is not a mechanism for removing or rewriting historical data.</p><h3>Interaction with <code>compression.type</code></h3><p>The existing <code>compression.type</code> setting continues to select the final on-disk compression type.</p><p>If its effective value selects a codec included in <code>compression.disabled.types</code>, new client writes will be rejected with <code>UNSUPPORTED_COMPRESSION_TYPE</code>.</p><p>For example:</p><pre><code class=\"language-properties\">compression.type=snappy\ncompression.disabled.types=snappy\n</code></pre><p>is a valid configuration, but client writes governed by that effective compression configuration will be rejected. This permits administrators to disable a codec dynamically even when existing topics or broker defaults still select it. Administrators can subsequently change <code>compression.type</code> without making the denylist update dependent on simultaneous topic-configuration changes.</p><p>When <code>compression.type=producer</code>, the producer’s source compression type is also the target type, and the same validation applies.</p><h2>Compatibility, Deprecation, and Migration Plan</h2><p>The default value is an empty list, so upgrading Kafka will not change existing behavior.</p><p>No existing configuration, API, record format, or compression type is deprecated or removed.</p><p>Operators who enable the configuration must ensure that producers stop using the disabled codecs. Produce requests that continue to use them will fail with <code>UNSUPPORTED_COMPRESSION_TYPE</code>.</p><p>A suggested migration sequence is:</p><ol><li data-uuid=\"30d732a0-7052-41bd-a9eb-e4a652e234a6\">Identify producers using the codec that will be disabled.</li><li data-uuid=\"68137172-8621-4480-a8e3-5e4738d08fef\">Reconfigure those producers to use another codec or no compression.</li><li data-uuid=\"3788a337-8d90-4ea0-8ca3-3e658a34273a\">Confirm that the new producer configuration has taken effect.</li><li data-uuid=\"2b118b06-4298-4fb0-a9c0-d91a8bd3ce05\">Add the codec to <code>compression.disabled.types</code>.</li><li data-uuid=\"a61fbd63-bbf1-403e-bf2e-58d404eb1630\">Monitor produce errors for clients that still use the disabled codec.</li></ol><p>Before enabling the setting during a rolling upgrade, every broker that may become a partition leader should run a Kafka version supporting this KIP. Otherwise, enforcement may depend on which broker is currently the leader.</p><p>Before downgrading to a version that does not support this KIP, operators should remove the dynamic configuration. Static configuration should also be removed from broker property files before starting an older broker version.</p><p>Disabling a codec does not rewrite existing segments. Operators must retain the corresponding codec library while historical records using that codec remain in the cluster.</p><h2>Test Plan</h2><p>Unit tests will verify that:</p><ul><li data-uuid=\"bc952b41-e503-4385-942b-ba6c344ce323\">The default disabled-type list is empty.</li><li data-uuid=\"a2f8123d-cf74-4c16-94b2-516116eb8584\">Every supported codec can be configured in the list.</li><li data-uuid=\"c921aed6-537c-4736-8ad4-07ef693e823b\">Unknown compression types are rejected during configuration validation.</li><li data-uuid=\"1d2254ee-41bc-4a07-b45e-d59ad2b5e879\">A producer batch using gzip, Snappy, LZ4, or Zstandard is rejected when its compression type is disabled.</li><li data-uuid=\"ee0aacb2-07ce-4098-b139-bfb53c0ed3ec\">An uncompressed producer batch is accepted when its type is not disabled.</li><li data-uuid=\"14b4f76d-af31-4b11-8cdd-ea60f2a01c5c\">A client write is rejected when the broker-selected target compression type is disabled.</li><li data-uuid=\"dcef5675-ee56-4b24-bde7-cbb1c0a47215\">A replication append using a disabled compression type remains accepted.</li><li data-uuid=\"2a008f89-3d0c-4c24-b2fa-996ba904a42a\">Rejected records are not appended to the log.</li></ul><p>Configuration tests will verify that:</p><ul><li data-uuid=\"6034ce65-e9c6-4ce5-95e8-603be07a59ad\">The broker configuration is parsed correctly.</li><li data-uuid=\"d095320e-6bb4-416d-a625-97f2b8d26698\">Dynamic updates are propagated through the broker and log configuration layers.</li><li data-uuid=\"b6a23805-e779-4da5-a98a-cd2c56841d35\">The setting is not exposed as an overridable topic configuration.</li></ul><p>Integration tests will dynamically disable a codec and verify that:</p><ul><li data-uuid=\"3e154d34-1b9d-46b9-992e-0ece255158ee\">A produce request using that codec succeeds before the update.</li><li data-uuid=\"ec9a2a9c-ba85-43d6-9a69-2098dc035494\">The same request returns <code>UNSUPPORTED_COMPRESSION_TYPE</code> after the update reaches the partition leader.</li><li data-uuid=\"7f17ff39-812c-4f15-a436-369b1788d31a\">The behavior works with isolated and combined KRaft deployments.</li></ul><p>No new system test is proposed because the behavior is localized to broker configuration propagation and produce-path validation, which are covered by the integration tests.</p><h2>Documentation Plan</h2><p>The generated broker configuration reference will document:</p><ul><li data-uuid=\"bddb4076-c56f-4561-8d85-b31899a5e829\">The configuration name and default</li><li data-uuid=\"2c2e12db-7b09-4baa-80cd-83c9c753ee3c\">Supported compression types</li><li data-uuid=\"a01c35a6-d0d3-4889-8db4-c510a2439372\">Dynamic update support</li><li data-uuid=\"a04511a1-f1f7-4e99-a0e9-584519af02b2\">The fact that it applies only to new client writes</li><li data-uuid=\"8b1bd870-28a4-4f3d-a72b-4945f8c7208c\">The behavior of historical records and replication</li><li data-uuid=\"26b2b4ca-0a57-4442-87d1-861bf537a0d4\">Its interaction with <code>compression.type</code></li></ul><p>The broker configuration documentation will also include <code>compression.disabled.types</code> in the section describing dynamic configuration updates.</p><h2>Rejected Alternatives</h2><h3>Remove the affected codec implementation</h3><p>Removing a codec implementation would make Kafka unable to read existing log segments using that codec. This could prevent broker recovery, replication, consumer fetches, and log maintenance.</p><p>Kafka must retain decompression support for historical data, so removing a codec is not a viable mitigation.</p><h3>Use <code>compression.type</code> to force a different codec</h3><p>Setting <code>compression.type</code> does not prevent clients from sending batches using another codec. Kafka may need to decompress the producer batch before recompressing it with the configured target codec.</p><p>Therefore, this does not protect the broker from processing an undesired producer-supplied codec.</p><h3>Introduce a topic-level configuration</h3><p>A topic-level configuration would allow a principal with topic configuration privileges to override the broker’s restriction. Codec disabling is an operator-controlled broker policy and should apply consistently across client-writable topics.</p><p>A broker-only configuration also avoids requiring administrators to update every existing and newly created topic.</p><h3>Use an allowlist instead of a denylist</h3><p>An allowlist could provide stricter control but would require operators to enumerate every permitted codec. It would also make the default and upgrade behavior more complicated when Kafka adds a new compression type.</p><p>A denylist preserves compatibility by default and directly supports the operational requirement to disable one or more problematic codecs.</p><h3>Apply the restriction to replication</h3><p>Rejecting replicated records would cause followers to fall out of sync when the leader contains records using a disabled codec. It would also interfere with partition reassignment and recovery of historical data.</p><p>The leader is responsible for enforcing the policy on new client writes. Followers must continue accepting the resulting replicated log.</p><h3>Disable decompression everywhere</h3><p>Preventing all decompression of a disabled codec would affect consumer fetches, log recovery, compaction, timestamp searches, and other operations over historical data.</p><p>The proposal intentionally limits enforcement to new client writes so that existing data remains usable.</p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/451979375?status=historical&version=3"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1372
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=451979469",
+    "edit": "/pages/resumedraft.action?draftId=451979469&draftShareId=f7fd6b9e-5b35-4a75-93fe-1c078bf6e9d0",
+    "tinyui": "/x/zajwGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/451979375?status=historical&version=3"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/451979375/child?parentVersion=3",
+    "restrictions": "/rest/api/content/451979375/restriction/byOperation",
+    "history": "/rest/api/content/451979375/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/451979375/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/451979375/restriction/relevantViewRestrictions"
+   }
+  },
+  {
+   "id": "451979375",
+   "type": "page",
+   "status": "historical",
+   "title": "KIP-1379 Allow Brokers to Disable Compression Types for Client Writes",
+   "version": {
+    "by": {
+     "type": "known",
+     "username": "arnabnandy7",
+     "userKey": "073590d2a049e1bb01a11a2b515d0034",
+     "profilePicture": {
+      "path": "/confluence/images/icons/profilepics/default.svg",
+      "width": 48,
+      "height": 48,
+      "isDefault": true
+     },
+     "displayName": "Arnab Nandy",
+     "_links": {
+      "self": "https://cwiki.apache.org/confluence/rest/api/user?key=073590d2a049e1bb01a11a2b515d0034"
+     },
+     "_expandable": {
+      "status": ""
+     }
+    },
+    "when": "2026-10-08T14:03:30.000Z",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "hidden": false,
+    "_links": {
+     "self": "https://cwiki.apache.org/confluence/rest/experimental/content/451979375/version/2"
+    },
+    "_expandable": {
+     "content": "/rest/api/content/451979375?status=historical&version=2"
+    }
+   },
+   "position": 1372,
+   "body": {
+    "storage": {
+     "value": "<h1>Allow Brokers to Disable Compression Types for Client Writes</h1><h2>Status</h2><p><strong>Current state:</strong> Under Discussion</p><p><strong>Discussion thread:</strong> TBD</p><p><strong>JIRA:</strong> <a href=\"https://issues.apache.org/jira/browse/KAFKA-21178\">KAFKA-21178</a></p><p><strong>Released:</strong> TBD</p><p>Please keep the discussion on the mailing list rather than commenting on the wiki.</p><h2>Motivation</h2><p>Kafka supports gzip, Snappy, LZ4, and Zstandard compression for record batches. Brokers must retain support for decompressing every codec that may be present in existing log segments. Removing a codec implementation from Kafka would therefore prevent brokers from reading historical records that use that codec.</p><p>At the same time, operators may need to prevent new records from being written with a particular compression type. Reasons include a vulnerability in a compression library, a codec implementation becoming unmaintained, native-library compatibility problems, or an operational policy that prohibits a codec.</p><p>The existing <code>compression.type</code> broker and topic configuration does not provide this protection. When it is set to a specific codec, Kafka recompresses incoming records using that codec. However, Kafka must first decompress a producer-supplied batch. Consequently, forcing a different final compression type does not prevent a client from sending records encoded with an undesired codec.</p><p>This KIP proposes a broker-controlled denylist for compression types used by new client writes. The broker will reject a write before decompressing its records when either:</p><ol><li data-uuid=\"7159b8d5-3c14-49a7-88b5-986971a88196\">The producer supplied a disabled compression type; or</li><li data-uuid=\"61a5ca59-9f3c-414a-8258-553843022d78\">The broker would recompress the records using a disabled compression type.</li></ol><p>The restriction will not apply when reading or replicating existing records. This preserves compatibility with historical log data and allows replicas to remain synchronized.</p><h2>Public Interfaces</h2><h3>New broker configuration</h3><p>A new broker configuration will be introduced:</p><table class=\"wrapped\"><thead class=\"\"><tr class=\"\"><th>Property</th><th>Value</th></tr></thead><tbody class=\"\"><tr class=\"\"><td>Name</td><td><code>compression.disabled.types</code></td></tr><tr class=\"\"><td>Type</td><td>List</td></tr><tr class=\"\"><td>Default</td><td>Empty list</td></tr><tr class=\"\"><td>Valid values</td><td><code>gzip</code>, <code>snappy</code>, <code>lz4</code>, <code>zstd</code></td></tr><tr class=\"\"><td>Dynamic update mode</td><td>Cluster-wide</td></tr><tr class=\"\"><td>Importance</td><td>High</td></tr></tbody></table><p>Example:</p><pre><code class=\"language-properties\">compression.disabled.types=snappy,lz4\n</code></pre><p>The configuration contains a comma-separated list of compression types that brokers must reject for new client writes.</p><p>An empty list preserves the existing behavior and permits every compression type supported by Kafka.</p><p><code>none</code> is not a valid entry because uncompressed records do not invoke an external compression implementation.</p><p>This is a broker-only configuration. It will not have a corresponding topic-level configuration and therefore cannot be overridden by a topic configuration.</p><h3>Produce API behavior</h3><p>No request or response schema changes are proposed.</p><p>When a client produce request uses a disabled compression type, the affected partition will return the existing <code>UNSUPPORTED_COMPRESSION_TYPE</code> error.</p><p>The same error will be returned when the effective topic configuration would cause the broker to recompress the records using a disabled type.</p><p>For example, given:</p><pre><code class=\"language-properties\">compression.disabled.types=snappy\n</code></pre><p>the broker will reject both of the following cases:</p><ul><li data-uuid=\"6d9e5d65-43fe-4d05-a090-7550a68a8a50\">A producer sends a Snappy-compressed record batch, regardless of the effective <code>compression.type</code>.</li><li data-uuid=\"ea71a3fb-3a2c-41c8-a9d9-7f29700b2135\">The effective topic configuration has <code>compression.type=snappy</code>, even when the producer sends an uncompressed batch or uses another compression type.</li></ul><p>Other partitions in the same produce request will continue to be processed according to the existing produce-request behavior.</p><h3>Dynamic configuration</h3><p><code>compression.disabled.types</code> will support cluster-wide dynamic updates through the existing broker configuration API.</p><p>For example:</p><pre class=\"shiki shiki-themes github-light github-dark\"><code><span class=\"line\"><span style=\"color:var(--ds-text-accent-purple,#5e4db2);\">bin/kafka-configs.sh</span><span style=\"color:var(--ds-text-accent-blue,#0055cc);\"> \\</span></span>\n<span class=\"line\"><span style=\"color:var(--ds-text-accent-blue,#0055cc);\">  --bootstrap-server</span><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"> localhost:9092</span><span style=\"color:var(--ds-text-accent-blue,#0055cc);\"> \\</span></span>\n<span class=\"line\"><span style=\"color:var(--ds-text-accent-blue,#0055cc);\">  --entity-type</span><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"> brokers</span><span style=\"color:var(--ds-text-accent-blue,#0055cc);\"> \\</span></span>\n<span class=\"line\"><span style=\"color:var(--ds-text-accent-blue,#0055cc);\">  --entity-default</span><span style=\"color:var(--ds-text-accent-blue,#0055cc);\"> \\</span></span>\n<span class=\"line\"><span style=\"color:var(--ds-text-accent-blue,#0055cc);\">  --alter</span><span style=\"color:var(--ds-text-accent-blue,#0055cc);\"> \\</span></span>\n<span class=\"line\"><span style=\"color:var(--ds-text-accent-blue,#0055cc);\">  --add-config</span><span style=\"color:var(--ds-text-accent-blue-bolder,#09326c);\"> compression.disabled.types=snappy,lz4</span></span></code></pre><p>A dynamic update will be propagated to existing logs without requiring a broker restart.</p><p>As with other dynamic broker configurations, propagation is asynchronous. During propagation, brokers may temporarily observe different values. Enforcement for a partition is determined by the current configuration of its leader.</p><h2>Proposed Changes</h2><h3>Configuration parsing and propagation</h3><p>The broker configuration definition will declare <code>compression.disabled.types</code> as a list containing zero or more supported compressed record codecs.</p><p>Unknown values will cause configuration validation to fail. For example:</p><pre><code class=\"language-properties\">compression.disabled.types=brotli\n</code></pre><p>will be rejected because Brotli is not a Kafka record-batch compression type.</p><p>The parsed configuration will be represented internally as a set of compression types. It will be included in the broker’s default log configuration and propagated to existing logs when the dynamic broker configuration changes.</p><p>The value will be stored as an internal log property rather than exposed as a topic property. This prevents principals with topic-configuration privileges from overriding a restriction established by the cluster administrator.</p><h3>Produce-path validation</h3><p>Kafka currently determines two compression types while processing a client append:</p><ul><li data-uuid=\"5830340e-2cb1-483b-9c1e-5b44e6e1e17c\">The source compression type declared in the producer’s record-batch header.</li><li data-uuid=\"638ce8d5-302b-4e15-b88e-b0c922a2238c\">The target compression type selected from the effective <code>compression.type</code> configuration.</li></ul><p>For client-originated appends, Kafka will check both types against <code>compression.disabled.types</code> before record validation or decompression begins.</p><p>If either compression type is disabled, Kafka will throw <code>UnsupportedCompressionTypeException</code>. The existing exception-to-protocol mapping will return <code>UNSUPPORTED_COMPRESSION_TYPE</code> in the produce response.</p><p>Checking the producer compression type before decompression is important because it avoids invoking the disabled codec while processing the rejected request.</p><p>Checking the target compression type prevents Kafka itself from writing data with a disabled codec.</p><h3>Append origins</h3><p>The restriction will apply only to appends with <code>CLIENT</code> origin.</p><p>It will not apply to:</p><ul><li data-uuid=\"1d1a736f-ac1e-4f1d-8d4a-ac17cb3dab90\"><code>REPLICATION</code> appends</li><li data-uuid=\"134e5090-d9f4-4874-bf8a-06193d6b17f3\"><code>COORDINATOR</code> appends</li><li data-uuid=\"226bde2e-003c-4eb3-a659-eb886904a008\"><code>RAFT_LEADER</code> appends</li></ul><p>Replication must remain permitted so that followers can receive records already accepted by a leader and historical partitions can be reassigned or recovered.</p><p>Coordinator and Raft writes are trusted broker-internal operations and are not controlled by external producers. Compression used by internal topics continues to be governed by the existing internal-topic configurations.</p><h3>Existing records</h3><p>The proposed configuration does not disable decompression globally.</p><p>Existing records using a disabled compression type may still be:</p><ul><li data-uuid=\"6c5d3cf4-565b-4d2d-9856-017d07c4d3dc\">Fetched by consumers</li><li data-uuid=\"58c0097f-39a9-456d-a904-eccb86a3c7ed\">Replicated between brokers</li><li data-uuid=\"99d053c9-df64-4fa7-934d-eedbe0c15e30\">Recovered during broker startup</li><li data-uuid=\"41f6f8e5-c6f0-48d4-ac16-2a4f4c3dfdba\">Examined by broker log operations</li><li data-uuid=\"fade4781-513e-41cf-97a5-43684b699828\">Processed by log compaction</li></ul><p>This distinction is required because Kafka cannot safely remove the ability to interpret codecs already present in log segments.</p><p>The configuration prevents additional client data using the codec from entering the log; it is not a mechanism for removing or rewriting historical data.</p><h3>Interaction with <code>compression.type</code></h3><p>The existing <code>compression.type</code> setting continues to select the final on-disk compression type.</p><p>If its effective value selects a codec included in <code>compression.disabled.types</code>, new client writes will be rejected with <code>UNSUPPORTED_COMPRESSION_TYPE</code>.</p><p>For example:</p><pre><code class=\"language-properties\">compression.type=snappy\ncompression.disabled.types=snappy\n</code></pre><p>is a valid configuration, but client writes governed by that effective compression configuration will be rejected. This permits administrators to disable a codec dynamically even when existing topics or broker defaults still select it. Administrators can subsequently change <code>compression.type</code> without making the denylist update dependent on simultaneous topic-configuration changes.</p><p>When <code>compression.type=producer</code>, the producer’s source compression type is also the target type, and the same validation applies.</p><h2>Compatibility, Deprecation, and Migration Plan</h2><p>The default value is an empty list, so upgrading Kafka will not change existing behavior.</p><p>No existing configuration, API, record format, or compression type is deprecated or removed.</p><p>Operators who enable the configuration must ensure that producers stop using the disabled codecs. Produce requests that continue to use them will fail with <code>UNSUPPORTED_COMPRESSION_TYPE</code>.</p><p>A suggested migration sequence is:</p><ol><li data-uuid=\"30d732a0-7052-41bd-a9eb-e4a652e234a6\">Identify producers using the codec that will be disabled.</li><li data-uuid=\"68137172-8621-4480-a8e3-5e4738d08fef\">Reconfigure those producers to use another codec or no compression.</li><li data-uuid=\"3788a337-8d90-4ea0-8ca3-3e658a34273a\">Confirm that the new producer configuration has taken effect.</li><li data-uuid=\"2b118b06-4298-4fb0-a9c0-d91a8bd3ce05\">Add the codec to <code>compression.disabled.types</code>.</li><li data-uuid=\"a61fbd63-bbf1-403e-bf2e-58d404eb1630\">Monitor produce errors for clients that still use the disabled codec.</li></ol><p>Before enabling the setting during a rolling upgrade, every broker that may become a partition leader should run a Kafka version supporting this KIP. Otherwise, enforcement may depend on which broker is currently the leader.</p><p>Before downgrading to a version that does not support this KIP, operators should remove the dynamic configuration. Static configuration should also be removed from broker property files before starting an older broker version.</p><p>Disabling a codec does not rewrite existing segments. Operators must retain the corresponding codec library while historical records using that codec remain in the cluster.</p><h2>Test Plan</h2><p>Unit tests will verify that:</p><ul><li data-uuid=\"bc952b41-e503-4385-942b-ba6c344ce323\">The default disabled-type list is empty.</li><li data-uuid=\"a2f8123d-cf74-4c16-94b2-516116eb8584\">Every supported codec can be configured in the list.</li><li data-uuid=\"c921aed6-537c-4736-8ad4-07ef693e823b\">Unknown compression types are rejected during configuration validation.</li><li data-uuid=\"1d2254ee-41bc-4a07-b45e-d59ad2b5e879\">A producer batch using gzip, Snappy, LZ4, or Zstandard is rejected when its compression type is disabled.</li><li data-uuid=\"ee0aacb2-07ce-4098-b139-bfb53c0ed3ec\">An uncompressed producer batch is accepted when its type is not disabled.</li><li data-uuid=\"14b4f76d-af31-4b11-8cdd-ea60f2a01c5c\">A client write is rejected when the broker-selected target compression type is disabled.</li><li data-uuid=\"dcef5675-ee56-4b24-bde7-cbb1c0a47215\">A replication append using a disabled compression type remains accepted.</li><li data-uuid=\"2a008f89-3d0c-4c24-b2fa-996ba904a42a\">Rejected records are not appended to the log.</li></ul><p>Configuration tests will verify that:</p><ul><li data-uuid=\"6034ce65-e9c6-4ce5-95e8-603be07a59ad\">The broker configuration is parsed correctly.</li><li data-uuid=\"d095320e-6bb4-416d-a625-97f2b8d26698\">Dynamic updates are propagated through the broker and log configuration layers.</li><li data-uuid=\"b6a23805-e779-4da5-a98a-cd2c56841d35\">The setting is not exposed as an overridable topic configuration.</li></ul><p>Integration tests will dynamically disable a codec and verify that:</p><ul><li data-uuid=\"3e154d34-1b9d-46b9-992e-0ece255158ee\">A produce request using that codec succeeds before the update.</li><li data-uuid=\"ec9a2a9c-ba85-43d6-9a69-2098dc035494\">The same request returns <code>UNSUPPORTED_COMPRESSION_TYPE</code> after the update reaches the partition leader.</li><li data-uuid=\"7f17ff39-812c-4f15-a436-369b1788d31a\">The behavior works with isolated and combined KRaft deployments.</li></ul><p>No new system test is proposed because the behavior is localized to broker configuration propagation and produce-path validation, which are covered by the integration tests.</p><h2>Documentation Plan</h2><p>The generated broker configuration reference will document:</p><ul><li data-uuid=\"bddb4076-c56f-4561-8d85-b31899a5e829\">The configuration name and default</li><li data-uuid=\"2c2e12db-7b09-4baa-80cd-83c9c753ee3c\">Supported compression types</li><li data-uuid=\"a01c35a6-d0d3-4889-8db4-c510a2439372\">Dynamic update support</li><li data-uuid=\"a04511a1-f1f7-4e99-a0e9-584519af02b2\">The fact that it applies only to new client writes</li><li data-uuid=\"8b1bd870-28a4-4f3d-a72b-4945f8c7208c\">The behavior of historical records and replication</li><li data-uuid=\"26b2b4ca-0a57-4442-87d1-861bf537a0d4\">Its interaction with <code>compression.type</code></li></ul><p>The broker configuration documentation will also include <code>compression.disabled.types</code> in the section describing dynamic configuration updates.</p><h2>Rejected Alternatives</h2><h3>Remove the affected codec implementation</h3><p>Removing a codec implementation would make Kafka unable to read existing log segments using that codec. This could prevent broker recovery, replication, consumer fetches, and log maintenance.</p><p>Kafka must retain decompression support for historical data, so removing a codec is not a viable mitigation.</p><h3>Use <code>compression.type</code> to force a different codec</h3><p>Setting <code>compression.type</code> does not prevent clients from sending batches using another codec. Kafka may need to decompress the producer batch before recompressing it with the configured target codec.</p><p>Therefore, this does not protect the broker from processing an undesired producer-supplied codec.</p><h3>Introduce a topic-level configuration</h3><p>A topic-level configuration would allow a principal with topic configuration privileges to override the broker’s restriction. Codec disabling is an operator-controlled broker policy and should apply consistently across client-writable topics.</p><p>A broker-only configuration also avoids requiring administrators to update every existing and newly created topic.</p><h3>Use an allowlist instead of a denylist</h3><p>An allowlist could provide stricter control but would require operators to enumerate every permitted codec. It would also make the default and upgrade behavior more complicated when Kafka adds a new compression type.</p><p>A denylist preserves compatibility by default and directly supports the operational requirement to disable one or more problematic codecs.</p><h3>Apply the restriction to replication</h3><p>Rejecting replicated records would cause followers to fall out of sync when the leader contains records using a disabled codec. It would also interfere with partition reassignment and recovery of historical data.</p><p>The leader is responsible for enforcing the policy on new client writes. Followers must continue accepting the resulting replicated log.</p><h3>Disable decompression everywhere</h3><p>Preventing all decompression of a disabled codec would affect consumer fetches, log recovery, compaction, timestamp searches, and other operations over historical data.</p><p>The proposal intentionally limits enforcement to new client writes so that existing data remains usable.</p>",
+     "representation": "storage",
+     "_expandable": {
+      "content": "/rest/api/content/451979375?status=historical&version=2"
+     }
+    },
+    "_expandable": {
+     "editor": "",
+     "view": "",
+     "export_view": "",
+     "styled_view": "",
+     "anonymous_export_view": ""
+    }
+   },
+   "extensions": {
+    "position": 1372
+   },
+   "_links": {
+    "webui": "/pages/viewpage.action?pageId=451979390",
+    "edit": "/pages/resumedraft.action?draftId=451979390&draftShareId=f7fd6b9e-5b35-4a75-93fe-1c078bf6e9d0",
+    "tinyui": "/x/fqjwGg",
+    "collection": "/rest/api/content",
+    "base": "https://cwiki.apache.org/confluence",
+    "context": "/confluence",
+    "self": "https://cwiki.apache.org/confluence/rest/api/content/451979375?status=historical&version=2"
+   },
+   "_expandable": {
+    "container": "",
+    "metadata": "",
+    "operations": "",
+    "children": "/rest/api/content/451979375/child?parentVersion=2",
+    "restrictions": "/rest/api/content/451979375/restriction/byOperation",
+    "history": "/rest/api/content/451979375/history",
+    "ancestors": "",
+    "descendants": "/rest/api/content/451979375/descendant",
+    "space": "/rest/api/space/KAFKA",
+    "relevantViewRestrictions": "/rest/api/content/451979375/restriction/relevantViewRestrictions"
+   }
+  }
+ ],
+ "comments": {
+  "results": [],
+  "start": 0,
+  "limit": 200,
+  "size": 0,
+  "_links": {
+   "self": "https://cwiki.apache.org/confluence/rest/api/content/451979375/child/comment?expand=body.storage%2Cversion%2Cancestors&depth=all",
+   "base": "https://cwiki.apache.org/confluence",
+   "context": "/confluence"
+  }
+ }
+}
